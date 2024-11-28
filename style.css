@@ -166,6 +166,16 @@ body {
   padding: 10px;
   font-size: 150%;
   text-align: center; /* Center text within the container */
+  text-align: center; /* Center the text */
+  border: 2px solid #69F7BE; /* Add a border */
+  cursor: pointer; /* Change cursor to pointer on hover */
+  transition: background-color 0.3s, border-color 0.3s; /* Smooth transition */
+}
+
+.block:hover {
+  background-color: #69F7BE; /* Change background color on hover */
+  color: #444; /* Change text color on hover */
+  border-color: #444; /* Change border color on hover */
 }
 
 .notes {
