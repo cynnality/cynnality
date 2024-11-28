@@ -130,6 +130,31 @@ body {
   justify-content: center;
 }
 
+.wrappercont {
+  display: grid;
+  grid-template-columns: 180px 180px 180px;
+  grid-gap: 10px;
+  background-color: #2800FF;
+  color: #444;
+  padding: 20px;
+}
+
+.block {
+  background-color: #444;
+  color: #69F7BE;
+  border-radius: 10px;
+  padding: 20px;
+  font-size: 150%;
+}
+
+.notes {
+  font-size: 80%;
+}
+
+.tags {
+  font-size: 50%;
+}
+
 /* Very light scaling for our illustration */
 .title {
   color: var(--color-text-header);
