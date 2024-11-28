@@ -115,17 +115,28 @@ body {
   text-align: center; /* Center text within the container */
 }
 
-.pagelinks {
+.cardgrid {
   display: grid;
-  grid-template-columns: 180px 180px 180px;
-  grid-template-rows: auto 1fr;
-  grid-gap: 10px;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  grid-gap: 20px;
   background-color: #90ee90;
   color: #EC154F;
+  justify-content: center;
   padding: 10px;
   border-radius: 10px;
   text-align: center; /* Center text within the container */
-  
+  margin-top: 20px;  
+}
+
+
+.card {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  overflow: hidden;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s;
+  cursor: pointer;
 }
 
 /* Center the heading */
