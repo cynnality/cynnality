@@ -131,11 +131,17 @@ body {
   justify-content: center;
 }
 
-
-
 .wrappercont {
+  background-color: #FECB00;
+  color: #444;
+  padding: 10px;
+  border-radius: 10px;
+  text-align: center; /* Center text within the container */
+}
+
+.pagelinks {
   display: grid;
-  grid-template-columns: x 180px 180px;
+  grid-template-columns: 180px 180px 180px;
   grid-template-rows: auto 1fr;
   grid-gap: 10px;
   background-color: #FECB00;
