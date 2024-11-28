@@ -16,9 +16,9 @@ to this section's matching END comment to see page-specific styles.
 
 /* Our default values set as CSS variables */
 :root {
-  --color-bg: #AA7DB1;
+  --color-bg: #cf90ee;
   --color-text-main: #000000;
-  --color-text-header: #2800FF;
+  --color-text-header: #65a765;
   --color-primary: #FFFF00;
   --wrapper-height: 87vh;
   --image-max-width: 300px;
@@ -132,7 +132,7 @@ body {
 }
 
 .wrappercont {
-  background-color: #EC154F;
+  background-color: #65a765;
   color: #444;
   padding: 10px;
   border-radius: 10px;
@@ -144,7 +144,7 @@ body {
   grid-template-columns: 180px 180px 180px;
   grid-template-rows: auto 1fr;
   grid-gap: 10px;
-  background-color: #FECB00;
+  background-color: #90ee90;
   color: #EC154F;
   padding: 10px;
   border-radius: 10px;
@@ -218,7 +218,7 @@ input {
 
 /* Subheading */
 h2 {
-  color: var(--color-text-header);
+  color: #eec890;
 }
 
 /* Interactive image */
