@@ -136,9 +136,8 @@ body {
 }
 
 .wrappercont {
-  background-color: #FECB00;
+  background-color: rgba(139, 0, 214, 0.5);
   color: #444;
-  padding: 10px;
   border-radius: 10px;
   text-align: center; /* Center text within the container */
 }
@@ -148,7 +147,7 @@ body {
   grid-template-columns: 180px 180px 180px;
   grid-template-rows: auto 1fr;
   grid-gap: 10px;
-  background-color: #FECB00;
+  background-color: rgba(139, 0, 214, 0.5);
   color: #444;
   padding: 10px;
   border-radius: 10px;
@@ -166,7 +165,6 @@ body {
   border-radius: 10px;
   padding: 10px;
   font-size: 150%;
-
   border: 2px solid #69F7BE; /* Add a border */
   cursor: pointer; /* Change cursor to pointer on hover */
   transition: background-color 0.3s, border-color 0.3s; /* Smooth transition */
@@ -246,7 +244,7 @@ input {
 
 /* Subheading */
 h2 {
-  color: var(--color-text-header);
+  color: #e3e3e3;
 }
 
 /* Interactive image */
