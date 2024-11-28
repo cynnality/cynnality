@@ -35,7 +35,7 @@ cards.forEach(card => {
     document.querySelector('.popup-title').textContent = title;
     document.querySelector('.popup-description').textContent = description;
     document.querySelector('.popup-link').href = link;
-    document.querySelector('.popup-link').textContent = "Learn More";
+    document.querySelector('.popup-link').textContent = "source";
     document.querySelector('.popup-tags').textContent = tags;
     document.querySelector('.popup-image').style.backgroundImage = image;
 
