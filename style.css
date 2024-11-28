@@ -139,7 +139,8 @@ body {
   grid-gap: 10px;
   background-color: #FECB00;
   color: #444;
-  padding: 20px;
+  padding: 10px;
+  border-radius: 10px;
 }
 
 .block {
