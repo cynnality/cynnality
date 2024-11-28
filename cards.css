@@ -20,7 +20,7 @@ to this section's matching END comment to see page-specific styles.
   --color-text-main: #000000;
   --color-text-header: #65a765;
   --color-primary: #FFFF00;
-  --wrapper-height: 87vh;
+  
   --image-max-width: 300px;
   --image-margin: 3rem;
   --font-family: "HK Grotesk";
@@ -98,13 +98,14 @@ body {
   display: grid;
   place-items: center;
   margin: 0 1rem;
-  padding:
+  padding: 20px;
 }
 .content {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  padding: 20px;
 }
 
 .wrappercont {

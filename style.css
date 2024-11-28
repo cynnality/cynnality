@@ -126,13 +126,14 @@ body {
   display: grid;
   place-items: center;
   margin: 0 1rem;
-  padding:
+  padding: 20px;
 }
 .content {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  padding: 20px;
 }
 
 .wrappercont {
@@ -151,6 +152,7 @@ body {
   color: #444;
   padding: 10px;
   border-radius: 10px;
+  justify-content: center;
   
 }
 
