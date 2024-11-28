@@ -18,6 +18,38 @@ if (btn) { // Detect clicks on the button
   };
 }
 
+// Select all cards
+const cards = document.querySelectorAll('.card');
+
+// Add a click event listener to each card
+cards.forEach(card => {
+  card.addEventListener('click', function() {
+    // Extract data from the card element
+    const title = card.getAttribute('data-title');
+    const description = card.getAttribute('data-description');
+    const link = card.getAttribute('data-link');
+    const tags = card.getAttribute('data-tags');
+    const image = card.querySelector('.card-image').style.backgroundImage;
+
+    // Set content in the popup
+    document.querySelector('.popup-title').textContent = title;
+    document.querySelector('.popup-description').textContent = description;
+    document.querySelector('.popup-link').href = link;
+    document.querySelector('.popup-link').textContent = "Learn More";
+    document.querySelector('.popup-tags').textContent = tags;
+    document.querySelector('.popup-image').style.backgroundImage = image;
+
+    // Show the popup
+    document.querySelector('.popup-container').classList.add('show');
+  });
+});
+
+// Hide the popup when the close button is clicked
+document.querySelector('.popup-close').addEventListener('click', function() {
+  document.querySelector('.popup-container').classList.remove('show');
+});
+
+
 
 // ----- GLITCH STARTER PROJECT HELPER CODE -----
 
