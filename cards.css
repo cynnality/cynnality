@@ -144,6 +144,8 @@ body {
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
 }
 
+
+
 /* Center the heading */
 .directoryheader {
   grid-row: 1; /* Place it in the first row of the grid */
