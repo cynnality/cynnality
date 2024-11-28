@@ -16,7 +16,11 @@ to this section's matching END comment to see page-specific styles.
 
 /* Our default values set as CSS variables */
 :root {
-  --color-bg: #69F7BE;
+  background-image: url('https://cdn.glitch.global/f2fb7d0f-1059-40bd-8a52-8cb00efc9022/backgroundforcardssite.webp?v=1732822606704');
+  background-size: cover;           /* Makes sure the image covers the entire background */
+  background-position: center;      /* Centers the image */
+  background-repeat: no-repeat;     /* Prevents the image from repeating */
+  background-attachment: fixed;     /* Makes the background image fixed when scrolling */
   --color-text-main: #000000;
   --color-text-header: #2800FF;
   --color-primary: #FFFF00;
