@@ -16,7 +16,7 @@ to this section's matching END comment to see page-specific styles.
 
 /* Our default values set as CSS variables */
 :root {
-  --color-bg: #C1A5D8;
+  --color-bg: #AA7DB1;
   --color-text-main: #000000;
   --color-text-header: #2800FF;
   --color-primary: #FFFF00;
@@ -132,7 +132,7 @@ body {
 }
 
 .wrappercont {
-  background-color: #FECB00;
+  background-color: #EC154F;
   color: #444;
   padding: 10px;
   border-radius: 10px;
