@@ -21,7 +21,7 @@ to this section's matching END comment to see page-specific styles.
   background-position: center;      /* Centers the image */
   background-repeat: no-repeat;     /* Prevents the image from repeating */
   background-attachment: fixed;     /* Makes the background image fixed when scrolling */
-  --color-text-main: #000000;
+  --color-text-main: #e3e3e3;
   --color-text-header: #2800FF;
   --color-primary: #FFFF00;
   --wrapper-height: 87vh;
@@ -89,13 +89,14 @@ to this section's matching END comment to see page-specific styles.
   border-top: 4px solid #fff;
 }
 
+/* LINKS a (change this to change color text for text inside the links*/
 .footer a:not(.btn--remix):link,
 a:not(.btn--remix):visited {
   font-family: HK Grotesk;
   font-style: normal;
   font-weight: normal;
   font-size: 1.1rem;
-  color: #000;
+  color: #e3e3e3;
   text-decoration: none;
   border-style: none;
 }
@@ -161,14 +162,14 @@ body {
 }
 
 .block {
-  background-color: #530080;
+  background-color: #811870;
   color: #69F7BE;
   border-radius: 10px;
   padding: 10px;
   font-size: 150%;
-  border: 2px solid #69F7BE; /* Add a border */
+  border: 2px solid #e3e3e3; /* Add a border */
   cursor: pointer; /* Change cursor to pointer on hover */
-  transition: background-color 0.3s, border-color 0.3s; /* Smooth transition */
+  transition: background-color 0.5s, border-color 0.5s; /* Smooth transition */
 }
 
 .block:hover {
