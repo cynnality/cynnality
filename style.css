@@ -131,24 +131,19 @@ body {
   justify-content: center;
 }
 
-.smiley {
-  display: grid;
-  place-items: center;
-  align-items: center;
-  justify-content: center;
-}
+
 
 .wrappercont {
   display: grid;
   grid-template-columns: 180px 180px 180px;
   grid-gap: 10px;
-  background-color: #2800FF;
+  background-color: #FECB00;
   color: #444;
   padding: 20px;
 }
 
 .block {
-  background-color: #444;
+  background-color: #FCACC7;
   color: #69F7BE;
   border-radius: 10px;
   padding: 20px;
@@ -157,10 +152,12 @@ body {
 
 .notes {
   font-size: 80%;
+  color: #647EBB;
 }
 
 .tags {
   font-size: 50%;
+  color: #647EBB;
 }
 
 /* Very light scaling for our illustration */
