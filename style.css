@@ -184,6 +184,9 @@ body {
   color: #647EBB;
 }
 
+a {
+  text-decoration: none;
+}
 
 
 /* Very light scaling for our illustration */
