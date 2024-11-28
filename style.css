@@ -131,6 +131,13 @@ body {
   justify-content: center;
 }
 
+.smiley {
+  display: grid;
+  place-items: center;
+  align-items: center;
+  justify-content: center;
+}
+
 .wrappercont {
   display: grid;
   grid-template-columns: 180px 180px 180px;
