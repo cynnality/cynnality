@@ -148,15 +148,12 @@ body {
   color: #444;
   padding: 10px;
   border-radius: 10px;
-  text-align: center; /* Center text within the container */
   
 }
 
 /* Center the heading */
 .directoryheader {
   grid-row: 1; /* Place it in the first row of the grid */
-  justify-self: center; /* Horizontally center within the grid container */
-  align-self: center; /* Vertically center (if needed for spacing) */
 }
 
 .block {
@@ -165,8 +162,7 @@ body {
   border-radius: 10px;
   padding: 10px;
   font-size: 150%;
-  text-align: center; /* Center text within the container */
-  text-align: center; /* Center the text */
+
   border: 2px solid #69F7BE; /* Add a border */
   cursor: pointer; /* Change cursor to pointer on hover */
   transition: background-color 0.3s, border-color 0.3s; /* Smooth transition */
