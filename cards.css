@@ -136,13 +136,26 @@ body {
   border-radius: 20px;
   overflow: hidden;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-  transition: transform 0.2s;
+  transition: transform 0.5s;
   cursor: pointer;
 }
 
 .card:hover {
   transform: translateY(-5px);
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.card-image {
+  height: 150px;
+  background-size: cover;
+  background-position: center;
+}
+
+.card-title {
+  background: rgba(255, 255, 255, 0.8);
+  text-align: center;
+  padding: 10px;
+  font-weight: bold;
 }
 
 
