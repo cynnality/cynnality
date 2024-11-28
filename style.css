@@ -216,6 +216,18 @@ input {
   transition: 500ms;
 }
 
+.pagelinkbutton {
+ 
+  font-family: inherit;
+  font-size: 100%;
+  background: #2800FF;
+  border: 1px solid #000000;
+  box-sizing: border-box;
+  border-radius: 4px;
+  padding: 0.5rem 1rem;
+  transition: 500ms;
+}
+
 /* Subheading */
 h2 {
   color: var(--color-text-header);
