@@ -136,11 +136,21 @@ body {
 .wrappercont {
   display: grid;
   grid-template-columns: 180px 180px 180px;
+  grid-template-rows: auto 1fr;
   grid-gap: 10px;
   background-color: #FECB00;
   color: #444;
   padding: 10px;
   border-radius: 10px;
+  text-align: center; /* Center text within the container */
+  
+}
+
+/* Center the heading */
+.directoryheader {
+  grid-row: 1; /* Place it in the first row of the grid */
+  justify-self: center; /* Horizontally center within the grid container */
+  align-self: center; /* Vertically center (if needed for spacing) */
 }
 
 .block {
@@ -149,6 +159,7 @@ body {
   border-radius: 10px;
   padding: 20px;
   font-size: 150%;
+  text-align: center; /* Center text within the container */
 }
 
 .notes {
@@ -160,6 +171,8 @@ body {
   font-size: 50%;
   color: #647EBB;
 }
+
+
 
 /* Very light scaling for our illustration */
 .title {
