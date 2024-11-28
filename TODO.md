@@ -17,3 +17,12 @@ Open `script.js` to see the script that makes the button move.
 ## Keep going! 🚀
 
 Try adding more properties to the CSS `dipped` style for the button to see how the changes appear on click.
+
+
+.html for the smiley svg
+          <img
+            src="https://stickers.be/wp-content/uploads/2017/01/smiley-sticker-2-blij-FC.svg"
+            class="illustration"
+            alt="Editor illustration"
+            title="Click the image!"
+          />
