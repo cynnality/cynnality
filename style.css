@@ -139,15 +139,16 @@ body {
   background-color: rgba(139, 0, 214, 0.5);
   color: #444;
   border-radius: 10px;
+  border: 2px solid #e3e3e3; /* Add a border */
   text-align: center; /* Center text within the container */
+  padding: 5px;
 }
 
 .pagelinks {
   display: grid;
   grid-template-columns: 180px 180px 180px;
-  grid-template-rows: auto 1fr;
   grid-gap: 10px;
-  background-color: rgba(139, 0, 214, 0.5);
+  background-color: rgba(139, 0, 214, 0.30);
   color: #444;
   padding: 10px;
   border-radius: 10px;
@@ -160,7 +161,7 @@ body {
 }
 
 .block {
-  background-color: #FCACC7;
+  background-color: #530080;
   color: #69F7BE;
   border-radius: 10px;
   padding: 10px;
@@ -210,8 +211,9 @@ a {
 }
 
 /* Instructions */
-.instructions {
+.intent {
   margin: 1rem auto 0;
+  color: #e3e3e3;
 }
 
 /* Button - Add it from the README instructions */
