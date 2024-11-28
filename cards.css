@@ -187,10 +187,11 @@ body {
 }
 
 /* Very light scaling for our illustration */
-.illustration {
+.intent {
   max-width: 100%;
   max-height: var(--image-max-width);
   margin-top: var(--image-margin);
+  padding: ;
 }
 
 /* Instructions */
