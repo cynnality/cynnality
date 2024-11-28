@@ -22,9 +22,8 @@ to this section's matching END comment to see page-specific styles.
   background-repeat: no-repeat;     /* Prevents the image from repeating */
   background-attachment: fixed;     /* Makes the background image fixed when scrolling */
   --color-text-main: #e3e3e3;
-  --color-text-header: #2800FF;
+  --color-text-header: #f9c56c;
   --color-primary: #FFFF00;
-  --wrapper-height: 87vh;
   --image-max-width: 300px;
   --image-margin: 3rem;
   --font-family: "HK Grotesk";
@@ -149,7 +148,6 @@ body {
   display: grid;
   grid-template-columns: 180px 180px 180px;
   grid-gap: 10px;
-  background-color: rgba(139, 0, 214, 0.30);
   color: #444;
   padding: 10px;
   border-radius: 10px;
@@ -162,7 +160,7 @@ body {
 }
 
 .block {
-  background-color: #811870;
+  background-color: rgba(129, 24, 112, 0.70);
   color: #69F7BE;
   border-radius: 10px;
   padding: 10px;
@@ -173,9 +171,9 @@ body {
 }
 
 .block:hover {
-  background-color: #69F7BE; /* Change background color on hover */
-  color: #444; /* Change text color on hover */
-  border-color: #444; /* Change border color on hover */
+  background-color: rgba(219, 61, 193, .90); /* Change background color on hover */
+  color: #f9c56c; /* Change text color on hover */
+  border-color: #811870; /* Change border color on hover */
 }
 
 .notes {
