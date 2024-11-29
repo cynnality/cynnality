@@ -201,14 +201,14 @@ h2.cardsheader {
 }
 
 .popup {
-  background: #fff;
+  background: #0ef1ed;
   border-radius: 10px;
   min-height: 50vh; /* Ensures the popup is at least 50% of the viewport height */
   max-width: 75vw; /* Set maximum width to 75% of the viewport width */
   max-height: 75vh; /* Set maximum height to 75% of the viewport height */
   width: 90%; /* Use 90% width for smaller screens if needed */
-  height: auto;
-  padding: 20px;
+  height: 70vh;
+  padding: 5px;
   position: relative;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
   overflow: hidden; /* Hide any overflowing content */
@@ -220,9 +220,9 @@ h2.cardsheader {
 
 
 .popup-image {
-  width: auto; /* Allow the image to take 50% of the popup width */
+  width: 30%; /* Allow the image to take 50% of the popup width */
   max-width: 50vw; /* Maximum size to ensure responsiveness */
-  height: 300px; /* Maintain aspect ratio */
+  height: 500px; /* Maintain aspect ratio */
   background-size: contain; /* Ensure the entire image is visible without cropping */
   background-position: center;
   background-repeat: no-repeat;
@@ -240,7 +240,11 @@ h2.cardsheader {
 }
 
 .popup-content {
-  margin-top: 20px;
+  background-color: #db8aae;
+  width: 50%;
+  padding: 5px; /* Add padding to give content more breathing room */
+  height: auto; /* Make sure content can expand naturally */
+  overflow: auto; /* Allow scroll if content overflows */
 }
 
 .popup-link {
