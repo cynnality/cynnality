@@ -212,7 +212,7 @@ h2.cardsheader {
 
 .popup-image {
   width: 100%;
-  height: 200px;  /* Adjust as needed */
+  height: 500px;  /* Adjust as needed */
   background-size: cover;
   background-position: center;
   border-radius: 10px;  /* Optional, for styling */
