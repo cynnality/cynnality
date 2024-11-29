@@ -18,13 +18,13 @@ to this section's matching END comment to see page-specific styles.
 :root {
   --color-bg: #f6e63c;
   --color-text-main: #000000;
-  --color-text-header: #65a765;
+  --color-text-header: #3038cf;
   --color-primary: #FFFF00;
   
   --image-max-width: 300px;
   --image-margin: 3rem;
-  --font-family: "HK Grotesk";
-  --font-family-header: "HK Grotesk";
+  --font-family: "Subjectivity";
+  --font-family-header: "Subjectivity";
 }
 
 /* Basic page style resets */
@@ -46,6 +46,20 @@ to this section's matching END comment to see page-specific styles.
   font-weight: bold;
   src: url("https://cdn.glitch.me/605e2a51-d45f-4d87-a285-9410ad350515%2FHKGrotesk-Bold.otf?v=1603136323437")
     format("opentype");
+}
+
+@font-face {
+    font-family: 'Subjectivity';
+    src: url('https://cdn.glitch.global/f2fb7d0f-1059-40bd-8a52-8cb00efc9022/Subjectivity-BoldSlanted.otf?v=1732843119922') format('opentype');
+    font-weight: bold;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'SubjectivityMed';
+    src: url('https://cdn.glitch.global/f2fb7d0f-1059-40bd-8a52-8cb00efc9022/Subjectivity-MediumSlanted.otf?v=1732844680588') format('opentype');
+    font-weight: medium;
+    font-style: italic;
 }
 
 
@@ -88,8 +102,12 @@ END Glitch hello-app default styles
 ******************************************************************************/
 
 body {
-  font-family: HK Grotesk;
+  font-family: 'Subjectivity';
   background-color: var(--color-bg);
+}
+
+h1.title {
+  font-family: 'Subjectivity';
 }
 
 /* Page structure */
@@ -110,17 +128,21 @@ body {
 
 .wrappercont {
   background-color: #3038cf;
-  color: ;
+  color:#f6e63c;
   padding: 10px;
   border-radius: 10px;
   text-align: center; /* Center text within the container */
+}
+
+h2.cardsheader {
+  color: #f6e63c
 }
 
 .cardgrid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
   grid-gap: 20px;
-  background-color: #0ef1ed;
+  background-color:;
   color: #EC154F;
   justify-content: center;
   padding: 10px;
