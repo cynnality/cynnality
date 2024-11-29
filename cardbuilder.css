@@ -111,15 +111,15 @@ h1.title {
 }
 
 .card-creator {
-  margin: 20px;
-  padding: 20px;
+  margin: ;
+  padding: ;
   border: 1px solid #ccc;
   border-radius: 10px;
 }
 
 #cardForm label {
   display: block;
-  margin: 10px 0 5px;
+  margin:  ;
 }
 
 #cardForm input, #cardForm textarea {
@@ -144,7 +144,8 @@ h1.title {
 }
 
 #generatedHTML {
-  background-color: #f8f8f8;
+  background-color: #3038cf;
+  color: #f6e63c;
   padding: 10px;
   border-radius: 5px;
   white-space: pre-wrap;
