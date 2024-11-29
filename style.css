@@ -19,7 +19,7 @@ to this section's matching END comment to see page-specific styles.
   background-color: #3038cf;
   --color-text-main: #e3e3e3;
   --color-text-header: #f6e63c;
-  --color-primary: #FFFF00;
+  --color-primary: ;
   --image-max-width: 300px;
   --image-margin: 3rem;
   --font-family: "HK Grotesk";
@@ -82,7 +82,7 @@ a:not(.btn--remix):visited {
   font-style: normal;
   font-weight: normal;
   font-size: 1.1rem;
-  color: #e3e3e3;
+  color: ;
   text-decoration: none;
   border-style: none;
 }
@@ -163,19 +163,19 @@ h1.title {
 
 .block {
   background-color: #3038cf;
-  color: #69F7BE;
+  color: #ffffff;
   border-radius: 10px;
   padding: 10px;
   font-size: 150%;
-  border: 2px solid #e3e3e3; /* Add a border */
+  border: 2px solid #ffffff; /* Add a border */
   cursor: pointer; /* Change cursor to pointer on hover */
   transition: background-color 0.5s, border-color 0.5s; /* Smooth transition */
 }
 
 .block:hover {
-  background-color: rgba(219, 61, 193, .90); /* Change background color on hover */
-  color: #f9c56c; /* Change text color on hover */
-  border-color: #811870; /* Change border color on hover */
+  background-color: #ffffff; /* Change background color on hover */
+  color: #000000; /* Change text color on hover */
+  border-color: #3038cf; /* Change border color on hover */
 }
 
 .notes {
