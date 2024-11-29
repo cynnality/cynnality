@@ -250,7 +250,7 @@ h2.cardsheader {
   display: flex;
   flex-direction: column; /* Stack elements vertically */
   justify-content: space-between; /* Place tags at the bottom */
-  height: ; /* Ensure it takes full height of the popup */
+  height: 100%; /* Ensure it takes full height of the popup */
 
 }
 
@@ -259,10 +259,10 @@ h2.popup-title {
   font-size: 32px;
 }
 
+
 .popup-tags {
-  align-self: flex-end; /* Or center, or flex-end, depending on preference */
-  margin-bottom: 5px; /* Fixed distance from the bottom */
-  padding: 5px;
+  margin-top: auto; /* Push the element down if using flex-direction: column */
+  margin-bottom: 20px; /* Set a fixed distance from the bottom */
   font-size: 14px;
 }
 
