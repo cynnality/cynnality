@@ -130,7 +130,7 @@ h1.title {
 }
 
 .wrappercont {
-  background-color:#ee1132;
+  background-color: #f5e324;
   border-radius: 10px;
   max-width: 50vw;
   width: 100%;
@@ -145,13 +145,13 @@ h1.title {
 
 .pagelinks {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  grid-template-columns: repeat (3, 1fr);
   grid-gap: 10px;
   padding: 10px;
   border-radius: 10px;
   justify-content: center;
   align-content: center;
-  background-color: #f5e324;
+  background-color: ;
   
 }
 
@@ -162,7 +162,7 @@ h1.title {
 }
 
 .block {
-  background-color: rgba(129, 24, 112, 0.70);
+  background-color: #3038cf;
   color: #69F7BE;
   border-radius: 10px;
   padding: 10px;
