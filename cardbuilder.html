@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="icon" href="https://glitch.com/favicon.ico" />
     <title>im cards</title>
-    <link rel="stylesheet" href="/cards.css" />
+    <link rel="stylesheet" href="/cardbuilder.css" />
     <script src="/script.js" defer></script>
   </head>
   
@@ -14,63 +14,36 @@
    
     <div class="wrappertop">
       <div class="content" role="main">
-        <h1 class="title">im cards</h1>
+        <h1 class="title">card builder</h1>
       </div>
     </div>
-         
-      
-      
-         <div class="wrappercont">
-          <h2 class="cardsheader">if i controlled the world, i'd consult these cards for inspiration</h2>
-        
-        <div class="cardgrid">
-  <!-- Individual Card Elements -->
-  <div class="card" 
-       id="card1" 
-       data-title="ambiguity" 
-       data-description="things are way too hard." 
-       data-link="https://d2w9rnfcy7mm78.cloudfront.net/5097164/original_b2258dbe825c6702eb5e66bbf19c41c6.jpg?1569391693?bc=0" 
-       data-tags="starting, trying">
-    <div class="card-image" style="background-image: url('https://cdn.glitch.global/f2fb7d0f-1059-40bd-8a52-8cb00efc9022/dithered-image.png?v=1732856231021');"></div>
-    <div class="card-title">testing</div>
-  </div>
-          
-  <div class="card" 
-       id="card2" 
-       data-title="test" 
-       data-description="this is just a test, please dont be alarmed" 
-       data-link="https://cdn.glitch.global/f2fb7d0f-1059-40bd-8a52-8cb00efc9022/testcardimage.webp?v=1732829594443" 
-       data-tags="starting, trying">
-    <div class="card-image" style="background-image: url('https://cdn.glitch.global/f2fb7d0f-1059-40bd-8a52-8cb00efc9022/testcardimage.webp?v=1732829594443');"></div>
-    <div class="card-title">testing</div>
-  </div>
-          
-    <div class="card" 
-       id="card3" 
-       data-title="test" 
-       data-description="this is just a test, please dont be alarmed" 
-       data-link="https://cdn.glitch.global/f2fb7d0f-1059-40bd-8a52-8cb00efc9022/testcardimage.webp?v=1732829594443" 
-       data-tags="starting, trying">
-    <div class="card-image" style="background-image: url('https://cdn.glitch.global/f2fb7d0f-1059-40bd-8a52-8cb00efc9022/testcardimage.webp?v=1732829594443');"></div>
-    <div class="card-title">testing</div>
-  </div>    
+         <div class="card-creator">
+  <h2>Create a New Card</h2>
+  <form id="cardForm">
+    <label for="imageLink">Image URL:</label>
+    <input type="text" id="imageLink" name="imageLink" required><br><br>
 
-          <div class="popup-container">
-  <div class="popup">
-    <div class="popup-close">X</div>
-    <div class="popup-image"></div>
-    <div class="popup-content">
-      <h2 class="popup-title">Card Title</h2>
-      <p class="popup-description">Description goes here...</p>
-      <a href="#" class="popup-link" target="_blank">Learn More</a>
-      <p class="popup-tags">Tags: design, art, creative</p>
-    </div>
-  </div>
+    <label for="cardTitle">Card Title:</label>
+    <input type="text" id="cardTitle" name="cardTitle" required><br><br>
+
+    <label for="cardDescription">Description:</label>
+    <textarea id="cardDescription" name="cardDescription" required></textarea><br><br>
+
+    <label for="sourceLink">Source Link:</label>
+    <input type="text" id="sourceLink" name="sourceLink" required><br><br>
+
+    <label for="cardTags">Tags (comma separated):</label>
+    <input type="text" id="cardTags" name="cardTags" required><br><br>
+
+    <button type="button" id="generateCard">Generate HTML Code</button>
+  </form>
+
+  <h3>Generated HTML:</h3>
+  <pre id="generatedHTML"></pre>
 </div>
-          
-  <!-- Add more cards here -->
-</div>
-  </div>
+      
+      
+         
 
         <div class="intent">         
             <a href="index.html" class="button-link">
