@@ -142,7 +142,7 @@ h2.cardsheader {
 .cardgrid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-  grid-template-rows: repeat(auto-fill, minmax(400px, 1fr));
+  grid-template-rows: repeat(auto-fill, minmax(300px, 1fr));
   grid-gap: 20px;
   background-color:;
   color: #EC154F;
@@ -155,7 +155,7 @@ h2.cardsheader {
 
 
 .card {
-  background-color: #fffff;
+  background-color: #ffffff;
   border: 1px solid #ddd;
   border-radius: 20px;
   overflow: hidden;
@@ -180,6 +180,8 @@ h2.cardsheader {
   text-align: center;
   padding: 10px;
   font-weight: bold;
+  font-size: 32px
+  height: 25px;
 }
 
 .popup-container {
