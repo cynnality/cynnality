@@ -30,6 +30,8 @@ cards.forEach(card => {
     const link = card.getAttribute('data-link');
     const tags = card.getAttribute('data-tags');
     const image = card.querySelector('.card-image').style.backgroundImage;
+    const tagsString = card.getAttribute('data-tags');
+    const tagsArray = tagsString.split(',').map(tag => tag.trim());
 
     // Set content in the popup
     document.querySelector('.popup-title').textContent = title;
@@ -56,7 +58,7 @@ document.getElementById('generateCard').addEventListener('click', function() {
   const cardDescription = document.getElementById('cardDescription').value;
   const sourceLink = document.getElementById('sourceLink').value;
   const cardTags = document.getElementById('cardTags').value;
-
+  
   // Create the HTML string for the card
   const generatedHTML = `
     <div class="card" 
@@ -72,6 +74,7 @@ document.getElementById('generateCard').addEventListener('click', function() {
   // Display the generated HTML in the <pre> tag for easy copying
   document.getElementById('generatedHTML').textContent = generatedHTML;
 });
+
 
 
 
