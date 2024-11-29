@@ -47,13 +47,12 @@ to this section's matching END comment to see page-specific styles.
     format("opentype");
 }
 
-}
+
 @font-face {
-  font-family:'Subjectivity';
-  font-weight: bold;
-  font-style: italic;
-  src: url("https://cdn.glitch.global/f2fb7d0f-1059-40bd-8a52-8cb00efc9022/Subjectivity-BoldSlanted.otf?v=1732843119922")
-    format("opentype");
+    font-family: 'Subjectivity';
+    src: url('https://cdn.glitch.global/f2fb7d0f-1059-40bd-8a52-8cb00efc9022/Subjectivity-BoldSlanted.otf?v=1732843119922') format('opentype');
+    font-weight: bold;
+    font-style: italic;
 }
 
 
@@ -125,6 +124,10 @@ END Glitch hello-app default styles
 body {
   font-family: HK Grotesk;
   background-color: var(--color-bg);
+}
+
+.title {
+  font-family: Subjectivity;
 }
 
 
