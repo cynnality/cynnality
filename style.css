@@ -47,11 +47,6 @@ to this section's matching END comment to see page-specific styles.
     format("opentype");
 }
 
-@font-face {
-  font-family: 'Elevatia'; /* Name your font family */
-  src: url('https://cdn.glitch.global/f2fb7d0f-1059-40bd-8a52-8cb00efc9022/Elevatia.ttf?v=1732840658129'); /* Locate the .ttf file within your directory*/
-}
-
 /* Our remix on glitch button */
 .btn--remix {
   font-family: HK Grotesk;
@@ -117,7 +112,8 @@ END Glitch hello-app default styles
 ******************************************************************************/
 
 body {
-  font-family: 'Elevatia', sans-serif; /* Use the font family */
+  font-family: HK Grotesk;
+  background-color: var(--color-bg);
 }
 
 /* Page structure */
