@@ -34,3 +34,10 @@ Try adding more properties to the CSS `dipped` style for the button to see how t
   background-attachment: fixed;     /* Makes the background image fixed when scrolling */'
   
   ^ use to add the background back to front page if needed :)
+  
+ 
+ 
+ <span class="fileopener" data-file="TODO.md" data-line="0"
+              >TODO</span> for next steps!
+              
+              ^ this gives the todo underlined thing to link to the todo.md
