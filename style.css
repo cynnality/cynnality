@@ -16,11 +16,7 @@ to this section's matching END comment to see page-specific styles.
 
 /* Our default values set as CSS variables */
 :root {
-  background-image: url('https://cdn.glitch.global/f2fb7d0f-1059-40bd-8a52-8cb00efc9022/backgroundforcardssite.webp?v=1732822606704');
-  background-size: cover;           /* Makes sure the image covers the entire background */
-  background-position: center;      /* Centers the image */
-  background-repeat: no-repeat;     /* Prevents the image from repeating */
-  background-attachment: fixed;     /* Makes the background image fixed when scrolling */
+  background-color: #3038cf;
   --color-text-main: #e3e3e3;
   --color-text-header: #f9c56c;
   --color-primary: #FFFF00;
@@ -137,8 +133,7 @@ body {
 }
 
 .wrappercont {
-  background-color: rgba(139, 0, 214, 0.5);
-  color: #444;
+  background-color: rgba(246, 230, 60, 0.5);
   border-radius: 10px;
   border: 2px solid #e3e3e3; /* Add a border */
   text-align: center; /* Center text within the container */
@@ -149,7 +144,6 @@ body {
   display: grid;
   grid-template-columns: 180px 180px 180px;
   grid-gap: 10px;
-  color: #444;
   padding: 10px;
   border-radius: 10px;
   justify-content: center;
@@ -159,6 +153,7 @@ body {
 /* Center the heading */
 .directoryheader {
   font-size: 60px
+  color: #000000;
 }
 
 .block {
