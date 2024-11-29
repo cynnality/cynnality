@@ -130,7 +130,7 @@ h1.title {
 }
 
 .wrappercont {
-  background-color: rgba(255, 255, 255, 0.3);
+  background-color:;
   border-radius: 10px;
   border: 2px solid #e3e3e3; /* Add a border */
   text-align: center; /* Center text within the container */
@@ -149,7 +149,7 @@ h1.title {
 
 /* Center the heading */
 .directoryheader {
-  font-size: 60px
+  font-size: 60px;
   color: #000000;
 }
 
