@@ -111,10 +111,12 @@ h1.title {
 }
 
 .card-creator {
+  max-height: 80vh;
   margin: ;
   padding: ;
   border: 1px solid #ccc;
   border-radius: 10px;
+  overflow-y: auto;  /* Makes sure you can scroll if there's a lot of content */
 }
 
 #cardForm label {
@@ -149,6 +151,11 @@ h1.title {
   padding: 10px;
   border-radius: 5px;
   white-space: pre-wrap;
+  margin-top: 20px;
+  padding: 15px;
+  background: #f0f0f0;
+  overflow-wrap: break-word;
+  max-width: 100%;
 }
 
 
