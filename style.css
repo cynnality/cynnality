@@ -18,7 +18,7 @@ to this section's matching END comment to see page-specific styles.
 :root {
   background-color: #3038cf;
   --color-text-main: #e3e3e3;
-  --color-text-header: #f9c56c;
+  --color-text-header: #f6e63c;
   --color-primary: #FFFF00;
   --image-max-width: 300px;
   --image-margin: 3rem;

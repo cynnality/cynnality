@@ -16,7 +16,7 @@ to this section's matching END comment to see page-specific styles.
 
 /* Our default values set as CSS variables */
 :root {
-  --color-bg: #cf90ee;
+  --color-bg: #f6e63c;
   --color-text-main: #000000;
   --color-text-header: #65a765;
   --color-primary: #FFFF00;
@@ -109,8 +109,8 @@ body {
 }
 
 .wrappercont {
-  background-color: #65a765;
-  color: #444;
+  background-color: #3038cf;
+  color: ;
   padding: 10px;
   border-radius: 10px;
   text-align: center; /* Center text within the container */
@@ -120,7 +120,7 @@ body {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
   grid-gap: 20px;
-  background-color: #90ee90;
+  background-color: #0ef1ed;
   color: #EC154F;
   justify-content: center;
   padding: 10px;
