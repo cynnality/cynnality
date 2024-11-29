@@ -26,3 +26,11 @@ Try adding more properties to the CSS `dipped` style for the button to see how t
             alt="Editor illustration"
             title="Click the image!"
           />
+
+'  background-image: url('https://cdn.glitch.global/f2fb7d0f-1059-40bd-8a52-8cb00efc9022/backgroundforcardssite.webp?v=1732822606704');
+  background-size: cover;           /* Makes sure the image covers the entire background */
+  background-position: center;      /* Centers the image */
+  background-repeat: no-repeat;     /* Prevents the image from repeating */
+  background-attachment: fixed;     /* Makes the background image fixed when scrolling */'
+  
+  ^ use to add the background back to front page if needed :)
