@@ -127,8 +127,8 @@ h1.title {
 }
 
 .wrappercont {
-  background-color: #3038cf;
-  color:#f6e63c;
+  background-color:;
+  color:;
   padding: 10px;
   border-radius: 10px;
   text-align: center; /* Center text within the container */
@@ -202,12 +202,12 @@ h2.cardsheader {
 }
 
 .popup {
-  background: #42bd7b;
+  background: #ffffff;
   border-radius: 10px;
   min-height: 50vh; /* Ensures the popup is at least 50% of the viewport height */
-  max-width: 75vw; /* Set maximum width to 75% of the viewport width */
+  max-width: 90vw; /* Set maximum width to 75% of the viewport width */
   max-height: 75vh; /* Set maximum height to 75% of the viewport height */
-  width: 50vw; /* Use 90% width for smaller screens if needed */
+  width: 75vw; /* Use 90% width for smaller screens if needed */
   height: 70vh;
   padding: 15px;
   position: relative;
@@ -222,7 +222,7 @@ h2.cardsheader {
 
 .popup-image {
   background-color: ;
-  width: 50%; /* Allow the image to take 50% of the popup width */
+  width: 75%; /* Allow the image to take 50% of the popup width */
   max-width: 75vw; /* Maximum size to ensure responsiveness */
   height: 500px; /* Maintain aspect ratio */
   background-size: contain; /* Ensure the entire image is visible without cropping */
@@ -239,11 +239,12 @@ h2.cardsheader {
   right: 10px;
   cursor: pointer;
   font-size: 20px;
+  color: #3038cf
 }
 
 .popup-content {
   color: #000000;
-  background-color:;
+  background-color: #0ef1ed;
   width: 50%;
   padding: 5px; /* Add padding to give content more breathing room */
   height: auto; /* Make sure content can expand naturally */
@@ -264,7 +265,7 @@ h2.popup-title {
 .popup-tags {
   margin-top: auto; /* Push the element down if using flex-direction: column */
   margin-bottom: 20px; /* Set a fixed distance from the bottom */
-  font-size: 14px;
+  font-size: 12px;
 }
 
 .popup-link {
