@@ -156,7 +156,7 @@ h2.cardsheader {
 
 .card {
   background-color: #ffffff;
-  border: 1px solid #ddd;
+  border: 1px solid #f5e324;
   border-radius: 20px;
   overflow: hidden;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
@@ -170,18 +170,18 @@ h2.cardsheader {
 }
 
 .card-image {
-  height: 150px;
+  height: 80%;
   background-size: cover;
   background-position: center;
 }
 
 .card-title {
-  background: rgba(255, 255, 255, 0.8);
+  background: ;
+  color: #3038cf;
   text-align: center;
   padding: 10px;
   font-weight: bold;
   font-size: 32px
-  height: 25px;
 }
 
 .popup-container {
@@ -273,11 +273,11 @@ h2.popup-title {
 
 .popup-link {
   color: #007bff;
-  text-decoration: none;
+  text-decoration: underline;
 }
 
 .popup-link:hover {
-  text-decoration: underline;
+  text-decoration: none;
 }
 
 
