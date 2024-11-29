@@ -142,6 +142,7 @@ h2.cardsheader {
 .cardgrid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  grid-template-rows: repeat(auto-fill, minmax(400px, 1fr));
   grid-gap: 20px;
   background-color:;
   color: #EC154F;
@@ -205,9 +206,9 @@ h2.cardsheader {
   background: #ffffff;
   border-radius: 10px;
   min-height: 50vh; /* Ensures the popup is at least 50% of the viewport height */
-  max-width: 70vw; /* Set maximum width to 75% of the viewport width */
+  max-width: 90vw; /* Set maximum width to 75% of the viewport width */
   max-height: 75vh; /* Set maximum height to 75% of the viewport height */
-  width: 75vw; /* Use 90% width for smaller screens if needed */
+  width: 60vw; /* Use 90% width for smaller screens if needed */
   height: 70vh;
   padding: 15px;
   position: relative;
@@ -258,7 +259,7 @@ h2.cardsheader {
 
 h2.popup-title {
   color: #000000;
-  font-size: 32px;
+  font-size: 48px;
 }
 
 
