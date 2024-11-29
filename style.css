@@ -132,6 +132,7 @@ h1.title {
 .wrappercont {
   background-color:;
   border-radius: 10px;
+  width: 50
   border: 2px solid #e3e3e3; /* Add a border */
   text-align: center; /* Center text within the container */
   padding: px;
