@@ -110,6 +110,7 @@ h1.title {
   font-family: 'Subjectivity';
 }
 
+
 .vertical-text {
   writing-mode: vertical-rl; /* Makes text flow from top to bottom, right to left */
   text-orientation: mixed; /* Keeps each letter upright */
@@ -196,12 +197,12 @@ h1.title {
 }
 
 h1 {
-    color: green;
+    color: #3038cf;
     text-align: center;
 }
 
 .card-creator {
-  max-height: 80vh;
+  max-height: ;
   margin: ;
   padding: ;
   border: 1px solid #ccc;
