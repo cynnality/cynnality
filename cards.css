@@ -18,7 +18,7 @@ to this section's matching END comment to see page-specific styles.
 :root {
   --color-bg: #;
   --color-text-main: #000000;
-  --color-text-header: #3038cf;
+  --color-text-header: #f5e324;
   --color-primary: #FFFF00;
   
   --image-max-width: 300px;
@@ -29,7 +29,6 @@ to this section's matching END comment to see page-specific styles.
 
 /* Basic page style resets */
 
-background-image:
 
 * {
   box-sizing: border-box;
@@ -106,7 +105,9 @@ END Glitch hello-app default styles
 
 body {
   font-family: 'Subjectivity';
-  background-color: var(--color-bg);
+  background-color: #3038cf;
+  background-image: url('https://cdn.glitch.global/f2fb7d0f-1059-40bd-8a52-8cb00efc9022/everytexture.com-stock-plastic-texture-00023-diffuse-1024.webp?v=1732996444354'); /* Path to your background image */
+  background-blend-mode: overlay;
 }
 
 h1.title {
@@ -270,8 +271,9 @@ h2.cardsheader {
 
 
 .card {
-  background-color: ;
-  background-image: url('https://cdn.glitch.global/f2fb7d0f-1059-40bd-8a52-8cb00efc9022/vhm_1732994754.webp?v=1732994857684'); /* Replace with your noise image */
+  background-color: #f5e324;
+  background-image: url('https://cdn.glitch.global/f2fb7d0f-1059-40bd-8a52-8cb00efc9022/everytexture.com-stock-paper-texture-00089-diffuse-1024.webp?v=1732994253489'); /* Replace with your noise image */
+  background-blend-mode: overlay;
   background-size: cover; /* Or 'repeat' for a more subtle effect */
   border: 1px solid #f5e324;
   border-radius: 20px;
@@ -304,7 +306,7 @@ h2.cardsheader {
 
 .card-title {
   background: ;
-  color: #f6e63c;
+  color: #000000;
   text-align: center;
   padding: 10px;
   font-weight: bold;
