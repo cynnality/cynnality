@@ -236,6 +236,7 @@ NEW SMALL CARD LAYOUT
   border-right: 4px solid #000000;
   border-bottom: 4px solid #000000;
   border-left: 4px solid #000000;
+  padding: 5px;
 
 }
 
@@ -265,11 +266,12 @@ NEW SMALL CARD LAYOUT
 .card-title {
   background: ;
   color: #000000;
-  text-align: ;
+  align-content: center center ;
   padding: 10px;
   font-weight: bold;
   font-size: 32px;
   grid-area: 3 / 2 / 4 / 3;
+  border: 1px solid #000000;
 }
 
 
