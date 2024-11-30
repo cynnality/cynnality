@@ -159,15 +159,19 @@ h2.cardsheader {
   border: 1px solid #f5e324;
   border-radius: 20px;
   overflow: hidden;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  box-shadow:;
   transition: transform 0.5s;
   cursor: pointer;
   min-height: 300px;
+  border-top: 0px solid #3038cf;
+  border-right: 4px solid #3038cf;
+  border-bottom: 4px solid #3038cf;
+  border-left: 0px solid #3038cf;
 }
 
 .card:hover {
   transform: translateY(-5px);
-  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+  box-shadow: ;
 }
 
 .card-image {
