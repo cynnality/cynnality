@@ -286,9 +286,6 @@ h2.cardsheader {
   border-right: 4px solid #000000;
   border-bottom: 4px solid #000000;
   border-left: 4px solid #000000;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 
 
@@ -301,7 +298,7 @@ h2.cardsheader {
 .card-image {
   width: 80%;
   height: 80%;
-  background-size: cover;
+  background-size: contain;
   background-position: ;
   background-repeat: no-repeat;
   margin: 0 auto; /* Automatically set equal margins left and right */
@@ -310,10 +307,10 @@ h2.cardsheader {
 .card-title {
   background: ;
   color: #000000;
-  text-align: ;
-  padding: px;
+  text-align: center;
+  padding: 10px;
   font-weight: bold;
-  font-size: 16px
+  font-size: 32px
 }
 
 .popup-container {
