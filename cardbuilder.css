@@ -181,8 +181,23 @@ h1.title {
 .cpdescription { grid-area: 1 / 5 / 5 / 7; 
   
 }
-.cpsource { grid-area: 5 / 5 / 7 / 7; 
-  
+.cplink { grid-area: 5 / 5 / 7 / 7; 
+    color: #007bff;
+    text-decoration: underline;
+}
+
+.cplink:hover {
+  text-decoration: none;
+}
+
+
+.cp-close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+  font-size: 20px;
+  color: #3038cf
 }
 
 

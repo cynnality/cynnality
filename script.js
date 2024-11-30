@@ -47,8 +47,8 @@ cards.forEach(card => {
 });
 
 // Hide the popup when the close button is clicked
-document.querySelector('.popup-close').addEventListener('click', function() {
-  document.querySelector('.popup-container').classList.remove('show');
+document.querySelector('.cp-close').addEventListener('click', function() {
+  document.querySelector('.bigcardlayout-container').classList.remove('show');
 });
 
 document.getElementById('generateCard').addEventListener('click', function() {
