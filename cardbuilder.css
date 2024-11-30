@@ -110,22 +110,42 @@ h1.title {
   font-family: 'Subjectivity';
 }
 
+
 .parent {
-display: grid;
-grid-template-columns: repeat(6, 1fr);
-grid-template-rows: repeat(5, 1fr) .5fr;
-grid-column-gap: 0px;
-grid-row-gap: 0px;
+  background: #ffffff;
+  border-radius: 10px;
+  min-height: 50vh; /* Ensures the popup is at least 50% of the viewport height */
+  max-width: 90vw; /* Set maximum width to 75% of the viewport width */
+  max-height: 75vh; /* Set maximum height to 75% of the viewport height */
+  width: 60vw; /* Use 90% width for smaller screens if needed */
+  height: 70vh;
+  padding: 15px;
+  position: relative;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  overflow: hidden; /* Hide any overflowing content */
+  display: flex; /* Add flex layout to handle image and text sections */
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: repeat(5, 1fr) .5fr;
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
 }
 
-.image { grid-area: 1 / 1 / 6 / 4; }
-.tags { grid-area: 6 / 1 / 7 / 4; }
-.div3 { grid-area: 1 / 4 / 7 / 5; }
-.div4 { grid-area: 1 / 5 / 5 / 7; }
-.div5 { grid-area: 5 / 5 / 7 / 7; }
+.cpimage { grid-area: 1 / 1 / 6 / 4; 
+}
+.cptags { grid-area: 6 / 1 / 7 / 4; 
+}
+.cptitle { grid-area: 1 / 4 / 7 / 5; 
+}
+.cpdescription { grid-area: 1 / 5 / 5 / 7; 
+}
+.cpsource { grid-area: 5 / 5 / 7 / 7; 
+}
 
 
-  .container {
+
+
+.container {
             display: grid;
 
             grid-template-columns: 1fr 1fr 1fr 1fr;
