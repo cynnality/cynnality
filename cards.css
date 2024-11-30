@@ -127,15 +127,27 @@ h1.title {
 }
 
 .wrappercont {
-  background-color:;
-  color:;
-  padding: 10px;
   border-radius: 10px;
+  max-width: 50vw;
+  width: 100%;
+  min-width: 300px;
+  margin: 0 auto; /* Centers the div horizontally */
   text-align: center; /* Center text within the container */
+  padding: 10px;
+  justify-content: center;
+  align-content: center;
+  border-top: 4px solid #000000;
+  border-right: 7px solid #000000;
+  border-bottom: 7px solid #000000;
+  border-left: 4px solid #000000;
+  background-image: url('https://cdn.glitch.global/f2fb7d0f-1059-40bd-8a52-8cb00efc9022/dithered-image(3).png?v=1732931857442');
+  background-size: cover;
+  background-position: center bottom;
 }
 
 h2.cardsheader {
-  color: #000000
+  color: #ffffff;
+  font-size: 30px;
     
 }
 
@@ -155,7 +167,7 @@ h2.cardsheader {
 
 
 .card {
-  background-color: #ffffff;
+  background-color: #3038cf;
   border: 1px solid #f5e324;
   border-radius: 20px;
   overflow: hidden;
@@ -163,10 +175,10 @@ h2.cardsheader {
   transition: transform 0.5s;
   cursor: pointer;
   min-height: 300px;
-  border-top: 0px solid #3038cf;
-  border-right: 4px solid #3038cf;
-  border-bottom: 4px solid #3038cf;
-  border-left: 0px solid #3038cf;
+  border-top: 4px solid #000000;
+  border-right: 4px solid #000000;
+  border-bottom: 4px solid #000000;
+  border-left: 4px solid #000000;
 }
 
 .card:hover {
