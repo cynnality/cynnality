@@ -271,7 +271,7 @@ h2.cardsheader {
 
 
 .card {
-  background-color: #f5e324;
+  background-color: #ffffff;
   background-image: url('https://cdn.glitch.global/f2fb7d0f-1059-40bd-8a52-8cb00efc9022/everytexture.com-stock-paper-texture-00089-diffuse-1024.webp?v=1732994253489'); /* Replace with your noise image */
   background-blend-mode: overlay;
   background-size: cover; /* Or 'repeat' for a more subtle effect */
@@ -286,6 +286,9 @@ h2.cardsheader {
   border-right: 4px solid #000000;
   border-bottom: 4px solid #000000;
   border-left: 4px solid #000000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 
@@ -298,7 +301,7 @@ h2.cardsheader {
 .card-image {
   width: 80%;
   height: 80%;
-  background-size: contain;
+  background-size: cover;
   background-position: ;
   background-repeat: no-repeat;
   margin: 0 auto; /* Automatically set equal margins left and right */
@@ -307,10 +310,10 @@ h2.cardsheader {
 .card-title {
   background: ;
   color: #000000;
-  text-align: center;
-  padding: 10px;
+  text-align: ;
+  padding: px;
   font-weight: bold;
-  font-size: 32px
+  font-size: 16px
 }
 
 .popup-container {
