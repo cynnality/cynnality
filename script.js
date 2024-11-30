@@ -30,16 +30,20 @@ cards.forEach(card => {
     const link = card.getAttribute('data-link');
     const tags = card.getAttribute('data-tags');
     const image = card.querySelector('.card-image').style.backgroundImage;
-    const tagsString = card.getAttribute('data-tags');
-    const tagsArray = tagsString.split(',').map(tag => tag.trim());
 
+    // Set content in the popup
     // Set content in the popup
     document.querySelector('.cptitle').textContent = title;
     document.querySelector('.cpdescription').textContent = description;
-    document.querySelector('.cplink').href = link;
-    document.querySelector('.cplink').textContent = "source link";
     document.querySelector('.cptags').textContent = tags;
     document.querySelector('.cpimage').style.backgroundImage = image;
+    
+        // Set the link in the popup
+    const popupLink = document.querySelector('.cplink .popup-link');
+    if (popupLink) {
+      popupLink.href = link;
+      popupLink.textContent = "source link"; // Or use a value from the card if you want it dynamic
+    }
 
     // Show the popup
     document.querySelector('.bigcardlayout-container').classList.add('show');
@@ -50,6 +54,13 @@ cards.forEach(card => {
 document.querySelector('.cp-close').addEventListener('click', function() {
   document.querySelector('.bigcardlayout-container').classList.remove('show');
 });
+
+
+
+
+
+
+
 
 document.getElementById('generateCard').addEventListener('click', function() {
   // Get values from the form
