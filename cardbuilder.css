@@ -134,6 +134,11 @@ h1.title {
   transition: visibility 0s, opacity 0.3s;
 }
 
+.bigcardlayout-container.show {
+  visibility: visible;
+  opacity: 1;
+}
+
 
 .bigcardlayout {
   background: #ffffff;
@@ -167,6 +172,11 @@ h1.title {
 }
 .cptitle { grid-area: 1 / 4 / 7 / 5; 
   font-size: 62px;
+  writing-mode: vertical-rl; /* Makes text flow from top to bottom, right to left */
+  text-orientation: mixed; /* Keeps each letter upright */
+  transform: rotate(-180deg); /* Optional: flip the text if needed for readability */
+  padding: 10px;
+  border: 1px solid #ccc; /* Optional: For visualization */
 }
 .cpdescription { grid-area: 1 / 5 / 5 / 7; 
   

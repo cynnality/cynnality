@@ -42,7 +42,7 @@ cards.forEach(card => {
     document.querySelector('.cpimage').style.backgroundImage = image;
 
     // Show the popup
-    document.querySelector('.popup-container').classList.add('show');
+    document.querySelector('.bigcardlayout-container').classList.add('show');
   });
 });
 
@@ -51,7 +51,29 @@ document.querySelector('.popup-close').addEventListener('click', function() {
   document.querySelector('.popup-container').classList.remove('show');
 });
 
+document.getElementById('generateCard').addEventListener('click', function() {
+  // Get values from the form
+  const imageLink = document.getElementById('imageLink').value;
+  const cardTitle = document.getElementById('cardTitle').value;
+  const cardDescription = document.getElementById('cardDescription').value;
+  const sourceLink = document.getElementById('sourceLink').value;
+  const cardTags = document.getElementById('cardTags').value;
+  
+  // Create the HTML string for the card
+  const generatedHTML = `
+    <div class="card" 
+         data-title="${cardTitle}" 
+         data-description="${cardDescription}" 
+         data-link="${sourceLink}" 
+         data-tags="${cardTags}">
+      <div class="card-image" style="background-image: url('${imageLink}');"></div>
+      <div class="card-title">${cardTitle}</div>
+    </div>
+  `;
 
+  // Display the generated HTML in the <pre> tag for easy copying
+  document.getElementById('generatedHTML').textContent = generatedHTML;
+});
 
 
 
