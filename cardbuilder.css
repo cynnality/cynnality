@@ -112,8 +112,8 @@ h1.title {
 
 .vertical-text {
   writing-mode: vertical-rl; /* Makes text flow from top to bottom, right to left */
-  text-orientation: upright; /* Keeps each letter upright */
-  transform: ; /* Optional: flip the text if needed for readability */
+  text-orientation: mixed; /* Keeps each letter upright */
+  transform: rotate(-180deg); /* Optional: flip the text if needed for readability */
   padding: 10px;
   border: 1px solid #ccc; /* Optional: For visualization */
 }
@@ -131,7 +131,6 @@ h1.title {
   position: relative;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
   overflow: hidden; /* Hide any overflowing content */
-  display: flex; /* Add flex layout to handle image and text sections */
   display: grid;
   grid-template-columns: repeat(6, 1fr);
   grid-template-rows: repeat(5, 1fr) .5fr;
@@ -145,12 +144,13 @@ h1.title {
   background-position: center;
   background-repeat: no-repeat;
   border-radius: 10px; /* Optional for rounded corners */
+  padding: 10px;
 }
 .cptags { grid-area: 6 / 1 / 7 / 4; 
   
 }
 .cptitle { grid-area: 1 / 4 / 7 / 5; 
-  
+  font-size: 62px;
 }
 .cpdescription { grid-area: 1 / 5 / 5 / 7; 
   
