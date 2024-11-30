@@ -118,12 +118,35 @@ grid-column-gap: 0px;
 grid-row-gap: 0px;
 }
 
-.div1 { grid-area: 1 / 1 / 6 / 4; }
-.div2 { grid-area: 6 / 1 / 7 / 4; }
+.image { grid-area: 1 / 1 / 6 / 4; }
+.tags { grid-area: 6 / 1 / 7 / 4; }
 .div3 { grid-area: 1 / 4 / 7 / 5; }
 .div4 { grid-area: 1 / 5 / 5 / 7; }
 .div5 { grid-area: 5 / 5 / 7 / 7; }
 
+
+  .container {
+            display: grid;
+
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            grid-template-rows: 100px;
+            grid-gap: 10px;
+        }
+
+
+.container div {
+   border: 3px black;
+   border-radius: 7px;
+   background-color: yellowgreen;
+   padding: 1em;
+   text-align: center;
+   color: darkgreen;
+}
+
+h1 {
+    color: green;
+    text-align: center;
+}
 
 .card-creator {
   max-height: 80vh;
