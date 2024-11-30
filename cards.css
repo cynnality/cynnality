@@ -281,12 +281,7 @@ h2.cardsheader {
   border-left: 4px solid #000000;
 }
 
-.textured-background {
-  background-color: black; /* Base background color */
-  background-image: url('noise-texture.png'); /* Replace with your noise image */
-  background-size: cover; /* Or 'repeat' for a more subtle effect */
-  background-blend-mode: overlay; /* Optional: Adjust blending of color and noise */
-}
+
 
 .card:hover {
   transform: translateY(-5px);
