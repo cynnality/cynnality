@@ -16,7 +16,7 @@ to this section's matching END comment to see page-specific styles.
 
 /* Our default values set as CSS variables */
 :root {
-  --color-bg: #f6e63c;
+  --color-bg: #;
   --color-text-main: #000000;
   --color-text-header: #3038cf;
   --color-primary: #FFFF00;
@@ -28,6 +28,9 @@ to this section's matching END comment to see page-specific styles.
 }
 
 /* Basic page style resets */
+
+background-image:
+
 * {
   box-sizing: border-box;
 }
@@ -295,7 +298,6 @@ h2.cardsheader {
   height: 80%;
   background-size: contain;
   background-position: ;
-  border: 1px solid #000000;
   background-repeat: no-repeat;
   margin: 0 auto; /* Automatically set equal margins left and right */
 }
