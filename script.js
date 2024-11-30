@@ -34,12 +34,12 @@ cards.forEach(card => {
     const tagsArray = tagsString.split(',').map(tag => tag.trim());
 
     // Set content in the popup
-    document.querySelector('.popup-title').textContent = title;
-    document.querySelector('.popup-description').textContent = description;
-    document.querySelector('.popup-link').href = link;
-    document.querySelector('.popup-link').textContent = "source";
-    document.querySelector('.popup-tags').textContent = tags;
-    document.querySelector('.popup-image').style.backgroundImage = image;
+    document.querySelector('.cptitle').textContent = title;
+    document.querySelector('.cpdescription').textContent = description;
+    document.querySelector('.cplink').href = link;
+    document.querySelector('.cplink').textContent = "source";
+    document.querySelector('.cptags').textContent = tags;
+    document.querySelector('.cpimage').style.backgroundImage = image;
 
     // Show the popup
     document.querySelector('.popup-container').classList.add('show');
@@ -51,29 +51,7 @@ document.querySelector('.popup-close').addEventListener('click', function() {
   document.querySelector('.popup-container').classList.remove('show');
 });
 
-document.getElementById('generateCard').addEventListener('click', function() {
-  // Get values from the form
-  const imageLink = document.getElementById('imageLink').value;
-  const cardTitle = document.getElementById('cardTitle').value;
-  const cardDescription = document.getElementById('cardDescription').value;
-  const sourceLink = document.getElementById('sourceLink').value;
-  const cardTags = document.getElementById('cardTags').value;
-  
-  // Create the HTML string for the card
-  const generatedHTML = `
-    <div class="card" 
-         data-title="${cardTitle}" 
-         data-description="${cardDescription}" 
-         data-link="${sourceLink}" 
-         data-tags="${cardTags}">
-      <div class="card-image" style="background-image: url('${imageLink}');"></div>
-      <div class="card-title">${cardTitle}</div>
-    </div>
-  `;
 
-  // Display the generated HTML in the <pre> tag for easy copying
-  document.getElementById('generatedHTML').textContent = generatedHTML;
-});
 
 
 
