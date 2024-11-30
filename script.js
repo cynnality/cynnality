@@ -37,7 +37,7 @@ cards.forEach(card => {
     document.querySelector('.cptitle').textContent = title;
     document.querySelector('.cpdescription').textContent = description;
     document.querySelector('.cplink').href = link;
-    document.querySelector('.cplink').textContent = "source";
+    document.querySelector('.cplink').textContent = "source link";
     document.querySelector('.cptags').textContent = tags;
     document.querySelector('.cpimage').style.backgroundImage = image;
 
