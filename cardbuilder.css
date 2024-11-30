@@ -221,29 +221,24 @@ NEW SMALL CARD LAYOUT
 
 /* NEW CARD LAYOUT CSS GRID (for the look of the small card) */
 .card {
-  background-color: #ffffff;
-  background-size: cover; /* Or 'repeat' for a more subtle effect */
-  border: 1px solid #f5e324;
-  border-radius: 20px;
+  background-color: #ffffff;  border-radius: 20px;
   overflow: hidden;
   box-shadow:;
   transition: transform 0.5s;
   cursor: pointer;
   min-height: 300px;
-  border-top: 4px solid #000000;
-  border-right: 4px solid #000000;
-  border-bottom: 4px solid #000000;
-  border-left: 4px solid #000000;
   display: grid;
   grid-template-columns: .5fr 2fr .5fr;
   grid-template-rows: .5fr 2fr .75fr;
   grid-column-gap: 0px;
   grid-row-gap: 0px;
+  border: 4px solid #000000;
+
 }
 
-.div1 { grid-area: 1 / 1 / 4 / 4; }
-.div2 { grid-area: 2 / 2 / 3 / 3; }
-.div3 { grid-area: 3 / 2 / 4 / 3; }
+.card-background { 
+  grid-area: 1 / 1 / 4 / 4;
+}
 
 
 
@@ -254,21 +249,23 @@ NEW SMALL CARD LAYOUT
 }
 
 .card-image {
-  width: 80%;
-  height: 80%;
+  width: 90%;
+  height: 90%;
   background-size: contain;
-  background-position: ;
-  background-repeat: no-repeat;
-  margin: 0 auto; /* Automatically set equal margins left and right */
+  background-position:  ;
+  background-repeat: ;
+  margin: auto ; /* Automatically set equal margins left and right */
+  grid-area: 2 / 2 / 3 / 3;
 }
 
 .card-title {
   background: ;
   color: #000000;
-  text-align: center;
+  text-align: ;
   padding: 10px;
   font-weight: bold;
-  font-size: 32px
+  font-size: 32px;
+  grid-area: 3 / 2 / 4 / 3;
 }
 
 
