@@ -175,10 +175,10 @@ h2.cardsheader {
   transition: transform 0.5s;
   cursor: pointer;
   min-height: 300px;
-  border-top: 4px solid #000000;
-  border-right: 4px solid #000000;
-  border-bottom: 4px solid #000000;
-  border-left: 4px solid #000000;
+  border-top: 4px solid #3038cf;
+  border-right: 4px solid #3038cf;
+  border-bottom: 4px solid #3038cf;
+  border-left: 4px solid #3038cf;
 }
 
 .card:hover {
@@ -194,7 +194,7 @@ h2.cardsheader {
 
 .card-title {
   background: ;
-  color: #3038cf;
+  color: #f6e63c;
   text-align: center;
   padding: 10px;
   font-weight: bold;
