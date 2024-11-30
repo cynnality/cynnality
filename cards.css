@@ -294,7 +294,10 @@ h2.cardsheader {
   width: 80%;
   height: 80%;
   background-size: contain;
-  background-position:;
+  background-position: ;
+  border: 1px solid #000000;
+  background-repeat: no-repeat;
+  margin: 0 auto; /* Automatically set equal margins left and right */
 }
 
 .card-title {
