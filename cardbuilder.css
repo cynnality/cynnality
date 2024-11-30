@@ -110,6 +110,14 @@ h1.title {
   font-family: 'Subjectivity';
 }
 
+.vertical-text {
+  writing-mode: vertical-rl; /* Makes text flow from top to bottom, right to left */
+  text-orientation: upright; /* Keeps each letter upright */
+  transform: ; /* Optional: flip the text if needed for readability */
+  padding: 10px;
+  border: 1px solid #ccc; /* Optional: For visualization */
+}
+
 
 .parent {
   background: #ffffff;
@@ -117,7 +125,7 @@ h1.title {
   min-height: 50vh; /* Ensures the popup is at least 50% of the viewport height */
   max-width: 90vw; /* Set maximum width to 75% of the viewport width */
   max-height: 75vh; /* Set maximum height to 75% of the viewport height */
-  width: 60vw; /* Use 90% width for smaller screens if needed */
+  width: 90vw; /* Use 90% width for smaller screens if needed */
   height: 70vh;
   padding: 15px;
   position: relative;
@@ -132,14 +140,23 @@ h1.title {
 }
 
 .cpimage { grid-area: 1 / 1 / 6 / 4; 
+  background-color: #ee1132;
+  background-size: contain; /* Ensure the entire image is visible without cropping */
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 10px; /* Optional for rounded corners */
 }
 .cptags { grid-area: 6 / 1 / 7 / 4; 
+  
 }
 .cptitle { grid-area: 1 / 4 / 7 / 5; 
+  
 }
 .cpdescription { grid-area: 1 / 5 / 5 / 7; 
+  
 }
 .cpsource { grid-area: 5 / 5 / 7 / 7; 
+  
 }
 
 
@@ -286,7 +303,7 @@ h2.cardsheader {
   padding: 10px;
   font-weight: bold;
 }
-
+/*
 .popup-container {
   position: fixed;
   top: 0;
@@ -320,12 +337,9 @@ h2.cardsheader {
 .popup-image {
   width: 100%;
   height: 200px;  /* Adjust as needed */
-  background-size: cover;
-  background-position: center;
-  border-radius: 10px;  /* Optional, for styling */
-}
+ 
 
-
+/*
 .popup-close {
   position: absolute;
   top: 10px;
@@ -347,7 +361,7 @@ h2.cardsheader {
   text-decoration: underline;
 }
 
-
+*/
 
 
 /* Center the heading */
