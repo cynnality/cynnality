@@ -178,7 +178,7 @@ h1.title {
 
 
 
-.container {
+.geekcontainer {
             display: grid;
 
             grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -187,7 +187,7 @@ h1.title {
         }
 
 
-.container div {
+.geekcontainer div {
    border: 3px black;
    border-radius: 7px;
    background-color: yellowgreen;
