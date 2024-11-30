@@ -272,8 +272,6 @@ h2.cardsheader {
 
 .card {
   background-color: #ffffff;
-  background-image: url('https://cdn.glitch.global/f2fb7d0f-1059-40bd-8a52-8cb00efc9022/everytexture.com-stock-paper-texture-00089-diffuse-1024.webp?v=1732994253489'); /* Replace with your noise image */
-  background-blend-mode: overlay;
   background-size: cover; /* Or 'repeat' for a more subtle effect */
   border: 1px solid #f5e324;
   border-radius: 20px;
