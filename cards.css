@@ -267,7 +267,9 @@ h2.cardsheader {
 
 
 .card {
-  background-color: #000000;
+  background-color: ;
+  background-image: url('https://cdn.glitch.global/f2fb7d0f-1059-40bd-8a52-8cb00efc9022/vhm_1732994754.webp?v=1732994857684'); /* Replace with your noise image */
+  background-size: cover; /* Or 'repeat' for a more subtle effect */
   border: 1px solid #f5e324;
   border-radius: 20px;
   overflow: hidden;
@@ -289,9 +291,10 @@ h2.cardsheader {
 }
 
 .card-image {
+  width: 80%;
   height: 80%;
-  background-size: cover;
-  background-position: center;
+  background-size: contain;
+  background-position:;
 }
 
 .card-title {
