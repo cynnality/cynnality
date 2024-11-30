@@ -267,7 +267,7 @@ h2.cardsheader {
 
 
 .card {
-  background-color: #3038cf;
+  background-color: #000000;
   border: 1px solid #f5e324;
   border-radius: 20px;
   overflow: hidden;
@@ -275,10 +275,10 @@ h2.cardsheader {
   transition: transform 0.5s;
   cursor: pointer;
   min-height: 300px;
-  border-top: 4px solid #3038cf;
-  border-right: 4px solid #3038cf;
-  border-bottom: 4px solid #3038cf;
-  border-left: 4px solid #3038cf;
+  border-top: 4px solid #000000;
+  border-right: 4px solid #000000;
+  border-bottom: 4px solid #000000;
+  border-left: 4px solid #000000;
 }
 
 .card:hover {
