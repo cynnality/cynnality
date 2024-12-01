@@ -226,8 +226,11 @@ h2.cardsheader {
   text-orientation: mixed; /* Keeps each letter upright */
   transform: rotate(-180deg); /* Optional: flip the text if needed for readability */
   padding: 10px;
-  border: 1px solid #ccc; /* Optional: For visualization */
+  border-left: 3px solid #000000; /* Optional: For visualization */
+  border-right: 3px solid #000000;
   justify-content: center;
+  max-height: 100%;
+  margin: auto auto; /* Automatically set equal margins left and right */
 }
 .cpdescription { 
   grid-area: 1 / 5 / 5 / 7; 
@@ -318,7 +321,7 @@ h2.cardsheader {
   height: 100%;
   background-color: ;
   background-size: contain;
-  background-position:  ;
+  background-position: center center;
   background-repeat: ;
   margin: auto ; /* Automatically set equal margins left and right */
   grid-area: 2 / 2 / 3 / 3;
