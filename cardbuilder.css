@@ -224,7 +224,7 @@ NEW SMALL CARD LAYOUT
 
 /* NEW CARD LAYOUT CSS GRID (for the look of the small card) */
 .card {
-  background-color: #f8a0ad;
+  background-color: #bfcfff;
   background-image: url("https://cdn.glitch.global/f2fb7d0f-1059-40bd-8a52-8cb00efc9022/everytexture.com-stock-paper-texture-00089-diffuse-1024.webp?v=1732994253489");
   background-blend-mode: overlay;
   background-size: repeat;
@@ -262,7 +262,6 @@ NEW SMALL CARD LAYOUT
   width: 90%;
   height: 90%;
   background-size: cover;
-  border: 2px solid #000000;
   background-position:  ;
   background-repeat: ;
   margin: auto ; /* Automatically set equal margins left and right */
