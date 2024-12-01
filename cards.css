@@ -211,7 +211,7 @@ h2.cardsheader {
 
 .cpimage { grid-area: 1 / 1 / 6 / 4; 
   background-color: #ee1132;
-  background-size: contain; /* Ensure the entire image is visible without cropping */
+  background-size: cover; /* Ensure the entire image is visible without cropping */
   background-position: center;
   background-repeat: no-repeat;
   border-radius: 10px; /* Optional for rounded corners */
