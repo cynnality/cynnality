@@ -217,15 +217,12 @@ NEW SMALL CARD LAYOUT
   border-radius: 20px;
   text-align: center; /* Center text within the container */
   margin-top: 20px;  
-  background-image: url("https://cdn.glitch.global/f2fb7d0f-1059-40bd-8a52-8cb00efc9022/flowerbgidea.webp?v=1733005131724");
-  background-size: 300px;
-  background-repeat: repeat;
 }
 
 /* NEW CARD LAYOUT CSS GRID (for the look of the small card) */
 .card {
   background-color: #bfcfff;
-  background-image: url("https://cdn.glitch.global/f2fb7d0f-1059-40bd-8a52-8cb00efc9022/everytexture.com-stock-paper-texture-00089-diffuse-1024.webp?v=1732994253489");
+  background-image: url("https://cdn.glitch.global/f2fb7d0f-1059-40bd-8a52-8cb00efc9022/card_texture_use.jpg?v=1733012511205");
   background-blend-mode: overlay;
   background-size: repeat;
   border-radius: 20px;
