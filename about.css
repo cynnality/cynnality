@@ -160,36 +160,18 @@ h2.cardsheader {
 
 
 
-.cardgrid {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-  grid-template-rows: repeat(auto-fill, minmax(300px, 1fr));
-  grid-gap: 20px;
-  background-color:;
-  color: #32332b;
-  justify-content: center;
-  padding: 10px;
-  border-radius: 20px;
-  text-align: center; /* Center text within the container */
-  margin-top: 20px;  
-}
+
+
 
 /******************************************************************************
-     NEW SMALL CARD LAYOUT
+     about blocks
 ******************************************************************************/
 
 .about-block {
   background-color: #f5efe0;
-  background-size: repeat;
   border-radius: 20px;
   overflow: hidden;
   min-height: 300px;
-  display: grid;
-  display: grid;
-  grid-template-columns: .25fr 2fr .25fr;
-  grid-template-rows: .25fr 2fr .75fr;
-  grid-column-gap: 15px;
-  grid-row-gap: 15px; 
   border-top: 2px solid #32332b;
   border-right: 8px solid #32332b;
   border-bottom: 8px solid #32332b;
@@ -198,8 +180,8 @@ h2.cardsheader {
 
 }
 
-.card-background { 
-   grid-area: 1 / 1 / 4 / 4;
+.about-block-background { 
+ 
 }
 
 
@@ -211,7 +193,6 @@ h2.cardsheader {
   background-position: center center;
   background-repeat: ;
   margin: auto ; /* Automatically set equal margins left and right */
-  grid-area: 2 / 2 / 3 / 3;
   border-radius: 20px;
 }
 
@@ -223,13 +204,11 @@ h2.cardsheader {
   padding: 10px;
   font-weight: bold;
   font-size: 32px;
-  grid-area: 3 / 2 / 4 / 3;
   border: 2px solid #32332b;
   border-radius: 10px;
 }
 
 .about-block-bar { 
-  grid-area: 1 / 1 / 2 / 4;
   background-color: #32332b;
   border-radius: 20px;
 }
@@ -238,41 +217,8 @@ h2.cardsheader {
 
 
 /******************************************************************************
-    end  NEW SMALL CARD LAYOUT
+   end  about blocks
 ******************************************************************************/
-
-
-
-
-
-
-
-/* Center the heading */
-.directoryheader {
-  grid-row: 1; /* Place it in the first row of the grid */
-  justify-self: center; /* Horizontally center within the grid container */
-  align-self: center; /* Vertically center (if needed for spacing) */
-}
-
-.block {
-  background-color: #FCACC7;
-  color: #69F7BE;
-  border-radius: 10px;
-  padding: 10px;
-  font-size: 150%;
-  text-align: center; /* Center text within the container */
-}
-
-.notes {
-  font-size: 80%;
-  color: #647EBB;
-}
-
-.tags {
-  font-size: 50%;
-  color: #647EBB;
-}
-
 
 
 /* Very light scaling for our illustration */
