@@ -221,9 +221,9 @@ NEW SMALL CARD LAYOUT
 
 /* NEW CARD LAYOUT CSS GRID (for the look of the small card) */
 .card {
-  background-color: #bfcfff;
+  background-color: #809fff;
   background-image: url("https://cdn.glitch.global/f2fb7d0f-1059-40bd-8a52-8cb00efc9022/card_texture_use.jpg?v=1733012511205");
-  background-blend-mode: overlay;
+  background-blend-mode: multiply;
   background-size: repeat;
   border-radius: 20px;
   overflow: hidden;
