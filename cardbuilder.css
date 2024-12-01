@@ -221,8 +221,8 @@ NEW SMALL CARD LAYOUT
 
 /* NEW CARD LAYOUT CSS GRID (for the look of the small card) */
 .card {
-  background-color: #809fff;
-  background-image: url("https://cdn.glitch.global/f2fb7d0f-1059-40bd-8a52-8cb00efc9022/card_texture_use.jpg?v=1733012511205");
+  background-color: ;
+  background-image: url("https://cdn.glitch.global/f2fb7d0f-1059-40bd-8a52-8cb00efc9022/dither_it_Texturelabs_Paper_347S.png?v=1733013795961");
   background-blend-mode: multiply;
   background-size: repeat;
   border-radius: 20px;
@@ -256,13 +256,16 @@ NEW SMALL CARD LAYOUT
 }
 
 .card-image {
-  width: 90%;
-  height: 90%;
+  width: 100%;
+  height: 100%;
+  background-color: #ffffff;
   background-size: cover;
   background-position:  ;
   background-repeat: ;
   margin: auto ; /* Automatically set equal margins left and right */
   grid-area: 2 / 2 / 3 / 3;
+  border: 2px solid #000000;
+  border-radius: 20px;
 }
 
 .card-title {
