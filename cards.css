@@ -226,8 +226,9 @@ h2.cardsheader {
   padding: 10px;
   border: 1px solid #ccc; /* Optional: For visualization */
 }
-.cpdescription { grid-area: 1 / 5 / 5 / 7; 
-  
+.cpdescription { 
+  grid-area: 1 / 5 / 5 / 7; 
+  margin-top: 20px;
   
 }
 .cplink { grid-area: 5 / 5 / 7 / 7; 
@@ -255,7 +256,7 @@ h2.cardsheader {
 
 .cardgrid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
   grid-template-rows: repeat(auto-fill, minmax(300px, 1fr));
   grid-gap: 20px;
   background-color:;
@@ -309,13 +310,13 @@ h2.cardsheader {
 .card-image {
   width: 100%;
   height: 100%;
-  background-color: #ffffff;
+  background-color: ;
   background-size: cover;
   background-position:  ;
   background-repeat: ;
   margin: auto ; /* Automatically set equal margins left and right */
   grid-area: 2 / 2 / 3 / 3;
-  border: 2px solid #000000;
+  border: 6px solid #ffffff;
   border-radius: 20px;
 }
 
