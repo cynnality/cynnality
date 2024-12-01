@@ -283,7 +283,7 @@ h2.cardsheader {
 ******************************************************************************/
 
 .card {
-  background-color: #f5efe0;
+  background-color: rgba (245, 239, 224, .2);
   background-size: repeat;
   border-radius: 20px;
   overflow: hidden;

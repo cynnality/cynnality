@@ -117,7 +117,7 @@ h1 {
 
   display: grid;
   grid-template-rows: 32px 1fr;
-
+  border: 8px solid #6ec470;
   border-radius: var(--pane-border-radius);
   box-shadow: 0 4px 16px rgba(0, 0, 0, 0.5);
 
@@ -134,7 +134,7 @@ h1 {
   align-items: center;
   justify-content: center;
 
-  background-color: #aebca9;
+  background-color: #6ec470;
   color: var(--title-bar-text-color);
 }
 
@@ -196,6 +196,8 @@ h1 {
   right: 0;
   width: 24px;
   height: 24px;
+  background-color: #163617;
+  border-radius: 20px;
 
   /* north west to south east */
   cursor: nwse-resize;
@@ -204,7 +206,7 @@ h1 {
 }
 
 .pane.is-dragging .title {
-  background-color: #687b61;
+  background-color: #6ec470;
 }
 
 
