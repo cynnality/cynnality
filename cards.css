@@ -271,7 +271,7 @@ h2.cardsheader {
   grid-template-rows: repeat(auto-fill, minmax(300px, 1fr));
   grid-gap: 20px;
   background-color:;
-  color: #EC154F;
+  color: #32332b;
   justify-content: center;
   padding: 10px;
   border-radius: 20px;
@@ -284,9 +284,7 @@ h2.cardsheader {
 ******************************************************************************/
 
 .card {
-  background-color: ;
-  background-image: url("https://cdn.glitch.global/f2fb7d0f-1059-40bd-8a52-8cb00efc9022/dither_it_Texturelabs_Paper_347S.png?v=1733013795961");
-  background-blend-mode: multiply;
+  background-color: #f5efe0;
   background-size: repeat;
   border-radius: 20px;
   overflow: hidden;
@@ -300,9 +298,9 @@ h2.cardsheader {
   grid-column-gap: 15px;
   grid-row-gap: 15px; 
   border-top: 2px solid #000000;
-  border-right: 8px solid #000000;
-  border-bottom: 8px solid #000000;
-  border-left: 2px solid #000000;
+  border-right: 8px solid #32332b;
+  border-bottom: 8px solid #32332b;
+  border-left: 2px solid #32332b;
   padding: 5px;
 
 }
