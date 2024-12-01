@@ -197,6 +197,7 @@ h2.cardsheader {
   max-width: 90vw; /* Set maximum width to 75% of the viewport width */
   max-height: 75vh; /* Set maximum height to 75% of the viewport height */
   width: 50vw; /* Use 90% width for smaller screens if needed */
+  min-width: 30vw;
   height: 70vh;
   padding: 15px;
   position: relative;
@@ -237,6 +238,12 @@ h2.cardsheader {
   grid-area: 1 / 5 / 5 / 7; 
   margin-top: auto;
   font-family: 'SubjectivityMed';
+  padding: 10px;
+  justify-content: center;
+  max-height: 90%;
+  margin: auto auto; /* Automatically set equal margins left and right */
+  width: 100%;
+  min-width: ;
   
 }
 .cplink { grid-area: 5 / 5 / 7 / 7; 
@@ -306,7 +313,7 @@ h2.cardsheader {
 }
 
 .card-background { 
-   grid-area: 1 / 1 / 4 / 4;
+ /*   grid-area: 1 / 1 / 4 / 4;*/
 }
 
 
@@ -325,7 +332,7 @@ h2.cardsheader {
   background-position: center center;
   background-repeat: ;
   margin: auto ; /* Automatically set equal margins left and right */
-  grid-area: 2 / 2 / 3 / 3;
+   grid-area: 1 / 1 / 4 / 4;
   border-radius: 20px;
 }
 
