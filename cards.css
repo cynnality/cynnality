@@ -337,7 +337,7 @@ h2.cardsheader {
 }
 
 .card-title {
-  background: ;
+  background: #f5efe0;
   color: #32332b;
   align-content: center;
   justify-content: center;
@@ -347,6 +347,8 @@ h2.cardsheader {
   grid-area: 3 / 2 / 4 / 3;
   border: 2px solid #32332b;
   border-radius: 10px;
+  position: relative;
+  bottom: 20px;
 }
 
 .cardbar { 
