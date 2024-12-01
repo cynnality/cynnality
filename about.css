@@ -25,15 +25,8 @@ to this section's matching END comment to see page-specific styles.
   
   /* ADDED FROM PANES TUTORIAL*/
   
-  --desktop-color: #ff78f0;
-  --desktop-text-color: #ffffff;
-
-  --title-bar-color: #cccccc;
-  --title-bar-text-color: #333333;
-  --title-bar-highlight-color: #aaaaaa;
   --title-bar-height: 32px;
 
-  --pane-content-background-color: #ffffff;
 
   --pane-default-width: 320px;
   --pane-default-height: 360px;
@@ -167,11 +160,22 @@ h1 {
   height: 100%;
   max-width: 100%;
   max-height: 100%;
+  background-color: #f5efe0;
 
   object-fit: cover;
 
   -webkit-user-drag: none;
   user-drag: none;
+}
+
+.panetext {
+  background-color: #f5efe0;
+  border-top: 4px solid #32332b;
+  border-right: 7px solid #32332b;
+  border-bottom: 7px solid #32332b;
+  border-left: 4px solid #32332b;
+  margin: auto auto;
+  width: 100%;
 }
 
 /* add a corner in bottom right */
