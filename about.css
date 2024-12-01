@@ -149,6 +149,12 @@ h1 {
 
 }
 
+.flower {
+  background-size: cover; /* Ensure the background covers the entire div */
+  background-position: center; /* Center the background image */
+  background-repeat: repeat; /* Prevent repeating the background image */
+}
+
 /* make image fill the space */
 .pane .content img {
   position: absolute;
@@ -168,12 +174,10 @@ h1 {
 
 .panetext {
   background-color: #f5efe0;
-  border-top: 4px solid #32332b;
-  border-right: 7px solid #32332b;
-  border-bottom: 7px solid #32332b;
-  border-left: 4px solid #32332b;
   margin: auto auto;
   width: 70%;
+  padding: 20px;
+  border-radius: 20px;
 }
 
 /* add a corner in bottom right */
