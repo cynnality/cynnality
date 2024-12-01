@@ -217,7 +217,9 @@ h2.cardsheader {
   border-radius: 10px; /* Optional for rounded corners */
   padding: 10px;
 }
-.cptags { grid-area: 6 / 1 / 7 / 4; 
+.cptags { 
+  grid-area: 6 / 1 / 7 / 4; 
+  margin: auto;
   
 }
 .cptitle { grid-area: 1 / 4 / 7 / 5; 
@@ -242,6 +244,7 @@ h2.cardsheader {
     text-decoration: underline;
     position: absolute; /* Position the text absolutely within the container */
     bottom: 0; /* Fixes the text to the bottom of the container */
+  margin: auto;
 }
 
 .cplink:hover {
@@ -255,7 +258,7 @@ h2.cardsheader {
   right: 10px;
   cursor: pointer;
   font-size: 20px;
-  color: #3038cf
+  color: #3038cf;
 }
 /* end NEW BIG CARD LAYOUT*/
 
