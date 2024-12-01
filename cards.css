@@ -236,6 +236,7 @@ h2.cardsheader {
 .cpdescription { 
   grid-area: 1 / 5 / 5 / 7; 
   margin-top: auto;
+  font-family: 'SubjectivityMed';
   
 }
 .cplink { grid-area: 5 / 5 / 7 / 7; 
