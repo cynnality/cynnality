@@ -144,9 +144,9 @@ h1.title {
   border-right: 7px solid #000000;
   border-bottom: 7px solid #000000;
   border-left: 4px solid #000000;
-  background-image: url('https://cdn.glitch.global/f2fb7d0f-1059-40bd-8a52-8cb00efc9022/dithered-image(3).png?v=1732931857442');
-  background-size: cover;
-  background-position: center bottom;
+  background-image: url('https://cdn.glitch.global/f2fb7d0f-1059-40bd-8a52-8cb00efc9022/dithered-image(2).png?v=1732866600231');
+  background-size: contain;
+  background-position: center;
 }
 
 h2.cardsheader {
@@ -189,7 +189,9 @@ h2.cardsheader {
 
 
 .bigcardlayout {
-  background: #ffffff;
+  background: #e1ddb4;
+  background-image: url("https://cdn.glitch.global/f2fb7d0f-1059-40bd-8a52-8cb00efc9022/dither_it_Texturelabs_Paper_347S.png?v=1733013795961");
+  background-blend-mode: multiply;
   border-radius: 10px;
   min-height: 50vh; /* Ensures the popup is at least 50% of the viewport height */
   max-width: 90vw; /* Set maximum width to 75% of the viewport width */
