@@ -150,9 +150,12 @@ h1 {
 }
 
 .flower {
-  background-size: cover; /* Ensure the background covers the entire div */
-  background-position: center; /* Center the background image */
+  background-size: 200px; /* Ensure the background covers the entire div */
   background-repeat: repeat; /* Prevent repeating the background image */
+}
+
+.flower a {
+  font-size: 14px;
 }
 
 /* make image fill the space */
@@ -176,8 +179,9 @@ h1 {
   background-color: #f5efe0;
   margin: auto auto;
   width: 70%;
-  padding: 20px;
-  border-radius: 20px;
+  padding: 5px;
+  position: relative;
+  top: 30px;
 }
 
 /* add a corner in bottom right */
