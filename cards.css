@@ -227,6 +227,7 @@ h2.cardsheader {
   transform: rotate(-180deg); /* Optional: flip the text if needed for readability */
   padding: 10px;
   border: 1px solid #ccc; /* Optional: For visualization */
+  justify-content: center;
 }
 .cpdescription { 
   grid-area: 1 / 5 / 5 / 7; 
@@ -236,6 +237,8 @@ h2.cardsheader {
 .cplink { grid-area: 5 / 5 / 7 / 7; 
     color: #007bff;
     text-decoration: underline;
+    position: absolute; /* Position the text absolutely within the container */
+    bottom: 0; /* Fixes the text to the bottom of the container */
 }
 
 .cplink:hover {
@@ -289,10 +292,10 @@ h2.cardsheader {
   grid-template-rows: .5fr 2fr .75fr;
   grid-column-gap: 0px;
   grid-row-gap: 0px;
-  border-top: 4px solid #000000;
+  border-top: 0px solid #000000;
   border-right: 4px solid #000000;
   border-bottom: 4px solid #000000;
-  border-left: 4px solid #000000;
+  border-left: 0px solid #000000;
   padding: 5px;
 
 }
@@ -318,7 +321,7 @@ h2.cardsheader {
   background-repeat: ;
   margin: auto ; /* Automatically set equal margins left and right */
   grid-area: 2 / 2 / 3 / 3;
-  border: 6px solid #ffffff;
+  border: 6px solid #bfcfff;
   border-radius: 20px;
 }
 
