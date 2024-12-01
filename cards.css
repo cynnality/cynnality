@@ -105,7 +105,7 @@ END Glitch hello-app default styles
 
 body {
   font-family: 'Subjectivity';
-  background-color: #3038cf;
+  background-color: #f1415c;
   background-image: url('https://cdn.glitch.global/f2fb7d0f-1059-40bd-8a52-8cb00efc9022/everytexture.com-stock-plastic-texture-00023-diffuse-1024.webp?v=1732996444354'); /* Path to your background image */
   background-blend-mode: overlay;
 }
@@ -228,6 +228,7 @@ h2.cardsheader {
 }
 .cpdescription { grid-area: 1 / 5 / 5 / 7; 
   
+  
 }
 .cplink { grid-area: 5 / 5 / 7 / 7; 
     color: #007bff;
@@ -252,9 +253,6 @@ h2.cardsheader {
 
 
 
-
-
-
 .cardgrid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
@@ -269,22 +267,37 @@ h2.cardsheader {
   margin-top: 20px;  
 }
 
+/******************************************************************************
+     NEW SMALL CARD LAYOUT
+******************************************************************************/
 
 .card {
-  background-color: #ffffff;
-  background-size: cover; /* Or 'repeat' for a more subtle effect */
-  border: 1px solid #f5e324;
+  background-color: ;
+  background-image: url("https://cdn.glitch.global/f2fb7d0f-1059-40bd-8a52-8cb00efc9022/dither_it_Texturelabs_Paper_347S.png?v=1733013795961");
+  background-blend-mode: multiply;
+  background-size: repeat;
   border-radius: 20px;
   overflow: hidden;
-  box-shadow:;
-  transition: transform 0.5s;
+  transition: transform 0.1s;
   cursor: pointer;
   min-height: 300px;
+  display: grid;
+  grid-template-columns: .5fr 2fr .5fr;
+  grid-template-rows: .5fr 2fr .75fr;
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
   border-top: 4px solid #000000;
   border-right: 4px solid #000000;
   border-bottom: 4px solid #000000;
   border-left: 4px solid #000000;
+  padding: 5px;
+
 }
+
+.card-background { 
+  grid-area: 1 / 1 / 4 / 4;
+}
+
 
 
 
@@ -294,22 +307,37 @@ h2.cardsheader {
 }
 
 .card-image {
-  width: 80%;
-  height: 80%;
-  background-size: contain;
-  background-position: ;
-  background-repeat: no-repeat;
-  margin: 0 auto; /* Automatically set equal margins left and right */
+  width: 100%;
+  height: 100%;
+  background-color: #ffffff;
+  background-size: cover;
+  background-position:  ;
+  background-repeat: ;
+  margin: auto ; /* Automatically set equal margins left and right */
+  grid-area: 2 / 2 / 3 / 3;
+  border: 2px solid #000000;
+  border-radius: 20px;
 }
 
 .card-title {
   background: ;
   color: #000000;
-  text-align: center;
+  align-content: center center ;
   padding: 10px;
   font-weight: bold;
-  font-size: 32px
+  font-size: 32px;
+  grid-area: 3 / 2 / 4 / 3;
+  
 }
+
+
+
+
+/******************************************************************************
+    end  NEW SMALL CARD LAYOUT
+******************************************************************************/
+
+
 
 .popup-container {
   position: fixed;

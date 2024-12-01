@@ -142,3 +142,57 @@ Try adding more properties to the CSS `dipped` style for the button to see how t
 }
 
               end OLD CARD POP LAYOUT CSS STYLING
+              
+              
+              
+              
+              OLD SMALL CARD LAYOUT
+              
+.card {
+  background-color: #ffffff;
+  background-size: cover; /* Or 'repeat' for a more subtle effect */
+  border: 1px solid #f5e324;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow:;
+  transition: transform 0.5s;
+  cursor: pointer;
+  min-height: 300px;
+  border-top: 4px solid #000000;
+  border-right: 4px solid #000000;
+  border-bottom: 4px solid #000000;
+  border-left: 4px solid #000000;
+}
+
+
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: ;
+}
+
+.card-image {
+  width: 80%;
+  height: 80%;
+  background-size: contain;
+  background-position: ;
+  background-repeat: no-repeat;
+  margin: 0 auto; /* Automatically set equal margins left and right */
+}
+
+.card-title {
+  background: ;
+  color: #000000;
+  text-align: center;
+  padding: 10px;
+  font-weight: bold;
+  font-size: 32px
+}              
+
+                              end OLD SMALL CARD LAYOUT
+              
+              
+              
+              
+              
+              
