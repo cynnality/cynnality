@@ -159,6 +159,11 @@ h1 {
   font-size: 14px;
 }
 
+.movegif img{
+  background-repeat: repeat;
+  
+}
+
 /* make image fill the space */
 .pane .content img {
   position: absolute;
