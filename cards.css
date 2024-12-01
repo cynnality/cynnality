@@ -291,8 +291,8 @@ h2.cardsheader {
   display: grid;
   grid-template-columns: .25fr 2fr .25fr;
   grid-template-rows: .25fr 2fr .75fr;
-  grid-column-gap: 0px;
-  grid-row-gap: 0px; 
+  grid-column-gap: 15px;
+  grid-row-gap: 15px; 
   border-top: 2px solid #000000;
   border-right: 8px solid #000000;
   border-bottom: 8px solid #000000;
@@ -317,7 +317,7 @@ h2.cardsheader {
   width: 100%;
   height: 100%;
   background-color: ;
-  background-size: cover;
+  background-size: contain;
   background-position:  ;
   background-repeat: ;
   margin: auto ; /* Automatically set equal margins left and right */
@@ -328,12 +328,13 @@ h2.cardsheader {
 .card-title {
   background: ;
   color: #000000;
-  align-content: center center ;
+  align-content: center;
+  justify-content: center;
   padding: 10px;
   font-weight: bold;
   font-size: 32px;
   grid-area: 3 / 2 / 4 / 3;
-  border-top: 2px solid #000000;
+  border: 2px solid #000000;
   
 }
 
