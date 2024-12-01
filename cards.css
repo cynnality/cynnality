@@ -189,7 +189,7 @@ h2.cardsheader {
 
 
 .bigcardlayout {
-  background: #e1ddb4;
+  background: #f5efe0;
   background-image: url("https://cdn.glitch.global/f2fb7d0f-1059-40bd-8a52-8cb00efc9022/dither_it_Texturelabs_Paper_347S.png?v=1733013795961");
   background-blend-mode: multiply;
   border-radius: 10px;
@@ -210,10 +210,9 @@ h2.cardsheader {
 }
 
 .cpimage { grid-area: 1 / 1 / 6 / 4; 
-  background-color: #ee1132;
-  background-size: cover; /* Ensure the entire image is visible without cropping */
+  background-size: contain; /* Ensure the entire image is visible without cropping */
   background-position: center;
-  background-repeat: no-repeat;
+  background-repeat: repeat;
   border-radius: 10px; /* Optional for rounded corners */
   padding: 10px;
 }
@@ -297,7 +296,7 @@ h2.cardsheader {
   grid-template-rows: .25fr 2fr .75fr;
   grid-column-gap: 15px;
   grid-row-gap: 15px; 
-  border-top: 2px solid #000000;
+  border-top: 2px solid #32332b;
   border-right: 8px solid #32332b;
   border-bottom: 8px solid #32332b;
   border-left: 2px solid #32332b;
@@ -331,15 +330,15 @@ h2.cardsheader {
 
 .card-title {
   background: ;
-  color: #000000;
+  color: #32332b;
   align-content: center;
   justify-content: center;
   padding: 10px;
   font-weight: bold;
   font-size: 32px;
   grid-area: 3 / 2 / 4 / 3;
-  border: 2px solid #000000;
-  
+  border: 2px solid #32332b;
+  border-radius: 10px;
 }
 
 
