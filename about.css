@@ -144,7 +144,7 @@ h1 {
   align-items: center;
   justify-content: center;
 
-  background-color: var(--title-bar-color);
+  background-color: #aebca9;
   color: var(--title-bar-text-color);
 }
 
@@ -155,7 +155,7 @@ h1 {
 
 .pane .content {
   position: relative;
-  background-color: var(--pane-content-background-color);
+  background-color: #f5efe0;
 }
 
 /* make image fill the space */
@@ -189,7 +189,7 @@ h1 {
 }
 
 .pane.is-dragging .title {
-  background-color: var(--title-bar-highlight-color);
+  background-color: #687b61;
 }
 
 
