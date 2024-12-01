@@ -1,0 +1,342 @@
+/******************************************************************************
+START Glitch hello-app default styles
+
+The styles in this section do some minimal CSS resets, set default fonts and 
+colors, and handle the layout for our footer and "Remix on Glitch" button. If
+you're new to CSS they may seem a little complicated, but you can scroll down
+to this section's matching END comment to see page-specific styles.
+******************************************************************************/
+
+
+/* 
+  The style rules specify elements by type and by attributes such as class and ID
+  Each section indicates an element or elements, then lists the style properties to apply
+  See if you can cross-reference the rules in this file with the elements in index.html
+*/
+
+/* Our default values set as CSS variables */
+:root {
+  --color-bg: #;
+  --color-text-main: #000000;
+  --color-text-header: #f5e324;
+  --color-primary: #FFFF00;
+  
+  --image-max-width: 300px;
+  --image-margin: 3rem;
+  --font-family: "Subjectivity";
+  --font-family-header: "Subjectivity";
+}
+
+/* Basic page style resets */
+
+
+* {
+  box-sizing: border-box;
+}
+[hidden] {
+  display: none !important;
+}
+
+/* Import fonts */
+@font-face {
+  font-family: HK Grotesk;
+  src: url("https://cdn.glitch.me/605e2a51-d45f-4d87-a285-9410ad350515%2FHKGrotesk-Regular.otf?v=1603136326027")
+    format("opentype");
+}
+@font-face {
+  font-family: HK Grotesk;
+  font-weight: bold;
+  src: url("https://cdn.glitch.me/605e2a51-d45f-4d87-a285-9410ad350515%2FHKGrotesk-Bold.otf?v=1603136323437")
+    format("opentype");
+}
+
+@font-face {
+    font-family: 'Subjectivity';
+    src: url('https://cdn.glitch.global/f2fb7d0f-1059-40bd-8a52-8cb00efc9022/Subjectivity-BoldSlanted.otf?v=1732843119922') format('opentype');
+    font-weight: bold;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'SubjectivityMed';
+    src: url('https://cdn.glitch.global/f2fb7d0f-1059-40bd-8a52-8cb00efc9022/Subjectivity-MediumSlanted.otf?v=1732844680588') format('opentype');
+    font-weight: medium;
+    font-style: italic;
+}
+
+
+
+/* Navigation grid */
+.footer {
+  display: flex;
+  justify-content: space-between;
+  margin: 1rem auto 0;
+  padding: 1rem 0 0.75rem 0;
+  width: 100%;
+  flex-wrap: wrap;
+  border-top: 4px solid #fff;
+}
+
+.footer a:not(.btn--remix):link,
+a:not(.btn--remix):visited {
+  font-family: HK Grotesk;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 1.1rem;
+  color: #000;
+  text-decoration: none;
+  border-style: none;
+}
+.footer a:hover {
+  background: var(--color-primary);
+}
+
+.footer .links {
+  padding: 0.5rem 1rem 1.5rem;
+  white-space: nowrap;
+}
+
+.divider {
+  padding: 0 1rem;
+}
+/******************************************************************************
+END Glitch hello-app default styles
+******************************************************************************/
+
+body {
+  font-family: 'Subjectivity';
+  background-color: #f1415c;
+  background-image: url('https://cdn.glitch.global/f2fb7d0f-1059-40bd-8a52-8cb00efc9022/everytexture.com-stock-plastic-texture-00023-diffuse-1024.webp?v=1732996444354'); /* Path to your background image */
+  background-blend-mode: overlay;
+}
+
+h1.title {
+  font-family: 'Subjectivity';
+}
+
+/* Page structure */
+.wrappertop {
+  min-height: 50%(--wrapper-height);
+  display: grid;
+  place-items: center;
+  margin: 0 1rem;
+  padding: 20px;
+}
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+.wrappercont {
+  border-radius: 10px;
+  max-width: 50vw;
+  width: 100%;
+  min-width: 300px;
+  margin: 0 auto; /* Centers the div horizontally */
+  text-align: center; /* Center text within the container */
+  padding: 10px;
+  justify-content: center;
+  align-content: center;
+  border-top: 4px solid #32332b;
+  border-right: 7px solid #32332b;
+  border-bottom: 7px solid #32332b;
+  border-left: 4px solid #32332b;
+  background-image: url('https://cdn.glitch.global/f2fb7d0f-1059-40bd-8a52-8cb00efc9022/dithered-image(2).png?v=1732866600231');
+  background-size: contain;
+  background-position: center;
+}
+
+h2.cardsheader {
+  color: #ffffff;
+  font-size: 30px;
+    
+}
+
+
+
+
+
+
+.cardgrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  grid-template-rows: repeat(auto-fill, minmax(300px, 1fr));
+  grid-gap: 20px;
+  background-color:;
+  color: #32332b;
+  justify-content: center;
+  padding: 10px;
+  border-radius: 20px;
+  text-align: center; /* Center text within the container */
+  margin-top: 20px;  
+}
+
+/******************************************************************************
+     NEW SMALL CARD LAYOUT
+******************************************************************************/
+
+.about-block {
+  background-color: #f5efe0;
+  background-size: repeat;
+  border-radius: 20px;
+  overflow: hidden;
+  min-height: 300px;
+  display: grid;
+  display: grid;
+  grid-template-columns: .25fr 2fr .25fr;
+  grid-template-rows: .25fr 2fr .75fr;
+  grid-column-gap: 15px;
+  grid-row-gap: 15px; 
+  border-top: 2px solid #32332b;
+  border-right: 8px solid #32332b;
+  border-bottom: 8px solid #32332b;
+  border-left: 2px solid #32332b;
+  padding: 5px;
+
+}
+
+.card-background { 
+   grid-area: 1 / 1 / 4 / 4;
+}
+
+
+.about-block-swatch {
+  width: 100%;
+  height: 100%;
+  background-color: ;
+  background-size: contain;
+  background-position: center center;
+  background-repeat: ;
+  margin: auto ; /* Automatically set equal margins left and right */
+  grid-area: 2 / 2 / 3 / 3;
+  border-radius: 20px;
+}
+
+.about-block-title {
+  background: ;
+  color: #32332b;
+  align-content: center;
+  justify-content: center;
+  padding: 10px;
+  font-weight: bold;
+  font-size: 32px;
+  grid-area: 3 / 2 / 4 / 3;
+  border: 2px solid #32332b;
+  border-radius: 10px;
+}
+
+.about-block-bar { 
+  grid-area: 1 / 1 / 2 / 4;
+  background-color: #32332b;
+  border-radius: 20px;
+}
+
+
+
+
+/******************************************************************************
+    end  NEW SMALL CARD LAYOUT
+******************************************************************************/
+
+
+
+
+
+
+
+/* Center the heading */
+.directoryheader {
+  grid-row: 1; /* Place it in the first row of the grid */
+  justify-self: center; /* Horizontally center within the grid container */
+  align-self: center; /* Vertically center (if needed for spacing) */
+}
+
+.block {
+  background-color: #FCACC7;
+  color: #69F7BE;
+  border-radius: 10px;
+  padding: 10px;
+  font-size: 150%;
+  text-align: center; /* Center text within the container */
+}
+
+.notes {
+  font-size: 80%;
+  color: #647EBB;
+}
+
+.tags {
+  font-size: 50%;
+  color: #647EBB;
+}
+
+
+
+/* Very light scaling for our illustration */
+.title {
+  color: var(--color-text-header);
+  font-family: HK Grotesk;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 100px;
+  line-height: 105%;
+  margin: 0;
+}
+
+/* Very light scaling for our illustration */
+.intent {
+  max-width: 100%;
+  max-height: var(--image-max-width);
+  margin-top: var(--image-margin);
+  padding: ;
+}
+
+/* Instructions */
+.instructions {
+  margin: 1rem auto 0;
+}
+
+/* Button - Add it from the README instructions */
+button,
+input {
+  font-family: inherit;
+  font-size: 100%;
+  background: #FFFFFF;
+  border: 1px solid #000000;
+  box-sizing: border-box;
+  border-radius: 4px;
+  padding: 0.5rem 1rem;
+  transition: 500ms;
+}
+
+/* Subheading */
+h2 {
+  color: #eec890;
+}
+
+/* Interactive image */
+.illustration:active {
+  transform: translateY(5px);
+}
+
+/* Button dip
+- Toggling this class on and off will move it down and up again
+- The button transition property above determines the speed of the translate (500ms)
+*/
+.dipped {
+  transform: translateY(5px);
+}
+
+/* Links that open files in the editor */
+.fileopener {
+  cursor:pointer;
+  font-weight:bold;
+  border-bottom:3px solid var(--color-primary);
+  color: var(--color-secondary);
+}
+.fileopener:hover {
+  border-bottom:3px solid var(--color-secondary);
+}
