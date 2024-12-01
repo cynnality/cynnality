@@ -98,10 +98,7 @@ h1.title {
 ******************************************************************************/
 
 /* reset defaults */
-* {
-  box-sizing: border-box;
-  margin: 0;
-}
+
 
 /* css variables */
 
@@ -119,7 +116,7 @@ h1 {
   height: var(--pane-default-height);
 
   display: grid;
-  grid-template-rows: var(--title-bar-height) 1fr;
+  grid-template-rows: 32px 1fr;
 
   border-radius: var(--pane-border-radius);
   box-shadow: 0 4px 16px rgba(0, 0, 0, 0.5);
