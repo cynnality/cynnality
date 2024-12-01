@@ -131,7 +131,7 @@ h1 {
   border-radius: var(--pane-border-radius);
   box-shadow: 0 4px 16px rgba(0, 0, 0, 0.5);
 
-  overflow: hidden;
+  overflow: clip;
 
   min-width: 160px;
   min-height: 160px;
@@ -154,18 +154,19 @@ h1 {
 }
 
 .pane .content {
-  position: ;
+  position: relative;
   background-color: #f5efe0;
 }
 
 /* make image fill the space */
 .pane .content img {
-  position:;
+  position: absolute;
   top: 0;
   left: 0;
-  width: 50%;
+  width: 100%;
   height: 100%;
-
+  max-width: 100%;
+  max-height: 100%;
 
   object-fit: cover;
 
