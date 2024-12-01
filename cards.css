@@ -140,10 +140,10 @@ h1.title {
   padding: 10px;
   justify-content: center;
   align-content: center;
-  border-top: 4px solid #000000;
-  border-right: 7px solid #000000;
-  border-bottom: 7px solid #000000;
-  border-left: 4px solid #000000;
+  border-top: 4px solid #32332b;
+  border-right: 7px solid #32332b;
+  border-bottom: 7px solid #32332b;
+  border-left: 4px solid #32332b;
   background-image: url('https://cdn.glitch.global/f2fb7d0f-1059-40bd-8a52-8cb00efc9022/dithered-image(2).png?v=1732866600231');
   background-size: contain;
   background-position: center;
@@ -235,7 +235,7 @@ h2.cardsheader {
 }
 .cpdescription { 
   grid-area: 1 / 5 / 5 / 7; 
-  margin-top: 20px;
+  margin-top: auto;
   
 }
 .cplink { grid-area: 5 / 5 / 7 / 7; 
@@ -339,6 +339,12 @@ h2.cardsheader {
   grid-area: 3 / 2 / 4 / 3;
   border: 2px solid #32332b;
   border-radius: 10px;
+}
+
+.cardbar { 
+  grid-area: 1 / 1 / 2 / 4;
+  background-color: #32332b;
+  border-radius: 20px;
 }
 
 
