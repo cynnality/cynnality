@@ -25,13 +25,27 @@ to this section's matching END comment to see page-specific styles.
   --image-margin: 3rem;
   --font-family: "Subjectivity";
   --font-family-header: "Subjectivity";
+  
+  /* ADDED FROM PANES TUTORIAL*/
+  
+  --desktop-color: #ff78f0;
+  --desktop-text-color: #ffffff;
+
+  --title-bar-color: #cccccc;
+  --title-bar-text-color: #333333;
+  --title-bar-highlight-color: #aaaaaa;
+  --title-bar-height: 32px;
+
+  --pane-content-background-color: #ffffff;
+
+  --pane-default-width: 320px;
+  --pane-default-height: 360px;
+  --pane-border-radius: 8px;
 }
 
 /* Basic page style resets */
 
 
-* {
-  box-sizing: border-box;
 }
 [hidden] {
   display: none !important;
@@ -108,6 +122,9 @@ body {
   background-color: #f1415c;
   background-image: url('https://cdn.glitch.global/f2fb7d0f-1059-40bd-8a52-8cb00efc9022/everytexture.com-stock-plastic-texture-00023-diffuse-1024.webp?v=1732996444354'); /* Path to your background image */
   background-blend-mode: overlay;
+    /* if outside of the window, clip */
+  height: 100vh;
+  overflow: clip;
 }
 
 h1.title {
@@ -213,12 +230,106 @@ h2.cardsheader {
   border-radius: 20px;
 }
 
+/******************************************************************************
+   end  about blocks
+******************************************************************************/
+
+
 
 
 
 /******************************************************************************
-   end  about blocks
+                   ADDED FROM PANES TUTORIAL
 ******************************************************************************/
+
+/* reset defaults */
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+/* css variables */
+
+
+
+h1 {
+  color: var(--desktop-text-color);
+  padding: 32px;
+  font-size: 1.5rem;
+}
+
+.pane {
+  position: absolute;
+  width: var(--pane-default-width);
+  height: var(--pane-default-height);
+
+  display: grid;
+  grid-template-rows: var(--title-bar-height) 1fr;
+
+  border-radius: var(--pane-border-radius);
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.5);
+
+  overflow: clip;
+
+  min-width: 160px;
+  min-height: 160px;
+}
+
+.pane .title {
+  cursor: move;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background-color: var(--title-bar-color);
+  color: var(--title-bar-text-color);
+}
+
+.pane h2 {
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+.pane .content {
+  position: relative;
+  background-color: var(--pane-content-background-color);
+}
+
+/* make image fill the space */
+.pane .content img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  max-width: 100%;
+  max-height: 100%;
+
+  object-fit: cover;
+
+  -webkit-user-drag: none;
+  user-drag: none;
+}
+
+/* add a corner in bottom right */
+.pane .corner {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 24px;
+  height: 24px;
+
+  /* north west to south east */
+  cursor: nwse-resize;
+
+  /* background-color: red; */
+}
+
+.pane.is-dragging .title {
+  background-color: var(--title-bar-highlight-color);
+}
+
 
 
 /* Very light scaling for our illustration */
