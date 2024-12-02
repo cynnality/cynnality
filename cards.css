@@ -145,17 +145,25 @@ h1.title {
   background-image: url('https://cdn.glitch.global/f2fb7d0f-1059-40bd-8a52-8cb00efc9022/dithered-image(2).png?v=1732866600231');
   background-size: contain;
   background-position: center;
+  display: grid;
+  grid-template-columns: 1fr;
+grid-template-rows: 1fr .5fr;
+grid-column-gap: 0px;
+grid-row-gap: 0px; 
 }
 
-.cardsheader {
+.wrappercont h2 {
+  display: inline-block; /* Acts like a block element, but only as wide as its content*/
   color: #f5e324;
   font-size: 30px;
   background: #3038cf;
   border: 2px solid #f5e324;
+  padding: 5px;
 }
 
-.cardsheader p {
+.wrappercont p {
   font-size: 16px;
+  display: inline-block; /* Acts like a block element, but only as wide as its content*/
   color: #f5e324;
   background: #3038cf;
   border: 2px solid #f5e324;
