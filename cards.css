@@ -62,6 +62,12 @@ to this section's matching END comment to see page-specific styles.
     font-style: italic;
 }
 
+@font-face {
+  font-family: 'SubjectivityLite';
+  src: url('https://cdn.glitch.global/f2fb7d0f-1059-40bd-8a52-8cb00efc9022/Subjectivity-LightSlanted.otf?v=1733181209520');
+  font-weight: light;
+  font-style: italic;
+}
 
 
 /* Navigation grid */
@@ -239,7 +245,7 @@ h1.title {
 .cptags {  
   margin: auto;
   color: #f5efe0;
-  
+  font-family: 'SubjectivityLite';
 }
 .cptitle {  
   font-size: 42px;
