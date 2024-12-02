@@ -159,11 +159,11 @@ h1.title {
 
 .texthighlight {
   display: inline-block; /* Acts like a block element, but only as wide as its content */
-  line-height: 1.1;
+  line-height: .3;
   background: #f1415c;
   padding: 2px;
   margin: 10px;
-  border-radius: 4px;
+  border-radius: ;
 }
 
 
