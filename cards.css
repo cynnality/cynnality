@@ -129,7 +129,6 @@ h1.title {
 }
 
 .wrappercont {
-  border-radius: 10px;
   max-width: 50vw;
   width: 100%;
   min-width: 300px;
@@ -162,8 +161,9 @@ h1.title {
 
 .texthighlight {
   display: inline-block; /* Acts like a block element, but only as wide as its content */
-  background: #f5efe0;
-  border-radius: 10px;
+  background: #e6d6b2;
+  padding: 2px;
+  margin: 10px;
 }
 
 
