@@ -135,7 +135,7 @@ h1.title {
   min-width: 300px;
   margin: 0 auto; /* Centers the div horizontally */
   text-align: center; /* Center text within the container */
-  padding: 10px;
+  padding: ;
   justify-content: center;
   align-content: center;
   border-top: 4px solid #32332b;
@@ -145,12 +145,14 @@ h1.title {
   background-image: url('https://cdn.glitch.global/f2fb7d0f-1059-40bd-8a52-8cb00efc9022/dithered-image(2).png?v=1732866600231');
   background-size: contain;
   background-position: center;
-  display: block;
 }
 
 .wrappercont h2 {
   color: #f5e324;
-  font-size: 30px;
+  font-size: 32px;
+  outline-color: #3038cf;
+  outline-style: solid;
+  outline-width: 2px;
 }
 
 .wrappercont p {
@@ -162,9 +164,7 @@ h1.title {
 .texthighlight {
   display: inline-block; /* Acts like a block element, but only as wide as its content */
   background-color: #3038cf;
-  padding: 4px; /* Add some padding if needed */
   border-radius: 5px;
-  border: 2px dashed #f5e324
 }
 
 
