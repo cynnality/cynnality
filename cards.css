@@ -192,12 +192,11 @@ h2.cardsheader {
   background-blend-mode: multiply;
   border-radius: 10px;
   min-height: 50vh; /* Ensures the popup is at least 50% of the viewport height */
-  max-width: 90vw; /* Set maximum width to 75% of the viewport width */
+  max-width: 75vw; /* Set maximum width to 75% of the viewport width */
   max-height: 75vh; /* Set maximum height to 75% of the viewport height */
   width: 50vw; /* Use 90% width for smaller screens if needed */
   min-width: 30vw;
   height: 70vh;
-  padding: 15px;
   position: relative;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
   overflow: hidden; /* Hide any overflowing content */
@@ -206,6 +205,11 @@ h2.cardsheader {
   grid-template-rows: 32px 1fr;
   grid-column-gap: 0px;
   grid-row-gap: 0px; 
+}
+
+.cpbar {
+  grid-area: 1 / 1 / 2 / 3;
+  background-color: #f5efe0;
 }
 
 .cpimage { grid-area: 2 / 1 / 3 / 2; 
@@ -227,8 +231,6 @@ h2.cardsheader {
 .cptitle {  
   font-size: 62px;
   padding: 10px;
-  border-left: 3px solid #000000; /* Optional: For visualization */
-  border-right: 3px solid #000000;
   justify-content: center;
   max-height: 100%;
   margin: auto auto; /* Automatically set equal margins left and right */
@@ -239,9 +241,6 @@ h2.cardsheader {
   padding: 10px;
   justify-content: center;
   max-height: 90%;
-  margin: auto auto; /* Automatically set equal margins left and right */
-  width: 100%;
-  min-width: ;
   
 }
 .cplink { 
