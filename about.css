@@ -74,9 +74,7 @@ END Glitch hello-app default styles
 
 body {
   font-family: 'Subjectivity';
-  background-color: #f1415c;
-  background-image: url('https://cdn.glitch.global/f2fb7d0f-1059-40bd-8a52-8cb00efc9022/everytexture.com-stock-plastic-texture-00023-diffuse-1024.webp?v=1732996444354'); /* Path to your background image */
-  background-blend-mode: overlay;
+  background-color: #f5efe0;
     /* if outside of the window, clip */
   height: 100vh;
   overflow: clip;
