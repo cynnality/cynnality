@@ -147,7 +147,7 @@ h1 {
 
 }
 
-.flower {
+.flower {  
   background-size: 200px; /* Ensure the background covers the entire div */
   background-repeat: repeat; /* Prevent repeating the background image */
   min-width: 400px;
@@ -158,6 +158,7 @@ h1 {
 }
 
 .movegif img{
+  background-size: 300px;
   background-repeat: repeat;
   
 }
