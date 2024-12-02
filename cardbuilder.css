@@ -317,6 +317,11 @@ h1 {
   border: 1px solid #ccc;
   border-radius: 10px;
   overflow-y: auto;  /* Makes sure you can scroll if there's a lot of content */
+  color: #3038cf;
+}
+
+.card-creator h2 {
+  color: #3038cf;
 }
 
 #cardForm label {
