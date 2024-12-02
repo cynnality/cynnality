@@ -81,7 +81,7 @@ a:not(.btn--remix):visited {
   font-style: normal;
   font-weight: normal;
   font-size: 1.1rem;
-  color: #000;
+  color: #f5efe0;
   text-decoration: none;
   border-style: none;
 }
@@ -200,9 +200,7 @@ h1.title {
 
 
 .bigcardlayout {
-  background: #f5efe0;
-  background-image: url("https://cdn.glitch.global/f2fb7d0f-1059-40bd-8a52-8cb00efc9022/dither_it_Texturelabs_Paper_347S.png?v=1733013795961");
-  background-blend-mode: multiply;
+  background: #000000;
   border-radius: 10px;
   min-height: 50vh; /* Ensures the popup is at least 50% of the viewport height */
   max-width: 90vw; /* Set maximum width to 75% of the viewport width */
@@ -235,10 +233,12 @@ h1.title {
 
 .cpcontent {
   grid-area: 2 / 2 / 3 / 3;
+  color: #f5efe0;
 }
 
 .cptags {  
   margin: auto;
+  color: #f5efe0;
   
 }
 .cptitle {  
@@ -247,6 +247,7 @@ h1.title {
   justify-content: center;
   max-height: 100%;
   margin: auto auto; /* Automatically set equal margins left and right */
+  color: #f5efe0;
 }
 .cpdescription {  
   margin-top: auto;
@@ -257,7 +258,7 @@ h1.title {
   
 }
 .cplink { 
-    color: #007bff;
+    color: #f5efe0;
     text-decoration: underline;
     position: absolute; /* Position the text absolutely within the container */
     text-align: center center;
@@ -358,7 +359,7 @@ h1.title {
   color: #32332b;
   align-content: center;
   justify-content: center;
-  padding: 10px;
+  padding: ;
   font-weight: bold;
   font-size: 32px;
   grid-area: 3 / 2 / 4 / 3;
