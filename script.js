@@ -26,15 +26,15 @@ cards.forEach(card => {
   card.addEventListener('click', function() {
     // Extract data from the card element
     const title = card.getAttribute('data-title');
-    const description = card.getAttribute('data-description');
     const link = card.getAttribute('data-link');
     const tags = card.getAttribute('data-tags');
     const image = card.querySelector('.card-image').style.backgroundImage;
+    const descriptionHTML = card.querySelector('.card-description').innerHTML; // Use innerHTML to get all HTML content
 
     // Set content in the popup
     // Set content in the popup
     document.querySelector('.cptitle').textContent = title;
-    document.querySelector('.cpdescription').textContent = description;
+    document.querySelector('.cpdescription').innerHTML = descriptionHTML; // Use innerHTML to set the HTML content
     document.querySelector('.cptags').textContent = tags;
     document.querySelector('.cpimage').style.backgroundImage = image;
     
