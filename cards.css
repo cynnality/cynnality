@@ -192,7 +192,7 @@ h2.cardsheader {
   background-blend-mode: multiply;
   border-radius: 10px;
   min-height: 50vh; /* Ensures the popup is at least 50% of the viewport height */
-  max-width: 75vw; /* Set maximum width to 75% of the viewport width */
+  max-width: 90vw; /* Set maximum width to 75% of the viewport width */
   max-height: 75vh; /* Set maximum height to 75% of the viewport height */
   width: 50vw; /* Use 90% width for smaller screens if needed */
   min-width: 30vw;
@@ -247,8 +247,9 @@ h2.cardsheader {
     color: #007bff;
     text-decoration: underline;
     position: absolute; /* Position the text absolutely within the container */
-    bottom: 0; /* Fixes the text to the bottom of the container */
-  margin: auto;
+    text-align: center center;
+    margin: auto;
+    bottom: 5px;
 }
 
 .cplink:hover {
