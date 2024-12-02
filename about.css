@@ -209,7 +209,12 @@ h1 {
 }
 
 .pane.is-dragging .title {
-  background-color: #6ec470;
+  background-color: #2f6130;
+  color: #f5efe0;
+}
+
+.pane.is-dragging {
+  border: 8px solid #2f6130;
 }
 
 
