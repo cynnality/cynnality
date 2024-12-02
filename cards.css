@@ -148,23 +148,22 @@ h1.title {
 }
 
 .wrappercont h2 {
-  color: #f5e324;
+  color: #3038cf;
   font-size: 32px;
-  outline-color: #3038cf;
-  outline-style: solid;
-  outline-width: 2px;
+
 }
 
 .wrappercont p {
   font-size: 16px;
-  color: #f5e324;
+  color: #3038cf;
+
 
 }
 
 .texthighlight {
   display: inline-block; /* Acts like a block element, but only as wide as its content */
-  background-color: #3038cf;
-  border-radius: 5px;
+  background: #f5efe0;
+  border-radius: 10px;
 }
 
 
