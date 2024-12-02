@@ -147,12 +147,21 @@ h1.title {
   background-position: center;
 }
 
-h2.cardsheader {
-  color: #ffffff;
+.cardsheader {
+  color: #f5e324;
   font-size: 30px;
-    
+  background: #3038cf;
+  border: 2px solid #f5e324;
 }
 
+.cardsheader p {
+  font-size: 16px;
+  color: #f5e324;
+  background: #3038cf;
+  border: 2px solid #f5e324;
+  border-radius: 2px;
+  padding: 5px;
+}
 
 
 
