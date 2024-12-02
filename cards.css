@@ -30,9 +30,7 @@ to this section's matching END comment to see page-specific styles.
 /* Basic page style resets */
 
 
-* {
-  box-sizing: border-box;
-}
+
 [hidden] {
   display: none !important;
 }
@@ -147,23 +145,25 @@ h1.title {
 }
 
 .wrappercont h2 {
-  color: #3038cf;
+  color: #f5e324;
   font-size: 32px;
 
 }
 
 .wrappercont p {
   font-size: 16px;
-  color: #3038cf;
+  color: #f5e324;
 
 
 }
 
 .texthighlight {
   display: inline-block; /* Acts like a block element, but only as wide as its content */
-  background: #e6d6b2;
+  line-height: 1.1;
+  background: #f1415c;
   padding: 2px;
   margin: 10px;
+  border-radius: 4px;
 }
 
 
