@@ -49,7 +49,15 @@ closeButtons.forEach(button => {
 });
 
 
-
+// Close the bigcard when clicking anywhere outside of it
+window.onclick = function(event) {
+  const bigcards = document.querySelectorAll('.bigcard');
+  bigcards.forEach(bigcard => {
+    if (event.target == bigcard) {
+      bigcard.classList.remove('show'); // Remove the 'show' class to hide the bigcard
+    }
+  });
+};
 
 
 

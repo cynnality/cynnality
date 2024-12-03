@@ -152,7 +152,7 @@ h1.title {
 
 /* behind the modal/bigcard */
 .bigcard {
-  visibility: hidden;
+  display: none; /* Hidden by default */
   position: fixed; /* Stay in place */
   z-index: 1; /* Sit on top */
   padding-top: 100px; /* Location of the box */
@@ -165,11 +165,6 @@ h1.title {
   background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
 }
 
-.bigcardlayout-container.show {
-  visibility: visible;
-  opacity: 1;
-}
-
 /* all the stuff inside the bigcard */
 .bigcardcontent {
   background-color: #fefefe;
@@ -177,6 +172,10 @@ h1.title {
   padding: 20px;
   border: 1px solid #888888;
   width: 80%;
+}
+
+.bigcard.show {
+  display: flex; /* Show modal with flexbox to center it */
 }
 
 /* The Close Button */
