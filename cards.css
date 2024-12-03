@@ -109,7 +109,7 @@ END Glitch hello-app default styles
 
 body {
   font-family: 'Subjectivity';
-  background-color: #f1415c;
+  background-color: #000000;
 }
 
 h1.title {
@@ -119,6 +119,7 @@ h1.title {
 .computergirl {
   width: 200px;
   height: 200px;
+  position: fixed;
 }
 
 /* Page structure */
@@ -150,9 +151,9 @@ h1.title {
   border-right: 7px solid #32332b;
   border-bottom: 7px solid #32332b;
   border-left: 4px solid #32332b;
-  background-image: url('https://cdn.glitch.global/f2fb7d0f-1059-40bd-8a52-8cb00efc9022/dithered-image(2).png?v=1732866600231');
+ /* background-image: url('https://cdn.glitch.global/f2fb7d0f-1059-40bd-8a52-8cb00efc9022/dithered-image(2).png?v=1732866600231');
   background-size: contain;
-  background-position: center;
+  background-position: center; */
 }
 
 .wrappercont h2 {
