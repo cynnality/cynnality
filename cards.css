@@ -139,7 +139,7 @@ h1.title {
 }
 
 .wrappercont {
-  
+  max-width: 30vw;
   margin: 0 auto; /* Centers the div horizontally */
   text-align: center; /* Center text within the container */
   border-top: 4px solid #32332b;
