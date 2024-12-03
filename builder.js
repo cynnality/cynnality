@@ -21,31 +21,35 @@ if (btn) { // Detect clicks on the button
 
 
 
-// Select all the cards and modals
-const cards = document.querySelectorAll('.card');
+
+// Select all the smallcards and bigcards
+const cards = document.querySelectorAll('.smallcard');
 const closeButtons = document.querySelectorAll('.close');
 
-// Add click event listeners to each card to open the corresponding modal
+// Add click event listeners to each smallcard to open the corresponding bigcard
 cards.forEach(card => {
   card.addEventListener('click', () => {
-    const modalId = card.getAttribute('data-modal');
-    const modal = document.getElementById(modalId);
-    if (modal) {
-      modal.classList.add('show'); // Add the 'show' class to display the modal
+    const bigcardId = card.getAttribute('data-modal');
+    const bigcard = document.getElementById(bigcardId);
+    if (bigcard) {
+      bigcard.classList.add('show'); // Add the 'show' class to display the bigcard
     }
   });
 });
 
-// Add click event listeners to each close button to close the corresponding modal
+// Add click event listeners to each close button to close the corresponding bigcard
 closeButtons.forEach(button => {
   button.addEventListener('click', () => {
-    const modalId = button.getAttribute('data-modal');
-    const modal = document.getElementById(modalId);
-    if (modal) {
-      modal.classList.remove('show'); // Remove the 'show' class to hide the modal
+    const bigcardId = button.getAttribute('data-modal');
+    const bigcard = document.getElementById(bigcardId);
+    if (bigcard) {
+      bigcard.classList.remove('show'); // Remove the 'show' class to hide the bigcard
     }
   });
 });
+
+
+
 
 
 
