@@ -226,7 +226,7 @@ table, td {
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
   overflow: hidden; /* Hide any overflowing content */
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: (300px, 1fr);
   grid-template-rows: 32px 1fr;
   grid-column-gap: 0px;
   grid-row-gap: 0px; 
