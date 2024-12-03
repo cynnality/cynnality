@@ -116,6 +116,11 @@ h1.title {
   font-family: 'Subjectivity';
 }
 
+.computergirl {
+  width: 200px;
+  height: 200px;
+}
+
 /* Page structure */
 .wrappertop {
   min-height: 50%(--wrapper-height);
