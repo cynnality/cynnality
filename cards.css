@@ -116,10 +116,10 @@ h1.title {
   font-family: 'Subjectivity';
 }
 
-.computergirl {
-  width: 200px;
-  height: 200px;
+.computergirl img {
+  max-width: 800px;
   position: fixed;
+  z-index: -1;
 }
 
 /* Page structure */
