@@ -261,12 +261,9 @@ h1.title {
   color: #f5efe0;
 }
 
+
 .cpdescription {  
-  margin-top: auto;
-  font-family: 'SubjectivityMed';
-  padding: 10px;
-  justify-content: center;
-  max-height: 90%;
+
 }
 
 .cplink { 
