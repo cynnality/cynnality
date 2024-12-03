@@ -123,29 +123,6 @@ h1.title {
           SWITCHING TO MODALS
 ******************************************************************************/
 
-/*small card*/
-.card {
-  background-color: #f5efe0;
-  background-size: repeat;
-  border-radius: 20px;
-  overflow: hidden;
-  transition: transform 0.1s;
-  cursor: pointer;
-  min-height: 300px;
-  display: grid;
-  display: grid;
-  grid-template-columns: .25fr 2fr .25fr;
-  grid-template-rows: .25fr 2fr .75fr;
-  grid-column-gap: 15px;
-  grid-row-gap: 15px; 
-  border-top: 2px solid #32332b;
-  border-right: 8px solid #32332b;
-  border-bottom: 8px solid #32332b;
-  border-left: 2px solid #32332b;
-  padding: 5px;
-}
-
-
 /* behind the modal/bigcard */
 .bigcard {
   display: none; /* Hidden by default */
@@ -179,7 +156,171 @@ h1.title {
 
 
 
+.bigcardlayout-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 0s, opacity 0.3s;
+}
 
+.bigcardlayout-container.show {
+  visibility: visible;
+  opacity: 1;
+}
+
+
+.bigcardlayout {
+  background: #ffffff;
+  border-radius: 10px;
+  min-height: 30vh; /* viewport height */
+  max-width: 90vw; /* viewport width */
+  max-height: 75vh; 
+  width: 50vw; 
+  height: 70vh;
+  padding: 15px;
+  position: relative;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: repeat(5, 1fr) .5fr;
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+}
+
+.cpimage { grid-area: 1 / 1 / 6 / 4; 
+  background-color: #ee1132;
+  background-size: contain; /* Ensure the entire image is visible without cropping */
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 10px; /* Optional for rounded corners */
+  padding: 10px;
+}
+.cptags { grid-area: 6 / 1 / 7 / 4; 
+  
+}
+.cptitle { grid-area: 1 / 4 / 7 / 5; 
+  font-size: 62px;
+  writing-mode: vertical-rl; /* Makes text flow from top to bottom, right to left */
+  text-orientation: mixed; /* Keeps each letter upright */
+  transform: rotate(-180deg); /* Optional: flip the text if needed for readability */
+  padding: 10px;
+  border: 1px solid #ccc; /* Optional: For visualization */
+}
+.cpdescription { grid-area: 1 / 5 / 5 / 7; 
+  
+}
+.cplink { grid-area: 5 / 5 / 7 / 7; 
+    color: #007bff;
+    text-decoration: underline;
+}
+
+.cplink:hover {
+  text-decoration: none;
+}
+
+
+.cp-close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+  font-size: 20px;
+  color: #3038cf
+}
+
+/******************************************************************************
+NEW SMALL CARD LAYOUT
+******************************************************************************/
+
+
+.cardgrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  grid-template-rows: repeat(auto-fill, minmax(300px, 1fr));
+  grid-gap: 20px;
+  background-color:;
+  color: #EC154F;
+  justify-content: center;
+  padding: 10px;
+  border-radius: 20px;
+  text-align: center; /* Center text within the container */
+  margin-top: 20px;  
+}
+
+/* NEW CARD LAYOUT CSS GRID (for the look of the small card) */
+.card {
+  background-color: ;
+  background-image: url("https://cdn.glitch.global/f2fb7d0f-1059-40bd-8a52-8cb00efc9022/dither_it_Texturelabs_Paper_347S.png?v=1733013795961");
+  background-blend-mode: multiply;
+  background-size: repeat;
+  border-radius: 20px;
+  overflow: hidden;
+  transition: transform 0.1s;
+  cursor: pointer;
+  min-height: 300px;
+  display: grid;
+  grid-template-columns: .5fr 2fr .5fr;
+  grid-template-rows: .5fr 2fr .75fr;
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+  border-top: 4px solid #000000;
+  border-right: 4px solid #000000;
+  border-bottom: 4px solid #000000;
+  border-left: 4px solid #000000;
+  padding: 5px;
+
+}
+
+.card-background { 
+  grid-area: 1 / 1 / 4 / 4;
+}
+
+
+
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: ;
+}
+
+.card-image {
+  width: 100%;
+  height: 100%;
+  background-color: #ffffff;
+  background-size: cover;
+  background-position:  ;
+  background-repeat: ;
+  margin: auto ; /* Automatically set equal margins left and right */
+  grid-area: 2 / 2 / 3 / 3;
+  border: 2px solid #000000;
+  border-radius: 20px;
+}
+
+.card-title {
+  background: ;
+  color: #000000;
+  align-content: center center ;
+  padding: 10px;
+  font-weight: bold;
+  font-size: 32px;
+  grid-area: 3 / 2 / 4 / 3;
+  
+}
+
+
+
+
+/******************************************************************************
+    end  NEW SMALL CARD LAYOUT
+******************************************************************************/
 
 
 .geekcontainer {
