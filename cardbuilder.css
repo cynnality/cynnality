@@ -124,27 +124,31 @@ h1.title {
 ******************************************************************************/
 
 /*small card*/
-.card {
-  background-color: #f5efe0;
-  background-size: repeat;
-  border-radius: 20px;
-  overflow: hidden;
-  transition: transform 0.1s;
-  cursor: pointer;
-  min-height: 300px;
-  display: grid;
-  display: grid;
-  grid-template-columns: .25fr 2fr .25fr;
-  grid-template-rows: .25fr 2fr .75fr;
-  grid-column-gap: 15px;
-  grid-row-gap: 15px; 
-  border-top: 2px solid #32332b;
-  border-right: 8px solid #32332b;
-  border-bottom: 8px solid #32332b;
-  border-left: 2px solid #32332b;
-  padding: 5px;
+.smallcard {
+  width: 300px;
+  height: 400px;
+  background-color: black;
 }
 
+.smallcardimage {
+  width: 100%;
+  height: 100%;
+  background-size: contain;
+  background-position: center;
+}
+
+.smallcardtitle {
+  background: #f5efe0;
+  color: #32332b;
+  text-align: center;
+  justify-content: center;
+  font-weight: bold;
+  font-size: 32px;
+  border: 2px solid #32332b;
+  border-radius: 10px;
+  position: relative;
+  bottom: 5px;
+}
 
 /* behind the modal/bigcard */
 .bigcard {
@@ -162,7 +166,7 @@ h1.title {
 }
 
 /* all the stuff inside the bigcard */
-.bigcard-content {
+.bigcardcontent {
   background-color: #fefefe;
   margin: auto;
   padding: 20px;
