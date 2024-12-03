@@ -236,7 +236,7 @@ h1.title {
 .cpimage { grid-area: 2 / 1 / 3 / 2; 
   background-size: contain; /* Ensure the entire image is visible without cropping */
   background-position: center;
-  background-repeat: no-repeat;
+  background-repeat: repeat;
   border-radius: 10px; /* Optional for rounded corners */
   padding: 10px;
 }
