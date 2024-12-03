@@ -190,6 +190,12 @@ Try adding more properties to the CSS `dipped` style for the button to see how t
 }              
 
                               end OLD SMALL CARD LAYOUT
+                              
+                              
+    **redo card page - all black (inspo picture in pinterest)
+    -girl @ laptop dithered/stippled - added to left corner of card page
+    -could be more of a motivational type thing (back to if i ruled the world, i'd consult
+    these cards type beat).
               
               
               
