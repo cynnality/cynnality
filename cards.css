@@ -159,7 +159,6 @@ h1.title {
   font-size: 16px;
   color: #ffffff;
 
-
 }
 
 table, td {
@@ -173,8 +172,17 @@ tr:hover {
 }
 
 tr .tablelink {
-  color: blue;
+  color: white;
 }
+
+tr:hover .tablelink {
+  color: black;
+}
+
+tr .tablelink:hover {
+  text-decoration: none;
+}
+
 
 .cardgrid {
   display: grid;
