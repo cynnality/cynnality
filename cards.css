@@ -86,7 +86,7 @@ a:not(.btn--remix):visited {
   font-family: HK Grotesk;
   font-style: normal;
   font-weight: normal;
-  font-size: 1.1rem;
+  font-size: ;
   color: #f5efe0;
   text-decoration: none;
   border-style: none;
@@ -251,6 +251,7 @@ h1.title {
   color: #f5efe0;
   font-family: 'SubjectivityLite';
 }
+
 .cptitle {  
   font-size: 42px;
   padding: 10px;
@@ -259,14 +260,15 @@ h1.title {
   margin: auto auto; /* Automatically set equal margins left and right */
   color: #f5efe0;
 }
+
 .cpdescription {  
   margin-top: auto;
   font-family: 'SubjectivityMed';
   padding: 10px;
   justify-content: center;
   max-height: 90%;
-  
 }
+
 .cplink { 
     color: #f5efe0;
     text-decoration: underline;
