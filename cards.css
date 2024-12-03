@@ -183,6 +183,10 @@ tr .tablelink:hover {
   text-decoration: none;
 }
 
+td .review {
+  align-content: left;
+}
+
 
 .cardgrid {
   display: grid;
