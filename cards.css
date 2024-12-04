@@ -170,7 +170,6 @@ tr:hover {
 
 tr .tablelink {
   color: white;
-  font-size: 28px;
 }
 
 tr:hover .tablelink {
@@ -263,6 +262,11 @@ tr .tablelink:hover {
   background-image: url('https://cdn.glitch.global/f2fb7d0f-1059-40bd-8a52-8cb00efc9022/circle_stipple_dither-removebg-preview.png?v=1733176338965');
   background-size: 200px;
   background-repeat: repeat;
+}
+
+#bigcard1 .card-title {
+  color: white;
+  font-size: 40px;
 }
 
 /******************************************************************************
