@@ -8,6 +8,12 @@ In `index.html`, add this code on the line after the comment with `ADD BUTTON HE
 <button>
     Click me!
 </button>
+
+12/4/24 
+the modal is popping out to the bottom and i like it...
+keep it this way and the pop up page could be split in 2 
+the right side being a table (retro vibe, scroll bar etc)
+left side being a "popup" with the picture and source picture (like previous card popup a bit)
 ```
 
 Look at the page to see the button. Click it!
