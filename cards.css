@@ -118,6 +118,7 @@ h1.title {
   margin: 0 1rem;
   padding: 20px;
 }
+
 .content {
   display: flex;
   flex-direction: column;
@@ -156,6 +157,10 @@ h1.title {
 table, td {
   border: 1px solid white;
   padding: 10px;
+}
+
+tr {
+  color:white
 }
 
 tr:hover {
@@ -230,9 +235,7 @@ tr .tablelink:hover {
 
 /* all the stuff inside the bigcard */
 .bigcardcontent {
-  background-color: #fefefe;
-  margin: auto;
-  padding: 20px;
+  background-color: black;
   border: 1px solid #888888;
   width: 80%;
 }
