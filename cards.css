@@ -314,8 +314,6 @@ tr .tablelink:hover {
   background-color: #000000;
   padding: 10px;
   box-shadow: inset 2px 2px #999999;
-  display: flex;
-  
 }
 
 .content {
