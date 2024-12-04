@@ -299,8 +299,12 @@ tr .tablelink:hover {
   display: flex;
 }
 
-.everyoneimg {
-  width: 50%;
+.cardtable {
+  flex: 1;
+}
+
+.tablewindow {
+  flex: 2;
 }
 
 /******************************************************************************
