@@ -104,6 +104,10 @@ h1.title {
   font-family: 'Subjectivity';
 }
 
+h2 {
+  color: white;
+}
+
 .computergirl img {
   max-width: 800px;
   position: fixed;
@@ -271,6 +275,7 @@ tr .tablelink:hover {
 }
 
 #bigcard1 {
+  
 }
 
 #bigcard1 .card-title {
@@ -278,9 +283,12 @@ tr .tablelink:hover {
   font-size: 40px;
   margin: 0, 0;
 }
-.flex-container {
+
+.bigcard1flex-container {
   display: flex;
 }
+
+#bigcard1
 
 /******************************************************************************
           END SWITCHING TO MODALS
@@ -327,9 +335,6 @@ input {
 }
 
 /* Subheading */
-h2 {
-  color: #eec890;
-}
 
 /* Interactive image */
 .illustration:active {
