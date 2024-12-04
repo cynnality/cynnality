@@ -176,6 +176,92 @@ tr .tablelink:hover {
   text-decoration: none;
 }
 
+/******************************************************************************
+    NEW MODAL CARD SETUP
+******************************************************************************/
+
+
+.smallcardgrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  grid-template-rows: repeat(auto-fill, minmax(300px, 1fr));
+  grid-gap: 20px;
+}
+
+/*small card*/
+.smallcard {
+  background-color: black;
+  border-radius: 10px;
+}
+
+
+
+.smallcardtitle {
+  background: #f5efe0;
+  color: #000000;
+  text-align: center;
+  justify-content: center;
+  font-size: 32px;
+  border: 2px solid #32332b;
+  border-radius: 10px;
+  position: relative;
+  bottom: 5px;
+}
+
+/* behind the modal/bigcard */
+.bigcard {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* all the stuff inside the bigcard */
+.bigcardcontent {
+  background-color: #fefefe;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #888888;
+  width: 80%;
+}
+
+.bigcard.show {
+  display: flex; /* Show modal with flexbox to center it */
+}
+
+/* The Close Button */
+.close {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+#smallcard1 {
+  background-image: url('https://cdn.glitch.global/f2fb7d0f-1059-40bd-8a52-8cb00efc9022/circle_stipple_dither-removebg-preview.png?v=1733176338965');
+  background-size: 200px;
+  background-repeat: repeat;
+}
+
+/******************************************************************************
+          END SWITCHING TO MODALS
+******************************************************************************/
+
+
 
 .cardgrid {
   display: grid;
