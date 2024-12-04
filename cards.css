@@ -314,14 +314,17 @@ tr .tablelink:hover {
   background-color: #000000;
   padding: 10px;
   box-shadow: inset 2px 2px #999999;
+  display: flex;
+  
 }
 
 .content {
   display: none;
   padding: 10px;
-  background-color: #00000;
+  background-color: #000000;
   border: 1px solid #ffffff;
   box-shadow: 2px 2px #999999;
+  margin: 0, auto;
 }
 
 .hidden {
@@ -330,6 +333,14 @@ tr .tablelink:hover {
 
 .visible {
   display: block;
+}
+
+#content2 {
+  color: white;
+}
+
+#content2 p {
+  font-family: 'SubjectivityLite';
 }
 
 
