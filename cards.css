@@ -170,6 +170,8 @@ tr:hover {
 
 tr .tablelink {
   color: white;
+  text-align: center;
+  justify-content: center;
 }
 
 tr:hover .tablelink {
@@ -245,7 +247,7 @@ tr .tablelink:hover {
 
 /* The Close Button */
 .close {
-  color: #aaaaaa;
+  color: #ffffff;
   float: right;
   font-size: 28px;
   font-weight: bold;
