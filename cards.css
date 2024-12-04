@@ -159,7 +159,8 @@ h2 {
 }
 
 table {
-  width: 60%;
+  width: 40%;
+  height: 400px;
 }
 
 table, td {
@@ -230,7 +231,7 @@ tr .tablelink:hover {
 /* behind the modal/bigcard */
 .bigcard {
   display: none; /* Hidden by default */
-  position: fixed; /* Stay in place */
+  position: relative; 
   z-index: 1; /* Sit on top */
   padding-top: 100px; /* Location of the box */
   left: 0;
@@ -246,7 +247,6 @@ tr .tablelink:hover {
 .bigcardcontent {
   background-color: black;
   border: 1px solid #888888;
-  width: 80%;
 }
 
 .bigcard.show {
@@ -295,8 +295,12 @@ tr .tablelink:hover {
   text-align: center;
 }
 
+.tablesection {
+  display: flex;
+}
+
 .everyoneimg {
-  width: 300px;
+  width: ;
 }
 
 /******************************************************************************
