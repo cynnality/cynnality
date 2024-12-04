@@ -123,7 +123,7 @@ h2 {
   padding: 20px;
 }
 
-.content {
+.headertitlecontent {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -301,11 +301,37 @@ tr .tablelink:hover {
 
 .cardtable {
   flex: 1;
+  border-right: 2px solid #ffffff;
+  overflow-y: scroll;
+  background-color: #000000;
+  padding: 10px;
+  box-shadow: inset 2px 2px #999999;
 }
 
 .tablewindow {
   flex: 2;
+  overflow-y: auto;
+  background-color: #000000;
+  padding: 10px;
+  box-shadow: inset 2px 2px #999999;
 }
+
+.content {
+  display: none;
+  padding: 10px;
+  background-color: #00000;
+  border: 1px solid #ffffff;
+  box-shadow: 2px 2px #999999;
+}
+
+.hidden {
+  display: none;
+}
+
+.visible {
+  display: block;
+}
+
 
 /******************************************************************************
           END SWITCHING TO MODALS

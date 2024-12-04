@@ -60,6 +60,27 @@ window.onclick = function(event) {
 };
 
 
+document.addEventListener("DOMContentLoaded", () => {
+  const rows = document.querySelectorAll("tr[data-content]");
+  const contents = document.querySelectorAll(".content");
+
+  rows.forEach(row => {
+    row.addEventListener("click", () => {
+      // Hide all content divs
+      contents.forEach(content => content.classList.add("hidden"));
+
+      // Show the corresponding content
+      const contentId = row.getAttribute("data-content");
+      const contentToShow = document.getElementById(contentId);
+      if (contentToShow) {
+        contentToShow.classList.remove("hidden");
+        contentToShow.classList.add("visible");
+      }
+    });
+  });
+});
+
+
 
 
 
