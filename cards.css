@@ -275,7 +275,8 @@ tr .tablelink:hover {
 }
 
 #bigcard1 {
-  
+  overflow: hidden;
+  height: 600px;
 }
 
 #bigcard1 .card-title {
