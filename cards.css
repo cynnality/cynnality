@@ -278,6 +278,9 @@ tr .tablelink:hover {
   font-size: 40px;
   margin: 0, 0;
 }
+.flex-container {
+  display: flex;
+}
 
 /******************************************************************************
           END SWITCHING TO MODALS
