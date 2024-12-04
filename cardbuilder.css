@@ -123,6 +123,13 @@ h1.title {
           SWITCHING TO MODALS
 ******************************************************************************/
 
+
+.smallcardgrid {
+  display: grid;
+  grid-template-columns: auto);
+  grid-gap: 20px;
+}
+
 /*small card*/
 .smallcard {
   width: 300px;
