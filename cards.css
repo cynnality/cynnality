@@ -159,7 +159,7 @@ h2 {
 }
 
 table {
-  width: 80%;
+  width: 60%;
 }
 
 table, td {
@@ -293,6 +293,13 @@ tr .tablelink:hover {
   padding: 5px;
   align-content: center;
   text-align: center;
+}
+
+.everyoneimg {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 300px;
 }
 
 /******************************************************************************
