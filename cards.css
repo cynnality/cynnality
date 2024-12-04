@@ -154,6 +154,10 @@ h1.title {
   color: #ffffff;
 }
 
+table {
+  width: 80%;
+}
+
 table, td {
   border: 1px solid white;
   padding: 10px;
@@ -266,9 +270,13 @@ tr .tablelink:hover {
   background-repeat: repeat;
 }
 
+#bigcard1 {
+}
+
 #bigcard1 .card-title {
   color: white;
   font-size: 40px;
+  margin: 0, 0;
 }
 
 /******************************************************************************
