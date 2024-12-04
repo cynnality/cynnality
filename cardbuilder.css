@@ -126,24 +126,18 @@ h1.title {
 
 .smallcardgrid {
   display: grid;
-  grid-template-columns: auto);
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  grid-template-rows: repeat(auto-fill, minmax(300px, 1fr));
   grid-gap: 20px;
 }
 
 /*small card*/
 .smallcard {
-  width: 300px;
-  height: 400px;
   background-color: black;
   border-radius: 10px;
 }
 
-.smallcardimage {
-  width: 100%;
-  height: 100%;
-  background-size: contain;
-  background-position: center;
-}
+
 
 .smallcardtitle {
   background: #f5efe0;
@@ -201,7 +195,9 @@ h1.title {
 }
 
 #smallcard1 {
-  background-image: url('https://cdn.glitch.global/f2fb7d0f-1059-40bd-8a52-8cb00efc9022/circle_stipple_dither-removebg-preview.png?v=1733176338965')
+  background-image: url('https://cdn.glitch.global/f2fb7d0f-1059-40bd-8a52-8cb00efc9022/circle_stipple_dither-removebg-preview.png?v=1733176338965');
+  background-size: 200px;
+  background-repeat: repeat;
 }
 
 /******************************************************************************
