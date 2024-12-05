@@ -8,6 +8,10 @@ body {
   font-family: 'Courier', monospace;
 }
 
+.hidden {
+  display: none;
+}
+
 .headertitlecontent {
   display: flex;
   flex-direction: column;
@@ -47,6 +51,23 @@ body {
   text-align: center;
   font-size: 32px;
   position: relative;
+}
+
+/* Big Card Layout */
+.bigcard {
+  display: none; /* Initially hidden */
+  border: 2px solid #000000;
+  padding: 20px;
+  margin-top: 10px;
+  background-color: #ffffff;
+}
+
+.bigcardcontent {
+  color: white;
+}
+
+.bigcard.visible {
+  display: block; /* Show when active */
 }
 
 
