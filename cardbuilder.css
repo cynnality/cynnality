@@ -96,11 +96,16 @@ p {
 .cardtable {
   flex: 1;
   overflow-y: auto; /* Scrollable if content overflows */
-  border-right: 2px solid white;
-  min-width: 500px;
-  max-width: 700px;
+  width: 400px; /* Prevents width adjustments */
+  min-width: 400px;
+  max-width: 400px; /* Ensures it doesn't overflow its container */
+  height: 300px; /* Fixed height for the table area */
 }
 
+.cardtable table {
+  table-layout: fixed; /* Ensures consistent column widths */
+  width: 100%; /* Keeps the table width fixed */
+}
 
 .cardtable .category {
   background-color: white;
@@ -155,6 +160,13 @@ p {
   max-width: 100%; /* Prevents overflow */
   padding: 10px; /* Adds spacing inside the container */
   box-sizing: border-box; /* Includes padding in width calculation */
+}
+
+.content img {
+  max-width: 100%; /* Ensures images do not exceed container width */
+  height: auto; /* Maintains aspect ratio */
+  margin: 10px auto; /* Centers the image and adds spacing */
+  
 }
 
 /* Hidden Content */
