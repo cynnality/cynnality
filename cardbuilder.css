@@ -148,6 +148,8 @@ p {
   overflow-y: auto; /* Scrollable if content overflows */
   padding: 10px;
   border: 2px solid blue;
+  width: 100%;
+  min-width: 600px;
 
 }
 
@@ -161,6 +163,7 @@ p {
   max-width: 100%; /* Ensures images do not exceed container width */
   height: auto; /* Maintains aspect ratio */
   margin: 10px auto; /* Centers the image and adds spacing */
+  border: 2px solid white;
 }
 
 /* Hidden Content */
