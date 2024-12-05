@@ -8,6 +8,10 @@ body {
   font-family: 'Courier', monospace;
 }
 
+p {
+  color: yellow
+}
+
 
 
 .headertitlecontent {
@@ -62,12 +66,13 @@ body {
 
 .bigcardcontent {
   color: white;
+  background-color: blue;
+  width: 100%;
+  height: 100%;
 }
 
 .bigcard.visible {
   display: block; /* Show when active */
-    width: 100%; /* Full width */
-  height: 100%; /* Full height */
 }
 
 .bigcard .close {

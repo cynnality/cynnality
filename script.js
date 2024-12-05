@@ -25,6 +25,7 @@ document.addEventListener("DOMContentLoaded", () => {
   // Select all big cards
   const bigCards = document.querySelectorAll(".bigcard");
   // Select all rows in the tables that have content
+  
   const tableRows = document.querySelectorAll(".cardtable tr[data-content]");
   // Select all content divs inside big cards
   const bigCardContents = document.querySelectorAll(".tablewindow > .content");
