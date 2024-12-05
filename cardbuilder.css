@@ -91,6 +91,7 @@ p {
 .tablesection {
   display: flex;
   padding: ;
+  width: 100%;
 }
 
 .cardtable {
@@ -149,7 +150,6 @@ p {
   padding: 10px;
   border: 2px solid blue;
   width: 100%;
-  min-width: 600px;
 
 }
 
