@@ -12,43 +12,6 @@ p {
   color: white;
 }
 
-table {
-  width: 40%;
-  height: 80%;
-  overflow-y: auto; /* Scrollable if content overflows */
-}
-
-table, td {
-  border: 2px solid white;
-  padding: 5px;
-}
-
-tr {
-  color:white
-    padding: 5px;
-}
-
-tr:hover {
-  background-color: white;
-  color: black;
-}
-
-tr .tablelink {
-  color: white;
-  text-align: center;
-  justify-content: center;
-}
-
-tr:hover .tablelink {
-  color: black;
-}
-
-tr .tablelink:hover {
-  text-decoration: none;
-}
-
-
-
 .headertitlecontent {
   display: flex;
   flex-direction: column;
@@ -136,11 +99,45 @@ tr .tablelink:hover {
   border-right: 2px solid white;
 }
 
+table .cardtable {
+  width: 40%;
+  height: 80%;
+  overflow-y: auto; /* Scrollable if content overflows */
+}
+
+.cardtablle table, td {
+  border: 2px solid white;
+  padding: 5px;
+}
+
+.cardtable tr {
+  color: white;
+    padding: 5px;
+}
+
+.cardtable tr:hover {
+  background-color: white;
+  color: black;
+}
+
+.cardtable tr .tablelink {
+  color: white;
+  text-align: center;
+  justify-content: center;
+}
+
+.cardtable tr:hover .tablelink {
+  color: black;
+}
+
+.cardtable tr .tablelink:hover {
+  text-decoration: none;
+}
+
 .tablewindow {
   flex: 2;
   overflow-y: auto; /* Scrollable if content overflows */
   padding: 10px;
-  
 }
 
 #content1 img {
