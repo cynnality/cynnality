@@ -95,7 +95,6 @@ p {
 }
 
 .cardtable {
-  flex: 1;
   overflow-y: auto; /* Scrollable if content overflows */
   width: 400px; /* Prevents width adjustments */
   min-width: 400px;
@@ -130,22 +129,8 @@ p {
   color: black;
 }
 
-.cardtable tr .tablelink {
-  color: white;
-  text-align: center;
-  justify-content: center;
-}
-
-.cardtable tr:hover .tablelink {
-  color: black;
-}
-
-.cardtable tr .tablelink:hover {
-  text-decoration: none;
-}
-
 .tablewindow {
-  flex: 2;
+  flex: 1;
   overflow-y: auto; /* Scrollable if content overflows */
   padding: 10px;
   border: 2px solid blue;
@@ -160,9 +145,6 @@ p {
 }
 
 .content img {
-  max-width: 100%; /* Ensures images do not exceed container width */
-  height: auto; /* Maintains aspect ratio */
-  margin: 10px auto; /* Centers the image and adds spacing */
   border: 2px solid white;
 }
 
