@@ -43,6 +43,11 @@ document.addEventListener("DOMContentLoaded", () => {
       content.classList.remove("visible");
     });
   }
+  
+    // Function to clear active states from table rows
+  function clearActiveRows() {
+    tableRows.forEach(row => row.classList.remove("active"));
+  }
 
   // Attach click events to small cards
   smallCards.forEach(card => {
@@ -54,9 +59,11 @@ document.addEventListener("DOMContentLoaded", () => {
       if (bigCard.classList.contains("visible")) {
         bigCard.classList.remove("visible");
         clearContent();
+        clearActiveRows();
       } else {
         hideBigCards(); // Hide all other big cards
         clearContent(); // Clear any existing content
+        clearActiveRows();
         bigCard.classList.add("visible");
       }
     });
@@ -70,6 +77,8 @@ document.addEventListener("DOMContentLoaded", () => {
 
       // Clear existing content and show the new one
       clearContent();
+      clearActiveRows();
+      row.classList.add("active"); //highlights the row that is opened
       if (contentToShow) {
         contentToShow.classList.remove("hidden");
         contentToShow.classList.add("visible");
@@ -83,6 +92,7 @@ document.addEventListener("DOMContentLoaded", () => {
       const bigCard = button.closest(".bigcard"); // Find the parent bigcard
       bigCard.classList.remove("visible"); // Hide the big card
       clearContent(); // Clear any visible content inside the big card
+      clearActiveRows(); //clears active state from rows
 
       // Prevent event bubbling to avoid unexpected behavior
       event.stopPropagation();
