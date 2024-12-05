@@ -8,9 +8,7 @@ body {
   font-family: 'Courier', monospace;
 }
 
-.hidden {
-  display: none;
-}
+
 
 .headertitlecontent {
   display: flex;
@@ -56,10 +54,10 @@ body {
 /* Big Card Layout */
 .bigcard {
   display: none; /* Initially hidden */
-  border: 2px solid #000000;
+  border: 2px solid blue;
   padding: 20px;
   margin-top: 10px;
-  background-color: #ffffff;
+  background-color: red;
 }
 
 .bigcardcontent {
@@ -69,6 +67,21 @@ body {
 .bigcard.visible {
   display: block; /* Show when active */
 }
+
+.bigcard .close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 20px;
+  cursor: pointer;
+  color: #ffffff;
+}
+
+.bigcard .close:hover {
+  color: red;
+}
+
+
 
 
 /* Button dip*/
