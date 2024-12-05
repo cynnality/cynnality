@@ -140,12 +140,22 @@ p {
 
 .content {
   display: flex;
-  padding: 10px; /* Adds spacing inside the container */
-  border: 2px solid red;
+  flex-direction: column; /* Stack items vertically */
+  align-items: center; /* Center content horizontally */
+  gap: 20px; /* Spacing between items */
+  padding: 10px;
 }
 
 .content img {
-  border: 2px solid white;
+  width: auto; /* Maintain intrinsic width */
+  max-width: 100%; /* Prevent overflow */
+  height: auto; /* Maintain aspect ratio */
+  display: block; /* Ensures vertical stacking */
+}
+
+img .relevantpic {
+  width: 500px;
+  height: 615px;
 }
 
 /* Hidden Content */
@@ -156,9 +166,6 @@ p {
 .content.visible {
   display: block;
 }
-
-
-
 
 /* Button dip*/
 .dipped {
