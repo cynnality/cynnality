@@ -132,12 +132,14 @@ tr .tablelink:hover {
   flex: 1;
   overflow-y: auto; /* Scrollable if content overflows */
   border-right: 2px solid white;
+  max-width:
 }
 
 .tablewindow {
   flex: 2;
   overflow-y: auto; /* Scrollable if content overflows */
   padding: 10px;
+  max-width: 400px;
 }
 
 /* Hidden Content */
