@@ -142,15 +142,20 @@ p {
   overflow-y: auto; /* Scrollable if content overflows */
   padding: 10px;
   text-align: center;
+  justify-content: center; /* Horizontally centers content */
+  align-items: center; /* Vertically centers content */
 }
 
-#content4 img {
-  margin: 0 auto; /* Centers the image by adding equal space on both sides */
-  padding: 10px;
-  border: 2px solid white;
+.content {
+  display: flex;
+  flex-direction: column; /* Stacks elements vertically */
+  justify-content: center;
+  align-items: center;
+  width: 100%; /* Ensures the content uses full width */
+  max-width: 100%; /* Prevents overflow */
+  padding: 10px; /* Adds spacing inside the container */
+  box-sizing: border-box; /* Includes padding in width calculation */
 }
-
-
 
 /* Hidden Content */
 .hidden {
