@@ -146,9 +146,7 @@ p {
   flex: 2;
   overflow-y: auto; /* Scrollable if content overflows */
   padding: 10px;
-  text-align: center;
-  justify-content: center; /* Horizontally centers content */
-  align-items: center; /* Vertically centers content */
+
 }
 
 .content {
@@ -156,10 +154,9 @@ p {
   flex-direction: column; /* Stacks elements vertically */
   justify-content: center;
   align-items: center;
-  width: 100%; /* Ensures the content uses full width */
-  max-width: 100%; /* Prevents overflow */
+
   padding: 10px; /* Adds spacing inside the container */
-  box-sizing: border-box; /* Includes padding in width calculation */
+
 }
 
 .content img {
