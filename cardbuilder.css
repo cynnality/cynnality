@@ -76,7 +76,7 @@ p {
 }
 
 .bigcard .close {
-  position: absolute;
+  position: relative;
   top: 10px;
   right: 10px;
   font-size: 20px;
@@ -135,12 +135,10 @@ p {
   padding: 10px;
   border: 2px solid blue;
   width: 100%;
-
 }
 
 .content {
   display: flex;
-  flex-direction: column; /* Stack items vertically */
   align-items: center; /* Center content horizontally */
   gap: 20px; /* Spacing between items */
   padding: 10px;
@@ -151,11 +149,6 @@ p {
   max-width: 100%; /* Prevent overflow */
   height: auto; /* Maintain aspect ratio */
   display: block; /* Ensures vertical stacking */
-}
-
-img .relevantpic {
-  width: 500px;
-  height: 615px;
 }
 
 /* Hidden Content */
