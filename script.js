@@ -28,6 +28,8 @@ document.addEventListener("DOMContentLoaded", () => {
   const tableRows = document.querySelectorAll(".cardtable tr[data-content]");
   // Select all content divs inside big cards
   const bigCardContents = document.querySelectorAll(".tablewindow > .content");
+  // Select all close buttons inside big cards
+  const closeButtons = document.querySelectorAll(".bigcard .close");
 
   // Function to hide all big cards
   function hideBigCards() {
@@ -74,7 +76,20 @@ document.addEventListener("DOMContentLoaded", () => {
       }
     });
   });
+
+  // Attach click events to close buttons
+  closeButtons.forEach(button => {
+    button.addEventListener("click", (event) => {
+      const bigCard = button.closest(".bigcard"); // Find the parent bigcard
+      bigCard.classList.remove("visible"); // Hide the big card
+      clearContent(); // Clear any visible content inside the big card
+
+      // Prevent event bubbling to avoid unexpected behavior
+      event.stopPropagation();
+    });
+  });
 });
+
 
 
 
