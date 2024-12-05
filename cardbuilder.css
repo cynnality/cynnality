@@ -90,7 +90,7 @@ p {
 
 .tablesection {
   display: flex;
-  padding: 10px;
+  padding: ;
 }
 
 .cardtable {
@@ -100,6 +100,7 @@ p {
   min-width: 400px;
   max-width: 400px; /* Ensures it doesn't overflow its container */
   height: 300px; /* Fixed height for the table area */
+  border: 2px solid green;
 }
 
 .cardtable table {
@@ -146,15 +147,14 @@ p {
   flex: 2;
   overflow-y: auto; /* Scrollable if content overflows */
   padding: 10px;
+  border: 2px solid blue;
 
 }
 
 .content {
   display: flex;
-  flex-direction: column; /* Stacks elements vertically */
-  justify-content: center;
-  align-items: center;
   padding: 10px; /* Adds spacing inside the container */
+  border: 2px solid red;
 }
 
 .content img {
