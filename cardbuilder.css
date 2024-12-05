@@ -14,16 +14,18 @@ p {
 
 table {
   width: 40%;
-  height: 80;
+  height: 80%;
+  overflow-y: auto; /* Scrollable if content overflows */
 }
 
 table, td {
-  border: 1px solid white;
-  padding: 10px;
+  border: 2px solid white;
+  padding: 5px;
 }
 
 tr {
   color:white
+    padding: 5px;
 }
 
 tr:hover {
@@ -138,6 +140,8 @@ tr .tablelink:hover {
   flex: 2;
   overflow-y: auto; /* Scrollable if content overflows */
   padding: 10px;
+  background-color: red;
+  
 }
 
 /* Hidden Content */
