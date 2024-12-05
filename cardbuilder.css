@@ -147,7 +147,7 @@ table .cardtable {
   text-align: center;
 }
 
-#content3 img {
+#content4 img {
   display: block; /* Ensures the image is treated as a block element */
   margin: 0 auto; /* Centers the image by adding equal space on both sides */
   max-width: 100%; /* Prevents the image from exceeding the container width */
