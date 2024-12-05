@@ -231,7 +231,7 @@ tr .tablelink:hover {
 /* behind the modal/bigcard */
 .bigcard {
   display: none; /* Hidden by default */
-  position: absolute; 
+  position: relative; 
   z-index: 1; /* Sit on top */
   padding-top: 100px; /* Location of the box */
   left: 0;

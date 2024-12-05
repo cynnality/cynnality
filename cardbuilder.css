@@ -33,14 +33,12 @@ body {
 /*small card*/
 .smallcard {
   background-color: black;
-  transition: transform 0.1s;
   cursor: pointer;
   border: 4px solid white;
 }
 
 .smallcard:hover {
   transform: translateY(-5px);
-  box-shadow: ;
 }
 
 .smallcardtitle {
