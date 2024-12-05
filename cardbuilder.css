@@ -97,13 +97,10 @@ p {
   flex: 1;
   overflow-y: auto; /* Scrollable if content overflows */
   border-right: 2px solid white;
+  min-width: 500px;
+  max-width: 700px;
 }
 
-table .cardtable {
-  width: 40%;
-  height: 80%;
-  overflow-y: auto; /* Scrollable if content overflows */
-}
 
 .cardtable .category {
   background-color: white;
@@ -111,7 +108,7 @@ table .cardtable {
   text-align: center;
 }
 
-.cardtablle table, td {
+.cardtable table, td {
   border: 2px solid white;
   padding: 5px;
 }
@@ -148,10 +145,7 @@ table .cardtable {
 }
 
 #content4 img {
-  display: block; /* Ensures the image is treated as a block element */
   margin: 0 auto; /* Centers the image by adding equal space on both sides */
-  max-width: 100%; /* Prevents the image from exceeding the container width */
-  height: auto; /* Maintains aspect ratio */
   padding: 10px;
   border: 2px solid white;
 }
