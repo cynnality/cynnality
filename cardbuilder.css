@@ -66,6 +66,8 @@ body {
 
 .bigcard.visible {
   display: block; /* Show when active */
+    width: 100%; /* Full width */
+  height: 100%; /* Full height */
 }
 
 .bigcard .close {
@@ -79,6 +81,39 @@ body {
 
 .bigcard .close:hover {
   color: red;
+}
+
+table {
+  width: 40%;
+  height: 400px;
+}
+
+table, td {
+  border: 1px solid white;
+  padding: 10px;
+}
+
+tr {
+  color:white
+}
+
+tr:hover {
+  background-color: white;
+  color: black;
+}
+
+tr .tablelink {
+  color: white;
+  text-align: center;
+  justify-content: center;
+}
+
+tr:hover .tablelink {
+  color: black;
+}
+
+tr .tablelink:hover {
+  text-decoration: none;
 }
 
 
