@@ -2,7 +2,26 @@
 
 ******************************************************************************/
 
-.headertitlecontent
+
+body {
+  background-color: black;
+  font-family: 'Courier', monospace;
+}
+
+.headertitlecontent {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  color: white;
+}
+
+.computergirl img {
+  max-width: 400px;
+  position: fixed;
+  z-index: -1;
+}
 
 
 /* Button dip*/
