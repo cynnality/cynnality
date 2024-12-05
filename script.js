@@ -18,73 +18,7 @@ if (btn) { // Detect clicks on the button
   };
 }
 
-// Select all cards
-const cards = document.querySelectorAll('.card');
 
-// Add a click event listener to each card
-cards.forEach(card => {
-  card.addEventListener('click', function() {
-    // Extract data from the card element
-    const title = card.getAttribute('data-title');
-    const link = card.getAttribute('data-link');
-    const tags = card.getAttribute('data-tags');
-    const image = card.querySelector('.card-image').style.backgroundImage;
-    const descriptionHTML = card.querySelector('.card-description').innerHTML; // Use innerHTML to get all HTML content
-
-    // Set content in the popup
-    // Set content in the popup
-    document.querySelector('.cptitle').textContent = title;
-    document.querySelector('.cpdescription').innerHTML = descriptionHTML; // Use innerHTML to set the HTML content
-    document.querySelector('.cptags').textContent = tags;
-    document.querySelector('.cpimage').style.backgroundImage = image;
-    
-        // Set the link in the popup
-    const popupLink = document.querySelector('.cplink .popup-link');
-    if (popupLink) {
-      popupLink.href = link;
-      popupLink.textContent = "source link"; // Or use a value from the card if you want it dynamic
-    }
-
-    // Show the popup
-    document.querySelector('.bigcardlayout-container').classList.add('show');
-  });
-});
-
-// Hide the popup when the close button is clicked
-document.querySelector('.cp-close').addEventListener('click', function() {
-  document.querySelector('.bigcardlayout-container').classList.remove('show');
-});
-
-
-
-
-
-
-
-
-document.getElementById('generateCard').addEventListener('click', function() {
-  // Get values from the form
-  const imageLink = document.getElementById('imageLink').value;
-  const cardTitle = document.getElementById('cardTitle').value;
-  const cardDescription = document.getElementById('cardDescription').value;
-  const sourceLink = document.getElementById('sourceLink').value;
-  const cardTags = document.getElementById('cardTags').value;
-  
-  // Create the HTML string for the card
-  const generatedHTML = `
-    <div class="card" 
-         data-title="${cardTitle}" 
-         data-description="${cardDescription}" 
-         data-link="${sourceLink}" 
-         data-tags="${cardTags}">
-      <div class="card-image" style="background-image: url('${imageLink}');"></div>
-      <div class="card-title">${cardTitle}</div>
-    </div>
-  `;
-
-  // Display the generated HTML in the <pre> tag for easy copying
-  document.getElementById('generatedHTML').textContent = generatedHTML;
-});
 
 
 
