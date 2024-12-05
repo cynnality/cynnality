@@ -9,7 +9,7 @@ body {
 }
 
 p {
-  color: yellow
+  color: white;
 }
 
 table {
@@ -93,15 +93,15 @@ tr .tablelink:hover {
   display: none; /* Initially hidden */
   width: 100%;
   height: 100vh; /* Fixed height */
-  border: 2px solid yellow;
-  background-color: red;
+  border: 2px solid white;
+  background-color: ;
   margin-top: 20px;
-  /* Prevent content overflow */
+  overflow: hidden;/* Prevent content overflow */
 }
 
 .bigcardcontent {
   color: white;
-  background-color: green;
+  background-color: ;
   display: flex;
   height: 100%;
 }
