@@ -12,6 +12,39 @@ p {
   color: yellow
 }
 
+table {
+  width: 40%;
+  height: 400px;
+}
+
+table, td {
+  border: 1px solid white;
+  padding: 10px;
+}
+
+tr {
+  color:white
+}
+
+tr:hover {
+  background-color: white;
+  color: black;
+}
+
+tr .tablelink {
+  color: white;
+  text-align: center;
+  justify-content: center;
+}
+
+tr:hover .tablelink {
+  color: black;
+}
+
+tr .tablelink:hover {
+  text-decoration: none;
+}
+
 
 
 .headertitlecontent {
@@ -58,16 +91,18 @@ p {
 /* Big Card Layout */
 .bigcard {
   display: none; /* Initially hidden */
-  border: 2px solid blue;
-  padding: 20px;
-  margin-top: 10px;
+  width: 100%;
+  height: 100vh; /* Fixed height */
+  border: 2px solid yellow;
   background-color: red;
+  margin-top: 20px;
+  /* Prevent content overflow */
 }
 
 .bigcardcontent {
   color: white;
-  background-color: blue;
-  width: 100%;
+  background-color: green;
+  display: flex;
   height: 100%;
 }
 
@@ -88,37 +123,30 @@ p {
   color: red;
 }
 
-table {
-  width: 40%;
-  height: 400px;
-}
-
-table, td {
-  border: 1px solid white;
+.tablesection {
+  display: flex;
   padding: 10px;
 }
 
-tr {
-  color:white
+.cardtable {
+  flex: 1;
+  overflow-y: auto; /* Scrollable if content overflows */
+  border-right: 2px solid white;
 }
 
-tr:hover {
-  background-color: white;
-  color: black;
+.tablewindow {
+  flex: 2;
+  overflow-y: auto; /* Scrollable if content overflows */
+  padding: 10px;
 }
 
-tr .tablelink {
-  color: white;
-  text-align: center;
-  justify-content: center;
+/* Hidden Content */
+.hidden {
+  display: none;
 }
 
-tr:hover .tablelink {
-  color: black;
-}
-
-tr .tablelink:hover {
-  text-decoration: none;
+.content.visible {
+  display: block;
 }
 
 
