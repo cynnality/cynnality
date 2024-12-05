@@ -130,6 +130,11 @@ p {
   color: black;
 }
 
+.cardtable tr.active {
+  background-color: white; /* Active state background */
+  color: black; /* Active state text color */
+}
+
 .tablewindow {
   flex: 1;
   padding: 10px;
