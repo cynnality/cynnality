@@ -140,9 +140,19 @@ tr .tablelink:hover {
   flex: 2;
   overflow-y: auto; /* Scrollable if content overflows */
   padding: 10px;
-  background-color: red;
   
 }
+
+#content1 img {
+  display: block; /* Ensures the image is treated as a block element */
+  margin: 0 auto; /* Centers the image by adding equal space on both sides */
+  max-width: 100%; /* Prevents the image from exceeding the container width */
+  height: auto; /* Maintains aspect ratio */
+  padding: 10px;
+  border: 2px solid white;
+}
+
+
 
 /* Hidden Content */
 .hidden {
