@@ -198,6 +198,10 @@ a.mainlink:hover {
   text-decoration: underline;
 }
 
+.cwoteimgs {
+  background-color: black;
+}
+
 a.cwoteimglink {
   color: white;
   font-style: italic;
@@ -217,7 +221,6 @@ a.cwoteimglink:hover {
   max-width: 100%; /* Prevent overflow */
   height: auto; /* Maintain aspect ratio */
   display: block; /* Ensures vertical stacking */
-  border: 2px solid purple;
   padding: 10px;
 }
 
