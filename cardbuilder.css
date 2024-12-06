@@ -156,6 +156,15 @@ hr.double {
   padding: 10px;
 }
 
+.mainlink {
+  color: blue;
+  
+}
+
+.cwoteimglink {
+  color: blue;
+}
+
 .content img {
   width: auto; /* Maintain intrinsic width */
   max-width: 100%; /* Prevent overflow */
