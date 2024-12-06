@@ -145,7 +145,7 @@ hr.double {
 .cardtable tr.active {
   background-color: blue; /* Active state background */
   color: white; /* Active state text color */
-  font-style: bold;
+  font-style: oblique;
 }
 
 .tablewindow {
