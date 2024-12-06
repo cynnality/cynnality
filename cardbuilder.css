@@ -116,7 +116,6 @@ hr.double {
   min-width: 400px;
   max-width: 400px; /* Ensures it doesn't overflow its container */
   height: 300px; /* Fixed height for the table area */
-  border: 2px solid green;
 }
 
 .cardtable table {
@@ -194,7 +193,6 @@ a.mainlink:hover {
 .questions {
   display: flex;
   justify-content: space-between;
-  background-color: white;
 }
 
 .qhead {
@@ -204,6 +202,7 @@ a.mainlink:hover {
 
 .cwoteimgs {
   background-color: black;
+  padding: 15px;
 }
 
 a.cwoteimglink {
@@ -217,7 +216,8 @@ a.cwoteimglink:hover {
 }
 
 .cwoteimg {
-  border: 2px solid red;
+  border: ;
+  padding: 15px;
 }
 
 .cwoteimg img {
