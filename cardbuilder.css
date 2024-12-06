@@ -182,6 +182,11 @@ a.mainlink:hover {
   text-decoration: none;
 }
 
+.content h3 {
+  text-align: center;
+  font-size: 40px;
+}
+
 .questions {
   display: flex;
   justify-content: space-between;
@@ -202,12 +207,16 @@ a.cwoteimglink:hover {
   text-decoration: none;
 }
 
-.content img {
+.cwoteimg {
+  border: 2px solid red;
+}
+
+.cwoteimg img {
   width: auto; /* Maintain intrinsic width */
   max-width: 100%; /* Prevent overflow */
   height: auto; /* Maintain aspect ratio */
   display: block; /* Ensures vertical stacking */
-  border: 2px solid white;
+  border: 2px solid purple;
   padding: 10px;
 }
 
