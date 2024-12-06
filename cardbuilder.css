@@ -156,13 +156,22 @@ hr.double {
   padding: 10px;
 }
 
-.mainlink {
+a.mainlink {
   color: blue;
-  
+  font-style: italic;
 }
 
-.cwoteimglink {
+a.mainlink:hover {
+  text-decoration: none;
+}
+
+a.cwoteimglink {
   color: blue;
+  font-style: italic;
+}
+
+a.cwoteimglink:hover {
+  text-decoration: none;
 }
 
 .content img {
