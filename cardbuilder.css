@@ -85,6 +85,10 @@ hr.double {
   color: white;
 }
 
+.bigcard1textblock2 {
+  max-width: 700px;
+}
+
 .bigcardcontent {
   color: white;
   background-color: ;
