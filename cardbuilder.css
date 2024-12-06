@@ -24,7 +24,6 @@ hr.double {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding: 20px;
   color: white;
 }
 
@@ -160,6 +159,11 @@ hr.double {
   align-items: center; /* Center content horizontally */
   gap: 20px; /* Spacing between items */
   padding: 10px;
+}
+
+.content h2,
+.content h3 {
+  color: blue;
 }
 
 a.mainlink {
