@@ -81,6 +81,11 @@ hr.double {
   cursor: pointer;
 }
 
+.bigcard1header {
+  display: flex;
+  color: white;
+}
+
 .bigcardcontent {
   color: white;
   background-color: ;
