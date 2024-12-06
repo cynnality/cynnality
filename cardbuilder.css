@@ -150,8 +150,9 @@ hr.double {
 .tablewindow {
   flex: 1;
   padding: 10px;
-  border: 2px solid blue;
   width: 100%;
+  border: 2px solid white;
+
 }
 
 .content {
@@ -159,11 +160,13 @@ hr.double {
   align-items: center; /* Center content horizontally */
   gap: 20px; /* Spacing between items */
   padding: 10px;
+  background-color: blue;
+  border: 2px solid white;
 }
 
 .content h2,
 .content h3 {
-  color: blue;
+  color: black;
 }
 
 a.mainlink {
