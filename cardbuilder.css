@@ -143,8 +143,9 @@ hr.double {
 }
 
 .cardtable tr.active {
-  background-color: white; /* Active state background */
-  color: black; /* Active state text color */
+  background-color: blue; /* Active state background */
+  color: white; /* Active state text color */
+  font-style: bold;
 }
 
 .tablewindow {
@@ -184,6 +185,7 @@ a.cwoteimglink:hover {
   max-width: 100%; /* Prevent overflow */
   height: auto; /* Maintain aspect ratio */
   display: block; /* Ensures vertical stacking */
+  border: 2px solid white;
 }
 
 /* Hidden Content */
