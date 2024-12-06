@@ -15,6 +15,7 @@ p {
 hr.double {
   border-top: 3px double;
   border-bottom: none;
+  background-color: white;
 }
 
 
