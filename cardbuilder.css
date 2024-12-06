@@ -169,6 +169,10 @@ hr.double {
   color: black;
 }
 
+h1 span {
+  background-color: black;
+}
+
 a.mainlink {
   color: blue;
   font-style: italic;
