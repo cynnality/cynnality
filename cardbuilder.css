@@ -170,7 +170,7 @@ hr.double {
 }
 
 h1 span {
-  background-color: black;
+  background-color: white;
 }
 
 a.mainlink {
@@ -184,6 +184,7 @@ a.mainlink:hover {
 
 .questions {
   display: flex;
+  justify-content: space-between;
   background-color: white;
 }
 
@@ -192,8 +193,9 @@ a.mainlink:hover {
 }
 
 a.cwoteimglink {
-  color: blue;
+  color: white;
   font-style: italic;
+  font-size: 20px;
 }
 
 a.cwoteimglink:hover {
@@ -206,6 +208,7 @@ a.cwoteimglink:hover {
   height: auto; /* Maintain aspect ratio */
   display: block; /* Ensures vertical stacking */
   border: 2px solid white;
+  padding: 10px;
 }
 
 /* Hidden Content */
