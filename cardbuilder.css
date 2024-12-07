@@ -201,9 +201,11 @@ a.mainlink:hover {
 }
 
 .cwoteimgs {
-  background-color: black;
   padding: 15px;
   display: flex;
+  flex-wrap: wrap;       
+  justify-content: space-between; 
+  gap: 10px;             
 }
 
 a.cwoteimglink {
@@ -219,6 +221,7 @@ a.cwoteimglink:hover {
 .cwoteimg {
   border: ;
   padding: 15px;
+  border-bottom: 2px solid white;
 }
 
 .cwoteimg img {
