@@ -203,6 +203,7 @@ a.mainlink:hover {
 .cwoteimgs {
   background-color: black;
   padding: 15px;
+  display: flex;
 }
 
 a.cwoteimglink {
