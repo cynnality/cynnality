@@ -49,48 +49,31 @@ body {
                     PANES TUTORIAL
 ******************************************************************************/
 
-h1 {
-  color: var(--desktop-text-color);
-  padding: 32px;
-  font-size: 1.5rem;
-}
-
 .pane {
   position: absolute;
   width: var(--pane-default-width);
   height: var(--pane-default-height);
-
   display: grid;
   grid-template-rows: 32px 1fr;
   border: 8px solid #6ec470;
   box-shadow: 0 4px 16px rgba(0, 0, 0, 0.5);
-
   overflow: clip;
-
   min-width: 160px;
   min-height: 160px;
 }
 
 .pane .title {
   cursor: move;
-
   display: flex;
   align-items: center;
   justify-content: center;
-
   background-color: #6ec470;
   color: var(--title-bar-text-color);
-}
-
-.pane h2 {
-  font-size: 1rem;
-  font-weight: 400;
 }
 
 .pane .content {
   position: relative;
   background-color: #f5efe0;
-
 }
 
 .flower {  
@@ -106,7 +89,6 @@ h1 {
 .movegif img{
   background-size: 300px;
   background-repeat: repeat;
-  
 }
 
 /* make image fill the space */
@@ -119,9 +101,7 @@ h1 {
   max-width: 100%;
   max-height: 100%;
   background-color: #f5efe0;
-
   object-fit: cover;
-
   -webkit-user-drag: none;
   user-drag: none;
 }
