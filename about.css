@@ -74,6 +74,7 @@ body {
 .pane .content {
   position: relative;
   background-color: #f5efe0;
+  overflow-y: scroll;
 }
 
 .flower {  
