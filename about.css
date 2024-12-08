@@ -20,8 +20,7 @@ to this section's matching END comment to see page-specific styles.
   --color-text-main: #000000;
   --color-text-header: #f5e324;
   --color-primary: #FFFF00;
-  --font-family: "Subjectivity";
-  --font-family-header: "Subjectivity";
+  --font-family: 'Courier', monospace;
   
   /* ADDED FROM PANES TUTORIAL*/
   
@@ -35,72 +34,20 @@ to this section's matching END comment to see page-specific styles.
 
 /* Basic page style resets */
 
-
-
-
-/* Import fonts */
-@font-face {
-  font-family: HK Grotesk;
-  src: url("https://cdn.glitch.me/605e2a51-d45f-4d87-a285-9410ad350515%2FHKGrotesk-Regular.otf?v=1603136326027")
-    format("opentype");
-}
-@font-face {
-  font-family: HK Grotesk;
-  font-weight: bold;
-  src: url("https://cdn.glitch.me/605e2a51-d45f-4d87-a285-9410ad350515%2FHKGrotesk-Bold.otf?v=1603136323437")
-    format("opentype");
-}
-
-@font-face {
-    font-family: 'Subjectivity';
-    src: url('https://cdn.glitch.global/f2fb7d0f-1059-40bd-8a52-8cb00efc9022/Subjectivity-BoldSlanted.otf?v=1732843119922') format('opentype');
-    font-weight: bold;
-    font-style: italic;
-}
-
-@font-face {
-    font-family: 'SubjectivityMed';
-    src: url('https://cdn.glitch.global/f2fb7d0f-1059-40bd-8a52-8cb00efc9022/Subjectivity-MediumSlanted.otf?v=1732844680588') format('opentype');
-    font-weight: medium;
-    font-style: italic;
-}
-
-
-
-
 /******************************************************************************
 END Glitch hello-app default styles
 ******************************************************************************/
 
 body {
-  font-family: 'Subjectivity';
   background-color: #f5efe0;
     /* if outside of the window, clip */
   height: 100vh;
   overflow: clip;
 }
 
-h1.title {
-  font-family: 'Subjectivity';
-}
-
-
-
-
-
-
-
-
 /******************************************************************************
-                   ADDED FROM PANES TUTORIAL
+                    PANES TUTORIAL
 ******************************************************************************/
-
-/* reset defaults */
-
-
-/* css variables */
-
-
 
 h1 {
   color: var(--desktop-text-color);
