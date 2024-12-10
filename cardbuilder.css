@@ -230,8 +230,6 @@ a.cwoteimglink:hover {
   height: auto; /* Maintain aspect ratio */
   display: block; /* Ensures vertical stacking */
   padding: 10px;
-  border: 2px solid white;
-
 }
 
 /* Hidden Content */
