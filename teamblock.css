@@ -1,0 +1,57 @@
+.team-block {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-width: 120px;
+  min-height: 80px;
+  margin: 0 8px;
+  padding: 10px 8px;
+  border-radius: 10px;
+  background: #ccc; /* Default, override per team */
+  color: #222;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 1em;
+  position: relative;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.10);
+  border: 2px solid #fff;
+}
+
+.team-block .team-location {
+  font-weight: bold;
+  font-size: 1.1em;
+}
+
+.team-block .team-name {
+  font-size: 1.2em;
+  letter-spacing: 1px;
+}
+
+/* Favorite star */
+.team-block.favorite .favorite-star {
+  color: gold;
+  font-size: 1.3em;
+  position: absolute;
+  top: 6px;
+  right: 10px;
+  text-shadow: 0 1px 4px #000;
+}
+
+.hidden {
+  display: none;
+}
+
+/* Example team color overrides (fill in real colors later) */
+.team-block.mercury { background: #4B0082; color: #fff; }    /* Purple */
+.team-block.dream { background: #00ADEF; color: #fff; }      /* Blue */
+.team-block.storm { background: #00653A; color: #fff; }      /* Green */
+.team-block.aces { background: #C8102E; color: #fff; }       /* Red */
+.team-block.liberty { background: #17B3A6; color: #fff; }    /* Teal */
+.team-block.wings { background: #00843D; color: #fff; }      /* Green */
+.team-block.sky { background: #FDB927; color: #222; }        /* Yellow */
+.team-block.fever { background: #002D62; color: #fff; }      /* Navy */
+.team-block.mystics { background: #E31837; color: #fff; }    /* Red */
+.team-block.spark { background: #552583; color: #fff; }      /* Purple */
+.team-block.lynx { background: #78BE20; color: #fff; }       /* Green */
+.team-block.sun { background: #FF6900; color: #fff; }        /* Orange */
+.team-block.valkyries { background: #B4975A; color: #fff; }  /* Gold */

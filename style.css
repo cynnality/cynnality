@@ -22,8 +22,8 @@ to this section's matching END comment to see page-specific styles.
   --color-primary: ;
   --image-max-width: 300px;
   --image-margin: 3rem;
-  --font-family: "HK Grotesk";
-  --font-family-header: "HK Grotesk";
+  --font-family: "Inter", sans-serif;
+  --font-family-header: "Inter", sans-serif;
 }
 
 /* Basic page style resets */
@@ -34,33 +34,31 @@ to this section's matching END comment to see page-specific styles.
   display: none !important;
 }
 
-/* Import fonts */
-@font-face {
-  font-family: HK Grotesk;
-  src: url("https://cdn.glitch.me/605e2a51-d45f-4d87-a285-9410ad350515%2FHKGrotesk-Regular.otf?v=1603136326027")
-    format("opentype");
-}
-@font-face {
-  font-family: HK Grotesk;
-  font-weight: bold;
-  src: url("https://cdn.glitch.me/605e2a51-d45f-4d87-a285-9410ad350515%2FHKGrotesk-Bold.otf?v=1603136323437")
-    format("opentype");
+
+.inter-regular {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
 }
 
 
-@font-face {
-    font-family: 'Subjectivity';
-    src: url('https://cdn.glitch.global/f2fb7d0f-1059-40bd-8a52-8cb00efc9022/Subjectivity-BoldSlanted.otf?v=1732843119922') format('opentype');
-    font-weight: bold;
-    font-style: italic;
+.inter-thinitalic {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: italic;
 }
 
-@font-face {
-    font-family: 'SubjectivityMed';
-    src: url('https://cdn.glitch.global/f2fb7d0f-1059-40bd-8a52-8cb00efc9022/Subjectivity-MediumSlanted.otf?v=1732844680588') format('opentype');
-    font-weight: medium;
-    font-style: italic;
+
+.inter-bolditalic {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 632;
+  font-style: italic;
 }
+
+
 
 
 
@@ -72,17 +70,17 @@ to this section's matching END comment to see page-specific styles.
   padding: 1rem 0 0.75rem 0;
   width: 100%;
   flex-wrap: wrap;
-  border-top: 4px solid #fff;
+  border-top: 4px solid #e3e3e3;
 }
 
 /* LINKS a (change this to change color text for text inside the links*/
 .footer a:not(.btn--remix):link,
 a:not(.btn--remix):visited {
-  font-family: HK Grotesk;
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
   font-style: normal;
   font-weight: normal;
   font-size: 1.1rem;
-  color: ;
   text-decoration: none;
   border-style: none;
 }
@@ -103,12 +101,14 @@ END Glitch hello-app default styles
 ******************************************************************************/
 
 body {
-  font-family: SubjectivityMed;
+  font-family: "Inter", sans-serif;
+  font-style: normal;
   background-color: var(--color-bg);
 }
 
 h1.title {
-  font-family: Subjectivity;
+  font-family: "Inter", sans-serif;
+  font-style: italic;
 }
 
 
@@ -117,48 +117,84 @@ h1.title {
 .wrapper {
   min-height: var(--wrapper-height);
   display: grid;
-  place-items: center;
   margin: 0 1rem;
-  padding: 20px;
+  padding: px;
 }
 .content {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
   padding: 20px;
 }
-  
+
+ .flex-container {
+    display: flex;
+    justify-content: flex-start; 
+    align-items: stretch; 
+    /* flex-flow: row nowrap; */ 
+    flex-direction: row; 
+    flex-wrap: nowrap; 
+    align-content: stretch;
+    height: 100%;
+    padding: 15px;
+    gap: 10px;
+  }
+
+  .flex-container > div{
+    border-radius: 2px;
+    padding: 10px;
+  }
 
 .wrappercont {
-  border-radius: 10px;
-  max-width: 50vw;
-  width: 100%;
-  min-width: 300px;
-  margin: 0 auto; /* Centers the div horizontally */
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  width: 75%;
   text-align: center; /* Center text within the container */
-  padding: px;
   justify-content: center;
   align-content: center;
-  border-top: 4px solid #000000;
-  border-right: 7px solid #000000;
-  border-bottom: 7px solid #000000;
-  border-left: 4px solid #000000;
-  background-image: url('https://cdn.glitch.global/f2fb7d0f-1059-40bd-8a52-8cb00efc9022/dithered-image(3).png?v=1732931857442');
-  background-size: cover;
-  background-position: center center;
 }
 
-. dam {
-    border-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFQAAABUCAYAAAAcaxDBAAACzklEQVR4Xu2c2XKDMAxFk/7/N7clCU2JMWi7bDOnM30JspCPrmTj0txv/EgJ3KXecHYDqFgEAAWomIDYHQoFqJiA2B0KBaiYgNgdCgWomIDYHQq9INCfesyPvAvc+AIpiaw02BfffiR88XwNZt9rpiUmpcG+CWwH1ETjDLAxKzEpDXbGu1utfsaTxl1iUhq8ALQFuMU9nLnsmkUTHIo/ZOycBUCdoLxmAPWScto9gU42OltUgTMUR8m/A13suaH4Q8ZLPbPZJSp8VoBFx0p7qmLyZy9xCzBALULB6wANArPMDwd69RKvAl5tk5keCtCVlAB0DsdqASjUqvHm+hPoykkAQDNAs1VNyZ+p5McnpExSgqLZ1ZweKsYNUICKCYjdHadQeug8lZkFZczg+9Au40MsKqm74xQ6TgOgk3xmYPAsn931L53QN59nkiKtUbGzo0r+/bQLUEp+VdPtHxlbYw5Hgi3hqJIfwnztnCh5St4u+exCnlEX26YsbbZNzSscLyAsStdZlBwZC07mDOYHrvIAnQmARWleEyhU3CcAClAxAbG7ZYU6ngzpofRQsR5DQJ9HlmzsgylgUQoCM8zvA9BVpig0CByFBoFZ5v9A++80olCLYHN9WaEvwACVAXWcXbAPDW2bOA8NivNh/jWUfP4LClAoCk2Ibn2ItU1qR7MoGSkAqFijAAWomEDRXVSR9FBxzwSoEmjncX67VX68WWYvW6za0vDTlXw7m/afTc8GeFOAoX7g1MHZXx6bAQ1+51hIICHjBcCXA+oUyp9ZiFHIGKB2KhRAuz11+mGwxBp/3VcKuzOr3edx0DT8GgfIFtJdgFpBnOx6iUlpsKsF+AXWcdcOLmvQk7sSk9JgF9Bpa69uYDw46jYlJqXBztg3whhQ67qplIHUWUixzmz0Ns7iDEkZSJ3tAXQDwFIGUmcZoKU16+OGgRbwGaiUwS8VXqxVv4lSOwAAAABJRU5ErkJggg==') 28 /  28px / 0 round;
-    border-width: 28px;
-    border-style: solid; 
-}
+  .dam1 { 
+    /* flex:0 1 auto; */
+    align-self:flex-start;
+    border: 3px solid #e3e3e3;
+    max-width: 650px;
+  }
 
-.smalldam{
-    border-image:  url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABUAAAAVCAYAAACpF6WWAAAAAXNSR0IArs4c6QAAADVJREFUOE9jZGBg+M9AZcA4auhomOJMU6DUgQvgDDZCSWrU0JEcpmSVX4SS1KihpIfA0AlTAFntHAEjtyXkAAAAAElFTkSuQmCC') 7 /  7px / 0 round;
-    border-width:  7px;
-    border-style:  solid; 
+  .dam1 h1 {
+    padding: 10px;
+    color: #e3e3e3;
+    font-size: 30px;
+    font-family: "Inter", sans-serif;
+    font-style: italic;
+  }
+  .dam1 .pagelinks {
+    background-color: rgba(2, 170, 2, 0.897);
+    padding: 10px;
+    border-radius: 2px;
+    margin-bottom: 10px;
+  }
+
+  .dam1 p {
+    color: #e3e3e3;
+    font-size: 20px;
+    font-family: "Inter", sans-serif;
+    font-style: normal;
+  }
+
+  .dam2 {
+    border: 4px solid #e3e3e3;
+    max-width: fit-content;
+  }
+
+  .dam2 h1 {
+    color: #e3e3e3;
+    font-size: 30px;
+    font-family: "Inter", sans-serif;
+    font-style: italic;
+  }
+
+  .dam2 .pagelinks {
+    background-color: rgba(2, 170, 2, 0.897);
+    border: 2px solid #e3e3e3;
+
   }
   
 
@@ -167,38 +203,30 @@ h1.title {
   grid-template-columns: repeat (3, 1fr);
   grid-gap: 10px;
   padding: 10px;
-  border-radius: 10px;
+  border-radius: 2px;
   justify-content: center;
   align-content: center;
-  background-color: ;
-  
-}
-
-/* Center the heading */
-.directoryheader {
-  font-size: 60px;
-  color: #000000;
+  font-family: "Inter", sans-serif;
+  font-style: italic;
+  font-size: 20px;
 }
 
 .block {
-  background-color: rgba(255, 255, 255, .7);
-  color: #000000;
-  border-radius: 10px;
+  background-color: rgba(170, 41, 2, 0.897);
+  color: #e3e3e3;
+  border-radius: 2px;
   width: 250px;
   padding: 10px;
   font-size: 150%;
-  border-top: 4px solid #000000;
-  border-right: 7px solid #000000;
-  border-bottom: 7px solid #000000;
-  border-left: 4px solid #000000;
+  border: 2px solid #e3e3e3;
   cursor: pointer; /* Change cursor to pointer on hover */
-  transition: background-color 0.1s, border-color 0.1s; /* Smooth transition */
+  transition: background-color 0.1s, border-color 0.1s, color 0.1s; /* Smooth transition */
 }
 
 .block:hover {
-  background-color: #ffffff; /* Change background color on hover */
-  color: #000000; /* Change text color on hover */
-  border-color: #f6e63c; /* Change border color on hover */
+  background-color: #e3e3e3; /* Change background color on hover */
+  color: rgba(170, 41, 2, 0.897); /* Change text color on hover */
+  border-color: rgba(2, 170, 2, 0.897); /* Change border color on hover */
 }
 
 .notes {
@@ -219,10 +247,9 @@ a {
 /* Very light scaling for our illustration */
 .title {
   color: var(--color-text-header);
-  font-family: HK Grotesk;
   font-style: normal;
   font-weight: bold;
-  font-size: 100px;
+  font-size: 60px;
   line-height: 105%;
   margin: 0;
 }
@@ -243,18 +270,19 @@ a {
 /* Button - Add it from the README instructions */
 button,
 input {
-  font-family: inherit;
+  font-family: "Inter", sans-serif;
   font-size: 100%;
   background: #FFFFFF;
   border: 1px solid #000000;
   box-sizing: border-box;
-  border-radius: 4px;
+  border-radius: 2px;
   padding: 0.5rem 1rem;
   transition: 500ms;
 }
 
 .pagelinkbutton {
- 
+  font-family: "Inter", sans-serif;
+  font-style: italic;
   background: #2800FF;
   border: 1px solid #000000;
   box-sizing: border-box;
@@ -262,7 +290,7 @@ input {
   transition: 500ms;
   background-color: #FCACC7;
   color: #69F7BE;
-  border-radius: 10px;
+  border-radius: 2px;
   padding: 10px;
   font-size: 150%;
   text-align: center; /* Center text within the container */

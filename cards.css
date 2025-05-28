@@ -234,6 +234,7 @@ tr .tablelink:hover {
   position: relative; 
   z-index: 1; /* Sit on top */
   padding-top: 100px; /* Location of the box */
+  padding-left: 50px; /* Location of the box */
   left: 0;
   top: 0;
   width: 100%; /* Full width */
@@ -251,6 +252,7 @@ tr .tablelink:hover {
 
 .bigcard.show {
   display: flex; /* Show modal with flexbox to center it */
+  width: 80%;
 }
 
 /* The Close Button */
@@ -302,7 +304,7 @@ tr .tablelink:hover {
 }
 
 .cardtable {
-  flex: 1;
+  width: fit-content;
   overflow-y: scroll;
   padding: 10px;
   box-shadow: inset 2px 2px #999999;

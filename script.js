@@ -24,6 +24,12 @@ document.addEventListener("DOMContentLoaded", () => {
   const smallCards = document.querySelectorAll(".smallcard");
   // Select all big cards
   const bigCards = document.querySelectorAll(".bigcard");
+  // Select all days
+  const wDay = document.querySelectorAll(".wday");
+  // Select all expanded days
+  const wDayExpand = document.querySelectorAll(".wdayexpand");
+  // select all content divs inside wdayexpand
+  const wDayExpandContents = document.querySelectorAll(".wdayexpandwindow .wdayexpandcontent");
   // Select all rows in the tables that have content
   const tableRows = document.querySelectorAll(".cardtable tr[data-content]");
   // Select all content divs inside big cards
@@ -53,7 +59,8 @@ document.addEventListener("DOMContentLoaded", () => {
   smallCards.forEach(card => {
     card.addEventListener("click", () => {
       const bigCardId = card.getAttribute("data-bigcard");
-      const bigCard = document.querySelector(`.${bigCardId}`);
+      const sanitizedBigCardId = bigCardId.replace(/[^a-zA-Z0-9_-]/g, "");
+      const bigCard = document.querySelector(`.${sanitizedBigCardId}`);
 
       // Toggle visibility of the big card
       if (bigCard.classList.contains("visible")) {
@@ -68,6 +75,68 @@ document.addEventListener("DOMContentLoaded", () => {
       }
     });
   });
+
+
+    // Attach click events to days
+  wDay.forEach(day => {
+    day.addEventListener("click", () => {
+      const wDayExpandId = day.getAttribute("data-wdayexpand");
+      // Hide all day expanders first
+      document.querySelectorAll(".wdayexpand").forEach(expand => {
+        expand.classList.add("hidden");
+        expand.classList.remove("visible");
+      });
+      // Show the selected day's expander
+      const expandToShow = document.getElementById(wDayExpandId);
+      if (expandToShow) {
+        expandToShow.classList.remove("hidden");
+        expandToShow.classList.add("visible");
+      }
+    });
+  });
+
+  document.querySelectorAll('.expand-matchup-btn').forEach(btn => {
+  btn.addEventListener('click', function() {
+    const extra = btn.nextElementSibling;
+    const expanded = btn.getAttribute('aria-expanded') === 'true';
+    btn.setAttribute('aria-expanded', !expanded);
+    if (expanded) {
+      extra.classList.add('hidden');
+    } else {
+      extra.classList.remove('hidden');
+    }
+  });
+});
+
+    // Attach click event to "Show All" button
+  const showAllBtn = document.querySelector(".show-all-wdays");
+  if (showAllBtn) {
+    showAllBtn.addEventListener("click", () => {
+      // Hide all first (in case any are open)
+      document.querySelectorAll(".wdayexpand").forEach(expand => {
+        expand.classList.remove("visible");
+        expand.classList.add("hidden");
+      });
+      // Show all in order
+      const order = [
+        "wdayexpandmon",
+        "wdayexpandtues",
+        "wdayexpandwed",
+        "wdayexpandthurs",
+        "wdayexpandfri",
+        "wdayexpandsat",
+        "wdayexpandsun"
+      ];
+      order.forEach(id => {
+        const el = document.getElementById(id);
+        if (el) {
+          el.classList.remove("hidden");
+          el.classList.add("visible");
+        }
+      });
+    });
+  }
+
 
   // Attach click events to table rows
   tableRows.forEach(row => {

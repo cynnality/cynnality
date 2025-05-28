@@ -6,20 +6,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>im building</title>
     <link rel="stylesheet" href="/cardbuilder.css" />
+    <link rel="stylesheet" href="/teamblock.css" />
     <script src="/script.js" defer></script>
   </head>
   
   <body>
     
-    <div class="computergirl">
-      <img
-        src="https://cdn.glitch.global/f2fb7d0f-1059-40bd-8a52-8cb00efc9022/ASCII.png?v=1733205485418"
-      />
-    </div>
+
  
       <div class="headertitlecontent" role="main">
-        <h1 class="title" style="color:blue;">collection of online things</h1>
-        <h3 style="color:blue;">fight the brain rot and look through some non-algorithmic content</h3>
+        <h1 class="title" style="color:blue;">WEEKLYS</h1>
+        <h3 style="color:blue;">writings/reports on sports</h3>
       </div>
   
     <!--grid for small cards on page -->
@@ -28,13 +25,13 @@
 
       <!--  small cards    -->
       <div class="smallcard" id="smallcard1" data-bigcard="bigcard1">
-        <div class="smallcardtitle">observation deck</div>
-        <img style="background-image" src="https://cdn.glitch.global/f2fb7d0f-1059-40bd-8a52-8cb00efc9022/circle_stipple_dither-removebg-preview-ezgif.com-png-to-webp-converter.webp?v=1733449724097">
+        <div class="smallcardtitle">MAY // W4</div>
+       <!-- <img style="background-image" src=""> -->
 
       </div>
 
       <div class="smallcard" id="smallcard2" data-bigcard="bigcard2">
-        <div class="smallcardtitle">music</div>
+        <div class="smallcardtitle">JUNE // W1</div>
       </div>
       <!--  end small cards    -->
     </div>
@@ -43,9 +40,9 @@
        <span class="close">&times;</span>
           <div class="bigcard1header">
           <img
-            src="https://cdn.glitch.global/f2fb7d0f-1059-40bd-8a52-8cb00efc9022/circlegif-ezgif.com-optimize.gif?v=1733274882018"/>
+            src=""/>
             <div class="headertext">
-               <h1 class="bigcard1textblock1">observations and thoughts</h1><br>
+               <h1 class="bigcard1textblock1">MAY // W4</h1><br>
                <h3 class="bigcard1textblock2"></h3>
             </div>
         </div>
@@ -54,13 +51,13 @@
               
           <table class="cardtable">
             
-                        <tr data-content="content1"><td colspan="2">day 1</td></tr>
+                        <tr data-content="content1"><td colspan="2">BASKETBALL</td></tr>
             
-                        <tr data-content="content2"><td colspan="2">day 2</td></tr>
+                        <tr data-content="content2"><td colspan="2">TENNIS</td></tr>
             
-                        <tr data-content="content3"><td colspan="2">day 3</td></tr>
+                        <tr data-content="content3"><td colspan="2">TRACK AND FIELD</td></tr>
             
-                        <tr data-content="content4"><td colspan="2">day 4</td></tr>
+                        <tr data-content="content4"><td colspan="2">CYNNTAX</td></tr>
 
                         <tr data-content="content5"><td colspan="2">day 5</td></tr>
             
@@ -68,32 +65,187 @@
           
               </table>
           
-          <div class="tablewindow">
+          <div class="tablewindow"><!--the window that pops up when a category/sport is clicked-->
             
-                  <div id="content1" class="content hidden">
-                    <a class="mainlink" href="https://attachments.are.na/25017912/a7e4dd8a7f98ba81b5ebf7b87363e0d1.pdf?1701484482" target="_blank">
-                    <h1><span>day 1 // monday 4/28/25</span></h1></a>
-                    <hr class="double">
-                    <h2>i had always thought manifesting and using positive affirmations was repeating words and hoping a miracle solution
-                      or opportunity would somehow fall into your lap. this book helped me understand the power of manifesting is in the way it prompts
-                      you to ask yourself questions. you turn your attention inwards and your answers to the questions become positive affirmations.        
-                    </h2>
-                    <hr class="double">                    
-                  
+            <!--content within the window-->
+            <div id="content1" class="content hidden">
+              <a class="mainlink" href="" target="_blank">
+                  <h1><span>BASKETBALL</span></h1></a><!--title-->
+                  <hr class="double">
+
+                  <!--WEEKLY - DAYS OF THE WEEK CALENDAR SET (UNEXPANDED)-->
+                  <div class="weeklysetflex">
+   
+                    <div class="wday" data-wdayexpand="wdayexpandmon">MONDAY</div>
+                    <div class="wday" data-wdayexpand="wdayexpandtues">TUESDAY</div>
+                    <div class="wday" data-wdayexpand="wdayexpandwed">WEDNESDAY</div>
+                    <div class="wday" data-wdayexpand="wdayexpandthurs">THURSDAY</div>
+                    <div class="wday" data-wdayexpand="wdayexpandfri">FRIDAY</div>
+                    <div class="wday" data-wdayexpand="wdayexpandsat">SATURDAY</div>
+                    <div class="wday" data-wdayexpand="wdayexpandsun">SUNDAY</div>
+                    <button class="show-all-wdays" type="button">Show All</button>
+                  </div>
+
+                     <!--DAYS OF THE WEEK (EXPANDED)(CLICKED)-->  
+
+                  <div class="wdayexpandwindow">
+
+                       <div id="wdayexpandmon" class="wdayexpand hidden">
+                        <h2>MONDAY</h2>
+                        <h4>no games</h4>
+                        </div>
+
+                      <div id="wdayexpandtues" class="wdayexpand hidden">
+                        <h2>TUESDAY MAY 27 2025</h2>
+                        <hr class="double">
+
+<div class="matchup-row">
+<div class="team-block wings west" data-team="DAL">
+  <div class="team-location">Dallas</div>
+  <div class="team-name">Wings</div>
+  <div class="team-conference">West</div>
+</div>
+  <ul class="matchup-facts">
+    <li><strong>W/L:</strong> 0-4</li>
+    <li><strong>conference ranking:</strong> #7</li>
+    <li><strong>overall ranking:</strong> #12</li>
+  </ul>
+
+  <ul class="matchup-facts">
+    <li><strong>W/L:</strong> 0-4</li>
+    <li><strong>conference ranking:</strong> #6</li>
+    <li><strong>overall ranking:</strong> #13</li>
+  </ul>
+<div class="team-block sun east" data-team="CON">
+  <div class="team-location">Connecticut</div>
+  <div class="team-name">Sun</div>
+  <div class="team-conference">East</div>
+</div>
+</div>
+<p>First matchup. Both teams head into this game with 0 wins so far this season.</p>
+
+<hr class="double">
+
+<div class="matchup-row">
+<div class="team-block valkyries west" data-team="GSV">
+  <div class="team-location">Golden State</div>
+  <div class="team-name">Valkyries</div>
+  <div class="team-conference">West</div>
+</div>
+  <ul class="matchup-facts">
+    <li><strong>W/L:</strong> 2-1</li>
+    <li><strong>conference ranking:</strong> #4</li>
+    <li><strong>overall ranking:</strong> #5</li>
+  </ul>
+
+  <ul class="matchup-facts">
+    <li><strong>W/L:</strong> 3-0</li>
+    <li><strong>conference ranking:</strong> #1</li>
+    <li><strong>overall ranking:</strong> #2</li>
+  </ul>
+<div class="team-block liberty east favorite" data-team="NYL">
+  <div class="team-location">New York</div>
+  <div class="team-name">Liberty</div>
+  <div class="team-conference">East</div>
+  <span class="favorite-star" title="favorite">&#9733;</span>
+</div>
+</div>
+<p>First mathcup. Valyries will try to give the Liberty their first loss of the season.</p>
+<div class="matchup-row">
+<div class="team-block storm west favorite" data-team="SEA">
+  <div class="team-location">Seattle</div>
+  <div class="team-name">Storm</div>
+  <div class="team-conference">West</div>
+  <span class="favorite-star" title="Favorite">&#9733;</span>
+</div>
+  <ul class="matchup-facts">
+    <li><strong>W/L:</strong> 3-1</li>
+    <li><strong>conference ranking:</strong> #2</li>
+    <li><strong>overall ranking:</strong> #3</li>
+  </ul>
+
+  <ul class="matchup-facts">
+    <li><strong>W/L:</strong> 4-0</li>
+    <li><strong>conference ranking:</strong> #1</li>
+    <li><strong>overall ranking:</strong> #1</li>
+  </ul>
+<div class="team-block lynx west" data-team="MIN">
+  <div class="team-location">Minnesota</div>
+  <div class="team-name">Lynx</div>
+  <div class="team-conference">West</div>
+</div>
+</div>
+
+
+                        <h4>Seattle Storm @ Minnesota Lynx</h4>
+                        <p>First matchup. The Storm just won their most recent game with over 100 points becoming the first team this season with a 100+ game. Seattle 
+                          has lost 1 game so far this season on May 17 against the Phoenix Mercury but won when they met Phoenix again on May 23. The Minnesota Lynx 
+                          are undefeated so far.
+                        </p>
+                        <h4>Atlanta Dream @ Los Angeles Sparks</h4>
+                        <p>First matchup of the season. Dream have 3 wins and 2 losses, Sparks have 2 wins and 3 losses.</p>
+                        <h4>Chicago Sky @ Phoenix Mercury</h4>
+                        <p>First matchup. Mercury have only dropped 1 game and Sky haven't been able to win a game so far.</p>
+                      </div>
+
+                      <div id="wdayexpandwed" class="wdayexpand hidden">
+                        <h2>WEDNESDAY MAY 28 2025</h2>
+                        <hr class="double">
+                        <h4>Indiana Fever @ Washington Mystics</h4>
+                        <p>First matchup. Fever 2W/2L // Mystics 2W/3L</p>
+                      </div>
+
+                      <div id="wdayexpandthurs" class="wdayexpand hidden">
+                        <h2>THURSDAY MAY 29 2025</h2>
+                        <hr class="double">
+                        <h4>Golden State Valkyries @ New York Liberty</h4>
+                        <p>Second matchup. Instant replay of their game on Tuesday. (will update after tues game)</p>
+                        <h4>Dallas Wings @ Chicago Sky</h4>
+                        <p>First matchup. Currently both teams have 0 wins so far this season(will update after Tuesdays games).</p>
+                      </div>
+
+                      <div id="wdayexpandfri" class="wdayexpand hidden">
+                        <h2>FRIDAY MAY 30 2025</h2>
+                        <hr class="double">
+                        <h4>Connecticut Sun @ Indiana Fever</h4>
+                        <p>First matchup. (will update W/L)</p>
+                        <h4>New York Liberty @ Washington Mystics</h4>
+                        <p>First mathcup. (will update W/L)</p>
+                        <h4>Los Angeles Sparks @ Las Vegas Aces</h4>
+                        <p>First matchup. Plum and Hamby (former aces) will meet their former team for the first time this season. (will update W/L)
+                        </p>
+                        <h4>Minnesota Lynx @ Phoenix Mercury</h4>
+                        <p>First matchup of the season. (will update W/L)</p>
+                        <h4>Atlanta Dream @ Seattle Storm</h4>
+                        <p>First matchup. top game for me. (will update W/L)</p>
+                      </div>
+
+                      <div id="wdayexpandsat" class="wdayexpand hidden">
+                        <h2>SATURDAY MAY 31 2025</h2>
+                        <hr class="double">
+                        <h4>Chicago Sky @ Dallas Wings</h4>
+                        <p>Second matchup. (will update H2H and W/L)</p>
+                      </div>
+                                 
+                   </div>
+
             </div>
+
+          
             
                   <div id="content2" class="content hidden">
-                    <a class="mainlink" href="https://assets.dropbox.com/documents/en-us/permission-voice-workbook-color.pdf" target="_blank">
-                    <h1><span>personal voice workbook</span></h1></a>
+                    <a class="mainlink" href="" target="_blank">
+                    <h1><span>TENNIS</span></h1></a>
                     <hr class="double">
-                    <h2> find your voice and learn how to use it</h2>             
+                    <h2>NOTABLES (PLAYERS):</h2>
+                    <p>Victoria Mboko: doesn't drop a set in French Open Qualifiers. Wins her first round match on 5/25/25</p>             
                   </div>
             
                   <div id="content3" class="content hidden">
-                    <a class="mainlink" href="https://attachments.are.na/6655801/5929b8294bef458f8d5c8f1b2bda7b64.pdf?1585619814" target="_blank">
-                    <h1><span>the art of noticing</span></h1></a>
+                    <a class="mainlink" href="" target="_blank">
+                    <h1><span>CYNNTAX</span></h1></a>
                     <hr class="double">
-                    <h2>how to get off your phone, look up and take in the world around you. read through this one in detail or just skim :)</h2>
+                    <h2>beginner friendly breakdowns on terms/players/teams/events/etc.</h2>
                   </div>
             
                   <div id="content4" class="content hidden">
