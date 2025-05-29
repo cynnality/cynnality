@@ -311,11 +311,22 @@ tr .tablelink:hover {
 }
 
 .tablewindow {
-  flex: 2;
+ 
   overflow-y: auto;
   background-color: #000000;
   padding: 10px;
   box-shadow: inset 2px 2px #999999;
+}
+
+.current-teams-grid {
+  display: flex;
+  flex-wrap: wrap; 
+  justify-content: space-evenly; 
+  align-items: flex-start; 
+    /* flex-flow: row; */ 
+  flex-direction: row; 
+  padding: 15px;
+  gap: 5px;
 }
 
 .content {

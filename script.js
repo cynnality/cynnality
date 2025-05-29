@@ -95,9 +95,12 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   });
 
-  document.querySelectorAll('.expand-matchup-btn').forEach(btn => {
+document.querySelectorAll('.expand-matchup-btn').forEach(btn => {
   btn.addEventListener('click', function() {
-    const extra = btn.nextElementSibling;
+    // Find the closest .matchup-row
+    const matchupRow = btn.closest('.matchup-row');
+    // The blurb is the next sibling after the matchup-row
+    const extra = matchupRow.nextElementSibling;
     const expanded = btn.getAttribute('aria-expanded') === 'true';
     btn.setAttribute('aria-expanded', !expanded);
     if (expanded) {
@@ -137,6 +140,48 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   }
 
+    // Attach click events to table rows
+  document.querySelectorAll('.cardtable tr[data-content]').forEach(row => {
+    row.addEventListener("click", () => {
+      // Hide all content sections first
+      document.querySelectorAll('.content').forEach(c => c.classList.add('hidden'));
+      // Show the selected content section
+      const contentId = row.getAttribute("data-content");
+      const contentToShow = document.getElementById(contentId);
+      if (contentToShow) {
+        contentToShow.classList.remove('hidden');
+        // Expand all wdayexpand sections for this content
+        contentToShow.querySelectorAll('.wdayexpand').forEach(day => {
+          day.classList.remove('hidden');
+        });
+      }
+    });
+  });
+
+
+document.querySelectorAll('.hide-all-details').forEach(btn => {
+  btn.addEventListener('click', function() {
+    const parent = btn.closest('.wdayexpand');
+    if (parent) {
+      const allHidden = Array.from(parent.querySelectorAll('.matchup-row, .matchup-extra'))
+        .every(el => el.classList.contains('hidden'));
+      if (allHidden) {
+        // Show all
+        parent.querySelectorAll('.matchup-row, .matchup-extra').forEach(el => {
+          el.classList.remove('hidden');
+        });
+        btn.textContent = 'Hide All Games';
+      } else {
+        // Hide all
+        parent.querySelectorAll('.matchup-row, .matchup-extra').forEach(el => {
+          el.classList.add('hidden');
+        });
+        btn.textContent = 'Show All Games';
+      }
+    }
+  });
+});
+
 
   // Attach click events to table rows
   tableRows.forEach(row => {
@@ -151,6 +196,8 @@ document.addEventListener("DOMContentLoaded", () => {
       if (contentToShow) {
         contentToShow.classList.remove("hidden");
         contentToShow.classList.add("visible");
+        // Scroll the content into view smoothly
+        contentToShow.scrollIntoView({ behavior: "smooth", block: "start" });
       }
     });
   });

@@ -8,6 +8,28 @@
     <link rel="stylesheet" href="cardbuilder.css" />
     <link rel="stylesheet" href="teamblock.css" />
     <script src="script.js" defer></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+    <!-- team block font // fugaz one, a lil bit decorative -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fugaz+One&display=swap" rel="stylesheet">
+
+    <!-- team block font // REM (MAIN)-->
+
+            <!-- REM regular -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=REM:wght@100..900&display=swap" rel="stylesheet">
+
+            <!-- REM italic -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=REM:ital,wght@1,100..900&display=swap" rel="stylesheet">
+
   </head>
   
   <body>
@@ -37,17 +59,10 @@
     </div>
     
 <div class="bigcard bigcard1 hidden">
-       <span class="close">&times;</span>
-          <div class="bigcard1header">
-          <img
-            src=""/>
-            <div class="headertext">
-               <h1 class="bigcard1textblock1">MAY // W4</h1><br>
-               <h3 class="bigcard1textblock2"></h3>
-            </div>
-        </div>
-          <div class="bigcardcontent">
-            <div class="tablesection">
+  <span class="close">&times;</span>
+    <div class="bigcard1header"><h1>MAY // W4</h1></div>
+      <div class="bigcardcontent">
+        <div class="tablesection">
               
           <table class="cardtable">
             
@@ -90,146 +105,534 @@
 
                   <div class="wdayexpandwindow">
 
-                       <div id="wdayexpandmon" class="wdayexpand hidden">
-                        <h2>MONDAY</h2>
-                        <h4>no games</h4>
-                        </div>
-
                       <div id="wdayexpandtues" class="wdayexpand hidden">
-                        <h2>TUESDAY MAY 27 2025</h2>
+                        <h2>TUESDAY MAY 27 2025</h2><button class="hide-all-details">hide this gameday</button>
                         <hr class="double">
 
 <div class="matchup-row">
+<a href="/wnbateams/dallas-wings.html" class="team-link">
 <div class="team-block wings west" data-team="DAL">
   <div class="team-location">Dallas</div>
   <div class="team-name">Wings</div>
-  <div class="team-conference">West</div>
-</div>
-  <ul class="matchup-facts">
-    <li><strong>W/L:</strong> 0-4</li>
-    <li><strong>conference ranking:</strong> #7</li>
+  <div class="team-block-dashedborder"></div>
+  <ul class="gdmatchup-facts bottom-bar">
+    <li><strong>E - conference ranking:</strong> #7</li>
     <li><strong>overall ranking:</strong> #12</li>
-  </ul>
-
-  <ul class="matchup-facts">
     <li><strong>W/L:</strong> 0-4</li>
-    <li><strong>conference ranking:</strong> #6</li>
-    <li><strong>overall ranking:</strong> #13</li>
   </ul>
-<div class="team-block sun east" data-team="CON">
-  <div class="team-location">Connecticut</div>
-  <div class="team-name">Sun</div>
-  <div class="team-conference">East</div>
 </div>
+</a>
+
+<div class="matchup-center">
+  <button class="expand-matchup-btn" aria-expanded="false">Details</button>
 </div>
-<p>First matchup. Both teams head into this game with 0 wins so far this season.</p>
+
+<a href="/wnbateams/connecticut-sun.html" class="team-link">
+  <div class="team-block sun east" data-team="CON">
+    <div class="team-location">Connecticut</div>
+    <div class="team-name">Sun</div>
+  <ul class="gdmatchup-facts bottom-bar">
+    <li><strong>E - conference ranking:</strong> #6</li>
+    <li><strong>overall ranking:</strong> #13</li>
+    <li><strong>W/L:</strong> 0-4</li>
+  </ul>
+</div>
+</a>
+</div>
+  <div class="matchup-extra">  
+ <button class="close-detail" aria-label="Hide details">&times;</button>
+
+    <p>First matchup. Both teams head into this game with 0 wins so far this season.</p>
+  </div>
 
 <hr class="double">
 
 <div class="matchup-row">
-<div class="team-block valkyries west" data-team="GSV">
-  <div class="team-location">Golden State</div>
-  <div class="team-name">Valkyries</div>
-  <div class="team-conference">West</div>
-</div>
-  <ul class="matchup-facts">
-    <li><strong>W/L:</strong> 2-1</li>
-    <li><strong>conference ranking:</strong> #4</li>
-    <li><strong>overall ranking:</strong> #5</li>
-  </ul>
+<a href="/wnbateams/goldenstate-valkyries.html" class="team-link">
+  <div class="team-block valkyries west" data-team="GSV">
+    <div class="team-location">Golden State</div>
+    <div class="team-name">Valkyries</div>
+    <ul class="gdmatchup-facts bottom-bar">
+      <li><strong>W - conference ranking:</strong> #4</li>
+      <li><strong>overall ranking:</strong> #5</li>
+      <li><strong>W/L:</strong> 2-1</li>
+    </ul>
+  </div>
+</a>
+  <div class="matchup-center">
+  <button class="expand-matchup-btn" aria-expanded="false">Details</button></div>
 
-  <ul class="matchup-facts">
-    <li><strong>W/L:</strong> 3-0</li>
-    <li><strong>conference ranking:</strong> #1</li>
-    <li><strong>overall ranking:</strong> #2</li>
-  </ul>
-<div class="team-block liberty east favorite" data-team="NYL">
-  <div class="team-location">New York</div>
-  <div class="team-name">Liberty</div>
-  <div class="team-conference">East</div>
-  <span class="favorite-star" title="favorite">&#9733;</span>
+<a href="/wnbateams/newyork-liberty.html" class="team-link">
+  <div class="team-block liberty east favorite" data-team="NYL">
+    <div class="team-location">New York</div>
+    <div class="team-name">Liberty</div>
+    <ul class="gdmatchup-facts bottom-bar">
+      <li><strong>E - conference ranking:</strong> #1</li>
+      <li><strong>overall ranking:</strong> #2</li>
+      <li><strong>W/L:</strong> 3-0</li>
+    </ul>
+    <span class="favorite-star" title="Favorite">&#9733;</span>
+  </div>
+</a>
 </div>
-</div>
-<p>First mathcup. Valyries will try to give the Liberty their first loss of the season.</p>
+  <div class="matchup-extra">  
+ <button class="close-detail" aria-label="Hide details">&times;</button>
+
+    <p>First matchup. The Valkyries will try to give the Liberty their first loss of the season.</p>
+  </div>
+
+  <hr class="double">
+
 <div class="matchup-row">
-<div class="team-block storm west favorite" data-team="SEA">
-  <div class="team-location">Seattle</div>
-  <div class="team-name">Storm</div>
-  <div class="team-conference">West</div>
-  <span class="favorite-star" title="Favorite">&#9733;</span>
-</div>
-  <ul class="matchup-facts">
-    <li><strong>W/L:</strong> 3-1</li>
-    <li><strong>conference ranking:</strong> #2</li>
-    <li><strong>overall ranking:</strong> #3</li>
-  </ul>
+<a href="/wnbateams/seattle-storm.html" class="team-link">
+  <div class="team-block storm west favorite" data-team="SEA">
+    <div class="team-location">Seattle</div>
+    <div class="team-name">Storm</div>
+    <ul class="gdmatchup-facts bottom-bar">
+      <li><strong>W - conference ranking:</strong> #2</li>
+      <li><strong>overall ranking:</strong> #3</li>
+      <li><strong>W/L:</strong> 3-1</li>
+    </ul>
+    <span class="favorite-star" title="Favorite">&#9733;</span>
+  </div>
+</a>
+       <div class="matchup-center">
+       <button class="expand-matchup-btn" aria-expanded="false">Details</button></div>
 
-  <ul class="matchup-facts">
-    <li><strong>W/L:</strong> 4-0</li>
-    <li><strong>conference ranking:</strong> #1</li>
-    <li><strong>overall ranking:</strong> #1</li>
-  </ul>
-<div class="team-block lynx west" data-team="MIN">
-  <div class="team-location">Minnesota</div>
-  <div class="team-name">Lynx</div>
-  <div class="team-conference">West</div>
+<a href="/wnbateams/minnesota-lynx.html" class="team-link">
+  <div class="team-block lynx west" data-team="MIN">
+    <div class="team-location">Minnesota</div>
+    <div class="team-name">Lynx</div>
+    <ul class="gdmatchup-facts bottom-bar">
+      <li><strong>W - conference ranking:</strong> #1</li>
+      <li><strong>overall ranking:</strong> #1</li>
+      <li><strong>W/L:</strong> 4-0</li>
+    </ul>
+  </div>
+</a>
 </div>
+  <div class="matchup-extra">  
+ <button class="close-detail" aria-label="Hide details">&times;</button>
+
+    <p>First matchup. The Storm just won their most recent game with over 100 points becoming the first team this season with a 100+ game. Seattle 
+          has lost 1 game so far this season on May 17 against the Phoenix Mercury but won when they met Phoenix again on May 23. The Minnesota Lynx 
+          are undefeated so far.</p>
+  </div>
+
+  <hr class="double">
+
+<div class="matchup-row">
+<a href="/wnbateams/atlanta-dream.html" class="team-link">
+  <div class="team-block dream east favorite" data-team="ATL">
+    <div class="team-location">Atlanta</div>
+    <div class="team-name">Dream</div>
+    <ul class="gdmatchup-facts bottom-bar">
+      <li><strong>E - conference ranking:</strong> #2</li>
+      <li><strong>overall ranking:</strong> #6</li>
+      <li><strong>W/L:</strong> 3-2</li>
+    </ul>
+    <span class="favorite-star" title="Favorite">&#9733;</span>
+  </div>
+</a>
+
+       <div class="matchup-center">
+       <button class="expand-matchup-btn" aria-expanded="false">Details</button></div>
+
+<a href="/wnbateams/losangeles-sparks.html" class="team-link">
+  <div class="team-block spark west" data-team="LAS">
+    <div class="team-location">Los Angeles</div>
+    <div class="team-name">Sparks</div>
+    <ul class="gdmatchup-facts bottom-bar">
+      <li><strong>W - conference ranking:</strong> #6</li>
+      <li><strong>overall ranking:</strong> #9</li>
+      <li><strong>W/L:</strong> 2-3</li>
+    </ul>
+  </div>
+</a>
 </div>
+  <div class="matchup-extra">  
+ <button class="close-detail" aria-label="Hide details">&times;</button>
 
+    <p>First matchup of the season. Dream have 3 wins and 2 losses, Sparks have 2 wins and 3 losses</p>
+  </div>
 
-                        <h4>Seattle Storm @ Minnesota Lynx</h4>
-                        <p>First matchup. The Storm just won their most recent game with over 100 points becoming the first team this season with a 100+ game. Seattle 
-                          has lost 1 game so far this season on May 17 against the Phoenix Mercury but won when they met Phoenix again on May 23. The Minnesota Lynx 
-                          are undefeated so far.
-                        </p>
-                        <h4>Atlanta Dream @ Los Angeles Sparks</h4>
-                        <p>First matchup of the season. Dream have 3 wins and 2 losses, Sparks have 2 wins and 3 losses.</p>
-                        <h4>Chicago Sky @ Phoenix Mercury</h4>
-                        <p>First matchup. Mercury have only dropped 1 game and Sky haven't been able to win a game so far.</p>
-                      </div>
+    <hr class="double">
+
+<div class="matchup-row">
+<a href="/wnbateams/chicago-sky.html" class="team-link">
+  <div class="team-block sky east" data-team="CHI">
+    <div class="team-location">Chicago</div>
+    <div class="team-name">Sky</div>
+    <ul class="gdmatchup-facts bottom-bar">
+      <li><strong>E - conference ranking:</strong> #5</li>
+      <li><strong>overall ranking:</strong> #11</li>
+      <li><strong>W/L:</strong> 0-3</li>
+    </ul>
+  </div>
+</a>
+
+       <div class="matchup-center">
+       <button class="expand-matchup-btn" aria-expanded="false">Details</button></div>
+
+<a href="/wnbateams/phoenix-mercury.html" class="team-link">
+  <div class="team-block mercury west" data-team="PHX">
+    <div class="team-location">Phoenix</div>
+    <div class="team-name">Mercury</div>
+    <ul class="gdmatchup-facts bottom-bar">
+      <li><strong>W - conference ranking:</strong> #3</li>
+      <li><strong>overall ranking:</strong> #4</li>
+      <li><strong>W/L:</strong> 3-1</li>
+    </ul>
+  </div>
+</a>
+</div>
+  <div class="matchup-extra">  
+ <button class="close-detail" aria-label="Hide details">&times;</button>
+
+    <p>First matchup. Mercury have only dropped 1 game and Sky haven't been able to win a game so far.</p>
+  </div>
+</div>
 
                       <div id="wdayexpandwed" class="wdayexpand hidden">
-                        <h2>WEDNESDAY MAY 28 2025</h2>
+                        <h2>WEDNESDAY MAY 28 2025</h2><button class="hide-all-details">hide this gameday</button>
                         <hr class="double">
-                        <h4>Indiana Fever @ Washington Mystics</h4>
-                        <p>First matchup. Fever 2W/2L // Mystics 2W/3L</p>
-                      </div>
+
+<div class="matchup-row">
+<a href="/wnbateams/indiana-fever.html" class="team-link">
+  <div class="team-block fever east" data-team="IND">
+    <div class="team-location">Indiana</div>
+    <div class="team-name">Fever</div>
+    <ul class="gdmatchup-facts bottom-bar">
+      <li><strong>E - conference ranking:</strong> #3</li>
+      <li><strong>overall ranking:</strong> #7</li>
+      <li><strong>W/L:</strong> 2-2</li>
+    </ul>
+  </div>
+</a>
+       <div class="matchup-center">
+       <button class="expand-matchup-btn" aria-expanded="false">Details</button></div>
+<a href="/wnbateams/washington-mystics.html" class="team-link">
+  <div class="team-block mystics east" data-team="WAS">
+    <div class="team-location">Washington</div>
+    <div class="team-name">Mystics</div>
+    <ul class="gdmatchup-facts bottom-bar">
+      <li><strong>E - conference ranking:</strong> #4</li>
+      <li><strong>overall ranking:</strong> #10</li>
+      <li><strong>W/L:</strong> 2-3</li>
+    </ul>
+  </div>
+</a>
+</div>
+  <div class="matchup-extra">  
+ <button class="close-detail" aria-label="Hide details">&times;</button>
+
+    <p>First matchup. Fever 2W/2L // Mystics 2W/3L</p>
+  </div>
+</div>
 
                       <div id="wdayexpandthurs" class="wdayexpand hidden">
-                        <h2>THURSDAY MAY 29 2025</h2>
+                        <h2>THURSDAY MAY 29 2025</h2><button class="hide-all-details">hide this gameday</button>
                         <hr class="double">
-                        <h4>Golden State Valkyries @ New York Liberty</h4>
-                        <p>Second matchup. Instant replay of their game on Tuesday. (will update after tues game)</p>
-                        <h4>Dallas Wings @ Chicago Sky</h4>
-                        <p>First matchup. Currently both teams have 0 wins so far this season(will update after Tuesdays games).</p>
-                      </div>
+
+<div class="matchup-row">
+<a href="/wnbateams/goldenstate-valkyries.html" class="team-link">
+  <div class="team-block valkyries west" data-team="GSV">
+    <div class="team-location">Golden State</div>
+    <div class="team-name">Valkyries</div>
+    <ul class="gdmatchup-facts bottom-bar">
+      <li><strong>W - conference ranking:</strong> #---</li>
+      <li><strong>overall ranking:</strong> #---</li>
+      <li><strong>W/L:</strong> #-#</li>
+    </ul>
+  </div>
+</a>
+       <div class="matchup-center">
+       <button class="expand-matchup-btn" aria-expanded="false">Details</button></div>
+
+<a href="/wnbateams/newyork-liberty.html" class="team-link">
+  <div class="team-block liberty east favorite" data-team="NYL">
+    <div class="team-location">New York</div>
+    <div class="team-name">Liberty</div>
+    <ul class="gdmatchup-facts bottom-bar">
+      <li><strong>E - conference ranking:</strong> #---</li>
+      <li><strong>overall ranking:</strong> #----</li>
+      <li><strong>W/L:</strong> #-#</li>
+    </ul>
+    <span class="favorite-star" title="Favorite">&#9733;</span>
+  </div>
+</a>
+</div>
+  <div class="matchup-extra">  
+ <button class="close-detail" aria-label="Hide details">&times;</button>
+
+    <p>Second matchup. Instant replay of their game on Tuesday. (will update after tues game)</p>
+  </div>
+
+  <hr class="double">
+
+<div class="matchup-row">
+<a href="/wnbateams/dallas-wings.html" class="team-link">
+  <div class="team-block wings west" data-team="DAL">
+    <div class="team-location">Dallas</div>
+    <div class="team-name">Wings</div>
+    <ul class="gdmatchup-facts bottom-bar">
+      <li><strong>W - conference ranking:</strong> #-</li>
+      <li><strong>overall ranking:</strong> #-</li>
+      <li><strong>W/L:</strong> #-#</li>
+    </ul>
+  </div>
+</a>
+
+       <div class="matchup-center">
+       <button class="expand-matchup-btn" aria-expanded="false">Details</button></div>
+
+<a href="/wnbateams/chicago-sky.html" class="team-link">
+  <div class="team-block sky east" data-team="CHI">
+    <div class="team-location">Chicago</div>
+    <div class="team-name">Sky</div>
+    <ul class="gdmatchup-facts bottom-bar">
+      <li><strong>E - conference ranking:</strong> #-</li>
+      <li><strong>overall ranking:</strong> #-</li>
+      <li><strong>W/L:</strong> #-#</li>
+    </ul>
+  </div>
+</a>
+</div>
+  <div class="matchup-extra">  
+ <button class="close-detail" aria-label="Hide details">&times;</button>
+
+    <p>First matchup. Currently both teams have 0 wins so far this season(will update after Tuesdays games)</p>
+  </div>
+</div>
 
                       <div id="wdayexpandfri" class="wdayexpand hidden">
-                        <h2>FRIDAY MAY 30 2025</h2>
+                        <h2>FRIDAY MAY 30 2025</h2><button class="hide-all-details">hide this gameday</button>
                         <hr class="double">
-                        <h4>Connecticut Sun @ Indiana Fever</h4>
-                        <p>First matchup. (will update W/L)</p>
-                        <h4>New York Liberty @ Washington Mystics</h4>
-                        <p>First mathcup. (will update W/L)</p>
-                        <h4>Los Angeles Sparks @ Las Vegas Aces</h4>
-                        <p>First matchup. Plum and Hamby (former aces) will meet their former team for the first time this season. (will update W/L)
-                        </p>
-                        <h4>Minnesota Lynx @ Phoenix Mercury</h4>
-                        <p>First matchup of the season. (will update W/L)</p>
-                        <h4>Atlanta Dream @ Seattle Storm</h4>
-                        <p>First matchup. top game for me. (will update W/L)</p>
-                      </div>
+
+<div class="matchup-row">
+<a href="/wnbateams/connecticut-sun.html" class="team-link">
+  <div class="team-block sun east" data-team="CON">
+    <div class="team-location">Connecticut</div>
+    <div class="team-name">Sun</div>
+    <ul class="gdmatchup-facts bottom-bar">
+      <li><strong>E - conference ranking:</strong> #-</li>
+      <li><strong>overall ranking:</strong> #-</li>
+      <li><strong>W/L:</strong> #-#</li>
+    </ul>
+  </div>
+</a>
+
+       <div class="matchup-center">
+       <button class="expand-matchup-btn" aria-expanded="false">Details</button></div>
+
+<a href="/wnbateams/indiana-fever.html" class="team-link">
+  <div class="team-block fever east" data-team="IND">
+    <div class="team-location">Indiana</div>
+    <div class="team-name">Fever</div>
+    <ul class="gdmatchup-facts bottom-bar">
+      <li><strong>E - conference ranking:</strong> #-</li>
+      <li><strong>overall ranking:</strong> #-</li>
+      <li><strong>W/L:</strong> #-#</li>
+    </ul>
+  </div>
+</a>
+</div>
+  <div class="matchup-extra">  
+ <button class="close-detail" aria-label="Hide details">&times;</button>
+
+    <p>First matchup. (will update W/L)</p>
+  </div>
+
+  <hr class="double">
+
+<div class="matchup-row">
+<a href="/wnbateams/newyork-liberty.html" class="team-link">
+  <div class="team-block liberty east favorite" data-team="NYL">
+    <div class="team-location">New York</div>
+    <div class="team-name">Liberty</div>
+    <ul class="gdmatchup-facts bottom-bar">
+      <li><strong>E - conference ranking:</strong> #-</li>
+      <li><strong>overall ranking:</strong> #-</li>
+      <li><strong>W/L:</strong> #-#</li>
+    </ul>
+    <span class="favorite-star" title="Favorite">&#9733;</span>
+  </div>
+</a>
+
+       <div class="matchup-center">
+       <button class="expand-matchup-btn" aria-expanded="false">Details</button></div>
+
+<a href="/wnbateams/washington-mystics.html" class="team-link">
+  <div class="team-block mystics east" data-team="WAS">
+    <div class="team-location">Washington</div>
+    <div class="team-name">Mystics</div>
+    <ul class="gdmatchup-facts bottom-bar">
+      <li><strong>E - conference ranking:</strong> #-</li>
+      <li><strong>overall ranking:</strong> #-</li>
+      <li><strong>W/L:</strong> #-#</li>
+    </ul>
+  </div>
+</a>
+</div>
+  <div class="matchup-extra">  
+ <button class="close-detail" aria-label="Hide details">&times;</button>
+
+    <p>First mathcup. (will update W/L)</p>
+  </div>
+
+    <hr class="double">
+
+
+<div class="matchup-row">
+<a href="/wnbateams/losangeles-sparks.html" class="team-link">
+  <div class="team-block spark west" data-team="LAS">
+    <div class="team-location">Los Angeles</div>
+    <div class="team-name">Sparks</div>
+    <ul class="gdmatchup-facts bottom-bar">
+      <li><strong>W - conference ranking:</strong> #-</li>
+      <li><strong>overall ranking:</strong> #-</li>
+      <li><strong>W/L:</strong> #-#</li>
+    </ul>
+  </div>
+</a>
+
+       <div class="matchup-center">
+       <button class="expand-matchup-btn" aria-expanded="false">Details</button></div>
+
+<a href="/wnbateams/lasvegas-aces.html" class="team-link">
+  <div class="team-block aces west favorite" data-team="LVA">
+    <div class="team-location">Las Vegas</div>
+    <div class="team-name">Aces</div>
+    <ul class="gdmatchup-facts bottom-bar">
+      <li><strong>W - conference ranking:</strong> ##</li>
+      <li><strong>overall ranking:</strong> #-</li>
+      <li><strong>W/L:</strong> #-#</li>
+    </ul>
+    <span class="favorite-star" title="Favorite">&#9733;</span>
+  </div>
+</a>
+</div>
+  <div class="matchup-extra">  
+ <button class="close-detail" aria-label="Hide details">&times;</button>
+
+    <p>First matchup. Plum and Hamby (former aces) will meet their former team for the first time this season. (will update W/L)</p>
+  </div>
+
+  <hr class="double">
+
+<div class="matchup-row">
+<a href="/wnbateams/washington-mystics.html" class="team-link">
+  <div class="team-block mystics east" data-team="WAS">
+    <div class="team-location">Washington</div>
+    <div class="team-name">Mystics</div>
+    <ul class="gdmatchup-facts bottom-bar">
+      <li><strong>E - conference ranking:</strong> #-</li>
+      <li><strong>overall ranking:</strong> #-</li>
+      <li><strong>W/L:</strong> #-#</li>
+    </ul>
+  </div>
+</a>
+
+       <div class="matchup-center">
+       <button class="expand-matchup-btn" aria-expanded="false">Details</button></div>
+
+<a href="/wnbateams/phoenix-mercury.html" class="team-link">
+  <div class="team-block mercury west" data-team="PHX">
+    <div class="team-location">Phoenix</div>
+    <div class="team-name">Mercury</div>
+    <ul class="gdmatchup-facts bottom-bar">
+      <li><strong>W - conference ranking:</strong> #-</li>
+      <li><strong>overall ranking:</strong> #-</li>
+      <li><strong>W/L:</strong> #-#</li>
+    </ul>
+  </div>
+</a>
+</div>
+  <div class="matchup-extra">  
+ <button class="close-detail" aria-label="Hide details">&times;</button>
+
+    <p>First matchup of the season. (will update W/L)</p>
+  </div>
+
+  <hr class="double">
+
+<div class="matchup-row">
+<a href="/wnbateams/atlanta-dream.html" class="team-link">
+  <div class="team-block dream east favorite" data-team="ATL">
+    <div class="team-location">Atlanta</div>
+    <div class="team-name">Dream</div>
+    <ul class="gdmatchup-facts bottom-bar">
+      <li><strong>E - conference ranking:</strong> #-</li>
+      <li><strong>overall ranking:</strong> #-</li>
+      <li><strong>W/L:</strong> #-#</li>
+    </ul>
+    <span class="favorite-star" title="Favorite">&#9733;</span>
+  </div>
+</a>
+
+       <div class="matchup-center">
+       <button class="expand-matchup-btn" aria-expanded="false">Details</button></div>
+
+<a href="/wnbateams/seattle-storm.html" class="team-link">
+  <div class="team-block storm west favorite" data-team="SEA">
+    <div class="team-location">Seattle</div>
+    <div class="team-name">Storm</div>
+    <ul class="gdmatchup-facts bottom-bar">
+      <li><strong>W - conference ranking:</strong> #-</li>
+      <li><strong>overall ranking:</strong> #-</li>
+      <li><strong>W/L:</strong> #-#</li>
+    </ul>
+    <span class="favorite-star" title="Favorite">&#9733;</span>
+  </div>
+</a>
+</div>
+  <div class="matchup-extra">  
+ <button class="close-detail" aria-label="Hide details">&times;</button>
+
+    <p>First matchup. top game for me. (will update W/L)</p>
+  </div>
+</div>
 
                       <div id="wdayexpandsat" class="wdayexpand hidden">
-                        <h2>SATURDAY MAY 31 2025</h2>
+                        <h2>SATURDAY MAY 31 2025</h2><button class="hide-all-details">Hide All Details</button>
                         <hr class="double">
-                        <h4>Chicago Sky @ Dallas Wings</h4>
-                        <p>Second matchup. (will update H2H and W/L)</p>
-                      </div>
-                                 
-                   </div>
 
-            </div>
+<div class="matchup-row">
+<a href="/wnbateams/chicago-sky.html" class="team-link">
+  <div class="team-block sky east" data-team="CHI">
+    <div class="team-location">Chicago</div>
+    <div class="team-name">Sky</div>
+    <ul class="gdmatchup-facts bottom-bar">
+      <li><strong>E - conference ranking:</strong> #-</li>
+      <li><strong>overall ranking:</strong> #-</li>
+      <li><strong>W/L:</strong> #-#</li>
+    </ul>
+  </div>
+</a>
+
+       <div class="matchup-center">
+       <button class="expand-matchup-btn" aria-expanded="false">Details</button></div>
+
+<a href="/wnbateams/dallas-wings.html" class="team-link">
+  <div class="team-block wings west" data-team="DAL">
+    <div class="team-location">Dallas</div>
+    <div class="team-name">Wings</div>
+    <ul class="gdmatchup-facts bottom-bar">
+      <li><strong>W - conference ranking:</strong> #-</li>
+      <li><strong>overall ranking:</strong> #-</li>
+      <li><strong>W/L:</strong> #-#</li>
+    </ul>
+  </div>
+</a>
+</div>
+  <div class="matchup-extra">  
+ <button class="close-detail" aria-label="Hide details">&times;</button>
+
+    <p>Second matchup. (will update H2H and W/L)</p>
+  </div>
+</div>           
+</div>
+</div>
 
           
             

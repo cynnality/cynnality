@@ -18,4 +18,36 @@ left side being a "popup" with the picture and source picture (like previous car
               
               
               
-may 25 2025              
+may 25 2025     
+
+may 28 - COPY AND PASTE SETUP TO ASSIGN WNBA TEAM COLORS
+
+/* -------------------------TEMPLATE FOR TEAM BLOCK COLOR STYLES--------------- */
+/*
+/* -------------------------***----------------COLOR STYLES--------------- */
+.team-block.< { 
+  --<acc-red: ; /* ACCENT - < */
+  --<acc-blue: ; /* ACCENT - < */
+  --<neu-lite: ; /* NEUTRAL - LIGHT */
+  --<neu-dark: ; /* NEUTRAL - DARK */
+  
+  background: var(--<); 
+} 
+
+/* LOCATION, text color*/
+.team-block.< .team-location { 
+  color: var(--<); 
+}
+
+/* TEAM NAME, text color and styles */
+.team-block.< .team-name { 
+  color: var(--<);
+  text-shadow: 2px 2px 0px var(--<);
+}
+
+/* BOTTOM BAR, color and styling */
+.team-block.< .gdmatchup-facts.bottom-bar { 
+  background: var(--<);
+  color: var(--<);
+  border-top: 3px dashed var(--<);
+}

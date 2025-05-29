@@ -1,16 +1,41 @@
-.team-block {
+.fugaz-one-regular {
+  font-family: "Fugaz One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+
+.rem-normal-fortext {  /*regular size, for regular text */
+  font-family: "REM", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 200;;
+  font-style: normal;
+}
+
+
+.rem-italic-bolded {
+  font-family: "REM", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: italic;
+}
+
+.team-link {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: space-between;
+  justify-content: space-between;
+  width: 100%;
+  height: 100%;
+}
+
+.team-block {
+  display: flex;
+  align-content: center;
   justify-content: center;
+  font-family: "REM", sans-serif;
   min-width: 120px;
   min-height: 80px;
-  margin: 0 8px;
-  padding: 10px 8px;
-  border-radius: 10px;
-  background: #ccc; /* Default, override per team */
-  color: #222;
-  font-family: 'Courier New', Courier, monospace;
   font-size: 1em;
   position: relative;
   box-shadow: 0 2px 8px rgba(0,0,0,0.10);
@@ -18,13 +43,47 @@
 }
 
 .team-block .team-location {
-  font-weight: bold;
-  font-size: 1.1em;
+  font-size: 3em;
+  letter-spacing: 1px;
+  font-style: italic;
+  font-weight: 600;
+  padding: 10px;
+  margin-top: 15px;
 }
 
 .team-block .team-name {
-  font-size: 1.2em;
+  font-size: 3em;
   letter-spacing: 1px;
+  font-style: italic;
+  font-weight: 700;
+
+  padding: 10px;
+  margin-top: 15px;
+  text-transform: uppercase;
+}
+
+.team-block .team-name,
+.team-block .team-location {
+  line-height: 1.1; /* or 1.2, adjust as needed */
+}
+
+.gdbar {
+  display: flex;
+  justify-content: space-between; 
+  align-items: flex-start;   
+}
+
+
+.gdmatchup-facts {
+  list-style: none;
+  padding: 0;
+  margin: 0 8px;
+  font-size: 16px;
+}
+
+.gdmatchup-facts li {
+  margin-bottom: 2px;
+  padding: 2px 8px;
 }
 
 /* Favorite star */
@@ -41,17 +100,400 @@
   display: none;
 }
 
-/* Example team color overrides (fill in real colors later) */
-.team-block.mercury { background: #4B0082; color: #fff; }    /* Purple */
-.team-block.dream { background: #00ADEF; color: #fff; }      /* Blue */
-.team-block.storm { background: #00653A; color: #fff; }      /* Green */
-.team-block.aces { background: #C8102E; color: #fff; }       /* Red */
-.team-block.liberty { background: #17B3A6; color: #fff; }    /* Teal */
-.team-block.wings { background: #00843D; color: #fff; }      /* Green */
-.team-block.sky { background: #FDB927; color: #222; }        /* Yellow */
-.team-block.fever { background: #002D62; color: #fff; }      /* Navy */
-.team-block.mystics { background: #E31837; color: #fff; }    /* Red */
-.team-block.spark { background: #552583; color: #fff; }      /* Purple */
-.team-block.lynx { background: #78BE20; color: #fff; }       /* Green */
-.team-block.sun { background: #FF6900; color: #fff; }        /* Orange */
-.team-block.valkyries { background: #B4975A; color: #fff; }  /* Gold */
+
+
+
+
+
+
+/* WNBA TEAM COLOR STYLES */
+
+
+
+
+
+/* -------------------------PHOENIX MERCURY ----------------COLOR STYLES--------------- */
+.team-block.mercury { 
+  --mercuryacc-orange: #CB6015; /* ACCENT - ORANGE */
+  --mercuryacc-blue: #201747; /* ACCENT - BLUE */
+  --mercuryneu-lite: #B1B3B3; /* NEUTRAL - LIGHT */
+  --mercuryneu-dark: #000000; /* NEUTRAL - DARK */
+  
+  background: var(--mercuryacc-orange); 
+} 
+
+/* LOCATION, text color*/
+.team-block.mercury .team-location { 
+  color: var(--mercuryacc-blue); 
+}
+
+/* TEAM NAME, text color and styles */
+.team-block.mercury .team-name { 
+  color: var(--mercuryacc-blue);
+  text-shadow: 4px 4px 0px var(--mercuryneu-lite);
+}
+
+/* BOTTOM BAR, color and styling */
+.team-block.mercury .gdmatchup-facts.bottom-bar { 
+  background: var(--mercuryneu-dark);
+  color: var(--mercuryneu-lite);
+  border-top: 3px dashed var(--mercuryacc-orange);
+}
+
+
+
+/* -------------------------ATLANTA DREAM ----------------COLOR STYLES--------------- */
+.team-block.dream { 
+  --dreamacc-red: #C8102E; /* ACCENT - RED */
+  --dreamacc-blue: #418FDE; /* ACCENT - BLUE */
+  --dreamneu-lite: #CED9E5; /* NEUTRAL - LIGHT */
+  --dreamneu-dark: #0C2340; /* NEUTRAL - DARK */
+
+  background: var(--dreamneu-lite);
+}
+/* LOCATION, text color*/
+.team-block.dream .team-location { 
+  color: var(--dreamacc-red); 
+}
+/* TEAM NAME, text color and styles */
+.team-block.dream .team-name { 
+  color: var(--dreamacc-blue);
+  text-shadow: 2px 2px 0px var(--dreamacc-red);
+}
+/* BOTTOM BAR, color and styling */
+.team-block.dream .gdmatchup-facts.bottom-bar { 
+  background: var(--dreamneu-dark);
+  color: var(--dreamneu-lite);
+  border-top: 3px dashed var(--dreamacc-red);
+}
+
+
+
+/* -------------------------SEATTLE STORM----------------COLOR STYLES--------------- */
+.team-block.storm { 
+  --stormacc-yellow: #FEE11A; /* ACCENT - YELLOW */
+  --stormacc-green: #62BB46; /* ACCENT - WHITE */
+  --stormneu-lite: #FFFFFF; /* NEUTRAL - LIGHT */
+  --stormneu-dark: #2C5234; /* NEUTRAL - DARK */
+  
+  background: var(--stormacc-green); 
+} 
+
+/* LOCATION, text color*/
+.team-block.storm .team-location { 
+  color: var(--stormneu-dark); 
+}
+
+/* TEAM NAME, text color and styles */
+.team-block.storm .team-name { 
+  color: var(--stormacc-yellow);
+  text-shadow: 4px 4px 0px var(--stormneu-dark);
+}
+
+/* BOTTOM BAR, color and styling */
+.team-block.storm .gdmatchup-facts.bottom-bar { 
+  background: var(--stormneu-dark);
+  color: var(--stormacc-yellow);
+  border-top: 3px dashed var(--stormneu-lite);
+}
+
+
+
+/* -------------------------LAS VEGAS ACES----------------COLOR STYLES--------------- */
+.team-block.aces { 
+  --acesacc-red: #BA0C2F; /* ACCENT - RED */
+  --acesacc-gold: #85714D; /* ACCENT - GOLD */
+  --acesneu-lite: #8A8D8F; /* NEUTRAL - LIGHT */
+  --acesneu-dark: #000000; /* NEUTRAL - DARK */
+  
+  background: var(--acesacc-red); 
+} 
+
+/* LOCATION, text color*/
+.team-block.aces .team-location { 
+  color: var(--acesneu-dark); 
+}
+
+/* TEAM NAME, text color and styles */
+.team-block.aces .team-name { 
+  color: var(--acesacc-gold);
+  text-shadow: 4px 4px 0px var(--acesneu-dark);
+}
+
+/* BOTTOM BAR, color and styling */
+.team-block.aces .gdmatchup-facts.bottom-bar { 
+  background: var(--acesneu-lite);
+  color: var(--acesneu-dark);
+  border-top: 3px dashed var(--acesacc-red);
+}
+
+
+
+/* -------------------------NEW YORK LIBERTY----------------COLOR STYLES--------------- */
+.team-block.liberty { 
+  --libertyacc-orange: #C07D59; /* ACCENT - ORANGE */ 
+  --libertyacc-blue: #86cebc; /* ACCENT - BLUE */
+  --libertyneu-lite: #FFFFFF; /* NEUTRAL - LIGHT */
+  --libertyneu-dark: #061922; /* NEUTRAL - DARK */
+  
+  background: var(--libertyneu-dark); 
+} 
+
+/* LOCATION, text color*/
+.team-block.liberty .team-location { 
+  color: var(--libertyacc-blue); 
+}
+
+/* TEAM NAME, text color and styles */
+.team-block.liberty .team-name { 
+  color: var(--libertyacc-blue);
+  text-shadow: 4px 4px 0px var(--libertyacc-orange);
+}
+
+/* BOTTOM BAR, color and styling */
+.team-block.liberty .gdmatchup-facts.bottom-bar { 
+  background: var(--libertyacc-blue);
+  color: var(--libertyneu-dark);
+  border-top: 3px dashed var(--libertyneu-lite);
+}
+
+
+
+/* -------------------------DALLAS WINGS----------------COLOR STYLES--------------- */
+.team-block.wings { 
+  --wingsacc-green: #C4D600; /* ACCENT - LIME GREEN */
+  --wingsacc-blue: #2345A5; /* ACCENT - BLUE */
+  --wingsneu-lite: #00A8E1; /* NEUTRAL - LIGHT */
+  --wingsneu-dark: #002B5C; /* NEUTRAL - DARK */
+  
+  background: var(--wingsacc-green); 
+} 
+
+/* LOCATION, text color*/
+.team-block.wings .team-location { 
+  color: var(--wingsneu-dark); 
+}
+
+/* TEAM NAME, text color and styles */
+.team-block.wings .team-name { 
+  color: var(--wingsneu-lite);
+  text-shadow: 4px 4px 0px var(--wingsacc-blue);
+}
+
+/* BOTTOM BAR, color and styling */
+.team-block.wings .gdmatchup-facts.bottom-bar { 
+  background: var(--wingsneu-dark);
+  color: var(--wingsacc-green);
+  border-top: 3px dashed var(--wingsneu-lite);
+}
+
+
+
+/* -------------------------CHICAGO SKY----------------COLOR STYLES--------------- */
+.team-block.sky { 
+  --skyacc-yellow: #ffd520; /* ACCENT - YELLOW */
+  --skyacc-blue: #5091cd; /* ACCENT - BLUE */
+  --skyneu-lite: #FFFFFF; /* NEUTRAL - LIGHT */
+  --skyneu-dark: #000000; /* NEUTRAL - DARK */
+  
+  background: var(--skyacc-yellow); 
+} 
+
+/* LOCATION, text color*/
+.team-block.sky .team-location { 
+  color: var(--skyacc-blue); 
+}
+
+/* TEAM NAME, text color and styles */
+.team-block.sky .team-name { 
+  color: var(--skyneu-lite);
+  text-shadow: 4px 4px 0px var(--skyacc-blue);
+}
+
+/* BOTTOM BAR, color and styling */
+.team-block.sky .gdmatchup-facts.bottom-bar { 
+  background: var(--skyneu-lite);
+  color: var(--skyneu-dark);
+  border-top: 3px dashed var(--skyacc-blue);
+}
+
+
+
+/* -------------------------INDIANA FEVER----------------COLOR STYLES--------------- */
+.team-block.fever { 
+  --feveracc-red: #e03a3e; /* ACCENT - RED */
+  --feveracc-blue: #ffd520; /* ACCENT - YELLOW */
+  --feverneu-lite: #FFFFFF; /* NEUTRAL - LIGHT */
+  --feverneu-dark: #002d62; /* NEUTRAL - DARK */
+  
+  background: var(--feverneu-dark); 
+} 
+
+/* LOCATION, text color*/
+.team-block.fever .team-location { 
+  color: var(--feveracc-red); 
+}
+
+/* TEAM NAME, text color and styles */
+.team-block.fever .team-name { 
+  color: var(--feveracc-blue);
+  text-shadow: 2px 2px 0px var(--feveracc-red);
+}
+
+/* BOTTOM BAR, color and styling */
+.team-block.fever .gdmatchup-facts.bottom-bar { 
+  background: var(--feveracc-red);
+  color: var(--feverneu-dark);
+  border-top: 3px dashed var(--feverneu-lite);
+}
+
+
+
+/* -------------------------WASHINGTON MYSTICS----------------COLOR STYLES--------------- */
+.team-block.mystics { 
+  --mysticsacc-red: #e03a3e; /* ACCENT - RED */
+  --mysticsacc-blue: #002b5c; /* ACCENT - BLUE */
+  --mysticsneu-lite: #c4ced4; /* NEUTRAL - LIGHT */
+  --mysticsneu-dark: #000000; /* NEUTRAL - DARK */
+  
+  background: var(--mysticsneu-lite); 
+} 
+
+/* LOCATION, text color*/
+.team-block.mystics .team-location { 
+  color: var(--mysticsacc-red); 
+}
+
+/* TEAM NAME, text color and styles */
+.team-block.mystics .team-name { 
+  color: var(--mysticsacc-blue);
+  text-shadow: 3px 3px 0px var(--mysticsacc-red);
+}
+
+/* BOTTOM BAR, color and styling */
+.team-block.mystics .gdmatchup-facts.bottom-bar { 
+  background: var(--mysticsacc-blue);
+  color: var(--mysticsacc-red);
+  border-top: 3px dashed var(--mysticsneu-lite);
+}
+
+
+
+/* -------------------------LOS ANGELES SPARKS----------------COLOR STYLES--------------- */
+.team-block.spark { 
+  --sparkacc-purple: #552583; /* ACCENT - PURPLE */
+  --sparkacc-yellow: #fdb927; /* ACCENT - YELLOW */
+  --sparkneu-lite: #00a997; /* NEUTRAL - LIGHT */
+  --sparkneu-dark: #000000; /* NEUTRAL - DARK */
+  
+  background: var(--sparkneu-lite); 
+} 
+
+/* LOCATION, text color*/
+.team-block.spark .team-location { 
+  color: var(--sparkacc-yellow); 
+}
+
+/* TEAM NAME, text color and styles */
+.team-block.spark .team-name { 
+  color: var(--sparkacc-purple);
+  text-shadow: 2px 2px 0px var(--sparkacc-yellow);
+}
+
+/* BOTTOM BAR, color and styling */
+.team-block.spark .gdmatchup-facts.bottom-bar { 
+  background: var(--sparkacc-purple);
+  color: var(--sparkacc-yellow);
+  border-top: 3px dashed var(--sparkneu-dark);
+}
+
+
+
+/* -------------------------MINNESOTA LYNX----------------COLOR STYLES--------------- */
+.team-block.lynx { 
+  --lynxacc-blue: #266092; /* ACCENT - BLUE */
+  --lynxacc-green: #79bc43; /* ACCENT - GREEN */
+  --lynxneu-lite: #a0a2a3; /* NEUTRAL - LIGHT */
+  --lynxneu-dark: #0c233f; /* NEUTRAL - DARK */
+  
+  background: var(--lynxneu-dark); 
+} 
+
+/* LOCATION, text color*/
+.team-block.lynx .team-location { 
+  color: var(--lynxacc-blue); 
+}
+
+/* TEAM NAME, text color and styles */
+.team-block.lynx .team-name { 
+  color: var(--lynxacc-green);
+  text-shadow: 2px 2px 0px var(--lynxacc-blue);
+}
+
+/* BOTTOM BAR, color and styling */
+.team-block.lynx .gdmatchup-facts.bottom-bar { 
+  background: var(--lynxacc-green);
+  color: var(--lynxneu-dark);
+  border-top: 3px dashed var(--lynxneu-lite);
+}
+
+
+
+/* -------------------------CONNECTICUT SUN----------------COLOR STYLES--------------- */
+.team-block.sun { 
+  --sunacc-orange: #f05023; /* ACCENT - ORANGE */
+  --sunacc-blue: #0a2240; /* ACCENT - BLUE */
+  --sunneu-lite: #FFC72C; /* NEUTRAL - LIGHT */
+  --sunneu-dark: #643335; /* NEUTRAL - DARK */
+  
+  background: var(--sunacc-orange); 
+} 
+
+/* LOCATION, text color*/
+.team-block.sun .team-location { 
+  color: var(--sunneu-lite); 
+}
+
+/* TEAM NAME, text color and styles */
+.team-block.sun .team-name { 
+  color: var(--sunacc-blue);
+  text-shadow: 2px 2px 0px var(--sunneu-lite);
+}
+
+/* BOTTOM BAR, color and styling */
+.team-block.sun .gdmatchup-facts.bottom-bar { 
+  background: var(--sunacc-blue);
+  color: var(--sunneu-lite);
+  border-top: 3px dashed var(--sunacc-orange);
+}
+
+
+
+/* -------------------------GOLDEN STATE VALKYRIES----------------COLOR STYLES--------------- */
+.team-block.valkyries { 
+  --valkyriesacc-purple: #c597d7; /* ACCENT - PURPLE */
+  --valkyriesacc-tan: #b8965b; /* ACCENT - TAN */
+  --valkyriesneu-lite: #FFFFFF; /* NEUTRAL - LIGHT */
+  --valkyriesneu-dark: #000000; /* NEUTRAL - DARK */
+  
+  background: var(--valkyriesacc-tan); 
+} 
+
+/* LOCATION, text color*/
+.team-block.valkyries .team-location { 
+  font-size: 2.3em; 
+  color: var(--valkyriesneu-dark); 
+}
+
+/* TEAM NAME, text color and styles */
+.team-block.valkyries .team-name { 
+  color: var(--valkyriesacc-purple);
+  text-shadow: 2px 2px 0px var(--valkyriesneu-dark);
+}
+
+/* BOTTOM BAR, color and styling */
+.team-block.valkyries .gdmatchup-facts.bottom-bar { 
+  background: var(--valkyriesacc-purple);
+  color: var(--valkyriesneu-dark);
+  border-top: 3px dashed var(--valkyriesacc-tan);
+}
