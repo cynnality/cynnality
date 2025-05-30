@@ -20,8 +20,7 @@ if (btn) { // Detect clicks on the button
 
 
 document.addEventListener("DOMContentLoaded", () => {
-  // Select all small cards
-  const smallCards = document.querySelectorAll(".smallcard");
+
   // Select all big cards
   const bigCards = document.querySelectorAll(".bigcard");
   // Select all days
@@ -55,25 +54,48 @@ document.addEventListener("DOMContentLoaded", () => {
     tableRows.forEach(row => row.classList.remove("active"));
   }
 
-  // Attach click events to small cards
-  smallCards.forEach(card => {
-    card.addEventListener("click", () => {
-      const bigCardId = card.getAttribute("data-bigcard");
-      const sanitizedBigCardId = bigCardId.replace(/[^a-zA-Z0-9_-]/g, "");
-      const bigCard = document.querySelector(`.${sanitizedBigCardId}`);
 
-      // Toggle visibility of the big card
-      if (bigCard.classList.contains("visible")) {
-        bigCard.classList.remove("visible");
-        clearContent();
-        clearActiveRows();
-      } else {
-        hideBigCards(); // Hide all other big cards
-        clearContent(); // Clear any existing content
-        clearActiveRows();
-        bigCard.classList.add("visible");
-      }
+   // Weekly navigation logic
+  const bigcards = Array.from(document.querySelectorAll('.bigcard'));
+  if (bigcards.length === 0) return;
+
+  // Sort bigcards by number in their ID
+  bigcards.sort((a, b) => {
+    const numA = parseInt(a.className.match(/bigcard(\d+)/)?.[1] || "0", 10);
+    const numB = parseInt(b.className.match(/bigcard(\d+)/)?.[1] || "0", 10);
+    return numA - numB;
+  });
+
+  let current = bigcards.length - 1; // Show latest by default
+
+  function showBigcard(idx) {
+    bigcards.forEach((card, i) => {
+      card.classList.toggle('visible', i === idx);
+      card.classList.toggle('hidden', i !== idx);
     });
+    // Update label
+    const label = document.querySelector('.weekly-label');
+    if (label) label.textContent = `WEEKLY #${idx + 1}`;
+    // Disable arrows at ends
+    document.querySelector('.weekly-prev').disabled = idx === 0;
+    document.querySelector('.weekly-next').disabled = idx === bigcards.length - 1;
+  }
+
+  // Initial display
+  showBigcard(current);
+
+  // Nav buttons
+  document.querySelector('.weekly-prev').addEventListener('click', () => {
+    if (current > 0) {
+      current--;
+      showBigcard(current);
+    }
+  });
+  document.querySelector('.weekly-next').addEventListener('click', () => {
+    if (current < bigcards.length - 1) {
+      current++;
+      showBigcard(current);
+    }
   });
 
 
@@ -94,6 +116,52 @@ document.addEventListener("DOMContentLoaded", () => {
       }
     });
   });
+
+  document.querySelectorAll('.toggle-pregame-btn').forEach(btn => {
+  btn.addEventListener('click', function() {
+    const matchupRow = btn.closest('.matchup-row');
+    const pregame = matchupRow.nextElementSibling;
+    if (pregame && pregame.classList.contains('matchup-extra')) {
+      const isHidden = pregame.classList.toggle('hidden');
+      btn.setAttribute('aria-expanded', !isHidden);
+      btn.textContent = isHidden ? 'pregame' : 'postgame';
+    }
+  });
+});
+
+
+document.querySelectorAll('.game-update-btn').forEach(btn => {
+  btn.addEventListener('click', function() {
+    const matchupRow = btn.closest('.matchup-row');
+    // Find the next .game-update sibling, skipping any .matchup-extra
+    let next = matchupRow.nextElementSibling;
+    while (next && !next.classList.contains('game-update')) {
+      next = next.nextElementSibling;
+    }
+    if (next && next.classList.contains('game-update')) {
+      next.classList.toggle('hidden');
+      btn.setAttribute('aria-expanded', !next.classList.contains('hidden'));
+    }
+  });
+});
+
+document.querySelectorAll('.close-game-update').forEach(btn => {
+  btn.addEventListener('click', function() {
+    btn.parentElement.classList.add('hidden');
+    // Optionally update the button's aria-expanded
+    const matchupRow = btn.parentElement.previousElementSibling;
+    if (matchupRow && matchupRow.querySelector('.game-update-btn')) {
+      matchupRow.querySelector('.game-update-btn').setAttribute('aria-expanded', 'false');
+    }
+  });
+});
+
+document.querySelectorAll('.close-detail').forEach(btn => {
+  btn.addEventListener('click', function() {
+    btn.parentElement.classList.add('hidden');
+  });
+});
+
 
 document.querySelectorAll('.expand-matchup-btn').forEach(btn => {
   btn.addEventListener('click', function() {
@@ -163,20 +231,23 @@ document.querySelectorAll('.hide-all-details').forEach(btn => {
   btn.addEventListener('click', function() {
     const parent = btn.closest('.wdayexpand');
     if (parent) {
-      const allHidden = Array.from(parent.querySelectorAll('.matchup-row, .matchup-extra'))
+      const allHidden = Array.from(parent.querySelectorAll('.matchup-row, .matchup-extra, .game-update, .double'))
         .every(el => el.classList.contains('hidden'));
       if (allHidden) {
-        // Show all
-        parent.querySelectorAll('.matchup-row, .matchup-extra').forEach(el => {
+        // Show all matchup rows, pregame blurbs, and hr lines; keep game updates hidden
+        parent.querySelectorAll('.matchup-row, .matchup-extra, .double').forEach(el => {
           el.classList.remove('hidden');
         });
-        btn.textContent = 'Hide All Games';
-      } else {
-        // Hide all
-        parent.querySelectorAll('.matchup-row, .matchup-extra').forEach(el => {
+        parent.querySelectorAll('.game-update').forEach(el => {
           el.classList.add('hidden');
         });
-        btn.textContent = 'Show All Games';
+        btn.textContent = 'hide gameday';
+      } else {
+        // Hide all
+        parent.querySelectorAll('.matchup-row, .matchup-extra, .game-update, .double').forEach(el => {
+          el.classList.add('hidden');
+        });
+        btn.textContent = 'show gameday';
       }
     }
   });

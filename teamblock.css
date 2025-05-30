@@ -20,52 +20,96 @@
   font-style: italic;
 }
 
-.team-link {
+.staatliches-regular {
+  font-family: "Staatliches", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+
+/* .team-link {
   display: flex;
   flex-direction: column;
   align-items: space-between;
   justify-content: space-between;
   width: 100%;
   height: 100%;
-}
+} */
 
-.team-block {
+/*.team-block {
   display: flex;
   align-content: center;
   justify-content: center;
   font-family: "REM", sans-serif;
-  min-width: 120px;
+  min-width: 300px;
   min-height: 80px;
   font-size: 1em;
   position: relative;
   box-shadow: 0 2px 8px rgba(0,0,0,0.10);
   border: 2px solid #fff;
+} */
+
+.team-block {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  aspect-ratio: 132.29 / 79.375;
+  min-width: 500px;
+  min-height: 300px;
+  position: relative;
+  overflow: hidden;
+  font-family: "Staatliches", sans-serif;
 }
 
-.team-block .team-location {
-  font-size: 3em;
-  letter-spacing: 1px;
-  font-style: italic;
-  font-weight: 600;
-  padding: 10px;
-  margin-top: 15px;
+
+.team-court {
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+  pointer-events: none; /* So clicks go through to the block */
 }
 
-.team-block .team-name {
-  font-size: 3em;
-  letter-spacing: 1px;
+.team-name-wrap {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+  position: relative;
+  z-index: 1;
+}
+
+.team-name-wrap::before {
+  content: "";
+  position: absolute;
+  left: 0; right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  height: 8em; /* Adjust for bar thickness */
+  background: rgba(255,255,255,0.18);
+  backdrop-filter: blur(4px) saturate(120%);
+  -webkit-backdrop-filter: blur(4px) saturate(120%);
+  z-index: 0;
+  pointer-events: none;
+}
+
+.team-name {
+  position: relative;
+  z-index: 1;
+  font-size: 8em;
   font-style: italic;
   font-weight: 700;
+  text-align: center;
+  text-shadow: 2px 2px 0px #000;
+  color: var(--your-team-color, #fff); /* or your existing color */
+  transform: skew(-8deg) translateX(-0.12em); /* <-- This line centers the skewed text */
 
-  padding: 10px;
-  margin-top: 15px;
-  text-transform: uppercase;
 }
 
-.team-block .team-name,
-.team-block .team-location {
-  line-height: 1.1; /* or 1.2, adjust as needed */
-}
+
 
 .gdbar {
   display: flex;
@@ -118,14 +162,20 @@
   --mercuryacc-blue: #201747; /* ACCENT - BLUE */
   --mercuryneu-lite: #B1B3B3; /* NEUTRAL - LIGHT */
   --mercuryneu-dark: #000000; /* NEUTRAL - DARK */
-  
-  background: var(--mercuryacc-orange); 
 } 
+  
+.team-block.mercury {
+  --court-main: var(--mercuryneu-lite);
+  --court-boundbox-lines: var(--mercuryacc-orange);
+  --court-main-lines: var(--mercuryacc-blue);
+}
 
-/* LOCATION, text color*/
+
+
+/* LOCATION, text color
 .team-block.mercury .team-location { 
   color: var(--mercuryacc-blue); 
-}
+}*/
 
 /* TEAM NAME, text color and styles */
 .team-block.mercury .team-name { 
@@ -144,21 +194,28 @@
 
 /* -------------------------ATLANTA DREAM ----------------COLOR STYLES--------------- */
 .team-block.dream { 
+
   --dreamacc-red: #C8102E; /* ACCENT - RED */
   --dreamacc-blue: #418FDE; /* ACCENT - BLUE */
   --dreamneu-lite: #CED9E5; /* NEUTRAL - LIGHT */
   --dreamneu-dark: #0C2340; /* NEUTRAL - DARK */
-
-  background: var(--dreamneu-lite);
 }
-/* LOCATION, text color*/
+
+.team-block.dream {
+  --court-main: var(--dreamneu-lite);
+  --court-boundbox-lines: var(--dreamacc-blue);
+  --court-main-lines: var(--dreamacc-red);
+}
+
+/* LOCATION, text color
 .team-block.dream .team-location { 
   color: var(--dreamacc-red); 
-}
+}*/
+
 /* TEAM NAME, text color and styles */
 .team-block.dream .team-name { 
-  color: var(--dreamacc-blue);
-  text-shadow: 2px 2px 0px var(--dreamacc-red);
+  color: var(--dreamneu-dark);
+  text-shadow: 4px 4px 0px var(--dreamacc-red);
 }
 /* BOTTOM BAR, color and styling */
 .team-block.dream .gdmatchup-facts.bottom-bar { 
@@ -176,18 +233,24 @@
   --stormneu-lite: #FFFFFF; /* NEUTRAL - LIGHT */
   --stormneu-dark: #2C5234; /* NEUTRAL - DARK */
   
-  background: var(--stormacc-green); 
+
 } 
 
-/* LOCATION, text color*/
+.team-block.storm {
+  --court-main: var(--stormacc-yellow);
+  --court-boundbox-lines: var(--stormacc-green);
+  --court-main-lines: var(--stormneu-dark);
+}
+
+/* LOCATION, text color
 .team-block.storm .team-location { 
   color: var(--stormneu-dark); 
-}
+}*/
 
 /* TEAM NAME, text color and styles */
 .team-block.storm .team-name { 
-  color: var(--stormacc-yellow);
-  text-shadow: 4px 4px 0px var(--stormneu-dark);
+  color: var(--stormneu-dark);
+  text-shadow: 4px 4px 0px var(--stormneu-lite);
 }
 
 /* BOTTOM BAR, color and styling */
@@ -206,18 +269,23 @@
   --acesneu-lite: #8A8D8F; /* NEUTRAL - LIGHT */
   --acesneu-dark: #000000; /* NEUTRAL - DARK */
   
-  background: var(--acesacc-red); 
 } 
 
-/* LOCATION, text color*/
+.team-block.aces {
+  --court-main: var(--acesneu-lite);
+  --court-boundbox-lines: var(--acesacc-red);
+  --court-main-lines: var(--acesacc-gold);
+}
+
+/* LOCATION, text color
 .team-block.aces .team-location { 
   color: var(--acesneu-dark); 
-}
+}*/
 
 /* TEAM NAME, text color and styles */
 .team-block.aces .team-name { 
-  color: var(--acesacc-gold);
-  text-shadow: 4px 4px 0px var(--acesneu-dark);
+  color: var(--acesneu-dark);
+  text-shadow: 4px 4px 0px var(--acesacc-red);
 }
 
 /* BOTTOM BAR, color and styling */
@@ -236,17 +304,22 @@
   --libertyneu-lite: #FFFFFF; /* NEUTRAL - LIGHT */
   --libertyneu-dark: #061922; /* NEUTRAL - DARK */
   
-  background: var(--libertyneu-dark); 
 } 
 
-/* LOCATION, text color*/
+.team-block.liberty {
+  --court-main: var(--libertyacc-blue);
+  --court-boundbox-lines: var(--libertyacc-orange);
+  --court-main-lines: var(--libertyneu-dark);
+}
+
+/* LOCATION, text color
 .team-block.liberty .team-location { 
   color: var(--libertyacc-blue); 
-}
+}*/
 
 /* TEAM NAME, text color and styles */
 .team-block.liberty .team-name { 
-  color: var(--libertyacc-blue);
+  color: var(--libertyneu-dark);
   text-shadow: 4px 4px 0px var(--libertyacc-orange);
 }
 
@@ -266,18 +339,23 @@
   --wingsneu-lite: #00A8E1; /* NEUTRAL - LIGHT */
   --wingsneu-dark: #002B5C; /* NEUTRAL - DARK */
   
-  background: var(--wingsacc-green); 
 } 
 
-/* LOCATION, text color*/
+.team-block.wings {
+  --court-main: var(--wingsacc-green);
+  --court-boundbox-lines: var(--wingsacc-blue);
+  --court-main-lines: var(--wingsneu-dark);
+}
+
+/* LOCATION, text color
 .team-block.wings .team-location { 
   color: var(--wingsneu-dark); 
-}
+}*/
 
 /* TEAM NAME, text color and styles */
 .team-block.wings .team-name { 
-  color: var(--wingsneu-lite);
-  text-shadow: 4px 4px 0px var(--wingsacc-blue);
+  color: var(--wingsneu-dark);
+  text-shadow: 4px 4px 0px var(--wingsneu-lite);
 }
 
 /* BOTTOM BAR, color and styling */
@@ -296,18 +374,23 @@
   --skyneu-lite: #FFFFFF; /* NEUTRAL - LIGHT */
   --skyneu-dark: #000000; /* NEUTRAL - DARK */
   
-  background: var(--skyacc-yellow); 
 } 
 
-/* LOCATION, text color*/
+.team-block.sky {
+  --court-main: var(--skyacc-blue);
+  --court-boundbox-lines: var(--skyacc-yellow);
+  --court-main-lines: var(--skyneu-dark);
+}
+
+/* LOCATION, text color
 .team-block.sky .team-location { 
   color: var(--skyacc-blue); 
-}
+}*/
 
 /* TEAM NAME, text color and styles */
 .team-block.sky .team-name { 
-  color: var(--skyneu-lite);
-  text-shadow: 4px 4px 0px var(--skyacc-blue);
+  color: var(--skyneu-dark);
+  text-shadow: 4px 4px 0px var(--skyacc-yellow);
 }
 
 /* BOTTOM BAR, color and styling */
@@ -326,18 +409,23 @@
   --feverneu-lite: #FFFFFF; /* NEUTRAL - LIGHT */
   --feverneu-dark: #002d62; /* NEUTRAL - DARK */
   
-  background: var(--feverneu-dark); 
 } 
 
-/* LOCATION, text color*/
+.team-block.fever {
+  --court-main: var(--feverneu-lite);
+  --court-boundbox-lines: var(--feveracc-red);
+  --court-main-lines: var(--feveracc-blue);
+}
+
+/* LOCATION, text color
 .team-block.fever .team-location { 
   color: var(--feveracc-red); 
-}
+}*/
 
 /* TEAM NAME, text color and styles */
 .team-block.fever .team-name { 
-  color: var(--feveracc-blue);
-  text-shadow: 2px 2px 0px var(--feveracc-red);
+  color: var(--feverneu-dark);
+  text-shadow: 4px 4px 0px var(--feveracc-blue);
 }
 
 /* BOTTOM BAR, color and styling */
@@ -356,18 +444,24 @@
   --mysticsneu-lite: #c4ced4; /* NEUTRAL - LIGHT */
   --mysticsneu-dark: #000000; /* NEUTRAL - DARK */
   
-  background: var(--mysticsneu-lite); 
 } 
 
-/* LOCATION, text color*/
+.team-block.mystics {
+  --court-main: var(--mysticsneu-lite);
+  --court-boundbox-lines: var(--mysticsacc-blue);
+  --court-main-lines: var(--mysticsacc-red);
+}
+
+
+/* LOCATION, text color
 .team-block.mystics .team-location { 
   color: var(--mysticsacc-red); 
-}
+}*/
 
 /* TEAM NAME, text color and styles */
 .team-block.mystics .team-name { 
   color: var(--mysticsacc-blue);
-  text-shadow: 3px 3px 0px var(--mysticsacc-red);
+  text-shadow: 3px 3px 0px var(--mysticsneu-dark);
 }
 
 /* BOTTOM BAR, color and styling */
@@ -386,25 +480,30 @@
   --sparkneu-lite: #00a997; /* NEUTRAL - LIGHT */
   --sparkneu-dark: #000000; /* NEUTRAL - DARK */
   
-  background: var(--sparkneu-lite); 
 } 
 
-/* LOCATION, text color*/
+.team-block.spark {
+  --court-main: var(--sparkacc-purple);
+  --court-boundbox-lines: var(--sparkacc-yellow);
+  --court-main-lines: var(--sparkneu-dark);
+}
+
+/* LOCATION, text color
 .team-block.spark .team-location { 
   color: var(--sparkacc-yellow); 
-}
+}*/
 
 /* TEAM NAME, text color and styles */
 .team-block.spark .team-name { 
-  color: var(--sparkacc-purple);
-  text-shadow: 2px 2px 0px var(--sparkacc-yellow);
+  color: var(--sparkacc-yellow);
+  text-shadow: 4px 4px 0px var(--sparkneu-dark);
 }
 
 /* BOTTOM BAR, color and styling */
 .team-block.spark .gdmatchup-facts.bottom-bar { 
   background: var(--sparkacc-purple);
   color: var(--sparkacc-yellow);
-  border-top: 3px dashed var(--sparkneu-dark);
+  border-top: 3px dashed var(--sparkneu-lite);
 }
 
 
@@ -416,18 +515,24 @@
   --lynxneu-lite: #a0a2a3; /* NEUTRAL - LIGHT */
   --lynxneu-dark: #0c233f; /* NEUTRAL - DARK */
   
-  background: var(--lynxneu-dark); 
 } 
 
-/* LOCATION, text color*/
+.team-block.lynx {
+  --court-main: var(--lynxneu-lite);
+  --court-boundbox-lines: var(--lynxacc-blue);
+  --court-main-lines: var(--lynxacc-green);
+}
+
+
+/* LOCATION, text color
 .team-block.lynx .team-location { 
   color: var(--lynxacc-blue); 
-}
+}*/
 
 /* TEAM NAME, text color and styles */
 .team-block.lynx .team-name { 
-  color: var(--lynxacc-green);
-  text-shadow: 2px 2px 0px var(--lynxacc-blue);
+  color: var(--lynxneu-dark);
+  text-shadow: 4px 4px 0px var(--lynxacc-green);
 }
 
 /* BOTTOM BAR, color and styling */
@@ -446,18 +551,23 @@
   --sunneu-lite: #FFC72C; /* NEUTRAL - LIGHT */
   --sunneu-dark: #643335; /* NEUTRAL - DARK */
   
-  background: var(--sunacc-orange); 
 } 
 
-/* LOCATION, text color*/
+.team-block.sun {
+  --court-main: var(--sunneu-lite);
+  --court-boundbox-lines: var(--sunacc-blue);
+  --court-main-lines: var(--sunacc-orange);
+}
+
+/* LOCATION, text color
 .team-block.sun .team-location { 
   color: var(--sunneu-lite); 
-}
+}*/
 
 /* TEAM NAME, text color and styles */
 .team-block.sun .team-name { 
   color: var(--sunacc-blue);
-  text-shadow: 2px 2px 0px var(--sunneu-lite);
+  text-shadow: 4px 4px 0px var(--sunneu-lite);
 }
 
 /* BOTTOM BAR, color and styling */
@@ -476,19 +586,25 @@
   --valkyriesneu-lite: #FFFFFF; /* NEUTRAL - LIGHT */
   --valkyriesneu-dark: #000000; /* NEUTRAL - DARK */
   
-  background: var(--valkyriesacc-tan); 
 } 
 
-/* LOCATION, text color*/
+.team-block.valkyries {
+  --court-main: var(--valkyriesacc-tan);
+  --court-boundbox-lines: var(--valkyriesacc-purple);
+  --court-main-lines: var(--valkyriesneu-dark);
+}
+
+/* LOCATION, text color
 .team-block.valkyries .team-location { 
   font-size: 2.3em; 
   color: var(--valkyriesneu-dark); 
-}
+}*/
 
 /* TEAM NAME, text color and styles */
 .team-block.valkyries .team-name { 
-  color: var(--valkyriesacc-purple);
-  text-shadow: 2px 2px 0px var(--valkyriesneu-dark);
+  color: var(--valkyriesneu-dark);
+  text-shadow: 4px 4px 0px var(--valkyriesacc-purple);
+  font-size: 7em;
 }
 
 /* BOTTOM BAR, color and styling */
