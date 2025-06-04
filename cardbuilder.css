@@ -1,483 +1,136 @@
 /******************************************************************************
 
+MAIN STYLES FOR INDIVIUAL WEEKLY PAGES
+
 ******************************************************************************/
 
-
-body {
-  background-color: black;
-  font-family: 'Courier', monospace;
-}
-
-
-.poppins-thin {
-  font-family: "Poppins", sans-serif;
-  font-weight: 100;
-  font-style: normal;
-}
-
-.poppins-extralight {
-  font-family: "Poppins", sans-serif;
-  font-weight: 200;
-  font-style: normal;
-}
-
-.poppins-light {
-  font-family: "Poppins", sans-serif;
-  font-weight: 300;
-  font-style: normal;
-}
-
-.poppins-regular {
-  font-family: "Poppins", sans-serif;
-  font-weight: 400;
-  font-style: normal;
-}
-
-.poppins-medium {
-  font-family: "Poppins", sans-serif;
-  font-weight: 500;
-  font-style: normal;
-}
-
-.poppins-semibold {
-  font-family: "Poppins", sans-serif;
-  font-weight: 600;
-  font-style: normal;
-}
-
-.poppins-bold {
-  font-family: "Poppins", sans-serif;
-  font-weight: 700;
-  font-style: normal;
-}
-
-.poppins-extrabold {
-  font-family: "Poppins", sans-serif;
-  font-weight: 800;
-  font-style: normal;
-}
-
-.poppins-black {
-  font-family: "Poppins", sans-serif;
-  font-weight: 900;
-  font-style: normal;
-}
-
-.poppins-thin-italic {
-  font-family: "Poppins", sans-serif;
-  font-weight: 100;
-  font-style: italic;
-}
-
-.poppins-extralight-italic {
-  font-family: "Poppins", sans-serif;
-  font-weight: 200;
-  font-style: italic;
-}
-
-.poppins-light-italic {
-  font-family: "Poppins", sans-serif;
-  font-weight: 300;
-  font-style: italic;
-}
-
-.poppins-regular-italic {
-  font-family: "Poppins", sans-serif;
-  font-weight: 400;
-  font-style: italic;
-}
-
-.poppins-medium-italic {
-  font-family: "Poppins", sans-serif;
-  font-weight: 500;
-  font-style: italic;
-}
-
-.poppins-semibold-italic {
-  font-family: "Poppins", sans-serif;
-  font-weight: 600;
-  font-style: italic;
-}
-
-.poppins-bold-italic {
-  font-family: "Poppins", sans-serif;
-  font-weight: 700;
-  font-style: italic;
-}
-
-.poppins-extrabold-italic {
-  font-family: "Poppins", sans-serif;
-  font-weight: 800;
-  font-style: italic;
-}
-
-.poppins-black-italic {
-  font-family: "Poppins", sans-serif;
-  font-weight: 900;
-  font-style: italic;
-}
-
-
-p {
-  color: white;
-}
-
-hr.double {
-  border-top: 3px double;
-  border-bottom: none;
-  background-color: white;
-}
-
-
-
-
-.headertitlecontent {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  color: white;
-}
-
-.computergirl img {
-  max-width: 400px;
-  position: fixed;
-  z-index: -1;
-}
-
-.weekly-nav {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 1.5em;
-  background: #181818;
-  color: #fff;
-  font-size: 1.1em;
-  padding: 6px 0;
-  border-bottom: 1px solid #333;
-  margin-bottom: 12px;
-}
-.weekly-nav button {
-  background: none;
-  border: none;
-  font-size: 1.3em;
-  cursor: pointer;
-  color: #fff;
-  padding: 2px 10px;
-  transition: color 0.2s;
-}
-.weekly-nav button:disabled {
-  color: #555;
-  cursor: default;
-}
-
-/* Big Card Layout */
-.bigcard {
-  width: 100%;
-  border: 2px solid white;
-  background-color: ;
-  margin-top: 20px;
-  overflow: hidden;/* Prevent content overflow */
-  position: relative; /* Ensures children are positioned relative to this container */
-}
-
-
-.bigcard1header {
-  color: white;
-}
-
-.bigcardcontent {
-  color: white;
-}
-
-
-
-.tablesection {
-  display: flex;
-  padding: ;
-  width: 100%;
-}
-
-.cardtable {
-  overflow-y: auto; /* Scrollable if content overflows */
-  width: 200px; /* Prevents width adjustments */
-  min-width: 200px;
-  max-width: 200px; /* Ensures it doesn't overflow its container */
-  height: 300px; /* Fixed height for the table area */
-}
-
-.cardtable table {
-  table-layout: fixed; /* Ensures consistent column widths */
-  width: 70%; /* Keeps the table width fixed */
-}
-
-.cardtable .category {
-  background-color: white;
-  color: black;
-  text-align: center;
-}
-
-.cardtable table, td {
-  border: 2px solid white;
-  padding: 5px;
-}
-
-.cardtable tr {
-  color: white;
-  padding: 5px;
-  text-align: center;
-  font-size: 20px;
-
-}
-
-.cardtable tr:hover {
-  background-color: white;
-  color: black;
-}
-
-.cardtable tr.active {
-  background-color: blue; /* Active state background */
-  color: white; /* Active state text color */
-  font-style: oblique;
-}
-
-.tablewindow {
-  flex: 1;
-  padding: 10px;
-  width: 100%;
-  border: 2px solid white;
-  border-radius: 2px;
-}
-
-.content {
-  display: flex;
-  align-items: center; /* Center content horizontally */
-  gap: 20px; /* Spacing between items */
-  padding: 10px;
-  border: 2px solid #FFFFFF;
-  border-radius: 2px;
-
-}
-
-.weeklysetflex {
-  display: flex;
-  justify-content: center; 
-  align-items: flex-start;    
-  flex-wrap: wrap; 
-  border: 4px solid #FFFFFF;
-  height: 100%;
-  padding: 15px;
-  gap: 5px;
-  border-radius: 2px;
+/* -------------------------------Poppins Font Styles-------------------------- */
+  /* Shared Poppins font-family */
+  [class^="poppins-"] {
+    font-family: "Poppins", sans-serif;
   }
 
-  .weeklysetflex > div{
-    border: 2px solid #FFFFFF;
-    padding: 8px;
-  }
+  /* Font weights */
+  .poppins-thin { font-weight: 100; }
+  .poppins-extralight { font-weight: 200; }
+  .poppins-light { font-weight: 300; }
+  .poppins-regular { font-weight: 400; }
+  .poppins-medium { font-weight: 500; }
+  .poppins-semibold { font-weight: 600; }
+  .poppins-bold { font-weight: 700; }
+  .poppins-extrabold { font-weight: 800; }
+  .poppins-black { font-weight: 900; }
 
-  .wday {
-  cursor: pointer;
-  background: #942a2a;
-  color: #FFFFFF;
-  border-radius: 8px;
-  margin: 2px;
-  transition: background 0.2s;
-  font-size: 32px;
-  font-style: italic;
-}
-
-
-.wday:hover {
-  background: #FFFFFF;
-}
-.wdayexpand {
-  color: #FFFFFF;
-  padding: 10px;
-  margin-top: 10px;
-  border-radius: 4px;
-}
-
-.wdayexpand-header {
-  display: flex;
-  padding: 10px:
-}
-
-.matchup-row {
-    display: flex;
-    justify-content: space-between; 
-    align-items: flex-start; 
-    /* flex-flow: row; */ 
-    flex-direction: row;  
-    align-content: space-between;
-    margin-bottom: 18px;
-    height: 100%;
-    padding: 15px;
-    gap: 5px;
-}
+  /* Italic variants */
+  .poppins-thin-italic { font-weight: 100; font-style: italic; }
+  .poppins-extralight-italic { font-weight: 200; font-style: italic; }
+  .poppins-light-italic { font-weight: 300; font-style: italic; }
+  .poppins-regular-italic { font-weight: 400; font-style: italic; }
+  .poppins-medium-italic { font-weight: 500; font-style: italic; }
+  .poppins-semibold-italic { font-weight: 600; font-style: italic; }
+  .poppins-bold-italic { font-weight: 700; font-style: italic; }
+  .poppins-extrabold-italic { font-weight: 800; font-style: italic; }
+  .poppins-black-italic { font-weight: 900; font-style: italic; }
+/* --------------------------- END Poppins Font Styles ----------------------- */
 
 
-/* team block = section of block with loc and name */
-
-
-
-
-/* bottom bar of the team block with conference. W/L, conf#, ov.# to be added on pullup */
-.team-block .gdmatchup-facts.bottom-bar {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
+/* weekly - home - page styling */
+#random-folder-link {
   position: absolute;
-  left: 0;
-  bottom: 0;
-  width: 100%;
-  margin: 0;
-  padding: 4px 0;
-  font-size: 0.95em;
-  list-style: none;
-}
-
-.team-block .gdmatchup-facts.bottom-bar li {
-  margin: 0 8px;
-  padding: 0;
-}
-
-/* Center block for expand/collapse */
-.matchup-center {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  min-width: 80px;
-}
-
-.matchup-extra {
-  margin: 0 0 18px 0;
-}
-.matchup-extra.hidden {
-  display: none;
-}
-
-.game-update {
-  background: #f7f7f7;
-  color: #222;
-  border: 2px solid #ccc;
-  border-radius: 6px;
-  margin: 10px 0 20px 0;
-  padding: 12px 18px;
-  font-size: 1em;
-  position: relative;
-}
-
-
-
-.close-game-update {
-  position: absolute;
-  top: 6px;
-  right: 10px;
+  top: 12vh;   /* adjust for "random" placement */
+  left: 28vw;  /* adjust for "random" placement */
+  z-index: 100;
+  border: none;
   background: none;
-  border: none;
-  font-size: 1.3em;
-  color: #b00;
+  box-shadow: none;
+  outline: none;
   cursor: pointer;
+  display: inline-block;
 }
 
-.expand-matchup-btn {
-  background: #000000;
-  color: #FFFFFF;
+#random-folder-icon {
+  width: 160px;   
+  height: 160px;
+  display: block;
   border: none;
-  border-radius: 2px;
-  padding: 4px 8px;
-  cursor: pointer;
-  font-family: inherit;
-  font-size: 1em;
-  margin-bottom: 4px;
-  transition: background 0.2s;
-}
-
-.expand-matchup-btn[aria-expanded="true"] {
-  background: #FFFFFF;
-  color: #000000;
-}
-
-.matchup-extra p {
-  font-family: "Poppins", sans-serif;
-  font-weight: 400;
-  font-style: italic;
-  color: #000000;
-  padding: 8px 12px;
-  font-size: 18px;
-  font-style: italic;
-  margin-top: 0;
-  max-width: none;          /* Allow full width */
-  width: 100%;              /* Stretch to full width of parent */
-  border-bottom: 2px solid #942a2a; /* Optional: add a colored line at the top */
-  border-left: 2px solid #942a2a; 
-  border-right: 2px solid #942a2a; 
-  box-sizing: border-box;
-}
-
-/* Optional: make team blocks look clickable */
-.team-link {
-  text-decoration: none;
+  background: none;
+  box-shadow: none;
+  outline: none;
+  filter: drop-shadow(2px 2px 0 #00000033);
   transition: transform 0.1s;
 }
-.team-link:hover .team-block {
-  box-shadow: 0 0 0 3px #ffe600;
-  transform: scale(1.03);
+#random-folder-link:hover #random-folder-icon {
+  transform: scale(1.08);
+  filter: drop-shadow(4px 4px 0 #951E7B);
 }
 
-.hidden {
+
+
+/* Sticky header bar */
+.header-sticky-wrap {
+  position: fixed;
+  top: 0;
+  z-index: 100;
+  width: 100%;
+  display: flex;
+}
+
+
+
+
+.weekly-tabs {
+  display: flex;
+  flex-direction: row;   /* <-- Change from column to row */
+  align-items: flex-end; /* Align tabs to the bottom for a tab-bar look */
+  justify-content: center;
+  gap: 0;                /* Remove any gap if you want them flush */
+  margin-bottom: 2rem;   /* Space below the tabs */
+}
+
+.weekly-tab-label {
+  display: inline-block;
+  padding: 0.7rem 2rem;
+  margin: 0 0.2rem;
+  background: #e8e8e8;
+  color: #222;
+  font-weight: 600;
+  border-top-left-radius: 0.5rem;
+  border-top-right-radius: 0.5rem;
+  cursor: pointer;
+  border: 2px solid #951E7B;
+  border-bottom: none;
+}
+
+input[type="radio"] {
   display: none;
 }
 
-
-
-.content h3 {
-  text-align: center;
-  font-size: 25px;
+input#tab-ahead:checked + label[for="tab-ahead"],
+input#tab-update:checked + label[for="tab-update"] {
+  background: #fff;
+  color: #951E7B;
+  border-bottom: 2px solid #fff;
+  z-index: 2;
 }
 
-.questions {
+.weekly-tab-content {
+  display: none;
+  background: #F22C8C;
+  border: 2px solid #951E7B;
+  border-top: none;
+  border-bottom-left-radius: 0.5rem;
+  border-bottom-right-radius: 0.5rem;
+  width: 95%;  
+  margin: 0 auto;
+}
+
+#tab-ahead:checked ~ #content-ahead,
+#tab-update:checked ~ #content-update {
+  /* display: block; */
   display: flex;
-  justify-content: space-between;
-}
+  justify-items: center;}
 
-.qhead {
-  padding: 10px;
-  text-decoration: underline;
-}
 
-.cwoteimgs {
-  padding: 15px;
-  display: flex;
-  flex-wrap: wrap;       
-  justify-content: space-between; 
-  gap: 10px;             
-}
-
-a.cwoteimglink {
-  color: white;
-  font-style: italic;
-  font-size: 20px;
-}
-
-a.cwoteimglink:hover {
-  text-decoration: none;
-}
-
-.cwoteimg {
-  border: ;
-  padding: 15px;
-  border-bottom: 2px solid white;
-}
-
-.cwoteimg img {
-  width: auto; /* Maintain intrinsic width */
-  max-width: 100%; /* Prevent overflow */
-  height: auto; /* Maintain aspect ratio */
-  display: block; /* Ensures vertical stacking */
-  padding: 10px;
-}
 
 /* Hidden Content */
 .hidden {

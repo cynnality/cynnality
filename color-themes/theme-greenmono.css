@@ -1,0 +1,67 @@
+:root {
+  --greenmono-theme-bg: #061802; /* GREEN - BACKGROUND */
+
+  --greenmono-theme-darkest: #10451D; /* GREEN - DARKEST */
+  --greenmono-theme-2dark: #155D27; /* GREEN - 2ndDARK */
+  --greenmono-theme-midi-dark: #208B3A;; /* GREEN - MID DARK */
+  --greenmono-theme-midi-lite: #2DC653; /* GREEN - MID LIGHT */
+  --greenmono-theme-2lite: #6EDE8A; /* GREEN - 2ndLIGHT */
+  --greenmono-theme-lightest: #B7EFC5; /* GREEN - LIGHTEST */
+
+}
+
+body {
+  background-color: var(--greenmono-theme-bg); /* body background color */
+  color: var(--greenmono-theme-2lite);
+  font-family: 'Courier', monospace;
+}
+
+.header-sticky-wrap {
+    background-color: var(--greenmono-theme-2dark); /* sticky header background color */
+    
+}
+
+.weekly-nav {
+    background: var(--greenmono-theme-2lite);
+    color: var(--greenmono-theme-darkest);
+
+}
+
+hr {
+  background-color: var(--greenmono-theme-darkest) /* divider lines background color */
+}
+
+.double { 
+  background-color: var(--greenmono-theme-darkest); /* divider lines background color */
+}
+
+.bigcard1header { /* BIG CARD = WEEKLY FULL-CONTENT */
+  color: var(--greenmono-theme-lightest); /* big card header color */
+}
+
+p {
+  color: var(--greenmono-theme-2lite); /* p TEXT COLOR */
+}
+
+
+/*
+.weekly-tabs {
+  background: var(--greenmono-theme-midi-dark);
+  border-bottom: 4px solid var(--greenmono-theme-2lite);
+
+}
+
+.wpage {
+  color: var(--greenmono-theme-darkest);
+  background-color: var(--greenmono-theme-lightest);
+  border: 3px solid var(--greenmono-theme-2lite);
+  box-shadow: 0px 8px var(--greenmono-theme-midi-dark);
+}
+
+.wpage:active {
+  border: 3px solid var(--greenmono-theme-2dark);
+}
+
+.wpage:hover {
+  background: #FFFFFF;
+} */

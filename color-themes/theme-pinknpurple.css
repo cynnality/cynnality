@@ -1,0 +1,76 @@
+:root {
+
+
+    --pinknpurple-theme-darkest: #060415; /* PINK & PURPLE - DARKEST */
+    --pinknpurple-theme-2dark: #5E156A; /* PINK & PURPLE - 2ndDARK */
+    --pinknpurple-theme-midi-dark: #951E7B; /* PINK & PURPLE - MID DARK */
+    --pinknpurple-theme-mid-tone: #BE2766; /* PINK & PURPLE - MID TONE */
+    --pinknpurple-theme-midi-light: #D74147; /* PINK & PURPLE - MID LIGHT */
+    --pinknpurple-theme-2lite: #E08F6C; /* PINK & PURPLE - 2ndLIGHT */
+    --pinknpurple-theme-lightest: #F0F1C0; /* PINK & PURPLE - LIGHTEST */
+
+            
+    --slider-color-borders-shadows: var(--pinknpurple-theme-darkest);
+    --slider-color-bg: var(--pinknpurple-theme-lightest);
+    --slider-color-input-focus: var(--pinknpurple-theme-midi-light);  
+            
+
+    }
+
+    body {
+        background-color: #FFA305; /* body background color */
+        color: var(--pinknpurple-theme-lightest);
+        font-family: 'Courier', monospace;
+    }
+
+    .weekly-nav {
+        background: #F22C8C; /* weekly nav bar, background color */ 
+    }
+
+    .bigcard1header { /* BIG CARD = WEEKLY FULL-CONTENT */
+                background-color: var(--pinknpurple-theme-midi-tone); /* big card background color */
+
+        color: var(--pinknpurple-theme-lightest); /* big card header color */
+    }
+
+    p {
+        color: var(--pinknpurple-theme-darkest); /* p TEXT COLOR */
+    }
+
+    .bigcard1 {
+        background-color: var(--pinknpurple-theme-midi-tone); /* big card background color */
+    }
+
+    .radio-inputs {
+        background-color: var(--pinknpurple-theme-midi-light);
+    }
+
+
+
+
+
+
+    /* 
+    
+    .weekly-tabs {
+        background: var(--pinknpurple-theme-midi-dark);
+        border-bottom: 4px solid var(--pinknpurple-theme-2lite);
+
+}
+
+    .wpage {
+        color: var(--pinknpurple-theme-2dark);
+        background-color: var(--pinknpurple-theme-lightest);
+        border: 3px solid var(--pinknpurple-theme-2lite);
+        box-shadow: 0px 8px var(--pinknpurple-theme-midi-dark);
+    }
+
+    .wpage:active {
+        border: 3px solid var(--pinknpurple-theme-2dark);
+    }
+
+    .wpage:hover {
+        background: #FFFFFF;
+    }
+
+    */

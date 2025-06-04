@@ -48,8 +48,8 @@
 </svg>
     
       <div class="headertitlecontent" role="main">
-        <h1 class="title" style="color:blue;">WEEKLYS</h1>
-        <h3 style="color:blue;">writings/reports on sports</h3>
+        <h1 class="title">WEEKLYS</h1>
+        <h3>writings/reports on sports</h3>
       </div>
 
 
@@ -62,27 +62,32 @@
   
 
     
-<div id="bigcard1" class="bigcard bigcard1">
-  <span class="close">&times;</span>
-    <div class="bigcard1header"><h1>MAY // W4</h1></div>
+<div id="bigcard1" class="bigcard bigcard1"> <!--BIG CARD = WEEKLY SECTION-->
+
+    <div class="bigcard1header"> <!--BIG CARD/WEEKLY SECTION :: HEADER DIV-->
+      
+      <h1>MAY // W4</h1> <!--BIG CARD/WEEKLY SECTION :: HEADER TEXT-->
+    
+                      <div class="pagesetflex">  <!--BIG CARD/WEEKLY SECTION :: PAGE BUTTONS DIV-->
+                        
+<!-------------------wpage = wday //// content1,2,3.... = wdayexpandmon,tues,wed....  --------------------------------->
+                    <button class="wpage" data-content="content1">PREVIEW</button> 
+                    <button class="wpage" data-content="content2">RETROSPECT</button>
+                    <button class="wpage" data-content="content3">CYNNTAX</button>
+                    <button class="wpage" data-content="content4">WHAT'S NEXT?</button>
+                    <button class="wpage" data-content="content5">//</button>
+                    <button class="wpage" data-content="content6">//</button>
+                    <button class="wpage" data-content="content7">//</button>
+                    <button class="wpage show-all-wdays" type="button">Show All</button>
+                  </div>
+    
+    </div>
+
+
       <div class="bigcardcontent">
         <div class="tablesection">
               
-          <table class="cardtable">
-            
-                        <tr data-content="content1"><td colspan="2">PREVIEW</td></tr>
-            
-                        <tr data-content="content2"><td colspan="2">RETROSPECT</td></tr>
-            
-                        <tr data-content="content3"><td colspan="2">CYNNTAX</td></tr>
-            
-                        <tr data-content="content4"><td colspan="2">WHAT'S NEXT?</td></tr>
 
-                        <tr data-content="content5"><td colspan="2">day 5</td></tr>
-            
-                        <tr data-content="content7"><td colspan="2">day 6</td></tr>
-          
-              </table>
           
           <div class="tablewindow"><!--the window that pops up when a category/sport is clicked-->
             
@@ -101,13 +106,13 @@
                   <!--WEEKLY - DAYS OF THE WEEK CALENDAR SET (UNEXPANDED)-->
                   <div class="weeklysetflex">
    
-                    <div class="wday" data-wdayexpand="wdayexpandmon">MONDAY</div>
-                    <div class="wday" data-wdayexpand="wdayexpandtues">TUESDAY</div>
-                    <div class="wday" data-wdayexpand="wdayexpandwed">WEDNESDAY</div>
-                    <div class="wday" data-wdayexpand="wdayexpandthurs">THURSDAY</div>
-                    <div class="wday" data-wdayexpand="wdayexpandfri">FRIDAY</div>
-                    <div class="wday" data-wdayexpand="wdayexpandsat">SATURDAY</div>
-                    <div class="wday" data-wdayexpand="wdayexpandsun">SUNDAY</div>
+                    <div class="wday" data-wdayexpand="mon">MONDAY</div>
+                    <div class="wday" data-wdayexpand="tues">TUESDAY</div>
+                    <div class="wday" data-wdayexpand="wed">WEDNESDAY</div>
+                    <div class="wday" data-wdayexpand="thurs">THURSDAY</div>
+                    <div class="wday" data-wdayexpand="fri">FRIDAY</div>
+                    <div class="wday" data-wdayexpand="sat">SATURDAY</div>
+                    <div class="wday" data-wdayexpand="sun">SUNDAY</div>
                     <button class="show-all-wdays" type="button">Show All</button>
                   </div>
 
@@ -121,7 +126,7 @@
                         </div>
                         <hr class="double">
 
-<div class="matchup-row">
+<div class="matchup-row" data-sport="basketball" data-wday="tues">
     <div class="team-block wings west" data-team="DAL">
         <svg class="team-court" viewBox="0 0 132.29 79.375" preserveAspectRatio="xMidYMid meet">>
     <use href="#court"/>
@@ -171,7 +176,7 @@
 
 
 
-<div class="matchup-row">
+<div class="matchup-row" data-sport="basketball" data-wday="tues">
     <div class="team-block valkyries west" data-team="GSV">
         <svg class="team-court" viewBox="0 0 132.29 79.375" preserveAspectRatio="xMidYMid meet">>
     <use href="#court"/>
@@ -221,7 +226,7 @@
 
 
 
-<div class="matchup-row">
+<div class="matchup-row" data-sport="basketball" data-wday="tues">
   <div class="team-block storm west favorite" data-team="SEA">
       <svg class="team-court" viewBox="0 0 132.29 79.375" preserveAspectRatio="xMidYMid meet">>
     <use href="#court"/>
@@ -274,7 +279,7 @@
 
 
 
-<div class="matchup-row">
+<div class="matchup-row" data-sport="basketball" data-wday="tues">
   <div class="team-block dream east favorite" data-team="ATL">
       <svg class="team-court" viewBox="0 0 132.29 79.375" preserveAspectRatio="xMidYMid meet">>
     <use href="#court"/>
@@ -325,7 +330,7 @@
 
 
 
-<div class="matchup-row">
+<div class="matchup-row" data-sport="basketball" data-wday="tues">
   <div class="team-block sky east" data-team="CHI">
       <svg class="team-court" viewBox="0 0 132.29 79.375" preserveAspectRatio="xMidYMid meet">>
     <use href="#court"/>
@@ -374,7 +379,7 @@
                         </div>
                         <hr class="double">
 
-<div class="matchup-row">
+<div class="matchup-row" data-sport="basketball" data-wday="wed">
   <div class="team-block fever east" data-team="IND">
       <svg class="team-court" viewBox="0 0 132.29 79.375" preserveAspectRatio="xMidYMid meet">>
     <use href="#court"/>
@@ -426,7 +431,7 @@
                         </div>
                         <hr class="double">
 
-<div class="matchup-row">
+<div class="matchup-row" data-sport="basketball" data-wday="thurs">
   <div class="team-block valkyries west" data-team="GSV">
       <svg class="team-court" viewBox="0 0 132.29 79.375" preserveAspectRatio="xMidYMid meet">>
     <use href="#court"/>
@@ -478,7 +483,7 @@
 
 
 
-<div class="matchup-row">
+<div class="matchup-row" data-sport="basketball" data-wday="thurs">
   <div class="team-block wings west" data-team="DAL">
       <svg class="team-court" viewBox="0 0 132.29 79.375" preserveAspectRatio="xMidYMid meet">>
     <use href="#court"/>
@@ -530,7 +535,7 @@
                         </div>
                         <hr class="double">
 
-<div class="matchup-row">
+<div class="matchup-row" data-sport="basketball" data-wday="fri">
   <div class="team-block sun east" data-team="CON">
       <svg class="team-court" viewBox="0 0 132.29 79.375" preserveAspectRatio="xMidYMid meet">>
     <use href="#court"/>
@@ -581,7 +586,7 @@
 
 
 
-<div class="matchup-row">
+<div class="matchup-row" data-sport="basketball" data-wday="fri">
   <div class="team-block liberty east favorite" data-team="NYL">
       <svg class="team-court" viewBox="0 0 132.29 79.375" preserveAspectRatio="xMidYMid meet">>
     <use href="#court"/>
@@ -633,7 +638,7 @@
 
 
 
-<div class="matchup-row">
+<div class="matchup-row" data-sport="basketball" data-wday="fri">
   <div class="team-block spark west" data-team="LAS">
       <svg class="team-court" viewBox="0 0 132.29 79.375" preserveAspectRatio="xMidYMid meet">>
     <use href="#court"/>
@@ -686,7 +691,7 @@
 
 
 
-<div class="matchup-row">
+<div class="matchup-row" data-sport="basketball" data-wday="fri">
   <div class="team-block mystics east" data-team="WAS">
       <svg class="team-court" viewBox="0 0 132.29 79.375" preserveAspectRatio="xMidYMid meet">>
     <use href="#court"/>
@@ -737,7 +742,7 @@
 
 
 
-<div class="matchup-row">
+<div class="matchup-row" data-sport="basketball" data-wday="fri">
   <div class="team-block dream east favorite" data-team="ATL">
       <svg class="team-court" viewBox="0 0 132.29 79.375" preserveAspectRatio="xMidYMid meet">>
     <use href="#court"/>
@@ -792,7 +797,7 @@
                         </div>
                         <hr class="double">
 
-<div class="matchup-row">
+<div class="matchup-row" data-sport="basketball" data-wday="sat">
   <div class="team-block sky east" data-team="CHI">
       <svg class="team-court" viewBox="0 0 132.29 79.375" preserveAspectRatio="xMidYMid meet">>
     <use href="#court"/>

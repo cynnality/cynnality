@@ -1,0 +1,145 @@
+{
+  "Atlanta Dream": {
+    "teamCode": "ATL",
+    "teamName": "Atlanta Dream",
+    "conference": "east",
+    "favorite": true,
+    "defaultContent": {
+      "img": "assets/logos-wnba/atlanta-dream-logo.svg",
+      "alt": "Atlanta Dream Logo",
+      "name": "Atlanta Dream"
+    }
+  },
+  "Seattle Storm": {
+    "teamCode": "SEA",
+    "teamName": "Seattle Storm",
+    "conference": "west",
+    "favorite": true,
+    "defaultContent": {
+      "img": "assets/logos-wnba/seattle-storm-logo.svg",
+      "alt": "Seattle Storm Logo",
+      "name": "Seattle Storm"
+    }
+  },
+  "Phoenix Mercury": {
+    "teamCode": "PHX",
+    "teamName": "Phoenix Mercury",
+    "conference": "west",
+    "favorite": false,
+    "defaultContent": {
+      "img": "assets/logos-wnba/phoenix-mercury-logo.svg",
+      "alt": "Phoenix Mercury Logo",
+      "name": "Phoenix Mercury"
+    }
+  },
+  "Los Angeles Sparks": {
+    "teamCode": "LOS",
+    "teamName": "Los Angeles Sparks",
+    "conference": "west",
+    "favorite": false,
+    "defaultContent": {
+      "img": "assets/logos-wnba/los-angeles-sparks-logo.svg",
+      "alt": "Los Angeles Sparks Logo",
+      "name": "Los Angeles Sparks"
+    }
+  },
+  "Golden State Valkyries": {
+    "teamCode": "GSV",
+    "teamName": "Golden State Valkyries",
+    "conference": "west",
+    "favorite": false,
+    "defaultContent": {
+      "img": "assets/logos-wnba/golden-state-valkyries-logo.svg",
+      "alt": "Golden State Valkyries Logo",
+      "name": "Golden State Valkyries"
+    }
+  },
+  "Minnesota Lynx": {
+    "teamCode": "MIN",
+    "teamName": "Minnesota Lynx",
+    "conference": "west",
+    "favorite": false,
+    "defaultContent": {
+      "img": "assets/logos-wnba/minnesota-lynx-logo.svg",
+      "alt": "Minnesota Lynx Logo",
+      "name": "Minnesota Lynx"
+    }
+  },
+  "Connecticut Sun": {
+    "teamCode": "CON",
+    "teamName": "Connecticut Sun",
+    "conference": "west",
+    "favorite": false,
+    "defaultContent": {
+      "img": "assets/logos-wnba/connecticut-sun-logo.svg",
+      "alt": "Connecticut Sun Logo",
+      "name": "Connecticut Sun"
+    }
+  },
+  "Dallas Wings": {
+    "teamCode": "DAL",
+    "teamName": "Dallas Wings",
+    "conference": "west",
+    "favorite": false,
+    "defaultContent": {
+      "img": "assets/logos-wnba/dallas-wings-logo.svg",
+      "alt": "Dallas Wings Logo",
+      "name": "Dallas Wings"
+    }
+  },
+  "New York Liberty": {
+    "teamCode": "NYL",
+    "teamName": "New York Liberty",
+    "conference": "east",
+    "favorite": false,
+    "defaultContent": {
+      "img": "assets/logos-wnba/new-york-liberty-logo.svg",
+      "alt": "New York Liberty Logo",
+      "name": "New York Liberty"
+    }
+  },
+  "Washington Mystics": {
+    "teamCode": "WAS",
+    "teamName": "Washington Mystics",
+    "conference": "east",
+    "favorite": false,
+    "defaultContent": {
+      "img": "assets/logos-wnba/washington-mystics-logo.svg",
+      "alt": "Washington Mystics Logo",
+      "name": "Washington Mystics"
+    }
+  },
+  "Indiana Fever": {
+    "teamCode": "IND",
+    "teamName": "Indiana Fever",
+    "conference": "east",
+    "favorite": false,
+    "defaultContent": {
+      "img": "assets/logos-wnba/indiana-fever-logo.svg",
+      "alt": "Indiana Fever Logo",
+      "name": "Indiana Fever"
+    }
+  },
+  "Chicago Sky": {
+    "teamCode": "CHI",
+    "teamName": "Chicago Sky",
+    "conference": "east",
+    "favorite": false,
+    "defaultContent": {
+      "img": "assets/logos-wnba/chicago-sky-logo.svg",
+      "alt": "Chicago Sky Logo",
+      "name": "Chicago Sky"
+    }
+  },
+  "Las Vegas Aces": {
+    "teamCode": "LVA",
+    "teamName": "Las Vegas Aces",
+    "conference": "west",
+    "favorite": false,
+    "defaultContent": {
+      "img": "assets/logos-wnba/las-vegas-aces-logo.svg",
+      "alt": "Las Vegas Aces Logo",
+      "name": "Las Vegas Aces"
+    }
+  }
+}

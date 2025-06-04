@@ -1,3 +1,7 @@
+
+/* styles for individual wnba team stuff*/
+
+
 .fugaz-one-regular {
   font-family: "Fugaz One", sans-serif;
   font-weight: 400;
@@ -27,117 +31,13 @@
 }
 
 
-/* .team-link {
-  display: flex;
-  flex-direction: column;
-  align-items: space-between;
-  justify-content: space-between;
-  width: 100%;
-  height: 100%;
-} */
-
-/*.team-block {
-  display: flex;
-  align-content: center;
-  justify-content: center;
-  font-family: "REM", sans-serif;
-  min-width: 300px;
-  min-height: 80px;
-  font-size: 1em;
-  position: relative;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.10);
-  border: 2px solid #fff;
-} */
-
-.team-block {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  aspect-ratio: 132.29 / 79.375;
-  min-width: 500px;
-  min-height: 300px;
-  position: relative;
-  overflow: hidden;
-  font-family: "Staatliches", sans-serif;
-}
-
-
-.team-court {
-  position: absolute;
-  top: 0; left: 0; right: 0; bottom: 0;
-  width: 100%;
-  height: 100%;
-  z-index: 0;
-  pointer-events: none; /* So clicks go through to the block */
-}
-
-.team-name-wrap {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 100%;
-  width: 100%;
-  position: relative;
-  z-index: 1;
-}
-
-.team-name-wrap::before {
-  content: "";
-  position: absolute;
-  left: 0; right: 0;
-  top: 50%;
-  transform: translateY(-50%);
-  height: 8em; /* Adjust for bar thickness */
-  background: rgba(255,255,255,0.18);
-  backdrop-filter: blur(4px) saturate(120%);
-  -webkit-backdrop-filter: blur(4px) saturate(120%);
-  z-index: 0;
-  pointer-events: none;
-}
-
-.team-name {
-  position: relative;
-  z-index: 1;
-  font-size: 8em;
-  font-style: italic;
-  font-weight: 700;
-  text-align: center;
-  text-shadow: 2px 2px 0px #000;
-  color: var(--your-team-color, #fff); /* or your existing color */
-  transform: skew(-8deg) translateX(-0.12em); /* <-- This line centers the skewed text */
-
-}
-
-
-
-.gdbar {
-  display: flex;
-  justify-content: space-between; 
-  align-items: flex-start;   
-}
-
-
-.gdmatchup-facts {
-  list-style: none;
-  padding: 0;
-  margin: 0 8px;
-  font-size: 16px;
-}
-
-.gdmatchup-facts li {
-  margin-bottom: 2px;
-  padding: 2px 8px;
-}
 
 /* Favorite star */
 .team-block.favorite .favorite-star {
   color: gold;
-  font-size: 1.3em;
   position: absolute;
   top: 6px;
   right: 10px;
-  text-shadow: 0 1px 4px #000;
 }
 
 .hidden {
@@ -250,7 +150,7 @@
 /* TEAM NAME, text color and styles */
 .team-block.storm .team-name { 
   color: var(--stormneu-dark);
-  text-shadow: 4px 4px 0px var(--stormneu-lite);
+  text-shadow: 4px 4px 0px var(--stormacc-yellow);
 }
 
 /* BOTTOM BAR, color and styling */
@@ -462,7 +362,7 @@
 .team-block.mystics .team-name { 
   color: var(--mysticsacc-blue);
   text-shadow: 3px 3px 0px var(--mysticsneu-dark);
-}
+} 
 
 /* BOTTOM BAR, color and styling */
 .team-block.mystics .gdmatchup-facts.bottom-bar { 
@@ -604,7 +504,6 @@
 .team-block.valkyries .team-name { 
   color: var(--valkyriesneu-dark);
   text-shadow: 4px 4px 0px var(--valkyriesacc-purple);
-  font-size: 7em;
 }
 
 /* BOTTOM BAR, color and styling */
