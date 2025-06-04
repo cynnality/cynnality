@@ -58,8 +58,8 @@ let matchupData = null;
 let matchupBlurbs = null;
 
 Promise.all([
-  fetch('wnba-2025-week-05.json').then(res => res.json()),
-  fetch('matchup-blurbs-week-2025-05.json').then(res => res.json())
+  fetch('app/wnba-2025-week-05.json').then(res => res.json()),
+  fetch('app/matchup-blurbs-week-2025-05.json').then(res => res.json())
 ]).then(([data, blurbs]) => {
   matchupData = data;
   matchupBlurbs = blurbs;
@@ -73,7 +73,7 @@ Promise.all([
   });
 
 // Rendering
-  fetch('wnba-2025-week-05.json')
+  fetch('app/wnba-2025-week-05.json')
     .then(res => res.json())
     .then(data => {
       const matchupList = document.getElementById('matchup-list');
@@ -197,18 +197,6 @@ function buildTeamBlock(team, isHome, isFavorite) {
     </div>
   `;
 }
-
-
-const matchupHTML = `
-  <div class="matchup-row" data-matchup-id="${matchup.id}">
-    ${buildTeamBlock(matchup.home, true)}
-    ${buildTeamBlock(matchup.away, false)}
-    <button class="toggle-pregame-btn">Pre-Game</button>
-    <button class="game-update-btn">Post-Game</button>
-    <div class="matchup-extra hidden"></div>
-  </div>
-`;
-
 
   // Theme toggling
 const greenSheet = document.getElementById('theme-greenmono');
