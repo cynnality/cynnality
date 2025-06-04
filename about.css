@@ -103,7 +103,6 @@ body {
   background-color: #f5efe0;
   object-fit: cover;
   -webkit-user-drag: none;
-  user-drag: none;
 }
 
 .panetext {

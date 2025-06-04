@@ -58,8 +58,8 @@ let matchupData = null;
 let matchupBlurbs = null;
 
 Promise.all([
-  fetch('app/wnba-2025-week-05.json').then(res => res.json()),
-  fetch('app/matchup-blurbs-week-2025-05.json').then(res => res.json())
+  fetch('wnba-2025-week-05.json').then(res => res.json()),
+  fetch('matchup-blurbs-week-2025-05.json').then(res => res.json())
 ]).then(([data, blurbs]) => {
   matchupData = data;
   matchupBlurbs = blurbs;
@@ -73,7 +73,7 @@ Promise.all([
   });
 
 // Rendering
-  fetch('app/wnba-2025-week-05.json')
+  fetch('wnba-2025-week-05.json')
     .then(res => res.json())
     .then(data => {
       const matchupList = document.getElementById('matchup-list');
