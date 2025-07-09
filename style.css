@@ -1,39 +1,15 @@
-/******************************************************************************
-START Glitch hello-app default styles
-
-The styles in this section do some minimal CSS resets, set default fonts and 
-colors, and handle the layout for our footer and "Remix on Glitch" button. If
-you're new to CSS they may seem a little complicated, but you can scroll down
-to this section's matching END comment to see page-specific styles.
-******************************************************************************/
-
-
-/* 
-  The style rules specify elements by type and by attributes such as class and ID
-  Each section indicates an element or elements, then lists the style properties to apply
-  See if you can cross-reference the rules in this file with the elements in index.html
-*/
-
-/* Our default values set as CSS variables */
 :root {
-  background-color: #3038cf;
-  --color-text-main: #e3e3e3;
-  --color-text-header: #f6e63c;
-  --color-primary: ;
-  --image-max-width: 300px;
-  --image-margin: 3rem;
+  background-color:  #0099E0;
+  --color-text-main: #000000;
+  --color-text-header: #000000;
   --font-family: "Inter", sans-serif;
   --font-family-header: "Inter", sans-serif;
 }
 
-/* Basic page style resets */
-* {
-  box-sizing: border-box;
-}
+
 [hidden] {
   display: none !important;
 }
-
 
 .inter-regular {
   font-family: "Inter", sans-serif;
@@ -42,14 +18,12 @@ to this section's matching END comment to see page-specific styles.
   font-style: normal;
 }
 
-
 .inter-thinitalic {
   font-family: "Inter", sans-serif;
   font-optical-sizing: auto;
   font-weight: 300;
   font-style: italic;
 }
-
 
 .inter-bolditalic {
   font-family: "Inter", sans-serif;
@@ -59,129 +33,166 @@ to this section's matching END comment to see page-specific styles.
 }
 
 
-
-
-
-/* Navigation grid */
-.footer {
-  display: flex;
-  justify-content: space-between;
-  margin: 1rem auto 0;
-  padding: 1rem 0 0.75rem 0;
-  width: 100%;
-  flex-wrap: wrap;
-  border-top: 4px solid #e3e3e3;
-}
-
-/* LINKS a (change this to change color text for text inside the links*/
-.footer a:not(.btn--remix):link,
-a:not(.btn--remix):visited {
-  font-family: "Inter", sans-serif;
-  font-optical-sizing: auto;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 1.1rem;
-  text-decoration: none;
-  border-style: none;
-}
-.footer a:hover {
-  background: var(--color-primary);
-}
-
-.footer .links {
-  padding: 0.5rem 1rem 1.5rem;
-  white-space: nowrap;
-}
-
-.divider {
-  padding: 0 1rem;
-}
-/******************************************************************************
-END Glitch hello-app default styles
-******************************************************************************/
-
 body {
   font-family: "Inter", sans-serif;
   font-style: normal;
   background-color: var(--color-bg);
 }
 
+.wrapper {
+  display: flex;
+  justify-items: flex-start;
+  background-color: #F22C8C;
+  border-top: 4px solid #000000;
+  border-bottom: 4px solid #000000;
+  border-left: 4px solid #000000;
+  border-right: 4px solid #000000;
+  box-shadow: 4px 6px #000000;
+}
+
 h1.title {
   font-family: "Inter", sans-serif;
   font-style: italic;
-}
-
-
-
-/* Page structure */
-.wrapper {
-  min-height: var(--wrapper-height);
-  display: grid;
-  margin: 0 1rem;
-  padding: px;
-}
-.content {
+  transform: skewX(-10deg);
+  font-size: 60px;
+  margin: 0;
   padding: 20px;
 }
 
- .flex-container {
-    display: flex;
-    justify-content: flex-start; 
-    align-items: stretch; 
-    /* flex-flow: row nowrap; */ 
-    flex-direction: row; 
-    flex-wrap: nowrap; 
-    align-content: stretch;
-    height: 100%;
-    padding: 15px;
-    gap: 10px;
-  }
-
-  .flex-container > div{
-    border-radius: 2px;
-    padding: 10px;
-  }
-
-.wrappercont {
-  font-family: "Inter", sans-serif;
-  font-style: normal;
-  width: 75%;
-  text-align: center; /* Center text within the container */
-  justify-content: center;
-  align-content: center;
+.wrapper .welcome-message {
+      background-color: #FFE499;
+      border: solid 2px #000000;
+      box-shadow: 2px 2px #000000;
+      border-radius: 4px;
+      height: fit-content;
+      margin: auto;
+      margin-left: 60px;
+      padding: 4px 20px 4px 20px;
 }
 
-  .dam1 { 
-    /* flex:0 1 auto; */
-    align-self:flex-start;
-    border: 3px solid #e3e3e3;
-    max-width: 650px;
-  }
+.wrapper .welcome-message p {
+        color: #000000;
+        font-family: "Inter", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 400;
+        font-style: italic;
+        font-size: 20px;
+}
 
-  .dam1 h1 {
-    padding: 10px;
-    color: #e3e3e3;
+.home-body {
+  display: flex;
+  justify-content: flex-start;
+  align-items: stretch;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-content: stretch;
+  height: 100%;
+  padding: 15px;
+  gap: 10px;
+}
+
+.home-window {
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  margin: 10px;
+  border-top: 4px solid #000000;
+  border-bottom: 4px solid #000000;
+  border-left: 4px solid #000000;
+  border-right: 4px solid #000000;
+  box-shadow: 4px 6px #000000;
+  display: flex;
+  flex-direction: column;
+}
+
+.header-description { 
+  margin: 10px;
+}
+
+.dam1 {
+  align-self: flex-start;
+  max-width: 450px;
+  background-color: #FFCC00;
+  border-radius: 10px;
+  padding: 10px;
+  padding-top: 10px;
+  border-top-left-radius: 0px;
+  border-bottom-left-radius: 0px;
+}
+
+  .dam1 h2 {
+    color: #000000;
     font-size: 30px;
     font-family: "Inter", sans-serif;
     font-style: italic;
   }
-  .dam1 .pagelinks {
-    background-color: rgba(2, 170, 2, 0.897);
-    padding: 10px;
-    border-radius: 2px;
-    margin-bottom: 10px;
-  }
 
-  .dam1 p {
-    color: #e3e3e3;
-    font-size: 20px;
-    font-family: "Inter", sans-serif;
-    font-style: normal;
-  }
+    .dam1 .header-description {
+      border: solid 2px #000000;
+      border-radius: 4px;
+      padding: 10px;
 
-  .dam2 {
-    border: 4px solid #e3e3e3;
+    }
+
+      .dam1 .header-description p {
+        color: #000000;
+        font-family: "Inter", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 500;
+        font-style: italic;
+        font-size: 24px;
+}
+
+    .dam1 .header-note {
+      border: solid 2px #000000;
+      border-radius: 4px;
+      padding: 10px;
+    }
+
+      .dam1 .header-note p {
+        color: #000000;
+        font-family: "Inter", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 400;
+        font-style: italic;
+        font-size: 16px;
+}
+
+
+.icon-btn {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: transparent;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  text-decoration: none;
+  outline: none;
+}
+
+.icon-img {
+  width: 260px;
+  height: 260px;
+  display: block;
+}
+
+.icon-img:hover {
+  transform: scale(1.05);
+}
+
+.home-window .dam3 {
+  border-top: none;
+  border-bottom: none;
+  border-left: none;
+  border-right: none;
+}
+
+
+
+.dam2 {
     max-width: fit-content;
+    text-align: center;
   }
 
   .dam2 h1 {
@@ -192,10 +203,52 @@ h1.title {
   }
 
   .dam2 .pagelinks {
-    background-color: rgba(2, 170, 2, 0.897);
-    border: 2px solid #e3e3e3;
-
+    text-align: left;
   }
+
+
+.w-kit-block-container {
+  width: 100%;
+  max-width: 600px;      /* responsive width */
+  height: 230px;
+  position: relative;
+  aspect-ratio: 410 / 230;
+}
+
+.w-kit-bg {
+  width: 161%;
+  height: 186%;
+  background: url('/assets/icons/w-kit-block.svg') no-repeat center/contain;
+  position: relative;
+}
+
+.w-kit-rect-overlay {
+  position: absolute;
+  left: 38%;
+  top: 58.3%;
+  width: 52%;
+  height: 30.7%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  pointer-events: none;
+}
+
+.kit-icon-link {
+  pointer-events: auto;
+  width: 30%;
+  height: 38%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+
+}
+
+.kit-icon-link img {
+  width: 147%;
+  height: 156%;
+}
   
 
 .pagelinks {
@@ -229,45 +282,85 @@ h1.title {
   border-color: rgba(2, 170, 2, 0.897); /* Change border color on hover */
 }
 
-.notes {
-  font-size: 80%;
-  color: #647EBB;
+.dam3 {
+  height: fit-content;
+  width: fit-content;
+  padding: 10px;
+  box-shadow: none;
 }
 
-.tags {
-  font-size: 50%;
-  color: #647EBB;
+.listed-card {
+  --input-focus: #2d8cf0;
+  --font-color: #A30034;
+  --font-color-sub: #212121;
+  --main-color: black;
+  padding: 20px;
+  background: #FFD6E7;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 20px;
+  border-radius: 5px;
+  border: 2px solid var(--main-color);
+  box-shadow: 4px 4px var(--main-color);
+  height: fit-content;
 }
 
-a {
-  text-decoration: none;
+.listed-card-title {
+  color: var(--font-color);
+  font-family: "Inter", sans-serif;
+  font-weight: 900;
+  font-style: italic;
+  font-size: 32px;
+}
+
+.listed-card-title span {
+  color: var(--font-color-sub);
+  font-weight: 600;
+  font-size: 17px;
+}
+
+.table-of-contents {
+  font-family: monospace;
+  font-size: 20px;
+}
+dl.table-of-contents .contents-list-item {
+  display: flex;
+  margin: 5px 0px 5px 0px;
+}
+dl.table-of-contents dt {
+  flex: 0 1 auto;
+  margin: 0px 0px 0px 0px;
+  order: 1;
+}
+dl.table-of-contents .contents-list-item:after {
+  background-image: radial-gradient(
+    circle,
+    rgba(0, 0, 0, 1) 0%,
+    rgba(0, 0, 0, 1) 24%,
+    rgba(255, 255, 255, 0) 25%,
+    rgba(255, 255, 255, 0) 100%
+  );
+  background-size: 0.5em 0.5rem;
+  background-repeat: repeat-x;
+  background-position: left bottom;
+  content: "";
+  display: block;
+  flex: 1 1 auto;
+  margin: 0px 12px 5px 12px;
+  order: 2;
+}
+dl.table-of-contents dd {
+  flex: 0 1 auto;
+  margin: 0px 0px 0px 0px;
+  order: 3;
 }
 
 
-/* Very light scaling for our illustration */
-.title {
-  color: var(--color-text-header);
-  font-style: normal;
-  font-weight: bold;
-  font-size: 60px;
-  line-height: 105%;
-  margin: 0;
-}
 
-/* Very light scaling for our illustration */
-.illustration {
-  max-width: 100%;
-  max-height: var(--image-max-width);
-  margin-top: var(--image-margin);
-}
 
-/* Instructions */
-.intent {
-  margin: 1rem auto 0;
-  color: #e3e3e3;
-}
 
-/* Button - Add it from the README instructions */
+
 button,
 input {
   font-family: "Inter", sans-serif;
@@ -293,34 +386,10 @@ input {
   border-radius: 2px;
   padding: 10px;
   font-size: 150%;
-  text-align: center; /* Center text within the container */
+  text-align: center;
+  /* Center text within the container */
 }
 
-/* Subheading */
-h2 {
-  color: #e3e3e3;
-}
-
-/* Interactive image */
-.illustration:active {
-  transform: translateY(5px);
-}
-
-/* Button dip
-- Toggling this class on and off will move it down and up again
-- The button transition property above determines the speed of the translate (500ms)
-*/
 .dipped {
   transform: translateY(5px);
-}
-
-/* Links that open files in the editor */
-.fileopener {
-  cursor:pointer;
-  font-weight:bold;
-  border-bottom:3px solid var(--color-primary);
-  color: var(--color-secondary);
-}
-.fileopener:hover {
-  border-bottom:3px solid var(--color-secondary);
 }

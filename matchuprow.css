@@ -7,7 +7,9 @@
   font-style: italic;
 }
 
-/* Neo-brutalist schedule styling with pinknpurple theme */
+body {
+  background-color: #0099E0; /* body background color */
+}
 
 /* Sticky date bar */
 .date-sticky {
@@ -19,7 +21,8 @@
   font-family: 'Staatliches', 'REM', monospace;
   font-size: 2.5rem;
   letter-spacing: 0.05em;
-  padding: .5rem 1rem;
+  padding-left: 1rem;
+  width: 95%;  
   border-bottom: 4px solid #000;
   border-top: 4px solid #000;
   box-shadow: 0 4px 0 0 #000;
@@ -34,24 +37,22 @@
 }
 
 .matchup-list {
-  background-color: #F22C8C;
-    width: 90%;
-
+  background-color: #0099E0;
 }
 
 /* Matchup row */
 .matchup-row {
   display: flex;
+  background-color: rgba(240, 241, 192, 0.7);
   box-shadow: 0 6px 0 0 #000000;
-  background: #0099E0;  
   border: 4px solid #000;
   border-radius: 0;
-  margin: 1.5rem 0 1.5rem 0;
   padding: 1rem 0.5rem;
   gap: 2rem;
   position: relative;
   transition: box-shadow 0.1s;
-  left: 30px;
+  margin: auto;
+  width: 70%;
 }
 
 /* Team block (card) */
@@ -71,16 +72,35 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
   padding-top: 0;
 }
+
+.team-block.winner {
+  background:
+        radial-gradient(
+            ellipse farthest-corner at right bottom,
+            #fedb37 0%,
+            #fdb931 8%,
+            #9f7928 30%,
+            #8a6e2f 40%,
+            transparent 80%
+        ),
+        radial-gradient(
+            ellipse farthest-corner at left top,
+            #ffffff 0%,
+            #ffffac 8%,
+            #d1b464 25%,
+            #5d4a1f 62.5%,
+            #5d4a1f 100%
+        );
+}
+
 
 .team-topbar {
   display: flex;
   align-items: center;
-  border-right: 4px solid #000000;
-  border-left: 4px solid #000000;
   gap: 0.7rem;
-  background: #000000;
   border-top-left-radius: 8px;
   border-top-right-radius: 8px;
   padding: 0.3rem 0.8rem;
@@ -102,9 +122,18 @@
   transform: scale(1.15);
 }
 
+.team-default-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
 .team-block .team-logo {
-  width: 270px;
-  height: 230px;
+  width: 200px;
+  height: 180px;
+  display: block;
+  margin: 0 auto;
 }
 
 .team-block .team-facts {
@@ -182,6 +211,13 @@
 .matchup-row button:hover {
   background: #FFA305;
   color: #000;
+}
+
+.pregame-postgame-buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem; /* space between buttons */
+  align-items: stretch; /* optional: makes buttons full width of container */
 }
 
 .matchup-extra {
@@ -271,4 +307,9 @@
   padding: 1.25rem 1.25rem 1rem 1.25rem;
   font-size: 1.05rem;
   color: #222;
+}
+
+/* Hidden Content */
+.hidden {
+  display: none;
 }

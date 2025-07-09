@@ -73,7 +73,7 @@ for team, data in conference.items():
         combined[team] = data
 
 # Save to JSON
-with open('wnba-standings-combined.json', 'w', encoding='utf-8') as f:
+with open('wnba-6-10-25-standings-combined.json', 'w', encoding='utf-8') as f:
     json.dump(combined, f, indent=2)
 
 print(json.dumps(combined, indent=2))

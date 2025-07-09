@@ -58,7 +58,7 @@ let matchupData = null;
 let matchupBlurbs = null;
 
 Promise.all([
-  fetch('wnba-2025-week-05.json').then(res => res.json()),
+  fetch('wnba-2025-week-06.json').then(res => res.json()),
   fetch('matchup-blurbs-week-2025-05.json').then(res => res.json())
 ]).then(([data, blurbs]) => {
   matchupData = data;
@@ -73,7 +73,7 @@ Promise.all([
   });
 
 // Rendering
-  fetch('wnba-2025-week-05.json')
+  fetch('wnba-2025-week-06.json')
     .then(res => res.json())
     .then(data => {
       const matchupList = document.getElementById('matchup-list');
@@ -86,10 +86,11 @@ Promise.all([
         matchups.forEach(matchup => {
           groupDiv.innerHTML += `
             <div class="matchup-row" data-matchup-id="${matchup.id}">
-              ${buildTeamBlock(matchup.home, true)}
-              ${buildTeamBlock(matchup.away, false)}
-              <button class="toggle-pregame-btn">Pre-Game</button>
+              ${buildTeamBlock(matchup.home, true, matchup)}
+              ${buildTeamBlock(matchup.away, false, matchup)}
+              <div class="pregame-postgame-buttons">
               <button class="game-update-btn">Post-Game</button>
+              </div>
               <div class="matchup-extra hidden"></div>
             </div>
           `;
@@ -98,41 +99,32 @@ Promise.all([
       });
     });
 
-  document.addEventListener('click', function(e) {
-  // Pregame/Postgame faux window logic
-  if (e.target.classList.contains('toggle-pregame-btn') || e.target.classList.contains('game-update-btn')) {
+document.addEventListener('click', function(e) {
+  if (e.target.classList.contains('game-update-btn')) {
     const matchupRow = e.target.closest('.matchup-row');
     if (!matchupRow) return;
     const matchupId = matchupRow.getAttribute('data-matchup-id');
-    // Use your loaded JSON data (assume it's in a variable called matchupData)
     const matchup = matchupData.matchups.find(m => m.id === matchupId);
     const container = matchupRow.querySelector('.matchup-extra');
     if (!container || !matchup) return;
-    if (e.target.classList.contains('toggle-pregame-btn')) {
-      container.innerHTML = `
-        <div class="faux-window pregame">
-          <div class="faux-window-bar">
-            <span class="faux-window-title">${matchup.pregame?.title || "Pre-Game"}</span>
-            <button class="faux-window-close" aria-label="Close">&bull;</button>
-          </div>
-          <div class="faux-window-content">
-            <p>${matchup.pregame?.content || "No pregame info available."}</p>
-          </div>
+
+    // Post-game logic: show faux window and activate winner background
+    container.innerHTML = `
+      <div class="faux-window postgame">
+        <div class="faux-window-bar">
+          <span class="faux-window-title">${matchup.postgame?.title || "Post-Game"}</span>
+          <button class="faux-window-close" aria-label="Close">&bull;</button>
         </div>
-      `;
-    } else {
-      container.innerHTML = `
-        <div class="faux-window postgame">
-          <div class="faux-window-bar">
-            <span class="faux-window-title">${matchup.postgame?.title || "Post-Game"}</span>
-            <button class="faux-window-close" aria-label="Close">&bull;</button>
-          </div>
-          <div class="faux-window-content">
-            <p>${matchup.postgame?.content || "No postgame info available."}</p>
-          </div>
+        <div class="faux-window-content">
+          <p>${matchup.postgame?.content || "No postgame info available."}</p>
         </div>
-      `;
-    }
+      </div>
+    `;
+    matchupRow.classList.add('postgame-active');
+    // Re-render the team blocks to apply winner class if needed
+    matchupRow.querySelector('.team-block').outerHTML = buildTeamBlock(matchup.home, true, matchup, true);
+    matchupRow.querySelectorAll('.team-block')[1].outerHTML = buildTeamBlock(matchup.away, false, matchup, true);
+
     container.classList.remove('hidden');
   }
 
@@ -149,7 +141,8 @@ Promise.all([
 
 
 
-function buildTeamBlock(team, isHome, isFavorite) {
+function buildTeamBlock(team, isHome, matchup, postgameActive = false) {
+  const isWinner = postgameActive && matchup && matchup.winner === team.teamCode;
   const teamClass = team.teamName.toLowerCase().replace(/\s+/g, '-');
   const logoPath = team.defaultContent?.img || `assets/logos-wnba/${teamClass}-logo.svg`;
   // Icon paths
@@ -169,7 +162,7 @@ function buildTeamBlock(team, isHome, isFavorite) {
   const favoriteTip = "a fav of mine";
 
   return `
-    <div class="team-card team-block ${teamClass}" data-team="${team.teamCode}" data-conference="${team.conference}"${team.favorite ? ' data-favorite="true"' : ''}>
+    <div class="team-card team-block ${teamClass}${isWinner ? ' winner' : ''}" data-team="${team.teamCode}" data-conference="${team.conference}"${team.favorite ? ' data-favorite="true"' : ''}>
       <div class="team-topbar">
         <img src="${confIcon}" class="icon conf-icon" alt="${confTip}" title="${confTip}">
         <img src="${homeAwayIcon}" class="icon homeaway-icon" alt="${homeAwayTip}" title="${homeAwayTip}">

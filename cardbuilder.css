@@ -53,7 +53,7 @@ MAIN STYLES FOR INDIVIUAL WEEKLY PAGES
   height: 160px;
   display: block;
   border: none;
-  background: none;
+  background: none; 
   box-shadow: none;
   outline: none;
   filter: drop-shadow(2px 2px 0 #00000033);
@@ -115,7 +115,7 @@ input#tab-update:checked + label[for="tab-update"] {
 
 .weekly-tab-content {
   display: none;
-  background: #F22C8C;
+  /* background: #F22C8C; */
   border: 2px solid #951E7B;
   border-top: none;
   border-bottom-left-radius: 0.5rem;

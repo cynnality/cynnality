@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cynntax</title>
+    <link rel="stylesheet" href="cynntax-home.css">
+</head>
+
+<body>
+
+
+<div class="break-down-card">
+  <div class="header"><h2><em>player decks!</em></h2>
+    <button class="button">show decks</button>
+    <div class="button-link">
+      <a href="../index.html" class="button-link">
+        <button>go home</button>
+      </a>
+    </div>
+  </div>
+  <div class="content">
+    decks for every team in the w and their players
+    <br /><br />
+    
+
+    <div class="expand-content">
+      <div id="active-deck-rows"></div>
+      <div class="deck-grid">
+        <div class="deck" data-team="storm">
+          <img class="deck-svg" src="../assets/w-player-decks/deck-storm.svg" alt="seattle storm deck" />
+          <span>storm</span>
+        </div>
+        <div class="deck" data-team="aces">
+          <img class="deck-svg" src="../assets/w-player-decks/deck-aces.svg" alt="las vegas aces deck" />
+          <span>aces</span>
+        </div>
+        <!-- Add more decks here -->
+      </div>
+    </div>
+
+  </div>
+</div>
+
+
+
+
+    <script src="cynntax.js"></script>
+
+</body>
+
+</html>

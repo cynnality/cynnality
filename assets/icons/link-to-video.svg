@@ -1,0 +1,25 @@
+<svg viewBox="0 -5 104 104" version="1.1000" xmlns="http://www.w3.org/2000/svg"
+    xmlns:xlink="http://www.w3.org/1999/xlink" fill="#000000" stroke="#000000">
+    <g id="SVGRepo_bgCarrier" stroke-width="0" />
+    <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round" stroke="#a51d2d"
+        stroke-width="0.2080" />
+    <g id="SVGRepo_iconCarrier">
+        <title>20-multimeda-video-collection</title>
+        <desc>Created with Sketch.</desc>
+        <defs></defs>
+        <g id="3.Multimedia" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round"
+            stroke-linejoin="round">
+            <g id="Multimedia-(Color)" transform="translate(-1898.0000, -305.0000)" stroke="#263238"
+                stroke-width="3.5000">
+                <g id="20-multimeda-video-collection" transform="translate(1900.0000, 307.0000)">
+                    <polygon id="Layer-1" fill="#2A9D90" points="80 20 4.2633e-14 20 4.2633e-14 90 80 90"></polygon>
+                    <path
+                        d="M30,40.8258 C30,39.1727 31.1517,38.5236 32.5684,39.3737 L55.2630,52.9904 C56.6815,53.8415 56.6798,55.2225 55.2630,56.0725 L32.5684,69.6893 C31.1499,70.5404 30,69.8798 30,68.2371 L30,40.8258 Z"
+                        id="Layer-2" fill="#F2FAEF"></path>
+                    <polygon id="Layer-3" fill="#A7DADC" points="90 15 90 10 10 10 10 20 80 20 80 80 90 80"></polygon>
+                    <polygon id="Layer-4" fill="#A7DADC" points="100 5 100 0 20 0 20 10 90 10 90 70 100 70"></polygon>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
