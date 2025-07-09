@@ -218,7 +218,7 @@ h1.title {
 .w-kit-bg {
   width: 161%;
   height: 186%;
-  background: url('/assets/icons/w-kit-block.svg') no-repeat center/contain;
+  background: url('assets/icons/w-kit-block.svg') no-repeat center/contain;
   position: relative;
 }
 
