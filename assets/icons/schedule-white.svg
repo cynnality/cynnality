@@ -7,7 +7,7 @@
    viewBox="0 0 35.718751 35.718747"
    version="1.1"
    id="svg1"
-   sodipodi:docname="schedule.svg"
+   sodipodi:docname="saving-decks-n-cards-template.svg"
    inkscape:version="1.4.2 (2aeb623e1d, 2025-05-12)"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
@@ -23,9 +23,9 @@
      inkscape:pagecheckerboard="0"
      inkscape:deskcolor="#d1d1d1"
      inkscape:document-units="px"
-     inkscape:zoom="3.5130831"
-     inkscape:cx="27.895725"
-     inkscape:cy="55.079824"
+     inkscape:zoom="2.6995144"
+     inkscape:cx="9.8165802"
+     inkscape:cy="30.190614"
      inkscape:window-width="1854"
      inkscape:window-height="1011"
      inkscape:window-x="0"
@@ -570,45 +570,11 @@
          result="color2"
          id="feColorMatrix14" />
     </filter>
-    <filter
-       style="color-interpolation-filters:sRGB;"
-       inkscape:label="Invert"
-       id="filter1"
-       x="0"
-       y="-0.0043623728"
-       width="1"
-       height="1.0043624">
-      <feColorMatrix
-         values="-1 0 0 0 1 0 -1 0 0 1 0 0 -1 0 1 -0.21 -0.72 -0.07 2 0 "
-         result="fbSourceGraphic"
-         id="feColorMatrix1" />
-      <feColorMatrix
-         result="fbSourceGraphicAlpha"
-         in="fbSourceGraphic"
-         values="0 0 0 -1 0 0 0 0 -1 0 0 0 0 -1 0 0 0 0 1 0"
-         id="feColorMatrix2" />
-      <feColorMatrix
-         id="feColorMatrix3"
-         values="-1 0 0 0 1 0 -1 0 0 1 0 0 -1 0 1 -0.21 -0.72 -0.07 2 0 "
-         result="fbSourceGraphic"
-         in="fbSourceGraphic" />
-      <feColorMatrix
-         result="fbSourceGraphicAlpha"
-         in="fbSourceGraphic"
-         values="0 0 0 -1 0 0 0 0 -1 0 0 0 0 -1 0 0 0 0 1 0"
-         id="feColorMatrix4" />
-      <feColorMatrix
-         id="feColorMatrix5"
-         values="-1 0 0 0 1 0 -1 0 0 1 0 0 -1 0 1 -0.21 -0.72 -0.07 2 0 "
-         result="color2"
-         in="fbSourceGraphic" />
-    </filter>
   </defs>
   <g
      id="g455"
      transform="matrix(0.18032383,0,0,0.17347846,-286.94529,-144.22211)"
-     inkscape:label="schedule"
-     style="filter:url(#filter1)">
+     inkscape:label="schedule">
     <g
        id="g460"
        inkscape:label="bg">
@@ -877,7 +843,7 @@
        inkscape:label="tabs"
        transform="matrix(1.067004,0,0,1.067004,-113.25809,-62.732714)">
       <rect
-         style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke-width:1.401997;stroke:#ffffff;stroke-opacity:1;stroke-dasharray:none"
+         style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke-width:0.271774"
          id="rect457"
          width="7.5672188"
          height="19.320559"
@@ -886,7 +852,7 @@
          rx="0.94442016"
          ry="0.94442016" />
       <rect
-         style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke-width:1.401997;stroke:#ffffff;stroke-opacity:1;stroke-dasharray:none"
+         style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke-width:0.271774"
          id="rect458"
          width="7.5672188"
          height="19.320559"
@@ -895,7 +861,7 @@
          rx="0.94442016"
          ry="0.94442016" />
       <rect
-         style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke-width:1.401997;stroke:#ffffff;stroke-opacity:1;stroke-dasharray:none"
+         style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke-width:0.271774"
          id="rect459"
          width="7.5672188"
          height="19.320559"
