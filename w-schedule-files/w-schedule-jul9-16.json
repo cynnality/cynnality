@@ -1,0 +1,278 @@
+[
+  {
+    "date": "Wednesday, Jul 9, 2025",
+    "time": "",
+    "away_team": {
+      "name": "Seattle Storm",
+      "record": "(12-8)"
+    },
+    "home_team": {
+      "name": "Connecticut Sun",
+      "record": "(3-16)"
+    }
+  },
+  {
+    "date": "Wednesday, Jul 9, 2025",
+    "time": "",
+    "away_team": {
+      "name": "Golden State Valkyries", 
+      "record": "(10-9)"
+    },
+    "home_team": {
+      "name": "Indiana Fever",
+      "record": "(9-10)"
+    }
+  },
+  {
+    "date": "Wednesday, Jul 9, 2025",
+    "time": "",
+    "away_team": {
+      "name": "Minnesota Lynx",
+      "record": "(17-2)"
+    },
+    "home_team": {
+      "name": "Phoenix Mercury",
+      "record": "(13-6)"
+    }
+  },
+  {
+    "date": "Wednesday, Jul 9, 2025",
+    "time": "8:00 PM EDT",
+    "away_team": {
+      "name": "Dallas Wings",
+      "record": "(6-14)"
+    },
+    "home_team": {
+      "name": "Chicago Sky",
+      "record": "(5-13)"
+    }
+  },
+  {
+    "date": "Thursday, Jul 10, 2025",
+    "time": "3:00 PM EDT",
+    "away_team": {
+      "name": "Minnesota Lynx",
+      "record": "(17-2)"
+    },
+    "home_team": {
+      "name": "Los Angeles Sparks",
+      "record": "(6-13)"
+    }
+  },
+  {
+    "date": "Thursday, Jul 10, 2025",
+    "time": "7:30 PM EDT",
+    "away_team": {
+      "name": "Las Vegas Aces",
+      "record": "(9-10)"
+    },
+    "home_team": {
+      "name": "Washington Mystics",
+      "record": "(9-10)"
+    }
+  },
+  {
+    "date": "Friday, Jul 11, 2025",
+    "time": "7:30 PM EDT",
+    "away_team": {
+      "name": "Atlanta Dream",
+      "record": "(12-7)"
+    },
+    "home_team": {
+      "name": "Indiana Fever",
+      "record": "(9-10)"
+    }
+  },
+  {
+    "date": "Friday, Jul 11, 2025",
+    "time": "10:00 PM EDT",
+    "away_team": {
+      "name": "Connecticut Sun",
+      "record": "(3-16)"
+    },
+    "home_team": {
+      "name": "Seattle Storm",
+      "record": "(12-8)"
+    }
+  },
+  {
+    "date": "Saturday, Jul 12, 2025",
+    "time": "1:00 PM EDT",
+    "away_team": {
+      "name": "Minnesota Lynx",
+      "record": "(17-2)"
+    },
+    "home_team": {
+      "name": "Chicago Sky",
+      "record": "(5-13)"
+    }
+  },
+  {
+    "date": "Saturday, Jul 12, 2025",
+    "time": "4:00 PM EDT",
+    "away_team": {
+      "name": "Golden State Valkyries",
+      "record": "(10-9)"
+    },
+    "home_team": {
+      "name": "Las Vegas Aces",
+      "record": "(9-10)"
+    }
+  },
+  {
+    "date": "Sunday, Jul 13, 2025",
+    "time": "1:00 PM EDT",
+    "away_team": {
+      "name": "Dallas Wings",
+      "record": "(6-14)"
+    },
+    "home_team": {
+      "name": "Indiana Fever",
+      "record": "(9-10)"
+    }
+  },
+  {
+    "date": "Sunday, Jul 13, 2025",
+    "time": "3:00 PM EDT",
+    "away_team": {
+      "name": "Atlanta Dream",
+      "record": "(12-7)"
+    },
+    "home_team": {
+      "name": "New York Liberty",
+      "record": "(13-6)"
+    }
+  },
+  {
+    "date": "Sunday, Jul 13, 2025",
+    "time": "6:00 PM EDT",
+    "away_team": {
+      "name": "Connecticut Sun",
+      "record": "(3-16)"
+    },
+    "home_team": {
+      "name": "Los Angeles Sparks",
+      "record": "(6-13)"
+    }
+  },
+  {
+    "date": "Sunday, Jul 13, 2025",
+    "time": "6:00 PM EDT",
+    "away_team": {
+      "name": "Washington Mystics",
+      "record": "(9-10)"
+    },
+    "home_team": {
+      "name": "Seattle Storm",
+      "record": "(12-8)"
+    }
+  },
+  {
+    "date": "Monday, Jul 14, 2025",
+    "time": "8:00 PM EDT",
+    "away_team": {
+      "name": "Minnesota Lynx",
+      "record": "(17-2)"
+    },
+    "home_team": {
+      "name": "Chicago Sky",
+      "record": "(5-13)"
+    }
+  },
+  {
+    "date": "Monday, Jul 14, 2025",
+    "time": "10:00 PM EDT",
+    "away_team": {
+      "name": "Phoenix Mercury",
+      "record": "(13-6)"
+    },
+    "home_team": {
+      "name": "Golden State Valkyries",
+      "record": "(10-9)"
+    }
+  },
+  {
+    "date": "Tuesday, Jul 15, 2025",
+    "time": "8:00 PM EDT",
+    "away_team": {
+      "name": "Indiana Fever",
+      "record": "(9-10)"
+    },
+    "home_team": {
+      "name": "Connecticut Sun",
+      "record": "(3-16)"
+    }
+  },
+  {
+    "date": "Tuesday, Jul 15, 2025",
+    "time": "10:00 PM EDT",
+    "away_team": {
+      "name": "Washington Mystics",
+      "record": "(9-10)"
+    },
+    "home_team": {
+      "name": "Los Angeles Sparks",
+      "record": "(6-13)"
+    }
+  },
+  {
+    "date": "Wednesday, Jul 16, 2025",
+    "time": "12:00 PM EDT",
+    "away_team": {
+      "name": "Atlanta Dream",
+      "record": "(12-7)"
+    },
+    "home_team": {
+      "name": "Chicago Sky",
+      "record": "(5-13)"
+    }
+  },
+  {
+    "date": "Wednesday, Jul 16, 2025",
+    "time": "1:00 PM EDT",
+    "away_team": {
+      "name": "Phoenix Mercury",
+      "record": "(13-6)"
+    },
+    "home_team": {
+      "name": "Minnesota Lynx",
+      "record": "(17-2)"
+    }
+  },
+  {
+    "date": "Wednesday, Jul 16, 2025",
+    "time": "3:00 PM EDT",
+    "away_team": {
+      "name": "Golden State Valkyries",
+      "record": "(10-9)"
+    },
+    "home_team": {
+      "name": "Seattle Storm",
+      "record": "(12-8)"
+    }
+  },
+  {
+    "date": "Wednesday, Jul 16, 2025",
+    "time": "7:30 PM EDT",
+    "away_team": {
+      "name": "Indiana Fever",
+      "record": "(9-10)"
+    },
+    "home_team": {
+      "name": "New York Liberty",
+      "record": "(13-6)"
+    }
+  },
+  {
+    "date": "Wednesday, Jul 16, 2025",
+    "time": "8:00 PM EDT",
+    "away_team": {
+      "name": "Las Vegas Aces",
+      "record": "(9-10)"
+    },
+    "home_team": {
+      "name": "Dallas Wings",
+      "record": "(6-14)"
+    }
+  }
+]

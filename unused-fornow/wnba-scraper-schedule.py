@@ -1,7 +1,7 @@
 from bs4 import BeautifulSoup
 import json
 
-with open('WNBA Schedule - Games, Scores & Events ｜ WNBA (6_3_2025 2：32：42 AM).html', 'r', encoding='utf-8') as f:
+with open('w-schedule-jul9-16.html', 'r', encoding='utf-8') as f:
     html = f.read()
 
 soup = BeautifulSoup(html, 'html.parser')
@@ -27,7 +27,7 @@ for elem in soup.find_all(['header', 'div']):
             home_record = team_records[1].text.strip()
             games.append({
                 "date": current_date,
-                "away_team": {"name": away_team, "record": away_record},
+                "away_team": {"name": away_team, "record": away_record}, 
                 "home_team": {"name": home_team, "record": home_record}
             })
 

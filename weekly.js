@@ -39,7 +39,7 @@ document.addEventListener("DOMContentLoaded", () => {
       }
       wpageButtons.forEach(b => b.classList.remove("active"));
       btn.classList.add("active");
-    });
+    }); 
   });
   if (wpageButtons.length > 0) wpageButtons[0].click();
 
@@ -58,8 +58,8 @@ let matchupData = null;
 let matchupBlurbs = null;
 
 Promise.all([
-  fetch('wnba-2025-week-06.json').then(res => res.json()),
-  fetch('matchup-blurbs-week-2025-05.json').then(res => res.json())
+  fetch('jul9-w-matchups.json').then(res => res.json()),
+  fetch('jul9-w-blurbs-outline.json').then(res => res.json())
 ]).then(([data, blurbs]) => {
   matchupData = data;
   matchupBlurbs = blurbs;
@@ -73,7 +73,7 @@ Promise.all([
   });
 
 // Rendering
-  fetch('wnba-2025-week-06.json')
+  fetch('jul9-w-matchups.json')
     .then(res => res.json())
     .then(data => {
       const matchupList = document.getElementById('matchup-list');

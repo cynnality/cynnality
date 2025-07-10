@@ -21,7 +21,7 @@
       "record": "(7-0)"
     }
   },
-  {
+  { 
     "date": "Tuesday, Jun 3, 2025",
     "away_team": {
       "name": "Dallas Wings",
@@ -308,7 +308,7 @@
     }
   },
   {
-    "date": "Tuesday, Jun 17, 2025",
+    "date": "Tuesday, Jun 17, 2025", 
     "away_team": {
       "name": "Washington Mystics",
       "record": "(3-4)"

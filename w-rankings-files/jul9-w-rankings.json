@@ -1,0 +1,67 @@
+{
+  "Minnesota Lynx": {
+    "wlRecord": "17-2",
+    "overallRanking": 1, 
+    "conferenceRanking": 1
+  },
+  "Phoenix Mercury": {
+    "wlRecord": "13-6",
+    "overallRanking": 2,
+    "conferenceRanking": 2
+  },
+  "New York Liberty": {
+    "wlRecord": "13-6",
+    "overallRanking": 3,
+    "conferenceRanking": 1
+  },
+  "Atlanta Dream": {
+    "wlRecord": "12-7",
+    "overallRanking": 4,
+    "conferenceRanking": 2
+  },
+  "Seattle Storm": {
+    "wlRecord": "12-8",
+    "overallRanking": 5,
+    "conferenceRanking": 3
+  },
+  "Golden State Valkyries": {
+    "wlRecord": "10-9",
+    "overallRanking": 6,
+    "conferenceRanking": 4
+  },
+  "Indiana Fever": {
+    "wlRecord": "9-10",
+    "overallRanking": 7,
+    "conferenceRanking": 3
+  },
+  "Washington Mystics": {
+    "wlRecord": "9-10",
+    "overallRanking": 8,
+    "conferenceRanking": 4
+  },
+  "Las Vegas Aces": {
+    "wlRecord": "9-10",
+    "overallRanking": 9,
+    "conferenceRanking": 5
+  },
+  "Los Angeles Sparks": {
+    "wlRecord": "6-13",
+    "overallRanking": 10,
+    "conferenceRanking": 6
+  },
+  "Dallas Wings": {
+    "wlRecord": "6-14",
+    "overallRanking": 11,
+    "conferenceRanking": 7
+  },
+  "Chicago Sky": {
+    "wlRecord": "5-13",
+    "overallRanking": 12,
+    "conferenceRanking": 5
+  },
+  "Connecticut Sun": {
+    "wlRecord": "3-16",
+    "overallRanking": 13,
+    "conferenceRanking": 6
+  }
+}

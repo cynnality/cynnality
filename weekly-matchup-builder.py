@@ -2,16 +2,16 @@ import json
 from datetime import datetime
 
 # Load data
-with open('wnba-games.json', 'r', encoding='utf-8') as f:
+with open('w-schedule-jul9-16.json', 'r', encoding='utf-8') as f:
     games = json.load(f)
-with open('wnba-6-10-25-standings-combined.json', 'r', encoding='utf-8') as f:
+with open('jul9-w-rankings.json', 'r', encoding='utf-8') as f:
     standings = json.load(f)
 with open('wnba-teams.json', 'r', encoding='utf-8') as f:
-    teams = json.load(f)
+    teams = json.load(f) 
 
 # Date range for the week
-start_date = datetime.strptime("Monday, Jun 9, 2025", "%A, %b %d, %Y")
-end_date = datetime.strptime("Monday, Jun 16, 2025", "%A, %b %d, %Y")
+start_date = datetime.strptime("Wednesday, Jul 9, 2025", "%A, %b %d, %Y")
+end_date = datetime.strptime("Wednesday, Jul 16, 2025", "%A, %b %d, %Y")
 
 def parse_game_date(date_str):
     return datetime.strptime(date_str, "%A, %b %d, %Y")
@@ -49,6 +49,7 @@ for game in games:
         weekly_matchups.append({
             "id": matchup_id,
             "date": game["date"],
+            "time": game.get("time", ""),
             "home": home,
             "away": away
         })
@@ -66,11 +67,11 @@ for game in games:
 
 # Output weekly matchups JSON
 weekly_json = {"matchups": weekly_matchups}
-with open('wnba-2025-week-06.json', 'w', encoding='utf-8') as f:
+with open('jul9-w-matchups.json', 'w', encoding='utf-8') as f:
     json.dump(weekly_json, f, indent=2)
-print(f"Saved wnba-2025-week-06.json with {len(weekly_matchups)} matchups.")
+print(f"Saved jul9-w-matchups.json with {len(weekly_matchups)} matchups.")
 
 # Output matchup blurbs outline JSON
-with open('matchup-blurbs-week-2025-06.json', 'w', encoding='utf-8') as f:
+with open('jul9-w-blurbs-outline.json', 'w', encoding='utf-8') as f:
     json.dump(blurbs_outline, f, indent=2)
-print(f"Saved matchup-blurbs-week-06.json outline for you to fill in.")
+print(f"Saved jul9-w-blurbs-outline.json outline for you to fill in.")
