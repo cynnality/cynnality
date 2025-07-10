@@ -102,6 +102,7 @@ h1.title {
   box-shadow: 4px 6px #000000;
   display: flex;
   flex-direction: column;
+  align-items: center;
 }
 
 .header-description { 
@@ -146,6 +147,7 @@ h1.title {
       border: solid 2px #000000;
       border-radius: 4px;
       padding: 10px;
+      width: 70%;
     }
 
       .dam1 .header-note p {
@@ -224,8 +226,8 @@ h1.title {
 
 .w-kit-rect-overlay {
   position: absolute;
-  left: 35%;
-  top: 58.3%;
+  left: 22%;
+  top: 59.3%;
   width: 57%;
   height: 30.7%;
   display: flex;
