@@ -1,17 +1,8 @@
 # CYNNALITY
 
 
-## map
+© 2025 Caitlynn Holtzinger All rights reserved.
 
-← `index.html`: home page
-
-← `style.css`: home page
-
-← `script.js`: main
-
-(sandbox = old about page layout)
-(weeklys = weekly report thigngs)
-(breakdowns = old builder / testing page)
 
 
 
