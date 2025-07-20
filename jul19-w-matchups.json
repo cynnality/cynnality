@@ -1,0 +1,1465 @@
+{
+  "matchups": [
+    {
+      "id": "WAS-LOS-2025-07-22",
+      "date": "Tuesday, Jul 22, 2025",
+      "time": "7:30 PM EDT",
+      "home": {
+        "teamCode": "WAS",
+        "teamName": "Washington Mystics",
+        "conference": "east",
+        "favorite": false,
+        "conferenceRanking": 5,
+        "overallRanking": 7,
+        "wlRecord": "11-11",
+        "defaultContent": {
+          "img": "assets/logos-wnba/washington-mystics-logo.svg",
+          "alt": "Washington Mystics Logo",
+          "name": "Washington Mystics"
+        },
+        "factsContent": [
+          {
+            "label": "E - conference ranking",
+            "value": "#5"
+          },
+          {
+            "label": "overall ranking",
+            "value": "#7"
+          },
+          {
+            "label": "W/L",
+            "value": "11-11"
+          }
+        ]
+      },
+      "away": {
+        "teamCode": "LOS",
+        "teamName": "Los Angeles Sparks",
+        "conference": "west",
+        "favorite": false,
+        "conferenceRanking": 7,
+        "overallRanking": 10,
+        "wlRecord": "8-14",
+        "defaultContent": {
+          "img": "assets/logos-wnba/los-angeles-sparks-logo.svg",
+          "alt": "Los Angeles Sparks Logo",
+          "name": "Los Angeles Sparks"
+        },
+        "factsContent": [
+          {
+            "label": "W - conference ranking",
+            "value": "#7"
+          },
+          {
+            "label": "overall ranking",
+            "value": "#10"
+          },
+          {
+            "label": "W/L",
+            "value": "8-14"
+          }
+        ]
+      }
+    },
+    {
+      "id": "NYL-IND-2025-07-22",
+      "date": "Tuesday, Jul 22, 2025",
+      "time": "8:00 PM EDT",
+      "home": {
+        "teamCode": "NYL",
+        "teamName": "New York Liberty",
+        "conference": "east",
+        "favorite": false,
+        "conferenceRanking": 2,
+        "overallRanking": 2,
+        "wlRecord": "15-6",
+        "defaultContent": {
+          "img": "assets/logos-wnba/new-york-liberty-logo.svg",
+          "alt": "New York Liberty Logo",
+          "name": "New York Liberty"
+        },
+        "factsContent": [
+          {
+            "label": "E - conference ranking",
+            "value": "#2"
+          },
+          {
+            "label": "overall ranking",
+            "value": "#2"
+          },
+          {
+            "label": "W/L",
+            "value": "15-6"
+          }
+        ]
+      },
+      "away": {
+        "teamCode": "IND",
+        "teamName": "Indiana Fever",
+        "conference": "east",
+        "favorite": false,
+        "conferenceRanking": 4,
+        "overallRanking": 6,
+        "wlRecord": "12-11",
+        "defaultContent": {
+          "img": "assets/logos-wnba/indiana-fever-logo.svg",
+          "alt": "Indiana Fever Logo",
+          "name": "Indiana Fever"
+        },
+        "factsContent": [
+          {
+            "label": "E - conference ranking",
+            "value": "#4"
+          },
+          {
+            "label": "overall ranking",
+            "value": "#6"
+          },
+          {
+            "label": "W/L",
+            "value": "12-11"
+          }
+        ]
+      }
+    },
+    {
+      "id": "MIN-CHI-2025-07-22",
+      "date": "Tuesday, Jul 22, 2025",
+      "time": "8:00 PM EDT",
+      "home": {
+        "teamCode": "MIN",
+        "teamName": "Minnesota Lynx",
+        "conference": "west",
+        "favorite": false,
+        "conferenceRanking": 2,
+        "overallRanking": 1,
+        "wlRecord": "20-4",
+        "defaultContent": {
+          "img": "assets/logos-wnba/minnesota-lynx-logo.svg",
+          "alt": "Minnesota Lynx Logo",
+          "name": "Minnesota Lynx"
+        },
+        "factsContent": [
+          {
+            "label": "W - conference ranking",
+            "value": "#2"
+          },
+          {
+            "label": "overall ranking",
+            "value": "#1"
+          },
+          {
+            "label": "W/L",
+            "value": "20-4"
+          }
+        ]
+      },
+      "away": {
+        "teamCode": "CHI",
+        "teamName": "Chicago Sky",
+        "conference": "east",
+        "favorite": false,
+        "conferenceRanking": 6,
+        "overallRanking": 11,
+        "wlRecord": "7-15",
+        "defaultContent": {
+          "img": "assets/logos-wnba/chicago-sky-logo.svg",
+          "alt": "Chicago Sky Logo",
+          "name": "Chicago Sky"
+        },
+        "factsContent": [
+          {
+            "label": "E - conference ranking",
+            "value": "#6"
+          },
+          {
+            "label": "overall ranking",
+            "value": "#11"
+          },
+          {
+            "label": "W/L",
+            "value": "7-15"
+          }
+        ]
+      }
+    },
+    {
+      "id": "LVA-ATL-2025-07-22",
+      "date": "Tuesday, Jul 22, 2025",
+      "time": "10:00 PM EDT",
+      "home": {
+        "teamCode": "LVA",
+        "teamName": "Las Vegas Aces",
+        "conference": "west",
+        "favorite": false,
+        "conferenceRanking": 5,
+        "overallRanking": 8,
+        "wlRecord": "11-11",
+        "defaultContent": {
+          "img": "assets/logos-wnba/las-vegas-aces-logo.svg",
+          "alt": "Las Vegas Aces Logo",
+          "name": "Las Vegas Aces"
+        },
+        "factsContent": [
+          {
+            "label": "W - conference ranking",
+            "value": "#5"
+          },
+          {
+            "label": "overall ranking",
+            "value": "#8"
+          },
+          {
+            "label": "W/L",
+            "value": "11-11"
+          }
+        ]
+      },
+      "away": {
+        "teamCode": "ATL",
+        "teamName": "Atlanta Dream",
+        "conference": "east",
+        "favorite": true,
+        "conferenceRanking": 3,
+        "overallRanking": 5,
+        "wlRecord": "13-9",
+        "defaultContent": {
+          "img": "assets/logos-wnba/atlanta-dream-logo.svg",
+          "alt": "Atlanta Dream Logo",
+          "name": "Atlanta Dream"
+        },
+        "factsContent": [
+          {
+            "label": "E - conference ranking",
+            "value": "#3"
+          },
+          {
+            "label": "overall ranking",
+            "value": "#5"
+          },
+          {
+            "label": "W/L",
+            "value": "13-9"
+          }
+        ]
+      }
+    },
+    {
+      "id": "SEA-DAL-2025-07-22",
+      "date": "Tuesday, Jul 22, 2025",
+      "time": "10:00 PM EDT",
+      "home": {
+        "teamCode": "SEA",
+        "teamName": "Seattle Storm",
+        "conference": "west",
+        "favorite": true,
+        "conferenceRanking": 4,
+        "overallRanking": 4,
+        "wlRecord": "14-9",
+        "defaultContent": {
+          "img": "assets/logos-wnba/seattle-storm-logo.svg",
+          "alt": "Seattle Storm Logo",
+          "name": "Seattle Storm"
+        },
+        "factsContent": [
+          {
+            "label": "W - conference ranking",
+            "value": "#4"
+          },
+          {
+            "label": "overall ranking",
+            "value": "#4"
+          },
+          {
+            "label": "W/L",
+            "value": "14-9"
+          }
+        ]
+      },
+      "away": {
+        "teamCode": "DAL",
+        "teamName": "Dallas Wings",
+        "conference": "west",
+        "favorite": false,
+        "conferenceRanking": 8,
+        "overallRanking": 12,
+        "wlRecord": "6-17",
+        "defaultContent": {
+          "img": "assets/logos-wnba/dallas-wings-logo.svg",
+          "alt": "Dallas Wings Logo",
+          "name": "Dallas Wings"
+        },
+        "factsContent": [
+          {
+            "label": "W - conference ranking",
+            "value": "#8"
+          },
+          {
+            "label": "overall ranking",
+            "value": "#12"
+          },
+          {
+            "label": "W/L",
+            "value": "6-17"
+          }
+        ]
+      }
+    },
+    {
+      "id": "PHX-ATL-2025-07-23",
+      "date": "Wednesday, Jul 23, 2025",
+      "time": "10:00 PM EDT",
+      "home": {
+        "teamCode": "PHX",
+        "teamName": "Phoenix Mercury",
+        "conference": "west",
+        "favorite": false,
+        "conferenceRanking": 3,
+        "overallRanking": 3,
+        "wlRecord": "15-7",
+        "defaultContent": {
+          "img": "assets/logos-wnba/phoenix-mercury-logo.svg",
+          "alt": "Phoenix Mercury Logo",
+          "name": "Phoenix Mercury"
+        },
+        "factsContent": [
+          {
+            "label": "W - conference ranking",
+            "value": "#3"
+          },
+          {
+            "label": "overall ranking",
+            "value": "#3"
+          },
+          {
+            "label": "W/L",
+            "value": "15-7"
+          }
+        ]
+      },
+      "away": {
+        "teamCode": "ATL",
+        "teamName": "Atlanta Dream",
+        "conference": "east",
+        "favorite": true,
+        "conferenceRanking": 3,
+        "overallRanking": 5,
+        "wlRecord": "13-9",
+        "defaultContent": {
+          "img": "assets/logos-wnba/atlanta-dream-logo.svg",
+          "alt": "Atlanta Dream Logo",
+          "name": "Atlanta Dream"
+        },
+        "factsContent": [
+          {
+            "label": "E - conference ranking",
+            "value": "#3"
+          },
+          {
+            "label": "overall ranking",
+            "value": "#5"
+          },
+          {
+            "label": "W/L",
+            "value": "13-9"
+          }
+        ]
+      }
+    },
+    {
+      "id": "CON-LOS-2025-07-24",
+      "date": "Thursday, Jul 24, 2025",
+      "time": "7:00 PM EDT",
+      "home": {
+        "teamCode": "CON",
+        "teamName": "Connecticut Sun",
+        "conference": "west",
+        "favorite": false,
+        "conferenceRanking": 7,
+        "overallRanking": 13,
+        "wlRecord": "3-19",
+        "defaultContent": {
+          "img": "assets/logos-wnba/connecticut-sun-logo.svg",
+          "alt": "Connecticut Sun Logo",
+          "name": "Connecticut Sun"
+        },
+        "factsContent": [
+          {
+            "label": "W - conference ranking",
+            "value": "#7"
+          },
+          {
+            "label": "overall ranking",
+            "value": "#13"
+          },
+          {
+            "label": "W/L",
+            "value": "3-19"}
+        ]
+      },
+      "away": {
+        "teamCode": "LOS",
+        "teamName": "Los Angeles Sparks",
+        "conference": "west",
+        "favorite": false,
+        "conferenceRanking": 7,
+        "overallRanking": 10,
+        "wlRecord": "8-14",
+        "defaultContent": {
+          "img": "assets/logos-wnba/los-angeles-sparks-logo.svg",
+          "alt": "Los Angeles Sparks Logo",
+          "name": "Los Angeles Sparks"
+        },
+        "factsContent": [
+          {
+            "label": "W - conference ranking",
+            "value": "#7"
+          },
+          {
+            "label": "overall ranking",
+            "value": "#10"
+          },
+          {
+            "label": "W/L",
+            "value": "8-14"
+          }
+        ]
+      }
+    },
+    {
+      "id": "IND-LVA-2025-07-24",
+      "date": "Thursday, Jul 24, 2025",
+      "time": "7:00 PM EDT",
+      "home": {
+        "teamCode": "IND",
+        "teamName": "Indiana Fever",
+        "conference": "east",
+        "favorite": false,
+        "conferenceRanking": 4,
+        "overallRanking": 6,
+        "wlRecord": "12-11",
+        "defaultContent": {
+          "img": "assets/logos-wnba/indiana-fever-logo.svg",
+          "alt": "Indiana Fever Logo",
+          "name": "Indiana Fever"
+        },
+        "factsContent": [
+          {
+            "label": "E - conference ranking",
+            "value": "#4"
+          },
+          {
+            "label": "overall ranking",
+            "value": "#6"
+          },
+          {
+            "label": "W/L",
+            "value": "12-11"
+          }
+        ]
+      },
+      "away": {
+        "teamCode": "LVA",
+        "teamName": "Las Vegas Aces",
+        "conference": "west",
+        "favorite": false,
+        "conferenceRanking": 5,
+        "overallRanking": 8,
+        "wlRecord": "11-11",
+        "defaultContent": {
+          "img": "assets/logos-wnba/las-vegas-aces-logo.svg",
+          "alt": "Las Vegas Aces Logo",
+          "name": "Las Vegas Aces"
+        },
+        "factsContent": [
+          {
+            "label": "W - conference ranking",
+            "value": "#5"
+          },
+          {
+            "label": "overall ranking",
+            "value": "#8"
+          },
+          {
+            "label": "W/L",
+            "value": "11-11"
+          }
+        ]
+      }
+    },
+    {
+      "id": "CHI-SEA-2025-07-24",
+      "date": "Thursday, Jul 24, 2025",
+      "time": "8:30 PM EDT",
+      "home": {
+        "teamCode": "CHI",
+        "teamName": "Chicago Sky",
+        "conference": "east",
+        "favorite": false,
+        "conferenceRanking": 6,
+        "overallRanking": 11,
+        "wlRecord": "7-15",
+        "defaultContent": {
+          "img": "assets/logos-wnba/chicago-sky-logo.svg",
+          "alt": "Chicago Sky Logo",
+          "name": "Chicago Sky"
+        },
+        "factsContent": [
+          {
+            "label": "E - conference ranking",
+            "value": "#6"
+          },
+          {
+            "label": "overall ranking",
+            "value": "#11"
+          },
+          {
+            "label": "W/L",
+            "value": "7-15"
+          }
+        ]
+      },
+      "away": {
+        "teamCode": "SEA",
+        "teamName": "Seattle Storm",
+        "conference": "west",
+        "favorite": true,
+        "conferenceRanking": 4,
+        "overallRanking": 4,
+        "wlRecord": "14-9",
+        "defaultContent": {
+          "img": "assets/logos-wnba/seattle-storm-logo.svg",
+          "alt": "Seattle Storm Logo",
+          "name": "Seattle Storm"
+        },
+        "factsContent": [
+          {
+            "label": "W - conference ranking",
+            "value": "#4"
+          },
+          {
+            "label": "overall ranking",
+            "value": "#4"
+          },
+          {
+            "label": "W/L",
+            "value": "14-9"
+          }
+        ]
+      }
+    },
+    {
+      "id": "NYL-PHX-2025-07-25",
+      "date": "Friday, Jul 25, 2025",
+      "time": "7:30 PM EDT",
+      "home": {
+        "teamCode": "NYL",
+        "teamName": "New York Liberty",
+        "conference": "east",
+        "favorite": false,
+        "conferenceRanking": 2,
+        "overallRanking": 2,
+        "wlRecord": "15-6",
+        "defaultContent": {
+          "img": "assets/logos-wnba/new-york-liberty-logo.svg",
+          "alt": "New York Liberty Logo",
+          "name": "New York Liberty"
+        },
+        "factsContent": [
+          {
+            "label": "E - conference ranking",
+            "value": "#2"
+          },
+          {
+            "label": "overall ranking",
+            "value": "#2"
+          },
+          {
+            "label": "W/L",
+            "value": "15-6" 
+          }
+        ]
+      },
+      "away": {
+        "teamCode": "PHX",
+        "teamName": "Phoenix Mercury",
+        "conference": "west",
+        "favorite": false,
+        "conferenceRanking": 3,
+        "overallRanking": 3,
+        "wlRecord": "15-7",
+        "defaultContent": {
+          "img": "assets/logos-wnba/phoenix-mercury-logo.svg",
+          "alt": "Phoenix Mercury Logo",
+          "name": "Phoenix Mercury"
+        },
+        "factsContent": [
+          {
+            "label": "W - conference ranking",
+            "value": "#3"
+          },
+          {
+            "label": "overall ranking",
+            "value": "#3"
+          },
+          {
+            "label": "W/L",
+            "value": "15-7"
+          }
+        ]
+      }
+    },
+    {
+      "id": "MIN-LVA-2025-07-25",
+      "date": "Friday, Jul 25, 2025",
+      "time": "7:30 PM EDT",
+      "home": {
+        "teamCode": "MIN",
+        "teamName": "Minnesota Lynx",
+        "conference": "west",
+        "favorite": false,
+        "conferenceRanking": 2,
+        "overallRanking": 1,
+        "wlRecord": "14-2",
+        "defaultContent": {
+          "img": "assets/logos-wnba/minnesota-lynx-logo.svg",
+          "alt": "Minnesota Lynx Logo",
+          "name": "Minnesota Lynx"
+        },
+        "factsContent": [
+          {
+            "label": "W - conference ranking",
+            "value": "#2"
+          },
+          {
+            "label": "overall ranking",
+            "value": "#1"
+          },
+          {
+            "label": "W/L",
+            "value": "14-2"
+          }
+        ]
+      },
+      "away": {
+        "teamCode": "LVA",
+        "teamName": "Las Vegas Aces",
+        "conference": "west",
+        "favorite": false,
+        "conferenceRanking": 5,
+        "overallRanking": 8,
+        "wlRecord": "11-11",
+        "defaultContent": {
+          "img": "assets/logos-wnba/las-vegas-aces-logo.svg",
+          "alt": "Las Vegas Aces Logo",
+          "name": "Las Vegas Aces"
+        },
+        "factsContent": [
+          {
+            "label": "W - conference ranking",
+            "value": "#5"
+          },
+          {
+            "label": "overall ranking",
+            "value": "#8"
+          },
+          {
+            "label": "W/L",
+            "value": "11-11"  
+          }
+        ]
+      }
+    },
+    {
+      "id": "GSV-DAL-2025-07-25",
+      "date": "Friday, Jul 25, 2025",
+      "time": "10:00 PM EDT",
+      "home": {
+        "teamCode": "GSV",
+        "teamName": "Golden State Valkyries",
+        "conference": "west",
+        "favorite": false,
+        "conferenceRanking": 6,
+        "overallRanking": 9,
+        "wlRecord": "10-12",
+        "defaultContent": {
+          "img": "assets/logos-wnba/golden-state-valkyries-logo.svg",
+          "alt": "Golden State Valkyries Logo",
+          "name": "Golden State Valkyries"
+        },
+        "factsContent": [
+          {
+            "label": "W - conference ranking",
+            "value": "#6"
+          },
+          {
+            "label": "overall ranking",
+            "value": "#9"
+          },
+          {
+            "label": "W/L",
+            "value": "10-12"
+          }
+        ]
+      },
+      "away": {
+        "teamCode": "DAL",
+        "teamName": "Dallas Wings",
+        "conference": "west",
+        "favorite": false,
+        "conferenceRanking": 8,
+        "overallRanking": 12,
+        "wlRecord": "6-17",
+        "defaultContent": {
+          "img": "assets/logos-wnba/dallas-wings-logo.svg",
+          "alt": "Dallas Wings Logo",
+          "name": "Dallas Wings"
+        },
+        "factsContent": [
+          {
+            "label": "W - conference ranking",
+            "value": "#8"
+          },
+          {
+            "label": "overall ranking",
+            "value": "#12"
+          },
+          {
+            "label": "W/L",
+            "value": "6-17"
+          }
+        ]
+      }
+    },
+    {
+      "id": "NYL-LOS-2025-07-26",
+      "date": "Saturday, Jul 26, 2025",
+      "time": "7:00 PM EDT",
+      "home": {
+        "teamCode": "NYL",
+        "teamName": "New York Liberty",
+        "conference": "east",
+        "favorite": false,
+        "conferenceRanking": 2,
+        "overallRanking": 2,
+        "wlRecord": "15-6",
+        "defaultContent": {
+          "img": "assets/logos-wnba/new-york-liberty-logo.svg",
+          "alt": "New York Liberty Logo",
+          "name": "New York Liberty"
+        },
+        "factsContent": [
+          {
+            "label": "E - conference ranking",
+            "value": "#2"
+          },
+          {
+            "label": "overall ranking",
+            "value": "#2"
+          },
+          {
+            "label": "W/L",
+            "value": "15-6"
+          }
+        ]
+      },
+      "away": {
+        "teamCode": "LOS",
+        "teamName": "Los Angeles Sparks",
+        "conference": "west",
+        "favorite": false,
+        "conferenceRanking": 7,
+        "overallRanking": 10,
+        "wlRecord": "8-14",
+        "defaultContent": {
+          "img": "assets/logos-wnba/los-angeles-sparks-logo.svg",
+          "alt": "Los Angeles Sparks Logo",
+          "name": "Los Angeles Sparks"
+        },
+        "factsContent": [
+          {
+            "label": "W - conference ranking",
+            "value": "#7"
+          },
+          {
+            "label": "overall ranking",
+            "value": "#10"
+          },
+          {
+            "label": "W/L",
+            "value": "8-14"
+          }
+        ]
+      }
+    },
+    {
+      "id": "WAS-SEA-2025-07-26",
+      "date": "Saturday, Jul 26, 2025",
+      "time": "7:30 PM EDT",
+      "home": {
+        "teamCode": "WAS",
+        "teamName": "Washington Mystics",
+        "conference": "east",
+        "favorite": false,
+        "conferenceRanking": 5,
+        "overallRanking": 7,
+        "wlRecord": "11-11",
+        "defaultContent": {
+          "img": "assets/logos-wnba/washington-mystics-logo.svg",
+          "alt": "Washington Mystics Logo",
+          "name": "Washington Mystics"
+        },
+        "factsContent": [
+          {
+            "label": "E - conference ranking",
+            "value": "#5"
+          },
+          {
+            "label": "overall ranking",
+            "value": "#7"
+          },
+          {
+            "label": "W/L",
+            "value": "11-11"
+          }
+        ]
+      },
+      "away": {
+        "teamCode": "SEA",
+        "teamName": "Seattle Storm",
+        "conference": "west",
+        "favorite": true,
+        "conferenceRanking": 4,
+        "overallRanking": 4,
+        "wlRecord": "14-9",
+        "defaultContent": {
+          "img": "assets/logos-wnba/seattle-storm-logo.svg",
+          "alt": "Seattle Storm Logo",
+          "name": "Seattle Storm"
+        },
+        "factsContent": [
+          {
+            "label": "W - conference ranking",
+            "value": "#4"
+          },
+          {
+            "label": "overall ranking",
+            "value": "#4"
+          },
+          {
+            "label": "W/L",
+            "value": "14-9"
+          }
+        ]
+      }
+    },
+    {
+      "id": "CON-GSV-2025-07-27",
+      "date": "Sunday, Jul 27, 2025",
+      "time": "1:00 PM EDT",
+      "home": {
+        "teamCode": "CON",
+        "teamName": "Connecticut Sun",
+        "conference": "west",
+        "favorite": false,
+        "conferenceRanking": 7,
+        "overallRanking": 13,
+        "wlRecord": "3-19",
+        "defaultContent": {
+          "img": "assets/logos-wnba/connecticut-sun-logo.svg",
+          "alt": "Connecticut Sun Logo",
+          "name": "Connecticut Sun"
+        },
+        "factsContent": [
+          {
+            "label": "W - conference ranking",
+            "value": "#7"
+          },
+          {
+            "label": "overall ranking",
+            "value": "#13"
+          },
+          {
+            "label": "W/L",
+            "value": "3-19"}
+        ]
+      },
+      "away": {
+        "teamCode": "GSV",
+        "teamName": "Golden State Valkyries",
+        "conference": "west",
+        "favorite": false,
+        "conferenceRanking": 6,
+        "overallRanking": 9,
+        "wlRecord": "10-12",
+        "defaultContent": {
+          "img": "assets/logos-wnba/golden-state-valkyries-logo.svg",
+          "alt": "Golden State Valkyries Logo",
+          "name": "Golden State Valkyries"
+        },
+        "factsContent": [
+          {
+            "label": "W - conference ranking",
+            "value": "#6"
+          },
+          {
+            "label": "overall ranking",
+            "value": "#9"
+          },
+          {
+            "label": "W/L",
+            "value": "10-12"}
+        ]
+      }
+    },
+    {
+      "id": "CHI-IND-2025-07-27",
+      "date": "Sunday, Jul 27, 2025",
+      "time": "3:00 PM EDT",
+      "home": {
+        "teamCode": "CHI",
+        "teamName": "Chicago Sky",
+        "conference": "east",
+        "favorite": false,
+        "conferenceRanking": 6,
+        "overallRanking": 11,
+        "wlRecord": "7-15",
+        "defaultContent": {
+          "img": "assets/logos-wnba/chicago-sky-logo.svg",
+          "alt": "Chicago Sky Logo",
+          "name": "Chicago Sky"
+        },
+        "factsContent": [
+          {
+            "label": "E - conference ranking",
+            "value": "#6"
+          },
+          {
+            "label": "overall ranking",
+            "value": "#11"
+          },
+          {
+            "label": "W/L",
+            "value": "7-15"
+          }
+        ]
+      },
+      "away": {
+        "teamCode": "IND",
+        "teamName": "Indiana Fever",
+        "conference": "east",
+        "favorite": false,
+        "conferenceRanking": 4,
+        "overallRanking": 6,
+        "wlRecord": "12-11",
+        "defaultContent": {
+          "img": "assets/logos-wnba/indiana-fever-logo.svg",
+          "alt": "Indiana Fever Logo",
+          "name": "Indiana Fever"
+        },
+        "factsContent": [
+          {
+            "label": "E - conference ranking",
+            "value": "#4"
+          },
+          {
+            "label": "overall ranking",
+            "value": "#6"
+          },
+          {
+            "label": "W/L",
+            "value": "12-11"
+          }
+        ]
+      }
+    },
+    {
+      "id": "DAL-LVA-2025-07-27",
+      "date": "Sunday, Jul 27, 2025",
+      "time": "4:00 PM EDT",
+      "home": {
+        "teamCode": "DAL",
+        "teamName": "Dallas Wings",
+        "conference": "west",
+        "favorite": false,
+        "conferenceRanking": 8,
+        "overallRanking": 12,
+        "wlRecord": "6-17",
+        "defaultContent": {
+          "img": "assets/logos-wnba/dallas-wings-logo.svg",
+          "alt": "Dallas Wings Logo",
+          "name": "Dallas Wings"
+        },
+        "factsContent": [
+          {
+            "label": "W - conference ranking",
+            "value": "#8"
+          },
+          {
+            "label": "overall ranking",
+            "value": "#12"
+          },
+          {
+            "label": "W/L",
+            "value": "6-17"
+          }
+        ]
+      },
+      "away": {
+        "teamCode": "LVA",
+        "teamName": "Las Vegas Aces",
+        "conference": "west",
+        "favorite": false,
+        "conferenceRanking": 5,
+        "overallRanking": 8,
+        "wlRecord": "12-11",
+        "defaultContent": {
+          "img": "assets/logos-wnba/las-vegas-aces-logo.svg",
+          "alt": "Las Vegas Aces Logo",
+          "name": "Las Vegas Aces"
+        },
+        "factsContent": [
+          {
+            "label": "W - conference ranking",
+            "value": "#5"
+          },
+          {
+            "label": "overall ranking",
+            "value": "#8"
+          },
+          {
+            "label": "W/L",
+            "value": "12-11"
+          }
+        ]
+      }
+    },
+    {
+      "id": "WAS-PHX-2025-07-27",
+      "date": "Sunday, Jul 27, 2025",
+      "time": "6:00 PM EDT",
+      "home": {
+        "teamCode": "WAS",
+        "teamName": "Washington Mystics",
+        "conference": "east",
+        "favorite": false,
+        "conferenceRanking": 5,
+        "overallRanking": 7,
+        "wlRecord": "11-10",
+        "defaultContent": {
+          "img": "assets/logos-wnba/washington-mystics-logo.svg",
+          "alt": "Washington Mystics Logo",
+          "name": "Washington Mystics"
+        },
+        "factsContent": [
+          {
+            "label": "E - conference ranking",
+            "value": "#5"
+          },
+          {
+            "label": "overall ranking",
+            "value": "#7"
+          },
+          {
+            "label": "W/L",
+            "value": "11-10"
+          }
+        ]
+      },
+      "away": {
+        "teamCode": "PHX",
+        "teamName": "Phoenix Mercury",
+        "conference": "west",
+        "favorite": false,
+        "conferenceRanking": 3,
+        "overallRanking": 3,
+        "wlRecord": "12-11",
+        "defaultContent": {
+          "img": "assets/logos-wnba/phoenix-mercury-logo.svg",
+          "alt": "Phoenix Mercury Logo",
+          "name": "Phoenix Mercury"
+        },
+        "factsContent": [
+          {
+            "label": "W - conference ranking",
+            "value": "#3"
+          },
+          {
+            "label": "overall ranking",
+            "value": "#3"
+          },
+          {
+            "label": "W/L",
+            "value": "12-11"
+          }
+        ]
+      }
+    },
+    {
+      "id": "MIN-ATL-2025-07-27",
+      "date": "Sunday, Jul 27, 2025",
+      "time": "7:00 PM EDT",
+      "home": {
+        "teamCode": "MIN",
+        "teamName": "Minnesota Lynx",
+        "conference": "west",
+        "favorite": false,
+        "conferenceRanking": 2,
+        "overallRanking": 1,
+        "wlRecord": "20-4",
+        "defaultContent": {
+          "img": "assets/logos-wnba/minnesota-lynx-logo.svg",
+          "alt": "Minnesota Lynx Logo",
+          "name": "Minnesota Lynx"
+        },
+        "factsContent": [
+          {
+            "label": "W - conference ranking",
+            "value": "#2"
+          },
+          {
+            "label": "overall ranking",
+            "value": "#1"
+          },
+          {
+            "label": "W/L",
+            "value": "20-4"
+          }
+        ]
+      },
+      "away": {
+        "teamCode": "ATL",
+        "teamName": "Atlanta Dream",
+        "conference": "east",
+        "favorite": true,
+        "conferenceRanking": 3,
+        "overallRanking": 5,
+        "wlRecord": "13-9",
+        "defaultContent": {
+          "img": "assets/logos-wnba/atlanta-dream-logo.svg",
+          "alt": "Atlanta Dream Logo",
+          "name": "Atlanta Dream"
+        },
+        "factsContent": [
+          {
+            "label": "E - conference ranking",
+            "value": "#3"
+          },
+          {
+            "label": "overall ranking",
+            "value": "#5"
+          },
+          {
+            "label": "W/L",
+            "value": "13-9"
+          }
+        ]
+      }
+    },
+    {
+      "id": "CON-SEA-2025-07-28",
+      "date": "Monday, Jul 28, 2025",
+      "time": "7:00 PM EDT",
+      "home": {
+        "teamCode": "CON",
+        "teamName": "Connecticut Sun",
+        "conference": "west",
+        "favorite": false,
+        "conferenceRanking": 7,
+        "overallRanking": 13,
+        "wlRecord": "3-19",
+        "defaultContent": {
+          "img": "assets/logos-wnba/connecticut-sun-logo.svg",
+          "alt": "Connecticut Sun Logo",
+          "name": "Connecticut Sun"
+        },
+        "factsContent": [
+          {
+            "label": "W - conference ranking",
+            "value": "#7"
+          },
+          {
+            "label": "overall ranking",
+            "value": "#13"
+          },
+          {
+            "label": "W/L",
+            "value": "3-19"
+          }
+        ]
+      },
+      "away": {
+        "teamCode": "SEA",
+        "teamName": "Seattle Storm",
+        "conference": "west",
+        "favorite": true,
+        "conferenceRanking": 4,
+        "overallRanking": 4,
+        "wlRecord": "14-9",
+        "defaultContent": {
+          "img": "assets/logos-wnba/seattle-storm-logo.svg",
+          "alt": "Seattle Storm Logo",
+          "name": "Seattle Storm"
+        },
+        "factsContent": [
+          {
+            "label": "W - conference ranking",
+            "value": "#4"
+          },
+          {
+            "label": "overall ranking",
+            "value": "#4"
+          },
+          {
+            "label": "W/L",
+            "value": "14-9"
+          }
+        ]
+      }
+    },
+    {
+      "id": "DAL-NYL-2025-07-28",
+      "date": "Monday, Jul 28, 2025",
+      "time": "8:00 PM EDT",
+      "home": {
+        "teamCode": "DAL",
+        "teamName": "Dallas Wings",
+        "conference": "west",
+        "favorite": false,
+        "conferenceRanking": 8,
+        "overallRanking": 12,
+        "wlRecord": "6-17",
+        "defaultContent": {
+          "img": "assets/logos-wnba/dallas-wings-logo.svg",
+          "alt": "Dallas Wings Logo",
+          "name": "Dallas Wings"
+        },
+        "factsContent": [
+          {
+            "label": "W - conference ranking",
+            "value": "#8"
+          },
+          {
+            "label": "overall ranking",
+            "value": "#12"
+          },
+          {
+            "label": "W/L",
+            "value": "6-17"
+          }
+        ]
+      },
+      "away": {
+        "teamCode": "NYL",
+        "teamName": "New York Liberty",
+        "conference": "east",
+        "favorite": false,
+        "conferenceRanking": 2,
+        "overallRanking": 2,
+        "wlRecord": "10-2",
+        "defaultContent": {
+          "img": "assets/logos-wnba/new-york-liberty-logo.svg",
+          "alt": "New York Liberty Logo",
+          "name": "New York Liberty"
+        },
+        "factsContent": [
+          {
+            "label": "E - conference ranking",
+            "value": "#2"
+          },
+          {
+            "label": "overall ranking",
+            "value": "#2"
+          },
+          {
+            "label": "W/L",
+            "value": "10-2"
+          }
+        ]
+      }
+    },
+    {
+      "id": "ATL-GSV-2025-07-29",
+      "date": "Tuesday, Jul 29, 2025",
+      "time": "7:30 PM EDT",
+      "home": {
+        "teamCode": "ATL",
+        "teamName": "Atlanta Dream",
+        "conference": "east",
+        "favorite": true,
+        "conferenceRanking": 3,
+        "overallRanking": 5,
+        "wlRecord": "13-9",
+        "defaultContent": {
+          "img": "assets/logos-wnba/atlanta-dream-logo.svg",
+          "alt": "Atlanta Dream Logo",
+          "name": "Atlanta Dream"
+        },
+        "factsContent": [
+          {
+            "label": "E - conference ranking",
+            "value": "#3"
+          },
+          {
+            "label": "overall ranking",
+            "value": "#5"
+          },
+          {
+            "label": "W/L",
+            "value": "13-9"
+          }
+        ]
+      },
+      "away": {
+        "teamCode": "GSV",
+        "teamName": "Golden State Valkyries",
+        "conference": "west",
+        "favorite": false,
+        "conferenceRanking": 6,
+        "overallRanking": 9,
+        "wlRecord": "10-12",
+        "defaultContent": {
+          "img": "assets/logos-wnba/golden-state-valkyries-logo.svg",
+          "alt": "Golden State Valkyries Logo",
+          "name": "Golden State Valkyries"
+        },
+        "factsContent": [
+          {
+            "label": "W - conference ranking",
+            "value": "#6"
+          },
+          {
+            "label": "overall ranking",
+            "value": "#9"
+          },
+          {
+            "label": "W/L",
+            "value": "10-12"
+          }
+        ]
+      }
+    },
+    {
+      "id": "WAS-CHI-2025-07-29",
+      "date": "Tuesday, Jul 29, 2025",
+      "time": "7:30 PM EDT",
+      "home": {
+        "teamCode": "WAS",
+        "teamName": "Washington Mystics",
+        "conference": "east",
+        "favorite": false,
+        "conferenceRanking": 5,
+        "overallRanking": 7,
+        "wlRecord": "11-10",
+        "defaultContent": {
+          "img": "assets/logos-wnba/washington-mystics-logo.svg",
+          "alt": "Washington Mystics Logo",
+          "name": "Washington Mystics"
+        },
+        "factsContent": [
+          {
+            "label": "E - conference ranking",
+            "value": "#5"
+          },
+          {
+            "label": "overall ranking",
+            "value": "#7"
+          },
+          {
+            "label": "W/L",
+            "value": "11-10"
+          }
+        ]
+      },
+      "away": {
+        "teamCode": "CHI",
+        "teamName": "Chicago Sky",
+        "conference": "east",
+        "favorite": false,
+        "conferenceRanking": 6,
+        "overallRanking": 11,
+        "wlRecord": "7-15",
+        "defaultContent": {
+          "img": "assets/logos-wnba/chicago-sky-logo.svg",
+          "alt": "Chicago Sky Logo",
+          "name": "Chicago Sky"
+        },
+        "factsContent": [
+          {
+            "label": "E - conference ranking",
+            "value": "#6"
+          },
+          {
+            "label": "overall ranking",
+            "value": "#11"
+          },
+          {
+            "label": "W/L",
+            "value": "7-15"
+          }
+        ]
+      }
+    },
+    {
+      "id": "LOS-LVA-2025-07-29",
+      "date": "Tuesday, Jul 29, 2025",
+      "time": "10:00 PM EDT",
+      "home": {
+        "teamCode": "LOS",
+        "teamName": "Los Angeles Sparks",
+        "conference": "west",
+        "favorite": false,
+        "conferenceRanking": 7,
+        "overallRanking": 10,
+        "wlRecord": "8-14",
+        "defaultContent": {
+          "img": "assets/logos-wnba/los-angeles-sparks-logo.svg",
+          "alt": "Los Angeles Sparks Logo",
+          "name": "Los Angeles Sparks"
+        },
+        "factsContent": [
+          {
+            "label": "W - conference ranking",
+            "value": "#7"
+          },
+          {
+            "label": "overall ranking",
+            "value": "#10"
+          },
+          {
+            "label": "W/L",
+            "value": "8-14"
+          }
+        ]
+      },
+      "away": {
+        "teamCode": "LVA",
+        "teamName": "Las Vegas Aces",
+        "conference": "west",
+        "favorite": false,
+        "conferenceRanking": 5,
+        "overallRanking": 8,
+        "wlRecord": "11-10",
+        "defaultContent": {
+          "img": "assets/logos-wnba/las-vegas-aces-logo.svg",
+          "alt": "Las Vegas Aces Logo",
+          "name": "Las Vegas Aces"
+        },
+        "factsContent": [
+          {
+            "label": "W - conference ranking",
+            "value": "#5"
+          },
+          {
+            "label": "overall ranking",
+            "value": "#8"
+          },
+          {
+            "label": "W/L",
+            "value": "11-10"
+          }
+        ]
+      }
+    }
+  ]
+}

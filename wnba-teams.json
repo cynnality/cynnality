@@ -8,17 +8,27 @@
       "img": "assets/logos-wnba/atlanta-dream-logo.svg",
       "alt": "Atlanta Dream Logo",
       "name": "Atlanta Dream"
+    },
+    "colors": {
+      "primary": "#408fdd",
+      "secondary": "#c6102e",
+      "accent": "#cdd8e5"
     }
   },
   "Seattle Storm": {
     "teamCode": "SEA",
     "teamName": "Seattle Storm",
     "conference": "west",
-    "favorite": true,
+    "favorite": true, 
     "defaultContent": {
       "img": "assets/logos-wnba/seattle-storm-logo.svg",
       "alt": "Seattle Storm Logo",
       "name": "Seattle Storm"
+    },
+    "colors": {
+      "primary": "#2b5234",
+      "secondary": "#fae121",
+      "accent": "#78bf21"
     }
   },
   "Phoenix Mercury": {
@@ -30,6 +40,11 @@
       "img": "assets/logos-wnba/phoenix-mercury-logo.svg",
       "alt": "Phoenix Mercury Logo",
       "name": "Phoenix Mercury"
+    },
+    "colors": {
+      "primary": "#201645",
+      "secondary": "#cb6115",
+      "accent": "#b2b3b3"
     }
   },
   "Los Angeles Sparks": {
@@ -41,6 +56,11 @@
       "img": "assets/logos-wnba/los-angeles-sparks-logo.svg",
       "alt": "Los Angeles Sparks Logo",
       "name": "Los Angeles Sparks"
+    },
+    "colors": {
+      "primary": "#6f2f89",
+      "secondary": "#ffc72e",
+      "accent": "#00b398"
     }
   },
   "Golden State Valkyries": {
@@ -52,6 +72,11 @@
       "img": "assets/logos-wnba/golden-state-valkyries-logo.svg",
       "alt": "Golden State Valkyries Logo",
       "name": "Golden State Valkyries"
+    },
+    "colors": {
+      "primary": "#af98dd",
+      "secondary": "#b9965b",
+      "accent": "#000000"
     }
   },
   "Minnesota Lynx": {
@@ -63,6 +88,11 @@
       "img": "assets/logos-wnba/minnesota-lynx-logo.svg",
       "alt": "Minnesota Lynx Logo",
       "name": "Minnesota Lynx"
+    },
+    "colors": {
+      "primary": "#236190",
+      "secondary": "#0c2440",
+      "accent": "#78bf22"
     }
   },
   "Connecticut Sun": {
@@ -74,6 +104,11 @@
       "img": "assets/logos-wnba/connecticut-sun-logo.svg",
       "alt": "Connecticut Sun Logo",
       "name": "Connecticut Sun"
+    },
+    "colors": {
+      "primary": "#dc4504",
+      "secondary": "#041e43",
+      "accent": "#ffc72e"
     }
   },
   "Dallas Wings": {
@@ -85,6 +120,11 @@
       "img": "assets/logos-wnba/dallas-wings-logo.svg",
       "alt": "Dallas Wings Logo",
       "name": "Dallas Wings"
+    },
+    "colors": {
+      "primary": "#c4d600",
+      "secondary": "#0c2440",
+      "accent": "#00a8e0"
     }
   },
   "New York Liberty": {
@@ -96,6 +136,11 @@
       "img": "assets/logos-wnba/new-york-liberty-logo.svg",
       "alt": "New York Liberty Logo",
       "name": "New York Liberty"
+    },
+    "colors": {
+      "primary": "#0059b8",
+      "secondary": "#6fceb1",
+      "accent": "#ff661f"
     }
   },
   "Washington Mystics": {
@@ -107,6 +152,11 @@
       "img": "assets/logos-wnba/washington-mystics-logo.svg",
       "alt": "Washington Mystics Logo",
       "name": "Washington Mystics"
+    },
+    "colors": {
+      "primary": "#c8102e",
+      "secondary": "#0c2340",
+      "accent": "#8d9093"
     }
   },
   "Indiana Fever": {
@@ -118,6 +168,11 @@
       "img": "assets/logos-wnba/indiana-fever-logo.svg",
       "alt": "Indiana Fever Logo",
       "name": "Indiana Fever"
+    },
+    "colors": {
+      "primary": "#041e43",
+      "secondary": "#c6102e",
+      "accent": "#ffcc00"
     }
   },
   "Chicago Sky": {
@@ -129,6 +184,11 @@
       "img": "assets/logos-wnba/chicago-sky-logo.svg",
       "alt": "Chicago Sky Logo",
       "name": "Chicago Sky"
+    },
+    "colors": {
+      "primary": "#408fdd",
+      "secondary": "#ffcc00",
+      "accent": "#b2b3b3"
     }
   },
   "Las Vegas Aces": {
@@ -140,6 +200,11 @@
       "img": "assets/logos-wnba/las-vegas-aces-logo.svg",
       "alt": "Las Vegas Aces Logo",
       "name": "Las Vegas Aces"
+    },
+    "colors": {
+      "primary": "#bb0c2f",
+      "secondary": "#8a734c",
+      "accent": "#8b8f92"
     }
   }
 }

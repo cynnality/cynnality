@@ -71,9 +71,9 @@ Promise.all([
       m.postgame = matchupBlurbs[m.id].postgame;
     }
   });
-
+ 
 // Rendering
-  fetch('jul9-w-matchups.json')
+  fetch('jul9-w-matchups.json') 
     .then(res => res.json())
     .then(data => {
       const matchupList = document.getElementById('matchup-list');

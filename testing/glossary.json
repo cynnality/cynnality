@@ -1,62 +1,50 @@
 [
   {
-    "term": "Point Guard",
+    "term": "point guard",
     "letter": "P",
-    "definition": "a player who primarily handles the ball and directs the team's offense.",
+    "definition": "position that handles the ball and directs the team's offense.",
     "tags": ["positions"]
   },
   {
-    "term": "Doulbe-Double",
-    "letter": "D",
-    "definition": "A defensive position in basketball, where a player defends two opposing players.",
-    "tags": ["gameplay", "stats"]
-  },
-  {
-    "term": "Bonus",
+    "term": "bonus",
     "letter": "B",
-    "definition": "Teams enter the bonus when they have committed a certain number of fouls, allowing the opposing team to shoot free throws for each subsequent foul.",
+    "definition": "in a game, teams enter the bonus when they have committed a certain number of fouls, allowing the opposing team to shoot free throws for every foul.",
     "tags": ["gameplay", "rules"]
 },
   {
-    "term": "Free Throw",
+    "term": "free throw",
     "letter": "F",
-    "definition": "A shot that is not attempted by the shooter, but is instead awarded to the team after a foul.",
+    "definition": "a shot that is not attempted by the shooter, but is instead awarded to the team after a foul.",
     "tags": ["gameplay", "rules", "fouls"]
   },
   {
-    "term": "Fast Break",
-    "letter": "F",
-    "definition": "A quick offensive play where a team moves the ball up the court rapidly to score before the defense can set up.",
+    "term": "fast break",
+    "letter": "f",
+    "definition": "a quick offensive play where a team moves the ball up the court rapidly to score before the defense can set up.",
     "tags": ["gameplay"]
   },
   {
-    "term": "Alley-Oop",
-    "letter": "A",
-    "definition": "A play in which one player throws the ball near the basket, and another player jumps, catches it mid-air, and scores in a single motion.",
-    "tags": ["gameplay"]
-  },
-  {
-    "term": "Triple-Double",
+    "term": "triple-double",
     "letter": "T",
-    "definition": "A performance in which a player accumulates a double-digit number in three statistical categories, such as points, rebounds, and assists.",
+    "definition": "a performance in which a player accumulates a double-digit number in three statistical categories, such as points, rebounds, and assists.",
     "tags": ["gameplay", "stats"]
   },
   {
-    "term": "Pick and Roll",
+    "term": "pick and roll",
     "letter": "P",
-    "definition": "An offensive play where a player sets a screen (the pick) for a teammate handling the ball and then rolls towards the basket to receive a pass.",
+    "definition": "an offensive play where a player sets a screen (the pick) for a teammate handling the ball and then rolls towards the basket to receive a pass.",
     "tags": ["gameplay"]
   },
   {
-    "term": "Zone Defense",
+    "term": "zone Defense",
     "letter": "Z",
     "definition": "A defensive strategy where players cover specific areas of the court rather than marking individual opponents.",
     "tags": ["gameplay"]
   },
   {
-    "term": "And-One",
+    "term": "and one",
     "letter": "A",
-    "definition": "A situation where a player is fouled while making a basket and is awarded a free throw.",
+    "definition": "when a player gets to",
     "tags": ["gameplay", "fouls"]
   }
 ]

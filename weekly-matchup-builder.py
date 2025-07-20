@@ -2,16 +2,16 @@ import json
 from datetime import datetime
 
 # Load data
-with open('w-schedule-jul9-16.json', 'r', encoding='utf-8') as f:
+with open('w-schedule-jul19-29.json', 'r', encoding='utf-8') as f:
     games = json.load(f)
-with open('jul9-w-rankings.json', 'r', encoding='utf-8') as f:
+with open('jul19-w-rankings.json', 'r', encoding='utf-8') as f:
     standings = json.load(f)
 with open('wnba-teams.json', 'r', encoding='utf-8') as f:
     teams = json.load(f) 
 
 # Date range for the week
-start_date = datetime.strptime("Wednesday, Jul 9, 2025", "%A, %b %d, %Y")
-end_date = datetime.strptime("Wednesday, Jul 16, 2025", "%A, %b %d, %Y")
+start_date = datetime.strptime("Saturday, Jul 19, 2025", "%A, %b %d, %Y")
+end_date = datetime.strptime("Tuesday, Jul 29, 2025", "%A, %b %d, %Y")
 
 def parse_game_date(date_str):
     return datetime.strptime(date_str, "%A, %b %d, %Y")
@@ -35,7 +35,7 @@ def build_team_block(team_name, record, standings, teams):
             {"label": "overall ranking", "value": f"#{stats.get('overallRanking', '')}"},
             {"label": "W/L", "value": stats.get("wlRecord", record.strip('()'))}
         ]
-    }
+    } 
 
 # Filter games for the week and build matchups
 weekly_matchups = []
@@ -67,11 +67,11 @@ for game in games:
 
 # Output weekly matchups JSON
 weekly_json = {"matchups": weekly_matchups}
-with open('jul9-w-matchups.json', 'w', encoding='utf-8') as f:
+with open('jul19-w-matchups.json', 'w', encoding='utf-8') as f:
     json.dump(weekly_json, f, indent=2)
-print(f"Saved jul9-w-matchups.json with {len(weekly_matchups)} matchups.")
+print(f"Saved jul19-w-matchups.json with {len(weekly_matchups)} matchups.")
 
 # Output matchup blurbs outline JSON
-with open('jul9-w-blurbs-outline.json', 'w', encoding='utf-8') as f:
+with open('jul19-w-blurbs-outline.json', 'w', encoding='utf-8') as f:
     json.dump(blurbs_outline, f, indent=2)
-print(f"Saved jul9-w-blurbs-outline.json outline for you to fill in.")
+print(f"Saved jul19-w-blurbs-outline.json outline for you to fill in.")

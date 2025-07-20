@@ -58,8 +58,8 @@ def parse_conference_standings(filename):
     return standings
 
 # Parse both files
-overall = parse_standings('jul9-w-ovrall-table.html', 'overallRanking')
-conference = parse_conference_standings('jul9-w-conf-table.html')
+overall = parse_standings('jul19-jul29-w-ovrall-rankings.html', 'overallRanking')
+conference = parse_conference_standings('jul19-jul29-conf-rankings.html')
 
 # Merge by team name
 combined = {}
@@ -73,7 +73,7 @@ for team, data in conference.items():
         combined[team] = data
 
 # Save to JSON
-with open('jul9-w-rankings.json', 'w', encoding='utf-8') as f:
+with open('jul19-w-rankings.json', 'w', encoding='utf-8') as f:
     json.dump(combined, f, indent=2)
 
 print(json.dumps(combined, indent=2))

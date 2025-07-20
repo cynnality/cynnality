@@ -5,7 +5,7 @@
       "date": "Wednesday, Jul 9, 2025",
       "winner": "CON",
 
-      "time": "",
+      "time": "8:00 PM",
       "home": {
         "teamCode": "CON",
         "teamName": "Connecticut Sun",
@@ -33,7 +33,7 @@
             "value": "3-16"
           }
         ]
-      },
+      }, 
       "away": {
         "teamCode": "SEA",
         "teamName": "Seattle Storm",
@@ -67,7 +67,7 @@
       "id": "IND-GSV-2025-07-09",
       "date": "Wednesday, Jul 9, 2025",
       "winner": "GSV",
-      "time": "",
+      "time": "8:00 PM",
       "home": {
         "teamCode": "IND",
         "teamName": "Indiana Fever",
@@ -129,7 +129,7 @@
       "id": "PHX-MIN-2025-07-09",
       "date": "Wednesday, Jul 9, 2025",
       "winner": "PHX",
-      "time": "",
+      "time": "8:00 PM",
       "home": {
         "teamCode": "PHX",
         "teamName": "Phoenix Mercury",
@@ -190,7 +190,7 @@
     {
       "id": "CHI-DAL-2025-07-09",
       "date": "Wednesday, Jul 9, 2025",
-      "time": "8:00 PM EDT",
+      "time": "8:00 PM",
       "home": {
         "teamCode": "CHI",
         "teamName": "Chicago Sky",
@@ -251,7 +251,7 @@
     {
       "id": "LOS-MIN-2025-07-10",
       "date": "Thursday, Jul 10, 2025",
-      "time": "3:00 PM EDT",
+      "time": "3:00 PM",
       "home": {
         "teamCode": "LOS",
         "teamName": "Los Angeles Sparks",
@@ -312,7 +312,7 @@
     {
       "id": "WAS-LVA-2025-07-10",
       "date": "Thursday, Jul 10, 2025",
-      "time": "7:30 PM EDT",
+      "time": "7:30 PM",
       "home": {
         "teamCode": "WAS",
         "teamName": "Washington Mystics",
@@ -373,12 +373,12 @@
     {
       "id": "IND-ATL-2025-07-11",
       "date": "Friday, Jul 11, 2025",
-      "time": "7:30 PM EDT",
+      "time": "7:30 PM",
       "home": {
         "teamCode": "IND",
         "teamName": "Indiana Fever",
         "conference": "east",
-        "favorite": false,
+        "favorite": false, 
         "conferenceRanking": 3,
         "overallRanking": 7,
         "wlRecord": "9-10",
@@ -434,7 +434,7 @@
     {
       "id": "SEA-CON-2025-07-11",
       "date": "Friday, Jul 11, 2025",
-      "time": "10:00 PM EDT",
+      "time": "10:00 PM",
       "home": {
         "teamCode": "SEA",
         "teamName": "Seattle Storm",
@@ -495,7 +495,7 @@
     {
       "id": "CHI-MIN-2025-07-12",
       "date": "Saturday, Jul 12, 2025",
-      "time": "1:00 PM EDT",
+      "time": "1:00 PM",
       "home": {
         "teamCode": "CHI",
         "teamName": "Chicago Sky",
@@ -556,7 +556,7 @@
     {
       "id": "LVA-GSV-2025-07-12",
       "date": "Saturday, Jul 12, 2025",
-      "time": "4:00 PM EDT",
+      "time": "4:00 PM",
       "home": {
         "teamCode": "LVA",
         "teamName": "Las Vegas Aces",
@@ -617,7 +617,7 @@
     {
       "id": "IND-DAL-2025-07-13",
       "date": "Sunday, Jul 13, 2025",
-      "time": "1:00 PM EDT",
+      "time": "1:00 PM",
       "home": {
         "teamCode": "IND",
         "teamName": "Indiana Fever",
@@ -678,7 +678,7 @@
     {
       "id": "NYL-ATL-2025-07-13",
       "date": "Sunday, Jul 13, 2025",
-      "time": "3:00 PM EDT",
+      "time": "3:00 PM",
       "home": {
         "teamCode": "NYL",
         "teamName": "New York Liberty",
@@ -739,7 +739,7 @@
     {
       "id": "LOS-CON-2025-07-13",
       "date": "Sunday, Jul 13, 2025",
-      "time": "6:00 PM EDT",
+      "time": "6:00 PM",
       "home": {
         "teamCode": "LOS",
         "teamName": "Los Angeles Sparks",
@@ -800,7 +800,7 @@
     {
       "id": "SEA-WAS-2025-07-13",
       "date": "Sunday, Jul 13, 2025",
-      "time": "6:00 PM EDT",
+      "time": "6:00 PM",
       "home": {
         "teamCode": "SEA",
         "teamName": "Seattle Storm",
@@ -861,7 +861,7 @@
     {
       "id": "CHI-MIN-2025-07-14",
       "date": "Monday, Jul 14, 2025",
-      "time": "8:00 PM EDT",
+      "time": "8:00 PM",
       "home": {
         "teamCode": "CHI",
         "teamName": "Chicago Sky",
@@ -922,7 +922,7 @@
     {
       "id": "GSV-PHX-2025-07-14",
       "date": "Monday, Jul 14, 2025",
-      "time": "10:00 PM EDT",
+      "time": "10:00 PM",
       "home": {
         "teamCode": "GSV",
         "teamName": "Golden State Valkyries",
@@ -983,7 +983,7 @@
     {
       "id": "CON-IND-2025-07-15",
       "date": "Tuesday, Jul 15, 2025",
-      "time": "8:00 PM EDT",
+      "time": "8:00 PM",
       "home": {
         "teamCode": "CON",
         "teamName": "Connecticut Sun",
@@ -1044,7 +1044,7 @@
     {
       "id": "LOS-WAS-2025-07-15",
       "date": "Tuesday, Jul 15, 2025",
-      "time": "10:00 PM EDT",
+      "time": "10:00 PM",
       "home": {
         "teamCode": "LOS",
         "teamName": "Los Angeles Sparks",
@@ -1105,7 +1105,7 @@
     {
       "id": "CHI-ATL-2025-07-16",
       "date": "Wednesday, Jul 16, 2025",
-      "time": "12:00 PM EDT",
+      "time": "12:00 PM",
       "home": {
         "teamCode": "CHI",
         "teamName": "Chicago Sky",
@@ -1166,7 +1166,7 @@
     {
       "id": "MIN-PHX-2025-07-16",
       "date": "Wednesday, Jul 16, 2025",
-      "time": "1:00 PM EDT",
+      "time": "1:00 PM",
       "home": {
         "teamCode": "MIN",
         "teamName": "Minnesota Lynx",
@@ -1227,7 +1227,7 @@
     {
       "id": "SEA-GSV-2025-07-16",
       "date": "Wednesday, Jul 16, 2025",
-      "time": "3:00 PM EDT",
+      "time": "3:00 PM",
       "home": {
         "teamCode": "SEA",
         "teamName": "Seattle Storm",
@@ -1288,7 +1288,7 @@
     {
       "id": "NYL-IND-2025-07-16",
       "date": "Wednesday, Jul 16, 2025",
-      "time": "7:30 PM EDT",
+      "time": "7:30 PM",
       "home": {
         "teamCode": "NYL",
         "teamName": "New York Liberty",
@@ -1349,7 +1349,7 @@
     {
       "id": "DAL-LVA-2025-07-16",
       "date": "Wednesday, Jul 16, 2025",
-      "time": "8:00 PM EDT",
+      "time": "8:00 PM",
       "home": {
         "teamCode": "DAL",
         "teamName": "Dallas Wings",

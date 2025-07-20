@@ -11,10 +11,10 @@ TEAM_RECORD_CLASS = "_GameTile__team__record_12tan_82"
 TIME_CLASS = "_GameTile__date__time_12tan_141"
 
 
-START_DATE = datetime(2025, 7, 9)
-END_DATE = datetime(2025, 7, 16)
+START_DATE = datetime(2025, 7, 19)
+END_DATE = datetime(2025, 7, 29)
 
-with open('w-schedule-jul9-16.html', 'r', encoding='utf-8') as f:
+with open('jul19-jul29-w-schedule.html', 'r', encoding='utf-8') as f:
     html = f.read()
 
 soup = BeautifulSoup(html, 'html.parser')
@@ -60,6 +60,6 @@ for elem in soup.find_all(['header', 'div']):
                         }
                     })
 
-with open('w-schedule-jul9-16.json', 'w', encoding='utf-8') as f:
+with open('w-schedule-jul19-29.json', 'w', encoding='utf-8') as f:
     json.dump(games, f, indent=2)
-print(f"Saved {len(games)} games to w-schedule-jul9-16.json")
+print(f"Saved {len(games)} games to w-schedule-jul19-29.json")

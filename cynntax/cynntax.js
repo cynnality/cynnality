@@ -8,7 +8,9 @@ const playerData = {
 
     ],
     aces: [
-        { name: "Skylar Diggins", img: "../assets/w-player-decks/skylar-diggins-storm.svg" },
+        { name: "Jewell Loyd", img: "../assets/w-player-decks/jewell-loyd-aces.svg" },
+        { name: "Chelsea Gray", img: "../assets/w-player-decks/chelsea-gray-aces.svg" },
+        { name: "A'ja Wilson", img: "../assets/w-player-decks/aja-wilson-aces.svg" },
         // ...add more
     ],
     // ...add more teams
@@ -40,10 +42,6 @@ document.addEventListener('DOMContentLoaded', function () {
             activeRow.className = 'active-deck-row';
             activeRow.setAttribute('data-team', team);
 
-            // Clone the deck node for the active row
-            const activeDeck = deck.cloneNode(true);
-            activeDeck.classList.add('active');
-
             // Add a close button
             const closeBtn = document.createElement('button');
             closeBtn.textContent = '×';
@@ -60,8 +58,7 @@ document.addEventListener('DOMContentLoaded', function () {
                 </div>
             `).join('');
 
-            // Assemble the active row
-            activeRow.appendChild(activeDeck);
+            // Assemble the active row (only player cards and close button)
             activeRow.appendChild(cardsContainer);
             activeRow.appendChild(closeBtn);
 
