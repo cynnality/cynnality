@@ -46,7 +46,6 @@
     grid-template-columns: 1fr auto;
     width: 750px;
     border-radius: 4px;
-    border: 4px solid #000000;
 }
 .ticket__main {
     display: grid;
@@ -155,7 +154,9 @@
     font-weight: 400;
     font-style: normal;
 }
-
+    .fineprint {
+    display: none;
+    }
 
 
 
@@ -165,7 +166,7 @@
 /*......................TICKET COLOR STYLES - TEAMS*/
 
 .ticket {
-    border: 4px solid var(--team-secondary, #f3f1c9);
+    border: solid 6px var(--team-secondary, #f3f1c9);
 }
 .ticket .ticket-header {
     background: var(--team-secondary, #f3f1c9);
@@ -452,11 +453,6 @@
     display: grid;
     grid-template-columns: .5fr 1fr 2fr;
 }
-.ticket.home .ticket-header {
-    display: flex;
-    grid-column: 1 / 4;
-    min-height: 70px;
-}
 .ticket.away .ticket-header {
     display: flex;
     grid-column: 1 / 4;
@@ -532,6 +528,16 @@ div.logo-container:nth-child(2) > div:nth-child(1) > img:nth-child(1) {
     grid-column: auto;
     display: grid;
     }
+    .ticket.home .ticket-header {
+    display: flex;
+    grid-column: 1 / 4;
+    min-height: 70px;
+    }
+    .ticket.away .ticket-header {
+    display: flex;
+    grid-column: 1 / 4;
+    min-height: 70px;
+    }
     .info__detail {
     /* margin: .25em; */
     font-size: 14px;
@@ -541,12 +547,24 @@ div.logo-container:nth-child(2) > div:nth-child(1) > img:nth-child(1) {
     max-width: 8.5em;
     border-bottom: solid #f3f1c9;
     }
-    .team-home .ticket-tearaway-label {
-    font-size: 22px;
+    .ticket.away .team-away {
+    width: 8em;
+    max-width: 8.5em;
+    border-bottom: solid #f3f1c9;
     }
-    .ticket-header-label { display: none; 
+    .ticket.home .ticket__tearaway .ticket-tearaway-label .info__detail {
+    color: var(--team-secondary, #000000);
+    font-size: 16px;
     }
-    .ticket-tearaway-label { display: block; 
+    .ticket.away .ticket__tearaway .ticket-tearaway-label .info__detail {
+    color: var(--team-secondary, #000000);
+    font-size: 16px;
+    }
+    .ticket-header-label { 
+    display: none; 
+    }
+    .ticket-tearaway-label { 
+    display: block; 
     } 
     .ticket .ticket__tearaway .logo {
     display: none;
@@ -580,6 +598,14 @@ div.logo-container:nth-child(2) > div:nth-child(1) > img:nth-child(1) {
     }    
     .fineprint {
     display: none;
+    }
+
+
+    .ticket[data-team="LVA"].ticket.home .ticket__tearaway .ticket-tearaway-label .info__detail {
+    color: #000000;
+    }
+    .ticket[data-team="LVA"].ticket.away .ticket__tearaway .ticket-tearaway-label .info__detail {
+    color: #000000;
     }
 }
 
