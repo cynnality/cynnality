@@ -33,12 +33,6 @@
     gap: 1em;
 }
 
-
-
-
-
-
-
 /**...................general ticket styles....................*/   
 .ticket {
     display: grid;
@@ -66,6 +60,9 @@
     letter-spacing: 1px;
     margin: .25em;
 }
+.ticket .ticket-header {
+  border-bottom: solid 4px var(--team-accent);
+}
 .team-name {
     display: flex;
     text-transform: uppercase;
@@ -76,6 +73,9 @@
     font-style: italic;
     letter-spacing: 2px;
     word-spacing: -3px;
+}
+.ticket .info-section .info {
+  border: solid 3px var(--team-accent, #000000);
 }
 .fineprint {
     display: flex;
@@ -114,7 +114,7 @@
     position: relative;
 }
 .logo > div:nth-child(1) > img:nth-child(1) {
-  width: 8em;
+  width: 5em;
   opacity: 90%;
   align-content: center;
   align-items: center;
@@ -154,14 +154,9 @@
     font-weight: 400;
     font-style: normal;
 }
-    .fineprint {
-    display: none;
-    }
-
-
-
-
-
+.fineprint {
+  display: none;
+}
 
 /*......................TICKET COLOR STYLES - TEAMS*/
 
@@ -203,7 +198,6 @@
 
 /*...........specific team ticket header color styles*/
 
-
 /*minnesota lynx*/
 .ticket[data-team="MIN"] .team-name p {
     color: var(--team-accent, #b2b3b3);
@@ -222,10 +216,9 @@
     border: 3px solid var(--team-accent, #000000);
 }
 
-
 /*golden state valkyries*/
 .ticket[data-team="GSV"] {
-    border: 4px solid var(--team-primary, #f3f1c9);
+    border: 6px solid var(--team-primary, #f3f1c9);
 }
 .ticket[data-team="GSV"] .ticket-header {
     background-color: var(--team-primary, black);
@@ -254,7 +247,6 @@
     border: 3px solid var(--team-secondary, #000000);
 }
 
-
 /*dallas wings*/
 .ticket[data-team="DAL"] .ticket-header {
     background-color: var(--team-secondary, #b2b3b3);
@@ -276,10 +268,9 @@
     border: 3px solid var(--team-accent, #000000);
 }
 
-
 /*connecticut sun*/
 .ticket[data-team="CON"] {
-    border: 4px solid var(--team-accent, #f3f1c9);
+    border: 6px solid var(--team-accent, #f3f1c9);
 }
 .ticket[data-team="CON"] .ticket-header {
     background-color: var(--team-accent, #b2b3b3);
@@ -297,11 +288,9 @@
     border-color: var(--team-accent, #f3f1c9);
 }
 
-
-
 /*las vegas aces*/
 .ticket[data-team="LVA"] {
-    border: 4px solid var(--team-accent, #f3f1c9);
+    border: 6px solid var(--team-accent, #f3f1c9);
 }
 .ticket[data-team="LVA"] .ticket-header {
     background-color: var(--team-accent, black);
@@ -373,19 +362,6 @@
 
 /**....................home ticket STYLES..................**/
 
-
-
-
-
-
-
-
-
-
-
-
-
-
 /**...... home tearaway ticket FORMATS........................*/
 .ticket.home .ticket__tearaway {
     border-top-right-radius: 15px;
@@ -407,20 +383,7 @@
 
 /**...... home tearaway ticket STYLES........................*/
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-/**...... away tearaway ticket FORMATS........................*/
+/**...... AWAY TICKET FORMATS........................*/
 .ticket.away .ticket__tearaway {    
     grid-row: 1;
     border-top-right-radius: 0;
@@ -433,16 +396,6 @@
 }
 
 /**...... away tearaway ticket STYLES........................*/
-
-
-
-
-
-
-
-
-
-
 
 /*............away ticket FORMATS...................*/
 .ticket.away {
