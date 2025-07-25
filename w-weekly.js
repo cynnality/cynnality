@@ -89,8 +89,8 @@ function formatShortDate(dateStr) {
           <div class="info-section">
             <div class="info date"><div class="info__detail">${matchup.date}</div></div>
             <div class="info time"><div class="info__detail">${matchup.time || ''}</div></div>
-            <div class="info conference"><div class="info__detail">${team.conference} conference</div></div>
-            <div class="info win-loss-record"><div class="info__detail">${team.wlRecord} W/L</div></div>
+            <div class="info conference"><div class="info__detail">${team.conference}ern conference</div></div>
+            <div class="info win-loss-record"><div class="info__detail">W/L ${team.wlRecord}</div></div>
           </div>
           <div class="logo-container">
             <div class="team-logo-block" data-team="${team.teamCode.toLowerCase()}">

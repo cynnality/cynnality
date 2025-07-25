@@ -48,7 +48,7 @@
 }
 .info {
     border: solid 3px;
-    padding: 8px;
+    padding: 4px;
 }
 .info__item {
     font:
@@ -75,7 +75,7 @@
     word-spacing: -3px;
 }
 .ticket .info-section .info {
-  border: solid 3px var(--team-accent, #000000);
+  border: solid 1px var(--team-accent, #000000);
 }
 .fineprint {
     display: flex;
@@ -189,7 +189,7 @@
     border: 3px solid var(--team-primary, #000000);
 }
 .ticket .info-section .info{
-    border: solid 3px var(--team-secondary, #000000);
+    border: solid 2px var(--team-secondary, #000000);
 }
 
 
@@ -311,6 +311,7 @@
     grid-template-columns: 2fr 1fr .5fr;
       /* display: grid; */
     grid-column: 1;
+    border: solid 4px var(--team-accent);
 }
 .ticket.home .ticket-header {
     display: flex;
@@ -355,7 +356,7 @@
 .ticket.home .logo-container {
     grid-row: 2;
     grid-column: 4 / span 1;
-    width: 16em;
+    width: 12em;
     border-bottom: none;
     border-left: none;
 }
@@ -397,6 +398,13 @@
 
 /**...... away tearaway ticket STYLES........................*/
 
+
+
+/* ticket.css | http://127.0.0.1:3000/testing/ticket.css */
+
+
+
+
 /*............away ticket FORMATS...................*/
 .ticket.away {
     border-top-left-radius: 20px;
@@ -405,6 +413,7 @@
 .ticket.away .ticket__main {
     display: grid;
     grid-template-columns: .5fr 1fr 2fr;
+    border: solid 4px var(--team-accent);
 }
 .ticket.away .ticket-header {
     display: flex;
@@ -427,15 +436,20 @@
     padding: 0;
 }
 .ticket.away .logo-container {
-    width: 16em;
-    grid-area: 2 / 1 / 4 / 3;
+    /* width: 16em; */
+    /* grid-area: 2 / 1 / 4 / 3; */
+    width: 12em;
+    grid-row: 2 / span 2;
+    grid-column: 1 / span 1;
 }
 div.logo-container:nth-child(2) > div:nth-child(1) > img:nth-child(1) {
   margin-right: 0;
 }
 .ticket.away .info-section {
-    grid-area: 2 / 3 / 4 / 4;
     text-align: right;
+    /* grid-area: 2 / 3 / 4 / 4; */
+    grid-row: 2 / span 3;
+    grid-column: 2 / span 3;
 }
 .ticket.away .info.date  {
     border-bottom: none;

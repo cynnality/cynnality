@@ -54,9 +54,7 @@ body {
   width: var(--pane-default-width);
   height: var(--pane-default-height);
   display: grid;
-  grid-template-rows: 32px 1fr;
   border: 8px solid #000000;
-  box-shadow:  4px 6px #000000;
   overflow: clip;
   min-width: 160px;
   min-height: 160px;
@@ -133,5 +131,9 @@ input {
   transform: translateY(5px);
 }
 
+.basketball-svg > img:nth-child(1) {
+  width: 3em;
+  padding: 8px;
+}
 
 
