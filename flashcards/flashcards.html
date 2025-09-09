@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="flashcards.css">
+  <script src="flashcards.js" defer></script>
+  <title>Flashcards</title>
+</head>
+<body>
+
+<!-- Need Help Panel -->
+<div id="help-panel">
+  <div class="help-header">Need Help?</div>
+  <div class="help-buttons">
+    <button id="background-btn" class="neo-btn">Background</button>
+  </div>
+  <div class="help-preferences">
+  <div class="help-header">Preferences</div>
+
+  <div class="slider-group">
+    <label class="slider-label" for="layout-slider">layout:</label>
+  <button id="layout-slider" class="neo-slider-btn">front / back</button>  
+  </div>
+</div>
+</div>
+<div id="viewstyle-bar">
+  <button id="flashcards-btn" class="neo-btn active">Flashcards</button>
+  <button id="jeopardy-btn" class="neo-btn">Jeopardy</button>
+  <div id="navbar">
+  <select id="slideFilter" onchange="filterFlashcards()"></select>
+</div>
+</div>
+
+<div id="jeopardy-container"></div>
+
+
+
+
+
+<div id="flashcard" onclick="flipCard()">
+  <div class="front"></div>
+  <div class="back"></div>
+</div>
+
+<button id="nextCard" onclick="nextCard()">Next</button>
+<!-- Container for PNG slides -->
+<div id="help-content"></div>
+<!---->
+</body>
+
+</html>

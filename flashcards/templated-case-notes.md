@@ -1,0 +1,385 @@
+## case: McCulloch v. Maryland
+year: 1819
+chief-justice: john-marshall
+for-lit: mcculloch
+for-fig: federal-gov
+con-elem: article-1, necessary-and-proper-clause, supremacy-clause, article-6, amendment-10, implied-powers-of-congress
+decision-principle: 2
+#### details:
+- facts:
+1. Maryland passed a law forcing all banks chartered from outside the state pay a yearly tax.
+2. At the time, there was only 1 bank in Maryland that was chartered outside the state; it was a national bank location operating in Baltimore, Maryland. So when Maryland passed the law, there's no doubt they were targeting the national bank.
+3. James McCulloch, the CEO of the national bank in Baltimore, refused to pay the tax
+4. The state of Maryland sued James McCulloch. Maryland said they were using their constitutional power to tax any business in the state. Maryland also said the constitution did not give Congress the power to create a national bank.
+- issues-questions: Does Congress have the power to create national banks?, Does a state have the power to tax a branch of the national bank operating within it's borders?
+- decision: Chief Justice John Marshall and the Supreme Court decide that the creation of a National Bank is constitutional. In the decision, Chief Justice Marshall said that even though the creation of a National Bank wasn't explicity stated in the Constitution, there was nothing that explicity stated all powers of Congress must be explicitiy stated. The court essentially decides that because the creation of a National Bank met all the requirements of the necessary and proper clause in Article 1 Section 8 of the Constitution it was Constitutional despite it not being explicitiy stated. The decision also said that Maryland could not tax the national bank under the supremacy clause of the Constitution.
+- impact: The court interpreted the vague language of the necessary and proper clause in the Constitution and in doing so, they give a bit more meaning to the clause itself. In Article 1 Section 8, the enumerated powers (explicity stated powers) are listed out. The necessary and proper clause is at the end of that list and it basically says that Congress can carry out other 'necessary and proper' things in order to carry out their explicit (enumerated) powers. The court also said that allowing Maryland to tax a national bank would get in the way of Congress executing their constitutional duties/powers and that hinderance was unconstitutional. This reasoning is important because it shows when state laws and federal laws conflict, the federal law is supreme. 
+
+## case: Marbury v. Madison
+year: 1803
+chief-justice: john-marshall
+for-lit: madison
+against-fig: federal law
+con-elem: article-3, judicial-review, article-6, supremacy-clause
+federal-law: judiciary-act-1789
+decision-principle: 3
+#### details:
+- facts:
+1. At the end of President John Adams’ term, his secretary of state failed to deliver documents commissioning William Marbury as justice of the peace in the District of Columbia.
+2. Once President Thomas Jefferson was sworn in, he told James Madison, his secretary of state, not to deliver the documents to Marbury and others in order to keep members of the opposing political party from taking office.
+3. Marbury sued James Madison asking the Supreme Court to issue a writ requiring him to deliver the documents necessary to officially make Marbury justice of the peace
+4. The Supreme Court chose not to answer Marbury’s question, but rather whether they had the jurisdiction to issue the writ.
+- issues-questions: Does Marbury have a right to his commission, and can he sue the federal government for it? Does the Supreme Court have the authority to order the delivery of the commission?
+- decision: The Court unanimously decided not to require Madison to deliver the commission to Marbury. In the opinion, written by Chief Justice Marshall, the Court ruled that Marbury was entitled to his commission but that according to the Constitution, the Court did not have the authority to require Madison to deliver the commission to Marbury in this case. They said that the Judiciary Act of 1789 conflicted with the Constitution because it gave the Supreme Court more authority than it was given in Article III. The Judiciary Act of 1789 authorized the Supreme Court to “issue writs of mandamus … to persons holding office under the authority of the United States” as a matter of its original jurisdiction. The dispute between Marbury and Madison did not involve ambassadors, public ministers, consuls, or states. Therefore, according to the Constitution in Article 3, the Supreme Court did not have the authority to exercise its original jurisdiction in this case. Thus, the Judiciary Act of 1789 and the Constitution were in conflict with each other.
+- impact: established judicial review, made constitution supreme law of land, made the supreme court the final authority in interpreting the constitution. expanded the supreme courts powers and raised the judicial branch to the same level of legislative and executive branches.
+
+## case: Dred Scott v. Sanford
+year: 1857
+chief-justice: roger-b-taney
+for-lit: sanford
+for-fig: slavery
+against-lit: dred-scott
+against-fig: 
+con-elem: article-1, three-fifths-compromise, amendment-5, due-process, article-6, privileges-and-immunities-clause
+federal-law: missouri-compromise-1820
+decision-principle: 2
+#### details:
+- facts:
+1. In 1834, Dred Scott, an enslaved person, was purchased in Missouri and then brought to Illinois, a free (non-slave) state. He later moved with his enslaver to present-day Minnesota, where slavery had been recently prohibited, and then back to Missouri.
+2. When his enslaver died, Scott sued the widow to whom he was left, claiming he was no longer an enslaved person because he had become free after living in a free state.
+- issues-questions: Was Dred Scott free or a slave?
+- decision: In the majority opinion of this case, Chief Justice Taney and the other majority justices use Article I, Section 2 and Article I, Section 9 - that referred to people who were enslaved as a “separate class of people" - to say that the Framers of the Constitution did not intend for enslaved people to be considered citizens of any given state or area of the United States. Chief Justice Taney also wrote “had no rights which the white man was bound to respect". At the time of this decision, enslaved people were considered property. So when the court examined the Missouri Compromise, they found it to be unconstitutional on the grounds that it deprives people (slave-owners) of their property without due process which is guaranteed to citizens in the 5th amendment of the constitution. Finding the Missouri Compromise unconstitutional meant it was struck down and that Dred Scott could not use it to rely on in court. Becuse the court decides here that enslaved people are not citizens under the terms of the constitution, Dred Scott is also unable to sue anyone in federal court.
+- impact: This decision added to the North and South divides in the United States at the time. The Civil War started less than 4 years after. 
+
+## case: Plessy v. Ferguson
+year: 1896
+chief-justice: melville-fuller
+for-lit: ferguson
+for-fig: racial-segregation, separate-but-equal
+against-lit: homer-plessy
+against-fig: 
+con-elem: equal-protection-clause, amendment-14, 
+statel-law: louisiana-separate-car-act
+decision-principle: 1
+#### details:
+- facts:
+1. Louisiana enacted the Separate Car Act, which required separate railway cars for blacks and whites
+2. Homer Plessy was 1/8th black and was invited to challenge the Separate Car Act by the Committee of Citizens - a group of people who wanted to get the Separate Car Act repealed
+3. They asked Plessy, who was technically black under Louisiana law, to sit in a "whites only" car of a Louisiana train
+4.  When Plessy was told to vacate the whites-only car, he refused and was arrested
+- issues-questions: Is Louisiana's law requiring racial segregation on its trains an unconstitutional violation of the equal protection clause of the Fourteenth Amendment?
+- decision: Justice Brown wrote that the 14th Amendment “could not have been intended to abolish distinctions based upon color, or to enforce social…equality.”
+- impact: meaning and application of the Equal Protection clause. In addition, the justices said that separation of the races by law does not “stamp the colored race with a badge of inferiority.” They also said that racial prejudice could not be overcome through legislation; rather, it must be fought through other means.The decision set the precedent that separate facililities for black people was constitutional as long as they were 'equal'. The idea of "separate but equal" in terms of racial segregation was supported and upheld by the supreme court and in that, the court essentially rules that racial segregation does not violate the constitution.
+
+## case: Brown v. Board of Education
+year: 1954
+chief-justice: earl-warren
+for-lit: brown
+for-fig: desegregation
+against-lit: board-of-education
+against-fig: separate-but-equal, racial-segregation
+con-elem: amendment-14, equal-protection-clause, separate-but-equal
+case-law: plessy-ferguson, sweatt-painter
+decision-principle: 3
+#### details:
+- facts: 
+1. The Brown family had 2 daughters who walked to school
+2. Their daughters had to go to the school for african american kids. The kids had to walk through bad areas of town to get to their school and they even passed a whites only school on the way to their school.
+3. The Brown family sued arguing that the segregated school system violated their 14th amendment rights.
+
+- issues-questions: Does the segregation of children in public schools only on the basis of race deny the minority children of the equal protection of the laws guaranteed by the Fourteenth Amendment?
+- decision: The justices then said that separating children solely on the basis of race created a  eeling of inferiority in the “hearts and minds” of African American children. The Court noted that public education was central to American life. Calling it “the very foundation of good citizenship,” they acknowledged that public education was not only necessary to prepare children for their future professions and to enable them to actively participate in the democratic process, but that it was also “a principal instrument in awakening the child to cultural values” present in their communities. 
+- impact: ordered the desegregation of public schools in the U.S. Today all segregation by law (de jure segregation) in public education is unconstitutional. However, many schools are still largely made up of students from a single racial or ethnic group because enrollment is assigned based on neighborhoods. This is called de facto segregation because it occurs in practice without a law mandating it. overturned Plessy v. Ferguson ruling.
+
+## case: Gideon v. Wainwright
+year: 1963
+chief-justice:
+for-lit: Gideon 
+for-fig:
+against-lit: Wainwright
+against-fig:
+con-elem: amendment-6, right-to-counsel, amendment-14, due-process-clause-a
+case-law: powell-alabama, johnson-zerbst, betts-brady
+decision-principle: 1
+#### details:
+- facts:
+1. A poolroom was broken into and a winess told police they saw Clarence Earl Gideon inside the poolhall around the time of the break in
+2.  Police fine Gideon and when they search him they find a lot of loose change and a bottle of wine. Money and wine were among the things stolen in the break in
+3.  Police arrest Gideon
+4.  At trial, Gideon asks the court to appoint a lawyer for him since he cannot afford one. The court refuses to appoint a lawyer for him.
+5.  Gideon claims that he is entitled to legal representation even if he cannot pay for it under the 6th amendment
+6.  Gideon is found guilty in the lower courts and is sentenced to jail. While serving time he writes his own petitions to the Supreme Court to review and hear his case.
+- issues-questions: Did the state court's failure to appoint a lawyer for Gideon violate his right to a fair trial and due process of law as protected by the Sixth and Fourteenth Amendments?
+- decision: The court ruled that the 6th amendment required states to provide attorneys for criminal defendants who cannot afford counsel. In the opinion, Justice Black called it an "obvious truth" that a fair trial for a poor defendant could not be guaranteed without the assistance of counsel. the opinion noted that the Constitution emphasizes procedures to guarantee that defendants get fair trials. The Court concluded that the Sixth Amendment guarantee of a right to counsel was fundamental and essential to a fair trial in both state and federal criminal justice systems.
+- impact: this decision led to the creation of public defender offices and government-provided lawyers nationwide
+
+## case: Miranda v. Arizona
+year: 1966
+chief-justice: earl-warren
+for-lit: miranda
+for-fig: civil-liberties
+against-lit: arizona
+against-fig:
+con-elem: amendment-5, self-incrimination, amendment-6, right-to-counsel
+case-law: gideon-wainwright, escobedo-illinois
+decision-principle: 3
+#### details:
+- facts:
+1. Ernesto Miranda was arrested after a victim identified him as her assailant.
+2. The police officers who questioned him did not inform him of his Fifth Amendment right against self-incrimination or of his Sixth Amendment right to the assistance of an attorney. He confessed to the crime.
+3. In Court, Miranda's attorney argued the confession was not admissable due to the police failing to inform him of his 5th and 6th amendment rights.
+- issues-questions: Does the police practice of questioning individuals without notifying them of their right to a lawyer and their protection against self-incrimination violate the Fifth Amendment?
+- decision: the Supreme Court ruled that the Fifth Amendment requires police officers to
+warn individuals that they have certain rights, including the right to remain silent and the right to have an attorney present during questioning.
+- impact: resulted in miranda warnings. 
+
+## case: Korematsu v. United States
+year: 1944
+chief-justice:
+for-lit: United States
+for-fig: forceful-relocation, racial-segregation
+against-lit: korematsu
+against-fig: 
+con-elem: article-2, amendment-5, due-process-clause, amendment-14, equal-protection-clause
+federal-law: alien-enemies-act-1798
+executive-order: executive-order-9066
+decision-principle: 3
+#### details:
+- facts:
+1. Societal tensions were forming against people with Asian physical features due to the recent Pearl Harbor bombing by the Japanese in World War II.
+2. President Franklin D. Roosevelt issued an executive order - Executive Order 9066.
+3. Executive Order 9066 was an area exclusion order that forced Japanese immigrants and Japanese Americans out of their communities on the West Coast into internment camps.
+4. Fred Korematsu challenged this by refusing to go to the internment camp and he was arrested and convicted for violating an executive order
+5. The case was appealed to the Supreme Court
+- issues-questions: Is an executive order requiring Japanese immigrants and Japanese Americans to move to internment camps during World War II constitutional?
+- decision: The court decided that the need to protect the country was a greater priority than the individual rights of the Japanese and Japenese Americans. They found that the government’s war powers allowed it to force Japanese Americans and Japanese immigrants into internment camps. Although the 14th Amendment requires the government to treat all people equally, a law that does treat a certain racial group differently can still be constitutional if it passes the strict scrutiny standard.
+- impact: After Fred Korematsu was released from the internment camp he became a civil rights activist. In 1976, President Gerald Ford signed a proclamation that officially ended Executive Order 9066 and apologized to all who had been held in the camps. In 1983, Korematsu appealed based upon new evidence. A federal judge vacated (threw out) his conviction, finding that in 1942 the government covered up evidence disproving the threat that Japanese Americans posed to the war effort.
+
+## case: Mapp v. Ohio
+year: 1961
+chief-justice:
+for-lit: Mapp
+for-fig: civil-liberties
+against-lit: ohio
+against-fig:
+con-elem: amendment-4, probable-cause, amendment-14, due-process-clause-a
+case-law: weeks-unitedstates, wolf-colorado
+decision-principle: 1
+#### details:
+- facts:
+1. Ohio police suspected Ms.Mapp of hiding a suspect of a bombing in her home
+2. When police went to her house, she told them to come back when they had gotten a search warrant
+3. Ohio police came back with a fake search warrant and began the search of Ms.Mapp's house
+4. At the time of the search, there was an Ohio law banning the ownership of pornography. When police were searching her home, they found porn and arrested Ms.Mapp for breaking the Ohio pornography law
+- issues-questions: Was the evidence gathered from Mapp’s house protected by the Fourth Amendment?
+- decision: There was already precedent set that searches in violation of the 4th amendment were not admissable in court, but this precedent had only been applied to the federal level. With this case, the court is deciding whether or not states should be required to dismiss any evidence gained in searches that violate the 4th amendment. The Supreme Court overturned Wolf v. Colorado and stated that the exclusionary rule does apply to the states. the Court concluded it is time to “close the only courtroom door remaining open to evidence secured by official lawlessness in flagrant abuse of that basic right.”
+- impact: By extending the exclusionary rule to states, the Court provided a much stronger incentive to ensure police officers either get warrants before conducting searches or make sure they have a valid exception to needing a warrant. Later cases extended the exclusionary rule to include all evidence found as a result of an illegal search. Referred to as the “fruit of a poisonous tree” doctrine, this means that, if evidence found during an illegal search leads police to additional evidence, the additional evidence will also be excluded.
+
+## case: In re Gault
+year: 1967
+chief-justice: earl-warren
+for-lit: gault
+for-fig:
+against-lit: arizona
+against-fig:
+con-elem: amendment-14, due-process-clause-a
+federal-law:
+decision-principle: 1
+#### details:
+- facts:
+1. A 15 year old (Gault) was arrested for making an obscene prank call
+2. The police did not notify Gault's parents of his arrest 
+- issues-questions: Were the arresting procedures used in this case constitutionally legitimate under the due process clause of the 14th amendment?
+- decision: The Supreme Court ruled in Gault’s favor because the young man had been denied the right to an attorney, had never been formally notified of the charges against him, had not been informed of his right against self-incrimination, and did not possess the opportunity to confront his accuser. Protection from self-incrimination is the right in the Fifth Amendment that protects a person from being forced to reveal to the police, prosecutor, judge, or jury any information that might subject him or her to criminal prosecution. The Supreme Court, through this ruling, stated that the purpose of the juvenile court was correction and not punishment. Through the In Re Gault decision, the U.S. Supreme Court stated that an individual maintains their right to timely notification of charges, the right against self-incrimination, the right to confront a witness, and the right to a lawyer even if the individual is a juvenile.  The Court closely examined the juvenile court system, ultimately determining that, while there are legitimate reasons for treating juveniles and adults differently, juveniles facing an adjudication of delinquency and incarceration are entitled to certain procedural safeguards under the Due Process Clause of the Fourteenth Amendment. 
+- impact: in this ruling, the court established that a juvenile must be given similar due process rights as given to an adult under the Fourteenth Amendment
+
+## case: United States v. Nixon
+year: 1974
+chief-justice: warren-burger
+for-lit: united-states
+for-fig: limits-on-executive-privilege
+against-lit: nixon
+against-fig: absolute-privilege-for-president
+con-elem: article-2, doctrine-of-executive-privilege
+decision-principle: 3
+#### details:
+- facts:
+1. It was revealed during a hearing that President Nixon had installed recording devices inside the oval office
+2. The special prosecutor of the hearing wanted to legally compel Nixon to hand over the tapes
+3. Nixon argued that executive privilege gave him the legal right to not hand over the tapes
+4. the issue of President Nixon being unwilling to hand over the tapes to the special prosecutor made it to the Supreme Court
+- issues-questions: Does the president have an absolute right to withhold certain information based on “executive privilege?”
+- decision: the Court ruled in favor of the United States and against President Nixon. They said executive privilege is not limitless and that Nixon was legally required to hand the tapes over. "To read the Article II powers of the president as providing an absolute privilege as against a subpoena essential to enforcement of criminal statutes on no more than a generalized claim of the public interest in confidentiality of nonmilitary and nondiplomatic discussions would upset the constitutional balance of 'a workable government' and gravely impair the role of the courts under Article III."
+- impact: The ruling said that executive privilege may be used to withhold sensitive documents that may cause security issues if realeased but executive privilege cannot be used to protect a person from being convicted of crimes. Every president since Ronald Reagan has used executive privilege to block the release of specific documents or the testimony of some members of their administration. This case was the first time that the Supreme Court provided a limitation to the executive branch by restricting the powers that the president can use. This case set the precedent that being president does not make one above the law.
+
+
+
+## case: Regents of the University of California v. Bakke
+year: 1978
+chief-justice:
+for-lit: bakke
+for-fig: 
+against-lit: regents-of-the-university-of-california
+against-fig:
+con-elem: amendment-14, equal-protection-clause
+federal-law: civil-rights-act-1964
+case-law: brown-board-of-education
+decision-principle: 1
+#### details:
+- facts:
+1. Allan Bakke was a white male who applied and was rejected from a general admissions program
+2. He noticed that minority applicants with lower gpa's and test scores were accepted under the specialty admissions program.
+3. Bakke filed suit alleging that this admissions system violated the equal protection clase of the 14th amendment by excluding him on the basis of race
+- issues-questions: Can race be a determining factor in college admissions?
+- decision: The court found that the school had discriminated against Bakke on the basis of race and the school was required to admit him as a student. The court said that because the policy treated white and black applicants (or applicants of racial minority), it was in violation of the equal protection clause under the 14th amendment. But the court understood that increased diversity within universities was a permissable government interest so they said that the policy could use race as one considering factor but it could not be the only factor. The court said the policy should consider other factors that would also increase diversity, like religious or regional differences, socioeconomic status, and educational background. 
+- impact: there is still a lot of controversy about this topic
+
+## case: Hazelwood High School v. Kuhlmeier
+year: 1988
+chief-justice:
+for-lit: hazelwood-high-school
+for-fig:
+against-lit: kuhlmeier
+against-fig: 
+con-elem: amendment-1, freedom-of-speech, freedom-of-press
+case-law: tinker-desmoines, bethel-fraser
+decision-principle: 3
+#### details:
+- facts:
+- issues-questions: Is a student newspaper a public forum? Did Principal Reynolds’ removal of portions of the Hazelwood East High School student newspaper violate students’ First Amendment rights?
+- decision: The Court concluded that the First Amendment allows school officials to exercise reasonable authority over the content of school-sponsored publications. The school newspaper in this case was not open to the contribution by everyone in the community but was instead published as part of a journalism class. Therefore, its primary function was for educational purposes, and the newspaper did not constitute a public forum.
+- impact: this decision still sets precedent for a lot of cases involving freedom of press in public schools. in 2007, the Supreme Court applied this decision to justify the punishment of a student who set up a banner that said "bong hits 4 jesus".
+
+## case: District of Columbia v. Heller
+year: 2008
+chief-justice:
+for-lit: heller
+for-fig:
+against-lit: district-of-columbia
+against-fig:
+con-elem: amendment-2, right-to-bear-arms
+decision-principle: 1
+#### details:
+- facts:
+1. Heller was a citizen of D.C. when there was very strict state handgun restrictions, bans, and storing requirements. One could have a handgun but it had to be kept unloaded, disassembled, or bound with a trigger lock.
+2. Heller was a police officer that could carry a handgun while working but when he applied to be able to keep a handgun of his own at home as a citizen, he was denied.
+3. Heller sued D.C. arguing the laws violated his Second Amendment right to keep a functional firearm in his home without a license
+- issues-questions: Do the parts of the District of Columbia law that limit the licensing of handguns and require licensed firearms to be kept nonfunctional in the home violate the Second Amendment?
+- decision: The court ruled that the handgun laws in D.C. did violate the right to bear arms in the 2nd amendment of the constitution. The court said the purpose of the Amendment should be read to “guarantee an individual right to possess and carry weapons in case of confrontation.” By banning handguns and prohibiting firearms from being kept functional in the home, which is the area traditionally in need of protection, violates the Second Amendment.
+- impact:
+
+## case: Engel v. Vitale
+year: 1962
+chief-justice:
+for-lit:
+for-fig:
+against-lit:
+against-fig:
+con-elem: amendment-1, establishment-clause, free-exercise-clause
+case-law:
+decision-principle: 1
+#### details:
+- facts:
+1. the new york school system began each day with a nondenominational prayer stating reliance upon god
+2. students were not requred to say the prayer
+3. steven engel, a non-religious person sued the local school board which required all public schools in its district to recite this prayer
+4. steven engel and 2 other families sueing along with him argued that the recitation of this prayer in public schools was a violation of the free establishment clause in the first amendment of the constitution
+- issues-questions: Does the recitation of a government-composed prayer in public schools violate the Establishment Clause of the First Amendment?
+- decision: “Its first and most immediate purpose rested on the belief that a union of government and religion tends to destroy government and to degrade religion. The history of governmentally established religion, both in England and in this country, showed that whenever government had allied itself with one particular form of religion, the inevitable result had been that it had incurred the hatred, disrespect and even contempt of those who held contrary beliefs. That same history showed that many people had lost their respect for any religion that had relied upon the support of government to spread its faith.”
+- impact: Before Engel v. Vitale was decided, it was common for schools to start the day with a non- denominational prayer. The Court’s decision in this case ended that practice in public schools. Later cases expanded the precedent set in Engel to other circumstances, prohibiting organized prayer at school events like football games and graduation ceremonies.
+
+## case: Gibbons v. Ogden
+year: 1824
+chief-justice:
+for-lit:
+for-fig:
+against-lit:
+against-fig:
+con-elem: article-1, commerce-clause, article-6, supremacy-clause,
+case-law: mcculloch-maryland, marbury-madison
+decision-principle: 2
+#### details:
+- facts:
+1. In 1808, the government of New York granted a steamboat company a monopoly to operate its boats on the state’s waters, which included bodies of water that stretched between states
+2. Aaron Ogden held a license under this monopoly to operate steamboats between New Jersey and New York.
+3. Thomas Gibbons, another steamboat operator, competed with Aaron Ogden on this same route but held a federal coasting license issued by an act of Congress
+4. Ogden filed a complaint in New York court to stop Gibbons from operating his boats, claiming that the monopoly granted by New York was legal even though he operated on shared, interstate waters
+5. Gibbons disagreed arguing that the U.S. Constitution gave Congress the sole power over interstate commerce
+- issues-questions: Does the Commerce Clause of the U.S. Constitution give Congress the power to regulate interstate navigation and to override any state laws that interfere with the interstate flow of persons and goods?
+- decision: the court interpreted the meaning of the Commerce Clause to give Congress broad power over commercial activity and reduced that of the states. He stated that interstate commerce includes trade and transportation on roads and waterways between states. The New York law was unconstitutional because it interfered with a right created by the federal law. Under the Supremacy Clause and the decision in Marbury v. Madison, the federal law trumps the state law when they are in conflict
+- impact: The decision in Gibbons v. Ogden was crucial in establishing the broad power that Congress has under the Constitution’s Commerce Clause. The Court adopted a broad meaning of the power to “regulate” commerce as allowing Congress to make the “rules” for conducting interstate commerce. This decision also limited state powers and ensured the supremacy of federal law.
+
+## case: New Jersey v. T.L.O
+year: 1985
+chief-justice:
+for-lit:
+for-fig:
+against-lit:
+against-fig:
+con-elem: amendment-4, exclusionary-rule
+case-law: weeks-unitedstates, mapp-ohio, tinker-desmoines, goss-lopez
+decision-principle: 3
+#### details:
+- facts:
+1. T.L.O. (initials used for minor) was a student that was suspected of smoking in a school bathroom.
+2. When the principal asked to search her bag, she asked to see a search warrant
+3. the pincipal searched the bag anyways without her consent and found weed and cigarettes.
+- issues-questions: Is it constitutional under the Fourth Amendment for a school official to search a student if there is a reasonable belief that a student is committing a crime or breaking a school rule?
+- decision: In a 6-3 decision, the Supreme Court decided that the school’s search of T.L.O. was not unreasonable and was, therefore, constitutional under the Fourth Amendment. the court explained that the Fourth Amendment’s prohibition on unreasonable searches and seizures does apply to searches of students conducted by school officials. Students in schools do have a right to privacy, but this right is lower than the rights of individuals outside of schools. At the same time, school officials have a significant interest in addressing disciplinary problems quickly. This helps ensure the school environment is conducive to learning and students are safe during the school day. After she was caught smoking in the bathroom, it was reasonable for him to think there might be cigarettes in her purse. During his initial search, Choplick found rolling papers, which are commonly associated with marijuana use. This provided reasonable suspicion that there might be other evidence linked to drug use in her purse. Because the search was constitutional, the evidence seized during the search and her confession should not be suppressed.
+- impact: New Jersey v. T.L.O. is an important case because it affects every public-school student across the country. The test the Supreme Court laid out in this case still applies whenever a school official wants to search a student suspected of breaking a rule or committing a crime. The T.L.O. decision was also used as precedent in later decisions allowing drug testing of students to ensure a safe school environment. Courts continue to balance a student’s right to privacy with the school’s interest in maintaining a safe, effective learning environment.
+
+## case: Tinker v. Des Moines
+year: 1969
+chief-justice:
+for-lit:
+for-fig:
+against-lit:
+against-fig:
+con-elem: amendment-1, freedom-of-speech, symbolic-speech, amendment-14, due-process-clause-a
+case-law: westvirginiaboardedu-barnette
+decision-principle: 1
+#### details:
+- facts:
+1. Students planned to wear black armbands to school to protest the war in Vietnam
+2. The school found out about the students' plan and announced a rule that would punish any students wearing a black armband or refusing to take it off with suspension.
+3. when the students wore the armbands to school for the protest they were suspended
+- issues-questions: Does a prohibition against the wearing of armbands in public school as a form of symbolic speech violate the students’ freedom of speech protections guaranteed by the First Amendment?
+- decision: The court decided that the students had the right to wear the armbands. In the opinion of the court, they wrote that "no one expects students to shed their constitutional rights to speech or freedom of expression at the school house gate"
+- impact: Tinker v. Des Moines is still an important decision about free speech rights in schools. Recently, the “Tinker test” has been used in cases holding that students were allowed to wear cancer awareness bracelets and that schools could prohibit students from displaying the Confederate flag. Although the decision in Tinker v. Des Moines expanded free speech rights for students in schools, other Supreme Court decisions, such as Bethel School District v. Fraser, Hazelwood School District v. Kuhlmeier, and Morse v. Frederick have limited Tinker’s application and have given school officials more discretion in punishing student speech.
+
+## case: Texas v. Johnson
+year: 1989
+chief-justice:
+for-lit:
+for-fig:
+against-lit:
+against-fig:
+con-elem: amendment-1, freedom-of-speech, symbolic-speech
+state-law: texas-penal-code, texas-desecration-flag-law
+decision-principle: 1
+#### details:
+- facts:
+1. In a political demonstration during the Republican National Convention in Texas, Gregory Lee Johnson doused an American flag with kerosene and set it on fire. He was part of a group protesting the policies of the Reagan Administration and of certain corporations based in Dallas
+2. No one was hurt or threatened with injury, but some witnesses said they were seriously offended. Johnson was charged and convicted with the desecration of a venerated object, in violation of the Texas Penal Code.
+- issues-questions: Does a law banning the burning of the American flag violate the First Amendment?
+- decision: the Supreme Court overturned Johnson’s conviction and struck down Texas’s law as unconstitutional. Writing for the majority of the Court, Justice Brennan held that Johnson’s act of burning the American flag was protected by the First Amendment. Burning the flag is considered expressive conduct because Johnson intended for his actions to communicate an idea, and his audience understood that he was trying to communicate an idea through his actions. The majority explained that the freedom of speech protects ideas and actions that society might find offensive. Justice Brennan stated that “the government may not prohibit the expression of an idea simply because society finds the idea itself offensive or disagreeable.
+- impact: The Supreme Court’s decision in Texas v. Johnson effectively struck down flag-burning bans that were in place in 48 states, including Texas. In response to this case, Congress passed the Flag Protection Act in 1989, which was a federal law banning the desecration of the flag. Once again, Johnson decided to protest this law. He joined Shawn Eichman, David Blalock, and Scott Tyler in burning a flag on the steps of the U.S. Capitol. They were all arrested, but the government decided not to prosecute Johnson, stating that there was not enough evidence to charge him with violating the federal law. However, Eichman, Blalock, and Tyler were charged and convicted of violating the Flag Protection Act. Their cases were combined into one case, United States v. Eichman (1990), that was also heard in the Supreme Court. The same justices who overturned the Texas law in Texas v. Johnson once again made up the majority to strike down the Flag Protection Act as unconstitutional.
+
+## case: Schenk v. United States
+year: 1919
+chief-justice:
+for-lit:
+for-fig:
+against-lit:
+against-fig:
+con-elem: 1st-amendment, freedom-of-speech
+federal-law: espionage-act 
+decision-principle: 3
+#### details:
+- facts:
+1. During World War I, the United States instituted a military draft to build the military force it needed to succeed in the war. In 1917, the United States passed the Espionage Act making it a “...crime to cause insubordination, disloyalty, mutiny, refusal of duty, in the military” or to obstruct military recruiting.
+2. Soon after the United States entered the war, Charles T. Schenck, a prominent member of the Socialist Party was arrested for mailing out 15,000 flyers encouraging draft-age men to sign petitions and actively engage against the military draft by raising their voices to Congress and the president.
+3. Schenck believed he was exercising his right to free speech by encouraging people to use their right to petition the government. In 1917 he was convicted of violating the Espionage Act and sentenced to 10 years in prison. then the case was heard by the Supreme Court in 1919
+- issues-questions: Did Schenck’s conviction under the Espionage Act for criticizing the draft violate his First Amendment free speech rights?
+- decision: “the character of every act depends upon the circumstances in which it is done.” In the context of the U.S. effort to mobilize for entry into World War I, the Espionage Act’s criminalization of speech that caused or attempted to cause a disruption of the operation of the military was not a violation of the First Amendment. According to Holmes, “when a nation is at war, many things that might be said in time of peace are such a hindrance to its effort that their utterance will not be endured so long as men fight and that no Court could regard them as protected by any constitutional right.”
+- impact: Schenck fashioned a new and important rule. It allowed Congress to authorize the punishment of speech based on both its content and viewpoint. The “clear and present danger” test provided the framework for future cases brought against independent and spirited speakers under both the Espionage Act and similar state laws. Under the “clear and present danger” test, the government typically won, and the speakers almost always lost. In later cases Justice Holmes argued that the best way to counteract “bad” speech was through more and better speech. He called this the “marketplace of ideas” rationale for freedom of speech, explaining that free debate was essential to a democratic society. The Court moved away from the “clear and present danger” test in a 1969 case called Brandenburg v. Ohio, which involved a Ku Klux Klan member who gave a speech that was derogatory towards African Americans and Jewish people while burning a cross in an open field. In particular, Brandenburg v. Ohio fashioned the rule that now governs any action against a speaker for their speech, requiring that the statements in question be 1) “directed at inciting or producing imminent lawless action” and 2) “likely to incite or produce such action.” This and later rulings were more protective of free speech rights than the “clear and present danger” test established in Schenck.

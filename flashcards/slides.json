@@ -1,0 +1,1274 @@
+{
+  "slides": [
+    {
+      "title": "intro to civil war",
+      "id": "1intro-to-civil-war",
+      "flashcards": [
+        {
+          "front": "secession",
+          "back": "The formal withdrawal of a state from the Union.",
+          "mode": [
+            "recall"
+          ],
+          "level": 1,
+          "subject": [
+            "vocab/term"
+          ],
+          "year": "",
+          "tags": [
+            "civil war",
+            "politics",
+            "states' rights"
+          ],
+          "slides": []
+        },
+        {
+          "front": "doctrine of states' rights",
+          "back": "A belief that the rights of individual states take precedence over the rights of the federal government.",
+          "mode": [
+            "recall"
+          ],
+          "level": 1,
+          "subject": [
+            "vocab/term"
+          ],
+          "year": "",
+          "tags": [
+            "politics",
+            "states' rights",
+            "constitution"
+          ],
+          "slides": []
+        },
+        {
+          "front": "nullification",
+          "back": "The idea that a state can void or cancel a federal law that it deems unconstitutional.",
+          "mode": [
+            "recall"
+          ],
+          "level": 1,
+          "subject": [
+            "vocab/term"
+          ],
+          "year": "",
+          "tags": [
+            "politics",
+            "states' rights",
+            "nullification crisis",
+            "constitution"
+          ],
+          "slides": []
+        },
+        {
+          "front": "popular sovereignty",
+          "back": "The concept that the residents of a territory should have the right to decide whether or not to allow slavery within their borders.",
+          "mode": [
+            "recall"
+          ],
+          "level": 1,
+          "subject": [
+            "vocab/term",
+            "concept"
+          ],
+          "year": "",
+          "tags": [
+            "politics",
+            "kansas-nebraska act",
+            "slavery"
+          ],
+          "slides": []
+        },
+        {
+          "front": "Who was William Lloyd Garrison?",
+          "back": "A prominent American abolitionist, journalist, and social reformer. He was a founder of the American Anti-Slavery Society and editor of the abolitionist newspaper The Liberator.",
+          "mode": [
+            "recall",
+            "questions"
+          ],
+          "level": 1,
+          "subject": [
+            "person",
+            "vocab/term"
+          ],
+          "year": "",
+          "tags": [
+            "abolitionist",
+            "slavery"
+          ],
+          "slides": []
+        },
+        {
+          "front": "Who was Frederick Douglass?",
+          "back": "An African American social reformer, abolitionist, orator, writer, and statesman who escaped from slavery and became a national leader of the abolitionist movement.",
+          "mode": [
+            "recall",
+            "questions"
+          ],
+          "level": 1,
+          "subject": [
+            "person",
+            "vocab/term"
+          ],
+          "year": "",
+          "tags": [
+            "abolitionist",
+            "slavery"
+          ],
+          "slides": []
+        },
+        {
+          "front": "Who was John C. Calhoun?",
+          "back": "A South Carolina politician and Vice President who was a leading advocate of states' rights and nullification during the Nullification Crisis.",
+          "mode": [
+            "recall",
+            "questions"
+          ],
+          "level": 1,
+          "subject": [
+            "person",
+            "vocab/term"
+          ],
+          "year": "",
+          "tags": [
+            "politics",
+            "nullification",
+            "states' rights"
+          ],
+          "slides": []
+        }
+      ]
+    },
+    {
+      "title": "economic differences between north and south",
+      "id": "2economic-differences-cw",
+      "flashcards": [
+        {
+          "front": "How did the North and South differ economically before the Civil War?",
+          "back": "The North was industrializing and using railroads for transportation while the South was still rural and using rivers for transport. The South was also dependent on slave labor while the North had started becoming dependent on wage labor (workers getting paid money for their work/labor). The North was profiting from exporting manufactured goods and the South was profiting from an agricultural good - cotton.",
+          "mode": [
+            "questions",
+            "dig deep"
+          ],
+          "level": 3,
+          "subject": [
+            "concept"
+          ],
+          "year": null,
+          "tags": [
+            "sectional crisis",
+            "north and south divisions",
+            "economics",
+            "economic differences"
+          ],
+          "slides": [
+            "2economic-differences-cw.png"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "political differences between north and south",
+      "id": "3political-differences-cw",
+      "flashcards": [
+        {
+          "front": "How did the North and South differ when it came to enacting protective tarrifs?",
+          "back": "North favored the tariffs to protect their industry from foregien competition. the South opposed because a protective tariff would make the good Southerners regularly had to buy more expensive.",
+          "mode": [
+            "questions",
+            "dig deep"
+          ],
+          "level": 2,
+          "subject": [
+            "concept"
+          ],
+          "year": null,
+          "tags": [
+            "sectional crisis",
+            "north and south divisions",
+            "politics",
+            "political differences"
+          ],
+          "slides": [
+            "3political-differences-cw.png"
+          ]
+        },
+        {
+          "front": "Why did the South object to high protective tariffs before the Civil War?",
+          "back": "They were opposed to tariffs because the taxes on imported goods made manufactured products more expensive for Southern consumers, while primarily benefiting Northern industries.",
+          "mode": [
+            "recall",
+            "questions"
+          ],
+          "level": 2,
+          "subject": [
+            "concept"
+          ],
+          "year": 1832,
+          "tags": [
+            "economics",
+            "tariffs",
+            "nullification crisis",
+            "north and south divisions",
+            "sectional crisis",
+            "politics"
+          ],
+          "slides": [
+            "3political-differences-cw.png"
+          ]
+        },
+        {
+          "front": "How did the North and South differ when it came to creating a national bank?",
+          "back": "North favored and demanded a national bank - thinking that it would help solidify currency and credit. South opposed because they didn't want most of the nations money to be in the hands of a few wealthy people.",
+          "mode": [
+            "questions",
+            "dig deep"
+          ],
+          "level": 2,
+          "subject": [
+            "concept"
+          ],
+          "year": null,
+          "tags": [
+            "sectional crisis",
+            "north and south divisions",
+            "politics",
+            "political differences"
+          ],
+          "slides": [
+            "3political-differences-cw.png"
+          ]
+        },
+        {
+          "front": "How did the North and South differ when it came to internal improvements?",
+          "back": "North faovored. They wanted the federal government to fund the building of railroads to expand further west. The South opposed because they didn't want to pay (in the form of taxes) for things that didn't directly benefit or help southerners.",
+          "mode": [
+            "questions",
+            "dig deep"
+          ],
+          "level": 2,
+          "subject": [
+            "concept"
+          ],
+          "year": null,
+          "tags": [
+            "sectional crisis",
+            "north and south divisions",
+            "politics",
+            "political differences"
+          ],
+          "slides": [
+            "3political-differences-cw.png"
+          ]
+        },
+        {
+          "front": "How did the North and South differ when it came to making western land cheaper and easier to get?",
+          "back": "The South and most western areas favored the cheapening of western land because the south wanted to expand plantation slavery (which required a lot of land) into new territories. Areas in the west favored the cheapening of the land to increase settlements in the west. The North opposed this because it would mean a lot of people permanently moving west and potentially leaving the new factories understaffed",
+          "mode": [
+            "questions",
+            "dig deep"
+          ],
+          "level": 2,
+          "subject": [
+            "concept"
+          ],
+          "year": null,
+          "tags": [
+            "sectional crisis",
+            "north and south divisions",
+            "politics",
+            "political differences"
+          ],
+          "slides": [
+            "3political-differences-cw.png"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "nature of union - differences between north and south",
+      "id": "4nature-of-union-differences-cw",
+      "flashcards": [
+        {
+          "front": "How did the North and South differ when it came to the nature of the union?",
+          "back": "North felt the federal government had slightly more power over the states and the South felt that the individual state governments had slightly more power to decide for themselves how to operate. Both sides felt they had constitutional evidence to support their claims as to who had the final say.",
+          "mode": [
+            "questions",
+            "dig deep"
+          ],
+          "level": 2,
+          "subject": [
+            "concept"
+          ],
+          "year": null,
+          "tags": [
+            "sectional crisis",
+            "north and south divisions",
+            "politics",
+            "political differences",
+            "states' rights"
+          ],
+          "slides": [
+            "4nature-of-union-differences-cw.png"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "slavery - differences between north and south",
+      "id": "5slavery-differences-cw",
+      "flashcards": [
+        {
+          "front": "How did the North and South differ when it came to slavery?",
+          "back": "Essentially, the North and South argued over the expansion of slavery (not necessarily the banning of slavery). The North opposed the expansion of slavery because it wanted to promote and support wage labor. The South felt the plantation slave system was working well for them economically so they wanted to see slavery allowed in future territories and states.",
+          "mode": [
+            "questions",
+            "dig deep"
+          ],
+          "level": 2,
+          "subject": [
+            "concept"
+          ],
+          "year": null,
+          "tags": [
+            "sectional crisis",
+            "north and south divisions",
+            "politics",
+            "political differences",
+            "slavery"
+          ],
+          "slides": [
+            "5slavery-differences-cw.png"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "wilmot provisio",
+      "id": "7wilmot-proviso-cw",
+      "flashcards": [
+        {
+          "front": "Wilmot Proviso",
+          "back": "A proposal in 1846 that would have banned slavery in any territory gained from the war with Mexico.",
+          "mode": [
+            "recall"
+          ],
+          "level": 1,
+          "subject": [
+            "law/legislation/policy",
+            "event"
+          ],
+          "year": 1846,
+          "tags": [
+            "slavery",
+            "politics",
+            "free-soil movement"
+          ],
+          "slides": [
+            "7wilmot-proviso-cw.png"
+          ]
+        },
+        {
+          "front": "free-soil movement",
+          "back": "A political movement that opposed the expansion of slavery into western territories.",
+          "mode": [
+            "recall"
+          ],
+          "level": 1,
+          "subject": [
+            "vocab/term",
+            "concept",
+            "protest/movement"
+          ],
+          "year": "",
+          "tags": [
+            "slavery",
+            "politics",
+            "sectional crisis"
+          ],
+          "slides": [
+            "7wilmot-proviso-cw.png"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "missouri compromise of 1820",
+      "id": "8-9missouri-compromise-cw",
+      "flashcards": [
+        {
+          "front": "Why did California's request to be admitted into the Union cause a problem?",
+          "back": "It caused a problem because the Missouri Compromise of 1820 set a line that determined whether or not slavery would be allowed in new territories and states and California was mostly south of that line. The South felt the law required it to allow slavery and opposed their admittance as a free state. The North favored and supported California being allowed into the Union as a free state.",
+          "mode": [
+            "questions",
+            "dig deep"
+          ],
+          "level": 2,
+          "subject": [
+            "concept"
+          ],
+          "year": 1850,
+          "tags": [
+            "missouri compromise",
+            "slavery",
+            "politics",
+            "california",
+            "north and south divisions",
+            "sectional crisis"
+          ],
+          "slides": [
+            "8missouri-compromise-cw.png",
+            "9missouri-compromise-cw.png"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "compromise of 1850",
+      "id": "10-11compromise-1850",
+      "flashcards": [
+        {
+          "front": "What were the main points in the Compromise of 1850?",
+          "back": "Territory gained by the U.S. in its conflict with Mexico would be given popular soveignty to decide on allowing slavery or not to please the north and stricter terms were put on the Fugitive Slave Act of 1793 to please the South",
+          "mode": [
+            "questions",
+            "dig deep"
+          ],
+          "level": 2,
+          "subject": [
+            "law/legislation/policy",
+            "event",
+            "document"
+          ],
+          "year": 1850,
+          "tags": [
+            "politics",
+            "slavery",
+            "sectional crisis",
+            "north and south divisions",
+            "compromise",
+            "civil war general cause"
+          ],
+          "slides": [
+            "10compromise-of-1850-cw.png",
+            "11compromise-of-1850-cw.png"
+          ]
+        },
+        {
+          "front": "Fugitive Slave Acts",
+          "back": "The south was satisfied with the compromise and the stricter Fugitive Slave Act terms because they had felt for a long time that the North was blatantly ignoring the Fugitive Slave Act by aiding escaped slaves in their journey to freedom. The stricter terms made it a federal crime to help a fugitive slave escape but it also gave incentives for people to turn fugitives into the authorities so the South felt the resistance to the law in the North would stop.",
+          "mode": [
+            "dig deep",
+            "questions"
+          ],
+          "level": 4,
+          "subject": [
+            "law/legislation/policy",
+            "concept",
+            "event"
+          ],
+          "year": 1850,
+          "tags": [
+            "slavery",
+            "compromise of 1850",
+            "law",
+            "north and south divisions",
+            "sectional crisis",
+            "civil war general cause"
+          ],
+          "slides": [
+            "10compromise-of-1850-cw.png",
+            "11compromise-of-1850-cw.png"
+          ]
+        },
+        {
+          "front": "How did the North respond to the new terms of the Fugitive Slave Act created in the Compromise of 1850?",
+          "back": "The stricter terms of the Fugitive Slave Act angered the Northerers. Resistance to the law grew in the North. Many northerners began joining volunteer groups to help enslaved people escape to freedom and some northern states passed personal liberty laws.",
+          "mode": [
+            "recall"
+          ],
+          "level": 3,
+          "subject": [
+            "law/legislation/policy",
+            "concept",
+            "event"
+          ],
+          "year": "",
+          "tags": [
+            "slavery",
+            "compromise of 1850",
+            "law",
+            "north and south divisions",
+            "sectional crisis",
+            "civil war general cause"
+          ],
+          "slides": [
+            "10compromise-of-1850-cw.png",
+            "11compromise-of-1850-cw.png"
+          ]
+        },
+        {
+          "front": "personal liberty laws",
+          "back": "Laws passed by several northern states in response to the Fugitive Slave Act to protect free African Americans and escaped slaves.",
+          "mode": [
+            "recall"
+          ],
+          "level": 1,
+          "subject": [
+            "law/legislation/policy",
+            "concept",
+            "event",
+            "vocab/term"
+          ],
+          "year": "",
+          "tags": [
+            "slavery",
+            "compromise of 1850",
+            "law",
+            "north and south divisions",
+            "sectional crisis",
+            "civil war general cause"
+          ],
+          "slides": [
+            "10compromise-of-1850-cw.png",
+            "11compromise-of-1850-cw.png"
+          ]
+        },
+        {
+          "front": "What were the elements of the Compromise of 1850?",
+          "back": "The Compromise admitted California as a free state, abolished the slave trade (but not slavery itself) in Washington D.C., and established a more strict Fugitive Slave Act.",
+          "mode": [
+            "questions",
+            "dig deep"
+          ],
+          "level": 2,
+          "subject": [
+            "concept"
+          ],
+          "year": 1850,
+          "tags": [
+            "compromise of 1850",
+            "slavery",
+            "politics",
+            "north and south divisions",
+            "sectional crisis",
+            "civil war general cause"
+          ],
+          "slides": [
+            "10compromise-of-1850-cw.png",
+            "11compromise-of-1850-cw.png"
+          ]
+        },
+        {
+          "front": "How did the Compromise of 1850 contribute to the sectional crisis?",
+          "back": "While it temporarily eased tensions, it also introduced the strict Fugitive Slave Act, which outraged Northerners and strengthened the abolitionist movement, ultimately deepening the divide between North and South.",
+          "mode": [
+            "questions",
+            "dig deep"
+          ],
+          "level": 3,
+          "subject": [
+            "concept"
+          ],
+          "year": 1850,
+          "tags": [
+            "compromise of 1850",
+            "slavery",
+            "north and south divisions",
+            "sectional crisis",
+            "civil war general cause"
+          ],
+          "slides": [
+            "10compromise-of-1850-cw.png",
+            "11compromise-of-1850-cw.png"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "underground railroad",
+      "id": "12-13underground-railroad-cw",
+      "flashcards": [
+        {
+          "front": "Who wrote Uncle Tom's Cabin?",
+          "back": "Harriet Beecher Stowe",
+          "mode": [
+            "questions",
+            "recall"
+          ],
+          "level": 1,
+          "subject": [
+            "cultural artifact",
+            "person"
+          ],
+          "year": 1852,
+          "tags": [
+            "slavery",
+            "sectional crisis",
+            "civil war specific cause",
+            "underground-railroad"
+          ],
+          "slides": [
+            "12underground-railroad-cw.png",
+            "13underground-railroad-cw.png"
+          ]
+        },
+        {
+          "front": "Underground Railroad",
+          "back": "A network of secret routes and safe houses used by slaves to escape to free states or Canada with the aid of abolitionists and allies.",
+          "mode": [
+            "recall"
+          ],
+          "level": 1,
+          "subject": [
+            "concept",
+            "event",
+            "vocab/term"
+          ],
+          "year": "",
+          "tags": [
+            "slavery",
+            "abolitionist",
+            "harriet tubman",
+            "underground-railroad"
+          ],
+          "slides": [
+            "12underground-railroad-cw.png",
+            "13underground-railroad-cw.png"
+          ]
+        },
+        {
+          "front": "Who was Harriet Beecher Stowe?",
+          "back": "The author of the influential anti-slavery novel Uncle Tom's Cabin.",
+          "mode": [
+            "recall",
+            "questions"
+          ],
+          "level": 1,
+          "subject": [
+            "person",
+            "vocab/term"
+          ],
+          "year": "",
+          "tags": [
+            "abolitionist",
+            "literature",
+            "north and south divisions",
+            "civil war specific cause"
+          ],
+          "slides": [
+            "12underground-railroad-cw.png",
+            "13underground-railroad-cw.png"
+          ]
+        },
+        {
+          "front": "Who was Harriet Tubman?",
+          "back": "An American abolitionist and political activist who escaped slavery and subsequently made about 13 missions to rescue approximately 70 enslaved people, using the network of antislavery activists and safe houses known as the Underground Railroad.",
+          "mode": [
+            "recall",
+            "questions"
+          ],
+          "level": 1,
+          "subject": [
+            "person",
+            "vocab/term"
+          ],
+          "year": "",
+          "tags": [
+            "slavery",
+            "abolitionist",
+            "underground railroad"
+          ],
+          "slides": [
+            "12underground-railroad-cw.png",
+            "13underground-railroad-cw.png"
+          ]
+        },
+        {
+          "front": "How did the Uncle Tom's Cabin influence the abolition movement?",
+          "back": "The novel's vivid portrayal of the brutal realities of slavery awakened sympathy for slaves in the North and helped to fuel the abolitionist movement, widely contributing to the growing anti-slavery sentiment.",
+          "mode": [
+            "questions",
+            "dig deep"
+          ],
+          "level": 3,
+          "subject": [
+            "concept",
+            "cultural artifact"
+          ],
+          "year": 1852,
+          "tags": [
+            "uncle tom's cabin",
+            "abolitionist",
+            "slavery",
+            "literature",
+            "politics",
+            "civil war specific cause"
+          ],
+          "slides": [
+            "12underground-railroad-cw.png",
+            "13underground-railroad-cw.png"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "kansas-nebraska act",
+      "id": "14-15kansas-nebraska-act",
+      "flashcards": [
+        {
+          "front": "What was the Kansas-Nebraska Act?",
+          "back": "It split the territory of Nebraska into 2 separate territories, Kansas and Nebraska and gave both of them popular soveignty to decide whether or not to allow slavery.",
+          "mode": [
+            "recall"
+          ],
+          "level": 2,
+          "subject": [
+            "event",
+            "time period",
+            "vocab/term"
+          ],
+          "year": 1854,
+          "tags": [
+            "slavery",
+            "politics",
+            "sectional crisis",
+            "kansas-nebraska act",
+            "civil war general cause"
+          ],
+          "slides": [
+            "14kansas-nebraska-act-cw.png",
+            "15bleeding-kansas-cw.png"
+          ]
+        },
+        {
+          "front": "Bleeding Kansas",
+          "back": "A period of violent clashes between pro-slavery and anti-slavery settlers in the Kansas Territory following the Kansas-Nebraska Act.",
+          "mode": [
+            "recall"
+          ],
+          "level": 1,
+          "subject": [
+            "event",
+            "time period",
+            "vocab/term"
+          ],
+          "year": "1854-1859",
+          "tags": [
+            "slavery",
+            "politics",
+            "sectional crisis",
+            "kansas-nebraska act",
+            "civil war specific cause"
+          ],
+          "slides": [
+            "14kansas-nebraska-act-cw.png",
+            "15bleeding-kansas-cw.png"
+          ]
+        },
+        {
+          "front": "Who proposed the Kansas-Nebraska Act?",
+          "back": "Stephen A. Douglas",
+          "mode": [
+            "recall",
+            "questions"
+          ],
+          "level": 2,
+          "subject": [
+            "person",
+            "vocab/term",
+            "law/legislation/policy",
+            "event"
+          ],
+          "year": 1854,
+          "tags": [
+            "politics",
+            "popular sovereignty",
+            "lincoln-douglas debates",
+            "kansas-nebraska act"
+          ],
+          "slides": [
+            "14kansas-nebraska-act-cw.png",
+            "15bleeding-kansas-cw.png"
+          ]
+        },
+        {
+          "front": "Who was John Brown?",
+          "back": "A radical abolitionist who believed in using violence to end slavery. He led a failed raid on the federal arsenal at Harper's Ferry, Virginia, hoping to start a slave rebellion.",
+          "mode": [
+            "recall",
+            "questions"
+          ],
+          "level": 1,
+          "subject": [
+            "person",
+            "vocab/term"
+          ],
+          "year": "",
+          "tags": [
+            "slavery",
+            "abolitionist",
+            "bleeding kansas",
+            "kansas-nebraska act"
+          ],
+          "slides": [
+            "14kansas-nebraska-act-cw.png",
+            "15bleeding-kansas-cw.png"
+          ]
+        },
+        {
+          "front": "What was a direct result of the passage of the Kansas-Nebraska Act?",
+          "back": "The act led to a period of violence and civil unrest known as \"Bleeding Kansas\" as pro-slavery and anti-slavery settlers rushed into the territory to influence the vote. Shortly after the act is passed, the Republican Party forms and becomes very dominant so another direct result is the formation of a new political party, the Republican party.",
+          "mode": [
+            "questions",
+            "dig deep"
+          ],
+          "level": 3,
+          "subject": [
+            "concept",
+            "law/legislation/policy"
+          ],
+          "year": 1854,
+          "tags": [
+            "kansas-nebraska act",
+            "slavery",
+            "popular sovereignty",
+            "bleeding kansas",
+            "politics"
+          ],
+          "slides": [
+            "14kansas-nebraska-act-cw.png",
+            "15bleeding-kansas-cw.png"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "new political parties emerge",
+      "id": "16-17new-political-parties-cw",
+      "flashcards": [
+        {
+          "front": "Whig Party",
+          "back": "One of the dominant parties, along with the democratic party, before the civil war. They were pro-business but divided on the issue of slavery.",
+          "mode": [
+            "recall"
+          ],
+          "level": 1,
+          "subject": [
+            "group",
+            "concept",
+            "vocab/term"
+          ],
+          "year": "",
+          "tags": [
+            "politics",
+            "north and south division",
+            "sectional crisis",
+            "political party"
+          ],
+          "slides": [
+            "16new-political-parties-cw.png",
+            "17new-political-parties-cw.png"
+          ]
+        },
+        {
+          "front": "Democratic Party",
+          "back": "One of the dominant parties before the civil war, along with the Whig party. Pro states rights and limited federal government. Divided on the issue of slavery",
+          "mode": [
+            "recall"
+          ],
+          "level": 1,
+          "subject": [
+            "group",
+            "concept",
+            "vocab/term"
+          ],
+          "year": "",
+          "tags": [
+            "politics",
+            "north and south division",
+            "sectional crisis",
+            "political party"
+          ],
+          "slides": [
+            "16new-political-parties-cw.png",
+            "17new-political-parties-cw.png"
+          ]
+        },
+        {
+          "front": "American Party / Know-Nothing Party",
+          "back": "this party attracted nativists because it prioritized american born citizens and was against catering towards or promoting immigration. This party was also divided on the issue of slavery",
+          "mode": [
+            "recall"
+          ],
+          "level": 1,
+          "subject": [
+            "group",
+            "concept",
+            "vocab/term"
+          ],
+          "year": "",
+          "tags": [
+            "politics",
+            "north and south division",
+            "sectional crisis",
+            "political party"
+          ],
+          "slides": [
+            "16new-political-parties-cw.png",
+            "17new-political-parties-cw.png"
+          ]
+        },
+        {
+          "front": "nativism",
+          "back": "The policy of protecting the interests of native-born citizens against those of immigrants.",
+          "mode": [
+            "recall"
+          ],
+          "level": 1,
+          "subject": [
+            "concept",
+            "vocab/term"
+          ],
+          "year": "",
+          "tags": [
+            "know-nothing party",
+            "politics"
+          ],
+          "slides": [
+            "16new-political-parties-cw.png",
+            "17new-political-parties-cw.png"
+          ]
+        },
+        {
+          "front": "Free Soil Party",
+          "back": "Free Soil party objected to slavery’s impact on free white workers in the wage-based labor force,",
+          "mode": [
+            "recall"
+          ],
+          "level": 1,
+          "subject": [
+            "group",
+            "concept",
+            "vocab/term"
+          ],
+          "year": "",
+          "tags": [
+            "politics",
+            "north and south division",
+            "sectional crisis",
+            "political party"
+          ],
+          "slides": [
+            "16new-political-parties-cw.png",
+            "17new-political-parties-cw.png"
+          ]
+        },
+        {
+          "front": "Republican Party",
+          "back": "When this party formed it essentially attracted the anti-slavery members of the other parties that struggled to unite on the issue of slavery. The Republican party united on the opposition of the Kansas-Nebraska Act and opposition of slavery expanding into new territories.",
+          "mode": [
+            "recall"
+          ],
+          "level": 1,
+          "subject": [
+            "group",
+            "concept",
+            "vocab/term"
+          ],
+          "year": "",
+          "tags": [
+            "politics",
+            "north and south division",
+            "sectional crisis",
+            "political party"
+          ],
+          "slides": [
+            "16new-political-parties-cw.png",
+            "17new-political-parties-cw.png"
+          ]
+        },
+        {
+          "front": "Who was Horace Greeley?",
+          "back": "One of the core founders of the Republican Party in 1854",
+          "mode": [
+            "recall",
+            "questions"
+          ],
+          "level": "",
+          "subject": [
+            "person",
+            "vocab/term"
+          ],
+          "year": 1854,
+          "tags": [
+            "politics",
+            "north and south division",
+            "sectional crisis",
+            "political party"
+          ],
+          "slides": [
+            "16new-political-parties-cw.png",
+            "17new-political-parties-cw.png"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Dred Scott - Supreme Court Case",
+      "id": "18dred-scott-cw",
+      "flashcards": [
+        {
+          "front": "Who was Dred Scott?",
+          "back": "An enslaved African American man who unsuccessfully sued for his freedom in the Supreme Court. The resulting decision had a major impact on the sectional crisis.",
+          "mode": [
+            "recall",
+            "questions"
+          ],
+          "level": 1,
+          "subject": [
+            "person",
+            "vocab/term"
+          ],
+          "year": "",
+          "tags": [
+            "slavery",
+            "supreme court",
+            "law",
+            "dred scott case"
+          ],
+          "slides": [
+            "18dred-scott-cw.png"
+          ]
+        },
+        {
+          "front": "In 1857, what act of Congress was declared unconstitutional by the United States Supreme Court in the Dred Scott decision?",
+          "back": "The Missouri Compromise of 1820. The Court ruled that Congress had no power to prohibit slavery in the territories.",
+          "mode": [
+            "questions",
+            "dig deep"
+          ],
+          "level": 2,
+          "subject": [
+            "concept",
+            "law/legislation/policy",
+            "event"
+          ],
+          "year": 1857,
+          "tags": [
+            "compromise",
+            "slavery",
+            "supreme court case",
+            "sectional crisis",
+            "civil war specific cause",
+            "politics"
+          ],
+          "slides": [
+            "18dred-scott-cw.png"
+          ]
+        },
+        {
+          "front": "What is the significance of the Supreme Court's ruling in the Dred Scott case?",
+          "back": "The ruling declared that living in a free-state did not make a slave free, slaves were considered property under the Constitution, all African Americans, even if they were free, were not considered U.S. citizens, and most importantly; it ruled that the Missouri Compromise of 1820 was unconstitutional since slaves were considered property. By overturning the Missouri Compromise, the Supreme Court had cleared the way for the extension of slavery into new territories which the South happily cheered on.",
+          "mode": [
+            "4"
+          ],
+          "level": "",
+          "subject": [
+            "concept",
+            "law/legislation/policy",
+            "event"
+          ],
+          "year": 1857,
+          "tags": [
+            "missouri compromise",
+            "slavery",
+            "supreme court case",
+            "sectional crisis",
+            "civil war specific cause",
+            "politics"
+          ],
+          "slides": [
+            "18dred-scott-cw.png"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Lincoln-Douglas debates and Freeport Doctrine",
+      "id": "19lincoln-douglas-debates-cw",
+      "flashcards": [
+        {
+          "front": "How did Lincoln and Douglas differ in their views on slavery?",
+          "back": "Douglas supported popular sovereignty, believing local settlers should decide on slavery. Lincoln, while not advocating for immediate abolition, was strongly opposed to the expansion of slavery into new territories and argued that the nation could not endure half-slave and half-free.",
+          "mode": [
+            "questions",
+            "dig deep"
+          ],
+          "level": 3,
+          "subject": [
+            "concept"
+          ],
+          "year": 1858,
+          "tags": [
+            "lincoln-douglas debates",
+            "politics",
+            "popular sovereignty",
+            "slavery"
+          ],
+          "slides": [
+            "19douglas-lincoln-debates-cw.png"
+          ]
+        },
+        {
+          "front": "What was a significant result of the Lincoln-Douglas debates?",
+          "back": "Although Stephen A. Douglas won the Senate seat, the debates brought Abraham Lincoln into the national political spotlight and solidified his reputation as a formidable opponent of the expansion of slavery.",
+          "mode": [
+            "questions",
+            "dig deep"
+          ],
+          "level": 4,
+          "subject": [
+            "concept"
+          ],
+          "year": 1858,
+          "tags": [
+            "lincoln-douglas debates",
+            "politics",
+            "slavery",
+            "sectional crisis"
+          ],
+          "slides": [
+            "19douglas-lincoln-debates-cw.png"
+          ]
+        },
+        {
+          "front": "What is the Freeport Doctrine and who is credited for it?",
+          "back": "Stephen A. Douglas proposed this during the Lincoln-Douglas debates. His proposal was for people living in the north to elect representatives that would not enforce slave property laws as a way of getting around the law changes made in the Dred Scott ruling",
+          "mode": [
+            "recall",
+            "questions",
+            "dig deep"
+          ],
+          "level": 2,
+          "subject": [
+            "law/legislation/policy",
+            "event",
+            "vocab/term"
+          ],
+          "year": 1858,
+          "tags": [
+            "lincoln-douglas debates",
+            "politics",
+            "slavery",
+            "sectional crisis",
+            "civil war specific cause"
+          ],
+          "slides": [
+            "19douglas-lincoln-debates-cw.png"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Election of 1860",
+      "id": "20election-1860-cw",
+      "flashcards": [
+        {
+          "front": "What was the primary reason for the opposition of the South to the election of Abraham Lincoln in 1860?",
+          "back": "Lincoln, as a Republican, ran on a platform of preventing the expansion of slavery into the new territories. The South saw this as a direct threat to the institution of slavery and their way of life.",
+          "mode": [
+            "questions",
+            "dig deep"
+          ],
+          "level": 2,
+          "subject": [
+            "concept"
+          ],
+          "year": 1860,
+          "tags": [
+            "election of 1860",
+            "politics",
+            "slavery",
+            "secession",
+            "civil war specific cause"
+          ],
+          "slides": [
+            "20election-of-1860-cw.png"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "big idea",
+      "id": "22big-idea-cw",
+      "flashcards": [
+        {
+          "front": "Compare and contrast the Nullification Crisis of 1832 with South Carolina's secession in 1860.",
+          "back": "Both were attempts by South Carolina to assert states' rights over federal authority. However, the Nullification Crisis was about a tariff and was resolved with a compromise, while the secession crisis was about slavery and led directly to the Civil War, with Lincoln refusing to compromise on the idea of an unbreakable Union.",
+          "mode": [
+            "questions",
+            "dig deep"
+          ],
+          "level": 4,
+          "subject": [
+            "concept"
+          ],
+          "year": "1832, 1860",
+          "tags": [
+            "states' rights",
+            "politics",
+            "nullification",
+            "secession"
+          ],
+          "slides": []
+        },
+        {
+          "front": "What were the long-term causes of the Civil War?",
+          "back": "The fundamental economic differences between the industrial North and agricultural South, which were further exacerbated by long-standing disputes over states' rights, protective tariffs, and the extension of slavery into new territories.",
+          "mode": [
+            "questions",
+            "dig deep"
+          ],
+          "level": 4,
+          "subject": [
+            "concept"
+          ],
+          "year": "",
+          "tags": [
+            "civil war",
+            "causes",
+            "politics",
+            "economics",
+            "sectional crisis"
+          ],
+          "slides": [
+            "22recap-cw.png"
+          ]
+        },
+        {
+          "front": "What were the immediate causes of the Civil War?",
+          "back": "The specific events that rapidly led to the outbreak of war include the election of Abraham Lincoln in 1860, South Carolina's secession, and the Confederate attack on Fort Sumter.",
+          "mode": [
+            "questions",
+            "dig deep"
+          ],
+          "level": 4,
+          "subject": [
+            "concept"
+          ],
+          "year": "",
+          "tags": [
+            "civil war",
+            "causes",
+            "election of 1860",
+            "secession",
+            "fort sumter"
+          ],
+          "slides": [
+            "22recap-cw.png"
+          ]
+        }
+      ]
+    }
+  ]
+}

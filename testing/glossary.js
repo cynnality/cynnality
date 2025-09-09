@@ -12,7 +12,7 @@ function buildGlossary(data) {
     const grouped = {};
     data.forEach(item => {
         const letter = item.letter.toUpperCase();
-        if (!grouped[letter]) grouped[letter] = [];
+        if (!grouped[letter]) grouped[letter] = []; 
         grouped[letter].push(item);
     });
 

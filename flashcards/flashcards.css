@@ -1,0 +1,342 @@
+#viewstyle-bar {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  margin: 16px 0 16px 0;
+}
+
+#slideFilter {
+  border: 3px solid #222;
+  background: #fff;
+  color: #222;
+  font-size: 1rem;
+  padding: 8px 12px;
+  margin: 8px 0;
+  border-radius: 0;
+  box-shadow: 2px 2px 0 #222;
+  outline: none;
+  font-weight: bold;
+}
+
+/* Help panel styles */
+#help-panel {
+  position: fixed;
+  top: 139px;
+  left: 1450px;
+  width: 295px;
+  height: 295px;
+  min-height: 120px;
+  background: #fff;
+  border: 3px solid #222;
+  box-shadow: 8px 8px 0 #222;
+  z-index: 1000;
+  resize: both;
+  overflow: auto;
+  border-radius: 0;
+  user-select: none;
+}
+.help-header {
+  font-size: 1.1rem;
+  font-weight: bold;
+  background: #222;
+  color: #fff;
+  padding: 8px;
+  cursor: move;
+  letter-spacing: 1px;
+}
+.help-buttons {
+  padding: 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.help-preferences {
+  margin-top: 24px;
+  padding: 0 12px 12px 12px;
+}
+
+.help-preferences {
+  font-size: 1.1rem;
+  font-weight: bold;
+  background: #222;
+  color: #fff;
+  padding: 8px;
+  margin-bottom: 10px;
+  letter-spacing: 1px;
+}
+
+.slider-group {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 16px;
+}
+
+.slider-label {
+  font-weight: bold;
+  color: #222;
+  background: #fff;
+  border: 2px solid #222;
+  box-shadow: 2px 2px 0 #222;
+  padding: 6px 12px;
+  border-radius: 0;
+}
+
+.neo-slider-btn {
+  background: #fff;
+  border: 3px solid #222;
+  color: #222;
+  font-weight: bold;
+  font-size: 1rem;
+  padding: 8px 24px;
+  box-shadow: 4px 4px 0 #222;
+  border-radius: 0;
+  cursor: pointer;
+  transition: background 0.2s;
+  min-width: 110px;
+}
+.neo-slider-btn.active {
+  background: #222;
+  color: #fff;
+}
+.neo-btn {
+  background: #fff;
+  border: 3px solid #222;
+  color: #222;
+  font-weight: bold;
+  font-size: 1rem;
+  padding: 10px 24px;
+  margin: 8px 0;
+  box-shadow: 4px 4px 0 #222;
+  border-radius: 0;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+.neo-btn:hover {
+  background: #f5f5f5;
+}
+.neo-btn.active {
+  background: #222;
+  color: #fff;
+  border: 3px solid #222;
+  box-shadow: 4px 4px 0 #222;
+}
+
+#nextCard {
+  display: block;
+  margin: 24px auto;
+  background: #fff;
+  border: 3px solid #222;
+  color: #222;
+  font-weight: bold;
+  font-size: 1rem;
+  padding: 10px 24px;
+  box-shadow: 4px 4px 0 #222;
+  border-radius: 0;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+#nextCard:hover {
+  background: #f5f5f5;
+}
+
+/****************side by side styles***********/
+#flashcard.sidebyside {
+  display: flex;
+  flex-direction: row;
+  width: 56em;
+  height: 25em;
+  border: 4px solid #222;
+  box-shadow: 8px 8px 0 #222;
+  background: #fff;
+  margin: 50px auto;
+  position: relative;
+}
+
+.sidebyside-container {
+  display: flex;
+  width: 100%;
+  height: 100%;
+}
+
+.side-front, .side-back {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.2rem;
+  padding: 24px;
+  border: 3px solid #222;
+  box-shadow: 4px 4px 0 #222;
+  background: #fff;
+  color: #222;
+  border-radius: 0;
+  min-width: 0;
+  min-height: 0;
+}
+.side-back {
+  background: #f5f5f5;
+}
+/****************end side by side styles***********/
+
+/* PNG slide container */
+#help-content {
+  margin: 30px auto 0 auto;
+  max-width: 600px;
+  text-align: center;
+}
+#help-content img {
+  max-width: 100%;
+  margin: 12px 0;
+  border: 2px solid #222;
+  box-shadow: 4px 4px 0 #222;
+  background: #fff;
+}
+
+
+
+input[type="text"], input[type="number"] {
+  border: 3px solid #222;
+  background: #fff;
+  color: #222;
+  font-size: 1rem;
+  padding: 8px 12px;
+  margin: 8px 0;
+  border-radius: 0;
+  box-shadow: 2px 2px 0 #222;
+  outline: none;
+}
+
+#flashcards-view-container {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 32px 0;
+  background: #fff;
+  border: 4px solid #222;
+  box-shadow: 8px 8px 0 #222;
+  border-radius: 0;
+}
+
+#flashcard {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 56em;
+  height: 25em;
+  perspective: 1000px;
+  margin: 50px auto;
+  cursor: pointer;
+  border: 4px solid #222;
+  box-shadow: 8px 8px 0 #222;
+  border-radius: 0;
+  background: #fff;
+  position: relative;
+}
+
+#flashcard .front, 
+#flashcard .back {
+  position: absolute;
+  backface-visibility: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  padding: 24px;
+  border-radius: 0;
+  background: #fff;
+  color: #222;
+  transition: background 0.2s;
+}
+
+#flashcard .front {
+  z-index: 2;
+}
+
+#flashcard .back {
+  transform: rotateY(180deg);
+  background: #f5f5f5;
+  color: #222;
+}
+
+#flashcard.flipped .front {
+  transform: rotateY(180deg);
+}
+
+#flashcard.flipped .back {
+  transform: rotateY(0);
+}
+
+.jeopardy-qualifier {
+  background: #fff;
+  border: 3px solid #222;
+  box-shadow: 8px 8px 0 #222;
+  padding: 24px;
+  margin: 40px auto;
+  max-width: 400px;
+  text-align: center;
+}
+
+/* Center the jeopardy board container */
+#jeopardy-board {
+  margin: 40px auto;
+  background: #1e3a8a; /* blue background */
+  display: table;
+}
+
+/* Make table cells larger and centered */
+#jeopardy-board th, #jeopardy-board td {
+  min-width: 260px;
+  height: 100px;
+  text-align: center;
+  vertical-align: middle;
+  font-size: 1.2rem;
+  color: #fff;
+  background: #2563eb; /* slightly lighter blue for cells */
+  box-sizing: border-box;
+  border: 3px solid #1e3a8a;
+}
+
+#jeopardy-board th {
+  font-size: 1.3rem;
+  font-weight: bold;
+  background: #1e40af; /* darker blue for headers */
+  color: #fff;
+  border-bottom: 4px solid #222;
+}
+
+#jeopardy-board button.neo-btn {
+  width: 80%;
+  height: 80%;
+  border-color: #1e3a8a;
+  box-shadow: none;
+}
+
+/* Make board container centered */
+#jeopardy-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Chip count styling */
+#chip-count-box {
+  margin: 24px auto 0 auto;
+  padding: 12px 32px;
+  background: #fff;
+  color: #222;
+  font-size: 1.2rem;
+  font-weight: bold;
+  border-radius: 24px;
+  border: 3px solid #222;
+  box-shadow: 4px 4px 0 #222;
+  text-align: center;
+  min-width: 180px;
+}
+
+#wager-prompt button.neo-btn {
+  width: 20%;
+}
+
+#wager-prompt input#wager {
+  width: 70%;
+}

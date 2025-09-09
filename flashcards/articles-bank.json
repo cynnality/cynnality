@@ -1,0 +1,365 @@
+{
+  "article-1": { 
+    "sections": {
+      "section-1": {
+        "name": "section 1",
+        "title": "vesting clause - gives the legislative branch the powers listed in article 1",
+        "content": []
+      },
+      "section-2": {
+        "name": "section 2",
+        "title": "House of Representatives",
+        "content": [
+          "each state gets a certain number of representatives in the house depending on the population",
+          "each state is guaranteed at least one representative",
+          "435 representatives",
+          "representatives must be at least 25",
+          "representatives must be U.S. citizens",
+          "representatives must live in the state they are representing",
+          "representatives serve 2 year terms and the people vote for a representative for their district",
+          "the House is the closest part of government to the people - it is most subject to public opinion and swings in public sentiment",
+          "House has the power to impeach"
+        ]
+      },
+      "section-3": {
+        "name": "section 3",
+        "title": "Senate",
+        "content": [
+          "each state gets 2 senators",
+          "17th amendment gave the people the right to vote for their senators",
+          "senators serve 6 year terms",
+          "the Senate is divided into 3 classes - so 1/3 of the senate is up for election every 2 years",
+          "senators must be at least 30",
+          "senators must be U.S. citizens",
+          "senators must live in the state they are representing",
+          "the vice president presides over the senate",
+          "vice president does not vote unless a senate vote ties",
+          "is the house impeaches, the senate holds the impeachment hearing",
+          "if the impeachment involves the president of the United States, the Chief Justice of the Supreme Court presides over the impeachment hearing"
+        ]
+      },
+      "section-4": {
+        "name": "section 4",
+        "title": "Congress - the House of Representatives and the Senate together",
+        "content": [
+          "time, place, and manner of elections",
+          "congress has to meet once a year - first monday of december unless they by law choose a different day"
+        ]
+      },
+      "section-5": {
+        "name": "section 5",
+        "title": "Proceedings and rules",
+        "content": [
+          "gives the Senate and House of Reps. details of what exact authority they have within themselves",
+          "gives the Sente and House rules for keeping records and rules for their sessions (sessions is basically a way of saying their 'seasons')"
+        ]
+      },
+      "section-6": {
+        "name": "section 6",
+        "title": "rights and restrictions",
+        "content": [
+          "terms for compensation/salary for Senate and House members",
+          "privileges from arrest unless there is treason, felony or breach of peace",
+          "members cannot hold federal office"
+        ]
+      },
+      "section-7": {
+        "name": "section 7",
+        "title": "rules for how congress can make laws",
+        "content": [
+          "bills involving a raise in taxes must originate in the house - they can be amended by the Senate",
+          "role of the President in the passing of bills into law"
+        ]
+      },
+      "section-8": {
+        "name": "section 8",
+        "title": "enumerated/explicitly stated powers of Congress",
+        "content": [
+          "tax",
+          "regulate commerce",
+          "regulate immigration",
+          "coin money and regulate the value thereof",
+          "create the post office",
+          "create patents",
+          "create all courts below the Supreme Court",
+          "declare war",
+          "create the army",
+          "create the navy",
+          "directly govern Washington, DC",
+          "make all laws necessary and proper to execute their enumerated powers",
+          "implied powers",
+          "necessary and proper clause / elastic clause"
+        ]
+      },
+      "section-9": {
+        "name": "section 9",
+        "title": "Limitations to the power of Congress",
+        "content": [
+          "Congress cannot ban the importation of slaves until 25 years after the Constitution is adopted - 1808",
+          "allowed Congress to place a tax on each person that was imported during this period, with the max being $10 per person or slave",
+          "habeus corpus",
+          "nullification",
+          "direct taxes",
+          "exports",
+          "cannot preference ports",
+          "appropriations clause"
+        ]
+      },
+      "section-10": {
+        "name": "section 10",
+        "title": "Powers denied to the states",
+        "content": [
+          "States cannot print their own money or create their own currency",
+          "states cannot form a treaty of alliance or confederation",
+          "states cannot give titles of nobility",
+          "states cannot pass bill of attainder or ex post facto laws",
+          "import-export clause",
+          "acts of states that need consent of congress",
+          "compact clause"
+        ]
+      }
+    },
+    "name": "Article I",
+    "title": "The Legislative Branch",
+    "clauses": [
+      "necessary-and-proper-clause",
+      "commerce-clause",
+      "elastic-clause",
+      "implied-powers-of-congress",
+      "three-fifths-compromise"
+    ]
+  },
+  "article-2": {
+    "sections": {
+      "section-1": {
+        "name": "section 1",
+        "title": "function and selection",
+        "content": [
+          "the president's role",
+          "president and vice president are elected to 4 year terms",
+          "president and vice president can only serve 2 terms max",
+          "president is elected through electoral college",
+          "the number of electoral votes is assigned to each state by the number of representatives that state has plus 2 for the senators",
+          "president must be a natural born U.S. citizen (born in the U.S.)",
+          "president has to take an oath of office"
+        ]
+      },
+      "section-2": {
+        "name": "section 2",
+        "title": "Powers",
+        "content": [
+          "Military and Administrative duties",
+          "president is commander in chief of the army, navy, and state militas if called to service under the U.S.",
+          "Presidential Pardons",
+          "president has the ability to pardon people convicted of crimes or cutting their sentence short - except in the case of impeachment",
+          "Getting advice and consent from the Senate",
+          "the president can appoint officials to the executive branch and the judicial branch but they must be confirmed by the Senate",
+          "the president can create treaties but a treaty must be ratified by 2/3's of the Senate"
+        ]
+      },
+      "section-3": {
+        "name": "section 3",
+        "title": "duties",
+        "content": [
+          "president's legislative role",
+          "president as head of state",
+          "president as enforcer of laws",
+          "executive privilege",
+          "presidential immunity",
+          "president must give congress an update in a State of the Union Address from time to time in writing or in person"
+        ]
+      },
+      "section-4": {
+        "name": "section 4",
+        "title": "Impeachment",
+        "content": [
+          "impeachment offenses"
+        ]
+      }
+    },
+    "name": "Article II",
+    "title": "The Executive Branch",
+    "clauses": [
+      "doctrine-executive-privilege"
+    ]
+  },
+  "article-3": {
+    "sections": {
+      "section-1": {
+        "name": "section",
+        "title": "Vesting clause - gives the judiciary branch the powers in article 3",
+        "content": [
+          "93 district courts",
+          "13 circuit court of appeals",
+          "1 supreme court with 8 associate justices and a chief justice",
+          "judicial review",
+          "supreme courts and lower courts are empowered with Judicial Power",
+          "the marbury v. madison case said interpreted this judicial power as \"judicial review\"",
+          "judicial review means only the courts have power to interpret law and the constitution",
+          "Judicial review is the process that, in finding federal and state laws unconstitutional, makes such laws null and void.",
+          "The principle of judicial review was first established in 1803 with Marbury v. Madison, a U.S. Supreme Court case that found that parts of the Federal Judiciary Act of 1789 were inconsistent with Article III of the U.S. Constitution.",
+          "Civil Rights: The U.S. Supreme Court also takes an active role in protecting the rights of citizens, or “civil rights”. Civil rights are those rights of citizens that the federal and state governments have an affirmative obligation to protect. Civil rights are most often understood to include protecting equal protection and due process rights found in the Fourteenth Amendment, which also defines citizenship. The U.S. Supreme Court engages in statutory interpretation in civil rights cases. This means that the Court is interpreting the meaning of statutes, but does not evaluate those statutes for their constitutionality.",
+          "inherent powers of congress",
+          "congress' power over judicial power",
+          "federal and state courts",
+          "supreme court rulings",
+          "congress' power to establish article III (3) courts",
+          "congress' power to establish non article III (3) courts",
+          "federal judiciary protections",
+          "compensation",
+          "compensation clause doctrine"
+        ]
+      },
+      "section-2": {
+        "name": "section 2",
+        "title": "defining limits to what cases Federal Courts can hear",
+        "content": [
+          "cases or controversies requirements",
+          "rules of justiciability",
+          "advisory opinions",
+          "adversity",
+          "standing",
+          "ripeness",
+          "mootness",
+          "political questions",
+          "constitutional avoidance doctrine",
+          "federal question jurisdiction",
+          "supreme court has both original and appellete jurisdiction but most cases get to the supreme court through the appellete jurisdiction meaning the case has been appealed by a party to get a higher court to review a lower courts decision",
+          "admirability and maritime jurisdiction",
+          "cases where United States is one of the parties involved",
+          "controversies between 2 states",
+          "states and citizens of other states",
+          "diversity jurisdiction",
+          "land grants by different states",
+          "foreign states or citizens",
+          "supreme courts jurisdiction",
+          "trials"
+        ]
+      },
+      "section-3": {
+        "name": "section 3",
+        "title": "Treason",
+        "content": [
+          "meaning of treason",
+          "punishment",
+          "treason is the only explicitly stated crime in the constitution"
+        ]
+      }
+    },
+    "name": "article 3",
+    "title": "Judiciary Branch",
+    "clauses": [
+      "judicial-review"
+    ]
+  },
+  "article-4": {
+    "sections": {
+      "section-1": {
+        "name": "section 1",
+        "title": "full faith and credit clause",
+        "content": [
+          "full faith and credit clause",
+          "state and public act records",
+          "full faith credit clause says public acts and records of other states must be fully respected by other states",
+          "congressional enforcement",
+          "expanded the idea of federalism and what states owe to each other and what the federal government owes to the states",
+          "borrows language from articles of the confederation"
+        ]
+      },
+      "section-2": {
+        "name": "section 2",
+        "title": "interstate comity",
+        "content": [
+          "privileges and immunities clause",
+          "interstate extradition",
+          "fugitive from justice",
+          "slavery",
+          "fugitive slave clause"
+        ]
+      },
+      "section-3": {
+        "name": "section 3",
+        "title": "new states and federal property",
+        "content": [
+          "new state admissions",
+          "federal and state power over public lands",
+          "power of congress over territories",
+          "prohibits the formation of a new state that uses a part of a current state or combines 2 states, unless approved by both state legislatures in congress"
+        ]
+      },
+      "section-4": {
+        "name": "section 4",
+        "title": "republican form of government",
+        "content": [
+          "guarantee clause",
+          "a republican form of government is guaranteed for each state"
+        ]
+      }
+    },
+    "name": "article 4",
+    "title": "Relationships between states",
+    "clauses": [
+      "privileges-and-immunities-clause"
+    ]
+  },
+  "article-5": {
+    "sections": {
+      "section-1": {
+        "name": "section 1",
+        "title": "Adding a new amendment to the constitution",
+        "content": [
+          "proposing of a new amendment",
+          "ratification of a new amendment",
+          "ratification by convention",
+          "amendments can come from 2 sources",
+          "can be proposed by congress",
+          "2/3 of house must approve",
+          "2/3 of senate must approve",
+          "states vote: 3/4 of state legislatures (or state ratifying conventions) must approve",
+          "if all votes pass the amendment is ratified (accepted/officically added to constitution)",
+          "can be proposed by states",
+          "2/3 of states must approve to propose amendment",
+          "congress would hold a national convention to discuss proposal",
+          "states vote: 3/4 of state legislatures (or state ratifying conventions) must approve",
+          "if all requirements are met, amendment is ratified (accepted/officially added to constitution)",
+          "this method has never been used",
+          "unamendable subjects (\"No state, without its consent, shall be deprived of its equal suffrage in the Senate\" - introduced by Roger Sherman)"
+        ]
+      }
+    },
+    "name": "article 5",
+    "title": "Amending the Constitution"
+  },
+  "article-6": {
+    "sections": {
+      "section-1": {
+        "name": "section 1",
+        "title": "Supreme law of the land",
+        "content": [
+          "debts that belonged to the U.S. under the articles of confederation were taken on by the U.S. under the new federal government under the constitution",
+          "supremacy clause",
+          "oaths of office"
+        ]
+      }
+    },
+    "name": "article 6",
+    "title": "Supreme Law",
+    "clauses": [
+      "privileges-and-immunities-clause",
+      "supremacy-clause"
+    ]
+  },
+  "article-7": {
+    "sections": {
+      "section-1": {
+        "name": "section 1",
+        "title": "requirements",
+        "content": [
+          "9 states must approve the constitution to ratify it"
+        ]
+      }
+    },
+    "name": "article 7",
+    "title": "ratification of the constitution"
+  }
+}

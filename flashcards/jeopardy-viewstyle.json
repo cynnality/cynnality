@@ -1,0 +1,136 @@
+{
+  "qualifier": [
+    {
+      "prompt": "What came first?",
+      "options": ["Publication of Uncle Tom's Cabin", "Bleeding Kansas"],
+      "answer": 0
+    },
+    {
+      "prompt": "Which was the CAUSE?",
+      "options": ["Stricter terms on the fugitive slave act", "Personal liberty laws"],
+      "answer": 0
+    },
+    {
+      "prompt": "Which event happened first?",
+      "options": ["Missouri Compromise", "Compromise of 1850"],
+      "answer": 0
+    }
+  ],
+  "categories": [
+    {
+      "name": "KEY FIGURES",
+      "questions": [
+        {
+          "question": "This former slave became a prominent abolitionist, orator, and writer.",
+          "answers": ["Frederick Douglass"],
+          "difficulty": 1,
+          "chips": 10
+        },
+        {
+          "question": "This radical abolitionist led a raid on the federal arsenal at Harpers Ferry, hoping to incite a slave rebellion.",
+          "answers": ["John Brown"],
+          "difficulty": 2,
+          "chips": 20
+        },
+        {
+          "question": "He was the President of the Confederacy.",
+          "answers": ["Jefferson Davis"],
+          "difficulty": 3,
+          "chips": 30
+        }
+      ]
+    },
+    {
+      "name": "SECTIONAL DIVIDES",
+      "questions": [
+        {
+          "question": "This concept allowed residents of a territory to decide on the issue of slavery.",
+          "answers": ["Popular Sovereignty"],
+          "difficulty": 1,
+          "chips": 10
+        },
+        {
+          "question": "This act divided the remaining Louisiana Purchase territory into two states, popular sovereignty to be used to decide on slavery in each.",
+          "answers": ["Kansas-Nebraska Act"],
+          "difficulty": 2,
+          "chips": 20
+        },
+        {
+          "question": "This Supreme Court case ruled that African Americans were not citizens and that Congress had no right to ban slavery in the territories.",
+          "answers": ["Dred Scott v. Sandford", "Dred Scott decision","Dred Scott case"],
+          "difficulty": 3,
+          "chips": 30
+        }
+      ]
+    },
+    {
+      "name": "POLITICAL TENSIONS",
+      "questions": [
+        {
+          "question": "This political party was formed to oppose the expansion of slavery into western territories.",
+          "answers": ["Republican Party"],
+          "difficulty": 1,
+          "chips": 10
+        },
+        {
+          "question": "This legislative bill admitted California as a free state, while also including a stricter fugitive slave law.",
+          "answers": ["Compromise of 1850"],
+          "difficulty": 2,
+          "chips": 20
+        },
+        {
+          "question": "This event, though initially about a tariff, established the dangerous precedent of a state challenging federal authority.",
+          "answers": ["Nullification Crisis"],
+          "difficulty": 3,
+          "chips": 30
+        }
+      ]
+    },
+    {
+      "name": "KEY TERMS",
+      "questions": [
+        {
+          "question": "The formal withdrawal of a state from the Union.",
+          "answers": ["Secession"],
+          "difficulty": 1,
+          "chips": 10
+        },
+        {
+          "question": "The belief that the rights of individual states should take precedence over the federal government.",
+          "answers": ["States' Rights", "Doctrine of States' Rights"],
+          "difficulty": 2,
+          "chips": 20
+        },
+        {
+          "question": "The idea that a state can void or cancel a federal law it deems unconstitutional.",
+          "answers": ["Nullification"],
+          "difficulty": 3,
+          "chips": 30
+        }
+      ]
+    },
+    {
+      "name": "FROM NORTH TO SOUTH",
+      "questions": [
+        {
+          "question": "Before the Civil War, the South remained dependent on plantation slavery and cotton while the North was starting to rely on factories and manufactured goods using this process.",
+          "answers": ["Industrialization"],
+          "difficulty": 1,
+          "chips": 10
+        },
+        {
+          "question": "An abolitionist would say they'd like to see an end to all slavery while an advocate for this concept would say they'd like for slavery to remain in areas it already exists.",
+          "answers": ["Anti-slavery"],
+          "difficulty": 2,
+          "chips": 20
+        },
+        {
+          "question": "In the 1850s this state was \"Bleeding\" as pro- & anti-slavery forces met up in a preview of the Civil War.",
+          "answers": ["Kansas"],
+          "difficulty": 3,
+          "chips": 30
+        }
+      ]
+    }
+  ]
+}
