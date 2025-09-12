@@ -73,7 +73,7 @@
       border-radius: 0;
       text-align: center;
     }
-    h1:not(.cynn-title) {
+    h1:not(.cynn-title, .study-storage-button h1) {
       font-size: 2.5rem;
       margin-bottom: 32px;
       letter-spacing: 1px;
@@ -109,8 +109,69 @@
       color: #444;
       margin-bottom: 8px;
     }
+
+.study-storage-button {
+      position: relative;
+      text-align: center;
+      width: 300px;
+      height: 300px;
+      margin: auto;
+    }
+
+
+.page-link {
+      z-index: 100;
+      border: none;
+      background: none;
+      box-shadow: none;
+      outline: none;
+      cursor: pointer;
+      display: inline-block;
+}
+
+.icon-link-img {
+      width: 200px;   
+      height: 200px;
+      display: block;
+      border: none;
+      background: none; 
+      box-shadow: none;
+      outline: none;
+      filter: drop-shadow(2px 2px 0 #00000033);
+      transition: transform 0.1s;
+}
+
+.general-notes-button {
+      position: absolute;
+      top: 18vh;   
+      left: 28vw;  
+}
+
+.flashcards-button {
+      position: absolute;
+      top: 63vh;
+      left: 49vw;  
+}
+
+.case-files-button {
+      position: absolute;
+      top: 63vh;
+      left: 30vw;  
+}
+
+.page-link:hover .icon-link-img {
+      transform: scale(1.08);
+}
+  
+  
+  
+  
+  
   </style>
 </head>
+
+
+
 <body>
    <div class="cynn-wrapper">
       <h1 class="cynn-title">CYNNALITY</h1>
@@ -122,20 +183,28 @@
       </a>
     </div>
   </div>
-  <div class="main-container">
-    <h1>a storage unit for notes</h1>
-    <a class="section-link" href="flashcards.html">
-      flashcards
-      <div class="section-desc">and a jeopardy game</div>
-    </a>
-    <a class="section-link" href="general-note.html">
-      government/politics (general)
-      <div class="section-desc">review material / quick notes</div>
-    </a>
-    <a class="section-link" href="case-notes.html">
-      landmark supreme court cases
-      <div class="section-desc">summaries / details / decisions / impacts</div>
-    </a>
+
+  <div class="study-storage-button general-notes-button">
+    <h1>general notes</h1>
+        <a href="general-note.html" id="general-notes" class="page-link" title="go to notes">
+          <img src="../assets/icons/binders-box-img.png" alt="binder-box" id="binder-box-icon" class="icon-link-img" />
+        </a>
   </div>
+
+  <div class="study-storage-button flashcards-button">
+      <h1>flashcards</h1>
+        <a href="flashcards.html" id="flashcards" class="page-link" title="go to flashcards">
+          <img src="../assets/icons/flashcard-img.png" alt="flashcards" id="flashcards-icon" class="icon-link-img" />
+        </a>
+  </div>
+
+  <div class="study-storage-button case-files-button">
+      <h1>case files</h1>
+        <a href="case-notes.html" id="case-files" class="page-link" title="go to case files">
+          <img src="../assets/icons/case-files.png" alt="case files" id="case-files-icon" class="icon-link-img" />
+        </a>
+  </div>
+
+
 </body>
 </html>

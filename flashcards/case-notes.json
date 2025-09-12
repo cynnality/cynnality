@@ -99,7 +99,7 @@
       "year": "1954",
       "con_elem": [
         "equal-protection-clause",
-        "separate-but-equal"
+        "separate-but-equal-doctrine"
       ],
       "case_law": [
         "plessy-ferguson",
@@ -173,7 +173,7 @@
   },
   {
     "case_name": "Korematsu v. United States",
-    "case_id": "korematsu-united-states",
+    "case_id": "korematsu-unitedstates",
     "attributes": {
       "year": "1944",
       "con_elem": [
@@ -229,7 +229,7 @@
   },
   {
     "case_name": "In re Gault",
-    "case_id": "in-re-gault",
+    "case_id": "inregault",
     "attributes": {
       "year": "1967",
       "con_elem": [
@@ -249,7 +249,7 @@
   },
   {
     "case_name": "United States v. Nixon",
-    "case_id": "united-states-nixon",
+    "case_id": "unitedstates-nixon",
     "attributes": {
       "year": "1974",
       "con_elem": [
@@ -270,7 +270,7 @@
   },
   {
     "case_name": "Regents of the University of California v. Bakke",
-    "case_id": "regents-of-the-university-of-california-bakke",
+    "case_id": "regentscalifornia-bakke",
     "attributes": {
       "year": "1978",
       "con_elem": [
@@ -296,7 +296,7 @@
   },
   {
     "case_name": "Hazelwood High School v. Kuhlmeier",
-    "case_id": "hazelwood-high-school-kuhlmeier",
+    "case_id": "hazelwood-kuhlmeier",
     "attributes": {
       "year": "1988",
       "con_elem": [
@@ -317,7 +317,7 @@
   },
   {
     "case_name": "District of Columbia v. Heller",
-    "case_id": "district-of-columbia-heller",
+    "case_id": "districtofcolumbia-heller",
     "attributes": {
       "year": "2008",
       "con_elem": [
@@ -413,7 +413,7 @@
   },
   {
     "case_name": "Tinker v. Des Moines",
-    "case_id": "tinker-des-moines",
+    "case_id": "tinker-desmoines",
     "attributes": {
       "year": "1969",
       "con_elem": [
@@ -462,7 +462,7 @@
   },
   {
     "case_name": "Schenk v. United States",
-    "case_id": "schenk-united-states",
+    "case_id": "schenk-unitedstates",
     "attributes": {
       "year": "1919",
       "con_elem": [

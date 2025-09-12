@@ -34,35 +34,7 @@ MAIN STYLES FOR INDIVIUAL WEEKLY PAGES
 /* --------------------------- END Poppins Font Styles ----------------------- */
 
 
-/* weekly - home - page styling */
-#random-folder-link {
-  position: absolute;
-  top: 12vh;   /* adjust for "random" placement */
-  left: 28vw;  /* adjust for "random" placement */
-  z-index: 100;
-  border: none;
-  background: none;
-  box-shadow: none;
-  outline: none;
-  cursor: pointer;
-  display: inline-block;
-}
 
-#random-folder-icon {
-  width: 160px;   
-  height: 160px;
-  display: block;
-  border: none;
-  background: none; 
-  box-shadow: none;
-  outline: none;
-  filter: drop-shadow(2px 2px 0 #00000033);
-  transition: transform 0.1s;
-}
-#random-folder-link:hover #random-folder-icon {
-  transform: scale(1.08);
-  filter: drop-shadow(4px 4px 0 #951E7B);
-}
 
 
 

@@ -3,7 +3,7 @@ body {
   font-family: 'Inter', Arial, sans-serif;
 }
 #slide-container {
-  max-width: 900px;
+  max-width: 75%;
   min-height: 500px;
   margin: 60px auto 40px auto;
   background: #fff;
@@ -11,6 +11,34 @@ body {
   box-shadow: 12px 12px 0 #222;
   padding: 40px 48px;
   border-radius: 0;
+}
+.slide-title-block {
+  text-align: center;
+  margin-bottom: 24px;
+  background: #ffe600;
+  border: 3px solid #222;
+  box-shadow: 4px 4px 0 #222;
+}
+#slide-container h2 {
+  font-size: 2.5rem;
+  letter-spacing: 1px;
+  color: #222;
+}
+#slide-container h3 {
+  font-size: 2rem;
+  margin: 1em;
+  background:rgba(128, 130, 255, 0.479);
+}
+#slide-container h4 {
+  font-size: 1.5rem;
+  color: #222;
+  margin: unset;
+  background:rgb(128, 255, 160);
+  margin: 1em;
+}
+#slide-container ul li {
+  padding: .25em;
+  font-size: 22px;
 }
 .neo-btn {
   background: #fff;

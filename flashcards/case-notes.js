@@ -57,10 +57,12 @@ function renderCase() {
   }
 
   let html = `
-      <div class="case-title"><h2 id="${c.case_id}">${c.case_name}</h2></div>
+      <div class="case-title"><h2 id="${c.case_id}">${c.case_name}</h2>
+      <div class="case-attr-block case-year"><span class="case-attr-label">decided in:</span> ${c.attributes.year || ""}</div>
+      </div>
       <div class="top-bar">
       <div class="title-and-elements">
-        <div class="case-attr-block"><span class="case-attr-label">decided in:</span> ${c.attributes.year || ""}</div>
+        
         ${renderArticleButtons(c.attributes.articles)}
         ${renderAmendmentButtons(c.attributes.amendments)}
         ${renderConElem(c.attributes.con_elem)}
@@ -91,7 +93,7 @@ function renderCase() {
 
 function renderConElem(arr) {
   if (!arr || !arr.length) return "";
-  let html = `<div class="case-attr-block"><span class="case-attr-label">constitutional elements:</span><ul>`;
+  let html = `<div class="case-attr-block"><span class="case-attr-label"></span><ul>`;
   arr.forEach(tag => {
     const entry = conElemData[tag];
     if (entry) {

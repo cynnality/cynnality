@@ -255,11 +255,11 @@ div.button-link button {
   margin-bottom: 0px;
 } 
 
+.home-window.dam5 {
+  border: none;
+}
+
 .dam5 {
-  background-color: #0099E0;
-  border: solid 4px #000000;
-  border-bottom-left-radius: 5px;
-  border-bottom-right-radius: 5px;
   box-shadow: none;
   padding: 10px;
 }
