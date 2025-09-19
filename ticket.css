@@ -40,6 +40,8 @@
     grid-template-columns: 1fr auto;
     width: 750px;
     border-radius: 4px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    filter: saturate(105%)
 }
 .ticket__main {
     display: grid;
@@ -161,7 +163,7 @@
 /*......................TICKET COLOR STYLES - TEAMS*/
 
 .ticket {
-    border: solid 6px var(--team-secondary, #f3f1c9);
+    border: solid 6px #000000;
 }
 .ticket .ticket-header {
     background: var(--team-secondary, #f3f1c9);
@@ -217,9 +219,6 @@
 }
 
 /*golden state valkyries*/
-.ticket[data-team="GSV"] {
-    border: 6px solid var(--team-primary, #f3f1c9);
-}
 .ticket[data-team="GSV"] .ticket-header {
     background-color: var(--team-primary, black);
 }
@@ -269,9 +268,6 @@
 }
 
 /*connecticut sun*/
-.ticket[data-team="CON"] {
-    border: 6px solid var(--team-accent, #f3f1c9);
-}
 .ticket[data-team="CON"] .ticket-header {
     background-color: var(--team-accent, #b2b3b3);
 }
@@ -289,9 +285,6 @@
 }
 
 /*las vegas aces*/
-.ticket[data-team="LVA"] {
-    border: 6px solid var(--team-accent, #f3f1c9);
-}
 .ticket[data-team="LVA"] .ticket-header {
     background-color: var(--team-accent, black);
 }
@@ -398,9 +391,6 @@
 
 /**...... away tearaway ticket STYLES........................*/
 
-
-
-/* ticket.css | http://127.0.0.1:3000/testing/ticket.css */
 
 
 
