@@ -40,7 +40,6 @@
     grid-template-columns: 1fr auto;
     width: 750px;
     border-radius: 4px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
     filter: saturate(105%)
 }
 .ticket__main {
@@ -162,9 +161,7 @@
 
 /*......................TICKET COLOR STYLES - TEAMS*/
 
-.ticket {
-    border: solid 6px #000000;
-}
+
 .ticket .ticket-header {
     background: var(--team-secondary, #f3f1c9);
 }

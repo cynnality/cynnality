@@ -5,6 +5,26 @@
   font-style: italic;
 }
 
+.inter-regular {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.inter-thinitalic {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: italic;
+} 
+
+.inter-bolditalic {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 632;
+  font-style: italic;
+}
 
 :root {
   --yellow: #FFA305;
@@ -15,65 +35,38 @@
   --black: #000000;
 }
 
-html, body {
-  width: 100%;
-  overflow-x: hidden;
-}
-
 body {
-  background-color: #9FD6EF;
+  background-image: url(/assets/lab-cynn/court-bg.png);
   margin: 0;
   padding: 0;
-}
-
-/* Sticky nav bar */
-.wnba-navbar {
-  position: sticky;
-  top: 0;
-  box-sizing: border-box;
-  width: 100%;
-  background: #9FD6EF;
-  color: var(--black);
-  font-family: 'REM', 'Arial Black', sans-serif;
-  font-weight: 700;
-  font-size: 1rem;
-  padding: 0.5rem 2rem;
-  border-bottom: 4px solid var(--black);
-  z-index: 100;
-  letter-spacing: 2px;
   display: flex;
-  align-items: center;
-  height: 2rem;
+  justify-content: center;
+  overflow-y: auto;
 }
 
 .teams-layout {
   display: flex;
-  min-height: 90vh;
-  background-color: var(--blue);
-
+  align-items: center;
+  position: absolute;
+  top: 7em;
 }
 
 .teams-menu {
-  width: 200px;
   background: #F5D6F4;
   border-right: 4px solid #000000;
-  font-family: 'REM', 'Arial Black', sans-serif;
-  font-weight: 500;
+  font-family: 'Inter', sans-serif;
   display: flex;
   flex-direction: column;
-  position: sticky;
-  top: 3rem;
-  height: calc(100vh - 3.5rem);
-  overflow-y: auto;
+  height: fit-content;
 }
 
 .teams-menu button {
   border: none;
   background: #F5D6F4;
   color: var(--black);
-  border-radius: 0;
+  border-radius: 0; 
   font-size: .9rem;
-  font-family: 'REM', 'Arial Black', sans-serif;
+  font-family: 'Inter', sans-serif;
   font-optical-sizing: auto;
   font-style: italic;
   font-weight: bold;
@@ -93,8 +86,6 @@ body {
   padding: 1.5rem 2rem;
   display: flex;
   flex-direction: column; 
-  min-height: 100vh;
-  background-color: var(--blue);
   max-width: fit-content;
 }
 
@@ -112,14 +103,13 @@ body {
 }
 
 .team-tab-name {
-  background: var(--yellow);
-  border: 3px solid var(--black);
+  background: #F3E9B9;
   border-bottom: none;
   border-radius: 16px 16px 0 0;
-  box-shadow: 3px 1px  var(--black);
-  font-family: 'REM', 'Arial Black', sans-serif;
-  font-weight: 700;
-  font-size: 2rem;
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 632;
+  font-style: italic;  font-size: 2rem;
   color: var(--black);
   letter-spacing: 1px;
   text-shadow: none;
@@ -127,11 +117,22 @@ body {
 }
 
 .team-content-inner { 
-  border: 3px solid var(--black);
   background-color: #F3E9B9;
-  border-radius: 16px;
+  border-radius: 8px;
   padding: 20px;
   width: fit-content;
+  gap: 1rem;
+  height: fit-content;
+}
+
+.team-content-vis {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.team-content-deck {
+  display: flex;
 }
 
 .team-logo-row {
@@ -145,18 +146,12 @@ body {
 .team-logo {
   width: 300px;
   height: 300px;
-  border: 2px solid var(--black);
-  border-radius: 8px;
-  box-shadow: 2px 3px 0 var(--black);
   object-fit: contain;
 }
 
 .team-palette {
   width: 400px;
   height: 140px;
-  border: 2px solid var(--black);
-  border-radius: 10px;
-  box-shadow: 2px 2px 0 var(--black);
 }
 
 .team-court-row {
@@ -175,38 +170,36 @@ body {
   box-shadow: 2px 2px 0 var(--black);
 }
 
+/* Add to teams-wnba.css */
+.team-deck-section {
+  margin-top: 2rem;
+  text-align: center;
+  display: flex;
+}
+.team-deck-img {
+  border: 2px solid #000;
+  box-shadow: 2px 2px 0 #000;
+  border-radius: 8px;
+  transition: box-shadow 0.2s;
+}
+.team-deck-img:hover {
+  box-shadow: 4px 4px 0 #000;
+}
+.team-deck-cards {
+  justify-content: center;
+  gap: .25rem;
+  padding-left: 1rem;
+}
+
+.player-card img {
+  width: 10em;
+  height: auto;
+  display: block;
+}
+
 .placeholder {
   color: var(--blue);
   font-size: 2rem;
   margin-top: 4rem;
   font-family: 'REM', 'Arial', sans-serif;
-}
-
-.team-articles {
-  margin-top: 2rem;
-  background: #fffbe7;
-  border: 2px solid #000;
-  border-radius: 8px;
-  padding: 1rem 1.5rem;
-  max-width: 600px;
-}
-.team-articles h3 {
-  margin-top: 0;
-  font-family: 'REM', sans-serif;
-  font-size: 1.2rem;
-  color: #F22C8C;
-}
-.team-articles ul {
-  padding-left: 1.2rem;
-}
-.team-articles li {
-  margin-bottom: 0.5rem;
-}
-.team-articles a {
-  color: #0099E0;
-  text-decoration: underline;
-  font-weight: 600;
-}
-.team-articles a:hover {
-  color: #F22C8C;
 }

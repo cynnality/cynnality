@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>get a ticket</title>
+  <link rel="stylesheet" href="ticket.css">
+  <!-- Fonts (copy from your other pages as needed) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:opsz@14..32&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="main-content">
+    <!-- Seattle Storm Example --> 
+    <div class="ticket home"
+      data-team="SEA"
+      style="--team-primary:#2b5134;--team-secondary:#f3f1c9;--team-accent:#b2b3b3;">
+      <div class="ticket__main">
+        <div class="ticket-header">
+          <div class="team-home ticket-header-label">
+            <div class="info__detail"><p>team info</p></div>
+          </div>
+          <div class="team-name">
+            <p>SEATTLE STORM</p>
+          </div>
+        </div>
+        <div class="info-section">
+          <div class="info">
+            <div class="info__detail">Conference: Western</div>
+          </div>
+          <div class="info">
+            <div class="info__detail">Location: Seattle, WA</div>
+          </div>
+          <div class="info">
+            <div class="info__detail">Head Coach: Noelle Quinn</div>
+          </div>
+          <div class="info">
+            <div class="info__detail">Last Season Record: 11-29</div>
+          </div>
+          <div class="info">
+            <div class="info__detail">Championships: 4</div>
+          </div>
+        </div>
+        <div class="logo-container">
+          <div class="team-logo-block" data-team="storm">
+            <img class="team-logo" src="../assets/logos-wnba/seattle-storm-logo.svg" alt="seattle storm logo" />
+          </div>
+        </div>
+        <div class="fineprint">
+          <p>WNBA Team Ticket</p>
+          <p>Updated 2025</p>
+        </div>
+      </div>
+      <div class="ticket__tearaway">
+        <div class="logo">
+          <div class="team-logo-block" data-team="storm">
+            <img class="team-logo" src="../assets/logos-wnba/seattle-storm-logo-negative.svg" alt="seattle storm negative logo" />
+          </div>
+        </div>
+        <div class="info tearaway-team-name">
+          <div class="info__detail">Seattle Storm</div>
+        </div>
+        <div class="info tearaway-conference">
+          <div class="info__detail">West</div>
+        </div>
+        <div class="info tearaway-conf-rank-label">
+          <div class="info__detail">Conf rank: #</div>
+        </div>
+        <div class="info tearaway-overall-rank-label">
+          <div class="info__detail">Overall rank: #</div>
+        </div>
+        <div class="info tearaway-date">
+          <div class="info__detail">Founded: 2000</div>
+        </div>
+        <div class="info tearaway-time">
+          <div class="info__detail">Arena: Climate Pledge Arena</div>
+        </div>
+      </div>
+    </div>
+    <!-- Repeat the above .ticket.home block for each team, updating info and colors -->
+  </div>
+</body>
+</html>

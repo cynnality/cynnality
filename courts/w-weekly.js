@@ -9,7 +9,7 @@ document.addEventListener("DOMContentLoaded", () => {
     });
     return groups;
   }
-
+ 
   // Load JSON data
   Promise.all([
     fetch('jul19-w-matchups.json').then(res => res.json()),
@@ -94,7 +94,7 @@ function formatShortDate(dateStr) {
           </div>
           <div class="logo-container">
             <div class="team-logo-block" data-team="${team.teamCode.toLowerCase()}">
-              <img class="team-logo" src="${team.defaultContent.img}" alt="${team.teamName} logo" />
+              <img class="team-logo" src="/${team.defaultContent.img}" alt="${team.teamName} logo" />
             </div>
           </div>
           <div class="fineprint">
@@ -105,7 +105,7 @@ function formatShortDate(dateStr) {
         <div class="ticket__tearaway">
           <div class="logo">
             <div class="team-logo-block" data-team="${team.teamCode.toLowerCase()}">
-              <img class="team-logo" src="${team.defaultContent.img.replace('.svg', '-negative.svg')}" alt="${team.teamName} negative logo" />
+              <img class="team-logo" src="/${team.defaultContent.img.replace('.svg', '-negative.svg')}" alt="${team.teamName} negative logo" />
             </div>
           </div>
                     ${isHome ? `

@@ -2,8 +2,8 @@
   {
     "code": "atlanta-dream",
     "name": "Atlanta Dream",
-    "logo": "../assets/logos-wnba/atlanta-dream-logo.svg",
-    "palette": "../assets/wnba-team-palettes/atlanta-dream-palette.svg",
+    "logo": "/assets/logos-wnba/atlanta-dream-logo.svg",
+    "palette": "/assets/wnba-team-palettes/atlanta-dream-palette.svg",
     "courtColors": {
       "main": "#E03C31",
       "lines": "#F5A623",
@@ -13,8 +13,8 @@
   {
     "code": "chicago-sky",
     "name": "Chicago Sky",
-    "logo": "../assets/logos-wnba/chicago-sky-logo.svg",
-    "palette": "../assets/wnba-team-palettes/chicago-sky-palette.svg",
+    "logo": "/assets/logos-wnba/chicago-sky-logo.svg",
+    "palette": "/assets/wnba-team-palettes/chicago-sky-palette.svg",
     "courtColors": {
       "main": "#408FDD",
       "lines": "#FFCC00",
@@ -24,8 +24,8 @@
   {
     "code": "connecticut-sun",
     "name": "Connecticut Sun",
-    "logo": "../assets/logos-wnba/connecticut-sun-logo.svg",
-    "palette": "../assets/wnba-team-palettes/connecticut-sun-palette.svg",
+    "logo": "/assets/logos-wnba/connecticut-sun-logo.svg",
+    "palette": "/assets/wnba-team-palettes/connecticut-sun-palette.svg",
     "courtColors": {
       "main": "#DC4504",
       "lines": "#041E43",
@@ -35,8 +35,8 @@
   {
     "code": "dallas-wings",
     "name": "Dallas Wings",
-    "logo": "../assets/logos-wnba/dallas-wings-logo.svg",
-    "palette": "../assets/wnba-team-palettes/dallas-wings-palette.svg",
+    "logo": "/assets/logos-wnba/dallas-wings-logo.svg",
+    "palette": "/assets/wnba-team-palettes/dallas-wings-palette.svg",
     "courtColors": {
       "main": "#C4D600",
       "lines": "#0C2440",
@@ -46,8 +46,8 @@
   {
     "code": "indiana-fever",
     "name": "Indiana Fever",
-    "logo": "../assets/logos-wnba/indiana-fever-logo.svg",
-    "palette": "../assets/wnba-team-palettes/indiana-fever-palette.svg",
+    "logo": "/assets/logos-wnba/indiana-fever-logo.svg",
+    "palette": "/assets/wnba-team-palettes/indiana-fever-palette.svg",
     "courtColors": {
       "main": "#041E43",
       "lines": "#C6102E",
@@ -57,8 +57,8 @@
   {
     "code": "las-vegas-aces",
     "name": "Las Vegas Aces",
-    "logo": "../assets/logos-wnba/las-vegas-aces-logo.svg",
-    "palette": "../assets/wnba-team-palettes/las-vegas-aces-palette.svg",
+    "logo": "/assets/logos-wnba/las-vegas-aces-logo.svg",
+    "palette": "/assets/wnba-team-palettes/las-vegas-aces-palette.svg",
     "courtColors": {
       "main": "#BB0C2F",
       "lines": "#8A734C",
@@ -68,8 +68,8 @@
   {
     "code": "los-angeles-sparks",
     "name": "Los Angeles Sparks",
-    "logo": "../assets/logos-wnba/los-angeles-sparks-logo.svg",
-    "palette": "../assets/wnba-team-palettes/los-angeles-sparks-palette.svg",
+    "logo": "/assets/logos-wnba/los-angeles-sparks-logo.svg",
+    "palette": "/assets/wnba-team-palettes/los-angeles-sparks-palette.svg",
     "courtColors": {
       "main": "#6F2F89",
       "lines": "#FFC72E",
@@ -79,8 +79,8 @@
   {
     "code": "minnesota-lynx",
     "name": "Minnesota Lynx",
-    "logo": "../assets/logos-wnba/minnesota-lynx-logo.svg",
-    "palette": "../assets/wnba-team-palettes/minnesota-lynx-palette.svg",
+    "logo": "/assets/logos-wnba/minnesota-lynx-logo.svg",
+    "palette": "/assets/wnba-team-palettes/minnesota-lynx-palette.svg",
     "courtColors": {
       "main": "#236190",
       "lines": "#0C2440",
@@ -90,8 +90,8 @@
   {
     "code": "new-york-liberty",
     "name": "New York Liberty",
-    "logo": "../assets/logos-wnba/new-york-liberty-logo.svg",
-    "palette": "../assets/wnba-team-palettes/new-york-liberty-palette.svg",
+    "logo": "/assets/logos-wnba/new-york-liberty-logo.svg",
+    "palette": "/assets/wnba-team-palettes/new-york-liberty-palette.svg",
     "courtColors": {
       "main": "#0059B8",
       "lines": "#6FCEB1",
@@ -101,8 +101,8 @@
   {
     "code": "phoenix-mercury",
     "name": "Phoenix Mercury",
-    "logo": "../assets/logos-wnba/phoenix-mercury-logo.svg",
-    "palette": "../assets/wnba-team-palettes/phoenix-mercury-palette.svg",
+    "logo": "/assets/logos-wnba/phoenix-mercury-logo.svg",
+    "palette": "/assets/wnba-team-palettes/phoenix-mercury-palette.svg",
     "courtColors": {
       "main": "#201645",
       "lines": "#CB6115",
@@ -112,8 +112,8 @@
   {
     "code": "seattle-storm",
     "name": "Seattle Storm",
-    "logo": "../assets/logos-wnba/seattle-storm-logo.svg",
-    "palette": "../assets/wnba-team-palettes/seattle-storm-palette.svg",
+    "logo": "/assets/logos-wnba/seattle-storm-logo.svg",
+    "palette": "/assets/wnba-team-palettes/seattle-storm-palette.svg",
     "courtColors": {
       "main": "#2B5234",
       "lines": "#FAE121",
@@ -123,8 +123,8 @@
   {
     "code": "washington-mystics",
     "name": "Washington Mystics",
-    "logo": "../assets/logos-wnba/washington-mystics-logo.svg",
-    "palette": "../assets/wnba-team-palettes/washington-mystics-palette.svg",
+    "logo": "/assets/logos-wnba/washington-mystics-logo.svg",
+    "palette": "/assets/wnba-team-palettes/washington-mystics-palette.svg",
     "courtColors": {
       "main": "#C8102E",
       "lines": "#0C2340",
@@ -134,8 +134,8 @@
   {
     "code": "golden-state-valkyries",
     "name": "Golden State Valkyries",
-    "logo": "../assets/logos-wnba/golden-state-valkyries-logo.svg",
-    "palette": "../assets/wnba-team-palettes/golden-state-valkyries-palette.svg",
+    "logo": "/assets/logos-wnba/golden-state-valkyries-logo.svg",
+    "palette": "/assets/wnba-team-palettes/golden-state-valkyries-palette.svg",
     "courtColors": {
       "main": "#AF98DD",
       "lines": "#B9965B",

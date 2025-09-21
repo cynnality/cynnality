@@ -5,7 +5,7 @@
     "conference": "east",
     "favorite": true,
     "defaultContent": {
-      "img": "assets/logos-wnba/atlanta-dream-logo.svg",
+      "img": "/assets/logos-wnba/atlanta-dream-logo.svg",
       "alt": "Atlanta Dream Logo",
       "name": "Atlanta Dream"
     },
@@ -21,7 +21,7 @@
     "conference": "west",
     "favorite": true, 
     "defaultContent": {
-      "img": "assets/logos-wnba/seattle-storm-logo.svg",
+      "img": "/assets/logos-wnba/seattle-storm-logo.svg",
       "alt": "Seattle Storm Logo",
       "name": "Seattle Storm"
     },
@@ -37,7 +37,7 @@
     "conference": "west",
     "favorite": false,
     "defaultContent": {
-      "img": "assets/logos-wnba/phoenix-mercury-logo.svg",
+      "img": "/assets/logos-wnba/phoenix-mercury-logo.svg",
       "alt": "Phoenix Mercury Logo",
       "name": "Phoenix Mercury"
     },
@@ -53,7 +53,7 @@
     "conference": "west",
     "favorite": false,
     "defaultContent": {
-      "img": "assets/logos-wnba/los-angeles-sparks-logo.svg",
+      "img": "/assets/logos-wnba/los-angeles-sparks-logo.svg",
       "alt": "Los Angeles Sparks Logo",
       "name": "Los Angeles Sparks"
     },
@@ -69,7 +69,7 @@
     "conference": "west",
     "favorite": false,
     "defaultContent": {
-      "img": "assets/logos-wnba/golden-state-valkyries-logo.svg",
+      "img": "/assets/logos-wnba/golden-state-valkyries-logo.svg",
       "alt": "Golden State Valkyries Logo",
       "name": "Golden State Valkyries"
     },
@@ -85,7 +85,7 @@
     "conference": "west",
     "favorite": false,
     "defaultContent": {
-      "img": "assets/logos-wnba/minnesota-lynx-logo.svg",
+      "img": "/assets/logos-wnba/minnesota-lynx-logo.svg",
       "alt": "Minnesota Lynx Logo",
       "name": "Minnesota Lynx"
     },
@@ -101,7 +101,7 @@
     "conference": "west",
     "favorite": false,
     "defaultContent": {
-      "img": "assets/logos-wnba/connecticut-sun-logo.svg",
+      "img": "/assets/logos-wnba/connecticut-sun-logo.svg",
       "alt": "Connecticut Sun Logo",
       "name": "Connecticut Sun"
     },
@@ -117,7 +117,7 @@
     "conference": "west",
     "favorite": false,
     "defaultContent": {
-      "img": "assets/logos-wnba/dallas-wings-logo.svg",
+      "img": "/assets/logos-wnba/dallas-wings-logo.svg",
       "alt": "Dallas Wings Logo",
       "name": "Dallas Wings"
     },
@@ -133,7 +133,7 @@
     "conference": "east",
     "favorite": false,
     "defaultContent": {
-      "img": "assets/logos-wnba/new-york-liberty-logo.svg",
+      "img": "/assets/logos-wnba/new-york-liberty-logo.svg",
       "alt": "New York Liberty Logo",
       "name": "New York Liberty"
     },
@@ -149,7 +149,7 @@
     "conference": "east",
     "favorite": false,
     "defaultContent": {
-      "img": "assets/logos-wnba/washington-mystics-logo.svg",
+      "img": "/assets/logos-wnba/washington-mystics-logo.svg",
       "alt": "Washington Mystics Logo",
       "name": "Washington Mystics"
     },
@@ -165,7 +165,7 @@
     "conference": "east",
     "favorite": false,
     "defaultContent": {
-      "img": "assets/logos-wnba/indiana-fever-logo.svg",
+      "img": "/assets/logos-wnba/indiana-fever-logo.svg",
       "alt": "Indiana Fever Logo",
       "name": "Indiana Fever"
     },
@@ -181,7 +181,7 @@
     "conference": "east",
     "favorite": false,
     "defaultContent": {
-      "img": "assets/logos-wnba/chicago-sky-logo.svg",
+      "img": "/assets/logos-wnba/chicago-sky-logo.svg",
       "alt": "Chicago Sky Logo",
       "name": "Chicago Sky"
     },
@@ -197,7 +197,7 @@
     "conference": "west",
     "favorite": false,
     "defaultContent": {
-      "img": "assets/logos-wnba/las-vegas-aces-logo.svg",
+      "img": "/assets/logos-wnba/las-vegas-aces-logo.svg",
       "alt": "Las Vegas Aces Logo",
       "name": "Las Vegas Aces"
     },

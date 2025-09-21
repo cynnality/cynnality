@@ -1,19 +1,19 @@
 const playerData = {
     storm: [
-        { name: "Nneka Ogwumike", img: "../assets/w-player-decks/nneka-ogwumike-storm.svg" },
-        { name: "Skylar Diggins", img: "../assets/w-player-decks/skylar-diggins-storm.svg" },
-        { name: "Gabby Williams", img: "../assets/w-player-decks/gabby-williams-storm.svg" },
-        { name: "Dominique Malonga", img: "../assets/w-player-decks/dominique-malonga-storm.svg" },
-        { name: "Erica Wheeler", img: "../assets/w-player-decks/erica-wheeler-storm.svg" },
+        { name: "Nneka Ogwumike", img: "/assets/w-player-decks/nneka-ogwumike-storm.svg" },
+        { name: "Skylar Diggins", img: "/assets/w-player-decks/skylar-diggins-storm.svg" },
+        { name: "Gabby Williams", img: "/assets/w-player-decks/gabby-williams-storm.svg" },
+        { name: "Dominique Malonga", img: "/assets/w-player-decks/dominique-malonga-storm.svg" },
+        { name: "Erica Wheeler", img: "/assets/w-player-decks/erica-wheeler-storm.svg" },
 
     ],
     aces: [
-        { name: "Jewell Loyd", img: "../assets/w-player-decks/jewell-loyd-aces.svg" },
-        { name: "Chelsea Gray", img: "../assets/w-player-decks/chelsea-gray-aces.svg" },
-        { name: "A'ja Wilson", img: "../assets/w-player-decks/aja-wilson-aces.svg" },
+        { name: "Jewell Loyd", img: "/assets/w-player-decks/jewell-loyd-aces.svg" },
+        { name: "Chelsea Gray", img: "/assets/w-player-decks/chelsea-gray-aces.svg" },
+        { name: "A'ja Wilson", img: "/assets/w-player-decks/aja-wilson-aces.svg" },
         // ...add more
     ],
-    // ...add more teams
+    // ...add more teams 
 };
 
 document.addEventListener('DOMContentLoaded', function () {

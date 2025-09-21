@@ -18,83 +18,22 @@
   font-weight: 632;
   font-style: italic;
 }
-
-
+ 
 body {
-  background-color: #0099E0;
-}
-
-
-
-.wrapper {
+  background-image: url(/assets/lab-cynn/court-bg.png);
   display: flex;
-  justify-items: flex-start;
-  align-items: center;
-  background-color: #F22C8C;
-  border: 4px solid #000000;
-  box-shadow: 4px 6px #000000;
+  justify-content: center;
 }
-
-h1.title {
-  font-family: "Inter", sans-serif;
-  font-style: italic;
-  transform: skewX(-10deg);
-  font-size: 60px;
-  margin: 0;
-  padding: 20px;
-}
-
-.wrapper .welcome-message {
-      background-color: #FFE499;
-      border: solid 2px #000000;
-      box-shadow: 2px 2px #000000;
-      border-radius: 4px;
-      height: fit-content;
-      margin: auto;
-      margin-left: 60px;
-      padding: 4px 20px 4px 20px;
-}
-
-.wrapper .welcome-message p {
-        color: #000000;
-        font-family: "Inter", sans-serif;
-        font-optical-sizing: auto;
-        font-weight: 400;
-        font-style: italic;
-        font-size: 20px;
-}
-
-div.button-link {
-  margin-right: 1em;
-}
-
-div.button-link button {
-  background-color: #FFD000;
-  font-size: 100%;
-  background: #FFFFFF;
-  border: 1px solid #000000;
-  box-sizing: border-box;
-  border-radius: 4px;
-  padding: 0.5rem 1rem;
-  transition: 500ms;
-  font-family: 'Inter', sans-serif;
-}
-
-
-
-
 
 .break-down-card {
   font-family: Montserrat, sans-serif;
   height: fit-content;
-  translate: -6px -6px;
   background: #d9bff3;
   border: 3px solid #000000;
   overflow: hidden;
   transition: all 0.3s ease;
-  width: 70%;
-  margin-top: 2em;
-  margin-left: 2em;
+  width: 60%;
+  margin-top: 3em;
 }
 
 .header {
@@ -175,35 +114,14 @@ div.button-link button {
   padding: 0.5rem;
 }
 
-.deck.active {
-  border: 2px solid #1ac2ff;
-}
-
-#active-deck-rows {
-  display: flex;
-  flex-direction: column;
-  gap: 1.5rem;
-  margin-bottom: 2rem;
-}
 
 .active-deck-row {
   display: flex;
-  align-items: center;      /* vertical centering */
-  justify-content: center;  /* horizontal centering */
-  gap: 2rem;
-  border: 2px solid #1ac2ff;
-  padding: 1rem;
-  border-radius: 8px;
-  position: relative;
 }
-
 
 
 .player-cards-container {
   display: flex;
-  flex-direction: row;   /* ensures horizontal layout */
-  gap: 1rem;
-  align-items: center;
   overflow: auto;
 }
 
@@ -228,7 +146,7 @@ div.button-link button {
 }
 
 .player-card img {
-  width: 200px;   /* or whatever size you want */
+  width: 200px;   
   height: auto;
   max-height: 300px; /* optional: limit height */
   display: block;
@@ -239,3 +157,5 @@ div.button-link button {
 .dipped {
   transform: translateY(5px);
 }
+
+
