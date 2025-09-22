@@ -1,7 +1,7 @@
 // ...existing code...
 
 // Deck/player data (move from decks-and-cards.js)
-const playerData = {
+const playerData = { 
   storm: [
     { name: "Nneka Ogwumike", img: "/assets/w-player-decks/nneka-ogwumike-storm.svg" },
     { name: "Skylar Diggins", img: "/assets/w-player-decks/skylar-diggins-storm.svg" },
@@ -49,8 +49,8 @@ Promise.all([
     if (deckImages[teamCode]) {
       deckHtml = `
         <div class="team-deck-section">
-          <img src="${deckImages[teamCode]}" alt="${team.name} Deck" class="team-deck-img" style="width:180px;cursor:pointer;" id="deck-img-${teamCode}" />
-          <div class="team-deck-cards" id="deck-cards-${teamCode}" style="display:none; margin-top:1rem;"></div>
+          <img src="${deckImages[teamCode]}" alt="${team.name} Deck" class="team-deck-img" id="deck-img-${teamCode}" />
+          <div class="team-deck-cards" id="deck-cards-${teamCode}" style="display:none;"></div>
         </div>
       `;
     }

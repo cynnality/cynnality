@@ -43,7 +43,7 @@ function renderSlide() {
       if (item.type === "vocab") {
         html += `<li style="margin-bottom:8px;"><strong>${item.word}</strong>`;
         if (item.definition) {
-          html += `<div style="margin-left:24px; color:#444; font-size:0.98em;">${item.definition}</div>`;
+          html += `<div class="voc-def">${item.definition}</div>`;
         }
         html += `</li>`;
       }

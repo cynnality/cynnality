@@ -1,21 +1,5 @@
-/******************************************************************************
-START Glitch hello-app default styles
 
-The styles in this section do some minimal CSS resets, set default fonts and 
-colors, and handle the layout for our footer and "Remix on Glitch" button. If
-you're new to CSS they may seem a little complicated, but you can scroll down
-to this section's matching END comment to see page-specific styles.
-******************************************************************************/
-
-
-/* 
-  The style rules specify elements by type and by attributes such as class and ID
-  Each section indicates an element or elements, then lists the style properties to apply
-  See if you can cross-reference the rules in this file with the elements in index.html
-*/
-
-/* Our default values set as CSS variables */
-:root {
+:root { 
   --color-bg: #; 
   --color-text-main: #000000;
   --color-text-header: #f5e324;
@@ -32,13 +16,8 @@ to this section's matching END comment to see page-specific styles.
   --pane-border-radius: 8px;
 }
 
-
-/******************************************************************************
-END Glitch hello-app default styles
-******************************************************************************/
-
 body {
-  background-color: #0099E0;
+  background-color: #e3e3e3;
     /* if outside of the window, clip */
   height: 100vh;
   overflow: clip;
@@ -54,7 +33,7 @@ body {
   width: var(--pane-default-width);
   height: var(--pane-default-height);
   display: grid;
-  border: 8px solid #000000;
+  border: 4px solid #000000;
   overflow: clip;
   min-width: 160px;
   min-height: 160px;
@@ -80,12 +59,16 @@ body {
   margin-left: 10px;
   margin-right: 10px;
   background-color: #F0F1C0;
-  padding: 5px;
+  padding: 15px;
   position: relative;
   border-top: 4px solid #000000;
   border-right: 4px solid #000000;
   border-bottom: 4px solid #000000;
   border-left: 4px solid #000000;
+}
+
+.panetext ul li {
+  padding: 10px;
 }
 
 /* add a corner in bottom right */
@@ -95,23 +78,14 @@ body {
   right: 0;
   width: 24px;
   height: 24px;
-  background-color: #12ff59;
+  background-color: #000000;
 
   /* north west to south east */
   cursor: nwse-resize;
 
-  /* background-color: red; */
 }
  
-.pane.is-dragging .title {
-  background-color: #FFFFFF;
-  color: #000000;
-}
 
-.pane.is-dragging {
-  border: 8px solid #FFFFFF;
-  box-shadow:  2px 2px #FFFFFF;
-}
 
 
 /* Button - Add it from the README instructions */

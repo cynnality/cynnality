@@ -120,8 +120,7 @@ body {
   background-color: #F3E9B9;
   border-radius: 8px;
   padding: 20px;
-  width: fit-content;
-  gap: 1rem;
+  max-width: 80em;
   height: fit-content;
 }
 
@@ -177,22 +176,20 @@ body {
   display: flex;
 }
 .team-deck-img {
-  border: 2px solid #000;
-  box-shadow: 2px 2px 0 #000;
-  border-radius: 8px;
-  transition: box-shadow 0.2s;
+  width: 200px;
 }
 .team-deck-img:hover {
-  box-shadow: 4px 4px 0 #000;
+  transform: scale(1.05);
 }
 .team-deck-cards {
-  justify-content: center;
-  gap: .25rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
   padding-left: 1rem;
 }
 
 .player-card img {
-  width: 10em;
+  width: 15em;
   height: auto;
   display: block;
 }
