@@ -60,7 +60,7 @@ body {
 
 .teams-menu button {
   border: none;
-  background: #F5D6F4;
+  background: #e3e3e3;
   color: var(--black);
   border-radius: 0; 
   font-size: .9rem;
@@ -75,8 +75,8 @@ body {
 }
 .teams-menu button.active,
 .teams-menu button:focus {
-  background: #FF42F9;
-  color: var(--black);
+  background: #462445;
+  color: #e3e3e3;
 }
 
 .team-content {
