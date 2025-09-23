@@ -3,22 +3,30 @@
 <head>
   <meta charset="UTF-8">
   <title>courts</title>
-  <link rel="stylesheet" href="main.css">
+  <link rel="stylesheet" href="court-universal-styles.css" />
+
+  <link href="https://fonts.googleapis.com/css2?family=Inter:opsz@14..32&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@1,14..32,300&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@1,14..32,632&display=swap" rel="stylesheet">
+
   <style>
     
     body {
     font-family: "Inter", sans-serif;
     font-style: normal;
     background: #e3e3e3; /* #E3E3E3 - neutral bg #7F00FF - blue-purple ---- cant decide */
-    background-image: url(/assets/lab-cynn/court-bg.png);
     }
 
 
     .court-material {
-      width: 28%;
       position: absolute;
-      top: -1em;
-      left: 3em;
+      width: 17%;
+      top: 25em;
+      left: 59em;
     }
     .court-sign {
       width: 40%;
@@ -26,8 +34,34 @@
       top: -1em;
       left: 61em;
     }
-  
-  
+
+    .court-text {
+      background: #e3e3e3;
+      width: 20em;
+      position: absolute;
+      top: 18em;
+      left: 43em;
+      text-align: center;      
+    }
+
+    .court-text h3 {
+      padding: .5em .25em;
+      font-style: italic;
+    }
+    .court-text p {
+      padding: .25em;
+    }
+
+    .reg-court-cover {
+      box-shadow: #e3e3e3 3px 3px;
+    }
+
+    .reg-court {
+      width: 20em;
+      position: absolute;
+      top: 3em;
+      left: 6em;
+    }
   </style>
 </head>
 
@@ -36,12 +70,21 @@
 <body>
 
   <div class="choose-court">
-    <a href="page-wnba/teams-wnba.html" target="_blank" class="boring">
+    <a href="page-wnba/teams-wnba.html" class="boring">
       <img src="/assets/lab-cynn/court-material.png" alt="a link to something..." class="court-material" />
     </a>
-    <a href="matchups.html" target="_blank" class="boring">
+    <a href="matchups.html" class="boring">
       <img src="/assets/lab-cynn/a-sign-game.png" alt="a link to something..." class="court-sign" />
     </a>
+    <div class="court-text">
+      <h3>things relating to sports and competition</h3>
+      <p>there's more here than it seems and there's so much more on the way</p>
+    </div>
+    <div class="reg-court-cover">
+        <a href="reg-court.html" class="boring">
+      <img src="/assets/lab-cynn/reg-court-cover.png" alt="a link to something..." class="court-link reg-court" />
+    </a>
+    </div>
   </div>
 
 

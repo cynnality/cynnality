@@ -28,7 +28,7 @@
   font-style: italic;
 }
 body {
-  background: #e3e3e3;
+  background: url(/assets/lab-cynn/court-bg.png);
 }
 
 .matchup-list {

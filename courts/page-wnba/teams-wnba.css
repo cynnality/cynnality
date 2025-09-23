@@ -36,7 +36,6 @@
 }
 
 body {
-  background-image: url(/assets/lab-cynn/court-bg.png);
   margin: 0;
   padding: 0;
   display: flex;
@@ -46,7 +45,6 @@ body {
 
 .teams-layout {
   display: flex;
-  align-items: center;
   position: absolute;
   top: 7em;
 }
