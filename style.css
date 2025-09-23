@@ -35,7 +35,7 @@ body {
 }
 
 .lab-cynn {
-  width: 30em;
+  width: 50em;
   height: auto;
   margin: 2em;
   z-index: 2;
@@ -63,7 +63,7 @@ grid-row-gap: 0px;
   height: fit-content;
 }
 .court {
-  width: 20em;
+  width: 30em;
 }
 
 .curio-city { 
@@ -74,7 +74,7 @@ grid-row-gap: 0px;
 }
 
 .curio { 
-  height: 32em;
+  height: 50em;
 }
 
 .study-hall { 
@@ -94,184 +94,38 @@ grid-row-gap: 0px;
   height: fit-content;
 }
 
-div.button-link button {
-  background-color: #FFD000;
-  font-size: 100%; 
-  background: #FFFFFF;
-  border: 1px solid #000000;
-  box-sizing: border-box;
-  border-radius: 4px;
-  padding: 0.5rem 1rem;
-  transition: 500ms;
-  font-family: 'Inter', sans-serif;
-}
+@media (max-width: 480px) {
 
-.home-body {
-  display: flex;
-  /*! justify-content: flex-start; */
-  /*! align-items: stretch; */
-  /*! flex-direction: row; */
-  /*! flex-wrap: nowrap; */
-  /*! align-content: stretch; */
-  height: 100%;
-  padding: 15px;
-  gap: 10px;
-}
 
-.home-window {
-  font-family: "Inter", sans-serif;
-  font-style: normal;
-  margin: 10px;
-  border-top: 4px solid #000000;
-  border-bottom: 4px solid #000000;
-  border-left: 4px solid #000000;
-  border-right: 4px solid #000000;
-  box-shadow: 4px 6px #000000;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
 
-.header-description { 
-  margin: 10px;
-}
-
-.dam1 {
-  align-self: flex-start;
-  max-width: 450px;
-  background-color: #FFCC00;
-  border-radius: 10px;
-  padding: 10px;
-  padding-top: 10px;
-  border-top-left-radius: 0px;
-  border-bottom-left-radius: 0px;
-}
-
-  .dam1 h2 {
-    color: #000000;
-    font-size: 30px;
-    font-family: "Inter", sans-serif;
-    font-style: italic;
+      .map,
+  .curio-city,
+  .study-hall,
+  .opening-theme {
+    display: block !important;
+  }
+  .courts {
+    display: block !important;
   }
 
-    .dam1 .header-description {
-      border: solid 2px #000000;
-      border-radius: 4px;
-      padding: 10px;
-
+    .cave {
+      position: unset;
+      height: 10em;
     }
 
-      .dam1 .header-description p {
-        color: #000000;
-        font-family: "Inter", sans-serif;
-        font-optical-sizing: auto;
-        font-weight: 500;
-        font-style: italic;
-        font-size: 24px;
-}
-
-    .dam1 .header-note {
-      border: solid 2px #000000;
-      border-radius: 4px;
-      padding: 10px;
-      width: 70%;
+    .lab-cynn {
+      margin: 0; 
+      width: 29em;
     }
 
-      .dam1 .header-note p {
-        color: #000000;
-        font-family: "Inter", sans-serif;
-        font-optical-sizing: auto;
-        font-weight: 400;
-        font-style: italic;
-        font-size: 16px;
+    .court {
+      width: 20em;
+    }
+
+    .curio {
+      height: 30em;
+    }
 }
-
-
-.icon-btn {
-  position: relative;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background: transparent;
-  border: none;
-  padding: 0;
-  cursor: pointer;
-  text-decoration: none;
-  outline: none;
-}
-
-.icon-img {
-  width: 260px;
-  height: 260px;
-  display: block;
-}
-
-.icon-img:hover {
-  transform: scale(1.05);
-}
-
-.home-window .dam3 {
-  border-top: none;
-  border-bottom: none;
-  border-left: none;
-  border-right: none;
-}
-
-.dam2 {
-    max-width: fit-content;
-    text-align: center;
-  }
-
-  .dam2 h1 {
-    color: #e3e3e3;
-    font-size: 30px;
-    font-family: "Inter", sans-serif;
-    font-style: italic;
-  }
-
-  .dam2 .pagelinks {
-    text-align: left;
-  }
-
-.home-window.dam3 {
-  box-shadow: none;
-}
-
-.w-kit-coded {
-  display: grid;
-  background-color: #ffe499;
-  border-bottom-left-radius: 20px;
-  border-bottom-right-radius: 20px;
-  border: solid 6px #000000;
-}
-
-.w-kit-coded-header { 
-  background-color: #ff5833;
-  border-bottom: 3px solid #000000;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.icon-link-img {
-  display: block;
-}
-
-.icon-link-img:hover {
-  transform: scale(1.05);
-}
-.header-title {
-  font-size: 32px;
-  font-family: "Inter", sans-serif;
-  font-style: italic;
-  font-weight: bold;
-  margin-top: 0px;
-  margin-bottom: 0px;
-} 
-
-
-
-
-
 
 
 
