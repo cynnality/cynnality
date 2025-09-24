@@ -1,3 +1,42 @@
     body {
     background-image: url(/assets/lab-cynn/court-bg.png);
     }
+
+    .court-material {
+      position: absolute;
+    }
+    .court-sign {
+      position: absolute;
+    }
+
+    .court-text {
+      position: absolute;
+    }
+
+    .reg-court {
+      position: absolute;
+    }
+
+            @media (max-width: 480px) {
+        .choose-court {
+            display: grid;
+        }
+        .court-material {
+          position: static !important;
+          width: fit-content;
+        }
+        .court-sign {
+          position: static !important;
+          width: fit-content;
+        }
+        .court-text {
+          position: static !important;
+          width: fit-content;
+        }
+        .reg-court {
+          position: static !important;
+          width: fit-content;
+        }
+
+        
+    }

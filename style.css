@@ -96,9 +96,7 @@ grid-row-gap: 0px;
 
 @media (max-width: 480px) {
 
-
-
-      .map,
+  .map,
   .curio-city,
   .study-hall,
   .opening-theme {
@@ -115,7 +113,7 @@ grid-row-gap: 0px;
 
     .lab-cynn {
       margin: 0; 
-      width: 29em;
+      width: 23em;
     }
 
     .court {
@@ -123,14 +121,9 @@ grid-row-gap: 0px;
     }
 
     .curio {
-      height: 30em;
+      height: 22em;
     }
-}
-
-
-
-
-
+  }
 
 
 

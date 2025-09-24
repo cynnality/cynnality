@@ -28,7 +28,7 @@ body {
 ******************************************************************************/
 
 .pane {
-  background-color: #F22C8C;
+  background-color: #351424;
   position: absolute;
   width: var(--pane-default-width);
   height: var(--pane-default-height);
@@ -41,11 +41,12 @@ body {
 }
 
 .pane .title {
+  height: var(--title-bar-height);
   cursor: move;
   display: flex;
   align-items: center;
   justify-content: center;
-  color: var(--title-bar-text-color);
+  color: #E3E3E3;
 }
 
 .pane .content {
@@ -54,10 +55,7 @@ body {
 }
 
 .panetext {
-  margin-top: 10px;
-  margin-bottom: 20px;
-  margin-left: 10px;
-  margin-right: 10px;
+  margin: 1.5em;
   background-color: #F0F1C0;
   padding: 15px;
   position: relative;
@@ -65,6 +63,10 @@ body {
   border-right: 4px solid #000000;
   border-bottom: 4px solid #000000;
   border-left: 4px solid #000000;
+}
+
+.opener {
+  font-size: 1.1em;
 }
 
 .panetext ul li {
@@ -76,13 +78,18 @@ body {
   position: absolute;
   bottom: 0;
   right: 0;
-  width: 24px;
-  height: 24px;
-  background-color: #000000;
-
+  width: 32px;
+  height: 32px;
   /* north west to south east */
   cursor: nwse-resize;
+}
 
+.corner-img {
+  width: 100%;
+  height: auto;
+  pointer-events: none;
+  user-select: none;
+  filter: invert(1);
 }
  
 
@@ -105,9 +112,6 @@ input {
   transform: translateY(5px);
 }
 
-.basketball-svg > img:nth-child(1) {
-  width: 3em;
-  padding: 8px;
-}
+
 
 
