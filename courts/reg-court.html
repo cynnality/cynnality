@@ -18,26 +18,27 @@
         body {
             font-family: "Inter", sans-serif;
             font-style: normal;
-            background: #e3e3e3;
-            /* #E3E3E3 - neutral bg #7F00FF - blue-purple ---- cant decide */
-            background-image: url(/assets/lab-cynn/reg-court-bg.png);
+            background-color: #e3e3e3;
         }
 
         .court-text {
             font-family: "Inter", sans-serif;
-            color: #e3e3e3;
+            color: #070707;
             margin-bottom: 1em;
             display: flex;
             justify-content: space-between;
+            border: solid 3px #070707;
         }
-        .court-text .detail {
-            font-style: oblique;
+        .detail h2 {
             font-weight: 400;
-            width: 40em;
+            font-style: italic;
+            width: 20em;
             height: fit-content;
-            border: solid .25em #e3e3e3;
-            font-size: 1.25em;
-            padding-left: 1em;
+        }
+
+        .detail a {
+            font-size: .9em;
+            color: #070707;
         }
 
         h3 {
@@ -53,43 +54,49 @@
 
         .cnt-detail {
             display: grid;
-            background: #e3e3e33d;
             width: 100%;
-
+            border: 3px solid #070707;
+            border-left: none;
         }
 
-        .cnt-detail.name {
-            padding: 1em;
-            width: 50em;
+        .name {
+            border-bottom: none;
+            padding: .25em;
         }
-
-        .cnt-detail.name h3 {
+        .cnt-detail .name h3 {
             font-style: italic;
             font-weight: 600;
-            color: #e3e3e3;
+            color: #070707;
         }
 
-        .cnt-detail.game {
-            justify-content: right;
+        .team {
+            border-top: none;
+            padding-left: 1em;
+        }
+        .cnt-detail .team h3 {
+            font-style: italic;
+            font-weight: 600;
+            color: #070707;
         }
 
-        .cnt-detail.game h3 {
-            color: #e3e3e3;
+        .cnt-detail .game {
             text-align: right;
-            padding: .25em;
+            padding-right: .25em;
+        }
+        .cnt-detail .game h3 {
+            color: #070707;
             font-weight: 400;
             font-style: italic;
-            padding-right: 1em;
         }
 
         .aja-nneka-hand-img {
             width: 52em;
         }
+        .bonner-bunch-img {
+            min-width: 52em;
+        }
 
-.detail a {
-    font-size: .9em;
-    color: #e3e3e3;
-}
+
 
     </style>
 </head>
@@ -110,88 +117,170 @@
 
     <div class="reg-court-main-container">
         <div class="jackie-hand cnt">
-            <img src="/assets/lab-cynn/jackie-hand-iso.png" alt="a link to something..."
+            <img src="/assets/lab-cynn/jackie-hand-iso-dither.png" alt="a link to something..."
                 class="jackie-hand-img exprs" />
-            <div class="cnt-detail name">
-                <h3>JACKIE YOUNG</h3>
-                <h3>ACES</h3>
+            <div class="cnt-detail">
+                <div class="name">
+                    <h3>JACKIE YOUNG</h3>
+                </div>
+                <div class="team">
+                    <h3>ACES</h3>
+                </div>
             </div>
-            <div class="cnt-detail game">
-                <h3>2025 playoffs game 1 - aces vs mercury</h3>
+            <div class="cnt-detail">
+                <div class="game">
+                    <h3>2025 playoffs game 1 - aces vs mercury</h3>
+                </div>
             </div>
         </div>
         <div class="grab-mvmet cnt">
-            <img src="/assets/lab-cynn/grab-mvmet-iso.png" alt="a link to something..." class="grab-mvmet-img exprs" />
-            <div class="cnt-detail name">
-                <h3>Leonie Fiebich</h3>
-                <h3>LIBERTY</h3>
+            <img src="/assets/lab-cynn/grab-mvmet-iso-dither.png" alt="a link to something..." class="grab-mvmet-img exprs" />
+           <div class="cnt-detail">
+                <div class="name">
+                    <h3>LEONIE FIEBICH</h3>
+                </div>
+                <div class="team">
+                    <h3>LIBERTY</h3>
+                </div>
             </div>
-            <div class="cnt-detail game">
-                <h3>2025 playoffs game 1 - liberty vs mercury</h3>
+            <div class="cnt-detail">
+                <div class="game">
+                    <h3>2025 playoffs game 1 - liberty vs mercury</h3>
+                </div>
             </div>
         </div>
         <div class="aja-nneka-hand cnt">
-            <img src="/assets/lab-cynn/aja-nneka-hand-iso.png" alt="a link to something..."
+            <img src="/assets/lab-cynn/aja-nneka-hand-iso-dither.png" alt="a link to something..."
                 class="aja-nneka-hand-img exprs" />
-            <div class="cnt-detail name">
-                <h3>NNEKA OGWUMIKE</h3>
-                <h3>STORM</h3>
+            <div class="cnt-detail">
+                <div class="name">
+                    <h3>NNEKA OGWUMIKE</h3>
+                </div>
+                <div class="team">
+                    <h3>STORM</h3>
+                </div>
+                <div class="name">
+                    <h3>A'JA WILSON</h3>
+                </div>
+                <div class="team">
+                    <h3>ACES</h3>
+                </div>
             </div>
-            <div class="cnt-detail name">
-                <h3>A'JA WILSON</h3>
-                <h3>ACES</h3>
-            </div>
-            <div class="cnt-detail game">
-                <h3>2025 playoffs game 1 - storm vs aces</h3>
+            <div class="cnt-detail">
+                <div class="game">
+                    <h3>2025 playoffs game 1 - storm vs aces</h3>
+                </div>
             </div>
         </div>
         <div class="jonq-hand cnt">
-            <img src="/assets/lab-cynn/jonq-hand-iso.png" alt="a link to something..." class="jonq-hand-img exprs" />
-            <div class="cnt-detail name">
-                <h3>JONQUEL JONES</h3>
-                <h3>LIBERTY</h3>
+            <img src="/assets/lab-cynn/jonq-hand-iso-dither.png" alt="a link to something..." class="jonq-hand-img exprs" />
+            <div class="cnt-detail">
+                <div class="name">
+                    <h3>JONQUEL JONES</h3>
+                </div>
+                <div class="team">
+                    <h3>LIBERTY</h3>
+                </div>
+                <div class="name">
+                    <h3>NATASHA MACK</h3>
+                </div>
+                <div class="team">
+                    <h3>MERCURY</h3>
+                </div>
             </div>
-            <div class="cnt-detail name">
-                <h3>NATASHA MACK</h3>
-                <h3>MERCURY</h3>
-            </div>
-            <div class="cnt-detail game">
-                <h3>2025 playoffs game - liberty vs mercury</h3>
+            <div class="cnt-detail">
+                <div class="game">
+                    <h3>2025 playoffs game - liberty vs mercury</h3>
+                </div>
             </div>
         </div>
         <div class="kah-hand cnt">
-            <img src="/assets/lab-cynn/kah-hand-iso.png" alt="a link to something..." class="kah-hand-img exprs" />
-            <div class="cnt-detail name">
-                <h3>KAHLEAH COPPER</h3>
-                <h3>MERCURY</h3>
+            <img src="/assets/lab-cynn/kah-hand-iso-dither.png" alt="a link to something..." class="kah-hand-img exprs" />
+            <div class="cnt-detail">
+                <div class="name">
+                    <h3>KAHLEAH COPPER</h3>
+                </div>
+                <div class="team">
+                    <h3>MERCURY</h3>
+                </div>
             </div>
-            <div class="cnt-detail game">
-                <h3>2025 playoffs game 1 - mercury vs liberty</h3>
+            <div class="cnt-detail">
+                <div class="game">
+                    <h3>2025 playoffs game 1 - mercury vs liberty</h3>
+                </div>
             </div>
         </div>
         <div class="rhyne-hand cnt">
-            <img src="/assets/lab-cynn/rhyne-hand-iso.png" alt="a link to something..." class="rhyne-hand-img exprs" />
-            <div class="cnt-detail name">
-                <h3>RHYNE HOWARD</h3>
-                <h3>DREAM</h3>
+            <img src="/assets/lab-cynn/rhyne-hand-iso-dither.png" alt="a link to something..." class="rhyne-hand-img exprs" />
+            <div class="cnt-detail">
+                <div class="name">
+                    <h3>RHYNE HOWARD</h3>
+                </div>
+                <div class="team">
+                    <h3>DREAM</h3>
+                </div>
             </div>
-            <div class="cnt-detail game">
-                <h3>2025 playoffs game 1 - dream vs fever</h3>
+            <div class="cnt-detail">
+                <div class="game">
+                    <h3>2025 playoffs game 1 - dream vs fever</h3>
+                </div>
             </div>
         </div>
         <div class="skylar-hand cnt">
-            <img src="/assets/lab-cynn/skylar-hand-iso.png" alt="a link to something..."
+            <img src="/assets/lab-cynn/skylar-hand-iso-dither.png" alt="a link to something..."
                 class="skylar-hand-img exprs" />
-            <div class="cnt-detail name">
-                <h3>SKYLAR DIGGINS</h3>
-                <h3>STORM</h3>
+            <div class="cnt-detail">
+                <div class="name">
+                    <h3>SKYLAR DIGGINS</h3>
+                </div>
+                <div class="team">
+                    <h3>STORM</h3>
+                </div>
             </div>
-            <div class="cnt-detail game">
-                <h3>2025 playoffs game 1 - storm vs aces</h3>
+            <div class="cnt-detail">
+                <div class="game">
+                    <h3>2025 playoffs game 1 - storm vs aces</h3>
+                </div>
+            </div>
+        </div>
+        <div class="bonner-bunch cnt">
+            <img src="/assets/lab-cynn/bonner-bunch-dither.png" alt="a link to something..."
+                class="bonner-bunch-img exprs" />
+            <div class="cnt-detail">
+                <div class="name">
+                    <h3>DEWANNA BONNER</h3>
+                </div>
+                <div class="team">
+                    <h3>MERCURY</h3>
+                </div>
+                <div class="name">
+                    <h3>KENNEDY BURKE</h3>
+                </div>
+                <div class="team">
+                    <h3>LIBERTY</h3>
+                </div>
+                <div class="name">
+                    <h3>SATOU SABALLY</h3>
+                </div>
+                <div class="team">
+                    <h3>MERCURY</h3>
+                </div>
+                <div class="name">
+                    <h3>LEONIE FIEBICH</h3>
+                </div>
+                <div class="team">
+                    <h3>LIBERTY</h3>
+                </div>
+            </div>
+            <div class="cnt-detail">
+                <div class="game">
+                    <h3>2025 playoffs game 1 - mercury vs liberty</h3>
+                </div>
             </div>
         </div>
 
     </div>
+
 
 
 </body>
