@@ -53,17 +53,18 @@
         }
 
         .cnt-detail {
-            display: grid;
             width: 100%;
+        }      
+
+        .cnt-detail .name {
+            display: flex;
+            border-bottom: none;
+            padding: .25em;
             border: 2px solid #494343;
             border-left: none;
         }
-
-        .name {
-            border-bottom: none;
-            padding: .25em;
-        }
         .cnt-detail .name h3 {
+            padding-left: 3em;
             font-style: italic;
             font-weight: 600;
             color: #070707;
@@ -79,33 +80,71 @@
             color: #070707;
         }
 
-        .cnt-detail .game {
+        .cnt-detail-g {
+            display: none;
+        }
+
+   /*    .cnt-detail .game {
+            display: none;
             text-align: right;
             padding: 3px;
             padding-right: .25em;
-        }
+            border: none;
+        } 
         .cnt-detail .game h3 {
             color: #070707;
             font-weight: 400;
             font-style: italic;
-        }
+        } */
         
         .jackie-skylar-hand .cnt-detail {
-            margin-top: -7em;
+            /*! margin-top: -15em; */
+            position: relative;
+            top: 5em;
+            right: 8.5em;
+        }
+        .grab-mvmet-img {
+            margin-left: 5.5em;
+            position: relative;
+            top: -6em;
+        }
+        .grab-mvmet .cnt-detail {
+            position: relative;
+            right: 7em;
+            top: 1em;
         }
         .aja-nneka-hand-img {
-            width: 52em;
+            position: relative;
+            top: -14em;
+            right: -19.8em;
         }
-        .bonner-bunch .cnt-detail {
-            margin-top: 25em;
+        .aja-nneka-hand .cnt-detail {
+            position: relative;
+            right: -15.8em;
+            top: -14.5em;
         }
-        .bonner-bunch-img {
-            min-width: 52em;
-            margin-left: 20em;
+        .jonq-mack-jump-ball-img {
+            position: relative;
+            top: -20.5em;
+            right: -57.5em;
+        }
+        .jonq-mack-jump-ball .cnt-detail {
+            position: relative;
+            right: -46.3em;
+            top: -13em;
+        }
+        .kah-hand .cnt-detail {
+            position: relative;
+            right: 4em;
+            top: 2.5em;
         }
         .aja-clutch-img {
-            margin-top: 5em;
             width: 22em;
+        }
+        .aja-clutch .cnt-detail {
+            position: relative;
+            right: 8.5em;
+            top: 7.5em;
         }
         .cloud-clutch-img {
             margin-left: 8em;
@@ -113,8 +152,9 @@
         .rhyne-hand {
             margin-left: 19em;
         }
-        .grab-mvmet-img {
-            margin-left: 5em;
+        .bonner-bunch-img {
+            min-width: 52em;
+            margin-left: 20em;
         }
         .jackie-in-a-storm {
             margin-top: .25em;
@@ -123,6 +163,7 @@
             position: relative;
             right: 19.75em;
         }
+        
 
     </style>
 </head>
@@ -150,21 +191,19 @@
                 <div class="name">
                     <h3>JACKIE YOUNG</h3>
                 </div>
-                <div class="team">
-                    <h3>ACES</h3>
-                </div>
-            </div>
-            <div class="cnt-detail">
+                    <div class="team">
+                        <h3>ACES</h3>
+                    </div>
                 <div class="name">
                     <h3>SKYLAR DIGGINS</h3>
-                </div>
-                <div class="team">
-                    <h3>STORM</h3>
+                    <div class="team">
+                        <h3>STORM</h3>
+                    </div>
                 </div>
             </div>
-            <div class="cnt-detail">
+            <div class="cnt-detail-g">
                 <div class="game">
-                    <h3>2025 playoffs round 1 game 1 - aces vs mercury</h3>
+                    <h3>2025 playoffs round 1 game 1 - aces vs storm</h3>
                 </div>
             </div>
         </div>
@@ -179,7 +218,7 @@
                     <h3>LIBERTY</h3>
                 </div>
             </div>
-            <div class="cnt-detail">
+            <div class="cnt-detail-g">
                 <div class="game">
                     <h3>2025 playoffs round 1 game 1 - liberty vs mercury</h3>
                 </div>
@@ -202,14 +241,14 @@
                     <h3>ACES</h3>
                 </div>
             </div>
-            <div class="cnt-detail">
+            <div class="cnt-detail-g">
                 <div class="game">
                     <h3>2025 playoffs round 1 game 1 - storm vs aces</h3>
                 </div>
             </div>
         </div>
-        <div class="jonq-hand cnt">
-            <img src="/assets/lab-cynn/jonq-hand-iso-dither.png" alt="a link to something..." class="jonq-hand-img exprs" />
+        <div class="jonq-mack-jump-ball cnt">
+            <img src="/assets/lab-cynn/jonq-mack-jump-ball-cropped.png" alt="a link to something..." class="jonq-mack-jump-ball-img exprs" />
             <div class="cnt-detail">
                 <div class="name">
                     <h3>JONQUEL JONES</h3>
@@ -224,7 +263,7 @@
                     <h3>MERCURY</h3>
                 </div>
             </div>
-            <div class="cnt-detail">
+            <div class="cnt-detail-g">
                 <div class="game">
                     <h3>2025 playoffs round 1 game - liberty vs mercury</h3>
                 </div>
@@ -240,7 +279,7 @@
                     <h3>MERCURY</h3>
                 </div>
             </div>
-            <div class="cnt-detail">
+            <div class="cnt-detail-g">
                 <div class="game">
                     <h3>2025 playoffs round 1 game 1 - mercury vs liberty</h3>
                 </div>
@@ -257,7 +296,7 @@
                     <h3>ACES</h3>
                 </div>
             </div>
-            <div class="cnt-detail">
+            <div class="cnt-detail-g">
                 <div class="game">
                     <h3>2025 playoffs round 1 game 3 - aces vs storm</h3>
                 </div>
@@ -280,7 +319,7 @@
                     <h3>LIBERTY</h3>
                 </div>
             </div>
-            <div class="cnt-detail">
+            <div class="cnt-detail-g">
                 <div class="game">
                     <h3>2025 playoffs round 1 game 2 - liberty vs mercury</h3>
                 </div>
@@ -296,7 +335,7 @@
                     <h3>DREAM</h3>
                 </div>
             </div>
-            <div class="cnt-detail">
+            <div class="cnt-detail-g">
                 <div class="game">
                     <h3>2025 playoffs round 1 game 1 - dream vs fever</h3>
                 </div>
@@ -331,7 +370,7 @@
                     <h3>LIBERTY</h3>
                 </div>
             </div>
-            <div class="cnt-detail">
+            <div class="cnt-detail-g">
                 <div class="game">
                     <h3>2025 playoffs round 1 game 1 - mercury vs liberty</h3>
                 </div>
@@ -372,7 +411,7 @@
                     <h3>STORM</h3>
                 </div>
             </div>
-            <div class="cnt-detail">
+            <div class="cnt-detail-g">
                 <div class="game">
                     <h3>2025 playoffs round 1 game 3 - aces vs storm</h3>
                 </div>
