@@ -29,15 +29,16 @@
             justify-content: space-between;
             border: solid 3px #070707;
         }
+        .detail {
+            margin-right: 60em;
+        }
         .detail h2 {
             font-weight: 400;
             font-style: italic;
-            width: 20em;
             height: fit-content;
         }
 
-        .detail a {
-            font-size: .9em;
+        .detail p {
             color: #070707;
         }
 
@@ -46,14 +47,9 @@
             margin: unset;
         }
 
-        .cnt {
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-        }
-
         .cnt-detail {
-            width: 100%;
+            min-width: fit-content;
+            max-width: 30em;
         }      
 
         .cnt-detail .name {
@@ -96,79 +92,119 @@
             font-weight: 400;
             font-style: italic;
         } */
-        
-        .jackie-skylar-hand .cnt-detail {
-            /*! margin-top: -15em; */
+        .exprs {
             position: relative;
-            top: 5em;
-            right: 8.5em;
+            z-index: 1;
         }
-        .grab-mvmet-img {
-            margin-left: 5.5em;
+        .jackie-skylar-hand .cnt-detail {
             position: relative;
-            top: -6em;
+            top: -30em;
+            right: -32em;
+        }
+        .grab-mvmet {
+            position: relative;
+            top: -11em;
+            left: 5.5em;
         }
         .grab-mvmet .cnt-detail {
             position: relative;
-            right: 7em;
-            top: 1em;
+            right: -43.5em;
+            top: -26em;
         }
-        .aja-nneka-hand-img {
+        .aja-nneka-hand {
             position: relative;
-            top: -14em;
-            right: -19.8em;
+            top: -29em;
+            right: -35.8em;
         }
         .aja-nneka-hand .cnt-detail {
             position: relative;
-            right: -15.8em;
-            top: -14.5em;
+            left: 23em;
+            top: -21.8em;
         }
-        .jonq-mack-jump-ball-img {
+        .jonq-mack-jump-ball {
             position: relative;
-            top: -20.5em;
-            right: -57.5em;
+            top: -48.5em;
+            right: -6.5em;
         }
         .jonq-mack-jump-ball .cnt-detail {
             position: relative;
-            right: -46.3em;
-            top: -13em;
+            right: -22.3em;
+            top: -26em;
+        }
+        .rhyne-hand {
+            position: relative;
+            left: 46em;
+            top: -104.5em;
+        }
+        .rhyne-hand .cnt-detail {
+            position: relative;
+            right: -24.5em;
+            top: -29em;
+        }
+        .rhyne-hand .cnt-detail .name h3 {
+            padding-left: 1em;
         }
         .kah-hand .cnt-detail {
             position: relative;
-            right: 4em;
-            top: 2.5em;
+            right: -15em;
+            top: -5.5em;
+        }
+        .aja-clutch {
+            position: relative;
+            top: -38.5em;
+            left: 41em;
         }
         .aja-clutch-img {
-            width: 22em;
+            width: 25em;
+            z-index: 1;
         }
         .aja-clutch .cnt-detail {
             position: relative;
-            right: 8.5em;
-            top: 7.5em;
+            right: -15.5em;
+            top: -16.5em;
+        }
+        .cloud-clutch {
+            position: relative;
+            top: -106.5em;
+            left: 74em;
         }
         .cloud-clutch-img {
-            margin-left: 8em;
+            width: 31em;
         }
-        .rhyne-hand {
-            margin-left: 19em;
+        .cloud-clutch .cnt-detail {
+            position: relative;
+            right: 11em;
+            top: -23.8em;
+        }
+        .cloud-clutch .cnt-detail .name {
+            border: 2px solid #494343;
+            border-right: none;
+        }
+
+        .bonner-bunch {
+            position: relative;
+            left: 47em;
+            top: -96em;
+        }
+        .bonner-bunch .cnt-detail {
+            position: relative;
+            right: -47.7em;
+            top: -21.5em;
         }
         .bonner-bunch-img {
-            min-width: 52em;
-            margin-left: 20em;
+            width: 48em;
         }
         .jackie-in-a-storm {
-            margin-top: .25em;
+            position: relative;
+            top: -120em;
         }
         .jackie-in-a-storm .cnt-detail {
             position: relative;
-            right: 19.75em;
+            right: -54em;
+            top: -35em;
         }
-        
-
     </style>
 </head>
-
- 
 
 <body>
 
@@ -177,8 +213,9 @@
             <img src="/assets/lab-cynn/shortened-title.png" alt="R.E.G. COURT" class="img-title-png" />
         </div>
         <div class="detail" >
-            <h2>pictures that make basketball look choreographed. </h2>
-            <a href="https://www.wnba.com/news/playoffs-photo-gallery-9-14-2025" target="_blank">original images can be found here</a>
+            <h2>basketball but choreographed! cinematic!</h2>
+            <p>if wnba's content didn't suck < / 3    
+            </p>
         </div>
     </div>
 
@@ -190,10 +227,11 @@
             <div class="cnt-detail">
                 <div class="name">
                     <h3>JACKIE YOUNG</h3>
-                </div>
+                
                     <div class="team">
                         <h3>ACES</h3>
                     </div>
+                </div>    
                 <div class="name">
                     <h3>SKYLAR DIGGINS</h3>
                     <div class="team">
@@ -269,6 +307,22 @@
                 </div>
             </div>
         </div>
+        <div class="rhyne-hand cnt">
+            <img src="/assets/lab-cynn/rhyne-howard-cropped.png" alt="a link to something..." class="rhyne-hand-img exprs" />
+            <div class="cnt-detail">
+                <div class="name">
+                    <h3>RHYNE HOWARD</h3>
+                </div>
+                <div class="team">
+                    <h3>DREAM</h3>
+                </div>
+            </div>
+            <div class="cnt-detail-g">
+                <div class="game">
+                    <h3>2025 playoffs round 1 game 1 - dream vs fever</h3>
+                </div>
+            </div>
+        </div>
         <div class="kah-hand cnt">
             <img src="/assets/lab-cynn/kah-hand-iso-dither.png" alt="a link to something..." class="kah-hand-img exprs" />
             <div class="cnt-detail">
@@ -325,22 +379,7 @@
                 </div>
             </div>
         </div>
-        <div class="rhyne-hand cnt">
-            <img src="/assets/lab-cynn/rhyne-howard-cropped.png" alt="a link to something..." class="rhyne-hand-img exprs" />
-            <div class="cnt-detail">
-                <div class="name">
-                    <h3>RHYNE HOWARD</h3>
-                </div>
-                <div class="team">
-                    <h3>DREAM</h3>
-                </div>
-            </div>
-            <div class="cnt-detail-g">
-                <div class="game">
-                    <h3>2025 playoffs round 1 game 1 - dream vs fever</h3>
-                </div>
-            </div>
-        </div>
+
         <div class="bonner-bunch cnt">
             <img src="/assets/lab-cynn/bonner-bunch-cropped.png" alt="a link to something..."
                 class="bonner-bunch-img exprs" />
