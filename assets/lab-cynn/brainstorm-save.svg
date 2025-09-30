@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="1593.7781"
+   height="1024.8344"
+   viewBox="0 0 421.68712 271.15409"
+   version="1.1"
+   id="svg1"
+   inkscape:version="1.4.2 (2aeb623e1d, 2025-05-12)"
+   sodipodi:docname="brainstorm-save.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview1"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:document-units="px"
+     inkscape:zoom="1.0116647"
+     inkscape:cx="257.00216"
+     inkscape:cy="1160.9578"
+     inkscape:window-width="1854"
+     inkscape:window-height="1011"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1">
+    <inkscape:page
+       x="0"
+       y="0"
+       width="421.68713"
+       height="271.15408"
+       id="page8"
+       margin="0"
+       bleed="0" />
+    <inkscape:page
+       x="-7.8920493"
+       y="302.40506"
+       width="161.21341"
+       height="26.03554"
+       id="page9"
+       margin="0"
+       bleed="0"
+       inkscape:export-filename="../d3ba7546/normed-header.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+  </sodipodi:namedview>
+  <defs
+     id="defs1">
+    <filter
+       style="color-interpolation-filters:sRGB;"
+       inkscape:label="Noise Fill"
+       id="filter30"
+       x="0"
+       y="0"
+       width="1"
+       height="1">
+      <feTurbulence
+         type="turbulence"
+         baseFrequency="32.1656 29.2994"
+         numOctaves="3"
+         seed="41"
+         result="turbulence"
+         id="feTurbulence29" />
+      <feComposite
+         in="SourceGraphic"
+         in2="turbulence"
+         operator="out"
+         result="composite1"
+         id="feComposite29" />
+      <feColorMatrix
+         values="1 0 0 0 0 0 1 0 0 0 0 0 1 0 0 0 0 0 4.7 -1.64 "
+         result="color"
+         id="feColorMatrix29" />
+      <feFlood
+         flood-opacity="0.168627"
+         flood-color="rgb(0,0,0)"
+         result="flood"
+         id="feFlood29" />
+      <feMerge
+         result="merge"
+         id="feMerge30">
+        <feMergeNode
+           in="flood"
+           id="feMergeNode29" />
+        <feMergeNode
+           in="color"
+           id="feMergeNode30" />
+      </feMerge>
+      <feComposite
+         in2="SourceGraphic"
+         operator="in"
+         result="fbSourceGraphic"
+         id="feComposite30" />
+      <feColorMatrix
+         result="fbSourceGraphicAlpha"
+         in="fbSourceGraphic"
+         values="0 0 0 -1 0 0 0 0 -1 0 0 0 0 -1 0 0 0 0 1 0"
+         id="feColorMatrix46" />
+      <feTurbulence
+         id="feTurbulence46"
+         type="turbulence"
+         baseFrequency="32.1656 29.2994"
+         numOctaves="3"
+         seed="41"
+         result="turbulence"
+         in="fbSourceGraphic" />
+      <feComposite
+         id="feComposite46"
+         in="fbSourceGraphic"
+         in2="turbulence"
+         operator="out"
+         result="composite1" />
+      <feColorMatrix
+         id="feColorMatrix47"
+         values="1 0 0 0 0 0 1 0 0 0 0 0 1 0 0 0 0 0 4.7 -1.64 "
+         result="color" />
+      <feFlood
+         id="feFlood47"
+         flood-opacity="0.168627"
+         flood-color="rgb(74,255,84)"
+         result="flood" />
+      <feMerge
+         id="feMerge47"
+         result="merge">
+        <feMergeNode
+           id="feMergeNode47"
+           in="flood" />
+        <feMergeNode
+           id="feMergeNode48"
+           in="color" />
+      </feMerge>
+      <feComposite
+         id="feComposite48"
+         in2="fbSourceGraphic"
+         operator="in"
+         result="composite2" />
+    </filter>
+  </defs>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(-10.507376,-5.1573157)">
+    <rect
+       style="fill:none;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:1.5875;stroke-dasharray:none;stroke-opacity:1"
+       id="rect2"
+       width="106.18225"
+       height="209.22612"
+       x="28.768591"
+       y="41.322155" />
+    <text
+       xml:space="preserve"
+       style="font-style:italic;font-size:30.7714px;line-height:26.4774px;font-family:Cohabited;-inkscape-font-specification:'Cohabited Italic';text-align:start;letter-spacing:0.453329px;word-spacing:-0.473934px;writing-mode:lr-tb;direction:ltr;text-orientation:upright;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1.64846;stroke-linejoin:bevel;stroke-miterlimit:3.6"
+       x="9.9996328"
+       y="27.004982"
+       id="text5"><tspan
+         sodipodi:role="line"
+         id="tspan5"
+         style="font-style:italic;font-variant:normal;font-weight:500;font-stretch:normal;font-size:30.7714px;line-height:26.4774px;font-family:'Quietism Poster';-inkscape-font-specification:'Quietism Poster Medium Italic';stroke:none;stroke-width:1.64846"
+         x="9.9996328"
+         y="27.004982">CYNNALITY</tspan></text>
+    <g
+       id="g8"
+       transform="translate(11.907611,0.64308705)">
+      <rect
+         style="fill:none;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0.79375;stroke-dasharray:none;stroke-opacity:1"
+         id="rect6"
+         width="80.601608"
+         height="65.248917"
+         x="149.5719"
+         y="27.004982" />
+      <rect
+         style="fill:#00de51;fill-opacity:1;fill-rule:evenodd;stroke-width:0.264583"
+         id="rect3"
+         width="65.906227"
+         height="53.352657"
+         x="156.91959"
+         y="32.953114" />
+      <rect
+         style="fill:#1a4cff;fill-opacity:1;fill-rule:evenodd;stroke-width:0.264583"
+         id="rect4"
+         width="76.367531"
+         height="73.229134"
+         x="222.82581"
+         y="86.305771" />
+      <rect
+         style="fill:#ff211d;fill-opacity:1;fill-rule:evenodd;stroke-width:0.373316"
+         id="rect5"
+         width="107.75145"
+         height="103.3233"
+         x="299.19333"
+         y="159.53491" />
+      <rect
+         style="fill:none;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0.79375;stroke-dasharray:none;stroke-opacity:1"
+         id="rect7"
+         width="97.819588"
+         height="93.799599"
+         x="212.09978"
+         y="76.020538" />
+      <rect
+         style="fill:none;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0.79375;stroke-dasharray:none;stroke-opacity:1"
+         id="rect8"
+         width="133.64186"
+         height="128.14972"
+         x="286.24814"
+         y="147.1217" />
+    </g>
+    <text
+       xml:space="preserve"
+       style="font-style:italic;font-size:32.3842px;line-height:27.8652px;font-family:Cohabited;-inkscape-font-specification:'Cohabited Italic';text-align:start;letter-spacing:0.477089px;word-spacing:-0.498774px;writing-mode:lr-tb;direction:ltr;text-orientation:upright;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1.73486;stroke-linejoin:bevel;stroke-miterlimit:3.6;filter:url(#filter30)"
+       x="3.4540451"
+       y="331.94696"
+       id="text8"><tspan
+         sodipodi:role="line"
+         id="tspan8"
+         style="font-style:italic;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:32.3842px;line-height:27.8652px;font-family:'Quietism Poster';-inkscape-font-specification:'Quietism Poster Bold Italic';stroke:none;stroke-width:1.73486"
+         x="3.4540451"
+         y="331.94696">CYNNALITY</tspan></text>
+  </g>
+</svg>
