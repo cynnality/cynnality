@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <title>courts</title>
@@ -14,49 +15,203 @@
   <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@1,14..32,632&display=swap" rel="stylesheet">
 
   <style>
-    
     body {
-    font-family: "Inter", sans-serif;
-    font-style: normal;
-    background: #e3e3e3; /* #E3E3E3 - neutral bg #7F00FF - blue-purple ---- cant decide */
+      font-family: "Inter", sans-serif;
+      font-style: normal;
+      background: #e3e3e3;
+      /* #E3E3E3 - neutral bg #7F00FF - blue-purple ---- cant decide */
+    }
+    p {
+      margin: 0;
     }
 
-
-    .court-material {
-      width: 25%;
-      top: 12em;
-      left: 59em;
+    .off-center-section {
+      border: solid 3px #000000;
+      width: 56em;
     }
-    .court-sign {
-      width: 24%;
-      left: 54em;
-      top: -1em;
+
+    .box-description {
+      position: relative;
+      display: grid;
+      padding: .5em;
+      border-bottom: 2px solid #000000;
+      width: fit-content;
+    }
+
+    .section-title {
+      font-family: "Inter", sans-serif;
+      font-style: italic;
+      font-size: 32px;
+      font-weight: 600;
+      color: #000000;
+      position: relative;
+    }
+
+    .small-description {
+      font-family: "Inter", sans-serif;
+      font-style: italic;
+      font-weight: 100;
+      color: #000000;
+      position: relative;
+    }
+
+    .off-center-box {
+      display: grid;
+      position: relative;
+    }
+
+    .off-center-box .outie {
+      display: grid;
+      border: 2px solid #000000;
+    }
+
+    .off-center-box .innie {
+      display: grid;
+      align-self: center;
+      justify-self: center;
+      transition: transform 0.1s ease-in-out;
+      position: relative;
+    }
+
+    .off-center-box .innie:hover {
+      transform: scale(1.35);
+      z-index: 1;
+    }
+
+    .off-center-box .innie .innie-text {
+      align-self: center;
+      justify-self: center;
+      font-family: "Inter", sans-serif;
+      font-style: italic;
+      font-size: 1em;
+      color: #000000;
+    }
+
+    .off-center-box a {
+      text-align: center;
+      align-self: center;
+      justify-self: center;
+      font-family: "Inter", sans-serif;
+      font-style: italic;
+      font-size: 1em;
+      color: #000000;
+      text-decoration: none;
+    }
+
+    .off-center-box.looks {
+      top: 3.5em;
+      left: 2em;
+    }
+
+    .off-center-box.looks .outie {
+      width: 15em;
+      height: 15em;
+    }
+
+    .off-center-box.looks .innie {
+      width: 12em;
+      height: 12em;
+      background-color: #00de51;
+    }
+
+    .off-center-box.looks .innie:hover {
+      transform: scale(1.27);
+      z-index: 1;
+    }
+
+    .off-center-box.watching {
+      top: -15.4em;
+      left: 23.5em;
+    }
+
+    .off-center-box.watching .outie {
+      width: 18em;
+      height: 18em;
+    }
+
+    .off-center-box.watching .innie {
+      width: 16em;
+      height: 16em;
+      background-color: #ff211d;
+    }
+
+    .off-center-box.watching .innie:hover {
+      transform: scale(1.15);
+    }
+
+    .off-center-box.teams {
+      top: -18.1em;
+      left: 14em;
+    }
+
+    .off-center-box.teams .outie {
+      width: 12em;
+      height: 12em;
+    }
+
+    .off-center-box.teams .innie {
+      width: 9em;
+      height: 9em;
+      background-color: #1a4cff;
+    }
+
+    .off-center-box.tickets {
+      top: -21.4em;
+      left: 23em;
+    }
+    .off-center-box.tickets .outie {
+      width: 12em;
+      height: 12em;
+    }
+    .off-center-box.tickets .innie {
+      width: 9em;
+      height: 9em;
+      background-color: #1a4cff;
     }
 
     .court-text {
       background: #e3e3e3;
-      width: 20em;
+      width: 9em;
       top: 18em;
-      left: 43em;
-      text-align: center;      
+      left: 52em;
+      text-align: center;
+      border: 3px solid #000000;
     }
 
     .court-text h3 {
       padding: .5em .25em;
       font-style: italic;
     }
+
     .court-text p {
       padding: .25em;
     }
 
-    .reg-court {
-      width: 20em;
-      top: 3em;
-      left: 6em;
-    }
 
-   /*media styles are in court-universal-styles.css*/
+/* Inline | http://127.0.0.1:3000/courts/main-court.html */
 
+.off-center-box.watching {
+  /* top: -18.1em; */
+  top: -15.4em;
+}
+
+.off-center-box.teams {
+  /* top: -21em; */
+  top: -18.1em;
+}
+
+.off-center-box.tickets {
+  /* top: -24.4em; */
+  top: -21.4em;
+}
+
+.off-center-box.looks {
+  /* top: 4.5em; */
+  top: 3.5em;
+}
+
+
+    /*media styles are in court-universal-styles.css*/
   </style>
 </head>
 
@@ -65,23 +220,70 @@
 <body>
 
   <div class="choose-court">
-    <a href="page-wnba/teams-wnba.html" class="boring">
-      <img src="/assets/lab-cynn/court-material.png" alt="a link to something..." class="court-material" />
-    </a>
-    <a href="matchups.html" class="boring">
-      <img src="/assets/lab-cynn/a-sign-game.png" alt="a link to something..." class="court-sign" />
-    </a>
-    <div class="court-text">
-      <h3>things relating to sports and competition</h3>
-      <p>click on things and look around! its the only rule</p>
+    <div class="off-center-section">
+      <div class="box-description">
+        <div class="section-title">
+          <p>BASKETBALL</p>
+        </div>
+        <div class="small-description">
+          <p>smaller parts of a bigger idea that is still forming....</p>
+        </div>
+      </div>
+      <div class="off-center-box looks">
+        <div class="outie">
+          <a href="reg-court.html">
+            <div class="innie">
+              <div class="innie-text">
+                <h1>looks</h1>
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
+      <div class="off-center-box watching">
+        <div class="outie">
+          <a href="creators-basketball.html">
+            <div class="innie">
+              <div class="innie-text">
+                <h1>watch games & content</h1>
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
+      <div class="off-center-box teams">
+        <div class="outie">
+          <a href="page-wnba/teams-wnba.html">
+            <div class="innie">
+              <div class="innie-text">
+                <h1>teams</h1>
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
+      <div class="off-center-box tickets">
+        <div class="outie">
+          <a href="matchups.html">
+            <div class="innie">
+              <div class="innie-text">
+                <h1>tickets</h1>
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
+      
     </div>
-    <div class="reg-court-cover">
-        <a href="reg-court.html" class="boring">
-      <img src="/assets/lab-cynn/reg-court-cover.png" alt="a link to something..." class="court-link reg-court" />
-    </a>
+
+      <div class="court-text">
+        <h3>sports! competition! winners! losers!</h3>
+        <p>click on things and look around! its the only rule</p>
+      </div>
+
     </div>
-  </div>
 
 
 </body>
+
 </html>
