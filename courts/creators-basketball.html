@@ -23,26 +23,28 @@
 
     .off-center-section {
       border: solid 3px #000000;
-      width: 40em;
+      width: 60em;
     }
     .section-title {
-      font-family: "Inter", sans-serif;
       font-style: italic;
       color: #000000;
       position: relative;
-      top: 14em;
-      left: .5em;
       font-size: 32px;
       font-weight: 600;
     }
+    .small-description {
+      font-style: italic;
+      font-weight: 100;
+      color: #000000;
+      position: relative;
+    }
 
-    .off-center-box {
+        .off-center-box {
             display: grid;
             position: relative;
         }
         .off-center-box .outie {
-            display: grid;
-            border: 2px solid #000000;
+            display: flex;
         }
         .off-center-box .innie {
             display: grid;
@@ -50,55 +52,49 @@
             justify-self: center;
             transition: transform 0.1s ease-in-out;
             position: relative;
-        }
-        .off-center-box .innie:hover {
-            transform: scale(1.35);
-            z-index: 1;
+            display: grid;
+            gap: 1em;
+            width: 15em;
         }
         .off-center-box .innie .innie-text {
-            align-self: center;
-            justify-self: center;
-            font-family: "Inter", sans-serif;
+            position: relative;
+            border: solid 2px #000000;
+            background-color: #e3e3e39a;
+            border-radius: 6px;
+            display: flex;
+            justify-content: right;
+        }
+        .innie .innie-text a {
             font-style: italic;
             font-size: 1em;
             color: #000000;
         }
-        .off-center-box a {
-            align-self: center;
-            justify-self: center;
-            font-family: "Inter", sans-serif;
-            font-style: italic;
-            font-size: 1em;
-            color: #000000;
-            text-decoration: none;
+        .innie .innie-text a h1 {
+            margin: .25em;
         }
 
-        .off-center-box.looks {
-            top: 2em;
-            left: 8em;
+
+        .splash-squad-wbb-img {
+            width: 32em;
+            border-radius: 6px;
+            margin: .5em;
+            z-index: 1;
         }
-        .off-center-box.looks .outie {
-            width: 15em;
-            height: 15em;
-        }
-        .off-center-box.looks .innie {
-            width: 12em;
-            height: 12em;
-            background-color: #00de51;
+        .splash-squad-wbb .innie {
+            position: relative;
+            left: -3.5em;
         }
 
-        .off-center-box.teams {
-            top: -1.4em;
-            left: 20em;
+
+        .womens-basketball-universe-img {
+            width: 32em;
+            border-radius: 6px;
+            margin: .5em;
+            z-index: 1;
         }
-        .off-center-box.teams .outie {
-            width: 12em;
-            height: 12em;
-        }
-        .off-center-box.teams .innie {
-            width: 9em;
-            height: 9em;
-            background-color: #1a4cff;
+        .womens-basketball-universe .innie {
+            position: relative;
+            left: -3.5em;
         }
 
   </style>
@@ -108,31 +104,58 @@
 
 <body>
   <div class="off-center-section">
-    <div class="section-title">
-        <p>content creators</p>
+    <div class="box-description">
+        <div class="section-title">
+          <p>content creators</p>
+        </div>
+        <div class="small-description">
+          <p>triple platinum basketball content creators</p>
+        </div>
     </div>
+
         <div class="off-center-box splash-squad-wbb">
             <div class="outie">
-                <a href="https://www.youtube.com/@splashsquadwbb/videos" target="_blank">
+                <img src="/assets/lab-cynn/splash-squad-wbb.png" class="splash-squad-wbb-img" />
+         
                     <div class="innie">
-                        <div class="innie-text">
-                            <h1>SPLASH SQUAD WBB</h1>
+                        <div class="innie-text yt">
+                            <a href="https://www.youtube.com/@splashsquadwbb/videos" target="_blank">
+                                <h1>youtube</h1>
+                            </a>
+                        </div>
+                        <div class="innie-text insta">
+                            <a href="https://www.instagram.com/splashsquadwbb/" target="_blank">
+                                <h1>instagram</h1>
+                            </a>
+                        </div>
+                        <div class="innie-text tiktok">
+                            <a href="https://www.tiktok.com/@splashsquadwbb" target="_blank">
+                                <h1>tiktok</h1>
+                            </a>
                         </div>
                     </div>
-                </a>
             </div>
         </div>
+
         <div class="off-center-box womens-basketball-universe">
             <div class="outie">
-                <a href="https://www.youtube.com/@WBBUNIVERSE" target="_blank">
+                <img src="/assets/lab-cynn/womens-basketball-universe.png" class="womens-basketball-universe-img" />
+              
                     <div class="innie">
-                        <div class="innie-text">
-                            <h1>WOMEN'S BASKETBALL UNIVERSE</h1>
+                        <div class="innie-text yt">
+                            <a href="https://www.youtube.com/@WBBUNIVERSE" target="_blank">
+                                <h1>youtube</h1>
+                            </a>
+                        </div>
+                        <div class="innie-text twitch">
+                            <a href="https://www.tiktok.com/@wbbuniverse" target="_blank">
+                                <h1>tiktok</h1>
+                            </a>
                         </div>
                     </div>
-                </a>
             </div>
         </div>
+
         <div class="off-center-box no-cap-space-wbb">
             <div class="outie">
                 <a href="https://www.youtube.com/@NoCapSpaceWBB/videos" target="_blank">
