@@ -28,7 +28,7 @@ body {
 ******************************************************************************/
 
 .pane {
-  background-color: #351424;
+  background-color: #e3e3e3;
   position: absolute;
   width: var(--pane-default-width);
   height: var(--pane-default-height);
@@ -55,7 +55,7 @@ body {
 }
 
 .panetext {
-  margin: 1.5em;
+  margin: .25em;
   background-color: #F0F1C0;
   padding: 15px;
   position: relative;
@@ -63,6 +63,7 @@ body {
   border-right: 4px solid #000000;
   border-bottom: 4px solid #000000;
   border-left: 4px solid #000000;
+  margin-right: .5em;
 }
 
 .opener {
@@ -89,7 +90,6 @@ body {
   height: auto;
   pointer-events: none;
   user-select: none;
-  filter: invert(1);
 }
  
 
