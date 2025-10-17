@@ -4,15 +4,9 @@
 <head>
   <meta charset="utf-8" />
   <title>cynnality</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:opsz@14..32&display=swap" rel="stylesheet">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@1,14..32,300&display=swap" rel="stylesheet">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@1,14..32,632&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -80,7 +74,7 @@
         .blue-block {
             width: 7em;
             height: 2em;
-            background-color: #1a4cff;
+            background-color: #7F00FF;
         }
         .cw-descrip {
             width: 6em;
@@ -143,7 +137,7 @@
         .off-center-box.green .innie {
             width: 9em;
             height: 9em;
-            background-color: #00de51;
+            background-color: #15B73B;
         }
 
         .off-center-box.blue {
@@ -157,7 +151,7 @@
         .off-center-box.blue .innie {
             width: 15em;
             height: 15em;
-            background-color: #1a4cff;
+            background-color: #7F00FF;
         }
         .off-center-box.blue .innie:hover {
         transform: scale(1.23);
@@ -174,7 +168,52 @@
         .off-center-box.red .innie {
             width: 15em;
             height: 15em;
-            background-color: #ff211d;
+            background-color: #A30034;
+        }
+        .standalone-box {
+            display: grid;
+            position: relative;
+        }
+        .standalone-box .outie {
+            display: grid;
+            border: 2px solid #000000;
+        }
+        .standalone-box .innie {
+            display: grid;
+            align-self: center;
+            justify-self: center;
+            transition: transform 0.1s ease-in-out;
+            position: relative;
+        }
+        .standalone-box .innie:hover {
+            transform: scale(1.35);
+            z-index: 1;
+        }
+        .standalone-box .innie .innie-text {
+            align-self: center;
+            justify-self: center;
+            font-family: "Inter", sans-serif;
+            font-style: italic;
+            font-size: 1em;
+            color: #000000;
+        }
+        .standalone-box a {
+            align-self: center;
+            justify-self: center;
+            text-decoration: none;
+        }
+        .purple {
+            top: -38.1em;
+            left: 24em;
+        }
+        .purple .outie {
+            width: 20em;
+            height: 6em;
+        }
+        .purple .innie {
+            width: 15em;
+            height: 5em;
+            background-color: #E566FF;
         }
 
 </style>
@@ -279,6 +318,17 @@
                 <div class="innie">
                     <div class="innie-text">
                         <h1>library</h1>
+                    </div>
+                </div>
+            </a>
+        </div>
+    </div>
+    <div class="standalone-box purple">
+        <div class="outie">
+            <a href="/learning-p5/color-blocks.html">
+                <div class="innie">
+                    <div class="innie-text">
+                        <h1>play a game</h1>
                     </div>
                 </div>
             </a>

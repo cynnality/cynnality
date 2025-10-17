@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>basketball wiki</title>
+  <!-- p5.js first -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.8.0/p5.js"></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/planck@1.0.1/dist/planck.min.js"></script>
+  
+  <!-- p5.play AFTER p5.js -->
+  <script src="https://p5play.org/v3/p5.play.js"></script>
+
+  <script src="player-info-script.js"></script>
+  <script src="player-info-bg.js"></script>
+  
+  
+
+    <style>
+    body {
+      margin: 0;
+      font-family: sans-serif;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      min-height: 100vh;
+      color: white;
+    }
+    
+    .wiki-container {
+      position: relative;
+      z-index: 10;
+      padding: 20px;
+      text-align: center;
+      max-width: 600px;
+      width: 90%;
+    }
+    
+    #infobox-data {
+      margin: 20px 0;
+      color: white;
+    }
+    
+    summary {
+      cursor: pointer;
+      font-weight: bold;
+      user-select: none;
+      margin-top: 10px;
+      color: white;
+    }
+    
+    pre {
+      padding: 8px;
+      border-radius: 4px;
+      overflow-x: auto;
+      background: rgba(255,255,255,0.1);
+      color: white;
+    }
+    </style>
+
+  </head>
+<body>
+  <div class="wiki-container">
+    <h2>quick wikipedia fact getter for pro wbb players</h2>
+    <p>
+      player name: <input id="userinput" value="rainbow" style="z-index: 20; position: relative;" />
+      <button id="startSearch" style="z-index: 20; position: relative;">start</button>
+    </p>
+    <div id="infobox-data"></div>
+  </div>
+</body>
+</html>

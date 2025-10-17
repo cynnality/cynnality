@@ -1,0 +1,561 @@
+.fugaz-one-regular {
+  font-family: "Fugaz One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+.inter-regular {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+.inter-medium {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+}
+.inter-semibold {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+}
+.inter-light-italic {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: italic;
+}
+.federo-regular {
+  font-family: "Federo", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+.faculty-glyphic-regular {
+  font-family: "Faculty Glyphic", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+.shrikhand-regular {
+  font-family: "Shrikhand", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+.smooch-sans-reg {
+  font-family: "Smooch Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+.unlock-regular {
+  font-family: "Unlock", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+
+
+p, h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+  padding: 0;
+}
+
+.team-card {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1em;
+}
+
+.team-cover-bg {
+    display: flex;
+    width: 36em;
+    height: 14em;
+    margin-right: 1em;
+    justify-content: center;
+    align-items: center;
+}
+
+.team-cover-mid-bg {
+    display: flex;
+    width: 93%;
+    height: 91%;
+    justify-content: center;
+    align-items: center;
+}
+.team-cover-fg {
+    display: grid;
+    width: 95%;
+    height: 91%;
+}
+.team-cover-fg-text {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.team-name-city {
+  position: absolute;
+  top: 0.25em;
+  left: 0.25em;
+  font-family: "Smooch Sans", sans-serif;
+  font-size: 1.95em;
+  font-optical-sizing: auto;
+  text-transform: uppercase;
+  line-height: 1.2;
+  pointer-events: none;
+  background: transparent;
+  z-index: 2;
+}
+
+.team-name {
+  position: relative;
+  left: -1%;
+  top: 23%;
+  font-family: "Shrikhand", serif;
+  font-variant: small-caps;
+  font-size: clamp(4em, 8vw, 7.5em);
+  text-align: center;
+  margin: 0;
+  /*! word-break: break-word; */
+  line-height: 1.1;
+  /*! max-width: 95%; */
+  z-index: 3;
+}
+
+.team-info-section {
+  display: flex;
+  align-items: stretch;
+  justify-content: center;
+  gap: 2em;
+  width: 32em;
+}
+
+.team-colors {
+  display: flex;
+  flex-direction: column;
+}
+
+.team-color-block {
+  width: 30px;
+  height: 70px;
+  /*! box-sizing: border-box; */
+}
+
+.team-details {
+  flex: 1;
+  padding: 0 1em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+
+#team-LVA_ACES .team-cover-bg {
+    background-color: var(--team-color2, #ccc);
+}
+#team-LVA_ACES .team-cover-mid-bg {
+    background-color: var(--team-color3, #ccc);
+}
+#team-LVA_ACES .team-cover-fg {
+    background-color: var(--team-color1, #ccc);
+}
+#team-LVA_ACES .team-name {
+    color: #000000;
+}
+#team-LVA_ACES .team-name {
+    font-size: clamp(4em, 8vw, 9.5em);
+}
+
+#team-ATL_DREAM .team-cover-bg {
+    background-color: var(--team-color2, #ccc);
+}
+#team-ATL_DREAM .team-cover-mid-bg {
+    background-color: var(--team-color3, #ccc);
+}
+#team-ATL_DREAM .team-cover-fg {
+    background-color: var(--team-color1, #ccc);
+}
+#team-ATL_DREAM .team-name {
+    color: var(--team-color2, #7c0a1d);
+}
+#team-ATL_DREAM .team-name-city {
+    color: #7c0a1d;
+}
+#team-ATL_DREAM .team-name {
+    font-size: clamp(4em, 8vw, 8.5em);
+}
+
+#team-IND_FEVER .team-cover-bg {
+    background-color: var(--team-color3, #ccc);
+}
+#team-IND_FEVER .team-cover-mid-bg {
+    background-color: var(--team-color1, #ccc);
+}
+#team-IND_FEVER .team-cover-fg {
+    background-color: var(--team-color2, #ccc);
+}
+#team-IND_FEVER .team-name, #team-IND_FEVER .team-name-city {
+    color: var(--team-color3, #000000);
+}
+#team-IND_FEVER .team-name {
+    font-size: clamp(4em, 8vw, 9.5em);
+}
+
+#team-NYL_LIBERTY .team-cover-bg {
+    background-color: var(--team-color3, #ccc);
+}
+#team-NYL_LIBERTY .team-cover-mid-bg {
+    background-color: var(--team-color2, #ccc);
+}
+#team-NYL_LIBERTY .team-cover-fg {
+    background-color: var(--team-color1, #ccc);
+}
+#team-NYL_LIBERTY .team-name, #team-NYL_LIBERTY .team-name-city {
+    color: var(--team-color3, #000000);
+}
+#team-NYL_LIBERTY .team-name {
+    font-size: clamp(4em, 8vw, 7em);
+    top: 32%;
+}
+
+#team-MIN_LYNX .team-cover-bg {
+    background-color: var(--team-color1, #ccc);
+}
+#team-MIN_LYNX .team-cover-mid-bg {
+    background-color: var(--team-color3, #ccc);
+}
+#team-MIN_LYNX .team-cover-fg {
+    background-color: var(--team-color2, #ccc);
+}
+#team-MIN_LYNX .team-name, #team-MIN_LYNX .team-name-city {
+    color: var(--team-color3, #000000);
+}
+#team-MIN_LYNX .team-name {
+    font-size: clamp(4em, 8vw, 9.5em);
+}
+
+#team-PHX_MERCURY .team-cover-bg {
+    background-color: var(--team-color1, #ccc);
+}
+#team-PHX_MERCURY .team-cover-mid-bg {
+    background-color: var(--team-color3, #ccc);
+}
+#team-PHX_MERCURY .team-cover-fg {
+    background-color: var(--team-color2, #ccc);
+}
+#team-PHX_MERCURY .team-name, #team-PHX_MERCURY .team-name-city {
+    color: var(--team-color1, #000000);
+}
+#team-PHX_MERCURY .team-name {
+    font-size: clamp(4em, 8vw, 6.4em);
+    top: 30%;
+}
+
+#team-WAS_MYSTICS .team-cover-bg {
+    background-color: var(--team-color2, #ccc);
+}
+#team-WAS_MYSTICS .team-cover-mid-bg {
+    background-color: var(--team-color3, #ccc);
+}
+#team-WAS_MYSTICS .team-cover-fg {
+    background-color: var(--team-color1, #ccc);
+}
+#team-WAS_MYSTICS .team-name, #team-WAS_MYSTICS .team-name-city {
+    color: var(--team-color2, #000000);
+}
+#team-WAS_MYSTICS .team-name {
+    font-size: clamp(4em, 8vw, 6.5em);
+    top: 27%;
+}
+
+#team-CHI_SKY .team-cover-bg {
+    background-color: var(--team-color1, #ccc);
+}
+#team-CHI_SKY .team-cover-mid-bg {
+    background-color: var(--team-color3, #ccc);
+}
+#team-CHI_SKY .team-cover-fg {
+    background-color: var(--team-color2, #ccc);
+}
+#team-CHI_SKY .team-name, #team-CHI_SKY .team-name-city {
+    color: var(--team-color1, #000000);
+}
+#team-CHI_SKY .team-name {
+    font-size: clamp(4em, 8vw, 9.5em);
+}
+
+#team-LOS_SPARKS .team-cover-bg {
+    background-color: var(--team-color2, #ccc);
+}
+#team-LOS_SPARKS .team-cover-mid-bg {
+    background-color: var(--team-color3, #ccc);
+}
+#team-LOS_SPARKS .team-cover-fg {
+    background-color: var(--team-color1, #ccc);
+}
+#team-LOS_SPARKS .team-name, #team-LOS_SPARKS .team-name-city {
+    color: var(--team-color2, #000000);
+}
+
+#team-SEA_STORM .team-cover-bg {
+    background-color: var(--team-color2, #ccc);
+}
+#team-SEA_STORM .team-cover-mid-bg {
+    background-color: var(--team-color3, #ccc);
+}
+#team-SEA_STORM .team-cover-fg {
+    background-color: var(--team-color1, #ccc);
+}
+#team-SEA_STORM .team-name, #team-SEA_STORM .team-name-city {
+    color: var(--team-color2, #000000);
+}
+
+#team-CON_SUN .team-cover-bg {
+    background-color: var(--team-color1, #ccc);
+}
+#team-CON_SUN .team-cover-mid-bg {
+    background-color: var(--team-color3, #ccc);
+}
+#team-CON_SUN .team-cover-fg {
+    background-color: var(--team-color2, #ccc);
+}
+#team-CON_SUN .team-name, #team-CON_SUN .team-name-city {
+    color: var(--team-color1, #000000);
+}
+#team-CON_SUN .team-name {
+    font-size: clamp(4em, 8vw, 9.5em);
+}
+
+#team-GSV_VALKYRIES .team-cover-bg {
+    background-color: var(--team-color1, #ccc);
+}
+#team-GSV_VALKYRIES .team-cover-mid-bg {
+    background-color: var(--team-color2, #ccc);
+}
+#team-GSV_VALKYRIES .team-cover-fg {
+    background-color: var(--team-color1, #ccc);
+}
+#team-GSV_VALKYRIES .team-name, #team-GSV_VALKYRIES .team-name-city {
+    color: var(--team-color3, #000000);
+}
+#team-GSV_VALKYRIES .team-name {
+    font-size: clamp(4em, 8vw, 5.8em);
+    top: 35%;
+}
+
+
+#team-DAL_WINGS .team-cover-bg {
+    background-color: var(--team-color1, #ccc);
+}
+#team-DAL_WINGS .team-cover-mid-bg {
+    background-color: var(--team-color2, #ccc);
+}
+#team-DAL_WINGS .team-cover-fg {
+    background-color: var(--team-color3, #ccc);
+}
+#team-DAL_WINGS .team-name, #team-DAL_WINGS .team-name-city {
+    color: var(--team-color1, #000000);
+}
+#team-DAL_WINGS .team-name {
+    font-size: clamp(4em, 8vw, 9.5em);
+}
+
+#team-CHA_STING .team-cover-bg {
+    background-color: var(--team-color1, #ccc);
+}
+#team-CHA_STING .team-cover-mid-bg {
+    background-color: var(--team-color3, #ccc);
+}
+#team-CHA_STING .team-cover-fg {
+    background-color: var(--team-color2, #ccc);
+}
+#team-CHA_STING .team-name, #team-CHA_STING .team-name-city {
+    color: var(--team-color1, #000000);
+}
+#team-CHA_STING .team-name {
+    font-size: clamp(4em, 8vw, 9.5em);
+}
+
+#team-CLE_ROCKERS .team-cover-bg {
+    background-color: var(--team-color3, #ccc);
+}
+#team-CLE_ROCKERS .team-cover-mid-bg {
+    background-color: var(--team-color2, #ccc);
+}
+#team-CLE_ROCKERS .team-cover-fg {
+    background-color: var(--team-color1, #ccc);
+}
+#team-CLE_ROCKERS .team-name, #team-CLE_ROCKERS .team-name-city {
+    color: var(--team-color3, #000000);
+}
+#team-CLE_ROCKERS .team-name {
+    font-size: clamp(4em, 8vw, 7em);
+    top: 27%;
+}
+
+#team-HOU_COMETS .team-cover-bg {
+    background-color: var(--team-color3, #ccc);
+}
+#team-HOU_COMETS .team-cover-mid-bg {
+    background-color: var(--team-color2, #ccc);
+}
+#team-HOU_COMETS .team-cover-fg {
+    background-color: var(--team-color1, #ccc);
+}
+#team-HOU_COMETS .team-name, #team-HOU_COMETS .team-name-city {
+    color: var(--team-color2, #000000);
+}
+#team-HOU_COMETS .team-name {
+    top: 27%;
+}
+
+#team-MIA_SOL .team-cover-bg {
+    background-color: var(--team-color2, #ccc);
+}
+#team-MIA_SOL .team-cover-mid-bg {
+    background-color: var(--team-color3, #ccc);
+}
+#team-MIA_SOL .team-cover-fg {
+    background-color: var(--team-color1, #ccc);
+}
+#team-MIA_SOL .team-name, #team-MIA_SOL .team-name-city {
+    color: var(--team-color2, #000000);
+}
+#team-MIA_SOL .team-name {
+    font-size: clamp(4em, 8vw, 10em);
+}
+
+#team-POR_FIRE .team-cover-bg {
+    background-color: var(--team-color1, #ccc);
+}
+#team-POR_FIRE .team-cover-mid-bg {
+    background-color: var(--team-color3, #ccc);
+}
+#team-POR_FIRE .team-cover-fg {
+    background-color: var(--team-color2, #ccc);
+}
+#team-POR_FIRE .team-name, #team-POR_FIRE .team-name-city {
+    color: var(--team-color1, #000000);
+}
+#team-POR_FIRE .team-name {
+    font-size: clamp(4em, 8vw, 9.5em);
+}
+
+#team-SAC_MONARCHS .team-cover-bg {
+    background-color: var(--team-color3, #ccc);
+}
+#team-SAC_MONARCHS .team-cover-mid-bg {
+    background-color: var(--team-color2, #ccc);
+}
+#team-SAC_MONARCHS .team-cover-fg {
+    background-color: var(--team-color1, #ccc);
+}
+#team-SAC_MONARCHS .team-name, #team-SAC_MONARCHS .team-name-city {
+    color: var(--team-color3, #000000);
+}
+#team-SAC_MONARCHS .team-name {
+    font-size: clamp(4em, 8vw, 5.8em);
+    top: 30%;
+}
+
+#team-DET_SHOCK .team-cover-bg {
+    background-color: var(--team-color2, #ccc);
+}
+#team-DET_SHOCK .team-cover-mid-bg {
+    background-color: var(--team-color3, #ccc);
+}
+#team-DET_SHOCK .team-cover-fg {
+    background-color: var(--team-color1, #ccc);
+}
+#team-DET_SHOCK .team-name, #team-DET_SHOCK .team-name-city {
+    color: var(--team-color2, #000000);
+}
+#team-DET_SHOCK .team-name {
+    font-size: clamp(4em, 8vw, 9.5em);
+}
+
+#team-TUL_SHOCK .team-cover-bg {
+    background-color: var(--team-color1, #ccc);
+}
+#team-TUL_SHOCK .team-cover-mid-bg {
+    background-color: var(--team-color2, #ccc);
+}
+#team-TUL_SHOCK .team-cover-fg {
+    background-color: var(--team-color3, #ccc);
+}
+#team-TUL_SHOCK .team-name, #team-TUL_SHOCK .team-name-city {
+    color: var(--team-color1, #000000);
+}
+#team-TUL_SHOCK .team-name {
+    font-size: clamp(4em, 8vw, 9.5em);
+}
+
+#team-ORL_MIRACLE .team-cover-bg {
+    background-color: var(--team-color2, #ccc);
+}
+#team-ORL_MIRACLE .team-cover-mid-bg {
+    background-color: var(--team-color3, #ccc);
+}
+#team-ORL_MIRACLE .team-cover-fg {
+    background-color: var(--team-color1, #ccc);
+}
+#team-ORL_MIRACLE .team-name, #team-ORL_MIRACLE .team-name-city {
+    color: var(--team-color2, #000000);
+}
+#team-ORL_MIRACLE .team-name {
+    font-size: clamp(4em, 8vw, 7em);
+    top: 27%;
+}
+
+#team-UTA_STARZZ .team-cover-bg {
+    background-color: var(--team-color2, #ccc);
+}
+#team-UTA_STARZZ .team-cover-mid-bg {
+    background-color: var(--team-color1, #ccc);
+}
+#team-UTA_STARZZ .team-cover-fg {
+    background-color: var(--team-color3, #ccc);
+}
+#team-UTA_STARZZ .team-name, #team-UTA_STARZZ .team-name-city {
+    color: var(--team-color2, #000000);
+}
+#team-UTA_STARZZ .team-name {
+    font-size: clamp(4em, 8vw, 8em);
+}
+
+#team-SA_SILVER_STARS .team-cover-bg {
+    background-color: var(--team-color3, #ccc);
+}
+#team-SA_SILVER_STARS .team-cover-mid-bg {
+    background-color: var(--team-color2, #ccc);
+}
+#team-SA_SILVER_STARS .team-cover-fg {
+    background-color: var(--team-color1, #ccc);
+}
+#team-SA_SILVER_STARS .team-name, #team-SA_SILVER_STARS .team-name-city {
+    color: var(--team-color2, #000000);
+}
+#team-SA_SILVER_STARS .team-name {
+    font-size: clamp(4em, 8vw, 5.5em);
+    line-height: .8;
+}
+
+#team-SA_STARS .team-cover-bg {
+    background-color: var(--team-color3, #ccc);
+}
+#team-SA_STARS .team-cover-mid-bg {
+    background-color: var(--team-color2, #ccc);
+}
+#team-SA_STARS .team-cover-fg {
+    background-color: var(--team-color1, #ccc);
+}
+#team-SA_STARS .team-name, #team-SA_STARS .team-name-city {
+    color: var(--team-color2, #000000);
+}
+#team-SA_STARS .team-name {
+    top: 30%;
+}
+

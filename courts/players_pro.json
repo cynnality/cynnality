@@ -1,0 +1,242 @@
+{
+    "Jewell Loyd": {
+        "name": "Jewell Loyd",
+        "team2025": "LVA_ACES",
+        "playerNum": 24,
+        "yrsInWnba": 10,
+        "draftedWnba": 2015,
+        "country": "USA",
+        "gradFrom": "Notre Dame",
+        "unrivaled2026": "N/A",
+        "unrivaledPast": true,
+        "unr2025Team": "CLUB_MIST",
+        "teamHistory": [
+            {
+                "teamCode": "LVA_ACES",
+                "years": [
+                    2025,
+                    2025
+                ]
+            }
+        ]
+    },
+    "Jackie Young": {
+        "name": "Jackie Young",
+        "team2025": "LVA_ACES",
+        "playerNum": 0,
+        "yrsInWnba": 6,
+        "draftedWnba": 2019,
+        "country": "USA",
+        "gradFrom": "Notre Dame",
+        "unrivaled2026": true,
+        "unrivaledPast": true,
+        "unr2025Team": "CLUB_LACES",
+        "teamHistory": [
+            {
+                "teamCode": "LVA_ACES",
+                "years": [
+                    2019,
+                    2025
+                ]
+            }
+        ]
+    },
+    "Kierstan Bell": {
+        "name": "Kierstan Bell",
+        "team2025": "LVA_ACES",
+        "playerNum": 1,
+        "yrsInWnba": 3,
+        "draftedWnba": 2022,
+        "country": "USA",
+        "gradFrom": "Florida Gulf Coast",
+        "unrivaled2026": false,
+        "unrivaledPast": false,
+        "athUnlPast": true,
+        "athUnlPastYrs": [
+            2023,
+            2024,
+            2025
+        ],
+        "teamHistory": [
+            {
+                "teamCode": "LVA_ACES",
+                "years": [
+                    2022,
+                    2025
+                ]
+            }
+        ]
+    },
+    "NaLyssa Smith": {
+        "name": "NaLyssa Smith",
+        "team2025": "LVA_ACES",
+        "playerNum": 3,
+        "yrsInWnba": 3,
+        "draftedWnba": 2022,
+        "country": "USA",
+        "gradFrom": "Baylor",
+        "unrivaled2026": false,
+        "unrivaledPast": true,
+        "unr2025Team": "CLUB_MIST",
+        "athUnl2026": true,
+        "athUnlPast": true,
+        "athUnlPastYrs": [
+            2023
+        ],
+        "teamHistory": [
+            {
+                "teamCode": "LVA_ACES",
+                "years": [
+                    2025
+                ]
+            }
+        ]
+    },
+    "Dana Evans": {
+        "name": "Dana Evans",
+        "team2025": "LVA_ACES",
+        "playerNum": 11,
+        "yrsInWnba": 4,
+        "draftedWnba": 2021,
+        "country": "USA",
+        "gradFrom": "Louisville",
+        "unrivaled2026": true,
+        "unrivaledPast": false,
+        "athUnl2026": true,
+        "teamHistory": [
+            {
+                "teamCode": "LVA_ACES",
+                "years": [
+                    2025
+                ]
+            }
+        ]
+    },
+    "Chelsea Gray": {
+        "name": "Chelsea Gray",
+        "team2025": "LVA_ACES",
+        "playerNum": 12,
+        "yrsInWnba": 10,
+        "draftedWnba": 2014,
+        "country": "USA",
+        "gradFrom": "Duke",
+        "unrivaled2026": true,
+        "unrivaledPast": true,
+        "unr2025Team": "CLUB_ROSE",
+        "teamHistory": [
+            {
+                "teamCode": "LVA_ACES",
+                "years": [
+                    2021,
+                    2025
+                ]
+            }
+        ]
+    },
+    "Aaliyah Nye": {
+        "name": "Aaliyah Nye",
+        "team2025": "LVA_ACES",
+        "playerNum": 13,
+        "yrsInWnba": 1,
+        "draftedWnba": 2025,
+        "country": "USA",
+        "gradFrom": "Alabama",
+        "athUnl2026": true,
+        "athUnlPast": false,
+        "teamHistory": [
+            {
+                "teamCode": "LVA_ACES",
+                "years": [
+                    2025
+                ]
+            }
+        ]
+    },
+    "Megan Gustafson": {
+        "name": "Megan Gustafson",
+        "team2025": "LVA_ACES",
+        "playerNum": 17,
+        "yrsInWnba": 6,
+        "draftedWnba": 2019,
+        "country": "USA",
+        "gradFrom": "Iowa",
+        "unrivaled2026": false,
+        "unrivaledPast": false,
+        "athUnl2026": false,
+        "athUnlPast": false,
+        "teamHistory": [
+            {
+                "teamCode": "LVA_ACES",
+                "years": [
+                    2024,
+                    2025
+                ]
+            }
+        ]
+    },
+    "A'ja Wilson": {
+        "name": "A'ja Wilson",
+        "team2025": "LVA_ACES",
+        "playerNum": 22,
+        "yrsInWnba": 7,
+        "draftedWnba": 2018,
+        "country": "USA",
+        "gradFrom": "South Carolina",
+        "unrivaled2026": false,
+        "unrivaledPast": false,
+        "athUnl2026": false,
+        "athUnlPast": false,
+        "teamHistory": [
+            {
+                "teamCode": "LVA_ACES",
+                "years": [
+                    2018,
+                    2025
+                ]
+            }
+        ]
+    },
+    "Cheyenne Parker-Tyus": {
+        "name": "Cheyenne Parker-Tyus",
+        "team2025": "LVA_ACES",
+        "playerNum": 32,
+        "yrsInWnba": 10,
+        "draftedWnba": 2015,
+        "country": "USA",
+        "gradFrom": "Middle Tennessee",
+        "unrivaled2026": false,
+        "unrivaledPast": false,
+        "athUnl2026": false,
+        "athUnlPast": false,
+        "teamHistory": [
+            {
+                "teamCode": "LVA_ACES",
+                "years": [
+                    2025
+                ]
+            }
+        ]
+    },
+    "Kiah Stokes": {
+        "name": "Kiah Stokes",
+        "team2025": "LVA_ACES",
+        "playerNum": 41,
+        "yrsInWnba": 9,
+        "draftedWnba": 2015,
+        "country": "USA",
+        "gradFrom": "Connecticut",
+        "unrivaled2026": false,
+        "unrivaledPast": false,
+        "athUnl2026": true,
+        "athUnlPast": false,
+        "teamHistory": [
+            {
+                "teamCode": "LVA_ACES",
+                "years": [
+                    2021,
+                    2025
+                ]
+            }
+        ]
+    }
+}

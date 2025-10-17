@@ -1,0 +1,77 @@
+.roster-stickers {
+    display: flex;
+    align-items: baseline;
+    overflow: scroll;
+    margin: auto;
+    width: 100em;
+    border: solid 3px #000000;
+    background-color: #003B5C;
+    padding: 1em;
+    border-radius: 12px;
+}
+
+.fscj-roster-sticker-png {
+    width: 28em;
+    margin: .5em;
+}
+
+.roster-stickers {
+  /* Firefox fallback (color + "thin" or "auto" only) */
+  scrollbar-width: auto;
+  scrollbar-color: #D0CCB5 #003B5C;
+}
+
+/* WebKit browsers (Chrome, Edge, Safari) */
+.roster-stickers::-webkit-scrollbar {
+  min-height: 30px; /* horizontal scrollbar thickness */
+  width: 18px;  /* vertical scrollbar thickness (if used) */
+  
+}
+
+.roster-stickers::-webkit-scrollbar-track {
+  background: #000;
+  border-radius: 0;
+  box-shadow: none;
+  min-height: 30px;
+}
+
+.roster-stickers::-webkit-scrollbar-thumb {
+  background: #111;
+  border-radius: 0;       /* remove rounding */
+  min-height: 30px;
+}
+
+.roster-stickers::-webkit-scrollbar-thumb:hover {
+  background: #000;
+}
+
+.roster-stickers::-webkit-scrollbar-corner {
+  background: #e6e6e6;
+  border-radius: 0;
+}
+
+/* ...existing code... */
+
+.player-details {
+  width: 75em;
+  margin: 1em auto 3em;
+  border: 3px solid #000;
+  background: #fff;
+  color: #000;
+  padding: 1rem;
+  box-sizing: border-box;
+  font-family: Inter, system-ui, sans-serif;
+}
+.player-details .pd-header h3 {
+  margin: 0 0 .5rem;
+  font-size: 1.25rem;
+}
+.player-details .pd-row {
+  display: flex;
+  gap: .5rem;
+  padding: .15rem 0;
+  border-top: 1px solid rgba(0,0,0,0.06);
+}
+.player-details .pd-row:first-of-type { border-top: none; }
+.player-details .pd-label { font-weight: 700; width: 10em; text-transform: capitalize; }
+.player-details .pd-val { flex: 1; }
