@@ -9,26 +9,69 @@
 
 <style>
   body {
-    margin: 0;
+    margin: auto;
     display: flex;
-    justify-content: center;  /* centers horizontally */
-    align-items: center;      /* centers vertically */
-    height: 100vh;            /* full viewport height */
-    background-color: #FFE499; /* your yellowish beige */
+    gap: 1.5em;
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center; 
+    background-color: #FFE499; /*yellowish beige */
+  }
+
+.descrip-box {
+    display: flex;
+    gap: 1em;
+    background-color: white;
+    padding: .5em;
+    margin-top: 4em;
+    border: solid 3px #000000;
+    text-align: center;
+    font-family:'Courier New', Courier, monospace;
+  }
+  .linebr {
+    width: 1px;
+    border: dotted 2px #000000;
+  }
+  .info-box {
+    background-color: white;
+    padding: .5em;
+    border: solid 3px #000000;
+    text-align: center;
+    font-family:'Courier New', Courier, monospace;
   }
 
   canvas {
     display: block;           /* removes small whitespace below canvas */
     border: solid 3px #000000; /* border for visibility */
     box-shadow: 0 0 3px rgba(0, 0, 0, 0.5); /* subtle shadow for depth */
+    margin-bottom: 5em;
   }
 </style>
+  </head>
 
-  </head> 
   <body>
-    <main>
-    </main>
+
+    <div class="descrip-box">
+      <div class="instr"><p>press start</p></div>
+      <div class="linebr"></div>
+      <div class="instr"><p>click and drag to sort the gradient</p></div>
+      <div class="linebr"></div>
+      <div class="instr"><p>MUST SORT:<br>DARKEST-->LIGHTEST</p></div>
+      <div class="linebr"></div>
+      <div class="instr"><p>press check to see if you've got it right</p></div>
+    </div>
+
     <script src="color-blocks.js"></script>
+
+    <div class="info-box">
+      <div class="submit">
+        <p>the gradients used for this game are hardcoded (opposed to randomly generated)<br>
+          if you'd like to submit a palette, send it <a href="mailto:yesandcynn@gmail.com">here</a>
+          <br><br>
+          MINIMUN 14 colors to a gradient pallete!
+        </p>
+      </div>
+    </div>
   
 
 </body></html>
