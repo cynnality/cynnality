@@ -1,0 +1,294 @@
+<!DOCTYPE html> 
+<html lang="en"> 
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>sort office</title>
+  <style>
+    /* ---- Base layout ---- */
+    html, body { height:100%; margin:0; background:#f3efe6; color:#000; font-family: 'Courier New', Courier, monospace; }
+      .page {
+        display:grid;
+        grid-template-columns: .8fr 2fr; 
+        padding:1em; 
+      }
+    /* ---- HUD ---- */
+    #hud { 
+      position: relative;             
+      display: flex; 
+      flex-direction: column; 
+      gap: 12px;
+      padding-top: 20px;
+      padding-bottom: 20px;
+      padding-right: 20px;
+      padding-left: 10px;
+      /* make the HUD scroll within its own box */
+      max-height: 90vh;   /* viewport height minus top/bottom padding */
+      overflow: auto;
+      overscroll-behavior: contain;     /* prevent scroll chaining into page */
+    }
+    .status-box  { border:1px solid #000; border-radius:8px; padding:10px; background:#fff; }
+
+    .hud-subbox {
+      border: 1px solid #000; 
+      border-radius: 8px; 
+      padding: 10px; 
+      background: #fff;
+      display: flex;
+      flex-direction: column;
+      gap: .5em;
+    }
+
+    .hudsec-container {
+      display: flex;
+      flex-direction: column;
+      border: dotted 2px #000000;
+    }
+    .hud-section {
+      padding: .5em;
+    }
+
+    .hud-row { 
+      display: grid; 
+      /*! flex-direction: column; */
+      gap: 8px; 
+      align-items: center; 
+      margin: 2px 0; 
+      align-items: center;
+      justify-items: center;
+    }
+    .hudsec-title { 
+      font-size: 18px; 
+      border-bottom: dotted 2px #000;
+      text-align: right;
+    }
+    .hud-pill { 
+      border: 1px solid #000; 
+      /*! border-radius: 999px; */ 
+      padding: 4px 8px; 
+      display: inline-block; 
+      min-width: 28px; 
+      text-align: center; 
+    }
+    .hud-list { 
+      display: flex; 
+      flex-direction: column; 
+      gap: 6px; 
+    }
+    .hud-item { 
+      display: flex; 
+      align-items: center; 
+      gap: 10px; 
+    }
+    .hud-key { 
+      border: 1px solid #000; 
+      box-shadow: -2px 2px  rgb(0, 0, 0);
+      padding: 4px 8px; 
+      font-size: 18px; 
+      white-space: nowrap;
+      border-radius: 6px; 
+    }
+    .hud-item-label { 
+      font-size: 14px; 
+    }
+
+    /* ---- Main / Canvas & Queue ---- */
+    .main { display:grid; place-items:start; }
+    #canvas-and-queue {
+      display:grid;
+      grid-template-columns: auto 1fr;
+      gap:12px;
+      align-items:start;
+    }
+
+    #canvas-holder { 
+      border:1px solid #000; 
+      background:#fff; 
+      display:inline-block; 
+    }
+
+    #queue-holder { display:grid; gap:12px; }
+
+    .box-options {
+      display: flex;
+    }
+
+    .q-info { border:1px solid #000; border-radius:8px; padding:10px; background:#fff; }
+
+    #queue-next { 
+      grid-template-columns: auto 1fr; 
+      align-items: center; 
+      gap: 8px; 
+      border: 1px solid #000; 
+      border-radius: 8px; 
+      padding: 10px; 
+      background: #fff; 
+    }
+    
+    #queue-next .queue-cell { width: 24px; height: 24px; border: 1px dashed #aaa; border-radius: 4px; justify-self: center; }
+
+    #queue-help { font-size: 12px; }
+
+    #queue-grid {
+      --rows: 0;
+      --tile: 32px;
+      display:grid;
+      grid-template-columns: repeat(7, 2em);
+      gap:6px;
+    }
+
+    #queue-grid .queue-cell { width:var(--tile); height:var(--tile); border:1px solid #000; border-radius:4px; }
+         
+    /* unified active look for HUD keys */
+      .hud-key.active {
+        background:#111;
+        color:#fff;
+        border-color:#111;
+        box-shadow: none;
+      }
+
+
+    /* ---- Unified pill system ---- */
+    /* Use .pill everywhere; include .emode-pill and .q-pill for backward compatibility */
+    .pill, .emode-pill, .q-pill {
+      display: inline-block;
+      padding: 4px 16px;
+      border: 1px solid #000;
+      border-radius: 12px;
+      font-size: 12px;
+      user-select: none;
+      cursor: pointer;
+      background: #fff;
+    }
+    .pill.active, .emode-pill.active, .q-pill.active {
+      background: #111;
+      color: #fff;
+      border-color: #111;
+    }
+    .pill:focus-visible { 
+      outline: 2px dashed #111; 
+      outline-offset: 2px; 
+    }
+
+    /* Scope for E-mode pills container */
+    #q-emode-pills .pill.active,
+    #q-emode-pills .emode-pill.active,
+    #q-emode-pills .q-pill.active { 
+      background: #111; 
+      color: #fff; 
+      border-color: #111; 
+    }
+          /* (no inner scroll) */
+      @media (max-width: 900px){
+      .page { 
+        grid-template-columns: 1fr; 
+      }
+        #hud {
+          position: static;
+          max-height: none;
+          overflow: visible;
+        }
+        #canvas-and-queue { grid-template-columns: 1fr; }
+      }
+  </style>
+</head>
+
+<body>
+  <div class="page">
+    <!-- HUD: dynamic content injected by JS -->
+    <aside id="hud" aria-label="Controls and Status">
+      <div id="hud-status" class="status" role="status" aria-live="polite">ready!</div>
+
+      <div class="hudsec-container">
+        <div class="hud-section">
+          <div class="hudsec-title"><strong>modes</strong></div>
+          <div class="hud-list" id="hud-modes-list"></div>
+        </div>
+
+        <div class="hud-section">
+          <div class="hudsec-title"><strong>hinting</strong></div>
+          <div class="hud-list" id="hud-hinting-list"></div>
+        </div>
+
+        <div class="hud-section">
+          <div class="hudsec-title"><strong>guides</strong></div>
+          <div class="hud-list" id="hud-guides-list"></div>
+        </div>
+
+        <div class="hud-section">
+          <div class="hudsec-title"><strong>utility</strong></div>
+          <div class="hud-list" id="hud-utility-list"></div>
+        </div>
+      </div>
+
+      <!-- Contrast panel (wired by JS) -->
+      <div class="hud-section">
+        <div class="hud-subbox">
+          <div>saturation scale: <span class="hud-key" id="lbl-sat">1.00</span></div>
+          <input id="sl-sat" type="range" min="0.5" max="1.8" step="0.05" value="1.00" style="width:100%;">
+          <div>value gamma: <span class="hud-key" id="lbl-gam">1.00</span></div>
+          <input id="sl-gam" type="range" min="0.6" max="1.6" step="0.05" value="1.00" style="width:100%;">
+          <div>min Δ (gen): <span class="hud-key" id="lbl-mind">1.20</span></div>
+          <input id="sl-mind" type="range" min="0.6" max="2.5" step="0.05" value="1.20" style="width:100%;">
+          <div>bands: <span class="hud-key" id="lbl-bands">2</span></div>
+          <input id="sl-bands" type="range" min="1" max="4" step="1" value="2" style="width:100%;">
+        
+          <!-- Column V span -->
+          <label>Column span: <span id="lbl-colspan">0</span></label>
+          <input id="sl-colspan" type="range" min="0" max="20" step="1" value="0" style="width:100%;">
+          <!-- Per-band V bump -->
+          <label>V band min: <span id="lbl-vband-min">0.0</span></label>
+          <input id="sl-vband-min" type="range" min="-5" max="0" step="0.5" value="0" style="width:100%;">
+
+          <label>V band max: <span id="lbl-vband-max">0.0</span></label>
+          <input id="sl-vband-max" type="range" min="0" max="5" step="0.5" value="0" style="width:100%;">
+
+          <!-- Global V shaping -->
+          <label>V contrast: <span id="lbl-vcontrast">1.00</span></label>
+          <input id="sl-vcontrast" type="range" min="1.00" max="1.20" step="0.01" value="1.00" style="width:100%;">
+
+          <label>V gamma (gen): <span id="lbl-vgamma-gen">1.00</span></label>
+          <input id="sl-vgamma-gen" type="range" min="0.80" max="1.20" step="0.01" value="1.00" style="width:100%;">
+
+        </div>
+      </div>
+    </aside>
+
+    <!-- Main: canvas + queue -->
+    <main class="main">
+      <div id="canvas-and-queue" class="canvas-row">
+        <div id="canvas-holder" aria-label="Sorter Canvas"></div>
+
+        <div id="queue-holder" aria-label="Removed tiles">
+
+                <div class="status-box">
+                  <div class="box-options">
+                    <div class="hud-row"><strong>mode:</strong>   <span id="hud-mode" class="hud-pill">—</span></div>
+                    <div class="hud-row"><strong>guide:</strong>  <span id="hud-guide" class="hud-pill">—</span></div>
+                    <div class="hud-row"><strong>queue:</strong>  <span id="hud-queue" class="hud-pill">0</span></div>
+                    <div class="hud-row"><strong>inspect:</strong><span id="hud-inspect" class="hud-pill">Off</span></div>
+                    <div class="hud-row"><strong>diff:</strong>   <span id="hud-diff" class="hud-pill">Off</span></div>
+                  </div>
+                </div>
+
+          <!-- Pills + tips are injected by JS here -->
+          <div id="queue-mode-info" class="q-info"></div>
+
+          <div id="queue-next">
+            <span id="queue-next-label"></span>
+            <span id="queue-help"></span>
+            <div class="queue-cell"></div>
+          </div>
+
+          <div id="queue-grid"></div>
+        </div>
+      </div>
+    </main>
+  </div> 
+
+  <!-- Use your fixed JS which already injects HUD + pills + tips -->
+  <script src="https://cdn.jsdelivr.net/npm/p5@1.9.2/lib/p5.min.js"></script>
+  <script src="gradientGen.js"></script>
+  <script src="sort-office-lockedfix2.js"></script>
+</body>
+</html>
