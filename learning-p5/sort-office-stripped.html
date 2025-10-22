@@ -9,7 +9,7 @@
     html, body { height:100%; margin:0; background:#f3efe6; color:#000; font-family: 'Courier New', Courier, monospace; }
       .page {
         display:grid;
-        grid-template-columns: .8fr 2fr; 
+        grid-template-columns: 1fr 2fr; 
         padding:1em; 
       }
     /* ---- HUD ---- */
@@ -22,6 +22,7 @@
       padding-bottom: 20px;
       padding-right: 20px;
       padding-left: 10px;
+      width: 15em;
       /* make the HUD scroll within its own box */
       max-height: 90vh;   /* viewport height minus top/bottom padding */
       overflow: auto;
@@ -37,6 +38,7 @@
       display: flex;
       flex-direction: column;
       gap: .5em;
+      margin-top: 1em;
     }
 
     .hudsec-container {
@@ -44,6 +46,11 @@
       flex-direction: column;
       border: dotted 2px #000000;
     }
+    /* Collapsible HUD sections */
+     /* .hudsec-title { display:flex; justify-content:space-between; align-items:center;} */ 
+
+
+
     .hud-section {
       padding: .5em;
     }
@@ -61,7 +68,40 @@
       font-size: 18px; 
       border-bottom: dotted 2px #000;
       text-align: right;
+      cursor: pointer;
+      user-select: none;
     }
+    .hudsec-title .chev { 
+      display: inline-block; 
+      transform: rotate(0deg); 
+      transition: transform .18s; 
+    }
+    .hud-section.is-collapsed .hud-list { 
+      display: none; 
+    }
+    .hud-section.is-collapsed .hudsec-title .chev { 
+      transform: rotate(45deg); 
+    }
+
+    /* Collapsible titles (reuse look of hud section titles) */
+    .hudsub-title {
+      cursor: pointer; user-select: none;
+      display:flex; justify-content:space-between; align-items:center;
+      font-size: 16px; margin: 8px 0 6px;
+      border-bottom: 1px dotted #000;
+    }
+    .hudsub-title .chev { display:inline-block; transform: rotate(0deg); transition: transform .18s; }
+    .is-collapsed .hudsub-title .chev { transform: rotate(-90deg); }
+
+    /* Hide bodies when collapsed */
+    .is-collapsed > .hudsub-body { display:none; }
+
+    /* Make the status look like a subpanel without touching HTML */
+    #hud-status.collapsible-status { border:1px solid #000; border-radius:8px; padding:10px; background:#fff; }
+
+    #hud-status .status-line + .status-line { margin-top: 4px; }
+
+
     .hud-pill { 
       border: 1px solid #000; 
       /*! border-radius: 999px; */ 
@@ -107,13 +147,31 @@
       display:inline-block; 
     }
 
-    #queue-holder { display:grid; gap:12px; }
+    #queue-holder {
+      display:grid;
+      gap:12px;
+      max-width: 78%;
+      width: 35em;
+    }
+
 
     .box-options {
       display: flex;
     }
 
-    .q-info { border:1px solid #000; border-radius:8px; padding:10px; background:#fff; }
+    .q-info { 
+      display: flex;
+      flex-direction: column;
+      border:1px solid #000; 
+      border-radius:8px; 
+      padding:10px; 
+      background:#fff; 
+      gap: .5em;
+    }
+
+    .q-title { 
+      font-size: 18px; 
+    }
 
     #queue-next { 
       grid-template-columns: auto 1fr; 
@@ -178,6 +236,11 @@
       color: #fff; 
       border-color: #111; 
     }
+
+
+
+
+
           /* (no inner scroll) */
       @media (max-width: 900px){
       .page { 
@@ -223,16 +286,19 @@
 
       <!-- Contrast panel (wired by JS) -->
       <div class="hud-section">
-        <div class="hud-subbox">
-          <div>saturation scale: <span class="hud-key" id="lbl-sat">1.00</span></div>
-          <input id="sl-sat" type="range" min="0.5" max="1.8" step="0.05" value="1.00" style="width:100%;">
-          <div>value gamma: <span class="hud-key" id="lbl-gam">1.00</span></div>
-          <input id="sl-gam" type="range" min="0.6" max="1.6" step="0.05" value="1.00" style="width:100%;">
+        <div class="hud-subbox regular">
+
+            <div>saturation scale: <span class="hud-key" id="lbl-sat">1.00</span></div>
+            <input id="sl-sat" type="range" min="0.5" max="1.8" step="0.05" value="1.00" style="width:100%;">
+            <div>value gamma: <span class="hud-key" id="lbl-gam">1.00</span></div>
+            <input id="sl-gam" type="range" min="0.6" max="1.6" step="0.05" value="1.00" style="width:100%;">
+      </div>
+      <div class="hud-subbox advanced">
+
           <div>min Δ (gen): <span class="hud-key" id="lbl-mind">1.20</span></div>
           <input id="sl-mind" type="range" min="0.6" max="2.5" step="0.05" value="1.20" style="width:100%;">
           <div>bands: <span class="hud-key" id="lbl-bands">2</span></div>
           <input id="sl-bands" type="range" min="1" max="4" step="1" value="2" style="width:100%;">
-        
           <!-- Column V span -->
           <label>Column span: <span id="lbl-colspan">0</span></label>
           <input id="sl-colspan" type="range" min="0" max="20" step="1" value="0" style="width:100%;">
@@ -287,8 +353,9 @@
   </div> 
 
   <!-- Use your fixed JS which already injects HUD + pills + tips -->
+   
   <script src="https://cdn.jsdelivr.net/npm/p5@1.9.2/lib/p5.min.js"></script>
   <script src="gradientGen.js"></script>
-  <script src="sort-office-lockedfix2.js"></script>
+  <script type="module" src="sort-office-core.js"></script>
 </body>
 </html>

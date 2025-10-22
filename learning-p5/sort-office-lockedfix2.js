@@ -1,22 +1,17 @@
-/* ============ CONFIG ============ */
+/* ============ board geometry and zoom math ============ */
 const ROWS = 10, COLS = 10;
-
-// ====== ZOOM CONFIG (replace your existing zoom vars with these) ======
 const BASE_LENGTH = 72;        // initial cell size at load
 let LENGTH = BASE_LENGTH;      // current cell size
 const ZOOM_STEP = 2;           // delta per zoom
 const MAX_ZOOM_IN_STEPS = 3;   // user may zoom in at most 3 steps above BASE_LENGTH
 const LENGTH_MIN = 24;         // absolute zoom-out floor
-
-// helper for the absolute zoom-in ceiling
+// for the absolute zoom-in ceiling
 const MAX_LENGTH = BASE_LENGTH + MAX_ZOOM_IN_STEPS * ZOOM_STEP;
 
 // --- DOM helper ---
 function byId(id){ return document.getElementById(id); }
 
-
-
-/* ============ STATE ============ */
+/* ============ state arrays/sets and mode flags ============= */
 let originalRGB = [];
 let gridRGB     = [];
 let holes = new Set();       // Set("r,c")
@@ -26,19 +21,18 @@ let dragging = null;
 
 let guideMode = 1;           // 0 off, 1 corners, 2 border
 let lockedCells = new Set();
-
+/*============== view toggles and tools ==============*/ 
 let peek = false;            // hold V
 let inspect = false;         // toggle X
 let inspectLightness = false; // L sub-toggle while inspect is on
 let showDiff = false;        // toggle D
-
+/*============== action flags ==============*/
 let zoomIn = false;
 let zoomOut = false;
 let shuffle = false;
 let checkme = false;
 let answerit = false;
-
-// ===== E-mode selection subsystem state =====
+/*===== cell selection subsystem mode / state =====*/
 let eSelectMode = 'drag'; // 'drag' | 'click' | 'line'
 let eClickSrc   = null;   // {r,c} for click->click
 let eLineAnchor = null;   // {r,c} drag start for line
@@ -46,44 +40,42 @@ let eLineDrag   = null;   // {r,c} live drag point for line
 let eLineSrc    = null;  // locked source line after mouseup: {axis:'h'|'v', r0,c0,r1,c1,len}
 
 function clearETransient() {
-  dragging   = null;   // your existing single-cell drag var
+  dragging   = null;   
   eClickSrc  = null;
   eLineAnchor= null;
   eLineDrag  = null;
 }
 
-// --- G mode drag-collect state ---
+/*===== collect and place modes / states =====*/
+// --- drag to collect state ---
 let gDragging = false;
-let gVisited = null;   // Set of "r,c" visited during this drag (prevents double work)
+let gVisited = null;   // Set of "r,c" visited during this drag 
 let gCollectedCount = 0;
-
-// P-mode drag-to-place state
+// --- drag-to-place state ---
 let pDragging = false;
 let pVisited  = null;  // Set<string> of "r,c" visited on this drag
 let pPlacedCount = 0;  // how many cells placed in this drag
 
+/*===== theme and permutation =====*/
 let themeIndex = 0;
-
+// keep current theme so gen-time tweaks don't randomize colors 
+// !! check later to make sure i still need let themeIndex = 0; above
+let THEME_LATEST = null;
 // Linear permutation of board cells: destIndex -> sourceIndex (from ORIGINAL)
 let boardPerm = null; // null means “no shuffle yet” (identity)
 function idxOf(r, c){ return r * COLS + c; }
 function rcOf(idx){ return [ Math.floor(idx / COLS), idx % COLS ]; }
 
-// keep current theme so gen-time tweaks don't randomize colors 
-// !! check later to make sure i still need let themeIndex = 0; above
-let THEME_LATEST = null;
-
+/*==================== rendering / generator knobs ========================*/ 
 /* ===== live perception controls (render-time only) ===== */
 let SAT_SCALE = 1.00;     // 0.5 .. 1.8
 let VAL_GAMMA = 1.00;     // 0.6 .. 1.6
-
 // gen-time knobs (defaults = no-op / original look)
 let GEN_V_COL_SPAN_MIN = 0;     // e.g. 10..16 to add vertical contrast
 let GEN_V_BAND_MIN = 0;         // tiny per-band V bump (min)
 let GEN_V_BAND_MAX = 0;         // tiny per-band V bump (max)
 let GEN_V_CONTRAST = 1.00;      // >1.0 increases global V contrast slightly (try 1.08..1.12)
 let GEN_V_GAMMA_GEN = 1.00;     // gamma on generator V (not your render-time VAL_GAMMA)
-
 // generation-time 
 let GEN_MIN_DELTA = 1.30; // minimum brightness step down the column
 let GEN_BANDS     = 2;    // subtle band variety across columns
@@ -200,7 +192,6 @@ function highlightCell(rc){
   rect(rc.c * LENGTH, rc.r * LENGTH, LENGTH, LENGTH);
 }
 
-
 /* ============ UTILS ============ */
 const keyFor = (r,c)=>`${r},${c}`;
 const rcFromKey = k => k.split(',').map(Number);
@@ -230,16 +221,6 @@ function applyPermToGrid(srcGrid, perm){
   }
   return out;
 }
-
-
-// --- DOM queue notes for later..... dont delete !!!!!!!! (right-hand panel) ---
-// rendering the collected cells queue into #queue-holder as a vertical-wrapping grid
-// - Column height equals ROWS (so it wraps after one board-height column)
-// - Tile size tracks LENGTH / zoom
-/** rendering the queue into the DOM
- *  - first item (if any) goes in #queue-next .queue-cell
- *  - remaining items go in #queue-grid (wrapping by CSS)
- */
 
 function setKeyActive(keyChar, on) { // hud data key active css state is toggled here
   const el = document.querySelector(`.hud-key[data-key="${String(keyChar).toUpperCase()}"]`);
@@ -419,7 +400,6 @@ function pulseHUDKey(keyChar, ms = 160){
   setTimeout(() => el.classList.remove('active'), ms);
 }
 
-
 function collectCellAt(r, c) {
   const k = keyFor(r, c);
   if (lockedCells.has(k)) return false; // guides are protected
@@ -549,7 +529,6 @@ function lineStart(line){
 let eLineMove = null;       // truthy while you're dragging the locked line
 let eLineMoveGhost = null;  // the candidate destination line (preview)
 
-
 /* ===== Queue DOM (sidebar) ===== */
 let qHolder = null, qNextWrap = null, qNextCell = null, qGrid = null;
 
@@ -563,10 +542,7 @@ function updateQueueHeaderByMode() {
     if (popQueue.length > 0) { // P mode --- with queue
       label.textContent = 'click on an empty spot to place';
       hint.textContent  = 'this square';
-    } else { // P mode --- empty queue
-      label.textContent = 'no squares collected yet!';
-      hint.textContent  = 'press G to start taking squares off the grid';
-    }
+    } 
     return;
   }
 
@@ -600,7 +576,6 @@ function syncQueueCSSVars(){
   if (holder) holder.style.setProperty('--tile', `${LENGTH}px`);
   if (grid)   grid.style.setProperty('--rows', `${ROWS}`);
 }
-
 
 /** Render the queue into the DOM.
  *  - popQueue[0] → #queue-next .queue-cell
@@ -682,7 +657,7 @@ const QueuePanel = (() => {
     if (mode === 'collect') {
       infoEl.innerHTML = `
         <div class="q-title">Collect mode</div>
-        <div class="q-tip">Click or drag across tiles to collect many at once.</div>
+        <div class="q-tip">click or drag across grid to take squares off the grid and collect them below</div>
       `;
       return;
     }
@@ -1092,6 +1067,7 @@ function enforceGuides(){
   QueuePanel.refresh();
 }
 
+/* =====================MARKER FOR NEXT CODE BLOCK========================= */
 // LETS ADD LITERALLY ALL APPLICABLE UI REFRESHERS HERE (rethink tomorrow)
 function refreshAllUI() {
   updateHUD?.();                 // your existing HUD numbers/text
@@ -1158,7 +1134,7 @@ function renderHUDContent(){
   if (g) g.innerHTML = renderList(sections.guides);
   if (u) u.innerHTML = renderList(sections.utility);
 }
-
+/*====================================================================*/
 function setup(){
   // HUD text from schema
   renderHUDContent();
