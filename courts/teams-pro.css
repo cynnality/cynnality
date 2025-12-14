@@ -64,6 +64,7 @@ p, h1, h2, h3, h4, h5, h6 {
 .team-card {
     display: flex;
     align-items: center;
+    justify-content: space-around;
     margin-bottom: 1em;
 }
 
@@ -150,6 +151,16 @@ p, h1, h2, h3, h4, h5, h6 {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  font-family: "Smooch Sans", sans-serif;
+  font-size: 1.5em;
+  font-style: bold;
+  font-weight: 700;
+  background-color: #c5c0c0
+}
+
+.og-team-note {
+    font-size: 1.2em;
+    font-style: italic;
 }
 
 
@@ -380,16 +391,16 @@ p, h1, h2, h3, h4, h5, h6 {
 }
 
 #team-CLE_ROCKERS .team-cover-bg {
-    background-color: var(--team-color3, #ccc);
-}
-#team-CLE_ROCKERS .team-cover-mid-bg {
     background-color: var(--team-color2, #ccc);
 }
-#team-CLE_ROCKERS .team-cover-fg {
+#team-CLE_ROCKERS .team-cover-mid-bg {
     background-color: var(--team-color1, #ccc);
 }
+#team-CLE_ROCKERS .team-cover-fg {
+    background-color: var(--team-color3, #ccc);
+}
 #team-CLE_ROCKERS .team-name, #team-CLE_ROCKERS .team-name-city {
-    color: var(--team-color3, #000000);
+    color: var(--team-color, #000000);
 }
 #team-CLE_ROCKERS .team-name {
     font-size: clamp(4em, 8vw, 7em);

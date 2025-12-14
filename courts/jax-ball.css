@@ -1,3 +1,25 @@
+.header-div {
+  font-family: 'Lucida Sans', Arial, sans-serif;
+  font-style: oblique;
+}
+.linebr {
+  width: 100%;
+  border: dotted 2px #000000;
+  margin-bottom: .5em;
+}
+.header-title h1 {
+ margin-top: 15px;
+ margin-bottom: 10px;
+}
+.header-text {
+  font-size: 1.2em;
+  padding-left: 1em;
+}
+.header-text p {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
 .roster-stickers {
     display: flex;
     align-items: baseline;
@@ -8,6 +30,7 @@
     background-color: #003B5C;
     padding: 1em;
     border-radius: 12px;
+    
 }
 
 .fscj-roster-sticker-png {
@@ -37,7 +60,7 @@
 
 .roster-stickers::-webkit-scrollbar-thumb {
   background: #111;
-  border-radius: 0;       /* remove rounding */
+  border-radius: 0;    
   min-height: 30px;
 }
 
@@ -49,8 +72,6 @@
   background: #e6e6e6;
   border-radius: 0;
 }
-
-/* ...existing code... */
 
 .player-details {
   width: 75em;

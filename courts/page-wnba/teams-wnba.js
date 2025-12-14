@@ -1,115 +1,201 @@
-// ...existing code...
-
-// Deck/player data (move from decks-and-cards.js)
-const playerData = { 
-  storm: [
+// -----------------------------
+// PLAYER DECK DATA (unchanged)
+// -----------------------------
+const playerData = {
+  "seattle-storm": [
     { name: "Nneka Ogwumike", img: "/assets/w-player-decks/nneka-ogwumike-storm.svg" },
     { name: "Skylar Diggins", img: "/assets/w-player-decks/skylar-diggins-storm.svg" },
     { name: "Gabby Williams", img: "/assets/w-player-decks/gabby-williams-storm.svg" },
     { name: "Dominique Malonga", img: "/assets/w-player-decks/dominique-malonga-storm.svg" },
-    { name: "Erica Wheeler", img: "/assets/w-player-decks/erica-wheeler-storm.svg" },
+    { name: "Erica Wheeler", img: "/assets/w-player-decks/erica-wheeler-storm.svg" }
   ],
-  aces: [
+  "las-vegas-aces": [
     { name: "Jewell Loyd", img: "/assets/w-player-decks/jewell-loyd-aces.svg" },
     { name: "Chelsea Gray", img: "/assets/w-player-decks/chelsea-gray-aces.svg" },
-    { name: "A'ja Wilson", img: "/assets/w-player-decks/aja-wilson-aces.svg" },
-  ],
+    { name: "A'ja Wilson", img: "/assets/w-player-decks/aja-wilson-aces.svg" }
+  ]
 };
 
+// Deck images keyed by looks.slug
 const deckImages = {
-  storm: "/assets/w-player-decks/deck-storm.svg",
-  aces: "/assets/w-player-decks/deck-aces.svg",
+  "seattle-storm": "/assets/w-player-decks/deck-storm.svg",
+  "las-vegas-aces": "/assets/w-player-decks/deck-aces.svg"
 };
 
-Promise.all([
-  fetch('teams-wnba.json').then(res => res.json()),
-]).then(([teams]) => {
-  const menu = document.getElementById("teams-menu");
-  const content = document.getElementById("team-content");
+// -----------------------------
+// LOAD TEAM DATA
+// -----------------------------
+fetch("/courts/teams-pro.json")
+  .then(res => res.json())
+  .then(data => {
+    const teams = Object.values(data);
 
-  teams.forEach((team, idx) => {
-    const btn = document.createElement("button");
-    btn.textContent = team.name;
-    btn.addEventListener("click", () => showTeam(team, btn));
-    if (idx === 0) btn.classList.add("active");
-    menu.appendChild(btn);
-  });
+    const menu = document.getElementById("teams-menu");
+    const content = document.getElementById("team-content");
 
-  // Show first team by default
-  if (teams.length) showTeam(teams[0], menu.querySelector("button"));
+    // -----------------------------
+    // BUILD MENU
+    // -----------------------------
+    teams.forEach((team, idx) => {
+      const btn = document.createElement("button");
+      btn.textContent = `${team.teamNameCity} ${team.teamName}`;
 
-  function showTeam(team, btn) {
-    // Remove active from all
-    menu.querySelectorAll("button").forEach(b => b.classList.remove("active"));
-    btn.classList.add("active");
+      if (!team.isActive) btn.classList.add("is-folded");
 
-    // Deck logic
-    const teamCode = team.code?.replace("las-vegas-", "").replace("seattle-", "").replace(" ", "-").replace("golden-state-", "");
-    let deckHtml = "";
-    if (deckImages[teamCode]) {
-      deckHtml = `
-        <div class="team-deck-section">
-          <img src="${deckImages[teamCode]}" alt="${team.name} Deck" class="team-deck-img" id="deck-img-${teamCode}" />
-          <div class="team-deck-cards" id="deck-cards-${teamCode}" style="display:none;"></div>
+      btn.addEventListener("click", () => showTeam(team, btn));
+
+      if (idx === 0) btn.classList.add("active");
+      menu.appendChild(btn);
+    });
+
+    if (teams.length) showTeam(teams[0], menu.querySelector("button"));
+
+    // -----------------------------
+    // TEAM CARD HELPERS
+    // -----------------------------
+    function createTeamCard(team) {
+      return `
+        <div class="team-card" id="team-${team.teamCode}">
+          <div class="team-cover-bg">
+            <div class="team-cover-mid-bg">
+              <div class="team-cover-fg">
+                <div class="team-cover-fg-text">
+                  <h4 class="team-name-city">${team.teamNameCity}</h4>
+                  <h2 class="team-name">${team.teamName}</h2>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="team-info-section">
+            <div class="team-colors team-colors-left">
+              <div class="team-color-block color1"></div>
+              <div class="team-color-block color2"></div>
+              <div class="team-color-block color3"></div>
+            </div>
+
+            <div class="team-details">
+              ${buildTeamDetails(team)}
+            </div>
+
+            <div class="team-colors team-colors-right">
+              <div class="team-color-block color1"></div>
+              <div class="team-color-block color2"></div>
+              <div class="team-color-block color3"></div>
+            </div>
+          </div>
         </div>
       `;
     }
 
-    content.innerHTML = `
-      <div class="team-tab-bar">
-        <span class="team-tab-name">${team.name}</span>
-      </div>
-      <div class="team-content-inner">
-        <div class="team-content-vis">
-          <div class="team-logo-holder">
-            <img src="${team.logo}" alt="${team.name} Logo" class="team-logo" />
-          </div>
-          <div class="team-palette-holder">
-            <img src="${team.palette}" alt="${team.name} Color Palette" class="team-palette" />
-          </div>
-          <div class="team-court-holder">
-            <svg 
-                class="team-court"
-                viewBox="0 0 132.29 79.375"
-                aria-label="Court"
-                style="
-                  --court-main: ${team.courtColors?.main || '#fff'};
-                  --court-boundbox-lines: ${team.courtColors?.lines || '#000'};
-                  --court-main-lines: ${team.courtColors?.accent || '#000'};
-                "
-              >
-                <use href="#court"></use>
-            </svg>
-          </div>
-        </div>
-        <div class="team-content-deck">
-          ${deckHtml}
-        </div>
-      </div>
-    `;
+    function buildTeamDetails(team) {
+      let html = "";
 
-    // Deck click logic
-    if (deckImages[teamCode]) {
-      const deckImg = document.getElementById(`deck-img-${teamCode}`);
-      const cardsDiv = document.getElementById(`deck-cards-${teamCode}`);
-      let cardsVisible = false;
-      deckImg.addEventListener('click', () => {
-        if (!cardsVisible) {
-          // Show cards
-          const cards = playerData[teamCode] || [];
-          cardsDiv.innerHTML = cards.map(player => `
-            <div class="player-card">
-              <img src="${player.img}" alt="${player.name}">
-            </div>
-          `).join('');
-          cardsDiv.style.display = 'flex';
-          cardsVisible = true;
-        } else {
-          // Hide cards
-          cardsDiv.style.display = 'none';
-          cardsVisible = false;
-        }
+      if (team.isOriginalTeam) {
+        html += `<div class="detail_row og-team-note">OG WNBA Team</div>`;
+      }
+
+      html += `
+        <div class="detail_row">Founded: ${team.founded}</div>
+        <div class="detail_row">City: ${team.city}</div>
+        <div class="detail_row">Championships: ${team.chipCount}</div>
+      `;
+
+      if (team.chipYear?.length) {
+        html += `<div class="detail_row">Championship Year(s): ${team.chipYear.join(", ")}</div>`;
+      }
+
+      if (team.foldedYear) {
+        html += `<div class="detail_row">Folded: ${team.foldedYear}</div>`;
+      }
+
+      return html;
+    }
+
+    function applyTeamColors(card, team) {
+      card.style.setProperty("--team-color1", team.colors.color1);
+      card.style.setProperty("--team-color2", team.colors.color2);
+      card.style.setProperty("--team-color3", team.colors.color3);
+
+      card.querySelectorAll(".team-colors").forEach(div => {
+        div.querySelector(".color1").style.background = team.colors.color1;
+        div.querySelector(".color2").style.background = team.colors.color2;
+        div.querySelector(".color3").style.background = team.colors.color3;
       });
     }
-  }
-});
+
+    // -----------------------------
+    // MAIN RENDER (WITH DECK)
+    // -----------------------------
+    function showTeam(team, btn) {
+      menu.querySelectorAll("button").forEach(b => b.classList.remove("active"));
+      btn.classList.add("active");
+
+      const slug = team.looks.slug;
+      const hasDeck = deckImages[slug];
+
+      content.innerHTML = `
+        <div class="team-tab-bar">
+          <span class="team-tab-name">
+            
+            ${team.isActive ? "active" : " folded"}
+          </span>
+        </div>
+
+        <div class="team-content-inner">
+          <div class="team-content-vis">
+            <img src="${team.defaultContent.img}" class="team-logo" />
+
+            <svg class="team-court" viewBox="0 0 132.29 79.375"
+              style="
+                --court-main: ${team.looks.courtColors.main};
+                --court-boundbox-lines: ${team.looks.courtColors.lines};
+                --court-main-lines: ${team.looks.courtColors.accent};
+              ">
+              <use href="#court"></use>
+            </svg>
+          </div>
+
+          ${hasDeck ? `
+          <div class="team-deck-section">
+            <img
+              src="${deckImages[slug]}"
+              class="team-deck-img"
+              id="deck-img"
+              alt="Team Deck"
+            />
+            <div class="team-deck-cards" id="deck-cards" style="display:none;"></div>
+          </div>
+          ` : ""}
+        </div>
+      `;
+
+      // Inject card
+      content.insertAdjacentHTML("beforeend", createTeamCard(team));
+      applyTeamColors(document.getElementById(`team-${team.teamCode}`), team);
+
+      // -----------------------------
+      // DECK CLICK LOGIC
+      // -----------------------------
+      if (hasDeck) {
+        const deckImg = document.getElementById("deck-img");
+        const cardsDiv = document.getElementById("deck-cards");
+        let visible = false;
+
+        deckImg.addEventListener("click", () => {
+          if (!visible) {
+            const cards = playerData[slug] || [];
+            cardsDiv.innerHTML = cards.map(p =>
+              `<div class="player-card"><img src="${p.img}" alt="${p.name}" /></div>`
+            ).join("");
+            cardsDiv.style.display = "flex";
+            visible = true;
+          } else {
+            cardsDiv.style.display = "none";
+            visible = false;
+          }
+        });
+      }
+    }
+  });
+

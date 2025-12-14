@@ -1,11 +1,12 @@
 {
   "Las Vegas Aces": {
     "isOriginalTeam": false,
+    "isActive": true,
     "teamCode": "LVA_ACES",
     "teamName": "Aces",
     "teamNameCity": "Las Vegas",
     "conference": "west",
-    "favorite": false,
+    "favorite": true,
     "defaultContent": {
       "img": "/assets/logos-wnba/las-vegas-aces-logo.svg",
       "alt": "Las Vegas Aces Logo",
@@ -16,13 +17,22 @@
       "color2": "#85714D",
       "color3": "#8A8D8F"
     },
+    "looks": {
+      "slug": "las-vegas-aces",
+      "courtColors": {
+        "main": "#BB0C2F",
+        "lines": "#8A734C",
+        "accent": "#8B8F92"
+      }
+    },
     "founded": 2018,
     "arena": "Michelob Ultra Arena",
     "city": "Las Vegas, Nevada",
-    "chipCount": 2,
+    "chipCount": 3,
     "chipYear": [
       2022,
-      2023
+      2023,
+      2025
     ],
     "formerTeam": "SA_STARS",
     "lineage": [
@@ -51,6 +61,7 @@
   },
   "Atlanta Dream": {
     "isOriginalTeam": false,
+    "isActive": true,
     "teamCode": "ATL_DREAM",
     "teamName": "Dream",
     "teamNameCity": "Atlanta",
@@ -66,6 +77,14 @@
       "color2": "#C8102E",
       "color3": "#9EA2A2"
     },
+    "looks": {
+      "slug": "atlanta-dream",
+      "courtColors": {
+        "main": "#E03C31",
+        "lines": "#F5A623",
+        "accent": "#CDD8E5"
+      }
+    },
     "founded": 2008,
     "arena": "Gateway Center Arena",
     "city": "College Park, Georgia",
@@ -73,6 +92,8 @@
     "chipYear": []
   },
   "Indiana Fever": {
+    "isOriginalTeam": false,
+    "isActive": true,
     "teamCode": "IND_FEVER",
     "teamName": "Fever",
     "teamNameCity": "Indiana",
@@ -88,6 +109,14 @@
       "color2": "#FFCD00",
       "color3": "#C8102E"
     },
+    "looks": {
+      "slug": "indiana-fever",
+      "courtColors": {
+        "main": "#041E42",
+        "lines": "#C6102E",
+        "accent": "#FFCD00"
+      }
+    },
     "founded": 2000,
     "arena": "Gainbridge Fieldhouse",
     "city": "Indianapolis, Indiana",
@@ -98,6 +127,7 @@
   },
   "New York Liberty": {
     "isOriginalTeam": true,
+    "isActive": true,
     "teamCode": "NYL_LIBERTY",
     "teamName": "Liberty",
     "teamNameCity": "New York",
@@ -113,6 +143,14 @@
       "color2": "#FF6720",
       "color3": "#003DA5"
     },
+    "looks": {
+      "slug": "new-york-liberty",
+      "courtColors": {
+        "main": "#0059B8",
+        "lines": "#6FCEB1",
+        "accent": "#FF661F"
+      }
+    },
     "founded": 1997,
     "arena": "Barclays Center",
     "city": "Brooklyn, New York",
@@ -123,6 +161,7 @@
   },
   "Minnesota Lynx": {
     "isOriginalTeam": false,
+    "isActive": true,
     "teamCode": "MIN_LYNX",
     "teamName": "Lynx",
     "teamNameCity": "Minnesota",
@@ -138,6 +177,14 @@
       "color2": "#78BE21",
       "color3": "#0C2340"
     },
+    "looks": {
+      "slug": "minnesota-lynx",
+      "courtColors": {
+      "main": "#236190",
+      "lines": "#0C2440",
+      "accent": "#78BF22"
+      }
+    },
     "founded": 1999,
     "arena": "Target Center",
     "city": "Minneapolis, Minnesota",
@@ -151,11 +198,12 @@
   },
   "Phoenix Mercury": {
     "isOriginalTeam": true,
+    "isActive": true,
     "teamCode": "PHX_MERCURY",
     "teamName": "Mercury",
     "teamNameCity": "Phoenix",
     "conference": "west",
-    "favorite": false,
+    "favorite": true,
     "defaultContent": {
       "img": "/assets/logos-wnba/phoenix-mercury-logo.svg",
       "alt": "Phoenix Mercury Logo",
@@ -165,6 +213,14 @@
       "color1": "#CB6015",
       "color2": "#211747",
       "color3": "#B1B3B3"
+    },
+    "looks": {
+      "slug": "phoenix-mercury",
+      "courtColors": {
+      "main": "#201645",
+      "lines": "#CB6115",
+      "accent": "#B2B3B3"
+    }
     },
     "founded": 1997,
     "arena": "PHX Arena",
@@ -178,6 +234,7 @@
   },
   "Washington Mystics": {
     "isOriginalTeam": false,
+    "isActive": true,
     "teamCode": "WAS_MYSTICS",
     "teamName": "Mystics",
     "teamNameCity": "Washington",
@@ -193,6 +250,14 @@
       "color2": "#C8102E",
       "color3": "#8D9093"
     },
+    "looks": {
+      "slug": "washington-mystics",
+      "courtColors": {
+        "main": "#C8102E",
+        "lines": "#0C2340",
+        "accent": "#8D9093"
+      }
+    },
     "founded": 1998,
     "arena": "CareFirst Arena",
     "city": "Washington, D.C.",
@@ -203,6 +268,7 @@
   },
   "Chicago Sky": {
     "isOriginalTeam": false,
+    "isActive": true,
     "teamCode": "CHI_SKY",
     "teamName": "Sky",
     "teamNameCity": "Chicago",
@@ -218,6 +284,14 @@
       "color2": "#418FDE",
       "color3": "#B1B3B3"
     },
+    "looks": {
+      "slug": "chicago-sky",
+      "courtColors": {
+        "main": "#408FDD",
+        "lines": "#FFCC00",
+        "accent": "#B2B3B3"
+      }
+    },
     "founded": 2005,
     "arena": "Wintrust Arena",
     "city": "Chicago, Illinois",
@@ -228,6 +302,7 @@
   },
   "Los Angeles Sparks": {
     "isOriginalTeam": true,
+    "isActive": true,
     "teamCode": "LOS_SPARKS",
     "teamName": "Sparks",
     "teamNameCity": "Los Angeles",
@@ -243,6 +318,14 @@
       "color2": "#FFC72C",
       "color3": "#00B398"
     },
+    "looks": {
+      "slug": "los-angeles-sparks",
+      "courtColors": {
+      "main": "#6F2F89",
+      "lines": "#FFC72E",
+      "accent": "#00B398"
+      }
+    },
     "founded": 1997,
     "arena": "Crypto.com Arena",
     "city": "Los Angeles, California",
@@ -255,6 +338,7 @@
   },
   "Seattle Storm": {
     "isOriginalTeam": false,
+    "isActive": true,
     "teamCode": "SEA_STORM",
     "teamName": "Storm",
     "teamNameCity": "Seattle",
@@ -270,6 +354,14 @@
       "color2": "#2C5234",
       "color3": "#78BE21"
     },
+    "looks": {
+      "slug": "seattle-storm",
+      "courtColors": {
+        "main": "#2B5234",
+        "lines": "#FAE121",
+        "accent": "#78BE21"
+      }
+    },
     "founded": 2000,
     "arena": "Climate Pledge Arena",
     "city": "Seattle, Washington",
@@ -283,6 +375,7 @@
   },
   "Connecticut Sun": {
     "isOriginalTeam": false,
+    "isActive": true,
     "teamCode": "CON_SUN",
     "teamName": "Sun",
     "teamNameCity": "Connecticut",
@@ -297,6 +390,14 @@
       "color1": "#DC4405",
       "color2": "#041E42",
       "color3": "#FFC72C"
+    },
+    "looks": {
+      "slug": "connecticut-sun",
+      "courtColors": {
+        "main": "#DC4504",
+        "lines": "#041E43",
+        "accent": "#FFC72E"
+      }
     },
     "founded": 2003,
     "arena": "Mohegan Sun Arena",
@@ -316,6 +417,7 @@
   },
   "Golden State Valkyries": {
     "isOriginalTeam": false,
+    "isActive": true,
     "teamCode": "GSV_VALKYRIES",
     "teamName": "Valkyries",
     "teamNameCity": "Golden State",
@@ -331,6 +433,14 @@
       "color2": "#B9975B",
       "color3": "#010101"
     },
+    "looks": {
+      "slug": "golden-state-valkyries",
+      "courtColors": {
+        "main": "#AF98DD",
+        "lines": "#B9965B",
+        "accent": "#000000"
+      }
+    },
     "founded": 2025,
     "arena": "Chase Center",
     "city": "San Francisco, California",
@@ -339,6 +449,7 @@
   },
   "Dallas Wings": {
     "isOriginalTeam": false,
+    "isActive": true,
     "teamCode": "DAL_WINGS",
     "teamName": "Wings",
     "teamNameCity": "Dallas",
@@ -353,6 +464,14 @@
       "color1": "#C4D600",
       "color2": "#0C2340",
       "color3": "#00A9E0"
+    },
+    "looks": {
+      "slug": "dallas-wings",
+      "courtColors": {
+        "main": "#C4D600",
+        "lines": "#0C2440",
+        "accent": "#00A8E0"
+      }
     },
     "founded": 2016,
     "arena": "College Park Center",
@@ -379,6 +498,7 @@
   },
   "Charlotte Sting": {
     "isOriginalTeam": true,
+    "isActive": false,
     "teamCode": "CHA_STING",
     "teamName": "Sting",
     "teamNameCity": "Charlotte",
@@ -393,6 +513,14 @@
       "color2": "#280071",
       "color3": "#DC4405"
     },
+    "looks": {
+      "slug": "charlotte-sting",
+      "courtColors": {
+        "main": "#00778B",
+        "lines": "#280071",
+        "accent": "#DC4405"
+      }
+    },
     "founded": 1997,
     "foldedYear": 2006,
     "city": "Charlotte, North Carolina",
@@ -401,6 +529,7 @@
   },
   "Cleveland Rockers": {
     "isOriginalTeam": true,
+    "isActive": false,
     "teamCode": "CLE_ROCKERS",
     "teamName": "Rockers",
     "teamNameCity": "Cleveland",
@@ -415,6 +544,14 @@
       "color2": "#8D9093",
       "color3": "#DC4405"
     },
+    "looks": {
+      "slug": "cleveland-rockers",
+      "courtColors": {
+        "main": "#009FDF",
+        "lines": "#8D9093",
+        "accent": "#DC4405"
+      }
+    },
     "founded": 1997,
     "foldedYear": 2003,
     "city": "Cleveland, Ohio",
@@ -423,6 +560,7 @@
   },
   "Houston Comets": {
     "isOriginalTeam": true,
+    "isActive": false,
     "teamCode": "HOU_COMETS",
     "teamName": "Comets",
     "teamNameCity": "Houston",
@@ -437,6 +575,14 @@
       "color2": "#041E42",
       "color3": "#8D9093"
     },
+    "looks": {
+      "slug": "houston-comets",
+      "courtColors": {
+        "main": "#BA0C2F",
+        "lines": "#041E42",
+        "accent": "#8D9093"
+      }
+    },
     "founded": 1997,
     "foldedYear": 2008,
     "city": "Houston, Texas",
@@ -450,6 +596,7 @@
   },
   "Miami Sol": {
     "isOriginalTeam": false,
+    "isActive": false,
     "teamCode": "MIA_SOL",
     "teamName": "Sol",
     "teamNameCity": "Miami",
@@ -464,6 +611,14 @@
       "color2": "#A6192E",
       "color3": "#010101"
     },
+    "looks": {
+      "slug": "miami-sol",
+      "courtColors": {
+        "main": "#FB9500",
+        "lines": "#A6192E",
+        "accent": "#010101"
+      }
+    },
     "founded": 2000,
     "foldedYear": 2002,
     "city": "Miami, Florida",
@@ -472,6 +627,7 @@
   },
   "Portland Fire": {
     "isOriginalTeam": false,
+    "isActive": false,
     "teamCode": "POR_FIRE",
     "teamName": "Fire",
     "teamNameCity": "Portland",
@@ -486,6 +642,14 @@
       "color2": "#010101",
       "color3": "#896C4C"
     },
+    "looks": {
+      "slug": "portland-fire",
+      "courtColors": {
+        "main": "#C8102E",
+        "lines": "#010101",
+        "accent": "#896C4C"
+      }
+    },
     "founded": 2000,
     "foldedYear": 2002,
     "city": "Portland, Oregon",
@@ -494,6 +658,7 @@
   },
   "Sacramento Monarchs": {
     "isOriginalTeam": true,
+    "isActive": false,
     "teamCode": "SAC_MONARCHS",
     "teamName": "Monarchs",
     "teamNameCity": "Sacramento",
@@ -508,6 +673,14 @@
       "color2": "#BA0C2F",
       "color3": "#8D9093"
     },
+    "looks": {
+      "slug": "sacramento-monarchs",
+      "courtColors": {
+        "main": "#753BBD",
+        "lines": "#BA0C2F",
+        "accent": "#8D9093"
+      }
+    },
     "founded": 1997,
     "foldedYear": 2009,
     "city": "Sacramento, California",
@@ -518,6 +691,7 @@
   },
   "Detroit Shock": {
     "isOriginalTeam": false,
+    "isActive": false,
     "teamCode": "DET_SHOCK",
     "teamName": "Shock",
     "teamNameCity": "Detroit",
@@ -532,6 +706,14 @@
       "color2": "#006271",
       "color3": "#9D2235"
     },
+    "looks": {
+      "slug": "detroit-shock",
+      "courtColors": {
+        "main": "#FFA400",
+        "lines": "#006271",
+        "accent": "#9D2235"
+      }
+    },
     "founded": 1998,
     "relocatedYear": 2009,
     "relocatedTo": "TUL_SHOCK",
@@ -545,6 +727,7 @@
   },
   "Tulsa Shock": {
     "isOriginalTeam": false,
+    "isActive": false,
     "teamCode": "TUL_SHOCK",
     "teamName": "Shock",
     "teamNameCity": "Tulsa",
@@ -559,6 +742,14 @@
       "color2": "#FFB81C",
       "color3": "#010101"
     },
+    "looks": {
+      "slug": "tulsa-shock",
+      "courtColors": {
+        "main": "#A6192E",
+        "lines": "#FFB81C",
+        "accent": "#010101"
+      }
+    },
     "founded": 2010,
     "formerTeam": "DET_SHOCK",
     "relocatedYear": 2015,
@@ -569,6 +760,7 @@
   },
   "Orlando Miracle": {
     "isOriginalTeam": false,
+    "isActive": false,
     "teamCode": "ORL_MIRACLE",
     "teamName": "Miracle",
     "teamNameCity": "Orlando",
@@ -583,6 +775,14 @@
       "color2": "#DC4405",
       "color3": "#8D9093"
     },
+    "looks": {
+      "slug": "orlando-miracle",
+      "courtColors": {
+        "main": "#0057B7",
+        "lines": "#DC4405",
+        "accent": "#8D9093"
+      }
+    },
     "founded": 1999,
     "relocatedYear": 2002,
     "relocatedTo": "CON_SUN",
@@ -592,6 +792,7 @@
   },
   "Utah Starzz": {
     "isOriginalTeam": true,
+    "isActive": false,
     "teamCode": "UTA_STARZZ",
     "teamName": "Starzz",
     "teamNameCity": "Utah",
@@ -606,6 +807,14 @@
       "color2": "#00A9E0",
       "color3": "#006271"
     },
+    "looks": {
+      "slug": "utah-starzz",
+      "courtColors": {
+        "main": "#753BBD",
+        "lines": "#00A9E0",
+        "accent": "#006271"
+      }
+    },
     "founded": 1997,
     "relocatedYear": 2002,
     "relocatedTo": "SA_SILVER_STARS",
@@ -615,6 +824,7 @@
   },
   "San Antonio Silver Stars": {
     "isOriginalTeam": false,
+    "isActive": false,
     "teamCode": "SA_SILVER_STARS",
     "teamName": "Silver Stars",
     "teamNameCity": "San Antonio",
@@ -629,6 +839,14 @@
       "color2": "#FFFFFF",
       "color3": "#8D9093"
     },
+    "looks": {
+      "slug": "san-antonio-silver-stars",
+      "courtColors": {
+        "main": "#010101",
+        "lines": "#FFFFFF",
+        "accent": "#8D9093"
+      }
+    },
     "founded": 2003,
     "formerTeam": "UTA_STARZZ",
     "relocatedYear": 2013,
@@ -639,6 +857,7 @@
   },
   "San Antonio Stars": {
     "isOriginalTeam": false,
+    "isActive": false,
     "teamCode": "SA_STARS",
     "teamName": "Stars",
     "teamNameCity": "San Antonio",
@@ -652,6 +871,14 @@
       "color1": "#010101",
       "color2": "#FFFFFF",
       "color3": "#8D9093"
+    },
+    "looks": {
+      "slug": "san-antonio-stars",
+      "courtColors": {
+        "main": "#010101",
+        "lines": "#FFFFFF",
+        "accent": "#8D9093"
+      }
     },
     "founded": 2014,
     "formerTeam": "SA_SILVER_STARS",
