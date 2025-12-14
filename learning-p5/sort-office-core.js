@@ -10,6 +10,9 @@ import {
 import { renderHUDLists } from './sort-office-ui.js';
 import { enableHudCollapsers } from './sort-office-ui.js';
 import { enableHudExtraPanels } from './sort-office-ui.js';
+import { dockStatus } from './sort-office-ui.js';
+import { enableHudFauxScroll } from './sort-office-ui.js';
+import { enableHudFauxDrag } from './sort-office-ui.js';
 
 // ===== p5 global shims for ES modules =====
 const _p5 = () => window;
@@ -60,6 +63,11 @@ let peek = false;            // hold V
 let inspect = false;         // toggle X
 let inspectLightness = false; // L sub-toggle while inspect is on
 let showDiff = false;        // toggle D
+let diffStroke = '#000000ff';    // stroke color for difference lines (default)
+// === Diff overlay helpers (globals) ===
+let origPos = new Map(); // rgbKey -> { r, c }, built from originalRGB
+function rgbKey(rgb){ return rgb ? `${rgb[0]},${rgb[1]},${rgb[2]}` : null; }
+
 /*============== action flags ==============*/
 let zoomIn = false;
 let zoomOut = false;
@@ -90,6 +98,9 @@ let pDragging = false;
 let pVisited  = null;  // Set<string> of "r,c" visited on this drag
 let pPlacedCount = 0;  // how many cells placed in this drag
 
+// === line-mode move session (for drag + arrow keys) ===
+let lineMoveSession = null;      // { srcLine, dr, dc }
+
 /*===== theme and permutation =====*/
 let themeIndex = 0;
 // keep current theme so gen-time tweaks don't randomize colors 
@@ -113,13 +124,60 @@ let GEN_MIN_DELTA = 1.30; // minimum brightness step down the column
 let GEN_BANDS     = 2;    // subtle band variety across columns
 
 /* ============ UI bridge functions ============ */
+// ===== Legacy status adapters (preserve your existing call sites) =====
+(() => {
+  // 1) Single-line, replaceable "now" message (what your old coresetstatus did)
+  const TRANSIENT_KEY = 'now';
+  if (typeof window.coreSetStatus !== 'function') {
+    window.coreSetStatus = function(text, color) {
+      Status.setFlag(TRANSIENT_KEY, text, color);
+    };
+  }
+  if (typeof window.coreClearStatus !== 'function') {
+    window.coreClearStatus = function() {
+      Status.clearFlag(TRANSIENT_KEY);
+    };
+  }
+
+  // 2) Mode/feature flags that should stay while active (X, L, D, etc.)
+  // Use a namespaced key so each flag is independent and doesn't overwrite others
+  if (typeof window.coreSetStatusFlag !== 'function') {
+    window.coreSetStatusFlag = function(key, text, color) {
+      // e.g., key = 'X' | 'L' | 'D' | 'inspect' | 'lightness' ...
+      Status.setFlag(`flag:${key}`, text, color);
+    };
+  }
+  if (typeof window.coreClearStatusFlag !== 'function') {
+    window.coreClearStatusFlag = function(key) {
+      Status.clearFlag(`flag:${key}`);
+    };
+  }
+
+  // 3) (Optional) Simple helpers if you already toggle by letter:
+  //    Use these only if it matches how your code already behaves.
+  if (typeof window.coreToggleFlag !== 'function') {
+    window.coreToggleFlag = function(key, onText, offText = '', colorOn = '#000', colorOff = '#000') {
+      const k = `flag:${key}`;
+      if (Status.flags.has(k)) Status.clearFlag(k);
+      else Status.setFlag(k, onText, colorOn);
+    };
+  }
+})();
+
 // ----- Status (core owns simple state; UI renders it)
 // ===== Simplified Status Manager (persistent stacked lines only) =====
 const Status = {
-  flags: new Map(),   // key → { text, color? }
+  // key → { text?, html?, color? }
+  flags: new Map(),
 
-  setFlag(key, text, color = '#000000') {
-    if (text) this.flags.set(key, { text, color });
+  setFlag(key, text, color = '#000') {
+    if (text != null) this.flags.set(key, { text: String(text), color });
+    else this.flags.delete(key);
+    this.render();
+  },
+
+  setHTML(key, html, color = '#000') {
+    if (html != null) this.flags.set(key, { html: String(html), color });
     else this.flags.delete(key);
     this.render();
   },
@@ -135,20 +193,152 @@ const Status = {
   },
 
   render() {
-    const lines = [];
-    for (const { text } of this.flags.values()) {
-      if (text) lines.push(text);
-    }
-    UI.HUD.setStatusList?.(lines);
+     const items = [];
+     let i = 0;
+     for (const [key, data] of this.flags.entries()) {
+       if (!data) continue;
+       const { text, html, color } = data;
+       items.push({ key, text, html, color, _i: i++ }); // capture insertion index
+     }
+     // Lightweight priority: welcome first; everything else keeps insertion order
+     const weight = (k) => (k === 'welcome' ? -100 : 0);
+     items.sort((a, b) => (weight(a.key) - weight(b.key)) || (a._i - b._i));
+     UI?.HUD?.setStatusList?.(items);
   }
 };
 
 // Back-compat helper for old `setStatus(...)` calls.
 // (They just become a one-line “flag” under the key "flash".)
-function coreSetStatus(msg, col = '#000000') {
-  if (!msg) { Status.clearFlag('flash'); return; }
-  Status.setFlag('flash', msg, col);
+const ConstStatus = (() => {
+  // Tracks which constant lines were manually dismissed for the *current* content.
+  // Map<key, contentSignature> — if content changes, we allow it to show again.
+  const dismissed = new Map();
+
+  function signatureFrom(content) {
+    // Simple, stable signature for comparison
+    return String(content || '');
+  }
+
+  function set(key, text, color = '#000') {
+    const sig = signatureFrom(text);
+    const last = dismissed.get(key);
+    if (last && last === sig) return;   // still dismissed for same content
+    Status.setFlag(key, text, color);
+  }
+
+  function setHTML(key, html, color = '#000') {
+    const sig = signatureFrom(html);
+    const last = dismissed.get(key);
+    if (last && last === sig) return;   // still dismissed for same content
+    Status.setHTML(key, html, color);
+  }
+
+  function dismiss(key) {
+    const data = Status.flags.get(key);
+    const sig = signatureFrom(data?.html ?? data?.text ?? '');
+    dismissed.set(key, sig);
+    Status.clearFlag(key);
+  }
+
+  // Wire a single document-level click handler for [data-status-x]
+  function wire() {
+    if (wire._wired) return;
+    wire._wired = true;
+
+    document.addEventListener('click', (ev) => {
+      const btn = ev.target.closest?.('[data-status-x]');
+      if (!btn) return;
+      const key = btn.getAttribute('data-status-x');
+      if (!key) return;
+      dismiss(key);
+    });
+  }
+
+  return { set, setHTML, dismiss, wire };
+})();
+function showWelcomeStatus() {
+  
+  const html = `
+    <div class="welcome-block">
+      <div class="welcome-title"><strong><em>WELCOME TO SORT OFFICE</em></strong></div>
+
+      <div class="welcome-body">
+      <div class="w-tip intro-w">get a grid of colors and sort it! 
+      <br><br>
+      press and hold V to see the correct sort for the grid you got
+      <br><br>
+      press C to take squares off the grid (right click to put squares back)
+      </div>
+
+      <br>
+
+        <div class="w-tip soft-open">
+          <div class="soft-body">click the rectangles at the top of the page for more tools</div>
+         </div>
+      <br>
+        <div class="w-tip contact-sug">
+        if at any point you feel confused, find something wrong, or have any suggestions - i'd love 
+           to hear from you! :)
+        </div>
+
+        <div class="email-sug">• email me at <a href="mailto:yesandcynn@gmail.com">yesandcynn@gmail.com</a></div>
+        <br>
+        <div class="tips">tip: close this out with the red x at the top</div>
+      </div>
+    </div>
+  `;
+  // Permanent/dismissible constant line
+  ConstStatus.setHTML('welcome', html, '#222');
 }
+// --- Constant "Guides" status line (always visible & dismissible)
+function reflectGuideFlag() {
+  const text =
+    guideMode === 0 ? 'LOCKS ARE OFF' :
+    guideMode === 1 ? 'CORNERS ARE LOCKED' :
+                      'BORDERS ARE LOCKED                       (press 2 again to correct the borders if they lock incorrectly!)';
+
+  // Use the ConstStatus wrapper so it can be dismissed with ×
+  ConstStatus.set('guides', text);
+}
+
+function reflectInspectFlags() {
+  Status.setFlag('inspect', inspect ? 'Inspect: ON' : null);
+  Status.setFlag('inspectL', (inspect && inspectLightness) ? 'Inspect lightness: ON' : null);
+}
+
+function toggleInspect() {
+  inspect = !inspect;
+  if (!inspect) inspectLightness = false;
+  reflectInspectFlags();
+  // optional one-off toast:
+  // coreSetStatus(inspect ? 'Inspect ON' : 'Inspect OFF');
+  refreshAllUI();
+  redraw();
+}
+
+function toggleLightness() {
+  if (!inspect) { coreSetStatus('Press X to enter Inspect first.', '#B00020'); return false; }
+  inspectLightness = !inspectLightness;
+  reflectInspectFlags();
+  // optional toast:
+  // coreSetStatus(inspectLightness ? 'Inspect: lightness bands ON' : 'Inspect: lightness bands OFF');
+  refreshAllUI();
+  redraw();
+  return true;
+}
+
+
+
+// to post status at most once per animation frame 
+let _statusRAF = 0;
+function coreSetStatusLive(text, color){
+  if (_statusRAF) return;                 // already queued this frame
+  _statusRAF = requestAnimationFrame(() => {
+    _statusRAF = 0;
+    coreSetStatus(text, color);
+  });
+}
+
 
 // need to make sure all updateHUD() and refreshHUDKeys() are replaced with UI.HUD.refreshAll() or reflectHUD()
 function reflectHUD(){
@@ -158,10 +348,17 @@ function reflectHUD(){
     queueLen: popQueue.length,
     inspect,
     inspectLightness,
-    showDiff
+    showDiff,
+    peek,
   });
-    // Make sure stacked status lines are painted too
-  Status.render();
+
+  Status.render();        // still paints the stack
+  reflectGuideFlag();     // keep constant "Guides" line synced
+  showWelcomeStatus();    // calling the welcome message here
+  
+
+
+  Status.setFlag('diff', showDiff ? 'difference lines are ON!' : null);
 }
 
 function refreshUIElements() {
@@ -171,7 +368,8 @@ function refreshUIElements() {
   refreshPanel?.();            // (QueuePanel.renderInfo + pills/hints)
 }
 
-function fireKeyDown(k){
+// Allow UI (HUD + Legend) to synthesize p5 key presses
+window.fireKeyDown = function(k) {
   const prev = window.key;
   try {
     window.key = k;
@@ -179,8 +377,9 @@ function fireKeyDown(k){
   } finally {
     window.key = prev;
   }
-}
-function fireKeyUp(k){
+};
+
+window.fireKeyUp = function(k) {
   const prev = window.key;
   try {
     window.key = k;
@@ -188,7 +387,8 @@ function fireKeyUp(k){
   } finally {
     window.key = prev;
   }
-}
+};
+
 
 /* ===== Utils (module-safe) ===== */
 const keyFor     = (r,c) => `${r},${c}`;
@@ -229,7 +429,6 @@ function applyPermToGrid(srcGrid, perm){
   }
   return out;
 }
-
 
 function collectCellAt(r, c) {
   const k = keyFor(r, c);
@@ -301,15 +500,27 @@ function touchesLocked(cells){
 // Build destination line with same axis/length, starting at clicked (r,c)
 function makeDstLineFromStart(srcLine, r, c){
   if (srcLine.axis === 'h'){
+    const r0 = r;
+    const c0 = c;
     const c1 = c + srcLine.len - 1;
-    if (c1 >= COLS) return null;
-    return { axis:'h', r0:r, c0:c, r1:r, c1, len: srcLine.len };
+
+    // block if any endpoint would be out of bounds
+    if (r0 < 0 || r0 >= ROWS) return null;
+    if (c0 < 0 || c1 >= COLS) return null;
+
+    return { axis:'h', r0, c0, r1:r0, c1, len: srcLine.len };
   } else {
+    const c0 = c;
+    const r0 = r;
     const r1 = r + srcLine.len - 1;
-    if (r1 >= ROWS) return null;
-    return { axis:'v', r0:r, c0:c, r1, c1:c, len: srcLine.len };
+
+    if (c0 < 0 || c0 >= COLS) return null;
+    if (r0 < 0 || r1 >= ROWS) return null;
+
+    return { axis:'v', r0, c0, r1, c1:c0, len: srcLine.len };
   }
 }
+
 
 function linesOverlap(a, b){
   const A = new Set(iterCells(a).map(p=>keyFor(p.r,p.c)));
@@ -362,15 +573,237 @@ function applyLineMoveSwap(srcLine, dstLine){
   return false;
 }
 
-// return the first cell of a line (canonical "start")
-function lineStart(line){
-  for (const cell of iterCells(line)) return cell;
-  return null;
-}
+  // return the first cell of a line (canonical "start")
+  function lineStart(line){
+    for (const cell of iterCells(line)) return cell;
+    return null;
+  }
+
+  // Commit a line move using per-step nudges so overlap is allowed.
+  // Returns true if we progressed to the target; false if blocked.
+  function commitLineMoveWithOverlap(srcLine, dstLine){
+    if (!srcLine || !dstLine) return false;
+
+    // current vs target starts
+    let cur = lineStart(srcLine);
+    const tgt = { r: dstLine.r0, c: dstLine.c0 };
+
+    let progressed = false;
+
+    // Move vertically first (same order you used before), then horizontally.
+    while (cur.r !== tgt.r) {
+      const step = (tgt.r > cur.r) ? 1 : -1;
+      if (nudgeLineBy(srcLine, step, 0)) {
+        cur = { r: cur.r + step, c: cur.c };
+        // keep 'srcLine' aligned to its new spot
+        srcLine = makeDstLineFromStart(srcLine, cur.r, cur.c);
+        progressed = true;
+      } else {
+        // blocked vertically; stop trying vertical
+        break;
+      }
+    }
+
+    while (cur.c !== tgt.c) {
+      const step = (tgt.c > cur.c) ? 1 : -1;
+      if (nudgeLineBy(srcLine, 0, step)) {
+        cur = { r: cur.r, c: cur.c + step };
+        srcLine = makeDstLineFromStart(srcLine, cur.r, cur.c);
+        progressed = true;
+      } else {
+        // blocked horizontally; stop trying horizontal
+        break;
+      }
+    }
+
+    return progressed && cur.r === tgt.r && cur.c === tgt.c;
+  }
+
 
 // transient state while dragging the locked line to move it
 let eLineMove = null;       // truthy while you're dragging the locked line
 let eLineMoveGhost = null;  // the candidate destination line (preview)
+
+// Nudge a locked line by (dr, dc) exactly one step, allowing overlap.
+// Blocks only at canvas borders or when destination touches locked cells.
+function nudgeLineBy(srcLine, dr, dc) {
+  if (!srcLine || (dr === 0 && dc === 0)) return false;
+
+  // Build destination line with same axis/len, shifted by (dr,dc)
+  const start = lineStart(srcLine);
+  const dst = makeDstLineFromStart(srcLine, start.r + dr, start.c + dc);
+  if (!dst) { coreSetStatus('Out of bounds.', '#B00020'); return false; }
+
+  const srcCells = iterCells(srcLine);
+  const dstCells = iterCells(dst);
+
+  // Do not cross guides
+  if (touchesLocked(dstCells)) {
+    coreSetStatus('Touches locked guide.', '#B00020');
+    return false;
+  }
+
+  // To handle overlap safely, iterate from the "far end" in the direction of travel
+  // so we don't clobber values we still need to read.
+  const L = srcCells.length;
+  const idxs = [...Array(L).keys()];
+  // moving right/down → process from end to start; left/up → start to end
+  const movingPositive = (dc > 0) || (dr > 0);
+  if (movingPositive) idxs.reverse();
+
+  for (const i of idxs) {
+    const s = srcCells[i], d = dstCells[i];
+    const ks = keyFor(s.r, s.c), kd = keyFor(d.r, d.c);
+
+    if (holes.has(kd)) {
+      // MOVE into empty: destination takes source color; source becomes hole
+      gridRGB[d.r][d.c] = gridRGB[s.r][s.c];
+      holes.delete(kd);
+      holes.add(ks);
+    } else {
+      // SWAP with filled
+      const tmp = gridRGB[d.r][d.c];
+      gridRGB[d.r][d.c] = gridRGB[s.r][s.c];
+      gridRGB[s.r][s.c] = tmp;
+    }
+  }
+
+  return true;
+}
+
+function cancelActiveSelection(reason = 'Selection cleared.', { keepLocked = false } = {}) {
+  let changed = false;
+
+  // DRAG (single cell)
+  if (dragging) { dragging = null; changed = true; }
+
+  // CLICK source
+  if (eClickSrc) { eClickSrc = null; changed = true; }
+
+  // LINE sizing ghost
+  if (eLineAnchor || eLineDrag) { eLineAnchor = null; eLineDrag = null; changed = true; }
+
+  // LINE move session + move ghost (arrow/drag previews)
+  if (eLineMove || eLineMoveGhost || lineMoveSession) {
+    eLineMove = null;
+    eLineMoveGhost = null;
+    lineMoveSession = null;
+    changed = true;
+  }
+
+  // Locked source line (the actual selection)
+  if (!keepLocked && eLineSrc) { eLineSrc = null; changed = true; }
+
+  if (changed) {
+    refreshPanel?.();
+    refreshNonPanelUI?.();
+    redraw?.();
+    coreSetStatus?.(reason);
+  } else {
+    coreSetStatus?.('Nothing to cancel.');
+  }
+}
+
+/* =========== added diff lines logic ============ */
+  function rebuildOrigPos(){
+    origPos = new Map();
+    for (let r = 0; r < ROWS; r++){
+      for (let c = 0; c < COLS; c++){
+        const rgb = originalRGB?.[r]?.[c];
+        if (!rgb) continue;
+        origPos.set(rgbKey(rgb), { r, c });
+      }
+    }
+  }
+  function hasCell(r,c){
+    if (r < 0 || c < 0 || r >= ROWS || c >= COLS) return false;
+    if (holes.has(keyFor(r,c))) return false;
+    return !!gridRGB?.[r]?.[c];
+  }
+
+  function isAbsolutelyCorrect(r,c){
+    if (!hasCell(r,c)) return false;
+    const orig = origPos.get(rgbKey(gridRGB[r][c]));
+    return !!orig && orig.r === r && orig.c === c;
+  }
+
+  // Are (r1,c1) and (r2,c2) the correct relative neighbors, i.e. their
+  // original delta equals their current delta?
+  function isRelativelyAdjacent(r1,c1,r2,c2){
+    if (!hasCell(r1,c1) || !hasCell(r2,c2)) return false;
+
+    const a = origPos.get(rgbKey(gridRGB[r1][c1]));
+    const b = origPos.get(rgbKey(gridRGB[r2][c2]));
+    if (!a || !b) return false;
+
+    const drNow = r2 - r1, dcNow = c2 - c1;
+    const drWas = b.r - a.r, dcWas = b.c - a.c;
+    return (drNow === drWas) && (dcNow === dcWas);
+  }
+
+  // Interior = wrong absolute spot, but has correct relative neighbor on both sides
+  // along either axis (vertical run OR horizontal run).
+  function isInteriorOfRelativeRun(r,c){
+    if (!hasCell(r,c)) return false;
+    if (isAbsolutelyCorrect(r,c)) return false;
+
+    // vertical run interior?
+    const vUp   = isRelativelyAdjacent(r, c, r-1, c);
+    const vDown = isRelativelyAdjacent(r, c, r+1, c);
+    if (vUp && vDown) return true;
+
+    // horizontal run interior?
+    const hLeft  = isRelativelyAdjacent(r, c, r, c-1);
+    const hRight = isRelativelyAdjacent(r, c, r, c+1);
+    if (hLeft && hRight) return true;
+
+    return false;
+  }
+
+// Draw perimeter-only differences per edge (no interior seams)
+function drawDifferencesOverlay(){
+  noFill();
+  stroke(diffStroke); // was '#111 changed to give user option to change diff lines stroke coloe in queue panel !!
+  strokeWeight(2);
+
+  for (let r = 0; r < ROWS; r++){
+    for (let c = 0; c < COLS; c++){
+      if (!hasCell(r,c)) continue;
+
+      // Only consider misplaced cells
+      if (isAbsolutelyCorrect(r,c)) continue;
+
+      drawCellEdges(r, c);
+    }
+  }
+}
+function drawCellEdges(r, c){
+  const x = c * LENGTH;
+  const y = r * LENGTH;
+
+  // For each cardinal edge, draw iff the neighbor across that edge is NOT
+  // a correct relative neighbor (i.e., it's boundary or mismatch).
+  if (shouldDrawEdge(r, c, -1,  0)) line(x,       y,        x+LENGTH, y);              // top
+  if (shouldDrawEdge(r, c,  1,  0)) line(x,       y+LENGTH, x+LENGTH, y+LENGTH);       // bottom
+  if (shouldDrawEdge(r, c,  0, -1)) line(x,       y,        x,         y+LENGTH);      // left
+  if (shouldDrawEdge(r, c,  0,  1)) line(x+LENGTH,y,        x+LENGTH,  y+LENGTH);      // right
+}
+function shouldDrawEdge(r, c, dr, dc){
+  const nr = r + dr, nc = c + dc;
+
+  // If the neighbor is off-grid or empty, this edge is on the outer boundary.
+  if (nr < 0 || nc < 0 || nr >= ROWS || nc >= COLS) return true;
+  if (!hasCell(nr, nc)) return true;
+
+  // Hide seams where neighbors are in the correct *relative* order.
+  // (Interior of a correctly-ordered run.)
+  if (isRelativelyAdjacent(r, c, nr, nc)) return false;
+
+  // Otherwise, show the edge: it's between different blocks (or a correct vs. misplaced tile).
+  return true;
+}
+
+  /* ======end===== added diff lines logic ============ */
 
 function updateQueueHeaderByMode(){
   updateQueueHeader(mode, popQueue.length);
@@ -391,14 +824,19 @@ function readUIState(){
     popQueueLen: popQueue.length,
     eClickSrc,
     eLineSrc,
-    eSelectMode
+    eSelectMode,
+    showDiff,
+    diffStroke,
   };
 }
 
+
+/* ============ Initialize Queue Panel ============ */
 // once at startup (after DOM ready)
 QueuePanel.init({
   readStateFn: readUIState,
-  onSetESelectFn: (em) => UIState.setESelect(em)
+  onSetESelectFn: (em) => UIState.setESelect(em),
+  onSetDiffStrokeFn: (c) => UIState.setDiffStroke(c),
 });
 
 const UIState = {
@@ -433,7 +871,6 @@ const UIState = {
     }
     eSelectMode = sel;
     clearETransient?.();
-    coreSetStatus?.(`Edit selection: ${eSelectMode}`);
 
     QueuePanel?.renderInfo?.();
     QueuePanel?.refreshEPillsActive?.();
@@ -441,6 +878,12 @@ const UIState = {
     updateQueueHeaderByMode?.();
     renderQueueDOM?.();
     reflectHUD?.();
+  },
+
+  setDiffStroke(color){
+    if (!color) return;
+    diffStroke = color;
+    redraw(); // update overlay immediately
   },
 
   setHudKeyActive(keyName, on){
@@ -508,7 +951,8 @@ function requestQueueLive(){
     return [Math.round((rp+m)*255), Math.round((gp+m)*255), Math.round((bp+m)*255)];
   }
   function fillAdjusted(rgb){
-    let [h,s,v] = rgbToHSV(rgb[0],rgb[1],rgb[2]);
+    if (!rgb) return; // guard against OOB or missing cells
+    let [h,s,v] = rgbToHSV(rgb[0], rgb[1], rgb[2]);
     s = constrain(s * SAT_SCALE, 0, 100);
     v = Math.pow(v/100, VAL_GAMMA) * 100;
     const [rr,gg,bb] = hsvToRGB(h,s,v);
@@ -557,9 +1001,6 @@ function requestQueueLive(){
     LIGHTNESS_THRESHOLDS[1] = vals[Math.floor(vals.length*0.66)]|0;
   }
 
-  const guideModeLabel = () =>
-  guideMode === 0 ? 'Off' : (guideMode === 1 ? 'corners' : 'borders');
-
    /* ============ Theme apply ============ */
   function applyThemeFlow(opts = { reuseTheme:false, preserveLayout:false }){
   const theme = (opts.reuseTheme && THEME_LATEST) ? THEME_LATEST : GradientGen.generateTheme();
@@ -594,7 +1035,6 @@ function requestQueueLive(){
   recomputeLockedCells();
   enforceGuides(); // (patched below to use coreSetStatus + non-panel UI refresh)
 
-  coreSetStatus?.(`Theme: ${theme.name} --- guides: ${guideModeLabel()} --- Press C to check`);
   // reflect UI (no heavy panel rebuild unless you explicitly need it)
   refreshNonPanelUI?.();  // header + queue + HUD
   refreshPanel?.();       // rebuild mode panel markup (pills/hints) for current mode
@@ -726,9 +1166,11 @@ function enforceGuides(){
 
   if (missing>0){
     coreSetStatus?.(`Guides enforced; ${missing} target(s) missing their tile.`, '#B00020');
-  } else {
+  } /* else {
     coreSetStatus?.('Guides enforced by relocation.');
-  }
+  } */
+ //commented out the above status for guides !! was used to test whether or not the guides forced the reltocation of cells bc they were previously 
+ //duplicating instead of moving !!
 
   // reflect queue/HUD; no need to rebuild pills/hints panel here
   refreshNonPanelUI?.();
@@ -751,11 +1193,13 @@ function renderHUDContent(){
 function setup(){
 
   /* ============ HUD init and wiring ============ */
-    // 1) HUD help lists + HUD module ==== on DOM ready / before wiring:
-    UI.HUD.init(); // cache HUD nodes and prep hotkey target
-    renderHUDContent();     // wrapper → UI.renderHUDLists()
-    enableHudCollapsers();      // <-- (imported from sort-office-ui.js)
-    enableHudExtraPanels();  // <-- NEW: status + slider subpanels collapsible
+  UI.HUD.init();                 // cache HUD nodes and prep hotkey target
+  renderHUDContent();            // wrapper → UI.renderHUDLists()
+  enableHudCollapsers();         // collapsible HUD sections
+  enableHudExtraPanels();        // collapsible status + slider subpanels
+  dockStatus('auto'); // auto menas data-nodock=true is tagged in html status div !!!!! otherwise behaves like 'queue'
+  enableHudFauxScroll();
+  enableHudFauxDrag();           // press + drag to scroll
 
   // 2) Canvas
   pixelDensity(1);
@@ -764,68 +1208,107 @@ function setup(){
   cnv.parent('canvas-holder');
   cnv.elt.tabIndex = 0;
   cnv.elt.focus();
+  cnv.elt.addEventListener('contextmenu', (e) => e.preventDefault());
   noLoop();
 
   // Queue CSS vars (tile size & rows)
-  syncQueueCSSVars();     // wrapper → UI.syncQueueCSSVars(LENGTH, ROWS)
+  syncQueueCSSVars(); // wrapper → UI.syncQueueCSSVars(LENGTH, ROWS)
 
   // 3) Initial state
   mode = 'move';
   guideMode = 0; // off by default
 
-  // 4) Theme + board (this already recomputes thresholds & enforces guides)
+  // 4) Theme + board (recomputes thresholds & enforces guides)
   applyThemeFlow({ reuseTheme:false, preserveLayout:false });
 
-  // 5) Build the queue side panel (pills + hints)
+  // NEW: build lookup from original board
+  rebuildOrigPos();
+
+  // 5) Queue side panel (pills + hints)
   QueuePanel.init({
-    readStateFn: readUIState,                 // defined below
+    readStateFn: readUIState,
     onSetESelectFn: (em) => UIState.setESelect(em),
+
+    onSetDiffStrokeFn: (c) => UIState.setDiffStroke(c),
   });
 
-  // 6) wire HUD hotkeys (V hold, X/L toggles, etc.)
+    ConstStatus.wire('#hud-status');
+    showWelcomeStatus();    // calling the welcome message here
+    // After guideMode or theme are set
+    reflectGuideFlag();
+    
+    
+
+  // 6) HUD hotkeys (V hold, X/L toggles, etc.)
   UI.HUD.wireHotkeys({
     onKeyDownShot: (k) => fireKeyDown(k),
     onKeyUpShot:   (k) => fireKeyUp(k),
 
-    onToggleInspect: () => {
-      inspect = !inspect;
-      if (!inspect) inspectLightness = false;
-      coreSetStatus(inspect ? 'Inspect ON' : 'Inspect OFF');
-    },
+    onToggleInspect:   () => toggleInspect(),
+    onToggleLightness: () => toggleLightness(),
 
-    onToggleLightness: () => {
-      if (!inspect) return false;
-      inspectLightness = !inspectLightness;
-      coreSetStatus(inspectLightness ? 'Inspect: lightness bands ON'
-                                     : 'Inspect: lightness bands OFF');
-      return true;
-    },
-
-    onRefreshUI: () => refreshAllUI(),
+    onRefreshUI: () => { refreshAllUI(); refreshPanel(); },
     onRedraw:    () => redraw(),
     onStatus:    (msg, color) => coreSetStatus(msg, color),
   });
 
-  // 7) Sliders (render-time vs gen-time)
-initSliders({
-  onRenderChange: (name, value) => {
-    if (name === 'SAT_SCALE') SAT_SCALE = value;
-    if (name === 'VAL_GAMMA') VAL_GAMMA = value;
-    redraw(); // render-time change → repaint only
-  },
-  onGenChange: (name, value) => {
-    if (name === 'GEN_MIN_DELTA')      GEN_MIN_DELTA = value;
-    if (name === 'GEN_BANDS')          GEN_BANDS     = value;
-    if (name === 'GEN_V_COL_SPAN_MIN') GEN_V_COL_SPAN_MIN = value;
-    if (name === 'GEN_V_BAND_MIN')     GEN_V_BAND_MIN     = value;
-    if (name === 'GEN_V_BAND_MAX')     GEN_V_BAND_MAX     = value;
-    if (name === 'GEN_V_CONTRAST')     GEN_V_CONTRAST     = value;
-    if (name === 'GEN_V_GAMMA_GEN')    GEN_V_GAMMA_GEN    = value;
+  // 6.5) Sync legend labels from HUD, then wire the legend buttons
+  UI.Legend?.syncLabelsFromHUD?.();
 
-    // generation-time change → regenerate with SAME theme/layout
-    applyThemeFlow({ reuseTheme: true, preserveLayout: true });
-  }
-});
+  // Wire the legend (buttons call into the same callbacks as HUD)
+    UI.Legend?.wire?.({
+      onKeyDownShot: (k) => fireKeyDown(k),
+      onKeyUpShot:   (k) => fireKeyUp(k),
+
+      // ✅ Call the shared helpers so flags update too
+      onToggleInspect:   () => { toggleInspect(); return true; },
+      onToggleLightness: () => { return toggleLightness(); }, // returns false if not in Inspect
+
+      onRefreshUI: () => { refreshNonPanelUI?.(); refreshPanel(); },
+      onRedraw:    () => redraw(),
+      onStatus:    (m, c) => coreSetStatus(m, c)
+    });
+
+  // If your checkbox isn’t pre-checked in HTML, the bands stay hidden.
+  // Either check it in HTML, or force the classes here on first load:
+  const legendHost = document.getElementById('key-legend'); //ASK
+  const labelToggle = document.getElementById('legend-label-toggle'); //ASK
+
+  // Respect checkbox state (or force both classes in dev)
+if (legendHost && labelToggle && labelToggle.checked) {
+  legendHost.classList.add('show-labels', 'diagram');
+}
+
+  UI.Legend?.observeResize?.();
+
+  // Build the diagram AFTER layout settles (double rAF)
+if (legendHost && legendHost.classList.contains('show-labels')) {
+  requestAnimationFrame(() => {
+    requestAnimationFrame(() => UI.Legend?.refreshDiagram?.());
+  });
+}
+
+  // 7) Sliders (render-time vs gen-time)
+  initSliders({
+    onRenderChange: (name, value) => {
+      if (name === 'SAT_SCALE') SAT_SCALE = value;
+      if (name === 'VAL_GAMMA') VAL_GAMMA = value;
+      redraw(); // render-time change → repaint only
+    },
+    onGenChange: (name, value) => {
+      if (name === 'GEN_MIN_DELTA')      GEN_MIN_DELTA = value;
+      if (name === 'GEN_BANDS')          GEN_BANDS     = value;
+      if (name === 'GEN_V_COL_SPAN_MIN') GEN_V_COL_SPAN_MIN = value;
+      if (name === 'GEN_V_BAND_MIN')     GEN_V_BAND_MIN     = value;
+      if (name === 'GEN_V_BAND_MAX')     GEN_V_BAND_MAX     = value;
+      if (name === 'GEN_V_CONTRAST')     GEN_V_CONTRAST     = value;
+      if (name === 'GEN_V_GAMMA_GEN')    GEN_V_GAMMA_GEN    = value;
+      // generation-time change → regenerate with SAME theme/layout
+      applyThemeFlow({ reuseTheme: true, preserveLayout: true });
+      // build lookup from original board
+      rebuildOrigPos();
+    }
+  });
 
   // 8) First paint of HUD + queue + panel
   refreshAllUI();   // HUD numbers/labels + key glows + queue header/tiles
@@ -833,7 +1316,10 @@ initSliders({
 }
 
 function draw(){
-  background('#F9F5E9');
+  // for now - just setting the background to the same as
+  // ==== --bg-slate: #E5E5E5; === (in css) - just gotta make sure i 
+  // keep coming back to update whenever needed or fix in future
+  background('#E5E5E5');
 
   // board
   noStroke();
@@ -898,19 +1384,10 @@ function draw(){
     }
   }
 
-  // diff outlines
-  if (showDiff && !peek){
-    noFill(); stroke('#111'); strokeWeight(2);
-    for (let r=0;r<ROWS;r++){
-      for (let c=0;c<COLS;c++){
-        const k = keyFor(r,c);
-        if (holes.has(k)) continue;
-        if (!colorsEqual(gridRGB[r][c], originalRGB[r][c])){
-          rect(c*LENGTH, r*LENGTH, LENGTH, LENGTH);
-        }
-      }
-    }
-  }
+// diff outlines (group-aware: hide interior seams)
+if (showDiff && !peek){
+  drawDifferencesOverlay();
+}
 
   // === E-mode overlays ===
   if (mode === 'move') {
@@ -953,6 +1430,37 @@ function mousePressed(){
   const [r,c] = mouseRC(); if (!inBounds(r,c)) return;
   const k = keyFor(r,c);
 
+
+  // === Right-click places from queue (with drag support) ===  
+  if (window.mouseButton === window.RIGHT) {
+    const k = keyFor(r, c);
+    if (lockedCells.has(k))   { coreSetStatus('Destination locked (guide).', '#B00020'); return; }
+    if (!holes.has(k))        { coreSetStatus('Pick an empty cell to place.', '#B00020'); return; }
+    if (popQueue.length === 0){ coreSetStatus('Queue empty.', '#B00020'); return; }
+
+    // begin right-drag-to-place session
+    pDragging = true;
+    pVisited  = new Set();
+    pPlacedCount = 0;
+
+    // attempt initial placement
+    const key = keyFor(r, c);
+    if (!pVisited.has(key)) {
+      pVisited.add(key);
+      if (placeCellAt(r, c)) {
+        pPlacedCount++;
+      }
+    }
+    // 🔹 LIVE status (placing)
+    const sP = pPlacedCount === 1 ? '' : 's';
+    coreSetStatusLive(`Placing ${pPlacedCount} cell${sP}… Queue: ${popQueue.length}`);
+
+    // live visual + queue panel feedback
+    redraw();
+    requestQueueLive?.();
+    return; // consume right-click
+  }
+
   // -------- C MODE --------
   if (mode === 'collect') {
     gDragging = true;
@@ -964,21 +1472,11 @@ function mousePressed(){
       gVisited.add(key);
       if (collectCellAt(r, c)) gCollectedCount++;
     }
-    redraw();
-    requestQueueLive();
-  }
 
-  // -------- P MODE --------
-  if (mode === 'P'){
-    pDragging = true;
-    pVisited  = new Set();
-    pPlacedCount = 0;
+    // 🔹 LIVE status (collecting)
+    const sC = gCollectedCount === 1 ? '' : 's';
+    coreSetStatusLive(`Collecting ${gCollectedCount} cell${sC}… Queue: ${popQueue.length}`);
 
-    const key = keyFor(r, c);
-    if (!pVisited.has(key)) {
-      pVisited.add(key);
-      if (placeCellAt(r, c)) pPlacedCount++;
-    }
     redraw();
     requestQueueLive();
   }
@@ -1045,36 +1543,41 @@ function mousePressed(){
       }
     }
 
-    // LINE: if a source line is already locked, clicking can (a) grab to move, or (b) choose destination
-    if (eSelectMode === 'line' && eLineSrc){
-      // allow grabbing the locked source line to move
+    // If a source line is locked, allow grabbing it to move (live translate)
+    if (mode === 'move' && eSelectMode === 'line' && eLineSrc){
+      const [rr, cc] = [r, c];
       let inSrc = false;
       for (const cell of iterCells(eLineSrc)) {
-        if (cell.r === r && cell.c === c) { inSrc = true; break; }
+        if (cell.r === rr && cell.c === cc) { inSrc = true; break; }
       }
       if (inSrc) {
-        eLineMove = { grab: { r, c } };
-        eLineMoveGhost = eLineSrc; // preview starts as current line
+        const start = lineStart(eLineSrc);
+        // Make sure we don't show both sizing + moving previews at once
+        eLineAnchor = null;
+        eLineDrag   = null;
+
+        eLineMove = {
+          started: true,
+          moved: false,              // track whether we actually moved cells
+          lastStart: { r: start.r, c: start.c }
+        };
+        // Seed the ghost with the current source so user sees what's “selected”
+        eLineMoveGhost = { ...eLineSrc };
+        // Reset any arrow-nudge accumulation from previous moves
+        lineMoveSession = null;
         coreSetStatus('Drag to reposition line; release to apply. Use arrow keys to nudge.');
         redraw();
         return;
       }
-
-      const dst = makeDstLineFromStart(eLineSrc, r, c);
-      if (!dst){ coreSetStatus('Destination out of bounds.', '#B00020'); return; }
-
-      if (applyLineMoveSwap(eLineSrc, dst)) {
-        eLineSrc = null;
-        refreshPanel();
-        refreshAllUI();
-        redraw();
-      }
-      return;
     }
 
     // LINE: picking source (start sizing on press)
     if (eSelectMode === 'line'){
       if (isHoleOrLocked){ coreSetStatus('Pick a filled, unlocked tile.', '#B00020'); return; }
+      // Starting to size a new line: clear any prior move ghost/session
+      eLineMove       = null;
+      eLineMoveGhost  = null;
+      lineMoveSession = null;
       eLineAnchor = {r,c};
       eLineDrag   = {r,c};
       return;
@@ -1083,6 +1586,35 @@ function mousePressed(){
 }
 
 function mouseDragged() {
+
+  // right-drag-to-place
+    //continue placing while right-dragging ===
+  if (pDragging && window.mouseButton === window.RIGHT) {
+    const [r,c] = mouseRC();
+    if (!inBounds(r,c)) return;
+
+    const key = keyFor(r, c);
+    if (!pVisited) pVisited = new Set();
+    if (pVisited.has(key)) return;
+
+    // Only place into empty, unlocked cells and while queue has items
+    if (!lockedCells.has(key) && holes.has(key) && popQueue.length > 0) {
+      pVisited.add(key);
+      if (placeCellAt(r, c)) {
+        pPlacedCount++;
+
+        // 🔹 LIVE status (placing)
+        const sP = pPlacedCount === 1 ? '' : 's';
+        coreSetStatusLive(`Placing ${pPlacedCount} cell${sP}… Queue: ${popQueue.length}`);
+
+        // live updates
+        redraw();
+        requestQueueLive?.();
+      }
+    }
+    return; // consume right-drag
+  }
+
   // collect-mode drag-to-collect
   if (mode === 'collect' && gDragging) {
     const [r, c] = mouseRC();
@@ -1091,23 +1623,14 @@ function mouseDragged() {
     if (!gVisited) gVisited = new Set();
     if (gVisited.has(key)) return;
 
-    gVisited.add(key);
-    if (collectCellAt(r, c)) gCollectedCount++;
+      gVisited.add(key);
+      if (collectCellAt(r, c)) {
+        gCollectedCount++;
 
-    redraw();
-    requestQueueLive();
-  }
-
-  // --- P MODE: drag-to-place ---
-  if (mode === 'P' && pDragging){
-    const [r,c] = mouseRC();
-    if (!inBounds(r,c)) return;
-    const key = keyFor(r, c);
-    if (!pVisited) pVisited = new Set();
-    if (pVisited.has(key)) return;
-
-    pVisited.add(key);
-    if (placeCellAt(r, c)) pPlacedCount++;
+        // 🔹 LIVE status (collecting)
+        const sC = gCollectedCount === 1 ? '' : 's';
+        coreSetStatusLive(`Collecting ${gCollectedCount} cell${sC}… Queue: ${popQueue.length}`);
+      }
 
     redraw();
     requestQueueLive();
@@ -1128,20 +1651,40 @@ function mouseDragged() {
     }
   }
 
-  // dragging a locked source line → update ghost
-  if (mode === 'move' && eSelectMode === 'line' && eLineMove){
+  // LINE: while dragging a locked source line → update GHOST ONLY (no grid writes)
+  if (mode === 'move' && eSelectMode === 'line' && eLineMove?.started) {
     const [rr, cc] = mouseRC();
     if (!inBounds(rr, cc)) return;
     const ghost = makeDstLineFromStart(eLineSrc, rr, cc);
-    if (ghost) {
-      eLineMoveGhost = ghost;
-      redraw();
-    }
+    if (!ghost) return; // out of bounds → ignore
+    eLineMoveGhost = ghost;              // visual preview only
+    eLineMove.moved = true;
+    coreSetStatus?.(`Pending move: ${ghost.r0 - eLineMove.lastStart.r},${ghost.c0 - eLineMove.lastStart.c}`);
+    redraw?.();
     return;
   }
 }
 
 function mouseReleased() {
+
+    // === finish right-drag placement ===
+  if (pDragging) {
+    pDragging = false;
+    pVisited  = null;
+
+    // queue + HUD refresh (one last pass is fine)
+    refreshQueueLive?.();
+    reflectHUD?.();   // calls UI.HUD.refreshAll({ …state })
+
+    if (pPlacedCount > 0) {
+      coreSetStatus(`Placed ${pPlacedCount} cell${pPlacedCount>1?'s':''}. Queue: ${popQueue.length}`);
+    } else {
+      coreSetStatus(popQueue.length === 0 ? 'Queue empty.' : 'No placements (try empty, unlocked cells).');
+    }
+    pPlacedCount = 0;
+    return; // consume release
+  }
+
   // Finish collect-mode drag session
   if (mode === 'collect' && gDragging) {
     gDragging = false;
@@ -1156,25 +1699,6 @@ function mouseReleased() {
         : 'No cells collected.'
     );
     gCollectedCount = 0;
-    return;
-  }
-
-  // --- P MODE: finish drag-to-place ---
-  if (mode === 'P' && pDragging){
-    pDragging = false;
-    pVisited = null;
-
-    // live updates happened during drag; one final consolidated UI refresh
-    refreshAllUI();
-
-    coreSetStatus(
-      pPlacedCount > 0
-        ? `Placed ${pPlacedCount} cell${pPlacedCount>1?'s':''}. Queue: ${popQueue.length}`
-        : (popQueue.length === 0
-            ? 'Queue empty.'
-            : 'No placements (try empty, unlocked cells).')
-    );
-    pPlacedCount = 0;
     return;
   }
 
@@ -1211,23 +1735,36 @@ function mouseReleased() {
       return coreSetStatus('Swapped.');
     }
 
-    // DRAGGING a locked source line → release
-    if (eSelectMode === 'line' && eLineMove){
-      eLineMove = null;
-      const dst = eLineMoveGhost; 
-      eLineMoveGhost = null;
-
-      if (dst && applyLineMoveSwap(eLineSrc, dst)) {
-        eLineSrc = dst; // keep the selection locked at the new location
-        refreshAllUI();
-        redraw();
-        return coreSetStatus('Moved line.');
+   // LINE: commit drag-to-move in one shot (use ghost if present)
+   if (eSelectMode === 'line' && eLineMove?.started) {
+     // Prefer the ghost (matches what the user saw). If none, compute from pointer.
+     let dst = eLineMoveGhost;
+     if (!dst) {
+       const [rr, cc] = mouseRC();
+       if (!inBounds(rr, cc)) {
+         eLineMove = null;
+         eLineMoveGhost = null;
+         redraw?.();
+         return coreSetStatus('Canceled (outside board).');
+       }
+       dst = makeDstLineFromStart(eLineSrc, rr, cc);
+     }
+    if (dst) {
+      const ok = commitLineMoveWithOverlap(eLineSrc, dst);
+      coreSetStatus?.(ok ? 'Line moved.' : 'Move blocked.', ok ? undefined : '#B00020');
+      if (ok) eLineSrc = dst;
+      refreshNonPanelUI?.();
+      redraw?.();
       } else {
-        redraw();
-        return coreSetStatus('Cannot move line there.', '#B00020');
+        coreSetStatus('Move blocked.', '#B00020');
+        redraw?.();
       }
-    }
-
+      // Clear session either way
+      eLineMove = null;
+      eLineMoveGhost = null;
+      return;
+   }
+    
     // Finish sizing the source line (lock it; don’t move/swap yet)
     if (eSelectMode === 'line' && eLineAnchor){
       const line = makeLineFromDrag(eLineAnchor, eLineDrag || eLineAnchor);
@@ -1251,80 +1788,84 @@ function mouseReleased() {
   }
 }
 
-function keyPressed(){
-  const k = window.key;
+function keyIs(k, ...alts) {
+  // Exact compare for special keys; case-insensitive for letters.
+  if (!k) return false;
+  for (const a of alts) {
+    if (!a) continue;
+    if (a.length === 1 && k.length === 1) { // letter-like
+      if (k.toLowerCase() === a.toLowerCase()) return true;
+    } else {
+      if (k === a) return true; // exact for 'Escape', 'ArrowUp', '[', ']'
+    }
+  }
+  return false;
+}
+
+function keyPressed() {
+  const k = window.key; // p5 sets 'Escape', 'ArrowUp', '[', 'A', etc.
   // Mode switches
-  if (k==='c'||k==='C'){ UIState.setMode('collect'); return; }
-  if (k==='p'||k==='P'){ UIState.setMode('P');       return; }
-  if (k==='m'||k==='M'){ UIState.setMode('move');    return; }
+  if (keyIs(k,'C')) { UIState.setMode('collect'); return; }
+  if (keyIs(k,'M')) { UIState.setMode('move');  coreSetStatus('press q to cycle through selection types');  return; }
 
   // Cycle move selection modes
-  if (k==='q'||k==='Q'){
+  if (keyIs(k,'Q')){
     if (mode !== 'move') return;
     const order = ['drag','click','line'];
-    const next = order[(order.indexOf(eSelectMode)+1)%order.length];
-    UIState.setESelect(next);                // rebuilds pills + active + non-panel UI
+    const next = order[(order.indexOf(eSelectMode)+1) % order.length];
+    UIState.setESelect(next);
+    refreshAllUI();
+    redraw();
+    coreSetStatus(`Edit selection: ${next}`);
+    UI.Keys.pulseKeyAll('Q');      // <-- pulse HUD + legend "Q"
     return;
   }
 
   // Peek (V)
-  if (k==='v'||k==='V'){
+  if (keyIs(k,'V')){
     peek = true;
     refreshAllUI();  // update HUD immediately
     return redraw();
   }
 
-  // Inspect toggle (X)
-  if (k === 'x' || k === 'X') {
-    inspect = !inspect;
-    if (!inspect) inspectLightness = false; // turn off L when exiting Inspect
+// Inspect toggle (X)
+if (keyIs(k,'X')) {
+  toggleInspect();
+  return;
+}
 
-    // === new stacked-status updates ===
-    Status.setFlag('inspect', inspect ? 'Inspect: ON' : null);
-    Status.setFlag('inspectL', (inspect && inspectLightness) ? 'Inspect lightness: ON' : null);
-
-    refreshAllUI();
-    redraw();
-    coreSetStatus(inspect ? 'Inspect ON' : 'Inspect OFF'); // optional flash
-    return;
-  }
-
-  // Lightness layer (L) — only meaningful while inspect is ON
-  if (k==='l'||k==='L'){
-    if (!inspect) { coreSetStatus('Press X to enter Inspect first.', '#B00020'); return; }
-    inspectLightness = !inspectLightness;
-    Status.setFlag('inspectL', inspectLightness ? 'Inspect lightness: ON' : null);
-
-    refreshAllUI(); 
-    redraw();
-    coreSetStatus(inspectLightness ? 'Inspect: lightness bands ON' : 'Inspect: lightness bands OFF');
-    return;
-  }
+// Lightness layer (L) — only meaningful while inspect is ON
+if (keyIs(k,'L')) {
+  toggleLightness();  // handles the “press X first” message and returns
+  return;
+}
 
   // Diff (D)
   if (k==='d'||k==='D'){
     showDiff = !showDiff;
-    refreshAllUI();
-    return redraw();
+    refreshAllUI();   // HUD / key glows / statuses
+    refreshPanel();   // 🔹 add this — rebuilds Queue Panel contents
+    redraw();
+    return;
   }
 
   // Zoom out
-  if (k === '[' || k === '{') {
+  if (keyIs(k,'[')) {
     zoomOut = true;
     refreshAllUI();
     const next = Math.max(LENGTH_MIN, LENGTH - ZOOM_STEP);
     if (next !== LENGTH) {
       LENGTH = next;
       resizeCanvas(COLS * LENGTH, ROWS * LENGTH);
-      syncQueueCSSVars();                    // wrapper → UI.syncQueueCSSVars(LENGTH, ROWS)
+      syncQueueCSSVars(); // wrapper → UI.syncQueueCSSVars(LENGTH, ROWS)
       coreSetStatus(`Zoom: ${LENGTH}px/cell`);
-      UI.HUD.pulseKey('[');
+      UI.Keys.pulseKeyAll('[');
     }
     return;
   }
 
   // Zoom in
-  if (k === ']' || k === '}') {
+  if (keyIs(k,']')) {
     zoomIn = true;
     refreshAllUI();
     const next = Math.min(MAX_LENGTH, LENGTH + ZOOM_STEP);
@@ -1333,13 +1874,13 @@ function keyPressed(){
       resizeCanvas(COLS * LENGTH, ROWS * LENGTH);
       syncQueueCSSVars();
       coreSetStatus(`Zoom: ${LENGTH}px/cell`);
-      UI.HUD.pulseKey(']');
+      UI.Keys.pulseKeyAll(']');
     }
     return;
   }
 
   // Shuffle (S)
-  if (k==='s'||k==='S'){
+  if (keyIs(k,'S')){
     shuffle = true;
     gridRGB = deepCopyGridRGB(originalRGB);
     boardPerm = buildShuffledPerm();
@@ -1347,14 +1888,16 @@ function keyPressed(){
     holes.clear(); popQueue.length=0; dragging=null;
     recomputeLockedCells();
     enforceGuides();
-    refreshAllUI();                           // queue + HUD changed; no panel rebuild
+     // Queue + grid changed, but don’t rebuild E-panel here
+    refreshNonPanelUI();
+    redraw(); // <— force repaint for HUD clicks
     coreSetStatus('Shuffled current from ORIGINAL.');
-    UI.HUD.pulseKey('S');
+    UI.Keys.pulseKeyAll('S');
     return;
   }
 
   // Check (T)
-  if (k==='t'||k==='T'){
+  if (keyIs(k,'T')){
     checkme = true;
     if (popQueue.length>0) return coreSetStatus(`Not solved: queue ${popQueue.length}.`,'#B00020');
     if (holes.size>0)     return coreSetStatus(`Not solved: ${holes.size} empty cells.`,'#B00020');
@@ -1363,77 +1906,117 @@ function keyPressed(){
       if(!colorsEqual(gridRGB[r][c],originalRGB[r][c])) mism++;
     coreSetStatus(mism===0 ? '✅ Correct!' : '❌ Not yet: '+mism+' mismatches.',
                   mism===0 ? '#1B5E20' : '#B00020');
-    UI.HUD.pulseKey('T');
+    UI.Keys.pulseKeyAll('T');
     return;
   }
 
   // Reset to original (A)
-  if (k==='a'||k==='A'){
+  if (keyIs(k,'A')){
     answerit = true;
     gridRGB = deepCopyGridRGB(originalRGB);
     holes.clear(); popQueue.length=0; dragging=null;
     recomputeLockedCells();
     enforceGuides();
-    refreshAllUI();
+    refreshNonPanelUI();
+    redraw(); 
     coreSetStatus('Reset to ORIGINAL.');
-    UI.HUD.pulseKey('A');
+    UI.Keys.pulseKeyAll('A');
     return;
   }
 
   // New Flow (F)
-  if (k==='f'||k==='F'){
+  if (keyIs(k,'F')){
     applyThemeFlow();  // already refreshes UI + panel + redraw
+    // build lookup from original board
+    rebuildOrigPos();
+    refreshNonPanelUI();
+    redraw();
+    coreSetStatus('u just got fresh paint');
+    UI.Keys.pulseKeyAll('F');        // <— add pulse for HUD feedback
     return;
   }
 
   // Guides: 0 Off, 1 Corners, 2 Borders
-  if (k==='0'){ guideMode=0; recomputeLockedCells(); enforceGuides(); refreshAllUI(); return coreSetStatus('guides: OFF'); }
-  if (k==='1'){ guideMode=1; recomputeLockedCells(); enforceGuides(); refreshAllUI(); return coreSetStatus('guides: corners'); }
-  if (k==='2'){ guideMode=2; recomputeLockedCells(); enforceGuides(); refreshAllUI(); return coreSetStatus('guides: borders'); }
+  if (k==='0'){ guideMode=0; recomputeLockedCells(); enforceGuides(); refreshAllUI(); return /* coreSetStatus('guides: OFF'); */ }
+  if (k==='1'){ guideMode=1; recomputeLockedCells(); enforceGuides(); refreshAllUI(); return /* coreSetStatus('guides: corners'); */ }
+  if (k==='2'){ guideMode=2; recomputeLockedCells(); enforceGuides(); refreshAllUI(); return /* coreSetStatus('guides: borders'); */ }
 
-  // Arrow key nudging for locked source line in move / line
+  // Arrow key nudging for locked source line — ghost only; commit on keyReleased
   if (mode === 'move' && eSelectMode === 'line' && eLineSrc) {
     let dr = 0, dc = 0;
-    if (k === 'ArrowUp')    dr = -1;
-    if (k === 'ArrowDown')  dr = +1;
-    if (k === 'ArrowLeft')  dc = -1;
-    if (k === 'ArrowRight') dc = +1;
+    if (keyIs(k, 'ArrowUp'))    dr = -1;
+    if (keyIs(k, 'ArrowDown'))  dr =  1;
+    if (keyIs(k, 'ArrowLeft'))  dc = -1;
+    if (keyIs(k, 'ArrowRight')) dc =  1;
 
+    // Start / update an accumulated move session
     if (dr !== 0 || dc !== 0) {
-      const start = lineStart(eLineSrc);
-      if (start) {
-        const dst = makeDstLineFromStart(eLineSrc, start.r + dr, start.c + dc);
-        if (dst && applyLineMoveSwap(eLineSrc, dst)) {
-          eLineSrc = dst;                         // keep selection at new location
-          refreshAllUI();                         // HUD/header/queue tiles
-          redraw();
-          return coreSetStatus('Moved line.');
-        } else {
-          return coreSetStatus('Blocked.', '#B00020');
-        }
+      if (!lineMoveSession) {
+        lineMoveSession = { srcLine: eLineSrc, dr: 0, dc: 0 };
       }
+      lineMoveSession.dr += dr;
+      lineMoveSession.dc += dc;
+
+      const s = lineMoveSession.srcLine; // canonical start is s.r0/s.c0
+      const ghost = makeDstLineFromStart(s, s.r0 + lineMoveSession.dr, s.c0 + lineMoveSession.dc);
+      if (ghost) {
+        // ensure move mode preview is active
+        eLineMove = { started: true, moved: true, lastStart: { r: s.r0, c: s.c0 } };
+        eLineMoveGhost = ghost;             // visual only; no grid mutation here
+        coreSetStatus?.(`Pending move: ${lineMoveSession.dr},${lineMoveSession.dc}`);
+        redraw?.();
+      } else {
+        // boundary hit → undo this step so ghost stays valid
+        lineMoveSession.dr -= dr;
+        lineMoveSession.dc -= dc;
+      }
+      return false; // prevent page scroll
     }
   }
 
-  // Escape cancels transient E selections
-  if (k === 'Escape'){
-    if (dragging || eLineAnchor || eLineSrc){
-      dragging = null; eLineAnchor = null; eLineDrag = null; eLineSrc = null;
-      coreSetStatus('Selection canceled.');
-      refreshPanel();                            // pills/hints copy changes
-      redraw();
-      return;
-    }
+    // Escape cancels E selections
+  if (keyIs(k, 'Escape')) {
+    cancelActiveSelection('Selection cleared.');
+    coreSetStatus?.('let go of selection');  
+    UI.Keys?.pulseKeyAll?.('Escape'); // optional visual feedback
+    return false; // prevent default
   }
+
 }
 
 function keyReleased(){
   const k = window.key;
-  if (k==='v'||k==='V'){
-    peek = false;
-    refreshAllUI();
+
+  // === Commit accumulated arrow nudges for line mode (single swap) ===
+if (mode === 'move' && eSelectMode === 'line' && lineMoveSession){
+  const { srcLine, dr, dc } = lineMoveSession;
+  const dst = makeDstLineFromStart(srcLine, srcLine.r0 + dr, srcLine.c0 + dc);
+  if (dst) {
+    const ok = commitLineMoveWithOverlap(srcLine, dst);
+    if (ok) {
+      eLineSrc = dst;                // so you can keep nudging from the new spot
+      coreSetStatus?.('Line moved.');
+    } else {
+      coreSetStatus?.('Move blocked.', '#B00020');
+    }
   }
-  redraw();
+  lineMoveSession = null;
+  eLineMove = null;
+  eLineMoveGhost = null;
+  refreshNonPanelUI?.();
+  redraw?.();
+  return false;
+}
+
+  // Your existing peek toggle release
+  if (keyIs(k,'V')){
+    peek = false;
+    refreshNonPanelUI?.();
+    redraw?.();
+    return false;
+  }
+
+  redraw?.();
 }
 
 /* ============ p5 helpers ============ */

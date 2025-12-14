@@ -1,0 +1,1429 @@
+    /*=== === === color layouts....? === === ===*/
+    /*green theme : stuff is already mixed throughout with the green theme tag. find and compile here soon....*/
+
+    :root {
+      /* page */
+      --bg-slate: #E5E5E5;
+
+      /* keys */
+      --key-bg-slate: #000000;
+      --key-border: 1px solid #ffffff;
+      --key-border-color: #ffffff;
+      --key-box-shadow: -2px 2px #000000;
+      --key-box-shadow-color: #000000;
+
+      /* keys active states */
+      --active-key-bg-slate: #FFFFFF;
+      --active-key-color-slate: #000000;
+      --active-key-border-slate: 1px solid #000000;
+      --active-key-border-color-slate: #000000;
+      --active-key-box-shadow-slate: none;
+      
+
+    }
+
+    /*
+
+    .hud-key { 
+      color: #ffffff;
+      background: var(--key-bg-slate);
+      border: var(--key-border);
+      box-shadow: var(--key-box-shadow);
+      padding: 4px 8px; 
+      font-size: 18px; 
+      white-space: nowrap;
+      border-radius: 6px;
+      transform-origin: bottom left;
+      transform: translate(0px, 0px);
+      transition: transform .18s;
+    }
+     /* active state for hudkeys 
+    .hud-key.active {
+      background: #A2E774; /*green theme
+      color: #2F3A2C; /*green theme
+      border-color: #2F3A2C; /*green theme
+      box-shadow: none;
+      transform: translate(1px, 2px);
+    }
+
+    */
+
+
+/* sort-office.css | http://127.0.0.1:3000/learning-p5/sort-office.css */
+
+
+.hud-section {
+  border: solid 2px #374035;
+}
+
+
+    /*=== === === color layouts....end === === ===*/
+    
+    /*==========BASE LAYOUT==========*/
+    html, body { 
+      height: 100%; 
+      margin: 0; 
+    /*background: #C9E8B0; green theme*/
+      background: var(--bg-slate);
+      color: #000; 
+      font-family: 'Courier New', Courier, monospace; 
+    }
+    .page {
+      display: flex;
+      flex-wrap: wrap;
+      padding: .5em;
+    }
+    /* ---- main HUD styles . hopefully can be /model/ for separating canvas and queue later on ---- */
+    #hud { 
+      display: flex; 
+      width: 100%;
+      margin-bottom: .5em;
+    }
+
+/* === ADDING THE HUD FAUXBAR HERE === */    
+/* #hud::-webkit-scrollbar { display: none; } /* Chrome/Safari/Edge hide */
+
+/* Faux track docked to the right edge of the HUD */
+.hud-fauxbar {
+  --track-w: 10px;                 /* track width */
+  --thumb-h: 56px;                 /* thumb height (fixed; tweak to taste) */
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: var(--track-w);
+  height: 100%;
+  background: #ddd;                /* track color */
+  border-left: 1px solid #000;
+  pointer-events: auto;
+  cursor: grab;
+  display: none !important;
+}
+
+.hud-fauxbar.dragging {
+  cursor: grabbing;
+}
+
+/* The "thumb" is a pseudo element so no extra markup is needed */
+.hud-fauxbar::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;                          /* will be animated by scroll-timeline */
+  height: var(--thumb-h);
+  background: #6236ff;    /*thumb color */
+  pointer-events: none;            
+  transform: translateY(var(--thumb-y, 0));
+}
+
+/* Optional hover look (purely visual; doesn’t capture pointer): */
+.hud-fauxbar:hover::before {
+  background: #222;
+}
+
+/* Reserve space so layout doesn't shift when we hid the native bar earlier */
+#hud { scrollbar-gutter: stable both-edges; }
+
+/* ===== Scroll-linked animation (modern browsers) =====
+   This moves the thumb from top to bottom as the HUD scrolls.
+   No JS — purely CSS.
+*/
+@supports (scroll-timeline: auto) {
+  #hud {
+    scroll-timeline: hudScroll block;  /* name + axis */
+  }
+  .hud-fauxbar::before {
+    /* animation drives transform; the var above is ignored */
+    animation: hudThumb 1s linear both;
+    animation-timeline: hudScroll;
+  }
+  @keyframes hudThumb {
+    from { transform: translateY(0); }
+    /* Move the thumb so its BOTTOM reaches the track bottom */
+    to   { transform: translateY(calc(100% - var(--thumb-h))); }
+  }
+}
+
+/* === end of HUD faux bar styles === */
+
+/*========== key press descriptions and feedback (but not contrast panel) ==========*/
+    /* holds all the sections */
+    .hudsec-container { 
+      display: flex;
+      width: 100%;
+    }
+    .hud-section { 
+      border: solid 1px #000000;
+      
+      height: 7em;
+
+      /* === ADDED FOR VERT TEXT TITLE === */
+        display: grid;
+        grid-template-columns: 2.6em 1fr;  /* left spine width, then content */
+      /* === ADDED FOR VERT TEXT TITLE === */
+    }
+    /*the title of each section*/
+    .hudsec-title { 
+      font-size: 15px; 
+      color: #000000; 
+      cursor: pointer;
+      user-select: none;
+      font-weight: 700;
+
+      /* === ADDED FOR VERT TEXT TITLE === */
+        grid-column: 1; 
+        grid-row: 1;
+        writing-mode: vertical-rl;
+        text-orientation: upright;   /* letters upright (stacked) */
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-bottom: 0;
+        margin: 0;
+        letter-spacing: 0.05em;      
+        white-space: normal;       
+      /* === ADDED FOR VERT TEXT TITLE === */
+    }
+
+    .hudsec-title .chev { 
+      display: inline-block; 
+
+      /* === ADDED FOR VERT TEXT TITLE === */
+      margin-block: 4px;
+      transform: rotate(-90deg);
+      transition: transform .18s;
+      /* === ADDED FOR VERT TEXT TITLE === */
+    }
+    .hud-list { 
+      color: #000000; 
+      font-size: 12px;
+
+      /* === ADDED FOR VERT TEXT TITLE === */
+      grid-column: 2;
+      grid-row: 1;
+      padding: 6px 8px;   
+      /* === ADDED FOR VERT TEXT TITLE === */
+    }
+    .hud-item { 
+      display: flex; 
+      /*align-items: center;*/
+    }
+    .hud-key { 
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      color: #000000;
+      border: 1px solid #000000; 
+      padding: 4px 8px; 
+      font-size: 18px; 
+      white-space: nowrap;
+      border-radius: 6px;
+      cursor: pointer;
+      transform-origin: bottom left;
+      transform: translate(0px, 0px);
+      transition: transform .18s;
+    }
+    .hud-item .hud-key {
+      text-align: center;
+      position: relative;
+    }
+    .hud-item-label { 
+      font-size: 0.65em;
+      color: #000000;
+      pointer-events: none;
+      transition: color 0.25s ease; 
+      position: relative;
+      white-space: normal; 
+      line-height: 1.2;
+    }
+    .hud-key.active {
+      background: var(--active-key-bg-slate);
+      color: var(--active-key-color-slate);
+      border-color: var(--active-key-border-slate);
+      box-shadow: var(--active-key-box-shadow-slate);
+      transform: translate(1px, 2px);
+    }
+    .hud-key.active + .hud-item-label {
+      color: #000000;
+    }
+    /*=== === === === === COLLAPSED SECTIONS (GENERAL) === === === === === */
+    .hud-section.is-collapsed {
+
+    }
+    .hud-section.is-collapsed .hudsec-title { 
+      background: #ffffff;
+      border-bottom: none; 
+      border-right: none;
+    }
+    .hud-section.is-collapsed .hud-list { 
+      display: none; 
+    }
+    .hud-section.is-collapsed .hudsec-title .chev { 
+      transform: rotate(180deg);     /* points “right” (collapsed) */ 
+    }
+/*=== === === end === COLLAPSED SECTIONS (GENERAL) === === === === === */
+
+/* === === UTILS SECTION === === */
+#hud-utility-section {
+  border-color: #A1027B;
+  border-right: none;
+}
+#hud-utility-section .hudsec-title {
+  /*background: #84C746; */
+  /* background: #247D4E;*/  
+    background: #ffffff;
+    color: #A1027B;
+    border-right: solid 1px #A1027B;
+}
+#hud-utility-section .hudsec-title .chev {
+  color: #A1027B;
+}
+.hud-section #hud-utility-list {
+  display: flex;  
+  font-size: 14px;
+  gap: 4px;
+  color: #A1027B;
+}
+#hud-utility-list .hud-item {
+  /*display: block; */
+}
+#hud-utility-section .hud-key {
+  max-width: fit-content;
+  background: #ffffff;
+  color: #A1027B;
+  padding: 4px;
+}
+#hud-utility-list .hud-item .hud-key .hud-item-label {
+  color: #A1027B;
+}
+#hud-utility-list .hud-item .hud-key.active {
+  background: #A1027B;
+  color: #ffffff;
+}
+#hud-utility-list .hud-item .hud-key.active .hud-item-label {
+  color: #ffffff;
+}
+#hud-utility-list .hud-item-label {
+  max-width: 90px;
+}
+  /* === === ===  UTILITY SEC COLLAPSE === === */
+    .hud-section.is-collapsed #hud-utility-list {
+      display: none; 
+    }
+    #hud-utility-section.is-collapsed .hudsec-title {
+      background: #A1027B;
+      color: #ffffff;
+    }
+    #hud-utility-section.is-collapsed .hudsec-title .chev {
+      color: #ffffff;
+    }
+  /* === end ===  UTILITY SEC COLLAPSE === === */
+
+
+/* === === GUIDES / LOCKS SECTION === === */
+#hud-guides-section {
+  border-color: #357703;
+  border-right: none;
+}
+#hud-guides-section .hudsec-title {
+  /*background: #7D97E5; */
+ /* background: #357703; */
+    background: #ffffff;
+    color: #357703;
+  border-right: solid 1px #357703;
+}
+#hud-guides-section .hudsec-title .chev {
+  color: #357703;
+}
+#hud-guides-list {
+  display: flex;
+  flex-direction: column;
+  margin-left: .5em;
+  margin-right: .5em;
+  margin-top: auto;
+  margin-bottom: auto;
+  gap: 6px; /* space between rows */
+  text-align: left;
+  padding: 0;
+}
+#hud-guides-list .hud-item {
+  display: block; /* each row is one key "pill" */
+}
+#hud-guides-list .hud-key {
+  display: flex;
+  gap: 24px;
+  /*! height: 20px; */     
+  /*! min-width: 265px; */             
+  border-radius: 12px;
+  cursor: pointer;
+
+  flex-direction: row !important;
+  text-align: left !important;
+  justify-content: space-between;
+}
+#hud-guides-list .hud-key .key-name {
+  font-size: 1em;
+  line-height: 1;
+}
+#hud-guides-list .hud-item .hud-key.active {
+  background: #357703;
+  color: #ffffff;
+  border-color: #000000;
+}
+#hud-guides-list .hud-item .hud-key.active .hud-item-label {
+  color: #ffffff;
+}
+#hud-guides-list .hud-key .hud-item-label {
+  font-size: 0.8em;
+  white-space: nowrap;   
+  overflow: hidden;
+  pointer-events: none;  
+}
+  /* === === ===  GUIDES/LOCKS SEC COLLAPSE === === */
+    #hud-guides-section.is-collapsed {
+      /* border-color: #000000; */
+    }
+    #hud-guides-section.is-collapsed .hudsec-title  {
+      background: #357703;
+      color: #ffffff;
+    }
+    #hud-guides-section.is-collapsed .hudsec-title .chev {
+      color: #ffffff;
+    }
+    .hud-section.is-collapsed #hud-guides-list {
+      display: none; 
+    }
+  /* === end ===  GUIDES/LOCKS SEC COLLAPSE === === */
+
+
+/* === === MOVE SECTION === === */
+#hud-move-section {
+ border-color: #007DB8;
+}
+#hud-move-section .hudsec-title {
+ /* background: #EF8182;*/
+/*  background: #007DB8; */
+  background: #ffffff;
+  color: #007DB8;
+  border-right: solid 1px #007DB8;
+}
+#hud-move-section .hudsec-title .chev {
+  color: #007DB8;
+}
+#hud-move-list {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 22em;
+  margin-left: 1em;
+  padding: 0;
+  /*! margin-right: auto; */
+  align-items: center;
+}
+#hud-move-list .hud-key {
+  display: flex;
+  gap: 20px;
+  height: 20px;                 
+  border-radius: 0;
+  cursor: pointer;
+
+  /* override earlier column layout just for move*/
+  flex-direction: row !important;
+  text-align: left !important;
+  justify-content: space-between;
+}
+#hud-move-list .hud-item .hud-key.active {
+  background: #007DB8;
+  color: #ffffff;
+  border-color: #000000;
+}
+#hud-move-list .hud-item .hud-key.active .hud-item-label {
+  color: #ffffff;
+}
+#hud-move-list .hud-item .hud-key .key-name {
+  font-size: 1.2em;
+  line-height: 1;
+}
+#hud-move-list .hud-key .hud-item-label {
+  font-size: 0.8em;
+  white-space: nowrap;   
+  overflow: hidden;
+  pointer-events: none;  
+}
+#hud-move-list .hud-item .hud-key[data-key="M"] {
+  height: 36px;
+  border-radius: 8px;
+  width: 12.7em;
+}
+#hud-move-list .hud-item .hud-key[data-key="Q"] {
+  height: fit-content;
+  gap: 0px;
+  border-radius: 38px;
+  margin-right: 12px;
+  padding: 0;
+}
+#hud-move-list .hud-item .hud-key[data-key="Q"] .key-name {
+  padding-left: .25em;
+}
+#hud-move-list .hud-item .hud-key[data-key="Q"] .hud-item-label {
+  white-space: normal;
+  font-size: 12px;
+  max-width: 55px;
+  padding-left: 1em;
+  padding-top: 0.3em;
+  padding-bottom: 0.25em;
+  /*! height: 4em; */
+}
+#hud-move-list .hud-item .hud-key[data-key="Escape"] {
+  width: 7em; 
+  display: grid;
+  height: fit-content;
+  gap: 0px;
+  border-radius: 12px
+}
+#hud-move-list .hud-item .hud-key[data-key="Escape"] .hud-item-label {
+  white-space: normal;
+  font-size: .6em;
+  padding-top: 0.25em;
+  padding-left: 5em;
+}
+  /* === ===   MOVE SEC COLLAPSE === === */
+    .hud-section.is-collapsed #hud-move-list {
+      display: none; 
+    }
+    #hud-move-section.is-collapsed .hudsec-title {
+      background: #007DB8;
+      color: #ffffff;
+    }
+    #hud-move-section.is-collapsed .hudsec-title .chev {
+      color: #ffffff;
+    }
+  /* === end ===  MOVE SEC COLLAPSE === === */
+
+
+
+
+/*========== styles that affect BOTH wih subbox - contrast panel and status panel () ==========*/
+    .hud-subbox {
+  display: flex;
+  flex-direction: column;
+}
+.hudsub-title {
+  font-size: 20px;
+  border-bottom: solid 1px #000;
+  cursor: pointer;
+  user-select: none;
+  display: flex;
+  align-items: center;
+}
+.hudsub-title .chev {                 /* matches .hudsec-title .chev */
+  display: inline-block;
+  transform: rotate(0deg);
+  transition: transform .18s;
+}
+/* When the SUBBOX itself is collapsed */
+.hud-subbox.is-collapsed .hudsub-title {        /* not a descendant */
+  border-bottom: none;
+}
+.hud-subbox.is-collapsed .hudsub-title .chev {
+  transform: rotate(45deg);
+}
+/* Body container inside any subbox */
+.hudsub-body {
+      color: #2F3A2C; /*green theme*/
+      font-size: 18px;
+    padding: 4px;
+    /* Regular: grid layout */
+    display: grid;
+    gap: 15px;
+}
+.subbox-slider {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    justify-content: space-between;
+    border: dotted 2px #000000;
+    border-radius: 8px;
+    padding: 8px;
+}
+
+    /* affects BOTH the contrast panel (in HUD) and the status panel (moved to queue) */
+    .is-collapsed .hudsub-title { /*should match: .hud-section.is-collapsed .hudsec-title */
+      border-bottom: none;
+    }
+    /* affects BOTH the contrast panel (in HUD) and the status panel (moved to queue) */
+    .is-collapsed .hudsub-title .chev { 
+      transform: rotate(45deg); /*should match: .hud-section.is-collapsed .hudsec-title .chev */
+    }
+    /* affects BOTH the contrast panel (in HUD) and the status panel (moved to queue) */
+    .is-collapsed > .hudsub-body { 
+      display:none; 
+    }
+
+    /*========== ( COPY HUD-SECTION CHANGES HERE )CONTRAST PANEL STYLES ONLY (WITHIN HUD SUBBOX) ==========*/
+
+    /*this is the contrast panel CONTAINER (think: equal to .hudsec-container) */
+/* ---------- Contrast panel container replaces .hud-section look ---------- */
+.hud-section.contrast-panel {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  border: none;
+  background: none;
+  padding: 0;
+}
+    /*the individual panels for the contrast panels think equal to hud-section*/
+/* Individual contrast subboxes (regular / advanced) inherit .hud-subbox */
+.hud-subbox.regular,
+.hud-subbox.advanced {
+           
+      border-radius: 12px;
+  /* background: #614747; */
+      padding: .5em;
+}
+.hud-subbox.regular .hudsub-title,
+.hud-subbox.advanced .hudsub-title {
+      font-size: 18px; 
+      color: #374035; /*green theme*/
+      padding-top: 5px;
+      padding-bottom: 5px;
+      display: flex;
+      justify-content: space-between;
+}
+
+
+
+  /*========== STATUS PANEL STYLES ONLY (WITH #HUD-STATUS) ==========*/
+  /*html for the status panel specifically is injected from ui.js ---go there to edit in future  !!--*/
+  /* ---------- status panel GENERAL /  FOR ALL ---------- */
+  .status-line {
+  position: relative;
+  color: var(--status-color, inherit);
+  margin-top: .5em;
+  background: #ffffff;
+}
+
+.status-text {
+  display: inline-block;
+  margin-top: .75em;
+}
+
+/* The close button */
+.status-close {
+  position: absolute;
+  top: 0.1rem;
+  border: 0;
+  background: transparent;
+  font: inherit;
+  cursor: pointer;
+  opacity: 0.6; 
+  line-height: 1;
+  font-size: 1.5em;
+  color: red;
+  right: 0.1rem;
+}
+.status-close:hover { opacity: 1; }
+
+    /*status panel styles can be unique with #hud-status OR .hud-subbox.status-panel */
+.hud-subbox.status-panel {
+  border: 1px solid #000;
+  width: 25vw;
+  height: fit-content;
+  margin-top: 1em;
+  /*! min-width: 20vw; */
+}
+.welcome-block .welcome-title {
+  font-size: 1.5em; 
+  border-bottom: solid 1px #000000;
+  margin-top: 0.5em;
+  padding-left: 0.25em;
+  letter-spacing: -0.04em;
+}
+.status-panel .welcome-block .w-tip.intro-w {
+  font-size: 0.85em;
+  padding-top: .8em;
+  padding-left: .5em;
+  padding-right: 0.5em;
+}
+.welcome-block .w-tip.soft-open .soft-title {
+  font-size: 0.95em;
+  padding-left: 4px;
+  border-bottom: solid 1px #000000;
+  margin-bottom: .25em;
+}
+.welcome-block .w-tip.soft-open .soft-body {
+  font-size: 0.9em;
+  padding-left: .8em;
+  padding-right: 4.5em;
+  margin-top: 0.5em;
+}
+.welcome-block .w-tip.contact-sug {
+  font-size: 0.8em;
+  padding-left: 1em;
+  padding-right: 2.3em;
+}
+.welcome-block .email-sug {
+  margin-top: .5em;
+}
+.welcome-block .tips {
+  font-size: 0.8em;
+  padding-left: 1em;
+  padding-right: 2.3em;
+}
+/* If you kept #hud-status inside a subbox, avoid double borders: */
+#hud-status.collapsible-status {
+  /* remove borders here to prevent double frame; subbox already has one */
+  border: 0;
+  border-radius: 0;
+  padding: 0;          /* the subbox handles the padding */
+  background: transparent;
+}
+
+/* === ADDED WITH THE NEW STATUS STUFF TO GIVE CONSTANT STATUS OPTIONS ====  */
+/* The JS sets --status-color per row; keep overrideable via CSS */
+
+
+/*=== === === HOW TO ADD OVERRIDE COLORS LATER!!!!! === === === */
+/*    #status-panel .status-line[data-key="guides"] { --status-color: #334155; }  */
+
+/* Example future override (optional): */
+/* #status-panel .status-line[data-key="guides"] { color: var(--guides-color, #334155); } */
+
+
+/* ---------- FINAL: collapse wins over any display from above ---------- */
+/* This MUST come AFTER any rule that sets display (e.g., grid) */
+.hud-subbox.is-collapsed > .hudsub-body {
+  display: none !important;
+}
+
+/*==========MAIN DIV WITH THE CANVAS AND QUEUE PANEL==========*/
+              /* ---- needs to be separated in the future for sure ---- */
+    #canvas-and-queue {
+      display: flex;
+    }
+    #canvas-holder {
+      /*! background: #fff; */
+      padding: 12px;
+      width: fit-content;
+      display: grid;
+      align-content: center;
+      justify-content: center;
+      margin-right: 24px;
+      margin-left: 24px;
+      /*! border-radius: 8px; */
+    }
+    #queue-holder {
+      display: flex;
+      gap: 12px;
+      /*! align-items: start; */
+      flex-direction: column;
+      width: 30em;
+      max-width: 30em;
+      margin-top: 0.75em;
+    }
+    .box-options {
+      display: flex;
+    }
+    .q-info { 
+      display: flex;
+      flex-direction: column;
+      border: 1px solid #000;
+      border-radius: 8px;
+      padding: 10px;
+      background: #fff;
+      gap: .5em;
+    }
+    .q-title { 
+      font-size: 18px; 
+    }
+    #queue-next { 
+      grid-template-columns: auto 1fr; 
+      align-items: center; 
+      gap: 8px; 
+      border: 1px solid #000; 
+      border-radius: 8px; 
+      padding: 10px; 
+      background: #fff; 
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+    }
+    #queue-next .queue-cell { 
+      width: 135px; 
+      height: 60px; 
+      border: 1px dashed #aaa; 
+      /*! border-radius: 4px; */ 
+      justify-self: center; 
+    }
+    #queue-help { 
+      font-size: 12px; 
+    }
+    #queue-grid {
+      --rows: 0;
+      --tile: 54px;
+      display: grid;
+      grid-template-columns: repeat(5, 3.5em);
+      gap: 4px;
+    }
+    #queue-grid .queue-cell { 
+      width: var(--tile); 
+      height: var(--tile); 
+      border: 1px solid #000; 
+      border-radius: 4px; 
+    }
+
+    /* ---- Unified pill system ---- */
+    /* Use .pill everywhere; include .emode-pill and .q-pill for backward compatibility */
+    .pill, .emode-pill, .q-pill, .q-diff-host .q-swatches .q-pill.diff-swatch {
+      display: inline-block;
+      padding: 4px 16px;
+      border: 1px solid #000;
+      border-radius: 12px;
+      font-size: 12px;
+      user-select: none;
+      cursor: pointer;
+      background: #fff;
+    }
+    .pill.active, .emode-pill.active, .q-pill.active, .q-diff-host .q-swatches .q-pill.diff-swatch.active {
+      background: #111;
+      color: #fff;
+      border-color: #111;
+    }
+    .pill:focus-visible { 
+      outline: 2px dashed #111; 
+      outline-offset: 2px; 
+    }
+    /* Scope for E-mode pills container */
+    #q-emode-pills .pill.active,
+    #q-emode-pills .emode-pill.active,
+    #q-emode-pills .q-pill.active { 
+      background: #111; 
+      color: #fff; 
+      border-color: #111; 
+    }
+
+/*=== === === === === Queue Panel Diff Panel === === === === ===*/
+.q-diff-host .q-swatches {
+  display: flex;
+  gap: 8px;
+}
+
+/*=== === end === === QUEUE PANEL DIFF PANEL === === end === ===*/
+
+
+/* === === === === === KEYBOARD LEGEND — CORE === === === === ===
+   JS provides BASE metrics per callout:
+     --left-px-base      (number, not px)
+     --v-len-base        (px)
+     --h-len-base        (number, not px)
+     --h-sign-base       ("1" or "-1")
+
+   CSS can optionally override FINAL values or add small nudges:
+     --offset-x          (px)  ← horizontal nudge of the pill from base X
+     --offset-y          (px)  ← vertical nudge of the pill inside the band
+     --v-len             (px)  ← full vertical override (bypass base)
+     --v-len-delta       (px)  ← additive tweak to the base vertical length
+     --h-len             (number) ← full horizontal override (number, px added in rule)
+     --h-len-delta       (px)  ← additive tweak to the horizontal (applied as px)
+     --h-sign            ("1" | "-1") ← explicit horizontal direction override
+     --v-flip            ("0" | "1")  ← 0: vertical leg from pill; 1: vertical leg from far end
+
+   IMPORTANT:
+   - You can author overrides on either the callout (.legend-callout.key-XYZ)
+     OR on the actual key button (.key-XYZ). The UI JS copies the whitelisted
+     CSS variables from the button to its callout, so author wherever is clearer.
+   - Keep units: where we say “number” the rule multiplies by 1px for you.
+   ================================================================== */
+
+#key-legend {
+  margin-top: 20px;
+  padding: 12px;
+/* background: #fff; */
+  display: flex;
+  flex-direction: column;
+  align-content: space-between;
+  /* base gaps */
+  --row-gap: 6px;
+  --label-extra-gap: 0px;
+  width: 100%;
+  /* !! HOVER STATES COLORS  are in later #key-legend section !! */
+  /* copy and paste below to jump to place */
+  /* === Pill hover — pill appearance === */
+}
+
+.key-legend-header {
+  display: flex;
+  /*! justify-content: right; */
+  width: 100%;
+  font-weight: 600;
+  font-size: 20px;
+}
+.key-legend-toggle {
+  padding: 10px;
+  margin-bottom: 21px;
+}
+.key-legend-toggle input { accent-color: #333; margin-right: 4px; }
+
+#keyboard-layout {
+  position: relative;            /* bands are absolutely positioned inside */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: calc(var(--row-gap) + var(--label-extra-gap));
+}
+
+.keyboard-row {
+  display: grid;
+  gap: 10px;
+  justify-content: center;
+}
+
+/* counts per row */
+.row-esc {
+  grid-template-columns: 85em;
+  position: relative;
+  top: -15px;
+  left: -82px;
+}
+
+.row-1   { grid-template-columns: repeat(12, 48px); } /* includes [ and ] */
+.row-2   { grid-template-columns: repeat(9,  48px); }
+.row-3   { grid-template-columns: repeat(7,  48px); }
+
+.keyboard-arrows {
+  position: absolute;
+  right: 10px;
+  top: 105px;
+}
+
+.arrow-keys { display: flex; flex-direction: column; align-items: center; gap: 2px; }
+.arrow-bottom { display: flex; gap: 2px; }
+
+/* reuse .hud-key look */ /* hudkey and active key*/
+#key-legend .hud-key {
+  position: relative;
+  width: 48px; 
+  height: 48px; 
+  font-weight: 600;
+  color: #ffffff;
+  background: var(--key-bg-slate);
+  border: 1px solid var(--key-border-color);
+  box-shadow: -4px 4px var(--key-box-shadow-color);
+  z-index: 3;
+}
+#key-legend .hud-key.active {
+  background: var(--active-key-bg-slate); 
+  color: var(--active-key-color-slate);
+  border-color: var(--active-key-border-color-slate);
+  box-shadow: var(--active-key-box-shadow-slate);
+  transform: translate(1px, 2px);
+}
+#key-legend .hud-key:active { transform: translate(4px,4px); box-shadow: none; }
+
+/* increase vertical spacing when labels/diagram shown */
+#key-legend.show-labels {
+  --label-extra-gap: 20px;
+  min-height: 25em;
+}
+
+#key-legend.show-labels .hud-key { margin-bottom: 8px; }
+
+/* ===== Diagram bands (auto-built by JS) ===== */
+.legend-band {
+  position: absolute;
+  left: 0; right: 0;
+  min-height: 1px;
+  pointer-events: none;  /* only labels/keys should capture input */
+  display: none;         /* hidden until diagram mode */
+  z-index: 1;            /* above keys but below anything else; tweak if needed */
+}
+/* Show bands only in diagram mode */
+#key-legend.show-labels.diagram .legend-band { display: block; }
+
+
+/* ===== Callout pill (label) — geometry mode only ===== */
+.legend-callout {
+  /* placement inputs (JS writes the bases; you override offsets per key) */
+  --offset-x: 0px;
+  --offset-y: 0px;
+  --stroke: 4px;
+
+  position: absolute;
+  left: calc(var(--left-px-base) * 1px + var(--offset-x));
+  top:  calc(var(--top-px-base, 0px) + var(--offset-y));
+  transform: translateX(-50%);
+
+  /*  === Pill hover — pill appearance ===  */
+  background: #fff;
+  width: fit-content;
+  border: 1px solid #000000;
+  border-radius: 6px;
+  padding: 4px 8px;
+  font-size: 12px;
+  color: #111;
+  z-index: 2;
+  pointer-events: none; /* labels shouldn’t eat clicks */
+}
+
+/* Vertical placement of the bands relative to #keyboard-layout */
+/* Band positioning stays */
+.band-row1 { top: -10px; }
+.band-row2 { top: 160px; }
+.band-row3 { top: 300px; }
+
+/* Make sure nothing clips when pills/lines shift upward */
+.legend-band { overflow: visible; }
+.legend-band > svg.legend-line {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: 1;
+  overflow: visible;     /* important when offsets go negative */
+}
+
+/* === Pill hover — pill appearance === */
+#key-legend {
+  --dia-stroke: 4px;               /* default thickness */
+  --dialine-color: #000000;        /* single dialine color you can change once */
+
+  /* Feed geometry mode's colors (both segments) from your single color var */
+  --line-color-1: var(--dialine-color);
+  --line-color-2: var(--dialine-color);
+  /* global defaults for hover */
+  --pill-hover-bg: rgb(98, 0, 255);
+  --pill-hover-text: #fff;
+  --pill-hover-text-size: 1.1em;
+  --pill-hover-border: #fff;
+  --pill-hover-line: rgb(98, 0, 255);
+  --pill-hover-stroke: 5px;
+}
+/* Pill look when hovered */
+.legend-callout.is-hover {
+  background: var(--pill-hover-bg, #222);
+  color: var(--pill-hover-text, #fff);
+  border-color: var(--pill-hover-border, #fff);
+  font-size: var(--pill-hover-text-size, 1em);
+  /* width: fit-content; */ /* not sure if this would work or not ... come back to later */
+}
+
+/* === Pill hover — SVG line reaction
+/* SVG segments when hovered */
+.legend-band > svg.legend-line line {
+  transition: stroke 0.25s ease, stroke-width 0.25s ease;
+}
+.legend-band > svg.legend-line line.is-hovered {
+  stroke: var(--pill-hover-line, gold);
+  stroke-width: var(--pill-hover-stroke, 5px);
+}
+
+/* Hide simple per-key labels when using the diagram */
+#key-legend.show-labels.diagram .hud-key::after { display: none !important; }
+
+
+
+/* === === === === === KEYBOARD LEGEND — PER-KEY EXAMPLES === === === === ===
+   -------------------------------------------------------------------------- */
+
+/* === === === === === \/ \/ \/ ADJUSTING INDIVIDUAL KEY DIAGRAM LINES GENERAL RULES \/ \/ \/ ==== */
+
+/* Inner label wrapper: default is inline; we upgrade it only when we want centering */
+.legend-callout .legend-label {
+  display: grid;       /* use grid so we don't affect the parent box model */
+  place-items: center; /* vertical + horizontal center */
+  text-align: center;  /* safety for multi-line */
+}
+
+/* === === === \/ \/ \/ IMPORTANT DEFAULTS TO KEEP \/ \/ \/ ==== */
+
+
+
+
+
+/* When a callout opts into geometry mode, hide its pseudo-legs (clean switch) */
+.legend-callout.use-svg::before,
+.legend-callout.use-svg::after { display: none !important; }
+/* === END === /\ /\ /\ IMPORTANT DEFAULTS TO KEEP /\ /\ /\ ==== */
+
+/*== === ===OLD BLOCKS // HAVE QUESTIONS ==**/
+/* SET THIS TO HAVE LABEL LOCK TO KEY CENTER -- BUT I NEED TO CHANGE IT 
+--p-lock: key; */
+
+/* DEBUGGING COLOR ASSIGNMENTS
+.legend-callout.key-<>::after { background: magenta; }
+.legend-callout.key-<>::before { background: cyan; }
+*/
+/*== end ==== OLD BLOCKS // HAVE QUESTIONS ==**/
+
+/* === END === END === /\ /\ /\ ADJUSTING INDIVIDUAL KEY DIAGRAM LINES GENERAL RULES /\ /\ /\ ==== */
+
+/*=== === === === === \/ \/ \/ INDIVIDUAL KEY DIAGRM LINE ADJUSTMENTS \/ \/ \/ === === === === ===*/
+
+/*  KEY ESCAPE */
+#key-legend .hud-key.key-Escape {
+  left: 50px;
+  width: 90px;
+  height: 45px;
+}
+.key-Escape,
+.legend-callout.key-Escape {
+  --geom: 1;
+  /* Segment order:
+     H = first segment is Horizontal (key → elbow)
+     V = first segment is Vertical (key → elbow) */
+  --line: H;
+  /* Horizontal direction:  1 = to the RIGHT,  -1 = to the LEFT */
+  --hdir: -1;
+  --hlen: 0;
+  /* Vertical direction:    1 = down,    -1 = up  */
+  --vdir: 1; 
+  --vlen: auto;
+  --key-anchor: bottom;
+  --attach: top;
+  --meet-y-delta: 0px;
+
+  --stroke: var(--dia-stroke);
+  --line-color-1: var(--dialine-color);
+  --line-color-2: var(--dialine-color);
+
+  /* Pill position nudges (don’t affect line geometry; just move the label) */
+  --offset-x: -500px;
+  --offset-y: 80px;
+}
+
+/* KEY Q  */
+.key-Q,
+.legend-callout.key-Q {
+  --geom: 1;
+  --line: V;
+  /* Horizontal direction:  1 = to the RIGHT,  -1 = to the LEFT */
+  --hdir: 1;
+  --hlen: 0;
+  --key-anchor: center;
+  --vdir: -1;
+  --vlen: 30;
+  --attach: bottom;
+  --meet-y-delta: 0px;
+
+  --stroke: var(--dia-stroke);
+  --line-color-1: var(--dialine-color);
+  --line-color-2: var(--dialine-color);
+
+  --offset-x: -350px;
+  --offset-y: 20px;
+}
+
+/* KEY T */
+.key-T, .legend-callout.key-T {
+  --geom: 1;
+  --line: H;            /* horizontal first */
+  --hdir: 1;           /* go left */
+  --hlen: 0;
+  --vdir: 1;           /* then go up */
+  --vlen: 0;
+  --attach: bottom; 
+
+  --stroke: var(--dia-stroke);
+  --line-color-1: var(--dialine-color);
+  --line-color-2: var(--dialine-color);
+
+  --offset-x: -65px;
+  --offset-y: 0px;
+}
+
+/* KEY u5b --- [ --- zoom out */
+.key-u5b .legend-label {
+  place-items: left; 
+  text-align: left; 
+  padding: 0px 0px;
+}
+.key-u5b, .legend-callout.key-u5b {
+  --geom: 1;
+  --line: V;            /* horizontal first */
+  --hdir: 1;           /* go left */
+  --hlen: 0;
+  --vdir: 1;           /* then go up */
+  --vlen: auto;
+
+  --key-anchor: center;
+  --attach: bottom; 
+
+  --stroke: var(--dia-stroke);
+  --line-color-1: var(--dialine-color);
+  --line-color-2: var(--dialine-color);
+
+  --offset-x: 175px;
+  --offset-y: 40px;
+
+}
+
+/* KEY u5d --- ] --- zoom in */
+.key-u5d .legend-label {
+  place-items: right; 
+  text-align: right; 
+  padding: 0px;
+}
+.key-u5d, .legend-callout.key-u5d {
+  --geom: 1;
+  --line: V;            /* horizontal first */
+  --hdir: 1;           /* go left */
+  --hlen: 0;
+  --vdir: 1;           /* then go up */
+  --vlen: auto;
+
+  --key-anchor: center;
+  --attach: bottom; 
+
+  --stroke: var(--dia-stroke);
+  --line-color-1: var(--dialine-color);
+  --line-color-2: var(--dialine-color);
+
+  --offset-x: 250px;
+  --offset-y: 40px;
+
+}
+
+/* KEY A */
+.key-A,
+.legend-callout.key-A {
+  --geom: 1;
+  --line: H;
+  /* Horizontal direction:  1 = to the RIGHT,  -1 = to the LEFT */
+  --hdir: 1;
+  --hlen: 0;
+  /* Vertical direction:    1 = down,    -1 = up  */
+  --vdir: -1; 
+  --vlen: 0;
+  --attach: edge-right;
+  --attach-inset-y: 0px;/* also end 6px toward top */
+  --meet-y-delta: 0px;
+
+  --stroke: var(--dia-stroke);
+  --line-color-1: var(--dialine-color);
+  --line-color-2: var(--dialine-color);
+
+  --offset-x: -480px;
+  --offset-y: 10px;
+  
+}
+
+/* KEY S */
+.key-S,
+.legend-callout.key-S {
+  --geom: 1;
+  --line: H;
+  /* Horizontal direction:  1 = to the RIGHT,  -1 = to the LEFT */
+  --hdir: -1;
+  --hlen: 20;
+  /* Vertical direction:    1 = down,    -1 = up  */
+  --vdir: -1; 
+  --key-anchor: bottom;
+  --attach: edge-right;
+  --attach-inset-y: 0px;
+  --meet-y-delta: 0px;
+
+  --stroke: var(--dia-stroke);
+  --line-color-1: var(--dialine-color);
+  --line-color-2: var(--dialine-color);
+
+  --offset-x: -500px;
+  --offset-y: 50px;
+}
+
+/* KEY D */
+.key-D,
+.legend-callout.key-D {
+  --geom: 1;
+  --line: H;
+  /* Horizontal direction:  1 = to the RIGHT,  -1 = to the LEFT */
+  --hdir: -1;
+  --hlen: 30;
+
+  --key-anchor: top;
+  /* Vertical direction: -1 = up (from the top edge) */
+  --vdir: -1;
+  --vlen: auto; /* or 30 if you want exactly 30px before the elbow */
+  --attach: edge-right;
+  --meet-y-delta: 0px;
+
+  --stroke: var(--dia-stroke);
+  --line-color-1: var(--dialine-color);
+  --line-color-2: var(--dialine-color);
+
+  --offset-x: -420px;
+  --offset-y: -25px;
+}
+
+/* KEY F */
+.key-F, .legend-callout.key-F {
+  --geom: 1;
+  --line: H;            /* horizontal first */
+  --hdir: -1;           /* go left */
+  --hlen: 240;
+
+  --vdir: -1;          
+  --vlen: 0;
+
+  --key-anchor: bottom;
+  --attach: edge-right; 
+  --meet-y-delta: 0px;  /* raise elbow on the pill edge */
+  --attach-inset-y: 0px;/* also end 6px toward top */
+  --attach-inset-x: 0px;/* end 4px inside the right edge */
+
+  --stroke: var(--dia-stroke);
+  --line-color-1: var(--dialine-color);
+  --line-color-2: var(--dialine-color);
+
+  --offset-x: -480px;
+  --offset-y: 85px;
+ 
+}
+
+/* KEY L */
+.key-L,
+.legend-callout.key-L {
+  --geom: 1;
+  --line: V;
+  /* Horizontal direction:  1 = to the RIGHT,  -1 = to the LEFT */
+  --hdir: 1;
+  --hlen: 0;
+  /* Vertical direction:    1 = down,    -1 = up  */
+  --vdir: -1; 
+  --vlen: -20;
+  --key-anchor: right;
+  --attach: top;
+  --attach-inset-y: 0px;
+  --attach-inset-x: -100px;/* end 4px inside the right edge */
+  --meet-y-delta: 0px;
+
+  --stroke: var(--dia-stroke);
+  --line-color-1: var(--dialine-color);
+  --line-color-2: var(--dialine-color);
+
+  --offset-x: 340px;
+  --offset-y: 80px;
+
+
+}
+
+/* KEY X */
+.key-X,
+.legend-callout.key-X {
+  --geom: 1;
+  --line: H;
+  /* Horizontal direction:  1 = to the RIGHT,  -1 = to the LEFT */
+  --hdir: -1;
+  --hlen: 30;
+  /* Vertical direction:    1 = down,    -1 = up  */
+  --vdir: -1; 
+  --vlen: auto;
+  --attach: edge-right;
+  --meet-y-delta: 0px;
+
+  --stroke: var(--dia-stroke);
+  --line-color-1: var(--dialine-color);
+  --line-color-2: var(--dialine-color);
+
+  /* Pill position nudges (don’t affect line geometry; just move the label) */
+  --offset-x: -230px;
+  --offset-y: 20px;
+}
+
+/* KEY C */
+.key-C,
+.legend-callout.key-C {
+  --geom: 1;
+  --line: H;
+  /* Horizontal direction:  1 = to the RIGHT,  -1 = to the LEFT */
+  --hdir: 1;
+  --hlen: 0;
+  /* Vertical direction:    1 = down,    -1 = up  */
+  --vdir: -1; 
+  --vlen: auto;
+  --attach: edge-right;
+  --meet-y-delta: 0px;
+
+  --stroke: var(--dia-stroke);
+  --line-color-1: var(--dialine-color);
+  --line-color-2: var(--dialine-color);
+
+  /* Pill position nudges (don’t affect line geometry; just move the label) */
+  --offset-x: -160px;
+  --offset-y: 50px;
+
+  
+}
+
+/* KEY V */
+.key-V,
+.legend-callout.key-V {
+  --geom: 1;
+  --line: H;
+  /* Horizontal direction:  1 = to the RIGHT,  -1 = to the LEFT */
+  --hdir: 1;
+  --hlen: 0;
+  /* Vertical direction:    1 = down,    -1 = up  */
+  --vdir: -1; 
+  --vlen: auto;
+  --attach: edge-left;
+  --meet-y-delta: 0px;
+
+  --stroke: var(--dia-stroke);
+  --line-color-1: var(--dialine-color);
+  --line-color-2: var(--dialine-color);
+
+  --offset-x: 180px;
+  --offset-y: 80px;
+
+  
+}
+
+/* KEY M */
+.key-M,
+.legend-callout.key-M {
+  --geom: 1;
+  --line: H;
+  /* Horizontal direction:  1 = to the RIGHT,  -1 = to the LEFT */
+  --hdir: 1;
+  --hlen: 20;
+  /* Vertical direction:    1 = down,    -1 = up  */
+  --vdir: -1; 
+  --vlen: auto;
+  --attach: edge-left;
+  --meet-y-delta: 0px;
+
+  --stroke: var(--dia-stroke);
+  --line-color-1: var(--dialine-color);
+  --line-color-2: var(--dialine-color);
+
+  --offset-x: 280px;
+  --offset-y: 10px;
+
+  width: 150px;
+}
+/*=== === === === === /\ /\ /\ INDIVIDUAL KEY DIAGRM LINE ADJUSTMENTS /\ /\ /\ === === === === ===*/
+
+/*=== === === === ===   END switching keys over to geo-keys (keyboard legend) === === === === ===*/
+
+/* === TEMP: restore default scrollbar for HUD === */
+#hud {
+  scrollbar-width: auto;        /* show in Firefox */
+}
+#hud::-webkit-scrollbar {
+  display: block !important;    /* show in Chrome/Safari/Edge */
+}
+
+
+
+    /*=== === === === === Responsive === === === === ===*/
+
+      @media (max-width: 900px){
+
+        .hud-subbox.status-panel {
+          min-width: 90vw;
+        }
+      }
+
+
