@@ -2,17 +2,16 @@
 <html>
   <head>
     <meta charset="utf-8" />
-    <title>basketball wiki</title>
+    <title>a basketball wiki</title>
   <!-- p5.js first -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.8.0/p5.js"></script>
 
   <script src="https://cdn.jsdelivr.net/npm/planck@1.0.1/dist/planck.min.js"></script>
   
   <!-- p5.play AFTER p5.js -->
-  <script src="https://p5play.org/v3/p5.play.js"></script>
 
   <script src="player-info-script.js"></script>
-  <script src="player-info-bg.js"></script>
+  <!--<script src="player-info-bg.js"></script> -->
   
   
 
@@ -24,7 +23,36 @@
       flex-direction: column;
       align-items: center;
       min-height: 100vh;
-      color: white;
+      color: rgb(0, 0, 0);
+    }
+
+    .header-div {
+      font-family: 'Lucida Sans', Arial, sans-serif;
+      font-style: oblique;
+      border: solid 3px #000000;
+      position: absolute;
+      right: 10em;
+      top: 5em;
+      max-width: 20em;
+    }
+    .linebr {
+      width: 100%;
+      border: dotted 2px #000000;
+      margin-bottom: .5em;
+    }
+    .header-title p {
+      font-size: 1.1em;
+    margin-top: 15px;
+    margin-bottom: 10px;
+    padding-left: 1em;
+    }
+    .header-text {
+      font-size: 1.1em;
+      padding-left: 1em;
+    }
+    .header-text p {
+      margin-top: 10px;
+      margin-bottom: 10px;
     }
     
     .wiki-container {
@@ -34,11 +62,12 @@
       text-align: center;
       max-width: 600px;
       width: 90%;
+      color: #000;
     }
     
     #infobox-data {
       margin: 20px 0;
-      color: white;
+      color: #000000;
     }
     
     summary {
@@ -60,8 +89,20 @@
 
   </head>
 <body>
+<div class="header-div">
+    <div class="header-title">
+        <p>type in a wnba players name to get a quick list of facts (pulled from wikipedia)</p>
+    </div>
+    <div class="linebr"></div>
+        <div class="header-text">
+        <p>
+          i'm gathering LOTS of information about professional basketball players in the U.S. so i made this 'tool' to make it a bit easier.
+          i wanted to share in case it might be helpful to anyone else! 
+        </p>
+    </div>
+</div>
   <div class="wiki-container">
-    <h2>quick wikipedia fact getter for pro wbb players</h2>
+    <h2>wiki fact getter for wnba players</h2>
     <p>
       player name: <input id="userinput" value="rainbow" style="z-index: 20; position: relative;" />
       <button id="startSearch" style="z-index: 20; position: relative;">start</button>

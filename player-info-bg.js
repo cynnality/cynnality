@@ -11,7 +11,7 @@ const bgSketch = (p) => {
   };
 
   p.draw = function() {
-    p.background(30, 30, 40);
+    p.background (0, 0, 0);
 
     // Apply gravity & bounce to all sprites
     for (let i = bounceSprites.length - 1; i >= 0; i--) {
@@ -67,7 +67,7 @@ p.mousePressed = function() {
 
   // Update the draw function to handle our custom ball objects
   p.draw = function() {
-    p.background(30, 30, 40);
+    p.background (0, 0, 0);
 
     // Apply gravity & bounce to all balls
     for (let i = bounceSprites.length - 1; i >= 0; i--) {

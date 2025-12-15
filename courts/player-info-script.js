@@ -147,10 +147,10 @@ if (extractedData.image) {
 }
 
 // REMOVED: background styling div, now just plain content
-displayHtml += `<div style="font-family:sans-serif; max-width:500px; color:white; margin:0 auto;">`;
+displayHtml += `<div style="font-family:sans-serif; max-width:500px; color:#000000; margin:0 auto;">`;
 
 const appendRow = (label, value) => {
-  if (value) displayHtml += `<p style="color:white;"><strong>${label}:</strong> ${value}</p>`;
+  if (value) displayHtml += `<p style="color:#000000;"><strong>${label}:</strong> ${value}</p>`;
 };
 
   appendRow("Position", extractedData.position);
@@ -188,9 +188,9 @@ const appendRow = (label, value) => {
 
 // Highlights
 if (extractedData.highlights) {
-  displayHtml += "<p style='color:white;'><strong>Career Highlights:</strong></p>";
+  displayHtml += "<p style='color:#000000;'><strong>Career Highlights:</strong></p>";
   displayHtml +=
-    "<ul style='margin-left:20px; list-style-type:disc; color:white;'><li>" +
+    "<ul style='margin-left:20px; list-style-type:disc; color:#000000;'><li>" +
     extractedData.highlights.replace(/<br>/g, "</li><li>") +
     "</li></ul>";
   displayHtml = displayHtml.replace("<li></li>", "");
