@@ -21,6 +21,7 @@ body {
     /* if outside of the window, clip */
   height: 100vh;
   overflow: clip;
+   background-image: url(/assets/lab-cynn/court-bg.png);
 }
 
     .descrip-box {

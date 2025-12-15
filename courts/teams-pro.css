@@ -152,10 +152,9 @@ p, h1, h2, h3, h4, h5, h6 {
   flex-direction: column;
   justify-content: center;
   font-family: "Smooch Sans", sans-serif;
-  font-size: 1.5em;
+  font-size: 1.8em;
   font-style: bold;
   font-weight: 700;
-  background-color: #c5c0c0
 }
 
 .og-team-note {
