@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>UNF MAIN COURT</title>
+  <link rel="stylesheet" href="/courts/jax-ball-data/jax-ball.css" />
+  <link rel="stylesheet" href="/courts/jax-ball-data/players.css">
+<!--FONTS /// FONTS /// FONTS /// FONTS /// FONTS /// FONTS /// FONTS /// FONTS /// FONTS /// FONTS /// FONTS /// -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Shrikhand&display=swap" rel="stylesheet">
+
+
+    <!-- big shoulders -->
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=Big+Shoulders:opsz,wght@10..72,100..900&display=swap" rel="stylesheet">
+<!--FONTS /// FONTS /// FONTS /// FONTS /// FONTS /// FONTS /// FONTS /// FONTS /// FONTS /// FONTS /// FONTS /// -->
+
+</head>
+<body data-team="unf">
+
+  <main class="page">
+
+    <section id="team-details">
+    <h2 id="team-name"></h2>
+    <p id="team-division"></p>
+
+    <a id="conference-link" target="_blank"></a><br>
+    <a id="national-link" target="_blank"></a>
+
+    <div id="team-colors">
+        <div id="color-primary"></div>
+        <div id="color-secondary"></div>
+        <div id="color-accent"></div>
+    </div>
+
+    <ul id="coaching-list"></ul>
+    </section>
+
+    <div class="cal-n-stats">
+      <section id="calendar">
+        <div id="calendar-grid"></div>
+      </section>
+<section id="game-detail" class="hidden">
+  <!-- Sticky / persistent header -->
+  <header id="game-day-header"></header>
+
+  <!-- JS will inject one or more .game-detail-block elements here -->
+  <div id="game-day-content"></div>
+</section>
+
+    <div class="player-view-toggle">
+      <button data-player-view="compact" class="active">
+        Compact View
+      </button>
+      <button data-player-view="extended">
+        Extended View
+      </button>
+    </div>
+
+    <section id="team-players">
+      <h2>Roster & Season Leaders</h2>
+
+      <div class="team-columns">
+        <div class="team-column" data-team="unf">
+          <div class="player-card-grid"></div>
+        </div>
+      </div>
+    </section>
+
+    </div>
+
+  </main>
+
+<script src="/courts/jax-ball-data/jax-ball.js"></script>
+<script src="/courts/jax-ball-data/players.js"></script>
+    <script>
+      if (window.PlayerUI) {
+        PlayerUI.setPlayerView("extended");
+      }
+    </script>
+
+
+</body>
+</html>

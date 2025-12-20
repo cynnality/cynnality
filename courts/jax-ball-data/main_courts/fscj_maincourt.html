@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>FSCJ MAIN COURT</title>
+  <link rel="stylesheet" href="/courts/jax-ball-data/jax-ball.css" />
+  <link rel="stylesheet" href="/courts/jax-ball-data/players.css">
+<!--FONTS /// FONTS /// FONTS /// FONTS /// FONTS /// FONTS /// FONTS /// FONTS /// FONTS /// FONTS /// FONTS /// -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Shrikhand&display=swap" rel="stylesheet">
+
+
+    <!-- big shoulders -->
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=Big+Shoulders:opsz,wght@10..72,100..900&display=swap" rel="stylesheet">
+<!--FONTS /// FONTS /// FONTS /// FONTS /// FONTS /// FONTS /// FONTS /// FONTS /// FONTS /// FONTS /// FONTS /// -->
+
+</head>
+<body data-team="fscj">
+
+  <main class="page">
+
+    <section id="team-details" >
+    <h2 id="team-name"></h2>
+    <p id="team-division"></p>
+
+    <a id="conference-link" target="_blank"></a><br>
+    <a id="national-link" target="_blank"></a>
+
+    <div id="team-colors">
+        <div id="color-primary"></div>
+        <div id="color-secondary"></div>
+        <div id="color-accent"></div>
+    </div>
+
+    <ul id="coaching-list"></ul>
+    </section>
+
+    <div class="cal-n-stats">
+      <section id="calendar">
+        <div id="calendar-grid"></div>
+      </section>
+      <section id="game-detail" class="hidden">
+          <div class="game-detail-content">
+              <header id="game-detail-header">
+                  <h2 id="game-title"></h2>
+              </header>
+              <div id="game-meta"></div>
+              <div id="game-location"></div>
+              <div id="game-result"></div>
+          </div>
+
+          <a id="game-stats-link" class="hidden" href="#">
+              View Game Stats
+          </a>
+
+          <div id="game-stats-container" class="hidden">
+              <button id="load-game-stats">
+                  View Game Stats
+              </button>
+
+              <div id="game-stats-content"></div>
+          </div>
+      </section>
+    
+
+      <div class="player-view-toggle">
+        <button data-player-view="compact" class="active">
+          Compact View
+        </button>
+        <button data-player-view="extended">
+          Extended View
+        </button>
+      </div>
+
+      <section id="team-players">
+        <h2>Roster & Season Leaders</h2>
+
+        <div class="team-columns">
+          <div class="team-column" data-team="fscj">
+            <div class="player-card-grid"></div>
+          </div>
+        </div>
+      </section>
+    </div>
+
+  </main>
+
+<script src="/courts/jax-ball-data/jax-ball.js"></script>
+<script src="/courts/jax-ball-data/players.js"></script>
+    <script>
+      if (window.PlayerUI) {
+        PlayerUI.setPlayerView("extended");
+      }
+    </script>
+
+
+</body>
+</html>

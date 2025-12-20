@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <title>players!</title>
+  <link rel="stylesheet" href="/courts/jax-ball-data/players.css" />
+
+  <!--FONTS /// FONTS /// FONTS /// FONTS /// FONTS /// FONTS /// FONTS /// FONTS /// FONTS /// FONTS /// FONTS /// -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Shrikhand&display=swap" rel="stylesheet">
+
+
+  <!-- big shoulders -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Big+Shoulders:opsz,wght@10..72,100..900&display=swap"
+    rel="stylesheet">
+  <!--FONTS /// FONTS /// FONTS /// FONTS /// FONTS /// FONTS /// FONTS /// FONTS /// FONTS /// FONTS /// FONTS /// -->
+</head>
+
+<body>
+
+  <section class="player-filters">
+    <div class="switch-btns">
+      <div class="filter-group stats-menu">
+
+        <div class="stats-subgroup">
+          <span class="stats-label"><p>Category</p></span>
+          <button class="filter-btn" data-stat="pts">Points</button>
+          <button class="filter-btn" data-stat="reb">Rebounds</button>
+          <button class="filter-btn" data-stat="ast">Assists</button>
+        </div>
+
+        <div class="stats-subgroup">
+          <span class="stats-label"><p>Calculation</p></span>
+          <button class="filter-btn" data-mode="total">Season Total</button>
+          <button class="filter-btn" data-mode="avg">Per Game Avg</button>
+        </div>
+
+        <div class="stats-subgroup special">
+          <span class="stats-label"><p>Special</p></span>
+          <button class="filter-btn" data-view="game-leaders">Game Leaders</button>
+        </div>
+
+      </div>
+
+      <button id="show-all" class="filter-btn filter-reset">
+        Reset View
+      </button>
+
+      <div class="player-view-toggle">
+        <button class="filter-btn active" data-player-view="compact">
+          Season View
+        </button>
+        <button class="filter-btn" data-player-view="extended">
+          Bio View
+        </button>
+      </div>
+    </div>
+    <div class="layout-toggle">
+      <button data-layout="by-team" class="active">By Team</button>
+      <button data-layout="global">All Players</button>
+    </div>
+
+    <!-- 👇 description box -->
+    <div id="filter-description" class="filter-description hidden"></div>
+  </section>
+
+  <section id="player-cards-view">
+
+    <div id="player-columns" class="team-columns">
+
+      <section class="team-column" data-team="fscj">
+        <h2 class="team-title">FSCJ</h2>
+        <div class="player-card-grid"></div>
+      </section>
+
+      <section class="team-column" data-team="ewu">
+        <h2 class="team-title">EWU</h2>
+        <div class="player-card-grid"></div>
+      </section>
+
+      <section class="team-column" data-team="ju">
+        <h2 class="team-title">JU</h2>
+        <div class="player-card-grid"></div>
+      </section>
+
+      <section class="team-column" data-team="unf">
+        <h2 class="team-title">UNF</h2>
+        <div class="player-card-grid"></div>
+      </section>
+
+    </div>
+
+    <div id="global-player-grid" class="player-card-grid global hidden"></div>
+
+  </section>
+
+  <script src="/courts/jax-ball-data/players.js"></script>
+</body>
+
+</html>

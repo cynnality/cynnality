@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Jacksonville Women’s Basketball</title>
+    <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Space+Grotesk:wght@600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="jax-ball.css" />
+    <!--FONTS /// FONTS /// FONTS /// FONTS /// FONTS /// FONTS /// FONTS /// FONTS /// FONTS /// FONTS /// FONTS /// -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Shrikhand&display=swap" rel="stylesheet">
+
+
+    <!-- big shoulders -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Big+Shoulders:opsz,wght@10..72,100..900&display=swap"
+        rel="stylesheet">
+    <!--FONTS /// FONTS /// FONTS /// FONTS /// FONTS /// FONTS /// FONTS /// FONTS /// FONTS /// FONTS /// FONTS /// -->
+</head>
+
+<body>
+
+    <main class="page">
+        <div class="team-selection-and-info-wrap">
+            <!-- TEAM BUTTONS -->
+            <section class="team-selector">
+
+                <div class="team-card" data-team="fscj">
+                    <div class="team-card-header">
+                        <span class="team-mascot">MANTA RAYS</span>
+                        <span class="color-swatch secondary"></span>
+                    </div>
+
+                    <div class="team-card-body">
+                        <!-- team info injected here -->
+                    </div>
+                </div>
+
+                <div class="team-card" data-team="ju">
+                    <div class="team-card-header">
+                        <span class="team-mascot">DOLPHINS</span>
+                        <span class="color-swatch secondary"></span>
+                    </div>
+                    <div class="team-card-body">
+                        <!-- team info injected here -->
+                    </div>
+                </div>
+
+                <div class="team-card" data-team="ewu">
+                    <div class="team-card-header">
+                        <span class="team-mascot">TIGERS</span>
+                        <span class="color-swatch secondary"></span>
+                    </div>
+                    <div class="team-card-body">
+                        <!-- team info injected here -->
+                    </div>
+                </div>
+
+                <div class="team-card" data-team="unf">
+                    <div class="team-card-header">
+                        <span class="team-mascot">OSPREYS</span>
+                        <span class="color-swatch primary"></span>
+                    </div>
+                    <div class="team-card-body">
+                        <!-- team info injected here -->
+                    </div>
+                </div>
+
+            </section>
+
+            <!-- EXPANDED TEAM INFO -->
+            <section class="team-details hidden" id="team-details">
+
+                <header class="team-header">
+                    <h1 id="team-name"></h1>
+                    <p id="team-division"></p>
+                </header>
+
+                <section class="team-meta">
+                    <div>
+                        <h3>Conference</h3>
+                        <a id="conference-link" target="_blank"></a>
+                    </div>
+
+                    <div>
+                        <h3>Governing Body</h3>
+                        <a id="national-link" target="_blank"></a>
+                    </div>
+                </section>
+
+                <section class="team-colors">
+                    <h3>Team Colors</h3>
+
+                    <div class="color-squares">
+                        <div class="color-square" id="color-primary"></div>
+                        <div class="color-square" id="color-secondary"></div>
+                        <div class="color-square" id="color-accent"></div>
+                    </div>
+                </section>
+
+
+                <section class="coaching-staff">
+                    <h3>Coaching Staff</h3>
+                    <ul id="coaching-list"></ul>
+                </section>
+
+            </section>
+        </div>
+
+        <div class="cal-n-stats">
+            <section id="calendar">
+                <div class="calendar-scroll">
+                    <div id="calendar-grid"></div>
+                </div>
+            </section>
+
+           <section id="game-detail" class="hidden"></section>
+
+
+        </div>
+
+
+    </main>
+
+    <script src="jax-ball.js"></script>
+</body>
+
+</html>

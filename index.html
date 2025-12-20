@@ -64,13 +64,25 @@
             margin-top: 1em;
         }
         .currently-working {
-            border: solid 2px #000000;
+            border: dotted 2px #000000;
             padding: 4px;
             width: 15em;
             display: flex;
-            margin: 1em auto;
+            margin: 2em auto;
             align-items: center;
             justify-content: space-around;
+            text-decoration: none;
+            text-align: center;
+
+            background: #9626D3;
+            transition: ease-in-out 0.15s;
+        }
+        .currently-working:hover {
+            background: #000000;
+        }
+        .currently-working a {
+            text-decoration: none;
+            color: #ffffff;
         }
         .blue-block {
             width: 7em;
@@ -78,7 +90,10 @@
             background-color: #E566FF;
         }
         .cw-descrip {
-            width: 6em;
+            width: fit-content;
+        }
+        .cw-descrip p {
+            text-decoration: none;
         }
         .last-updated {
             border: solid 2px #000000;
@@ -250,52 +265,23 @@
             <a href="mailto:yesandcynn@gmail.com">yesandcynn@gmail.com</a>
         </div>
         <div class="currently-working">
-            <div class="blue-block">
-            </div>
-            <div class="cw-descrip">
-                <p>im currently working on pink blocks</p>
-            </div>
+            <a href="courts/jax-ball-data/jax-ball.html" target="_blank">
+                <!-- <div class="blue-block"></div>-->
+                <div class="cw-descrip">
+                    <p>
+                        4 college basketball teams in Jacksonville, FL
+                        <br>
+                        (click this box)
+                    </p>
+                </div>
+            </a>
         </div>
         <div class="last-updated">
             <div class="lu-descrip">
                 <p>last update: December 13, 2025</p>
             </div>
         </div>
-        <div class="universe-links">
-            <div class="universe-links-title">
-                <p>the universe sent you these links</p>
-            </div>
-            <div class="uni-link">
-                <a href="https://fmhy.net/internet-tools" target="_blank">
-                    free media!!!!!!! < 3
-                </a>
-            </div>
-            <div class="uni-link">
-                <a href="https://www.a-s-c.org/#web-based" target="_blank">
-                    anti-subscription software catalog < 3
-                </a>
-            </div>
-            <div class="uni-link"> 
-                <a href="https://github.com/everywall/ladder" target="_blank">
-                    self-hosted paywall bypass < 3
-                </a>
-            </div>
-            <div class="uni-link">
-                <a href="https://ntvstream.cx/events" target="_blank">
-                    watch live sports for free < 3
-                </a>
-            </div>
-            <div class="uni-link">
-                <a href="https://thetvapp.to/" target="_blank">
-                    another live sports site < 3
-                </a>
-            </div>
-            <div class="uni-link">
-                <a href="https://www.bestfreestreaming.org" target="_blank">
-                    watch shows and movies for free < 3
-                </a>
-            </div>
-        </div>
+
     </div>
 
     <div class="off-center-box green">
