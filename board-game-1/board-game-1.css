@@ -1,0 +1,59 @@
+/* =========================
+   GRID CELLS (BOARD SLOTS)
+   ========================= */
+
+.grid-cell {
+  fill: none; /* empty */
+  stroke: black; /* visible outline */
+  stroke-width: 2;
+  cursor: pointer;
+
+  transition:
+    stroke 0.2s ease,
+    fill 0.2s ease,
+    transform 0.3s ease;
+
+  transform-origin: center;
+  transform-box: fill-box;
+}
+
+.grid-cell:hover {
+  fill: rgba(0, 0, 0, 0.05); /* subtle hover hint */
+}
+
+/* FLIPPED STATE */
+.grid-cell.flipped {
+  fill: #8e44ad; /* purple */
+  transform: scaleX(-1);
+}
+
+/* SPECIAL CONTROL CELL */
+#special-cell {
+  stroke: white;
+  stroke-width: 3;
+}
+
+/* =========================
+   SPORT TILES (CONTENT)
+   ========================= */
+
+.tile {
+  cursor: pointer;
+}
+
+.sport-square {
+  fill: #2b5cff;
+  transition: fill 0.25s ease;
+}
+
+.tile-label {
+  fill: white;
+  font-family: system-ui, sans-serif;
+  font-size: 14px;
+  pointer-events: none;
+}
+
+/* Hover effect for sport tiles */
+.tile:hover .sport-square {
+  fill: #ff7a00;
+}

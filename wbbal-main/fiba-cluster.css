@@ -1,0 +1,233 @@
+/*==========================
+COLORS
+============================*/
+:root {
+  --darkest-blue: #1E292D;
+  --muddled-blue: #286F6F;
+  --seafoam-blue: #00C092;
+  --minty-blue: #B5FFAC;
+  --space-purple: #55458E;
+  --space-blue: #5A8CFF;
+  --starlight-blue: #AEDEFF;
+  --brown: #633632;
+  --starlight-purple: #ECDFFF;
+  --rich-purple: #490F40;
+  --ochre-dark-green: #333925;
+  --ochre-green: #84721E;
+  --ochre-yellow: #F69E00;
+
+  --basketball-orange: #C67400;
+  --purple-ice: #FD00FF;
+  --magplum: #950058;
+  --deeper-magplum: #120405;
+
+  --brown-tone: #4F3E08;
+  --tan-brown: #4F3E08;
+  --green-swamp: #83871A;
+}
+
+#cluster-root.is-on #cluster-root-panel {
+  width: 1200px;
+  height: 600px;
+  /*! fill: var(--green-swamp); */
+}
+
+/* =========================
+   INITIAL STATE
+========================= */
+
+#cluster-title-text {    
+    font-family: "JetBrains Mono";
+    font-style: italic;
+    font-weight: bold;
+    font-size: clamp(32px, 4vw, 48px);
+
+    fill: #000000;
+    font-size: 72px;
+
+    
+}
+
+/* Hide all expandable content */
+.box-group,
+.connecting-lines {
+  display: none;
+}
+
+/* Make FIBA clickable */
+#cluster-root {
+  cursor: pointer;
+}
+
+.cluster {
+  position: relative;
+  width: 100%;
+  max-width: 1200px;
+}
+
+.box-group {
+    fill: #ffffff;
+    stroke: #000;
+    stroke-width: 2;
+    font-family: "Chivo Mono", monospace;
+}
+.box-frame {
+  fill: #fff;
+  stroke: var(--ochre-dark-green);
+  stroke-width: 4px;
+}
+.box-accent {
+  fill: none;
+  stroke-width: 4px;
+}
+
+.box-accent,
+.box-label {
+  transition: transform 0.25s ease;
+}
+
+.box-label:not(#cluster-root-label-group .box-label) {
+    fill: #000;
+    stroke: #fff;
+    stroke-width: 0;
+    font-family: "Chivo Mono", monospace;
+    font-size: 24px;
+    font-weight: bold;
+    font-style: italic;
+}
+
+#cluster-root-label-group .box-label {
+  font-family: "Chivo Mono", monospace;
+  font-size: 18px;
+
+}
+
+.cluster-description-container {
+  position: absolute;
+  top: 200px;
+  left: 600px;
+  width: 400px;
+  min-height: 150px;
+  background: white;
+  border: 3px solid var(--darkest-blue);
+  padding: 10px;
+  z-index: 1000;
+}
+
+/* Actual text */
+.cluster-description-content {
+
+  pointer-events: auto;
+
+  font-family: "DM Mono", monospace;
+  font-size: clamp(14px, 2vw, 18px);
+  line-height: 1.4;
+
+  background: white;
+
+  height: 100%;
+  box-sizing: border-box;
+  stroke: #000 4px solid;
+  border: #000 4px solid;
+}
+
+.description-block {
+  border-bottom: dotted 3px #000;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 10px;
+  padding-right: 4px;
+}
+
+/*STYLING FOR HIGHLIGHTED TXT IN DESCRIP BOX*/
+.highlight {
+  background: var(--events-accent);
+  padding: 0 4px;
+}
+
+#cluster-root-panel {
+  fill: #ffffff;
+  stroke: var(--brown-tone);
+  stroke-width: 4;
+
+  transition: width 0.4s ease,
+              height 0.6s ease;
+}
+
+#cluster-root.is-on #cluster-root-panel {
+  width: 500px;
+  height: 400px;
+}
+
+#cluster-root-container {
+  fill: #ffffff;
+  stroke: var(--brown-tone);
+  stroke-width: 4;
+
+  width: 330px; /* base width */
+  transition: width 0.4s ease;
+}
+
+#cluster-root.is-on #cluster-root-container {
+  width: 500px;
+}
+
+#cluster-root #cluster-header-container {
+  fill: none;
+  stroke: none;
+  stroke-width: 4;
+}
+
+/* =========================
+   FIBA SWITCH INDICATOR
+========================= */
+
+.switch-indicator {
+  fill: var(--basketball-orange);        
+  stroke: var(--brown-tone);
+  stroke-width: 4;
+  transition: fill 0.25s ease;
+}
+
+/* When cluster is expanded */
+.switch-indicator.is-on { 
+  fill: var(--green-swamp);
+}
+
+.switch-indicator {
+ /* rx: 4; 
+  ry: 4; */
+}
+
+/* 
+.switch-indicator.is-on {
+  filter: drop-shadow(0 0 8px var(--seafoam-blue));
+}
+  */ 
+#debug-toggle {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  padding: 8px 14px;
+  font-family: "VT323", monospace;
+  font-size: 16px;
+  cursor: pointer;
+  border: 2px solid black;
+  background: white;
+  z-index: 9999;
+}
+
+.box-frame {
+  fill: none;
+}
+
+
+#cluster-switch-indicator {
+  transform: translate(0px, 0px);
+  transition: transform 0.4s ease, fill 0.25s ease;
+}
+
+
+#cluster-switch-indicator.is-on {
+  transform: translate(165px, 0px);
+}

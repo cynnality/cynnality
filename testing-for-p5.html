@@ -8,29 +8,30 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.9.0/addons/p5.sound.min.js"></script>
     <!-- p5.touchgui -->
     <script src="https://unpkg.com/p5.touchgui@0.5.2/lib/p5.touchgui.js"></script>
+    <!--q5-->
+    <script src="https://q5js.org/q5.js"></script>
   </head>
 
   <body>
     <script>
-      // Your code will go here
-      let gui;
-      let b;
 
-      function setup(){
-        createCanvas(400, 400);
-                       
-        gui = createGui();
-        b = createButton("Button", 50, 50);
-      }
+createCanvas(200, 100);
+textSize(100);
 
-      function draw(){
-        background(200);
-        drawGui();
+let btn = createButton('Click me!');
 
-        if(b.isPressed) {
-          print(b.label + " is pressed.");
-        }
-      }
+let p = createP('lets talk about basketball');
+p.style.color = 'purple';
+p.style.fontSize = '100px';
+
+p.addEventListener('mouseover', () => {
+  p.style.color = 'black';
+});
+
+btn.addEventListener('click', () => {
+  p.style.color = 'green';
+});
+     
     </script>
   </body>
 </html>

@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="1920"
+   height="1080"
+   viewBox="0 0 1920 1080"
+   version="1.1"
+   id="svg1"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs1">
+    <g
+       id="fiba-org"
+       class="org-detail">
+      <rect
+         id="fiba-org-container"
+         width="170.00002"
+         height="228.04788"
+         x="912.19153"
+         y="123.14585"
+         class="org-detail-container" />
+      <g
+         id="fiba-description-labels">
+        <text
+           x="922"
+           y="195"
+           id="fiba-descrip-text-1"
+           class="org-description-text"
+           xml:space="default">basketball</text>
+        <text
+           x="983.80579"
+           y="221.11494"
+           id="fiba-descrip-text-2"
+           class="org-description-text"
+           xml:space="default">ORG</text>
+      </g>
+      <g
+         id="fiba-icon-slot"
+         class="org-icon-slot">
+        <rect
+           id="fiba-icon-container"
+           width="103"
+           height="103"
+           x="945.69153"
+           y="230.51921"
+           class="org-icon-container" />
+      </g>
+      <g
+         id="fiba-header">
+        <rect
+           id="fiba-header-container"
+           width="170"
+           height="40"
+           x="912.19153"
+           y="123.14585"
+           class="org-header-container" />
+        <text
+           x="970"
+           y="163.14584"
+           id="fiba-title-text"
+           class="org-title-text"
+           xml:space="default">FIBA</text>
+      </g>
+    </g>
+  </defs>
+  <g
+     id="world-cup-piece">
+    <rect
+       style="fill:#0000ff;fill-rule:evenodd"
+       id="world-cup-slot"
+       width="100"
+       height="100"
+       x="590"
+       y="330" />
+    <rect
+       style="fill:#ff9d0a;fill-rule:evenodd;fill-opacity:1.0"
+       id="world-cup-piece-container"
+       width="100"
+       height="100"
+       x="590"
+       y="330" />
+    <text
+       xml:space="preserve"
+       style="font-size:29.3333px;line-height:52.6046px;font-family:VT323;-inkscape-font-specification:VT323;text-align:center;letter-spacing:0px;word-spacing:-4.26px;writing-mode:lr-tb;direction:ltr;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:3;stroke-linecap:square;stroke-miterlimit:3.6"
+       x="639.54004"
+       y="366.17352"
+       id="world-cup-label-1">2026</text>
+    <text
+       xml:space="preserve"
+       style="font-size:29.3333px;line-height:52.6046px;font-family:VT323;-inkscape-font-specification:VT323;text-align:center;letter-spacing:0px;word-spacing:-4.26px;writing-mode:lr-tb;direction:ltr;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:3;stroke-linecap:square;stroke-miterlimit:3.6"
+       x="639.54004"
+       y="386.56677"
+       id="world-cup-label-2">WORLD</text>
+    <text
+       xml:space="preserve"
+       style="font-size:29.3333px;line-height:52.6046px;font-family:VT323;-inkscape-font-specification:VT323;text-align:center;letter-spacing:0px;word-spacing:-4.26px;writing-mode:lr-tb;direction:ltr;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:3;stroke-linecap:square;stroke-miterlimit:3.6"
+       x="639.54004"
+       y="406.95999"
+       id="world-cup-label-3">CUP</text>
+  </g>
+</svg>

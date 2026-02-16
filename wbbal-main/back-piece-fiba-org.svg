@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="200"
+   height="300"
+   viewBox="0 0 52.916668 79.374999"
+   version="1.1"
+   id="svg1"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <style
+     id="style20">.piece-detail {  }
+.piece {   }
+.piece-front {   }
+.piece-back {   }
+.piece-face {   }
+</style>
+  <defs
+     id="defs1" />
+  <g
+     id="piece-fiba-org"
+     class="piece  piece-detail"
+     transform="translate(0,-300.00001)">
+    <g
+       id="front-piece-fiba-org"
+       class="piece-face  piece-front"
+       transform="translate(-100,-40)">
+      <rect
+         style="fill:#0000ff;fill-rule:evenodd;stroke-width:0.264583"
+         id="fiba-front-container"
+         width="52.916668"
+         height="79.375"
+         x="100"
+         y="40.3125" />
+      <rect
+         style="display:inline;fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.79375;stroke-dasharray:none;stroke-opacity:1"
+         id="front-piece-fiba-org-border"
+         width="50.444069"
+         height="76.248543"
+         x="101.2363"
+         y="41.875729" />
+      <g
+         id="front-piece-fiba-org-labels">
+        <text
+           xml:space="preserve"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:22.5778px;line-height:20.2448px;font-family:VT323;-inkscape-font-specification:VT323;text-align:center;letter-spacing:0px;word-spacing:-1.12713px;writing-mode:lr-tb;direction:ltr;text-anchor:middle;fill:#ff1e00;stroke-width:0;stroke-linecap:square;stroke-miterlimit:3.6"
+           x="114.85229"
+           y="66.666649"
+           id="fiba-front-label-1"><tspan
+             id="tspan1"
+             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:VT323;-inkscape-font-specification:VT323;stroke-width:0"
+             x="114.85229"
+             y="66.666649">F</tspan></text>
+        <text
+           xml:space="preserve"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:22.5778px;line-height:20.2448px;font-family:VT323;-inkscape-font-specification:VT323;text-align:center;letter-spacing:0px;word-spacing:-1.12713px;writing-mode:lr-tb;direction:ltr;text-anchor:middle;fill:#ff1e00;stroke-width:0;stroke-linecap:square;stroke-miterlimit:3.6"
+           x="120"
+           y="80"
+           id="fiba-front-label-2"><tspan
+             id="tspan2"
+             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:VT323;-inkscape-font-specification:VT323;stroke-width:0"
+             x="120"
+             y="80">I</tspan></text>
+        <text
+           xml:space="preserve"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:22.5778px;line-height:20.2448px;font-family:VT323;-inkscape-font-specification:VT323;text-align:center;letter-spacing:0px;word-spacing:-1.12713px;writing-mode:lr-tb;direction:ltr;text-anchor:middle;fill:#ff1e00;stroke-width:0;stroke-linecap:square;stroke-miterlimit:3.6"
+           x="127.59924"
+           y="93.333351"
+           id="fiba-front-label-3"><tspan
+             id="tspan3"
+             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:VT323;-inkscape-font-specification:VT323;stroke-width:0"
+             x="127.59924"
+             y="93.333351">B</tspan></text>
+        <text
+           xml:space="preserve"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:22.5778px;line-height:20.2448px;font-family:VT323;-inkscape-font-specification:VT323;text-align:center;letter-spacing:0px;word-spacing:-1.12713px;writing-mode:lr-tb;direction:ltr;text-anchor:middle;fill:#ff1e00;stroke-width:0;stroke-linecap:square;stroke-miterlimit:3.6"
+           x="134.47693"
+           y="106.66669"
+           id="fiba-front-label-4"><tspan
+             id="tspan4"
+             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:VT323;-inkscape-font-specification:VT323;stroke-width:0"
+             x="134.47693"
+             y="106.66669">A</tspan></text>
+      </g>
+    </g>
+    <g
+       id="back-piece-fiba-org"
+       class="piece-face  piece-back"
+       transform="translate(-100,-40)">
+      <g
+         id="g19">
+        <rect
+           id="piece-fiba-org-container"
+           width="52.916668"
+           height="79.375"
+           x="100"
+           y="340"
+           class="org-detail-container"
+           style="display:inline;fill:#808080;fill-opacity:1;stroke-width:0.264581" />
+        <rect
+           style="display:inline;fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.79375;stroke-dasharray:none;stroke-opacity:1"
+           id="piece-fiba-org-bg-border"
+           width="50.444069"
+           height="76.248543"
+           x="101.2363"
+           y="341.56323" />
+        <g
+           id="piece-fiba-labels"
+           transform="matrix(0.26458333,0,0,0.26458333,-134.0283,316.24245)"
+           style="display:inline">
+          <text
+             x="926.43658"
+             y="188.64853"
+             id="piece-fiba-label-1"
+             class="org-description-text"
+             xml:space="default"
+             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:29.3333px;font-family:VT323;-inkscape-font-specification:VT323">basketball</text>
+          <text
+             x="1007.3964"
+             y="210.40475"
+             id="piece-fiba-label-2"
+             class="org-description-text"
+             xml:space="default"
+             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:29.3333px;font-family:VT323;-inkscape-font-specification:VT323">ORG</text>
+        </g>
+        <g
+           id="piece-fiba-header-group"
+           transform="matrix(0.26458333,0,0,0.26458333,-50.923604,-7.6739495)"
+           style="fill:#000000;fill-opacity:1">
+          <rect
+             id="piece-fiba-header-container"
+             width="180"
+             height="40.000004"
+             x="580.41992"
+             y="1330.4774"
+             class="org-header-container"
+             style="fill:#000000;fill-opacity:1;stroke-width:0.999997" />
+          <text
+             x="644.17999"
+             y="1359.4374"
+             id="piece-fiba-header-label"
+             class="org-title-text"
+             xml:space="default"
+             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:32px;font-family:VT323;-inkscape-font-specification:VT323;fill:#ffffff;fill-opacity:1">FIBA</text>
+        </g>
+        <rect
+           id="rules-pocket-container"
+           width="47.625"
+           height="10.583333"
+           x="102.64584"
+           y="380.68777"
+           class="org-icon-container"
+           style="fill:#f71200;fill-opacity:1;stroke-width:0.264583" />
+        <rect
+           id="pro-pocket-container"
+           width="47.625"
+           height="10.583333"
+           x="102.64584"
+           y="391.27112"
+           class="org-icon-container"
+           style="fill:#00f72e;fill-opacity:1;stroke-width:0.264583" />
+        <rect
+           id="events-pocket-container"
+           width="47.625"
+           height="10.583333"
+           x="102.64584"
+           y="401.85446"
+           class="org-icon-container"
+           style="fill:#ff9d0a;fill-opacity:1;stroke-width:0.264583" />
+        <rect
+           style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.396874;stroke-dasharray:none;stroke-opacity:1"
+           id="piece-fiba-description-container"
+           width="37.503674"
+           height="16.595896"
+           x="107.7065"
+           y="358.56281" />
+        <text
+           xml:space="preserve"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:7.7611px;line-height:13.9183px;font-family:VT323;-inkscape-font-specification:VT323;text-align:center;letter-spacing:0px;word-spacing:-1.12713px;writing-mode:lr-tb;direction:ltr;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.396875;stroke-linecap:square;stroke-miterlimit:3.6;stroke-dasharray:none;stroke-opacity:1"
+           x="116.75525"
+           y="388.15253"
+           id="rules-pocket-label"><tspan
+             id="tspan15"
+             style="fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.396875"
+             x="116.75525"
+             y="388.15253">RULES</tspan></text>
+        <text
+           xml:space="preserve"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:7.7611px;line-height:13.9183px;font-family:VT323;-inkscape-font-specification:VT323;text-align:center;letter-spacing:0px;word-spacing:-1.12713px;writing-mode:lr-tb;direction:ltr;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.396875;stroke-linecap:square;stroke-miterlimit:3.6;stroke-dasharray:none;stroke-opacity:1"
+           x="115.20303"
+           y="398.73587"
+           id="pros-pocket-label"><tspan
+             id="tspan16"
+             style="fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.396875"
+             x="115.20303"
+             y="398.73587">PROS</tspan></text>
+        <text
+           xml:space="preserve"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:7.7611px;line-height:13.9183px;font-family:VT323;-inkscape-font-specification:VT323;text-align:center;letter-spacing:0px;word-spacing:-1.12713px;writing-mode:lr-tb;direction:ltr;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.396875;stroke-linecap:square;stroke-miterlimit:3.6;stroke-dasharray:none;stroke-opacity:1"
+           x="117.99702"
+           y="409.31921"
+           id="events-pocket-label"><tspan
+             id="tspan17"
+             style="fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.396875"
+             x="117.99702"
+             y="409.31921">EVENTS</tspan></text>
+        <circle
+           style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:0.396875;stroke-linecap:square;stroke-miterlimit:3.6;stroke-dasharray:none;stroke-opacity:1"
+           id="rules-link-circle"
+           cx="105.49928"
+           cy="385.97943"
+           r="1.3869864" />
+        <circle
+           style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:0.396875;stroke-linecap:square;stroke-miterlimit:3.6;stroke-dasharray:none;stroke-opacity:1"
+           id="pros-link-circle"
+           cx="105.49928"
+           cy="396.56277"
+           r="1.3869864" />
+        <circle
+           style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:0.396875;stroke-linecap:square;stroke-miterlimit:3.6;stroke-dasharray:none;stroke-opacity:1"
+           id="events-link-circle"
+           cx="105.49928"
+           cy="407.14612"
+           r="1.3869864" />
+      </g>
+    </g>
+  </g>
+</svg>

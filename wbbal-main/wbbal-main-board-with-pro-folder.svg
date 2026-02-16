@@ -1,0 +1,720 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   width="1920"
+   height="1080"
+   viewBox="0 0 1920 1080"
+   version="1.1"
+   id="svg1"
+   tabindex="0"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  <style
+     id="style24">.pro-teams-individual-items {  }
+.empty-cell-row {  }
+.empty-cell {  }
+.menu-buttons {  }
+</style>
+  <defs
+     id="defs1">
+    <!-- chip template / layout svg xml-->
+  </defs>
+  <g
+     id="wbbal-main">
+    <desc
+       id="desc1">the layout / possible default view ? layout template </desc>
+    <rect
+       id="wbbal-bg"
+       width="1920"
+       height="1080"
+       x="0"
+       y="0" />
+    <rect
+       id="wbbal-header-container"
+       width="1835.819"
+       height="121.06535"
+       x="42.090332"
+       y="15.587906" />
+    <text
+       x="200"
+       y="90"
+       id="wbbal-header-title"
+       xml:space="default">BASKETBALL</text>
+    <rect
+       id="wbbal-body-border"
+       width="1836.4503"
+       height="893.6239"
+       x="41.774834"
+       y="154.51237" />
+    <circle
+       id="woman-text-bgcircle"
+       cx="115.89175"
+       cy="77.683739"
+       r="49.103004" />
+    <text
+       x="106.5"
+       y="90"
+       id="woman-text"
+       xml:space="default">W</text>
+    <rect
+       id="menu-about-container"
+       width="219.30571"
+       height="70.660194"
+       x="929.31421"
+       y="47.364521"
+       class="menu-buttons" />
+    <rect
+       id="menu-medals-container"
+       width="219.30571"
+       height="70.660194"
+       x="1230.322"
+       y="47.364521"
+       class="menu-buttons" />
+    <rect
+       id="menu-helper-container"
+       width="219.30571"
+       height="70.660194"
+       x="1531.33"
+       y="47.364521"
+       class="menu-buttons" />
+    <text
+       xml:space="preserve"
+       style="font-size:42.6667px;line-height:50.2751px;font-family:VT323;text-align:center;letter-spacing:5.89px;word-spacing:-12.18px;writing-mode:lr-tb;direction:ltr;text-anchor:middle"
+       x="1039.8204"
+       y="94.641243"
+       id="menu-about-text">                     <tspan
+   id="tspan22"
+   x="1042.7654"
+   y="94.641243">about</tspan>                </text>
+    <text
+       xml:space="preserve"
+       style="font-size:42.6667px;line-height:50.2751px;font-family:VT323;text-align:center;letter-spacing:5.89px;word-spacing:-12.18px;writing-mode:lr-tb;direction:ltr;text-anchor:middle"
+       x="1340.4016"
+       y="94.641243"
+       id="menu-medals-text">                     <tspan
+   id="tspan23"
+   x="1343.3466"
+   y="94.641243">medals</tspan>                </text>
+    <text
+       xml:space="preserve"
+       style="font-size:42.6667px;line-height:50.2751px;font-family:VT323;text-align:center;letter-spacing:5.89px;word-spacing:-12.18px;writing-mode:lr-tb;direction:ltr;text-anchor:middle"
+       x="1641.4095"
+       y="94.641243"
+       id="menu-helper-text">                     <tspan
+   id="tspan24"
+   x="1644.3545"
+   y="94.641243">helper</tspan>                </text>
+  </g>
+  <g
+     id="empty-cell-row-1">
+    <rect
+       id="rect14"
+       width="200"
+       height="200"
+       x="99.932846"
+       y="206.40536"
+       class="empty-cell" />
+    <rect
+       id="rect15"
+       width="200"
+       height="200"
+       x="353.28857"
+       y="206.40536"
+       class="empty-cell" />
+    <rect
+       id="rect16"
+       width="200"
+       height="200"
+       x="606.64429"
+       y="206.40536"
+       class="empty-cell" />
+    <rect
+       id="rect17"
+       width="200"
+       height="200"
+       x="860"
+       y="206.40536"
+       class="empty-cell" />
+    <rect
+       id="rect18"
+       width="200"
+       height="200"
+       x="1113.3557"
+       y="206.40536"
+       class="empty-cell" />
+    <rect
+       id="rect19"
+       width="200"
+       height="200"
+       x="1366.7114"
+       y="206.40536"
+       class="empty-cell" />
+    <rect
+       id="rect20"
+       width="200"
+       height="200"
+       x="1620.0671"
+       y="206.40536"
+       class="empty-cell" />
+  </g>
+  <g
+     id="empty-cell-row-2">
+    <rect
+       id="rect7"
+       width="200"
+       height="200"
+       x="99.932846"
+       y="476.15747"
+       class="empty-cell" />
+    <rect
+       id="rect8"
+       width="200"
+       height="200"
+       x="353.28857"
+       y="476.15747"
+       class="empty-cell" />
+    <rect
+       id="rect9"
+       width="200"
+       height="200"
+       x="606.64429"
+       y="476.15747"
+       class="empty-cell" />
+    <rect
+       id="rect10"
+       width="200"
+       height="200"
+       x="860"
+       y="476.15747"
+       class="empty-cell" />
+    <rect
+       id="rect11"
+       width="200"
+       height="200"
+       x="1113.3557"
+       y="476.15747"
+       class="empty-cell" />
+    <rect
+       id="rect12"
+       width="200"
+       height="200"
+       x="1366.7114"
+       y="476.15747"
+       class="empty-cell" />
+    <rect
+       id="rect13"
+       width="200"
+       height="200"
+       x="1620.0671"
+       y="476.15747"
+       class="empty-cell" />
+  </g>
+  <g
+     id="empty-cell-row-3">
+    <rect
+       id="rect29"
+       width="200"
+       height="200"
+       x="99.932846"
+       y="771.96411"
+       class="empty-cell" />
+    <rect
+       id="rect30"
+       width="200"
+       height="200"
+       x="353.28857"
+       y="771.96411"
+       class="empty-cell" />
+    <rect
+       id="rect31"
+       width="200"
+       height="200"
+       x="606.64429"
+       y="771.96411"
+       class="empty-cell" />
+    <rect
+       id="rect32"
+       width="200"
+       height="200"
+       x="860"
+       y="771.96411"
+       class="empty-cell" />
+    <rect
+       id="rect33"
+       width="200"
+       height="200"
+       x="1113.3557"
+       y="771.96411"
+       class="empty-cell" />
+    <rect
+       id="rect34"
+       width="200"
+       height="200"
+       x="1366.7114"
+       y="771.96411"
+       class="empty-cell" />
+    <rect
+       id="rect35"
+       width="200"
+       height="200"
+       x="1620.0671"
+       y="771.96411"
+       class="empty-cell" />
+  </g>
+  <g
+     id="view-about">
+    <g
+       id="about-grid-row-1">
+      <rect
+         id="folder-olympics-cell"
+         class="empty-cell folder-cell"
+         width="200"
+         height="200"
+         x="99.932846"
+         y="206.40536" />
+      <text
+         x="200"
+         y="330"
+         class="folder-label"
+         text-anchor="middle"
+         id="text1">OLYMPICS</text>
+
+                <!-- PRO LEAGUE FOLDER CELL -->
+                <rect
+                id="folder-pro-league-cell"
+                class="empty-cell folder-cell"
+                width="200"
+                height="200"
+                x="860"
+                y="206.40536" />
+
+                <text
+                x="960"
+                y="330"
+                class="folder-label"
+                text-anchor="middle">
+                PRO
+                </text>
+
+    </g>
+    <g
+       id="about-olympics"
+       class="folder view-hidden">
+      <desc
+         id="desc2">the folder for olympics in the about section
+            ALL </desc>
+      <rect
+         id="about-olympics-bg"
+         width="706.711"
+         height="469.75211"
+         x="99.932854"
+         y="206.40536"
+         class="folder-bg">
+        <desc
+           id="desc22">containter / background forexpanded view/ &quot;olympics folder&quot;
+               resized to fit content </desc>
+      </rect>
+      <g
+         id="about-olympics-folder-content">
+        <desc
+           id="desc3">everything for the expanded olympics view EXCEPT for the background</desc>
+        <rect
+           id="about-olympic-header-container"
+           width="706.711"
+           height="75"
+           x="99.932854"
+           y="206.40536"
+           class="folder-header ">
+          <desc
+             id="desc24">container for entire header &amp; all its content
+                  top section of about-olympics expanded view
+
+                  want to indicate BOTTOM BORDER WITH DASHED STROKE</desc>
+        </rect>
+        <rect
+           id="about-olympic-title-container"
+           width="450"
+           height="70"
+           x="102"
+           y="209"
+           class="folder-title  expanded-folder-title-container">
+          <desc
+             id="desc23">container for title of the olympics folder
+                  top/right corner of expanded olympic (about) container</desc>
+        </rect>
+        <!-- TITLE TEXT FOR THE OLYMPICS EXPANDED FOLDER -->
+        <text
+           id="about-olympics-title-text"
+           x="160"
+           y="250"
+           text-anchor="start"
+           dominant-baseline="middle"
+           class="folder-title-text">OLYMPICS</text>
+        <rect
+           id="about-olympics-minimizer"
+           width="40"
+           height="40"
+           x="734.56287"
+           y="206.40536"
+           class="folder-minimizer">
+          <desc
+             id="desc25">the &quot;minimize&quot; &quot;button&quot; for the expanded about olympic view</desc>
+        </rect>
+        <rect
+           id="about-olympics-minimizer-icon"
+           width="28"
+           height="6"
+           x="740.56287"
+           y="224"
+           class="folder-minimizer-icon">
+          <desc
+             id="desc26">will signify a minus sign/symbol within the &quot;minimizer&quot; button
+
+                  minimizer &quot;button&quot; should have bg color and this symbol also needs bg color/fill (css)
+               </desc>
+        </rect>
+        <rect
+           id="about-olympics-chip-container"
+           width="200"
+           height="200"
+           x="130"
+           y="330"
+           class="chip-container">
+          <desc
+             id="desc27">the container that the starting year chip should be inserted into</desc>
+        </rect>
+        <rect
+           style="display:inline;fill:#ffffff"
+           id="about-olympics-start-text-container"
+           width="390"
+           height="125"
+           x="360.65359"
+           y="360"
+           class="expanded-view-text-container">
+          <desc
+             id="desc51">the container to hold the text about 1976 montreal olympics // first womens bbal
+                  tournament</desc>
+        </rect>
+        <foreignObject
+           x="360.65359"
+           y="360"
+           width="390"
+           height="125">
+          <xhtml:div
+             id="about-olympics-description"
+             class="expanded-text">
+    Montreal, Canada hosted the first Olympic Games to hold a women’s
+    basketball event in 1976.
+  </xhtml:div>
+        </foreignObject>
+        <rect
+           style="display:inline;fill:#000000;fill-opacity:1;fill-rule:evenodd"
+           id="about-olympics-mini-1936"
+           width="100"
+           height="100"
+           x="125.30285"
+           y="560"
+           class="mini-chips ">
+          <desc
+             id="desc54">a mini chip : to be a mini version of a chip
+                  this specific one: 1936, berlin, germany</desc>
+        </rect>
+        <rect
+           style="display:inline;fill:#000000;fill-opacity:1;fill-rule:evenodd"
+           id="about-olympics-mini-1992"
+           width="100"
+           height="100"
+           x="262.61786"
+           y="560"
+           class="mini-chips ">
+          <desc
+             id="desc55">a mini chip : to be a mini version of a chip
+                  this specific one: 1992, barcelona spain</desc>
+        </rect>
+        <rect
+           style="display:inline;fill:#000000;fill-opacity:1;fill-rule:evenodd"
+           id="about-olympics-mini-2020"
+           width="100"
+           height="100"
+           x="399.93286"
+           y="560"
+           class="mini-chips ">
+          <desc
+             id="desc56">mini chip for
+                  2020 olympics tokyo japan</desc>
+        </rect>
+        <rect
+           style="display:inline;fill:#000000;fill-opacity:1;fill-rule:evenodd"
+           id="about-olympics-linkto-medals"
+           width="100"
+           height="100"
+           x="537.24786"
+           y="560"
+           class="links-to-others  linksto-others">
+          <desc
+             id="desc57">a 'button' that should open medals (chips) within this category - which is olympics (to
+                  be added later)
+
+               </desc>
+        </rect>
+        <rect
+           style="display:inline;fill:#000000;fill-opacity:1;fill-rule:evenodd"
+           id="about-olympics-linkto-helper"
+           width="100"
+           height="100"
+           x="674.56287"
+           y="560"
+           class="links-to-others  linksto-others">
+          <desc
+             id="desc58">a &quot;button&quot; to link to the helper view
+                  to ask a specific question:
+                  &quot;who makes these decisions?&quot; </desc>
+        </rect>
+      </g>
+    </g>
+  </g>
+  <g
+     id="pro-league-folder"
+     class="folder view-hidden">
+    <rect
+       style="fill:#6f008b;fill-opacity:1;fill-rule:evenodd;stroke-width:3.70322"
+       id="pro-league-bg"
+       width="706.711"
+       height="776.20093"
+       x="1060"
+       y="206.40536">
+      <desc
+         id="desc40">container for the entire pro leagues window / folder </desc>
+    </rect>
+    <g
+       id="pro-league-content-body-container">
+      <desc
+         id="desc42">a group for all content elements to appear within the body of the pro-league folder</desc>
+      <rect
+         style="fill:#00fc23;fill-opacity:1;fill-rule:evenodd;stroke-width:1.49928"
+         id="pro-league-content-container"
+         width="706.711"
+         height="606.35657"
+         x="1060"
+         y="376.24973">
+        <desc
+           id="desc35">the container to hold any pro-league content populated onto folder by button press</desc>
+      </rect>
+      <g
+         id="teams-content-list">
+        <rect
+           style="display:inline;fill:#0000ff;fill-rule:evenodd;stroke-width:0.900563"
+           id="rect7-3"
+           width="500"
+           height="100"
+           x="1163.3557"
+           y="414.22659"
+           class="pro-teams-individual-items" />
+        <rect
+           style="display:inline;fill:#0000ff;fill-rule:evenodd;stroke-width:0.900563"
+           id="rect8-5"
+           width="500"
+           height="100"
+           x="1163.3557"
+           y="528.66101"
+           class="pro-teams-individual-items" />
+        <rect
+           style="display:inline;fill:#0000ff;fill-rule:evenodd;stroke-width:0.900563"
+           id="rect9-6"
+           width="500"
+           height="100"
+           x="1163.3557"
+           y="643.09534"
+           class="pro-teams-individual-items" />
+        <rect
+           style="display:inline;fill:#0000ff;fill-rule:evenodd;stroke-width:0.900563"
+           id="rect10-2"
+           width="500"
+           height="100"
+           x="1163.3557"
+           y="757.52966"
+           class="pro-teams-individual-items" />
+        <rect
+           style="display:inline;fill:#0000ff;fill-rule:evenodd;stroke-width:0.900563"
+           id="rect11-9"
+           width="500"
+           height="100"
+           x="1163.3557"
+           y="871.96411"
+           class="pro-teams-individual-items" />
+      </g>
+      <rect
+         style="fill:#0000ff;fill-rule:evenodd;stroke-width:0.962076"
+         id="champs-list-item-1-bg"
+         width="660"
+         height="50"
+         x="1083.3557"
+         y="430.81967">
+        <desc
+           id="desc31">the container for all the elements to go in list item #1 - representing the first year of wnba championshps with year, team name, and the number of champs that team won in total</desc>
+      </rect>
+      <rect
+         style="fill:#0000ff;fill-rule:evenodd"
+         id="champs-year-text"
+         width="113.555"
+         height="50"
+         x="1083.3557"
+         y="430.81967">
+        <desc
+           id="desc30">the container for the text with the year </desc>
+      </rect>
+      <rect
+         style="fill:#0000ff;fill-rule:evenodd;stroke-width:1.95248"
+         id="team-name-text-bg"
+         width="432.89099"
+         height="50"
+         x="1196.9103"
+         y="430.81967">
+        <desc
+           id="desc29">container for the name of the team being represented</desc>
+      </rect>
+      <rect
+         style="fill:#0000ff;fill-rule:evenodd;stroke-width:1.00364"
+         id="number-of-champ-titles-text-bg"
+         width="114.384"
+         height="50"
+         x="1628.9717"
+         y="430.81967">
+        <desc
+           id="desc28">container for the text/number of championships the team won in total</desc>
+      </rect>
+    </g>
+    <g
+       id="pro-league-header">
+      <desc
+         id="desc41">a group for the enitre pro-league header and all its elements</desc>
+      <rect
+         style="fill:#0000ff;fill-rule:evenodd"
+         id="rect40"
+         width="706.71094"
+         height="169.84436"
+         x="1060"
+         y="206.40536" />
+      <rect
+         style="fill:#0000ff;fill-rule:evenodd;stroke-width:1.00177"
+         id="title-text-container"
+         width="506.711"
+         height="70"
+         x="1060"
+         y="206.40536">
+        <desc
+           id="desc39">title text container</desc>
+      </rect>
+      <rect
+         style="fill:#0000ff;fill-rule:evenodd;stroke-width:0.598672"
+         id="created-text-container"
+         width="253.356"
+         height="50"
+         x="1060"
+         y="306.40536">
+        <desc
+           id="desc38">container for year created text</desc>
+      </rect>
+      <rect
+         style="fill:#0000ff;fill-rule:evenodd;stroke-width:0.378533"
+         id="country-indication-text-bg"
+         width="100"
+         height="50.644245"
+         x="1598.9395"
+         y="206.40536">
+        <desc
+           id="desc36">container for country text</desc>
+      </rect>
+      <rect
+         style="fill:#0000ff;fill-rule:evenodd;stroke-width:0.416003"
+         id="teams-button-container"
+         width="132.43201"
+         height="46.187157"
+         x="1400.1667"
+         y="318.21024" />
+      <text
+         xml:space="preserve"
+         style="font-size:70.9544px;line-height:63.6223px;font-family:'DejaVu Sans Mono';-inkscape-font-specification:'DejaVu Sans Mono';text-align:center;letter-spacing:0px;word-spacing:-12.5944px;writing-mode:lr-tb;direction:ltr;text-anchor:middle;fill:#00fc23;stroke-width:4.43463;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:3.6"
+         x="1313.9967"
+         y="267.26837"
+         id="league-name-text"><tspan
+           id="tspan1"
+           x="1313.9967"
+           y="267.26837"
+           style="stroke-width:4.43463">WNBA</tspan></text>
+      <text
+         xml:space="preserve"
+         style="font-size:20.8034px;line-height:18.6537px;font-family:'DejaVu Sans Mono';-inkscape-font-specification:'DejaVu Sans Mono';text-align:center;letter-spacing:0px;word-spacing:-3.6926px;writing-mode:lr-tb;direction:ltr;text-anchor:middle;fill:#00fc23;stroke-width:1.30021;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:3.6"
+         x="1650.6917"
+         y="239.30022"
+         id="country-text"><tspan
+           id="tspan2"
+           x="1650.6917"
+           y="239.30022"
+           style="stroke-width:1.30021">U.S.A.</tspan></text>
+      <text
+         xml:space="preserve"
+         style="font-size:20.8034px;line-height:18.6537px;font-family:'DejaVu Sans Mono';-inkscape-font-specification:'DejaVu Sans Mono';text-align:center;letter-spacing:0px;word-spacing:-3.6926px;writing-mode:lr-tb;direction:ltr;text-anchor:middle;fill:#00fc23;stroke-width:1.30021;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:3.6"
+         x="1186.6473"
+         y="338.97809"
+         id="year-created-text"><tspan
+           id="tspan3"
+           x="1186.6473"
+           y="338.97809"
+           style="stroke-width:1.30021">CREATED: 1996</tspan></text>
+      <text
+         xml:space="preserve"
+         style="font-size:34.7729px;line-height:31.1797px;font-family:'DejaVu Sans Mono';-inkscape-font-specification:'DejaVu Sans Mono';text-align:center;letter-spacing:0px;word-spacing:-6.17219px;writing-mode:lr-tb;direction:ltr;text-anchor:middle;fill:#00fc23;stroke-width:2.1733;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:3.6"
+         x="1467.13"
+         y="353.96164"
+         id="teams-button-text"><desc
+           id="desc34">text to go on teams button</desc><tspan
+           id="tspan4"
+           x="1467.13"
+           y="353.96164"
+           style="stroke-width:2.1733">TEAMS</tspan></text>
+      <rect
+         style="fill:#0000ff;fill-rule:evenodd;stroke-width:0.416003"
+         id="champs-button"
+         width="132.43201"
+         height="46.187157"
+         x="1550.6783"
+         y="318.21024">
+        <desc
+           id="desc33">the champs button should populate champs list items when clicked</desc>
+      </rect>
+      <text
+         xml:space="preserve"
+         style="font-size:34.7729px;line-height:31.1797px;font-family:'DejaVu Sans Mono';-inkscape-font-specification:'DejaVu Sans Mono';text-align:center;letter-spacing:0px;word-spacing:-6.17219px;writing-mode:lr-tb;direction:ltr;text-anchor:middle;fill:#00fc23;stroke-width:2.1733;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:3.6"
+         x="1617.6416"
+         y="353.96164"
+         id="champs-button-text"><desc
+           id="desc32">the text to go on the champ button</desc><tspan
+           id="tspan12"
+           x="1617.6416"
+           y="353.96164"
+           style="stroke-width:2.1733">CHAMPS</tspan></text>
+      <rect
+         id="pro-league-minimizer"
+         width="40"
+         height="40"
+         x="1720.0671"
+         y="206.40536"
+         class="folder-minimizer">
+        <desc
+           id="desc4">minimizer for pro leagues folder</desc>
+      </rect>
+      <rect
+         id="pro-league-minimizer-icon"
+         width="28"
+         height="6"
+         x="1726.0671"
+         y="224"
+         class="folder-minimizer-icon">
+        <desc
+           id="desc21">minimizer-button-and-icon-for-pro-leagues-expanded-folder
+               </desc>
+      </rect>
+    </g>
+  </g>
+</svg>

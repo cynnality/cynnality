@@ -1,0 +1,816 @@
+/* =========================================================
+   ROOT + GLOBAL
+========================================================= */
+
+:root { 
+  --color-text-main: #000000;
+  --color-text-header: #f5e324;
+  --color-primary: #FFFF00;
+
+  --title-bar-height: 60px;
+  --pane-border-radius: 8px;
+}
+
+body {
+  background-color: #e3e3e3;
+  height: 100vh;
+  overflow: clip;
+}
+
+body.is-interacting {
+  user-select: none;
+  cursor: grabbing;
+}
+
+body.is-interacting .pane img {
+  pointer-events: none;
+}
+
+body.is-interacting .key-box-header {
+  animation-play-state: paused;
+}
+
+/* =========================================================
+   TYPOGRAPHY HELPERS
+========================================================= */
+
+.xanh-mono-regular {
+  font-family: "Xanh Mono", monospace;
+}
+
+.xanh-mono-regular-italic {
+  font-family: "Xanh Mono", monospace;
+  font-style: italic;
+}
+
+/* =========================================================
+   DESCRIPTION BOX
+========================================================= */
+
+.descrip-box {
+  position: absolute;
+  top: 2em;
+  right: 2em;
+  width: 26em;
+  border: 1.5px solid #000;
+  background: #fff;
+  padding: .5em;
+  max-height: 6em;
+}
+
+.descrip-text {
+  font-family: 'Courier New', Courier, monospace;
+  margin: 1em 0;
+}
+
+.linebr {
+  width: 100%;
+  border: dotted 2px #000;
+}
+
+/* =========================================================
+   GENERIC PANES
+========================================================= */
+
+.pane {
+  position: absolute;
+  display: grid;
+  background-color: #e3e3e3;
+  border: 4px solid #000;
+  border-radius: var(--pane-border-radius);
+  overflow: clip;
+  min-width: 160px;
+  min-height: 160px;
+}
+
+.pane .title {
+  height: var(--title-bar-height);
+  cursor: move;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Space Grotesk', sans-serif;
+  font-style: oblique;
+}
+
+.pane .content {
+  position: relative;
+}
+
+/* =========================================================
+   OLYMPIC BASKETBALL (OB) PANE — BAR LAYOUT
+========================================================= */
+
+.pane-ob .ob_row,
+.pane-ob .ob_row * {
+  user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+}
+
+.pane-ob {
+  background: #fff;
+  width: 720px;
+  height: 220px;
+}
+
+/* ---- OB WRAPPER → horizontal bar ---- */
+
+.ob_wrapper {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  border-left: none;
+  border-right: none;
+  gap: 1em;
+  padding-top: .5em;
+  padding-bottom: .5em;
+  padding-left: .25em;
+  padding-right: .25em;
+}
+
+/* ---- Each row becomes a column ---- */
+
+.ob_row {
+  display: flex;
+  flex-direction: column;
+}
+
+.ob_row.threes {
+  border-right: none;
+}
+
+.ob_row {
+  gap: 1em;
+  cursor: pointer;
+}
+
+.ob_row * {
+  pointer-events: none;
+}
+
+/* ---- Label (top of column) ---- */
+
+.ob_label {
+  border-radius: 24px;
+  padding: 12px;
+  text-align: center;
+}
+
+.ob_label p {
+  margin: 0;
+  font-family: "Space Grotesk", sans-serif;
+  font-size: 1.1em;
+  font-weight: bold;
+}
+
+/* ---- Detail (below label) ---- */
+
+.ob_detail {
+  padding: 12px;
+  text-align: center;
+}
+
+.ob_detail p {
+  margin: 0;
+  font-family: "Space Grotesk", sans-serif;
+  font-size: 1em;
+}
+
+/* =========================================================
+   OB ACTIVATION ANIMATION
+========================================================= */
+
+.ob_label,
+.ob_detail {
+  opacity: 0;
+  transform: translateY(6px);
+  transition:
+    opacity 500ms ease,
+    transform 600ms cubic-bezier(.2,.8,.2,1),
+    background-color 700ms ease;
+}
+
+.ob_label.active,
+.ob_detail.active {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* ---- OB COLORS ---- */
+
+.ob_label.start.active {
+  color: #f39c12;
+}
+.ob_detail.start.active { 
+  color: #000000;
+  background: #f39c12; 
+}
+
+.ob_label.women.active {
+  color: #e74c3c;
+}
+.ob_detail.women.active { 
+  background: #e74c3c; 
+  color: #ffffff;
+}
+
+.ob_label.pro.active {
+  color: #2ecc71;
+}
+.ob_detail.pro.active { 
+  background: #2ecc71; 
+  color: #000000;
+}
+
+.ob_label.threes.active {
+  color: #8e44ad;
+}
+.ob_detail.threes.active { 
+  background: #8e44ad; 
+  color: #ffffff;
+}
+
+/* =========================================================
+   CONNECTIONS (SVG)
+========================================================= */
+
+#connections-layer {
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  z-index: 999; 
+}
+
+#connections-layer path {
+  stroke-width: 2;
+  fill: none;
+  opacity: 1;
+  vector-effect: non-scaling-stroke;
+}
+
+#connections-layer path.committed-line {
+  stroke-dasharray: none;
+  opacity: 1;
+}
+
+#connections-layer path.fading {
+  opacity: 0 !important;
+  transition: opacity 250ms ease;
+}
+
+@keyframes line-draw {
+  from {
+    stroke-dashoffset: 20;
+    opacity: 0;
+  }
+  to {
+    stroke-dashoffset: 0;
+    opacity: 1;
+  }
+}
+
+#connections-layer path:not(.committed-line) {
+  stroke-dasharray: 4 4;
+  opacity: 0.9;
+}
+
+/* =========================================================
+   OB CIRCLES (DRAG SOURCES)
+========================================================= */
+
+.ob-circle {
+  display: none;
+  position: fixed;
+  left: 50%;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  border: 2px solid currentColor;
+  cursor: grab;
+  pointer-events: auto;
+  z-index: 500;
+
+  opacity: 0;
+  transform: scale(0.9);
+  transition:
+    opacity 500ms ease,
+    transform 600ms cubic-bezier(.2,.8,.2,1);
+}
+
+.ob-circle.active {
+  display: block;
+  opacity: 1;
+  transform: scale(1);
+}
+
+/* ---- Vertical placement ---- */
+
+.ob-circle.start   { top: 20%; color: #f39c12; }
+.ob-circle.women   { top: 25%; color: #e74c3c; }
+.ob-circle.pro     { top: 30%; color: #2ecc71; }
+.ob-circle.threes  { top: 35%; color: #8e44ad; }
+
+/* =========================================================
+   QUESTION CIRCLES
+========================================================= */
+
+.q-toolbar {
+  position: fixed;
+  top: 90px;
+  /*! left: 0; */
+  right: 10px;
+  height: 80px;
+
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  /*! padding: 0 20px; */
+
+  background: #fff;
+  border: 3px solid #000;
+  z-index: 1000;
+  justify-content: end;
+  width: 20%;
+  border-radius: 12px;
+}
+
+.q-circle.template {
+  position: relative;
+  cursor: grab;
+  border-style: dashed;
+  opacity: 0.8;
+  margin: .25em;
+}
+
+.q-circle {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  border: 2px dotted #000;
+  background: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 32px;
+  cursor: grab;
+  user-select: none;
+}
+
+.q-circle[data-q="q1"] {
+  position: fixed;
+  top: 25%;
+  left: 80%;
+  transform: translateX(-50%);
+}
+
+.q-circle[data-q="q2"] {
+  position: fixed;
+  top: 35%;
+  left: 80%;
+  transform: translateX(-50%);
+}
+
+.q-circle.instance {
+  border-style: solid;
+  box-shadow: 4px 4px 0 #000;
+}
+.q-toggle {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  border: 2px solid #000;
+  background: #fff;
+
+  display: grid;
+  place-items: center;
+
+  font-family: "Space Grotesk", sans-serif;
+  font-size: 11px;
+  font-weight: bold;
+
+  cursor: pointer;
+  user-select: none;
+
+  box-shadow: 4px 4px 0 #000;
+  transition: transform 80ms ease, box-shadow 80ms ease;
+  margin-right: 9px;
+}
+
+.q-toggle:active {
+  transform: translate(2px, 2px);
+  box-shadow: 0 0 0 #000;
+}
+
+.q-toggle.active {
+  background: #000;
+  color: #fff;
+  border-color: #fff;
+}
+
+/* =========================================================
+   SEARCH BAR
+========================================================= */
+
+.search-bar {
+  display: none;
+  position: fixed;
+  top: 60%;
+  left: 80%;
+  transform: translateX(-50%);
+  padding: 12px 16px;
+  border: 2px solid #000;
+  background: #fff;
+  font-family: "Space Grotesk", sans-serif;
+}
+
+.search-bar.active {
+  display: block;
+}
+
+/* =========================================================
+   KEY BOXES (INFO CARDS)
+========================================================= */
+
+.key-box-header,
+.key-box-title {
+  user-select: none;
+}
+
+.key-box,
+.key-box * {
+  user-select: none;
+}
+
+.us-context-rail {
+  position: fixed;
+  top: 12%;
+  right: 22%;
+  height: 76%;
+  width: 2px;
+
+  background:
+    repeating-linear-gradient(
+      to bottom,
+      #000 0 6px,
+      transparent 6px 12px
+    );
+
+  opacity: 0.15;
+  pointer-events: none;
+  z-index: 200;
+}
+
+.key-box {
+  position: absolute;
+  display: none;
+  overflow: hidden;
+  z-index: 50;
+  opacity: 0;
+
+  pointer-events: auto;
+  cursor: default;
+
+  background: #fff;
+  border: 3px solid #000;
+  box-shadow: 6px 6px 0 #000;
+
+  transform: scale(0.96);
+}
+
+.key-box-header {
+  display: flex;
+  /*! align-items: center; */
+  justify-content: space-between;
+  /*! background: #6e6e6e; */
+  cursor: grab;
+
+    background:
+    repeating-linear-gradient( 45deg, #000 0px, #000 3px, #fff 3px, #fff 6px );
+  box-shadow:
+  inset 0 -3px 0 #000;
+}
+
+.key-box-header {
+  background-size: 16px 16px;
+  animation: stripes-move 6s linear infinite;
+}
+
+@keyframes stripes-move {
+  from { background-position: 0 0; }
+  to   { background-position: 32px 32px; }
+}
+
+.key-box-title { 
+  padding: 4px 12px;
+  background: #ffffff;
+  font-weight: bold;
+  margin-bottom: 3px;
+}
+
+.key-box-controls {
+  display: flex;
+  gap: 8px;
+  height: fit-content;
+  background: #ffffff;
+  padding: 2px;
+  border-left: 1.5px solid #000;
+  border-bottom: 1.5px solid #000;
+  padding-top: 0;
+}
+
+.box-btn {
+  width: 18px;
+  height: 18px;
+  padding: 0;
+
+  display: grid;
+  place-items: center;
+
+  border-radius: 50%;
+  border: 2px solid #000;
+  background: #fff;
+
+  line-height: 0;      /* 🔑 this matters */
+  box-sizing: border-box;
+
+  cursor: pointer;
+
+  box-shadow: 2px 2px 0 #000;
+  transition:
+    transform 80ms ease,
+    box-shadow 80ms ease;
+}
+
+.box-btn:active {
+  transform: translate(2px, 2px);
+  box-shadow: 0 0 0 #000;
+}
+
+.box-btn svg {
+  width: 9px;
+  height: 9px;
+  stroke: #000;
+  stroke-width: 1.5;
+  fill: none;
+  pointer-events: none;
+}
+
+.box-btn.close {
+  background: #e74c3c;
+}
+
+.box-btn.minimize {
+  background: #f1c40f;
+}
+
+.key-box.minimized {
+  width: 200px;
+  height: auto;
+}
+
+.box-btn.minimize::before {
+  content: "−";
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.key-box.minimized .box-btn.minimize::before {
+  content: "+";
+}
+
+/* default (expanded) */
+.key-box:not(.minimized) .box-btn.minimize {
+  background: #ffd400; /* yellow */
+}
+
+/* minimized state */
+.key-box.minimized .box-btn.minimize {
+  background: #3cff00; /* green */
+}
+
+.key-box.minimized .key-box-header {
+  background: #fff;
+}
+
+.key-box.minimized .key-box-body {
+  display: none;
+}
+
+.key-box.minimized .key-box-corner {
+  display: none;
+}
+
+.key-box.minimized {
+  position: fixed;
+  right: 20px;
+}
+
+.key-box.active {
+  display: block;
+  cursor: default;
+}
+
+.key-box.revealing {
+  animation:
+    box-border-fill 500ms ease forwards,
+    box-pop 200ms ease 500ms forwards;
+}
+
+.key-box.active,
+.key-box.expanded,
+.key-box.revealing {
+  opacity: 1;
+  transform: scale(1);
+}
+
+/* ---- Key box animations ---- */
+
+@keyframes box-border-fill {
+  from { clip-path: inset(0 100% 0 0); }
+  to   { clip-path: inset(0 0 0 0); }
+}
+
+@keyframes box-pop {
+  from { transform: scale(0.96); }
+  to   { transform: scale(1); }
+}
+
+/* ---- Key box content ---- */
+
+.key-box-content {
+  padding: 10px;
+  font-family: "Space Grotesk", sans-serif;
+}
+
+.key-box-corner {
+  position: absolute;
+  bottom: 4px;
+  right: 4px;
+  width: 20px;
+  height: 20px;
+
+  cursor: nwse-resize;
+  pointer-events: auto;
+
+  z-index: 2;
+}
+
+.key-box-corner * {
+  pointer-events: none;
+}
+
+/* three-line “grip” */
+.key-box-corner::before {
+  content: "";
+  position: absolute;
+  inset: 2px;
+
+  background:
+    linear-gradient(#000 0 0) top left / 100% 2px,
+    linear-gradient(#000 0 0) center left / 100% 2px,
+    linear-gradient(#000 0 0) bottom left / 100% 2px;
+
+  background-repeat: no-repeat;
+  opacity: 0.5;
+}
+
+.key-box-corner:hover::before {
+  opacity: 1;
+}
+
+/* ---- Color mapping ---- */
+
+.key-start  { color: #f39c12; }
+.key-women  { color: #e74c3c; }
+.key-pro    { color: #2ecc71; }
+.key-threes { color: #8e44ad; }
+
+/* =========================================================
+   BUTTON
+========================================================= */
+
+button,
+input {
+  font-family: inherit;
+  background: #fff;
+  border: 1px solid #000;
+  border-radius: 4px;
+  padding: 0.5rem 1rem;
+  transition: 500ms;
+}
+
+.dipped {
+  transform: translateY(5px);
+}
+
+/* =========================================================
+  KEY BOX BODIES // WOMEN // TIMELINE
+========================================================= */
+
+/* =========================================================
+   WOMEN’S TIMELINE (CLEAN + STRUCTURED)
+========================================================= */
+
+.womens-timeline {
+  position: relative;
+  width: 100%;
+  overflow-x: auto;
+  padding: 16px 8px 32px;
+
+  max-width: 260px;
+  transition: max-width 600ms cubic-bezier(.2,.8,.2,1);
+}
+
+/* baseline */
+.womens-timeline::after {
+  content: "";
+  position: absolute;
+  bottom: 12px;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background: #000;
+  opacity: 0.15;
+
+  max-width: 100%;
+}
+
+/* horizontal track */
+.timeline-track {
+  display: flex;
+  align-items: flex-end;
+  gap: 12px; /* base rhythm */
+  min-height: 120px;
+}
+
+/* =========================================================
+   TIMELINE ITEMS (single source of truth)
+========================================================= */
+
+.timeline-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-width: 48px;
+
+  opacity: 0;
+  transform: translateY(8px) scale(0.95);
+  transition:
+    opacity 400ms ease,
+    transform 400ms cubic-bezier(.2,.8,.2,1);
+}
+
+.timeline-item.revealed {
+  opacity: 1;
+  transform: translateY(0) scale(1);
+}
+
+/* =========================================================
+   GOLD YEARS
+========================================================= */
+
+.timeline-item.gold {
+  margin-right: 8px; /* tighter grouping */
+  transition-delay: var(--delay, 0ms);
+}
+
+.timeline-item.gold img {
+  width: 32px;
+  filter: drop-shadow(1px 1px 0 #000);
+}
+
+.timeline-item.gold .year {
+  margin-top: 6px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  font-family: "Space Grotesk", sans-serif;
+}
+
+/* =========================================================
+   NON-GOLD YEARS (interruptions)
+========================================================= */
+
+.timeline-item.nongold {
+  margin-left: 28px;
+  margin-right: 28px;
+  margin-top: 12px;
+}
+
+/* vertical tick */
+.timeline-item.nongold .tick {
+  width: 2px;
+  height: 18px;
+  background: #000;
+  transition-delay: var(--delay, 0ms);
+  opacity: 0;
+  transform: translateY(6px);
+}
+
+/* annotation */
+.timeline-item.nongold .note {
+  font-size: 0.75rem;
+  font-family: "Space Grotesk", sans-serif;
+  color: #444;
+  white-space: nowrap;
+}
+

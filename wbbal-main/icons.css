@@ -1,0 +1,264 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  background: #fff;
+  font-family: system-ui, sans-serif;
+}
+
+#icon-page {
+  width: 100vw;
+  height: 100vh;
+  display: grid;
+  place-items: center;
+}
+
+/* SVG container */
+#icons-svg {
+  width: 100%;
+  height: auto;
+  max-width: 1400px;
+}
+
+
+#bbal-components-bg {
+    fill: white;
+    stroke: black;
+    stroke-width: 4;
+}
+
+/* =========================
+   ICON INTERACTION STYLES
+========================= */
+
+.icon {
+  cursor: pointer;
+}
+
+.icon-art {
+  transition: fill 0.15s ease, stroke 0.15s ease;
+}
+
+.icon-label {
+  transition: fill 0.15s ease;
+}
+
+/* Hover */
+.icon:hover .icon-art {
+  fill: #ff9f1a;
+  stroke: #ff9f1a;
+}
+
+.icon:hover .icon-label {
+  fill: #ff9f1a;
+}
+
+/* Active / selected */
+.icon.is-active .icon-art {
+  fill: #7a4cff;
+  stroke: #7a4cff;
+}
+
+.icon.is-active .icon-label {
+  fill: #7a4cff;
+}
+
+#basketball-icon-art {
+  stroke: #ffffff;
+  stroke-width: 3;
+}
+#basketball-icon.icon:hover .icon-art{
+  stroke: #000;
+  fill: #ffffff;
+}
+
+#basketball-icon.icon.is-active .icon-art {
+  fill: #d97a0b;
+  stroke-width: 0;
+}
+
+#rules-icon.icon .icon-art#rules-icon-art-border {
+    fill: white;
+}
+
+#team-icon #team-border-art {
+    fill: white;
+    stroke: #000000;
+    stroke-width: 4;
+}
+#team-inside-details-art {
+    fill: black;
+}
+#team-icon.icon:hover #team-inside-details-art {
+    fill: #ff9f1a;
+}
+#team-icon.icon:hover #team-border-art {
+    stroke: #ff9f1a;
+}
+#team-icon.icon.is-active #team-inside-details-art {
+    fill: #7a4cff;
+    stroke-width: 0;
+}
+#team-icon.icon.is-active #team-border-art {
+    stroke: #7a4cff;
+}
+
+#league-icon #league-border-art {
+    fill: white;
+    stroke: #000000;
+    stroke-width: 4;
+}
+#league-icon.icon:hover #league-border-art {
+    stroke: #ff9f1a;
+}
+#league-icon.icon.is-active #league-border-art {
+    stroke: #7a4cff;
+}
+
+#events-icon .icon-art {
+    fill: white;
+    stroke: #000;
+    stroke-width: 4;
+}
+#events-icon.icon:hover .icon-art {
+    stroke: #ff9f1a;
+}
+#events-icon.icon.is-active .icon-art {
+    stroke: #7a4cff;
+}
+
+#player-icon .icon-art {
+    fill: white;
+    stroke: #000;
+    stroke-width: 2.5;
+}
+#player-icon .icon-art#player-inside-details-art {
+    fill: black;
+    stroke-width: 0;
+}
+#player-icon.icon:hover .icon-art {
+    stroke: #ff9f1a;
+}
+#player-icon.icon:hover .icon-art#player-inside-details-art {
+    fill: #ff9f1a;
+}
+#player-icon.icon.is-active .icon-art {
+    stroke: #7a4cff;
+}
+#player-icon.icon.is-active .icon-art#player-inside-details-art {
+    fill: #7a4cff;
+    stroke-width: 0;
+}
+
+#orgs-icon .icon-art {
+    fill: #000;
+    stroke: #000;
+    stroke-width: 3;
+}
+#orgs-icon .icon-art#orgs-inside-detail-art {
+    fill: white;
+    stroke-width: 3;
+}
+#orgs-icon.icon:hover .icon-art {
+    stroke: #ff9f1a;
+}
+#orgs-icon.icon:hover .icon-art {
+    fill: #ff9f1a;
+}
+#orgs-icon.icon.is-active .icon-art {
+    fill: #7a4cff;
+    stroke: #7a4cff;
+}
+
+#levels-icon-art.icon-art #levels-line {
+    fill:none;
+    stroke: #000000;
+    stroke-width: 4;
+}
+
+#levels-icon.icon:hover #levels-icon-art.icon-art #levels-line {
+    stroke: #ff9f1a;
+}
+#levels-icon.icon.is-active #levels-icon-art.icon-art #levels-line {
+    stroke: #7a4cff;
+}
+
+
+.icon--no-labels .icon-label {
+  display: none;
+}
+
+.org-detail {
+  display: block;
+}
+
+.icon--no-labels .icon-label {
+  display: none;
+}
+
+#fiba-org #fiba-org-container {
+    fill: white;
+    stroke: #000;
+    stroke-width: 4;
+}
+#fiba-org #fiba-description-labels {
+    fill: #000;
+    font-family: "vt323";
+    font-size: 28px;
+}
+#fiba-org #fiba-header {
+    fill: #000;
+    font-family: "vt323";
+    font-size: 28px;
+}
+#fiba-org #fiba-header #fiba-title-text.org-title-text {
+    fill: #fff;
+    font-family: "vt323";
+    font-size: 32px;
+}
+.org-icon-slot .icon {
+  cursor: pointer;
+}
+
+.org-icon-slot .icon-art#orgs-inside-detail-art {
+    fill: #ffffff;
+}
+
+.org-icon-slot .icon:active {
+  transform: translate(1px, 1px);
+}
+#fiba-icon-container {
+  fill: rgba(255,0,0,0.1);
+}
+
+.org-cluster {
+  display: none;
+}
+
+.org-cluster.is-active {
+  display: block;
+}
+
+.box {
+  fill: white;
+  stroke: black;
+  stroke-width: 3;
+}
+
+.box-label {
+  fill: black;
+  font-family: "VT323";
+  font-size: 20px;
+}
+
+.connecting-lines rect {
+  fill: black;
+}
+
+.connecting-lines circle {
+  fill: black;
+}
+
+.expanded-text {
+  fill: black;
+  font-size: 14px;
+}

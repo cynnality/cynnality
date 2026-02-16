@@ -1,0 +1,154 @@
+/* =========================
+   FOLDER — BASE STRUCTURE
+========================= */
+
+.folder {
+  visibility: visible;
+  pointer-events: auto;
+}
+
+.folder * {
+  pointer-events: auto;
+}
+
+.folder-bg {
+  fill: #ffffff;
+  stroke: #000000;
+  stroke-width: 4px;
+}
+
+.folder-header {
+  fill: #ffffff;
+  stroke: #000000;
+  stroke-width: 4px;
+  filter: drop-shadow(3px 3px 0 black);
+}
+
+.folder-title {
+  fill: #000;
+}
+
+.folder-title-text {
+  font-family: "VT323", monospace;
+  font-size: 42px;
+  letter-spacing: 4px;
+  fill: #fff;
+  pointer-events: none;
+}
+
+.expanded-folder-title-container {
+  pointer-events: none;
+}
+
+/* =========================
+   FOLDER MINIMIZER (NO STATES)
+========================= */
+
+.folder-minimizer {
+  fill: #ffffff;
+  stroke: #000000;
+  stroke-width: 3px;
+  pointer-events: auto;
+  filter: drop-shadow(3px 3px 0 black);
+}
+
+.folder-minimizer-icon {
+  fill: #000000;
+  pointer-events: none;
+}
+
+/* =========================
+   TEXT CONTAINER
+========================= */
+
+.expanded-view-text-container {
+  fill: #ffffff;
+  stroke: #000000;
+  stroke-width: 3px;
+  stroke-dasharray: 3;
+}
+
+/* ForeignObject text styling */
+.olympic-folder-description {
+  font-family: "Contrail One", sans-serif;
+  font-size: 22px;
+  color: #000000;
+  padding: 12px;
+  line-height: 1.4;
+}
+
+/* =========================
+   CHIP TEMPLATE (BASE ONLY)
+========================= */
+
+.chip {
+  pointer-events: auto;
+  cursor: pointer;
+}
+
+.chip-bg {
+  fill: #ffffff;
+}
+
+.chip-black-border,
+.chip-white-border {
+  fill: none;
+  stroke: #000000;
+  stroke-width: 1.2;
+}
+
+.chip-header-top-line,
+.chip-header-bottom-line {
+  stroke: #000000;
+  stroke-width: 1.2;
+}
+
+.chip-body-containers,
+.chip-country-container,
+.chip-year-container {
+  fill: #ffffff;
+}
+
+.chip-city,
+.chip-header-summer-games-text,
+.chip-country,
+.chip-year {
+  font-family: "VT323", monospace;
+  fill: #000000;
+  text-anchor: middle;
+}
+
+.chip-city {
+  font-size: 18px;
+}
+
+.chip-header-summer-games-text {
+  font-size: 10px;
+}
+
+.chip-country {
+  font-size: 12px;
+}
+
+.chip-year {
+  font-size: 14px;
+}
+
+/* =========================
+   MINI CHIP BASE
+========================= */
+
+.mini-chips {
+  fill: #ffffff;
+  stroke: #000000;
+  stroke-width: 3px;
+  filter: drop-shadow(2px 2px 0 black);
+}
+
+/* =========================
+   OLYMPIC FOLDER MINIMIZE
+========================= */
+
+#olympic-folder-wrapper.is-minimized > *:not(#olympic-folder-header-container):not(#olympic-folder-title-container):not(#olympic-folder-minimizer):not(#olympics-folder-title-text):not(#olympic-folder-minimizer-icon) {
+  display: none;
+}

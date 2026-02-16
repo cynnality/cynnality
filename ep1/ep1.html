@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Xanh+Mono:ital@0;1&display=swap" rel="stylesheet">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&family=UoqMunThenKhung&display=swap" rel="stylesheet">
+
+  <title>///</title>
+  <link rel="stylesheet" href="ep1.css" />
+  <link rel="stylesheet" href="style.css" />
+  <script src="ep1.js" defer></script>
+  <script src="ep1_keys.js" defer></script>
+  <script src="ob-boxes.js" defer></script> 
+  <script src="connections.js" defer></script>
+
+</head>
+
+<body>
+
+<svg
+  id="connections-layer"
+  xmlns="http://www.w3.org/2000/svg"
+  width="100%"
+  height="100%"
+  viewBox="0 0 1920 1080"
+  preserveAspectRatio="none"
+></svg>
+
+<svg id="connections-layer"></svg>
+
+<div class="us-context-rail"></div>
+
+<div class="q-toolbar">
+  
+  <div class="q-circle template" data-type="question">?</div>
+
+  <div class="q-toggle row-box-toggle active">
+    <span>LINK</span>
+  </div>
+
+</div>
+
+<div class="ob-circle start"></div>
+<div class="ob-circle women"></div>
+<div class="ob-circle pro"></div>
+<div class="ob-circle threes"></div>
+
+<div class="search-bar" data-q="q1">search text here</div>
+<div class="search-bar" data-q="q2">search text here</div>
+
+  <div class="descrip-box">
+    <div class="descrip-text">
+      <p>
+      </p>
+    </div>
+    <div class="linebr"></div>
+  </div>
+
+  <div class="pane pane-ob" style="top: 96px; z-index: 23; left: 91px;">
+    <div class="title"><h1>OLYMPIC BASKETBALL</h1></div>
+      <div class="content">
+      <div class="panetext ob_sub">
+  
+        <div class="ob_wrapper">
+          <div class="ob_row start">
+            <div class="ob_label start">
+              <p>START</p>
+            </div>
+            <div class="ob_detail start">
+              <p>1936 BERLIN SUMMER GAMES // GERMANY</p>
+            </div>
+          </div>
+          <div class="ob_row women">
+            <div class="ob_label women">
+              <p>WOMEN</p>
+            </div>
+            <div class="ob_detail women">
+              <p>1976 MONTREAL SUMMER GAMES // CANADA</p>
+            </div>
+          </div>
+          <div class="ob_row pro">
+            <div class="ob_label pro">
+              <p>PROS</p>
+            </div>
+            <div class="ob_detail pro">
+              <p>1992 BARCELONA SUMMER GAMES // SPAIN</p>
+            </div>
+          </div>
+          <div class="ob_row threes">
+            <div class="ob_label threes">
+              <p>3X3</p>
+            </div>
+            <div class="ob_detail threes">
+              <p>2020 TOKYO SUMMER GAMES // JAPAN</p>
+            </div>
+          </div>
+        </div>
+      
+
+      </div>
+  </div>
+  </div>
+  
+ <div class="venn-trigger"></div>
+
+<!--
+<div class="key-box key-start">
+  <div class="key-box-header">
+    <div class="key-box-title">START</div>
+    <div class="key-box-controls">
+      <button class="box-btn close">
+        <svg viewBox="0 0 10 10" aria-hidden="true">
+          <path d="M1 1 L9 9 M9 1 L1 9" />
+        </svg>
+      </button>
+
+      <button class="box-btn minimize">
+        <svg viewBox="0 0 10 10" aria-hidden="true">
+          <rect x="1" y="4.5" width="8" height="1" />
+        </svg>
+      </button>
+    </div>
+  </div>
+  <div class="key-box-body">
+    <p>adding a new sport to the olympics</p>
+  </div>
+  <div class="key-box-corner"></div>
+</div>
+-->
+
+<div class="key-box key-women">
+  <div class="key-box-header">
+    <div class="key-box-title">WOMEN</div>
+    <div class="key-box-controls">
+      <button class="box-btn close">
+        <svg viewBox="0 0 10 10" aria-hidden="true">
+          <path d="M1 1 L9 9 M9 1 L1 9" />
+        </svg>
+      </button>
+
+      <button class="box-btn minimize">
+        <svg viewBox="0 0 10 10" aria-hidden="true">
+          <rect x="1" y="4.5" width="8" height="1" />
+        </svg>
+      </button>
+    </div>
+  </div>
+  <div class="key-box-body">
+    <div class="womens-timeline">
+      <div class="timeline-track">
+
+        <div class="timeline-item nongold" data-year="1976">
+          <span class="tick"></span>
+          <span class="note">TEAM U.S.A. won silver</span>
+        </div>
+      
+        <div class="timeline-item nongold" data-year="1980">
+          <span class="tick"></span>
+          <span class="note">TEAM U.S.A. boycotted</span>
+        </div>
+
+        <div class="timeline-item gold">
+          <img src="gold-medal.png" alt="Gold Medal">
+          <span class="year">1984</span>
+        </div>
+
+        <div class="timeline-item gold">
+          <img src="gold-medal.png" alt="Gold Medal">
+          <span class="year">1988</span>
+        </div>
+
+        <div class="timeline-item nongold" data-year="1992">
+          <span class="tick"></span>
+          <span class="note">TEAM U.S.A. won bronze. CHINA won silver. UNIFIED TEAM of former soviet nations won gold</span>
+        </div>
+
+        <div class="timeline-item gold">
+          <img src="gold-medal.png" alt="Gold Medal">
+          <span class="year">1996</span>
+        </div>
+
+        <div class="timeline-item gold">
+          <img src="gold-medal.png" alt="Gold Medal">
+          <span class="year">2000</span>
+        </div>
+
+        <div class="timeline-item gold">
+          <img src="gold-medal.png" alt="Gold Medal">
+          <span class="year">2004</span>
+        </div>
+
+        <div class="timeline-item gold">
+          <img src="gold-medal.png" alt="Gold Medal">
+          <span class="year">2008</span>
+        </div>
+
+        <div class="timeline-item gold">
+          <img src="gold-medal.png" alt="Gold Medal">
+          <span class="year">2012</span>
+        </div>
+
+        <div class="timeline-item gold">
+          <img src="gold-medal.png" alt="Gold Medal">
+          <span class="year">2016</span>
+        </div>
+
+        <div class="timeline-item gold">
+          <img src="gold-medal.png" alt="Gold Medal">
+          <span class="year">2020</span>
+        </div>
+
+        <div class="timeline-item gold">
+          <img src="gold-medal.png" alt="Gold Medal">
+          <span class="year">2024</span>
+        </div>
+    </div>
+
+  </div>
+  <div class="key-box-corner"></div>
+</div>
+
+<div class="key-box key-pro">
+  <div class="key-box-header">
+    <div class="key-box-title">PROS</div>
+    <div class="key-box-controls">
+      <button class="box-btn close">
+        <svg viewBox="0 0 10 10" aria-hidden="true">
+          <path d="M1 1 L9 9 M9 1 L1 9" />
+        </svg>
+      </button>
+
+      <button class="box-btn minimize">
+        <svg viewBox="0 0 10 10" aria-hidden="true">
+          <rect x="1" y="4.5" width="8" height="1" />
+        </svg>
+      </button>
+    </div>
+  </div>
+  <div class="key-box-body">
+    <p>allowing professional players to compete at the olympics</p>
+  </div>
+  <div class="key-box-corner"></div>
+</div>
+
+<div class="key-box key-threes">
+  <div class="key-box-header">
+    <div class="key-box-title">3X3</div>
+    <div class="key-box-controls">
+      <button class="box-btn close">
+        <svg viewBox="0 0 10 10" aria-hidden="true">
+          <path d="M1 1 L9 9 M9 1 L1 9" />
+        </svg>
+      </button>
+
+      <button class="box-btn minimize">
+        <svg viewBox="0 0 10 10" aria-hidden="true">
+          <rect x="1" y="4.5" width="8" height="1" />
+        </svg>
+      </button>
+    </div>
+  </div>
+  <div class="key-box-body">
+    <p>adding a new variation of a sport to the olympics</p>
+  </div>
+  <div class="key-box-corner"></div>
+</div>
+
+<!--
+  <div class="pane" style="top: 79px; width: 639px; height: 40px; z-index: 2; left: 142px;">
+    <div class="title"><h1>TITLE TEXT</h1></div>
+    <div class="content">
+      <div class="panetext">
+        <h2>SUB-TITLE</h2>
+        <div class="opener">
+
+      </div>
+
+      <div class="panetext">
+        <h3>little text here</h3>
+
+      </div>
+
+      <div class="panetext">
+        <h3>some more little text</h3>
+      </div>
+      <div class="panetext">
+        <h3>and even more! </h3>
+      </div>
+  </div>
+  </div>
+  </div>
+
+  <div class="intent">
+    <a href="../index.html" class="button-link">
+      <button>go home</button>
+    </a>
+  </div> -->
+</body>
+
+</html>

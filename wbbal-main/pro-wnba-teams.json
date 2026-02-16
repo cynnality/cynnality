@@ -1,0 +1,891 @@
+{
+  "Las Vegas Aces": {
+    "isOriginalTeam": false,
+    "isActive": true,
+    "teamCode": "LVA_ACES",
+    "teamName": "Aces",
+    "teamNameCity": "Las Vegas",
+    "conference": "west",
+    "favorite": true,
+    "defaultContent": {
+      "img": "/assets/logos-wnba/las-vegas-aces-logo.svg",
+      "alt": "Las Vegas Aces Logo",
+      "name": "Las Vegas Aces"
+    },
+    "colors": {
+      "color1": "#BA0C2F",
+      "color2": "#85714D",
+      "color3": "#8A8D8F"
+    },
+    "looks": {
+      "slug": "las-vegas-aces",
+      "courtColors": {
+        "main": "#BB0C2F",
+        "lines": "#8A734C",
+        "accent": "#8B8F92"
+      }
+    },
+    "founded": 2018,
+    "arena": "Michelob Ultra Arena",
+    "city": "Las Vegas, Nevada",
+    "chipCount": 3,
+    "chipYear": [
+      2022,
+      2023,
+      2025
+    ],
+    "formerTeam": "SA_STARS",
+    "lineage": [
+      {
+        "teamCode": "SA_STARS",
+        "years": [
+          2014,
+          2017
+        ]
+      },
+      {
+        "teamCode": "SA_SILVER_STARS",
+        "years": [
+          2003,
+          2013
+        ]
+      },
+      {
+        "teamCode": "UTA_STARZZ",
+        "years": [
+          1997,
+          2002
+        ]
+      }
+    ]
+  },
+  "Atlanta Dream": {
+    "isOriginalTeam": false,
+    "isActive": true,
+    "teamCode": "ATL_DREAM",
+    "teamName": "Dream",
+    "teamNameCity": "Atlanta",
+    "conference": "east",
+    "favorite": true,
+    "defaultContent": {
+      "img": "/assets/logos-wnba/atlanta-dream-logo.svg",
+      "alt": "Atlanta Dream Logo",
+      "name": "Atlanta Dream"
+    },
+    "colors": {
+      "color1": "#418FDE",
+      "color2": "#C8102E",
+      "color3": "#9EA2A2"
+    },
+    "looks": {
+      "slug": "atlanta-dream",
+      "courtColors": {
+        "main": "#E03C31",
+        "lines": "#F5A623",
+        "accent": "#CDD8E5"
+      }
+    },
+    "founded": 2008,
+    "arena": "Gateway Center Arena",
+    "city": "College Park, Georgia",
+    "chipCount": 0,
+    "chipYear": []
+  },
+  "Indiana Fever": {
+    "isOriginalTeam": false,
+    "isActive": true,
+    "teamCode": "IND_FEVER",
+    "teamName": "Fever",
+    "teamNameCity": "Indiana",
+    "conference": "east",
+    "favorite": false,
+    "defaultContent": {
+      "img": "/assets/logos-wnba/indiana-fever-logo.svg",
+      "alt": "Indiana Fever Logo",
+      "name": "Indiana Fever"
+    },
+    "colors": {
+      "color1": "#041E42",
+      "color2": "#FFCD00",
+      "color3": "#C8102E"
+    },
+    "looks": {
+      "slug": "indiana-fever",
+      "courtColors": {
+        "main": "#041E42",
+        "lines": "#C6102E",
+        "accent": "#FFCD00"
+      }
+    },
+    "founded": 2000,
+    "arena": "Gainbridge Fieldhouse",
+    "city": "Indianapolis, Indiana",
+    "chipCount": 1,
+    "chipYear": [
+      2012
+    ]
+  },
+  "New York Liberty": {
+    "isOriginalTeam": true,
+    "isActive": true,
+    "teamCode": "NYL_LIBERTY",
+    "teamName": "Liberty",
+    "teamNameCity": "New York",
+    "conference": "east",
+    "favorite": false,
+    "defaultContent": {
+      "img": "/assets/logos-wnba/new-york-liberty-logo.svg",
+      "alt": "New York Liberty Logo",
+      "name": "New York Liberty"
+    },
+    "colors": {
+      "color1": "#6ECEB2",
+      "color2": "#FF6720",
+      "color3": "#003DA5"
+    },
+    "looks": {
+      "slug": "new-york-liberty",
+      "courtColors": {
+        "main": "#0059B8",
+        "lines": "#6FCEB1",
+        "accent": "#FF661F"
+      }
+    },
+    "founded": 1997,
+    "arena": "Barclays Center",
+    "city": "Brooklyn, New York",
+    "chipCount": 1,
+    "chipYear": [
+      2024
+    ]
+  },
+  "Minnesota Lynx": {
+    "isOriginalTeam": false,
+    "isActive": true,
+    "teamCode": "MIN_LYNX",
+    "teamName": "Lynx",
+    "teamNameCity": "Minnesota",
+    "conference": "west",
+    "favorite": false,
+    "defaultContent": {
+      "img": "/assets/logos-wnba/minnesota-lynx-logo.svg",
+      "alt": "Minnesota Lynx Logo",
+      "name": "Minnesota Lynx"
+    },
+    "colors": {
+      "color1": "#236192",
+      "color2": "#78BE21",
+      "color3": "#0C2340"
+    },
+    "looks": {
+      "slug": "minnesota-lynx",
+      "courtColors": {
+      "main": "#236190",
+      "lines": "#0C2440",
+      "accent": "#78BF22"
+      }
+    },
+    "founded": 1999,
+    "arena": "Target Center",
+    "city": "Minneapolis, Minnesota",
+    "chipCount": 4,
+    "chipYear": [
+      2011,
+      2013,
+      2015,
+      2017
+    ]
+  },
+  "Phoenix Mercury": {
+    "isOriginalTeam": true,
+    "isActive": true,
+    "teamCode": "PHX_MERCURY",
+    "teamName": "Mercury",
+    "teamNameCity": "Phoenix",
+    "conference": "west",
+    "favorite": true,
+    "defaultContent": {
+      "img": "/assets/logos-wnba/phoenix-mercury-logo.svg",
+      "alt": "Phoenix Mercury Logo",
+      "name": "Phoenix Mercury"
+    },
+    "colors": {
+      "color1": "#CB6015",
+      "color2": "#211747",
+      "color3": "#B1B3B3"
+    },
+    "looks": {
+      "slug": "phoenix-mercury",
+      "courtColors": {
+      "main": "#201645",
+      "lines": "#CB6115",
+      "accent": "#B2B3B3"
+    }
+    },
+    "founded": 1997,
+    "arena": "PHX Arena",
+    "city": "Phoenix, Arizona",
+    "chipCount": 3,
+    "chipYear": [
+      2007,
+      2009,
+      2014
+    ]
+  },
+  "Washington Mystics": {
+    "isOriginalTeam": false,
+    "isActive": true,
+    "teamCode": "WAS_MYSTICS",
+    "teamName": "Mystics",
+    "teamNameCity": "Washington",
+    "conference": "east",
+    "favorite": false,
+    "defaultContent": {
+      "img": "/assets/logos-wnba/washington-mystics-logo.svg",
+      "alt": "Washington Mystics Logo",
+      "name": "Washington Mystics"
+    },
+    "colors": {
+      "color1": "#0C2340",
+      "color2": "#C8102E",
+      "color3": "#8D9093"
+    },
+    "looks": {
+      "slug": "washington-mystics",
+      "courtColors": {
+        "main": "#C8102E",
+        "lines": "#0C2340",
+        "accent": "#8D9093"
+      }
+    },
+    "founded": 1998,
+    "arena": "CareFirst Arena",
+    "city": "Washington, D.C.",
+    "chipCount": 1,
+    "chipYear": [
+      2019
+    ]
+  },
+  "Chicago Sky": {
+    "isOriginalTeam": false,
+    "isActive": true,
+    "teamCode": "CHI_SKY",
+    "teamName": "Sky",
+    "teamNameCity": "Chicago",
+    "conference": "east",
+    "favorite": false,
+    "defaultContent": {
+      "img": "/assets/logos-wnba/chicago-sky-logo.svg",
+      "alt": "Chicago Sky Logo",
+      "name": "Chicago Sky"
+    },
+    "colors": {
+      "color1": "#FFCD00",
+      "color2": "#418FDE",
+      "color3": "#B1B3B3"
+    },
+    "looks": {
+      "slug": "chicago-sky",
+      "courtColors": {
+        "main": "#408FDD",
+        "lines": "#FFCC00",
+        "accent": "#B2B3B3"
+      }
+    },
+    "founded": 2005,
+    "arena": "Wintrust Arena",
+    "city": "Chicago, Illinois",
+    "chipCount": 1,
+    "chipYear": [
+      2021
+    ]
+  },
+  "Los Angeles Sparks": {
+    "isOriginalTeam": true,
+    "isActive": true,
+    "teamCode": "LOS_SPARKS",
+    "teamName": "Sparks",
+    "teamNameCity": "Los Angeles",
+    "conference": "west",
+    "favorite": false,
+    "defaultContent": {
+      "img": "/assets/logos-wnba/los-angeles-sparks-logo.svg",
+      "alt": "Los Angeles Sparks Logo",
+      "name": "Los Angeles Sparks"
+    },
+    "colors": {
+      "color1": "#702F8A",
+      "color2": "#FFC72C",
+      "color3": "#00B398"
+    },
+    "looks": {
+      "slug": "los-angeles-sparks",
+      "courtColors": {
+      "main": "#6F2F89",
+      "lines": "#FFC72E",
+      "accent": "#00B398"
+      }
+    },
+    "founded": 1997,
+    "arena": "Crypto.com Arena",
+    "city": "Los Angeles, California",
+    "chipCount": 3,
+    "chipYear": [
+      2001,
+      2002,
+      2016
+    ]
+  },
+  "Seattle Storm": {
+    "isOriginalTeam": false,
+    "isActive": true,
+    "teamCode": "SEA_STORM",
+    "teamName": "Storm",
+    "teamNameCity": "Seattle",
+    "conference": "west",
+    "favorite": true,
+    "defaultContent": {
+      "img": "/assets/logos-wnba/seattle-storm-logo.svg",
+      "alt": "Seattle Storm Logo",
+      "name": "Seattle Storm"
+    },
+    "colors": {
+      "color1": "#FBE122",
+      "color2": "#2C5234",
+      "color3": "#78BE21"
+    },
+    "looks": {
+      "slug": "seattle-storm",
+      "courtColors": {
+        "main": "#2B5234",
+        "lines": "#FAE121",
+        "accent": "#78BE21"
+      }
+    },
+    "founded": 2000,
+    "arena": "Climate Pledge Arena",
+    "city": "Seattle, Washington",
+    "chipCount": 4,
+    "chipYear": [
+      2004,
+      2010,
+      2018,
+      2020
+    ]
+  },
+  "Connecticut Sun": {
+    "isOriginalTeam": false,
+    "isActive": true,
+    "teamCode": "CON_SUN",
+    "teamName": "Sun",
+    "teamNameCity": "Connecticut",
+    "conference": "west",
+    "favorite": false,
+    "defaultContent": {
+      "img": "/assets/logos-wnba/connecticut-sun-logo.svg",
+      "alt": "Connecticut Sun Logo",
+      "name": "Connecticut Sun"
+    },
+    "colors": {
+      "color1": "#DC4405",
+      "color2": "#041E42",
+      "color3": "#FFC72C"
+    },
+    "looks": {
+      "slug": "connecticut-sun",
+      "courtColors": {
+        "main": "#DC4504",
+        "lines": "#041E43",
+        "accent": "#FFC72E"
+      }
+    },
+    "founded": 2003,
+    "arena": "Mohegan Sun Arena",
+    "city": "Uncasville, Connecticut",
+    "chipCount": 0,
+    "chipYear": [],
+    "formerTeam": "ORL_MIRACLE",
+    "lineage": [
+      {
+        "teamCode": "ORL_MIRACLE",
+        "years": [
+          1999,
+          2002
+        ]
+      }
+    ]
+  },
+  "Golden State Valkyries": {
+    "isOriginalTeam": false,
+    "isActive": true,
+    "teamCode": "GSV_VALKYRIES",
+    "teamName": "Valkyries",
+    "teamNameCity": "Golden State",
+    "conference": "west",
+    "favorite": false,
+    "defaultContent": {
+      "img": "/assets/logos-wnba/golden-state-valkyries-logo.svg",
+      "alt": "Golden State Valkyries Logo",
+      "name": "Golden State Valkyries"
+    },
+    "colors": {
+      "color1": "#AD96DC",
+      "color2": "#B9975B",
+      "color3": "#010101"
+    },
+    "looks": {
+      "slug": "golden-state-valkyries",
+      "courtColors": {
+        "main": "#AF98DD",
+        "lines": "#B9965B",
+        "accent": "#000000"
+      }
+    },
+    "founded": 2025,
+    "arena": "Chase Center",
+    "city": "San Francisco, California",
+    "chipCount": 0,
+    "chipYear": []
+  },
+  "Dallas Wings": {
+    "isOriginalTeam": false,
+    "isActive": true,
+    "teamCode": "DAL_WINGS",
+    "teamName": "Wings",
+    "teamNameCity": "Dallas",
+    "conference": "west",
+    "favorite": false,
+    "defaultContent": {
+      "img": "/assets/logos-wnba/dallas-wings-logo.svg",
+      "alt": "Dallas Wings Logo",
+      "name": "Dallas Wings"
+    },
+    "colors": {
+      "color1": "#C4D600",
+      "color2": "#0C2340",
+      "color3": "#00A9E0"
+    },
+    "looks": {
+      "slug": "dallas-wings",
+      "courtColors": {
+        "main": "#C4D600",
+        "lines": "#0C2440",
+        "accent": "#00A8E0"
+      }
+    },
+    "founded": 2016,
+    "arena": "College Park Center",
+    "city": "Arlington, Texas",
+    "chipCount": 0,
+    "chipYear": [],
+    "formerTeam": "TUL_SHOCK",
+    "lineage": [
+      {
+        "teamCode": "TUL_SHOCK",
+        "years": [
+          2010,
+          2015
+        ]
+      },
+      {
+        "teamCode": "DET_SHOCK",
+        "years": [
+          1998,
+          2009
+        ]
+      }
+    ]
+  },
+  "Charlotte Sting": {
+    "isOriginalTeam": true,
+    "isActive": false,
+    "teamCode": "CHA_STING",
+    "teamName": "Sting",
+    "teamNameCity": "Charlotte",
+    "conference": "east",
+    "defaultContent": {
+      "img": "/assets/logos-wnba/charlotte-sting-logo.svg",
+      "alt": "Charlotte Sting Logo",
+      "name": "Charlotte Sting"
+    },
+    "colors": {
+      "color1": "#00778B",
+      "color2": "#280071",
+      "color3": "#DC4405"
+    },
+    "looks": {
+      "slug": "charlotte-sting",
+      "courtColors": {
+        "main": "#00778B",
+        "lines": "#280071",
+        "accent": "#DC4405"
+      }
+    },
+    "founded": 1997,
+    "foldedYear": 2006,
+    "city": "Charlotte, North Carolina",
+    "chipCount": 0,
+    "chipYear": []
+  },
+  "Cleveland Rockers": {
+    "isOriginalTeam": true,
+    "isActive": false,
+    "teamCode": "CLE_ROCKERS",
+    "teamName": "Rockers",
+    "teamNameCity": "Cleveland",
+    "conference": "east",
+    "defaultContent": {
+      "img": "/assets/logos-wnba/cleveland-rockers-logo.svg",
+      "alt": "Cleveland Rockers Logo",
+      "name": "Cleveland Rockers"
+    },
+    "colors": {
+      "color1": "#009FDF",
+      "color2": "#8D9093",
+      "color3": "#DC4405"
+    },
+    "looks": {
+      "slug": "cleveland-rockers",
+      "courtColors": {
+        "main": "#009FDF",
+        "lines": "#8D9093",
+        "accent": "#DC4405"
+      }
+    },
+    "founded": 1997,
+    "foldedYear": 2003,
+    "city": "Cleveland, Ohio",
+    "chipCount": 0,
+    "chipYear": []
+  },
+  "Houston Comets": {
+    "isOriginalTeam": true,
+    "isActive": false,
+    "teamCode": "HOU_COMETS",
+    "teamName": "Comets",
+    "teamNameCity": "Houston",
+    "conference": "west",
+    "defaultContent": {
+      "img": "/assets/logos-wnba/houston-comets-logo.svg",
+      "alt": "Houston Comets Logo",
+      "name": "Houston Comets"
+    },
+    "colors": {
+      "color1": "#BA0C2F",
+      "color2": "#041E42",
+      "color3": "#8D9093"
+    },
+    "looks": {
+      "slug": "houston-comets",
+      "courtColors": {
+        "main": "#BA0C2F",
+        "lines": "#041E42",
+        "accent": "#8D9093"
+      }
+    },
+    "founded": 1997,
+    "foldedYear": 2008,
+    "city": "Houston, Texas",
+    "chipCount": 4,
+    "chipYear": [
+      1997,
+      1998,
+      1999,
+      2000
+    ]
+  },
+  "Miami Sol": {
+    "isOriginalTeam": false,
+    "isActive": false,
+    "teamCode": "MIA_SOL",
+    "teamName": "Sol",
+    "teamNameCity": "Miami",
+    "conference": "east",
+    "defaultContent": {
+      "img": "/assets/logos-wnba/miami-sol-logo.svg",
+      "alt": "Miami Sol Logo",
+      "name": "Miami Sol"
+    },
+    "colors": {
+      "color1": "#FB9500",
+      "color2": "#A6192E",
+      "color3": "#010101"
+    },
+    "looks": {
+      "slug": "miami-sol",
+      "courtColors": {
+        "main": "#FB9500",
+        "lines": "#A6192E",
+        "accent": "#010101"
+      }
+    },
+    "founded": 2000,
+    "foldedYear": 2002,
+    "city": "Miami, Florida",
+    "chipCount": 0,
+    "chipYear": []
+  },
+  "Portland Fire": {
+    "isOriginalTeam": false,
+    "isActive": false,
+    "teamCode": "POR_FIRE",
+    "teamName": "Fire",
+    "teamNameCity": "Portland",
+    "conference": "west",
+    "defaultContent": {
+      "img": "/assets/logos-wnba/portland-fire-logo.svg",
+      "alt": "Portland Fire Logo",
+      "name": "Portland Fire"
+    },
+    "colors": {
+      "color1": "#C8102E",
+      "color2": "#010101",
+      "color3": "#896C4C"
+    },
+    "looks": {
+      "slug": "portland-fire",
+      "courtColors": {
+        "main": "#C8102E",
+        "lines": "#010101",
+        "accent": "#896C4C"
+      }
+    },
+    "founded": 2000,
+    "foldedYear": 2002,
+    "city": "Portland, Oregon",
+    "chipCount": 0,
+    "chipYear": []
+  },
+  "Sacramento Monarchs": {
+    "isOriginalTeam": true,
+    "isActive": false,
+    "teamCode": "SAC_MONARCHS",
+    "teamName": "Monarchs",
+    "teamNameCity": "Sacramento",
+    "conference": "west",
+    "defaultContent": {
+      "img": "/assets/logos-wnba/sacramento-monarchs-logo.svg",
+      "alt": "Sacramento Monarchs Logo",
+      "name": "Sacramento Monarchs"
+    },
+    "colors": {
+      "color1": "#753BBD",
+      "color2": "#BA0C2F",
+      "color3": "#8D9093"
+    },
+    "looks": {
+      "slug": "sacramento-monarchs",
+      "courtColors": {
+        "main": "#753BBD",
+        "lines": "#BA0C2F",
+        "accent": "#8D9093"
+      }
+    },
+    "founded": 1997,
+    "foldedYear": 2009,
+    "city": "Sacramento, California",
+    "chipCount": 1,
+    "chipYear": [
+      2005
+    ]
+  },
+  "Detroit Shock": {
+    "isOriginalTeam": false,
+    "isActive": false,
+    "teamCode": "DET_SHOCK",
+    "teamName": "Shock",
+    "teamNameCity": "Detroit",
+    "conference": "east",
+    "defaultContent": {
+      "img": "/assets/logos-wnba/detroit-shock-logo.svg",
+      "alt": "Detroit Shock Logo",
+      "name": "Detroit Shock"
+    },
+    "colors": {
+      "color1": "#FFA400",
+      "color2": "#006271",
+      "color3": "#9D2235"
+    },
+    "looks": {
+      "slug": "detroit-shock",
+      "courtColors": {
+        "main": "#FFA400",
+        "lines": "#006271",
+        "accent": "#9D2235"
+      }
+    },
+    "founded": 1998,
+    "relocatedYear": 2009,
+    "relocatedTo": "TUL_SHOCK",
+    "city": "Auburn Hills, Michigan",
+    "chipCount": 3,
+    "chipYear": [
+      2003,
+      2006,
+      2008
+    ]
+  },
+  "Tulsa Shock": {
+    "isOriginalTeam": false,
+    "isActive": false,
+    "teamCode": "TUL_SHOCK",
+    "teamName": "Shock",
+    "teamNameCity": "Tulsa",
+    "conference": "west",
+    "defaultContent": {
+      "img": "/assets/logos-wnba/tulsa-shock-logo.svg",
+      "alt": "Tulsa Shock Logo",
+      "name": "Tulsa Shock"
+    },
+    "colors": {
+      "color1": "#A6192E",
+      "color2": "#FFB81C",
+      "color3": "#010101"
+    },
+    "looks": {
+      "slug": "tulsa-shock",
+      "courtColors": {
+        "main": "#A6192E",
+        "lines": "#FFB81C",
+        "accent": "#010101"
+      }
+    },
+    "founded": 2010,
+    "formerTeam": "DET_SHOCK",
+    "relocatedYear": 2015,
+    "relocatedTo": "DAL_WINGS",
+    "city": "Tulsa, Oklahoma",
+    "chipCount": 0,
+    "chipYear": []
+  },
+  "Orlando Miracle": {
+    "isOriginalTeam": false,
+    "isActive": false,
+    "teamCode": "ORL_MIRACLE",
+    "teamName": "Miracle",
+    "teamNameCity": "Orlando",
+    "conference": "east",
+    "defaultContent": {
+      "img": "/assets/logos-wnba/orlando-miracle-logo.svg",
+      "alt": "Orlando Miracle Logo",
+      "name": "Orlando Miracle"
+    },
+    "colors": {
+      "color1": "#0057B7",
+      "color2": "#DC4405",
+      "color3": "#8D9093"
+    },
+    "looks": {
+      "slug": "orlando-miracle",
+      "courtColors": {
+        "main": "#0057B7",
+        "lines": "#DC4405",
+        "accent": "#8D9093"
+      }
+    },
+    "founded": 1999,
+    "relocatedYear": 2002,
+    "relocatedTo": "CON_SUN",
+    "city": "Orlando, Florida",
+    "chipCount": 0,
+    "chipYear": []
+  },
+  "Utah Starzz": {
+    "isOriginalTeam": true,
+    "isActive": false,
+    "teamCode": "UTA_STARZZ",
+    "teamName": "Starzz",
+    "teamNameCity": "Utah",
+    "conference": "west",
+    "defaultContent": {
+      "img": "/assets/logos-wnba/utah-starzz-logo.svg",
+      "alt": "Utah Starzz Logo",
+      "name": "Utah Starzz"
+    },
+    "colors": {
+      "color1": "#753BBD",
+      "color2": "#00A9E0",
+      "color3": "#006271"
+    },
+    "looks": {
+      "slug": "utah-starzz",
+      "courtColors": {
+        "main": "#753BBD",
+        "lines": "#00A9E0",
+        "accent": "#006271"
+      }
+    },
+    "founded": 1997,
+    "relocatedYear": 2002,
+    "relocatedTo": "SA_SILVER_STARS",
+    "city": "Salt Lake City, Utah",
+    "chipCount": 0,
+    "chipYear": []
+  },
+  "San Antonio Silver Stars": {
+    "isOriginalTeam": false,
+    "isActive": false,
+    "teamCode": "SA_SILVER_STARS",
+    "teamName": "Silver Stars",
+    "teamNameCity": "San Antonio",
+    "conference": "west",
+    "defaultContent": {
+      "img": "/assets/logos-wnba/san-antonio-silver-stars-logo.svg",
+      "alt": "San Antonio Silver Stars Logo",
+      "name": "San Antonio Silver Stars"
+    },
+    "colors": {
+      "color1": "#010101",
+      "color2": "#FFFFFF",
+      "color3": "#8D9093"
+    },
+    "looks": {
+      "slug": "san-antonio-silver-stars",
+      "courtColors": {
+        "main": "#010101",
+        "lines": "#FFFFFF",
+        "accent": "#8D9093"
+      }
+    },
+    "founded": 2003,
+    "formerTeam": "UTA_STARZZ",
+    "relocatedYear": 2013,
+    "relocatedTo": "SA_STARS",
+    "city": "San Antonio, Texas",
+    "chipCount": 0,
+    "chipYear": []
+  },
+  "San Antonio Stars": {
+    "isOriginalTeam": false,
+    "isActive": false,
+    "teamCode": "SA_STARS",
+    "teamName": "Stars",
+    "teamNameCity": "San Antonio",
+    "conference": "west",
+    "defaultContent": {
+      "img": "/assets/logos-wnba/san-antonio-stars-logo.svg",
+      "alt": "San Antonio Stars Logo",
+      "name": "San Antonio Stars"
+    },
+    "colors": {
+      "color1": "#010101",
+      "color2": "#FFFFFF",
+      "color3": "#8D9093"
+    },
+    "looks": {
+      "slug": "san-antonio-stars",
+      "courtColors": {
+        "main": "#010101",
+        "lines": "#FFFFFF",
+        "accent": "#8D9093"
+      }
+    },
+    "founded": 2014,
+    "formerTeam": "SA_SILVER_STARS",
+    "relocatedYear": 2017,
+    "relocatedTo": "LVA_ACES",
+    "city": "San Antonio, Texas",
+    "chipCount": 0,
+    "chipYear": []
+  }
+}

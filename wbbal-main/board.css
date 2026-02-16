@@ -1,0 +1,111 @@
+/* =========================
+   BASE SVG
+========================= */
+
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+#board-page {
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+}
+
+svg {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+/* =========================
+   SLOT VISIBILITY
+========================= */
+
+/* Keep grid visible */
+#layer1 rect {
+  fill: #d6d6ff;
+  stroke: #000;
+  stroke-width: 2;
+}
+
+/* =========================
+   PIECE WRAPPER
+========================= */
+
+.piece {
+  cursor: pointer;
+}
+
+/* =========================
+   FACE VISIBILITY
+========================= */
+
+
+.piece-front {
+  display: block;
+}
+
+.piece-back {
+  display: none;
+}
+
+.piece.is-flipped .piece-front {
+  display: none;
+}
+
+.piece.is-flipped .piece-back {
+  display: block;
+}
+
+.world-cup-hidden {
+  display: none;
+}
+
+.description-title {
+  font-size: 28px;
+  font-family: VT323;
+  fill: black;
+}
+
+.description-body {
+  font-size: 18px;
+  font-family: VT323;
+  fill: black;
+}
+
+#world-cup-piece {
+  pointer-events: auto;
+  cursor: pointer;
+}
+
+
+#description-panel {
+  position: absolute;
+
+  left: 1025px;   /* match your SVG rect x */
+  top: 390px;     /* match your SVG rect y */
+
+  width: 500px;   /* match SVG rect width */
+  height: 200px;  /* match SVG rect height */
+
+  padding: 20px;
+  box-sizing: border-box;
+
+  font-family: VT323;
+  color: black;
+
+  overflow-y: auto;
+}
+
+#description-title {
+  margin: 0 0 10px 0;
+  font-size: 28px;
+}
+
+#description-body {
+  margin: 0;
+  font-size: 18px;
+  line-height: 1.4;
+}

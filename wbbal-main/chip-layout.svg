@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="325.16232"
+   height="327.25919"
+   viewBox="0 0 86.03253 86.587327"
+   version="1.1"
+   id="svg1"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <style
+     id="style11">.chip {  }
+.chip-body-containers {   }
+.chip-bg-elements {   }
+</style>
+  <defs
+     id="defs1" />
+  <g
+     id="chip"
+     class="chip">
+    <rect
+       style="display:inline;fill:#0000ff;fill-rule:evenodd;stroke-width:0.138645"
+       id="chip-bg"
+       width="79.375"
+       height="79.375"
+       x="3.3001657"
+       y="1.8700333"
+       class="chip-bg-elements" />
+    <rect
+       style="display:inline;fill:none;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:1.19062;stroke-dasharray:none;stroke-opacity:1"
+       id="black-border"
+       width="75.40625"
+       height="75.40625"
+       x="5.2845426"
+       y="3.8544083"
+       class="chip-bg-elements" />
+    <rect
+       style="display:inline;fill:none;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:1.19062;stroke-dasharray:none;stroke-opacity:1"
+       id="white-border"
+       width="70.327072"
+       height="70.327072"
+       x="7.8241296"
+       y="6.3939972"
+       class="chip-bg-elements" />
+    <path
+       style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:1.19062;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:3.6;stroke-dasharray:none;stroke-opacity:1"
+       d="M 10.935454,27.529027 H 75.039877"
+       id="header-top-line" />
+    <path
+       style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:1.19062;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:3.6;stroke-dasharray:none;stroke-opacity:1"
+       d="M 10.935454,55.586042 H 75.039877"
+       id="header-bottom-line" />
+    <rect
+       style="fill:#ffffff;fill-opacity:1;fill-rule:evenodd;stroke-width:0.399917"
+       id="chip-header-container"
+       width="65.484375"
+       height="27.781252"
+       x="10.245478"
+       y="27.666908"
+       class="chip-body-containers" />
+    <text
+       style="font-size:12.8052px;line-height:15.0887px;font-family:VT323;-inkscape-font-specification:VT323;text-align:center;letter-spacing:0.0571478px;word-spacing:-1.65729px;writing-mode:lr-tb;direction:ltr;text-anchor:middle;fill:#000000;fill-opacity:1;stroke-width:0;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:3.6"
+       x="42.98769"
+       y="43.293663"
+       id="chip-city"
+       xml:space="default">MONTREAL</text>
+    <text
+       style="font-size:6.87833px;line-height:8.10489px;font-family:VT323;-inkscape-font-specification:VT323;text-align:center;letter-spacing:0.0306969px;word-spacing:-0.890211px;writing-mode:lr-tb;direction:ltr;text-anchor:middle;fill:#000000;fill-opacity:1;stroke-width:0;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:3.6"
+       x="42.987671"
+       y="49.412941"
+       id="chip-header-summer-games-text"
+       xml:space="default">SUMMER GAMES</text>
+    <rect
+       style="fill:#ffffff;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:0;stroke-dasharray:none;stroke-opacity:1"
+       id="chip-country-container"
+       width="64.925468"
+       height="5.9963903"
+       x="10.524929"
+       y="68.407341"
+       class="chip-body-containers" />
+    <text
+       xml:space="preserve"
+       style="font-size:10.2454px;line-height:12.0723px;font-family:VT323;-inkscape-font-specification:VT323;text-align:center;letter-spacing:0.0525213px;word-spacing:-1.5231px;writing-mode:lr-tb;direction:ltr;text-anchor:middle;fill:#000000;fill-opacity:1;stroke-width:0;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:3.6"
+       x="62.412727"
+       y="74.274239"
+       id="chip-country">CANADA</text>
+    <rect
+       style="fill:#ffffff;fill-opacity:1;fill-rule:evenodd;stroke-width:0.396874"
+       id="chip-year-container"
+       width="17.775145"
+       height="8.7324772"
+       x="10.245478"
+       y="8.6948471"
+       class="chip-body-containers" />
+    <text
+       xml:space="preserve"
+       style="font-size:10.2454px;line-height:12.0723px;font-family:VT323;-inkscape-font-specification:VT323;text-align:center;letter-spacing:0.0525213px;word-spacing:-1.5231px;writing-mode:lr-tb;direction:ltr;text-anchor:middle;fill:#000000;fill-opacity:1;stroke-width:0;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:3.6"
+       x="19.005005"
+       y="15.929787"
+       id="chip-year">1976</text>
+  </g>
+</svg>

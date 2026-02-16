@@ -1,0 +1,259 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="1920"
+   height="1080"
+   viewBox="0 0 1920 1080"
+   version="1.1"
+   id="svg1"
+   sodipodi:docname="olympic-folder-setup.svg"
+   inkscape:version="1.4.3 (fcd0343856, 2026-01-01)"
+   inkscape:export-filename="olympic-folder-setup.svg"
+   inkscape:export-xdpi="96"
+   inkscape:export-ydpi="96"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  <sodipodi:namedview
+     id="namedview7"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:zoom="0.80729167"
+     inkscape:cx="588.3871"
+     inkscape:cy="565.47097"
+     inkscape:window-width="1859"
+     inkscape:window-height="1011"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg1" />
+  <style
+     id="style1">
+
+      .folder {  }
+      .expanded-folder-title-container {   }
+      .folder-minimizer-icon {   }
+      .folder-minimizer {   }
+      .folder-header {   }
+      .chip-container {   }
+      .mini-chips {   }
+      .linksto-others {   }
+
+</style>
+  <defs
+     id="defs1">
+    <g
+       id="olympic-chip-template"
+       class="chip">
+      <rect
+         width="79.375"
+         height="79.375"
+         x="3.3001657"
+         y="1.8700333"
+         class="chip-bg"
+         id="rect1" />
+      <rect
+         width="75.40625"
+         height="75.40625"
+         x="5.2845426"
+         y="3.8544083"
+         class="chip-black-border"
+         id="rect2" />
+      <rect
+         width="70.327072"
+         height="70.327072"
+         x="7.8241296"
+         y="6.3939972"
+         class="chip-white-border"
+         id="rect3" />
+      <path
+         d="M 10.935454,27.529027 H 75.039877"
+         class="chip-header-top-line"
+         id="path3" />
+      <path
+         d="M 10.935454,55.586042 H 75.039877"
+         class="chip-header-bottom-line"
+         id="path4" />
+      <rect
+         width="65.484375"
+         height="27.781252"
+         x="10.245478"
+         y="27.666908"
+         class="chip-body-containers"
+         id="rect4" />
+      <text
+         x="42.98769"
+         y="42"
+         class="chip-city"
+         xml:space="default"
+         id="text4">MONTREAL</text>
+      <text
+         x="42.987671"
+         y="52"
+         class="chip-header-summer-games-text"
+         xml:space="default"
+         id="text5">SUMMER GAMES</text>
+      <rect
+         width="64.925468"
+         height="5.9963903"
+         x="10.524929"
+         y="68.407341"
+         class="chip-country-container"
+         id="rect5" />
+      <text
+         xml:space="preserve"
+         x="60"
+         y="75"
+         class="chip-country"
+         id="text6">CANADA</text>
+      <rect
+         class="chip-year-container"
+         width="17.775145"
+         height="8.7324772"
+         x="10.245478"
+         y="8.6948471"
+         id="rect6" />
+      <text
+         xml:space="preserve"
+         x="20"
+         y="18"
+         class="chip-year"
+         id="text7">1976</text>
+    </g>
+  </defs>
+  <rect
+     id="olympics-folder-container"
+     width="800.00006"
+     height="469.75211"
+     x="99.932854"
+     y="270.24789"
+     class="folder folder-bg">
+    <desc
+       id="desc22">containter / background  forexpanded view/ &quot;olympics folder&quot; 
+resized to fit content </desc>
+  </rect>
+  <rect
+     id="olympic-folder-header-container"
+     width="800.00006"
+     height="60"
+     x="99.932846"
+     y="270.24789"
+     class="folder-header ">
+    <desc
+       id="desc24">header container for the entire olympic folder</desc>
+  </rect>
+  <rect
+     id="olympic-folder-title-container"
+     width="300"
+     height="60"
+     x="99.932854"
+     y="270.24789"
+     class="folder-title  expanded-folder-title-container">
+    <desc
+       id="desc23">container for title of the olympics folder
+top/right corner of expanded olympic (about) container</desc>
+  </rect>
+  <text
+     x="120"
+     y="310"
+     id="olympics-folder-title-text"
+     class="folder-title-text">OLYMPICS</text>
+  <rect
+     id="olympic-folder-minimizer"
+     width="40"
+     height="40"
+     x="827.46606"
+     y="270.24789"
+     class="folder-minimizer">
+    <desc
+       id="desc25">the &quot;minimize&quot; &quot;button&quot; for the expanded about olympic view</desc>
+  </rect>
+  <rect
+     id="olympic-folder-minimizer-icon"
+     width="28"
+     height="6"
+     x="833.46606"
+     y="287.24789"
+     class="folder-minimizer-icon">
+    <desc
+       id="desc26">will signify a minus sign/symbol within the &quot;minimizer&quot; button
+
+minimizer &quot;button&quot; should have bg color and this symbol also needs bg color/fill (css)</desc>
+  </rect>
+  <rect
+     id="olympic-folder-text-bg"
+     width="750.49817"
+     height="125"
+     x="124.6838"
+     y="380"
+     class="expanded-view-text-container">
+    <desc
+       id="desc51">the container to hold the text about 1976 montreal olympics // first womens bbal tournament</desc>
+  </rect>
+  <foreignObject 
+   id="olympic-folder-text-container" 
+   x="124"
+   y="380"  
+   width="750"
+   height="125">
+    <xhtml:div
+       id="olympic-folder-text"
+       class="olympic-folder-description">
+      Montreal, Canada hosted the first Olympic Games to include a women’s
+      basketball tournament in 1976.
+  </xhtml:div>
+  </foreignObject>
+  <rect
+     id="olympic-chip-berlin-first"
+     width="200"
+     height="200"
+     x="99.932854"
+     y="540"
+     class="mini-chips">
+    <desc
+       id="desc54">a mini chip : to be a mini version of a chip 
+this specific one: 1936, berlin, germany</desc>
+  </rect>
+  <rect
+     id="olympic-chip-montreal-second"
+     width="200"
+     height="200"
+     x="299.93286"
+     y="540"
+     class="mini-chips">
+    <desc
+       id="desc55">a mini chip : to be a mini version of a chip 
+this specific one: 1992, barcelona spain</desc>
+  </rect>
+  <rect
+     id="olympic-chip-barcelona-third"
+     width="200"
+     height="200"
+     x="499.93286"
+     y="540"
+     class="mini-chips">
+    <desc
+       id="desc56">mini chip for
+2020 olympics tokyo japan</desc>
+  </rect>
+  <rect
+     id="olympic-chip-tokyo-fourth"
+     width="200"
+     height="200"
+     x="699.93286"
+     y="540"
+     class="links-to-others  linksto-others">
+    <desc
+       id="desc57">a 'button' that should open medals (chips)  within this category - which is olympics (to be added later)
+
+</desc>
+  </rect>
+</svg>

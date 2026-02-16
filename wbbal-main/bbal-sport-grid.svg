@@ -1,0 +1,299 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="1920"
+   height="1080"
+   viewBox="0 0 1920 1080"
+   version="1.1"
+   id="svg1"
+   inkscape:version="1.4.3 (fcd0343856, 2026-01-01)"
+   sodipodi:docname="bbal-sport-grid.svg"
+   inkscape:export-filename="bbal-sport-grid.svg"
+   inkscape:export-xdpi="96"
+   inkscape:export-ydpi="96"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview1"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:document-units="px"
+     showgrid="true"
+     inkscape:zoom="1.3548908"
+     inkscape:cx="754.30431"
+     inkscape:cy="401.87739"
+     inkscape:window-width="1859"
+     inkscape:window-height="1011"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg1">
+    <inkscape:grid
+       id="grid1"
+       units="px"
+       originx="0"
+       originy="0"
+       spacingx="20"
+       spacingy="20"
+       empcolor="#0099e5"
+       empopacity="0.30196078"
+       color="#0099e5"
+       opacity="0.14901961"
+       empspacing="5"
+       enabled="false"
+       visible="true"
+       dotted="true"
+       snapvisiblegridlinesonly="true" />
+  </sodipodi:namedview>
+  <defs
+     id="defs1">
+    <g
+       id="fiba-org"
+       class="org-detail">
+      <rect
+         id="fiba-org-container"
+         width="170.00002"
+         height="228.04788"
+         x="912.19153"
+         y="123.14585"
+         class="org-detail-container" />
+      <g
+         id="fiba-description-labels">
+        <text
+           x="922"
+           y="195"
+           id="fiba-descrip-text-1"
+           class="org-description-text"
+           xml:space="default">basketball</text>
+        <text
+           x="983.80579"
+           y="221.11494"
+           id="fiba-descrip-text-2"
+           class="org-description-text"
+           xml:space="default">ORG</text>
+      </g>
+      <g
+         id="fiba-icon-slot"
+         class="org-icon-slot">
+        <rect
+           id="fiba-icon-container"
+           width="103"
+           height="103"
+           x="945.69153"
+           y="230.51921"
+           class="org-icon-container" />
+      </g>
+      <g
+         id="fiba-header">
+        <rect
+           id="fiba-header-container"
+           width="170"
+           height="40"
+           x="912.19153"
+           y="123.14585"
+           class="org-header-container" />
+        <text
+           x="970"
+           y="163.14584"
+           id="fiba-title-text"
+           class="org-title-text"
+           xml:space="default">FIBA</text>
+      </g>
+    </g>
+  </defs>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <rect
+       style="fill:#0000ff;fill-rule:evenodd"
+       id="top-left-corner"
+       width="100"
+       height="100"
+       x="200"
+       y="200"
+       inkscape:label="top-left-corner" />
+    <rect
+       style="fill:#0000ff;fill-rule:evenodd"
+       id="bottom-right-corner"
+       width="100"
+       height="100"
+       x="1600"
+       y="800"
+       inkscape:label="bottom-right-corner" />
+    <rect
+       style="fill:#0000ff;fill-rule:evenodd"
+       id="bottom-left-corner"
+       width="100"
+       height="100"
+       x="200"
+       y="800"
+       inkscape:label="bottom-left-corner" />
+    <rect
+       style="fill:#0000ff;fill-rule:evenodd"
+       id="top-right-corner"
+       width="100"
+       height="100"
+       x="1600"
+       y="200"
+       inkscape:label="top-right-corner" />
+    <rect
+       style="fill:#0000ff;fill-rule:evenodd;stroke-width:0.999999"
+       id="fiba-org-slot"
+       width="200"
+       height="300"
+       x="320"
+       y="200"
+       inkscape:label="fiba-org-slot" />
+    <rect
+       style="fill:#0000ff;fill-rule:evenodd"
+       id="fiba-rules-slot"
+       width="100"
+       height="100"
+       x="340"
+       y="520"
+       inkscape:label="fiba-rules-slot" />
+    <rect
+       style="fill:#0000ff;fill-rule:evenodd"
+       id="olympics-slot"
+       width="300"
+       height="100"
+       x="540"
+       y="200"
+       inkscape:label="olympics-slot" />
+    <rect
+       style="fill:#0000ff;fill-rule:evenodd"
+       id="olympic-rules-slot"
+       width="100"
+       height="100"
+       x="460"
+       y="520"
+       inkscape:label="olympic-rules-slot" />
+    <rect
+       style="fill:#0000ff;fill-rule:evenodd"
+       id="olympic-qual-slot"
+       width="100"
+       height="100"
+       x="710"
+       y="330"
+       inkscape:label="olympic-qual-slot" />
+    <rect
+       style="fill:#cd00ff;fill-opacity:1;fill-rule:evenodd"
+       id="slot-description-container"
+       width="500"
+       height="200"
+       x="1100"
+       y="400"
+       inkscape:label="slot-description-container" />
+    <rect
+       style="fill:#0000ff;fill-rule:evenodd;stroke-width:1"
+       id="pro-slot"
+       width="210"
+       height="200"
+       x="590"
+       y="460"
+       inkscape:label="pro-slot" />
+    <rect
+       style="fill:#ff1e00;fill-opacity:1;fill-rule:evenodd;stroke-width:1"
+       id="olympic-chips-slots-container"
+       width="140"
+       height="620"
+       x="880"
+       y="200"
+       inkscape:label="olympic-chips-slots-container" />
+    <rect
+       style="fill:#0000ff;fill-rule:evenodd"
+       id="berlin-chip-slot"
+       width="100"
+       height="100"
+       x="900"
+       y="220"
+       inkscape:label="berlin-chip-slot" />
+    <rect
+       style="fill:#0000ff;fill-rule:evenodd"
+       id="montreal-chip-slot"
+       width="100"
+       height="100"
+       x="900"
+       y="340"
+       inkscape:label="montreal-chip-slot" />
+    <rect
+       style="fill:#0000ff;fill-rule:evenodd"
+       id="barcelona-chip-slot"
+       width="100"
+       height="100"
+       x="900"
+       y="460"
+       inkscape:label="barcelona-chip-slot" />
+    <rect
+       style="fill:#0000ff;fill-rule:evenodd"
+       id="tokyo_chip-slot"
+       width="100"
+       height="100"
+       x="900"
+       y="580"
+       inkscape:label="tokyo chip-slot" />
+    <rect
+       style="fill:#0000ff;fill-rule:evenodd"
+       id="extra-chip-slot"
+       width="100"
+       height="100"
+       x="900"
+       y="700"
+       inkscape:label="extra-chip-slot" />
+  </g>
+  <g
+     id="world-cup-piece"
+     inkscape:label="world-cup-piece">
+    <rect
+       style="fill:#0000ff;fill-rule:evenodd"
+       id="world-cup-slot"
+       width="100"
+       height="100"
+       x="590"
+       y="330"
+       inkscape:label="world-cup-slot" />
+    <rect
+       style="fill:#ff9d0a;fill-rule:evenodd;fill-opacity:1.0"
+       id="world-cup-piece-container"
+       width="100"
+       height="100"
+       x="590"
+       y="330"
+       inkscape:label="world-cup-piece-container" />
+    <text
+       xml:space="preserve"
+       style="font-size:29.3333px;line-height:52.6046px;font-family:VT323;-inkscape-font-specification:VT323;text-align:center;letter-spacing:0px;word-spacing:-4.26px;writing-mode:lr-tb;direction:ltr;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:3;stroke-linecap:square;stroke-miterlimit:3.6"
+       x="639.54004"
+       y="366.17352"
+       id="world-cup-label-1">2026</text>
+    <text
+       xml:space="preserve"
+       style="font-size:29.3333px;line-height:52.6046px;font-family:VT323;-inkscape-font-specification:VT323;text-align:center;letter-spacing:0px;word-spacing:-4.26px;writing-mode:lr-tb;direction:ltr;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:3;stroke-linecap:square;stroke-miterlimit:3.6"
+       x="639.54004"
+       y="386.56677"
+       id="world-cup-label-2"><tspan
+         sodipodi:role="line"
+         x="639.54004"
+         y="386.56677"
+         id="tspan3">WORLD</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:29.3333px;line-height:52.6046px;font-family:VT323;-inkscape-font-specification:VT323;text-align:center;letter-spacing:0px;word-spacing:-4.26px;writing-mode:lr-tb;direction:ltr;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:3;stroke-linecap:square;stroke-miterlimit:3.6"
+       x="639.54004"
+       y="406.95999"
+       id="world-cup-label-3"><tspan
+         sodipodi:role="line"
+         x="639.54004"
+         y="406.95999"
+         id="tspan4">CUP</tspan></text>
+  </g>
+</svg>

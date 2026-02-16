@@ -1,0 +1,655 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Board Game Test</title>
+
+  <link rel="stylesheet" href="board-game-1.css" />
+</head>
+
+<body>
+
+  <!-- xml from board.testing.svg inkscape save (for now) UPDATE FILE NAMESS LATER !!!! -->
+
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="1920"
+   height="1080"
+   viewBox="0 0 1920 1080"
+   version="1.1"
+   id="svg1"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <style
+     id="style6">.grid-cell {  }
+.tile {   }
+.tile-label {   }
+.sport-square {   }
+</style>
+  <defs
+     id="defs1" />
+  <g
+     id="sport-squares">
+    <g
+       id="tennis-tile"
+       class="tile">
+      <rect
+         id="tennis-square"
+         width="120"
+         height="120"
+         x="620"
+         y="340"
+         class="sport-square" />
+      <text
+         x="681.55219"
+         y="403.93021"
+         id="tennis-label"
+         xml:space="preserve"
+         class="tile-label"
+         text-anchor="middle">TENNIS</text>
+    </g>
+    <rect
+       id="trackandfield-square"
+       width="120"
+       height="120"
+       x="760"
+       y="480"
+       class="sport-square" />
+    <g
+       id="basketball-tile"
+       class="tile">
+      <rect
+         id="basketball-square"
+         width="680"
+         height="120"
+         x="480"
+         y="200"
+         class="sport-square" />
+      <text
+         x="822.16003"
+         y="290.57578"
+         id="basketball-label"
+         text-anchor="middle"
+         xml:space="preserve"
+         class="tile-label">BASKETBALL</text>
+    </g>
+  </g>
+  <g
+     id="main-board-pieces">
+    <path
+       id="sidebar"
+       d="M 40,40 V 1040 H 200 V 40 Z" />
+  </g>
+  <g
+     id="question-squares">
+    <rect
+       id="question-square"
+       width="120"
+       height="120"
+       x="900"
+       y="620" />
+  </g>
+  <g
+     id="board-grid">
+    <rect
+       
+       id="rect48"
+       width="120"
+       height="120"
+       x="1740"
+       y="900"
+       class="grid-cell" />
+    <rect
+       
+       id="rect47"
+       width="120"
+       height="120"
+       x="1600"
+       y="900"
+       class="grid-cell" />
+    <rect
+       
+       id="rect46"
+       width="120"
+       height="120"
+       x="1460"
+       y="900"
+       class="grid-cell" />
+    <rect
+       
+       id="special-cell"
+       width="120"
+       height="120"
+       x="1320"
+       y="900"
+       class="grid-cell" />
+    <rect
+       
+       id="rect2"
+       width="120"
+       height="120"
+       x="1180"
+       y="900"
+       class="grid-cell" />
+    <rect
+       
+       id="cell-2"
+       width="120"
+       height="120"
+       x="480"
+       y="60"
+       class="grid-cell" />
+    <rect
+       
+       id="cell-3"
+       width="120"
+       height="120"
+       x="620"
+       y="60"
+       class="grid-cell" />
+    <rect
+       
+       id="cell-4"
+       width="120"
+       height="120"
+       x="760"
+       y="60"
+       class="grid-cell" />
+    <rect
+       
+       id="cell-5"
+       width="120"
+       height="120"
+       x="900"
+       y="60"
+       class="grid-cell" />
+    <rect
+       
+       id="cell-6"
+       width="120"
+       height="120"
+       x="1040"
+       y="60"
+       class="grid-cell" />
+    <rect
+       
+       id="rect59"
+       width="120"
+       height="120"
+       x="340"
+       y="900"
+       class="grid-cell" />
+    <rect
+       
+       id="cell-7"
+       width="120"
+       height="120"
+       x="1180"
+       y="60"
+       class="grid-cell" />
+    <rect
+       
+       id="cell-8"
+       width="120"
+       height="120"
+       x="1320"
+       y="60"
+       class="grid-cell" />
+    <rect
+       
+       id="cell-9"
+       width="120"
+       height="120"
+       x="1460"
+       y="60"
+       class="grid-cell" />
+    <rect
+       
+       id="cell-10"
+       width="120"
+       height="120"
+       x="1600"
+       y="60"
+       class="grid-cell" />
+    <rect
+       
+       id="cell12"
+       width="120"
+       height="120"
+       x="340"
+       y="200"
+       class="grid-cell" />
+    <rect
+       
+       id="cell-13"
+       width="120"
+       height="120"
+       x="1180"
+       y="200"
+       class="grid-cell" />
+    <rect
+       
+       id="cell-11"
+       width="120"
+       height="120"
+       x="1740"
+       y="60"
+       class="grid-cell" />
+    <rect
+       
+       id="cell-14"
+       width="120"
+       height="120"
+       x="1320"
+       y="200"
+       class="grid-cell" />
+    <rect
+       
+       id="cell-15"
+       width="120"
+       height="120"
+       x="1460"
+       y="200"
+       class="grid-cell" />
+    <rect
+       
+       id="cell-16"
+       width="120"
+       height="120"
+       x="1600"
+       y="200"
+       class="grid-cell" />
+    <rect
+       
+       id="cell-17"
+       width="120"
+       height="120"
+       x="1740"
+       y="200"
+       class="grid-cell" />
+    <rect
+       
+       id="cell-20"
+       width="120"
+       height="120"
+       x="760"
+       y="340"
+       class="grid-cell" />
+    <rect
+       
+       id="cell-21"
+       width="120"
+       height="120"
+       x="900"
+       y="340"
+       class="grid-cell" />
+    <rect
+       
+       id="cell-22"
+       width="120"
+       height="120"
+       x="1040"
+       y="340"
+       class="grid-cell" />
+    <rect
+       
+       id="cell-23"
+       width="120"
+       height="120"
+       x="1180"
+       y="340"
+       class="grid-cell" />
+    <rect
+       
+       id="cell-24"
+       width="120"
+       height="120"
+       x="1320"
+       y="340"
+       class="grid-cell" />
+    <rect
+       
+       id="cell-25"
+       width="120"
+       height="120"
+       x="1460"
+       y="340"
+       class="grid-cell" />
+    <rect
+       
+       id="cell-26"
+       width="120"
+       height="120"
+       x="1600"
+       y="340"
+       class="grid-cell" />
+    <rect
+       
+       id="cell-27"
+       width="120"
+       height="120"
+       x="1740"
+       y="340"
+       class="grid-cell" />
+    <rect
+       
+       id="cell-18"
+       width="120"
+       height="120"
+       x="340"
+       y="340"
+       class="grid-cell" />
+    <rect
+       
+       id="cell-19"
+       width="120"
+       height="120"
+       x="480"
+       y="340"
+       class="grid-cell" />
+    <rect
+       
+       id="rect20"
+       width="120"
+       height="120"
+       x="620"
+       y="480"
+       class="grid-cell" />
+    <rect
+       
+       id="rect21"
+       width="120"
+       height="120"
+       x="900"
+       y="480"
+       class="grid-cell" />
+    <rect
+       
+       id="rect22"
+       width="120"
+       height="120"
+       x="1040"
+       y="480"
+       class="grid-cell" />
+    <rect
+       
+       id="rect23"
+       width="120"
+       height="120"
+       x="1180"
+       y="480"
+       class="grid-cell" />
+    <rect
+       
+       id="rect24"
+       width="120"
+       height="120"
+       x="1320"
+       y="480"
+       class="grid-cell" />
+    <rect
+       
+       id="rect25"
+       width="120"
+       height="120"
+       x="1460"
+       y="480"
+       class="grid-cell" />
+    <rect
+       
+       id="rect26"
+       width="120"
+       height="120"
+       x="1600"
+       y="480"
+       class="grid-cell" />
+    <rect
+       
+       id="rect27"
+       width="120"
+       height="120"
+       x="1740"
+       y="480"
+       class="grid-cell" />
+    <rect
+       
+       id="rect28"
+       width="120"
+       height="120"
+       x="340"
+       y="480"
+       class="grid-cell" />
+    <rect
+       
+       id="rect29"
+       width="120"
+       height="120"
+       x="480"
+       y="480"
+       class="grid-cell" />
+    <rect
+       
+       id="rect30"
+       width="120"
+       height="120"
+       x="620"
+       y="620"
+       class="grid-cell" />
+    <rect
+       
+       id="rect31"
+       width="120"
+       height="120"
+       x="340"
+       y="620"
+       class="grid-cell" />
+    <rect
+       
+       id="rect32"
+       width="120"
+       height="120"
+       x="480"
+       y="620"
+       class="grid-cell" />
+    <rect
+       
+       id="rect33"
+       width="120"
+       height="120"
+       x="760"
+       y="620"
+       class="grid-cell" />
+    <rect
+       
+       id="rect34"
+       width="120"
+       height="120"
+       x="1040"
+       y="620"
+       class="grid-cell" />
+    <rect
+       
+       id="rect35"
+       width="120"
+       height="120"
+       x="1180"
+       y="620"
+       class="grid-cell" />
+    <rect
+       
+       id="rect36"
+       width="120"
+       height="120"
+       x="1320"
+       y="620"
+       class="grid-cell" />
+    <rect
+       
+       id="rect37"
+       width="120"
+       height="120"
+       x="1460"
+       y="620"
+       class="grid-cell" />
+    <rect
+       
+       id="rect38"
+       width="120"
+       height="120"
+       x="1600"
+       y="620"
+       class="grid-cell" />
+    <rect
+       
+       id="rect39"
+       width="120"
+       height="120"
+       x="1740"
+       y="620"
+       class="grid-cell" />
+    <rect
+       
+       id="rect40"
+       width="120"
+       height="120"
+       x="1040"
+       y="760"
+       class="grid-cell" />
+    <rect
+       
+       id="rect41"
+       width="120"
+       height="120"
+       x="1180"
+       y="760"
+       class="grid-cell" />
+    <rect
+       
+       id="rect42"
+       width="120"
+       height="120"
+       x="1320"
+       y="760"
+       class="grid-cell" />
+    <rect
+       
+       id="rect43"
+       width="120"
+       height="120"
+       x="1460"
+       y="760"
+       class="grid-cell" />
+    <rect
+       
+       id="rect44"
+       width="120"
+       height="120"
+       x="1600"
+       y="760"
+       class="grid-cell" />
+    <rect
+       
+       id="rect45"
+       width="120"
+       height="120"
+       x="1740"
+       y="760"
+       class="grid-cell" />
+    <rect
+       
+       id="rect49"
+       width="120"
+       height="120"
+       x="620"
+       y="900"
+       class="grid-cell" />
+    <rect
+       
+       id="rect50"
+       width="120"
+       height="120"
+       x="480"
+       y="900"
+       class="grid-cell" />
+    <rect
+       
+       id="rect51"
+       width="120"
+       height="120"
+       x="760"
+       y="900"
+       class="grid-cell" />
+    <rect
+       
+       id="rect52"
+       width="120"
+       height="120"
+       x="900"
+       y="900"
+       class="grid-cell" />
+    <rect
+       
+       id="rect53"
+       width="120"
+       height="120"
+       x="1040"
+       y="900"
+       class="grid-cell" />
+    <rect
+       
+       id="rect54"
+       width="120"
+       height="120"
+       x="480"
+       y="760"
+       class="grid-cell" />
+    <rect
+       
+       id="rect55"
+       width="120"
+       height="120"
+       x="340"
+       y="760"
+       class="grid-cell" />
+    <rect
+       
+       id="rect56"
+       width="120"
+       height="120"
+       x="620"
+       y="760"
+       class="grid-cell" />
+    <rect
+       
+       id="rect57"
+       width="120"
+       height="120"
+       x="760"
+       y="760"
+       class="grid-cell" />
+    <rect
+       
+       id="rect58"
+       width="120"
+       height="120"
+       x="900"
+       y="760"
+       class="grid-cell" />
+    <rect
+       
+       id="cell-1"
+       width="120"
+       height="120"
+       x="340"
+       y="60"
+       class="grid-cell" />
+  </g>
+</svg>
+
+  <!--=================================-->
+
+  <script src="board-game-1.js"></script>
+</body>
+</html>

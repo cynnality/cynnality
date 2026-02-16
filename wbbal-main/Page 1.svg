@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="200"
+   height="300"
+   viewBox="0 0 52.916668 79.374999"
+   version="1.1"
+   id="svg1"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <style
+     id="style20">.piece-detail {  }
+.piece {   }
+.piece-front {   }
+.piece-back {   }
+.piece-face {   }
+</style>
+  <defs
+     id="defs1" />
+  <rect
+     style="fill:#0000ff;fill-rule:evenodd;stroke-width:0.264583"
+     id="fiba-front-container"
+     width="200px"
+     height="300px"
+     x="0"
+     y="0" />
+  <rect
+     style="display:inline;fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.79375;stroke-dasharray:none;stroke-opacity:1"
+     id="front-piece-fiba-org-border"
+     width="190px"
+     height="290px"
+     x="1.2362976"
+     y="1.5632286" />
+  <text
+     xml:space="preserve"
+     style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:22.5778px;line-height:20.2448px;font-family:VT323;-inkscape-font-specification:VT323;text-align:center;letter-spacing:0px;word-spacing:-1.12713px;writing-mode:lr-tb;direction:ltr;text-anchor:middle;fill:#ff1e00;stroke-width:0;stroke-linecap:square;stroke-miterlimit:3.6"
+     x="14.852287"
+     y="26.354149"
+     id="fiba-front-label-1">F</text>
+  <text
+     xml:space="preserve"
+     style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:22.5778px;line-height:20.2448px;font-family:VT323;-inkscape-font-specification:VT323;text-align:center;letter-spacing:0px;word-spacing:-1.12713px;writing-mode:lr-tb;direction:ltr;text-anchor:middle;fill:#ff1e00;stroke-width:0;stroke-linecap:square;stroke-miterlimit:3.6"
+     x="20"
+     y="39.6875"
+     id="fiba-front-label-2">I</text>
+  <text
+     xml:space="preserve"
+     style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:22.5778px;line-height:20.2448px;font-family:VT323;-inkscape-font-specification:VT323;text-align:center;letter-spacing:0px;word-spacing:-1.12713px;writing-mode:lr-tb;direction:ltr;text-anchor:middle;fill:#ff1e00;stroke-width:0;stroke-linecap:square;stroke-miterlimit:3.6"
+     x="27.599243"
+     y="53.020851"
+     id="fiba-front-label-3">B</text>
+  <text
+     xml:space="preserve"
+     style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:22.5778px;line-height:20.2448px;font-family:VT323;-inkscape-font-specification:VT323;text-align:center;letter-spacing:0px;word-spacing:-1.12713px;writing-mode:lr-tb;direction:ltr;text-anchor:middle;fill:#ff1e00;stroke-width:0;stroke-linecap:square;stroke-miterlimit:3.6"
+     x="34.476929"
+     y="66.354187"
+     id="fiba-front-label-4">A</text>
+</svg>
