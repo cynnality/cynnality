@@ -14,6 +14,28 @@
   --pane-default-width: 320px;
   --pane-default-height: 360px;
   --pane-border-radius: 8px;
+
+  --darkest-blue: #1E292D;
+  --muddled-blue: #286F6F;
+  --seafoam-blue: #00C092;
+  --minty-blue: #B5FFAC;
+  --space-purple: #55458E;
+  --space-blue: #5A8CFF;
+  --starlight-blue: #AEDEFF;
+  --brown: #633632;
+  --starlight-purple: #ECDFFF;
+  --rich-purple: #490F40;
+  --ochre-dark-green: #333925;
+  --ochre-green: #84721E;
+  --ochre-yellow: #F69E00;
+
+  --basketball-orange: #C67400;
+  --purple-ice: #FD00FF;
+  --magplum: #950058;
+  --deeper-magplum: #120405;
+
+  --brown-tone: #4F3E08;
+  --green-swamp: #83871A;
 }
 
 body {
@@ -22,6 +44,11 @@ body {
   height: 100vh;
   overflow: clip;
 }
+
+    h2 {
+      padding: 0;
+      margin: 0;
+    }
 
     .descrip-box {
       position: absolute;
@@ -70,8 +97,13 @@ body {
   cursor: move;
   display: flex;
   align-items: center;
-  justify-content: center;
-  color: #E3E3E3;
+  /*! justify-content: center; */
+  color: #000000;
+  font-family: "JetBrains Mono", monospace;
+  padding-left: 12px;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  border-bottom: solid 4px var(--brown-tone);
 }
 
 .pane .content {
@@ -91,6 +123,8 @@ body {
   border-bottom: 4px solid #000000;
   border-left: 4px solid #000000;
   margin-right: .5em;
+
+  font-family: "dm mono", monospace;
 }
 
 .opener {
@@ -119,8 +153,20 @@ body {
   user-select: none;
 }
  
-
-
+#about-pane {
+  background-color: #F0F1C0;
+  color: var(--brown-tone);
+}
+#about-pane .title {
+  background-color: var(--green-swamp);
+  background-color: var(--brown-tone);
+  color: #ffffff;
+  font-size: 16px;
+}
+#about-pane .content .panetext{
+  background-color: var(--green-swamp);
+  color: #000000;
+}
 
 /* Button - Add it from the README instructions */
 button,
