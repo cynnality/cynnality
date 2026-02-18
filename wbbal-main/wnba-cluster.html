@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>WNBA Cluster</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&family=UoqMunThenKhung&family=VT323&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Contrail+One&family=Shrikhand&display=swap" rel="stylesheet">
+    <!-- (ABOVE) SHRIKHAND (big and bubbly but also sharp ? ..... CONTRAIL ONE - idk... simpple, easy, readable )-->
+
+
+    <!-- ======================== MONO FONTS ========================
+         CHIVO MONO 
+         ---- (monospaced // kinda playful ? serif) 
+
+         DM MONO 
+         ---- (monospaced, serif, gives digital feel - could be good replacement for v323)
+
+         JET BRAINS MONO 
+         ---- (monospaced, generally sans-serif. 
+         ---- want to use for all caps / titles / such things big bold (and oblique) style header feel)
+         ============================================================-->
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Chivo+Mono:ital,wght@0,100..900;1,100..900&family=DM+Mono:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="wnba-cluster.css" />
+</head>
+<body>
+
+
+<button id="debug-toggle"
+  style="position:fixed; top:10px; right:10px; z-index:9999;">
+  DEBUG
+</button>
+
+<div class="cluster">
+
+<!-- ======================== EXAMPLE SVG LAYOUT ========================
+     ==================================================================== -->
+<svg id="wnba-cluster-board">
+
+  <g id="atlanta-dream" class="box-group team-box">
+    <rect class="box-frame" ... />
+    <rect class="box-accent" ... />
+    <text class="box-label">ATLANTA</text>
+    <text class="box-label">DREAM</text>
+  </g>
+
+  <g id="chicago-sky" class="box-group team-box">
+    <rect class="box-frame" ... />
+    <rect class="box-accent" ... />
+    <text class="box-label">CHICAGO</text>
+    <text class="box-label">SKY</text>
+  </g>
+
+<!-- ======================== END END ENDS END END ======================
+     ==================================================================== -->
+
+
+
+<g id="folder-mount-point"></g>
+</svg>
+
+</div>
+
+<div id="cluster-description-container" class="cluster-description-container">
+  <div id="cluster-description-content"
+       class="cluster-description-content">
+  </div>
+</div>
+
+
+<script src="svg-draggable.js"></script>
+<script src="rewritten-cluster-engine.js"></script>
+<script src="wnba-registry.js"></script>
+
+<script>
+  initCluster(wnbaConfig);
+</script>
+
+</body>
+</html>
+
+
