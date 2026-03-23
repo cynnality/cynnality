@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   width="510"
+   height="610"
+   viewBox="0 0 510 610"
+   id="mini-timeline-svg"
+   version="1.1"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <style
+     id="style5">.dash-stroke {  }
+</style>
+  <defs
+     id="defs1" />
+  <rect
+     id="mini-tl-container"
+     width="500"
+     height="600"
+     x="5"
+     y="5"/>
+  <rect
+     id="mini-tl-border"
+     width="490"
+     height="590"
+     x="10"
+     y="10.000015" />
+  <rect
+     id="season-team-colors-gridder"
+     width="420"
+     height="330"
+     x="45.000015"
+     y="165.02371" />
+  <text
+     x="44.601578"
+     y="53.958603"
+     id="wnba-title-label">WNBA</text>
+  <text
+     x="328.32147"
+     y="53.952744"
+     id="season-num-label">SEASON 1</text>
+  <path
+     d="M 132.40084,35.290032 H 334.1778"
+     id="path2"
+     class="dash-stroke" />
+  <path
+     d="M 132.40084,45.046492 H 334.1778"
+     id="path3"
+     class="dash-stroke" />
+  <path
+     d="M 132.40084,64.559422 H 334.1778"
+     id="path4"
+     class="dash-stroke" />
+  <path
+     d="M 132.40084,54.802962 H 334.1778"
+     id="path5"
+     class="dash-stroke" />
+  <rect
+     id="teams-timeline-season-start-date-container"
+     class="team-timeline-container"
+     width="150"
+     height="36.747429"
+     x="77.812096"
+     y="110.81594" />
+  <text
+     x="92.514091"
+     y="136.22557"
+     id="teams-timeline-season-start-date"
+     class="team-timeline-text">seasonstart</text>
+  <rect
+     id="teams-timeline-season-end-date-container"
+     class="team-timeline-container"
+     width="150"
+     height="36.747429"
+     x="282.18793"
+     y="110.81594" />
+  <text
+     x="324.12128"
+     y="136.22557"
+     id="teams-timeline-season-end-date"
+     class="team-timeline-text">seasonend</text>
+  <rect
+     id="season-start-container"
+     width="68.901428"
+     height="18.373714"
+     x="83.910667"
+     y="92.442215" />
+  <text
+     x="118.32708"
+     y="106.61325"
+     class="season-date-text"
+     id="season-start-text">start</text>
+  <rect
+     id="season-end-container"
+     width="70"
+     height="18.373714"
+     x="356.18793"
+     y="92.442215" />
+  <text
+     x="390.60431"
+     y="106.61325"
+     class="season-date-text"
+     id="season-end-text">end</text>
+  <rect
+     id="number-of-teams-container"
+     class="team-timeline-container"
+     width="330.72687"
+     height="36.747429"
+     x="89.636581"
+     y="512.88782" />
+  <text
+     x="98.823441"
+     y="538.29749"
+     id="number-of-teams-text"
+     class="team-timeline-text"># of teams</text>
+  <rect
+     id="team-timeline-season-total-games-container"
+     class="team-timeline-container"
+     width="330.72687"
+     height="36.747429"
+     x="89.636581"
+     y="549.63525" />
+  <text
+     x="98.823441"
+     y="575.04492"
+     id="team-timeline-season-total-games"
+     class="team-timeline-text"># of games</text>
+</svg>

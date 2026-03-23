@@ -1,0 +1,240 @@
+<svg id="reg-season-peak-performers-svg"s
+   
+   width="500"
+   height="280"
+   viewBox="0 0 500 279.99999"
+   version="1.1"
+   inkscape:export-filename="wnba-reg-season-peak-performers.svg"
+   sodipodi:docname="wnba-reg-season-peak-performers.svg"
+   inkscape:version="1.4.3 (fcd0343856, 2026-01-01)"
+   inkscape:export-xdpi="96"
+   inkscape:export-ydpi="96"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+
+  <style
+     id="style1">
+.distributor-dot {   }
+.distributor-path {   }
+.distributor-arrow {   }
+.right-side-court-path {   }
+.left-side-card-path {   }
+.left-side-card {   }
+.center-card {   }
+.right-side-card {   }
+.center-card-path {   }
+.court-lines-path {   }
+.pp-teamname {   }
+.pp-lastname {   }
+.pp-firstname {   }
+.pp-category-title {   }
+.subscript {   }
+.distributor {   }
+.scorer {   }
+.rebounder {   }
+</style>
+  <defs
+     id="defs1">
+    <marker
+       style="overflow:visible"
+       id="Triangle"
+       refX="0"
+       refY="0"
+       orient="auto-start-reverse"
+       inkscape:stockid="Triangle arrow"
+       markerWidth="0.5"
+       markerHeight="0.5"
+       viewBox="0 0 1 1"
+       inkscape:isstock="true"
+       inkscape:collect="always"
+       preserveAspectRatio="xMidYMid">
+      <path
+         transform="scale(0.5)"
+         style="fill:context-stroke;fill-rule:evenodd;stroke:context-stroke;stroke-width:1pt"
+         d="M 5.77,0 -2.88,5 V -5 Z"
+         id="path135" />
+    </marker>
+  </defs>
+  <rect
+     style="display:inline;fill:#ffffff;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:3;stroke-dasharray:none;stroke-opacity:1"
+     id="scorer-card-container"
+     width="157"
+     height="252.98933"
+     x="173.44151"
+     y="13.505333"
+     inkscape:label="scorer-card-container"
+     class="scorer  center-card" />
+  <path
+     id="scorer-card-path"
+     style="fill:#ffffff;stroke:#000000;stroke-width:3;stroke-miterlimit:0"
+     d="m 251.94073,89.10976 a 69.103946,68.499633 0 0 0 -58.49922,32.03597 v 72.92654 a 69.103946,68.499633 0 0 0 58.49922,32.03749 69.103946,68.499633 0 0 0 58.50078,-32.03749 V 121.14725 A 69.103946,68.499633 0 0 0 251.94073,89.10976 Z"
+     inkscape:label="scorer-card-path"
+     class="scorer  center-card-path" />
+  <rect
+     style="display:inline;fill:#ffffff;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:3;stroke-dasharray:none;stroke-opacity:1"
+     id="distributor-container"
+     width="157"
+     height="252.98933"
+     x="-496.15237"
+     y="13.505333"
+     inkscape:label="distributor-container"
+     transform="scale(-1,1)"
+     class="distributor  right-side-card" />
+  <text
+     x="217.31261"
+     y="137.58066"
+     id="scorer-firstname"
+     inkscape:label="scorer-firstname"
+     class="scorer  pp-firstname">FIRSTNAME</text>
+  <text
+     x="218.07286"
+     y="161.1456"
+     id="scorer-lastname"
+     inkscape:label="scorer-lastname"
+     class="scorer  pp-lastname">LASTNAME</text>
+  <text
+     x="250.46202"
+     y="257.26318"
+     id="scorer-teamname"
+     inkscape:label="scorer-teamname"
+     class="scorer  pp-teamname">TEAMNAME</text>
+  <text
+     x="200.9763"
+     y="31.741882"
+     id="scorer-card-subscript"
+     inkscape:label="scorer-card-subscript"
+     class="scorer  subscript">THE</text>
+  <text
+     x="226.01244"
+     y="49.830078"
+     id="scorer-card-title"
+     inkscape:label="scorer-card-title"
+     class="scorer  pp-category-title">SCORER</text>
+  <rect
+     style="fill:#ffffff;fill-opacity:0.4;fill-rule:evenodd"
+     id="distributor-card-overlay"
+     width="119.72514"
+     height="114.8597"
+     x="355.84833"
+     y="102.36343"
+     rx="6"
+     ry="6"
+     inkscape:label="distributor-card-overlay"
+     class="distributor" />
+  <text
+     x="415.46552"
+     y="137.79202"
+     id="distributor-firstname"
+     inkscape:label="distributor-firstname"
+     class="distributor  pp-firstname">FIRSTNAME</text>
+  <text
+     x="416.22577"
+     y="161.35696"
+     id="distributor-lastname"
+     inkscape:label="distributor-lastname"
+     class="distributor  pp-lastname">LASTNAME</text>
+  <text
+     x="416.84442"
+     y="257.26318"
+     id="distributor-teamname"
+     inkscape:label="distributor-teamname"
+     class="distributor  pp-teamname">TEAMNAME</text>
+  <text
+     x="362.04083"
+     y="31.741882"
+     id="distributor-card-subscript"
+     inkscape:label="distributor-card-subscript"
+     class="distributor  subscript">THE</text>
+  <text
+     x="414.82281"
+     y="49.830078"
+     id="distributor-card-title"
+     inkscape:label="distributor-card-title"
+     class="distributor  pp-category-title">DISTRIBUTOR</text>
+  <path
+     style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:4;stroke-miterlimit:0;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#Triangle)"
+     d="m 418.19753,214.81873 37.98782,-9.21088"
+     id="path3"
+     sodipodi:nodetypes="cc"
+     class="distributor-arrow  distributor-path  distributor" />
+  <path
+     style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:6;stroke-miterlimit:0;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#Triangle)"
+     d="M 414.60928,214.81873 362.36045,181.59881"
+     id="path5"
+     sodipodi:nodetypes="cc"
+     class="distributor-arrow  distributor-path  distributor" />
+  <circle
+     style="fill:#000000;fill-opacity:1;stroke:none;stroke-width:0;stroke-miterlimit:0;stroke-dasharray:none"
+     id="path4"
+     cx="413.97961"
+     cy="212.60519"
+     r="14.170754"
+     class="distributor-path  distributor-dot  distributor" />
+  <path
+     style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:6;stroke-miterlimit:0;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#Triangle)"
+     d="m 346.55355,81.797072 116.89763,-10e-7"
+     id="path6"
+     sodipodi:nodetypes="cc"
+     class="distributor-arrow  distributor-path  distributor" />
+  <path
+     style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:3;stroke-miterlimit:0;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#Triangle)"
+     d="M 485.3603,96.497988 H 399.09779"
+     id="path7"
+     sodipodi:nodetypes="cc"
+     class="distributor-arrow  distributor-path  distributor" />
+  <rect
+     style="display:inline;fill:#ffffff;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:3;stroke-dasharray:none;stroke-opacity:1"
+     id="rebounder-container"
+     width="157"
+     height="252.98933"
+     x="7.7306523"
+     y="13.505333"
+     inkscape:label="rebounder-container"
+     class="rebounder  left-side-card" />
+  <path
+     id="rebounder-card-path"
+     style="display:inline;fill:#000000;fill-opacity:1;stroke-width:0.203484"
+     class="rebounder  court-lines-path  left-side-card-path"
+     inkscape:label="rebounder-card-path"
+     d="m 9.6740965,81.226974 v 6.228147 H 87.070129 l 2.48322,5.395797 c 2.7262,-1.38357 5.59315,-2.487437 8.51775,-3.28707 l -0.52439,-2.108727 h 7.679071 l 0.0694,0.759295 c 0.60381,-0.06378 1.21248,-0.113547 1.82193,-0.153782 l 0.31619,-0.0173 v 98.529646 l -0.31619,-0.0173 c -0.60945,-0.0372 -1.21812,-0.0861 -1.82193,-0.14993 l -0.0694,0.75929 h -7.607741 l 0.51669,-2.09142 c -2.92729,-0.79589 -5.79731,-1.89568 -8.52739,-3.27554 l -2.45817,5.36696 H 9.6740965 v 6.21662 H 109.44417 c 0.54287,0 1.08438,-9e-5 1.62335,-0.025 21.62647,-0.68235 40.06145,-14.92958 47.83669,-34.89684 v -42.30909 c -7.77362,-19.969782 -26.20982,-34.217701 -47.83669,-34.898763 -0.5391,-0.01506 -1.07843,-0.02499 -1.62142,-0.02499 z M 113.3618,88.104847 c 24.31524,1.844707 43.56047,23.207773 43.56047,49.202343 v 0.64588 0.14802 l -0.0135,0.49979 v 0.15763 l -0.0174,0.50748 v 0.098 c -0.0151,0.19409 -0.0169,0.38912 -0.0271,0.58244 v 0.027 c -0.3127,6.13592 -1.69784,11.97764 -3.96196,17.32154 -6.87813,16.23442 -21.86754,27.87898 -39.53294,29.21846 z m -33.471411,3.463931 c -2.80108,2.03055 -5.42944,4.35781 -7.81212,6.92015 l 4.24152,4.348172 c 2.11638,-2.27606 4.45224,-4.347402 6.93875,-6.151262 z m -13.06969,13.511612 c -1.98304,2.92335 -3.70261,6.05502 -5.10717,9.30954 l 5.3983,2.56814 c 1.24634,-2.8898 2.77329,-5.66777 4.5365,-8.26382 z m -7.88923,17.39267 c -0.90685,3.44208 -1.49589,7.00114 -1.75445,10.58016 l 5.90922,0.47095 c 0.22789,-3.17877 0.75338,-6.33921 1.55587,-9.3922 z m 4.17019,18.6902 -5.90728,0.4748 c 0.26042,3.57392 0.85573,7.13402 1.76794,10.58016 l 5.71063,-1.66661 c -0.81052,-3.05688 -1.33804,-6.21705 -1.57129,-9.38835 z m 4.06415,16.55456 -5.39252,2.57776 c 1.41033,3.25452 3.12944,6.38227 5.11489,9.29801 l 4.81991,-3.62347 c -1.7616,-2.58486 -3.29017,-5.3625 -4.54228,-8.2523 z m 9.21954,14.10368 -4.23767,4.35394 c 2.3847,2.55877 5.0183,4.88368 7.82369,6.91439 l 3.36043,-5.12476 c -2.4908,-1.80386 -4.82836,-3.87127 -6.94645,-6.14357 z"
+     sodipodi:nodetypes="ccccccccccccccccccccsccccsccsccccccccccccccccccccccccccccccccccccccccc" />
+  <path
+     id="rebounder-card-overlay"
+     style="fill:#ffffff;fill-rule:evenodd;stroke-width:0.999999"
+     class="rebounder"
+     inkscape:label="rebounder-card-overlay"
+     d="m 22.448879,98.618038 h 97.202101 c 3.324,0 32.53632,28.129202 32.53632,31.453202 v 17.0936 c 0,3.324 -27.40713,31.4532 -30.73113,31.4532 H 22.448879 c -3.324,0 -6,-2.676 -6,-6 v -68 c 0,-3.324 2.676,-6.000002 6,-6.000002 z"
+     sodipodi:nodetypes="sssssssss" />
+  <text
+     x="84.072739"
+     y="134.15289"
+     id="rebounder-firstname"
+     inkscape:label="rebounder-firstname"
+     class="rebounder  pp-firstname">FIRSTNAME</text>
+  <text
+     x="84.832993"
+     y="157.71783"
+     id="rebounder-lastname"
+     inkscape:label="rebounder-lastname"
+     class="rebounder  pp-lastname">LASTNAME</text>
+  <text
+     x="86.017273"
+     y="257.00507"
+     id="rebounder-teamname"
+     inkscape:label="rebounder-teamname"
+     class="rebounder  pp-teamname">TEAMNAME</text>
+  <text
+     x="29.792542"
+     y="32"
+     id="rebounder-card-subscript"
+     inkscape:label="rebounder-card-subscript"
+     class="rebounder  subscript">THE</text>
+  <text
+     x="85.900208"
+     y="49.830078"
+     id="rebounder-card-title"
+     inkscape:label="rebounder-card-title"
+     class="rebounder  pp-category-title">REBOUNDER</text>
+</svg>

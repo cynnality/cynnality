@@ -1,0 +1,46 @@
+<svg
+   width="170"
+   height="265"
+   viewBox="0 0 170 264.99999"
+   version="1.1"
+   id="svg1"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs1" />
+  <g
+     id="template-replacement-pp-card"
+     class="template-replacement-pp-card">
+    <rect
+       style="fill:#ffffff;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:3;stroke-dasharray:none;stroke-opacity:1"
+       width="157"
+       height="252.98933"
+       x="6.5"
+       y="6.0053406"
+       class="pp-card-container" />
+    <path
+       style="fill:#ffffff;stroke:#000000;stroke-width:3;stroke-miterlimit:0"
+       d="M 84.99922,81.60976 A 69.103946,68.499633 0 0 0 26.5,113.64573 v 72.92654 A 69.103946,68.499633 0 0 0 84.99922,218.60976 69.103946,68.499633 0 0 0 143.5,186.57227 V 113.64725 A 69.103946,68.499633 0 0 0 84.99922,81.60976 Z"
+       class="pp-card-path" />
+    <text
+       x="50.371094"
+       y="130.08066"
+       class="pp-firstname">FIRSTNAME</text>
+    <text
+       x="51.131348"
+       y="153.6456"
+       class="pp-lastname">LASTNAME</text>
+    <text
+       x="83.520508"
+       y="249.76318"
+       class="pp-teamname">TEAMNAME</text>
+    <text
+       x="15.030823"
+       y="24.241882"
+       class="subscript">THE</text>
+    <text
+       x="36.701172"
+       y="38.748047"
+       class="pp-category-title">TITLETITLETITLE</text>
+  </g>
+</svg>

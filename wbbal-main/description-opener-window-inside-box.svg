@@ -1,0 +1,334 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="501.09088"
+   height="336.15793"
+   viewBox="0 0 501.09088 336.15793"
+   version="1.1"
+   id="svg1"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <style
+     id="style1">.title-text {   }
+.placeholder-text {   }
+.swatch {   }
+.label {   }
+.label-container {   }
+.team-indicator {   }
+.team-cyl {   }
+</style>
+  <defs
+     id="defs1" />
+  <rect
+     style="display:inline;fill:#3680c0;fill-opacity:1;fill-rule:evenodd;stroke-width:1"
+     id="rect58"
+     width="1518.603"
+     height="768.5896"
+     x="-508.71161"
+     y="-254.3394" />
+  <rect
+     style="display:inline;fill:#3680c0;fill-opacity:1;fill-rule:evenodd;stroke:#e3173e;stroke-width:6;stroke-dasharray:none;stroke-opacity:1"
+     id="triplet-left-court-bg"
+     width="491.90701"
+     height="712.86017"
+     x="-483.96381"
+     y="-226.47467" />
+  <rect
+     style="display:inline;fill:#3680c0;fill-opacity:1;fill-rule:evenodd;stroke:#e3173e;stroke-width:6;stroke-dasharray:none;stroke-opacity:1"
+     id="triplet-center-court-bg"
+     width="485.29434"
+     height="712.86017"
+     x="7.9427471"
+     y="-226.47467" />
+  <rect
+     style="display:inline;fill:#3680c0;fill-opacity:1;fill-rule:evenodd;stroke:#e3173e;stroke-width:6;stroke-dasharray:none;stroke-opacity:1"
+     id="triplet-right-court-bg"
+     width="491.90656"
+     height="712.86017"
+     x="493.23712"
+     y="-226.47467" />
+  <rect
+     style="display:inline;fill:#5091cd;fill-opacity:1;fill-rule:evenodd;stroke:#363a36;stroke-width:2.99999;stroke-dasharray:none;stroke-opacity:1"
+     id="rect72"
+     width="520.76434"
+     height="362.56012"
+     x="-9.8366718"
+     y="-13.201048" />
+  <rect
+     style="display:inline;fill:#363a36;fill-opacity:1;fill-rule:evenodd;stroke:#ffffff;stroke-width:2.99999;stroke-dasharray:none;stroke-opacity:1"
+     id="description-opener-window-inside-box"
+     width="498.09094"
+     height="333.15796"
+     x="1.4999981"
+     y="1.5000019" />
+  <path
+     id="main-clip-path"
+     style="display:inline;fill:#3680c0;fill-opacity:1;fill-rule:evenodd;stroke-width:0.999999"
+     d="M -508.71088,-291.00977 V 558.09795 H 1009.8907 v -849.10772 z m 71.14844,65.10319 H 987.9354 V 492.99475 H -437.56244 Z" />
+  <path
+     id="inside-left-clip-path"
+     style="display:inline;fill:#3680c0;fill-opacity:1;fill-rule:evenodd;stroke:#e3173e;stroke-width:6;stroke-dasharray:none;stroke-opacity:1"
+     d="m 410.3751,-226.47428 v 31.06446 H 931.6188 V 455.32064 H 410.3751 v 31.06446 h 574.7686 v -712.85938 z" />
+  <path
+     id="inside-right-clip-path"
+     style="display:inline;fill:#3680c0;fill-opacity:1;fill-rule:evenodd;stroke:#e3173e;stroke-width:6;stroke-dasharray:none;stroke-opacity:1"
+     d="m -483.96383,-226.47467 v 712.86019 h 594.11715 v -31.06451 h -538.07328 v -650.73118 h 538.07328 v -31.0645 z" />
+  <rect
+     style="fill:none;fill-rule:evenodd;stroke:#08e700;stroke-width:0.999991;stroke-dasharray:3, 0.999991;stroke-dashoffset:0;stroke-opacity:1"
+     id="year-founded-box"
+     width="99.000008"
+     height="30.999969"
+     x="379.08307"
+     y="147.31686"
+     class="label-container" />
+  <rect
+     style="fill:none;fill-rule:evenodd;stroke:#08e700;stroke-width:0.999999;stroke-dasharray:2.99999, 0.999999;stroke-dashoffset:0;stroke-opacity:1"
+     id="city-state-label-container"
+     width="235.84685"
+     height="29"
+     x="104.58966"
+     y="26.339418"
+     class="label-container" />
+  <rect
+     style="fill:none;fill-rule:evenodd;stroke:#08e700;stroke-width:1;stroke-dasharray:2.99999, 1;stroke-dashoffset:0;stroke-opacity:1"
+     id="champ-titles-text-container"
+     width="319"
+     height="156.24352"
+     x="21.436522"
+     y="106.23672"
+     class="label-container" />
+  <rect
+     style="fill:none;fill-rule:evenodd;stroke:#08e700;stroke-width:0.999996;stroke-dasharray:3, 0.999996;stroke-dashoffset:0;stroke-opacity:1"
+     id="og-team-container"
+     width="130"
+     height="60"
+     x="348.08307"
+     y="22.398714"
+     class="label-container" />
+  <rect
+     style="fill:none;fill-rule:evenodd;stroke:#08e700;stroke-width:0.999994;stroke-dasharray:3, 0.999994;stroke-dashoffset:0;stroke-opacity:1"
+     id="og-team-inside"
+     width="110.00001"
+     height="44.000008"
+     x="358.08307"
+     y="30.398714"
+     class="label-container" />
+  <rect
+     style="fill:none;fill-rule:evenodd;stroke:#08e700;stroke-width:0.999994;stroke-dasharray:3, 0.999994;stroke-dashoffset:0;stroke-opacity:1"
+     id="founded-year-container"
+     width="99.000008"
+     height="29.000006"
+     x="379.08307"
+     y="117.53195"
+     class="label-container" />
+  <text
+     xml:space="preserve"
+     style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:13.3333px;line-height:27.7372px;font-family:'Chivo Mono';-inkscape-font-specification:'Chivo Mono';text-align:center;letter-spacing:0px;word-spacing:-1.2607px;writing-mode:lr-tb;direction:ltr;text-anchor:middle;opacity:1;fill:#08e700;fill-opacity:1;stroke:none;stroke-width:5;stroke-linecap:round;stroke-linejoin:bevel;stroke-miterlimit:0;stroke-dasharray:3, 0.999996;stroke-dashoffset:0;stroke-opacity:1"
+     x="428.59906"
+     y="135.90164"
+     id="founded-text-label"
+     class="label  title-text">founded</text>
+  <text
+     xml:space="preserve"
+     style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:18.6667px;line-height:38.8321px;font-family:'Chivo Mono';-inkscape-font-specification:'Chivo Mono';text-align:center;letter-spacing:0px;word-spacing:-1.59596px;writing-mode:lr-tb;direction:ltr;text-anchor:middle;opacity:1;fill:#08e700;fill-opacity:1;stroke:none;stroke-width:5;stroke-linecap:round;stroke-linejoin:bevel;stroke-miterlimit:0;stroke-dasharray:3, 0.999997;stroke-dashoffset:0;stroke-opacity:1"
+     x="428.71503"
+     y="167.96097"
+     id="year-label-holder"
+     class="label  placeholder-text">year</text>
+  <text
+     xml:space="preserve"
+     style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:18.6667px;line-height:38.8323px;font-family:'Chivo Mono';-inkscape-font-specification:'Chivo Mono';text-align:center;letter-spacing:0px;word-spacing:-9.64602px;writing-mode:lr-tb;direction:ltr;text-anchor:middle;opacity:1;fill:#08e700;fill-opacity:1;stroke:none;stroke-width:5;stroke-linecap:round;stroke-linejoin:bevel;stroke-miterlimit:0;stroke-dasharray:3, 0.999995;stroke-dashoffset:0;stroke-opacity:1"
+     x="413.08307"
+     y="59.08902"
+     id="og-team-text-label"
+     class="label  title-text">=OG  TEAM=</text>
+  <rect
+     style="fill:none;fill-rule:evenodd;stroke:#08e700;stroke-width:1;stroke-dasharray:3, 1;stroke-dashoffset:0;stroke-opacity:1"
+     id="location-label-container"
+     width="83.153"
+     height="29"
+     x="21.436522"
+     y="26.339785"
+     class="label-container" />
+  <text
+     xml:space="preserve"
+     style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:13.3333px;line-height:27.7373px;font-family:'Chivo Mono';-inkscape-font-specification:'Chivo Mono';text-align:center;letter-spacing:0px;word-spacing:-1.2607px;writing-mode:lr-tb;direction:ltr;text-anchor:middle;opacity:1;fill:#08e700;fill-opacity:1;stroke:none;stroke-width:5;stroke-linecap:round;stroke-linejoin:bevel;stroke-miterlimit:0;stroke-dasharray:3, 0.999996;stroke-dashoffset:0;stroke-opacity:1"
+     x="63.059689"
+     y="45.579773"
+     id="location-label"
+     class="label  title-text">location</text>
+  <text
+     xml:space="preserve"
+     style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:18.6667px;line-height:38.8321px;font-family:'Chivo Mono';-inkscape-font-specification:'Chivo Mono';text-align:start;letter-spacing:0px;word-spacing:-1.59596px;writing-mode:lr-tb;direction:ltr;text-anchor:start;opacity:1;fill:#08e700;fill-opacity:1;stroke:none;stroke-width:5;stroke-linecap:round;stroke-linejoin:bevel;stroke-miterlimit:0;stroke-dasharray:3, 0.999997;stroke-dashoffset:0;stroke-opacity:1"
+     x="113.15332"
+     y="45.749115"
+     id="city-state-label"
+     class="label  placeholder-text">city,  state </text>
+  <rect
+     style="fill:none;fill-rule:evenodd;stroke:#08e700;stroke-width:0.999994;stroke-dasharray:2.99999, 0.999994;stroke-dashoffset:0;stroke-opacity:1"
+     id="championship-titles-label-cocntainer"
+     width="192.83414"
+     height="33.866924"
+     x="21.436522"
+     y="72.369812"
+     class="label-container" />
+  <text
+     xml:space="preserve"
+     style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:16px;line-height:33.2847px;font-family:'Chivo Mono';-inkscape-font-specification:'Chivo Mono';text-align:center;letter-spacing:0px;word-spacing:-1.2607px;writing-mode:lr-tb;direction:ltr;text-anchor:middle;opacity:1;fill:#08e700;fill-opacity:1;stroke:none;stroke-width:5;stroke-linecap:round;stroke-linejoin:bevel;stroke-miterlimit:0;stroke-dasharray:3, 0.999996;stroke-dashoffset:0;stroke-opacity:1"
+     x="117.94958"
+     y="93.623291"
+     id="championship-titles-label"
+     class="label  title-text">championship titles</text>
+  <path
+     style="opacity:1;fill:none;fill-opacity:1;stroke:#08e700;stroke-width:1.99999;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:0;stroke-dasharray:6, 1.99999;stroke-dashoffset:0;stroke-opacity:1"
+     d="M 42.973123,122.36904 V 230.90115"
+     id="path-line-to-connect" />
+  <text
+     xml:space="preserve"
+     x="54.054134"
+     y="140.09451"
+     id="championship-title-label-1"
+     class="label champ-yr  placeholder-text">-------</text>
+  <rect
+     style="fill:none;fill-rule:evenodd;stroke:#08e700;stroke-width:0.999998;stroke-dasharray:2.99999, 0.999998;stroke-dashoffset:0;stroke-opacity:1"
+     id="color-swtaches-container"
+     width="123.23306"
+     height="48.999996"
+     x="354.85004"
+     y="245.52188"
+     class="label-container" />
+  <rect
+     style="fill:none;fill-rule:evenodd;stroke:#08e700;stroke-width:0.999997;stroke-dasharray:3, 0.999997;stroke-dashoffset:0;stroke-opacity:1"
+     id="colors-label-container"
+     width="66.423187"
+     height="29.000004"
+     x="411.65985"
+     y="216.52194"
+     class="label-container" />
+  <text
+     xml:space="preserve"
+     style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:13.3333px;line-height:27.7373px;font-family:'Chivo Mono';-inkscape-font-specification:'Chivo Mono';text-align:center;letter-spacing:0px;word-spacing:-1.2607px;writing-mode:lr-tb;direction:ltr;text-anchor:middle;opacity:1;fill:#08e700;fill-opacity:1;stroke:none;stroke-width:5;stroke-linecap:round;stroke-linejoin:bevel;stroke-miterlimit:0;stroke-dasharray:3, 0.999996;stroke-dashoffset:0;stroke-opacity:1"
+     x="444.95148"
+     y="235.76193"
+     id="colors-label"
+     class="label  title-text">colors</text>
+  <rect
+     style="fill:#0000ff;fill-rule:evenodd"
+     id="rect25"
+     width="30"
+     height="30"
+     x="364.81256"
+     y="255.02188"
+     class="swatch" />
+  <rect
+     style="fill:#0000ff;fill-rule:evenodd"
+     id="swatch-color-2"
+     width="30"
+     height="30"
+     x="401.46661"
+     y="255.02188"
+     class="swatch" />
+  <rect
+     style="fill:#0000ff;fill-rule:evenodd"
+     id="swatch-color3"
+     width="30"
+     height="30"
+     x="438.12067"
+     y="255.02188"
+     class="swatch" />
+  <text
+     xml:space="preserve"
+     x="54.054134"
+     y="160.00839"
+     id="championship-title-label-2"
+     class="label champ-yr  placeholder-text">-------</text>
+  <text
+     xml:space="preserve"
+     x="54.054134"
+     y="179.92221"
+     id="championship-title-label-3"
+     class="label champ-yr  placeholder-text">-------</text>
+  <text
+     xml:space="preserve"
+     x="54.054134"
+     y="199.83609"
+     id="championship-title-label-4"
+     class="label champ-yr  placeholder-text">-------</text>
+  <text
+     xml:space="preserve"
+     x="54.054134"
+     y="219.74997"
+     id="championship-title-label-5"
+     class="label champ-yr  placeholder-text">-------</text>
+  <text
+     xml:space="preserve"
+     x="143.22717"
+     y="138.69119"
+     id="championship-opp-label-1"
+     class="label champ-opp  placeholder-text">--- </text>
+  <text
+     xml:space="preserve"
+     x="143.22717"
+     y="158.60507"
+     id="championship-opp-label-2"
+     class="label champ-opp  placeholder-text">--- </text>
+  <text
+     xml:space="preserve"
+     x="143.22717"
+     y="178.51889"
+     id="championship-opp-label-3"
+     class="label champ-opp  placeholder-text">--- </text>
+  <text
+     xml:space="preserve"
+     x="143.22717"
+     y="198.43277"
+     id="championship-opp-label-4"
+     class="label champ-opp  placeholder-text">--- </text>
+  <text
+     xml:space="preserve"
+     x="143.22717"
+     y="218.34665"
+     id="championship-opp-label-5"
+     class="label champ-opp  placeholder-text">--- </text>
+  <path
+     style="opacity:1;fill:none;fill-opacity:1;stroke:#08e700;stroke-width:1.99999;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:0;stroke-dasharray:5.99999, 1.99999;stroke-dashoffset:0;stroke-opacity:1"
+     d="M 47.369383,119.20633 H 267.73063"
+     id="path1" />
+  <rect
+     style="fill:#08e700;fill-opacity:1;fill-rule:evenodd;stroke-width:1"
+     id="opp-label-container"
+     width="58.069221"
+     height="12"
+     x="191.43256"
+     y="113.20633"
+     rx="2"
+     ry="2" />
+  <text
+     xml:space="preserve"
+     style="font-size:10.6667px;line-height:22.1898px;font-family:SansPlomb_TRIAL;-inkscape-font-specification:SansPlomb_TRIAL;text-align:start;letter-spacing:0px;word-spacing:-1.2607px;writing-mode:lr-tb;direction:ltr;text-anchor:start;opacity:1;fill:#000000;fill-opacity:1;stroke:none;stroke-width:5;stroke-linecap:round;stroke-linejoin:bevel;stroke-miterlimit:0;stroke-dasharray:3, 0.999996;stroke-dashoffset:0;stroke-opacity:1"
+     x="195.76312"
+     y="122.00101"
+     id="opp-label"
+     class="label"><tspan
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:10.6667px;line-height:22.1898px;font-family:'Chivo Mono';-inkscape-font-specification:'Chivo Mono';fill:#000000;fill-opacity:1"
+       id="tspan43">against:</tspan></text>
+  <rect
+     style="fill:#08e700;fill-opacity:1;fill-rule:evenodd;stroke-width:0.999999"
+     id="year-label-container"
+     width="50.464657"
+     height="12"
+     x="89.272461"
+     y="113.20633"
+     rx="2"
+     ry="2" />
+  <text
+     xml:space="preserve"
+     style="font-size:10.6667px;line-height:22.1898px;font-family:SansPlomb_TRIAL;-inkscape-font-specification:SansPlomb_TRIAL;text-align:start;letter-spacing:0px;word-spacing:-1.2607px;writing-mode:lr-tb;direction:ltr;text-anchor:start;opacity:1;fill:#000000;fill-opacity:1;stroke:none;stroke-width:5;stroke-linecap:round;stroke-linejoin:bevel;stroke-miterlimit:0;stroke-dasharray:3, 0.999996;stroke-dashoffset:0;stroke-opacity:1"
+     x="101.63544"
+     y="120.99301"
+     id="year-label"
+     class="label"><tspan
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:10.6667px;line-height:22.1898px;font-family:'Chivo Mono';-inkscape-font-specification:'Chivo Mono';fill:#000000;fill-opacity:1"
+       id="tspan45">year</tspan></text>
+</svg>

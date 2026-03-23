@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="441.4848"
+   height="222.12651"
+   viewBox="0 0 441.4848 222.12651"
+   version="1.1"
+   id="svg1"
+   inkscape:version="1.4.3 (fcd0343856, 2026-01-01)"
+   sodipodi:docname="wnba-timeline-spec-awards.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <style
+     id="style1">.pp-scorer {  }
+.pp-rebounder {   }
+.pp-dish-n-assist {   }
+.pp-award-team {   }
+.pp-border {   }
+.pp-name {   }
+.pp-title {   }
+.pp-container {   }
+</style>
+  <sodipodi:namedview
+     id="namedview1"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:document-units="px"
+     inkscape:zoom="0.47463824"
+     inkscape:cx="584.6558"
+     inkscape:cy="255.98443"
+     inkscape:window-width="1859"
+     inkscape:window-height="1011"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg1">
+    <inkscape:page
+       x="0"
+       y="0"
+       width="441.4848"
+       height="222.12651"
+       id="page2"
+       margin="0"
+       bleed="0" />
+  </sodipodi:namedview>
+  <defs
+     id="defs1" />
+  <rect
+     style="fill:#ffffff;fill-opacity:1;fill-rule:evenodd;stroke:#261c11;stroke-width:2.99999;stroke-dasharray:none;stroke-opacity:1"
+     id="top-draft-pick-team-container"
+     width="377"
+     height="57"
+     x="1.499995"
+     y="57.554382"
+     inkscape:label="top-draft-pick-team-container" />
+  <g
+     id="draft-pick-icon"
+     inkscape:label="draft-pick-icon"
+     transform="translate(-5.0000011,-342.16796)">
+    <circle
+       style="fill:#bfa3f7;fill-opacity:1;stroke:#261c11;stroke-width:3;stroke-miterlimit:0;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       id="path54"
+       cx="399.15256"
+       cy="459.4061"
+       r="45.832256" />
+    <path
+       id="path53"
+       style="fill:#e0edff;fill-opacity:1;stroke:#261c11;stroke-width:3;stroke-miterlimit:0"
+       d="m 425.30568,390.62822 c 0,0 -26.28785,55.9517 -26.28785,75.96621 0,-20.01451 -27.60171,-75.96621 -27.60171,-75.96621 -18.70881,-45.70512 1.71529,-46.96026 27.60171,-46.96026 25.88641,0 44.8225,1.68062 26.28785,46.96026 z"
+       sodipodi:nodetypes="scsss" />
+  </g>
+  <g
+     id="top-draft-pick-team-colors"
+     inkscape:label="top-draft-pick-team-colors"
+     transform="translate(-5.0000011,-342.16796)">
+    <rect
+       style="fill:#0000ff;fill-rule:evenodd;stroke-width:1"
+       id="team-color-1"
+       width="20"
+       height="80"
+       x="77"
+       y="484.29446"
+       inkscape:label="team-color-1" />
+    <rect
+       style="fill:#0000ff;fill-rule:evenodd;stroke-width:0.999997"
+       id="team-color-2"
+       width="20"
+       height="40"
+       x="57"
+       y="484.2944"
+       inkscape:label="team-color-2" />
+    <rect
+       style="fill:#0000ff;fill-rule:evenodd;stroke-width:1"
+       id="team-color-3"
+       width="20"
+       height="20"
+       x="57"
+       y="522.29443"
+       inkscape:label="team-color-3" />
+  </g>
+  <rect
+     style="fill:#ffffff;fill-opacity:1;fill-rule:evenodd;stroke:#261c11;stroke-width:2.99999;stroke-dasharray:none;stroke-opacity:1"
+     id="top-draft-pick-name-container"
+     width="317.00003"
+     height="77.000008"
+     x="93.350395"
+     y="143.62646"
+     inkscape:label="top-draft-pick-name-container" />
+  <text
+     xml:space="preserve"
+     style="font-style:normal;font-variant:normal;font-weight:300;font-stretch:normal;font-size:26.6667px;line-height:21.5px;font-family:'Chivo Mono';-inkscape-font-specification:'Chivo Mono Light';text-align:start;letter-spacing:-2px;word-spacing:-5px;writing-mode:lr-tb;direction:ltr;text-anchor:start;white-space:pre;inline-size:303.489;display:inline;fill:#000000;fill-opacity:1;stroke:none;stroke-width:3;stroke-miterlimit:0;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+     x="3.5847626"
+     y="830.79114"
+     id="first-draft-pick-team"
+     transform="translate(4.3782089,-747.97473)"
+     inkscape:label="first-draft-pick-team"><tspan
+       x="3.5847626"
+       y="830.79114"
+       id="tspan2"><tspan
+         dx="0 0 0 4.999999 -4.999999 0 0 0 0 0 0 0 4.9999895 -4.9999952 0 0 5.0000048 -4.9999952 2 -2.0000105 0 0 4.9999895"
+         id="tspan1">the TEAMNAME had first </tspan></tspan><tspan
+       x="3.5847626"
+       y="852.29116"
+       id="tspan4"><tspan
+         dx="0 0 0 0 5.000001 -4.999999 0 5.0000048 -5.0000029 0 0 5.0000048 -5.0000105"
+         id="tspan3">pick at the draft</tspan></tspan></text>
+  <text
+     xml:space="preserve"
+     style="font-style:normal;font-variant:normal;font-weight:300;font-stretch:normal;font-size:18.6667px;line-height:15.05px;font-family:'Chivo Mono';-inkscape-font-specification:'Chivo Mono Light';text-align:start;letter-spacing:-2px;word-spacing:-5px;writing-mode:lr-tb;direction:ltr;text-anchor:start;white-space:pre;inline-size:303.489;display:inline;fill:#000000;fill-opacity:1;stroke:none;stroke-width:3;stroke-miterlimit:0;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+     x="3.5847626"
+     y="830.79114"
+     id="draft-selection-label"
+     transform="translate(197.27179,-696.07822)"
+     inkscape:label="draft-selection-label"><tspan
+       x="3.5847626"
+       y="830.79114"
+       id="tspan6"><tspan
+         dx="0 5 -5 0 0 0 4.9999971 -4.999999"
+         id="tspan5">&amp; they chose</tspan></tspan></text>
+  <text
+     xml:space="preserve"
+     style="font-style:normal;font-variant:normal;font-weight:300;font-stretch:normal;font-size:37.3333px;line-height:30.1px;font-family:'Chivo Mono';-inkscape-font-specification:'Chivo Mono Light';text-align:start;letter-spacing:-2px;word-spacing:-5px;writing-mode:lr-tb;direction:ltr;text-anchor:start;white-space:pre;inline-size:204.392;display:inline;fill:#000000;fill-opacity:1;stroke:none;stroke-width:3;stroke-miterlimit:0;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+     x="3.5847626"
+     y="830.79114"
+     id="top-draft-pick-name"
+     transform="translate(157.63075,-635.85932)"
+     inkscape:label="top-draft-pick-name"><tspan
+       x="3.5847626"
+       y="830.79114"
+       id="tspan8"><tspan
+         dx="0 0 0 0 5.0000019 -4.9999981"
+         style="font-style:italic;font-weight:500;-inkscape-font-specification:'Chivo Mono Medium Italic'"
+         id="tspan7">NAME NAME</tspan></tspan></text>
+</svg>

@@ -31,37 +31,33 @@
 
 <style>
         body {
-            font-family: "Inter", sans-serif;
+            font-family: "Chivo", sans-serif;
             background-color: #e3e3e3;
         }
         p {
             margin: 0;
         }
-
-        .press-start-2p-regular {
-        font-family: "Press Start 2P", system-ui;
-        font-weight: 400;
-        font-style: normal;
+        h2 {
+            font-family: "Chivo", sans-serif;
+            font-size: 3em;
+            margin: 0;
+            padding: 0;
         }
 
+        .opening-theme h2 {
+            font-style: italic;
+            font-weight: 400;
+        }
+        .opening-theme h4 {
+            font-family: "Chivo Mono", system-ui;
+            font-style: normal;
+            font-size: 22px;
+            margin-top: 1em;
+            font-weight: 300;
+        }
 
         .lab-cynn {
             display: block;
-        }
-
-        .curio-bar {
-            display: flex;
-            height: 3em;
-            justify-content: center;
-            align-items: center;
-            margin-bottom: 1em;
-            gap: 1.25em;
-            font-style: italic;
-            border-top: 4px solid #000000;
-            border-bottom: 4px solid #000000;
-        }
-        .curio-bar p {
-            font-size: .99em;
         }
 
         .update-section {
@@ -72,46 +68,16 @@
             font-style: italic;
         }
         .mobile-note {
-            font-family: "Press Start 2P", system-ui;
+            font-family: "Chivo Mono", system-ui;
             font-style: normal;
             width: 17em;
-            font-size: 14px;
+            font-size: 22px;
+            margin-top: 1em;
         }
         .contact {
             margin-top: 1em;
         }
-        .currently-working {
-            border: dotted 2px #000000;
-            padding: 4px;
-            width: 15em;
-            display: flex;
-            margin: 2em auto;
-            align-items: center;
-            justify-content: space-around;
-            text-decoration: none;
-            text-align: center;
 
-            background: #9626D3;
-            transition: ease-in-out 0.15s;
-        }
-        .currently-working:hover {
-            background: #000000;
-        }
-        .currently-working a {
-            text-decoration: none;
-            color: #ffffff;
-        }
-        .blue-block {
-            width: 7em;
-            height: 2em;
-            background-color: #E566FF;
-        }
-        .cw-descrip {
-            width: fit-content;
-        }
-        .cw-descrip p {
-            text-decoration: none;
-        }
         .last-updated {
             border: solid 2px #000000;
             padding: 4px;
@@ -122,143 +88,7 @@
             justify-content: space-around;
         }
         .lu-descrip {
-            font-family: 'Courier New', Courier, monospace;
-        }
-        .universe-links-title {
-            font-size: 18px;
-            margin-top: 1em;
-            border-bottom: solid 2px #000000;
-            margin-bottom: .5em;
-        }
-        .uni-link {
-            margin: 4px;
-        }
-
-        .off-center-box {
-            display: grid;
-            position: relative;
-        }
-        .off-center-box .outie {
-            display: grid;
-            border: 2px solid #000000;
-        }
-        .off-center-box .innie {
-            display: grid;
-            align-self: center;
-            justify-self: center;
-            transition: transform 0.1s ease-in-out;
-            position: relative;
-        }
-        .off-center-box .innie:hover {
-            transform: scale(1.35);
-            z-index: 1;
-        }
-        .off-center-box .innie .innie-text {
-            align-self: center;
-            justify-self: center;
-            font-family: "Inter", sans-serif;
-            font-style: italic;
-            font-size: 1em;
-            color: #000000;
-        }
-        .off-center-box a {
-            align-self: center;
-            justify-self: center;
-            font-family: "Inter", sans-serif;
-            font-style: italic;
-            font-size: 1em;
-            color: #000000;
-            text-decoration: none;
-        }
-
-        .off-center-box.green {
-            top: -1.1em;
-            left: 40em;
-        }
-        .off-center-box.green .outie {
-            width: 12em;
-            height: 12em;
-        }
-        .off-center-box.green .innie {
-            width: 9em;
-            height: 9em;
-            background-color: #15B73B;
-        }
-
-        .off-center-box.blue {
-            top: -4.5em;
-            left: 49em;
-        }
-        .off-center-box.blue .outie {
-            width: 18em;
-            height: 18em;
-        }
-        .off-center-box.blue .innie {
-            width: 15em;
-            height: 15em;
-            background-color: #7F00FF;
-        }
-        .off-center-box.blue .innie:hover {
-        transform: scale(1.23);
-        }
-
-        .off-center-box.red { 
-            top: -8.75em;
-            left: 63em;
-        }
-        .off-center-box.red .outie {
-            width: 20em;
-            height: 20em;
-        }
-        .off-center-box.red .innie {
-            width: 15em;
-            height: 15em;
-            background-color: #A30034;
-        }
-        .standalone-box {
-            display: grid;
-            position: relative;
-        }
-        .standalone-box .outie {
-            display: grid;
-            border: 2px solid #000000;
-        }
-        .standalone-box .innie {
-            display: grid;
-            align-self: center;
-            justify-self: center;
-            transition: transform 0.1s ease-in-out;
-            position: relative;
-        }
-        .standalone-box .innie:hover {
-            transform: scale(1.35);
-            z-index: 1;
-        }
-        .standalone-box .innie .innie-text {
-            align-self: center;
-            justify-self: center;
-            font-family: "Inter", sans-serif;
-            font-style: italic;
-            font-size: 1em;
-            color: #000000;
-        }
-        .standalone-box a {
-            align-self: center;
-            justify-self: center;
-            text-decoration: none;
-        }
-        .purple {
-            top: -38.1em;
-            left: 24em;
-        }
-        .purple .outie {
-            width: 20em;
-            height: 6em;
-        }
-        .purple .innie {
-            width: 15em;
-            height: 5em;
-            background-color: #E566FF;
+            font-family: 'Chivo Mono', Courier, monospace;
         }
 
 </style>
@@ -267,20 +97,23 @@
 <body>
 
     <div class="opening-theme">
-        <img src="assets/lab-cynn/normed-header.png" alt="sticker" class="lab-cynn sticker" />
+        <h2>CYNNALITY</h2>
+        <h4> > hello my name is caitlynn! what else would you like to know? </h4>
     </div>
+
 
     <div class="curio-bar">
 
     </div>
 
     <div class="update-section">
-        <div class="mobile-note">
-            <p>things might look funky on phones</p>
-        </div>
         <div class="contact">
             <a href="mailto:yesandcynn@gmail.com">yesandcynn@gmail.com</a>
         </div>
+        <div class="mobile-note">
+            <p>im redoing things here... be well & come back soon < 3</p>
+        </div>
+
     <!--
         <div class="currently-working">
             <a href="courts/jax-ball-data/jax-ball.html" target="_blank">
@@ -296,55 +129,12 @@
     -->
         <div class="last-updated">
             <div class="lu-descrip">
-                <p>last update: December 13, 2025</p>
+                <p>last update: monday march 23 2026</p>
             </div>
         </div>
 
     </div>
 
-    <div class="off-center-box green">
-        <div class="outie">
-            <a href="sandbox/sandbox.html">
-                <div class="innie">
-                    <div class="innie-text">
-                        <h1>about</h1>
-                    </div>
-                </div>
-            </a>
-        </div>
-    </div>
-    <div class="off-center-box blue">
-        <div class="outie">
-            <a href="courts/main-court.html">
-                <div class="innie">
-                    <div class="innie-text">
-                        <h1>courts</h1>
-                    </div>
-                </div>
-            </a>
-        </div>
-    </div>
-    <div class="off-center-box red">
-        <div class="outie">
-            <a href="flashcards/main.html">
-                <div class="innie">
-                    <div class="innie-text">
-                        <h1>library</h1>
-                    </div>
-                </div>
-            </a>
-        </div>
-    </div>
-    <div class="standalone-box purple">
-        <div class="outie">
-            <a href="/learning-p5/sort-office-stripped.html">
-                <div class="innie">
-                    <div class="innie-text">
-                        <h1>play a game</h1>
-                    </div>
-                </div>
-            </a>
-        </div>
-    </div>
+
 </body>
 </html>

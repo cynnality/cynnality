@@ -1,0 +1,244 @@
+:root {
+    --dashed-stroke-color: #333925;
+    --fill-color: #333925;
+
+  --darkest-blue: #1E292D;
+  --muddled-blue: #286F6F;
+  --seafoam-blue: #00C092;
+  --minty-blue: #B5FFAC;
+  --space-purple: #55458E;
+  --space-blue: #5A8CFF;
+  --starlight-blue: #AEDEFF;
+  --brown: #633632;
+  --starlight-purple: #ECDFFF;
+  --rich-purple: #490F40;
+  --ochre-dark-green: #333925;
+  --ochre-green: #84721E;
+  --ochre-yellow: #F69E00;
+
+  --basketball-orange: #C67400;
+  --purple-ice: #FD00FF;
+  --magplum: #950058;
+  --deeper-magplum: #120405;
+
+  --brown-tone: #4F3E08;
+  --tan-brown: #4F3E08;
+  --green-swamp: #83871A;
+}
+
+
+.court-line-conf-div {
+    fill: #000000;
+    stroke: none;
+}
+
+#main-court-background-color {
+    fill: #000000;
+    stroke: none;
+}
+
+#center-court-container-background {
+    background: #000000;
+}
+
+.opener-description {
+    fill: #ffffff;
+    stroke: #000000;
+    stroke-width: 3;
+}
+
+.triplet-piece {
+    fill: #ffffff;
+    stroke: rgb(255, 0, 179);
+    stroke-width: 3;
+}
+
+.overflow-clip {
+    fill: #ffffff;
+}
+
+.topic-title-text {
+    font-family: "Chivo Mono", monospace;
+    font-size: 32px;
+    font-weight: 600;
+    font-style: italic;
+    word-spacing: -8px;
+    fill: var(--fill-color);
+}
+
+.team-cyl {
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.team-cyl.active {
+  transform: translateX(80px);
+  stroke: #ffffff;
+}
+
+.team-cyl.east-cyl {
+    transform: translateX(0px);
+}
+.team-cyl.east-cyl.active {
+    transform: translateX(-80px);
+}
+
+#center-court-container-background {
+  transition: fill 0.3s ease;
+}
+
+.team-title {
+    font-family: "JetBrains Mono", monospace;
+    font-size: 32px;
+    font-weight: 600;
+    text-align: left;
+    letter-spacing: -3px;
+}
+
+.team-cyl .cyl-shape {
+    fill: #ffffff;
+    stroke: #000000;
+    stroke-width: 6;
+}
+
+.descrip-text {
+    font-family: "DM Mono", monospace;
+    font-size: 24px;
+    letter-spacing: -3px;
+}
+
+.label-container {
+    fill: #ffffff;
+    stroke: var(--dashed-stroke-color);
+    stroke-width: 1;
+    stroke-dasharray: 3, 1;
+}
+
+.label {
+    font-family: "Chivo Mono", monospace;
+    font-size: 24px;
+    letter-spacing: -1px;
+}
+
+.label.title-text {
+    font-family: "Chivo Mono", monospace;
+    font-size: 22px;
+    text-anchor: middle;
+    fill:var(--fill-color);
+}
+
+.label.title-text.founded-text-label {
+    font-family: "Chivo Mono", monospace;
+    font-size: 18px;
+    fill:var(--fill-color);
+    text-anchor: middle;
+}
+
+.label.title-text.placeholder-text {
+    text-anchor: middle;
+}
+
+
+
+.label.champ-opp.placeholder-text {
+    font-family: "Chivo Mono", monospace;
+    font-size: 22px;
+    fill:var(--fill-color);
+    text-anchor: left;
+
+    translate: 100, 50;
+}
+
+#city-state-label {
+    font-family: "Chivo Mono", monospace;
+    font-size: 22px;
+    fill:var(--fill-color);
+}
+
+#main-clip-path {
+  display:inline;
+  fill:#ffffff;
+  fill-opacity:1;
+  fill-rule:evenodd;
+  stroke-width:3;
+  stroke: #000000;
+}
+
+#inside-right-clip-path,
+#inside-left-clip-path {
+    fill: #ffffff;
+    stroke: #000000;
+    stroke-width: 3;
+}
+
+.champ-cat-label-container {
+    fill: #ffffff;
+    stroke: var(--dashed-stroke-color);
+    stroke-width: 1.5;
+    stroke-dasharray: 3, 1;
+}
+
+.label.champ-yr-cat-text,
+.label.champ-opp-cat-text {
+    font-family: "Chivo Mono", monospace;
+    font-size: 14px;
+}
+
+.swatch {
+    fill: none;
+    stroke: #000000;
+    stroke-width: 2;
+}
+
+.detail-line {
+    stroke: var(--dashed-stroke-color);
+    stroke-width: 2;
+    stroke-dasharray:6, 2;
+}
+
+.detail-line.solid {
+    stroke: var(--dashed-stroke-color);
+    stroke-width: 2;
+    stroke-dasharray: none;
+}
+
+.topic-container {
+    fill:#363a36;
+}
+
+#og-team-group {
+  display: none;
+}
+
+.champ-title-bar-container {
+    fill: #ffffff;
+    stroke: var(--ochre-dark-green);
+    stroke-width: 1.5px;
+}
+
+.champ-label:not(.champ-yr) {
+    font-family: "Chivo Mono", monospace;
+    font-size: 16px;
+    fill:#000000;
+    text-transform: uppercase;
+    word-spacing: -3px;
+}
+
+.champ-label.champ-yr {
+    font-family: "Chivo Mono", monospace;
+    font-size: 16px;
+    text-transform: uppercase;
+    word-spacing: -3px;
+}
+
+.champ-label.champ-opp {
+    font-weight: 600;
+    font-style: italic;
+    word-spacing: -2px;
+}
+
+.champ-title-label-container {
+    fill: none;
+    stroke: var(--brown-tone);
+    stroke-width: 2;
+}

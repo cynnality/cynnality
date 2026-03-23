@@ -1,0 +1,503 @@
+html, body {
+  height: auto;
+  min-height: 100%;
+  overflow-y: auto;
+}
+
+#teams-timeline-svg {
+  display: block; /* prevents weird inline whitespace/layout stuff */
+  height: auto;
+  position: fixed;
+  z-index: 4;
+  width: 97%;
+}
+
+#playoff-bracket-svg {
+  border: 3px solid black;
+  background: white;
+}
+
+#main-court-background-color {
+    fill: #ffffff;
+    stroke: #000000;
+    stroke-width: 4;
+}
+
+#first-tl-row {
+  display: flex;
+  flex-direction: column;
+  /*! align-items: center; */
+  /*! gap: 30px; */
+  /*! margin-left: 20px; */
+}
+
+#season-layout-row {
+
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+
+  gap: 30px;
+
+  margin-left: 20px;
+}
+
+#wnba-timeline-toggle-svg {
+  margin-top: 180px;
+  margin-bottom: 0px;
+  margin-left: 60px;
+}
+
+#first-tl-row-full {
+  display: flex;
+}
+
+
+
+#mini-timeline-svg,
+#teams-section-svg {
+
+  flex-shrink: 0;
+}
+
+
+#reg-season-peak-performers-svg {
+  margin-top: 220px;
+  margin-left: 60px;
+}
+
+#path1 {
+    fill: none;
+    stroke: #000000;
+    stroke-width: 3;
+}
+
+.main-line-path {
+    fill: none;
+    stroke: #000000;
+    stroke-width: 3;
+}
+
+.season-square {
+    fill: #ffffff;
+    stroke: #000;
+    stroke-width: 2;
+
+    cursor: pointer;
+}
+.season-square:hover {
+  stroke: #000;
+  stroke-width: 2;
+  transform: translatey(-8px);
+  transform: scaleY(1.2);
+}
+
+.season-square.active {
+  fill: #000;
+  stroke: #000;
+  stroke-width: 3;
+  transform: translatey(-8px)
+}
+.season-square-label {
+    pointer-events: none;
+    font-family: "Chivo Mono", monospace;
+    font-size: 18px;
+    font-weight: 600;
+    fill: #000000;
+    stroke: none;
+}
+.season-square-label:hover {
+    fill: #000000;
+    stroke: none;
+    transform: translatey(-8px)
+}
+.season-square-label.active {
+    fill: #ffffff;
+    stroke: none;
+    transform: translatey(-8px)
+}
+.team-timeline-title-text {
+    font-family: "Chivo Mono", monospace;
+    font-size: 28px;
+    font-weight: 800;
+    fill: #000000;
+    stroke: none;
+    text-anchor: middle;
+}
+.team-timeline-title2-text {
+    font-family: "Chivo Mono", monospace;
+    font-size: 24px;
+    font-style: italic;
+    font-weight: lighter;
+    fill: #000000;
+    stroke: none;
+    text-anchor: middle;
+}
+.team-timeline-container {
+    fill: #ffffff;
+    stroke: #000;
+    stroke-width: 2;
+}
+
+#teams-timeline-season-start-date,
+#teams-timeline-season-end-date {
+    font-family: "Chivo Mono", monospace;
+    font-size: 18px;
+    font-weight: 600;
+    fill: #000000;
+    stroke: none;
+}
+
+#teams-timeline-season-end-date {
+    text-anchor: end;
+}
+
+
+#mini-tl-container {
+    fill: #000000;
+    stroke: #000000;
+    stroke-width: 6;
+}
+
+#mini-tl-border {
+    fill: #ffffff;
+    /*! stroke: #000000; */
+    /*! stroke-width: 6; */
+}
+
+.mini-tl-dash-stroke {
+    stroke: #000000;
+    stroke-width: 2;
+    stroke-dasharray:  3, 3;
+}
+
+#wnba-title-label  {
+    font-family: "Chivo Mono", monospace;
+    font-size: 42px;
+    font-weight: 800;
+    fill: #000000;
+    stroke: none;
+    text-anchor: start;
+}
+#season-num-label  {
+    font-family: "Chivo Mono", monospace;
+    font-style: italic;
+    font-size: 42px;
+    font-weight: 600;
+    fill: #000000;
+    stroke: none;
+    text-anchor: middle;
+}
+#year-selected-text {
+    font-family: "Chivo Mono", monospace;
+    font-size: 52px;
+    font-style: italic;
+    font-weight: lighter;
+    fill: #000000;
+    stroke: none;
+    text-anchor: middle;
+}
+
+#season-team-colors-gridder {
+    fill: #ffffff;
+    stroke: #000000;
+    stroke-width: 4;
+}
+.year-toggle-container {
+    fill: #ffffff;
+    stroke: #000000;
+    stroke-width: 2;
+}
+.team-timeline-text {
+    font-family: "Chivo Mono", monospace;
+    font-size: 18px;
+    fill: #000000;
+    stroke: none;
+    text-anchor: start;
+}
+.playoff-seed-text {
+    font-family: "Chivo Mono", monospace;
+    font-size: 16px;
+    fill: #000;
+    stroke: none;
+    text-anchor: end;
+}
+
+#wnba-reg-season-awards-svg {
+  /* transform: scale(0.7); */
+}
+
+.main-team-box-bg-container {
+    fill: #ffffff;
+    stroke: #000000;
+    stroke-width: 2;
+}
+
+.team-box-container {
+    fill: #ffffff;
+    stroke: #000000;
+    stroke-width: 2;
+}
+
+
+.team-box-indicator-frame,
+.team-start-year-container,
+.team-end-year-container,
+.team-years-container,
+.team-colors-container,
+#season-start-container,
+#season-end-container {
+    fill: #ffffff;
+    stroke: #000000;
+    stroke-width: 2;
+}
+
+#teams-container-border {
+  fill: none;
+  stroke: #000000;
+  stroke-width: 3;
+}
+
+#season-start-text,
+#season-end-text {
+    font-family: "Chivo Mono", monospace;
+    font-size: 16px;
+    font-weight: 600;
+    fill: none;
+    stroke: none;
+    stroke-width: 0;
+    text-anchor: middle;
+    fill: #000000;
+}
+
+.team-color1-container,
+.team-color2-container,
+.team-color3-container {
+    stroke: #000000;
+    stroke-width: 2;
+}
+
+.dash-path,
+.dash-stroke {
+    fill: none;
+    stroke: #000000;
+    stroke-width: 1;
+    stroke-dasharray:  3, 3;
+}
+
+.team-timeline-team-name-text {
+    font-size:21.3333px;
+    line-height:25px;
+    font-family:'Chivo Mono';
+    text-align:start;
+    word-spacing:-5px;
+    writing-mode:lr-tb;
+    direction:ltr;
+    text-anchor:start;
+    fill:#000000;
+    stroke-width:3;
+    stroke-miterlimit:0;
+    font-style:italic;
+    font-variant:normal;
+    font-weight:600;
+}
+
+.team-timeline-team-location-text {
+    font-size:21.3333px;
+    line-height:25px;
+    font-family:'Chivo Mono';
+    text-align:start;
+    letter-spacing:0px;
+    word-spacing:-5px;
+    writing-mode:lr-tb;
+    direction:ltr;
+    text-anchor:start;
+    fill:#000000;
+    stroke-width:3;
+    stroke-miterlimit:0;
+    font-style:normal;
+    font-variant:normal;
+    font-weight:300;
+}
+
+.team-start-year-text,
+.team-end-year-text {
+    font-size:13.3333px;
+    line-height:15.625px;
+    font-family:'Chivo Mono';
+    text-align:center;
+    letter-spacing:0px;
+    word-spacing:-5px;
+    writing-mode:lr-tb;
+    direction:ltr;
+    text-anchor:middle;
+    fill:#000000;
+    stroke-width:0;
+    stroke-miterlimit:0;
+    font-size:13.3333px;
+}
+
+/* ======================================================
+            PEAK PERFORMER STYLES
+========================================================= */
+
+.svg-hidden{
+display:none !important;
+}
+
+.distributor-dot {   }
+.distributor-path {   }
+.distributor-arrow {   }
+.right-side-court-path {   }
+.left-side-card-path {   }
+.left-side-card {   }
+.center-card {   }
+.right-side-card {   }
+.center-card-path {   }
+.court-lines-path {   }
+
+.pp-teamname {
+font-style:normal;
+font-variant:normal;
+font-weight:500;
+font-stretch:normal;
+font-size:15px;
+line-height:21.8753px;
+font-family:'Chivo Mono';
+-inkscape-font-specification:'Chivo Mono Medium';
+text-align:center;
+letter-spacing:-1px;
+word-spacing:-5px;
+writing-mode:lr-tb;
+direction:ltr;
+text-anchor:middle;
+fill:#000000;
+fill-opacity:1;
+stroke:none;
+stroke-width:0;
+stroke-miterlimit:0;
+stroke-dasharray:none;
+stroke-dashoffset:0;
+stroke-opacity:1;
+}
+
+.pp-lastname {
+font-style:normal;
+font-variant:normal;
+font-weight:600;
+font-stretch:normal;
+font-size:21.3333px;
+line-height:25.0003px;
+font-family:'Chivo Mono';
+-inkscape-font-specification:'Chivo Mono Semi-Bold';
+text-align:center;
+letter-spacing:-1px;
+word-spacing:-5px;
+writing-mode:lr-tb;
+direction:ltr;
+text-anchor:middle;
+fill:#000000;
+fill-opacity:1;
+stroke:none;
+stroke-width:0;
+stroke-miterlimit:0;
+stroke-dasharray:none;
+stroke-dashoffset:0;
+stroke-opacity:1;
+   }
+.pp-firstname {
+font-style:normal;
+font-variant:normal;
+font-weight:600;
+font-stretch:normal;
+font-size:21.3333px;
+line-height:25.0003px;
+font-family:'Chivo Mono';
+-inkscape-font-specification:'Chivo Mono Semi-Bold';
+text-align:center;
+letter-spacing:-1px;
+word-spacing:-5px;
+writing-mode:lr-tb;
+direction:ltr;
+text-anchor:middle;
+fill:#000000;
+fill-opacity:1;
+stroke:none;
+stroke-width:0;
+stroke-miterlimit:0;
+stroke-dasharray:none;
+stroke-dashoffset:0;
+stroke-opacity:1;
+   }
+
+.pp-category-title {
+font-style:normal;
+font-variant:normal;
+font-weight:400;
+font-stretch:normal;
+font-size:18px;
+line-height:19.8368px;
+font-family:'Chivo Mono';
+-inkscape-font-specification:'Chivo Mono Bold';
+text-align:center;
+letter-spacing:-1.5px;
+word-spacing:-5px;
+writing-mode:lr-tb;
+direction:ltr;
+text-anchor:middle;
+display:inline;
+fill:#000000;
+fill-opacity:1;
+stroke:none;
+stroke-width:0;
+stroke-linecap:butt;
+stroke-linejoin:round;
+stroke-miterlimit:0;
+stroke-dasharray:none;
+stroke-opacity:1;
+}
+
+.subscript {
+font-style:normal;
+font-variant:normal;
+font-weight:200;
+font-stretch:normal;
+font-size:14px;
+line-height:15.4286px;
+font-family:'Chivo Mono';
+-inkscape-font-specification:'Chivo Mono Bold';
+text-align:center;
+letter-spacing:-1px;
+word-spacing:-5px;
+writing-mode:lr-tb;
+direction:ltr;
+text-anchor:middle;
+display:inline;
+fill:#000000;
+fill-opacity:1;
+stroke:none;
+stroke-width:0;
+stroke-linecap:butt;
+stroke-linejoin:round;
+stroke-miterlimit:0;
+stroke-dasharray:none;
+stroke-opacity:1;
+   }
+
+.distributor {   }
+
+.scorer {   }
+
+.rebounder {   }
+
+.pp-template-instance .pp-category-title {
+    text-anchor: middle;
+    font-size: 16px;
+}
+.pp-template-instance .pp-firstname {
+    text-anchor: middle;
+}
+.pp-template-instance .pp-lastname {
+    text-anchor: middle;
+    
+}

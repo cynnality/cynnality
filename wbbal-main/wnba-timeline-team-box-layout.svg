@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="320"
+   height="70"
+   viewBox="0 0 320 70"
+   version="1.1"
+   id="svg1"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <style
+     id="style9">.dash-path {  }
+.main-team-box-bg-container {   }
+.dash-path {   }
+.team-box-indicator-frame {   }
+.team-box-container {   }
+.team-box-team-name {   }
+.team-timeline-team-year-label {   }
+</style>
+  <defs
+     id="defs1" />
+  <g
+     id="team-box-template">
+    <!--<rect
+       id="rect16"
+       width="410"
+       height="93.308975"
+       x="5"
+       y="4.953476"
+       class="main-team-box-bg-container" /> -->
+    <rect
+       class="team-box"
+       width="300"
+       height="60"
+       x="10"
+       y="5"
+       id="rect1" />
+    <!--  <rect
+       class="team-box-container"
+       width="186"
+       height="28"
+       x="21.893597"
+       y="56.837097"
+       id="rect10"/> -->
+    <rect
+       class="team-color1-container"
+       width="120"
+       height="24"
+       x="182.86823"
+       y="33.781921"
+       id="rect11"
+       style="stroke-width:1" />
+    <rect
+       class="team-color2-container"
+       width="50"
+       height="24"
+       x="227.86826"
+       y="9.7819214"
+       id="rect12" />
+    <rect
+       class="team-color3-container"
+       width="25"
+       height="24"
+       x="277.86823"
+       y="9.7819214"
+       id="rect13" />
+    <text
+       x="17.217764"
+       y="26.150085"
+       class="team-timeline-team-location-text"
+       id="text14">TEAMLOCATION</text>
+    <text
+       x="17.217764"
+       y="50.155945"
+       class="team-timeline-team-name-text"
+       id="text13">TEAMNAME</text>
+  </g>
+</svg>

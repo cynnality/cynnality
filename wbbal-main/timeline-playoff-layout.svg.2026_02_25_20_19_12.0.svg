@@ -1,0 +1,463 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="1920"
+   height="1080"
+   viewBox="0 0 1920 1080"
+   version="1.1"
+   id="svg1"
+   inkscape:version="1.4.3 (fcd0343856, 2026-01-01)"
+   sodipodi:docname="timeline-playoff-layout.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview1"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:document-units="px"
+     inkscape:zoom="0.73730613"
+     inkscape:cx="388.57672"
+     inkscape:cy="269.22331"
+     inkscape:window-width="1859"
+     inkscape:window-height="1011"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1" />
+  <defs
+     id="defs1" />
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <rect
+       style="fill:#0000ff;fill-rule:evenodd"
+       id="team-sq-1"
+       width="100"
+       height="100"
+       x="1049.4021"
+       y="161.93494"
+       inkscape:label="team-sq-1" />
+    <rect
+       style="fill:#0000ff;fill-rule:evenodd;stroke-width:1"
+       id="playoff-team-sq-container"
+       width="800"
+       height="100"
+       x="1049.4021"
+       y="161.93491"
+       inkscape:label="playoff-team-sq-container" />
+    <rect
+       style="fill:#0000ff;fill-rule:evenodd"
+       id="team-sq-2"
+       width="100"
+       height="100"
+       x="1149.4021"
+       y="161.93494"
+       inkscape:label="team-sq-2" />
+    <rect
+       style="fill:#0000ff;fill-rule:evenodd"
+       id="team-sq-3"
+       width="100"
+       height="100"
+       x="1249.4021"
+       y="161.93494"
+       inkscape:label="team-sq-3" />
+    <rect
+       style="fill:#0000ff;fill-rule:evenodd"
+       id="team-sq-4"
+       width="100"
+       height="100"
+       x="1349.4021"
+       y="161.93494"
+       inkscape:label="team-sq-4" />
+    <rect
+       style="fill:#0000ff;fill-rule:evenodd"
+       id="team-sq-5"
+       width="100"
+       height="100"
+       x="1449.4021"
+       y="161.93494"
+       inkscape:label="team-sq-5" />
+    <rect
+       style="fill:#0000ff;fill-rule:evenodd"
+       id="team-sq-6"
+       width="100"
+       height="100"
+       x="1549.4021"
+       y="161.93494"
+       inkscape:label="team-sq-6" />
+    <rect
+       style="fill:#0000ff;fill-rule:evenodd"
+       id="team-sq-7"
+       width="100"
+       height="100"
+       x="1649.4021"
+       y="161.93494"
+       inkscape:label="team-sq-7" />
+    <rect
+       style="fill:#0000ff;fill-rule:evenodd"
+       id="team-sq-8"
+       width="100"
+       height="100"
+       x="1749.4021"
+       y="161.93494"
+       inkscape:label="team-sq-8" />
+    <text
+       xml:space="preserve"
+       style="font-style:italic;font-variant:normal;font-weight:800;font-stretch:normal;font-size:85.3333px;line-height:96px;font-family:'Chivo Mono';-inkscape-font-specification:'Chivo Mono Ultra-Bold Italic';text-align:center;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;direction:ltr;text-anchor:middle;fill:#ffffff;stroke:#000000;stroke-width:2;stroke-miterlimit:0"
+       x="180.39488"
+       y="138.11993"
+       id="playoff-year-text"
+       inkscape:label="playoff-year-text"><tspan
+         sodipodi:role="line"
+         id="tspan9"
+         x="180.39488"
+         y="138.11993">2025</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:500;font-stretch:normal;font-size:42.6667px;line-height:48px;font-family:'Chivo Mono';-inkscape-font-specification:'Chivo Mono Medium';text-align:center;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;direction:ltr;text-anchor:middle;white-space:pre;inline-size:256.83;display:inline;fill:#ffffff;stroke:#000000;stroke-width:2;stroke-miterlimit:0"
+       x="279.0809"
+       y="272.36761"
+       id="text10"
+       transform="translate(-52.747253,0.95904096)"><tspan
+         id="tspan10"
+         x="279.0809"
+         y="272.36761">total WNBA teams</tspan></text>
+    <rect
+       style="fill:#0000ff;fill-rule:evenodd;stroke-width:1"
+       id="rect10"
+       width="300"
+       height="203.4433"
+       x="77.336487"
+       y="234.63797" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:500;font-stretch:normal;font-size:69.3333px;line-height:78px;font-family:'Chivo Mono';-inkscape-font-specification:'Chivo Mono Medium';text-align:center;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;direction:ltr;text-anchor:middle;fill:#ffffff;stroke:#000000;stroke-width:2;stroke-miterlimit:0"
+       x="226.76048"
+       y="414.93964"
+       id="text11"><tspan
+         sodipodi:role="line"
+         id="tspan11"
+         x="226.76048"
+         y="414.93964">13</tspan></text>
+    <path
+       style="fill:#ffffff;stroke:#000000;stroke-width:2;stroke-miterlimit:0"
+       d="M 77.336487,336.35961 H 377.33649"
+       id="path11" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:500;font-stretch:normal;font-size:42.6667px;line-height:48px;font-family:'Chivo Mono';-inkscape-font-specification:'Chivo Mono Medium';text-align:center;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;direction:ltr;text-anchor:middle;white-space:pre;inline-size:256.83;display:inline;fill:#ffffff;stroke:#000000;stroke-width:2;stroke-miterlimit:0"
+       x="279.0809"
+       y="272.36761"
+       id="text12"
+       transform="translate(-52.747253,257.29761)"><tspan
+         id="tspan12"
+         x="279.0809"
+         y="272.36761">playoff spots</tspan></text>
+    <rect
+       style="fill:#0000ff;fill-rule:evenodd;stroke-width:1"
+       id="rect12"
+       width="300"
+       height="203.4433"
+       x="77.336487"
+       y="490.97653" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:500;font-stretch:normal;font-size:69.3333px;line-height:78px;font-family:'Chivo Mono';-inkscape-font-specification:'Chivo Mono Medium';text-align:center;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;direction:ltr;text-anchor:middle;fill:#ffffff;stroke:#000000;stroke-width:2;stroke-miterlimit:0"
+       x="226.76048"
+       y="671.2782"
+       id="text13"><tspan
+         sodipodi:role="line"
+         id="tspan13"
+         x="226.76048"
+         y="671.2782">8</tspan></text>
+    <path
+       style="fill:#ffffff;stroke:#000000;stroke-width:2;stroke-miterlimit:0"
+       d="M 77.336487,592.69818 H 377.33649"
+       id="path13" />
+    <rect
+       style="fill:#0000ff;fill-rule:evenodd;stroke-width:0.999999"
+       id="finals-mvp-container"
+       width="209.68236"
+       height="120"
+       x="1108.6045"
+       y="764.52686"
+       class="example-container" />
+    <rect
+       style="fill:#0000ff;fill-rule:evenodd;stroke-width:0.999999"
+       id="wnba-mvp-2025-container"
+       width="209.68236"
+       height="120"
+       x="1492.2388"
+       y="618.87012"
+       class="example-container" />
+    <rect
+       style="fill:#0000ff;fill-rule:evenodd;stroke-width:0.999994"
+       id="finals-ex-container"
+       width="260"
+       height="115"
+       x="1083.4457"
+       y="618.87012"
+       class="example-container" />
+    <rect
+       style="fill:#0000ff;fill-rule:evenodd;stroke-width:0.999998"
+       id="playoff-teams-container"
+       width="320"
+       height="218.84091"
+       x="661.8252"
+       y="618.87012"
+       class="example-container" />
+    <rect
+       style="fill:#0000ff;fill-rule:evenodd;stroke-width:1"
+       id="defensive-mvp-2025-container"
+       width="209.68236"
+       height="120"
+       x="1492.2388"
+       y="764.52686"
+       class="example-container" />
+    <text
+       xml:space="preserve"
+       style="font-style:italic;font-variant:normal;font-weight:300;font-stretch:normal;font-size:18.6667px;line-height:21px;font-family:'Chivo Mono';-inkscape-font-specification:'Chivo Mono Light Italic';text-align:center;letter-spacing:0px;word-spacing:-5px;writing-mode:lr-tb;direction:ltr;text-anchor:middle;white-space:pre;inline-size:316.972;display:inline;fill:#ffffff;stroke:none;stroke-width:0;stroke-miterlimit:0;stroke-dasharray:none"
+       x="398.51041"
+       y="313.03024"
+       id="2025-playoff-team-ex-text"
+       class="word-to-define-text  example-text"
+       transform="translate(422.59674,332.44524)"><tspan
+         x="398.51041"
+         y="313.03024"
+         id="tspan3"><tspan
+           dx="0 5 -5 0 0 5.000001 -5.0000029 0 4.9999971 -5.0000029 0 4.9999971 -5.0000029 0 0 0 0 5.0000048 -5.0000105 0 0 0 5.0000048 -4.9999952 0 5.0000048 -4.9999952"
+           id="tspan1">8 out of 13 teams made it to</tspan><tspan
+           dx="5.00002"
+           id="tspan2" /><tspan
+           y="313.03024"
+           id="tspan7"> </tspan></tspan><tspan
+         x="398.51041"
+         y="334.03024"
+         id="tspan10-5"><tspan
+           dx="0 0 0 4.999999 -4.999999 0 0 0 4.9999971 -5.0000029"
+           id="tspan9-3">the 2025 playoffs</tspan></tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:italic;font-variant:normal;font-weight:500;font-stretch:normal;font-size:26.6667px;line-height:25px;font-family:'Chivo Mono';-inkscape-font-specification:'Chivo Mono Medium Italic';text-align:center;letter-spacing:0px;word-spacing:-5px;writing-mode:lr-tb;direction:ltr;text-anchor:middle;fill:#ffffff;stroke:none;stroke-width:0;stroke-miterlimit:0;stroke-dasharray:none"
+       x="931.50043"
+       y="788.15381"
+       id="lynx-team-text"
+       class="word-to-define-text  team-name"><tspan
+         id="tspan28"
+         x="931.50043"
+         y="788.15381">LYNX</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:italic;font-variant:normal;font-weight:500;font-stretch:normal;font-size:26.6667px;line-height:25px;font-family:'Chivo Mono';-inkscape-font-specification:'Chivo Mono Medium Italic';text-align:center;letter-spacing:0px;word-spacing:-5px;writing-mode:lr-tb;direction:ltr;text-anchor:middle;fill:#ffffff;stroke:none;stroke-width:0;stroke-miterlimit:0;stroke-dasharray:none"
+       x="924.16718"
+       y="822.21893"
+       id="fever-team-text"
+       class="word-to-define-text  team-name"><tspan
+         id="tspan29"
+         x="924.16718"
+         y="822.21893">FEVER</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:italic;font-variant:normal;font-weight:500;font-stretch:normal;font-size:26.6667px;line-height:25px;font-family:'Chivo Mono';-inkscape-font-specification:'Chivo Mono Medium Italic';text-align:center;letter-spacing:0px;word-spacing:-5px;writing-mode:lr-tb;direction:ltr;text-anchor:middle;fill:#ffffff;stroke:none;stroke-width:0;stroke-miterlimit:0;stroke-dasharray:none"
+       x="907.12714"
+       y="754.00861"
+       id="mercury-team-text"
+       class="word-to-define-text  team-name"><tspan
+         id="tspan30"
+         x="907.12714"
+         y="754.00861">MERCURY</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:italic;font-variant:normal;font-weight:500;font-stretch:normal;font-size:26.6667px;line-height:25px;font-family:'Chivo Mono';-inkscape-font-specification:'Chivo Mono Medium Italic';text-align:center;letter-spacing:0px;word-spacing:-5px;writing-mode:lr-tb;direction:ltr;text-anchor:middle;fill:#ffffff;stroke:none;stroke-width:0;stroke-miterlimit:0;stroke-dasharray:none"
+       x="932.67377"
+       y="719.86353"
+       id="aces-team-text"
+       class="word-to-define-text  team-name"><tspan
+         id="tspan31"
+         x="932.67377"
+         y="719.86353">ACES</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:italic;font-variant:normal;font-weight:300;font-stretch:normal;font-size:18.6667px;line-height:21px;font-family:'Chivo Mono';-inkscape-font-specification:'Chivo Mono Light Italic';text-align:center;letter-spacing:0px;word-spacing:-5px;writing-mode:lr-tb;direction:ltr;text-anchor:middle;white-space:pre;inline-size:257.152;display:inline;fill:#ffffff;stroke:none;stroke-width:0;stroke-miterlimit:0;stroke-dasharray:none"
+       x="398.51041"
+       y="313.03024"
+       id="2025-finals-team-ex-text"
+       class="word-to-define-text  example-text"
+       transform="translate(814.41774,332.43605)"><tspan
+         x="398.51041"
+         y="313.03024"
+         id="tspan13-5"><tspan
+           dx="0 0 0 0 0 5.000001 -5.0000029 5.0000048 -5.0000029 0 0 0 0 5.0000048 -4.9999952"
+           id="tspan11-6">these 2 teams appeared</tspan><tspan
+           dx="5.0000048"
+           id="tspan12-2" /><tspan
+           y="313.03024"
+           id="tspan14"> </tspan></tspan><tspan
+         x="398.51041"
+         y="334.03024"
+         id="tspan16"><tspan
+           dx="0 0 5 -5.000001 0 0 4.9999971 -4.9999952 0 0 0 0 0 4.9999971 -4.9999952 0 4.9999895 -4.9999952"
+           id="tspan15">in the finals in 2025</tspan></tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:italic;font-variant:normal;font-weight:500;font-stretch:normal;font-size:26.6667px;line-height:25px;font-family:'Chivo Mono';-inkscape-font-specification:'Chivo Mono Medium Italic';text-align:center;letter-spacing:0px;word-spacing:-5px;writing-mode:lr-tb;direction:ltr;text-anchor:middle;fill:#ffffff;stroke:none;stroke-width:0;stroke-miterlimit:0;stroke-dasharray:none"
+       x="1272.6215"
+       y="719.85205"
+       id="mercury-team-text-2"
+       class="word-to-define-text  team-name"><tspan
+         id="tspan34"
+         x="1272.6215"
+         y="719.85205">MERCURY</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:italic;font-variant:normal;font-weight:500;font-stretch:normal;font-size:26.6667px;line-height:25px;font-family:'Chivo Mono';-inkscape-font-specification:'Chivo Mono Medium Italic';text-align:center;letter-spacing:0px;word-spacing:-5px;writing-mode:lr-tb;direction:ltr;text-anchor:middle;fill:#ffffff;stroke:none;stroke-width:0;stroke-miterlimit:0;stroke-dasharray:none"
+       x="1129.7098"
+       y="719.85205"
+       id="aces-team-text-2"
+       class="word-to-define-text  team-name"><tspan
+         id="tspan35"
+         x="1129.7098"
+         y="719.85205">ACES</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:italic;font-variant:normal;font-weight:300;font-stretch:normal;font-size:18.6667px;line-height:21px;font-family:'Chivo Mono';-inkscape-font-specification:'Chivo Mono Light Italic';text-align:center;letter-spacing:0px;word-spacing:-5px;writing-mode:lr-tb;direction:ltr;text-anchor:middle;white-space:pre;inline-size:332.317;display:inline;fill:#ffffff;stroke:none;stroke-width:0;stroke-miterlimit:0;stroke-dasharray:none"
+       x="398.51041"
+       y="313.03024"
+       id="2025-finals-mvp-text"
+       class="word-to-define-text  example-text"
+       transform="translate(814.62782,486.93059)"><tspan
+         x="398.51041"
+         y="313.03024"
+         id="tspan19"><tspan
+           dx="0 0 0 0 5.000001 -4.999999 0 0 0 0 0 5.0000048 -5.0000029"
+           id="tspan17">2025 finals MVP</tspan><tspan
+           dx="5.0000048"
+           id="tspan18" /><tspan
+           y="313.03024"
+           id="tspan20"> </tspan></tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:italic;font-variant:normal;font-weight:500;font-stretch:normal;font-size:26.6667px;line-height:25px;font-family:'Chivo Mono';-inkscape-font-specification:'Chivo Mono Medium Italic';text-align:center;letter-spacing:0px;word-spacing:-5px;writing-mode:lr-tb;direction:ltr;text-anchor:middle;fill:#ffffff;stroke:none;stroke-width:0;stroke-miterlimit:0;stroke-dasharray:none"
+       x="1213.8723"
+       y="862.41559"
+       id="finals-mvp-player-name-text"
+       class="word-to-define-text  player-name"><tspan
+         id="tspan38"
+         x="1213.8723"
+         y="862.41559">A'JA WILSON</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:italic;font-variant:normal;font-weight:300;font-stretch:normal;font-size:18.6667px;line-height:21px;font-family:'Chivo Mono';-inkscape-font-specification:'Chivo Mono Light Italic';text-align:center;letter-spacing:0px;word-spacing:-5px;writing-mode:lr-tb;direction:ltr;text-anchor:middle;white-space:pre;inline-size:146.505;display:inline;fill:#ffffff;stroke:none;stroke-width:0;stroke-miterlimit:0;stroke-dasharray:none"
+       x="398.51041"
+       y="313.03024"
+       id="wnba-mvp-2025-text"
+       class="word-to-define-text  example-text"
+       transform="translate(1198.2622,343.01074)"><tspan
+         x="398.51041"
+         y="313.03024"
+         id="tspan23"><tspan
+           dx="0 0 0 0 5.000001 -4.999999 0 0 0 4.9999971 -4.9999952"
+           id="tspan21">2025 WNBA MVP</tspan><tspan
+           dx="5.0000048"
+           id="tspan22" /><tspan
+           y="313.03024"
+           id="tspan24"> </tspan></tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:italic;font-variant:normal;font-weight:300;font-stretch:normal;font-size:18.6667px;line-height:21px;font-family:'Chivo Mono';-inkscape-font-specification:'Chivo Mono Light Italic';text-align:center;letter-spacing:0px;word-spacing:-5px;writing-mode:lr-tb;direction:ltr;text-anchor:middle;white-space:pre;inline-size:146.505;display:inline;fill:#ffffff;stroke:none;stroke-width:0;stroke-miterlimit:0;stroke-dasharray:none"
+       x="398.51041"
+       y="313.03024"
+       id="defensive-mvp-2025-text"
+       class="word-to-define-text  example-text"
+       transform="translate(1198.1305,479.51143)"><tspan
+         x="398.51041"
+         y="313.03024"
+         id="tspan26">2025<tspan
+   dx="5.000001"
+   id="tspan25" /><tspan
+   y="313.03024"
+   id="tspan27"> </tspan></tspan><tspan
+         x="398.51041"
+         y="334.03024"
+         id="tspan36"><tspan
+           dx="0 0 0 0 0 0 0 0 0 4.9999971 -4.9999952"
+           id="tspan32">DEFENSIVE MVP</tspan><tspan
+           dx="5.0000048"
+           id="tspan33" /><tspan
+           y="334.03024"
+           id="tspan37"> </tspan></tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:italic;font-variant:normal;font-weight:500;font-stretch:normal;font-size:26.6667px;line-height:25px;font-family:'Chivo Mono';-inkscape-font-specification:'Chivo Mono Medium Italic';text-align:center;letter-spacing:0px;word-spacing:-5px;writing-mode:lr-tb;direction:ltr;text-anchor:middle;fill:#ffffff;stroke:none;stroke-width:0;stroke-miterlimit:0;stroke-dasharray:none"
+       x="1597.5066"
+       y="718.49573"
+       id="wnba-mvp-2025-name-text"
+       class="word-to-define-text  player-name"><tspan
+         id="tspan40"
+         x="1597.5066"
+         y="718.49573">A'JA WILSON</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:italic;font-variant:normal;font-weight:500;font-stretch:normal;font-size:26.6667px;line-height:25px;font-family:'Chivo Mono';-inkscape-font-specification:'Chivo Mono Medium Italic';text-align:center;letter-spacing:0px;word-spacing:-5px;writing-mode:lr-tb;direction:ltr;text-anchor:middle;fill:#ffffff;stroke:none;stroke-width:0;stroke-miterlimit:0;stroke-dasharray:none"
+       x="1597.5066"
+       y="864.15247"
+       id="defensive-mvp-2025-name-text"
+       class="word-to-define-text  player-name"><tspan
+         id="tspan45"
+         x="1597.5066"
+         y="864.15247">A'JA WILSON</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:italic;font-variant:normal;font-weight:500;font-stretch:normal;font-size:26.6667px;line-height:25px;font-family:'Chivo Mono';-inkscape-font-specification:'Chivo Mono Medium Italic';text-align:center;letter-spacing:0px;word-spacing:-5px;writing-mode:lr-tb;direction:ltr;text-anchor:middle;fill:#ffffff;stroke:none;stroke-width:0;stroke-miterlimit:0;stroke-dasharray:none"
+       x="718.44318"
+       y="822.21893"
+       id="dream-team-text"
+       class="word-to-define-text  team-name"
+       inkscape:label="dream-team-text"><tspan
+         id="tspan4"
+         x="718.44318"
+         y="822.21893">DREAM</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:italic;font-variant:normal;font-weight:500;font-stretch:normal;font-size:26.6667px;line-height:25px;font-family:'Chivo Mono';-inkscape-font-specification:'Chivo Mono Medium Italic';text-align:center;letter-spacing:0px;word-spacing:-5px;writing-mode:lr-tb;direction:ltr;text-anchor:middle;fill:#ffffff;stroke:none;stroke-width:0;stroke-miterlimit:0;stroke-dasharray:none"
+       x="718.68317"
+       y="719.86353"
+       id="storm-team-text"
+       class="word-to-define-text  team-name"
+       inkscape:label="storm-team-text"><tspan
+         id="tspan5"
+         x="718.68317"
+         y="719.86353">STORM</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:italic;font-variant:normal;font-weight:500;font-stretch:normal;font-size:26.6667px;line-height:25px;font-family:'Chivo Mono';-inkscape-font-specification:'Chivo Mono Medium Italic';text-align:center;letter-spacing:0px;word-spacing:-5px;writing-mode:lr-tb;direction:ltr;text-anchor:middle;fill:#ffffff;stroke:none;stroke-width:0;stroke-miterlimit:0;stroke-dasharray:none"
+       x="749.37646"
+       y="788.15375"
+       id="valks-team-text"
+       class="word-to-define-text  team-name"
+       inkscape:label="valks-team-text"><tspan
+         id="tspan6"
+         x="749.37646"
+         y="788.15375">VALKYRIES</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:italic;font-variant:normal;font-weight:500;font-stretch:normal;font-size:26.6667px;line-height:25px;font-family:'Chivo Mono';-inkscape-font-specification:'Chivo Mono Medium Italic';text-align:center;letter-spacing:0px;word-spacing:-5px;writing-mode:lr-tb;direction:ltr;text-anchor:middle;fill:#ffffff;stroke:none;stroke-width:0;stroke-miterlimit:0;stroke-dasharray:none"
+       x="733.64313"
+       y="753.92865"
+       id="liberty-team-text"
+       class="word-to-define-text  team-name"
+       inkscape:label="liberty-team-text"><tspan
+         id="tspan8"
+         x="733.64313"
+         y="753.92865">LIBERTY</tspan></text>
+  </g>
+</svg>

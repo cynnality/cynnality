@@ -1,0 +1,59 @@
+<svg id="wnba-timeline-toggle-svg"
+   width="257.70065"
+   height="73.494858"
+   viewBox="0 0 257.70065 73.494858"
+   version="1.1"
+   sodipodi:docname="wnba-timeline-toggle.svg"
+   inkscape:export-filename="wnba-timeline-toggle.svg"
+   inkscape:export-xdpi="96"
+   inkscape:export-ydpi="96"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs1" />
+  <rect
+     id="year-selected-container"
+     width="137.80286"
+     height="73.494858"
+     x="59.948895"
+     y="4.7851751e-07"
+     class="team-timeline-container" />
+  <rect
+     id="plus-one-year-icon-container"
+     width="36.747429"
+     height="36.747429"
+     x="220.95323"
+     y="18.373716"
+     class="year-toggle-container" />
+  <rect
+     id="minus-one-year-icon-container"
+     width="36.747429"
+     height="36.747429"
+     x="-4.4124449e-06"
+     y="18.373716"
+     class="year-toggle-container" />
+  <path
+     d="m 236.24994,46.762339 1.21512,-8.427417 h -8.38823 l 0.43118,-3.174978 h 8.38821 l 1.17592,-8.427417 h 3.29257 l -1.17592,8.427417 h 8.38823 l -0.43118,3.174978 h -8.42741 l -1.17592,8.427417 z"
+     id="plus-icon"
+     aria-label="+"
+     class="year-toggle-icon" />
+  <path
+     d="m 13.140876,38.570115 0.509567,-3.645354 h 9.95611 l -0.509567,3.645354 z"
+     id="minus-icon"
+     aria-label="-"
+     class="year-toggle-icon" />
+  <rect
+     id="rect1"
+     width="130"
+     height="66"
+     x="63.850323"
+     y="3.7474294"
+     class="team-timeline-container" />
+  <text
+     x="128.85028"
+     y="51.382126"
+     id="year-selected-text"
+     class="main-year-text">YYYY</text>
+</svg>

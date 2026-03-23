@@ -1,0 +1,79 @@
+<svg
+   id="wnba-reg-season-awards-svg"
+   width="320"
+   height="340"
+   viewBox="0 0 320 340"
+   version="1.1"
+   sodipodi:docname="wnba-timeline-reg-season-awards-template.svg"
+
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+
+  <defs
+     id="defs1" />
+  <rect
+     width="320"
+     height="340"
+     x="0"
+     y="0"
+     class="award-container" />
+
+  <rect
+     width="297"
+     height="317"
+     x="11.5"
+     y="11.5"
+     class="award-border" />
+  <rect
+     width="290"
+     height="135"
+     x="15"
+     y="112.27216"
+     class="award-name-bg" />
+  <path
+     d="M 11.500002,108.50747 H 308.50001"
+     id="award-top-line-path"
+     class="award-top-line"
+     inkscape:label="award-top-line-path" />
+  <path
+     d="M 11.500002,251.57973 H 308.50001"
+     id="award-bottom-line-path"
+     class="award-dash-path" />
+  <rect
+     id="award-title-container"
+     width="297"
+     height="97.007469"
+     x="11.5"
+     y="11.5"
+     inkscape:label="award-title-container"
+     class="award-title-container">
+    <desc
+       id="desc1">no styles or visible elements on page. only for giving sizing constraints for injected text</desc>
+  </rect>
+  <text
+     x="150.82797"
+     y="71.365448"
+     id="award-title"
+     class="award-title"
+     inkscape:label="award-title">SEASON MVP</text>
+  <text
+     x="158.99725"
+     y="169.22467"
+     id="winner-firstname"
+     class="award-winner-name"
+     inkscape:label="winner-firstname">FIRST NAME</text>
+  <text
+     x="158.99725"
+     y="219.58893"
+     id="winner-lastname"
+     class="award-winner-name"
+     inkscape:label="winner-lastname">LAST NAME</text>
+  <text
+     x="150.96658"
+     y="296.38126"
+     id="teamname"
+     class="award-winner-team"
+     inkscape:label="teamname">teamname</text>
+</svg>

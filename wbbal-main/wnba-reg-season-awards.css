@@ -1,0 +1,226 @@
+:root {
+    --season-mvp-bg: #4d0033;
+    --season-mvp-acc: #525d00;
+
+    --def-pty-bg: #0c2d00;
+    --def-pty-acc: #8e4903;
+
+    --sixth-pty-bg: #8e4903;
+    --sixth-pty-acc: #525d00;
+
+    --rookie-pty-bg: #525d00;
+    --rookie-pty-acc: #8e4903;
+
+    --most-improved-bg: #006e66;
+    --most-improved-acc: #4d0033;
+}
+
+#mvps-reg-season-svg {
+    margin-top: 50px;
+    transform: scale(0.7);
+}
+
+
+.mvp-detail-dash-path {
+fill: none;
+}
+
+.mvp-name-text {
+font-weight:500;
+font-size:26.6667px;
+line-height:31.2503px;
+font-family:'Chivo Mono';
+-inkscape-font-specification:'Chivo Mono Medium';
+text-align:center;
+letter-spacing:-1.5px;
+word-spacing:-5px;
+writing-mode:lr-tb;
+direction:ltr;
+text-anchor:middle;
+fill:#000000;
+fill-opacity:1;
+stroke:none;
+stroke-width:0;
+stroke-miterlimit:0;
+stroke-dasharray:none;
+stroke-opacity:1;
+}
+.mvp-name-container {
+fill:#ffffff;
+fill-opacity:1;
+fill-rule:evenodd;
+stroke:#000000;
+stroke-width:3;
+stroke-dasharray:none;
+stroke-opacity:1;
+}
+.mvp-team-location {
+font-style:normal;
+font-variant:normal;
+font-weight:normal;
+font-stretch:normal;
+font-size:21.3333px;
+line-height:25.0002px;
+font-family:'Chivo Mono';
+text-align:center;
+letter-spacing:-1.5px;
+word-spacing:-5px;
+writing-mode:lr-tb;
+direction:ltr;
+text-anchor:middle;
+fill:#000000;
+fill-opacity:1;
+stroke:none;
+stroke-width:0;
+stroke-miterlimit:0;
+stroke-dasharray:none;
+stroke-opacity:1;
+}
+.mvp-teamname {
+font-style:normal;
+font-variant:normal;
+font-weight:normal;
+font-stretch:normal;
+font-size:21.3333px;
+line-height:25.0002px;
+font-family:'Chivo Mono';
+text-align:center;
+letter-spacing:-1.5px;
+word-spacing:-5px;
+writing-mode:lr-tb;
+direction:ltr;
+text-anchor:middle;
+fill:#000000;
+fill-opacity:1;
+stroke:none;
+stroke-width:0;
+stroke-miterlimit:0;
+stroke-dasharray:none;
+stroke-opacity:1;
+}
+.mvp-team-container {
+fill:#ffffff;
+fill-opacity:1;
+fill-rule:evenodd;
+stroke:#000000;
+stroke-width:3;
+stroke-dasharray:none;
+stroke-opacity:1;
+}
+.mvp-container {
+fill:#ffffff;
+fill-opacity:1;
+fill-rule:evenodd;
+stroke:#000000;
+stroke-width:3.00001;
+stroke-dasharray:none;
+stroke-opacity:1;
+}
+.mvp-title-subscript {
+font-weight:500;
+font-size:18.6667px;
+line-height:21.8752px;
+font-family:'Chivo Mono';
+-inkscape-font-specification:'Chivo Mono Medium';
+text-align:start;
+letter-spacing:-1.5px;
+word-spacing:-5px;
+writing-mode:lr-tb;
+direction:ltr;
+text-anchor:middle;
+fill:#ffffff;
+fill-opacity:1;
+stroke-width:0;
+stroke-miterlimit:0;
+stroke-dasharray:none
+}
+.mvp-title {
+font-style:normal;
+font-variant:normal;
+font-weight:600;
+font-stretch:normal;
+font-size:26.6667px;
+line-height:31.2503px;
+font-family:'Chivo Mono';
+text-align:center;
+letter-spacing:0px;
+word-spacing:-5px;
+writing-mode:lr-tb;
+direction:ltr;
+text-anchor:middle;
+fill:#ffffff;
+fill-opacity:1;
+stroke-width:0;
+stroke-miterlimit:0;
+stroke-dasharray:none
+}
+.mvp-title.mvp-most-improved {
+    text-anchor: start;
+}
+.mvp-title-subscript.mvp-most-improved {
+    text-anchor: start;
+}
+.mvp-title-container {
+
+}
+.mvp-most-improved {
+
+}
+.mvp-rookie {
+
+}
+.mvp-sixth {
+
+}
+.mvp-defensive {
+
+}
+.mvp-season {
+
+}
+
+
+
+.mvp-season.mvp-title-container {
+    fill: var(--season-mvp-bg);
+}
+.mvp-season.mvp-detail-dash-path {
+    stroke: var(--season-mvp-acc);
+    stroke-width: 3;
+}
+
+
+.mvp-defensive.mvp-title-container {
+    fill: var(--def-pty-bg);
+}
+.mvp-defensive.mvp-detail-dash-path {
+    stroke: var(--def-pty-acc);
+    stroke-width: 3;
+}
+
+
+.mvp-sixth.mvp-title-container {
+    fill: var(--sixth-pty-bg);
+}
+.mvp-sixth.mvp-detail-dash-path {
+    stroke: var(--sixth-pty-acc);
+    stroke-width: 3;
+}
+
+
+.mvp-rookie.mvp-title-container {
+    fill: var(--rookie-pty-bg);
+}
+.mvp-rookie.mvp-detail-dash-path {
+    stroke: var(--rookie-pty-acc);
+    stroke-width: 3;
+}
+
+
+.mvp-most-improved.mvp-title-container {
+    fill: var(--most-improved-bg);
+}
+.mvp-most-improved.mvp-detail-dash-path {
+    stroke: var(--most-improved-acc);
+    stroke-width: 3;
+}

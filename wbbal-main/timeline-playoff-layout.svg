@@ -1,0 +1,491 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="1920"
+   height="1080"
+   viewBox="0 0 1920 1080"
+   version="1.1"
+   id="svg1"
+   inkscape:version="1.4.3 (fcd0343856, 2026-01-01)"
+   sodipodi:docname="timeline-playoff-layout.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <style
+     id="style3">.dashed-path {  }
+</style>
+  <sodipodi:namedview
+     id="namedview1"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:document-units="px"
+     inkscape:zoom="1.0427083"
+     inkscape:cx="1025.2148"
+     inkscape:cy="479.04097"
+     inkscape:window-width="1859"
+     inkscape:window-height="1011"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg1" />
+  <defs
+     id="defs1" />
+  <rect
+     style="fill:#0000ff;fill-rule:evenodd"
+     id="team-sq-1"
+     width="100"
+     height="100"
+     x="1000"
+     y="50.000031"
+     inkscape:label="team-sq-1" />
+  <rect
+     style="fill:#0000ff;fill-rule:evenodd;stroke-width:1"
+     id="playoff-team-sq-container"
+     width="800"
+     height="100"
+     x="1000"
+     y="50"
+     inkscape:label="playoff-team-sq-container" />
+  <rect
+     style="fill:#0000ff;fill-rule:evenodd"
+     id="team-sq-2"
+     width="100"
+     height="100"
+     x="1100"
+     y="50.000031"
+     inkscape:label="team-sq-2" />
+  <rect
+     style="fill:#0000ff;fill-rule:evenodd"
+     id="team-sq-3"
+     width="100"
+     height="100"
+     x="1200"
+     y="50.000031"
+     inkscape:label="team-sq-3" />
+  <rect
+     style="fill:#0000ff;fill-rule:evenodd"
+     id="team-sq-4"
+     width="100"
+     height="100"
+     x="1300"
+     y="50.000031"
+     inkscape:label="team-sq-4" />
+  <rect
+     style="fill:#0000ff;fill-rule:evenodd"
+     id="team-sq-5"
+     width="100"
+     height="100"
+     x="1400"
+     y="50.000031"
+     inkscape:label="team-sq-5" />
+  <rect
+     style="fill:#0000ff;fill-rule:evenodd"
+     id="team-sq-6"
+     width="100"
+     height="100"
+     x="1500"
+     y="50.000031"
+     inkscape:label="team-sq-6" />
+  <rect
+     style="fill:#0000ff;fill-rule:evenodd"
+     id="team-sq-7"
+     width="100"
+     height="100"
+     x="1600"
+     y="50.000031"
+     inkscape:label="team-sq-7" />
+  <rect
+     style="fill:#0000ff;fill-rule:evenodd"
+     id="team-sq-8"
+     width="100"
+     height="100"
+     x="1700"
+     y="50.000031"
+     inkscape:label="team-sq-8" />
+  <text
+     xml:space="preserve"
+     style="font-style:italic;font-variant:normal;font-weight:800;font-stretch:normal;font-size:85.3333px;line-height:96px;font-family:'Chivo Mono';-inkscape-font-specification:'Chivo Mono Ultra-Bold Italic';text-align:center;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;direction:ltr;text-anchor:middle;fill:#ffffff;stroke:#000000;stroke-width:2;stroke-miterlimit:0"
+     x="239.93912"
+     y="129.26927"
+     id="playoff-year-text"
+     inkscape:label="playoff-year-text"><tspan
+       sodipodi:role="line"
+       id="tspan9"
+       x="239.93912"
+       y="129.26927">2025</tspan></text>
+  <text
+     xml:space="preserve"
+     style="font-style:normal;font-variant:normal;font-weight:500;font-stretch:normal;font-size:42.6667px;line-height:48px;font-family:'Chivo Mono';-inkscape-font-specification:'Chivo Mono Medium';text-align:center;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;direction:ltr;text-anchor:middle;white-space:pre;inline-size:256.83;display:inline;fill:#ffffff;stroke:#000000;stroke-width:2;stroke-miterlimit:0"
+     x="279.0809"
+     y="272.36761"
+     id="text10"
+     transform="translate(-67.694458,-33.678926)"><tspan
+       x="279.0809"
+       y="272.36761"
+       id="tspan3">total WNBA<tspan
+   y="272.36761"
+   id="tspan18"> </tspan></tspan><tspan
+       x="279.0809"
+       y="320.36762"
+       id="tspan19">teams</tspan></text>
+  <rect
+     style="fill:#0000ff;fill-rule:evenodd;stroke-width:1"
+     id="rect10"
+     width="300"
+     height="203.4433"
+     x="62.389282"
+     y="200" />
+  <text
+     xml:space="preserve"
+     style="font-style:normal;font-variant:normal;font-weight:500;font-stretch:normal;font-size:69.3333px;line-height:78px;font-family:'Chivo Mono';-inkscape-font-specification:'Chivo Mono Medium';text-align:center;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;direction:ltr;text-anchor:middle;fill:#ffffff;stroke:#000000;stroke-width:2;stroke-miterlimit:0"
+     x="211.81328"
+     y="380.30167"
+     id="text11"><tspan
+       sodipodi:role="line"
+       id="tspan11"
+       x="211.81328"
+       y="380.30167">13</tspan></text>
+  <path
+     style="fill:#ffffff;stroke:#000000;stroke-width:2;stroke-miterlimit:0"
+     d="M 62.389282,301.72165 H 362.38929"
+     id="path11" />
+  <text
+     xml:space="preserve"
+     style="font-style:normal;font-variant:normal;font-weight:500;font-stretch:normal;font-size:42.6667px;line-height:48px;font-family:'Chivo Mono';-inkscape-font-specification:'Chivo Mono Medium';text-align:center;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;direction:ltr;text-anchor:middle;white-space:pre;inline-size:256.83;display:inline;fill:#ffffff;stroke:#000000;stroke-width:2;stroke-miterlimit:0"
+     x="279.0809"
+     y="272.36761"
+     id="text12"
+     transform="translate(-67.694458,222.65965)"><tspan
+       x="279.0809"
+       y="272.36761"
+       id="tspan20">playoff<tspan
+   y="272.36761"
+   id="tspan21"> </tspan></tspan><tspan
+       x="279.0809"
+       y="320.36762"
+       id="tspan22">spots</tspan></text>
+  <rect
+     style="fill:#0000ff;fill-rule:evenodd;stroke-width:1"
+     id="rect12"
+     width="300"
+     height="203.4433"
+     x="62.389282"
+     y="456.33856" />
+  <text
+     xml:space="preserve"
+     style="font-style:normal;font-variant:normal;font-weight:500;font-stretch:normal;font-size:69.3333px;line-height:78px;font-family:'Chivo Mono';-inkscape-font-specification:'Chivo Mono Medium';text-align:center;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;direction:ltr;text-anchor:middle;fill:#ffffff;stroke:#000000;stroke-width:2;stroke-miterlimit:0"
+     x="211.81328"
+     y="636.6402"
+     id="text13"><tspan
+       sodipodi:role="line"
+       id="tspan13"
+       x="211.81328"
+       y="636.6402">8</tspan></text>
+  <path
+     style="fill:#ffffff;stroke:#000000;stroke-width:2;stroke-miterlimit:0"
+     d="M 62.389282,558.06022 H 362.38929"
+     id="path13" />
+  <rect
+     style="fill:#0000ff;fill-rule:evenodd"
+     id="team-sq-2-icon"
+     width="30"
+     height="30"
+     x="1109.9999"
+     y="60.000092"
+     inkscape:label="team-sq-2-icon" />
+  <rect
+     style="fill:#0000ff;fill-rule:evenodd"
+     id="team-sq-1-icon"
+     width="30"
+     height="30"
+     x="1010"
+     y="60"
+     inkscape:label="team-sq-1-icon" />
+  <rect
+     style="fill:#0000ff;fill-rule:evenodd"
+     id="team-sq-3-icon"
+     width="30"
+     height="30"
+     x="1210"
+     y="60"
+     inkscape:label="team-sq-3-icon" />
+  <rect
+     style="fill:#0000ff;fill-rule:evenodd"
+     id="team-sq-4-icon"
+     width="30"
+     height="30"
+     x="1310"
+     y="60"
+     inkscape:label="team-sq-4-icon" />
+  <rect
+     style="fill:#0000ff;fill-rule:evenodd"
+     id="team-sq-5-icon"
+     width="30"
+     height="30"
+     x="1410"
+     y="60"
+     inkscape:label="team-sq-5-icon" />
+  <rect
+     style="fill:#0000ff;fill-rule:evenodd"
+     id="team-sq-6-icon"
+     width="30"
+     height="30"
+     x="1510"
+     y="60"
+     inkscape:label="team-sq-6-icon" />
+  <rect
+     style="fill:#0000ff;fill-rule:evenodd"
+     id="team-sq-7-icon"
+     width="30"
+     height="30"
+     x="1610"
+     y="60"
+     inkscape:label="team-sq-7-icon" />
+  <rect
+     style="fill:#0000ff;fill-rule:evenodd"
+     id="team-sq-8-icon"
+     width="30"
+     height="30"
+     x="1710"
+     y="60"
+     inkscape:label="team-sq-8-icon" />
+  <rect
+     style="fill:#0000ff;fill-rule:evenodd"
+     id="rect3"
+     width="1780"
+     height="160"
+     x="62.389282"
+     y="20" />
+  <path
+     style="fill:#ffffff;stroke:#000000;stroke-width:2;stroke-miterlimit:0"
+     d="M 416.38064,20 V 180"
+     id="title-vert-line-1"
+     class="dashed-path"
+     inkscape:label="title-vert-line-1" />
+  <path
+     style="fill:#ffffff;stroke:#000000;stroke-width:2;stroke-miterlimit:0"
+     d="M 427.88913,20 V 180"
+     id="path3"
+     class="dashed-path"
+     inkscape:label="title-vert-line-1" />
+  <rect
+     style="fill:#0000ff;fill-rule:evenodd;stroke-width:1"
+     id="round-1-container"
+     width="380"
+     height="800"
+     x="426.88913"
+     y="250.82918"
+     inkscape:label="round-1-container" />
+  <text
+     xml:space="preserve"
+     style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:48px;line-height:20;font-family:'Chivo Mono';-inkscape-font-specification:'Chivo Mono';text-align:center;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;direction:ltr;text-anchor:middle;fill:#ffffff;stroke:#000000;stroke-width:2;stroke-miterlimit:0"
+     x="576.52911"
+     y="328.99377"
+     id="playoff-round-1-label"
+     inkscape:label="playoff-round-1-label"><tspan
+       sodipodi:role="line"
+       id="tspan14"
+       x="576.52911"
+       y="328.99377">ROUND ONE</tspan></text>
+  <text
+     xml:space="preserve"
+     style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:32px;line-height:20;font-family:'Chivo Mono';-inkscape-font-specification:'Chivo Mono';text-align:center;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;direction:ltr;text-anchor:middle;fill:#ffffff;stroke:#000000;stroke-width:2;stroke-miterlimit:0"
+     x="534.96118"
+     y="389.36465"
+     id="playoff-round-one-matchups-text"
+     inkscape:label="playoff-round-one-matchups-text"><tspan
+       sodipodi:role="line"
+       id="tspan15"
+       x="534.96118"
+       y="389.36465">MATCHUPS:</tspan></text>
+  <rect
+     style="fill:#0000ff;fill-rule:evenodd;stroke-width:1"
+     id="matchup-1-team-1-container"
+     width="300"
+     height="60"
+     x="466.88913"
+     y="411.92807"
+     inkscape:label="matchup-1-team-1-container" />
+  <rect
+     style="fill:#0000ff;fill-rule:evenodd;stroke-width:1"
+     id="matchup-1-team-2-container"
+     width="300"
+     height="60"
+     x="466.88913"
+     y="481.92807"
+     inkscape:label="matchup-1-team-2-container" />
+  <rect
+     style="fill:#0000ff;fill-rule:evenodd;stroke-width:1"
+     id="matchup-2-team-1-container"
+     width="300"
+     height="60"
+     x="466.88913"
+     y="581.92804"
+     inkscape:label="matchup-2-team-1-container" />
+  <rect
+     style="fill:#0000ff;fill-rule:evenodd;stroke-width:1"
+     id="matchup-2-team-2-container"
+     width="300"
+     height="60"
+     x="466.88913"
+     y="651.92804"
+     inkscape:label="matchup-2-team-2-container" />
+  <rect
+     style="fill:#0000ff;fill-rule:evenodd"
+     id="playoff-round-1-label-container"
+     width="300"
+     height="80"
+     x="426.88913"
+     y="272.52979"
+     inkscape:label="playoff-round-1-label-container" />
+  <rect
+     style="fill:#0000ff;fill-rule:evenodd;stroke-width:1"
+     id="matchup-3-team-1-container"
+     width="300"
+     height="60"
+     x="466.88913"
+     y="741.92804"
+     inkscape:label="matchup-3-team-1-container" />
+  <rect
+     style="fill:#0000ff;fill-rule:evenodd;stroke-width:1"
+     id="matchup-3-team-2-container"
+     width="300"
+     height="60"
+     x="466.88913"
+     y="811.92804"
+     inkscape:label="matchup-3-team-2-container" />
+  <rect
+     style="fill:#0000ff;fill-rule:evenodd;stroke-width:1"
+     id="matchup-4-team-1-container"
+     width="300"
+     height="60"
+     x="466.88913"
+     y="901.92804"
+     inkscape:label="matchup-4-team-1-container" />
+  <rect
+     style="fill:#0000ff;fill-rule:evenodd;stroke-width:1"
+     id="matchup-4-team-2-container"
+     width="300"
+     height="60"
+     x="466.88913"
+     y="971.92804"
+     inkscape:label="matchup-4-team-2-container" />
+  <rect
+     style="fill:#0000ff;fill-rule:evenodd;stroke-width:0.999996"
+     id="rect24"
+     width="439.99997"
+     height="120"
+     x="937.22192"
+     y="357.28275" />
+  <text
+     xml:space="preserve"
+     style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:21.3333px;line-height:20px;font-family:'Chivo Mono';-inkscape-font-specification:'Chivo Mono';text-align:center;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;direction:ltr;text-anchor:middle;white-space:pre;inline-size:454.196;display:inline;fill:#ffffff;stroke:#000000;stroke-width:2;stroke-miterlimit:0"
+     x="1085.708"
+     y="269.07669"
+     id="text24"
+     transform="translate(71.439237,123.98737)"><tspan
+       x="1085.708"
+       y="269.07669"
+       id="tspan23">round one matchups are best of 3.
+</tspan><tspan
+       x="1085.708"
+       y="289.07671"
+       id="tspan25">first team to win 2 games moves on<tspan
+   y="289.07671"
+   id="tspan28"> </tspan></tspan><tspan
+       x="1085.708"
+       y="309.07671"
+       id="tspan29">to next round. losing team is<tspan
+   y="309.07671"
+   id="tspan30"> </tspan></tspan><tspan
+       x="1085.708"
+       y="329.07671"
+       id="tspan31">eliminated from playoffs</tspan></text>
+  <text
+     xml:space="preserve"
+     style="font-style:italic;font-weight:500;font-size:26.6667px;line-height:20;font-family:'Chivo Mono';-inkscape-font-specification:'Chivo Mono Medium Italic';text-align:center;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;direction:ltr;text-anchor:middle;fill:#ffffff;stroke:#000000;stroke-width:2;stroke-miterlimit:0"
+     x="617.66248"
+     y="451.07474"
+     id="text1"><tspan
+       sodipodi:role="line"
+       id="tspan1"
+       x="617.66248"
+       y="451.07474">MATCHUP 1 TEAM 1</tspan></text>
+  <text
+     xml:space="preserve"
+     style="font-style:italic;font-weight:500;font-size:26.6667px;line-height:20;font-family:'Chivo Mono';-inkscape-font-specification:'Chivo Mono Medium Italic';text-align:center;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;direction:ltr;text-anchor:middle;fill:#ffffff;stroke:#000000;stroke-width:2;stroke-miterlimit:0"
+     x="617.66248"
+     y="521.07471"
+     id="text2"><tspan
+       sodipodi:role="line"
+       id="tspan2"
+       x="617.66248"
+       y="521.07471">MATCHUP 1 TEAM 2</tspan></text>
+  <text
+     xml:space="preserve"
+     style="font-style:italic;font-weight:500;font-size:26.6667px;line-height:20;font-family:'Chivo Mono';-inkscape-font-specification:'Chivo Mono Medium Italic';text-align:center;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;direction:ltr;text-anchor:middle;fill:#ffffff;stroke:#000000;stroke-width:2;stroke-miterlimit:0"
+     x="616.98242"
+     y="621.07471"
+     id="text4"><tspan
+       sodipodi:role="line"
+       id="tspan4"
+       x="616.98242"
+       y="621.07471">MATCHUP 2 TEAM 1</tspan></text>
+  <text
+     xml:space="preserve"
+     style="font-style:italic;font-weight:500;font-size:26.6667px;line-height:20;font-family:'Chivo Mono';-inkscape-font-specification:'Chivo Mono Medium Italic';text-align:center;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;direction:ltr;text-anchor:middle;fill:#ffffff;stroke:#000000;stroke-width:2;stroke-miterlimit:0"
+     x="617.66248"
+     y="691.07471"
+     id="text5"><tspan
+       sodipodi:role="line"
+       id="tspan5"
+       x="617.66248"
+       y="691.07471">MATCHUP 2 TEAM 2</tspan></text>
+  <text
+     xml:space="preserve"
+     style="font-style:italic;font-weight:500;font-size:26.6667px;line-height:20;font-family:'Chivo Mono';-inkscape-font-specification:'Chivo Mono Medium Italic';text-align:center;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;direction:ltr;text-anchor:middle;fill:#ffffff;stroke:#000000;stroke-width:2;stroke-miterlimit:0"
+     x="617.66248"
+     y="781.07471"
+     id="text6"><tspan
+       sodipodi:role="line"
+       id="tspan6"
+       x="617.66248"
+       y="781.07471">MATCHUP 3 TEAM 1</tspan></text>
+  <text
+     xml:space="preserve"
+     style="font-style:italic;font-weight:500;font-size:26.6667px;line-height:20;font-family:'Chivo Mono';-inkscape-font-specification:'Chivo Mono Medium Italic';text-align:center;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;direction:ltr;text-anchor:middle;fill:#ffffff;stroke:#000000;stroke-width:2;stroke-miterlimit:0"
+     x="616.98242"
+     y="851.07471"
+     id="text25"><tspan
+       sodipodi:role="line"
+       id="tspan24"
+       x="616.98242"
+       y="851.07471">MATCHUP 3 TEAM 2</tspan></text>
+  <text
+     xml:space="preserve"
+     style="font-style:italic;font-weight:500;font-size:26.6667px;line-height:20;font-family:'Chivo Mono';-inkscape-font-specification:'Chivo Mono Medium Italic';text-align:center;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;direction:ltr;text-anchor:middle;fill:#ffffff;stroke:#000000;stroke-width:2;stroke-miterlimit:0"
+     x="616.98242"
+     y="941.07471"
+     id="text26"><tspan
+       sodipodi:role="line"
+       id="tspan26"
+       x="616.98242"
+       y="941.07471">MATCHUP 4 TEAM 1</tspan></text>
+  <text
+     xml:space="preserve"
+     style="font-style:italic;font-weight:500;font-size:26.6667px;line-height:20;font-family:'Chivo Mono';-inkscape-font-specification:'Chivo Mono Medium Italic';text-align:center;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;direction:ltr;text-anchor:middle;fill:#ffffff;stroke:#000000;stroke-width:2;stroke-miterlimit:0"
+     x="617.66248"
+     y="1011.0747"
+     id="text27"><tspan
+       sodipodi:role="line"
+       id="tspan27"
+       x="617.66248"
+       y="1011.0747">MATCHUP 4 TEAM 2</tspan></text>
+</svg>

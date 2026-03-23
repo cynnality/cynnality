@@ -1,40 +1,3 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <title>WNBA Cluster</title>
-
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&family=UoqMunThenKhung&family=VT323&display=swap"
-        rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Contrail+One&family=Shrikhand&display=swap" rel="stylesheet">
-    <!-- (ABOVE) SHRIKHAND (big and bubbly but also sharp ? ..... CONTRAIL ONE - idk... simpple, easy, readable )-->
-
-
-    <!-- ======================== MONO FONTS ========================
-         CHIVO MONO 
-         ---- (monospaced // kinda playful ? serif) 
-
-         DM MONO 
-         ---- (monospaced, serif, gives digital feel - could be good replacement for v323)
-
-         JET BRAINS MONO 
-         ---- (monospaced, generally sans-serif. 
-         ---- want to use for all caps / titles / such things big bold (and oblique) style header feel)
-         ============================================================ -->
-
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Chivo+Mono:ital,wght@0,100..900;1,100..900&family=DM+Mono:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap" rel="stylesheet">
-
-  <link rel="stylesheet" href="wnba-cluster.css" />
-</head>
-<body>
-
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <svg
    width="1920"
@@ -134,7 +97,6 @@
          d="m 448.28056,277.83881 a 23.512386,23.512388 0 0 1 20.36233,11.75619 23.512386,23.512388 0 0 1 0,23.51239 23.512386,23.512388 0 0 1 -20.36233,11.75619 V 301.3512 Z" />
     </g>
   </g>
-  
   <g
      id="wings-cyl"
      class="team-cyl"
@@ -515,7 +477,6 @@
      d="M 589.61072,392.35595 H 1330.3892"
      id="path5"
      class="detail-line" />
-
   <rect
      id="year-founded-box"
      width="110.65325"
@@ -523,12 +484,6 @@
      x="1219.736"
      y="333.92419"
      class="label-container" />
-  <text
-     id="year-founded-text"
-     x="1270"
-     y="360"
-     text-anchor="middle"
-     class="label title-text" />
   <rect
      id="city-state-label-container"
      width="340.8436"
@@ -536,12 +491,6 @@
      x="683.15314"
      y="318.92422"
      class="label-container" />
-  <text
-     id="city-state-label"
-     text-anchor="left"
-     class="label title-text"
-     x="845"
-     y="350" />
   <rect
      id="champ-titles-text-container"
      width="740.7785"
@@ -549,7 +498,7 @@
      x="589.61072"
      y="424.75403"
      class="label-container"
-      />
+     style="stroke-width:1" />
   <rect
      id="founded-year-container"
      width="87.031479"
@@ -557,7 +506,7 @@
      x="1132.7046"
      y="333.92422"
      class="label-container"
-      />
+     style="stroke-width:1" />
   <text
      xml:space="preserve"
      x="1180"
@@ -626,7 +575,7 @@
      x="915.63757"
      y="379.67691"
      class="label-container"
-      />
+     style="stroke-width:1" />
   <rect
      id="swatch-color-1"
      width="30"
@@ -651,23 +600,23 @@
   <rect
      id="topic-box-container"
      class="lg-text-container topic-container"
-     width="460"
+     width="390.01831"
      height="106.15238"
-     x="730"
+     x="764.99084"
      y="178.79955" />
   <rect
      id="topic-title-label-container"
-     width="420"
+     width="360"
      height="80"
-     x="750"
+     x="780.04443"
      y="191.5"
      class="label-container" />
   <text
-     text-anchor="middle"
-     x="960"
+     text-anchor="left"
+     x="885"
      y="243"
      id="topic-title-label-container-text"
-     class="topic-title-text">click on a team</text>
+     class="topic-title-text">TEXT TEXT</text>
   <rect
      id="champ-title-bar-container"
      class="champ-title-bar-container"
@@ -675,7 +624,7 @@
      height="60"
      x="610"
      y="481.13037"
-      />
+     style="stroke-width:1" />
   <!-- first row // championship titles (containers) -->
   <rect
      id="yr-label-container"
@@ -684,7 +633,7 @@
      x="617.5"
      y="486.13037"
      class="champ-title-label-container"
-      />
+     style="stroke-width:1" />
   <rect
      id="coach-name-label-container"
      width="184.95557"
@@ -692,7 +641,7 @@
      x="692.18158"
      y="486.13037"
      class="champ-title-label-container"
-      />
+     style="stroke-width:1" />
   <rect
      id="finals-mvp-placeholder-label-container"
      width="180"
@@ -700,7 +649,7 @@
      x="899.81866"
      y="486.13037"
      class="champ-title-label-container"
-      />
+     style="stroke-width:1" />
   <rect
      id="rect1"
      width="200"
@@ -708,7 +657,7 @@
      x="1102.5"
      y="486.13037"
      class="champ-title-label-container"
-      />
+     style="stroke-width:1" />
   <!-- ===END===first row // championship titles (containers) === END === -->
   <rect
      id="year-label-container"
@@ -771,7 +720,7 @@
      x="610"
      y="551.75793"
      id="rect2"
-      />
+     style="stroke-width:1" />
   <!-- ===SECOND ROW === // championship titles (containers) === === -->
   <rect
      id="rect22"
@@ -780,7 +729,7 @@
      x="617.5"
      y="556.75793"
      class="champ-title-label-container"
-      />
+     style="stroke-width:1" />
   <rect
      id="rect20"
      width="184.95601"
@@ -788,7 +737,7 @@
      x="692.18134"
      y="556.75793"
      class="champ-title-label-container"
-      />
+     style="stroke-width:1" />
   <rect
      id="rect21"
      width="180"
@@ -796,7 +745,7 @@
      x="899.81866"
      y="556.75793"
      class="champ-title-label-container"
-      />
+     style="stroke-width:1" />
   <rect
      id="rect24"
      width="200"
@@ -804,7 +753,7 @@
      x="1102.5"
      y="556.75793"
      class="champ-title-label-container"
-      />
+     style="stroke-width:1" />
   <!-- ===END===second row // championship titles (containers) === END === -->
   <!-- === main THIRD row champ title bar ==== -->
   <rect
@@ -814,24 +763,8 @@
      height="60"
      x="610"
      y="622.38544"
-      />
+     style="stroke-width:1" />
   <!-- === THIRD ROW === // championship titles (containers) === === -->
-  <rect
-     id="rect28"
-     width="52"
-     height="50"
-     x="617.5"
-     y="627.38544"
-     class="champ-title-label-container"
-      />
-  <rect
-     id="rect26"
-     width="184.95601"
-     height="50"
-     x="692.18134"
-     y="627.38544"
-     class="champ-title-label-container"
-      />
   <rect
      id="rect27"
      width="180"
@@ -839,7 +772,15 @@
      x="899.81866"
      y="627.38544"
      class="champ-title-label-container"
-      />
+     style="stroke-width:1" />
+  <rect
+     id="rect28"
+     width="52"
+     height="50"
+     x="617.5"
+     y="627.38544"
+     class="champ-title-label-container"
+     style="stroke-width:1" />
   <rect
      id="rect29"
      width="200"
@@ -847,8 +788,15 @@
      x="1102.5"
      y="627.38544"
      class="champ-title-label-container"
-      />
-
+     style="stroke-width:1" />
+  <rect
+     id="rect26"
+     width="184.95601"
+     height="50"
+     x="692.18134"
+     y="627.38544"
+     class="champ-title-label-container"
+     style="stroke-width:1" />
   <!-- === END === third row // championship titles (containers) === === -->
   <!-- === main FOURTH row champ title bar ==== -->
   <rect
@@ -858,16 +806,8 @@
      height="60"
      x="610"
      y="693.01294"
-      />
+     style="stroke-width:1" />
   <!-- === FOURTH ROW === // championship titles (containers) === === -->
-  <rect
-     id="rect33"
-     width="52"
-     height="50"
-     x="617.5"
-     y="698.01294"
-     class="champ-title-label-container"
-      />
   <rect
      id="rect31"
      width="184.95601"
@@ -875,7 +815,7 @@
      x="692.18134"
      y="698.01294"
      class="champ-title-label-container"
-      />
+     style="stroke-width:1" />
   <rect
      id="rect32"
      width="180"
@@ -883,7 +823,15 @@
      x="899.81866"
      y="698.01294"
      class="champ-title-label-container"
-      />
+     style="stroke-width:1" />
+  <rect
+     id="rect33"
+     width="52"
+     height="50"
+     x="617.5"
+     y="698.01294"
+     class="champ-title-label-container"
+     style="stroke-width:1" />
   <rect
      id="rect34"
      width="200"
@@ -891,7 +839,7 @@
      x="1102.5"
      y="698.01294"
      class="champ-title-label-container"
-      />
+     style="stroke-width:1" />
   <!-- === END === fourth row // championship titles (containers) === === -->
   <rect
      id="year-twelve"
@@ -899,200 +847,203 @@
      height="36.140278"
      x="817.63605"
      y="119.03482"
-      />
+     style="stroke-width:1" />
   <rect
      id="year-one"
      width="36.140278"
      height="36.140278"
      x="361.89136"
      y="119.03482"
-      />
+     style="stroke-width:1" />
   <rect
      id="year-two"
      width="36.140278"
      height="36.140278"
      x="403.32263"
      y="119.03482"
-      />
+     style="stroke-width:1" />
   <rect
      id="year-three"
      width="36.140278"
      height="36.140278"
      x="444.75403"
      y="119.03482"
-      />
+     style="stroke-width:1" />
   <rect
      id="year-four"
      width="36.140278"
      height="36.140278"
      x="486.1853"
      y="119.03482"
-      />
+     style="stroke-width:1" />
   <rect
      id="year-five"
      width="36.140278"
      height="36.140278"
      x="527.6167"
      y="119.03482"
-      />
+     style="stroke-width:1" />
   <rect
      id="year-six"
      width="36.140278"
      height="36.140278"
      x="569.04797"
      y="119.03482"
-      />
+     style="stroke-width:1" />
   <rect
      id="year-seven"
      width="36.140278"
      height="36.140278"
      x="610.47937"
      y="119.03482"
-      />
+     style="stroke-width:1" />
   <rect
      id="year-eight"
      width="36.140278"
      height="36.140278"
      x="651.91064"
      y="119.03482"
-      />
+     style="stroke-width:1" />
   <rect
      id="year-nine"
      width="36.140278"
      height="36.140278"
      x="693.34198"
      y="119.03482"
-      />
+     style="stroke-width:1" />
   <rect
      id="year-ten"
      width="36.140278"
      height="36.140278"
      x="734.77338"
      y="119.03482"
-      />
+     style="stroke-width:1" />
   <rect
      id="year-eleven"
      width="36.140278"
      height="36.140278"
      x="776.20465"
      y="119.03482"
-      />
+     style="stroke-width:1" />
   <rect
      id="year-thirteen"
      width="36.140278"
      height="36.140278"
      x="859.06732"
      y="119.03482"
-      />
+     style="stroke-width:1" />
   <rect
      id="year-fourteen"
      width="36.140278"
      height="36.140278"
      x="900.49872"
      y="119.03482"
-      />
+     style="stroke-width:1" />
   <rect
      id="year-fifteen"
      width="36.140278"
      height="36.140278"
      x="941.92999"
      y="119.03482"
-      />
+     style="stroke-width:1" />
   <rect
      id="year-sixteen"
      width="36.140278"
      height="36.140278"
      x="983.36127"
      y="119.03482"
-      />
+     style="stroke-width:1" />
   <rect
      id="year-seventeen"
      width="36.140278"
      height="36.140278"
      x="1024.7927"
      y="119.03482"
-      />
+     style="stroke-width:1" />
   <rect
      id="year-eighteen"
      width="36.140278"
      height="36.140278"
      x="1066.2239"
      y="119.03482"
-      />
+     style="stroke-width:1" />
   <rect
      id="year-nineteen"
      width="36.140278"
      height="36.140278"
      x="1107.6553"
      y="119.03482"
-      />
+     style="stroke-width:1" />
   <rect
      id="year-twenty"
      width="36.140278"
      height="36.140278"
      x="1149.0867"
      y="119.03482"
-      />
+     style="stroke-width:1" />
   <rect
      id="year-twentyone"
      width="36.140278"
      height="36.140278"
      x="1190.5178"
      y="119.03482"
-      />
+     style="stroke-width:1" />
   <rect
      id="year-twentytwo"
      width="36.140278"
      height="36.140278"
      x="1231.9492"
      y="119.03482"
-      />
+     style="stroke-width:1" />
   <rect
      id="year-twentythree"
      width="36.140278"
      height="36.140278"
      x="1273.3806"
      y="119.03482"
-      />
+     style="stroke-width:1" />
   <rect
      id="year-twentyfour"
      width="36.140278"
      height="36.140278"
      x="1314.8118"
      y="119.03482"
-      />
+     style="stroke-width:1" />
   <rect
      id="year-twentyfive"
      width="36.140278"
      height="36.140278"
      x="1356.2432"
      y="119.03482"
-      />
+     style="stroke-width:1" />
   <rect
      id="year-twentysix"
      width="36.140278"
      height="36.140278"
      x="1397.6746"
      y="119.03482"
-      />
+     style="stroke-width:1" />
   <rect
      id="year-twentyseven"
      width="36.140278"
      height="36.140278"
      x="1439.106"
-     y="119.03482" />
+     y="119.03482"
+     style="stroke-width:1" />
   <rect
      id="year-twentyeight"
      width="36.140278"
      height="36.140278"
      x="1480.5371"
-     y="119.03482"/>
+     y="119.03482"
+     style="stroke-width:1" />
   <rect
      id="year-twentynine"
      width="36.140278"
      height="36.140278"
      x="1521.9685"
-     y="119.03482" />
+     y="119.03482"
+     style="stroke-width:1" />
   <path
      d="m 1132.6393,376.50876 h 197.7499"
      id="path6"
@@ -1101,25 +1052,4 @@
      d="m 1132.6393,368.58516 h 197.7499"
      id="path7"
      class="detail-line" />
-
-    <g id="championships-dynamic-group" />
-
 </svg>
-
-
-
-
-
-
-<script src="svg-draggable.js"></script>
-<script src="wnba-cluster.js"></script>
-<!-- <script src="rewritten-cluster-engine.js"></script> -->
-<!--<script src="wnba-registry.js"></script>-->
-
-<script>
-</script>
-
-</body>
-</html>
-
-

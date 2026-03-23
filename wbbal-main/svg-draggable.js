@@ -5,7 +5,7 @@
 function makeSvgDraggable(elementId) {
 
   const element = document.getElementById(elementId);
-  const svg = document.querySelector("svg");
+  const svg = element.ownerSVGElement;
 
   if (!element || !svg) return;
 
@@ -87,9 +87,14 @@ function makeSvgDraggable(elementId) {
     currentX = mouse.x - offsetX;
     currentY = mouse.y - offsetY;
 
+    const existingTransform = element.getAttribute("transform") || "";
+    const scaleMatch = existingTransform.match(/scale\([^)]+\)/);
+
+    const scalePart = scaleMatch ? scaleMatch[0] : "";
+
     element.setAttribute(
       "transform",
-      `translate(${currentX}, ${currentY})`
+      `translate(${currentX}, ${currentY}) ${scalePart}`
     );
   });
 

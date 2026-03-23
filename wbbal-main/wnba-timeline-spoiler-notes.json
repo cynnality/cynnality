@@ -1,0 +1,76 @@
+{
+    "1997": [
+        {
+            "majorCat": "nba-ownership",
+            "type": "nba-ownership",
+            "episode": "the-prologue",
+            "question": "who created / who owns the WNBA?",
+            "title": "wnba beginnings",
+            "items": [
+                "The league was created in 1996 by the NBA - specifically by NBA commissioner David Stern and Val Ackerman, the WNBA's first president",
+                "High viewership ratings in the U.S. of the women's Olympic basketball tournament led Stern to create a pro women's league",
+                "The WNBA was created partly to supplement NBA profits",
+                "The WNBA functions more as a sub-league offshoot of the NBA than a direct sister league"
+            ]
+        },
+        {
+            "majorCat": "nba-ownership",
+            "type": "brother-sister-teams",
+            "episode": "teams",
+            "question": "what were the O.G. brother / sister teams?",
+            "title": "brother and sister teams",
+            "items": [
+                "The WNBA's first season had 8 teams, all owned by NBA franchises",
+                "Phoenix Suns owned the Phoenix Mercury",
+                "Los Angeles Lakers owned the Los Angeles Sparks",
+                "Sacramento Kings owned the Sacramento Monarchs",
+                "Utah Jazz owned the Utah Starzz",
+                "Houston Rockets owned the Houston Comets",
+                "New York Knicks owned the New York Liberty",
+                "Charlotte Hornets owned the Charlotte Sting",
+                "Cleveland Cavaliers owned the Cleveland Rockers"
+            ]
+        },
+        {
+            "majorCat": "team-history",
+            "type": "then-and-now",
+            "episode": "teams",
+            "question": "what happened to the original 8 teams?",
+            "title": "THE O.G. 8",
+            "items": [
+                "Of the original 8 WNBA teams the Liberty, Sparks, and Mercury are the only ones that still exist",
+                "The Utah Starzz franchise relocated to San Antonio and then to Las Vegas where they currently play as the Aces"
+            ]
+        },
+        {
+            "majorCat": "players",
+            "type": "quick-facts",
+            "episode": "regular-season",
+            "question": "who were the stars of season 1?",
+            "title": "stars of season 1",
+            "items": [
+                "Sheryl Swoopes: first player to be signed in the WNBA",
+                "Cynthia Cooper: first regular season MVP",
+                "Theresa Weatherspoon: first defensive player of the year winner",
+                "Penny Toler: scored the first field goal and free throw in the WNBA"
+            ]
+        }
+    ],
+
+    "1998": [
+        {
+            "majorCat": "teams"
+        }
+    ],
+
+    "2002": [
+        {
+            "type": "nba-ownership",
+            "title": "goodbye to strict NBA ownership rules",
+            "items": [
+                "In 2002 WNBA franchises/teams could be sold to groups/cities without existing NBA franchises/teams",
+                "And WNBA teams could exist in cities with existing NBA franchises/teams without being directly affiliated with that NBA franchise/team"
+            ]
+        }
+    ]
+}

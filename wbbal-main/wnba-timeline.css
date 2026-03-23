@@ -1,0 +1,463 @@
+.timeline-svg {
+    width: 100%;
+    height: auto;   /* important */
+    display: block;
+}
+
+.title-text {
+    font-family: "Chivo Mono", monospace;
+    font-size: 28px;
+    font-weight: 700;
+}
+
+.big-timeline-text {
+    font-family: "Chivo Mono", monospace;
+    font-size: 38px;
+    font-weight: 500;
+    fill: #000000;
+    stroke: none;
+}
+
+.big-timeline-text-italic {
+    font-size: 28px;
+    font-weight: 600;
+    font-style: italic;
+    text-anchor: middle;
+}
+
+#playoff-year-label {
+  font-size: 52px;
+}
+
+#main-court-background-color,
+#main-clip-path {
+    fill: #ffffff;
+    stroke: #000000;
+    stroke-width: 2;
+}
+
+.example-square,
+.season-square {
+    fill: #ffffff;
+    stroke: #000000;
+    stroke-width: 2;
+}
+
+.season-square-label {
+    font-family: "Chivo Mono", monospace;
+    font-size: 18px;
+    font-weight: 600;
+    font-style: italic;
+    fill: #000000;
+    stroke: none;
+    text-anchor: middle;
+}
+
+.descrip-box,
+.define-box {
+    fill: #ffffff;
+    stroke: #000000;
+    stroke-width: 2;
+}
+
+.example-square-label-text,
+.define-box-label {
+    font-family: "Chivo Mono", monospace;
+    font-style: italic;
+    font-weight: 600;
+    font-size: 18px;
+    word-spacing: -2px;
+    fill: #000000;
+    text-align: center;
+}
+
+.define-box-label {
+    font-family: "Chivo Mono", monospace;
+    font-style: italic;
+    font-weight: 600;
+    font-size: 18px;
+    word-spacing: -2px;
+    fill: #000000;
+    text-align: center;
+    text-anchor: middle;
+}
+
+.descrip-title-label {
+    font-family: "Chivo Mono", monospace;
+    font-weight: 800;
+    font-size: 20px;
+    word-spacing: -3px;
+    fill: #000000;
+    text-align: center;
+    text-anchor: middle;
+}
+
+#finals-report-card-bg-container {
+    fill: #ffffff;
+    stroke: #000000;
+    stroke-width: 2;
+}
+
+.finals-report-container,
+.season-bar-container,
+.season-bar-sec {
+    fill: #ffffff;
+    stroke: #000000;
+    stroke-width: 2;
+}
+
+#post-season-rec {
+    fill: #000000;
+    stroke: #ffffff;
+    stroke-width: 2;
+    stroke-dasharray: 3,3;
+}
+
+#post-season-abr {
+    fill: #ffffff;
+    stroke: #ffffff;
+    stroke-width: 2;
+}
+
+.finals-report-text-label {
+    font-family: "Chivo Mono", monospace;
+    /*! font-style: italic; */
+    font-weight: 600;
+    font-size: 20px;
+    word-spacing: -2px;
+    fill: #000000;
+    text-align: center;
+    text-anchor: middle;
+}
+
+.champ-report-card-perm-label {
+    font-family: "Chivo Mono", monospace;
+    font-style: italic;
+    font-weight: 400;
+    font-size: 18px;
+    word-spacing: -2px;
+    fill: #000000;
+    text-align: center;
+    text-anchor: middle;
+}
+
+.season-bar-full-label {
+    font-family: "Chivo Mono", monospace;
+    font-weight: 200;
+    font-size: 20px;
+    font-style: italic;
+    fill: #000000;
+    text-align: center;
+    word-spacing: -3px;
+    stroke: none;
+    stroke-width: 0;
+    text-anchor: middle;
+}
+
+.season-bar-abr {
+    font-family: "Chivo Mono", monospace;
+    font-size: 28px;
+    font-weight: 200;
+    font-style: italic;
+    fill: #000000;
+    text-align: center;
+    text-anchor: middle;
+    stroke: none;
+    stroke-width: 0;
+}
+
+.season-bar-team-text {
+    font-family: "Chivo Mono", monospace;
+    font-size: 24px;
+    font-weight: 600;
+    font-style: italic;
+    fill: #000000;
+    text-align: center;
+    text-anchor: middle;
+    stroke: none;
+    stroke-width: 0;
+}
+
+#vs-small-text {
+    font-family: "Chivo Mono", monospace;
+    font-size: 18px;
+    font-weight: 400;
+    font-style: italic;
+    fill: #000000;
+    text-align: center;
+    text-anchor: middle;
+}
+
+.champ-report-card-label {
+    font-family: "Chivo Mono", monospace;
+    font-size: 18px;
+    font-weight: 300;
+    font-style: italic;
+    fill: #000000;
+    text-align: center;
+    text-anchor: middle;
+}
+
+#explainer-playoff-champ-svg {
+    transform: scale(0.8);
+}
+
+#main-title-text {
+    -inkscape-font-specification:'Chivo Mono Light Italic';
+    font-style:italic;
+    font-variant:normal;
+    font-weight:300;
+    font-stretch:normal;
+    font-size:38px;
+    font-family:'Chivo Mono';
+    text-align:center;
+    word-spacing:-5px;
+    text-anchor:middle;
+    fill:#000000;
+    stroke:none;
+    stroke-width:0;
+    stroke-miterlimit:0;
+    stroke-dasharray:none
+}
+#main-sub-title-text {
+    font-family: "Chivo Mono", monospace;
+    font-size: 24px;
+    font-weight: 200;
+    font-style: italic;
+    fill: #000000;
+    stroke: none;
+    text-align: center;
+    text-anchor: middle;
+    stroke-width: 0;
+    stroke-miterlimit: 0;
+    stroke-dasharray: none
+}
+
+.player-name {
+    font-style: italic;
+    font-variant: normal;
+    font-weight: 500;
+    font-stretch: normal;
+    font-size: 26.6667px;
+    line-height: 25px;
+    font-family: 'Chivo Mono';
+    -inkscape-font-specification: 'Chivo Mono Medium Italic';
+    text-align: center;
+    letter-spacing: 0px;
+    word-spacing: -5px;
+    writing-mode: lr-tb;
+    direction: ltr;
+    text-anchor: middle;
+    fill: #000000;
+    stroke: none;
+    stroke-width: 0;
+    stroke-miterlimit: 0;
+    stroke-dasharray: none"
+
+}
+
+.example-text {
+    -inkscape-font-specification:'Chivo Mono Light Italic';
+    font-style:italic;
+    font-variant:normal;
+    font-weight:300;
+    font-stretch:normal;
+    font-size:18px;
+    font-family:'Chivo Mono';
+    text-align:center;
+    word-spacing:-5px;
+    text-anchor:middle;
+    fill:#000000;
+    stroke:none;
+    stroke-width:0;
+    stroke-miterlimit:0;
+    stroke-dasharray:none
+}
+
+.example-container {
+    fill: #ffffff;
+    stroke: #000000;
+    stroke-width: 2;
+    stroke-dasharray: 3,3;
+}
+
+.team-name {
+    -inkscape-font-specification:'Chivo Mono Medium Italic';
+    font-style:italic;
+    font-variant:normal;
+    font-weight:500;
+    font-stretch:normal;
+    font-size:26px;
+    font-family:'Chivo Mono';
+    text-align:center;
+    word-spacing:-5px;
+    text-anchor:middle;
+    fill:#000000;
+    stroke:none;
+    stroke-width:0;
+    stroke-miterlimit:0;
+    stroke-dasharray:none
+}
+
+.context-text {
+    -inkscape-font-specification:'Chivo Mono Light Italic';
+    font-style:italic;
+    font-variant:normal;
+    font-weight:300;
+    font-stretch:normal;
+    font-size:18px;
+    font-family:'Chivo Mono';
+    text-align:center;
+    word-spacing:-5px;
+    direction:ltr;
+    text-anchor:middle;
+    display:inline;
+    fill:#000000;
+    stroke:none;
+    stroke-width:0;
+    stroke-miterlimit:0;
+    stroke-dasharray:none
+}
+
+.context-container {
+    fill: #ffffff;
+    stroke: #000000;
+    stroke-width: 2;
+}
+
+.definition-text {
+    -inkscape-font-specification:'Chivo Mono Light Italic';
+    font-style:italic;
+    font-variant:normal;
+    font-weight:300;
+    font-stretch:normal;
+    font-size:22px;
+    font-family:'Chivo Mono';
+    text-align:center;
+    word-spacing:-5px;
+    text-anchor:middle;
+    fill:#000000;
+    stroke:none;
+    stroke-width:0;
+    stroke-miterlimit:0;
+    stroke-dasharray:none
+}
+
+.definition-container {
+    fill: #ffffff;
+    stroke: #000000;
+    stroke-width: 3;
+}
+
+.word-to-define-text {
+    -inkscape-font-specification:'Chivo Mono Light Italic';
+    font-style:italic;
+    font-variant:normal;
+    font-weight:300;
+    font-stretch:normal;
+    font-size:26px;
+    line-height:25px;
+    font-family:'Chivo Mono';
+    text-align:center;
+    word-spacing:-5px;
+    text-anchor:middle;
+    fill:#000000;
+    stroke:none;
+    stroke-width:0;
+    stroke-miterlimit:0;
+    stroke-dasharray:none
+}
+
+.mvp-year-container {
+    fill: #ffffff;
+    stroke: #000000;
+    stroke-width: 2;
+}
+.mvp-year-label {
+    font-family: "Chivo Mono", monospace;
+    font-size: 24px;
+    font-weight: 400;
+    fill: #000000;
+    stroke: none;
+    text-anchor: middle;
+}
+
+.mvp-name-container {
+    fill: #ffffff;
+    stroke: #000000;
+    stroke-width: 2;
+}
+.mvp-name-label {
+    font-family: "Chivo Mono", monospace;
+    font-size: 28px;
+    font-weight: 400;
+    fill: #000000;
+    stroke: none;
+    text-anchor: middle;
+}
+
+.mvp-team-container {
+    fill: #ffffff;
+    stroke: #000000;
+    stroke-width: 2;
+}
+
+.mvp-team-label {
+    font-family: "Chivo Mono", monospace;
+    font-size: 20px;
+    font-weight: 400;
+    fill: #000000;
+    stroke: none;
+    text-anchor: middle;
+    
+}
+
+.finals-mvp-descrip-main-label {
+    font-style:italic;
+    font-weight:600;
+    font-size:24px;
+    font-family: "Chivo Mono", monospace;
+    text-align:center;
+    text-anchor:middle;
+    fill:#000000;
+    stroke:none;
+    stroke-width:0;
+    stroke-miterlimit:0;
+}
+.finals-mvp-main-descrip-text {
+    font-style:italic;
+    font-weight:600;
+    font-size:22px;
+    line-height:20px;
+    font-family:'Chivo Mono';
+    text-align:center;
+    text-anchor:middle;
+    fill:#000000;
+    stroke:none;
+    stroke-width:0;
+    stroke-miterlimit:0;
+}
+
+.finals-mvp-descrip-container {
+    fill: #ffffff;
+    stroke: #000000;
+    stroke-width: 2;
+}
+.finals-mvp-descrip-text {
+    font-style:italic;
+    font-weight:400;
+    font-size:18px;
+    line-height:25px;
+    font-family:'Chivo Mono';
+    text-align:center;
+    text-anchor:middle;
+    fill:#000000;
+    stroke:none;
+    stroke-width:0;
+    stroke-miterlimit:0;
+}
+
+.divider-line {
+    stroke: #000000;
+    stroke-width: 2;
+}

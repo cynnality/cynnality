@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="1920"
+   height="1080"
+   viewBox="0 0 1920 1080"
+   version="1.1"
+   id="svg1"
+   sodipodi:docname="playoff-define-boxes.svg"
+   inkscape:version="1.4.3 (fcd0343856, 2026-01-01)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview1"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:document-units="px"
+     inkscape:zoom="0.36865307"
+     inkscape:cx="804.27922"
+     inkscape:cy="522.17116"
+     inkscape:window-width="1859"
+     inkscape:window-height="1011"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1" />
+  <defs
+     id="defs1" />
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <rect
+       id="teams-qualify-container"
+       width="230"
+       height="130"
+       x="493.59927"
+       y="442.2821"
+       class="define-box  descrip-box"
+       inkscape:label="teams-qualify-container" />
+    <rect
+       id="after-reg-container"
+       width="230"
+       height="130"
+       x="230.57602"
+       y="442.2821"
+       class="define-box  descrip-box"
+       inkscape:label="after-reg-container" />
+    <rect
+       id="playoffs-container"
+       width="230"
+       height="130"
+       x="756.6225"
+       y="442.2821"
+       class="define-box  descrip-title-box"
+       inkscape:label="playoffs-container" />
+    <text
+       x="345.22119"
+       y="497.34079"
+       id="after-reg-text"
+       class="define-box-label"
+       inkscape:label="after-reg-text"><tspan
+         x="345.22119"
+         y="497.34079"
+         id="tspan7">after regular</tspan><tspan
+         x="345.22119"
+         y="527.34076"
+         id="tspan10">season play</tspan></text>
+    <text
+       x="663.5802"
+       y="483.98346"
+       id="teams-qualify-text"
+       class="define-box-label"
+       inkscape:label="teams-qualify-text"><tspan
+         x="607.98352"
+         y="483.98346"
+         id="tspan148">teams may qualify</tspan><tspan
+         x="607.98352"
+         y="513.9834"
+         id="tspan152">to compete in a</tspan><tspan
+         x="607.98352"
+         y="543.9834"
+         id="tspan155">tournment called</tspan></text>
+    <text
+       x="891.19958"
+       y="489.30304"
+       id="playoffs-text"
+       transform="scale(0.97731668,1.0232098)"
+       class="define-box-label  descrip-title-label"
+       inkscape:label="playoffs-text"
+       style="font-size:18.8002px;stroke-width:1.56668"><tspan
+         x="891.19958"
+         y="489.30304"
+         id="tspan12"
+         style="stroke-width:1.56668">THE</tspan><tspan
+         x="891.19958"
+         y="527.4848"
+         id="tspan17"
+         style="stroke-width:1.56668">PLAYOFFS</tspan></text>
+    <rect
+       id="over-time-container"
+       width="230"
+       height="130"
+       x="756.6225"
+       y="297.02594"
+       class="define-box  descrip-box"
+       inkscape:label="over-time-container" />
+    <text
+       x="927.66968"
+       y="337.00995"
+       id="over-time-text"
+       class="define-box-label"
+       xml:space="default"
+       inkscape:label="over-time-text"><tspan
+         x="871.5105"
+         y="337.00995"
+         id="tspan174">the way teams get</tspan><tspan
+         x="871.5105"
+         y="367.00989"
+         id="tspan178">to the playoffs has</tspan><tspan
+         x="871.5105"
+         y="397.00989"
+         id="tspan181">changed over time</tspan></text>
+    <rect
+       id="final-2-teams-container"
+       width="230"
+       height="130"
+       x="1019.6456"
+       y="297.02594"
+       class="define-box  descrip-box"
+       inkscape:label="final-2-teams-container" />
+    <text
+       x="1134.2622"
+       y="322.01929"
+       id="final-2-teams-text"
+       class="define-box-label"
+       inkscape:label="final-2-teams-text"><tspan
+         x="1134.2622"
+         y="322.01929"
+         id="tspan30">always involves</tspan><tspan
+         x="1134.2622"
+         y="352.01923"
+         id="tspan34">teams being</tspan><tspan
+         x="1134.2622"
+         y="382.01923"
+         id="tspan38">eliminated until</tspan><tspan
+         x="1134.2622"
+         y="412.01923"
+         id="tspan42">2 teams are left</tspan></text>
+    <rect
+       id="playoff-finals-container"
+       width="230"
+       height="130"
+       x="1019.6456"
+       y="442.2821"
+       class="define-box  descrip-title-box"
+       inkscape:label="playoff-finals-container" />
+    <text
+       x="1159.9729"
+       y="470.21216"
+       id="playoff-finals-text"
+       transform="scale(0.97731668,1.0232098)"
+       class="define-box-label  descrip-title-label"
+       inkscape:label="playoff-finals-text"
+       style="font-size:18.8002px;stroke-width:1.56668"><tspan
+         x="1159.9729"
+         y="470.21216"
+         id="tspan45"
+         style="stroke-width:1.56668">THE</tspan><tspan
+         x="1159.9729"
+         y="508.39392"
+         id="tspan48"
+         style="stroke-width:1.56668">PLAYOFF</tspan><tspan
+         x="1159.9729"
+         y="546.57568"
+         id="tspan49"
+         style="stroke-width:1.56668">FINALS</tspan></text>
+    <rect
+       id="winning-goes-hard-container"
+       width="230"
+       height="130"
+       x="1283.7697"
+       y="442.2821"
+       class="define-box  descrip-box"
+       inkscape:label="winning-goes-hard-container" />
+    <text
+       x="1398.1979"
+       y="469.91638"
+       id="winning-goes-hard-text"
+       class="define-box-label"
+       inkscape:label="winning-goes-hard-text"><tspan
+         x="1398.1979"
+         y="469.91638"
+         id="tspan52">WINNING TEAM proves</tspan><tspan
+         x="1398.1979"
+         y="497.7735"
+         id="tspan56">that they go harder</tspan><tspan
+         x="1398.1979"
+         y="525.63062"
+         id="tspan60">than everyone else</tspan><tspan
+         x="1398.1979"
+         y="553.48773"
+         id="tspan64">for that year</tspan></text>
+  </g>
+</svg>

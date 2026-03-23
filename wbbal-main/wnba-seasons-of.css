@@ -1,0 +1,193 @@
+html, body {
+  height: auto;
+  min-height: 100%;
+  overflow-y: auto;
+}
+
+#teams-timeline-svg {
+  display: block; /* prevents weird inline whitespace/layout stuff */
+  height: auto;
+  position: fixed;
+  z-index: 4;
+  width: 97%;
+}
+
+#main-court-background-color {
+    fill: #ffffff;
+    stroke: #000000;
+    stroke-width: 4;
+}
+
+#timeline-row {
+    display: flex;
+}
+
+#mini-and-toggle-section {
+  display: flex;
+  flex-direction: column;
+}
+
+#wnba-timeline-toggle-svg {
+  margin-top: 180px;
+  margin-bottom: 0px;
+  margin-left: 60px;
+}
+
+#wnba-reg-season-intro-svg {
+    margin-top: 180px;
+}
+
+/*============================================================
+main timeline styles 
+============================================================*/
+
+.main-line-path {
+    fill: none;
+    stroke: #000000;
+    stroke-width: 3;
+}
+
+.season-square {
+    fill: #ffffff;
+    stroke: #000;
+    stroke-width: 2;
+
+    cursor: pointer;
+}
+.season-square:hover {
+  stroke: #000;
+  stroke-width: 2;
+  transform: translatey(-8px);
+  transform: scaleY(1.2);
+}
+
+.season-square.active {
+  fill: #000;
+  stroke: #000;
+  stroke-width: 3;
+  transform: translatey(-8px)
+}
+.season-square-label {
+    pointer-events: none;
+    font-family: "Chivo Mono", monospace;
+    font-size: 18px;
+    font-weight: 600;
+    fill: #000000;
+    stroke: none;
+}
+.season-square-label:hover {
+    fill: #000000;
+    stroke: none;
+    transform: translatey(-8px)
+}
+.season-square-label.active {
+    fill: #ffffff;
+    stroke: none;
+    transform: translatey(-8px)
+}
+.team-timeline-title-text {
+    font-family: "Chivo Mono", monospace;
+    font-size: 28px;
+    font-weight: 800;
+    fill: #000000;
+    stroke: none;
+    text-anchor: middle;
+}
+.team-timeline-title2-text {
+    font-family: "Chivo Mono", monospace;
+    font-size: 24px;
+    font-style: italic;
+    font-weight: lighter;
+    fill: #000000;
+    stroke: none;
+    text-anchor: middle;
+}
+.team-timeline-container {
+    fill: #ffffff;
+    stroke: #000;
+    stroke-width: 2;
+}
+
+/*============================================================
+mini timeline styles 
+============================================================*/
+
+#mini-tl-container {
+    fill: #000000;
+    stroke: #000000;
+    stroke-width: 6;
+}
+
+#mini-tl-border {
+    fill: #ffffff;
+    /*! stroke: #000000; */
+    /*! stroke-width: 6; */
+}
+
+.mini-tl-dash-stroke {
+    stroke: #000000;
+    stroke-width: 2;
+    stroke-dasharray:  3, 3;
+}
+
+#wnba-title-label  {
+    font-family: "Chivo Mono", monospace;
+    font-size: 42px;
+    font-weight: 800;
+    fill: #000000;
+    stroke: none;
+    text-anchor: start;
+}
+#season-num-label  {
+    font-family: "Chivo Mono", monospace;
+    font-style: italic;
+    font-size: 42px;
+    font-weight: 600;
+    fill: #000000;
+    stroke: none;
+    text-anchor: middle;
+}
+
+#year-selected-text {
+    font-family: "Chivo Mono", monospace;
+    font-size: 52px;
+    font-style: italic;
+    font-weight: lighter;
+    fill: #000000;
+    stroke: none;
+    text-anchor: middle;
+}
+#season-start-container,
+#season-end-container {
+    fill: #ffffff;
+    stroke: #000000;
+    stroke-width: 2;
+}
+#season-start-text,
+#season-end-text {
+    font-family: "Chivo Mono", monospace;
+    font-size: 16px;
+    font-weight: 600;
+    fill: none;
+    stroke: none;
+    stroke-width: 0;
+    text-anchor: middle;
+    fill: #000000;
+}
+#season-team-colors-gridder {
+    fill: #ffffff;
+    stroke: #000000;
+    stroke-width: 4;
+}
+.year-toggle-container {
+    fill: #ffffff;
+    stroke: #000000;
+    stroke-width: 2;
+}
+.team-timeline-text {
+    font-family: "Chivo Mono", monospace;
+    font-size: 18px;
+    fill: #000000;
+    stroke: none;
+    text-anchor: start;
+}

@@ -1,0 +1,399 @@
+<svg
+   width="1920"
+   height="1080"
+   viewBox="0 0 1920 1080"
+   version="1.1"
+   id="explainer-playoff-champ-svg"
+   inkscape:version="1.4.3 (fcd0343856, 2026-01-01)"
+   sodipodi:docname="explainer-playoff-champ.svg"
+   inkscape:export-filename="explainer-playoff-champ.svg"
+   inkscape:export-xdpi="96"
+   inkscape:export-ydpi="96"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <style
+     id="style26">
+.player-name {  }
+.example-text {   }
+.example-container {   }
+.team-name {   }
+.context-text {   }
+.context-container {   }
+.definition-text {   }
+.definition-container {   }
+.indicator-text {   }
+.indicator-container {   }
+.word-to-define-text {   }
+</style>
+  <defs
+     id="defs1" />
+  <path
+     id="main-clip-path"
+     d="M 6,6 V 759.85208 H 1348.2441 V 6 Z m 40.68814,65.10315 1231.22436,3e-5 V 694.74889 H 46.68813 Z"
+     style="display:inline"
+     sodipodi:nodetypes="cccccccccc" />
+  <rect
+     id="word1-def-container"
+     width="320"
+     height="120"
+     x="117.20677"
+     y="184.59172"
+     class="definition-container" />
+  <rect
+     id="word1-context-container1"
+     width="320"
+     height="100"
+     x="117.25077"
+     y="372.23358"
+     class="context-container" />
+  <rect
+     id="word1-context-container2"
+     width="320"
+     height="100"
+     x="117.16279"
+     y="481.96967"
+     class="context-container" />
+  <rect
+     id="word2-def-container"
+     width="320"
+     height="120"
+     x="517.88965"
+     y="184.59172"
+     class="definition-container" />
+  <rect
+     id="word3-def-container"
+     width="320"
+     height="120"
+     x="518.24329"
+     y="372.23358"
+     class="definition-container" />
+  <rect
+     id="word4-def-container"
+     width="320"
+     height="120"
+     x="894.06433"
+     y="184.59172"
+     class="definition-container" />
+  <rect
+     id="word3-context-container1"
+     width="320"
+     height="100"
+     x="517.53601"
+     y="515.79645"
+     class="context-container" />
+  <rect
+     id="word5-def-container"
+     width="320"
+     height="120"
+     x="894.06433"
+     y="372.23358"
+     class="definition-container" />
+  <text
+     xml:space="preserve"
+     x="275.86014"
+     y="169.46901"
+     id="word1"
+     class="word-to-define-text"><tspan
+       id="tspan1"
+       x="275.86014"
+       y="169.46901">&quot;playoff appearance&quot;</tspan></text>
+  <text
+     xml:space="preserve"
+     x="1028.2307"
+     y="702.62665"
+     id="word1-def-text"
+     transform="translate(-751.05568,-464.25363)"
+     class="definition-text"><tspan
+       x="1028.2307"
+       y="702.62665"
+       id="tspan4"><tspan
+         dx="0 0 0 0 0 0 5.0000029 -5.0000048 0 5.0000029 -5.0000048 0 0 0 0 0 4.9999952 -5.0000048 0 4.9999952 -5.0000048"
+         id="tspan2">refers to making it to</tspan><tspan
+         dx="4.99998"
+         id="tspan3"></tspan><tspan
+         y="702.62665"
+         id="tspan5"> </tspan></tspan><tspan
+       x="1028.2307"
+       y="726.62664"
+       id="tspan14"><tspan
+         dx="0 0 0 5.000001 -5.000001"
+         id="tspan6">the playoffs</tspan><tspan
+         dx="4.9999952"
+         id="tspan8"></tspan><tspan
+         y="726.62664"
+         id="tspan15"> </tspan></tspan></text>
+  <text
+     xml:space="preserve"
+     x="1028.2307"
+     y="702.62665"
+     id="word1-context-text1"
+     transform="translate(-751.69837,-296.3344)"
+     class="context-text"><tspan
+       x="1028.2307"
+       y="702.62665"
+       id="tspan18"><tspan
+         dx="0 0 0 0 0 5.000001 -5.0000029 0 0 0 0 0 0 5.0000048 -4.9999952 0 5.0000048 -4.9999952 0 0 0 0 0 0 4.9999895 -4.99998"
+         id="tspan16">teams qualify to compete at</tspan><tspan
+         dx="4.9999895"
+         id="tspan17"></tspan><tspan
+         y="702.62665"
+         id="tspan19"> </tspan></tspan><tspan
+       x="1028.2307"
+       y="723.62662"
+       id="tspan22"><tspan
+         dx="0 0 0 4.999999 -4.999999 0 0 0 0 0 0 0 4.9999971 -5.0000029 0 0 0 0 5.0000048 -5.0000105 0 5.0000048 -5.0000105"
+         id="tspan20">the playoffs based on their</tspan><tspan
+         dx="4.9999895"
+         id="tspan21"></tspan><tspan
+         y="723.62662"
+         id="tspan24"> </tspan></tspan><tspan
+       x="1028.2307"
+       y="744.62662"
+       id="tspan26"><tspan
+         dx="0 0 0 0 0 0 0 5.0000048 -5.0000029 0 0 0 0 0 5.0000048 -5.0000105"
+         id="tspan25">regular season performace</tspan></tspan></text>
+  <text
+     xml:space="preserve"
+     x="1028.2307"
+     y="702.62665"
+     id="word1-context-text2"
+     transform="translate(-751.68369,-186.59831)"
+     class="context-text"><tspan
+       x="1028.2307"
+       y="702.62665"
+       id="tspan29"><tspan
+         dx="0 0 0 4.999999 -4.999999 0 0 0 0 0 5.0000048 -5.0000029 0 5.0000048 -4.9999952 0 0 0 0 5.0000048 -4.9999952"
+         id="tspan27">the number of teams and</tspan><tspan
+         dx="5.0000048"
+         id="tspan28"></tspan><tspan
+         y="702.62665"
+         id="tspan30"> </tspan></tspan><tspan
+       x="1028.2307"
+       y="723.62662"
+       id="tspan33"><tspan
+         dx="0 0 0 0 0 0 0 0 4.9999971 -5.0000029 0 0 4.9999971 -4.9999952"
+         id="tspan31">criteria for qualifying</tspan><tspan
+         dx="5.0000048"
+         id="tspan32"></tspan><tspan
+         y="723.62662"
+         id="tspan34"> </tspan></tspan><tspan
+       x="1028.2307"
+       y="744.62662"
+       id="tspan37"><tspan
+         dx="0 0 0 4.999999 -4.999999 0 0 0 0 0 0 4.9999971 -5.0000029 0 0 0 5.0000048 -4.9999952"
+         id="tspan35">has changed over time</tspan><tspan
+         dx="4.9999895"
+         id="tspan36"></tspan><tspan
+         y="744.62662"
+         id="tspan38"> </tspan></tspan></text>
+  <text
+     xml:space="preserve"
+     x="676.54297"
+     y="169.46901"
+     id="word2"
+     class="word-to-define-text"><tspan
+       id="tspan7"
+       x="676.54297"
+       y="169.46901">&quot;finals appearance&quot;</tspan></text>
+  <text
+     xml:space="preserve"
+     x="1028.2307"
+     y="702.62665"
+     id="word2-def-text"
+     transform="translate(-350.5349,-476.25361)"
+     class="definition-text"><tspan
+       x="1028.2307"
+       y="702.62665"
+       id="tspan41"><tspan
+         dx="0 0 0 0 0 0 5.0000029 -5.0000048 0 5.0000029 -5.0000048 0 0 0 0 0 4.9999952 -5.0000048 0 4.9999952 -5.0000048"
+         id="tspan39">refers to making it to</tspan><tspan
+         dx="4.99998"
+         id="tspan40"></tspan><tspan
+         y="702.62665"
+         id="tspan43"> </tspan></tspan><tspan
+       x="1028.2307"
+       y="726.62664"
+       id="tspan46"><tspan
+         dx="0 0 0 0 0 0 0 0 4.9999952 -4.9999971 0 0 4.9999952 -4.9999895 0 0 0 0 0 0 4.9999952 -5.0000048"
+         id="tspan44">playoffs AND getting to</tspan><tspan
+         dx="4.99998"
+         id="tspan45"></tspan><tspan
+         y="726.62664"
+         id="tspan47"> </tspan></tspan><tspan
+       x="1028.2307"
+       y="750.62664"
+       id="tspan50"><tspan
+         dx="0 0 0 5.000001 -5.000001 0 0 0 0 5.0000029 -4.9999971"
+         id="tspan48">the final series</tspan><tspan
+         dx="5.0000105"
+         id="tspan49"></tspan><tspan
+         y="750.62664"
+         id="tspan51"> </tspan></tspan></text>
+  <text
+     xml:space="preserve"
+     x="676.89661"
+     y="357.1109"
+     id="word3"
+     class="word-to-define-text"><tspan
+       id="tspan9"
+       x="676.89661"
+       y="357.1109">&quot;finals mvp&quot;</tspan></text>
+  <text
+     xml:space="preserve"
+     x="1028.2307"
+     y="702.62665"
+     id="word3-def-text"
+     transform="translate(-351.29192,-288.68637)"
+     class="definition-text"><tspan
+       x="1028.2307"
+       y="702.62665"
+       id="tspan54"><tspan
+         dx="0 0 0 5.000001 -5.000001 0 0 0 5.0000029 -4.9999971"
+         id="tspan52">the most valuable</tspan><tspan
+         dx="4.9999952"
+         id="tspan53"></tspan><tspan
+         y="702.62665"
+         id="tspan55"> </tspan></tspan><tspan
+       x="1028.2307"
+       y="726.62664"
+       id="tspan58"><tspan
+         dx="0 0 0 0 0 0 5.0000029 -5.0000048 0 5.0000029 -5.0000048 0 0 4.9999952 -5.0000048"
+         id="tspan56">player of the playoff</tspan><tspan
+         dx="4.9999952"
+         id="tspan57"></tspan><tspan
+         y="726.62664"
+         id="tspan59"> </tspan></tspan><tspan
+       x="1028.2307"
+       y="750.62664"
+       id="tspan61">finals<tspan
+   dx="4.999999"
+   id="tspan60"></tspan><tspan
+   y="750.62664"
+   id="tspan62"> </tspan></tspan></text>
+  <text
+     xml:space="preserve"
+     x="1052.7175"
+     y="169.42897"
+     id="word4"
+     class="word-to-define-text"><tspan
+       id="tspan11"
+       x="1052.7175"
+       y="169.42897">&quot;wnba mvp&quot;</tspan></text>
+  <text
+     xml:space="preserve"
+     x="1028.2307"
+     y="702.62665"
+     id="word4-def-text"
+     transform="translate(25.439072,-474.45096)"
+     class="definition-text"><tspan
+       x="1028.2307"
+       y="702.62665"
+       id="tspan65"><tspan
+         dx="0 0 0 5.000001 -5.000001 0 0 0 5.0000029 -4.9999971"
+         id="tspan63">the most valuable</tspan><tspan
+         dx="4.9999952"
+         id="tspan64"></tspan><tspan
+         y="702.62665"
+         id="tspan66"> </tspan></tspan><tspan
+       x="1028.2307"
+       y="726.62664"
+       id="tspan69"><tspan
+         dx="0 0 0 0 0 0 5.0000029 -5.0000048 0 5.0000029 -5.0000048 0 0 4.9999952 -5.0000048"
+         id="tspan67">player of the regular</tspan><tspan
+         dx="5.0000105"
+         id="tspan68"></tspan><tspan
+         y="726.62664"
+         id="tspan70"> </tspan></tspan><tspan
+       x="1028.2307"
+       y="750.62664"
+       id="tspan72">season<tspan
+   dx="5.0000029"
+   id="tspan71"></tspan><tspan
+   y="750.62664"
+   id="tspan73"> </tspan></tspan></text>
+  <text
+     xml:space="preserve"
+     x="1028.2307"
+     y="702.62665"
+     id="word3-context-text1"
+     transform="translate(-350.21948,-152.84621)"
+     class="context-text"><tspan
+       x="1028.2307"
+       y="702.62665"
+       id="tspan76"><tspan
+         dx="0 0 0 0 5.000001 -4.999999 0 0 4.9999971 -5.0000029 5.0000048 -5.0000029 0 0 0 0 0 0 0 0 0 0 5.0000048 -4.9999952"
+         id="tspan74">it's not a requirement but</tspan><tspan
+         dx="4.9999895"
+         id="tspan75"></tspan><tspan
+         y="702.62665"
+         id="tspan77"> </tspan></tspan><tspan
+       x="1028.2307"
+       y="723.62662"
+       id="tspan80"><tspan
+         dx="0 0 0 0 0 0 5.000001 -5.0000029 0 0 4.9999971 -4.9999952 0 0 5.0000048 -4.9999952 0 0 0 0 0 5.0000048 -5.0000105 0 0 0 5.00002 -5.0000105"
+         id="tspan78">finals mvp has always been a</tspan><tspan
+         dx="4.9999895"
+         id="tspan79"></tspan><tspan
+         y="723.62662"
+         id="tspan81"> </tspan></tspan><tspan
+       x="1028.2307"
+       y="744.62662"
+       id="tspan84"><tspan
+         dx="0 0 0 0 0 0 4.9999971 -4.9999952 0 0 0 4.9999971 -5.0000029 0 0 0 0 0 0 5.0000048 -4.9999952"
+         id="tspan82">player from winning team</tspan><tspan
+         dx="4.9999895"
+         id="tspan83"></tspan><tspan
+         y="744.62662"
+         id="tspan85">  </tspan></tspan></text>
+  <text
+     xml:space="preserve"
+     x="238.44937"
+     y="50.080704"
+     id="main-title-text"><tspan
+       x="238.44937"
+       y="50.080704"
+       id="tspan23">post-season terms</tspan></text>
+  <text
+     xml:space="preserve"
+     x="1028.2307"
+     y="702.62665"
+     id="word5-def-text"
+     transform="translate(25.439172,-286.80913)"
+     class="definition-text"><tspan
+       x="1028.2307"
+       y="702.62665"
+       id="tspan88"><tspan
+         dx="0 0 0 5.000001 -5.000001 0 0 4.9999952 -4.9999971"
+         id="tspan86">the top defensive</tspan><tspan
+         dx="4.9999952"
+         id="tspan87"></tspan><tspan
+         y="702.62665"
+         id="tspan89"> </tspan></tspan><tspan
+       x="1028.2307"
+       y="726.62664"
+       id="tspan92"><tspan
+         dx="0 0 0 0 0 0 5.0000029 -5.0000048 0 5.0000029 -5.0000048 0 0 4.9999952 -5.0000048"
+         id="tspan90">player of the regular</tspan><tspan
+         dx="5.0000105"
+         id="tspan91"></tspan><tspan
+         y="726.62664"
+         id="tspan93"> </tspan></tspan><tspan
+       x="1028.2307"
+       y="750.62664"
+       id="tspan95">season<tspan
+   dx="5.0000029"
+   id="tspan94"></tspan><tspan
+   y="750.62664"
+   id="tspan96"> </tspan></tspan></text>
+  <text
+     xml:space="preserve"
+     x="1052.7174"
+     y="357.0708"
+     id="word5"
+     class="word-to-define-text"><tspan
+       id="tspan42"
+       x="1052.7174"
+       y="357.0708">&quot;defensive mvp&quot;</tspan></text>
+</svg>

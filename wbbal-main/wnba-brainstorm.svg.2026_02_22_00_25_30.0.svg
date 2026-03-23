@@ -1,52 +1,41 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <title>WNBA Cluster</title>
-
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&family=UoqMunThenKhung&family=VT323&display=swap"
-        rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Contrail+One&family=Shrikhand&display=swap" rel="stylesheet">
-    <!-- (ABOVE) SHRIKHAND (big and bubbly but also sharp ? ..... CONTRAIL ONE - idk... simpple, easy, readable )-->
-
-
-    <!-- ======================== MONO FONTS ========================
-         CHIVO MONO 
-         ---- (monospaced // kinda playful ? serif) 
-
-         DM MONO 
-         ---- (monospaced, serif, gives digital feel - could be good replacement for v323)
-
-         JET BRAINS MONO 
-         ---- (monospaced, generally sans-serif. 
-         ---- want to use for all caps / titles / such things big bold (and oblique) style header feel)
-         ============================================================ -->
-
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Chivo+Mono:ital,wght@0,100..900;1,100..900&family=DM+Mono:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap" rel="stylesheet">
-
-  <link rel="stylesheet" href="wnba-cluster.css" />
-</head>
-<body>
-
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
 <svg
    width="1920"
    height="1080"
    viewBox="0 0 1920 1080"
    version="1.1"
    id="svg1"
+   sodipodi:docname="wnba-brainstorm.svg"
+   inkscape:version="1.4.3 (fcd0343856, 2026-01-01)"
+   inkscape:export-filename="wnba-brainstorm.svg"
+   inkscape:export-xdpi="96"
+   inkscape:export-ydpi="96"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns="http://www.w3.org/2000/svg"
    xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview1"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:zoom="2.1354386"
+     inkscape:cx="853.22049"
+     inkscape:cy="676.91011"
+     inkscape:window-width="1859"
+     inkscape:window-height="1011"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg1" />
   <style
-     id="style1">.label-container {  }
-.topic-title-text {   }
+     id="style1">.topic-title-text {  }
 .title-text {   }
 .placeholder-text {   }
 .swatch {   }
@@ -66,22 +55,22 @@
   <rect
      id="triplet-left-court-bg"
      class="triplet-piece"
-     width="491.90698"
-     height="719.46942"
+     width="491.90701"
+     height="712.86017"
      x="225.44627"
      y="183.56992" />
   <rect
      id="triplet-center-court-bg"
      class="triplet-piece"
-     width="485.29437"
-     height="719.46942"
+     width="485.29434"
+     height="712.86017"
      x="717.35284"
      y="183.56992" />
   <rect
      id="triplet-right-court-bg"
      class="triplet-piece"
-     width="494.69827"
-     height="719.46936"
+     width="491.90656"
+     height="712.86017"
      x="1202.6472"
      y="183.56992" />
   <path
@@ -94,17 +83,17 @@
      d="m 1660.9174,214.63521 -12.1655,25.71723 h -123.2608 c -53.2217,0 -102.9385,16.12757 -144.9747,43.96821 -11.815,7.82594 -23.0221,16.58167 -33.5315,26.16149 -3.036,2.76869 -6.0157,5.60402 -8.9328,8.50998 -52.6958,52.46256 -85.6243,126.72672 -85.6243,208.94398 0,13.91265 0.9454,27.59726 2.7671,40.98707 8.1374,59.79812 33.8087,113.72732 71.3393,155.79146 2.5811,2.89105 5.2193,5.72865 7.9106,8.50457 18.068,18.65695 38.5805,34.68993 60.9774,47.52728 38.6922,22.1656 83.0083,34.76779 130.0689,34.76779 h 123.2608 V 642.93853 412.92314 l 0.046,-185.33014 12.1188,-12.95763 v 650.72941 h -12.1173 v -37.08531 h -123.3088 c -56.6037,0 -109.4122,-17.46209 -153.8218,-47.53823 -19.8742,-13.46232 -38.0678,-29.44443 -54.1642,-47.5218 -2.4815,-2.78414 -4.9147,-5.62697 -7.295,-8.51005 -35.4778,-42.9968 -59.5646,-96.67447 -67.2555,-155.7861 -1.7437,-13.40481 -2.644,-27.09115 -2.644,-40.99237 0,-81.13047 30.6984,-154.84377 80.5076,-208.9386 2.6625,-2.89071 5.3795,-5.7393 8.1513,-8.51535 9.3815,-9.40475 19.367,-18.15243 29.8921,-26.1615 46.9027,-35.6815 104.4797,-56.72245 166.6295,-56.72245 h 123.3091 v -12.95765 z m -12.1655,211.06345 -0.011,204.49098 z" />
   <rect
      id="center-court-container-background"
-     width="820"
-     height="500"
-     x="550"
-     y="290" />
+     width="689.25305"
+     height="479.86325"
+     x="615.32904"
+     y="338.19196" />
   <rect
      id="description-opener-window-inside-box"
      class="opener-description"
-     width="770"
-     height="474.40573"
-     x="575"
-     y="303.65704" />
+     width="659.2439"
+     height="440.94827"
+     x="630.33362"
+     y="357.64938" />
   <g
      id="aces-cyl"
      class="team-cyl"
@@ -112,7 +101,7 @@
     <path
        id="rect23"
        class="cyl-shape"
-       d="m 448.88086,270.25977 a 30.232122,31.861533 0 0 0 -12.99024,3.08984 h -235.1914 v 57.54297 h 235.1914 a 30.232122,31.861533 0 0 0 12.99024,3.08984 30.232122,31.861533 0 0 0 30.23047,-31.86133 30.232122,31.861533 0 0 0 -30.23047,-31.86132 z" />
+       d="m 448.88,270.25881 a 30.232122,31.861533 0 0 0 -12.98904,3.09127 H 15.001614 v 57.54226 H 435.89096 a 30.232122,31.861533 0 0 0 12.98903,3.08979 30.232122,31.861533 0 0 0 30.23228,-31.86167 A 30.232122,31.861533 0 0 0 448.88,270.25881 Z" />
     <text
        class="team-title"
        text-anchor="middle"
@@ -134,7 +123,6 @@
          d="m 448.28056,277.83881 a 23.512386,23.512388 0 0 1 20.36233,11.75619 23.512386,23.512388 0 0 1 0,23.51239 23.512386,23.512388 0 0 1 -20.36233,11.75619 V 301.3512 Z" />
     </g>
   </g>
-  
   <g
      id="wings-cyl"
      class="team-cyl"
@@ -142,7 +130,7 @@
     <path
        id="path63"
        class="cyl-shape"
-       d="m 448.98438,350.59375 a 30.128142,28.70025 0 0 0 -12.94532,2.7832 H 200.69922 v 51.83399 h 235.33984 a 30.128142,28.70025 0 0 0 12.94532,2.7832 30.128142,28.70025 0 0 0 30.12695,-28.70117 30.128142,28.70025 0 0 0 -30.12695,-28.69922 z" />
+       d="m 448.98397,350.59325 a 30.128142,28.70025 0 0 0 -12.9444,2.78456 H 16.597812 v 51.83296 H 436.03957 a 30.128142,28.70025 0 0 0 12.9444,2.78322 30.128142,28.70025 0 0 0 30.1283,-28.70037 30.128142,28.70025 0 0 0 -30.1283,-28.70037 z" />
     <text
        class="team-title"
        text-anchor="middle"
@@ -171,7 +159,7 @@
     <path
        id="path64"
        class="cyl-shape"
-       d="m 448.11133,427.76562 a 30.128142,28.70025 0 0 0 -12.94336,2.78516 H 200.69922 v 51.83399 h 234.46875 a 30.128142,28.70025 0 0 0 12.94336,2.7832 30.128142,28.70025 0 0 0 30.1289,-28.70117 30.128142,28.70025 0 0 0 -30.1289,-28.70118 z" />
+       d="m 448.11157,427.7664 a 30.128142,28.70025 0 0 0 -12.9444,2.78455 H 15.725412 v 51.83296 H 435.16717 a 30.128142,28.70025 0 0 0 12.9444,2.78323 30.128142,28.70025 0 0 0 30.1283,-28.70038 30.128142,28.70025 0 0 0 -30.1283,-28.70036 z" />
     <text
        class="team-title"
        text-anchor="middle"
@@ -200,7 +188,7 @@
     <path
        id="path67"
        class="cyl-shape"
-       d="m 448.98438,504.93945 a 30.128142,28.70025 0 0 0 -12.94532,2.78516 H 200.69922 v 51.83203 h 235.33984 a 30.128142,28.70025 0 0 0 12.94532,2.7832 30.128142,28.70025 0 0 0 30.12695,-28.69922 30.128142,28.70025 0 0 0 -30.12695,-28.70117 z" />
+       d="m 448.98397,504.93955 a 30.128142,28.70025 0 0 0 -12.9444,2.78455 H 16.597812 v 51.83296 H 436.03957 a 30.128142,28.70025 0 0 0 12.9444,2.78322 30.128142,28.70025 0 0 0 30.1283,-28.70037 30.128142,28.70025 0 0 0 -30.1283,-28.70036 z" />
     <text
        class="team-title"
        text-anchor="middle"
@@ -229,7 +217,7 @@
     <path
        id="path66"
        class="cyl-shape"
-       d="m 448.98438,582.11328 a 30.128142,28.70025 0 0 0 -12.94532,2.7832 H 200.69922 v 51.83399 h 235.33984 a 30.128142,28.70025 0 0 0 12.94532,2.7832 30.128142,28.70025 0 0 0 30.12695,-28.70117 30.128142,28.70025 0 0 0 -30.12695,-28.69922 z" />
+       d="m 448.98397,582.11271 a 30.128142,28.70025 0 0 0 -12.9444,2.78455 H 16.597812 v 51.83296 H 436.03957 a 30.128142,28.70025 0 0 0 12.9444,2.78322 30.128142,28.70025 0 0 0 30.1283,-28.70037 30.128142,28.70025 0 0 0 -30.1283,-28.70036 z" />
     <text
        class="team-title"
        text-anchor="middle"
@@ -258,7 +246,7 @@
     <path
        id="path65"
        class="cyl-shape"
-       d="m 448.98438,659.28516 a 30.128142,28.70025 0 0 0 -12.94532,2.78515 H 200.69922 v 51.83399 h 235.33984 a 30.128142,28.70025 0 0 0 12.94532,2.7832 30.128142,28.70025 0 0 0 30.12695,-28.70117 30.128142,28.70025 0 0 0 -30.12695,-28.70117 z" />
+       d="m 448.98397,659.28586 a 30.128142,28.70025 0 0 0 -12.9444,2.78455 H 16.597812 v 51.83296 H 436.03957 a 30.128142,28.70025 0 0 0 12.9444,2.78322 30.128142,28.70025 0 0 0 30.1283,-28.70037 30.128142,28.70025 0 0 0 -30.1283,-28.70036 z" />
     <text
        class="team-title"
        text-anchor="middle"
@@ -287,7 +275,7 @@
     <path
        id="path68"
        class="cyl-shape"
-       d="m 448.98438,736.45898 a 30.128142,28.70025 0 0 0 -12.94532,2.78516 H 200.69922 v 51.83203 h 235.33984 a 30.128142,28.70025 0 0 0 12.94532,2.78321 30.128142,28.70025 0 0 0 30.12695,-28.69922 30.128142,28.70025 0 0 0 -30.12695,-28.70118 z" />
+       d="m 448.98397,736.45902 a 30.128142,28.70025 0 0 0 -12.9444,2.78454 H 16.597812 v 51.83296 H 436.03957 a 30.128142,28.70025 0 0 0 12.9444,2.78322 30.128142,28.70025 0 0 0 30.1283,-28.70037 30.128142,28.70025 0 0 0 -30.1283,-28.70035 z" />
     <text
        class="team-title"
        text-anchor="middle"
@@ -316,7 +304,7 @@
     <path
        id="path61"
        class="cyl-shape"
-       d="m 1471.6152,704.23242 a 30.128142,28.70025 0 0 0 -30.1289,28.70117 30.128142,28.70025 0 0 0 30.1289,28.69922 30.128142,28.70025 0 0 0 12.9453,-2.7832 h 234.7403 v -51.83203 h -234.7403 a 30.128142,28.70025 0 0 0 -12.9453,-2.78516 z" />
+       d="m 1471.6154,704.23254 a 30.128142,28.70025 0 0 1 12.9444,2.78455 h 419.4417 v 51.83296 h -419.4417 a 30.128142,28.70025 0 0 1 -12.9444,2.78322 30.128142,28.70025 0 0 1 -30.1283,-28.70037 30.128142,28.70025 0 0 1 30.1283,-28.70036 z" />
     <text
        class="team-title"
        text-anchor="middle"
@@ -345,7 +333,7 @@
     <path
        id="path60"
        class="cyl-shape"
-       d="m 1471.6152,627.05859 a 30.128142,28.70025 0 0 0 -30.1289,28.70118 30.128142,28.70025 0 0 0 30.1289,28.70117 30.128142,28.70025 0 0 0 12.9453,-2.78321 h 234.7403 v -51.83398 h -234.7403 a 30.128142,28.70025 0 0 0 -12.9453,-2.78516 z" />
+       d="m 1471.6154,627.05939 a 30.128142,28.70025 0 0 1 12.9444,2.78455 h 419.4417 v 51.83296 h -419.4417 a 30.128142,28.70025 0 0 1 -12.9444,2.78322 30.128142,28.70025 0 0 1 -30.1283,-28.70037 30.128142,28.70025 0 0 1 30.1283,-28.70036 z" />
     <text
        class="team-title"
        text-anchor="middle"
@@ -374,7 +362,7 @@
     <path
        id="path62"
        class="cyl-shape"
-       d="m 1471.6152,549.88672 a 30.128142,28.70025 0 0 0 -30.1289,28.69922 30.128142,28.70025 0 0 0 30.1289,28.70117 30.128142,28.70025 0 0 0 12.9453,-2.7832 h 234.7403 v -51.83399 h -234.7403 a 30.128142,28.70025 0 0 0 -12.9453,-2.7832 z" />
+       d="m 1471.6154,549.88624 a 30.128142,28.70025 0 0 1 12.9444,2.78455 h 419.4417 v 51.83296 h -419.4417 a 30.128142,28.70025 0 0 1 -12.9444,2.78322 30.128142,28.70025 0 0 1 -30.1283,-28.70037 30.128142,28.70025 0 0 1 30.1283,-28.70036 z" />
     <text
        class="team-title"
        text-anchor="middle"
@@ -403,7 +391,7 @@
     <path
        id="path59"
        class="cyl-shape"
-       d="m 1472.4883,472.80664 a 30.128142,28.70025 0 0 0 -30.1289,28.70117 30.128142,28.70025 0 0 0 30.1289,28.70117 30.128142,28.70025 0 0 0 12.9433,-2.7832 h 233.8692 V 475.5918 h -233.8692 a 30.128142,28.70025 0 0 0 -12.9433,-2.78516 z" />
+       d="m 1472.4878,472.80734 a 30.128142,28.70025 0 0 1 12.9444,2.78455 h 419.4417 v 51.83296 h -419.4417 a 30.128142,28.70025 0 0 1 -12.9444,2.78322 30.128142,28.70025 0 0 1 -30.1283,-28.70037 30.128142,28.70025 0 0 1 30.1283,-28.70036 z" />
     <text
        class="team-title"
        text-anchor="middle"
@@ -432,7 +420,7 @@
     <path
        id="path58"
        class="cyl-shape"
-       d="m 1471.6152,395.53906 a 30.128142,28.70025 0 0 0 -30.1289,28.70117 30.128142,28.70025 0 0 0 30.1289,28.70118 30.128142,28.70025 0 0 0 12.9453,-2.78321 h 234.7403 v -51.83398 h -234.7403 a 30.128142,28.70025 0 0 0 -12.9453,-2.78516 z" />
+       d="m 1471.6154,395.53993 a 30.128142,28.70025 0 0 1 12.9444,2.78455 h 419.4417 v 51.83296 h -419.4417 a 30.128142,28.70025 0 0 1 -12.9444,2.78322 30.128142,28.70025 0 0 1 -30.1283,-28.70037 30.128142,28.70025 0 0 1 30.1283,-28.70036 z" />
     <text
        class="team-title"
        text-anchor="middle"
@@ -461,7 +449,7 @@
     <path
        id="path46"
        class="cyl-shape"
-       d="m 1473.3496,315.20508 c -17.5968,-9e-5 -31.8634,14.26458 -31.8633,31.86133 -10e-5,17.59675 14.2665,31.86337 31.8633,31.86328 4.736,2.6e-4 9.4108,-1.05533 13.6875,-3.08985 h 232.2637 v -57.54296 h -232.2637 c -4.2766,-2.03504 -8.9514,-3.09159 -13.6875,-3.0918 z" />
+       d="m 1473.3488,315.20549 c 4.7361,2.1e-4 9.4125,1.05624 13.6891,3.09127 h 416.5697 v 57.54226 h -416.5697 c -4.2767,2.03452 -8.9531,3.09005 -13.6891,3.08979 -17.5968,9e-5 -31.8618,-14.26491 -31.8617,-31.86166 -10e-5,-17.59675 14.2649,-31.86175 31.8617,-31.86166 z" />
     <text
        class="team-title"
        text-anchor="middle"
@@ -484,642 +472,357 @@
          d="m 1470.8987,369.00398 a 21.937614,21.937619 0 0 1 -18.9986,-10.9688 21.937614,21.937619 0 0 1 0,-21.93762 21.937614,21.937619 0 0 1 18.9986,-10.96881 v 21.93761 z" />
     </g>
   </g>
+  <rect
+     id="left-outer-overflow-clip"
+     class="overflow-clip"
+     width="200.698"
+     height="676.03583"
+     x="0.00047302246"
+     y="201.98209" />
+  <rect
+     id="right-outer-overflow-clip"
+     class="overflow-clip"
+     width="200.69847"
+     height="676.03583"
+     x="1719.3015"
+     y="200.14886" />
   <path
      id="main-clip-path"
-     d="M 200.69922,119.03482 V 968.14254 H 1719.3008 V 119.03482 Z m 71.1484,65.10316 1377.12158,3e-5 v 718.9013 H 271.84762 Z" />
+     d="M 200.69922,119.03482 V 968.14254 H 1719.3008 V 119.03482 Z m 71.14844,65.10319 H 1697.3455 V 903.03934 H 271.84766 Z" />
   <path
      id="inside-left-clip-path"
-     d="m 1122.5769,183.57031 v 31.06446 h 521.2437 v 650.73046 h -521.2437 v 31.06446 h 574.7686 V 183.57031 Z"
-     style="display:inline" />
+     d="m 1119.7852,183.57031 v 31.06446 h 521.2437 v 650.73046 h -521.2437 v 31.06446 h 574.7686 V 183.57031 Z" />
   <path
      id="inside-right-clip-path"
-     d="M 225.44627,183.56992 V 896.43011 H 819.56342 V 865.3656 H 281.49014 V 214.63442 h 538.07328 v -31.0645 z"
-     style="display:inline" />
-  <path
-     d="M 589.61072,384.43235 H 1330.3892"
-     id="path1"
-     class="detail-line" />
-  <path
-     d="M 589.61072,400.27955 H 1330.3892"
-     id="path2"
-     class="detail-line" />
-  <path
-     d="M 589.61072,408.20314 H 1330.3892"
-     id="path3"
-     class="detail-line" />
-  <path
-     d="M 589.61072,416.12674 H 1330.3892"
-     id="path4"
-     class="detail-line solid" />
-  <path
-     d="M 589.61072,392.35595 H 1330.3892"
-     id="path5"
-     class="detail-line" />
-
+     d="M 225.44627,183.56992 V 896.43011 H 819.56342 V 865.3656 H 281.49014 V 214.63442 h 538.07328 v -31.0645 z" />
   <rect
      id="year-founded-box"
-     width="110.65325"
-     height="30"
-     x="1219.736"
-     y="333.92419"
+     width="99.000008"
+     height="29.00001"
+     x="1171.6605"
+     y="393.17239"
      class="label-container" />
-  <text
-     id="year-founded-text"
-     x="1270"
-     y="360"
-     text-anchor="middle"
-     class="label title-text" />
   <rect
      id="city-state-label-container"
-     width="340.8436"
+     width="312.36154"
      height="39.000004"
-     x="683.15314"
-     y="318.92422"
+     x="743.35162"
+     y="388.17239"
      class="label-container" />
   <text
      id="city-state-label"
-     text-anchor="left"
-     class="label title-text"
-     x="845"
-     y="350" />
+     class="label placeholder-text"
+     x="900"
+     y="419"
+     text-anchor="middle">city</text>
   <rect
      id="champ-titles-text-container"
-     width="740.7785"
-     height="343.2009"
-     x="589.61072"
-     y="424.75403"
+     width="536.93365"
+     height="207.95454"
+     x="665.7135"
+     y="566.58276"
      class="label-container"
-      />
+     style="stroke-width:1" />
   <rect
      id="founded-year-container"
-     width="87.031479"
-     height="30.000002"
-     x="1132.7046"
-     y="333.92422"
-     class="label-container"
-      />
+     width="99.000008"
+     height="29.000006"
+     x="1072.736"
+     y="393.17239"
+     class="label-container" />
   <text
      xml:space="preserve"
-     x="1180"
-     y="355.97421"
+     x="1122.2893"
+     y="416"
      id="founded-text-label"
-     class="label  title-text founded-text-label">founded</text>
+     class="label  title-text">founded</text>
+  <text
+     xml:space="preserve"
+     x="1221.0392"
+     y="416"
+     id="year-label-holder"
+     class="label title-text placeholder-text">year</text>
   <g
-     id="og-team-group"
-     transform="translate(0,-29.034912)">
+     id="og-team-group">
     <rect
        id="og-team-container"
-       width="75"
-       height="60"
-       x="1050.0769"
-       y="345.54367"
+       width="154"
+       height="69"
+       x="659.69849"
+       y="439.62671"
        class="label-container" />
     <rect
        id="og-team-inside"
-       width="70"
-       height="55"
-       x="1052.5769"
-       y="348.04367"
+       width="139.00002"
+       height="59.000008"
+       x="667.19849"
+       y="444.62671"
        class="label-container" />
     <text
        xml:space="preserve"
-       x="1082.5909"
-       y="373.55878"
+       x="740.71106"
+       y="468.99078"
        id="og-team-text-label-1"
        class="label  title-text">O.G.</text>
     <text
        xml:space="preserve"
-       x="1082.5909"
-       y="395.55878"
+       x="736.65381"
+       y="490.6709"
        id="og-team-text-label-2"
-       class="label  title-text">TEAM</text>
+       class="label  title-text">team</text>
   </g>
   <rect
      id="location-label-container"
      width="83.153"
      height="39"
-     x="600"
-     y="318.92459"
+     x="660.19849"
+     y="388.17276"
      class="label-container" />
   <text
      xml:space="preserve"
-     x="641.62317"
-     y="349.75183"
+     x="701.82166"
+     y="419"
      id="location-label"
      class="label  title-text">based</text>
   <rect
      id="championship-titles-label-container"
      width="255"
-     height="46.241291"
-     x="621.52844"
-     y="383.61624"
+     height="33.866924"
+     x="737.21265"
+     y="532.71582"
      class="label-container" />
   <text
-     x="746.52844"
-     y="410.60745"
+     text-anchor="left"
+     x="862.46021"
+     y="555.7829"
      id="championship-titles-label"
      class="label  title-text">championship titles</text>
+  <path
+     d="M 680.28903,591.53634 V 757.86312"
+     id="path-line-to-connect"
+     class="detail-line" />
   <rect
      id="color-swtaches-container"
-     width="108.50022"
-     height="36.449829"
-     x="915.63757"
-     y="379.67691"
+     width="123.23306"
+     height="48.999996"
+     x="932.4801"
+     y="443.64828"
+     class="label-container" />
+  <rect
+     id="colors-label-container"
+     y="443.64828"
      class="label-container"
-      />
+     height="30"
+     width="100"
+     x="832.4801" />
+  <text
+     xml:space="preserve"
+     x="877.4801"
+     y="466.37939"
+     id="colors-label"
+     class="label  title-text">colors</text>
   <rect
      id="swatch-color-1"
      width="30"
      height="30"
-     x="921.77081"
-     y="382.90182"
+     x="942.48016"
+     y="453.14828"
      class="swatch" />
   <rect
      id="swatch-color-2"
      width="30"
      height="30"
-     x="954.8877"
-     y="382.90182"
+     x="978.4801"
+     y="453.14828"
      class="swatch" />
   <rect
      id="swatch-color-3"
      width="30"
      height="30"
-     x="988.00458"
-     y="382.90182"
+     x="1014.4801"
+     y="453.14828"
      class="swatch" />
+  <path
+     class="detail-line"
+     d="M 684.68528,588.37365 H 1202.6472"
+     id="path1"
+     style="stroke-width:1" />
   <rect
-     id="topic-box-container"
-     class="lg-text-container topic-container"
-     width="460"
-     height="106.15238"
-     x="730"
-     y="178.79955" />
-  <rect
-     id="topic-title-label-container"
-     width="420"
-     height="80"
-     x="750"
-     y="191.5"
-     class="label-container" />
+     id="opp-label-container"
+     class="champ-cat-label-container"
+     width="60"
+     height="18"
+     x="814.84277"
+     y="579.46851" />
   <text
-     text-anchor="middle"
-     x="960"
-     y="243"
-     id="topic-title-label-container-text"
-     class="topic-title-text">click on a team</text>
-  <rect
-     id="champ-title-bar-container"
-     class="champ-title-bar-container"
-     width="700"
-     height="60"
-     x="610"
-     y="481.13037"
-      />
-  <!-- first row // championship titles (containers) -->
-  <rect
-     id="yr-label-container"
-     width="52"
-     height="50"
-     x="617.5"
-     y="486.13037"
-     class="champ-title-label-container"
-      />
-  <rect
-     id="coach-name-label-container"
-     width="184.95557"
-     height="50"
-     x="692.18158"
-     y="486.13037"
-     class="champ-title-label-container"
-      />
-  <rect
-     id="finals-mvp-placeholder-label-container"
-     width="180"
-     height="50"
-     x="899.81866"
-     y="486.13037"
-     class="champ-title-label-container"
-      />
-  <rect
-     id="rect1"
-     width="200"
-     height="50"
-     x="1102.5"
-     y="486.13037"
-     class="champ-title-label-container"
-      />
-  <!-- ===END===first row // championship titles (containers) === END === -->
+     xml:space="preserve"
+     x="818.84271"
+     y="591.77905"
+     id="opp-label"
+     class="label champ-opp-cat-text">against</text>
   <rect
      id="year-label-container"
      class="champ-cat-label-container"
-     width="50"
-     height="30"
-     x="618.5"
-     y="446.02463" />
+     width="49.473007"
+     height="17.810284"
+     x="717.35284"
+     y="579.46851"
+     style="stroke-width:0.999998" />
   <text
      xml:space="preserve"
-     x="629.93555"
-     y="466.02463"
+     x="727.24744"
+     y="591.64929"
      id="year-label"
-     class="label champ-yr-cat-text">year</text>
+     class="label champ-yr-cat-text"
+     style="font-size:11.8735px;stroke-width:0.999998">year</text>
+  <text
+     xml:space="preserve"
+     x="720.55658"
+     y="634.74103"
+     id="championship-title-label-1"
+     class="label champ-yr  placeholder-text"
+     style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:12px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal"><tspan
+       sodipodi:role="line"
+       id="tspan21"
+       x="720.55658"
+       y="634.74103">####</tspan></text>
+  <text
+     xml:space="preserve"
+     x="812.68359"
+     y="634.87579"
+     id="championship-opp-label-1"
+     class="label champ-opp  placeholder-text"
+     style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:12px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal"><tspan
+       sodipodi:role="line"
+       id="tspan16"
+       x="812.68359"
+       y="634.87579">TEXT TEXT</tspan></text>
+  <rect
+     id="topic-box-container"
+     class="lg-text-container topic-container"
+     width="390.01831"
+     height="106.15238"
+     x="764.94641"
+     y="223.79955" />
+  <path
+     d="m 1070.6605,443.64827 h 200"
+     id="path2"
+     class="detail-line"
+     style="stroke-width:1" />
+  <path
+     d="m 1070.6605,452.94746 h 200"
+     id="path3"
+     class="detail-line"
+     style="stroke-width:1" />
+  <path
+     d="m 1070.6605,462.24665 h 200"
+     id="path4"
+     class="detail-line solid"
+     style="stroke-width:1" />
+  <path
+     d="m 1070.6605,471.54584 h 200"
+     id="path5"
+     class="detail-line"
+     style="stroke-width:1" />
+  <path
+     d="m 1230.09,582.59179 -0.8542,176.43479"
+     id="path6"
+     class="detail-line"
+     style="stroke-width:0.999999" />
+  <path
+     d="m 1244.3086,590.88635 -0.7325,159.77467"
+     id="path7"
+     class="detail-line"
+     style="stroke-width:1" />
+  <path
+     d="m 1260.1253,600.11318 -0.6017,141.24471"
+     id="path8"
+     class="detail-line solid"
+     style="stroke-width:1" />
+  <path
+     d="m 1270.6605,606.25901 0.1873,128.7113"
+     id="path9"
+     class="detail-line"
+     style="stroke-width:1" />
+  <rect
+     style="fill:#0000ff;fill-rule:evenodd"
+     id="topic-title-label-container"
+     width="360"
+     height="80"
+     x="780"
+     y="236.5"
+     class="label-container" />
+  <text
+     text-anchor="left"
+     x="885"
+     y="288"
+     id="topic-title-label-container-text"
+     class="topic-title-text">TEXT TEXT</text>
+  <path
+     d="m 1202.6472,566.58276 101.9349,59.68472"
+     id="path10"
+     class="detail-line"
+     style="stroke-width:0.999996"
+     sodipodi:nodetypes="cc" />
+  <path
+     d="m 1304.5821,714.39035 -101.9349,60.14696"
+     id="path11"
+     class="detail-line"
+     style="stroke-width:0.999996"
+     sodipodi:nodetypes="cc" />
   <rect
      id="coach-label-container"
      class="champ-cat-label-container"
      width="60"
-     height="30"
-     x="754.65936"
-     y="446.02463" />
+     height="18"
+     x="951.95642"
+     y="579.37366"
+     inkscape:label="coach-label-container" />
   <text
      xml:space="preserve"
-     x="767.09003"
-     y="466.02463"
+     x="955.9563"
+     y="592.84729"
      id="coach-label"
-     text-anchor="left"
-     class="label champ-opp-cat-text">coach</text>
+     class="label champ-opp-cat-text"
+     inkscape:label="coach-label">coach</text>
   <rect
      id="finals-mvp-label-container"
      class="champ-cat-label-container"
-     width="90"
-     height="30"
-     x="944.81866"
-     y="446.02463" />
-  <text
-     text-anchor="left"
-     x="955"
-     y="466.02463"
-     id="finals-mvp-label"
-     class="label champ-opp-cat-text">finals mvp</text>
-  <rect
-     id="opp-label-container"
-     class="champ-cat-label-container"
-     width="90"
-     height="30"
-     x="1157.5"
-     y="446.02463" />
+     width="69.464638"
+     height="18"
+     x="1079.9755"
+     y="579.37366"
+     style="stroke-width:1"
+     inkscape:label="finals-mvp-label-container" />
   <text
      xml:space="preserve"
-     x="1180.1729"
-     y="466.02463"
-     id="opp-label"
-     class="label champ-opp-cat-text">against</text>
-  <!-- === main second row champ title bar ==== -->
-  <rect
-     class="champ-title-bar-container"
-     width="700"
-     height="60"
-     x="610"
-     y="551.75793"
-     id="rect2"
-      />
-  <!-- ===SECOND ROW === // championship titles (containers) === === -->
-  <rect
-     id="rect22"
-     width="52"
-     height="50"
-     x="617.5"
-     y="556.75793"
-     class="champ-title-label-container"
-      />
-  <rect
-     id="rect20"
-     width="184.95601"
-     height="50"
-     x="692.18134"
-     y="556.75793"
-     class="champ-title-label-container"
-      />
-  <rect
-     id="rect21"
-     width="180"
-     height="50"
-     x="899.81866"
-     y="556.75793"
-     class="champ-title-label-container"
-      />
-  <rect
-     id="rect24"
-     width="200"
-     height="50"
-     x="1102.5"
-     y="556.75793"
-     class="champ-title-label-container"
-      />
-  <!-- ===END===second row // championship titles (containers) === END === -->
-  <!-- === main THIRD row champ title bar ==== -->
-  <rect
-     id="rect25"
-     class="champ-title-bar-container"
-     width="700"
-     height="60"
-     x="610"
-     y="622.38544"
-      />
-  <!-- === THIRD ROW === // championship titles (containers) === === -->
-  <rect
-     id="rect28"
-     width="52"
-     height="50"
-     x="617.5"
-     y="627.38544"
-     class="champ-title-label-container"
-      />
-  <rect
-     id="rect26"
-     width="184.95601"
-     height="50"
-     x="692.18134"
-     y="627.38544"
-     class="champ-title-label-container"
-      />
-  <rect
-     id="rect27"
-     width="180"
-     height="50"
-     x="899.81866"
-     y="627.38544"
-     class="champ-title-label-container"
-      />
-  <rect
-     id="rect29"
-     width="200"
-     height="50"
-     x="1102.5"
-     y="627.38544"
-     class="champ-title-label-container"
-      />
-
-  <!-- === END === third row // championship titles (containers) === === -->
-  <!-- === main FOURTH row champ title bar ==== -->
-  <rect
-     id="rect30"
-     class="champ-title-bar-container"
-     width="700"
-     height="60"
-     x="610"
-     y="693.01294"
-      />
-  <!-- === FOURTH ROW === // championship titles (containers) === === -->
-  <rect
-     id="rect33"
-     width="52"
-     height="50"
-     x="617.5"
-     y="698.01294"
-     class="champ-title-label-container"
-      />
-  <rect
-     id="rect31"
-     width="184.95601"
-     height="50"
-     x="692.18134"
-     y="698.01294"
-     class="champ-title-label-container"
-      />
-  <rect
-     id="rect32"
-     width="180"
-     height="50"
-     x="899.81866"
-     y="698.01294"
-     class="champ-title-label-container"
-      />
-  <rect
-     id="rect34"
-     width="200"
-     height="50"
-     x="1102.5"
-     y="698.01294"
-     class="champ-title-label-container"
-      />
-  <!-- === END === fourth row // championship titles (containers) === === -->
-  <rect
-     id="year-twelve"
-     width="36.140278"
-     height="36.140278"
-     x="817.63605"
-     y="119.03482"
-      />
-  <rect
-     id="year-one"
-     width="36.140278"
-     height="36.140278"
-     x="361.89136"
-     y="119.03482"
-      />
-  <rect
-     id="year-two"
-     width="36.140278"
-     height="36.140278"
-     x="403.32263"
-     y="119.03482"
-      />
-  <rect
-     id="year-three"
-     width="36.140278"
-     height="36.140278"
-     x="444.75403"
-     y="119.03482"
-      />
-  <rect
-     id="year-four"
-     width="36.140278"
-     height="36.140278"
-     x="486.1853"
-     y="119.03482"
-      />
-  <rect
-     id="year-five"
-     width="36.140278"
-     height="36.140278"
-     x="527.6167"
-     y="119.03482"
-      />
-  <rect
-     id="year-six"
-     width="36.140278"
-     height="36.140278"
-     x="569.04797"
-     y="119.03482"
-      />
-  <rect
-     id="year-seven"
-     width="36.140278"
-     height="36.140278"
-     x="610.47937"
-     y="119.03482"
-      />
-  <rect
-     id="year-eight"
-     width="36.140278"
-     height="36.140278"
-     x="651.91064"
-     y="119.03482"
-      />
-  <rect
-     id="year-nine"
-     width="36.140278"
-     height="36.140278"
-     x="693.34198"
-     y="119.03482"
-      />
-  <rect
-     id="year-ten"
-     width="36.140278"
-     height="36.140278"
-     x="734.77338"
-     y="119.03482"
-      />
-  <rect
-     id="year-eleven"
-     width="36.140278"
-     height="36.140278"
-     x="776.20465"
-     y="119.03482"
-      />
-  <rect
-     id="year-thirteen"
-     width="36.140278"
-     height="36.140278"
-     x="859.06732"
-     y="119.03482"
-      />
-  <rect
-     id="year-fourteen"
-     width="36.140278"
-     height="36.140278"
-     x="900.49872"
-     y="119.03482"
-      />
-  <rect
-     id="year-fifteen"
-     width="36.140278"
-     height="36.140278"
-     x="941.92999"
-     y="119.03482"
-      />
-  <rect
-     id="year-sixteen"
-     width="36.140278"
-     height="36.140278"
-     x="983.36127"
-     y="119.03482"
-      />
-  <rect
-     id="year-seventeen"
-     width="36.140278"
-     height="36.140278"
-     x="1024.7927"
-     y="119.03482"
-      />
-  <rect
-     id="year-eighteen"
-     width="36.140278"
-     height="36.140278"
-     x="1066.2239"
-     y="119.03482"
-      />
-  <rect
-     id="year-nineteen"
-     width="36.140278"
-     height="36.140278"
-     x="1107.6553"
-     y="119.03482"
-      />
-  <rect
-     id="year-twenty"
-     width="36.140278"
-     height="36.140278"
-     x="1149.0867"
-     y="119.03482"
-      />
-  <rect
-     id="year-twentyone"
-     width="36.140278"
-     height="36.140278"
-     x="1190.5178"
-     y="119.03482"
-      />
-  <rect
-     id="year-twentytwo"
-     width="36.140278"
-     height="36.140278"
-     x="1231.9492"
-     y="119.03482"
-      />
-  <rect
-     id="year-twentythree"
-     width="36.140278"
-     height="36.140278"
-     x="1273.3806"
-     y="119.03482"
-      />
-  <rect
-     id="year-twentyfour"
-     width="36.140278"
-     height="36.140278"
-     x="1314.8118"
-     y="119.03482"
-      />
-  <rect
-     id="year-twentyfive"
-     width="36.140278"
-     height="36.140278"
-     x="1356.2432"
-     y="119.03482"
-      />
-  <rect
-     id="year-twentysix"
-     width="36.140278"
-     height="36.140278"
-     x="1397.6746"
-     y="119.03482"
-      />
-  <rect
-     id="year-twentyseven"
-     width="36.140278"
-     height="36.140278"
-     x="1439.106"
-     y="119.03482" />
-  <rect
-     id="year-twentyeight"
-     width="36.140278"
-     height="36.140278"
-     x="1480.5371"
-     y="119.03482"/>
-  <rect
-     id="year-twentynine"
-     width="36.140278"
-     height="36.140278"
-     x="1521.9685"
-     y="119.03482" />
-  <path
-     d="m 1132.6393,376.50876 h 197.7499"
-     id="path6"
-     class="detail-line" />
-  <path
-     d="m 1132.6393,368.58516 h 197.7499"
-     id="path7"
-     class="detail-line" />
-
-    <g id="championships-dynamic-group" />
-
+     x="1083.7351"
+     y="591.6842"
+     id="finals-mvp-label"
+     class="label champ-opp-cat-text"
+     inkscape:label="finals-mvp-label">finals mvp</text>
+  <text
+     xml:space="preserve"
+     x="944.72302"
+     y="634.87579"
+     id="coach-name-label"
+     class="label champ-opp  placeholder-text"
+     style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:12px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal"
+     inkscape:label="coach-name-label"><tspan
+       sodipodi:role="line"
+       id="tspan22"
+       x="944.72302"
+       y="634.87579">NAME NAME</tspan></text>
+  <text
+     xml:space="preserve"
+     x="1077.4744"
+     y="634.87579"
+     id="text23"
+     class="label champ-opp  placeholder-text"
+     style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:12px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal"
+     inkscape:label="coach-name-label"><tspan
+       sodipodi:role="line"
+       id="tspan23"
+       x="1077.4744"
+       y="634.87579">NAME NAME</tspan></text>
 </svg>
-
-
-
-
-
-
-<script src="svg-draggable.js"></script>
-<script src="wnba-cluster.js"></script>
-<!-- <script src="rewritten-cluster-engine.js"></script> -->
-<!--<script src="wnba-registry.js"></script>-->
-
-<script>
-</script>
-
-</body>
-</html>
-
-

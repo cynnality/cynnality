@@ -1,0 +1,416 @@
+<svg
+   width="613"
+   height="990"
+   viewBox="0 0 613 990"
+   version="1.1"
+   id="mvps-reg-season-svg"
+   xml:space="preserve"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+      <style>
+    .mvp-detail-dash-path {  }
+    .mvp-name-text {   }
+    .mvp-name-container {   }
+    .mvp-team-location {   }
+    .mvp-teamname {   }
+    .mvp-team-container {   }
+    .mvp-container {   }
+    .mvp-title-subscript {   }
+    .mvp-title {   }
+    .mvp-title-container {   }
+    .mvp-most-improved {   }
+    .mvp-rookie {   }
+    .mvp-sixth {   }
+    .mvp-defensive {   }
+    .mvp-season {   }
+    </style>
+  <defs></defs>
+  <rect
+      style="fill:#ffffff;fill-opacity:1;fill-rule:evenodd;stroke:#4d0033;stroke-width:3.00001;stroke-dasharray:none;stroke-opacity:1"
+      id="mvp-season-container"
+      width="600"
+      height="172"
+      x="6.5"
+      y="7.3341064"
+      class="mvp-season  mvp-container" />
+      
+      <rect
+      style="fill:#4d0033;fill-opacity:1;fill-rule:evenodd;stroke-width:1"
+      id="mvp-season-title-container"
+      width="600"
+      height="64.097206"
+      x="6.5"
+      y="12"
+      class="mvp-title-container  mvp-season" />
+      
+      <rect
+      style="fill:#ffffff;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:3;stroke-dasharray:none;stroke-opacity:1"
+      id="mvp-season-name-container"
+      width="360"
+      height="80"
+      x="17.517845"
+      y="90.858398"
+      class="mvp-season  mvp-name-container" />
+      
+      <rect
+      style="fill:#ffffff;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:3;stroke-dasharray:none;stroke-opacity:1"
+      id="mvp-season-team-container"
+      width="197"
+      height="80"
+      x="397.61118"
+      y="90.858398"
+      class="mvp-season  mvp-team-container" />
+      
+      <path
+      style="fill:#ffffff;fill-opacity:1;stroke:#525d00;stroke-width:3;stroke-miterlimit:0;stroke-dasharray:none;stroke-opacity:1"
+      d="M 6.5000001,83.5 H 606.5"
+      id="mvp-season-path"
+      class="mvp-season  mvp-detail-dash-path" />
+      
+      <text
+      style="font-style:normal;font-variant:normal;font-weight:600;font-stretch:normal;font-size:26.6667px;line-height:31.2503px;font-family:'Chivo Mono';-inkscape-font-specification:'Chivo Mono Semi-Bold';text-align:center;letter-spacing:0px;word-spacing:-5px;writing-mode:lr-tb;direction:ltr;text-anchor:middle;fill:#ffffff;fill-opacity:1;stroke-width:0;stroke-miterlimit:0;stroke-dasharray:none"
+      x="106.36369"
+      y="53.195267"
+      id="mvp-season-title"
+      class="mvp-season  mvp-title">SEASON MVP</text>
+        
+        <text
+      style="font-weight:500;font-size:26.6667px;line-height:31.2503px;font-family:'Chivo Mono';-inkscape-font-specification:'Chivo Mono Medium';text-align:center;letter-spacing:-1.5px;word-spacing:-5px;writing-mode:lr-tb;direction:ltr;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0;stroke-miterlimit:0;stroke-dasharray:none;stroke-opacity:1"
+      x="197.37114"
+      y="139.92511"
+      id="mvp-season-name"
+      class="mvp-season  mvp-name-text">PLAYERNAME PLAYERNAME</text>
+        
+        <text
+      style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:21.3333px;line-height:25.0002px;font-family:'Chivo Mono';-inkscape-font-specification:'Chivo Mono';text-align:center;letter-spacing:-1.5px;word-spacing:-5px;writing-mode:lr-tb;direction:ltr;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0;stroke-miterlimit:0;stroke-dasharray:none;stroke-opacity:1"
+      x="496.34583"
+      y="152.65167"
+      id="mvp-season-teamname"
+      class="mvp-season  mvp-teamname">teamname</text>
+        
+        <text
+      style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:21.3333px;line-height:25.0002px;font-family:'Chivo Mono';-inkscape-font-specification:'Chivo Mono';text-align:center;letter-spacing:-1.5px;word-spacing:-5px;writing-mode:lr-tb;direction:ltr;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0;stroke-miterlimit:0;stroke-dasharray:none;stroke-opacity:1"
+      x="496.34583"
+      y="120.47843"
+      id="mvp-season-teamloc"
+      class="mvp-season  mvp-team-location">teamloc</text>
+        
+        <rect
+      style="fill:#ffffff;fill-opacity:1;fill-rule:evenodd;stroke:#0c2d00;stroke-width:2.99999;stroke-dasharray:none;stroke-opacity:1"
+      id="mvp-defensive-container"
+      width="600"
+      height="172.00002"
+      x="6.4999924"
+      y="208.16705"
+      class="mvp-defensive  mvp-container" />
+      
+      <rect
+      style="fill:#0c2d00;fill-opacity:1;fill-rule:evenodd;stroke-width:1"
+      id="mvp-defensive-title-container"
+      width="600"
+      height="64.097206"
+      x="6.4999924"
+      y="212.83295"
+      class="mvp-title-container  mvp-defensive" />
+      
+      <rect
+      style="fill:#ffffff;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:3;stroke-dasharray:none;stroke-opacity:1"
+      id="mvp-defensive-name-container"
+      width="360"
+      height="80"
+      x="17.517845"
+      y="291.69135"
+      class="mvp-defensive  mvp-name-container" />
+      
+      <rect
+      style="fill:#ffffff;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:3;stroke-dasharray:none;stroke-opacity:1"
+      id="mvp-defensive-team-container"
+      width="197"
+      height="80"
+      x="397.61118"
+      y="291.69135"
+      class="mvp-defensive  mvp-team-container" />
+      
+      <path
+      style="fill:#ffffff;fill-opacity:1;stroke:#8e4903;stroke-width:3;stroke-miterlimit:0;stroke-dasharray:none;stroke-opacity:1"
+      d="M 6.4999991,284.33295 H 606.49999"
+      id="mvp-defensive-path"
+      class="mvp-defensive  mvp-detail-dash-path" />
+      
+      <text
+      style="font-style:normal;font-variant:normal;font-weight:600;font-stretch:normal;font-size:26.6667px;line-height:31.2503px;font-family:'Chivo Mono';-inkscape-font-specification:'Chivo Mono Semi-Bold';text-align:center;letter-spacing:0px;word-spacing:-5px;writing-mode:lr-tb;direction:ltr;text-anchor:middle;fill:#ffffff;fill-opacity:1;stroke-width:0;stroke-miterlimit:0;stroke-dasharray:none"
+      x="99.930351"
+      y="254.0282"
+      id="mvp-defensive-title"
+      class="mvp-defensive  mvp-title">DEFENSIVE</text>
+      
+      <text
+      style="font-weight:500;font-size:18.6667px;line-height:21.8752px;font-family:'Chivo Mono';-inkscape-font-specification:'Chivo Mono Medium';text-align:center;letter-spacing:-1.5px;word-spacing:-5px;writing-mode:lr-tb;direction:ltr;text-anchor:middle;fill:#ffffff;fill-opacity:1;stroke-width:0;stroke-miterlimit:0;stroke-dasharray:none"
+      x="272.13531"
+      y="251.28423"
+      id="mvp-defensive-subscript"
+      class="mvp-defensive  mvp-title-subscript">PLAYER OF THE YEAR</text>
+      
+      <text
+      style="font-weight:500;font-size:26.6667px;line-height:31.2503px;font-family:'Chivo Mono';-inkscape-font-specification:'Chivo Mono Medium';text-align:center;letter-spacing:-1.5px;word-spacing:-5px;writing-mode:lr-tb;direction:ltr;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0;stroke-miterlimit:0;stroke-dasharray:none;stroke-opacity:1"
+      x="197.41512"
+      y="340.75806"
+      id="mvp-defensive-name"
+      class="mvp-defensive  mvp-name-text">PLAYERNAME PLAYERNAME</text>
+      
+      <text
+      style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:21.3333px;line-height:25.0002px;font-family:'Chivo Mono';-inkscape-font-specification:'Chivo Mono';text-align:center;letter-spacing:-1.5px;word-spacing:-5px;writing-mode:lr-tb;direction:ltr;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0;stroke-miterlimit:0;stroke-dasharray:none;stroke-opacity:1"
+      x="496.34583"
+      y="323.18872"
+      id="mvp-defensive-teamloc"
+      class="mvp-defensive  mvp-team-location">teamloc</text>
+        
+        <text
+      style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:21.3333px;line-height:25.0002px;font-family:'Chivo Mono';-inkscape-font-specification:'Chivo Mono';text-align:center;letter-spacing:-1.5px;word-spacing:-5px;writing-mode:lr-tb;direction:ltr;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0;stroke-miterlimit:0;stroke-dasharray:none;stroke-opacity:1"
+      x="496.19653"
+      y="355.362"
+      id="mvp-defensive-teamname"
+      class="mvp-defensive  mvp-teamname">teamname</text>
+        
+        <rect
+      style="fill:#ffffff;fill-opacity:1;fill-rule:evenodd;stroke:#8e4903;stroke-width:2.99999;stroke-dasharray:none;stroke-opacity:1"
+      id="mvp-sixth-container"
+      width="600"
+      height="172.00002"
+      x="6.4999924"
+      y="409"
+      class="mvp-sixth  mvp-container" />
+      
+      <rect
+      style="fill:#8e4903;fill-opacity:1;fill-rule:evenodd;stroke-width:1"
+      id="mvp-sixth-title-container"
+      width="600"
+      height="64.097206"
+      x="6.4999952"
+      y="413.66592"
+      class="mvp-title-container  mvp-sixth" />
+      
+      <rect
+      style="fill:#ffffff;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:3;stroke-dasharray:none;stroke-opacity:1"
+      id="mvp-sixth-name-container"
+      width="360"
+      height="80"
+      x="17.517847"
+      y="492.52426"
+      class="mvp-sixth  mvp-name-container" />
+      
+      <rect
+      style="fill:#ffffff;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:3;stroke-dasharray:none;stroke-opacity:1"
+      id="mvp-sixth-team-container"
+      width="197"
+      height="80"
+      x="397.61121"
+      y="492.52426"
+      class="mvp-sixth  mvp-team-container" />
+      
+      <path
+      style="fill:#ffffff;fill-opacity:1;stroke:#525d00;stroke-width:3;stroke-miterlimit:0;stroke-dasharray:none;stroke-opacity:1"
+      d="M 6.4999896,485.16588 H 606.49994"
+      id="mvp-sixth-path"
+      class="mvp-sixth  mvp-detail-dash-path" />
+      
+      <text
+      xml:space="preserve"
+      style="font-style:normal;font-variant:normal;font-weight:600;font-stretch:normal;font-size:26.6667px;line-height:31.2503px;font-family:'Chivo Mono';-inkscape-font-specification:'Chivo Mono Semi-Bold';text-align:center;letter-spacing:0px;word-spacing:-5px;writing-mode:lr-tb;direction:ltr;text-anchor:middle;fill:#ffffff;fill-opacity:1;stroke-width:0;stroke-miterlimit:0;stroke-dasharray:none"
+      x="68.863701"
+      y="454.86121"
+      id="mvp-sixth-title"
+      class="mvp-sixth  mvp-title">SIXTH</text>
+        
+        <text
+      xml:space="preserve"
+      style="font-weight:500;font-size:18.6667px;line-height:21.8752px;font-family:'Chivo Mono';-inkscape-font-specification:'Chivo Mono Medium';text-align:center;letter-spacing:-1.5px;word-spacing:-5px;writing-mode:lr-tb;direction:ltr;text-anchor:middle;fill:#ffffff;fill-opacity:1;stroke-width:0;stroke-miterlimit:0;stroke-dasharray:none"
+      x="206.29619"
+      y="452.11722"
+      id="mvp-sixth-subscript"
+      class="mvp-sixth  mvp-title-subscript">PLAYER OF THE YEAR</text>
+        
+        <text
+      xml:space="preserve"
+      style="font-weight:500;font-size:26.6667px;line-height:31.2503px;font-family:'Chivo Mono';-inkscape-font-specification:'Chivo Mono Medium';text-align:center;letter-spacing:-1.5px;word-spacing:-5px;writing-mode:lr-tb;direction:ltr;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0;stroke-miterlimit:0;stroke-dasharray:none;stroke-opacity:1"
+      x="197.37114"
+      y="541.591"
+      id="mvp-sixth-name"
+      class="mvp-sixth  mvp-name-text">PLAYERNAME PLAYERNAME</text>
+        
+        <text
+      xml:space="preserve"
+      style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:21.3333px;line-height:25.0002px;font-family:'Chivo Mono';-inkscape-font-specification:'Chivo Mono';text-align:center;letter-spacing:-1.5px;word-spacing:-5px;writing-mode:lr-tb;direction:ltr;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0;stroke-miterlimit:0;stroke-dasharray:none;stroke-opacity:1"
+      x="496.34583"
+      y="524.02161"
+      id="mvp-sixth-teamloc"
+      class="mvp-sixth  mvp-team-location">teamloc</text>
+        
+        <text
+      xml:space="preserve"
+      style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:21.3333px;line-height:25.0002px;font-family:'Chivo Mono';-inkscape-font-specification:'Chivo Mono';text-align:center;letter-spacing:-1.5px;word-spacing:-5px;writing-mode:lr-tb;direction:ltr;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0;stroke-miterlimit:0;stroke-dasharray:none;stroke-opacity:1"
+      x="496.19653"
+      y="556.19489"
+      id="mvp-sixth-teamname"
+      class="mvp-sixth  mvp-teamname">teamname</text>
+        
+        <rect
+      style="fill:#ffffff;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:2.99999;stroke-dasharray:none;stroke-opacity:1"
+      id="mvp-rookie-container"
+      width="600"
+      height="172.00002"
+      x="6.4999924"
+      y="609.83295"
+      class="mvp-rookie  mvp-container" />
+      
+      <rect
+      style="fill:#525d00;fill-opacity:1;fill-rule:evenodd;stroke-width:1"
+      id="mvp-rookie-title-container"
+      width="600"
+      height="64.097206"
+      x="6.4999638"
+      y="614.4989"
+      class="mvp-title-container  mvp-rookie" />
+      
+      <rect
+      style="fill:#ffffff;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:3;stroke-dasharray:none;stroke-opacity:1"
+      id="mvp-rookie-name-container"
+      width="360"
+      height="80"
+      x="17.517817"
+      y="693.35724"
+      class="mvp-rookie  mvp-name-container" />
+      
+      <rect
+      style="fill:#ffffff;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:3;stroke-dasharray:none;stroke-opacity:1"
+      id="mvp-rookie-team-container"
+      width="197"
+      height="80"
+      x="397.61111"
+      y="693.35724"
+      class="mvp-rookie  mvp-team-container" />
+      
+      <path
+      style="fill:none;fill-opacity:1;stroke:#8e4903;stroke-width:3;stroke-miterlimit:0;stroke-dasharray:none;stroke-opacity:1"
+      d="M 6.4999853,685.99879 H 606.50002"
+      id="mvp-rookie-path"
+      class="mvp-rookie  mvp-detail-dash-path" />
+      
+      <text
+      xml:space="preserve"
+      style="font-style:normal;font-variant:normal;font-weight:600;font-stretch:normal;font-size:26.6667px;line-height:31.2503px;font-family:'Chivo Mono';-inkscape-font-specification:'Chivo Mono Semi-Bold';text-align:center;letter-spacing:0px;word-spacing:-5px;writing-mode:lr-tb;direction:ltr;text-anchor:middle;fill:#ffffff;fill-opacity:1;stroke-width:0;stroke-miterlimit:0;stroke-dasharray:none"
+      x="75.930382"
+      y="655.69415"
+      id="mvp-rookie-title"
+      class="mvp-rookie  mvp-title">ROOKIE</text>
+        
+        <text
+      xml:space="preserve"
+      style="font-weight:500;font-size:18.6667px;line-height:21.8752px;font-family:'Chivo Mono';-inkscape-font-specification:'Chivo Mono Medium';text-align:center;letter-spacing:-1.5px;word-spacing:-5px;writing-mode:lr-tb;direction:ltr;text-anchor:middle;fill:#ffffff;fill-opacity:1;stroke-width:0;stroke-miterlimit:0;stroke-dasharray:none"
+      x="188.76357"
+      y="652.95013"
+      id="mvp-rookie-subscript"
+      class="mvp-rookie  mvp-title-subscript">OF THE YEAR</text>
+        
+        <text
+      xml:space="preserve"
+      style="font-weight:500;font-size:26.6667px;line-height:31.2503px;font-family:'Chivo Mono';-inkscape-font-specification:'Chivo Mono Medium';text-align:center;letter-spacing:-1.5px;word-spacing:-5px;writing-mode:lr-tb;direction:ltr;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0;stroke-miterlimit:0;stroke-dasharray:none;stroke-opacity:1"
+      x="197.37111"
+      y="742.42395"
+      id="mvp-rookie-name"
+      class="mvp-rookie  mvp-name-text">PLAYERNAME PLAYERNAME</text>
+        
+        <text
+      xml:space="preserve"
+      style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:21.3333px;line-height:25.0002px;font-family:'Chivo Mono';-inkscape-font-specification:'Chivo Mono';text-align:center;letter-spacing:-1.5px;word-spacing:-5px;writing-mode:lr-tb;direction:ltr;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0;stroke-miterlimit:0;stroke-dasharray:none;stroke-opacity:1"
+      x="496.34586"
+      y="724.85461"
+      id="mvp-rookie-teamloc"
+      class="mvp-rookie  mvp-team-location">teamloc</text>
+        
+        <text
+      xml:space="preserve"
+      style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:21.3333px;line-height:25.0002px;font-family:'Chivo Mono';-inkscape-font-specification:'Chivo Mono';text-align:center;letter-spacing:-1.5px;word-spacing:-5px;writing-mode:lr-tb;direction:ltr;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0;stroke-miterlimit:0;stroke-dasharray:none;stroke-opacity:1"
+      x="496.19656"
+      y="757.02783"
+      id="mvp-rookie-teamname"
+      class="mvp-rookie  mvp-teamname">teamname</text>
+        
+        <rect
+      style="fill:#ffffff;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:2.99999;stroke-dasharray:none;stroke-opacity:1"
+      id="mvp-most-improved-container"
+      width="600"
+      height="172.00002"
+      x="6.4999924"
+      y="810.66589"
+      class="mvp-most-improved  mvp-container" />
+      
+      <rect
+      style="fill:#006e66;fill-opacity:1;fill-rule:evenodd;stroke-width:1"
+      id="mvp-most-improved-title-container"
+      width="600"
+      height="64.097206"
+      x="6.4999638"
+      y="815.33185"
+      class="mvp-title-container  mvp-most-improved" />
+      
+      <rect
+      style="fill:#ffffff;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:3;stroke-dasharray:none;stroke-opacity:1"
+      id="mvp-most-improved-name-container"
+      width="360"
+      height="80"
+      x="17.517817"
+      y="894.19019"
+      class="mvp-most-improved  mvp-name-container" />
+      
+      <rect
+      style="fill:#ffffff;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:3;stroke-dasharray:none;stroke-opacity:1"
+      id="mvp-most-improved-team-container"
+      width="197"
+      height="80"
+      x="397.61111"
+      y="894.19019"
+      class="mvp-most-improved  mvp-team-container" />
+      
+      <path
+      style="fill:none;fill-opacity:1;stroke:#4d0033;stroke-width:3;stroke-miterlimit:0;stroke-dasharray:none;stroke-opacity:1"
+      d="M 6.4999853,886.83173 H 606.50002"
+      id="mvp-most-improved-path"
+      class="mvp-most-improved  mvp-detail-dash-path" />
+      
+      <text
+      style="font-style:normal;font-variant:normal;font-weight:600;font-stretch:normal;font-size:26.6667px;line-height:31.2503px;font-family:'Chivo Mono';-inkscape-font-specification:'Chivo Mono Semi-Bold';text-align:start;letter-spacing:0px;word-spacing:-5px;writing-mode:lr-tb;direction:ltr;text-anchor:start;fill:#ffffff;fill-opacity:1;stroke-width:0;stroke-miterlimit:0;stroke-dasharray:none"
+      x="28.357134"
+      y="856.5271"
+      id="mvp-most-improved-title"
+      class="mvp-most-improved  mvp-title">MOST IMPROVED</text>
+        
+        <text
+      style="font-weight:500;font-size:18.6667px;line-height:21.8752px;font-family:'Chivo Mono';-inkscape-font-specification:'Chivo Mono Medium';text-align:start;letter-spacing:-1.5px;word-spacing:-5px;writing-mode:lr-tb;direction:ltr;text-anchor:start;fill:#ffffff;fill-opacity:1;stroke-width:0;stroke-miterlimit:0;stroke-dasharray:none"
+      x="245.5793"
+      y="853.78308"
+      id="mvp-most-improved-subscript"
+      class="mvp-most-improved  mvp-title-subscript">PLAYER OF THE YEAR</text>
+        
+        <text
+      style="font-weight:500;font-size:26.6667px;line-height:31.2503px;font-family:'Chivo Mono';-inkscape-font-specification:'Chivo Mono Medium';text-align:center;letter-spacing:-1.5px;word-spacing:-5px;writing-mode:lr-tb;direction:ltr;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0;stroke-miterlimit:0;stroke-dasharray:none;stroke-opacity:1"
+      x="197.37111"
+      y="943.2569"
+      id="mvp-most-improved-name"
+      class="mvp-most-improved  mvp-name-text">PLAYERNAME PLAYERNAME</text>
+        
+        <text
+      style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:21.3333px;line-height:25.0002px;font-family:'Chivo Mono';-inkscape-font-specification:'Chivo Mono';text-align:center;letter-spacing:-1.5px;word-spacing:-5px;writing-mode:lr-tb;direction:ltr;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0;stroke-miterlimit:0;stroke-dasharray:none;stroke-opacity:1"
+      x="496.34586"
+      y="925.68756"
+      id="mvp-most-improved-teamloc"
+      class="mvp-most-improved  mvp-team-location">teamloc</text>
+        
+        <text
+      style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:21.3333px;line-height:25.0002px;font-family:'Chivo Mono';-inkscape-font-specification:'Chivo Mono';text-align:center;letter-spacing:-1.5px;word-spacing:-5px;writing-mode:lr-tb;direction:ltr;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0;stroke-miterlimit:0;stroke-dasharray:none;stroke-opacity:1"
+      x="496.19656"
+      y="957.86078"
+      id="mvp-most-improved-teamname"
+      class="mvp-most-improved  mvp-teamname">teamname</text>
+        
+</svg>

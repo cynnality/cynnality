@@ -1,0 +1,2937 @@
+{ 
+    "1997": [ 
+        {
+            "id": "MVP",
+            "type": "voted-value-player",
+            "award": "season MVP",
+            "winner": "Cynthia Cooper",
+            "team": "Houston Comets",
+            "teamCode": "HOU_COMETS"
+        },
+        { 
+            "id": "topScorer",
+            "type": "player",
+            "award": "Top Scorer",
+            "winner": "Cynthia Cooper",
+            "team": "Houston Comets",
+            "teamCode": "HOU_COMETS"
+        },
+        {
+            "id": "topDraftPick",
+            "type": "player",
+            "award": "Top draft pick",
+            "winner": "Tina Thompson",
+            "team": "Houston Comets",
+            "teamCode": "HOU_COMETS"
+        },
+        {
+            "id": "defensivePlayerOfTheYear",
+            "type": "voted-value-player",
+            "award": "Defensive MVP",
+            "winner": "Teresa Weatherspoon",
+            "team": "New York Liberty",
+            "teamCode": "NYL_LIBERTY"
+        },
+        {
+            "id": "shootingChampionsEast",
+            "type": "stat-leader-player",
+            "award": "EASTERN SHOOTING CHAMP",
+            "winner": "Andrea Congreaves",
+            "team": "Charlotte Sting",
+            "teamCode": "CHA_STING"
+        },
+        {
+            "id": "shootingChampionsWest",
+            "type": "stat-leader-player",
+            "award": "WESTERN SHOOTING CHAMP",
+            "winner": "Haixia Zheng",
+            "team": "Los Angeles Sparks",
+            "teamCode": "LOS_SPARKS"
+        },
+        {
+            "id": "sportsmanshipAward",
+            "type": "player",
+            "award": "Sportsmanship Award",
+            "winner": "Haixia Zheng",
+            "team": "Los Angeles Sparks",
+            "teamCode": "LOS_SPARKS"
+        },
+        {
+            "id": "coachOfTheYear",
+            "type": "coach",
+            "award": "Coach of the Year",
+            "winner": "Van Chancellor",
+            "team": "Houston Comets",
+            "teamCode": "HOU_COMETS"
+        }
+    ],
+    "1998": [
+        {
+            "id": "MVP",
+            "type": "voted-value-player",
+            "award": "season MVP",
+            "winner": "Cynthia Cooper",
+            "team": "Houston Comets",
+            "teamCode": "HOU_COMETS"
+        },
+        {
+            "id": "topScorer",
+            "type": "player",
+            "award": "Top Scorer",
+            "winner": "Cynthia Cooper",
+            "team": "Houston Comets",
+            "teamCode": "HOU_COMETS"
+        },
+        {
+            "id": "topDraftPick",
+            "type": "player",
+            "award": "Top draft pick",
+            "winner": "Margo Dydek",
+            "team": "Utah Starzz",
+            "teamCode": "UTA_STARZZ"
+        },
+        {
+            "id": "defensivePlayerOfTheYear",
+            "type": "voted-value-player",
+            "award": "Defensive MVP",
+            "winner": "Teresa Weatherspoon",
+            "team": "New York Liberty",
+            "teamCode": "NYL_LIBERTY"
+        },
+        {
+            "id": "newcomerOfTheYear",
+            "type": "voted-value-player",
+            "award": "Newcomer of the Year",
+            "winner": "Suzie McConnell Serio",
+            "team": "Cleveland Rockers",
+            "teamCode": "CLE_ROCKERS"
+        },
+        {
+            "id": "shootingChampionsFieldGoalPercentage",
+            "type": "stat-leader-player",
+            "award": "BEST FIELD GOAL %",
+            "winner": "Isabelle Fijalkowski",
+            "team": "Cleveland Rockers",
+            "teamCode": "CLE_ROCKERS"
+        },
+        {
+            "id": "shootingChampionsFreeThrowPercentage",
+            "type": "stat-leader-player",
+            "award": "BEST FREE THROW %",
+            "winner": "Sandy Brondello",
+            "team": "Detroit Shock",
+            "teamCode": "DET_SHOCK"
+        },
+        {
+            "id": "rookieOfTheYear",
+            "type": "voted-value-player",
+            "award": "Rookie MVP",
+            "winner": "Tracy Reid",
+            "team": "Charlotte Sting",
+            "teamCode": "CHA_STING"
+        },
+        {
+            "id": "sportsmanshipAward",
+            "type": "player",
+            "award": "Sportsmanship Award",
+            "winner": "Suzie McConnell Serio",
+            "team": "Cleveland Rockers",
+            "teamCode": "CLE_ROCKERS"
+        },
+        {
+            "id": "coachOfTheYear",
+            "type": "coach",
+            "award": "Coach of the Year",
+            "winner": "Van Chancellor",
+            "team": "Houston Comets",
+            "teamCode": "HOU_COMETS"
+        }
+    ],
+    "1999": [
+        {
+            "id": "MVP",
+            "type": "voted-value-player",
+            "award": "season MVP",
+            "winner": "Yolanda Griffith",
+            "team": "Sacramento Monarchs",
+            "teamCode": "SAC_MONARCHS"
+        },
+        {
+            "id": "topScorer",
+            "type": "player",
+            "award": "Top Scorer",
+            "winner": "Cynthia Cooper",
+            "team": "Houston Comets",
+            "teamCode": "HOU_COMETS"
+        },
+        {
+            "id": "topDraftPick",
+            "type": "player",
+            "award": "Top draft pick",
+            "winner": "Chamique Holdsclaw",
+            "team": "Washington Mystics",
+            "teamCode": "WAS_MYSTICS"
+        },
+        {
+            "id": "defensivePlayerOfTheYear",
+            "type": "voted-value-player",
+            "award": "Defensive MVP",
+            "winner": "Yolanda Griffith",
+            "team": "Sacramento Monarchs",
+            "teamCode": "SAC_MONARCHS"
+        },
+        {
+            "id": "newcomerOfTheYear",
+            "type": "voted-value-player",
+            "award": "Newcomer of the Year",
+            "winner": "Yolanda Griffith",
+            "team": "Sacramento Monarchs",
+            "teamCode": "SAC_MONARCHS"
+        },
+        {
+            "id": "shootingChampionsFieldGoalPercentage",
+            "type": "stat-leader-player",
+            "award": "BEST FIELD GOAL %",
+            "winner": "Murriel Page",
+            "team": "Washington Mystics",
+            "teamCode": "WAS_MYSTICS"
+        },
+        {
+            "id": "shootingChampionsFreeThrowPercentage",
+            "type": "stat-leader-player",
+            "award": "BEST FREE THROW %",
+            "winner": "Eva Nemcova",
+            "team": "Cleveland Rockers",
+            "teamCode": "CLE_ROCKERS"
+        },
+        {
+            "id": "rookieOfTheYear",
+            "type": "voted-value-player",
+            "award": "Rookie MVP",
+            "winner": "Chamique Holdsclaw",
+            "team": "Washington Mystics",
+            "teamCode": "WAS_MYSTICS"
+        },
+        {
+            "id": "sportsmanshipAward",
+            "type": "player",
+            "award": "Sportsmanship Award",
+            "winner": "Dawn Staley",
+            "team": "Charlotte Sting",
+            "teamCode": "CHA_STING"
+        },
+        {
+            "id": "entrepreneurialAchievementAward",
+            "award": "Entrepreneurial Achievement Award",
+            "winner": "Dawn Staley",
+            "team": "Charlotte Sting",
+            "teamCode": "CHA_STING"
+        },
+        {
+            "id": "coachOfTheYear",
+            "type": "coach",
+            "award": "Coach of the Year",
+            "winner": "Van Chancellor",
+            "team": "Houston Comets",
+            "teamCode": "HOU_COMETS"
+        }
+    ],
+    "2000": [
+        {
+            "id": "MVP",
+            "type": "voted-value-player",
+            "award": "season MVP",
+            "winner": "Sheryl Swoopes",
+            "team": "Houston Comets",
+            "teamCode": "HOU_COMETS"
+        },
+        {
+            "id": "topScorer",
+            "type": "player",
+            "award": "Top Scorer",
+            "winner": "Sheryl Swoopes",
+            "team": "Houston Comets",
+            "teamCode": "HOU_COMETS"
+        },
+        {
+            "id": "topDraftPick",
+            "type": "player",
+            "award": "Top draft pick",
+            "winner": "Ann Wauters",
+            "team": "Cleveland Rockers",
+            "teamCode": "CLE_ROCKERS"
+        },
+        {
+            "id": "defensivePlayerOfTheYear",
+            "type": "voted-value-player",
+            "award": "Defensive MVP",
+            "winner": "Sheryl Swoopes",
+            "team": "Houston Comets",
+            "teamCode": "HOU_COMETS"
+        },
+        {
+            "id": "mostImprovedPlayer",
+            "type": "voted-value-player",
+            "award": "Most Improved MVP",
+            "winner": "Tari Phillips",
+            "team": "New York Liberty",
+            "teamCode": "NYL_LIBERTY"
+        },
+        {
+            "id": "shootingChampionsFieldGoalPercentage",
+            "type": "stat-leader-player",
+            "award": "BEST FIELD GOAL %",
+            "winner": "Murriel Page",
+            "team": "Washington Mystics",
+            "teamCode": "WAS_MYSTICS"
+        },
+        {
+            "id": "shootingChampionsFreeThrowPercentage",
+            "type": "stat-leader-player",
+            "award": "BEST FREE THROW %",
+            "winner": "Jennifer Azzi",
+            "team": "Utah Starzz",
+            "teamCode": "UTA_STARZZ"
+        },
+        {
+            "id": "rookieOfTheYear",
+            "type": "voted-value-player",
+            "award": "Rookie MVP",
+            "winner": "Betty Lennox",
+            "team": "Minnesota Lynx",
+            "teamCode": "MIN_LYNX"
+        },
+        {
+            "id": "sportsmanshipAward",
+            "type": "player",
+            "award": "Kim Perrot Sportsmanship Award",
+            "winner": "Suzie McConnell Serio",
+            "team": "Cleveland Rockers",
+            "teamCode": "CLE_ROCKERS"
+        },
+        {
+            "id": "entrepreneurialAchievementAward",
+            "award": "Entrepreneurial Achievement Award",
+            "winner": "Monica Lamb",
+            "team": "Houston Comets",
+            "teamCode": "HOU_COMETS"
+        },
+        {
+            "id": "coachOfTheYear",
+            "type": "coach",
+            "award": "Coach of the Year",
+            "winner": "Michael Cooper",
+            "team": "Los Angeles Sparks",
+            "teamCode": "LOS_SPARKS"
+        }
+    ],
+    "2001": [
+        {
+            "id": "MVP",
+            "type": "voted-value-player",
+            "award": "season MVP",
+            "winner": "Lisa Leslie",
+            "team": "Los Angeles Sparks",
+            "teamCode": "LOS_SPARKS"
+        },
+        {
+            "id": "topScorer",
+            "type": "player",
+            "award": "Top Scorer",
+            "winner": "Katie Smith",
+            "team": "Minnesota Lynx",
+            "teamCode": "MIN_LYNX"
+        },
+        {
+            "id": "topDraftPick",
+            "type": "player",
+            "award": "Top draft pick",
+            "winner": "Lauren Jackson",
+            "team": "Seattle Storm",
+            "teamCode": "SEA_STORM"
+        },
+        {
+            "id": "defensivePlayerOfTheYear",
+            "type": "voted-value-player",
+            "award": "Defensive MVP",
+            "winner": "Debbie Black",
+            "team": "Miami Sol",
+            "teamCode": "MIA_SOL"
+        },
+        {
+            "id": "mostImprovedPlayer",
+            "type": "voted-value-player",
+            "award": "Most Improved MVP",
+            "winner": "Janeth Arcain",
+            "team": "Houston Comets",
+            "teamCode": "HOU_COMETS"
+        },
+        {
+            "id": "shootingChampionsFieldGoalPercentage",
+            "type": "stat-leader-player",
+            "award": "BEST FIELD GOAL %",
+            "winner": "Latasha Byears",
+            "team": "Los Angeles Sparks",
+            "teamCode": "LOS_SPARKS"
+        },
+        {
+            "id": "shootingChampionsFreeThrowPercentage",
+            "type": "stat-leader-player",
+            "award": "BEST FREE THROW %",
+            "winner": "Elena Baranova",
+            "team": "Miami Sol",
+            "teamCode": "MIA_SOL"
+        },
+        {
+            "id": "rookieOfTheYear",
+            "type": "voted-value-player",
+            "award": "Rookie MVP",
+            "winner": "Jackie Stiles",
+            "team": "Portland Fire",
+            "teamCode": "POR_FIRE"
+        },
+        {
+            "id": "sportsmanshipAward",
+            "type": "player",
+            "award": "Kim Perrot Sportsmanship Award",
+            "winner": "Sue Wicks",
+            "team": "New York Liberty",
+            "teamCode": "NYL_LIBERTY"
+        },
+        {
+            "id": "coachOfTheYear",
+            "type": "coach",
+            "award": "Coach of the Year",
+            "winner": "Dan Hughes",
+            "team": "Cleveland Rockers",
+            "teamCode": "CLE_ROCKERS"
+        }
+    ],
+    "2002": [
+        {
+            "id": "MVP",
+            "type": "voted-value-player",
+            "award": "season MVP",
+            "winner": "Sheryl Swoopes",
+            "team": "Houston Comets",
+            "teamCode": "HOU_COMETS"
+        },
+        {
+            "id": "topScorer",
+            "type": "player",
+            "award": "Top Scorer",
+            "winner": "Chamique Holdsclaw",
+            "team": "Washington Mystics",
+            "teamCode": "WAS_MYSTICS"
+        },
+        {
+            "id": "topDraftPick",
+            "type": "player",
+            "award": "Top draft pick",
+            "winner": "Sue Bird",
+            "team": "Seattle Storm",
+            "teamCode": "SEA_STORM"
+        },
+        {
+            "id": "defensivePlayerOfTheYear",
+            "type": "voted-value-player",
+            "award": "Defensive MVP",
+            "winner": "Sheryl Swoopes",
+            "team": "Houston Comets",
+            "teamCode": "HOU_COMETS"
+        },
+        {
+            "id": "mostImprovedPlayer",
+            "type": "voted-value-player",
+            "award": "Most Improved MVP",
+            "winner": "Coco Miller",
+            "team": "Washington Mystics",
+            "teamCode": "WAS_MYSTICS"
+        },
+        {
+            "id": "peakPerformerScoring",
+            "type": "stat-leader-player",
+            "award": "TOP SCORER",
+            "winner": "Chamique Holdsclaw",
+            "team": "Washington Mystics",
+            "teamCode": "WAS_MYSTICS"
+        },
+        {
+            "id": "peakPerformerRebounding",
+            "type": "stat-leader-player",
+            "award": "TOP REBOUNDER",
+            "winner": "Chamique Holdsclaw",
+            "team": "Washington Mystics",
+            "teamCode": "WAS_MYSTICS"
+        },
+        {
+            "id": "rookieOfTheYear",
+            "type": "voted-value-player",
+            "award": "Rookie MVP",
+            "winner": "Tamika Catchings",
+            "team": "Indiana Fever",
+            "teamCode": "IND_FEVER"
+        },
+        {
+            "id": "sportsmanshipAward",
+            "type": "player",
+            "award": "Kim Perrot Sportsmanship Award",
+            "winner": "Jennifer Gillom",
+            "team": "Phoenix Mercury",
+            "teamCode": "PHX_MERCURY"
+        },
+        {
+            "id": "coachOfTheYear",
+            "type": "coach",
+            "award": "Coach of the Year",
+            "winner": "Marianne Stanley",
+            "team": "Washington Mystics",
+            "teamCode": "WAS_MYSTICS"
+        }
+    ],
+    "2003": [
+        {
+            "id": "MVP",
+            "type": "voted-value-player",
+            "award": "season MVP",
+            "winner": "Lauren Jackson",
+            "team": "Seattle Storm",
+            "teamCode": "SEA_STORM"
+        },
+        {
+            "id": "topScorer",
+            "type": "player",
+            "award": "Top Scorer",
+            "winner": "Lauren Jackson",
+            "team": "Seattle Storm",
+            "teamCode": "SEA_STORM"
+        },
+        {
+            "id": "topDraftPick",
+            "type": "player",
+            "award": "Top draft pick",
+            "winner": "LaToya Thomas",
+            "team": "Cleveland Rockers",
+            "teamCode": "CLE_ROCKERS"
+        },
+        {
+            "id": "defensivePlayerOfTheYear",
+            "type": "voted-value-player",
+            "award": "Defensive MVP",
+            "winner": "Sheryl Swoopes",
+            "team": "Houston Comets",
+            "teamCode": "HOU_COMETS"
+        },
+        {
+            "id": "mostImprovedPlayer",
+            "type": "voted-value-player",
+            "award": "Most Improved MVP",
+            "winner": "Michelle Snow",
+            "team": "Houston Comets",
+            "teamCode": "HOU_COMETS"
+        },
+        {
+            "id": "peakPerformerScoring",
+            "type": "stat-leader-player",
+            "award": "TOP SCORER",
+            "winner": "Lauren Jackson",
+            "team": "Seattle Storm",
+            "teamCode": "SEA_STORM"
+        },
+        {
+            "id": "peakPerformerRebounding",
+            "type": "stat-leader-player",
+            "award": "TOP REBOUNDER",
+            "winner": "Chamique Holdsclaw",
+            "team": "Washington Mystics",
+            "teamCode": "WAS_MYSTICS"
+        },
+        {
+            "id": "rookieOfTheYear",
+            "type": "voted-value-player",
+            "award": "Rookie MVP",
+            "winner": "Cheryl Ford",
+            "team": "Detroit Shock",
+            "teamCode": "DET_SHOCK"
+        },
+        {
+            "id": "sportsmanshipAward",
+            "type": "player",
+            "award": "Kim Perrot Sportsmanship Award",
+            "winner": "Edna Campbell",
+            "team": "Sacramento Monarchs",
+            "teamCode": "SAC_MONARCHS"
+        },
+        {
+            "id": "coachOfTheYear",
+            "type": "coach",
+            "award": "Coach of the Year",
+            "winner": "Bill Laimbeer",
+            "team": "Detroit Shock",
+            "teamCode": "DET_SHOCK"
+        }
+    ],
+    "2004": [
+        {
+            "id": "MVP",
+            "type": "voted-value-player",
+            "award": "season MVP",
+            "winner": "Lisa Leslie",
+            "team": "Los Angeles Sparks",
+            "teamCode": "LOS_SPARKS"
+        },
+        {
+            "id": "topScorer",
+            "type": "player",
+            "award": "Top Scorer",
+            "winner": "Lauren Jackson",
+            "team": "Seattle Storm",
+            "teamCode": "SEA_STORM"
+        },
+        {
+            "id": "topDraftPick",
+            "type": "player",
+            "award": "Top draft pick",
+            "winner": "Diana Taurasi",
+            "team": "Phoenix Mercury",
+            "teamCode": "PHX_MERCURY"
+        },
+        {
+            "id": "defensivePlayerOfTheYear",
+            "type": "voted-value-player",
+            "award": "Defensive MVP",
+            "winner": "Lisa Leslie",
+            "team": "Los Angeles Sparks",
+            "teamCode": "LOS_SPARKS"
+        },
+        {
+            "id": "mostImprovedPlayerCoWinner1",
+            "type": "player",
+            "award": "Most Improved Player co-winner",
+            "winner": "Kelly Miller",
+            "team": "Indiana Fever",
+            "teamCode": "IND_FEVER"
+        },
+        {
+            "id": "mostImprovedPlayerCoWinner2",
+            "type": "player",
+            "award": "Most Improved Player co-winner",
+            "winner": "Wendy Palmer",
+            "team": "Connecticut Sun",
+            "teamCode": "CON_SUN"
+        },
+        {
+            "id": "peakPerformerScoring",
+            "type": "stat-leader-player",
+            "award": "TOP SCORER",
+            "winner": "Lauren Jackson",
+            "team": "Seattle Storm",
+            "teamCode": "SEA_STORM"
+        },
+        {
+            "id": "peakPerformerRebounding",
+            "type": "stat-leader-player",
+            "award": "TOP REBOUNDER",
+            "winner": "Lisa Leslie",
+            "team": "Los Angeles Sparks",
+            "teamCode": "LOS_SPARKS"
+        },
+        {
+            "id": "rookieOfTheYear",
+            "type": "voted-value-player",
+            "award": "Rookie MVP",
+            "winner": "Diana Taurasi",
+            "team": "Phoenix Mercury",
+            "teamCode": "PHX_MERCURY"
+        },
+        {
+            "id": "sportsmanshipAward",
+            "type": "player",
+            "award": "Kim Perrot Sportsmanship Award",
+            "winner": "Teresa Edwards",
+            "team": "Minnesota Lynx",
+            "teamCode": "MIN_LYNX"
+        },
+        {
+            "id": "coachOfTheYear",
+            "type": "coach",
+            "award": "Coach of the Year",
+            "winner": "Suzie McConnell Serio",
+            "team": "Minnesota Lynx",
+            "teamCode": "MIN_LYNX"
+        }
+    ],
+    "2005": [
+        {
+            "id": "MVP",
+            "type": "voted-value-player",
+            "award": "season MVP",
+            "winner": "Sheryl Swoopes",
+            "team": "Houston Comets",
+            "teamCode": "HOU_COMETS"
+        },
+        {
+            "id": "topScorer",
+            "type": "player",
+            "award": "Top Scorer",
+            "winner": "Sheryl Swoopes",
+            "team": "Houston Comets",
+            "teamCode": "HOU_COMETS"
+        },
+        {
+            "id": "topDraftPick",
+            "type": "player",
+            "award": "Top draft pick",
+            "winner": "Janel McCarville",
+            "team": "Charlotte Sting",
+            "teamCode": "CHA_STING"
+        },
+        {
+            "id": "defensivePlayerOfTheYear",
+            "type": "voted-value-player",
+            "award": "Defensive MVP",
+            "winner": "Tamika Catchings",
+            "team": "Indiana Fever",
+            "teamCode": "IND_FEVER"
+        },
+        {
+            "id": "mostImprovedPlayer",
+            "type": "voted-value-player",
+            "award": "Most Improved MVP",
+            "winner": "Nicole Powell",
+            "team": "Sacramento Monarchs",
+            "teamCode": "SAC_MONARCHS"
+        },
+        {
+            "id": "peakPerformerScoring",
+            "type": "stat-leader-player",
+            "award": "TOP SCORER",
+            "winner": "Sheryl Swoopes",
+            "team": "Houston Comets",
+            "teamCode": "HOU_COMETS"
+        },
+        {
+            "id": "peakPerformerRebounding",
+            "type": "stat-leader-player",
+            "award": "TOP REBOUNDER",
+            "winner": "Cheryl Ford",
+            "team": "Detroit Shock",
+            "teamCode": "DET_SHOCK"
+        },
+        {
+            "id": "peakPerformerDishAndAssist",
+            "type": "stat-leader-player",
+            "award": "TOP DISTRIBUTOR",
+            "winner": "Sue Bird",
+            "team": "Seattle Storm",
+            "teamCode": "SEA_STORM"
+        },
+        {
+            "id": "rookieOfTheYear",
+            "type": "voted-value-player",
+            "award": "Rookie MVP",
+            "winner": "Tameka Johnson",
+            "team": "Washington Mystics",
+            "teamCode": "WAS_MYSTICS"
+        },
+        {
+            "id": "sportsmanshipAward",
+            "type": "player",
+            "award": "Kim Perrot Sportsmanship Award",
+            "winner": "Taj McWilliams-Franklin",
+            "team": "Connecticut Sun",
+            "teamCode": "CON_SUN"
+        },
+        {
+            "id": "coachOfTheYear",
+            "type": "coach",
+            "award": "Coach of the Year",
+            "winner": "John Whisenant",
+            "team": "Sacramento Monarchs",
+            "teamCode": "SAC_MONARCHS"
+        }
+    ],
+    "2006": [
+        {
+            "id": "MVP",
+            "type": "voted-value-player",
+            "award": "season MVP",
+            "winner": "Lisa Leslie",
+            "team": "Los Angeles Sparks",
+            "teamCode": "LOS_SPARKS"
+        },
+        {
+            "id": "topScorer",
+            "type": "player",
+            "award": "Top Scorer",
+            "winner": "Diana Taurasi",
+            "team": "Phoenix Mercury",
+            "teamCode": "PHX_MERCURY"
+        },
+        {
+            "id": "topDraftPick",
+            "type": "player",
+            "award": "Top draft pick",
+            "winner": "Seimone Augustus",
+            "team": "Minnesota Lynx",
+            "teamCode": "MIN_LYNX"
+        },
+        {
+            "id": "defensivePlayerOfTheYear",
+            "type": "voted-value-player",
+            "award": "Defensive MVP",
+            "winner": "Tamika Catchings",
+            "team": "Indiana Fever",
+            "teamCode": "IND_FEVER"
+        },
+        {
+            "id": "mostImprovedPlayer",
+            "type": "voted-value-player",
+            "award": "Most Improved MVP",
+            "winner": "Erin Buescher",
+            "team": "Sacramento Monarchs",
+            "teamCode": "SAC_MONARCHS"
+        },
+        {
+            "id": "peakPerformerScoring",
+            "type": "stat-leader-player",
+            "award": "TOP SCORER",
+            "winner": "Diana Taurasi",
+            "team": "Phoenix Mercury",
+            "teamCode": "PHX_MERCURY"
+        },
+        {
+            "id": "peakPerformerRebounding",
+            "type": "stat-leader-player",
+            "award": "TOP REBOUNDER",
+            "winner": "Cheryl Ford",
+            "team": "Detroit Shock",
+            "teamCode": "DET_SHOCK"
+        },
+        {
+            "id": "peakPerformerDishAndAssist",
+            "type": "stat-leader-player",
+            "award": "TOP DISTRIBUTOR",
+            "winner": "Nikki Teasley",
+            "team": "Washington Mystics",
+            "teamCode": "WAS_MYSTICS"
+        },
+        {
+            "id": "rookieOfTheYear",
+            "type": "voted-value-player",
+            "award": "Rookie MVP",
+            "winner": "Seimone Augustus",
+            "team": "Minnesota Lynx",
+            "teamCode": "MIN_LYNX"
+        },
+        {
+            "id": "sportsmanshipAward",
+            "type": "player",
+            "award": "Kim Perrot Sportsmanship Award",
+            "winner": "Dawn Staley",
+            "team": "Houston Comets",
+            "teamCode": "HOU_COMETS"
+        },
+        {
+            "id": "coachOfTheYear",
+            "type": "coach",
+            "award": "Coach of the Year",
+            "winner": "Mike Thibault",
+            "team": "Connecticut Sun",
+            "teamCode": "CON_SUN"
+        }
+    ],
+    "2007": [
+        {
+            "id": "MVP",
+            "type": "voted-value-player",
+            "award": "season MVP",
+            "winner": "Lauren Jackson",
+            "team": "Seattle Storm",
+            "teamCode": "SEA_STORM"
+        },
+        {
+            "id": "topScorer",
+            "type": "player",
+            "award": "Top Scorer",
+            "winner": "Lauren Jackson",
+            "team": "Seattle Storm",
+            "teamCode": "SEA_STORM"
+        },
+        {
+            "id": "topDraftPick",
+            "type": "player",
+            "award": "Top draft pick",
+            "winner": "Lindsey Harding",
+            "team": "Minnesota Lynx",
+            "teamCode": "MIN_LYNX"
+        },
+        {
+            "id": "defensivePlayerOfTheYear",
+            "type": "voted-value-player",
+            "award": "Defensive MVP",
+            "winner": "Lauren Jackson",
+            "team": "Seattle Storm",
+            "teamCode": "SEA_STORM"
+        },
+        {
+            "id": "mostImprovedPlayer",
+            "type": "voted-value-player",
+            "award": "Most Improved MVP",
+            "winner": "Janel McCarville",
+            "team": "New York Liberty",
+            "teamCode": "NYL_LIBERTY"
+        },
+        {
+            "id": "peakPerformerScoring",
+            "type": "stat-leader-player",
+            "award": "TOP SCORER",
+            "winner": "Lauren Jackson",
+            "team": "Seattle Storm",
+            "teamCode": "SEA_STORM"
+        },
+        {
+            "id": "peakPerformerRebounding",
+            "type": "stat-leader-player",
+            "award": "TOP REBOUNDER",
+            "winner": "Lauren Jackson",
+            "team": "Seattle Storm",
+            "teamCode": "SEA_STORM"
+        },
+        {
+            "id": "peakPerformerDishAndAssist",
+            "type": "stat-leader-player",
+            "award": "TOP DISTRIBUTOR",
+            "winner": "Becky Hammon",
+            "team": "San Antonio Silver Stars",
+            "teamCode": "SA_SILVER_STARS"
+        },
+        {
+            "id": "sixthPlayerOfTheYear",
+            "type": "voted-value-player",
+            "award": "Sixth MVP",
+            "winner": "Plenette Pierson",
+            "team": "Detroit Shock",
+            "teamCode": "DET_SHOCK"
+        },
+        {
+            "id": "rookieOfTheYear",
+            "type": "voted-value-player",
+            "award": "Rookie MVP",
+            "winner": "Armintie Price",
+            "team": "Chicago Sky",
+            "teamCode": "CHI_SKY"
+        },
+        {
+            "id": "sportsmanshipAward",
+            "type": "player",
+            "award": "Kim Perrot Sportsmanship Award",
+            "winner": "Tully Bevilaqua",
+            "team": "Indiana Fever",
+            "teamCode": "IND_FEVER"
+        },
+        {
+            "id": "coachOfTheYear",
+            "type": "coach",
+            "award": "Coach of the Year",
+            "winner": "Dan Hughes",
+            "team": "San Antonio Silver Stars",
+            "teamCode": "SA_SILVER_STARS"
+        }
+    ],
+    "2008": [
+        {
+            "id": "MVP",
+            "type": "voted-value-player",
+            "award": "season MVP",
+            "winner": "Candace Parker",
+            "team": "Los Angeles Sparks",
+            "teamCode": "LOS_SPARKS"
+        },
+        {
+            "id": "topScorer",
+            "type": "player",
+            "award": "Top Scorer",
+            "winner": "Diana Taurasi",
+            "team": "Phoenix Mercury",
+            "teamCode": "PHX_MERCURY"
+        },
+        {
+            "id": "topDraftPick",
+            "type": "player",
+            "award": "Top draft pick",
+            "winner": "Candace Parker",
+            "team": "Los Angeles Sparks",
+            "teamCode": "LOS_SPARKS"
+        },
+        {
+            "id": "defensivePlayerOfTheYear",
+            "type": "voted-value-player",
+            "award": "Defensive MVP",
+            "winner": "Lisa Leslie",
+            "team": "Los Angeles Sparks",
+            "teamCode": "LOS_SPARKS"
+        },
+        {
+            "id": "mostImprovedPlayer",
+            "type": "voted-value-player",
+            "award": "Most Improved MVP",
+            "winner": "Ebony Hoffman",
+            "team": "Indiana Fever",
+            "teamCode": "IND_FEVER"
+        },
+        {
+            "id": "peakPerformerScoring",
+            "type": "stat-leader-player",
+            "award": "TOP SCORER",
+            "winner": "Diana Taurasi",
+            "team": "Phoenix Mercury",
+            "teamCode": "PHX_MERCURY"
+        },
+        {
+            "id": "peakPerformerRebounding",
+            "type": "stat-leader-player",
+            "award": "TOP REBOUNDER",
+            "winner": "Candace Parker",
+            "team": "Los Angeles Sparks",
+            "teamCode": "LOS_SPARKS"
+        },
+        {
+            "id": "peakPerformerDishAndAssist",
+            "type": "stat-leader-player",
+            "award": "TOP DISTRIBUTOR",
+            "winner": "Lindsay Whalen",
+            "team": "Connecticut Sun",
+            "teamCode": "CON_SUN"
+        },
+        {
+            "id": "sixthPlayerOfTheYear",
+            "type": "voted-value-player",
+            "award": "Sixth MVP",
+            "winner": "Candice Wiggins",
+            "team": "Minnesota Lynx",
+            "teamCode": "MIN_LYNX"
+        },
+        {
+            "id": "rookieOfTheYear",
+            "type": "voted-value-player",
+            "award": "Rookie MVP",
+            "winner": "Candace Parker",
+            "team": "Los Angeles Sparks",
+            "teamCode": "LOS_SPARKS"
+        },
+        {
+            "id": "sportsmanshipAward",
+            "type": "player",
+            "award": "Kim Perrot Sportsmanship Award",
+            "winner": "Vickie Johnson",
+            "team": "San Antonio Silver Stars",
+            "teamCode": "SA_SILVER_STARS"
+        },
+        {
+            "id": "DawnStaleyCommunityLeadershipAward",
+            "type": "player",
+            "award": "Dawn Staley Community Leadership Award",
+            "winner": "Tamika Catchings",
+            "team": "Indiana Fever",
+            "teamCode": "IND_FEVER"
+        },
+        {
+            "id": "coachOfTheYear",
+            "type": "coach",
+            "award": "Coach of the Year",
+            "winner": "Mike Thibault",
+            "team": "Connecticut Sun",
+            "teamCode": "CON_SUN"
+        }
+    ],
+    "2009": [
+        {
+            "id": "MVP",
+            "type": "voted-value-player",
+            "award": "season MVP",
+            "winner": "Diana Taurasi",
+            "team": "Phoenix Mercury",
+            "teamCode": "PHX_MERCURY"
+        },
+        {
+            "id": "topScorer",
+            "type": "player",
+            "award": "Top Scorer",
+            "winner": "Diana Taurasi",
+            "team": "Phoenix Mercury",
+            "teamCode": "PHX_MERCURY"
+        },
+        {
+            "id": "topDraftPick",
+            "type": "player",
+            "award": "Top draft pick",
+            "winner": "Angel McCoughtry",
+            "team": "Atlanta Dream",
+            "teamCode": "ATL_DREAM"
+        },
+        {
+            "id": "defensivePlayerOfTheYear",
+            "type": "voted-value-player",
+            "award": "Defensive MVP",
+            "winner": "Tamika Catchings",
+            "team": "Indiana Fever",
+            "teamCode": "IND_FEVER"
+        },
+        {
+            "id": "mostImprovedPlayer",
+            "type": "voted-value-player",
+            "award": "Most Improved MVP",
+            "winner": "Crystal Langhorne",
+            "team": "Washington Mystics",
+            "teamCode": "WAS_MYSTICS"
+        },
+        {
+            "id": "peakPerformerScoring",
+            "type": "stat-leader-player",
+            "award": "TOP SCORER",
+            "winner": "Diana Taurasi",
+            "team": "Phoenix Mercury",
+            "teamCode": "PHX_MERCURY"
+        },
+        {
+            "id": "peakPerformerRebounding",
+            "type": "stat-leader-player",
+            "award": "TOP REBOUNDER",
+            "winner": "Candace Parker",
+            "team": "Los Angeles Sparks",
+            "teamCode": "LOS_SPARKS"
+        },
+        {
+            "id": "peakPerformerDishAndAssist",
+            "type": "stat-leader-player",
+            "award": "TOP DISTRIBUTOR",
+            "winner": "Sue Bird",
+            "team": "Seattle Storm",
+            "teamCode": "SEA_STORM"
+        },
+        {
+            "id": "sixthPlayerOfTheYear",
+            "type": "voted-value-player",
+            "award": "Sixth MVP",
+            "winner": "DeWanna Bonner",
+            "team": "Phoenix Mercury",
+            "teamCode": "PHX_MERCURY"
+        },
+        {
+            "id": "rookieOfTheYear",
+            "type": "voted-value-player",
+            "award": "Rookie MVP",
+            "winner": "Angel McCoughtry",
+            "team": "Atlanta Dream",
+            "teamCode": "ATL_DREAM"
+        },
+        {
+            "id": "sportsmanshipAward",
+            "type": "player",
+            "award": "Kim Perrot Sportsmanship Award",
+            "winner": "Kara Lawson",
+            "team": "Sacramento Monarchs",
+            "teamCode": "SAC_MONARCHS"
+        },
+        {
+            "id": "DawnStaleyCommunityLeadershipAward",
+            "type": "player",
+            "award": "Dawn Staley Community Leadership Award",
+            "winner": "Tamika Raymond",
+            "team": "Connecticut Sun",
+            "teamCode": "CON_SUN"
+        },
+        {
+            "id": "coachOfTheYear",
+            "type": "coach",
+            "award": "Coach of the Year",
+            "winner": "Marynell Meadors",
+            "team": "Atlanta Dream",
+            "teamCode": "ATL_DREAM"
+        }
+    ],
+    "2010": [
+        {
+            "id": "MVP",
+            "type": "voted-value-player",
+            "award": "season MVP",
+            "winner": "Lauren Jackson",
+            "team": "Seattle Storm",
+            "teamCode": "SEA_STORM"
+        },
+        {
+            "id": "topScorer",
+            "type": "player",
+            "award": "Top Scorer",
+            "winner": "Diana Taurasi",
+            "team": "Phoenix Mercury",
+            "teamCode": "PHX_MERCURY"
+        },
+        {
+            "id": "topDraftPick",
+            "type": "player",
+            "award": "Top draft pick",
+            "winner": "Tina Charles",
+            "team": "Connecticut Sun",
+            "teamCode": "CON_SUN"
+        },
+        {
+            "id": "defensivePlayerOfTheYear",
+            "type": "voted-value-player",
+            "award": "Defensive MVP",
+            "winner": "Tamika Catchings",
+            "team": "Indiana Fever",
+            "teamCode": "IND_FEVER"
+        },
+        {
+            "id": "mostImprovedPlayer",
+            "type": "voted-value-player",
+            "award": "Most Improved MVP",
+            "winner": "Leilani Mitchell",
+            "team": "New York Liberty",
+            "teamCode": "NYL_LIBERTY"
+        },
+        {
+            "id": "peakPerformerScoring",
+            "type": "stat-leader-player",
+            "award": "TOP SCORER",
+            "winner": "Diana Taurasi",
+            "team": "Phoenix Mercury",
+            "teamCode": "PHX_MERCURY"
+        },
+        {
+            "id": "peakPerformerRebounding",
+            "type": "stat-leader-player",
+            "award": "TOP REBOUNDER",
+            "winner": "Tina Charles",
+            "team": "Connecticut Sun",
+            "teamCode": "CON_SUN"
+        },
+        {
+            "id": "peakPerformerDishAndAssist",
+            "type": "stat-leader-player",
+            "award": "TOP DISTRIBUTOR",
+            "winner": "Ticha Penicheiro",
+            "team": "Los Angeles Sparks",
+            "teamCode": "LOS_SPARKS"
+        },
+        {
+            "id": "sixthPlayerOfTheYear",
+            "type": "voted-value-player",
+            "award": "Sixth MVP",
+            "winner": "DeWanna Bonner",
+            "team": "Phoenix Mercury",
+            "teamCode": "PHX_MERCURY"
+        },
+        {
+            "id": "rookieOfTheYear",
+            "type": "voted-value-player",
+            "award": "Rookie MVP",
+            "winner": "Tina Charles",
+            "team": "Connecticut Sun",
+            "teamCode": "CON_SUN"
+        },
+        {
+            "id": "sportsmanshipAward",
+            "type": "player",
+            "award": "Kim Perrot Sportsmanship Award",
+            "winner": "Tamika Catchings",
+            "team": "Indiana Fever",
+            "teamCode": "IND_FEVER"
+        },
+        {
+            "id": "DawnStaleyCommunityLeadershipAward",
+            "type": "player",
+            "award": "Dawn Staley Community Leadership Award",
+            "winner": "Chamique Holdsclaw",
+            "team": "San Antonio Silver Stars",
+            "teamCode": "SA_SILVER_STARS"
+        },
+        {
+            "id": "coachOfTheYear",
+            "type": "coach",
+            "award": "Coach of the Year",
+            "winner": "Brian Agler",
+            "team": "Seattle Storm",
+            "teamCode": "SEA_STORM"
+        }
+    ],
+    "2011": [
+        {
+            "id": "MVP",
+            "type": "voted-value-player",
+            "award": "season MVP",
+            "winner": "Tamika Catchings",
+            "team": "Indiana Fever",
+            "teamCode": "IND_FEVER"
+        },
+        {
+            "id": "topScorer",
+            "type": "player",
+            "award": "Top Scorer",
+            "winner": "Diana Taurasi",
+            "team": "Phoenix Mercury",
+            "teamCode": "PHX_MERCURY"
+        },
+        {
+            "id": "topDraftPick",
+            "type": "player",
+            "award": "Top draft pick",
+            "winner": "Maya Moore",
+            "team": "Minnesota Lynx",
+            "teamCode": "MIN_LYNX"
+        },
+        {
+            "id": "defensivePlayerOfTheYear",
+            "type": "voted-value-player",
+            "award": "Defensive MVP",
+            "winner": "Sylvia Fowles",
+            "team": "Chicago Sky",
+            "teamCode": "CHI_SKY"
+        },
+        {
+            "id": "mostImprovedPlayer",
+            "type": "voted-value-player",
+            "award": "Most Improved MVP",
+            "winner": "Kia Vaughn",
+            "team": "New York Liberty",
+            "teamCode": "NYL_LIBERTY"
+        },
+        {
+            "id": "peakPerformerScoring",
+            "type": "stat-leader-player",
+            "award": "TOP SCORER",
+            "winner": "Diana Taurasi",
+            "team": "Phoenix Mercury",
+            "teamCode": "PHX_MERCURY"
+        },
+        {
+            "id": "peakPerformerRebounding",
+            "type": "stat-leader-player",
+            "award": "TOP REBOUNDER",
+            "winner": "Tina Charles",
+            "team": "Connecticut Sun",
+            "teamCode": "CON_SUN"
+        },
+        {
+            "id": "peakPerformerDishAndAssist",
+            "type": "stat-leader-player",
+            "award": "TOP DISTRIBUTOR",
+            "winner": "Lindsay Whalen",
+            "team": "Minnesota Lynx",
+            "teamCode": "MIN_LYNX"
+        },
+        {
+            "id": "sixthPlayerOfTheYear",
+            "type": "voted-value-player",
+            "award": "Sixth MVP",
+            "winner": "DeWanna Bonner",
+            "team": "Phoenix Mercury",
+            "teamCode": "PHX_MERCURY"
+        },
+        {
+            "id": "rookieOfTheYear",
+            "type": "voted-value-player",
+            "award": "Rookie MVP",
+            "winner": "Maya Moore",
+            "team": "Minnesota Lynx",
+            "teamCode": "MIN_LYNX"
+        },
+        {
+            "id": "sportsmanshipAward",
+            "type": "player",
+            "award": "Kim Perrot Sportsmanship Award",
+            "winner": "Ruth Riley",
+            "team": "San Antonio Silver Stars",
+            "teamCode": "SA_SILVER_STARS"
+        },
+        {
+            "id": "DawnStaleyCommunityLeadershipAward",
+            "type": "player",
+            "award": "Dawn Staley Community Leadership Award",
+            "winner": "Charde Houston",
+            "team": "Minnesota Lynx",
+            "teamCode": "MIN_LYNX"
+        },
+        {
+            "id": "coachOfTheYear",
+            "type": "coach",
+            "award": "Coach of the Year",
+            "winner": "Cheryl Reeve",
+            "team": "Minnesota Lynx",
+            "teamCode": "MIN_LYNX"
+        }
+    ],
+    "2012": [
+        {
+            "id": "MVP",
+            "type": "voted-value-player",
+            "award": "season MVP",
+            "winner": "Tina Charles",
+            "team": "Connecticut Sun",
+            "teamCode": "CON_SUN"
+        },
+        {
+            "id": "topScorer",
+            "type": "player",
+            "award": "Top Scorer",
+            "winner": "Angel McCoughtry",
+            "team": "Atlanta Dream",
+            "teamCode": "ATL_DREAM"
+        },
+        {
+            "id": "topDraftPick",
+            "type": "player",
+            "award": "Top draft pick",
+            "winner": "Nneka Ogwumike",
+            "team": "Los Angeles Sparks",
+            "teamCode": "LOS_SPARKS"
+        },
+        {
+            "id": "defensivePlayerOfTheYear",
+            "type": "voted-value-player",
+            "award": "Defensive MVP",
+            "winner": "Tamika Catchings",
+            "team": "Indiana Fever",
+            "teamCode": "IND_FEVER"
+        },
+        {
+            "id": "mostImprovedPlayer",
+            "type": "voted-value-player",
+            "award": "Most Improved MVP",
+            "winner": "Kristi Toliver",
+            "team": "Los Angeles Sparks",
+            "teamCode": "LOS_SPARKS"
+        },
+        {
+            "id": "peakPerformerScoring",
+            "type": "stat-leader-player",
+            "award": "TOP SCORER",
+            "winner": "Angel McCoughtry",
+            "team": "Atlanta Dream",
+            "teamCode": "ATL_DREAM"
+        },
+        {
+            "id": "peakPerformerRebounding",
+            "type": "stat-leader-player",
+            "award": "TOP REBOUNDER",
+            "winner": "Tina Charles",
+            "team": "Connecticut Sun",
+            "teamCode": "CON_SUN"
+        },
+        {
+            "id": "peakPerformerDishAndAssist",
+            "type": "stat-leader-player",
+            "award": "TOP DISTRIBUTOR",
+            "winner": "Lindsay Whalen",
+            "team": "Minnesota Lynx",
+            "teamCode": "MIN_LYNX"
+        },
+        {
+            "id": "sixthPlayerOfTheYear",
+            "type": "voted-value-player",
+            "award": "Sixth MVP",
+            "winner": "Renee Montgomery",
+            "team": "Connecticut Sun",
+            "teamCode": "CON_SUN"
+        },
+        {
+            "id": "rookieOfTheYear",
+            "type": "voted-value-player",
+            "award": "Rookie MVP",
+            "winner": "Nneka Ogwumike",
+            "team": "Los Angeles Sparks",
+            "teamCode": "LOS_SPARKS"
+        },
+        {
+            "id": "sportsmanshipAward",
+            "type": "player",
+            "award": "Kim Perrot Sportsmanship Award",
+            "winner": "Kara Lawson",
+            "team": "Connecticut Sun",
+            "teamCode": "CON_SUN"
+        },
+        {
+            "id": "DawnStaleyCommunityLeadershipAward",
+            "type": "player",
+            "award": "Dawn Staley Community Leadership Award",
+            "winner": "Tina Charles",
+            "team": "Connecticut Sun",
+            "teamCode": "CON_SUN"
+        },
+        {
+            "id": "coachOfTheYear",
+            "type": "coach",
+            "award": "Coach of the Year",
+            "winner": "Carol Ross",
+            "team": "Los Angeles Sparks",
+            "teamCode": "LOS_SPARKS"
+        }
+    ],
+    "2013": [
+        {
+            "id": "MVP",
+            "type": "voted-value-player",
+            "award": "season MVP",
+            "winner": "Candace Parker",
+            "team": "Los Angeles Sparks",
+            "teamCode": "LOS_SPARKS"
+        },
+        {
+            "id": "topScorer",
+            "type": "player",
+            "award": "Top Scorer",
+            "winner": "Angel McCoughtry",
+            "team": "Atlanta Dream",
+            "teamCode": "ATL_DREAM"
+        },
+        {
+            "id": "topDraftPick",
+            "type": "player",
+            "award": "Top draft pick",
+            "winner": "Brittney Griner",
+            "team": "Phoenix Mercury",
+            "teamCode": "PHX_MERCURY"
+        },
+        {
+            "id": "defensivePlayerOfTheYear",
+            "type": "voted-value-player",
+            "award": "Defensive MVP",
+            "winner": "Sylvia Fowles",
+            "team": "Chicago Sky",
+            "teamCode": "CHI_SKY"
+        },
+        {
+            "id": "mostImprovedPlayer",
+            "type": "voted-value-player",
+            "award": "Most Improved MVP",
+            "winner": "Shavonte Zellous",
+            "team": "Indiana Fever",
+            "teamCode": "IND_FEVER"
+        },
+        {
+            "id": "peakPerformerScoring",
+            "type": "stat-leader-player",
+            "award": "TOP SCORER",
+            "winner": "Angel McCoughtry",
+            "team": "Atlanta Dream",
+            "teamCode": "ATL_DREAM"
+        },
+        {
+            "id": "peakPerformerRebounding",
+            "type": "stat-leader-player",
+            "award": "TOP REBOUNDER",
+            "winner": "Sylvia Fowles",
+            "team": "Chicago Sky",
+            "teamCode": "CHI_SKY"
+        },
+        {
+            "id": "peakPerformerDishAndAssist",
+            "type": "stat-leader-player",
+            "award": "TOP DISTRIBUTOR",
+            "winner": "Danielle Robinson",
+            "team": "San Antonio Silver Stars",
+            "teamCode": "SA_SILVER_STARS"
+        },
+        {
+            "id": "sixthPlayerOfTheYear",
+            "type": "voted-value-player",
+            "award": "Sixth MVP",
+            "winner": "Riquna Williams",
+            "team": "Tulsa Shock",
+            "teamCode": "TUL_SHOCK"
+        },
+        {
+            "id": "rookieOfTheYear",
+            "type": "voted-value-player",
+            "award": "Rookie MVP",
+            "winner": "Elena Delle Donne",
+            "team": "Chicago Sky",
+            "teamCode": "CHI_SKY"
+        },
+        {
+            "id": "sportsmanshipAward",
+            "type": "player",
+            "award": "Kim Perrot Sportsmanship Award - co winner",
+            "winner": "Swin Cash",
+            "team": "Chicago Sky",
+            "teamCode": "CHI_SKY"
+        },
+        {
+            "id": "sportsmanshipAward",
+            "type": "player",
+            "award": "Kim Perrot Sportsmanship Award - co winner",
+            "winner": "Tamika Catchings",
+            "team": "Indiana Fever",
+            "teamCode": "IND_FEVER"
+        },
+        {
+            "id": "DawnStaleyCommunityLeadershipAward",
+            "type": "player",
+            "award": "Dawn Staley Community Leadership Award",
+            "winner": "Kara Lawson",
+            "team": "Connecticut Sun",
+            "teamCode": "CON_SUN"
+        },
+        {
+            "id": "coachOfTheYear",
+            "type": "coach",
+            "award": "Coach of the Year",
+            "winner": "Mike Thibault",
+            "team": "Washington Mystics",
+            "teamCode": "WAS_MYSTICS"
+        }
+    ],
+    "2014": [
+        {
+            "id": "MVP",
+            "type": "voted-value-player",
+            "award": "season MVP",
+            "winner": "Maya Moore",
+            "team": "Minnesota Lynx",
+            "teamCode": "MIN_LYNX"
+        },
+        {
+            "id": "topScorer",
+            "type": "player",
+            "award": "Top Scorer",
+            "winner": "Maya Moore",
+            "team": "Minnesota Lynx",
+            "teamCode": "MIN_LYNX"
+        },
+        {
+            "id": "topDraftPick",
+            "type": "player",
+            "award": "Top draft pick",
+            "winner": "Chiney Ogwumike",
+            "team": "Connecticut Sun",
+            "teamCode": "CON_SUN"
+        },
+        {
+            "id": "defensivePlayerOfTheYear",
+            "type": "voted-value-player",
+            "award": "Defensive MVP",
+            "winner": "Brittney Griner",
+            "team": "Phoenix Mercury",
+            "teamCode": "PHX_MERCURY"
+        },
+        {
+            "id": "mostImprovedPlayer",
+            "type": "voted-value-player",
+            "award": "Most Improved MVP",
+            "winner": "Skylar Diggins",
+            "team": "Tulsa Shock",
+            "teamCode": "TUL_SHOCK"
+        },
+        {
+            "id": "peakPerformerScoring",
+            "type": "stat-leader-player",
+            "award": "TOP SCORER",
+            "winner": "Maya Moore",
+            "team": "Minnesota Lynx",
+            "teamCode": "MIN_LYNX"
+        },
+        {
+            "id": "peakPerformerRebounding",
+            "type": "stat-leader-player",
+            "award": "TOP REBOUNDER",
+            "winner": "Courtney Paris",
+            "team": "Tulsa Shock",
+            "teamCode": "TUL_SHOCK"
+        },
+        {
+            "id": "peakPerformerDishAndAssist",
+            "type": "stat-leader-player",
+            "award": "TOP DISTRIBUTOR",
+            "winner": "Diana Taurasi",
+            "team": "Phoenix Mercury",
+            "teamCode": "PHX_MERCURY"
+        },
+        {
+            "id": "sixthPlayerOfTheYear",
+            "type": "voted-value-player",
+            "award": "Sixth MVP",
+            "winner": "Allie Quigley",
+            "team": "Chicago Sky",
+            "teamCode": "CHI_SKY"
+        },
+        {
+            "id": "rookieOfTheYear",
+            "type": "voted-value-player",
+            "award": "Rookie MVP",
+            "winner": "Chiney Ogwumike",
+            "team": "Connecticut Sun",
+            "teamCode": "CON_SUN"
+        },
+        {
+            "id": "sportsmanshipAward",
+            "type": "player",
+            "award": "Kim Perrot Sportsmanship Award",
+            "winner": "Becky Hammon",
+            "team": "San Antonio Stars",
+            "teamCode": "SA_STARS"
+        },
+        {
+            "id": "DawnStaleyCommunityLeadershipAward",
+            "type": "player",
+            "award": "Dawn Staley Community Leadership Award",
+            "winner": "Elena Delle Donne",
+            "team": "Chicago Sky",
+            "teamCode": "CHI_SKY"
+        },
+        {
+            "id": "coachOfTheYear",
+            "type": "coach",
+            "award": "Coach of the Year",
+            "winner": "Sandy Brondello",
+            "team": "Phoenix Mercury",
+            "teamCode": "PHX_MERCURY"
+        }
+    ],
+    "2015": [
+        {
+            "id": "MVP",
+            "type": "voted-value-player",
+            "award": "season MVP",
+            "winner": "Elena Delle Donne",
+            "team": "Chicago Sky",
+            "teamCode": "CHI_SKY"
+        },
+        {
+            "id": "topScorer",
+            "type": "player",
+            "award": "Top Scorer",
+            "winner": "Elena Delle Donne",
+            "team": "Chicago Sky",
+            "teamCode": "CHI_SKY"
+        },
+        {
+            "id": "topDraftPick",
+            "type": "player",
+            "award": "Top draft pick",
+            "winner": "Jewell Loyd",
+            "team": "Seattle Storm",
+            "teamCode": "SEA_STORM"
+        },
+        {
+            "id": "defensivePlayerOfTheYear",
+            "type": "voted-value-player",
+            "award": "Defensive MVP",
+            "winner": "Brittney Griner",
+            "team": "Phoenix Mercury",
+            "teamCode": "PHX_MERCURY"
+        },
+        {
+            "id": "mostImprovedPlayer",
+            "type": "voted-value-player",
+            "award": "Most Improved MVP",
+            "winner": "Kelsey Bone",
+            "team": "Connecticut Sun",
+            "teamCode": "CON_SUN"
+        },
+        {
+            "id": "peakPerformerScoring",
+            "type": "stat-leader-player",
+            "award": "TOP SCORER",
+            "winner": "Elena Delle Donne",
+            "team": "Chicago Sky",
+            "teamCode": "CHI_SKY"
+        },
+        {
+            "id": "peakPerformerRebounding",
+            "type": "stat-leader-player",
+            "award": "TOP REBOUNDER",
+            "winner": "Courtney Paris",
+            "team": "Tulsa Shock",
+            "teamCode": "TUL_SHOCK"
+        },
+        {
+            "id": "peakPerformerDishAndAssist",
+            "type": "stat-leader-player",
+            "award": "TOP DISTRIBUTOR",
+            "winner": "Courtney Vandersloot",
+            "team": "Chicago Sky",
+            "teamCode": "CHI_SKY"
+        },
+        {
+            "id": "sixthPlayerOfTheYear",
+            "type": "voted-value-player",
+            "award": "Sixth MVP",
+            "winner": "Allie Quigley",
+            "team": "Chicago Sky",
+            "teamCode": "CHI_SKY"
+        },
+        {
+            "id": "rookieOfTheYear",
+            "type": "voted-value-player",
+            "award": "Rookie MVP",
+            "winner": "Jewell Loyd",
+            "team": "Seattle Storm",
+            "teamCode": "SEA_STORM"
+        },
+        {
+            "id": "sportsmanshipAward",
+            "type": "player",
+            "award": "Kim Perrot Sportsmanship Award",
+            "winner": "DeLisha Milton-Jones",
+            "team": "Atlanta Dream",
+            "teamCode": "ATL_DREAM"
+        },
+        {
+            "id": "DawnStaleyCommunityLeadershipAward",
+            "type": "player",
+            "award": "Dawn Staley Community Leadership Award",
+            "winner": "Elena Delle Donne",
+            "team": "Chicago Sky",
+            "teamCode": "CHI_SKY"
+        },
+        {
+            "id": "coachOfTheYear",
+            "type": "coach",
+            "award": "Coach of the Year",
+            "winner": "Bill Laimbeer",
+            "team": "New York Liberty",
+            "teamCode": "NYL_LIBERTY"
+        }
+    ],
+    "2016": [
+        {
+            "id": "MVP",
+            "type": "voted-value-player",
+            "award": "season MVP",
+            "winner": "Nneka Ogwumike",
+            "team": "Los Angeles Sparks",
+            "teamCode": "LOS_SPARKS"
+        },
+        {
+            "id": "topScorer",
+            "type": "player",
+            "award": "Top Scorer",
+            "winner": "Tina Charles",
+            "team": "New York Liberty",
+            "teamCode": "NYL_LIBERTY"
+        },
+        {
+            "id": "topDraftPick",
+            "type": "player",
+            "award": "Top draft pick",
+            "winner": "Breanna Stewart",
+            "team": "Seattle Storm",
+            "teamCode": "SEA_STORM"
+        },
+        {
+            "id": "defensivePlayerOfTheYear",
+            "type": "voted-value-player",
+            "award": "Defensive MVP",
+            "winner": "Sylvia Fowles",
+            "team": "Minnesota Lynx",
+            "teamCode": "MIN_LYNX"
+        },
+        {
+            "id": "mostImprovedPlayer",
+            "type": "voted-value-player",
+            "award": "Most Improved MVP",
+            "winner": "Elizabeth Williams",
+            "team": "Atlanta Dream",
+            "teamCode": "ATL_DREAM"
+        },
+        {
+            "id": "peakPerformerScoring",
+            "type": "stat-leader-player",
+            "award": "TOP SCORER",
+            "winner": "Tina Charles",
+            "team": "New York Liberty",
+            "teamCode": "NYL_LIBERTY"
+        },
+        {
+            "id": "peakPerformerRebounding",
+            "type": "stat-leader-player",
+            "award": "TOP REBOUNDER",
+            "winner": "Tina Charles",
+            "team": "New York Liberty",
+            "teamCode": "NYL_LIBERTY"
+        },
+        {
+            "id": "peakPerformerDishAndAssist",
+            "type": "stat-leader-player",
+            "award": "TOP DISTRIBUTOR",
+            "winner": "Sue Bird",
+            "team": "Seattle Storm",
+            "teamCode": "SEA_STORM"
+        },
+        {
+            "id": "sixthPlayerOfTheYear",
+            "type": "voted-value-player",
+            "award": "Sixth MVP",
+            "winner": "Jantel Lavender",
+            "team": "Los Angeles Sparks",
+            "teamCode": "LOS_SPARKS"
+        },
+        {
+            "id": "rookieOfTheYear",
+            "type": "voted-value-player",
+            "award": "Rookie MVP",
+            "winner": "Breanna Stewart",
+            "team": "Seattle Storm",
+            "teamCode": "SEA_STORM"
+        },
+        {
+            "id": "sportsmanshipAward",
+            "type": "player",
+            "award": "Kim Perrot Sportsmanship Award",
+            "winner": "Tamika Catchings",
+            "team": "Indiana Fever",
+            "teamCode": "IND_FEVER"
+        },
+        {
+            "id": "DawnStaleyCommunityLeadershipAward",
+            "type": "player",
+            "award": "Dawn Staley Community Leadership Award",
+            "winner": "Tamika Catchings",
+            "team": "Indiana Fever",
+            "teamCode": "IND_FEVER"
+        },
+        {
+            "id": "coachOfTheYear",
+            "type": "coach",
+            "award": "Coach of the Year",
+            "winner": "Cheryl Reeve",
+            "team": "Minnesota Lynx",
+            "teamCode": "MIN_LYNX"
+        }
+    ],
+    "2017": [
+        {
+            "id": "MVP",
+            "type": "voted-value-player",
+            "award": "season MVP",
+            "winner": "Sylvia Fowles",
+            "team": "Minnesota Lynx",
+            "teamCode": "MIN_LYNX"
+        },
+        {
+            "id": "topScorer",
+            "type": "player",
+            "award": "Top Scorer",
+            "winner": "Brittney Griner",
+            "team": "Phoenix Mercury",
+            "teamCode": "PHX_MERCURY"
+        },
+        {
+            "id": "topDraftPick",
+            "type": "player",
+            "award": "Top draft pick",
+            "winner": "Kelsey Plum",
+            "team": "San Antonio Stars",
+            "teamCode": "SA_STARS"
+        },
+        {
+            "id": "defensivePlayerOfTheYear",
+            "type": "voted-value-player",
+            "award": "Defensive MVP",
+            "winner": "Alana Beard",
+            "team": "Los Angeles Sparks",
+            "teamCode": "LOS_SPARKS"
+        },
+        {
+            "id": "mostImprovedPlayer",
+            "type": "voted-value-player",
+            "award": "Most Improved MVP",
+            "winner": "Jonquel Jones",
+            "team": "Connecticut Sun",
+            "teamCode": "CON_SUN"
+        },
+        {
+            "id": "peakPerformerScoring",
+            "type": "stat-leader-player",
+            "award": "TOP SCORER",
+            "winner": "Brittney Griner",
+            "team": "Phoenix Mercury",
+            "teamCode": "PHX_MERCURY"
+        },
+        {
+            "id": "peakPerformerRebounding",
+            "type": "stat-leader-player",
+            "award": "TOP REBOUNDER",
+            "winner": "Jonquel Jones",
+            "team": "Connecticut Sun",
+            "teamCode": "CON_SUN"
+        },
+        {
+            "id": "peakPerformerDishAndAssist",
+            "type": "stat-leader-player",
+            "award": "TOP DISTRIBUTOR",
+            "winner": "Courtney Vandersloot",
+            "team": "Chicago Sky",
+            "teamCode": "CHI_SKY"
+        },
+        {
+            "id": "sixthPlayerOfTheYear",
+            "type": "voted-value-player",
+            "award": "Sixth MVP",
+            "winner": "Sugar Rodgers",
+            "team": "New York Liberty",
+            "teamCode": "NYL_LIBERTY"
+        },
+        {
+            "id": "rookieOfTheYear",
+            "type": "voted-value-player",
+            "award": "Rookie MVP",
+            "winner": "Allisha Gray",
+            "team": "Dallas Wings",
+            "teamCode": "DAL_WINGS"
+        },
+        {
+            "id": "sportsmanshipAward",
+            "type": "player",
+            "award": "Kim Perrot Sportsmanship Award",
+            "winner": "Sue Bird",
+            "team": "Seattle Storm",
+            "teamCode": "SEA_STORM"
+        },
+        {
+            "id": "DawnStaleyCommunityLeadershipAward",
+            "type": "player",
+            "award": "Dawn Staley Community Leadership Award",
+            "winner": "Ivory Latta",
+            "team": "Washington Mystics",
+            "teamCode": "WAS_MYSTICS"
+        },
+        {
+            "id": "coachOfTheYear",
+            "type": "coach",
+            "award": "Coach of the Year",
+            "winner": "Curt Miller",
+            "team": "Connecticut Sun",
+            "teamCode": "CON_SUN"
+        },
+        {
+            "id": "basketballExecutiveOfTheYear",
+            "type": "adminStaff",
+            "award": "Basketball Executive of the Year",
+            "winner": "Curt Miller",
+            "team": "Connecticut Sun",
+            "teamCode": "CON_SUN"
+        }
+    ],
+    "2018": [
+        {
+            "id": "MVP",
+            "type": "voted-value-player",
+            "award": "season MVP",
+            "winner": "Breanna Stewart",
+            "team": "Seattle Storm",
+            "teamCode": "SEA_STORM"
+        },
+        {
+            "id": "topScorer",
+            "type": "player",
+            "award": "Top Scorer",
+            "winner": "Liz Cambage",
+            "team": "Dallas Wings",
+            "teamCode": "DAL_WINGS"
+        },
+        {
+            "id": "topDraftPick",
+            "type": "player",
+            "award": "Top draft pick",
+            "winner": "A'ja Wilson",
+            "team": "Las Vegas Aces",
+            "teamCode": "LVA_ACES"
+        },
+        {
+            "id": "defensivePlayerOfTheYear",
+            "type": "voted-value-player",
+            "award": "Defensive MVP",
+            "winner": "Alana Beard",
+            "team": "Los Angeles Sparks",
+            "teamCode": "LOS_SPARKS"
+        },
+        {
+            "id": "mostImprovedPlayer",
+            "type": "voted-value-player",
+            "award": "Most Improved MVP",
+            "winner": "Natasha Howard",
+            "team": "Seattle Storm",
+            "teamCode": "SEA_STORM"
+        },
+        {
+            "id": "peakPerformerScoring",
+            "type": "stat-leader-player",
+            "award": "TOP SCORER",
+            "winner": "Liz Cambage",
+            "team": "Dallas Wings",
+            "teamCode": "DAL_WINGS"
+        },
+        {
+            "id": "peakPerformerRebounding",
+            "type": "stat-leader-player",
+            "award": "TOP REBOUNDER",
+            "winner": "Sylvia Fowles",
+            "team": "Minnesota Lynx",
+            "teamCode": "MIN_LYNX"
+        },
+        {
+            "id": "peakPerformerDishAndAssist",
+            "type": "stat-leader-player",
+            "award": "TOP DISTRIBUTOR",
+            "winner": "Courtney Vandersloot",
+            "team": "Chicago Sky",
+            "teamCode": "CHI_SKY"
+        },
+        {
+            "id": "sixthPlayerOfTheYear",
+            "type": "voted-value-player",
+            "award": "Sixth MVP",
+            "winner": "Jonquel Jones",
+            "team": "Connecticut Sun",
+            "teamCode": "CON_SUN"
+        },
+        {
+            "id": "rookieOfTheYear",
+            "type": "voted-value-player",
+            "award": "Rookie MVP",
+            "winner": "A'ja Wilson",
+            "team": "Las Vegas Aces",
+            "teamCode": "LVA_ACES"
+        },
+        {
+            "id": "sportsmanshipAward",
+            "type": "player",
+            "award": "Kim Perrot Sportsmanship Award",
+            "winner": "Sue Bird",
+            "team": "Seattle Storm",
+            "teamCode": "SEA_STORM"
+        },
+        {
+            "id": "DawnStaleyCommunityLeadershipAward",
+            "type": "player",
+            "award": "Dawn Staley Community Leadership Award",
+            "winner": "Skylar Diggins",
+            "team": "Dallas Wings",
+            "teamCode": "DAL_WINGS"
+        },
+        {
+            "id": "coachOfTheYear",
+            "type": "coach",
+            "award": "Coach of the Year",
+            "winner": "Nicki Collen",
+            "team": "Atlanta Dream",
+            "teamCode": "ATL_DREAM"
+        },
+        {
+            "id": "basketballExecutiveOfTheYear",
+            "type": "adminStaff",
+            "award": "Basketball Executive of the Year",
+            "winner": "Chris Sienko",
+            "team": "Atlanta Dream",
+            "teamCode": "ATL_DREAM"
+        }
+    ],
+    "2019": [
+        {
+            "id": "MVP",
+            "type": "voted-value-player",
+            "award": "season MVP",
+            "winner": "Elena Delle Donne",
+            "team": "Washington Mystics",
+            "teamCode": "WAS_MYSTICS"
+        },
+        {
+            "id": "topScorer",
+            "type": "player",
+            "award": "Top Scorer",
+            "winner": "Brittney Griner",
+            "team": "Phoenix Mercury",
+            "teamCode": "PHX_MERCURY"
+        },
+        {
+            "id": "topDraftPick",
+            "type": "player",
+            "award": "Top draft pick",
+            "winner": "Jackie Young",
+            "team": "Las Vegas Aces",
+            "teamCode": "LVA_ACES"
+        },
+        {
+            "id": "defensivePlayerOfTheYear",
+            "type": "voted-value-player",
+            "award": "Defensive MVP",
+            "winner": "Natasha Howard",
+            "team": "Seattle Storm",
+            "teamCode": "SEA_STORM"
+        },
+        {
+            "id": "mostImprovedPlayer",
+            "type": "voted-value-player",
+            "award": "Most Improved MVP",
+            "winner": "Emma Meesseman",
+            "team": "Washington Mystics",
+            "teamCode": "WAS_MYSTICS"
+        },
+        {
+            "id": "peakPerformerScoring",
+            "type": "stat-leader-player",
+            "award": "TOP SCORER",
+            "winner": "Brittney Griner",
+            "team": "Phoenix Mercury",
+            "teamCode": "PHX_MERCURY"
+        },
+        {
+            "id": "peakPerformerRebounding",
+            "type": "stat-leader-player",
+            "award": "TOP REBOUNDER",
+            "winner": "Jonquel Jones",
+            "team": "Connecticut Sun",
+            "teamCode": "CON_SUN"
+        },
+        {
+            "id": "peakPerformerDishAndAssist",
+            "type": "stat-leader-player",
+            "award": "TOP DISTRIBUTOR",
+            "winner": "Courtney Vandersloot",
+            "team": "Chicago Sky",
+            "teamCode": "CHI_SKY"
+        },
+        {
+            "id": "sixthPlayerOfTheYear",
+            "type": "voted-value-player",
+            "award": "Sixth MVP",
+            "winner": "Dearica Hamby",
+            "team": "Las Vegas Aces",
+            "teamCode": "LVA_ACES"
+        },
+        {
+            "id": "rookieOfTheYear",
+            "type": "voted-value-player",
+            "award": "Rookie MVP",
+            "winner": "Napheesa Collier",
+            "team": "Minnesota Lynx",
+            "teamCode": "MIN_LYNX"
+        },
+        {
+            "id": "sportsmanshipAward",
+            "type": "player",
+            "award": "Kim Perrot Sportsmanship Award",
+            "winner": "Nneka Ogwumike",
+            "team": "Los Angeles Sparks",
+            "teamCode": "LOS_SPARKS"
+        },
+        {
+            "id": "DawnStaleyCommunityLeadershipAward",
+            "type": "player",
+            "award": "Dawn Staley Community Leadership Award",
+            "winner": "Natasha Cloud",
+            "team": "Washington Mystics",
+            "teamCode": "WAS_MYSTICS"
+        },
+        {
+            "id": "coachOfTheYear",
+            "type": "coach",
+            "award": "Coach of the Year",
+            "winner": "James Wade",
+            "team": "Chicago Sky",
+            "teamCode": "CHI_SKY"
+        },
+        {
+            "id": "basketballExecutiveOfTheYear",
+            "type": "adminStaff",
+            "award": "Basketball Executive of the Year",
+            "winner": "Cheryl Reeve",
+            "team": "Minnesota Lynx",
+            "teamCode": "MIN_LYNX"
+        }
+    ],
+    "2020": [
+        {
+            "id": "MVP",
+            "type": "voted-value-player",
+            "award": "season MVP",
+            "winner": "A'ja Wilson",
+            "team": "Las Vegas Aces",
+            "teamCode": "LVA_ACES"
+        },
+        {
+            "id": "topScorer",
+            "type": "player",
+            "award": "Top Scorer",
+            "winner": "Arike Ogunbowale",
+            "team": "Dallas Wings",
+            "teamCode": "DAL_WINGS"
+        },
+        {
+            "id": "topDraftPick",
+            "type": "player",
+            "award": "Top draft pick",
+            "winner": "Sabrina Ionescu",
+            "team": "New York Liberty",
+            "teamCode": "NYL_LIBERTY"
+        },
+        {
+            "id": "defensivePlayerOfTheYear",
+            "type": "voted-value-player",
+            "award": "Defensive MVP",
+            "winner": "Candace Parker",
+            "team": "Los Angeles Sparks",
+            "teamCode": "LOS_SPARKS"
+        },
+        {
+            "id": "mostImprovedPlayer",
+            "type": "voted-value-player",
+            "award": "Most Improved MVP",
+            "winner": "Betnijah Laney",
+            "team": "Atlanta Dream",
+            "teamCode": "ATL_DREAM"
+        },
+        {
+            "id": "peakPerformerScoring",
+            "type": "stat-leader-player",
+            "award": "TOP SCORER",
+            "winner": "Arike Ogunbowale",
+            "team": "Dallas Wings",
+            "teamCode": "DAL_WINGS"
+        },
+        {
+            "id": "peakPerformerRebounding",
+            "type": "stat-leader-player",
+            "award": "TOP REBOUNDER",
+            "winner": "Candace Parker",
+            "team": "Los Angeles Sparks",
+            "teamCode": "LOS_SPARKS"
+        },
+        {
+            "id": "peakPerformerDishAndAssist",
+            "type": "stat-leader-player",
+            "award": "TOP DISTRIBUTOR",
+            "winner": "Courtney Vandersloot",
+            "team": "Chicago Sky",
+            "teamCode": "CHI_SKY"
+        },
+        {
+            "id": "sixthPlayerOfTheYear",
+            "type": "voted-value-player",
+            "award": "Sixth MVP",
+            "winner": "Dearica Hamby",
+            "team": "Las Vegas Aces",
+            "teamCode": "LVA_ACES"
+        },
+        {
+            "id": "rookieOfTheYear",
+            "type": "voted-value-player",
+            "award": "Rookie MVP",
+            "winner": "Crystal Dangerfield",
+            "team": "Minnesota Lynx",
+            "teamCode": "MIN_LYNX"
+        },
+        {
+            "id": "sportsmanshipAward",
+            "type": "player",
+            "award": "Kim Perrot Sportsmanship Award",
+            "winner": "Nneka Ogwumike",
+            "team": "Los Angeles Sparks",
+            "teamCode": "LOS_SPARKS"
+        },
+        {
+            "id": "DawnStaleyCommunityLeadershipAward",
+            "type": "player",
+            "award": "Dawn Staley Community Leadership Award",
+            "winner": "Natalie Achonwa",
+            "team": "Indiana Fever",
+            "teamCode": "IND_FEVER"
+        },
+        {
+            "id": "coachOfTheYear",
+            "type": "coach",
+            "award": "Coach of the Year",
+            "winner": "Cheryl Reeve",
+            "team": "Minnesota Lynx",
+            "teamCode": "MIN_LYNX"
+        },
+        {
+            "id": "basketballExecutiveOfTheYear",
+            "type": "adminStaff",
+            "award": "Basketball Executive of the Year",
+            "winner": "Dan Padover",
+            "team": "Las Vegas Aces",
+            "teamCode": "LVA_ACES"
+        }
+    ],
+    "2021": [
+        {
+            "id": "MVP",
+            "type": "voted-value-player",
+            "award": "season MVP",
+            "winner": "Jonquel Jones",
+            "team": "Connecticut Sun",
+            "teamCode": "CON_SUN"
+        },
+        {
+            "id": "topScorer",
+            "type": "player",
+            "award": "Top Scorer",
+            "winner": "Tina Charles",
+            "team": "Washington Mystics",
+            "teamCode": "WAS_MYSTICS"
+        },
+        {
+            "id": "topDraftPick",
+            "type": "player",
+            "award": "Top draft pick",
+            "winner": "Charli Collier",
+            "team": "Dallas Wings",
+            "teamCode": "DAL_WINGS"
+        },
+        {
+            "id": "defensivePlayerOfTheYear",
+            "type": "voted-value-player",
+            "award": "Defensive MVP",
+            "winner": "Sylvia Fowles",
+            "team": "Minnesota Lynx",
+            "teamCode": "MIN_LYNX"
+        },
+        {
+            "id": "mostImprovedPlayer",
+            "type": "voted-value-player",
+            "award": "Most Improved MVP",
+            "winner": "Brionna Jones",
+            "team": "Connecticut Sun",
+            "teamCode": "CON_SUN"
+        },
+        {
+            "id": "peakPerformerScoring",
+            "type": "stat-leader-player",
+            "award": "TOP SCORER",
+            "winner": "Tina Charles",
+            "team": "Washington Mystics",
+            "teamCode": "WAS_MYSTICS"
+        },
+        {
+            "id": "peakPerformerRebounding",
+            "type": "stat-leader-player",
+            "award": "TOP REBOUNDER",
+            "winner": "Jonquel Jones",
+            "team": "Connecticut Sun",
+            "teamCode": "CON_SUN"
+        },
+        {
+            "id": "peakPerformerDishAndAssist",
+            "type": "stat-leader-player",
+            "award": "TOP DISTRIBUTOR",
+            "winner": "Courtney Vandersloot",
+            "team": "Chicago Sky",
+            "teamCode": "CHI_SKY"
+        },
+        {
+            "id": "sixthPlayerOfTheYear",
+            "type": "voted-value-player",
+            "award": "Sixth MVP",
+            "winner": "Kelsey Plum",
+            "team": "Las Vegas Aces",
+            "teamCode": "LVA_ACES"
+        },
+        {
+            "id": "rookieOfTheYear",
+            "type": "voted-value-player",
+            "award": "Rookie MVP",
+            "winner": "Michaela Onyenwere",
+            "team": "New York Liberty",
+            "teamCode": "NYL_LIBERTY"
+        },
+        {
+            "id": "sportsmanshipAward",
+            "type": "player",
+            "award": "Kim Perrot Sportsmanship Award",
+            "winner": "Nneka Ogwumike",
+            "team": "Los Angeles Sparks",
+            "teamCode": "LOS_SPARKS"
+        },
+        {
+            "id": "coachOfTheYear",
+            "type": "coach",
+            "award": "Coach of the Year",
+            "winner": "Curt Miller",
+            "team": "Connecticut Sun",
+            "teamCode": "CON_SUN"
+        },
+        {
+            "id": "basketballExecutiveOfTheYear",
+            "type": "adminStaff",
+            "award": "Basketball Executive of the Year",
+            "winner": "Dan Padover",
+            "team": "Las Vegas Aces",
+            "teamCode": "LVA_ACES"
+        }
+    ],
+    "2022": [
+        {
+            "id": "MVP",
+            "type": "voted-value-player",
+            "award": "season MVP",
+            "winner": "A'ja Wilson",
+            "team": "Las Vegas Aces",
+            "teamCode": "LVA_ACES"
+        },
+        {
+            "id": "topScorer",
+            "type": "player",
+            "award": "Top Scorer",
+            "winner": "Breanna Stewart",
+            "team": "Seattle Storm",
+            "teamCode": "SEA_STORM"
+        },
+        {
+            "id": "topDraftPick",
+            "type": "player",
+            "award": "Top draft pick",
+            "winner": "Rhyne Howard",
+            "team": "Atlanta Dream",
+            "teamCode": "ATL_DREAM"
+        },
+        {
+            "id": "defensivePlayerOfTheYear",
+            "type": "voted-value-player",
+            "award": "Defensive MVP",
+            "winner": "A'ja Wilson",
+            "team": "Las Vegas Aces",
+            "teamCode": "LVA_ACES"
+        },
+        {
+            "id": "mostImprovedPlayer",
+            "type": "voted-value-player",
+            "award": "Most Improved MVP",
+            "winner": "Jackie Young",
+            "team": "Las Vegas Aces",
+            "teamCode": "LVA_ACES"
+        },
+        {
+            "id": "peakPerformerScoring",
+            "type": "stat-leader-player",
+            "award": "TOP SCORER",
+            "winner": "Breanna Stewart",
+            "team": "Seattle Storm",
+            "teamCode": "SEA_STORM"
+        },
+        {
+            "id": "peakPerformerRebounding",
+            "type": "stat-leader-player",
+            "award": "TOP REBOUNDER",
+            "winner": "Sylvia Fowles",
+            "team": "Minnesota Lynx",
+            "teamCode": "MIN_LYNX"
+        },
+        {
+            "id": "peakPerformerDishAndAssist",
+            "type": "stat-leader-player",
+            "award": "TOP DISTRIBUTOR",
+            "winner": "Natasha Cloud",
+            "team": "Washington Mystics",
+            "teamCode": "WAS_MYSTICS"
+        },
+        {
+            "id": "sixthPlayerOfTheYear",
+            "type": "voted-value-player",
+            "award": "Sixth MVP",
+            "winner": "Brionna Jones",
+            "team": "Connecticut Sun",
+            "teamCode": "CON_SUN"
+        },
+        {
+            "id": "rookieOfTheYear",
+            "type": "voted-value-player",
+            "award": "Rookie MVP",
+            "winner": "Rhyne Howard",
+            "team": "Atlanta Dream",
+            "teamCode": "ATL_DREAM"
+        },
+        {
+            "id": "sportsmanshipAward",
+            "type": "player",
+            "award": "Kim Perrot Sportsmanship Award",
+            "winner": "Sylvia Fowles",
+            "team": "Minnesota Lynx",
+            "teamCode": "MIN_LYNX"
+        },
+        {
+            "id": "DawnStaleyCommunityLeadershipAward",
+            "type": "player",
+            "award": "Dawn Staley Community Leadership Award",
+            "winner": "Betnijah Laney",
+            "team": "New York Liberty",
+            "teamCode": "NYL_LIBERTY"
+        },
+        {
+            "id": "coachOfTheYear",
+            "type": "coach",
+            "award": "Coach of the Year",
+            "winner": "Becky Hammon",
+            "team": "Las Vegas Aces",
+            "teamCode": "LVA_ACES"
+        },
+        {
+            "id": "basketballExecutiveOfTheYear",
+            "type": "adminStaff",
+            "award": "Basketball Executive of the Year",
+            "winner": "James Wade",
+            "team": "Chicago Sky",
+            "teamCode": "CHI_SKY"
+        }
+    ],
+    "2023": [
+        {
+            "id": "MVP",
+            "type": "voted-value-player",
+            "award": "season MVP",
+            "winner": "Breanna Stewart",
+            "team": "New York Liberty",
+            "teamCode": "NYL_LIBERTY"
+        },
+        {
+            "id": "topScorer",
+            "type": "player",
+            "award": "Top Scorer",
+            "winner": "Jewell Loyd",
+            "team": "Seattle Storm",
+            "teamCode": "SEA_STORM"
+        },
+        {
+            "id": "topDraftPick",
+            "type": "player",
+            "award": "Top draft pick",
+            "winner": "Aliyah Boston",
+            "team": "Indiana Fever",
+            "teamCode": "IND_FEVER"
+        },
+        {
+            "id": "defensivePlayerOfTheYear",
+            "type": "voted-value-player",
+            "award": "Defensive MVP",
+            "winner": "A'ja Wilson",
+            "team": "Las Vegas Aces",
+            "teamCode": "LVA_ACES"
+        },
+        {
+            "id": "mostImprovedPlayer",
+            "type": "voted-value-player",
+            "award": "Most Improved MVP",
+            "winner": "Satou Sabally",
+            "team": "Dallas Wings",
+            "teamCode": "DAL_WINGS"
+        },
+        {
+            "id": "peakPerformerScoring",
+            "type": "stat-leader-player",
+            "award": "TOP SCORER",
+            "winner": "Jewell Loyd",
+            "team": "Seattle Storm",
+            "teamCode": "SEA_STORM"
+        },
+        {
+            "id": "peakPerformerRebounding",
+            "type": "stat-leader-player",
+            "award": "TOP REBOUNDER",
+            "winner": "Alyssa Thomas",
+            "team": "Connecticut Sun",
+            "teamCode": "CON_SUN"
+        },
+        {
+            "id": "peakPerformerDishAndAssist",
+            "type": "stat-leader-player",
+            "award": "TOP DISTRIBUTOR",
+            "winner": "Courtney Vandersloot",
+            "team": "New York Liberty",
+            "teamCode": "NYL_LIBERTY"
+        },
+        {
+            "id": "sixthPlayerOfTheYear",
+            "type": "voted-value-player",
+            "award": "Sixth MVP",
+            "winner": "Alysha Clark",
+            "team": "Las Vegas Aces",
+            "teamCode": "LVA_ACES"
+        },
+        {
+            "id": "rookieOfTheYear",
+            "type": "voted-value-player",
+            "award": "Rookie MVP",
+            "winner": "Aliyah Boston",
+            "team": "Indiana Fever",
+            "teamCode": "IND_FEVER"
+        },
+        {
+            "id": "sportsmanshipAward",
+            "type": "player",
+            "award": "Kim Perrot Sportsmanship Award",
+            "winner": "Elizabeth Williams",
+            "team": "Chicago Sky",
+            "teamCode": "CHI_SKY"
+        },
+        {
+            "id": "DawnStaleyCommunityLeadershipAward",
+            "type": "player",
+            "award": "Dawn Staley Community Leadership Award",
+            "winner": "Kelsey Mitchell",
+            "team": "Indiana Fever",
+            "teamCode": "IND_FEVER"
+        },
+        {
+            "id": "coachOfTheYear",
+            "type": "coach",
+            "award": "Coach of the Year",
+            "winner": "Stephanie White",
+            "team": "Connecticut Sun",
+            "teamCode": "CON_SUN"
+        },
+        {
+            "id": "basketballExecutiveOfTheYear",
+            "type": "adminStaff",
+            "award": "Basketball Executive of the Year",
+            "winner": "Jonathan Kolb",
+            "team": "New York Liberty",
+            "teamCode": "NYL_LIBERTY"
+        }
+    ],
+    "2024": [
+        {
+            "id": "MVP",
+            "type": "voted-value-player",
+            "award": "season MVP",
+            "winner": "A'ja Wilson",
+            "team": "Las Vegas Aces",
+            "teamCode": "LVA_ACES"
+        },
+        {
+            "id": "topScorer",
+            "type": "player",
+            "award": "Top Scorer",
+            "winner": "A'ja Wilson",
+            "team": "Las Vegas Aces",
+            "teamCode": "LVA_ACES"
+        },
+        {
+            "id": "topDraftPick",
+            "type": "player",
+            "award": "Top draft pick",
+            "winner": "Caitlin Clark",
+            "team": "Indiana Fever",
+            "teamCode": "IND_FEVER"
+        },
+        {
+            "id": "defensivePlayerOfTheYear",
+            "type": "voted-value-player",
+            "award": "Defensive MVP",
+            "winner": "Napheesa Collier",
+            "team": "Minnesota Lynx",
+            "teamCode": "MIN_LYNX"
+        },
+        {
+            "id": "mostImprovedPlayer",
+            "type": "voted-value-player",
+            "award": "Most Improved MVP",
+            "winner": "Dijonai Carrington",
+            "team": "Connecticut Sun",
+            "teamCode": "CON_SUN"
+        },
+        {
+            "id": "peakPerformerScoring",
+            "type": "stat-leader-player",
+            "award": "TOP SCORER",
+            "winner": "A'ja Wilson",
+            "team": "Las Vegas Aces",
+            "teamCode": "LVA_ACES"
+        },
+        {
+            "id": "peakPerformerRebounding",
+            "type": "stat-leader-player",
+            "award": "TOP REBOUNDER",
+            "winner": "Angel Reese",
+            "team": "Chicago Sky",
+            "teamCode": "CHI_SKY"
+        },
+        {
+            "id": "peakPerformerDishAndAssist",
+            "type": "stat-leader-player",
+            "award": "TOP DISTRIBUTOR",
+            "winner": "Caitlin Clark",
+            "team": "Indiana Fever",
+            "teamCode": "IND_FEVER"
+        },
+        {
+            "id": "sixthPlayerOfTheYear",
+            "type": "voted-value-player",
+            "award": "Sixth MVP",
+            "winner": "Tiffany Hayes",
+            "team": "Las Vegas Aces",
+            "teamCode": "LVA_ACES"
+        },
+        {
+            "id": "rookieOfTheYear",
+            "type": "voted-value-player",
+            "award": "Rookie MVP",
+            "winner": "Caitlin Clark",
+            "team": "Indiana Fever",
+            "teamCode": "IND_FEVER"
+        },
+        {
+            "id": "sportsmanshipAward",
+            "type": "player",
+            "award": "Kim Perrot Sportsmanship Award",
+            "winner": "Dearica Hamby",
+            "team": "Los Angeles Sparks",
+            "teamCode": "LOS_SPARKS"
+        },
+        {
+            "id": "DawnStaleyCommunityLeadershipAward",
+            "type": "player",
+            "award": "Dawn Staley Community Leadership Award",
+            "winner": "A'ja Wilson",
+            "team": "Las Vegas Aces",
+            "teamCode": "LVA_ACES"
+        },
+        {
+            "id": "coachOfTheYear",
+            "type": "coach",
+            "award": "Coach of the Year",
+            "winner": "Cheryl Reeve",
+            "team": "Minnesota Lynx",
+            "teamCode": "MIN_LYNX"
+        },
+        {
+            "id": "basketballExecutiveOfTheYear",
+            "type": "adminStaff",
+            "award": "Basketball Executive of the Year",
+            "winner": "Cheryl Reeve",
+            "team": "Minnesota Lynx",
+            "teamCode": "MIN_LYNX"
+        }
+    ],
+    "2025": [
+        {
+            "id": "MVP",
+            "type": "voted-value-player",
+            "award": "season MVP",
+            "winner": "A'ja Wilson",
+            "team": "Las Vegas Aces",
+            "teamCode": "LVA_ACES"
+        },
+        {
+            "id": "topScorer",
+            "type": "player",
+            "award": "Top Scorer",
+            "winner": "A'ja Wilson",
+            "team": "Las Vegas Aces",
+            "teamCode": "LVA_ACES"
+        },
+        {
+            "id": "topDraftPick",
+            "type": "player",
+            "award": "Top draft pick",
+            "winner": "Paige Bueckers",
+            "team": "Dallas Wings",
+            "teamCode": "DAL_WINGS"
+        },
+        {
+            "id": "defensivePlayerOfTheYear",
+            "type": "voted-value-player",
+            "award": "Defensive MVP",
+            "winner": "A'ja Wilson",
+            "team": "Las Vegas Aces",
+            "teamCode": "LVA_ACES"
+        },
+        {
+            "id": "defensivePlayerOfTheYearCoWinner",
+            "award": "Defensive Player of the Year - co winner",
+            "winner": "Alanna Smith",
+            "team": "Minnesota Lynx",
+            "teamCode": "MIN_LYNX"
+        },
+        {
+            "id": "mostImprovedPlayer",
+            "type": "voted-value-player",
+            "award": "Most Improved MVP",
+            "winner": "Veronica Burton",
+            "team": "Golden State Valkyries",
+            "teamCode": "GSV_VALKYRIES"
+        },
+        {
+            "id": "peakPerformerScoring",
+            "type": "stat-leader-player",
+            "award": "TOP SCORER",
+            "winner": "A'ja Wilson",
+            "team": "Las Vegas Aces",
+            "teamCode": "LVA_ACES"
+        },
+        {
+            "id": "peakPerformerRebounding",
+            "type": "stat-leader-player",
+            "award": "TOP REBOUNDER",
+            "winner": "Angel Reese",
+            "team": "Chicago Sky",
+            "teamCode": "CHI_SKY"
+        },
+        {
+            "id": "peakPerformerDishAndAssist",
+            "type": "stat-leader-player",
+            "award": "TOP DISTRIBUTOR",
+            "winner": "Alyssa Thomas",
+            "team": "Phoenix Mercury",
+            "teamCode": "PHX_MERCURY"
+        },
+        {
+            "id": "sixthPlayerOfTheYear",
+            "type": "voted-value-player",
+            "award": "Sixth MVP",
+            "winner": "Naz Hillmon",
+            "team": "Atlanta Dream",
+            "teamCode": "ATL_DREAM"
+        },
+        {
+            "id": "rookieOfTheYear",
+            "type": "voted-value-player",
+            "award": "Rookie MVP",
+            "winner": "Paige Bueckers",
+            "team": "Dallas Wings",
+            "teamCode": "DAL_WINGS"
+        },
+        {
+            "id": "sportsmanshipAward",
+            "type": "player",
+            "award": "Kim Perrot Sportsmanship Award",
+            "winner": "Nneka Ogwumike",
+            "team": "Seattle Storm",
+            "teamCode": "SEA_STORM"
+        },
+        {
+            "id": "DawnStaleyCommunityLeadershipAward",
+            "type": "player",
+            "award": "Dawn Staley Community Leadership Award",
+            "winner": "Tina Charles",
+            "team": "Connecticut Sun",
+            "teamCode": "CON_SUN"
+        },
+        {
+            "id": "coachOfTheYear",
+            "type": "coach",
+            "award": "Coach of the Year",
+            "winner": "Natalie Nakase",
+            "team": "Golden State Valkyries",
+            "teamCode": "GSV_VALKYRIES"
+        },
+        {
+            "id": "basketballExecutiveOfTheYear",
+            "type": "adminStaff",
+            "award": "Basketball Executive of the Year",
+            "winner": "Dan Padover",
+            "team": "Atlanta Dream",
+            "teamCode": "ATL_DREAM"
+        },
+        {
+            "id": "basketballExecutiveLeadershipAward",
+            "type": "adminStaff",
+            "award": "Basketball Executive Leadership Award",
+            "winner": "Jess Smith",
+            "team": "Golden State Valkyries",
+            "teamCode": "GSV_VALKYRIES"
+        }
+    ]
+}

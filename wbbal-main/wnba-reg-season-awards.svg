@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   id="wnba-reg-season-awards-svg"
+   width="540"
+   height="320"
+   viewBox="0 0 540 319.99999"
+   version="1.1"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <style
+     id="style4">.mvp-award-player-detail-container {  }
+.mp-award-type-container {   }
+.award-inner-border {   }
+</style>
+  <defs
+     id="defs1" />
+  <rect
+     width="311.07098"
+     height="100"
+     x="8.0290527"
+     y="110"
+     class="award-title-container"
+     id="rect5"
+     style="stroke-width:0.999999">
+    <desc
+       id="desc1">no styles or visible elements on page. only for giving sizing constraints for injected text</desc>
+  </rect>
+  <text
+     x="113.03539"
+     y="157.09149"
+     class="award-title"
+     id="text6">SEASON MVP</text>
+  <rect
+     width="250"
+     height="317"
+     x="281.97095"
+     y="1.5"
+     class="award-border"
+     id="rect3" />
+  <path
+     d="M 286.18919,13.739382 H 527.7527"
+     class="award-top-line"
+     id="path3" />
+  <text
+     x="383.13959"
+     y="113.7312"
+     class="award-firstname"
+     id="text3">FIRST NAME</text>
+  <text
+     x="380.97223"
+     y="164.09546"
+     class="award-lastname"
+     id="text4">LAST NAME</text>
+  <rect
+     width="237.99602"
+     height="60"
+     x="286.25668"
+     y="246.26062"
+     class="award-name-bg"
+     id="rect4" />
+  <path
+     d="M 286.18919,251.26062 H 524.2527"
+     class="award-dash-path"
+     id="path4" />
+  <text
+     x="381.26849"
+     y="279.83047"
+     class="award-team"
+     id="text5">teamname</text>
+  <path
+     d="M 286.18919,301.26062 H 524.2527"
+     class="award-dash-path"
+     id="path5" />
+</svg>
