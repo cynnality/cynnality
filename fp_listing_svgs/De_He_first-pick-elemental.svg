@@ -45,7 +45,7 @@
     </marker>
   </defs>
   <rect
-     style="fill:none;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:3;stroke-dasharray:none;stroke-opacity:1"
+     style="fill:#ffffff;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:3;stroke-dasharray:none;stroke-opacity:1"
      id="rect204"
      width="600"
      height="800"
@@ -56,8 +56,8 @@
   <text
      xml:space="preserve"
      style="font-style:normal;font-variant:normal;font-weight:500;font-stretch:normal;font-size:48px;line-height:56.2506px;font-family:'Chivo Mono';-inkscape-font-specification:'Chivo Mono Medium';text-align:center;letter-spacing:0px;word-spacing:-5px;writing-mode:lr-tb;direction:ltr;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:0;stroke-dasharray:none;stroke-opacity:1"
-     x="153.12721"
-     y="111.76855"
+     x="174.78951"
+     y="85.773796"
      id="text80">DENA HEAD</text>
   <rect
      style="display:none;fill:#0000ff;fill-rule:evenodd"
@@ -125,15 +125,15 @@
      transform="translate(-1462.5609,-1340.2839)"><tspan
        x="1673.3223"
        y="1532.6539"
-       id="tspan4"><tspan
+       id="tspan2"><tspan
          dx="0 0 0 0 1.0000005"
          style="stroke:none"
-         id="tspan3">UTAH </tspan></tspan><tspan
+         id="tspan1">UTAH </tspan></tspan><tspan
        x="1673.3223"
        y="1543.0707"
-       id="tspan6"><tspan
+       id="tspan12"><tspan
          style="stroke:none"
-         id="tspan5">STARZZ</tspan></tspan></text>
+         id="tspan11">STARZZ</tspan></tspan></text>
   <path
      style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:2;stroke-linejoin:round;stroke-miterlimit:0;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
      d="m 206.69628,207.47319 h 54.6641"
@@ -147,21 +147,21 @@
      transform="translate(-1462.5609,-1295.0291)"><tspan
        x="1673.3223"
        y="1532.6539"
-       id="tspan8"><tspan
+       id="tspan14"><tspan
          dx="0 0 0 0 0 0 0 1.0000024"
          style="stroke:none"
-         id="tspan7">PHOENIX </tspan></tspan><tspan
+         id="tspan13">PHOENIX </tspan></tspan><tspan
        x="1673.3223"
        y="1543.0707"
-       id="tspan10"><tspan
+       id="tspan16"><tspan
          style="stroke:none"
-         id="tspan9">MERCURY</tspan></tspan></text>
+         id="tspan15">MERCURY</tspan></tspan></text>
   <path
      style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:2;stroke-linejoin:round;stroke-miterlimit:0;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
      d="m 206.69628,253.26299 h 54.6641"
      id="path351" />
   <rect
-     style="fill:#95a8e8;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:4;stroke-dasharray:none;stroke-opacity:1"
+     style="fill:#ffffff;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:4;stroke-dasharray:none;stroke-opacity:1"
      id="rect30"
      width="120"
      height="120"
@@ -169,9 +169,52 @@
      y="153.34875"
      rx="4"
      ry="4" />
+  <text
+     xml:space="preserve"
+     style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:16px;line-height:18.7502px;font-family:'Chivo Mono';-inkscape-font-specification:'Chivo Mono';text-align:center;letter-spacing:-1.5px;word-spacing:-5px;writing-mode:lr-tb;direction:ltr;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0;stroke-miterlimit:0;stroke-dasharray:none;stroke-opacity:1"
+     x="136.27888"
+     y="172.62073"
+     id="text117"><tspan
+       id="tspan117"
+       x="135.52888"
+       y="172.62073">1.1</tspan></text>
+  <text
+     xml:space="preserve"
+     style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:53.3333px;line-height:62.5006px;font-family:'Chivo Mono';-inkscape-font-specification:'Chivo Mono';text-align:center;letter-spacing:-6px;word-spacing:-5px;writing-mode:lr-tb;direction:ltr;text-anchor:middle;fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:0;stroke-miterlimit:0;stroke-dasharray:none;stroke-opacity:1"
+     x="73.310379"
+     y="231.65674"
+     id="text127"><tspan
+       id="tspan127"
+       x="70.310379"
+       y="231.65674"
+       style="font-size:53.3333px;line-height:62.5006px;letter-spacing:-6px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0;stroke-dasharray:none">D<tspan
+   style="font-size:29.3333px;baseline-shift:super"
+   id="tspan123">e</tspan></tspan></text>
+  <text
+     xml:space="preserve"
+     style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:53.3333px;line-height:62.5006px;font-family:'Chivo Mono';-inkscape-font-specification:'Chivo Mono';text-align:center;letter-spacing:-3px;word-spacing:-5px;writing-mode:lr-tb;direction:ltr;text-anchor:middle;fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:0;stroke-miterlimit:0;stroke-dasharray:none;stroke-opacity:1"
+     x="116.54768"
+     y="231.65674"
+     id="text133"><tspan
+       id="tspan133"
+       x="115.04768"
+       y="231.65674"
+       style="line-height:62.5006px;letter-spacing:-3px;baseline-shift:baseline;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0;stroke-dasharray:none">H<tspan
+   style="font-size:29.3333px;baseline-shift:super"
+   id="tspan131">e</tspan></tspan></text>
+  <text
+     xml:space="preserve"
+     style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:53.3333px;line-height:62.5006px;font-family:'Chivo Mono';-inkscape-font-specification:'Chivo Mono';text-align:center;letter-spacing:-8px;word-spacing:-5px;writing-mode:lr-tb;direction:ltr;text-anchor:middle;fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:0;stroke-miterlimit:0;stroke-dasharray:none;stroke-opacity:1"
+     x="89.848709"
+     y="231.65674"
+     id="text137"><tspan
+       id="tspan137"
+       x="85.848709"
+       y="231.65674"
+       style="font-size:53.3333px;line-height:62.5006px;letter-spacing:-8px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0;stroke-dasharray:none">.</tspan></text>
   <path
      style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-linejoin:round;stroke-miterlimit:0;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
-     d="m 337.37058,115.72058 v 54.125 h 246.5921"
+     d="m 337.37058,136.14399 v 54.125 h 246.5921"
      id="path550" />
   <path
      style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:2;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:0;stroke-dasharray:none;stroke-opacity:1"
@@ -183,123 +226,123 @@
      width="289.19196"
      height="90"
      x="297.97906"
-     y="201.65666" />
+     y="222.08008" />
   <text
      xml:space="preserve"
      style="font-style:italic;font-variant:normal;font-weight:200;font-stretch:normal;font-size:16px;line-height:18px;font-family:'Chivo Mono';-inkscape-font-specification:'Chivo Mono Ultra-Light Italic';text-align:center;letter-spacing:-1.5px;word-spacing:-1px;writing-mode:lr-tb;direction:ltr;text-anchor:middle;white-space:pre;inline-size:199.923;display:inline;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0;stroke-linejoin:round;stroke-miterlimit:0;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
      x="2036.6444"
      y="1366.4839"
      id="text552"
-     transform="translate(-1593.7813,-1147.9609)"><tspan
+     transform="translate(-1593.7813,-1127.5375)"><tspan
        x="2036.6444"
        y="1366.4839"
-       id="tspan12"><tspan
+       id="tspan18"><tspan
          dx="0 0 0 0 0 0 1 -1 0 0 0 0 0 1 -1"
          style="font-style:normal;font-weight:normal;-inkscape-font-specification:'Chivo Mono'"
-         id="tspan11">rookie season averages</tspan></tspan></text>
+         id="tspan17">rookie season averages</tspan></tspan></text>
   <rect
      style="fill:#ffffff;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0.999998;stroke-dasharray:none;stroke-opacity:1"
      id="rect552"
      width="69"
      height="30.310495"
      x="317.1275"
-     y="244.21855" />
+     y="264.64197" />
   <rect
      style="fill:#ffffff;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0.999998;stroke-dasharray:none;stroke-opacity:1"
      id="rect553"
      width="69"
      height="30.310495"
      x="411.96393"
-     y="244.12529" />
+     y="264.54871" />
   <rect
      style="fill:#ffffff;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0.999998;stroke-dasharray:none;stroke-opacity:1"
      id="rect554"
      width="69"
      height="30.310495"
      x="506.80084"
-     y="244.17192" />
+     y="264.59534" />
   <text
      xml:space="preserve"
      style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:16px;line-height:18.7502px;font-family:'Chivo Mono';-inkscape-font-specification:'Chivo Mono';text-align:end;letter-spacing:-3px;word-spacing:-1px;writing-mode:lr-tb;direction:ltr;text-anchor:end;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0;stroke-linejoin:round;stroke-miterlimit:0;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
      x="471.84943"
-     y="246.15984"
+     y="266.58325"
      id="text555"><tspan
        id="tspan554"
        x="471.84943"
-       y="246.15984" /><tspan
+       y="266.58325" /><tspan
        x="468.84943"
-       y="265.68317"
+       y="286.10657"
        id="tspan555"
        style="font-size:18.6667px;letter-spacing:-3px">R: 2.3</tspan></text>
   <text
      xml:space="preserve"
      style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:16px;line-height:18.7502px;font-family:'Chivo Mono';-inkscape-font-specification:'Chivo Mono';text-align:end;letter-spacing:-3px;word-spacing:-1px;writing-mode:lr-tb;direction:ltr;text-anchor:end;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0;stroke-linejoin:round;stroke-miterlimit:0;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
      x="567.29279"
-     y="246.29985"
+     y="266.72327"
      id="text557"><tspan
        id="tspan556"
        x="567.29279"
-       y="246.29985" /><tspan
+       y="266.72327" /><tspan
        x="564.29279"
-       y="265.82318"
+       y="286.24658"
        id="tspan557"
        style="font-size:18.6667px;letter-spacing:-3px">A: 1.7</tspan></text>
   <text
      xml:space="preserve"
      style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:16px;line-height:18.7502px;font-family:'Chivo Mono';-inkscape-font-specification:'Chivo Mono';text-align:end;letter-spacing:-3px;word-spacing:-1px;writing-mode:lr-tb;direction:ltr;text-anchor:end;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0;stroke-linejoin:round;stroke-miterlimit:0;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
      x="381.18756"
-     y="246.15984"
+     y="266.58325"
      id="text559"><tspan
        id="tspan558"
        x="381.18756"
-       y="246.15984" /><tspan
+       y="266.58325" /><tspan
        x="378.18756"
-       y="265.68317"
+       y="286.10657"
        id="tspan559"
        style="font-size:18.6667px;letter-spacing:-3px">P: 5.7</tspan></text>
   <path
      style="fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-linejoin:round;stroke-miterlimit:0;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
-     d="m 297.97928,236.94228 h 289.192"
+     d="m 297.97928,257.36569 h 289.192"
      id="path559" />
   <text
      xml:space="preserve"
      style="font-style:italic;font-variant:normal;font-weight:100;font-stretch:normal;font-size:10.6667px;line-height:30.4762px;font-family:'Chivo Mono';-inkscape-font-specification:'Chivo Mono Thin Italic';text-align:center;letter-spacing:-1px;word-spacing:-2px;writing-mode:lr-tb;direction:ltr;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1;stroke-linejoin:round;stroke-miterlimit:0;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
      x="351.8089"
-     y="286.22235"
+     y="306.64575"
      id="text560"><tspan
        id="tspan560"
        x="351.3089"
-       y="286.22235">points</tspan></text>
+       y="306.64575">points</tspan></text>
   <text
      xml:space="preserve"
      style="font-style:italic;font-variant:normal;font-weight:100;font-stretch:normal;font-size:10.6667px;line-height:30.4762px;font-family:'Chivo Mono';-inkscape-font-specification:'Chivo Mono Thin Italic';text-align:center;letter-spacing:-1px;word-spacing:-2px;writing-mode:lr-tb;direction:ltr;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1;stroke-linejoin:round;stroke-miterlimit:0;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
      x="446.90656"
-     y="286.22235"
+     y="306.64575"
      id="text561"><tspan
        id="tspan561"
        x="446.40656"
-       y="286.22235">rebounds</tspan></text>
+       y="306.64575">rebounds</tspan></text>
   <text
      xml:space="preserve"
      style="font-style:italic;font-variant:normal;font-weight:100;font-stretch:normal;font-size:10.6667px;line-height:30.4762px;font-family:'Chivo Mono';-inkscape-font-specification:'Chivo Mono Thin Italic';text-align:center;letter-spacing:-1px;word-spacing:-2px;writing-mode:lr-tb;direction:ltr;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1;stroke-linejoin:round;stroke-miterlimit:0;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
      x="541.38605"
-     y="286.22235"
+     y="306.64575"
      id="text562"><tspan
        id="tspan562"
        x="540.88605"
-       y="286.22235">assists</tspan></text>
+       y="306.64575">assists</tspan></text>
   <text
      xml:space="preserve"
      style="font-style:italic;font-variant:normal;font-weight:200;font-stretch:normal;font-size:10.6667px;line-height:12px;font-family:'Chivo Mono';-inkscape-font-specification:'Chivo Mono Ultra-Light Italic';text-align:center;letter-spacing:-1px;word-spacing:-1px;writing-mode:lr-tb;direction:ltr;text-anchor:middle;white-space:pre;inline-size:199.923;display:inline;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0;stroke-linejoin:round;stroke-miterlimit:0;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
      x="2036.6444"
      y="1366.4839"
      id="text564"
-     transform="translate(-1594.0746,-1136.2756)"><tspan
+     transform="translate(-1594.0746,-1115.8522)"><tspan
        x="2036.6444"
        y="1366.4839"
-       id="tspan14"><tspan
+       id="tspan20"><tspan
          dx="0 0 0 0 0.99999952 -1.0000005"
-         id="tspan13">(per game)</tspan></tspan></text>
+         id="tspan19">(per game)</tspan></tspan></text>
   <text
      xml:space="preserve"
      style="font-style:normal;font-variant:normal;font-weight:300;font-stretch:normal;font-size:10.6667px;line-height:12px;font-family:'Chivo Mono';-inkscape-font-specification:'Chivo Mono Light';text-align:center;letter-spacing:-1px;word-spacing:-2px;writing-mode:lr-tb;direction:ltr;text-anchor:middle;fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-linejoin:round;stroke-miterlimit:0;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
@@ -316,35 +359,35 @@
      width="289.19196"
      height="39"
      x="298.89557"
-     y="112.0971" />
+     y="132.52051" />
   <text
      xml:space="preserve"
      style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:18.6667px;line-height:17.5001px;font-family:'Chivo Mono';-inkscape-font-specification:'Chivo Mono';text-align:center;letter-spacing:-2px;word-spacing:-5px;writing-mode:lr-tb;direction:ltr;text-anchor:middle;white-space:pre;inline-size:299.614;display:inline;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:0;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
      x="685.28882"
      y="1394.5914"
      id="text584"
-     transform="translate(-241.71352,-1253.2871)"><tspan
+     transform="translate(-241.71352,-1232.8637)"><tspan
        x="685.28882"
        y="1394.5914"
-       id="tspan16"><tspan
+       id="tspan22"><tspan
          dx="0 0 0 0 0 0 0 0 0 0 5.0000048 -5.0000029 0 5.0000048 -5.0000029"
-         id="tspan15">University of Tennessee</tspan></tspan></text>
+         id="tspan21">University of Tennessee</tspan></tspan></text>
   <rect
      style="fill:#ffffff;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-opacity:1"
      id="rect584"
      width="60"
      height="20"
      x="515.76813"
-     y="91.947548" />
+     y="112.37096" />
   <text
      xml:space="preserve"
      style="font-style:normal;font-variant:normal;font-weight:300;font-stretch:normal;font-size:13.3333px;line-height:12.5001px;font-family:'Chivo Mono';-inkscape-font-specification:'Chivo Mono Light';text-align:center;letter-spacing:-1px;word-spacing:-2px;writing-mode:lr-tb;direction:ltr;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1;stroke-linejoin:round;stroke-miterlimit:0;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
      x="545.88824"
-     y="107.52094"
+     y="127.94434"
      id="text585"><tspan
        id="tspan585"
        x="545.38824"
-       y="107.52094"
+       y="127.94434"
        style="font-size:13.3333px;line-height:12.5001px">COLLEGE</tspan></text>
   <rect
      style="fill:#ffffff;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:1;stroke-opacity:1"
@@ -352,16 +395,16 @@
      width="32.5"
      height="19"
      x="350.79059"
-     y="160.34575" />
+     y="180.76917" />
   <text
      xml:space="preserve"
      style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:10.6667px;line-height:10.0001px;font-family:'Chivo Mono';-inkscape-font-specification:'Chivo Mono';text-align:center;letter-spacing:-1px;word-spacing:-2px;writing-mode:lr-tb;direction:ltr;text-anchor:middle;fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-linejoin:round;stroke-miterlimit:0;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
      x="367.41925"
-     y="173.50444"
+     y="193.92786"
      id="text586"><tspan
        id="tspan586"
        x="366.91925"
-       y="173.50444"
+       y="193.92786"
        style="font-style:italic;font-variant:normal;font-weight:300;font-stretch:normal;font-size:10.6667px;line-height:10.0001px;font-family:'Chivo Mono';-inkscape-font-specification:'Chivo Mono Light Italic';letter-spacing:-1px;fill:#000000;fill-opacity:1;stroke:none">AKA</tspan></text>
   <rect
      style="fill:#ffffff;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:1;stroke-opacity:1"
@@ -369,30 +412,30 @@
      width="98.249756"
      height="19"
      x="387.43927"
-     y="160.34575" />
+     y="180.76917" />
   <rect
      style="fill:#ffffff;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:1;stroke-opacity:1"
      id="rect587"
      width="98.249756"
      height="19"
      x="489.83795"
-     y="160.34575" />
+     y="180.76917" />
   <rect
      style="fill:#ffffff;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:1;stroke-opacity:1"
      id="rect588"
      width="37.372585"
      height="20"
      x="297.97906"
-     y="201.65666" />
+     y="222.08008" />
   <text
      xml:space="preserve"
      style="font-style:normal;font-variant:normal;font-weight:300;font-stretch:normal;font-size:13.3333px;line-height:12.5001px;font-family:'Chivo Mono';-inkscape-font-specification:'Chivo Mono Light';text-align:center;letter-spacing:-1px;word-spacing:-2px;writing-mode:lr-tb;direction:ltr;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1;stroke-linejoin:round;stroke-miterlimit:0;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
      x="316.76544"
-     y="216.23003"
+     y="236.65344"
      id="text589"><tspan
        id="tspan589"
        x="316.26544"
-       y="216.23003"
+       y="236.65344"
        style="font-size:13.3333px;line-height:12.5001px">WNBA</tspan></text>
   <text
      xml:space="preserve"
@@ -425,6 +468,10 @@
      rx="1"
      ry="1" />
   <path
+     style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:0;stroke-dasharray:none;stroke-opacity:1"
+     d="M 25.036573,24.806694 V 94.010287 H 611.58468"
+     id="path594" />
+  <path
      style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:2;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:0;stroke-dasharray:none;stroke-opacity:1"
      d="M 11.584673,338.83259 H 611.58468"
      id="path595" />
@@ -432,21 +479,21 @@
      xml:space="preserve"
      style="font-style:italic;font-variant:normal;font-weight:300;font-stretch:normal;font-size:13.3333px;line-height:12.5001px;font-family:'Chivo Mono';-inkscape-font-specification:'Chivo Mono Light Italic';text-align:center;letter-spacing:-1px;word-spacing:-2px;writing-mode:lr-tb;direction:ltr;text-anchor:middle;fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-linejoin:round;stroke-miterlimit:0;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
      x="435.89081"
-     y="174.41911"
+     y="194.84253"
      id="text398"><tspan
        id="tspan398"
        x="435.39081"
-       y="174.41911"
+       y="194.84253"
        style="font-style:italic;font-variant:normal;font-weight:300;font-stretch:normal;font-size:13.3333px;line-height:12.5001px;font-family:'Chivo Mono';-inkscape-font-specification:'Chivo Mono Light Italic';letter-spacing:-1px;fill:#000000;fill-opacity:1;stroke:none">&quot;TENNESSEE&quot;</tspan></text>
   <text
      xml:space="preserve"
      style="font-style:italic;font-variant:normal;font-weight:300;font-stretch:normal;font-size:13.3333px;line-height:12.5001px;font-family:'Chivo Mono';-inkscape-font-specification:'Chivo Mono Light Italic';text-align:center;letter-spacing:-1px;word-spacing:-2px;writing-mode:lr-tb;direction:ltr;text-anchor:middle;fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-linejoin:round;stroke-miterlimit:0;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
      x="538.28961"
-     y="174.41911"
+     y="194.84253"
      id="text399"><tspan
        id="tspan399"
        x="537.78961"
-       y="174.41911"
+       y="194.84253"
        style="font-style:italic;font-variant:normal;font-weight:300;font-stretch:normal;font-size:13.3333px;line-height:12.5001px;font-family:'Chivo Mono';-inkscape-font-specification:'Chivo Mono Light Italic';letter-spacing:-1px;fill:#000000;fill-opacity:1;stroke:none">&quot;LADY VOLS&quot;</tspan></text>
   <text
      xml:space="preserve"
@@ -510,7 +557,7 @@
      transform="translate(-2297.9997,-818.93084)"><tspan
        x="2353.6252"
        y="1568.25"
-       id="tspan17">1997-1999</tspan></text>
+       id="tspan23">1997-1999</tspan></text>
   <text
      xml:space="preserve"
      style="font-style:normal;font-variant:normal;font-weight:300;font-stretch:normal;font-size:13.3333px;line-height:15.6252px;font-family:'Chivo Mono';-inkscape-font-specification:'Chivo Mono Light';text-align:start;letter-spacing:-1px;word-spacing:-2px;writing-mode:lr-tb;direction:ltr;text-anchor:start;white-space:pre;inline-size:66.1492;display:inline;fill:#000000;fill-opacity:1;stroke:none;stroke-width:2;stroke-linejoin:round;stroke-miterlimit:0;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
@@ -520,7 +567,7 @@
      transform="translate(-2297.9997,-780.0302)"><tspan
        x="2353.6252"
        y="1568.25"
-       id="tspan18">2000</tspan></text>
+       id="tspan24">2000</tspan></text>
   <text
      xml:space="preserve"
      style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:16px;line-height:18.7502px;font-family:'Chivo Mono';-inkscape-font-specification:'Chivo Mono Bold';text-align:start;letter-spacing:-1px;word-spacing:-2px;writing-mode:lr-tb;direction:ltr;text-anchor:start;white-space:pre;inline-size:419.703;display:inline;fill:#000000;fill-opacity:1;stroke:none;stroke-width:2;stroke-linejoin:round;stroke-miterlimit:0;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
@@ -530,22 +577,22 @@
      transform="translate(-2304.3488,-1201.8985)"><tspan
        x="2353.6252"
        y="1568.25"
-       id="tspan20"><tspan
+       id="tspan26"><tspan
          dx="0 0 0 2 -2 0 0 0 0 2 -2 0 0 0 0 2 -2 0 0 0 0 2 -2 0 2 -2 0 0 0 2 -2 0 0 2 -2 0 0 2 -2 0 0 0 0 0 0 2 -2 0 0 0 2"
          style="font-weight:300;-inkscape-font-specification:'Chivo Mono Light'"
-         id="tspan19">The elite draft class of 1997 was for players that </tspan></tspan><tspan
+         id="tspan25">The elite draft class of 1997 was for players that </tspan></tspan><tspan
        x="2353.6252"
        y="1587.0002"
-       id="tspan22"><tspan
+       id="tspan28"><tspan
          dx="0 0 0 2 -2 0 0 0 0 0 0 2 -2 0 0 0 0 0 0 2 -2 0 0 0 0 2 -2 0 0 0 0 0 0 0 0 0 0 0 2 -2 0 0 0 0 0 0 2"
          style="font-weight:300;-inkscape-font-specification:'Chivo Mono Light'"
-         id="tspan21">had already started their professional careers </tspan></tspan><tspan
+         id="tspan27">had already started their professional careers </tspan></tspan><tspan
        x="2353.6252"
        y="1605.7504"
-       id="tspan24"><tspan
+       id="tspan30"><tspan
          dx="0 0 0 0 0 0 0 2 -2 0 2 -2 0 0 2 -2 0 0 0 2"
          style="font-weight:300;-inkscape-font-specification:'Chivo Mono Light'"
-         id="tspan23">outside of the WNBA </tspan></tspan></text>
+         id="tspan29">outside of the WNBA </tspan></tspan></text>
   <text
      xml:space="preserve"
      style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:16px;line-height:18.7502px;font-family:'Chivo Mono';-inkscape-font-specification:'Chivo Mono Bold';text-align:start;letter-spacing:-1px;word-spacing:-2px;writing-mode:lr-tb;direction:ltr;text-anchor:start;white-space:pre;inline-size:210.399;display:inline;fill:#000000;fill-opacity:1;stroke:none;stroke-width:2;stroke-linejoin:round;stroke-miterlimit:0;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
@@ -555,10 +602,10 @@
      transform="translate(-2304.3488,-1077.3433)"><tspan
        x="2353.6252"
        y="1568.25"
-       id="tspan26"><tspan
+       id="tspan32"><tspan
          dx="0 0 0 0 2 -2"
          style="font-weight:300;-inkscape-font-specification:'Chivo Mono Light'"
-         id="tspan25">FIBA MEDALS</tspan></tspan></text>
+         id="tspan31">FIBA MEDALS</tspan></tspan></text>
   <text
      xml:space="preserve"
      style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:13.3333px;line-height:15.6252px;font-family:'Chivo Mono';-inkscape-font-specification:'Chivo Mono Bold';text-align:start;letter-spacing:-1px;word-spacing:-2px;writing-mode:lr-tb;direction:ltr;text-anchor:start;white-space:pre;inline-size:210.399;display:inline;fill:#000000;fill-opacity:1;stroke:none;stroke-width:2;stroke-linejoin:round;stroke-miterlimit:0;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
@@ -568,10 +615,10 @@
      transform="translate(-2285.4558,-1060.952)"><tspan
        x="2353.6252"
        y="1568.25"
-       id="tspan28"><tspan
+       id="tspan34"><tspan
          dx="0 0 0 0 0 2.0000005 -2.0000014"
          style="font-weight:300;-inkscape-font-specification:'Chivo Mono Light'"
-         id="tspan27">World Cup</tspan></tspan></text>
+         id="tspan33">World Cup</tspan></tspan></text>
   <text
      xml:space="preserve"
      style="font-style:normal;font-variant:normal;font-weight:300;font-stretch:normal;font-size:13.3333px;line-height:15.6252px;font-family:'Chivo Mono';-inkscape-font-specification:'Chivo Mono Light';text-align:start;letter-spacing:-1px;word-spacing:-2px;writing-mode:lr-tb;direction:ltr;text-anchor:start;white-space:pre;inline-size:210.399;display:inline;fill:#000000;fill-opacity:1;stroke:none;stroke-width:2;stroke-linejoin:round;stroke-miterlimit:0;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
@@ -581,9 +628,9 @@
      transform="translate(-2269.7267,-1043.473)"><tspan
        x="2353.6252"
        y="1568.25"
-       id="tspan30"><tspan
+       id="tspan36"><tspan
          dx="0 0 0 0 2.0000005 -1.9999995"
-         id="tspan29">1994 BRONZE</tspan></tspan></text>
+         id="tspan35">1994 BRONZE</tspan></tspan></text>
   <path
      style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:2;stroke-linejoin:round;stroke-miterlimit:0;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;marker-end:url(#Dot)"
      d="m 10.883873,359.33153 h 31.6296"
@@ -613,16 +660,16 @@
      transform="translate(-2304.3488,-1135.3594)"><tspan
        x="2353.6252"
        y="1568.25"
-       id="tspan32"><tspan
+       id="tspan38"><tspan
          dx="0 0 0 2 -2 0 0 2 -2 0 0 0 2 -2 0 2 -2 0 0 0 2 -2 0 0 0 0 2 -2 0 0 0 0 2 -2 0 0 0 0 0 0 0 2 -2 0 0 0 2 -2 0 0 2"
          style="font-weight:300;-inkscape-font-specification:'Chivo Mono Light'"
-         id="tspan31">Did not play in 1999 after being released from the </tspan></tspan><tspan
+         id="tspan37">Did not play in 1999 after being released from the </tspan></tspan><tspan
        x="2353.6252"
        y="1587.0002"
-       id="tspan34"><tspan
+       id="tspan40"><tspan
          dx="0 0 0 0 0 0 2 -2 0 0 2 -2 0 0 2 -2 0 0 0 0 0 2 -2 0 0 2 -2 0 0 0 0 2 -2 0 2 -2 0 0 2 -2"
          style="font-weight:300;-inkscape-font-specification:'Chivo Mono Light'"
-         id="tspan33">Starzz one day before the start of the season</tspan></tspan></text>
+         id="tspan39">Starzz one day before the start of the season</tspan></tspan></text>
   <path
      style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:2;stroke-linejoin:round;stroke-miterlimit:0;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;marker-end:url(#Dot)"
      d="m 10.883873,425.87063 h 31.6296"
@@ -796,7 +843,7 @@
      transform="matrix(0.79544361,0,0,0.79540072,-257.91792,-346.22871)"><tspan
        x="817.94574"
        y="1353.4023"
-       id="tspan35">W.C.</tspan></text>
+       id="tspan41">W.C.</tspan></text>
   <text
      xml:space="preserve"
      style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:12.7268px;line-height:14.9143px;font-family:'Chivo Mono';-inkscape-font-specification:'Chivo Mono';text-align:center;letter-spacing:-2.38627px;word-spacing:-1.59084px;writing-mode:lr-tb;direction:ltr;text-anchor:middle;fill:#ffffff;fill-opacity:1;stroke:#ffffff;stroke-width:0.999997;stroke-linejoin:round;stroke-miterlimit:0;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
@@ -823,65 +870,36 @@
      ry="66.89492" />
   <text
      xml:space="preserve"
-     style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:42.5179px;line-height:36.2374px;font-family:'Chivo Mono';-inkscape-font-specification:'Chivo Mono';text-align:center;letter-spacing:0px;word-spacing:-1.59442px;writing-mode:lr-tb;direction:ltr;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.999997;stroke-linejoin:round;stroke-miterlimit:0"
-     x="377.10403"
-     y="634.94879"
-     id="text464"
-     transform="scale(1.0003842,0.99961595)">D</text>
+     style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:53.3333px;line-height:62.5006px;font-family:'Chivo Mono';-inkscape-font-specification:'Chivo Mono';text-align:center;letter-spacing:-6px;word-spacing:-5px;writing-mode:lr-tb;direction:ltr;text-anchor:middle;fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:0;stroke-miterlimit:0;stroke-dasharray:none;stroke-opacity:1"
+     x="376.09955"
+     y="638.26709"
+     id="text967"><tspan
+       id="tspan967"
+       x="373.09955"
+       y="638.26709"
+       style="font-size:53.3333px;line-height:62.5006px;letter-spacing:-6px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0;stroke-dasharray:none">D<tspan
+   style="font-size:29.3333px;baseline-shift:super"
+   id="tspan966">e</tspan></tspan></text>
   <text
      xml:space="preserve"
-     style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:42.5179px;line-height:36.2374px;font-family:'Chivo Mono';-inkscape-font-specification:'Chivo Mono';text-align:center;letter-spacing:0px;word-spacing:-1.59442px;writing-mode:lr-tb;direction:ltr;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.999997;stroke-linejoin:round;stroke-miterlimit:0"
-     x="410.8356"
-     y="634.6131"
-     id="text465"
-     transform="scale(1.0003842,0.99961595)">H</text>
+     style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:53.3333px;line-height:62.5006px;font-family:'Chivo Mono';-inkscape-font-specification:'Chivo Mono';text-align:center;letter-spacing:-3px;word-spacing:-5px;writing-mode:lr-tb;direction:ltr;text-anchor:middle;fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:0;stroke-miterlimit:0;stroke-dasharray:none;stroke-opacity:1"
+     x="419.33685"
+     y="638.26709"
+     id="text969"><tspan
+       id="tspan969"
+       x="417.83685"
+       y="638.26709"
+       style="line-height:62.5006px;letter-spacing:-3px;baseline-shift:baseline;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0;stroke-dasharray:none">H<tspan
+   style="font-size:29.3333px;baseline-shift:super"
+   id="tspan968">e</tspan></tspan></text>
   <text
      xml:space="preserve"
-     style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:19.133px;line-height:16.3069px;font-family:'Chivo Mono';-inkscape-font-specification:'Chivo Mono';text-align:center;letter-spacing:0px;word-spacing:-1.59442px;writing-mode:lr-tb;direction:ltr;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.999997;stroke-linejoin:round;stroke-miterlimit:0"
-     x="393.69455"
-     y="615.74988"
-     id="text466"
-     transform="scale(1.0003842,0.99961595)">e</text>
-  <text
-     xml:space="preserve"
-     style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:19.133px;line-height:16.3069px;font-family:'Chivo Mono';-inkscape-font-specification:'Chivo Mono';text-align:center;letter-spacing:0px;word-spacing:-1.59442px;writing-mode:lr-tb;direction:ltr;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.999997;stroke-linejoin:round;stroke-miterlimit:0"
-     x="426.59689"
-     y="615.41418"
-     id="text467"
-     transform="scale(1.0003842,0.99961595)">e</text>
-  <text
-     xml:space="preserve"
-     style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:16.8192px;line-height:19.7102px;font-family:'Chivo Mono';-inkscape-font-specification:'Chivo Mono';text-align:center;letter-spacing:-1.5768px;word-spacing:-5.25599px;writing-mode:lr-tb;direction:ltr;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0;stroke-miterlimit:0;stroke-dasharray:none;stroke-opacity:1"
-     x="135.46487"
-     y="172.96999"
-     id="text1"
-     transform="scale(1.0003842,0.99961595)">1.1</text>
-  <text
-     xml:space="preserve"
-     style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:56.0639px;line-height:47.7825px;font-family:'Chivo Mono';-inkscape-font-specification:'Chivo Mono';text-align:center;letter-spacing:0px;word-spacing:-2.1024px;writing-mode:lr-tb;direction:ltr;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.999997;stroke-linejoin:round;stroke-miterlimit:0"
-     x="67.38575"
-     y="232.88199"
-     id="text2"
-     transform="scale(1.0003842,0.99961595)">D</text>
-  <text
-     xml:space="preserve"
-     style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:56.0639px;line-height:47.7825px;font-family:'Chivo Mono';-inkscape-font-specification:'Chivo Mono';text-align:center;letter-spacing:0px;word-spacing:-2.1024px;writing-mode:lr-tb;direction:ltr;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.999997;stroke-linejoin:round;stroke-miterlimit:0"
-     x="111.86405"
-     y="232.43935"
-     id="text3"
-     transform="scale(1.0003842,0.99961595)">H</text>
-  <text
-     xml:space="preserve"
-     style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:25.2287px;line-height:21.5022px;font-family:'Chivo Mono';-inkscape-font-specification:'Chivo Mono';text-align:center;letter-spacing:0px;word-spacing:-2.1024px;writing-mode:lr-tb;direction:ltr;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.999997;stroke-linejoin:round;stroke-miterlimit:0"
-     x="89.261932"
-     y="207.56639"
-     id="text4"
-     transform="scale(1.0003842,0.99961595)">e</text>
-  <text
-     xml:space="preserve"
-     style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:25.2287px;line-height:21.5022px;font-family:'Chivo Mono';-inkscape-font-specification:'Chivo Mono';text-align:center;letter-spacing:0px;word-spacing:-2.1024px;writing-mode:lr-tb;direction:ltr;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.999997;stroke-linejoin:round;stroke-miterlimit:0"
-     x="132.64682"
-     y="207.1237"
-     id="text5"
-     transform="scale(1.0003842,0.99961595)">e</text>
+     style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:53.3333px;line-height:62.5006px;font-family:'Chivo Mono';-inkscape-font-specification:'Chivo Mono';text-align:center;letter-spacing:-8px;word-spacing:-5px;writing-mode:lr-tb;direction:ltr;text-anchor:middle;fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:0;stroke-miterlimit:0;stroke-dasharray:none;stroke-opacity:1"
+     x="392.63788"
+     y="638.26709"
+     id="text970"><tspan
+       id="tspan970"
+       x="388.63788"
+       y="638.26709"
+       style="font-size:53.3333px;line-height:62.5006px;letter-spacing:-8px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0;stroke-dasharray:none">.</tspan></text>
 </svg>
