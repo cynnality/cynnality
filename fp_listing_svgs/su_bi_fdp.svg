@@ -17,7 +17,7 @@
      x="271.64975"
      y="377.44113"
      id="text51"
-     transform="translate(-245.98274,-308.61796)"><tspan
+     transform="translate(-245.98274,-308.61795)"><tspan
        x="271.64975"
        y="377.44113"
        id="tspan2"><tspan
@@ -29,7 +29,7 @@
      x="341.79794"
      y="316.23996"
      id="text55"
-     transform="translate(-309.70594,-74.384094)"><tspan
+     transform="translate(-309.70594,-74.384087)"><tspan
        x="341.79794"
        y="316.23996"
        id="tspan4"><tspan
@@ -69,7 +69,7 @@
        y="696.03601">2010</tspan></text>
   <path
      style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-linejoin:round;stroke-miterlimit:0;stroke-dasharray:none"
-     d="m 59.57358,460.84212 h 219.0128 v 510.05941"
+     d="M 59.573525,460.84213 H 278.58632 v 510.05941"
      id="path77" />
   <text
      xml:space="preserve"
@@ -127,15 +127,15 @@
        y="674.5636">2009</tspan></text>
   <path
      style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-linejoin:round;stroke-miterlimit:0;stroke-dasharray:none;stroke-opacity:1"
-     d="m 196.41298,944.07293 h 15.3366"
+     d="m 196.41292,944.07294 h 15.3366"
      id="path109" />
   <path
      style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-linejoin:round;stroke-miterlimit:0;stroke-dasharray:none;stroke-opacity:1"
-     d="m 196.41298,517.85418 h 15.3366"
+     d="m 196.41292,517.85419 h 15.3366"
      id="path110" />
   <path
      style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-linejoin:round;stroke-miterlimit:0;stroke-dasharray:none;stroke-opacity:1"
-     d="m 198.27968,944.07293 0.25,-426.21875"
+     d="m 198.27962,944.07294 0.25,-426.21875"
      id="path112" />
   <rect
      style="fill:#ffffff;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0.999999;stroke-opacity:1"
@@ -183,7 +183,7 @@
        y="738.98083">2012</tspan></text>
   <path
      style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-linejoin:round;stroke-miterlimit:0;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
-     d="m 47.86568,614.91284 h 150.5394"
+     d="M 47.865625,614.91285 H 198.40502"
      id="path118" />
   <text
      xml:space="preserve"
@@ -191,7 +191,7 @@
      x="196.12389"
      y="156.32368"
      id="text133"
-     transform="translate(769.16818,615.42371)"><tspan
+     transform="translate(769.16812,615.42372)"><tspan
        x="196.12389"
        y="156.32368"
        id="tspan8"><tspan
@@ -221,7 +221,7 @@
      width="119.99929"
      height="119.90788"
      x="27.668095"
-     y="86.23156"
+     y="86.231567"
      rx="3.9999998"
      ry="4"
      class="player-elemental-box" />
@@ -249,7 +249,7 @@
      x="1673.3223"
      y="1532.6539"
      id="text154"
-     transform="translate(-1597.1485,-921.19676)"><tspan
+     transform="translate(-1597.1485,-921.19675)"><tspan
        x="1673.3223"
        y="1532.6539"
        id="tspan10"><tspan
@@ -268,7 +268,7 @@
      x="196.12378"
      y="156.32368"
      id="text158"
-     transform="translate(257.78128,-58.376856)"><tspan
+     transform="translate(257.78122,-4.1253006)"><tspan
        x="196.12378"
        y="156.32368"
        id="tspan14"><tspan
@@ -280,22 +280,22 @@
      width="12"
      height="12"
      x="320.9176"
-     y="86.266869"
+     y="140.5184"
      rx="1"
      ry="1" />
   <text
      xml:space="preserve"
      style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:18.6667px;line-height:15.9094px;font-family:'Chivo Mono';-inkscape-font-specification:'Chivo Mono';text-align:center;letter-spacing:0px;word-spacing:-3px;writing-mode:lr-tb;direction:ltr;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:2;stroke-linejoin:round;stroke-miterlimit:0;stroke-dasharray:none;stroke-opacity:1"
      x="375.64783"
-     y="97.920189"
+     y="152.17172"
      id="text209"><tspan
        id="tspan209"
        x="375.64783"
-       y="97.920189"
+       y="152.17172"
        style="font-size:18.6667px;line-height:15.9094px">medals</tspan></text>
   <path
      style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-linejoin:round;stroke-miterlimit:0;stroke-dasharray:none;stroke-opacity:1"
-     d="m 326.93658,92.766342 v 42.677328 h 14.6254"
+     d="m 326.93652,147.01791 v 42.67732 h 14.6254"
      id="path209" />
   <rect
      style="fill:#ffffff;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0.999999;stroke-opacity:1"
@@ -303,105 +303,105 @@
      width="316.96378"
      height="30"
      x="336.84338"
-     y="116.80369" />
+     y="171.05524" />
   <text
      xml:space="preserve"
      style="font-style:italic;font-variant:normal;font-weight:300;font-stretch:normal;font-size:16px;line-height:13.6366px;font-family:'Chivo Mono';-inkscape-font-specification:'Chivo Mono Light Italic';text-align:start;letter-spacing:0px;word-spacing:-3px;writing-mode:lr-tb;direction:ltr;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:2;stroke-linejoin:round;stroke-miterlimit:0;stroke-dasharray:none;stroke-opacity:1"
      x="406.18054"
-     y="163.22272"
+     y="217.47427"
      id="text210"><tspan
        id="tspan210"
        x="406.18054"
-       y="163.22272">1 FIBA</tspan></text>
+       y="217.47427">1 FIBA</tspan></text>
   <text
      xml:space="preserve"
      style="font-style:italic;font-variant:normal;font-weight:300;font-stretch:normal;font-size:16px;line-height:13.6366px;font-family:'Chivo Mono';-inkscape-font-specification:'Chivo Mono Light Italic';text-align:start;letter-spacing:0px;word-spacing:-3px;writing-mode:lr-tb;direction:ltr;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:2;stroke-linejoin:round;stroke-miterlimit:0;stroke-dasharray:none;stroke-opacity:1"
      x="566.23303"
-     y="169.59686"
+     y="223.84842"
      id="text213"><tspan
        id="tspan213"
        x="566.23303"
-       y="169.59686">4 FIBA</tspan></text>
+       y="223.84842">4 FIBA</tspan></text>
   <text
      xml:space="preserve"
      style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:18.6667px;line-height:15.9094px;font-family:'Chivo Mono';-inkscape-font-specification:'Chivo Mono';text-align:start;letter-spacing:0px;word-spacing:-3px;writing-mode:lr-tb;direction:ltr;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:2;stroke-linejoin:round;stroke-miterlimit:0;stroke-dasharray:none;stroke-opacity:1"
      x="379.70471"
-     y="138.4303"
+     y="192.68185"
      id="text214"><tspan
        id="tspan214"
        x="379.70471"
-       y="138.4303"
+       y="192.68185"
        style="font-size:18.6667px;line-height:15.9094px">x1 bronze</tspan></text>
   <text
      xml:space="preserve"
      style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:21.3333px;line-height:18.1821px;font-family:'Chivo Mono';-inkscape-font-specification:'Chivo Mono Bold';text-align:center;letter-spacing:-3px;word-spacing:-3px;writing-mode:lr-tb;direction:ltr;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:2;stroke-linejoin:round;stroke-miterlimit:0;stroke-dasharray:none;stroke-opacity:1"
      x="362.75891"
-     y="141.52893"
+     y="195.78049"
      id="text215"><tspan
        id="tspan215"
        x="361.25891"
-       y="141.52893">**</tspan></text>
+       y="195.78049">**</tspan></text>
   <text
      xml:space="preserve"
      style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:18.6667px;line-height:15.9094px;font-family:'Chivo Mono';-inkscape-font-specification:'Chivo Mono';text-align:start;letter-spacing:0px;word-spacing:-3px;writing-mode:lr-tb;direction:ltr;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:2;stroke-linejoin:round;stroke-miterlimit:0;stroke-dasharray:none;stroke-opacity:1"
      x="546.49792"
-     y="136.77832"
+     y="191.02988"
      id="text218"><tspan
        id="tspan218"
        x="546.49792"
-       y="136.77832"
+       y="191.02988"
        style="font-size:18.6667px;line-height:15.9094px">x9 gold</tspan></text>
   <text
      xml:space="preserve"
      style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:21.3333px;line-height:18.1821px;font-family:'Chivo Mono';-inkscape-font-specification:'Chivo Mono Bold';text-align:center;letter-spacing:-3px;word-spacing:-3px;writing-mode:lr-tb;direction:ltr;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:2;stroke-linejoin:round;stroke-miterlimit:0;stroke-dasharray:none;stroke-opacity:1"
      x="529.55188"
-     y="141.52893"
+     y="195.78049"
      id="text219"><tspan
        id="tspan219"
        x="528.05188"
-       y="141.52893">**</tspan></text>
+       y="195.78049">**</tspan></text>
   <path
      style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-linejoin:round;stroke-miterlimit:0;stroke-dasharray:none;stroke-opacity:1"
-     d="m 345.87768,116.80364 v 45.2334 0 l 57.4261,1e-5"
+     d="m 345.87762,171.0552 v 45.2334 0 l 57.4261,1e-5"
      id="path219" />
   <text
      xml:space="preserve"
      style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:12.7554px;line-height:14.9479px;font-family:'Chivo Mono';-inkscape-font-specification:'Chivo Mono';text-align:center;letter-spacing:-1.19582px;word-spacing:-3.98605px;writing-mode:lr-tb;direction:ltr;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0;stroke-miterlimit:0;stroke-dasharray:none;stroke-opacity:1"
-     x="132.90422"
+     x="132.90434"
      y="104.28242"
      id="text99-5"
      transform="scale(1.0003842,0.99961595)">6</text>
   <text
      xml:space="preserve"
      style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:42.5179px;line-height:36.2374px;font-family:'Chivo Mono';-inkscape-font-specification:'Chivo Mono';text-align:center;letter-spacing:0px;word-spacing:-1.59442px;writing-mode:lr-tb;direction:ltr;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.999997;stroke-linejoin:round;stroke-miterlimit:0"
-     x="65.757248"
+     x="65.75737"
      y="160.82527"
      id="text478"
      transform="scale(1.0003842,0.99961595)">S</text>
   <text
      xml:space="preserve"
      style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:42.5179px;line-height:36.2374px;font-family:'Chivo Mono';-inkscape-font-specification:'Chivo Mono';text-align:center;letter-spacing:0px;word-spacing:-1.59442px;writing-mode:lr-tb;direction:ltr;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.999997;stroke-linejoin:round;stroke-miterlimit:0"
-     x="99.261398"
+     x="99.26152"
      y="160.40019"
      id="text479"
      transform="scale(1.0003842,0.99961595)">B</text>
   <text
      xml:space="preserve"
      style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:19.133px;line-height:16.3069px;font-family:'Chivo Mono';-inkscape-font-specification:'Chivo Mono';text-align:center;letter-spacing:0px;word-spacing:-1.59442px;writing-mode:lr-tb;direction:ltr;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.999997;stroke-linejoin:round;stroke-miterlimit:0"
-     x="82.79631"
+     x="82.796432"
      y="141.00984"
      id="text480"
      transform="scale(1.0003842,0.99961595)">u</text>
   <text
      xml:space="preserve"
      style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:19.133px;line-height:16.3069px;font-family:'Chivo Mono';-inkscape-font-specification:'Chivo Mono';text-align:center;letter-spacing:0px;word-spacing:-1.59442px;writing-mode:lr-tb;direction:ltr;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.999997;stroke-linejoin:round;stroke-miterlimit:0"
-     x="115.8051"
+     x="115.80522"
      y="144.94499"
      id="text481"
      transform="scale(1.0003842,0.99961595)">i</text>
   <path
      style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-linejoin:round;stroke-miterlimit:0;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
-     d="m 63.37818,330.89133 v 54.125 h 246.5922"
+     d="m 63.378125,330.89134 v 54.125 H 309.97032"
      id="path323" />
   <rect
      style="fill:#ffffff;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:1;stroke-dasharray:none;stroke-opacity:1"
@@ -581,7 +581,7 @@
        x="238.60144"
        y="950.4754">2022</tspan></text>
   <circle
-     style="fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:3;stroke-linejoin:round;stroke-miterlimit:0;stroke-dasharray:none;stroke-opacity:1"
+     style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:3;stroke-linejoin:round;stroke-miterlimit:0;stroke-dasharray:none;stroke-opacity:1"
      id="circle43"
      cx="563.03552"
      cy="834.65662"
@@ -606,7 +606,7 @@
      x="196.12389"
      y="156.32368"
      id="text51-6"
-     transform="translate(446.97638,684.73568)"><tspan
+     transform="translate(446.97632,684.73569)"><tspan
        x="196.12389"
        y="156.32368"
        id="tspan17">2000</tspan></text>
@@ -616,7 +616,7 @@
      x="196.12389"
      y="156.32368"
      id="text52"
-     transform="translate(286.95788,684.73571)"><tspan
+     transform="translate(286.95782,684.73572)"><tspan
        x="196.12389"
        y="156.32368"
        id="tspan18">2002</tspan></text>
@@ -626,7 +626,7 @@
      x="196.12389"
      y="156.32368"
      id="text47"
-     transform="translate(201.26128,624.73193)"><tspan
+     transform="translate(201.26122,624.73194)"><tspan
        x="196.12389"
        y="156.32368"
        id="tspan20"><tspan
@@ -643,38 +643,38 @@
      ry="1" />
   <path
      style="fill:none;stroke:#000000;stroke-width:2;stroke-linejoin:round;stroke-miterlimit:0;stroke-dasharray:none"
-     d="m 492.36328,797.94224 h -97.1482 v -11.0814 h -61.1233 127.9997"
+     d="m 492.36322,797.94225 h -97.1482 v -11.0814 h -61.1233 127.9997"
      id="path5" />
   <text
      xml:space="preserve"
      style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:42.5179px;line-height:36.2374px;font-family:'Chivo Mono';-inkscape-font-specification:'Chivo Mono';text-align:center;letter-spacing:0px;word-spacing:-1.59442px;writing-mode:lr-tb;direction:ltr;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.999997;stroke-linejoin:round;stroke-miterlimit:0"
-     x="540.94232"
+     x="540.94244"
      y="849.56104"
      id="text238"
      transform="scale(1.0003842,0.99961595)">S</text>
   <text
      xml:space="preserve"
      style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:42.5179px;line-height:36.2374px;font-family:'Chivo Mono';-inkscape-font-specification:'Chivo Mono';text-align:center;letter-spacing:0px;word-spacing:-1.59442px;writing-mode:lr-tb;direction:ltr;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.999997;stroke-linejoin:round;stroke-miterlimit:0"
-     x="574.44647"
+     x="574.44659"
      y="849.13593"
      id="text239"
      transform="scale(1.0003842,0.99961595)">B</text>
   <text
      xml:space="preserve"
      style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:19.133px;line-height:16.3069px;font-family:'Chivo Mono';-inkscape-font-specification:'Chivo Mono';text-align:center;letter-spacing:0px;word-spacing:-1.59442px;writing-mode:lr-tb;direction:ltr;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.999997;stroke-linejoin:round;stroke-miterlimit:0"
-     x="557.98138"
+     x="557.98151"
      y="829.74554"
      id="text240"
      transform="scale(1.0003842,0.99961595)">u</text>
   <text
      xml:space="preserve"
      style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:19.133px;line-height:16.3069px;font-family:'Chivo Mono';-inkscape-font-specification:'Chivo Mono';text-align:center;letter-spacing:0px;word-spacing:-1.59442px;writing-mode:lr-tb;direction:ltr;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.999997;stroke-linejoin:round;stroke-miterlimit:0"
-     x="590.99017"
+     x="590.9903"
      y="833.68073"
      id="text241"
      transform="scale(1.0003842,0.99961595)">i</text>
   <circle
-     style="fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:3;stroke-linejoin:round;stroke-miterlimit:0;stroke-dasharray:none;stroke-opacity:1"
+     style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:3;stroke-linejoin:round;stroke-miterlimit:0;stroke-dasharray:none;stroke-opacity:1"
      id="circle248"
      cx="674.73718"
      cy="468.99899"
@@ -682,38 +682,38 @@
   <text
      xml:space="preserve"
      style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:42.5179px;line-height:36.2374px;font-family:'Chivo Mono';-inkscape-font-specification:'Chivo Mono';text-align:center;letter-spacing:0px;word-spacing:-1.59442px;writing-mode:lr-tb;direction:ltr;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.999997;stroke-linejoin:round;stroke-miterlimit:0"
-     x="652.6015"
+     x="652.60162"
      y="483.76276"
      id="text249"
      transform="scale(1.0003842,0.99961595)">S</text>
   <text
      xml:space="preserve"
      style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:42.5179px;line-height:36.2374px;font-family:'Chivo Mono';-inkscape-font-specification:'Chivo Mono';text-align:center;letter-spacing:0px;word-spacing:-1.59442px;writing-mode:lr-tb;direction:ltr;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.999997;stroke-linejoin:round;stroke-miterlimit:0"
-     x="686.10565"
+     x="686.10577"
      y="483.33771"
      id="text250"
      transform="scale(1.0003842,0.99961595)">B</text>
   <text
      xml:space="preserve"
      style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:19.133px;line-height:16.3069px;font-family:'Chivo Mono';-inkscape-font-specification:'Chivo Mono';text-align:center;letter-spacing:0px;word-spacing:-1.59442px;writing-mode:lr-tb;direction:ltr;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.999997;stroke-linejoin:round;stroke-miterlimit:0"
-     x="669.64056"
+     x="669.64069"
      y="463.94739"
      id="text251"
      transform="scale(1.0003842,0.99961595)">u</text>
   <text
      xml:space="preserve"
      style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:19.133px;line-height:16.3069px;font-family:'Chivo Mono';-inkscape-font-specification:'Chivo Mono';text-align:center;letter-spacing:0px;word-spacing:-1.59442px;writing-mode:lr-tb;direction:ltr;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.999997;stroke-linejoin:round;stroke-miterlimit:0"
-     x="702.64935"
+     x="702.64948"
      y="467.88257"
      id="text252"
      transform="scale(1.0003842,0.99961595)">i</text>
   <path
      style="fill:#8d9093;fill-opacity:1;stroke:#000000;stroke-width:2;stroke-linejoin:round;stroke-miterlimit:0;stroke-dasharray:none;stroke-opacity:1"
-     d="m 775.98608,468.99901 h 47.5022"
+     d="m 775.98602,468.99902 h 47.5022"
      id="path252" />
   <path
      style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:0.5;stroke-linejoin:round;stroke-miterlimit:0;stroke-dasharray:none;stroke-opacity:1"
-     d="m 947.77328,472.75286 h -96.7539"
+     d="m 947.77322,472.75287 h -96.7539"
      id="path253" />
   <text
      xml:space="preserve"
@@ -735,20 +735,20 @@
      style="fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-linejoin:round;stroke-miterlimit:0;stroke-dasharray:none;stroke-opacity:1"
      id="circle254"
      cx="-957.85699"
-     cy="98.157417"
+     cy="98.157356"
      transform="rotate(-144.99995)"
      r="18" />
   <circle
      style="fill:#a4752c;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-linejoin:round;stroke-miterlimit:0;stroke-dasharray:none;stroke-opacity:1"
      id="circle255"
      cx="-885.34778"
-     cy="-378.52881"
+     cy="-378.52884"
      transform="rotate(-174.00002)"
      r="20" />
   <circle
      style="fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-linejoin:round;stroke-miterlimit:0;stroke-dasharray:none;stroke-opacity:1"
      id="circle247"
-     cx="18.796459"
+     cx="18.79652"
      cy="-905.44141"
      transform="rotate(120)"
      r="25" />
@@ -758,17 +758,17 @@
      x="196.12389"
      y="156.32368"
      id="text176"
-     transform="translate(578.69718,319.07791)"><tspan
+     transform="translate(578.69712,319.07792)"><tspan
        x="196.12389"
        y="156.32368"
        id="tspan21">2006</tspan></text>
   <path
      style="fill:#8d9093;fill-opacity:1;stroke:#000000;stroke-width:2;stroke-linejoin:round;stroke-miterlimit:0;stroke-dasharray:none;stroke-opacity:1"
-     d="m 706.87258,373.02085 19.3006,-60.74134"
+     d="m 706.87252,373.02086 19.3006,-60.74134"
      id="path255" />
   <path
      style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:0.5;stroke-linejoin:round;stroke-miterlimit:0;stroke-dasharray:none;stroke-opacity:1"
-     d="M 844.52218,311.23605 H 740.84878"
+     d="M 844.52212,311.23606 H 740.84872"
      id="path256" />
   <text
      xml:space="preserve"
@@ -792,19 +792,19 @@
      x="196.12389"
      y="156.32368"
      id="text174"
-     transform="translate(509.56148,223.97233)"><tspan
+     transform="translate(509.56142,223.97234)"><tspan
        x="196.12389"
        y="156.32368"
        id="tspan22">2002</tspan></text>
   <path
      style="fill:#8d9093;fill-opacity:1;stroke:#000000;stroke-width:2;stroke-linejoin:round;stroke-miterlimit:0;stroke-dasharray:none;stroke-opacity:1"
-     d="m 755.42818,416.62307 54.4187,-42.23933"
+     d="m 755.42812,416.62308 54.4187,-42.23933"
      id="path261" />
   <circle
      style="fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-linejoin:round;stroke-miterlimit:0;stroke-dasharray:none;stroke-opacity:1"
      id="circle174"
      cx="486.95923"
-     cy="-708.61957"
+     cy="-708.61969"
      transform="rotate(83.99998)"
      r="25" />
   <text
@@ -813,7 +813,7 @@
      x="196.12389"
      y="156.32368"
      id="text175"
-     transform="translate(559.80418,260.29939)"><tspan
+     transform="translate(559.80412,260.2994)"><tspan
        x="196.12389"
        y="156.32368"
        id="tspan23">2004</tspan></text>
@@ -846,31 +846,31 @@
        style="letter-spacing:-3px">f.b.</tspan></text>
   <path
      style="fill:#8d9093;fill-opacity:1;stroke:#000000;stroke-width:2;stroke-linejoin:round;stroke-miterlimit:0;stroke-dasharray:none;stroke-opacity:1"
-     d="m 755.20698,528.36739 50.4303,40.98997"
+     d="m 755.20692,528.3674 50.4303,40.98997"
      id="path268" />
   <path
      style="fill:#8d9093;fill-opacity:1;stroke:#000000;stroke-width:2;stroke-linejoin:round;stroke-miterlimit:0;stroke-dasharray:none;stroke-opacity:1"
-     d="m 705.84168,563.6074 21.1221,61.84932"
+     d="m 705.84162,563.60741 21.1221,61.84932"
      id="path269" />
   <path
      style="fill:#8d9093;fill-opacity:1;stroke:#000000;stroke-width:2;stroke-linejoin:round;stroke-miterlimit:0;stroke-dasharray:none;stroke-opacity:1"
-     d="m 643.25878,563.91529 -19.4986,61.95301"
+     d="m 643.25872,563.9153 -19.4986,61.95301"
      id="path270" />
   <path
      style="fill:#8d9093;fill-opacity:1;stroke:#000000;stroke-width:2;stroke-linejoin:round;stroke-miterlimit:0;stroke-dasharray:none;stroke-opacity:1"
-     d="m 594.36718,528.50238 -54.1178,35.99352"
+     d="m 594.36712,528.50239 -54.1178,35.99352"
      id="path271" />
   <path
      style="fill:#8d9093;fill-opacity:1;stroke:#000000;stroke-width:2;stroke-linejoin:round;stroke-miterlimit:0;stroke-dasharray:none;stroke-opacity:1"
-     d="m 574.73718,468.99896 h -64.9444"
+     d="m 574.73712,468.99897 h -64.9444"
      id="path272" />
   <path
      style="fill:#8d9093;fill-opacity:1;stroke:#000000;stroke-width:2;stroke-linejoin:round;stroke-miterlimit:0;stroke-dasharray:none;stroke-opacity:1"
-     d="m 594.07398,409.8935 -53.5076,-36.8364"
+     d="m 594.07392,409.89351 -53.5076,-36.8364"
      id="path273" />
   <path
      style="fill:#8d9093;fill-opacity:1;stroke:#000000;stroke-width:2;stroke-linejoin:round;stroke-miterlimit:0;stroke-dasharray:none;stroke-opacity:1"
-     d="m 646.56798,373.04847 -25.1875,-60.1255"
+     d="m 646.56792,373.04848 -25.1875,-60.1255"
      id="path274" />
   <circle
      style="fill:#d7ce2b;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-linejoin:round;stroke-miterlimit:0;stroke-dasharray:none;stroke-opacity:1"
@@ -882,8 +882,8 @@
   <circle
      style="fill:#d7ce2b;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-linejoin:round;stroke-miterlimit:0;stroke-dasharray:none;stroke-opacity:1"
      id="circle268"
-     cx="672.40308"
-     cy="-185.42497"
+     cx="672.4032"
+     cy="-185.42491"
      transform="rotate(41.999969)"
      r="20" />
   <text
@@ -916,14 +916,14 @@
   <circle
      style="fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-linejoin:round;stroke-miterlimit:0;stroke-dasharray:none;stroke-opacity:1"
      id="circle167"
-     cx="345.8999"
+     cx="345.89993"
      cy="-633.46265"
      transform="rotate(96.000046)"
      r="25" />
   <circle
      style="fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-linejoin:round;stroke-miterlimit:0;stroke-dasharray:none;stroke-opacity:1"
      id="circle168"
-     cx="362.07178"
+     cx="362.07181"
      cy="-647.44653"
      transform="rotate(99.99999)"
      r="25" />
@@ -931,7 +931,7 @@
      style="fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-linejoin:round;stroke-miterlimit:0;stroke-dasharray:none;stroke-opacity:1"
      id="circle169"
      cx="368.43909"
-     cy="-703.87714"
+     cy="-703.87726"
      transform="rotate(103.99996)"
      r="25" />
   <circle
@@ -944,8 +944,8 @@
   <circle
      style="fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-linejoin:round;stroke-miterlimit:0;stroke-dasharray:none;stroke-opacity:1"
      id="circle172"
-     cx="258.6908"
-     cy="-865.57416"
+     cx="258.69083"
+     cy="-865.57428"
      transform="rotate(112.00006)"
      r="25" />
   <circle
@@ -961,7 +961,7 @@
      x="196.12389"
      y="156.32368"
      id="text177"
-     transform="translate(559.68258,377.85654)"><tspan
+     transform="translate(559.68252,377.85655)"><tspan
        x="196.12389"
        y="156.32368"
        id="tspan24">2008</tspan></text>
@@ -971,7 +971,7 @@
      x="196.12389"
      y="156.32368"
      id="text178"
-     transform="translate(509.57988,414.18354)"><tspan
+     transform="translate(509.57982,414.18355)"><tspan
        x="196.12389"
        y="156.32368"
        id="tspan25">2010</tspan></text>
@@ -981,7 +981,7 @@
      x="196.12389"
      y="156.32368"
      id="text179"
-     transform="translate(447.75808,414.18372)"><tspan
+     transform="translate(447.75802,414.18373)"><tspan
        x="196.12389"
        y="156.32368"
        id="tspan26">2012</tspan></text>
@@ -991,7 +991,7 @@
      x="196.12389"
      y="156.32368"
      id="text180"
-     transform="translate(398.00098,377.85672)"><tspan
+     transform="translate(398.00092,377.85673)"><tspan
        x="196.12389"
        y="156.32368"
        id="tspan27">2014</tspan></text>
@@ -1001,7 +1001,7 @@
      x="196.12389"
      y="156.32368"
      id="text181"
-     transform="translate(378.69728,319.0779)"><tspan
+     transform="translate(378.69722,319.07791)"><tspan
        x="196.12389"
        y="156.32368"
        id="tspan28">2016</tspan></text>
@@ -1011,7 +1011,7 @@
      x="196.12389"
      y="156.32368"
      id="text182"
-     transform="translate(397.87958,260.29938)"><tspan
+     transform="translate(397.87952,260.29939)"><tspan
        x="196.12389"
        y="156.32368"
        id="tspan29">2018</tspan></text>
@@ -1021,7 +1021,7 @@
      x="196.12389"
      y="156.32368"
      id="text248"
-     transform="translate(447.77688,223.97232)"><tspan
+     transform="translate(447.77682,223.97233)"><tspan
        x="196.12389"
        y="156.32368"
        id="tspan30">2020</tspan></text>
@@ -1078,7 +1078,7 @@
        style="letter-spacing:-3px;fill:#000000;fill-opacity:1">o.g.</tspan></text>
   <path
      style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:0.5;stroke-linejoin:round;stroke-miterlimit:0;stroke-dasharray:none;stroke-opacity:1"
-     d="M 831.68758,638.92311 H 728.01418"
+     d="M 831.68752,638.92312 H 728.01412"
      id="path275" />
   <text
      xml:space="preserve"
@@ -1093,7 +1093,7 @@
      style="fill:#d7ce2b;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-linejoin:round;stroke-miterlimit:0;stroke-dasharray:none;stroke-opacity:1"
      id="circle261"
      cx="-958.0954"
-     cy="20.480625"
+     cy="20.480564"
      transform="rotate(-138.00003)"
      r="20" />
   <text
@@ -1108,7 +1108,7 @@
        style="letter-spacing:-3px;fill:#000000;fill-opacity:1">f.g.</tspan></text>
   <path
      style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:0.5;stroke-linejoin:round;stroke-miterlimit:0;stroke-dasharray:none;stroke-opacity:1"
-     d="M 553.48298,580.82056 H 440.93848"
+     d="M 553.48292,580.82057 H 440.93842"
      id="path276" />
   <text
      xml:space="preserve"
@@ -1138,7 +1138,7 @@
        style="letter-spacing:-3px;fill:#000000;fill-opacity:1">f.g.</tspan></text>
   <path
      style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:0.5;stroke-linejoin:round;stroke-miterlimit:0;stroke-dasharray:none;stroke-opacity:1"
-     d="M 553.61818,379.62503 H 441.07368"
+     d="M 553.61812,379.62504 H 441.07362"
      id="path277" />
   <text
      xml:space="preserve"
@@ -1153,7 +1153,7 @@
      style="fill:#d7ce2b;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-linejoin:round;stroke-miterlimit:0;stroke-dasharray:none;stroke-opacity:1"
      id="circle264"
      cx="577.21869"
-     cy="313.42825"
+     cy="313.42828"
      transform="rotate(5.9999951)"
      r="20" />
   <text
@@ -1168,17 +1168,17 @@
        style="letter-spacing:-3px;fill:#000000;fill-opacity:1">f.g.</tspan></text>
   <path
      style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-linejoin:round;stroke-miterlimit:0;stroke-dasharray:none;stroke-opacity:1"
-     d="m 505.16978,116.80364 v 45.2334 27.70577 h 57.4261 -57.4261 v -27.70577 l 57.4261,1e-5"
+     d="m 505.16972,171.0552 v 45.2334 27.70577 h 57.4261 -57.4261 V 216.2886 l 57.4261,1e-5"
      id="path278" />
   <text
      xml:space="preserve"
      style="font-style:italic;font-variant:normal;font-weight:300;font-stretch:normal;font-size:16px;line-height:13.6366px;font-family:'Chivo Mono';-inkscape-font-specification:'Chivo Mono Light Italic';text-align:start;letter-spacing:0px;word-spacing:-3px;writing-mode:lr-tb;direction:ltr;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:2;stroke-linejoin:round;stroke-miterlimit:0;stroke-dasharray:none;stroke-opacity:1"
      x="566.23303"
-     y="195.36636"
+     y="249.61792"
      id="text278"><tspan
        id="tspan278"
        x="566.23303"
-       y="195.36636">5 Olympic</tspan></text>
+       y="249.61792">5 Olympic</tspan></text>
   <rect
      style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke-width:0.999995"
      id="rect280"
@@ -1191,10 +1191,10 @@
      transform="scale(-1,1)" />
   <path
      style="fill:none;stroke:#000000;stroke-width:2;stroke-linejoin:round;stroke-miterlimit:0;stroke-dasharray:none"
-     d="m 867.46898,787.23673 h 97.1482 v -11.0814 h 61.12332 -127.99972"
+     d="m 867.46892,787.23674 h 97.1482 v -11.0814 h 61.12328 -127.99968"
      id="path280" />
   <circle
-     style="fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:3;stroke-linejoin:round;stroke-miterlimit:0;stroke-dasharray:none;stroke-opacity:1"
+     style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:3;stroke-linejoin:round;stroke-miterlimit:0;stroke-dasharray:none;stroke-opacity:1"
      id="circle114"
      cx="822.06653"
      cy="834.65662"
@@ -1216,28 +1216,28 @@
   <text
      xml:space="preserve"
      style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:42.5179px;line-height:36.2374px;font-family:'Chivo Mono';-inkscape-font-specification:'Chivo Mono';text-align:center;letter-spacing:0px;word-spacing:-1.59442px;writing-mode:lr-tb;direction:ltr;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.999997;stroke-linejoin:round;stroke-miterlimit:0"
-     x="799.87396"
+     x="799.87408"
      y="849.56104"
      id="text234"
      transform="scale(1.0003842,0.99961595)">S</text>
   <text
      xml:space="preserve"
      style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:42.5179px;line-height:36.2374px;font-family:'Chivo Mono';-inkscape-font-specification:'Chivo Mono';text-align:center;letter-spacing:0px;word-spacing:-1.59442px;writing-mode:lr-tb;direction:ltr;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.999997;stroke-linejoin:round;stroke-miterlimit:0"
-     x="833.37811"
+     x="833.37823"
      y="849.13599"
      id="text235"
      transform="scale(1.0003842,0.99961595)">B</text>
   <text
      xml:space="preserve"
      style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:19.133px;line-height:16.3069px;font-family:'Chivo Mono';-inkscape-font-specification:'Chivo Mono';text-align:center;letter-spacing:0px;word-spacing:-1.59442px;writing-mode:lr-tb;direction:ltr;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.999997;stroke-linejoin:round;stroke-miterlimit:0"
-     x="816.91302"
+     x="816.91315"
      y="829.74548"
      id="text236"
      transform="scale(1.0003842,0.99961595)">u</text>
   <text
      xml:space="preserve"
      style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:19.133px;line-height:16.3069px;font-family:'Chivo Mono';-inkscape-font-specification:'Chivo Mono';text-align:center;letter-spacing:0px;word-spacing:-1.59442px;writing-mode:lr-tb;direction:ltr;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.999997;stroke-linejoin:round;stroke-miterlimit:0"
-     x="849.92181"
+     x="849.92194"
      y="833.68066"
      id="text237"
      transform="scale(1.0003842,0.99961595)">i</text>
@@ -1261,7 +1261,7 @@
      x="196.12389"
      y="156.32368"
      id="text132"
-     transform="translate(626.23148,604.73552)"><tspan
+     transform="translate(626.23142,604.73553)"><tspan
        x="196.12389"
        y="156.32368"
        id="tspan31">2004</tspan></text>
@@ -1271,7 +1271,7 @@
      x="196.12389"
      y="156.32368"
      id="text156"
-     transform="translate(706.00758,684.73561)"><tspan
+     transform="translate(706.00752,684.73562)"><tspan
        x="196.12389"
        y="156.32368"
        id="tspan32">2010</tspan></text>
@@ -1281,7 +1281,7 @@
      x="196.12389"
      y="156.32368"
      id="text246"
-     transform="translate(626.10998,764.73552)"><tspan
+     transform="translate(626.10992,764.73553)"><tspan
        x="196.12389"
        y="156.32368"
        id="tspan33">2018</tspan></text>
@@ -1291,7 +1291,7 @@
      x="196.12389"
      y="156.32368"
      id="text247"
-     transform="translate(546.00738,684.73551)"><tspan
+     transform="translate(546.00732,684.73552)"><tspan
        x="196.12389"
        y="156.32368"
        id="tspan34">2020</tspan></text>
