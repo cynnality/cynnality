@@ -32,6 +32,43 @@
 <link href="https://fonts.googleapis.com/css2?family=Chivo+Mono:ital,wght@0,100..900;1,100..900&family=DM+Mono:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap" rel="stylesheet">
 
   <link rel="stylesheet" href="wnba-seasons-of.css" />
+
+<style>
+        .opening-theme {
+            display: flex;
+            align-items: center;
+            gap: 1em;
+            /* margin-top: 1em; */
+            margin-top: -1em;
+            width: 100%;
+            z-index: 5;
+            padding-top: 1em;
+            padding-bottom: 1em;
+            border-bottom: solid #000 2px;
+            position: fixed;
+            background-color: #e3e3e3;
+        }
+
+        .opening-theme h2 {
+            font-style: normal;
+            font-weight: 300;
+
+            font-size: 24px;
+        }
+        .opening-theme h4 {
+            font-family: "Chivo Mono", system-ui;
+            font-style: normal;
+            font-size: 26px;
+            font-weight: 300;
+        }
+
+        .season-opener {
+            display: flex;
+            flex-direction: column;
+
+        }
+</style>
+
 </head>
 <body>
 
@@ -682,7 +719,7 @@
   <defs
      id="defs1" />
   <rect
-     style="stroke:none;"
+     style="fill:#e3e3e3;stroke:none;"
      id="season-panel-container"
      width="1200"
      height="800"
