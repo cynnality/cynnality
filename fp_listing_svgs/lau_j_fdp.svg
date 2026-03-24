@@ -9,6 +9,9 @@
    id="svg1"
    sodipodi:docname="lau_j_fdp.svg"
    inkscape:version="1.4.3 (fcd0343856, 2026-01-01)"
+   inkscape:export-filename="lau_j_fdp.svg"
+   inkscape:export-xdpi="96"
+   inkscape:export-ydpi="96"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns="http://www.w3.org/2000/svg"
@@ -22,9 +25,9 @@
      inkscape:pageopacity="0.0"
      inkscape:pagecheckerboard="0"
      inkscape:deskcolor="#d1d1d1"
-     inkscape:zoom="0.5"
-     inkscape:cx="464"
-     inkscape:cy="451"
+     inkscape:zoom="1.4142136"
+     inkscape:cx="779.23167"
+     inkscape:cy="474.1151"
      inkscape:window-width="1859"
      inkscape:window-height="1011"
      inkscape:window-x="0"
@@ -1033,4 +1036,25 @@
      style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-linejoin:round;stroke-miterlimit:0;stroke-dasharray:none;stroke-opacity:1"
      d="m 871.79497,284.20822 v 45.2334 27.70577 h 57.4261 -57.4261 v -27.70577 l 57.4261,10e-6"
      id="path130" />
+  <text
+     xml:space="preserve"
+     style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:53.3127px;line-height:45.4377px;font-family:'Chivo Mono';-inkscape-font-specification:'Chivo Mono';text-align:center;letter-spacing:0px;word-spacing:-1.99923px;writing-mode:lr-tb;direction:ltr;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.999997;stroke-linejoin:round;stroke-miterlimit:0"
+     x="987.46497"
+     y="671.92719"
+     id="text1"
+     transform="scale(1.0003811,0.99961905)">J</text>
+  <text
+     xml:space="preserve"
+     style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:53.3127px;line-height:45.4377px;font-family:'Chivo Mono';-inkscape-font-specification:'Chivo Mono';text-align:center;letter-spacing:0px;word-spacing:-1.99923px;writing-mode:lr-tb;direction:ltr;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.999997;stroke-linejoin:round;stroke-miterlimit:0"
+     x="959.95569"
+     y="671.50616"
+     id="text2"
+     transform="scale(1.0003811,0.99961905)">L</text>
+  <text
+     xml:space="preserve"
+     style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:23.9907px;line-height:20.447px;font-family:'Chivo Mono';-inkscape-font-specification:'Chivo Mono';text-align:start;letter-spacing:-2.99884px;word-spacing:-1.99923px;writing-mode:lr-tb;direction:ltr;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.999997;stroke-linejoin:round;stroke-miterlimit:0"
+     x="955.89587"
+     y="647.43286"
+     id="text3"
+     transform="scale(1.0003811,0.99961905)">au</text>
 </svg>
