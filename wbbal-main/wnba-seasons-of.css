@@ -2,25 +2,78 @@ html, body {
   height: auto;
   min-height: 100%;
   overflow-y: auto;
+  background-color: #e3e3e3;
 }
+
+        p {
+            margin: 0;
+        }
+        h2 {
+            font-family: "Chivo", sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        h4 {
+            font-family: "Chivo", sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        .opening-theme {
+            display: flex;
+            align-items: center;
+            gap: 1em;
+            /* margin-top: 1em; */
+            margin-top: -1em;
+            width: 100%;
+            z-index: 5;
+            padding-top: 1em;
+            padding-bottom: 1em;
+            border-bottom: solid #000 2px;
+            position: fixed;
+            background-color: #e3e3e3;
+        }
+
+        .opening-theme h2 {
+            font-style: normal;
+            font-weight: 300;
+
+            font-size: 24px;
+        }
+        .opening-theme h4 {
+            font-family: "Chivo Mono", system-ui;
+            font-style: normal;
+            font-size: 26px;
+            font-weight: 300;
+        }
+
+        .season-opener {
+            display: flex;
+            flex-direction: column;
+
+        }
 
 #teams-timeline-svg {
   display: block; /* prevents weird inline whitespace/layout stuff */
   height: auto;
   position: fixed;
   z-index: 4;
-  width: 97%;
+  width: 116%;
+  top: 1em;
+  left: -12em;
+  background-color: #e3e3e3;
+  transform: scale(.8);
 }
 
 #main-court-background-color {
-    fill: #ffffff;
-    stroke: #000000;
-    stroke-width: 4;
+    fill: none;;
+    stroke: none;
+    stroke-width: 0;
 }
 
 #timeline-row {
     display: flex;
-}
+} 
 
 #mini-and-toggle-section {
   display: flex;
@@ -37,14 +90,18 @@ html, body {
     margin-top: 180px;
 }
 
+#season-panel-container {
+    fill: #e3e3e3;
+}
+
 /*============================================================
 main timeline styles 
 ============================================================*/
 
 .main-line-path {
     fill: none;
-    stroke: #000000;
-    stroke-width: 3;
+    stroke: none;
+    stroke-width: 0;
 }
 
 .season-square {
@@ -119,7 +176,7 @@ mini timeline styles
 }
 
 #mini-tl-border {
-    fill: #ffffff;
+    fill: #e3e3e3;
     /*! stroke: #000000; */
     /*! stroke-width: 6; */
 }
