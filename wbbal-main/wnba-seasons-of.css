@@ -5,33 +5,10 @@ html, body {
   background-color: #e3e3e3;
 }
 
-p {
-    margin: 0;
-        }
-h2 {
-    font-family: "Chivo", sans-serif;
-    margin: 0;
-    padding: 0;
-}
-h4 {
-    font-family: "Chivo", sans-serif;
-    margin: 0;
-    padding: 0;
-}
 
 
 
-#teams-timeline-svg {
-  display: block; /* prevents weird inline whitespace/layout stuff */
-  height: auto;
-  position: fixed;
-  z-index: 4;
-  width: 116%;
-  top: 1em;
-  left: -12em;
-  background-color: #e3e3e3;
-  transform: scale(.8);
-}
+
 
 #main-court-background-color {
     fill: none;;
@@ -58,9 +35,6 @@ h4 {
     margin-top: 180px;
 }
 
-#season-panel-container {
-    fill: #e3e3e3;
-}
 
 /*============================================================
 main timeline styles 
