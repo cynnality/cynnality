@@ -5,19 +5,19 @@ html, body {
   background-color: #e3e3e3;
 }
 
-        p {
-            margin: 0;
+p {
+    margin: 0;
         }
-        h2 {
-            font-family: "Chivo", sans-serif;
-            margin: 0;
-            padding: 0;
-        }
-        h4 {
-            font-family: "Chivo", sans-serif;
-            margin: 0;
-            padding: 0;
-        }
+h2 {
+    font-family: "Chivo", sans-serif;
+    margin: 0;
+    padding: 0;
+}
+h4 {
+    font-family: "Chivo", sans-serif;
+    margin: 0;
+    padding: 0;
+}
 
         .opening-theme {
             display: flex;
