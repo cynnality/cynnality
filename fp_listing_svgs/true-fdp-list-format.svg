@@ -23,9 +23,9 @@
      inkscape:pagecheckerboard="0"
      inkscape:deskcolor="#d1d1d1"
      inkscape:document-units="px"
-     inkscape:zoom="1.9808862"
-     inkscape:cx="-1324.6596"
-     inkscape:cy="2557.6936"
+     inkscape:zoom="0.24761077"
+     inkscape:cx="1058.1123"
+     inkscape:cy="1310.5246"
      inkscape:window-width="1859"
      inkscape:window-height="1011"
      inkscape:window-x="0"
@@ -52,7 +52,7 @@
        gapx="3"
        gapy="16"
        enabled="true"
-       visible="true" />
+       visible="false" />
     <inkscape:page
        x="0"
        y="0"
@@ -133,15 +133,15 @@
     <rect
        style="fill:#7376ff;fill-opacity:0.194043;fill-rule:evenodd;stroke-width:1"
        id="rect1"
-       width="1423"
-       height="1816.0448"
-       x="208.5"
+       width="1346.0756"
+       height="1498.5447"
+       x="245.95821"
        y="45.455379"
-       rx="0.99999988"
+       rx="0.99999982"
        ry="1" />
     <path
-       style="fill:#ffffff;fill-opacity:0.25;stroke:none;stroke-width:1;stroke-linejoin:round;stroke-miterlimit:0"
-       d="M 1462.6498,67.499998 V 1592 h 117.5 V 67.499998 Z"
+       style="fill:#ffffff;fill-opacity:0.25;stroke:none;stroke-width:0.999995;stroke-linejoin:round;stroke-miterlimit:0"
+       d="m 1462.6498,104 v 1433 h 117.5 V 104 Z"
        id="path3" />
     <g
        id="g3"
@@ -941,8 +941,8 @@
          transform="scale(1.0003842,0.99961595)">h</text>
     </g>
     <path
-       style="fill:#ffffff;fill-opacity:0.25;stroke:none;stroke-width:0.999999;stroke-linejoin:round;stroke-miterlimit:0"
-       d="M 1060.1824,67.499999 V 1592 h 383.75 V 67.499999 Z"
+       style="fill:#ffffff;fill-opacity:0.25;stroke:none;stroke-width:0.999997;stroke-linejoin:round;stroke-miterlimit:0"
+       d="m 1060.1824,104 v 1431 h 383.75 V 104 Z"
        id="path134" />
     <path
        style="fill:none;stroke:#000000;stroke-width:2;stroke-linejoin:round;stroke-miterlimit:0;stroke-dasharray:none;stroke-opacity:1"
@@ -1167,13 +1167,13 @@
        d="m 1465.1498,88 v 16"
        id="path183" />
     <path
-       style="fill:none;stroke:#000000;stroke-width:2;stroke-linejoin:round;stroke-miterlimit:0;stroke-dasharray:none;stroke-opacity:1"
+       style="fill:none;stroke:#000000;stroke-width:3;stroke-linejoin:round;stroke-miterlimit:0;stroke-dasharray:none;stroke-opacity:1"
        d="M 1592.3947,96 H 251.25886"
        id="path184"
        sodipodi:nodetypes="cc" />
     <text
        xml:space="preserve"
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:32px;line-height:37.5005px;font-family:'Chivo Mono';-inkscape-font-specification:'Chivo Mono';text-align:start;letter-spacing:0px;word-spacing:-3px;writing-mode:lr-tb;direction:ltr;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:2;stroke-linejoin:round;stroke-miterlimit:0;stroke-dasharray:none;stroke-opacity:1"
+       style="font-style:italic;font-variant:normal;font-weight:500;font-stretch:normal;font-size:32px;line-height:37.5005px;font-family:'Chivo Mono';-inkscape-font-specification:'Chivo Mono Medium Italic';text-align:start;letter-spacing:0px;word-spacing:-3px;writing-mode:lr-tb;direction:ltr;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:2;stroke-linejoin:round;stroke-miterlimit:0;stroke-dasharray:none;stroke-opacity:1"
        x="1084.749"
        y="136"
        id="text184"><tspan
@@ -1183,7 +1183,7 @@
          y="136">Tina Thompson</tspan></text>
     <text
        xml:space="preserve"
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:32px;line-height:37.5005px;font-family:'Chivo Mono';-inkscape-font-specification:'Chivo Mono';text-align:start;letter-spacing:0px;word-spacing:-3px;writing-mode:lr-tb;direction:ltr;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:2;stroke-linejoin:round;stroke-miterlimit:0;stroke-dasharray:none;stroke-opacity:1"
+       style="font-style:italic;font-variant:normal;font-weight:500;font-stretch:normal;font-size:32px;line-height:37.5005px;font-family:'Chivo Mono';-inkscape-font-specification:'Chivo Mono Medium Italic';text-align:start;letter-spacing:0px;word-spacing:-3px;writing-mode:lr-tb;direction:ltr;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:2;stroke-linejoin:round;stroke-miterlimit:0;stroke-dasharray:none;stroke-opacity:1"
        x="1083.7091"
        y="183.73332"
        id="text185"><tspan
@@ -1193,7 +1193,7 @@
          y="183.73332">Dena Head</tspan></text>
     <text
        xml:space="preserve"
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:32px;line-height:37.5005px;font-family:'Chivo Mono';-inkscape-font-specification:'Chivo Mono';text-align:start;letter-spacing:0px;word-spacing:-3px;writing-mode:lr-tb;direction:ltr;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:2;stroke-linejoin:round;stroke-miterlimit:0;stroke-dasharray:none;stroke-opacity:1"
+       style="font-style:italic;font-variant:normal;font-weight:500;font-stretch:normal;font-size:32px;line-height:37.5005px;font-family:'Chivo Mono';-inkscape-font-specification:'Chivo Mono Medium Italic';text-align:start;letter-spacing:0px;word-spacing:-3px;writing-mode:lr-tb;direction:ltr;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:2;stroke-linejoin:round;stroke-miterlimit:0;stroke-dasharray:none;stroke-opacity:1"
        x="1084.0824"
        y="232"
        id="text186"><tspan
@@ -1203,7 +1203,7 @@
          y="232">Margo Dydek</tspan></text>
     <text
        xml:space="preserve"
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:32px;line-height:37.5005px;font-family:'Chivo Mono';-inkscape-font-specification:'Chivo Mono';text-align:start;letter-spacing:0px;word-spacing:-3px;writing-mode:lr-tb;direction:ltr;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:2;stroke-linejoin:round;stroke-miterlimit:0;stroke-dasharray:none;stroke-opacity:1"
+       style="font-style:italic;font-variant:normal;font-weight:500;font-stretch:normal;font-size:32px;line-height:37.5005px;font-family:'Chivo Mono';-inkscape-font-specification:'Chivo Mono Medium Italic';text-align:start;letter-spacing:0px;word-spacing:-3px;writing-mode:lr-tb;direction:ltr;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:2;stroke-linejoin:round;stroke-miterlimit:0;stroke-dasharray:none;stroke-opacity:1"
        x="1084.6957"
        y="279.5249"
        id="text187"><tspan
@@ -1213,7 +1213,7 @@
          y="279.5249">Chamique Holdsclaw</tspan></text>
     <text
        xml:space="preserve"
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:32px;line-height:37.5005px;font-family:'Chivo Mono';-inkscape-font-specification:'Chivo Mono';text-align:start;letter-spacing:0px;word-spacing:-3px;writing-mode:lr-tb;direction:ltr;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:2;stroke-linejoin:round;stroke-miterlimit:0;stroke-dasharray:none;stroke-opacity:1"
+       style="font-style:italic;font-variant:normal;font-weight:500;font-stretch:normal;font-size:32px;line-height:37.5005px;font-family:'Chivo Mono';-inkscape-font-specification:'Chivo Mono Medium Italic';text-align:start;letter-spacing:0px;word-spacing:-3px;writing-mode:lr-tb;direction:ltr;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:2;stroke-linejoin:round;stroke-miterlimit:0;stroke-dasharray:none;stroke-opacity:1"
        x="1085.3357"
        y="328"
        id="text188"><tspan
@@ -1223,7 +1223,7 @@
          y="328">Ann Wauters</tspan></text>
     <text
        xml:space="preserve"
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:32px;line-height:37.5005px;font-family:'Chivo Mono';-inkscape-font-specification:'Chivo Mono';text-align:start;letter-spacing:0px;word-spacing:-3px;writing-mode:lr-tb;direction:ltr;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:2;stroke-linejoin:round;stroke-miterlimit:0;stroke-dasharray:none;stroke-opacity:1"
+       style="font-style:italic;font-variant:normal;font-weight:500;font-stretch:normal;font-size:32px;line-height:37.5005px;font-family:'Chivo Mono';-inkscape-font-specification:'Chivo Mono Medium Italic';text-align:start;letter-spacing:0px;word-spacing:-3px;writing-mode:lr-tb;direction:ltr;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:2;stroke-linejoin:round;stroke-miterlimit:0;stroke-dasharray:none;stroke-opacity:1"
        x="1082.9091"
        y="375.73334"
        id="text189"><tspan
@@ -1233,7 +1233,7 @@
          y="375.73334">Lauren Jackson</tspan></text>
     <text
        xml:space="preserve"
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:32px;line-height:37.5005px;font-family:'Chivo Mono';-inkscape-font-specification:'Chivo Mono';text-align:start;letter-spacing:0px;word-spacing:-3px;writing-mode:lr-tb;direction:ltr;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:2;stroke-linejoin:round;stroke-miterlimit:0;stroke-dasharray:none;stroke-opacity:1"
+       style="font-style:italic;font-variant:normal;font-weight:500;font-stretch:normal;font-size:32px;line-height:37.5005px;font-family:'Chivo Mono';-inkscape-font-specification:'Chivo Mono Medium Italic';text-align:start;letter-spacing:0px;word-spacing:-3px;writing-mode:lr-tb;direction:ltr;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:2;stroke-linejoin:round;stroke-miterlimit:0;stroke-dasharray:none;stroke-opacity:1"
        x="1084.6425"
        y="423.73334"
        id="text190"><tspan
@@ -1243,7 +1243,7 @@
          y="423.73334">Sue Bird</tspan></text>
     <text
        xml:space="preserve"
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:32px;line-height:37.5005px;font-family:'Chivo Mono';-inkscape-font-specification:'Chivo Mono';text-align:start;letter-spacing:0px;word-spacing:-3px;writing-mode:lr-tb;direction:ltr;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:2;stroke-linejoin:round;stroke-miterlimit:0;stroke-dasharray:none;stroke-opacity:1"
+       style="font-style:italic;font-variant:normal;font-weight:500;font-stretch:normal;font-size:32px;line-height:37.5005px;font-family:'Chivo Mono';-inkscape-font-specification:'Chivo Mono Medium Italic';text-align:start;letter-spacing:0px;word-spacing:-3px;writing-mode:lr-tb;direction:ltr;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:2;stroke-linejoin:round;stroke-miterlimit:0;stroke-dasharray:none;stroke-opacity:1"
        x="1082.9091"
        y="471.73334"
        id="text191"><tspan
@@ -1253,7 +1253,7 @@
          y="471.73334">LaToya Thomas</tspan></text>
     <text
        xml:space="preserve"
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:32px;line-height:37.5005px;font-family:'Chivo Mono';-inkscape-font-specification:'Chivo Mono';text-align:start;letter-spacing:0px;word-spacing:-3px;writing-mode:lr-tb;direction:ltr;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:2;stroke-linejoin:round;stroke-miterlimit:0;stroke-dasharray:none;stroke-opacity:1"
+       style="font-style:italic;font-variant:normal;font-weight:500;font-stretch:normal;font-size:32px;line-height:37.5005px;font-family:'Chivo Mono';-inkscape-font-specification:'Chivo Mono Medium Italic';text-align:start;letter-spacing:0px;word-spacing:-3px;writing-mode:lr-tb;direction:ltr;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:2;stroke-linejoin:round;stroke-miterlimit:0;stroke-dasharray:none;stroke-opacity:1"
        x="1082.9091"
        y="520"
        id="text192"><tspan
@@ -1263,7 +1263,7 @@
          y="520">Diana Taurasi</tspan></text>
     <text
        xml:space="preserve"
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:32px;line-height:37.5005px;font-family:'Chivo Mono';-inkscape-font-specification:'Chivo Mono';text-align:start;letter-spacing:0px;word-spacing:-3px;writing-mode:lr-tb;direction:ltr;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:2;stroke-linejoin:round;stroke-miterlimit:0;stroke-dasharray:none;stroke-opacity:1"
+       style="font-style:italic;font-variant:normal;font-weight:500;font-stretch:normal;font-size:32px;line-height:37.5005px;font-family:'Chivo Mono';-inkscape-font-specification:'Chivo Mono Medium Italic';text-align:start;letter-spacing:0px;word-spacing:-3px;writing-mode:lr-tb;direction:ltr;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:2;stroke-linejoin:round;stroke-miterlimit:0;stroke-dasharray:none;stroke-opacity:1"
        x="1083.2024"
        y="568"
        id="text193"><tspan
@@ -1273,7 +1273,7 @@
          y="568">Janel McCarville</tspan></text>
     <text
        xml:space="preserve"
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:32px;line-height:37.5005px;font-family:'Chivo Mono';-inkscape-font-specification:'Chivo Mono';text-align:start;letter-spacing:0px;word-spacing:-3px;writing-mode:lr-tb;direction:ltr;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:2;stroke-linejoin:round;stroke-miterlimit:0;stroke-dasharray:none;stroke-opacity:1"
+       style="font-style:italic;font-variant:normal;font-weight:500;font-stretch:normal;font-size:32px;line-height:37.5005px;font-family:'Chivo Mono';-inkscape-font-specification:'Chivo Mono Medium Italic';text-align:start;letter-spacing:0px;word-spacing:-3px;writing-mode:lr-tb;direction:ltr;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:2;stroke-linejoin:round;stroke-miterlimit:0;stroke-dasharray:none;stroke-opacity:1"
        x="1084.6425"
        y="615.73334"
        id="text194"><tspan
@@ -1283,7 +1283,7 @@
          y="615.73334">Seimone Augustus</tspan></text>
     <text
        xml:space="preserve"
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:32px;line-height:37.5005px;font-family:'Chivo Mono';-inkscape-font-specification:'Chivo Mono';text-align:start;letter-spacing:0px;word-spacing:-3px;writing-mode:lr-tb;direction:ltr;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:2;stroke-linejoin:round;stroke-miterlimit:0;stroke-dasharray:none;stroke-opacity:1"
+       style="font-style:italic;font-variant:normal;font-weight:500;font-stretch:normal;font-size:32px;line-height:37.5005px;font-family:'Chivo Mono';-inkscape-font-specification:'Chivo Mono Medium Italic';text-align:start;letter-spacing:0px;word-spacing:-3px;writing-mode:lr-tb;direction:ltr;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:2;stroke-linejoin:round;stroke-miterlimit:0;stroke-dasharray:none;stroke-opacity:1"
        x="1082.9091"
        y="664"
        id="text195"><tspan
@@ -1293,7 +1293,7 @@
          y="664">Lindsey Harding</tspan></text>
     <text
        xml:space="preserve"
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:32px;line-height:37.5005px;font-family:'Chivo Mono';-inkscape-font-specification:'Chivo Mono';text-align:start;letter-spacing:0px;word-spacing:-3px;writing-mode:lr-tb;direction:ltr;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:2;stroke-linejoin:round;stroke-miterlimit:0;stroke-dasharray:none;stroke-opacity:1"
+       style="font-style:italic;font-variant:normal;font-weight:500;font-stretch:normal;font-size:32px;line-height:37.5005px;font-family:'Chivo Mono';-inkscape-font-specification:'Chivo Mono Medium Italic';text-align:start;letter-spacing:0px;word-spacing:-3px;writing-mode:lr-tb;direction:ltr;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:2;stroke-linejoin:round;stroke-miterlimit:0;stroke-dasharray:none;stroke-opacity:1"
        x="1084.6957"
        y="712"
        id="text196"><tspan
@@ -1303,7 +1303,7 @@
          y="712">Candace Parker</tspan></text>
     <text
        xml:space="preserve"
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:32px;line-height:37.5005px;font-family:'Chivo Mono';-inkscape-font-specification:'Chivo Mono';text-align:start;letter-spacing:0px;word-spacing:-3px;writing-mode:lr-tb;direction:ltr;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:2;stroke-linejoin:round;stroke-miterlimit:0;stroke-dasharray:none;stroke-opacity:1"
+       style="font-style:italic;font-variant:normal;font-weight:500;font-stretch:normal;font-size:32px;line-height:37.5005px;font-family:'Chivo Mono';-inkscape-font-specification:'Chivo Mono Medium Italic';text-align:start;letter-spacing:0px;word-spacing:-3px;writing-mode:lr-tb;direction:ltr;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:2;stroke-linejoin:round;stroke-miterlimit:0;stroke-dasharray:none;stroke-opacity:1"
        x="1085.6824"
        y="759.73334"
        id="text197"><tspan
@@ -1313,7 +1313,7 @@
          y="759.73334">Angel McCoughtry</tspan></text>
     <text
        xml:space="preserve"
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:32px;line-height:37.5005px;font-family:'Chivo Mono';-inkscape-font-specification:'Chivo Mono';text-align:start;letter-spacing:0px;word-spacing:-3px;writing-mode:lr-tb;direction:ltr;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:2;stroke-linejoin:round;stroke-miterlimit:0;stroke-dasharray:none;stroke-opacity:1"
+       style="font-style:italic;font-variant:normal;font-weight:500;font-stretch:normal;font-size:32px;line-height:37.5005px;font-family:'Chivo Mono';-inkscape-font-specification:'Chivo Mono Medium Italic';text-align:start;letter-spacing:0px;word-spacing:-3px;writing-mode:lr-tb;direction:ltr;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:2;stroke-linejoin:round;stroke-miterlimit:0;stroke-dasharray:none;stroke-opacity:1"
        x="1084.749"
        y="807.73334"
        id="text198"><tspan
@@ -1323,7 +1323,7 @@
          y="807.73334">Tina Charles</tspan></text>
     <text
        xml:space="preserve"
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:32px;line-height:37.5005px;font-family:'Chivo Mono';-inkscape-font-specification:'Chivo Mono';text-align:start;letter-spacing:0px;word-spacing:-3px;writing-mode:lr-tb;direction:ltr;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:2;stroke-linejoin:round;stroke-miterlimit:0;stroke-dasharray:none;stroke-opacity:1"
+       style="font-style:italic;font-variant:normal;font-weight:500;font-stretch:normal;font-size:32px;line-height:37.5005px;font-family:'Chivo Mono';-inkscape-font-specification:'Chivo Mono Medium Italic';text-align:start;letter-spacing:0px;word-spacing:-3px;writing-mode:lr-tb;direction:ltr;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:2;stroke-linejoin:round;stroke-miterlimit:0;stroke-dasharray:none;stroke-opacity:1"
        x="1084.0824"
        y="856"
        id="text199"><tspan
@@ -1333,7 +1333,7 @@
          y="856">Maya Moore</tspan></text>
     <text
        xml:space="preserve"
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:32px;line-height:37.5005px;font-family:'Chivo Mono';-inkscape-font-specification:'Chivo Mono';text-align:start;letter-spacing:0px;word-spacing:-3px;writing-mode:lr-tb;direction:ltr;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:2;stroke-linejoin:round;stroke-miterlimit:0;stroke-dasharray:none;stroke-opacity:1"
+       style="font-style:italic;font-variant:normal;font-weight:500;font-stretch:normal;font-size:32px;line-height:37.5005px;font-family:'Chivo Mono';-inkscape-font-specification:'Chivo Mono Medium Italic';text-align:start;letter-spacing:0px;word-spacing:-3px;writing-mode:lr-tb;direction:ltr;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:2;stroke-linejoin:round;stroke-miterlimit:0;stroke-dasharray:none;stroke-opacity:1"
        x="1083.7091"
        y="904"
        id="text200"><tspan
@@ -1343,7 +1343,7 @@
          y="904">Nneka Ogwumike</tspan></text>
     <text
        xml:space="preserve"
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:32px;line-height:37.5005px;font-family:'Chivo Mono';-inkscape-font-specification:'Chivo Mono';text-align:start;letter-spacing:0px;word-spacing:-3px;writing-mode:lr-tb;direction:ltr;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:2;stroke-linejoin:round;stroke-miterlimit:0;stroke-dasharray:none;stroke-opacity:1"
+       style="font-style:italic;font-variant:normal;font-weight:500;font-stretch:normal;font-size:32px;line-height:37.5005px;font-family:'Chivo Mono';-inkscape-font-specification:'Chivo Mono Medium Italic';text-align:start;letter-spacing:0px;word-spacing:-3px;writing-mode:lr-tb;direction:ltr;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:2;stroke-linejoin:round;stroke-miterlimit:0;stroke-dasharray:none;stroke-opacity:1"
        x="1084.749"
        y="1000"
        id="text201"><tspan
@@ -1353,7 +1353,7 @@
          y="1000">Chiney Ogwumike</tspan></text>
     <text
        xml:space="preserve"
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:32px;line-height:37.5005px;font-family:'Chivo Mono';-inkscape-font-specification:'Chivo Mono';text-align:start;letter-spacing:0px;word-spacing:-3px;writing-mode:lr-tb;direction:ltr;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:2;stroke-linejoin:round;stroke-miterlimit:0;stroke-dasharray:none;stroke-opacity:1"
+       style="font-style:italic;font-variant:normal;font-weight:500;font-stretch:normal;font-size:32px;line-height:37.5005px;font-family:'Chivo Mono';-inkscape-font-specification:'Chivo Mono Medium Italic';text-align:start;letter-spacing:0px;word-spacing:-3px;writing-mode:lr-tb;direction:ltr;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:2;stroke-linejoin:round;stroke-miterlimit:0;stroke-dasharray:none;stroke-opacity:1"
        x="1083.7091"
        y="952"
        id="text202"><tspan
@@ -1363,7 +1363,7 @@
          y="952">Brittney Griner</tspan></text>
     <text
        xml:space="preserve"
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:32px;line-height:37.5005px;font-family:'Chivo Mono';-inkscape-font-specification:'Chivo Mono';text-align:start;letter-spacing:0px;word-spacing:-3px;writing-mode:lr-tb;direction:ltr;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:2;stroke-linejoin:round;stroke-miterlimit:0;stroke-dasharray:none;stroke-opacity:1"
+       style="font-style:italic;font-variant:normal;font-weight:500;font-stretch:normal;font-size:32px;line-height:37.5005px;font-family:'Chivo Mono';-inkscape-font-specification:'Chivo Mono Medium Italic';text-align:start;letter-spacing:0px;word-spacing:-3px;writing-mode:lr-tb;direction:ltr;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:2;stroke-linejoin:round;stroke-miterlimit:0;stroke-dasharray:none;stroke-opacity:1"
        x="1083.2024"
        y="1048"
        id="text203"><tspan
@@ -1373,7 +1373,7 @@
          y="1048">Jewell Loyd</tspan></text>
     <text
        xml:space="preserve"
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:32px;line-height:37.5005px;font-family:'Chivo Mono';-inkscape-font-specification:'Chivo Mono';text-align:start;letter-spacing:0px;word-spacing:-3px;writing-mode:lr-tb;direction:ltr;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:2;stroke-linejoin:round;stroke-miterlimit:0;stroke-dasharray:none;stroke-opacity:1"
+       style="font-style:italic;font-variant:normal;font-weight:500;font-stretch:normal;font-size:32px;line-height:37.5005px;font-family:'Chivo Mono';-inkscape-font-specification:'Chivo Mono Medium Italic';text-align:start;letter-spacing:0px;word-spacing:-3px;writing-mode:lr-tb;direction:ltr;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:2;stroke-linejoin:round;stroke-miterlimit:0;stroke-dasharray:none;stroke-opacity:1"
        x="1083.2024"
        y="1096"
        id="text204"><tspan
@@ -1383,7 +1383,7 @@
          y="1096">Brianna Stewart</tspan></text>
     <text
        xml:space="preserve"
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:32px;line-height:37.5005px;font-family:'Chivo Mono';-inkscape-font-specification:'Chivo Mono';text-align:start;letter-spacing:0px;word-spacing:-3px;writing-mode:lr-tb;direction:ltr;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:2;stroke-linejoin:round;stroke-miterlimit:0;stroke-dasharray:none;stroke-opacity:1"
+       style="font-style:italic;font-variant:normal;font-weight:500;font-stretch:normal;font-size:32px;line-height:37.5005px;font-family:'Chivo Mono';-inkscape-font-specification:'Chivo Mono Medium Italic';text-align:start;letter-spacing:0px;word-spacing:-3px;writing-mode:lr-tb;direction:ltr;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:2;stroke-linejoin:round;stroke-miterlimit:0;stroke-dasharray:none;stroke-opacity:1"
        x="1083.7091"
        y="1143.7333"
        id="text205"><tspan
@@ -1393,7 +1393,7 @@
          y="1143.7333">Kelsey Plum</tspan></text>
     <text
        xml:space="preserve"
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:32px;line-height:37.5005px;font-family:'Chivo Mono';-inkscape-font-specification:'Chivo Mono';text-align:start;letter-spacing:0px;word-spacing:-3px;writing-mode:lr-tb;direction:ltr;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:2;stroke-linejoin:round;stroke-miterlimit:0;stroke-dasharray:none;stroke-opacity:1"
+       style="font-style:italic;font-variant:normal;font-weight:500;font-stretch:normal;font-size:32px;line-height:37.5005px;font-family:'Chivo Mono';-inkscape-font-specification:'Chivo Mono Medium Italic';text-align:start;letter-spacing:0px;word-spacing:-3px;writing-mode:lr-tb;direction:ltr;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:2;stroke-linejoin:round;stroke-miterlimit:0;stroke-dasharray:none;stroke-opacity:1"
        x="1085.3357"
        y="1192"
        id="text206"><tspan
@@ -1403,7 +1403,7 @@
          y="1192">A'ja Wilson</tspan></text>
     <text
        xml:space="preserve"
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:32px;line-height:37.5005px;font-family:'Chivo Mono';-inkscape-font-specification:'Chivo Mono';text-align:start;letter-spacing:0px;word-spacing:-3px;writing-mode:lr-tb;direction:ltr;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:2;stroke-linejoin:round;stroke-miterlimit:0;stroke-dasharray:none;stroke-opacity:1"
+       style="font-style:italic;font-variant:normal;font-weight:500;font-stretch:normal;font-size:32px;line-height:37.5005px;font-family:'Chivo Mono';-inkscape-font-specification:'Chivo Mono Medium Italic';text-align:start;letter-spacing:0px;word-spacing:-3px;writing-mode:lr-tb;direction:ltr;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:2;stroke-linejoin:round;stroke-miterlimit:0;stroke-dasharray:none;stroke-opacity:1"
        x="1083.2024"
        y="1240"
        id="text207"><tspan
@@ -1413,7 +1413,7 @@
          y="1240">Jackie Young</tspan></text>
     <text
        xml:space="preserve"
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:32px;line-height:37.5005px;font-family:'Chivo Mono';-inkscape-font-specification:'Chivo Mono';text-align:start;letter-spacing:0px;word-spacing:-3px;writing-mode:lr-tb;direction:ltr;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:2;stroke-linejoin:round;stroke-miterlimit:0;stroke-dasharray:none;stroke-opacity:1"
+       style="font-style:italic;font-variant:normal;font-weight:500;font-stretch:normal;font-size:32px;line-height:37.5005px;font-family:'Chivo Mono';-inkscape-font-specification:'Chivo Mono Medium Italic';text-align:start;letter-spacing:0px;word-spacing:-3px;writing-mode:lr-tb;direction:ltr;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:2;stroke-linejoin:round;stroke-miterlimit:0;stroke-dasharray:none;stroke-opacity:1"
        x="1084.6425"
        y="1288"
        id="text208"><tspan
@@ -1423,7 +1423,7 @@
          y="1288">Sabrina Ionescu</tspan></text>
     <text
        xml:space="preserve"
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:32px;line-height:37.5005px;font-family:'Chivo Mono';-inkscape-font-specification:'Chivo Mono';text-align:start;letter-spacing:0px;word-spacing:-3px;writing-mode:lr-tb;direction:ltr;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:2;stroke-linejoin:round;stroke-miterlimit:0;stroke-dasharray:none;stroke-opacity:1"
+       style="font-style:italic;font-variant:normal;font-weight:500;font-stretch:normal;font-size:32px;line-height:37.5005px;font-family:'Chivo Mono';-inkscape-font-specification:'Chivo Mono Medium Italic';text-align:start;letter-spacing:0px;word-spacing:-3px;writing-mode:lr-tb;direction:ltr;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:2;stroke-linejoin:round;stroke-miterlimit:0;stroke-dasharray:none;stroke-opacity:1"
        x="1084.6425"
        y="1335.7333"
        id="text209"><tspan
@@ -1433,7 +1433,7 @@
          y="1335.7333">Charli Collier</tspan></text>
     <text
        xml:space="preserve"
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:32px;line-height:37.5005px;font-family:'Chivo Mono';-inkscape-font-specification:'Chivo Mono';text-align:start;letter-spacing:0px;word-spacing:-3px;writing-mode:lr-tb;direction:ltr;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:2;stroke-linejoin:round;stroke-miterlimit:0;stroke-dasharray:none;stroke-opacity:1"
+       style="font-style:italic;font-variant:normal;font-weight:500;font-stretch:normal;font-size:32px;line-height:37.5005px;font-family:'Chivo Mono';-inkscape-font-specification:'Chivo Mono Medium Italic';text-align:start;letter-spacing:0px;word-spacing:-3px;writing-mode:lr-tb;direction:ltr;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:2;stroke-linejoin:round;stroke-miterlimit:0;stroke-dasharray:none;stroke-opacity:1"
        x="1083.7091"
        y="1383.7333"
        id="text210"><tspan
@@ -1443,7 +1443,7 @@
          y="1383.7333">Rhyne Howard</tspan></text>
     <text
        xml:space="preserve"
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:32px;line-height:37.5005px;font-family:'Chivo Mono';-inkscape-font-specification:'Chivo Mono';text-align:start;letter-spacing:0px;word-spacing:-3px;writing-mode:lr-tb;direction:ltr;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:2;stroke-linejoin:round;stroke-miterlimit:0;stroke-dasharray:none;stroke-opacity:1"
+       style="font-style:italic;font-variant:normal;font-weight:500;font-stretch:normal;font-size:32px;line-height:37.5005px;font-family:'Chivo Mono';-inkscape-font-specification:'Chivo Mono Medium Italic';text-align:start;letter-spacing:0px;word-spacing:-3px;writing-mode:lr-tb;direction:ltr;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:2;stroke-linejoin:round;stroke-miterlimit:0;stroke-dasharray:none;stroke-opacity:1"
        x="1083.7091"
        y="1432"
        id="text211"><tspan
@@ -1453,7 +1453,7 @@
          y="1432">Aliyah Boston</tspan></text>
     <text
        xml:space="preserve"
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:32px;line-height:37.5005px;font-family:'Chivo Mono';-inkscape-font-specification:'Chivo Mono';text-align:start;letter-spacing:0px;word-spacing:-3px;writing-mode:lr-tb;direction:ltr;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:2;stroke-linejoin:round;stroke-miterlimit:0;stroke-dasharray:none;stroke-opacity:1"
+       style="font-style:italic;font-variant:normal;font-weight:500;font-stretch:normal;font-size:32px;line-height:37.5005px;font-family:'Chivo Mono';-inkscape-font-specification:'Chivo Mono Medium Italic';text-align:start;letter-spacing:0px;word-spacing:-3px;writing-mode:lr-tb;direction:ltr;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:2;stroke-linejoin:round;stroke-miterlimit:0;stroke-dasharray:none;stroke-opacity:1"
        x="1085.6824"
        y="1480"
        id="text212"><tspan
@@ -1463,7 +1463,7 @@
          y="1480">Caitlin Clark</tspan></text>
     <text
        xml:space="preserve"
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:32px;line-height:37.5005px;font-family:'Chivo Mono';-inkscape-font-specification:'Chivo Mono';text-align:start;letter-spacing:0px;word-spacing:-3px;writing-mode:lr-tb;direction:ltr;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:2;stroke-linejoin:round;stroke-miterlimit:0;stroke-dasharray:none;stroke-opacity:1"
+       style="font-style:italic;font-variant:normal;font-weight:500;font-stretch:normal;font-size:32px;line-height:37.5005px;font-family:'Chivo Mono';-inkscape-font-specification:'Chivo Mono Medium Italic';text-align:start;letter-spacing:0px;word-spacing:-3px;writing-mode:lr-tb;direction:ltr;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:2;stroke-linejoin:round;stroke-miterlimit:0;stroke-dasharray:none;stroke-opacity:1"
        x="1084.6957"
        y="1527.7333"
        id="text213"><tspan
@@ -1649,16 +1649,19 @@
        id="text357">FEVER</text>
     <path
        style="fill:none;fill-opacity:0.25;stroke:#000000;stroke-width:2;stroke-linejoin:round;stroke-miterlimit:0;stroke-dasharray:none;stroke-opacity:1"
-       d="M 1464.7688,73.083987 V 1625.084"
-       id="path450" />
+       d="m 1464.7688,73.083987 0,1462.916013"
+       id="path450"
+       sodipodi:nodetypes="cc" />
     <path
        style="fill:none;fill-opacity:0.25;stroke:#000000;stroke-width:2;stroke-linejoin:round;stroke-miterlimit:0;stroke-dasharray:none;stroke-opacity:1"
-       d="M 1580.8831,73.083987 V 1625.084"
-       id="path451" />
+       d="m 1580.8831,73.083987 0,1462.916013"
+       id="path451"
+       sodipodi:nodetypes="cc" />
     <path
-       style="fill:none;fill-opacity:0.25;stroke:#000000;stroke-width:2;stroke-linejoin:round;stroke-miterlimit:0;stroke-dasharray:none;stroke-opacity:1"
-       d="M 1060.1825,73.083987 V 1625.084"
-       id="path452" />
+       style="fill:none;fill-opacity:0.25;stroke:#000000;stroke-width:3;stroke-linejoin:round;stroke-miterlimit:0;stroke-dasharray:none;stroke-opacity:1"
+       d="m 1060.1825,73.083987 0,1462.916013"
+       id="path452"
+       sodipodi:nodetypes="cc" />
     <text
        xml:space="preserve"
        style="font-style:normal;font-variant:normal;font-weight:300;font-stretch:normal;font-size:32px;line-height:28.6361px;font-family:'Chivo Mono';-inkscape-font-specification:'Chivo Mono Light';text-align:center;letter-spacing:0px;word-spacing:-1.59442px;writing-mode:lr-tb;direction:ltr;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.999997;stroke-linejoin:round;stroke-miterlimit:0"
@@ -4541,8 +4544,8 @@
        y="2379.6711"
        id="text373">1997</text>
     <path
-       style="fill:#ffffff;fill-opacity:0.25;stroke:none;stroke-width:1;stroke-linejoin:round;stroke-miterlimit:0"
-       d="M 636.12985,67.499998 V 1592 H 826.50001 V 67.499998 Z"
+       style="fill:#ffffff;fill-opacity:0.25;stroke:none;stroke-width:0.999996;stroke-linejoin:round;stroke-miterlimit:0"
+       d="M 636.12985,104 V 1536 H 826.50001 V 104 Z"
        id="path391" />
     <text
        xml:space="preserve"
@@ -4725,9 +4728,10 @@
        y="1480"
        id="text573">FEVER</text>
     <path
-       style="fill:none;fill-opacity:0.25;stroke:#000000;stroke-width:2;stroke-linejoin:round;stroke-miterlimit:0;stroke-dasharray:none;stroke-opacity:1"
-       d="M 636.12987,73.083987 V 1625.084"
-       id="path390" />
+       style="fill:none;fill-opacity:0.25;stroke:#000000;stroke-width:3;stroke-linejoin:round;stroke-miterlimit:0;stroke-dasharray:none;stroke-opacity:1"
+       d="m 636.12987,73.083987 0,1462.916013"
+       id="path390"
+       sodipodi:nodetypes="cc" />
     <text
        xml:space="preserve"
        style="font-style:normal;font-variant:normal;font-weight:300;font-stretch:normal;font-size:32px;line-height:28.6361px;font-family:'Chivo Mono';-inkscape-font-specification:'Chivo Mono Light';text-align:center;letter-spacing:0px;word-spacing:-1.59442px;writing-mode:lr-tb;direction:ltr;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.999997;stroke-linejoin:round;stroke-miterlimit:0"
@@ -5136,8 +5140,9 @@
        id="text434">Iowa</text>
     <path
        style="fill:none;fill-opacity:0.25;stroke:#000000;stroke-width:2;stroke-linejoin:round;stroke-miterlimit:0;stroke-dasharray:none;stroke-opacity:1"
-       d="M 251.25886,73.083987 V 1625.084"
-       id="path434" />
+       d="M 251.25886,73.083987 V 1536"
+       id="path434"
+       sodipodi:nodetypes="cc" />
     <text
        xml:space="preserve"
        style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:26.6667px;line-height:31.2505px;font-family:'Chivo Mono';-inkscape-font-specification:'Chivo Mono';text-align:start;letter-spacing:0px;word-spacing:-5px;writing-mode:lr-tb;direction:ltr;text-anchor:start;white-space:pre;inline-size:311;display:inline;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1;stroke-linejoin:round;stroke-miterlimit:0;stroke-dasharray:none;stroke-opacity:1"
@@ -7788,5 +7793,36 @@
        y="2648.0347"
        rx="2"
        ry="1.9999999" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:32px;line-height:37.5005px;font-family:'Chivo Mono';-inkscape-font-specification:'Chivo Mono';text-align:start;letter-spacing:0px;word-spacing:-3px;writing-mode:lr-tb;direction:ltr;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:2;stroke-linejoin:round;stroke-miterlimit:0;stroke-dasharray:none;stroke-opacity:1"
+       x="1086.285"
+       y="87.679993"
+       id="text882"><tspan
+         sodipodi:role="line"
+         id="tspan882"
+         x="1086.285"
+         y="87.679993"
+         style="font-style:italic;font-variant:normal;font-weight:500;font-stretch:normal;font-family:'Chivo Mono';-inkscape-font-specification:'Chivo Mono Medium Italic'">DRAFT PICK </tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:300;font-stretch:normal;font-size:32px;line-height:28.6361px;font-family:'Chivo Mono';-inkscape-font-specification:'Chivo Mono Light';text-align:center;letter-spacing:0px;word-spacing:-1.59442px;writing-mode:lr-tb;direction:ltr;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.999997;stroke-linejoin:round;stroke-miterlimit:0"
+       x="970.15344"
+       y="87.905815"
+       id="text883"
+       transform="scale(1.0003842,0.99961595)">YEAR</text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:300;font-stretch:normal;font-size:32px;line-height:28.6361px;font-family:'Chivo Mono';-inkscape-font-specification:'Chivo Mono Light';text-align:center;letter-spacing:0px;word-spacing:-1.59442px;writing-mode:lr-tb;direction:ltr;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.999997;stroke-linejoin:round;stroke-miterlimit:0"
+       x="754.72656"
+       y="88.033806"
+       id="text884"
+       transform="scale(1.0003842,0.99961595)">TEAM</text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:300;font-stretch:normal;font-size:32px;line-height:37.5005px;font-family:'Chivo Mono';-inkscape-font-specification:'Chivo Mono Light';text-align:start;letter-spacing:0px;word-spacing:-3px;writing-mode:lr-tb;direction:ltr;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:2;stroke-linejoin:round;stroke-miterlimit:0;stroke-dasharray:none;stroke-opacity:1"
+       x="265.22458"
+       y="87.679993"
+       id="text885">COLLEGE</text>
   </g>
 </svg>
