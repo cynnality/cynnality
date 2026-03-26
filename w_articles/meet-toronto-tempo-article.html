@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang=en data-version=1.43.1 data-build=- style class>
+<meta charset=utf-8>
+<title>toronto tempo intro</title>
+<meta name=viewport content="width=device-width, initial-scale=1.0">
+
+    <!-- ======================== MY FONTS ADDED ===== MONO FONTS ========================
+         CHIVO MONO 
+         ---- (monospaced // kinda playful ? serif) 
+
+         DM MONO 
+         ---- (monospaced, serif, gives digital feel - could be good replacement for v323)
+
+         JET BRAINS MONO 
+         ---- (monospaced, generally sans-serif. 
+         ---- want to use for all caps / titles / such things big bold (and oblique) style header feel)
+         ============================================================-->
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Chivo+Mono:ital,wght@0,100..900;1,100..900&family=DM+Mono:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap" rel="stylesheet">
+<!--======================================END TO MY FONTS ADDED===============================================-->
+
+<style>
+
+    a,
+    article,
+    body,
+    div,
+    em,
+    footer,
+    h2,
+    h3,
+    h4,
+    header,
+    html,
+    iframe,
+    img,
+    label,
+    li,
+    nav,
+    p,
+    section,
+    small,
+    span,
+    strong,
+    ul {
+        margin: 0;
+        padding: 0;
+        border: 0;
+    }
+
+    article,
+    footer,
+    header,
+    nav,
+    section {
+        display: block
+    }
+
+    ._Article__header_1s89h_12 {
+        margin-bottom: 2rem
+    }
+
+    ._Article__sub-header_1s89h_26 {
+        font-family: "Chivo", sans-serif;
+        color: #333333;
+        line-height: 1;
+        margin: 1rem 0 1.5rem;
+        display: flex;
+        flex-direction: column;
+        gap: .5rem
+    }
+
+    ._Article__sub-header_1s89h_26 span {
+        display: none
+    }
+
+    ._Article__sub-header_1s89h_26 * {
+        flex: 0 0 auto
+    }
+
+    @media only screen and (min-width:48.05em) {
+        ._Article__sub-header_1s89h_26 {
+            flex-direction: row;
+            margin: 1.5rem 0 2rem
+        }
+
+        ._Article__sub-header_1s89h_26 span {
+            display: block
+        }
+    }
+
+    .main-article {
+        width: 100%;
+        max-width: 53rem;
+        color: #000;
+        margin: 0 auto 2rem;
+        line-height: 1.5rem
+    }
+
+    .main-article p:not(:last-of-type) {
+        margin-bottom: 1rem
+    }
+
+    .main-article a,
+    .main-article p a {
+        color: var(--text-link-color);
+        text-decoration: underline
+    }
+
+    .main-article ol li:before {
+        content: counter(li)".";
+        width: 1em;
+        color: var(--primary-light);
+        margin-left: -1.5em;
+        margin-right: .5em;
+        text-align: right;
+        direction: rtl
+    }
+
+    .main-article ol ol>li:before {
+        content: counter(li, lower-alpha)".";
+        color: revert;
+        width: 1em
+    }
+
+    .main-article ol ol>ol>li:before {
+        content: counter(li, lower-roman)".";
+        color: revert;
+        width: 1em
+    }
+
+    .main-article ol ul>li:before {
+        content: "●";
+        color: revert;
+        width: 1em
+    }
+
+    .main-article ol ul>ul>li:before {
+        content: "○";
+        color: revert;
+        width: 1em
+    }
+
+    .main-article ul li:before {
+        content: "●";
+        width: 1em;
+        color: var(--primary-light);
+        margin-left: -1.5em;
+        margin-right: .5em;
+        text-align: right;
+        direction: rtl
+    }
+
+    .main-article ul ul>li:before {
+        content: "●";
+        color: revert;
+        width: 1em
+    }
+
+    .main-article ul ul>ul>li:before {
+        content: "○";
+        color: revert;
+        width: 1em
+    }
+
+    .main-article ul ol>li:before {
+        content: counter(li, lower-alpha)".";
+        color: revert;
+        width: 1em
+    }
+
+    .main-article ul ol>ol>li:before {
+        content: counter(li, lower-roman)".";
+        color: revert;
+        width: 1em
+    }
+
+    ._Article_1s89h_6 h2 {
+        margin-bottom: 1rem
+    }
+
+    ._Article_1s89h_6 h2 {
+        font-family: "Chivo", sans-serif;
+        font-size: 1.75rem;
+        line-height: 1.25
+    }
+
+    @media only screen and (min-width:71.3em) {
+        ._Article_1s89h_6 h2 {
+            font-size: 2rem
+        }
+    }
+
+    ._Article_1s89h_6 table tfoot td:first-child:after,
+    ._Article_1s89h_6 table thead th:first-child:after {
+        content: "";
+        position: absolute;
+        top: 0;
+        right: 0;
+        height: 100%;
+        width: 1px;
+        background-color: color-mix(in srgb, var(--light-text) 30%, transparent)
+    }
+
+    ._Article_1s89h_6 table tbody td:first-child:after {
+        content: "";
+        position: absolute;
+        top: 0;
+        right: 0;
+        height: 100%;
+        width: 1px;
+        background-color: #d6d6d6
+    }
+
+    ._Article_1s89h_6 blockquote a:hover,
+    ._Article_1s89h_6 q a:hover {
+        text-decoration: underline
+    }
+
+    ._Article_1s89h_6 blockquote:before,
+    ._Article_1s89h_6 q:before {
+        content: "“";
+        font-family: "Chivo Mono", system-ui;
+        font-size: 3rem;
+        position: absolute;
+        left: 0;
+        top: 0
+    }
+
+    ._Article_1s89h_6 blockquote:after,
+    ._Article_1s89h_6 q:after {
+        content: "";
+        width: 8px;
+        height: calc(100% - 2.5rem);
+        left: 0;
+        bottom: 0;
+        position: absolute;
+        background: var(--secondary-light)
+    }
+
+    @media only screen and (min-width:48.05em) {
+
+        ._Article_1s89h_6 blockquote:after,
+        ._Article_1s89h_6 q:after {
+            width: 10px
+        }
+    }
+
+    ._Article__category-list_1s89h_439 ul {
+        list-style-type: none;
+        margin: 0 0 1rem
+    }
+
+
+    /*=============== MY CSS STYLES ===============*/
+    body {
+        background-color: #e3e3e3;
+    }
+
+        .opening-theme {
+            font-family: "Chivo Mono", system-ui;
+            font-style: normal;
+            display: flex;
+            align-items: center;
+            gap: 1em;
+            /*! margin-top: 1em; */
+            /*! padding-bottom: 1em; */
+            border-bottom: solid #000 2px;
+        }
+        .main-article {
+            font-family: "Chivo", sans-serif;
+            font-size: 1.2rem;
+            line-height: 1.5rem;
+        }
+        .opening-theme h2 {
+            font-style: normal;
+            font-weight: 300;
+
+            font-size: 24px;
+        }
+        .opening-theme h4 {
+            font-family: "DM Mono", monospace;
+            font-style: normal;
+            font-size: 26px;
+            font-weight: 300;
+        }
+        .w_articles_opening_wrap {
+            display: flex;
+            flex-direction: column;
+        }
+        .article_sources {
+            display: flex;
+            flex-direction: column;
+            gap: 0.5em;
+            margin-top: 0.25em;
+            font-family: "Chivo Mono", system-ui;
+            font-style: normal;
+            font-size: 16px;
+            margin-bottom: 1.5em;
+            border-bottom: solid 2px #000;
+            padding: .75em;
+        }
+/*=============== END TO MY CSS STYLES ===============*/
+
+</style>
+
+<meta name=referrer content=no-referrer>
+
+<body style=background-color:#e3e3e3>
+
+<!--I ADDED STUFF HERE-->
+    <div class="w_articles_opening_wrap">
+        <div class="opening-theme">
+            <a href="../index.html"><h2>CYNNALITY</h2></a><h4>></h4>
+            <a href="../w-listings.html"><h4>  W_LISTINGS</h4></a><h4>></h4>
+            <a href="w_articles.html"><h4> W_ARTICLES</h4></a>
+            <h4> > meet the toronto tempo (new wnba team)</h4>
+        </div>
+        <div class="article_sources">
+            <a href="https://www.wnba.com/news/meet-the-toronto-tempo" target="_blank">original source / wnba.com</a>
+        </div>
+    </div>
+<!--END TO STUFF I ADDED -->
+
+        <section class=News_Article__YPIS9 style=pointer-events:auto>
+            <div class=wrapper style=pointer-events:auto>
+                <article class=_Article_1s89h_6
+                    style=--secondary-light:#fa4d00;--primary-light:#fa4d00;--text-link-color:#d64000;pointer-events:auto>
+
+                    <div class=_Article__header_1s89h_12>
+                        <h2 class=_Article__title_1s89h_15>Meet the Toronto Tempo</h2>
+                        <div class=_Article__sub-header_1s89h_26>
+                            <div class>Thu, Dec 5, 2024, 7:06 AM</div><span class>/</span>
+                        </div>
+                    </div>
+                    <div class=main-article>
+                        <p style=text-align:center class><em class>More than 10,000 people submitted ideas and
+                                inspiration for the name, which was chosen to<br class>
+                                reflect the rhythm and pace of both our nation and the game of basketball</em><em
+                                class>&nbsp;</em></p>
+                        <p class>December 5, 2024 [Toronto, ON] – Canada’s first WNBA team has a name: Toronto Tempo.
+                            This new brand identity was inspired by the rhythm of our city, our country, and the game of
+                            basketball. In play and in life, it’s not just about how fast you move, but how you control
+                            the pulse of the world around you.</p>
+                        <p class>“Tempo is pace. It’s speed. It’s a heartbeat. And it’s what you feel when you step into
+                            the streets of this city, and in the energy of the people who call Canada home,” said Teresa
+                            Resch, President of the Toronto Tempo. “As Canada’s WNBA team, I know the Tempo will set our
+                            own pace, move at a championship cadence, and inspire people across this country.”</p>
+                        <p class>This name and brand identity are the outcome of an unprecedented public engagement
+                            program, “Name Your Team”, which created an open call-for-inspiration from across Canada and
+                            around the world. More than 10,000 people weighed in, and the Toronto Tempo brand was
+                            informed by both the inputs of those contributions and feedback and insights from a
+                            community council. The result is an identity designed to define the energy and spirit of
+                            both Canada’s newest sports franchise and its fans.</p>
+                        <p class>The name was purposefully designed to work in both French and English, creating an
+                            inclusive brand for fans across the country.</p>
+                        <p class>The Tempo logo similarly reflects the team’s values – its forward-leaning motion
+                            representing the team’s desire for progress; its sharp angles and round curves a nod to the
+                            dynamic nature of the team and the game; its six lines representing the five players on the
+                            court and the sixth player in the game: the fans.</p>
+                        <p class>“Tempo reflects what fans can expect from this team – including, of course, the in-game
+                            experience at the arena,” continued Resch. “The sounds of the court. The beat of the music.
+                            The passion of the fans around you and the intensity of the players on the floor.&nbsp;
+                            Capturing all that energy, excitement and feeling was crucial as we chose the name for
+                            Canada’s WNBA team.”</p>
+
+                        <p class>The Toronto Tempo will begin playing at Toronto’s Coca-Cola Coliseum in 2026.</p>
+                        <p class><strong class>About Toronto Tempo</strong></p>
+                        <p class>In May 2024, the Women’s National Basketball Association (WNBA) announced its expansion
+                            into Canada by awarding Toronto an expansion team, the league’s first outside the United
+                            States.&nbsp; The new team, owned and operated by Kilmer Sports Ventures, will begin play in
+                            the 2026 season as the WNBA’s 14th franchise. Larry Tanenbaum, Chairman of Kilmer Sports
+                            Ventures and a 30-year veteran of building championship-caliber teams, is also Chairman of
+                            the NBA Board of Governors and Chairman of Maple Leaf Sports &amp; Entertainment, which owns
+                            the NBA’s Toronto Raptors, NHL’s Toronto Maple Leafs, MLS’ Toronto FC and other professional
+                            sports franchises.&nbsp; Under his leadership, the Raptors won their first NBA championship
+                            in 2019.</p>
+
+
+                    </div>
+                </article>
+            </div>
+        </section>
