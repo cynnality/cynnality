@@ -26,9 +26,9 @@
      inkscape:pagecheckerboard="0"
      inkscape:deskcolor="#d1d1d1"
      inkscape:document-units="px"
-     inkscape:zoom="0.73730611"
-     inkscape:cx="483.51695"
-     inkscape:cy="450.96602"
+     inkscape:zoom="0.52135415"
+     inkscape:cx="140.97903"
+     inkscape:cy="394.16585"
      inkscape:window-width="1859"
      inkscape:window-height="1011"
      inkscape:window-x="0"
@@ -38,7 +38,24 @@
      showguides="true"
      inkscape:export-bgcolor="#e3e3e300" />
   <defs
-     id="defs1" />
+     id="defs1">
+    <marker
+       style="overflow:visible"
+       id="Dot-3"
+       refX="0"
+       refY="0"
+       orient="auto"
+       markerWidth="0.89999998"
+       markerHeight="0.89999998"
+       viewBox="0 0 1 1"
+       preserveAspectRatio="xMidYMid">
+      <path
+         transform="scale(0.5)"
+         style="fill:context-stroke;fill-rule:evenodd;stroke:none"
+         d="M 5,0 C 5,2.76 2.76,5 0,5 -2.76,5 -5,2.76 -5,0 c 0,-2.76 2.3,-5 5,-5 2.76,0 5,2.24 5,5 z"
+         id="path17-6" />
+    </marker>
+  </defs>
   <text
      xml:space="preserve"
      style="font-style:normal;font-variant:normal;font-weight:500;font-stretch:normal;font-size:48px;line-height:56.2506px;font-family:'Chivo Mono';-inkscape-font-specification:'Chivo Mono Medium';text-align:start;letter-spacing:0px;word-spacing:-5px;writing-mode:lr-tb;direction:ltr;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:0;stroke-dasharray:none;stroke-opacity:1"
@@ -62,11 +79,11 @@
      transform="translate(-313.79182,-168.74627)"><tspan
        x="341.79794"
        y="316.23996"
-       id="tspan3"><tspan
+       id="tspan47"><tspan
          dx="0 0 0 0 0 5 -5 0 0 0 5 -5 0 5"
-         id="tspan1">FIRST PICK of </tspan><tspan
+         id="tspan45">FIRST PICK of </tspan><tspan
          dx="-5 0 0 0 0 0 5 -5 5 -5"
-         id="tspan2">SEASON 3 DRAFT</tspan></tspan></text>
+         id="tspan46">SEASON 3 DRAFT</tspan></tspan></text>
   <rect
      style="fill:#95a8e8;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:4.00001;stroke-dasharray:none;stroke-opacity:1"
      id="c_h"
@@ -129,7 +146,7 @@
      ry="0.39744213" />
   <path
      style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-linejoin:round;stroke-miterlimit:0;stroke-dasharray:none"
-     d="M 147.02192,540.33556 H 334.40563 V 916.75414"
+     d="M 642.76259,540.33556 H 830.14625 V 916.75414"
      id="path20"
      sodipodi:nodetypes="ccc" />
   <circle
@@ -180,7 +197,7 @@
      transform="translate(309.96346,205.11663)"><tspan
        x="196.12389"
        y="156.32368"
-       id="tspan4">1998</tspan></text>
+       id="tspan48">1998</tspan></text>
   <text
      xml:space="preserve"
      style="font-style:normal;font-variant:normal;font-weight:300;font-stretch:normal;font-size:13.3333px;line-height:11.3638px;font-family:'Chivo Mono';-inkscape-font-specification:'Chivo Mono Light';text-align:center;letter-spacing:-1px;word-spacing:-2px;writing-mode:lr-tb;direction:ltr;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.5;stroke-linejoin:round;stroke-miterlimit:0;stroke-dasharray:none;stroke-opacity:1"
@@ -243,23 +260,23 @@
      transform="translate(509.75415,205.11665)"><tspan
        x="196.12389"
        y="156.32368"
-       id="tspan5">2000</tspan></text>
+       id="tspan49">2000</tspan></text>
   <rect
      style="fill:#ffffff;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0.999999;stroke-opacity:1"
      id="rect63"
      width="95.862541"
      height="30"
-     x="51.159374"
+     x="546.90002"
      y="525.33557" />
   <text
      xml:space="preserve"
      style="font-style:normal;font-variant:normal;font-weight:300;font-stretch:normal;font-size:13.3333px;line-height:12.5001px;font-family:'Chivo Mono';-inkscape-font-specification:'Chivo Mono Light';text-align:center;letter-spacing:-1px;word-spacing:-2px;writing-mode:lr-tb;direction:ltr;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1;stroke-linejoin:round;stroke-miterlimit:0;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
-     x="99.110664"
+     x="594.85132"
      y="544.90887"
      id="text63"><tspan
        sodipodi:role="line"
        id="tspan63"
-       x="98.610664"
+       x="594.35132"
        y="544.90887"
        style="font-size:13.3333px;line-height:12.5001px">WNBA CAREER</tspan></text>
   <rect
@@ -267,7 +284,7 @@
      id="rect64"
      width="12"
      height="12"
-     x="44.584309"
+     x="540.32495"
      y="533.63995"
      rx="1"
      ry="1" />
@@ -303,28 +320,28 @@
   <circle
      style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:3;stroke-linejoin:round;stroke-miterlimit:0;stroke-dasharray:none;stroke-opacity:1"
      id="circle43"
-     cx="460.46262"
+     cx="124.79827"
      cy="609.66742"
      r="80" />
   <circle
      style="fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-linejoin:round;stroke-miterlimit:0;stroke-dasharray:none;stroke-opacity:1"
      id="path41"
-     cx="257.7562"
-     cy="-772.88806"
+     cx="425.58838"
+     cy="-482.19421"
      transform="rotate(120)"
      r="25" />
   <circle
      style="fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-linejoin:round;stroke-miterlimit:0;stroke-dasharray:none;stroke-opacity:1"
      id="circle41"
-     cx="377.7561"
-     cy="-703.60602"
+     cx="545.58826"
+     cy="-412.91217"
      transform="rotate(120)"
      r="25" />
   <circle
      style="fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-linejoin:round;stroke-miterlimit:0;stroke-dasharray:none;stroke-opacity:1"
      id="circle42"
-     cx="257.75604"
-     cy="-634.3241"
+     cx="425.58826"
+     cy="-343.63028"
      r="25"
      transform="rotate(120.00001)" />
   <text
@@ -333,30 +350,30 @@
      x="196.12389"
      y="156.32368"
      id="text50"
-     transform="translate(224.22663,390.46438)"><tspan
+     transform="translate(-111.43772,390.46438)"><tspan
        x="196.12389"
        y="156.32368"
-       id="tspan6">1996</tspan></text>
+       id="tspan50">1996</tspan></text>
   <text
      xml:space="preserve"
      style="font-style:italic;font-variant:normal;font-weight:200;font-stretch:normal;font-size:18.6667px;line-height:15.9093px;font-family:'Chivo Mono';-inkscape-font-specification:'Chivo Mono Ultra-Light Italic';text-align:center;letter-spacing:-1px;word-spacing:-2px;writing-mode:lr-tb;direction:ltr;text-anchor:middle;white-space:pre;inline-size:71.7435;display:inline;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.5;stroke-linejoin:round;stroke-miterlimit:0;stroke-dasharray:none;stroke-opacity:1"
      x="196.12389"
      y="156.32368"
      id="text51"
-     transform="translate(343.77857,459.74644)"><tspan
+     transform="translate(8.1142238,459.74644)"><tspan
        x="196.12389"
        y="156.32368"
-       id="tspan7">1997</tspan></text>
+       id="tspan51">1997</tspan></text>
   <text
      xml:space="preserve"
      style="font-style:italic;font-variant:normal;font-weight:200;font-stretch:normal;font-size:18.6667px;line-height:15.9093px;font-family:'Chivo Mono';-inkscape-font-specification:'Chivo Mono Ultra-Light Italic';text-align:center;letter-spacing:-1px;word-spacing:-2px;writing-mode:lr-tb;direction:ltr;text-anchor:middle;white-space:pre;inline-size:71.7435;display:inline;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.5;stroke-linejoin:round;stroke-miterlimit:0;stroke-dasharray:none;stroke-opacity:1"
      x="196.12389"
      y="156.32368"
      id="text52"
-     transform="translate(224.3106,529.02841)"><tspan
+     transform="translate(-111.35375,529.02841)"><tspan
        x="196.12389"
        y="156.32368"
-       id="tspan8">1998</tspan></text>
+       id="tspan52">1998</tspan></text>
   <rect
      style="display:none;fill:none;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:2;stroke-dasharray:2, 8;stroke-dashoffset:0;stroke-opacity:1"
      id="rect66"
@@ -367,7 +384,7 @@
   <circle
      style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:3;stroke-linejoin:round;stroke-miterlimit:0;stroke-dasharray:none;stroke-opacity:1"
      id="circle59"
-     cx="750.50269"
+     cx="414.83835"
      cy="609.66742"
      r="80" />
   <text
@@ -376,66 +393,66 @@
      x="196.12389"
      y="156.32368"
      id="text47"
-     transform="translate(264.12525,316.89128)"><tspan
+     transform="translate(-71.539096,316.89128)"><tspan
        x="196.12389"
        y="156.32368"
-       id="tspan11"><tspan
+       id="tspan54"><tspan
          dx="0 0 0 0 1.999999 -2.000001"
-         id="tspan10">NCAA RINGS</tspan></tspan></text>
+         id="tspan53">NCAA RINGS</tspan></tspan></text>
   <text
      xml:space="preserve"
      style="font-style:normal;font-variant:normal;font-weight:200;font-stretch:normal;font-size:21.3333px;line-height:18.1821px;font-family:'Chivo Mono';-inkscape-font-specification:'Chivo Mono Ultra-Light';text-align:center;letter-spacing:-1px;word-spacing:-2px;writing-mode:lr-tb;direction:ltr;text-anchor:middle;white-space:pre;inline-size:161.846;display:inline;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.5;stroke-linejoin:round;stroke-miterlimit:0;stroke-dasharray:none;stroke-opacity:1"
      x="196.12389"
      y="156.32368"
      id="text60"
-     transform="translate(554.90137,316.89128)"><tspan
+     transform="translate(219.23702,316.89128)"><tspan
        x="196.12389"
        y="156.32368"
-       id="tspan13"><tspan
+       id="tspan60"><tspan
          dx="0 0 0 0 1.999999 -2.000001"
-         id="tspan12">WNBA RINGS</tspan></tspan></text>
+         id="tspan57">WNBA RINGS</tspan></tspan></text>
   <text
      xml:space="preserve"
      style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:53.3129px;line-height:62.4766px;font-family:'Chivo Mono';-inkscape-font-specification:'Chivo Mono';text-align:center;letter-spacing:-5.99769px;word-spacing:-4.99808px;writing-mode:lr-tb;direction:ltr;text-anchor:middle;fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:0;stroke-miterlimit:0;stroke-dasharray:none;stroke-opacity:1"
-     x="739.37854"
+     x="403.84311"
      y="628.18799"
      id="text68"
      transform="scale(1.0003842,0.99961595)"><tspan
        id="tspan68"
-       x="736.3797"
+       x="400.84427"
        y="628.18799"
        style="font-size:53.3129px;line-height:62.4766px;letter-spacing:-5.99769px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0;stroke-dasharray:none">C</tspan></text>
   <text
      xml:space="preserve"
      style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:53.3129px;line-height:62.4766px;font-family:'Chivo Mono';-inkscape-font-specification:'Chivo Mono';text-align:center;letter-spacing:-2.99885px;word-spacing:-4.99808px;writing-mode:lr-tb;direction:ltr;text-anchor:middle;fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:0;stroke-miterlimit:0;stroke-dasharray:none;stroke-opacity:1"
-     x="767.4679"
+     x="431.93246"
      y="628.18799"
      id="text69"
      transform="scale(1.0003842,0.99961595)"><tspan
        id="tspan69"
-       x="765.96851"
+       x="430.43307"
        y="628.18799"
        style="line-height:62.4766px;letter-spacing:-2.99885px;baseline-shift:baseline;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0;stroke-dasharray:none">H</tspan></text>
   <text
      xml:space="preserve"
      style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:53.3129px;line-height:62.4766px;font-family:'Chivo Mono';-inkscape-font-specification:'Chivo Mono';text-align:center;letter-spacing:-5.99769px;word-spacing:-4.99808px;writing-mode:lr-tb;direction:ltr;text-anchor:middle;fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:0;stroke-miterlimit:0;stroke-dasharray:none;stroke-opacity:1"
-     x="449.44989"
+     x="113.91446"
      y="634.2442"
      id="text70"
      transform="scale(1.0003842,0.99961595)"><tspan
        id="tspan70"
-       x="446.45105"
+       x="110.91562"
        y="634.2442"
        style="font-size:53.3129px;line-height:62.4766px;letter-spacing:-5.99769px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0;stroke-dasharray:none">C</tspan></text>
   <text
      xml:space="preserve"
      style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:53.3129px;line-height:62.4766px;font-family:'Chivo Mono';-inkscape-font-specification:'Chivo Mono';text-align:center;letter-spacing:-2.99885px;word-spacing:-4.99808px;writing-mode:lr-tb;direction:ltr;text-anchor:middle;fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:0;stroke-miterlimit:0;stroke-dasharray:none;stroke-opacity:1"
-     x="477.53918"
+     x="142.00375"
      y="634.2442"
      id="text71"
      transform="scale(1.0003842,0.99961595)"><tspan
        id="tspan71"
-       x="476.03976"
+       x="140.50433"
        y="634.2442"
        style="line-height:62.4766px;letter-spacing:-2.99885px;baseline-shift:baseline;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0;stroke-dasharray:none">H</tspan></text>
   <rect
@@ -450,13 +467,13 @@
      id="rect4"
      width="12"
      height="12"
-     x="743.13635"
+     x="407.47202"
      y="484.65994"
      rx="1"
      ry="1" />
   <path
      style="fill:none;stroke:#000000;stroke-width:2;stroke-linejoin:round;stroke-miterlimit:0;stroke-dasharray:none"
-     d="m 749.13635,528.16743 v -48.18824 h -61.1233 127.99974"
+     d="M 413.472,528.16743 V 479.97919 H 352.3487 480.34844"
      id="path4"
      sodipodi:nodetypes="cccc" />
   <rect
@@ -464,13 +481,13 @@
      id="rect5"
      width="12"
      height="12"
-     x="452.07904"
+     x="116.4147"
      y="484.65994"
      rx="1"
      ry="1" />
   <path
      style="fill:none;stroke:#000000;stroke-width:2;stroke-linejoin:round;stroke-miterlimit:0;stroke-dasharray:none"
-     d="m 458.07904,528.16743 v -48.18824 h -61.1233 127.99974"
+     d="M 122.41469,528.16743 V 479.97919 H 61.291394 189.29113"
      id="path5"
      sodipodi:nodetypes="cccc" />
   <rect
@@ -478,7 +495,7 @@
      id="rect346-6"
      width="40"
      height="30"
-     x="44.613941"
+     x="540.35461"
      y="642.77081"
      rx="4"
      ry="4" />
@@ -487,7 +504,7 @@
      id="rect347-2"
      width="15.000003"
      height="29.000004"
-     x="47.530895"
+     x="543.27155"
      y="639.77081"
      rx="1.9999999"
      ry="2" />
@@ -497,21 +514,21 @@
      x="1673.3223"
      y="1532.6539"
      id="text349-6"
-     transform="translate(-1581.6096,-887.33146)"><tspan
+     transform="translate(-1085.8689,-887.33146)"><tspan
        x="1673.3223"
        y="1532.6539"
-       id="tspan15"><tspan
+       id="tspan62"><tspan
          dx="0 0 0 0 0 0 0 0 0 0 1.0000048"
          style="stroke:none"
-         id="tspan14">WASHINGTON </tspan></tspan><tspan
+         id="tspan61">WASHINGTON </tspan></tspan><tspan
        x="1673.3223"
        y="1552.3706"
-       id="tspan17"><tspan
+       id="tspan67"><tspan
          style="stroke:none"
-         id="tspan16">MYSTICS</tspan></tspan></text>
+         id="tspan66">MYSTICS</tspan></tspan></text>
   <path
      style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-linejoin:round;stroke-miterlimit:0;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
-     d="M 84.613941,648.7782 H 251.66306"
+     d="M 580.35461,648.7782 H 747.40375"
      id="path349-7"
      sodipodi:nodetypes="cc" />
   <rect
@@ -519,7 +536,7 @@
      id="rect10"
      width="40"
      height="30"
-     x="44.613941"
+     x="540.35461"
      y="794.36536"
      rx="4"
      ry="4" />
@@ -528,7 +545,7 @@
      id="rect11"
      width="15.000003"
      height="29.000004"
-     x="47.530903"
+     x="543.27155"
      y="791.36536"
      rx="1.9999999"
      ry="2" />
@@ -538,21 +555,21 @@
      x="1673.3223"
      y="1532.6539"
      id="text14"
-     transform="translate(-1581.8523,-732.38013)"><tspan
+     transform="translate(-1086.1116,-732.38013)"><tspan
        x="1673.3223"
        y="1532.6539"
-       id="tspan30"><tspan
+       id="tspan75"><tspan
          dx="0 0 0 0 0 0 0 1.0000048"
          style="stroke:none"
-         id="tspan29">ATLANTA </tspan></tspan><tspan
+         id="tspan74">ATLANTA </tspan></tspan><tspan
        x="1673.3223"
        y="1552.3706"
-       id="tspan32"><tspan
+       id="tspan77"><tspan
          style="stroke:none"
-         id="tspan31">DREAM</tspan></tspan></text>
+         id="tspan76">DREAM</tspan></tspan></text>
   <path
      style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-linejoin:round;stroke-miterlimit:0;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
-     d="M 84.613941,803.72946 H 250.33599"
+     d="M 580.35461,803.72946 H 746.07665"
      id="path14"
      sodipodi:nodetypes="cc" />
   <rect
@@ -560,7 +577,7 @@
      id="rect433-3"
      width="40.000004"
      height="29"
-     x="44.613937"
+     x="540.35461"
      y="726.28107"
      rx="4"
      ry="4" />
@@ -570,7 +587,7 @@
      width="29.000002"
      height="15.000003"
      x="722.28107"
-     y="-62.676407"
+     y="-558.41705"
      rx="2"
      ry="2"
      transform="rotate(90)" />
@@ -580,22 +597,22 @@
      x="1673.3223"
      y="1532.6539"
      id="text435-1"
-     transform="translate(-1582.3376,-796.79956)"><tspan
+     transform="translate(-1086.5969,-796.79956)"><tspan
        x="1673.3223"
        y="1532.6539"
-       id="tspan34"><tspan
+       id="tspan79"><tspan
          dx="0 0 0 0.99999905 -0.99999905 0 0 0 0 0 0 0.99999714"
          style="stroke:none"
-         id="tspan33">LOS ANGELES 
+         id="tspan78">LOS ANGELES 
 </tspan></tspan><tspan
        x="1673.3223"
        y="1552.3706"
-       id="tspan36"><tspan
+       id="tspan81"><tspan
          style="stroke:none"
-         id="tspan35">SPARKS</tspan></tspan></text>
+         id="tspan80">SPARKS</tspan></tspan></text>
   <path
      style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-linejoin:round;stroke-miterlimit:0;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
-     d="M 84.613943,738.78117 H 252.28806"
+     d="M 580.35461,738.78117 H 748.02875"
      id="path435-3"
      sodipodi:nodetypes="cc" />
   <rect
@@ -603,7 +620,7 @@
      id="rect207-2"
      width="40"
      height="30"
-     x="44.613941"
+     x="540.35461"
      y="871.19989"
      rx="4"
      ry="4" />
@@ -612,7 +629,7 @@
      id="rect208-7"
      width="15.000003"
      height="29.000004"
-     x="47.676426"
+     x="543.41705"
      y="868.19989"
      rx="1.9999999"
      ry="2" />
@@ -622,172 +639,172 @@
      x="1673.3223"
      y="1532.6539"
      id="text220-6"
-     transform="translate(-1584.69,-650.8807)"><tspan
+     transform="translate(-1088.9493,-650.8807)"><tspan
        x="1673.3223"
        y="1532.6539"
-       id="tspan38"><tspan
+       id="tspan83"><tspan
          dx="0 0 0 2.999999 -2.999999 0 0 0 0 0 0 2.9999971"
          style="stroke:none"
-         id="tspan37">SAN ANTONIO </tspan></tspan><tspan
+         id="tspan82">SAN ANTONIO </tspan></tspan><tspan
        x="1673.3223"
        y="1552.3706"
-       id="tspan40"><tspan
+       id="tspan85"><tspan
          dx="0 0 0 0 0 0 2.9999971 -2.9999952"
          style="stroke:none"
-         id="tspan39">SILVER STARS</tspan></tspan></text>
+         id="tspan84">SILVER STARS</tspan></tspan></text>
   <path
      style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-linejoin:round;stroke-miterlimit:0;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
-     d="M 84.613951,884.69996 H 253.23145 V 827.1575"
+     d="M 580.35462,884.69996 H 748.97215 V 827.1575"
      id="path220-5"
      sodipodi:nodetypes="ccc" />
   <text
      xml:space="preserve"
      style="font-style:normal;font-variant:normal;font-weight:200;font-stretch:normal;font-size:18.6667px;line-height:21.8752px;font-family:'Chivo Mono';-inkscape-font-specification:'Chivo Mono Ultra-Light';text-align:center;letter-spacing:0px;word-spacing:-5px;writing-mode:lr-tb;direction:ltr;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:0;stroke-dasharray:none;stroke-opacity:1"
-     x="292.15689"
+     x="787.89752"
      y="637.82172"
      id="text18"><tspan
        sodipodi:role="line"
        id="tspan18"
-       x="292.15689"
+       x="787.89752"
        y="637.82172">2001</tspan></text>
   <text
      xml:space="preserve"
      style="font-style:normal;font-variant:normal;font-weight:200;font-stretch:normal;font-size:18.6667px;line-height:21.8752px;font-family:'Chivo Mono';-inkscape-font-specification:'Chivo Mono Ultra-Light';text-align:center;letter-spacing:0px;word-spacing:-5px;writing-mode:lr-tb;direction:ltr;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:0;stroke-dasharray:none;stroke-opacity:1"
-     x="292.16483"
+     x="787.90546"
      y="702.23895"
      id="text19"><tspan
        sodipodi:role="line"
        id="tspan19"
-       x="292.16483"
+       x="787.90546"
        y="702.23895">2004</tspan></text>
   <text
      xml:space="preserve"
      style="font-style:normal;font-variant:normal;font-weight:200;font-stretch:normal;font-size:18.6667px;line-height:21.8752px;font-family:'Chivo Mono';-inkscape-font-specification:'Chivo Mono Ultra-Light';text-align:center;letter-spacing:0px;word-spacing:-5px;writing-mode:lr-tb;direction:ltr;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:0;stroke-dasharray:none;stroke-opacity:1"
-     x="292.48489"
+     x="788.22552"
      y="809.60095"
      id="text20"><tspan
        sodipodi:role="line"
        id="tspan20"
-       x="292.48489"
+       x="788.22552"
        y="809.60095">2009</tspan></text>
   <text
      xml:space="preserve"
      style="font-style:normal;font-variant:normal;font-weight:200;font-stretch:normal;font-size:18.6667px;line-height:21.8752px;font-family:'Chivo Mono';-inkscape-font-specification:'Chivo Mono Ultra-Light';text-align:center;letter-spacing:0px;word-spacing:-5px;writing-mode:lr-tb;direction:ltr;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:0;stroke-dasharray:none;stroke-opacity:1"
-     x="292.19681"
+     x="787.93744"
      y="594.87683"
      id="text21"><tspan
        sodipodi:role="line"
        id="tspan21"
-       x="292.19681"
+       x="787.93744"
        y="594.87683">1999</tspan></text>
   <text
      xml:space="preserve"
      style="font-style:normal;font-variant:normal;font-weight:200;font-stretch:normal;font-size:18.6667px;line-height:21.8752px;font-family:'Chivo Mono';-inkscape-font-specification:'Chivo Mono Ultra-Light';text-align:center;letter-spacing:0px;word-spacing:-5px;writing-mode:lr-tb;direction:ltr;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:0;stroke-dasharray:none;stroke-opacity:1"
-     x="292.10086"
+     x="787.84149"
      y="616.34924"
      id="text22"><tspan
        sodipodi:role="line"
        id="tspan22"
-       x="292.10086"
+       x="787.84149"
        y="616.34924">2000</tspan></text>
   <text
      xml:space="preserve"
      style="font-style:normal;font-variant:normal;font-weight:200;font-stretch:normal;font-size:18.6667px;line-height:21.8752px;font-family:'Chivo Mono';-inkscape-font-specification:'Chivo Mono Ultra-Light';text-align:center;letter-spacing:0px;word-spacing:-5px;writing-mode:lr-tb;direction:ltr;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:0;stroke-dasharray:none;stroke-opacity:1"
-     x="292.20486"
+     x="787.9455"
      y="659.29413"
      id="text23"><tspan
        sodipodi:role="line"
        id="tspan23"
-       x="292.20486"
+       x="787.9455"
        y="659.29413">2002</tspan></text>
   <text
      xml:space="preserve"
      style="font-style:normal;font-variant:normal;font-weight:200;font-stretch:normal;font-size:18.6667px;line-height:21.8752px;font-family:'Chivo Mono';-inkscape-font-specification:'Chivo Mono Ultra-Light';text-align:center;letter-spacing:0px;word-spacing:-5px;writing-mode:lr-tb;direction:ltr;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:0;stroke-dasharray:none;stroke-opacity:1"
-     x="292.1088"
+     x="787.84943"
      y="680.76654"
      id="text24"><tspan
        sodipodi:role="line"
        id="tspan24"
-       x="292.1088"
+       x="787.84943"
        y="680.76654">2003</tspan></text>
   <text
      xml:space="preserve"
      style="font-style:normal;font-variant:normal;font-weight:200;font-stretch:normal;font-size:18.6667px;line-height:21.8752px;font-family:'Chivo Mono';-inkscape-font-specification:'Chivo Mono Ultra-Light';text-align:center;letter-spacing:0px;word-spacing:-5px;writing-mode:lr-tb;direction:ltr;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:0;stroke-dasharray:none;stroke-opacity:1"
-     x="292.16483"
+     x="787.90546"
      y="723.7113"
      id="text25"><tspan
        sodipodi:role="line"
        id="tspan25"
-       x="292.16483"
+       x="787.90546"
        y="723.7113">2005</tspan></text>
   <text
      xml:space="preserve"
      style="font-style:normal;font-variant:normal;font-weight:200;font-stretch:normal;font-size:18.6667px;line-height:21.8752px;font-family:'Chivo Mono';-inkscape-font-specification:'Chivo Mono Ultra-Light';text-align:center;letter-spacing:0px;word-spacing:-5px;writing-mode:lr-tb;direction:ltr;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:0;stroke-dasharray:none;stroke-opacity:1"
-     x="292.16483"
+     x="787.90546"
      y="745.18372"
      id="text26"><tspan
        sodipodi:role="line"
        id="tspan26"
-       x="292.16483"
+       x="787.90546"
        y="745.18372">2006</tspan></text>
   <text
      xml:space="preserve"
      style="font-style:normal;font-variant:normal;font-weight:200;font-stretch:normal;font-size:18.6667px;line-height:21.8752px;font-family:'Chivo Mono';-inkscape-font-specification:'Chivo Mono Ultra-Light';text-align:center;letter-spacing:0px;word-spacing:-5px;writing-mode:lr-tb;direction:ltr;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:0;stroke-dasharray:none;stroke-opacity:1"
-     x="292.5889"
+     x="788.32953"
      y="766.65613"
      id="text27"><tspan
        sodipodi:role="line"
        id="tspan27"
-       x="292.5889"
+       x="788.32953"
        y="766.65613">2007</tspan></text>
   <text
      xml:space="preserve"
      style="font-style:normal;font-variant:normal;font-weight:200;font-stretch:normal;font-size:18.6667px;line-height:21.8752px;font-family:'Chivo Mono';-inkscape-font-specification:'Chivo Mono Ultra-Light';text-align:center;letter-spacing:0px;word-spacing:-5px;writing-mode:lr-tb;direction:ltr;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:0;stroke-dasharray:none;stroke-opacity:1"
-     x="292.56485"
+     x="788.30548"
      y="788.12854"
      id="text28"><tspan
        sodipodi:role="line"
        id="tspan28"
-       x="292.56485"
+       x="788.30548"
        y="788.12854">2008</tspan></text>
   <path
      style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-linejoin:round;stroke-miterlimit:0;stroke-dasharray:none;stroke-opacity:1"
-     d="m 250.29633,588.10118 h 15.33663"
+     d="m 746.03695,588.10118 h 15.3367"
      id="path29"
      sodipodi:nodetypes="cc" />
   <path
      style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-linejoin:round;stroke-miterlimit:0;stroke-dasharray:none;stroke-opacity:1"
-     d="m 252.16306,698.65323 0.25,-110.55205"
+     d="m 747.90375,698.65323 0.25,-110.55205"
      id="path30"
      sodipodi:nodetypes="cc" />
   <path
      style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-linejoin:round;stroke-miterlimit:0;stroke-dasharray:none;stroke-opacity:1"
-     d="m 247.78806,696.75101 h 17.8449"
+     d="m 743.52875,696.75101 h 17.8449"
      id="path33"
      sodipodi:nodetypes="cc" />
   <text
      xml:space="preserve"
      style="font-style:normal;font-variant:normal;font-weight:200;font-stretch:normal;font-size:18.6667px;line-height:21.8752px;font-family:'Chivo Mono';-inkscape-font-specification:'Chivo Mono Ultra-Light';text-align:center;letter-spacing:0px;word-spacing:-5px;writing-mode:lr-tb;direction:ltr;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:0;stroke-dasharray:none;stroke-opacity:1"
-     x="292.48489"
+     x="788.22552"
      y="831.07336"
      id="text10"><tspan
        sodipodi:role="line"
        id="tspan9"
-       x="292.48489"
+       x="788.22552"
        y="831.07336">2010</tspan></text>
   <path
      style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-linejoin:round;stroke-miterlimit:0;stroke-dasharray:none;stroke-opacity:1"
-     d="m 247.78806,717.3087 h 17.8449"
+     d="m 743.52875,717.3087 h 17.8449"
      id="path17"
      sodipodi:nodetypes="cc" />
   <path
      style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-linejoin:round;stroke-miterlimit:0;stroke-dasharray:none;stroke-opacity:1"
-     d="m 247.78806,760.2535 h 17.8449"
+     d="m 743.52875,760.2535 h 17.8449"
      id="path18"
      sodipodi:nodetypes="cc" />
   <path
      style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-linejoin:round;stroke-miterlimit:0;stroke-dasharray:none;stroke-opacity:1"
-     d="M 252.28806,760.2535 V 717.3087"
+     d="M 748.02875,760.2535 V 717.3087"
      id="path36"
      sodipodi:nodetypes="cc" />
   <rect
@@ -795,7 +812,7 @@
      id="rect20"
      width="9"
      height="9"
-     x="247.78807"
+     x="743.52875"
      y="584.24091"
      rx="1"
      ry="1" />
@@ -804,7 +821,7 @@
      id="rect32"
      width="10"
      height="10"
-     x="247.78807"
+     x="743.52875"
      y="691.75092"
      rx="1"
      ry="1" />
@@ -813,7 +830,7 @@
      id="rect16"
      width="9"
      height="9"
-     x="247.78807"
+     x="743.52875"
      y="712.80865"
      rx="1"
      ry="1" />
@@ -822,7 +839,7 @@
      id="rect17"
      width="10"
      height="10"
-     x="247.78807"
+     x="743.52875"
      y="755.25348"
      rx="1"
      ry="1" />
@@ -831,7 +848,7 @@
      id="rect18"
      width="10"
      height="10"
-     x="247.78807"
+     x="743.52875"
      y="798.1983"
      rx="1"
      ry="1" />
@@ -840,7 +857,7 @@
      id="rect14"
      width="10"
      height="10"
-     x="247.78807"
+     x="743.52875"
      y="819.67072"
      rx="1"
      ry="1" />
@@ -853,9 +870,9 @@
      transform="translate(364.08601,-43.196338)"><tspan
        x="196.12378"
        y="156.32368"
-       id="tspan42"><tspan
+       id="tspan87"><tspan
          dx="0 0 0 0 2 -2"
-         id="tspan41">TEAM USA</tspan></tspan></text>
+         id="tspan86">TEAM USA</tspan></tspan></text>
   <rect
      style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke-width:0.999995"
      id="rect136"
@@ -929,93 +946,122 @@
      id="path130" />
   <path
      style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-linejoin:round;stroke-miterlimit:0;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
-     d="m 34.991849,384.68527 v 54.125 H 281.58395"
+     d="m 56.031454,803.2887 v 54.125 H 302.62355"
      id="path550" />
   <rect
      style="fill:#ffffff;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:1;stroke-dasharray:none;stroke-opacity:1"
      id="rect582"
      width="289.19196"
      height="39"
-     x="20.492859"
-     y="369.07379" />
+     x="41.532463"
+     y="787.67725" />
   <text
      xml:space="preserve"
      style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:18.6667px;line-height:17.5001px;font-family:'Chivo Mono';-inkscape-font-specification:'Chivo Mono';text-align:center;letter-spacing:0px;word-spacing:-5px;writing-mode:lr-tb;direction:ltr;text-anchor:middle;white-space:pre;inline-size:299.614;display:inline;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:0;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
      x="685.28882"
      y="1394.5914"
      id="text584"
-     transform="translate(-520.11622,-998.58553)"><tspan
+     transform="translate(-499.07662,-579.9821)"><tspan
        x="685.28882"
        y="1394.5914"
-       id="tspan44"><tspan
+       id="tspan89"><tspan
          dx="0 0 0 0 0 0 0 0 0 0 5.0000048 -5.0000029 0 5.0000048 -4.9999952"
-         id="tspan43">University of Tennessee</tspan></tspan></text>
+         id="tspan88">University of Tennessee</tspan></tspan></text>
   <rect
      style="fill:#ffffff;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:1;stroke-opacity:1"
      id="rect584"
      width="70.549454"
      height="25.994005"
-     x="31.1716"
-     y="342.93024" />
+     x="52.211205"
+     y="761.53369" />
   <text
      xml:space="preserve"
      style="font-style:normal;font-variant:normal;font-weight:300;font-stretch:normal;font-size:16px;line-height:15.0001px;font-family:'Chivo Mono';-inkscape-font-specification:'Chivo Mono Light';text-align:center;letter-spacing:-1px;word-spacing:-2px;writing-mode:lr-tb;direction:ltr;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1;stroke-linejoin:round;stroke-miterlimit:0;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
-     x="67.090332"
-     y="361.41522"
+     x="88.129936"
+     y="780.01868"
      id="text585"><tspan
        id="tspan585"
-       x="66.590332"
-       y="361.41522"
+       x="87.629936"
+       y="780.01868"
        style="font-size:16px;line-height:15.0001px">COLLEGE</tspan></text>
   <rect
      style="fill:#ffffff;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0.999999;stroke-opacity:1"
      id="rect585"
      width="37.000004"
      height="27"
-     x="48.411865"
-     y="429.31049" />
+     x="69.451469"
+     y="847.91394" />
   <text
      xml:space="preserve"
      style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:16px;line-height:15.0001px;font-family:'Chivo Mono';-inkscape-font-specification:'Chivo Mono';text-align:center;letter-spacing:-1px;word-spacing:-2px;writing-mode:lr-tb;direction:ltr;text-anchor:middle;fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-linejoin:round;stroke-miterlimit:0;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
-     x="67.979858"
-     y="448.29852"
+     x="89.019463"
+     y="866.90198"
      id="text586"><tspan
        id="tspan586"
-       x="67.479858"
-       y="448.29852"
+       x="88.519463"
+       y="866.90198"
        style="font-style:italic;font-variant:normal;font-weight:300;font-stretch:normal;font-size:16px;line-height:15.0001px;font-family:'Chivo Mono';-inkscape-font-specification:'Chivo Mono Light Italic';letter-spacing:-1px;fill:#000000;fill-opacity:1;stroke:none">AKA</tspan></text>
   <rect
      style="fill:#ffffff;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:1;stroke-opacity:1"
      id="rect586"
      width="109"
      height="27"
-     x="93.923553"
-     y="429.31049" />
+     x="114.96316"
+     y="847.91394" />
   <rect
      style="fill:#ffffff;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0.999999;stroke-opacity:1"
      id="rect587"
      width="109"
      height="27"
-     x="211.43524"
-     y="429.31049" />
+     x="232.47481"
+     y="847.91394" />
   <text
      xml:space="preserve"
      style="font-style:italic;font-variant:normal;font-weight:300;font-stretch:normal;font-size:16px;line-height:15.0001px;font-family:'Chivo Mono';-inkscape-font-specification:'Chivo Mono Light Italic';text-align:center;letter-spacing:-1px;word-spacing:-2px;writing-mode:lr-tb;direction:ltr;text-anchor:middle;fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-linejoin:round;stroke-miterlimit:0;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
-     x="148.11554"
-     y="448.29846"
+     x="169.15514"
+     y="866.90192"
      id="text398"><tspan
        id="tspan398"
-       x="147.61554"
-       y="448.29846"
+       x="168.65514"
+       y="866.90192"
        style="font-style:italic;font-variant:normal;font-weight:300;font-stretch:normal;font-size:16px;line-height:15.0001px;font-family:'Chivo Mono';-inkscape-font-specification:'Chivo Mono Light Italic';letter-spacing:-1px;fill:#000000;fill-opacity:1;stroke:none">&quot;TENNESSEE&quot;</tspan></text>
   <text
      xml:space="preserve"
      style="font-style:italic;font-variant:normal;font-weight:300;font-stretch:normal;font-size:16px;line-height:15.0001px;font-family:'Chivo Mono';-inkscape-font-specification:'Chivo Mono Light Italic';text-align:center;letter-spacing:-1px;word-spacing:-2px;writing-mode:lr-tb;direction:ltr;text-anchor:middle;fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-linejoin:round;stroke-miterlimit:0;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
-     x="265.62726"
-     y="448.29846"
+     x="286.66684"
+     y="866.90192"
      id="text399"><tspan
        id="tspan399"
-       x="265.12726"
-       y="448.29846"
+       x="286.16684"
+       y="866.90192"
        style="font-style:italic;font-variant:normal;font-weight:300;font-stretch:normal;font-size:16px;line-height:15.0001px;font-family:'Chivo Mono';-inkscape-font-specification:'Chivo Mono Light Italic';letter-spacing:-1px;fill:#000000;fill-opacity:1;stroke:none">&quot;LADY VOLS&quot;</tspan></text>
+  <text
+     xml:space="preserve"
+     style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:16px;line-height:18.7502px;font-family:'Chivo Mono';-inkscape-font-specification:'Chivo Mono Bold';text-align:start;letter-spacing:-1px;word-spacing:-2px;writing-mode:lr-tb;direction:ltr;text-anchor:start;white-space:pre;inline-size:202.056;display:inline;fill:#000000;fill-opacity:1;stroke:none;stroke-width:2;stroke-linejoin:round;stroke-miterlimit:0;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+     x="2353.6252"
+     y="1568.25"
+     id="text241-8"
+     transform="translate(-2301.2395,-1216.73)"><tspan
+       x="2353.6252"
+       y="1568.25"
+       id="tspan91"><tspan
+         dx="0 0 0 2 -2 0 0 2 -2 0 0 0 0 0 2 -2 0 0 2"
+         style="font-weight:normal;-inkscape-font-specification:'Chivo Mono'"
+         id="tspan90">the top scorer and </tspan></tspan><tspan
+       x="2353.6252"
+       y="1587.0002"
+       id="tspan93"><tspan
+         dx="0 0 0 0 0 0 0 0 0 2 -2 0 0 2 -2 0 0 2 -2 0 0 0 2"
+         style="font-weight:normal;-inkscape-font-specification:'Chivo Mono'"
+         id="tspan92">rebounder for the 2002 </tspan></tspan><tspan
+       x="2353.6252"
+       y="1605.7504"
+       id="tspan95"><tspan
+         dx="0 0 0 0 2 -2 0 0 0 0 0 2"
+         style="font-weight:normal;-inkscape-font-specification:'Chivo Mono'"
+         id="tspan94">WNBA season </tspan></tspan></text>
+  <path
+     style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:2;stroke-linejoin:round;stroke-miterlimit:0;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;marker-end:url(#Dot-3)"
+     d="m 13.993008,344.50003 h 31.6296"
+     id="path241-5" />
 </svg>

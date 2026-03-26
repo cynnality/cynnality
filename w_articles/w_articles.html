@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="utf-8" />
-  <title>w_listings...</title>
+  <title>w_articles!!!</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
@@ -48,12 +48,12 @@
             padding: 0;
         }
 
+
         .opening-theme {
             display: flex;
             align-items: center;
             gap: 1em;
             margin-top: 1em;
-            margin-bottom: 1em;
             padding-bottom: 1em;
             border-bottom: solid #000 2px;
         }
@@ -77,6 +77,7 @@
             margin-left: 1em;
             padding: .5em;
             font-style: italic;
+            margin-top: 2em;
         }
         .mobile-note {
             font-family: "Chivo Mono", system-ui;
@@ -91,11 +92,19 @@
         .last-updated {
             padding: 4px;
             display: flex;
+            flex-direction: column;
+            gap: 1em;
             margin-top: 0.5em;
-            width: 18em;
+            width: 30em;
         }
         .lu-descrip {
             font-family: 'Chivo Mono', Courier, monospace;
+        }
+
+        .side-note {
+            display: flex;
+            flex-direction: column;
+            gap: .5em;
         }
 
         .listing-button {
@@ -103,8 +112,7 @@
             margin-left: 3em;
             margin-top: 1em;
             padding: 1em;
-            font-style: italic;
-
+            gap: 0.6em;
             display: flex;
             flex-direction: column;
 
@@ -129,10 +137,10 @@
 <body>
 
     <div class="opening-theme">
-        <a href="index.html"><h2>CYNNALITY</h2></a>
-        <h4> > W_LISTINGS</h4>
+        <a href="index.html"><h2>CYNNALITY</h2></a><h4>></h4>
+        <a href="w-listings.html"><h4>  W_LISTINGS</h4></a>
+        <h4> > W_ARTICLES</h4>
     </div>
-
     <div class="update-section">
         <!--
         <div class="contact">
@@ -140,57 +148,42 @@
         </div>
         -->
         <div class="mobile-note">
-            <p>lists related to women's sports</p>
+            <p>articles & online material related to women's sports</p>
         </div>
 
         <div class="last-updated">
+            <p>sometimes i modify things so i can read and reference them a bit easer. sharing and gathering those things here</p>
             <div class="lu-descrip">
                 <p>
-
+                direct source links can be found in the descriptions of each item. links will almost always direct to archived (way back machine) versions.
+                </p>
+            </div>
+            <div class="lu-descrip">
+                <p>
+                <a href="https://www.are.na/c-ynn/w_articles" target="_blank"> putting items on the are.na page before adding them here</a>
                 </p>
             </div>
         </div>
     </div>
 
-<div class="listing-button seasons-of-wnba">
-    <a href="/wbbal-main/seasons-of-wnba.html" class="listing-button-link">
-        <div class="listing-button-text">
-            <p>** SEASONS OF  (wnba)</p>
-        </div>
-    </a>
-    <div class="side-note">
-        <p>less of a listing and more of a general reference tool for seasons of the WNBA</p>
-        <p>incomplete and to be updated over a longer period of time</p>
-    </div>
-</div>
 
 <div class="listing-button w-articles">
-    <a href="/w_articles/w_articles.html" class="listing-button-link">
+    <a href="/w_articles/aces_2007_draft_history_article.html" class="listing-button-link">
         <div class="listing-button-text">
-            <p>** W_ARTICLES</p>
+            <p>ARTICLE:::2007:::DRAFT:::HISTORY</p>
         </div>
     </a>
     <div class="side-note">
-        <p>housing articles and other online material here</p>
-        <p>**media may modified or altered in order to make them a bit more <em>accessible</em>
+        <p>
+            <a href="https://aces.wnba.com/aces-history-feeling-a-draft-2007" target="_blank">original source</a>
+        </p>
+        <p>**details on the 2007 WNBA dispersal and college drafts
         </p>
     </div>
 </div>
 
-<div class="listing-button first-pick-listing">
-    <a href="first-pick-listing.html" class="listing-button-link">
-        <div class="listing-button-text">
-            <p>** FIRST PICK LISTING</p>
-        </div>
-    </a>        
-    <div class="side-note">
-        <p>a list of first picks of every wnba draft</p>
-        <p>in the form of a periodic table</p>
-        <a href="https://www.are.na/c-ynn/elemental_player" target="_blank">collecting visual inspirations here
-        </a>
-        <p>incomplete and to be fully updateed very soon!!! :)</p>
-    </div>
-</div>
+
+
     
 </div>
 
