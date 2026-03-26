@@ -331,7 +331,7 @@ function displayYear(year) {
   updateYearToggleVisibility();
 
   renderMVPSection(year);
-  renderSeasonStars(year);
+
   const season = SEASON_STATS[String(year)];
 
   if (playoffMode && season?.playoffs?.bracket) {

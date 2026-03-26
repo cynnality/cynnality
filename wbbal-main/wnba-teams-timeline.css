@@ -9,7 +9,7 @@ html, body {
   height: auto;
   position: fixed;
   z-index: 4;
-  width: 97%;
+
 }
 
 #playoff-bracket-svg {
@@ -35,21 +35,20 @@ html, body {
 
   display: flex;
   flex-direction: row;
-  align-items: flex-start;
-
-  gap: 30px;
-
-  margin-left: 20px;
+  margin-left: -12em;
+  max-width: 620px;
+  width: 600px;
 }
 
 #wnba-timeline-toggle-svg {
   margin-top: 180px;
   margin-bottom: 0px;
-  margin-left: 60px;
+
 }
 
 #first-tl-row-full {
   display: flex;
+  gap: 30px;
 }
 
 
@@ -60,6 +59,10 @@ html, body {
   flex-shrink: 0;
 }
 
+#teams-section-svg {
+    transform: scale(.5);
+    
+}
 
 #reg-season-peak-performers-svg {
   margin-top: 220px;
