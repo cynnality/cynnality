@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="utf-8" />
-  <title>w_listings...</title>
+  <title>teams of the wnba</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
@@ -48,19 +48,22 @@
             padding: 0;
         }
 
+
+
+
+
         .opening-theme {
             display: flex;
             align-items: center;
             gap: 1em;
             margin-top: 1em;
-            margin-bottom: 1em;
             padding-bottom: 1em;
             border-bottom: solid #000 2px;
         }
 
         .opening-theme h2 {
             font-style: normal;
-            font-weight: 300;
+            font-weight: 800;
 
             font-size: 24px;
         }
@@ -68,21 +71,24 @@
             font-family: "Chivo Mono", system-ui;
             font-style: normal;
             font-size: 26px;
-            font-weight: 300;
+            font-weight: 800;
         }
 
         .update-section {
-            width: 30em;
-            border: dashed 2px #000000;
+            width: 40em;
             margin-left: 1em;
             padding: .5em;
             font-style: italic;
+            margin-top: 2em;
         }
         .mobile-note {
             font-family: "Chivo Mono", system-ui;
             font-style: normal;
             font-size: 22px;
             margin-top: 1em;
+            margin-bottom: 1em;
+            display: grid;
+            gap: 4px;
         }
         .contact {
             margin-top: 1em;
@@ -91,36 +97,34 @@
         .last-updated {
             padding: 4px;
             display: flex;
+            flex-direction: column;
+            gap: 1em;
             margin-top: 0.5em;
-            width: 18em;
+            width: 30em;
         }
         .lu-descrip {
             font-family: 'Chivo Mono', Courier, monospace;
         }
 
-        .listing-button {
-            width: 30em;
-            margin-left: 3em;
-            margin-top: 1em;
-            padding: 1em;
-            font-style: italic;
-
+        .side-note {
             display: flex;
             flex-direction: column;
-
-            border: solid 2px #000000;
-            width: max-content;
+            gap: 1em;
+            margin-left: 1em;
+            margin-top: 1em;
+            max-width: 20em;
+            margin-right: .5em;
         }
 
-        .listing-button.seasons-of-wnba {
-            margin-left: 0;
+        .main-sec {
+          /*display: flex;*/
 
         }
 
-        .listing-button-text {
-            font-family: "Chivo", sans-serif;
-            font-size: 24px;
-            font-style: italic;
+
+
+        .descrip-s {
+           max-width: 10em;
         }
 
 </style>
@@ -129,9 +133,14 @@
 <body>
 
     <div class="opening-theme">
-        <a href="index.html"><h2>CYNNALITY</h2></a>
-        <h4> > W_LISTINGS</h4>
+        <a href="../index.html"><h2>CYNNALITY</h2></a><h4>></h4>
+        <a href="../w-listings.html"><h4>  W_LISTINGS</h4></a>
+        <h4> > teams of the wnba</h4>
     </div>
+
+
+
+<div class="main-sec">
 
     <div class="update-section">
         <!--
@@ -140,73 +149,55 @@
         </div>
         -->
         <div class="mobile-note">
-            <p>lists related to women's sports</p>
-        </div>
-
-        <div class="last-updated">
-            <div class="lu-descrip">
-                <p>
-
-                </p>
-            </div>
+            <p>every wnba season with changes to the teams</p>
+            <p style="font-size: 18px">[expansions / folds / relocations / name changes]</p>
+            <p style="font-size: 16px; font-style: italic;">all 25 wnba teams (past and present) included!</p>
+            <p style="font-size: 14px; font-weight: 400;">
+                <a href="https://www.are.na/c-ynn/w_wnba_teams_past_present" target="_blank">
+                    **are.na page on standy for now</a>
+            </p>
         </div>
     </div>
 
-<div class="listing-button seasons-of-wnba">
-    <a href="/wbbal-main/seasons-of-wnba.html" class="listing-button-link">
-        <div class="listing-button-text">
-            <p>** SEASONS OF  (wnba)</p>
-        </div>
-    </a>
-    <div class="side-note">
-        <p>less of a listing and more of a general reference tool for seasons of the WNBA</p>
-        <p>incomplete and to be updated over a longer period of time</p>
-    </div>
 </div>
 
-<div class="listing-button w-articles">
-    <a href="/w_articles/w_articles.html" class="listing-button-link">
-        <div class="listing-button-text">
-            <p>** W_ARTICLES</p>
-        </div>
-    </a>
-    <div class="side-note">
-        <p>housing articles and other online material here</p>
-        <p>**media may modified or altered in order to make them a bit more <em>accessible</em>
-        </p>
-    </div>
-</div>
+<div id="svg-grid"></div>
 
-<div class="listing-button first-pick-listing">
-    <a href="first-pick-listing.html" class="listing-button-link">
-        <div class="listing-button-text">
-            <p>** FIRST PICK LISTING</p>
-        </div>
-    </a>        
-    <div class="side-note">
-        <p>a list of first picks of every wnba draft</p>
-        <p>in the form of a periodic table</p>
-        <a href="https://www.are.na/c-ynn/elemental_player" target="_blank">collecting visual inspirations here
-        </a>
-        <p>incomplete and to be fully updateed very soon!!! :)</p>
-    </div>
-</div>
+<script>
+const svgFiles = [
+  "teams-listing-svgs/w_teams_s1.svg",
+  "teams-listing-svgs/w_teams_s2.svg",
+  "teams-listing-svgs/w_teams_s3.svg",
+  "teams-listing-svgs/w_teams_s4.svg",
+  "teams-listing-svgs/w_teams_s7.svg",
+  "teams-listing-svgs/w_teams_s8.svg",
+  "teams-listing-svgs/w_teams_s10.svg",
+  "teams-listing-svgs/w_teams_s11.svg",
+  "teams-listing-svgs/w_teams_s12.svg",
+  "teams-listing-svgs/w_teams_s13.svg",
+  "teams-listing-svgs/w_teams_s14.svg",
+  "teams-listing-svgs/w_teams_s18.svg",
+  "teams-listing-svgs/w_teams_s20.svg",
+  "teams-listing-svgs/w_teams_s22.svg",
+  "teams-listing-svgs/w_teams_s29.svg",
+];
 
-<div class="listing-button teams-of-listing">
-    <a href="teams-of-wnba.html" class="listing-button-link"></a>
-        <div class="listing-button-text">
-            <p>** all the teams of the wnba</p>
-        </div>
-    </a>        
-    <div class="side-note">
-        <p>a list of wnba teams past and presentt</p>
-        <a href="https://www.are.na/c-ynn/elemental_player" target="_blank">the are.na companion page is linked here
-        </a>
-    </div>
-</div>
-    
-</div>
+const container = document.getElementById("svg-grid");
 
+Promise.all(
+  svgFiles.map(file =>
+    fetch(file).then(res => res.text())
+  )
+).then(svgContents => {
+  svgContents.forEach(svg => {
+    const wrapper = document.createElement("div");
+    wrapper.classList.add("svg-item");
+
+    wrapper.innerHTML = svg;
+    container.appendChild(wrapper);
+  });
+});
+</script>
 
 </body>
 </html>
