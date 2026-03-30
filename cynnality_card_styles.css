@@ -20,11 +20,12 @@
         .main-sec {
             display: flex;
             flex-direction: column;
-            width: max-content;
+            width: 350px;
+            height: max-content;
             border: solid 3px #000;
         }
         .opening-theme {
-            width: 300px;
+            width: 328px;
             padding: 12px;
             border-bottom: solid 2px #000;
         }
@@ -129,6 +130,7 @@
             font-family: "Chivo Mono", monospace;
         }
         .listing-button-text {
+            color: #000;
             padding: 4px;
             font-family: "Chivo Mono", monospace;
             font-size: 22px;
@@ -136,6 +138,13 @@
             font-weight: 600;
 
             border-bottom: solid 2px #000000;
+        }
+
+        .listing-button-text:hover {
+            font-size: 26px;
+            box-shadow: none;
+            color: blue;
+            border-bottom: none;
         }
 
         .side-note {
@@ -149,7 +158,7 @@
 
             padding: 8px;
 
-            max-width: 300px;
+            max-width: 320px;
         }
 
         .side-note a {
@@ -159,6 +168,11 @@
 
             color: blue;
             text-decoration: underline;
+        }
+
+        .side-note a:hover {
+            font-size: 20px;
+            box-shadow: none;
         }
 
 /*description type buttons container*/
