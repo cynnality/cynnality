@@ -8,7 +8,6 @@ let REG_SEASON_AWARDS = {};
 
 let selectedYear = 1997;
 
-
 /* ================================
    AWARD HELPERS
 ================================ */
@@ -276,69 +275,7 @@ function renderMiniTimeline(year){
   seasonNum.textContent =
     `SEASON ${year-1996}`;
 
-  renderTeamColorGrid(year);
-
 }
-
-
-/* ================================
-   TEAM COLOR GRID
-================================ */
-
-function renderTeamColorGrid(year){
-
-  const grid =
-    document.getElementById("season-team-colors-gridder");
-
-  const layer =
-    document.getElementById("season-team-colors-gridder-layer");
-
-  if(!grid || !layer) return;
-
-  layer.innerHTML = "";
-
-  const teams =
-    Object.entries(SEASON_STATS[year])
-      .filter(([k])=>k!=="seasonInfo" && k!=="playoffs");
-
-  const x = Number(grid.getAttribute("x"));
-  const y = Number(grid.getAttribute("y"));
-  const w = Number(grid.getAttribute("width"));
-  const h = Number(grid.getAttribute("height"));
-
-  const cols = Math.ceil(Math.sqrt(teams.length));
-  const rows = Math.ceil(teams.length / cols);
-
-  const cellW = w/cols;
-  const cellH = h/rows;
-
-  teams.forEach(([teamCode], i)=>{
-
-    const team = TEAMS[teamCode];
-
-    if(!team) return;
-
-    const col = i % cols;
-    const row = Math.floor(i/cols);
-
-    const rect =
-      document.createElementNS(
-        "http://www.w3.org/2000/svg","rect"
-      );
-
-    rect.setAttribute("x",x+col*cellW);
-    rect.setAttribute("y",y+row*cellH);
-    rect.setAttribute("width",cellW);
-    rect.setAttribute("height",cellH);
-    rect.setAttribute("fill",team.colors.color1);
-    rect.setAttribute("stroke","#000");
-
-    layer.appendChild(rect);
-
-  });
-
-}
-
 
 /* ================================
    INTRO PANEL
@@ -383,11 +320,11 @@ function updateSeasonIntro(year){
   /* ---- SEASON NUMBERS ---- */
 
   document.getElementById("season-teams-num")
-    .textContent = `${teams.length} TEAMS`;
+    .textContent = `${teams.length}`;
 
   document.getElementById("season-games-num")
     .textContent =
-      `${seasonInfo.regSeasonGames} GAMES`;
+      `${seasonInfo.regSeasonGames}`;
 
 /* ---- CONFERENCE WIN LEADERS ---- */
 
@@ -430,13 +367,13 @@ teams.forEach(teamCode => {
 
     document.getElementById("east-conference-most-game-wins")
       .querySelector("tspan")
-      .textContent = `${team.teamName} had`;
+      .textContent = `${team.teamName}`;
 
     document.getElementById("east-conference-most-game-wins-win-num")
       .textContent = `${eastLeader.wins} WINS`;
 
     document.getElementById("east-conference-most-game-wins-loss-num")
-      .textContent = `${eastLeader.losses} LOSS`;
+      .textContent = `${eastLeader.losses} LOSSES`;
 
   }
 
@@ -448,13 +385,13 @@ teams.forEach(teamCode => {
 
     document.getElementById("west-conference-most-game-wins")
       .querySelector("tspan")
-      .textContent = `${team.teamName} had`;
+      .textContent = `${team.teamName}`;
 
     document.getElementById("west-conference-most-game-wins-win-num")
       .textContent = `${westLeader.wins} WINS`;
 
     document.getElementById("west-conference-most-game-wins-loss-num")
-      .textContent = `${westLeader.losses} LOSS`;
+      .textContent = `${westLeader.losses} LOSSES`;
 
   }
 
@@ -473,9 +410,9 @@ teams.forEach(teamCode => {
       document.getElementById("top-draft-pick-teamname")
         .textContent =
         `${team.teamName}`;
-      document.getElementById("top-draft-pick-teamloc")
+      /* document.getElementById("top-draft-pick-teamloc")
         .textContent =
-        `${team.teamNameCity}`;
+        `${team.teamNameCity}`; */
     }
 
   }
@@ -498,23 +435,23 @@ teams.forEach(teamCode => {
       document.getElementById("playoff-finals-teamname1")
         .textContent =
         `${teamA.teamName}`;
-      document.getElementById("playoff-finals-teamloc1")
+      /* document.getElementById("playoff-finals-teamloc1")
         .textContent =
-        `${teamA.teamNameCity}`;
+        `${teamA.teamNameCity}`; */
     }
 
     if(teamB){
       document.getElementById("playoff-finals-teamname2")
         .textContent =
         `${teamB.teamName}`;
-      document.getElementById("playoff-finals-teamloc2")
+      /* document.getElementById("playoff-finals-teamloc2")
         .textContent =
-        `${teamB.teamNameCity}`;
+        `${teamB.teamNameCity}`; */
     }
 
     document.getElementById("playoff-finals-matchup-label")
       .textContent =
-      `The ${year} Playoff Finals Matchup`;
+      `${year} PLAYOFFS`;
 
   }
 
@@ -588,3 +525,11 @@ function updateYearToggleVisibility(){
     selectedYear === minYear ? "hidden":"visible";
 
 }
+
+document.querySelectorAll('.descrip-type-button').forEach(button => {
+  
+  button.addEventListener('click', () => {
+    button.classList.toggle('active'); 
+  });
+
+});

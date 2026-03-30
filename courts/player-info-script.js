@@ -191,7 +191,7 @@ if (extractedData.highlights) {
   displayHtml += "<p style='color:#000000;'><strong>Career Highlights:</strong></p>";
   displayHtml +=
     "<ul style='margin-left:20px; list-style-type:disc; color:#000000;'><li>" +
-    extractedData.highlights.replace(/<br>/g, "</li><li>") +
+    extractedData.highlights.replace(/<br>/g, "</li><li>") + "</li></ul>";
     "</li></ul>";
   displayHtml = displayHtml.replace("<li></li>", "");
 }

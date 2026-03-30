@@ -1,843 +1,1058 @@
-<svg id="wnba-reg-season-intro-svg"
-   width="1213"
-   height="813"
-   viewBox="0 0 1213 813"
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   id="wnba-reg-season-intro-svg"
+   width="1000"
+   height="2100"
+   viewBox="0 0 1000.0001 2100"
    version="1.1"
-
    sodipodi:docname="wnba-reg-season-intro.svg"
    inkscape:export-filename="wnba-reg-season-intro.svg"
+   inkscape:version="1.4.3 (fcd0343856, 2026-01-01)"
    inkscape:export-xdpi="96"
    inkscape:export-ydpi="96"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns="http://www.w3.org/2000/svg"
    xmlns:svg="http://www.w3.org/2000/svg">
-
+  <sodipodi:namedview
+     id="namedview1"
+     pagecolor="#e3e3e3"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:zoom="0.48667498"
+     inkscape:cx="521.9089"
+     inkscape:cy="116.09391"
+     inkscape:window-width="1859"
+     inkscape:window-height="1011"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="wnba-reg-season-intro-svg"
+     showguides="true" />
   <defs
      id="defs1" />
   <rect
-     style="fill:#ffffff;fill-opacity:1;fill-rule:evenodd;stroke:none;"
+     style="fill:none;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:4;stroke-dasharray:none;stroke-opacity:1"
      id="season-panel-container"
-     width="1200"
-     height="800"
-     x="6.5"
-     y="6.5"
+     width="1000"
+     height="2097.0688"
+     x="7.9315704e-08"
+     y="2.9310303"
      inkscape:label="season-panel-container" />
   <rect
-     style="fill:#ffffff;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:2;stroke-dasharray:none;stroke-opacity:1"
+     style="fill:none;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:2;stroke-dasharray:none;stroke-opacity:1"
      id="playoffs-preview-container"
-     width="538"
+     width="611.19739"
      height="317"
-     x="56.936493"
-     y="407.46042"
+     x="269.39893"
+     y="435.36813"
      inkscape:label="playoffs-preview-container" />
   <rect
-     style="fill:#ffffff;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:2;stroke-dasharray:none;stroke-opacity:1"
-     id="playoff-spots-num-container"
-     width="120"
-     height="120"
-     x="83.554596"
-     y="430.6315"
-     inkscape:label="playoff-spots-num-container" />
+     style="fill:none;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:2;stroke-dasharray:none;stroke-opacity:1"
+     id="season-teams-num-container"
+     width="157"
+     height="38"
+     x="18.358629"
+     y="132.31584"
+     inkscape:label="season-teams-num-container" />
   <rect
-     style="fill:#ffffff;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:2;stroke-dasharray:none;stroke-opacity:1"
-     id="playoff-structure-type-container"
-     width="120"
-     height="120"
-     x="265.93649"
-     y="430.6315"
-     inkscape:label="playoff-structure-type-container" />
+     style="fill:none;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:2;stroke-dasharray:none;stroke-opacity:1"
+     id="season-games-num-container"
+     width="157"
+     height="38"
+     x="18.358629"
+     y="189.05293"
+     inkscape:label="season-games-num-container" />
   <rect
-     style="fill:#ffffff;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:2;stroke-dasharray:none;stroke-opacity:1"
-     id="playoff-round-num-container"
-     width="120"
-     height="120"
-     x="448.31845"
-     y="430.6315"
-     inkscape:label="playoff-round-num-container" />
+     id="teams-timeline-season-start-date-container"
+     class="team-timeline-container"
+     width="236"
+     height="48"
+     x="18.358629"
+     y="57.880783"
+     style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:2;stroke-dasharray:none;stroke-opacity:1" />
   <text
-     xml:space="preserve"
-     style="font-style:italic;font-variant:normal;font-weight:400;font-stretch:normal;font-size:16px;line-height:18.7502px;font-family:'Chivo Mono';-inkscape-font-specification:'Chivo Mono Light';text-align:center;letter-spacing:0px;word-spacing:-5px;writing-mode:lr-tb;direction:ltr;text-anchor:middle;white-space:pre;inline-size:205.671;display:inline;fill:#000000;fill-opacity:1;stroke:none;stroke-width:3;stroke-miterlimit:0;stroke-dasharray:none;stroke-opacity:1"
-     x="422.36633"
-     y="312.23776"
-     id="top-draft-pick-label"
-     inkscape:label="top-draft-pick-label"
-     transform="translate(-239.08745,-38.007072)"><tspan
-       x="422.36633"
-       y="312.23776"
-       id="tspan7"><tspan
-         dx="0 0 0 0 0 5 -5 0 0 0 5 -5 0 5 -5 0 0 5 -5"
-         id="tspan6">first pick of the draft</tspan></tspan></text>
+     x="62.853321"
+     y="88.96344"
+     id="teams-timeline-season-start-date"
+     class="team-timeline-text"
+     style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:21.3333px;font-family:'Chivo Mono';-inkscape-font-specification:'Chivo Mono';text-align:start;text-anchor:start">seasonstart</text>
   <rect
-     style="fill:#ffffff;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:2;stroke-dasharray:none;stroke-opacity:1"
+     id="teams-timeline-season-end-date-container"
+     class="team-timeline-container"
+     width="236"
+     height="48"
+     x="278.17542"
+     y="57.880783"
+     style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:2;stroke-dasharray:none;stroke-opacity:1" />
+  <text
+     x="335.99304"
+     y="89.454102"
+     id="teams-timeline-season-end-date"
+     class="team-timeline-text"
+     style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:21.3333px;font-family:'Chivo Mono';-inkscape-font-specification:'Chivo Mono';text-align:start;text-anchor:start">seasonend</text>
+  <rect
+     id="season-start-container"
+     width="105.99999"
+     height="38"
+     x="83.358627"
+     y="30.523439"
+     style="fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:2;stroke-dasharray:none;stroke-opacity:1" />
+  <text
+     x="136.30269"
+     y="56.66745"
+     class="season-date-text"
+     id="season-start-text"
+     style="font-style:normal;font-variant:normal;font-weight:600;font-stretch:normal;font-size:21.3333px;font-family:'Chivo Mono';-inkscape-font-specification:'Chivo Mono Semi-Bold';text-align:center;text-anchor:middle">start</text>
+  <rect
+     id="season-end-container"
+     width="105.99999"
+     height="38"
+     x="343.17542"
+     y="30.523439"
+     style="fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:2;stroke-dasharray:none;stroke-opacity:1" />
+  <text
+     x="396.42749"
+     y="57.096764"
+     class="season-date-text"
+     id="season-end-text"
+     style="font-style:normal;font-variant:normal;font-weight:600;font-stretch:normal;font-size:21.3333px;font-family:'Chivo Mono';-inkscape-font-specification:'Chivo Mono Semi-Bold';text-align:center;text-anchor:middle">end</text>
+  <path
+     style="fill:#e3e3e3;fill-opacity:1;stroke:#000000;stroke-width:2;stroke-linejoin:round;stroke-miterlimit:0;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+     d="m 254.35863,89.380789 h 23.81676"
+     id="path27"
+     sodipodi:nodetypes="cc" />
+  <rect
+     style="fill:none;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:2;stroke-dasharray:none;stroke-opacity:1"
      id="top-draft-pick-teamname-container"
-     width="223"
-     height="88"
-     x="354.43649"
-     y="282.72095"
+     width="218"
+     height="58"
+     x="305.0484"
+     y="486.86682"
      inkscape:label="top-draft-pick-teamname-container" />
   <text
      xml:space="preserve"
-     style="font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:18.6667px;line-height:25.5211px;font-family:'Chivo Mono';-inkscape-font-specification:'Chivo Mono Italic';text-align:center;letter-spacing:0px;word-spacing:-5px;writing-mode:lr-tb;direction:ltr;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0;stroke-miterlimit:0;stroke-dasharray:none;stroke-opacity:1"
-     x="465.78714"
-     y="344.9736"
+     style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:21.3333px;line-height:29.167px;font-family:'Chivo Mono';-inkscape-font-specification:'Chivo Mono';text-align:start;letter-spacing:0px;word-spacing:-5px;writing-mode:lr-tb;direction:ltr;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0;stroke-miterlimit:0;stroke-dasharray:none;stroke-opacity:1"
+     x="326.42035"
+     y="522.94946"
      id="top-draft-pick-teamname"
      inkscape:label="top-draft-pick-teamname"><desc
    id="desc54">JSON DATA FILE wnba-reg-season-awards.json - topDraftPick teamcode</desc>teamname</text>
   <rect
-     style="fill:#ffffff;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:2;stroke-dasharray:none;stroke-opacity:1"
+     style="fill:none;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:2.00001;stroke-dasharray:none;stroke-opacity:1"
      id="top-draft-pick-winner-container"
-     width="223"
-     height="88"
-     x="74.436493"
-     y="282.72095"
+     width="390.53406"
+     height="67.999992"
+     x="305.0484"
+     y="408.54556"
      inkscape:label="top-draft-pick-winner-container" />
   <text
      xml:space="preserve"
-     style="font-style:italic;font-variant:normal;font-weight:500;font-stretch:normal;font-size:18px;line-height:21.8752px;font-family:'Chivo Mono';-inkscape-font-specification:'Chivo Mono Light';text-align:center;letter-spacing:0px;word-spacing:-5px;writing-mode:lr-tb;direction:ltr;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0;stroke-miterlimit:0;stroke-dasharray:none;stroke-opacity:1"
-     x="185.93649"
-     y="333.285"
+     style="font-style:normal;font-variant:normal;font-weight:600;font-stretch:normal;font-size:24px;line-height:29.1669px;font-family:'Chivo Mono';-inkscape-font-specification:'Chivo Mono Semi-Bold';text-align:center;letter-spacing:0px;word-spacing:-5px;writing-mode:lr-tb;direction:ltr;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0;stroke-miterlimit:0;stroke-dasharray:none;stroke-opacity:1"
+     x="335.59775"
+     y="455.6666"
      id="top-draft-pick-winner"><desc
    id="desc55">JSON DATA FILE wnba-reg-season-awards.json - topDraftPick winner</desc>topDraftPick</text>
-  <rect
-     style="fill:#ffffff;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:2;stroke-dasharray:none;stroke-opacity:1"
-     id="playoff-finals-teamname1-container"
-     width="223"
-     height="88"
-     x="83.554596"
-     y="613.28931"
-     inkscape:label="playoff-finals-teamname1-container" />
-  <text
-     xml:space="preserve"
-     style="font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:21.3333px;line-height:26.6669px;font-family:'Chivo Mono';-inkscape-font-specification:'Chivo Mono Italic';text-align:center;letter-spacing:0px;word-spacing:-5px;writing-mode:lr-tb;direction:ltr;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0;stroke-miterlimit:0;stroke-dasharray:none;stroke-opacity:1"
-     x="195.05458"
-     y="677.52094"
-     id="playoff-finals-teamname1"
-     inkscape:label="playoff-finals-teamname1"><desc
-       id="desc59">wnba-season-stats.json -&gt; playoffs -&gt; bracket -&gt; rounds -&gt; with an id of FINALS -&gt; get the matchup team names from there</desc><tspan
-       style="font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:'Chivo Mono';-inkscape-font-specification:'Chivo Mono Italic'"
-       id="tspan72">&lt;teamname&gt;</tspan></text>
-  <rect
-     style="fill:#ffffff;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:2;stroke-dasharray:none;stroke-opacity:1"
-     id="playoff-finals-teamname2-container"
-     width="223"
-     height="88"
-     x="345.31845"
-     y="613.28931"
-     inkscape:label="playoff-finals-teamname2-container" />
-  <text
-     xml:space="preserve"
-     style="font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:21.3333px;line-height:26.6669px;font-family:'Chivo Mono';-inkscape-font-specification:'Chivo Mono Italic';text-align:center;letter-spacing:0px;word-spacing:-5px;writing-mode:lr-tb;direction:ltr;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0;stroke-miterlimit:0;stroke-dasharray:none;stroke-opacity:1"
-     x="456.81845"
-     y="677.52094"
-     id="playoff-finals-teamname2"
-     inkscape:label="playoff-finals-teamname2">&lt;teamname&gt;</text>
-  <text
-     xml:space="preserve"
-     style="font-style:normal;font-variant:normal;font-weight:300;font-stretch:normal;font-size:22px;line-height:25.0002px;font-family:'Chivo Mono';-inkscape-font-specification:'Chivo Mono Light';text-align:center;letter-spacing:0px;word-spacing:-5px;writing-mode:lr-tb;direction:ltr;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:3;stroke-miterlimit:0;stroke-dasharray:none;stroke-opacity:1"
-     x="326.0538"
-     y="599.45837"
-     id="playoff-finals-matchup-label"
-     inkscape:label="playoff-finals-matchup-label"><desc
-   id="desc60">get the active year and insert it into year here</desc>the &lt;year&gt; playoff finals matchup</text>
-  <text
-     xml:space="preserve"
-     style="font-style:normal;font-variant:normal;font-weight:300;font-stretch:normal;font-size:16px;line-height:18.7502px;font-family:'Chivo Mono';-inkscape-font-specification:'Chivo Mono Light';text-align:center;letter-spacing:0px;word-spacing:-5px;writing-mode:lr-tb;direction:ltr;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0;stroke-miterlimit:0;stroke-dasharray:none;stroke-opacity:1"
-     x="327.44052"
-     y="662.27014"
-     id="finals-matchup-vs-label"
-     inkscape:label="finals-matchup-vs-label"><tspan
-       sodipodi:role="line"
-       id="tspan17"
-       x="327.44052"
-       y="662.27014">vs.</tspan></text>
-  <rect
-     style="fill:#ffffff;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:3;stroke-dasharray:none;stroke-opacity:1"
-     id="season-teams-num-container"
-     width="157"
-     height="77"
-     x="57.436493"
-     y="18.727768"
-     inkscape:label="season-teams-num-container" />
-  <text
-     xml:space="preserve"
-     style="font-style:normal;font-variant:normal;font-weight:500;font-stretch:normal;font-size:21.3333px;line-height:25.0002px;font-family:'Chivo Mono';-inkscape-font-specification:'Chivo Mono Medium';text-align:center;letter-spacing:0px;word-spacing:-5px;writing-mode:lr-tb;direction:ltr;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0;stroke-miterlimit:0;stroke-dasharray:none;stroke-opacity:1"
-     x="136.21381"
-     y="64.545074"
-     id="season-teams-num"
-     inkscape:label="season-teams-num"><desc
-   id="desc53">JSON DATA FILE wnba-season-stats.json - inside seasonInfo - numTeams</desc>## TEAMS</text>
-  <rect
-     style="fill:#ffffff;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:3;stroke-dasharray:none;stroke-opacity:1"
-     id="season-games-num-container"
-     width="157"
-     height="77"
-     x="227.66626"
-     y="18.727768"
-     inkscape:label="season-games-num-container" />
-  <text
-     xml:space="preserve"
-     style="font-style:normal;font-variant:normal;font-weight:500;font-stretch:normal;font-size:21.3333px;line-height:25.0002px;font-family:'Chivo Mono';-inkscape-font-specification:'Chivo Mono Medium';text-align:center;letter-spacing:0px;word-spacing:-5px;writing-mode:lr-tb;direction:ltr;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0;stroke-miterlimit:0;stroke-dasharray:none;stroke-opacity:1"
-     x="306.4436"
-     y="64.545074"
-     id="season-games-num"
-     inkscape:label="season-games-num"><desc
-   id="desc52">JSON DATA FILE wnba-season-stats.json - inside seasonInfo - regSeasonGames</desc>## GAMES</text>
-  <rect
-     style="fill:#ffffff;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:2;stroke-dasharray:none;stroke-opacity:1"
-     id="awards-list-container"
-     width="540"
-     height="520"
-     x="646.62866"
-     y="204.46042"
-     inkscape:label="awards-list-container" />
-  <text
-     xml:space="preserve"
-     style="font-style:normal;font-variant:normal;font-weight:300;font-stretch:normal;font-size:21.3333px;line-height:25.0002px;font-family:'Chivo Mono';-inkscape-font-specification:'Chivo Mono Light';text-align:center;letter-spacing:0px;word-spacing:-5px;writing-mode:lr-tb;direction:ltr;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0;stroke-miterlimit:0;stroke-dasharray:none;stroke-opacity:1"
-     x="688.09509"
-     y="195.64854"
-     id="awards-list-title-text"
-     inkscape:label="awards-list-title-text">AWARDS</text>
   <path
-     style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:2;stroke-miterlimit:0;stroke-dasharray:none;stroke-opacity:1"
-     d="M 646.62863,251.22473 H 1186.6286"
-     id="voted-value-players-line"
-     inkscape:label="voted-value-players-line" />
+     style="fill:#e3e3e3;fill-opacity:1;stroke:#000000;stroke-width:3;stroke-linejoin:round;stroke-miterlimit:0;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+     d="m 322.69429,476.5456 v 10.32126"
+     id="path26"
+     sodipodi:nodetypes="cc" />
   <rect
-     style="fill:#ffffff;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0;stroke-dasharray:none;stroke-opacity:1"
+     style="fill:none;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:3;stroke-dasharray:none;stroke-opacity:1"
+     id="awards-list-container"
+     width="719.84467"
+     height="473.77002"
+     x="277.0307"
+     y="1079.2922"
+     inkscape:label="awards-list-container" />
+  <rect
+     style="fill:none;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0;stroke-dasharray:none;stroke-opacity:1"
      id="vvp-award-1-container"
-     width="500"
-     height="20"
-     x="666.62866"
-     y="275.9621"
+     width="530"
+     height="30"
+     x="281.966"
+     y="1097.7061"
      inkscape:label="vvp-award-1-container" />
   <rect
-     style="fill:#ffffff;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0;stroke-dasharray:none;stroke-opacity:1"
+     style="fill:none;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0;stroke-dasharray:none;stroke-opacity:1"
      id="vvp-award-2-container"
-     width="500"
-     height="20"
-     x="666.62866"
-     y="317.49954"
+     width="530"
+     height="30"
+     x="281.966"
+     y="1138.2888"
      inkscape:label="vvp-award-2-container" />
   <rect
-     style="fill:#ffffff;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0;stroke-dasharray:none;stroke-opacity:1"
+     style="fill:none;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0;stroke-dasharray:none;stroke-opacity:1"
      id="vvp-award-3-container"
-     width="500"
-     height="20"
-     x="666.62866"
-     y="359.03705"
+     width="530"
+     height="30"
+     x="281.966"
+     y="1179.8263"
      inkscape:label="vvp-award-3-container" />
   <rect
-     style="fill:#ffffff;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0;stroke-dasharray:none;stroke-opacity:1"
+     style="fill:none;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0;stroke-dasharray:none;stroke-opacity:1"
      id="vvp-award-4-container"
-     width="500"
-     height="20"
-     x="666.62866"
-     y="400.57458"
+     width="530"
+     height="30"
+     x="281.966"
+     y="1221.3639"
      inkscape:label="vvp-award-4-container" />
   <rect
-     style="fill:#ffffff;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0;stroke-dasharray:none;stroke-opacity:1"
+     style="fill:none;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0;stroke-dasharray:none;stroke-opacity:1"
      id="vvp-award-5-container"
-     width="500"
-     height="20"
-     x="666.62866"
-     y="442.11206"
+     width="530"
+     height="30"
+     x="281.966"
+     y="1262.9014"
      inkscape:label="vvp-award-5-container" />
   <rect
-     style="fill:#ffffff;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0;stroke-dasharray:none;stroke-opacity:1"
+     style="fill:none;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0;stroke-dasharray:none;stroke-opacity:1"
      id="vvp-award-6-container"
-     width="500"
-     height="20"
-     x="666.62866"
-     y="483.64951"
+     width="530"
+     height="30"
+     x="281.966"
+     y="1304.4388"
      inkscape:label="vvp-award-6-container" />
   <rect
-     style="fill:#ffffff;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0;stroke-dasharray:none;stroke-opacity:1"
+     style="fill:none;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0;stroke-dasharray:none;stroke-opacity:1"
      id="ssl-award-1-container"
-     width="500"
-     height="20"
-     x="666.62866"
-     y="601.8186"
+     width="530"
+     height="30"
+     x="281.966"
+     y="1415.3206"
      inkscape:label="ssl-award-1-container" />
   <rect
-     style="fill:#ffffff;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0;stroke-dasharray:none;stroke-opacity:1"
+     style="fill:none;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0;stroke-dasharray:none;stroke-opacity:1"
      id="ssl-award-2-container"
-     width="500"
-     height="20"
-     x="666.62866"
-     y="643.35608"
+     width="530"
+     height="30"
+     x="281.966"
+     y="1456.858"
      inkscape:label="ssl-award-2-container" />
   <rect
-     style="fill:#ffffff;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0;stroke-dasharray:none;stroke-opacity:1"
+     style="fill:none;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0;stroke-dasharray:none;stroke-opacity:1"
      id="ssl-award-3-container"
-     width="500"
-     height="20"
-     x="666.62866"
-     y="684.89355"
+     width="712"
+     height="42"
+     x="280.95303"
+     y="1493.2941"
      inkscape:label="ssl-award-3-container" />
   <text
      xml:space="preserve"
-     style="font-style:normal;font-variant:normal;font-weight:300;font-stretch:normal;font-size:16px;line-height:18.7502px;font-family:'Chivo Mono';-inkscape-font-specification:'Chivo Mono Light';text-align:start;letter-spacing:0px;word-spacing:-5px;writing-mode:lr-tb;direction:ltr;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0;stroke-miterlimit:0;stroke-dasharray:none;stroke-opacity:1"
-     x="668.90063"
-     y="292.36478"
+     style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:18.6667px;line-height:21.8752px;font-family:'Chivo Mono';-inkscape-font-specification:'Chivo Mono';text-align:start;letter-spacing:0px;word-spacing:-5px;writing-mode:lr-tb;direction:ltr;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0;stroke-miterlimit:0;stroke-dasharray:none;stroke-opacity:1"
+     x="299.30267"
+     y="1124.1381"
      id="vvp-award-1-title"
      inkscape:label="vvp-award-1-title">SEASON MVP</text>
   <text
      xml:space="preserve"
-     style="font-style:normal;font-variant:normal;font-weight:300;font-stretch:normal;font-size:16px;line-height:18.7502px;font-family:'Chivo Mono';-inkscape-font-specification:'Chivo Mono Light';text-align:start;letter-spacing:0px;word-spacing:-5px;writing-mode:lr-tb;direction:ltr;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0;stroke-miterlimit:0;stroke-dasharray:none;stroke-opacity:1"
-     x="668.90063"
-     y="333.90222"
+     style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:18.6667px;line-height:21.8752px;font-family:'Chivo Mono';-inkscape-font-specification:'Chivo Mono';text-align:start;letter-spacing:0px;word-spacing:-5px;writing-mode:lr-tb;direction:ltr;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0;stroke-miterlimit:0;stroke-dasharray:none;stroke-opacity:1"
+     x="299.30267"
+     y="1165.6755"
      id="vvp-award-2-title"
      inkscape:label="vvp-award-2-title">DEFENSIVE MVP</text>
   <text
      xml:space="preserve"
-     style="font-style:normal;font-variant:normal;font-weight:300;font-stretch:normal;font-size:16px;line-height:18.7502px;font-family:'Chivo Mono';-inkscape-font-specification:'Chivo Mono Light';text-align:start;letter-spacing:0px;word-spacing:-5px;writing-mode:lr-tb;direction:ltr;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0;stroke-miterlimit:0;stroke-dasharray:none;stroke-opacity:1"
-     x="668.90063"
-     y="375.4397"
+     style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:18.6667px;line-height:21.8752px;font-family:'Chivo Mono';-inkscape-font-specification:'Chivo Mono';text-align:start;letter-spacing:0px;word-spacing:-5px;writing-mode:lr-tb;direction:ltr;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0;stroke-miterlimit:0;stroke-dasharray:none;stroke-opacity:1"
+     x="299.30267"
+     y="1207.213"
      id="vvp-award-3-title"
      inkscape:label="vvp-award-3-title">SIXTH MVP</text>
   <text
      xml:space="preserve"
-     style="font-style:normal;font-variant:normal;font-weight:300;font-stretch:normal;font-size:16px;line-height:18.7502px;font-family:'Chivo Mono';-inkscape-font-specification:'Chivo Mono Light';text-align:start;letter-spacing:0px;word-spacing:-5px;writing-mode:lr-tb;direction:ltr;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0;stroke-miterlimit:0;stroke-dasharray:none;stroke-opacity:1"
-     x="668.90063"
-     y="416.97723"
+     style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:18.6667px;line-height:21.8752px;font-family:'Chivo Mono';-inkscape-font-specification:'Chivo Mono';text-align:start;letter-spacing:0px;word-spacing:-5px;writing-mode:lr-tb;direction:ltr;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0;stroke-miterlimit:0;stroke-dasharray:none;stroke-opacity:1"
+     x="299.30267"
+     y="1248.7505"
      id="vvp-award-4-title"
      inkscape:label="vvp-award-4-title">ROOKIE MVP</text>
   <text
      xml:space="preserve"
-     style="font-style:normal;font-variant:normal;font-weight:300;font-stretch:normal;font-size:16px;line-height:18.7502px;font-family:'Chivo Mono';-inkscape-font-specification:'Chivo Mono Light';text-align:start;letter-spacing:0px;word-spacing:-5px;writing-mode:lr-tb;direction:ltr;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0;stroke-miterlimit:0;stroke-dasharray:none;stroke-opacity:1"
-     x="668.90063"
-     y="458.51468"
+     style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:18.6667px;line-height:21.8752px;font-family:'Chivo Mono';-inkscape-font-specification:'Chivo Mono';text-align:start;letter-spacing:0px;word-spacing:-5px;writing-mode:lr-tb;direction:ltr;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0;stroke-miterlimit:0;stroke-dasharray:none;stroke-opacity:1"
+     x="299.30267"
+     y="1290.288"
      id="vvp-award-5-title"
      inkscape:label="vvp-award-5-title">MOST IMPROVED</text>
   <text
      xml:space="preserve"
-     style="font-style:normal;font-variant:normal;font-weight:300;font-stretch:normal;font-size:16px;line-height:18.7502px;font-family:'Chivo Mono';-inkscape-font-specification:'Chivo Mono Light';text-align:start;letter-spacing:0px;word-spacing:-5px;writing-mode:lr-tb;direction:ltr;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0;stroke-miterlimit:0;stroke-dasharray:none;stroke-opacity:1"
-     x="668.90063"
-     y="500.05215"
+     style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:18.6667px;line-height:21.8752px;font-family:'Chivo Mono';-inkscape-font-specification:'Chivo Mono';text-align:start;letter-spacing:0px;word-spacing:-5px;writing-mode:lr-tb;direction:ltr;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0;stroke-miterlimit:0;stroke-dasharray:none;stroke-opacity:1"
+     x="299.30267"
+     y="1331.8254"
      id="vvp-award-6-title"
      inkscape:label="vvp-award-6-title">NEWCOMER MVP</text>
   <text
      xml:space="preserve"
-     style="font-style:normal;font-variant:normal;font-weight:300;font-stretch:normal;font-size:16px;line-height:18.7502px;font-family:'Chivo Mono';-inkscape-font-specification:'Chivo Mono Light';text-align:start;letter-spacing:0px;word-spacing:-5px;writing-mode:lr-tb;direction:ltr;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0;stroke-miterlimit:0;stroke-dasharray:none;stroke-opacity:1"
-     x="669.62866"
-     y="618.22119"
+     style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:18.6667px;line-height:21.8752px;font-family:'Chivo Mono';-inkscape-font-specification:'Chivo Mono';text-align:start;letter-spacing:0px;word-spacing:-5px;writing-mode:lr-tb;direction:ltr;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0;stroke-miterlimit:0;stroke-dasharray:none;stroke-opacity:1"
+     x="300.0307"
+     y="1442.7072"
      id="ssl-award-1-title"
      inkscape:label="ssl-award-1-title">TOP SCORER</text>
   <text
      xml:space="preserve"
-     style="font-style:normal;font-variant:normal;font-weight:300;font-stretch:normal;font-size:16px;line-height:18.7502px;font-family:'Chivo Mono';-inkscape-font-specification:'Chivo Mono Light';text-align:start;letter-spacing:0px;word-spacing:-5px;writing-mode:lr-tb;direction:ltr;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0;stroke-miterlimit:0;stroke-dasharray:none;stroke-opacity:1"
-     x="669.62866"
-     y="659.75867"
+     style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:18.6667px;line-height:21.8752px;font-family:'Chivo Mono';-inkscape-font-specification:'Chivo Mono';text-align:start;letter-spacing:0px;word-spacing:-5px;writing-mode:lr-tb;direction:ltr;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0;stroke-miterlimit:0;stroke-dasharray:none;stroke-opacity:1"
+     x="300.0307"
+     y="1484.2446"
      id="ssl-award-2-title"
      inkscape:label="ssl-award-2-title">TOP REBOUNDER</text>
   <text
      xml:space="preserve"
-     style="font-style:normal;font-variant:normal;font-weight:300;font-stretch:normal;font-size:16px;line-height:18.7502px;font-family:'Chivo Mono';-inkscape-font-specification:'Chivo Mono Light';text-align:start;letter-spacing:0px;word-spacing:-5px;writing-mode:lr-tb;direction:ltr;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0;stroke-miterlimit:0;stroke-dasharray:none;stroke-opacity:1"
-     x="669.62866"
-     y="701.29614"
+     style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:18.6667px;line-height:21.8752px;font-family:'Chivo Mono';-inkscape-font-specification:'Chivo Mono';text-align:start;letter-spacing:0px;word-spacing:-5px;writing-mode:lr-tb;direction:ltr;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0;stroke-miterlimit:0;stroke-dasharray:none;stroke-opacity:1"
+     x="300.0307"
+     y="1525.7821"
      id="ssl-award-3-title"
      inkscape:label="ssl-award-3-title">TOP DISTRIBUTOR</text>
   <text
      xml:space="preserve"
-     style="font-style:italic;font-variant:normal;font-weight:300;font-stretch:normal;font-size:16px;line-height:18.7502px;font-family:'Chivo Mono';-inkscape-font-specification:'Chivo Mono Light Italic';text-align:start;letter-spacing:0px;word-spacing:-5px;writing-mode:lr-tb;direction:ltr;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0;stroke-miterlimit:0;stroke-dasharray:none;stroke-opacity:1"
-     x="659.85852"
-     y="236.85089"
-     id="voted-value-players-title-text"
-     inkscape:label="voted-value-players-title-text">VOTED VALUE PLAYERS:</text>
-  <text
-     xml:space="preserve"
-     style="font-style:italic;font-variant:normal;font-weight:300;font-stretch:normal;font-size:16px;line-height:18.7502px;font-family:'Chivo Mono';-inkscape-font-specification:'Chivo Mono Light Italic';text-align:start;letter-spacing:0px;word-spacing:-5px;writing-mode:lr-tb;direction:ltr;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0;stroke-miterlimit:0;stroke-dasharray:none;stroke-opacity:1"
-     x="660.5625"
-     y="567.40466"
+     style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:18.6667px;line-height:21.8752px;font-family:'Chivo Mono';-inkscape-font-specification:'Chivo Mono';text-align:start;letter-spacing:0px;word-spacing:-5px;writing-mode:lr-tb;direction:ltr;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0;stroke-miterlimit:0;stroke-dasharray:none;stroke-opacity:1"
+     x="290.96454"
+     y="1399.9771"
      id="stat-leaders-list-title-text"
      inkscape:label="stat-leaders-list-title-text">STAT LEADERS:</text>
-  <path
-     style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:2;stroke-miterlimit:0;stroke-dasharray:none;stroke-opacity:1"
-     d="M 645.62863,579.8738 H 1185.6286"
-     id="stat-leaders-line"
-     inkscape:label="stat-leaders-line" />
-  <path
-     style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:2;stroke-miterlimit:0;stroke-dasharray:none;stroke-opacity:1"
-     d="M 645.62863,533.10948 H 1185.6286"
-     id="awards-list-divider-line"
-     inkscape:label="awards-list-divider-line" />
   <text
      xml:space="preserve"
-     style="font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:16px;line-height:18.7502px;font-family:'Chivo Mono';-inkscape-font-specification:'Chivo Mono Italic';text-align:start;letter-spacing:0px;word-spacing:-5px;writing-mode:lr-tb;direction:ltr;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0;stroke-miterlimit:0;stroke-dasharray:none;stroke-opacity:1"
-     x="889.02399"
-     y="292.36478"
+     style="font-style:normal;font-variant:normal;font-weight:600;font-stretch:normal;font-size:21.3333px;line-height:25.0003px;font-family:'Chivo Mono';-inkscape-font-specification:'Chivo Mono Semi-Bold';text-align:start;letter-spacing:0px;word-spacing:-5px;writing-mode:lr-tb;direction:ltr;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0;stroke-miterlimit:0;stroke-dasharray:none;stroke-opacity:1"
+     x="569.3125"
+     y="1125.9487"
      id="vvp-award-1-winner"
      inkscape:label="vvp-award-1-winner">WINNER NAME</text>
   <text
      xml:space="preserve"
-     style="font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:16px;line-height:18.7502px;font-family:'Chivo Mono';-inkscape-font-specification:'Chivo Mono Italic';text-align:start;letter-spacing:0px;word-spacing:-5px;writing-mode:lr-tb;direction:ltr;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0;stroke-miterlimit:0;stroke-dasharray:none;stroke-opacity:1"
-     x="889.02399"
-     y="332.94757"
+     style="font-style:normal;font-variant:normal;font-weight:600;font-stretch:normal;font-size:21.3333px;line-height:25.0003px;font-family:'Chivo Mono';-inkscape-font-specification:'Chivo Mono Semi-Bold';text-align:start;letter-spacing:0px;word-spacing:-5px;writing-mode:lr-tb;direction:ltr;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0;stroke-miterlimit:0;stroke-dasharray:none;stroke-opacity:1"
+     x="569.3125"
+     y="1166.5315"
      id="vvp-award-2-winner"
      inkscape:label="vvp-award-2-winner">WINNER NAME</text>
   <text
      xml:space="preserve"
-     style="font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:16px;line-height:18.7502px;font-family:'Chivo Mono';-inkscape-font-specification:'Chivo Mono Italic';text-align:start;letter-spacing:0px;word-spacing:-5px;writing-mode:lr-tb;direction:ltr;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0;stroke-miterlimit:0;stroke-dasharray:none;stroke-opacity:1"
-     x="889.02399"
-     y="374.48505"
+     style="font-style:normal;font-variant:normal;font-weight:600;font-stretch:normal;font-size:21.3333px;line-height:25.0003px;font-family:'Chivo Mono';-inkscape-font-specification:'Chivo Mono Semi-Bold';text-align:start;letter-spacing:0px;word-spacing:-5px;writing-mode:lr-tb;direction:ltr;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0;stroke-miterlimit:0;stroke-dasharray:none;stroke-opacity:1"
+     x="569.3125"
+     y="1208.069"
      id="vvp-award-3-winner"
      inkscape:label="vvp-award-3-winner">WINNER NAME</text>
   <text
      xml:space="preserve"
-     style="font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:16px;line-height:18.7502px;font-family:'Chivo Mono';-inkscape-font-specification:'Chivo Mono Italic';text-align:start;letter-spacing:0px;word-spacing:-5px;writing-mode:lr-tb;direction:ltr;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0;stroke-miterlimit:0;stroke-dasharray:none;stroke-opacity:1"
-     x="889.02399"
-     y="416.02258"
+     style="font-style:normal;font-variant:normal;font-weight:600;font-stretch:normal;font-size:21.3333px;line-height:25.0003px;font-family:'Chivo Mono';-inkscape-font-specification:'Chivo Mono Semi-Bold';text-align:start;letter-spacing:0px;word-spacing:-5px;writing-mode:lr-tb;direction:ltr;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0;stroke-miterlimit:0;stroke-dasharray:none;stroke-opacity:1"
+     x="569.3125"
+     y="1249.6066"
      id="vvp-award-4-winner"
      inkscape:label="vvp-award-4-winner">WINNER NAME</text>
   <text
      xml:space="preserve"
-     style="font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:16px;line-height:18.7502px;font-family:'Chivo Mono';-inkscape-font-specification:'Chivo Mono Italic';text-align:start;letter-spacing:0px;word-spacing:-5px;writing-mode:lr-tb;direction:ltr;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0;stroke-miterlimit:0;stroke-dasharray:none;stroke-opacity:1"
-     x="889.02399"
-     y="457.56003"
+     style="font-style:normal;font-variant:normal;font-weight:600;font-stretch:normal;font-size:21.3333px;line-height:25.0003px;font-family:'Chivo Mono';-inkscape-font-specification:'Chivo Mono Semi-Bold';text-align:start;letter-spacing:0px;word-spacing:-5px;writing-mode:lr-tb;direction:ltr;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0;stroke-miterlimit:0;stroke-dasharray:none;stroke-opacity:1"
+     x="569.3125"
+     y="1291.144"
      id="vvp-award-5-winner"
      inkscape:label="vvp-award-5-winner">WINNER NAME</text>
   <text
      xml:space="preserve"
-     style="font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:16px;line-height:18.7502px;font-family:'Chivo Mono';-inkscape-font-specification:'Chivo Mono Italic';text-align:start;letter-spacing:0px;word-spacing:-5px;writing-mode:lr-tb;direction:ltr;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0;stroke-miterlimit:0;stroke-dasharray:none;stroke-opacity:1"
-     x="889.02399"
-     y="617.2666"
+     style="font-style:normal;font-variant:normal;font-weight:600;font-stretch:normal;font-size:21.3333px;line-height:25.0003px;font-family:'Chivo Mono';-inkscape-font-specification:'Chivo Mono Semi-Bold';text-align:start;letter-spacing:0px;word-spacing:-5px;writing-mode:lr-tb;direction:ltr;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0;stroke-miterlimit:0;stroke-dasharray:none;stroke-opacity:1"
+     x="569.3125"
+     y="1443.5632"
      id="ssl-award-1-winner"
      inkscape:label="ssl-award-1-winner">WINNER NAME</text>
   <text
      xml:space="preserve"
-     style="font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:16px;line-height:18.7502px;font-family:'Chivo Mono';-inkscape-font-specification:'Chivo Mono Italic';text-align:start;letter-spacing:0px;word-spacing:-5px;writing-mode:lr-tb;direction:ltr;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0;stroke-miterlimit:0;stroke-dasharray:none;stroke-opacity:1"
-     x="889.02399"
-     y="658.80408"
+     style="font-style:normal;font-variant:normal;font-weight:600;font-stretch:normal;font-size:21.3333px;line-height:25.0003px;font-family:'Chivo Mono';-inkscape-font-specification:'Chivo Mono Semi-Bold';text-align:start;letter-spacing:0px;word-spacing:-5px;writing-mode:lr-tb;direction:ltr;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0;stroke-miterlimit:0;stroke-dasharray:none;stroke-opacity:1"
+     x="569.3125"
+     y="1485.1007"
      id="ssl-award-2-winner"
      inkscape:label="ssl-award-2-winner">WINNER NAME</text>
   <text
      xml:space="preserve"
-     style="font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:16px;line-height:18.7502px;font-family:'Chivo Mono';-inkscape-font-specification:'Chivo Mono Italic';text-align:start;letter-spacing:0px;word-spacing:-5px;writing-mode:lr-tb;direction:ltr;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0;stroke-miterlimit:0;stroke-dasharray:none;stroke-opacity:1"
-     x="889.02399"
-     y="700.34155"
+     style="font-style:normal;font-variant:normal;font-weight:600;font-stretch:normal;font-size:21.3333px;line-height:25.0003px;font-family:'Chivo Mono';-inkscape-font-specification:'Chivo Mono Semi-Bold';text-align:start;letter-spacing:0px;word-spacing:-5px;writing-mode:lr-tb;direction:ltr;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0;stroke-miterlimit:0;stroke-dasharray:none;stroke-opacity:1"
+     x="569.3125"
+     y="1526.6382"
      id="ssl-award-3-winner"
      inkscape:label="ssl-award-3-winner">WINNER NAME</text>
   <text
      xml:space="preserve"
-     style="font-style:normal;font-variant:normal;font-weight:200;font-stretch:normal;font-size:13.33333333px;line-height:15.62516689px;font-family:'Chivo Mono';-inkscape-font-specification:'Chivo Mono Ultra-Light';text-align:end;letter-spacing:0px;word-spacing:-5px;writing-mode:lr-tb;direction:ltr;text-anchor:end;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0;stroke-miterlimit:0;stroke-dasharray:none;stroke-opacity:1"
-     x="1154.8511"
-     y="701.29614"
+     style="font-style:normal;font-variant:normal;font-weight:500;font-stretch:normal;font-size:16px;line-height:18.7502px;font-family:'Chivo Mono';-inkscape-font-specification:'Chivo Mono Medium';text-align:end;letter-spacing:0px;word-spacing:-5px;writing-mode:lr-tb;direction:ltr;text-anchor:end;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0;stroke-miterlimit:0;stroke-dasharray:none;stroke-opacity:1"
+     x="971.50726"
+     y="1519.7821"
      id="ssl-award-3-team"
      inkscape:label="ssl-award-3-team">TEAMNAME</text>
   <text
      xml:space="preserve"
-     style="font-style:normal;font-variant:normal;font-weight:200;font-stretch:normal;font-size:13.33333333px;line-height:15.62516689px;font-family:'Chivo Mono';-inkscape-font-specification:'Chivo Mono Ultra-Light';text-align:end;letter-spacing:0px;word-spacing:-5px;writing-mode:lr-tb;direction:ltr;text-anchor:end;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0;stroke-miterlimit:0;stroke-dasharray:none;stroke-opacity:1"
-     x="1154.8511"
-     y="658.84412"
+     style="font-style:normal;font-variant:normal;font-weight:500;font-stretch:normal;font-size:16px;line-height:18.7502px;font-family:'Chivo Mono';-inkscape-font-specification:'Chivo Mono Medium';text-align:end;letter-spacing:0px;word-spacing:-5px;writing-mode:lr-tb;direction:ltr;text-anchor:end;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0;stroke-miterlimit:0;stroke-dasharray:none;stroke-opacity:1"
+     x="971.50726"
+     y="1477.3301"
      id="ssl-award-2-team"
      inkscape:label="ssl-award-2-team">TEAMNAME</text>
   <text
      xml:space="preserve"
-     style="font-style:normal;font-variant:normal;font-weight:200;font-stretch:normal;font-size:13.33333333px;line-height:15.62516689px;font-family:'Chivo Mono';-inkscape-font-specification:'Chivo Mono Ultra-Light';text-align:end;letter-spacing:0px;word-spacing:-5px;writing-mode:lr-tb;direction:ltr;text-anchor:end;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0;stroke-miterlimit:0;stroke-dasharray:none;stroke-opacity:1"
-     x="1154.8511"
-     y="617.30664"
+     style="font-style:normal;font-variant:normal;font-weight:500;font-stretch:normal;font-size:16px;line-height:18.7502px;font-family:'Chivo Mono';-inkscape-font-specification:'Chivo Mono Medium';text-align:end;letter-spacing:0px;word-spacing:-5px;writing-mode:lr-tb;direction:ltr;text-anchor:end;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0;stroke-miterlimit:0;stroke-dasharray:none;stroke-opacity:1"
+     x="971.50726"
+     y="1435.7926"
      id="ssl-award-1-team"
      inkscape:label="ssl-award-1-team">TEAMNAME</text>
   <text
      xml:space="preserve"
-     style="font-style:normal;font-variant:normal;font-weight:200;font-stretch:normal;font-size:13.33333333px;line-height:15.62516689px;font-family:'Chivo Mono';-inkscape-font-specification:'Chivo Mono Ultra-Light';text-align:end;letter-spacing:0px;word-spacing:-5px;writing-mode:lr-tb;direction:ltr;text-anchor:end;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0;stroke-miterlimit:0;stroke-dasharray:none;stroke-opacity:1"
-     x="1154.8511"
-     y="499.13754"
+     style="font-style:normal;font-variant:normal;font-weight:500;font-stretch:normal;font-size:16px;line-height:18.7502px;font-family:'Chivo Mono';-inkscape-font-specification:'Chivo Mono Medium';text-align:end;letter-spacing:0px;word-spacing:-5px;writing-mode:lr-tb;direction:ltr;text-anchor:end;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0;stroke-miterlimit:0;stroke-dasharray:none;stroke-opacity:1"
+     x="971.50726"
+     y="1324.9109"
      id="vvp-award-6-team"
      inkscape:label="vvp-award-6-team">TEAMNAME</text>
   <text
      xml:space="preserve"
-     style="font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:16px;line-height:18.7502px;font-family:'Chivo Mono';-inkscape-font-specification:'Chivo Mono Italic';text-align:start;letter-spacing:0px;word-spacing:-5px;writing-mode:lr-tb;direction:ltr;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0;stroke-miterlimit:0;stroke-dasharray:none;stroke-opacity:1"
-     x="889.02399"
-     y="499.0975"
+     style="font-style:normal;font-variant:normal;font-weight:600;font-stretch:normal;font-size:21.3333px;line-height:25.0003px;font-family:'Chivo Mono';-inkscape-font-specification:'Chivo Mono Semi-Bold';text-align:start;letter-spacing:0px;word-spacing:-5px;writing-mode:lr-tb;direction:ltr;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0;stroke-miterlimit:0;stroke-dasharray:none;stroke-opacity:1"
+     x="569.3125"
+     y="1332.6815"
      id="vvp-award-6-winner"
      inkscape:label="vvp-award-6-winner">WINNER NAME</text>
   <text
      xml:space="preserve"
-     style="font-style:normal;font-variant:normal;font-weight:200;font-stretch:normal;font-size:13.33333333px;line-height:15.62516689px;font-family:'Chivo Mono';-inkscape-font-specification:'Chivo Mono Ultra-Light';text-align:end;letter-spacing:0px;word-spacing:-5px;writing-mode:lr-tb;direction:ltr;text-anchor:end;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0;stroke-miterlimit:0;stroke-dasharray:none;stroke-opacity:1"
-     x="1154.8511"
-     y="457.60007"
+     style="font-style:normal;font-variant:normal;font-weight:500;font-stretch:normal;font-size:16px;line-height:18.7502px;font-family:'Chivo Mono';-inkscape-font-specification:'Chivo Mono Medium';text-align:end;letter-spacing:0px;word-spacing:-5px;writing-mode:lr-tb;direction:ltr;text-anchor:end;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0;stroke-miterlimit:0;stroke-dasharray:none;stroke-opacity:1"
+     x="971.50726"
+     y="1283.3734"
      id="vvp-award-5-team"
      inkscape:label="vvp-award-5-team">TEAMNAME</text>
   <text
      xml:space="preserve"
-     style="font-style:normal;font-variant:normal;font-weight:200;font-stretch:normal;font-size:13.33333333px;line-height:15.62516689px;font-family:'Chivo Mono';-inkscape-font-specification:'Chivo Mono Ultra-Light';text-align:end;letter-spacing:0px;word-spacing:-5px;writing-mode:lr-tb;direction:ltr;text-anchor:end;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0;stroke-miterlimit:0;stroke-dasharray:none;stroke-opacity:1"
-     x="1154.8511"
-     y="416.06259"
+     style="font-style:normal;font-variant:normal;font-weight:500;font-stretch:normal;font-size:16px;line-height:18.7502px;font-family:'Chivo Mono';-inkscape-font-specification:'Chivo Mono Medium';text-align:end;letter-spacing:0px;word-spacing:-5px;writing-mode:lr-tb;direction:ltr;text-anchor:end;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0;stroke-miterlimit:0;stroke-dasharray:none;stroke-opacity:1"
+     x="971.50726"
+     y="1241.8359"
      id="vvp-award-4-team"
      inkscape:label="vvp-award-4-team">TEAMNAME</text>
   <text
      xml:space="preserve"
-     style="font-style:normal;font-variant:normal;font-weight:200;font-stretch:normal;font-size:13.33333333px;line-height:15.62516689px;font-family:'Chivo Mono';-inkscape-font-specification:'Chivo Mono Ultra-Light';text-align:end;letter-spacing:0px;word-spacing:-5px;writing-mode:lr-tb;direction:ltr;text-anchor:end;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0;stroke-miterlimit:0;stroke-dasharray:none;stroke-opacity:1"
-     x="1154.8511"
-     y="374.52505"
+     style="font-style:normal;font-variant:normal;font-weight:500;font-stretch:normal;font-size:16px;line-height:18.7502px;font-family:'Chivo Mono';-inkscape-font-specification:'Chivo Mono Medium';text-align:end;letter-spacing:0px;word-spacing:-5px;writing-mode:lr-tb;direction:ltr;text-anchor:end;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0;stroke-miterlimit:0;stroke-dasharray:none;stroke-opacity:1"
+     x="971.50726"
+     y="1200.2983"
      id="vvp-award-3-team"
      inkscape:label="vvp-award-3-team">TEAMNAME</text>
   <text
      xml:space="preserve"
-     style="font-style:normal;font-variant:normal;font-weight:200;font-stretch:normal;font-size:13.33333333px;line-height:15.62516689px;font-family:'Chivo Mono';-inkscape-font-specification:'Chivo Mono Ultra-Light';text-align:end;letter-spacing:0px;word-spacing:-5px;writing-mode:lr-tb;direction:ltr;text-anchor:end;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0;stroke-miterlimit:0;stroke-dasharray:none;stroke-opacity:1"
-     x="1154.8511"
-     y="332.98755"
+     style="font-style:normal;font-variant:normal;font-weight:500;font-stretch:normal;font-size:16px;line-height:18.7502px;font-family:'Chivo Mono';-inkscape-font-specification:'Chivo Mono Medium';text-align:end;letter-spacing:0px;word-spacing:-5px;writing-mode:lr-tb;direction:ltr;text-anchor:end;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0;stroke-miterlimit:0;stroke-dasharray:none;stroke-opacity:1"
+     x="971.50726"
+     y="1158.7609"
      id="vvp-award-2-team">TEAMNAME</text>
   <text
      xml:space="preserve"
-     style="font-style:normal;font-variant:normal;font-weight:200;font-stretch:normal;font-size:13.33333333px;line-height:15.62516689px;font-family:'Chivo Mono';-inkscape-font-specification:'Chivo Mono Ultra-Light';text-align:end;letter-spacing:0px;word-spacing:-5px;writing-mode:lr-tb;direction:ltr;text-anchor:end;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0;stroke-miterlimit:0;stroke-dasharray:none;stroke-opacity:1"
-     x="1154.8511"
-     y="291.4501"
+     style="font-style:normal;font-variant:normal;font-weight:500;font-stretch:normal;font-size:16px;line-height:18.7502px;font-family:'Chivo Mono';-inkscape-font-specification:'Chivo Mono Medium';text-align:end;letter-spacing:0px;word-spacing:-5px;writing-mode:lr-tb;direction:ltr;text-anchor:end;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0;stroke-miterlimit:0;stroke-dasharray:none;stroke-opacity:1"
+     x="971.50726"
+     y="1117.2234"
      id="vvp-award-1-team"
      inkscape:label="vvp-award-1-team">TEAMNAME</text>
+  <path
+     style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:2;stroke-linejoin:round;stroke-miterlimit:0;stroke-dasharray:none;stroke-opacity:1"
+     d="M 277.03071,1451.9879 H 996.24176"
+     id="path10"
+     sodipodi:nodetypes="cc" />
+  <path
+     style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:2;stroke-linejoin:round;stroke-miterlimit:0;stroke-dasharray:none;stroke-opacity:1"
+     d="M 277.03071,1493.5253 H 996.24176"
+     id="path11"
+     sodipodi:nodetypes="cc" />
+  <path
+     style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:2;stroke-linejoin:round;stroke-miterlimit:0;stroke-dasharray:none;stroke-opacity:1"
+     d="M 277.03071,1410.4504 H 996.24176"
+     id="path12"
+     sodipodi:nodetypes="cc" />
+  <path
+     style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:2;stroke-linejoin:round;stroke-miterlimit:0;stroke-dasharray:none;stroke-opacity:1"
+     d="M 277.03071,1535.0628 H 996.24176"
+     id="path14"
+     sodipodi:nodetypes="cc" />
+  <path
+     style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:2;stroke-linejoin:round;stroke-miterlimit:0;stroke-dasharray:none;stroke-opacity:1"
+     d="M 277.03071,1133.4188 H 996.24176"
+     id="path15"
+     sodipodi:nodetypes="cc" />
+  <path
+     style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:2;stroke-linejoin:round;stroke-miterlimit:0;stroke-dasharray:none;stroke-opacity:1"
+     d="M 277.03071,1174.9562 H 996.24176"
+     id="path16"
+     sodipodi:nodetypes="cc" />
+  <path
+     style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:2;stroke-linejoin:round;stroke-miterlimit:0;stroke-dasharray:none;stroke-opacity:1"
+     d="M 277.03071,1091.8813 H 996.24176"
+     id="path17"
+     sodipodi:nodetypes="cc" />
+  <path
+     style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:2;stroke-linejoin:round;stroke-miterlimit:0;stroke-dasharray:none;stroke-opacity:1"
+     d="M 277.03071,1216.4937 H 996.24176"
+     id="path19"
+     sodipodi:nodetypes="cc" />
+  <path
+     style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:2;stroke-linejoin:round;stroke-miterlimit:0;stroke-dasharray:none;stroke-opacity:1"
+     d="M 277.03071,1258.0312 H 996.24176"
+     id="path21"
+     sodipodi:nodetypes="cc" />
+  <path
+     style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:2;stroke-linejoin:round;stroke-miterlimit:0;stroke-dasharray:none;stroke-opacity:1"
+     d="M 277.03071,1299.5686 H 817.03074"
+     id="path23"
+     sodipodi:nodetypes="cc" />
+  <path
+     style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:2;stroke-linejoin:round;stroke-miterlimit:0;stroke-dasharray:none;stroke-opacity:1"
+     d="M 277.03071,1299.5686 H 996.24176"
+     id="path24"
+     sodipodi:nodetypes="cc" />
+  <path
+     style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:2;stroke-linejoin:round;stroke-miterlimit:0;stroke-dasharray:none;stroke-opacity:1"
+     d="M 277.03071,1341.1061 H 996.24176"
+     id="path25"
+     sodipodi:nodetypes="cc" />
   <rect
-     style="fill:#ffffff;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:2;stroke-dasharray:none;stroke-opacity:1"
-     id="west-conference-most-game-wins-container"
-     width="223"
-     height="88"
-     x="674.24677"
-     y="18.227768"
-     inkscape:label="west-conference-most-game-wins-container" />
-  <rect
-     style="fill:#ffffff;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:2;stroke-dasharray:none;stroke-opacity:1"
-     id="east-conference-most-game-wins-container"
-     width="223"
-     height="88"
-     x="936.01056"
-     y="18.227768"
-     inkscape:label="east-conference-most-game-wins-container" />
+     style="fill:none;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:2;stroke-dasharray:none;stroke-opacity:1"
+     id="rect45"
+     width="218"
+     height="38"
+     x="305.0484"
+     y="360.57144"
+     inkscape:label="top-draft-pick-teamname-container" />
+  <path
+     style="fill:#e3e3e3;fill-opacity:1;stroke:#000000;stroke-width:3;stroke-linejoin:round;stroke-miterlimit:0;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+     d="m 322.69429,398.22432 v 10.32129"
+     id="path48"
+     sodipodi:nodetypes="cc" />
   <text
      xml:space="preserve"
-     style="font-style:normal;font-variant:normal;font-weight:300;font-stretch:normal;font-size:18.6667px;line-height:21.8752px;font-family:'Chivo Mono';-inkscape-font-specification:'Chivo Mono Light';text-align:center;letter-spacing:0px;word-spacing:-5px;writing-mode:lr-tb;direction:ltr;text-anchor:middle;white-space:pre;inline-size:182.467;display:inline;fill:#000000;fill-opacity:1;stroke:none;stroke-width:3;stroke-miterlimit:0;stroke-dasharray:none;stroke-opacity:1"
-     x="724.48236"
-     y="313.52853"
-     id="west-conference-most-game-wins"
-     transform="translate(60.78837,-266.97865)"
-     inkscape:label="west-conference-most-game-wins"><tspan
-       x="724.48236"
-       y="313.52853"
-       id="tspan10"><tspan
-         dx="0 0 0 0 0 0 0 0 0 0 5.0000048 -5.0000029"
-         id="tspan8">&lt;teamname&gt; won</tspan><tspan
-         dx="5.0000048"
-         id="tspan9"></tspan><tspan
-         y="313.52853"
-         id="tspan11"> </tspan></tspan><tspan
-       x="724.48236"
-       y="335.40376"
-       id="tspan14"><tspan
-         dx="0 0 0 4.999999 -4.999999 0 0 0 4.9999971 -5.0000029 0 0 0 0 5.0000048 -5.0000105"
-         id="tspan12">the most games in</tspan><tspan
-         dx="5.0000048"
-         id="tspan13"></tspan><tspan
-         y="335.40376"
-         id="tspan15"> </tspan></tspan><tspan
-       x="724.48236"
-       y="357.27897"
-       id="tspan19"><tspan
-         dx="0 0 0 4.999999 -4.999999"
-         id="tspan16">the west</tspan><tspan
-         dx="4.9999971"
-         id="tspan18"></tspan><tspan
-         y="357.27897"
-         id="tspan20"> </tspan></tspan></text>
+     style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:21.3333px;line-height:25.0002px;font-family:'Chivo Mono';-inkscape-font-specification:'Chivo Mono';text-align:start;letter-spacing:0px;word-spacing:-5px;writing-mode:lr-tb;direction:ltr;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0;stroke-linejoin:round;stroke-miterlimit:0;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+     x="326.32434"
+     y="385.25674"
+     id="text48">College team</text>
+  <rect
+     style="fill:none;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:3;stroke-dasharray:none;stroke-opacity:1"
+     id="rect49"
+     width="549.09869"
+     height="377"
+     x="277.0307"
+     y="1659.1005" />
+  <rect
+     style="fill:none;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:2;stroke-dasharray:none;stroke-opacity:1"
+     id="playoff-spots-num-container"
+     width="136"
+     height="38"
+     x="304.9346"
+     y="1738.8469"
+     inkscape:label="playoff-spots-num-container" />
+  <rect
+     style="fill:none;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:1.99999;stroke-dasharray:none;stroke-opacity:1"
+     id="playoff-structure-type-container"
+     width="493.17712"
+     height="38.000011"
+     x="305.04837"
+     y="1688.2155"
+     inkscape:label="playoff-structure-type-container" />
+  <rect
+     style="fill:none;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:2;stroke-dasharray:none;stroke-opacity:1"
+     id="playoff-round-num-container"
+     width="136"
+     height="38"
+     x="304.9346"
+     y="1785.167"
+     inkscape:label="playoff-round-num-container" />
   <text
      xml:space="preserve"
-     style="font-style:normal;font-variant:normal;font-weight:300;font-stretch:normal;font-size:18.6667px;line-height:21.8752px;font-family:'Chivo Mono';-inkscape-font-specification:'Chivo Mono Light';text-align:center;letter-spacing:0px;word-spacing:-5px;writing-mode:lr-tb;direction:ltr;text-anchor:middle;white-space:pre;inline-size:182.467;display:inline;fill:#000000;fill-opacity:1;stroke:none;stroke-width:3;stroke-miterlimit:0;stroke-dasharray:none;stroke-opacity:1"
-     x="724.48236"
-     y="313.52853"
-     id="east-conference-most-game-wins"
-     transform="translate(322.55218,-266.97869)"
-     inkscape:label="east-conference-most-game-wins"><tspan
-       x="724.48236"
-       y="313.52853"
-       id="tspan23"><tspan
-         dx="0 0 0 0 0 0 0 0 0 0 5.0000048 -5.0000029"
-         id="tspan21">&lt;teamname&gt; won</tspan><tspan
-         dx="5.0000048"
-         id="tspan22"></tspan><tspan
-         y="313.52853"
-         id="tspan24"> </tspan></tspan><tspan
-       x="724.48236"
-       y="335.40376"
-       id="tspan27"><tspan
-         dx="0 0 0 4.999999 -4.999999 0 0 0 4.9999971 -5.0000029 0 0 0 0 5.0000048 -5.0000105"
-         id="tspan25">the most games in</tspan><tspan
-         dx="5.0000048"
-         id="tspan26"></tspan><tspan
-         y="335.40376"
-         id="tspan28"> </tspan></tspan><tspan
-       x="724.48236"
-       y="357.27897"
-       id="tspan31"><tspan
-         dx="0 0 0 4.999999 -4.999999"
-         id="tspan29">the east</tspan><tspan
-         dx="4.9999971"
-         id="tspan30"></tspan><tspan
-         y="357.27897"
-         id="tspan32"> </tspan></tspan></text>
-  <rect
-     style="fill:#ffffff;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:2;stroke-dasharray:none;stroke-opacity:1"
-     id="west-conference-most-game-wins-win-num-container"
-     width="92"
-     height="40"
-     x="694.74677"
-     y="106.22784"
-     inkscape:label="west-conference-most-game-wins-win-num-container" />
-  <rect
-     style="fill:#ffffff;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:2;stroke-dasharray:none;stroke-opacity:1"
-     id="west-conference-most-game-wins-loss-num-container"
-     width="92"
-     height="40"
-     x="784.74689"
-     y="106.22784"
-     inkscape:label="west-conference-most-game-wins-loss-num-container" />
-  <text
-     xml:space="preserve"
-     style="font-style:normal;font-variant:normal;font-weight:300;font-stretch:normal;font-size:16px;line-height:18.7502px;font-family:'Chivo Mono';-inkscape-font-specification:'Chivo Mono Light';text-align:center;letter-spacing:0px;word-spacing:-5px;writing-mode:lr-tb;direction:ltr;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0;stroke-miterlimit:0;stroke-dasharray:none;stroke-opacity:1"
-     x="741.0108"
-     y="131.71585"
-     id="west-conference-most-game-wins-win-num"
-     inkscape:label="west-conference-most-game-wins-win-num"><tspan
-       sodipodi:role="line"
-       id="tspan41"
-       x="741.0108"
-       y="131.71585">## WINS</tspan></text>
-  <text
-     xml:space="preserve"
-     style="font-style:normal;font-variant:normal;font-weight:300;font-stretch:normal;font-size:16px;line-height:18.7502px;font-family:'Chivo Mono';-inkscape-font-specification:'Chivo Mono Light';text-align:center;letter-spacing:0px;word-spacing:-5px;writing-mode:lr-tb;direction:ltr;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0;stroke-miterlimit:0;stroke-dasharray:none;stroke-opacity:1"
-     x="831.0108"
-     y="131.71585"
-     id="west-conference-most-game-wins-loss-num"
-     inkscape:label="west-conference-most-game-wins-loss-num"><tspan
-       sodipodi:role="line"
-       id="tspan42"
-       x="831.0108"
-       y="131.71585">## LOSS</tspan></text>
-  <rect
-     style="fill:#ffffff;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:2;stroke-dasharray:none;stroke-opacity:1"
-     id="east-conference-most-game-wins-win-num-container"
-     width="92"
-     height="40"
-     x="956.51056"
-     y="106.22784"
-     inkscape:label="east-conference-most-game-wins-win-num-container" />
-  <rect
-     style="fill:#ffffff;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:2;stroke-dasharray:none;stroke-opacity:1"
-     id="east-conference-most-game-wins-loss-num-container"
-     width="92"
-     height="40"
-     x="1046.5106"
-     y="106.22784"
-     inkscape:label="east-conference-most-game-wins-loss-num-container" />
-  <text
-     xml:space="preserve"
-     style="font-style:normal;font-variant:normal;font-weight:300;font-stretch:normal;font-size:16px;line-height:18.7502px;font-family:'Chivo Mono';-inkscape-font-specification:'Chivo Mono Light';text-align:center;letter-spacing:0px;word-spacing:-5px;writing-mode:lr-tb;direction:ltr;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0;stroke-miterlimit:0;stroke-dasharray:none;stroke-opacity:1"
-     x="1002.7744"
-     y="131.71585"
-     id="east-conference-most-game-wins-win-num"
-     inkscape:label="east-conference-most-game-wins-win-num"><tspan
-       sodipodi:role="line"
-       id="tspan45"
-       x="1002.7744"
-       y="131.71585">## WINS</tspan></text>
-  <text
-     xml:space="preserve"
-     style="font-style:normal;font-variant:normal;font-weight:300;font-stretch:normal;font-size:16px;line-height:18.7502px;font-family:'Chivo Mono';-inkscape-font-specification:'Chivo Mono Light';text-align:center;letter-spacing:0px;word-spacing:-5px;writing-mode:lr-tb;direction:ltr;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0;stroke-miterlimit:0;stroke-dasharray:none;stroke-opacity:1"
-     x="1092.7745"
-     y="131.71585"
-     id="east-conference-most-game-wins-loss-num"
-     inkscape:label="east-conference-most-game-wins-loss-num"><tspan
-       sodipodi:role="line"
-       id="tspan46"
-       x="1092.7745"
-       y="131.71585">## LOSS</tspan></text>
-  <rect
-     id="teams-timeline-season-start-date-container"
-     class="team-timeline-container"
-     width="130"
-     height="36.747429"
-     x="70.936493"
-     y="141.88194"
-     style="fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:2;stroke-dasharray:none;stroke-opacity:1" />
-  <text
-     x="135.75485"
-     y="164.38359"
-     id="teams-timeline-season-start-date"
-     class="team-timeline-text"
-     style="text-align:center;text-anchor:middle">seasonstart</text>
-  <rect
-     id="teams-timeline-season-end-date-container"
-     class="team-timeline-container"
-     width="130"
-     height="36.747429"
-     x="241.16626"
-     y="141.88165"
-     style="fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:2;stroke-dasharray:none;stroke-opacity:1" />
-  <text
-     x="306.38593"
-     y="164.729"
-     id="teams-timeline-season-end-date"
-     class="team-timeline-text"
-     style="text-align:center;text-anchor:middle">seasonend</text>
-  <rect
-     id="season-start-container"
-     width="78"
-     height="18.373714"
-     x="96.936493"
-     y="123.50822"
-     style="fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:2;stroke-dasharray:none;stroke-opacity:1" />
-  <text
-     x="135.75485"
-     y="136.82301"
-     class="season-date-text"
-     id="season-start-text"
-     style="text-align:center;text-anchor:middle">start</text>
-  <rect
-     id="season-end-container"
-     width="78"
-     height="18.373999"
-     x="267.1662"
-     y="123.50793"
-     style="fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:2;stroke-dasharray:none;stroke-opacity:1" />
-  <text
-     x="306.38007"
-     y="137.16856"
-     class="season-date-text"
-     id="season-end-text"
-     style="text-align:center;text-anchor:middle">end</text>
-  <text
-     xml:space="preserve"
-     style="font-style:normal;font-variant:normal;font-weight:300;font-stretch:normal;font-size:18.6667px;line-height:21.8752px;font-family:'Chivo Mono';-inkscape-font-specification:'Chivo Mono Light';text-align:center;letter-spacing:-1.5px;word-spacing:-5px;writing-mode:lr-tb;direction:ltr;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0;stroke-miterlimit:0;stroke-dasharray:none"
-     x="141.96458"
-     y="468.97226"
+     style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:21.3333px;line-height:25.0002px;font-family:'Chivo Mono';-inkscape-font-specification:'Chivo Mono';text-align:center;letter-spacing:-1.5px;word-spacing:-5px;writing-mode:lr-tb;direction:ltr;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0;stroke-miterlimit:0;stroke-dasharray:none"
+     x="332.19241"
+     y="1763.3403"
      id="ps-num-label"
      inkscape:label="ps-num-label"><tspan
        sodipodi:role="line"
        id="tspan1"
-       x="141.21458"
-       y="468.97226">#</tspan></text>
+       x="331.44241"
+       y="1763.3403">#</tspan></text>
   <text
      xml:space="preserve"
-     style="font-style:normal;font-variant:normal;font-weight:300;font-stretch:normal;font-size:18.6667px;line-height:21.8752px;font-family:'Chivo Mono';-inkscape-font-specification:'Chivo Mono Light';text-align:center;letter-spacing:-1.5px;word-spacing:-5px;writing-mode:lr-tb;direction:ltr;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0;stroke-miterlimit:0;stroke-dasharray:none"
-     x="141.96458"
-     y="495.43814"
-     id="ps-playoff-label"
-     inkscape:label="ps-playoff-label"><tspan
-       sodipodi:role="line"
-       id="tspan2"
-       x="141.21458"
-       y="495.43814">playoff</tspan></text>
-  <text
-     xml:space="preserve"
-     style="font-style:normal;font-variant:normal;font-weight:300;font-stretch:normal;font-size:18.6667px;line-height:21.8752px;font-family:'Chivo Mono';-inkscape-font-specification:'Chivo Mono Light';text-align:center;letter-spacing:-1.5px;word-spacing:-5px;writing-mode:lr-tb;direction:ltr;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0;stroke-miterlimit:0;stroke-dasharray:none"
-     x="141.96458"
-     y="521.90399"
+     style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:21.3333px;line-height:25.0002px;font-family:'Chivo Mono';-inkscape-font-specification:'Chivo Mono';text-align:center;letter-spacing:-1.5px;word-spacing:-5px;writing-mode:lr-tb;direction:ltr;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0;stroke-miterlimit:0;stroke-dasharray:none"
+     x="382.54889"
+     y="1763.3403"
      id="ps-spots-label"
      inkscape:label="ps-spots-label"><tspan
        sodipodi:role="line"
        id="tspan3"
-       x="141.21458"
-       y="521.90399">spots</tspan></text>
+       x="381.79889"
+       y="1763.3403">spots</tspan></text>
   <text
      xml:space="preserve"
-     style="font-style:normal;font-variant:normal;font-weight:300;font-stretch:normal;font-size:18.6667px;line-height:21.8752px;font-family:'Chivo Mono';-inkscape-font-specification:'Chivo Mono Light';text-align:center;letter-spacing:-1.5px;word-spacing:-5px;writing-mode:lr-tb;direction:ltr;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0;stroke-miterlimit:0;stroke-dasharray:none"
-     x="326.02048"
-     y="470.79227"
-     id="pstr-based-on-label"
-     inkscape:label="pstr-based-on-label"><tspan
-       sodipodi:role="line"
-       id="tspan66"
-       x="325.27048"
-       y="470.79227">based on</tspan></text>
-  <text
-     xml:space="preserve"
-     style="font-style:normal;font-variant:normal;font-weight:300;font-stretch:normal;font-size:18.6667px;line-height:21.8752px;font-family:'Chivo Mono';-inkscape-font-specification:'Chivo Mono Light';text-align:center;letter-spacing:-1.5px;word-spacing:-5px;writing-mode:lr-tb;direction:ltr;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0;stroke-miterlimit:0;stroke-dasharray:none"
-     x="326.02048"
-     y="497.25815"
-     id="pstr-type-label"
-     inkscape:label="pstr-type-label"><tspan
-       sodipodi:role="line"
-       id="tspan67"
-       x="325.27048"
-       y="497.25815">conference</tspan></text>
-  <text
-     xml:space="preserve"
-     style="font-style:normal;font-variant:normal;font-weight:300;font-stretch:normal;font-size:18.6667px;line-height:21.8752px;font-family:'Chivo Mono';-inkscape-font-specification:'Chivo Mono Light';text-align:center;letter-spacing:-1.5px;word-spacing:-5px;writing-mode:lr-tb;direction:ltr;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0;stroke-miterlimit:0;stroke-dasharray:none"
-     x="326.02048"
-     y="523.724"
+     style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:21.3333px;line-height:25.0002px;font-family:'Chivo Mono';-inkscape-font-specification:'Chivo Mono';text-align:center;letter-spacing:0px;word-spacing:-5px;writing-mode:lr-tb;direction:ltr;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0;stroke-miterlimit:0;stroke-dasharray:none"
+     x="750.41785"
+     y="1717.7537"
      id="pstr-rank-label"
      inkscape:label="pstr-rank-label"><tspan
        sodipodi:role="line"
        id="tspan68"
-       x="325.27048"
-       y="523.724">rank</tspan></text>
+       x="750.41785"
+       y="1717.7537">rank</tspan></text>
   <text
      xml:space="preserve"
-     style="font-style:normal;font-variant:normal;font-weight:300;font-stretch:normal;font-size:18.6667px;line-height:21.8752px;font-family:'Chivo Mono';-inkscape-font-specification:'Chivo Mono Light';text-align:center;letter-spacing:-1.5px;word-spacing:-5px;writing-mode:lr-tb;direction:ltr;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0;stroke-miterlimit:0;stroke-dasharray:none"
-     x="507.64478"
-     y="470.56827"
+     style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:21.3333px;line-height:25.0002px;font-family:'Chivo Mono';-inkscape-font-specification:'Chivo Mono';text-align:center;letter-spacing:-1.5px;word-spacing:-5px;writing-mode:lr-tb;direction:ltr;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0;stroke-miterlimit:0;stroke-dasharray:none"
+     x="331.1478"
+     y="1809.6604"
      id="pr-num-label"
-     inkscape:label="pr-num-label"><tspan
-       sodipodi:role="line"
-       id="tspan69"
-       x="506.89478"
-       y="470.56827">#</tspan></text>
+     inkscape:label="pr-num-label">#</text>
   <text
      xml:space="preserve"
-     style="font-style:normal;font-variant:normal;font-weight:300;font-stretch:normal;font-size:18.6667px;line-height:21.8752px;font-family:'Chivo Mono';-inkscape-font-specification:'Chivo Mono Light';text-align:center;letter-spacing:-1.5px;word-spacing:-5px;writing-mode:lr-tb;direction:ltr;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0;stroke-miterlimit:0;stroke-dasharray:none"
-     x="507.64478"
-     y="497.03415"
-     id="pr-playoff-label"
-     inkscape:label="pr-playoff-label"><tspan
-       sodipodi:role="line"
-       id="tspan70"
-       x="506.89478"
-       y="497.03415">playoff</tspan></text>
-  <text
-     xml:space="preserve"
-     style="font-style:normal;font-variant:normal;font-weight:300;font-stretch:normal;font-size:18.6667px;line-height:21.8752px;font-family:'Chivo Mono';-inkscape-font-specification:'Chivo Mono Light';text-align:center;letter-spacing:-1.5px;word-spacing:-5px;writing-mode:lr-tb;direction:ltr;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0;stroke-miterlimit:0;stroke-dasharray:none"
-     x="507.64478"
-     y="523.5"
+     style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:21.3333px;line-height:25.0002px;font-family:'Chivo Mono';-inkscape-font-specification:'Chivo Mono';text-align:center;letter-spacing:-1.5px;word-spacing:-5px;writing-mode:lr-tb;direction:ltr;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0;stroke-miterlimit:0;stroke-dasharray:none"
+     x="387.94354"
+     y="1809.8097"
      id="pr-rounds-label"
      inkscape:label="pr-rounds-label"><tspan
        sodipodi:role="line"
        id="tspan71"
-       x="506.89478"
-       y="523.5">rounds</tspan></text>
+       x="387.19354"
+       y="1809.8097">rounds</tspan></text>
   <text
      xml:space="preserve"
-     style="font-style:normal;font-variant:normal;font-weight:300;font-stretch:normal;font-size:18.6667px;line-height:23.3335px;font-family:'Chivo Mono';-inkscape-font-specification:'Chivo Mono Light';text-align:center;letter-spacing:0px;word-spacing:-5px;writing-mode:lr-tb;direction:ltr;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0;stroke-miterlimit:0;stroke-dasharray:none;stroke-opacity:1"
-     x="195.05458"
-     y="650.30304"
-     id="playoff-finals-teamloc1"
-     inkscape:label="playoff-finals-teamloc1"><desc
-   id="desc71">wnba-season-stats.json -&gt; playoffs -&gt; bracket -&gt; rounds -&gt; with an id of FINALS -&gt; get the matchup team names and locs from there</desc>&lt;teamloc&gt;</text>
+     style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:21.3333px;line-height:25.0002px;font-family:'Chivo Mono';-inkscape-font-specification:'Chivo Mono';text-align:center;letter-spacing:0px;word-spacing:-5px;writing-mode:lr-tb;direction:ltr;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0;stroke-miterlimit:0;stroke-dasharray:none"
+     x="653.00623"
+     y="1717.7537"
+     id="pstr-type-label"
+     inkscape:label="pstr-type-label"><tspan
+       sodipodi:role="line"
+       id="tspan67"
+       x="653.00623"
+       y="1717.7537">conference</tspan></text>
   <text
      xml:space="preserve"
-     style="font-style:normal;font-variant:normal;font-weight:300;font-stretch:normal;font-size:18.6667px;line-height:23.3335px;font-family:'Chivo Mono';-inkscape-font-specification:'Chivo Mono Light';text-align:center;letter-spacing:0px;word-spacing:-5px;writing-mode:lr-tb;direction:ltr;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0;stroke-miterlimit:0;stroke-dasharray:none;stroke-opacity:1"
-     x="456.81845"
-     y="650.74969"
-     id="playoff-finals-teamloc2"
-     inkscape:label="playoff-finals-teamloc2">&lt;teamloc&gt;</text>
+     style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:21.3333px;line-height:25.0002px;font-family:'Chivo Mono';-inkscape-font-specification:'Chivo Mono';text-align:center;letter-spacing:0px;word-spacing:-5px;writing-mode:lr-tb;direction:ltr;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0;stroke-miterlimit:0;stroke-dasharray:none"
+     x="454.31918"
+     y="1717.7537"
+     id="pstr-based-on-label"
+     inkscape:label="pstr-based-on-label"><tspan
+       sodipodi:role="line"
+       id="tspan66"
+       x="454.31918"
+       y="1717.7537">spots earned based on</tspan></text>
+  <rect
+     style="fill:none;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:2;stroke-dasharray:none;stroke-opacity:1"
+     id="playoff-finals-teamname1-container"
+     width="223"
+     height="88"
+     x="309.19812"
+     y="1918.9854"
+     inkscape:label="playoff-finals-teamname1-container" />
   <text
      xml:space="preserve"
-     style="font-style:italic;font-variant:normal;font-weight:400;font-stretch:normal;font-size:16px;line-height:18.7502px;font-family:'Chivo Mono';-inkscape-font-specification:'Chivo Mono Light';text-align:center;letter-spacing:0px;word-spacing:-5px;writing-mode:lr-tb;direction:ltr;text-anchor:middle;white-space:pre;inline-size:205.671;display:inline;fill:#000000;fill-opacity:1;stroke:none;stroke-width:3;stroke-miterlimit:0;stroke-dasharray:none;stroke-opacity:1"
+     style="font-style:normal;font-variant:normal;font-weight:600;font-stretch:normal;font-size:24px;line-height:30.0003px;font-family:'Chivo Mono';-inkscape-font-specification:'Chivo Mono Semi-Bold';text-align:center;letter-spacing:0px;word-spacing:-5px;writing-mode:lr-tb;direction:ltr;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0;stroke-miterlimit:0;stroke-dasharray:none;stroke-opacity:1"
+     x="420.69809"
+     y="1970.068"
+     id="playoff-finals-teamname1"
+     inkscape:label="playoff-finals-teamname1"><desc
+       id="desc59">wnba-season-stats.json -&gt; playoffs -&gt; bracket -&gt; rounds -&gt; with an id of FINALS -&gt; get the matchup team names from there</desc><tspan
+       style="font-style:normal;font-variant:normal;font-weight:600;font-stretch:normal;font-size:24px;line-height:30.0003px;font-family:'Chivo Mono';-inkscape-font-specification:'Chivo Mono Semi-Bold'"
+       id="tspan72">&lt;teamname&gt;</tspan></text>
+  <rect
+     style="fill:none;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:2;stroke-dasharray:none;stroke-opacity:1"
+     id="playoff-finals-teamname2-container"
+     width="223"
+     height="88"
+     x="570.96198"
+     y="1918.9854"
+     inkscape:label="playoff-finals-teamname2-container" />
+  <text
+     xml:space="preserve"
+     style="font-style:normal;font-variant:normal;font-weight:600;font-stretch:normal;font-size:24px;line-height:30.0003px;font-family:'Chivo Mono';-inkscape-font-specification:'Chivo Mono Semi-Bold';text-align:center;letter-spacing:0px;word-spacing:-5px;writing-mode:lr-tb;direction:ltr;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0;stroke-miterlimit:0;stroke-dasharray:none;stroke-opacity:1"
+     x="682.46198"
+     y="1970.068"
+     id="playoff-finals-teamname2"
+     inkscape:label="playoff-finals-teamname2">&lt;teamname&gt;</text>
+  <path
+     style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:2;stroke-linejoin:round;stroke-miterlimit:0;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+     d="m 532.19811,1962.9853 h 38.76385"
+     id="path45" />
+  <rect
+     style="fill:#ffffff;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:1.99999;stroke-dasharray:none;stroke-opacity:1"
+     id="rect38"
+     width="228.00002"
+     height="53.000008"
+     x="17.629074"
+     y="1603.6005" />
+  <text
+     xml:space="preserve"
+     style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:24px;line-height:28.1252px;font-family:'Chivo Mono';-inkscape-font-specification:'Chivo Mono Bold';text-align:start;letter-spacing:0px;word-spacing:-5px;writing-mode:lr-tb;direction:ltr;text-anchor:start;fill:none;fill-opacity:1;stroke:#000000;stroke-width:2;stroke-linejoin:round;stroke-miterlimit:0;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+     x="40.661301"
+     y="1638.3324"
+     id="playoff-finals-matchup-label"
+     inkscape:label="playoff-finals-matchup-label"><tspan
+       sodipodi:role="line"
+       id="tspan38"
+       x="40.661301"
+       y="1638.3324"
+       style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:24px;line-height:28.1252px;font-family:'Chivo Mono';-inkscape-font-specification:'Chivo Mono Bold';letter-spacing:0px;fill:#000000;fill-opacity:1;stroke:none">YEAR PLAYOFFS</tspan></text>
+  <rect
+     style="fill:none;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:3;stroke-dasharray:none;stroke-opacity:1"
+     id="rect50"
+     width="447"
+     height="257"
+     x="277.0307"
+     y="324.21915" />
+  <rect
+     style="fill:#ffffff;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:2;stroke-dasharray:none;stroke-opacity:1"
+     id="rect1"
+     width="228"
+     height="78"
+     x="17.629084"
+     y="268.71915" />
+  <text
+     xml:space="preserve"
+     style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:24px;line-height:28.1252px;font-family:'Chivo Mono';-inkscape-font-specification:'Chivo Mono Bold';text-align:center;letter-spacing:0px;word-spacing:-5px;writing-mode:lr-tb;direction:ltr;text-anchor:middle;white-space:pre;inline-size:215.358;display:inline;fill:#000000;fill-opacity:1;stroke:none;stroke-width:3;stroke-miterlimit:0;stroke-dasharray:none;stroke-opacity:1"
      x="422.36633"
      y="312.23776"
-     id="text1"
+     id="top-draft-pick-label"
      inkscape:label="top-draft-pick-label"
-     transform="translate(44.274277,-38.007072)"><tspan
+     transform="translate(-291.58912,-10.349243)"><tspan
        x="422.36633"
        y="312.23776"
-       id="tspan34"><tspan
-         dx="0 0 0 0 5 -5 0 5 -5"
-         id="tspan33">went to the</tspan></tspan></text>
+       id="tspan4"><tspan
+         dx="0 0 0 0 0 5 -5 0 0 0 0 5"
+         id="tspan2">FIRST DRAFT</tspan><tspan
+         y="312.23776"
+         id="tspan5"> </tspan></tspan><tspan
+       x="422.36633"
+       y="340.36299"
+       id="tspan6">PICK</tspan></text>
+  <path
+     style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:2;stroke-linejoin:round;stroke-miterlimit:0;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+     d="M 277.0307,1865.3444 H 826.12939"
+     id="path51"
+     sodipodi:nodetypes="cc" />
+  <rect
+     style="fill:#ffffff;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:2;stroke-dasharray:none;stroke-opacity:1"
+     id="rect40"
+     width="178"
+     height="43"
+     x="305.0484"
+     y="1855.5631" />
   <text
      xml:space="preserve"
-     style="font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:16px;line-height:21.8752px;font-family:'Chivo Mono';-inkscape-font-specification:'Chivo Mono Italic';text-align:center;letter-spacing:0px;word-spacing:-5px;writing-mode:lr-tb;direction:ltr;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0;stroke-miterlimit:0;stroke-dasharray:none;stroke-opacity:1"
-     x="465.78714"
-     y="319.06564"
-     id="top-draft-pick-teamloc"
-     inkscape:label="top-draft-pick-teamloc"><desc
-       id="desc1">JSON DATA FILE wnba-reg-season-awards.json - topDraftPick teamcode</desc><tspan
-       style="font-style:normal;font-variant:normal;font-weight:300;font-stretch:normal;font-family:'Chivo Mono';-inkscape-font-specification:'Chivo Mono Light'"
-       id="tspan4">teamname</tspan></text>
+     style="font-style:normal;font-variant:normal;font-weight:600;font-stretch:normal;font-size:18.6667px;line-height:21.8752px;font-family:'Chivo Mono';-inkscape-font-specification:'Chivo Mono Semi-Bold';text-align:center;letter-spacing:0px;word-spacing:-5px;writing-mode:lr-tb;direction:ltr;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0;stroke-linejoin:round;stroke-miterlimit:0;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+     x="393.4884"
+     y="1883.4658"
+     id="finals_matchup_label"
+     inkscape:label="finals_matchup_label">FINALS MATCHUP</text>
+  <path
+     style="fill:#e3e3e3;fill-opacity:1;stroke:#000000;stroke-width:2;stroke-linejoin:round;stroke-miterlimit:0;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+     d="m 175.35864,151.31584 h 60.65183"
+     id="path53"
+     sodipodi:nodetypes="cc" />
+  <path
+     style="fill:#e3e3e3;fill-opacity:1;stroke:#000000;stroke-width:2;stroke-linejoin:round;stroke-miterlimit:0;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+     d="m 175.35864,208.05291 h 60.65183"
+     id="path54"
+     sodipodi:nodetypes="cc" />
+  <rect
+     style="fill:#ffffff;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:2;stroke-dasharray:none;stroke-opacity:1"
+     id="rect52"
+     width="40"
+     height="40"
+     x="204.31593"
+     y="131.20918" />
+  <text
+     xml:space="preserve"
+     style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:21.3333px;line-height:25.0002px;font-family:'Chivo Mono';-inkscape-font-specification:'Chivo Mono';text-align:center;letter-spacing:0px;word-spacing:-5px;writing-mode:lr-tb;direction:ltr;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0;stroke-miterlimit:0;stroke-dasharray:none;stroke-opacity:1"
+     x="224.30528"
+     y="158.63316"
+     id="season-teams-num"
+     inkscape:label="season-teams-num"><desc
+   id="desc53">JSON DATA FILE wnba-season-stats.json - inside seasonInfo - numTeams</desc>##</text>
+  <rect
+     style="fill:#ffffff;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:2;stroke-dasharray:none;stroke-opacity:1"
+     id="rect53"
+     width="40"
+     height="40"
+     x="204.31596"
+     y="187.94627" />
+  <text
+     xml:space="preserve"
+     style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:21.3333px;line-height:25.0002px;font-family:'Chivo Mono';-inkscape-font-specification:'Chivo Mono';text-align:center;letter-spacing:0px;word-spacing:-5px;writing-mode:lr-tb;direction:ltr;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0;stroke-miterlimit:0;stroke-dasharray:none;stroke-opacity:1"
+     x="224.30534"
+     y="215.37025"
+     id="season-games-num"
+     inkscape:label="season-games-num"><desc
+   id="desc52">JSON DATA FILE wnba-season-stats.json - inside seasonInfo - regSeasonGames</desc>##</text>
+  <rect
+     style="fill:#ffffff;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:1.99998;stroke-dasharray:none;stroke-opacity:1"
+     id="rect51"
+     width="228.00003"
+     height="78.000008"
+     x="17.629059"
+     y="998.79218" />
+  <text
+     xml:space="preserve"
+     style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:24px;line-height:28.1252px;font-family:'Chivo Mono';-inkscape-font-specification:'Chivo Mono Bold';text-align:center;letter-spacing:0px;word-spacing:-5px;writing-mode:lr-tb;direction:ltr;text-anchor:middle;white-space:pre;inline-size:213.902;display:inline;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0;stroke-miterlimit:0;stroke-dasharray:none;stroke-opacity:1"
+     x="-55.686951"
+     y="1107.6829"
+     id="awards-list-title-text"
+     inkscape:label="awards-list-title-text"
+     transform="translate(186.66857,-75.721284)"><tspan
+       x="-55.686951"
+       y="1107.6829"
+       id="tspan10"><tspan
+         dx="0 0 0 0 0 0 0 5 -5 0 0 0 0 0 5"
+         id="tspan8">REGULAR SEASON</tspan><tspan
+         y="1107.6829"
+         id="tspan11"> </tspan></tspan><tspan
+       x="-55.686951"
+       y="1135.8081"
+       id="tspan12">AWARDS</tspan></text>
+  <rect
+     style="fill:none;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:2.99999;stroke-dasharray:none;stroke-opacity:1"
+     id="rect48"
+     width="597"
+     height="299.392"
+     x="277.0307"
+     y="671.16681" />
+  <path
+     style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:2;stroke-linejoin:round;stroke-miterlimit:0;stroke-dasharray:2, 2;stroke-dashoffset:0;stroke-opacity:1"
+     d="M 575.53071,671.16682 V 970.55879"
+     id="path55"
+     sodipodi:nodetypes="cc" />
+  <rect
+     style="fill:#ffffff;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:1.99999;stroke-dasharray:none;stroke-opacity:1"
+     id="rect27"
+     width="228"
+     height="78.000008"
+     x="17.629089"
+     y="590.66681" />
+  <text
+     xml:space="preserve"
+     style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:24px;line-height:28.1253px;font-family:'Chivo Mono';-inkscape-font-specification:'Chivo Mono Bold';text-align:center;letter-spacing:0px;word-spacing:-5px;writing-mode:lr-tb;direction:ltr;text-anchor:middle;white-space:pre;inline-size:220.226;display:inline;fill:none;fill-opacity:1;stroke:#000000;stroke-width:2;stroke-linejoin:round;stroke-miterlimit:0;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+     x="-15.686893"
+     y="716.53943"
+     id="text34"
+     transform="translate(147.30455,-92.703273)"><tspan
+       x="-15.686893"
+       y="716.53943"
+       id="tspan14"><tspan
+         dx="0 0 0 0 5 -5 0 0 0 0 0 0 5"
+         style="fill:#000000;stroke:none"
+         id="tspan13">BEST REGULAR</tspan><tspan
+         y="716.53943"
+         id="tspan15"> </tspan></tspan><tspan
+       x="-15.686893"
+       y="744.66474"
+       id="tspan17"><tspan
+         dx="0 0 0 0 0 0 5 -5"
+         style="fill:#000000;stroke:none"
+         id="tspan16">SEASON RECRODS</tspan></tspan></text>
+  <rect
+     style="fill:#39bb17;fill-opacity:1;fill-rule:evenodd;stroke-width:1"
+     id="rect2"
+     width="98"
+     height="7.2558069"
+     x="335.41147"
+     y="882.95477" />
+  <rect
+     style="fill:#b3090f;fill-opacity:1;fill-rule:evenodd;stroke-width:0.999998"
+     id="rect3"
+     width="38"
+     height="7.2558069"
+     x="367.4115"
+     y="941.75018" />
+  <rect
+     style="fill:#39bb17;fill-opacity:1;fill-rule:evenodd;stroke-width:1"
+     id="rect4"
+     width="98"
+     height="7.2558069"
+     x="717.6499"
+     y="882.95477" />
+  <rect
+     style="fill:#b3090f;fill-opacity:1;fill-rule:evenodd;stroke-width:1"
+     id="rect5"
+     width="38"
+     height="7.2558069"
+     x="745.6499"
+     y="941.75018" />
+  <rect
+     style="fill:none;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:2;stroke-dasharray:none;stroke-opacity:1"
+     id="west-conference-most-game-wins-container"
+     width="238"
+     height="58"
+     x="290.4115"
+     y="768.86151"
+     inkscape:label="west-conference-most-game-wins-container" />
+  <rect
+     style="fill:none;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:2;stroke-dasharray:none;stroke-opacity:1"
+     id="east-conference-most-game-wins-container"
+     width="238"
+     height="58"
+     x="622.6499"
+     y="768.86151"
+     inkscape:label="east-conference-most-game-wins-container" />
+  <text
+     xml:space="preserve"
+     style="font-style:normal;font-variant:normal;font-weight:600;font-stretch:normal;font-size:24px;line-height:28.1252px;font-family:'Chivo Mono';-inkscape-font-specification:'Chivo Mono Semi-Bold';text-align:start;letter-spacing:0px;word-spacing:-5px;writing-mode:lr-tb;direction:ltr;text-anchor:start;white-space:pre;inline-size:182.467;display:inline;fill:#000000;fill-opacity:1;stroke:none;stroke-width:3;stroke-miterlimit:0;stroke-dasharray:none;stroke-opacity:1"
+     x="633.24884"
+     y="313.52853"
+     id="west-conference-most-game-wins"
+     transform="translate(-313.00367,492.30099)"
+     inkscape:label="west-conference-most-game-wins"><tspan
+       x="633.24884"
+       y="313.52853"
+       id="tspan19"><tspan
+         dx="0 0 0 0 0 0 0 0 0 0 5"
+         id="tspan18">&lt;teamname&gt; </tspan></tspan></text>
+  <text
+     xml:space="preserve"
+     style="font-style:normal;font-variant:normal;font-weight:600;font-stretch:normal;font-size:24px;line-height:28.1252px;font-family:'Chivo Mono';-inkscape-font-specification:'Chivo Mono Semi-Bold';text-align:end;letter-spacing:0px;word-spacing:-5px;writing-mode:lr-tb;direction:ltr;text-anchor:end;white-space:pre;inline-size:182.467;display:inline;fill:#000000;fill-opacity:1;stroke:none;stroke-width:3;stroke-miterlimit:0;stroke-dasharray:none;stroke-opacity:1"
+     x="815.71588"
+     y="313.52853"
+     id="east-conference-most-game-wins"
+     transform="translate(13.728362,492.30099)"
+     inkscape:label="east-conference-most-game-wins"><tspan
+       x="815.71588"
+       y="313.52853"
+       id="tspan23"><tspan
+         dx="0 0 0 0 0 0 0 0 0 0 5"
+         id="tspan21">&lt;teamname&gt;</tspan><tspan
+         y="313.52853"
+         id="tspan24"> </tspan></tspan></text>
+  <rect
+     style="fill:none;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:2;stroke-dasharray:none;stroke-opacity:1"
+     id="west-conference-most-game-wins-win-num-container"
+     width="141.99998"
+     height="40"
+     x="290.4115"
+     y="846.11981"
+     inkscape:label="west-conference-most-game-wins-win-num-container" />
+  <rect
+     style="fill:none;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:2;stroke-dasharray:none;stroke-opacity:1"
+     id="west-conference-most-game-wins-loss-num-container"
+     width="114"
+     height="40"
+     x="290.4115"
+     y="905.37805"
+     inkscape:label="west-conference-most-game-wins-loss-num-container" />
+  <text
+     xml:space="preserve"
+     style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:18.6667px;line-height:21.8752px;font-family:'Chivo Mono';-inkscape-font-specification:'Chivo Mono';text-align:start;letter-spacing:0px;word-spacing:-5px;writing-mode:lr-tb;direction:ltr;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0;stroke-miterlimit:0;stroke-dasharray:none;stroke-opacity:1"
+     x="302.40494"
+     y="873.17749"
+     id="west-conference-most-game-wins-win-num"
+     inkscape:label="west-conference-most-game-wins-win-num"><tspan
+       sodipodi:role="line"
+       id="tspan41"
+       x="302.40494"
+       y="873.17749">## WINS</tspan></text>
+  <text
+     xml:space="preserve"
+     style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:18.6667px;line-height:21.8752px;font-family:'Chivo Mono';-inkscape-font-specification:'Chivo Mono';text-align:start;letter-spacing:0px;word-spacing:-5px;writing-mode:lr-tb;direction:ltr;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0;stroke-miterlimit:0;stroke-dasharray:none;stroke-opacity:1"
+     x="302.40494"
+     y="931.7807"
+     id="west-conference-most-game-wins-loss-num"
+     inkscape:label="west-conference-most-game-wins-loss-num"><tspan
+       sodipodi:role="line"
+       id="tspan42"
+       x="302.40494"
+       y="931.7807">## LOSSES</tspan></text>
+  <rect
+     style="fill:none;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:2;stroke-dasharray:none;stroke-opacity:1"
+     id="east-conference-most-game-wins-win-num-container"
+     width="142"
+     height="40"
+     x="718.6499"
+     y="846.11981"
+     inkscape:label="east-conference-most-game-wins-win-num-container" />
+  <rect
+     style="fill:none;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:2;stroke-dasharray:none;stroke-opacity:1"
+     id="east-conference-most-game-wins-loss-num-container"
+     width="114"
+     height="40"
+     x="746.6499"
+     y="905.37805"
+     inkscape:label="east-conference-most-game-wins-loss-num-container" />
+  <text
+     xml:space="preserve"
+     style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:18.6667px;line-height:21.8752px;font-family:'Chivo Mono';-inkscape-font-specification:'Chivo Mono';text-align:end;letter-spacing:0px;word-spacing:-5px;writing-mode:lr-tb;direction:ltr;text-anchor:end;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0;stroke-miterlimit:0;stroke-dasharray:none;stroke-opacity:1"
+     x="849.10468"
+     y="873.17749"
+     id="east-conference-most-game-wins-win-num"
+     inkscape:label="east-conference-most-game-wins-win-num"><tspan
+       sodipodi:role="line"
+       id="tspan45"
+       x="849.10468"
+       y="873.17749">## WINS</tspan></text>
+  <text
+     xml:space="preserve"
+     style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:18.6667px;line-height:21.8752px;font-family:'Chivo Mono';-inkscape-font-specification:'Chivo Mono';text-align:end;letter-spacing:0px;word-spacing:-5px;writing-mode:lr-tb;direction:ltr;text-anchor:end;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0;stroke-miterlimit:0;stroke-dasharray:none;stroke-opacity:1"
+     x="849.10468"
+     y="931.7807"
+     id="east-conference-most-game-wins-loss-num"
+     inkscape:label="east-conference-most-game-wins-loss-num"><tspan
+       sodipodi:role="line"
+       id="tspan46"
+       x="849.10468"
+       y="931.7807">## LOSSES</tspan></text>
+  <text
+     xml:space="preserve"
+     style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:21.3333px;line-height:20.5714px;font-family:'Chivo Mono';-inkscape-font-specification:'Chivo Mono';text-align:end;letter-spacing:0px;word-spacing:-5px;writing-mode:lr-tb;direction:ltr;text-anchor:end;white-space:pre;inline-size:233.77;display:inline;fill:#000000;fill-opacity:1;stroke:none;stroke-width:2;stroke-linejoin:round;stroke-miterlimit:0;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+     x="1178.9495"
+     y="186.35973"
+     id="text35"
+     transform="translate(-323.89847,533.67719)"><tspan
+       x="1178.9495"
+       y="186.35973"
+       id="tspan26"><tspan
+         dx="0 0 0 0 0 0 0 4.9999952 -4.9999971"
+         id="tspan25">EASTERN CONFERENCE</tspan></tspan></text>
+  <rect
+     style="fill:none;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:2;stroke-dasharray:none;stroke-opacity:1"
+     id="rect35"
+     width="236"
+     height="38"
+     x="290.4115"
+     y="693.71954" />
+  <text
+     xml:space="preserve"
+     style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:21.3333px;line-height:20.5714px;font-family:'Chivo Mono';-inkscape-font-specification:'Chivo Mono';text-align:start;letter-spacing:0px;word-spacing:-5px;writing-mode:lr-tb;direction:ltr;text-anchor:start;white-space:pre;inline-size:239.481;display:inline;fill:#000000;fill-opacity:1;stroke:none;stroke-width:2;stroke-linejoin:round;stroke-miterlimit:0;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+     x="-9.9141846"
+     y="781.76453"
+     id="text36"
+     transform="translate(307.19965,-61.51334)"><tspan
+       x="-9.9141846"
+       y="781.76453"
+       id="tspan28"><tspan
+         dx="0 0 0 0 0 0 0 4.9999952 -4.9999971"
+         id="tspan27">WESTERN CONFERENCE</tspan></tspan></text>
+  <rect
+     style="fill:none;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:2;stroke-dasharray:none;stroke-opacity:1"
+     id="rect54"
+     width="236"
+     height="38"
+     x="624.6499"
+     y="693.71954" />
+  <path
+     style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:2;stroke-linejoin:round;stroke-miterlimit:0;stroke-dasharray:2, 2;stroke-dashoffset:0;stroke-opacity:1"
+     d="m 277.03071,748.91972 h 597"
+     id="path56"
+     sodipodi:nodetypes="cc" />
+  <text
+     x="97.071945"
+     y="158.39851"
+     class="season-date-text"
+     id="text56"
+     style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:21.3333px;font-family:'Chivo Mono';-inkscape-font-specification:'Chivo Mono';text-align:center;text-anchor:middle">teams</text>
+  <text
+     x="97.071945"
+     y="215.13557"
+     class="season-date-text"
+     id="text57"
+     style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:21.3333px;font-family:'Chivo Mono';-inkscape-font-specification:'Chivo Mono';text-align:center;text-anchor:middle">games</text>
+  <path
+     style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:3;stroke-linejoin:round;stroke-miterlimit:0;stroke-dasharray:18, 3;stroke-dashoffset:0;stroke-opacity:1"
+     d="m 125.72166,1077.7922 v 67.2001 h 152.48466"
+     id="path57"
+     sodipodi:nodetypes="ccc" />
+  <path
+     style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:3;stroke-linejoin:round;stroke-miterlimit:0;stroke-dasharray:18, 3;stroke-dashoffset:0;stroke-opacity:1"
+     d="m 125.72166,1657.6005 v 67.2001 h 152.48466"
+     id="path58"
+     sodipodi:nodetypes="ccc" />
+  <path
+     style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:3;stroke-linejoin:round;stroke-miterlimit:0;stroke-dasharray:18, 3;stroke-dashoffset:0;stroke-opacity:1"
+     d="m 125.72166,669.66681 v 67.2001 h 152.48466"
+     id="path59"
+     sodipodi:nodetypes="ccc" />
+  <path
+     style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:3;stroke-linejoin:round;stroke-miterlimit:0;stroke-dasharray:18, 3;stroke-dashoffset:0;stroke-opacity:1"
+     d="m 125.72166,347.71915 v 67.2001 h 152.48466"
+     id="path60"
+     sodipodi:nodetypes="ccc" />
 </svg>
