@@ -1,6 +1,22 @@
-        body {
+ :root {
+    --green_darkest: #141414;
+    --green_darker: #213B35;
+    --green_mid: #286442;
+    --green_main: #498E00;
+    --greenish_yellow: #9EA800;
+    --yellow: #E9C000;
+    --peach_lite: #FFE7CA;
+    --plum_darkest: #2E2123;
+    --plum_darker: #6A2D50;
+    --plum_main: #A50CAE;
+    --purple_main: #AE54FF;
+    --blue_lite: #A6A5FF;
+    --blue_litest: #C3D8FF;
+ }
+ 
+ body {
             font-family: "Chivo Mono", monospace;
-            background-color: #e3e3e3;
+            background-color: var(--blue_lite);
         }
         p {
             margin: 0;
@@ -23,8 +39,11 @@
             width: 350px;
             height: max-content;
             border: solid 3px #000;
+            background-color: var(--peach_lite);
         }
         .opening-theme {
+            background-color: var(--green_darker);
+            color: var(--peach_lite);
             width: 328px;
             padding: 12px;
             border-bottom: solid 2px #000;
@@ -48,11 +67,12 @@
             margin-bottom: 1em;
         }
         .update-section {
-            border: dashed 2px #000000;
+            background-color: var(--peach_lite);
+            color: var(--green_darkest);
+            border: 2px solid var(--green_darkest);
+            border-left: none;
             width: 280px;
-            padding: .25em;
             font-style: italic;
-            margin: auto;
             margin-top: 12px;
         }
         .mobile-note {
@@ -78,7 +98,9 @@
             font-family: 'Chivo Mono', Courier, monospace;
             font-style: normal;
         }
-
+        .nav-type-buttons {
+        border-bottom: 4px solid var(--green_darker);
+        }
         .nav-type-button {
             max-width: 30em;
             margin: 12px;
@@ -108,6 +130,8 @@
 .list-type-buttons {
     display: flex;
     flex-direction: column;
+    background-color: var(--blue_lite);
+    color: var(--green_darkest);
 }
 /*list type button = buttons/links to pages that are listings ** */
         .list-type-button {
@@ -118,7 +142,7 @@
             display: flex;
             flex-direction: column;
 
-            border: solid 2px #000000;
+            border: solid 3px var(--plum_darker);
             /*! width: max-content; */
             border-right: none;
             border-left: none;
@@ -130,6 +154,7 @@
             font-family: "Chivo Mono", monospace;
         }
         .listing-button-text {
+            background-color: var(--blue_litest);
             color: #000;
             padding: 4px;
             font-family: "Chivo Mono", monospace;
@@ -137,7 +162,7 @@
             font-style: normal;
             font-weight: 600;
 
-            border-bottom: solid 2px #000000;
+            border-bottom: solid 2px var(--plum_darker);
         }
 
         .listing-button-text:hover {
@@ -153,7 +178,7 @@
             gap: 8px;
             font-family: "Chivo Mono", system-ui;
             font-style: normal;
-            font-size: 16px;
+            font-size: 18px;
             margin-top: .5em;
 
             padding: 8px;
@@ -228,4 +253,30 @@
         }
 .descrip-type-button.active .descrip-full-note {
   display: flex;
+}
+
+/*W_ARTICLES*/
+.w_articles_list {
+    background-color: var(--peach_lite);
+    border: solid 3px #000;
+    margin: 12px;
+}
+
+.list-type-button.w-articles {
+padding-left: 12px;
+}
+        .side-note.w-articles {
+            font-size: 16px;
+        }
+.w-articles .listing-button-link {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.w-articles .listing-button-link a {
+    color: blue;
+}
+
+.listing-button-tag {
+  margin: 8px;
 }
