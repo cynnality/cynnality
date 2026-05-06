@@ -1,0 +1,731 @@
+{
+  "1996": {
+    "width": 1200,
+    "height": 659,
+    "positions": [
+      {
+        "playerId": "ruthie_bolton",
+        "x": 250.91339,
+        "y": 80.021027,
+        "width": 105,
+        "height": 180
+      },
+      {
+        "playerId": "jennifer_azzi",
+        "x": 355.91339,
+        "y": 71.205139,
+        "width": 105,
+        "height": 180
+      },
+      {
+        "playerId": "venus_lacey",
+        "x": 460.91339,
+        "y": 54.251526,
+        "width": 105,
+        "height": 180
+      },
+      {
+        "playerId": "rebecca_lobo",
+        "x": 565.91339,
+        "y": 40.688644,
+        "width": 105,
+        "height": 180
+      },
+      {
+        "playerId": "lisa_leslie",
+        "x": 670.91333,
+        "y": 40.688644,
+        "width": 105,
+        "height": 180
+      },
+      {
+        "playerId": "teresa_edwards",
+        "x": 757.71582,
+        "y": 83.411743,
+        "width": 105,
+        "height": 180
+      },
+      {
+        "playerId": "dawn_staley",
+        "x": 862.71582,
+        "y": 92.227631,
+        "width": 105,
+        "height": 180
+      },
+      {
+        "playerId": "nikki_mccray",
+        "x": 253.79053,
+        "y": 275.18585,
+        "width": 105,
+        "height": 220
+      },
+      {
+        "playerId": "katrina_mcclain",
+        "x": 401.48285,
+        "y": 264.15689,
+        "width": 105,
+        "height": 220
+      },
+      {
+        "playerId": "katy_steding",
+        "x": 564.51984,
+        "y": 252.64841,
+        "width": 105,
+        "height": 220
+      },
+      {
+        "playerId": "carla_mcghee",
+        "x": 704.89575,
+        "y": 265.41174,
+        "width": 105,
+        "height": 220
+      },
+      {
+        "playerId": "sheryl_swoopes",
+        "x": 849.34045,
+        "y": 274.22763,
+        "width": 105,
+        "height": 220
+      }
+    ]
+  },
+
+  "2000": {
+    "width": 1200,
+    "height": 598,
+    "positions": [
+      {
+        "playerId": "delisha_milton",
+        "x": 273.29218,
+        "y": 128.84743,
+        "width": 80,
+        "height": 160
+      },
+      {
+        "playerId": "natalie_williams",
+        "x": 387.89859,
+        "y": 109.18124,
+        "width": 80,
+        "height": 160
+      },
+      {
+        "playerId": "yolanda_griffith",
+        "x": 493.68912,
+        "y": 96.296494,
+        "width": 80,
+        "height": 160
+      },
+      {
+        "playerId": "kara_wolters",
+        "x": 602.1922,
+        "y": 64.423706,
+        "width": 80,
+        "height": 160
+      },
+      {
+        "playerId": "lisa_leslie",
+        "x": 696.17822,
+        "y": 73.055077,
+        "width": 80,
+        "height": 160
+      },
+      {
+        "playerId": "chamique_holdsclaw",
+        "x": 804.56104,
+        "y": 82.228561,
+        "width": 80,
+        "height": 160
+      },
+      {
+        "playerId": "nikki_mccray",
+        "x": 816.1543,
+        "y": 188.60219,
+        "width": 80,
+        "height": 178
+      },
+      {
+        "playerId": "ruthie_bolton",
+        "x": 682.1922,
+        "y": 219.47067,
+        "width": 80,
+        "height": 178
+      },
+      {
+        "playerId": "katie_smith",
+        "x": 562.1922,
+        "y": 186.07413,
+        "width": 80,
+        "height": 178
+      },
+      {
+        "playerId": "teresa_edwards",
+        "x": 443.6192,
+        "y": 195.39742,
+        "width": 80,
+        "height": 178
+      },
+      {
+        "playerId": "sheryl_swoopes",
+        "x": 332.67279,
+        "y": 199.84743,
+        "width": 80,
+        "height": 178
+      },
+      {
+        "playerId": "dawn_staley",
+        "x": 214.98228,
+        "y": 245.40189,
+        "width": 80,
+        "height": 178
+      }
+    ]
+  },
+
+  "2004": {
+    "width": 1200,
+    "height": 598,
+    "positions": [
+      {
+        "playerId": "katie_smith",
+        "x": 259.61926,
+        "y": 144.59126,
+        "width": 110,
+        "height": 180
+      },
+      {
+        "playerId": "tina_thompson",
+        "x": 382.70996,
+        "y": 126.8533,
+        "width": 110,
+        "height": 180
+      },
+      {
+        "playerId": "lisa_leslie",
+        "x": 502.43509,
+        "y": 101.00787,
+        "width": 110,
+        "height": 180
+      },
+      {
+        "playerId": "ruth_riley",
+        "x": 622.1922,
+        "y": 81.47067,
+        "width": 110,
+        "height": 180
+      },
+      {
+        "playerId": "yolanda_griffith",
+        "x": 736.21753,
+        "y": 105.56882,
+        "width": 110,
+        "height": 180
+      },
+      {
+        "playerId": "swin_cash",
+        "x": 858.60321,
+        "y": 105.56882,
+        "width": 110,
+        "height": 180
+      },
+      {
+        "playerId": "shannon_johnson",
+        "x": 187.66319,
+        "y": 304.63705,
+        "width": 110,
+        "height": 180
+      },
+      {
+        "playerId": "sue_bird",
+        "x": 303.36441,
+        "y": 288.29361,
+        "width": 110,
+        "height": 180
+      },
+      {
+        "playerId": "sheryl_swoopes",
+        "x": 418.165,
+        "y": 266.868,
+        "width": 110,
+        "height": 200
+      },
+      {
+        "playerId": "diana_taurasi",
+        "x": 656.7464,
+        "y": 275.93079,
+        "width": 110,
+        "height": 180
+      },
+      {
+        "playerId": "dawn_staley",
+        "x": 773.38696,
+        "y": 290.44366,
+        "width": 110,
+        "height": 180
+      },
+      {
+        "playerId": "tamika_catchings",
+        "x": 893.7901,
+        "y": 272.16818,
+        "width": 110,
+        "height": 180
+      }
+    ]
+  },
+
+
+  "2008": {
+    "width": 1600,
+    "height": 902.67,
+    "positions": [
+    {
+      "playerId": "cappie_pondexter",
+      "x": 381.60013,
+      "y": 163.43431,
+      "width": 133.78799,
+      "height": 151.92522
+    },
+    {
+      "playerId": "katie_smith",
+      "x": 525.69318,
+      "y": 136.40253,
+      "width": 133.78809,
+      "height": 178.957
+    },
+    {
+      "playerId": "tamika_catchings",
+      "x": 670.01569,
+      "y": 121.62089,
+      "width": 124.11283,
+      "height": 193.73863
+    },
+    {
+      "playerId": "diana_taurasi",
+      "x": 819.71332,
+      "y": 135.86502,
+      "width": 120.88775,
+      "height": 179.49451
+    },
+    {
+      "playerId": "sue_bird",
+      "x": 960.54199,
+      "y": 148.22784,
+      "width": 120.88775,
+      "height": 167.13168
+    },
+    {
+      "playerId": "kara_lawson",
+      "x": 1109.4333,
+      "y": 140.16513,
+      "width": 120.88775,
+      "height": 168.20673
+    },
+    {
+      "playerId": "tina_thompson",
+      "x": 1207.7985,
+      "y": 310.37186,
+      "width": 120.88775,
+      "height": 231.63339
+    },
+    {
+      "playerId": "sylvia_fowles",
+      "x": 1043.8567,
+      "y": 317.35953,
+      "width": 120.88775,
+      "height": 219.80807
+    },
+    {
+      "playerId": "lisa_leslie",
+      "x": 887.44012,
+      "y": 317.35953,
+      "width": 120.88775,
+      "height": 219.80807
+    },
+    {
+      "playerId": "candace_parker",
+      "x": 588.69739,
+      "y": 317.35953,
+      "width": 120.88775,
+      "height": 224.1082
+    },
+    {
+      "playerId": "delisha_milton",
+      "x": 434.38498,
+      "y": 317.35953,
+      "width": 120.88775,
+      "height": 226.25824
+    },
+    {
+      "playerId": "seimone_augustus",
+      "x": 273.23114,
+      "y": 346.24561,
+      "width": 120.88775,
+      "height": 199.16646
+    }
+  ]
+},
+
+"2012": {
+  "width": 1200,
+  "height": 571,
+  "positions": [
+    {
+      "playerId": "maya_moore",
+      "x": 317.07581,
+      "y": 70.947899,
+      "width": 105,
+      "height": 180
+    },
+    {
+      "playerId": "candace_parker",
+      "x": 422.07581,
+      "y": 56.933498,
+      "width": 105,
+      "height": 180
+    },
+    {
+      "playerId": "sylvia_fowles",
+      "x": 523.03064,
+      "y": 47.3335,
+      "width": 105,
+      "height": 180
+    },
+    {
+      "playerId": "tina_charles",
+      "x": 609.43066,
+      "y": 51.668983,
+      "width": 105,
+      "height": 180
+    },
+    {
+      "playerId": "seimone_augustus",
+      "x": 695.48785,
+      "y": 64.369537,
+      "width": 105,
+      "height": 180
+    },
+    {
+      "playerId": "asjha_jones",
+      "x": 781.10974,
+      "y": 72.111473,
+      "width": 105,
+      "height": 180
+    },
+    {
+      "playerId": "angel_mccoughtry",
+      "x": 781.10974,
+      "y": 217.04051,
+      "width": 105,
+      "height": 180
+    },
+    {
+      "playerId": "lindsay_whalen",
+      "x": 692.54199,
+      "y": 217.04051,
+      "width": 105,
+      "height": 180
+    },
+    {
+      "playerId": "sue_bird",
+      "x": 593.13556,
+      "y": 217.04051,
+      "width": 105,
+      "height": 180
+    },
+    {
+      "playerId": "tamika_catchings",
+      "x": 491.6283,
+      "y": 217.04051,
+      "width": 105,
+      "height": 180
+    },
+    {
+      "playerId": "diana_taurasi",
+      "x": 389.12506,
+      "y": 217.04051,
+      "width": 105,
+      "height": 180
+    },
+    {
+      "playerId": "swin_cash",
+      "x": 281.35733,
+      "y": 217.04051,
+      "width": 105,
+      "height": 180
+    }
+  ]
+},
+
+"2016": {
+  "width": 1200,
+  "height": 687,
+  "positions": [
+    {
+      "playerId": "tina_charles",
+      "x": 255.98145,
+      "y": 66.986282,
+      "width": 110,
+      "height": 180
+    },
+    {
+      "playerId": "breanna_stewart",
+      "x": 365.98148,
+      "y": 66.986282,
+      "width": 110,
+      "height": 180
+    },
+    {
+      "playerId": "sylvia_fowles",
+      "x": 475.98148,
+      "y": 60.536114,
+      "width": 110,
+      "height": 180
+    },
+    {
+      "playerId": "brittney_griner",
+      "x": 585.98151,
+      "y": 52.4734,
+      "width": 110,
+      "height": 180
+    },
+    {
+      "playerId": "elena_delle_donne",
+      "x": 691.87177,
+      "y": 59.998592,
+      "width": 110,
+      "height": 180
+    },
+    {
+      "playerId": "seimone_augustus",
+      "x": 787.54926,
+      "y": 73.973953,
+      "width": 110,
+      "height": 180
+    },
+    {
+      "playerId": "maya_moore",
+      "x": 200.98145,
+      "y": 220.00061,
+      "width": 110,
+      "height": 180
+    },
+    {
+      "playerId": "tamika_catchings",
+      "x": 323.74722,
+      "y": 229.88269,
+      "width": 110,
+      "height": 180
+    },
+    {
+      "playerId": "sue_bird",
+      "x": 451.94431,
+      "y": 240.53613,
+      "width": 110,
+      "height": 180
+    },
+    {
+      "playerId": "diana_taurasi",
+      "x": 585.98151,
+      "y": 232.47339,
+      "width": 110,
+      "height": 180
+    },
+    {
+      "playerId": "angel_mccoughtry",
+      "x": 714.44849,
+      "y": 239.9986,
+      "width": 110,
+      "height": 180
+    },
+    {
+      "playerId": "lindsay_whalen",
+      "x": 842.54919,
+      "y": 253.97394,
+      "width": 110,
+      "height": 180
+    }
+  ]
+},
+
+"2020": {
+  "width": 1005,
+  "height": 466,
+  "positions": [
+    {
+      "playerId": "tina_charles",
+      "x": 621,
+      "y": 74,
+      "width": 110,
+      "height": 180
+    },
+    {
+      "playerId": "breanna_stewart",
+      "x": 542.70355,
+      "y": 74,
+      "width": 110,
+      "height": 180
+    },
+    {
+      "playerId": "brittney_griner",
+      "x": 453.38483,
+      "y": 74,
+      "width": 110,
+      "height": 180
+    },
+    {
+      "playerId": "sylvia_fowles",
+      "x": 374,
+      "y": 65,
+      "width": 110,
+      "height": 180
+    },
+    {
+      "playerId": "aja_wilson",
+      "x": 280.88043,
+      "y": 65,
+      "width": 110,
+      "height": 180
+    },
+    {
+      "playerId": "ariel_atkins",
+      "x": 198.40311,
+      "y": 206.00961,
+      "width": 110,
+      "height": 180
+    },
+    {
+      "playerId": "napheesa_collier",
+      "x": 290.00238,
+      "y": 206.00961,
+      "width": 110,
+      "height": 180
+    },
+    {
+      "playerId": "jewell_loyd",
+      "x": 369.43909,
+      "y": 206.00958,
+      "width": 110,
+      "height": 180
+    },
+    {
+      "playerId": "sue_bird",
+      "x": 457.23755,
+      "y": 206.00958,
+      "width": 110,
+      "height": 180
+    },
+    {
+      "playerId": "diana_taurasi",
+      "x": 558.33875,
+      "y": 206.00958,
+      "width": 110,
+      "height": 180
+    },
+    {
+      "playerId": "skylar_diggins",
+      "x": 628.6535,
+      "y": 206.00958,
+      "width": 110,
+      "height": 180
+    },
+    {
+      "playerId": "chelsea_gray",
+      "x": 721.39294,
+      "y": 195.36734,
+      "width": 110,
+      "height": 180
+    }
+  ]
+},
+
+"2024": {
+  "width": 1200,
+  "height": 955,
+  "positions": [
+    {
+      "playerId": "alyssa_thomas",
+      "x": 302.89474,
+      "y": 248.7402,
+      "width": 110,
+      "height": 180
+    },
+    {
+      "playerId": "breanna_stewart",
+      "x": 423.53699,
+      "y": 223.65494,
+      "width": 110,
+      "height": 180
+    },
+    {
+      "playerId": "brittney_griner",
+      "x": 554.87335,
+      "y": 185.64696,
+      "width": 126.72351,
+      "height": 214.20718
+    },
+    {
+      "playerId": "jackie_young",
+      "x": 918.60974,
+      "y": 267.67661,
+      "width": 110,
+      "height": 180
+    },
+    {
+      "playerId": "aja_wilson",
+      "x": 687.5874,
+      "y": 229.09799,
+      "width": 110,
+      "height": 180
+    },
+    {
+      "playerId": "kahleah_copper",
+      "x": 818.59692,
+      "y": 402.0343,
+      "width": 110,
+      "height": 180
+    },
+    {
+      "playerId": "napheesa_collier",
+      "x": 176.15695,
+      "y": 245.44141,
+      "width": 110,
+      "height": 180
+    },
+    {
+      "playerId": "jewell_loyd",
+      "x": 286,
+      "y": 385.00961,
+      "width": 110,
+      "height": 180
+    },
+    {
+      "playerId": "sabrina_ionescu",
+      "x": 683.59686,
+      "y": 401.85413,
+      "width": 110,
+      "height": 180
+    },
+    {
+      "playerId": "diana_taurasi",
+      "x": 554.87335,
+      "y": 401.85413,
+      "width": 110,
+      "height": 180
+    },
+    {
+      "playerId": "kelsey_plum",
+      "x": 421.92444,
+      "y": 403.65494,
+      "width": 110,
+      "height": 180
+    },
+    {
+      "playerId": "chelsea_gray",
+      "x": 797.5874,
+      "y": 253,
+      "width": 110,
+      "height": 180
+    }
+  ]
+}
+
+}

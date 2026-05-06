@@ -1,0 +1,250 @@
+{
+    "players": {
+	    "jennifer_azzi": {
+            "playerName": "Jennifer Azzi",
+            "teamUsaJersey": "8",
+            "collegeId": "u_of_conn"
+	    },
+	    "ruthie_bolton": {
+            "playerName": "Ruthie Bolton",
+            "teamUsaJersey": "6",
+            "collegeId": "auburn_u"
+	  },
+	    "teresa_edwards": {
+            "playerName": "Teresa Edwards",
+            "teamUsaJersey": "4",
+            "collegeId": "u_of_georgia"
+	  },
+	    "venus_lacey": {
+            "playerName": "Venus Lacey",
+            "teamUsaJersey": "14",
+            "collegeId": "louisiana_tech_u"
+	  },
+	    "lisa_leslie": {
+            "playerName": "Lisa Leslie",
+            "teamUsaJersey": "9",
+            "collegeId": "u_of_southern_california"
+	  },
+	    "rebecca_lobo": {
+            "playerName": "Rebecca Lobo",
+            "teamUsaJersey": "13",
+            "collegeId": "u_of_conn"
+        },
+	    "katrina_mcclain": {
+            "playerName": "Katrina McClain",
+            "teamUsaJersey": "12",
+            "collegeId": "u_of_georgia"
+	    },
+	    "nikki_mccray": {
+            "playerName": "Nikki McCray",
+            "teamUsaJersey": "15",
+            "collegeId": "u_of_tenn"
+	    },
+	    "carla_mcghee": {
+            "playerName": "Carla McGhee",
+            "teamUsaJersey": "10",
+            "collegeId": "u_of_tenn"
+        },
+	    "dawn_staley": {
+            "playerName": "Dawn Staley",
+            "teamUsaJersey": "5",
+            "collegeId": "u_of_virginia"
+        },
+	    "katy_steding": {
+            "playerName": "Katy Steding",
+            "teamUsaJersey": "11",
+            "collegeId": "stanford_u"
+	  },
+        "sheryl_swoopes": {
+            "playerName": "Sheryl Swoopes",
+            "teamUsaJersey": "7",
+            "collegeId": "texas_tech_u"
+        },
+        "delisha_milton": {
+            "playerName": "DeLisha Milton-Jones",
+            "teamUsaJersey": "8",
+            "collegeId": "u_of_florida"
+        },
+        "katie_smith": {
+            "playerName": "Katie Smith",
+            "teamUsaJersey": "14",
+            "collegeId": "ohio_state_u"
+        },
+        "chamique_holdsclaw": {
+            "playerName": "Chamique Holdsclaw",
+            "teamUsaJersey": "10",
+            "collegeId": "u_of_tenn"
+        },
+        "yolanda_griffith": {
+            "playerName": "Yolanda Griffith",
+            "teamUsaJersey": "13",
+            "collegeId": "florida_atlantic_u"
+        },
+        "natalie_williams": {
+            "playerName": "Natalie Williams",
+            "teamUsaJersey": "12",
+            "collegeId": "u_of_california_la"
+        },
+        "kara_wolters": {
+            "playerName": "Kara Wolters",
+            "teamUsaJersey": "11",
+            "collegeId": "u_of_conn"
+        },
+        "sue_bird": {
+            "playerName": "Sue Bird",
+            "teamUsaJersey": "6",
+            "collegeId": "u_of_conn"
+        },
+        "swin_cash": {
+            "playerName": "Swin Cash",
+            "teamUsaJersey": "15",
+            "teamUsaJersey2": "11",
+            "collegeId": "u_of_conn"
+        },
+        "diana_taurasi": {
+            "playerName": "Diana Taurasi",
+            "teamUsaJersey": "12",
+            "collegeId": "u_of_conn"
+        },
+        "tamika_catchings": {
+            "playerName": "Tamika Catchings",
+            "teamUsaJersey": "10",
+            "collegeId": "u_of_tenn"
+        },
+        "shannon_johnson": {
+            "playerName": "Shannon Johnson",
+            "teamUsaJersey": "4",
+            "collegeId": "u_of_south_carolina"
+        },
+        "ruth_riley": {
+            "playerName": "Ruth Riley",
+            "teamUsaJersey": "8",
+            "collegeId": "u_of_notre_dame"
+        },
+        "tina_thompson": {
+            "playerName": "Tina Thompson",
+            "teamUsaJersey": "11",
+            "collegeId": "u_of_southern_california"
+        },
+        "cappie_pondexter": {
+            "playerName": "Cappie Pondexter",
+            "teamUsaJersey": "4",
+            "collegeId": "rutgers_u"
+        },
+        "seimone_augustus": {
+            "playerName": "Seimone Augustus",
+            "teamUsaJersey": "5",
+            "collegeId": "louisiana_state_u"
+        },
+        "kara_lawson": {
+            "playerName": "Kara Lawson",
+            "teamUsaJersey": "7",
+            "collegeId": "u_of_tenn"
+        },
+        "sylvia_fowles": {
+            "playerName": "Sylvia Fowles",
+            "teamUsaJersey": "13",
+            "collegeId": "louisiana_state_u"
+        },
+        "candace_parker": {
+            "playerName": "Candace Parker",
+            "teamUsaJersey": "15",
+            "collegeId": "u_of_tenn"
+        },
+        "lindsay_whalen": {
+            "playerName": "Lindsay Whalen",
+            "teamUsaJersey": "4",
+            "collegeId": "u_of_minnesota"
+        },
+        "maya_moore": {
+            "playerName": "Maya Moore",
+            "teamUsaJersey": "7",
+            "collegeId": "u_of_conn"
+        },
+        "angel_mccoughtry": {
+		"playerName": "Angel McCoughtry",
+	    "teamUsaJersey": "8",
+	    "collegeId": "u_of_louisville"
+	  },
+        "asjha_jones": {
+            "playerName": "Asjha Jones",
+            "teamUsaJersey": "9",
+            "collegeId": "u_of_conn"
+        },
+        "tina_charles": {
+            "playerName": "Tina Charles",
+            "teamUsaJersey": "14",
+            "collegeId": "u_of_conn"
+        },
+        "breanna_stewart": {
+            "playerName": "Breanna Stewart",
+            "teamUsaJersey": "9",
+            "collegeId": "u_of_conn"
+        },
+        "elena_delle_donne": {
+            "playerName": "Elena Delle Donne",
+            "teamUsaJersey": "11",
+            "collegeId": "u_of_delaware"
+        },
+        "brittney_griner": {
+            "playerName": "Brittney Griner",
+            "teamUsaJersey": "15",
+            "collegeId": "baylor_u"
+        },
+        "jewell_loyd": {
+            "playerName": "Jewell Loyd",
+            "teamUsaJersey": "4",
+            "collegeId": "u_of_notre_dame"
+        },
+        "skylar_diggins": {
+            "playerName": "Skylar Diggins",
+            "teamUsaJersey": "5",
+            "collegeId": "u_of_notre_dame"
+        },
+        "ariel_atkins": {
+            "playerName": "Ariel Atkins",
+            "teamUsaJersey": "7",
+            "collegeId": "u_of_texas"
+        },
+        "chelsea_gray": {
+            "playerName": "Chelsea Gray",
+            "teamUsaJersey": "8",
+            "collegeId": "duke_u"
+        },
+        "aja_wilson": {
+            "playerName": "A'ja Wilson",
+            "teamUsaJersey": "9",
+            "collegeId": "u_of_south_carolina"
+        },
+        "napheesa_collier": {
+            "playerName": "Napheesa Collier",
+            "teamUsaJersey": "11",
+            "collegeId": "u_of_conn"
+        },
+        "kelsey_plum": {
+            "playerName": "Kelsey Plum",
+            "teamUsaJersey": "5",
+            "collegeId": "u_of_washington"
+        },
+        "sabrina_ionescu": {
+            "playerName": "Sabrina Ionescu",
+            "teamUsaJersey": "6",
+            "collegeId": "u_of_oregon"
+        },
+        "kahleah_copper": {
+            "playerName": "Kahleah Copper",
+            "teamUsaJersey": "7",
+            "collegeId": "rutgers_u"
+        },
+        "jackie_young": {
+            "playerName": "Jackie Young",
+            "teamUsaJersey": "13",
+            "collegeId": "u_of_notre_dame"
+        },
+        "alyssa_thomas": {
+            "playerName": "Alyssa Thomas",
+            "teamUsaJersey": "14",
+            "collegeId": "u_of_maryland"
+        }
+    }
+}

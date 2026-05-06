@@ -5884,7 +5884,7 @@
           "matchups": [
             {
               "teamA": { "code": "MIN_LYNX", "seed": 1, "gamesWon": 2 },
-              "teamB": { "code": "GS_VALKYRIES", "seed": 8, "gamesWon": 0 },
+              "teamB": { "code": "GSV_VALKYRIES", "seed": 8, "gamesWon": 0 },
               "gamesPlayed": 2,
               "winner": "MIN_LYNX"
             },

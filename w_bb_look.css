@@ -1,0 +1,42 @@
+#main_board {
+  transform-origin: top left;
+  transform: scale(.7);
+}
+
+.team-bar {
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.25s ease;
+}
+
+.team-bar.visible {
+  opacity: 1;
+}
+
+.season-square.year-indicator {
+  fill: #ffffff;
+  stroke: #000000;
+  stroke-width: 2;
+}
+.y_label {
+  pointer-events: none;
+}
+
+.team-name-label {
+  opacity: 0;
+  transition: opacity 0.25s ease;
+  pointer-events: none;
+}
+
+.team-name-label.visible {
+  opacity: 1;
+}
+
+.y_border {
+  display: block;
+  border-bottom: none;
+}
+
+.y_border {
+  transition: height 0.25s ease;
+}

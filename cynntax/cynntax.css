@@ -1,0 +1,41 @@
+.cynntax-button {
+    width: 200px;
+
+    background-color: #9F9C06;
+}
+
+    a {
+        text-decoration: none;
+    }
+    
+    .notes-list {
+        display: flex;
+        flex-direction: column;
+        margin-left: 12px;
+    }
+
+    .note-buttons {
+        display: flex;
+        flex-direction: column;
+        margin-left: 12px;
+
+    }
+
+    .note-button-text {
+            background-color:#9F9C06;
+            color: #281D1A;
+            padding: 4px;
+            border: none;
+    }
+
+    .note-descriptions {
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+            font-family: "Chivo Mono", monospace;
+            font-style: normal;
+            font-size: 16px;
+            margin-top: .5em;
+
+            padding: 8px;
+    }
