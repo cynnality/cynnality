@@ -1,5 +1,4 @@
 .cynntax-button {
-    width: 200px;
 
     background-color: #9F9C06;
 }
@@ -34,7 +33,7 @@
             gap: 8px;
             font-family: "Chivo Mono", monospace;
             font-style: normal;
-            font-size: 16px;
+            font-size: 22px;
             margin-top: .5em;
 
             padding: 8px;

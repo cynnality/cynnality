@@ -1,0 +1,9 @@
+# The Nature and Significance of the Self
+Notes from:
+_Symbols, Selves, and Social Reality: A Symbolic Interactionist Approach to Social Psychology and Sociology_
+
+The self is a complex phenomenon. Even social psychologists struggle to comprehend its nature and significance, as revealed in the debates they have about its origins, contents, structure, dynamics, and ramifications. Like other social psychologists, symbolic interactionists debate about various features of the self, such as the degree to which it is situational and the extent to which it shapes a person's ongoing behavior. Interactionist largely agree, however, that the self refers to a process of reflexive and communicative activity - a process that includes a person's subjective stream of consciousness as well as his or her concept of self as physical, social, and moral being. Interactionists also agree that the self emerges out of, and gets sustained or transformed through, an individual's relationships with others.
+
+- Those interactionists who stress the structure of the self tend to focus on the nature and implications of the self-concept and self-esteem. In doing so, they highlight not only _how_ we define and feel about ourselves but also how these definitions and feelings shape our actions, interactions, and larger institutional contexts. 
+- Dramaturgical theorists contend that our self-conceptions and self-feelings change in accord with the demands of the situations within which we interact. They stress that the self is an adjustive process, shifting in character and expression as we enter different contexts and interact with different people. Inspired by Erving Goffman, these analysts focus on the intricate rituals and dramas through which we present and realize selves in various situations. They reveal that the self is fundamentally expressive; that is, we can only establish "who we are" in a given interactions through engaging in the arts of impression management. 
+

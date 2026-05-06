@@ -1,27 +1,37 @@
 .markdown-page {
-  max-width: 800px;
+  max-width: 1100px;
   margin: 60px auto;
   padding: 24px;
-  font-family: Arial, sans-serif;
+  font-family: "Chivo Mono", monospace;
   line-height: 1.6;
 }
 
 .markdown-page h1 {
-  font-size: 2.2rem;
+  font-size: 42px;
   margin-bottom: 1rem;
 }
 
 .markdown-page h2 {
-  margin-top: 2rem;
-  border-bottom: 1px solid #ddd;
+  font-size: 38px;
+}
+
+.markdown-page h3 {
+  font-size: 34px;
+}
+
+.markdown-page h4 {
+  font-size: 30px;
 }
 
 .markdown-page p {
-  font-size: 1rem;
+  font-size: 28px;
+}
+
+.markdown-page li {
+  font-size: 22px;
 }
 
 .markdown-page blockquote {
-  border-left: 4px solid #999;
   padding-left: 16px;
   color: #555;
 }

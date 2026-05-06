@@ -27,6 +27,10 @@
   font-size: 28px;
 }
 
+.markdown-page li {
+  font-size: 22px;
+}
+
 .markdown-page blockquote {
   padding-left: 16px;
   color: #555;
