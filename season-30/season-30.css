@@ -1,0 +1,13 @@
+.scripts .note-button {
+    background-color: #A50ADD;
+    color: #FFFFFF;
+}
+
+.note-button.script .note-button-text {
+    background-color: #7952FF;
+    color: #FFFFFF;
+}
+
+.note-descriptions.script {
+    font-size: 18px;
+}

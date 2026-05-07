@@ -1,4 +1,3 @@
-# _Season 30 Ideas_
 ## General base for coming up with further videos (subjects/topics)
 Explaining things already mentioned or to be mentioned will help direct towards further topics/subjects but I also have ideas for **organizing** video _types_
 
@@ -7,9 +6,10 @@ the **Catching up (connecting in) videos** would be the **daily sports segments*
 
 The **Connections back** would be **special segments** of sorts 
 
-### Types of videos (potentially?)
-(describing the _contents_)
 ---
+
+(describing the _contents_)
+
 ## _Connections Back_
 ### **_Digging_ // _DIGS_**
 **_Deep_**
