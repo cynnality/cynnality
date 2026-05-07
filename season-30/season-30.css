@@ -35,11 +35,20 @@
         background-color: #A50ADD;
         color: #ffffff;
     }
+    .key.tool {
+        background-color: #0C2D00;
+        color: #92CF78;
+    }
     .notes .key-block {
         background-color:#A50CAE;
     }
     .scripts .key-block {
         background-color: #7952FF;
+    }
+
+    .tool .key-block {
+        background-color: #92CF78;
+        color: #0C2D00;
     }
 
 .note-buttons {
@@ -100,4 +109,13 @@
 
 .note-descriptions.script {
     font-size: 18px;
+}
+
+.note-button.tool {
+    background-color: #0C2D00;
+    color: #92CF78;
+}
+.note-button.tool .note-button-text {
+    background-color: #92CF78;
+    color: #0C2D00;
 }
