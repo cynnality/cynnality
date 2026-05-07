@@ -53,13 +53,16 @@
                 </div>
             </div>
 
-<div class="slide-wrap">
+<div class="slide-wrap prologue">
 	<div class="slide-title">
 		<h1 class="slide-number"><em>The Prologue ?</em></h1>
 	</div>
-	<div class= "main-idea-points script">
-		<h1>In 1936 basketball becomes an official olympic sport. 40 years later - in 1976 - women's basketball events are officially added to the olympic program.</h1>
-	</div>
+</div>
+    <div class="slide-wrap script">
+        <div class= "main-idea-points script">
+            <h1>In 1936 basketball becomes an official olympic sport. 40 years later - in 1976 - women's basketball events are officially added to the olympic program.</h1>
+        </div>
+    </div>
 	<div class= "main-idea-points script layered">
         <table>
             <thead>
@@ -132,9 +135,9 @@
             </div>
         </div>
 	</div>
-
+<div class="slide-wrap questions">
 	<div class="main-idea questions">
-		<p>guiding questions for the "prologue"</p>
+		<h3>guiding questions for the "prologue"</h3>
 	</div>
 	<div class= "main-idea-points questions">
 		<p>What's different about this season in particular? (expansion and CBA agreement)</p>
@@ -154,12 +157,14 @@
 	<div class= "main-idea-points questions">
 		<p><strong>general league comparisons</strong> (landmark events, general things to know, league history type things)</p>
 	</div>
-
-	<div class= "main-idea-points questions">
-		<h1 class="to-start" >Context points</h1>
-		<p>Comparing against last season (like who won comissioner's cup last season, what player won what awards, etc.)</p>
-		<p>Comparing against league's history (like CBA agreement stuff and things relating to expansion, etc.)</p>
-	</div>
+</div>
+    <div class="slide-wrap questions">
+        <div class= "main-idea-points questions">
+            <h1 class="to-start" >Context points</h1>
+            <p>Comparing against last season (like who won comissioner's cup last season, what player won what awards, etc.)</p>
+            <p>Comparing against league's history (like CBA agreement stuff and things relating to expansion, etc.)</p>
+        </div>
+    </div>
 </div>
 	<style>
 	.slide-wrap {
@@ -168,19 +173,30 @@
 		border: solid 2px #000000;
 		margin: 20px;
 	}
+    .slide-wrap.prologue {
+        max-width: fit-content;
+    }
+    .slide-wrap.script {
+        max-width: 60%;
+    }
+    .slide-wrap.questions {
+        max-width: 80%;
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+        padding: 12px;
+    }
 	.slide-title {
+		font-family: "Chino", monospace;
+		padding: 12px;
 		border-bottom: solid 2px #000000;
 	}
-	.slide-number {
-		font-family: "Chino", monospace;
-		padding-left: 6px;
-	}
+
 	.main-idea {
         font-size: 18px;
 		background-color: #f0f0f0;
         padding: 12px;
 		margin-left: 50px;
-		margin-top: 50px;
 		margin-bottom: 0px;
 		width: fit-content;
 		border-radius: 4px;
@@ -218,7 +234,9 @@
 		font-family: "Chino", monospace;
 		font-style: italic;
 	}
-
+    .slide-wrap .main-idea-points.script {
+        max-width: fit-content;
+    }
     .main-idea-points.script.layered {
         display: flex;
         padding: 12px;
