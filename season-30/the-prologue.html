@@ -39,6 +39,9 @@
 
 <body>
 
+
+<div class="top-section">
+    <div class="repeat-card">
 	        <div class="main-sec">
             <div class="opening-theme">
                 <h2>Season 30</h2>
@@ -52,6 +55,23 @@
                     </a>
                 </div>
             </div>
+    </div>
+
+            <div class="legend">
+                <div class="key script-line">
+                    <div class="key-text">
+                        <p>"<em>Lines</em>", set in place</p>
+                    </div>
+                </div>
+                <div class="key script-line still-working">
+                     <div class="key-text">
+                        <p>"<em>Lines</em>", still working on</p>
+                    </div>
+                </div>
+            </div>
+</div>
+        
+    
 
 <div class="slide-wrap prologue">
 	<div class="slide-title">
@@ -59,7 +79,7 @@
 	</div>
 </div>
     <div class="slide-wrap script">
-        <div class= "main-idea-points script">
+        <div class= "main-idea-points script-line">
             <h1>In 1936 basketball becomes an official olympic sport. 40 years later - in 1976 - women's basketball events are officially added to the olympic program.</h1>
         </div>
     </div>
@@ -126,11 +146,11 @@
             </tr>
             </tbody>
         </table>
-        <div class="extra-points script">
-            <div class="point">
+        <div class="extra-points">
+            <div class="point script-line still-working">
                 <h3>TEAM USA's gold medal streak in the women's basketball tournament is one of the longest in traditional team sports history</h3>
             </div>
-            <div class="point">
+            <div class="point script-line">
                 <h3>So I want to know...WHO are the players that have contributed to this streak for team USA?</h3>
             </div>
         </div>
@@ -167,6 +187,28 @@
     </div>
 </div>
 	<style>
+    .top-section {
+        display: flex;
+        justify-content: space-between;
+        width: 70%;
+    }
+    .legend {
+        display: flex;
+        gap: 12px;
+    }
+    .key {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100px;
+        height: 100px;
+        border: solid 2px #000000;
+    }
+    .key-text {
+        text-align: center;
+        font-size: 18px;
+    }
+
 	.slide-wrap {
 		background-color: #f0f0f0;
 		border-radius: 4px;
@@ -288,6 +330,19 @@
         padding: 12px;
         max-width: 480px;
         margin: 12px;
+    }
+
+    .script-line {
+
+        background-color: #0C3632;
+        color: #F4EDFF;
+        padding: 12px;
+    }
+
+    .script-line.still-working {
+        background-color: #16C2FF;
+        color: #19153D;
+        padding: 12px;
     }
 
 </style>
