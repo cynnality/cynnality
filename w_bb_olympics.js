@@ -46,10 +46,10 @@ async function init() {
   COLLEGES = collegesData.colleges;
   ROSTERS = rostersData;
 
-  // 🔑 normalize teams by teamCode
+  // normalize teams by teamCode
   TEAMS = normalizeTeams(teamsData);
 
-  // 🔑 jersey → team mapping
+  // jersey → team mapping
   WNBA_TEAMS_BY_JERSEY = wnbaMapData;
 
   displayRoster(1996);
@@ -112,7 +112,7 @@ function displayRoster(year) {
 
     const teamName = team
       ? `${team.teamNameCity} ${team.teamName}`
-      : "No WNBA team";
+      : "n/a";
 
     const row = document.createElement("div");
     row.classList.add("roster-row");
@@ -231,15 +231,15 @@ window.addEventListener("DOMContentLoaded", () => {
         displayRoster(year);
       }
 
-      layoutButtons(buttons);
+      // layoutButtons(buttons);
     });
   });
 
-  // 🔥 initial state
+  // WHAT BUTTON IS ACTIVE FIRST / WHICH ROSTER IS SHOWING 
   const firstBtn = document.querySelector('[data-year="1996"]');
   if (firstBtn) firstBtn.classList.add("active");
 
-  layoutButtons(buttons);
+  // layoutButtons(buttons);
 
 });
 

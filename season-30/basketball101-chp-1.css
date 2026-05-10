@@ -1,0 +1,253 @@
+
+    .top-section {
+        display: flex;
+        justify-content: space-between;
+        width: 70%;
+    }
+    .legend {
+        display: flex;
+        gap: 12px;
+    }
+    .key {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100px;
+        height: 100px;
+        border: solid 2px #000000;
+    }
+    .key-text {
+        text-align: center;
+        font-size: 18px;
+    }
+
+	.slide-wrap {
+		background-color: #f0f0f0;
+		border-radius: 4px;
+		border: solid 2px #000000;
+		margin: 20px;
+        max-width: 90%;
+	}
+    .special-wrap {
+		border-radius: 4px;
+		border: solid 2px #000000;
+		margin: 20px;
+        display: flex;
+        padding: 24px;
+        gap: 24px;
+        width: fit-content;
+    }
+    .slide-wrap.prologue {
+        max-width: fit-content;
+    }
+    .slide-wrap.script {
+        max-width: 60%;
+    }
+    .slide-wrap.questions {
+        max-width: 80%;
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+        padding: 12px;
+    }
+	.slide-title {
+		font-family: "Chino", monospace;
+		padding: 12px;
+		border-bottom: solid 2px #000000;
+	}
+
+	.main-idea {
+        font-size: 18px;
+		background-color: #f0f0f0;
+        padding: 12px;
+		margin-left: 50px;
+		margin-bottom: 0px;
+		border-radius: 4px;
+	}
+		.main-idea-points h2 {
+		font-family: "Chino", monospace;
+		width: fit-content;
+		max-width: 40%;
+		background-color: #f0f0f0;
+		border-radius: 4px;
+		border: solid 2px #000000;
+		padding: 5px;
+		margin: 6px;
+	}
+    .main-idea-points h3 {
+        font-size: 32px;
+        font-family: "Chino", monospace;
+        padding: 5px;
+        margin: 6px;
+    }
+	.script {
+		color: #19153D;
+	}
+
+	.questions {
+		background-color: #721C70;
+		color: #FCFAF9;
+	}
+    .questions p {
+        font-size: 24px;
+    }
+	.the-prologue {
+		background-color: #533866;
+		color: #C2B5FF;
+	}
+	.players-list {
+		background-color: #937BCA;
+		color: #221601;
+	}
+	.main-idea p {
+		font-family: "Chino", monospace;
+		font-style: italic;
+	}
+    .slide-wrap .main-idea-points.script {
+        max-width: fit-content;
+    }
+    .main-idea-points.script.layered {
+        display: flex;
+        padding: 12px;
+        gap: 12px;
+        align-items: center;
+    }  
+    table {
+        border-collapse: collapse;
+        min-width: 30%;
+        margin: 12px;
+        padding: 12px;
+        margin-bottom: 1em;
+        table-layout: fixed;
+        font-size: 0.9em;
+        font-family: "Chino", monospace;
+        font-style: normal;
+        font-weight: 300;
+        text-align: left;
+        border-radius: 4px;
+    }
+    thead {
+        background-color: #281D1A;
+        color: #C2B5FF;
+        border: solid 1px #16C2FF;
+        padding: 6px;
+        margin: 6px;
+    }
+    th {
+        padding: 8px;
+    }
+    td {
+        padding: 8px;
+        border: solid 1px #000000;
+    }
+    .year {
+        max-width: 20px;
+    }
+    .extra-points {
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+        width: 420px;
+    }
+    .horiz-container {
+        display: flex;
+        gap: 12px;
+    }
+    .point {
+        border: solid 1px #19153D;
+    }
+
+    .point p {
+        font-family: "Chino", monospace;
+        font-style: italic;
+        font-size: 22px;
+    }
+
+    .point h3 {
+        font-size: 24px;
+        padding: 12px;
+        max-width: 480px;
+        margin: 12px;
+    }
+
+    .script-line {
+
+        background-color: #0C3632;
+        color: #F4EDFF;
+        padding: 12px;
+    }
+
+    .script-line.still-working {
+        background-color: #16C2FF;
+        color: #19153D;
+        padding: 12px;
+    }
+
+    #roster-img-paris {
+        max-width: 600px;
+    }
+
+    .img-title {
+        max-width: 180px;
+    }
+
+.special-wrap .extra-points .special.point {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.special-wrap .extra-points .special-b.point {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0;
+}
+
+#medal-sport.slide-wrap {
+
+    font-style: normal;
+    font-weight: 200;
+    font-size: 18px;
+    background: none;
+    border: none;
+}
+
+.gold-hl {
+    background-color: #c7d361;
+}
+
+#intro-container {
+    display: flex;
+    gap: 12px;
+    background: none;
+}
+
+.intro-block {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    background-color: #19153D;
+    color: #F4EDFF;
+    border: 3px solid #16C2FF;
+
+    width: 280px;
+    height: 280px;
+}
+
+.intro-block h1 {
+    border-bottom: solid 2px #16C2FF;
+    margin-bottom: 6px;
+}
+
+.intro-block p {
+    font-size: 18px;
+    line-height: 1.5rem;
+    text-align: center;
+    margin: 12px;
+}
+
+.intro-block.middle {
+    justify-content: center;
+}

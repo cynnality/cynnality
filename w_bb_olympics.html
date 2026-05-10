@@ -31,14 +31,64 @@
 
     <!-- <link rel="stylesheet" href="cynnality_card_styles.css" /> -->
     <link rel="stylesheet" href="w_bb_olympics.css" />
+    <link rel="stylesheet" href="/season-30/basketball101-chp-1.css" />
 
 </head>
 
 <body>
 
+<style>
+  .lines {
+    display: flex;
+    gap: 12px;
+    margin: 24px 0;
+  }
+  .lines.vert {
+    flex-direction: column;
+  }
+  .line {
+    max-width: 250px;
+    padding: 8px;
+    border: solid 2px #000000;
+    display: flex;
+    align-items: center;
+  }
+  .line p {
+    line-height: 20px;
+    text-align: center;
+    padding: 6px;
+  }
+  .line.spec {
+    border-color: #4234AE;
+  }
+  .line.spec p {
+    font-size: 18px;
+    font-weight: 300;
+  }
+</style>
+      <div class="lines">
+        <div class="line">
+            <p>
+                The past 8 women's Olympic basketball tournaments were won by team USA
+            </p>
+        </div>
+        <div class="line">
+          <p>
+            The 1996 team convinced the NBA to create a women's league - the WNBA, which held its first season in 1997
+          </p>
+        </div>
+      </div>
+
 <div class="main-layout">
 
   <div class="timeline-container">
+
+        <div class="line spec">
+          <p>
+            <em>Click on a year to see the olympic roster</em>
+          </p>
+        </div>
+
     <div class="year-btn" data-year="1996">
       <p class="btn-title">1996</p>
   </div>
@@ -69,11 +119,19 @@
     <h1 id="title"></h1>
     <div id="roster-img-container"></div>
     <div id="roster"></div>
-
-
-
   </div>
 
+<div class="lines vert">
+  <div class="line spec">
+    <p>
+      <em>Hovering over a player in the photo will highlight their row in the roster</em>
+    </p>
+  </div>
+  <div class="line spec">
+    <p>
+      <em>Click on a row within roster info to highlight the player in the photo</em>
+    </p>
+  </div>
 </div>
 
 <script src="w_bb_olympics.js"></script>
