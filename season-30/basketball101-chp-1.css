@@ -462,7 +462,9 @@
   z-index: 1;
 }
 
-
+#wnba-season-vis {
+    width: 600px;
+}
 
 @media screen and (max-width: 1200px) {
 #player-connections-wrap {

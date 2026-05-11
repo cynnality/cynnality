@@ -1,0 +1,87 @@
+<svg
+   width="930"
+   height="520"
+   viewBox="0 0 929.99996 520.00001"
+   version="1.1"
+   id="svg1"
+   xml:space="preserve"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg"><defs
+     id="defs1" />
+     <g
+     id="layer1"
+     transform="translate(-1267.1353,-14.142135)">
+     <rect
+       style="fill:#ffffff;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:2;stroke-dasharray:none;stroke-opacity:1"
+       id="rect90"
+       width="880"
+       height="480"
+       x="1292.1353"
+       y="34.142132" />
+      <rect
+       style="fill:#ffffff;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:2;stroke-dasharray:none;stroke-opacity:1"
+       id="plyr-name-box"
+       width="478"
+       height="110"
+       x="1668.1353"
+       y="54.142136" />
+      <text
+       xml:space="preserve"
+       style="font-style:italic;font-variant:normal;font-weight:600;font-stretch:normal;font-size:48px;line-height:56.2505px;font-family:'Chivo Mono';-inkscape-font-specification:'Chivo Mono Semi-Bold Italic';text-align:center;letter-spacing:-3px;word-spacing:-3px;writing-mode:lr-tb;direction:ltr;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:3;stroke-linejoin:round;stroke-miterlimit:0;stroke-dasharray:none;stroke-opacity:1"
+       x="1906.1992"
+       y="125.60611"
+       id="plyr-name-text">NAPHEESA COLLIER
+      </text>
+      <rect
+       style="fill:#ffffff;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:2;stroke-dasharray:none;stroke-opacity:1"
+       id="plyr-college-box"
+       width="480"
+       height="40"
+       x="1667.1353"
+       y="186.53391" />
+      <rect
+       style="fill:#ffffff;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:2;stroke-dasharray:none;stroke-opacity:1"
+       id="plyr-draft-box"
+       width="480"
+       height="40"
+       x="1667.1353"
+       y="238.67264" />
+      <rect
+       style="fill:#ffffff;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:2;stroke-dasharray:none;stroke-opacity:1"
+       id="plyr-team-history-box"
+       width="480"
+       height="103"
+       x="1667.1353"
+       y="293.03494" />
+
+       <g id="plyr-team-timeline"></g>
+
+       <rect
+       style="fill:#ffffff;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:2;stroke-dasharray:none;stroke-opacity:1"
+       id="plyr-chip-history"
+       width="480"
+       height="78"
+       x="1667.1353"
+       y="411.70923" />
+      <rect
+       style="fill:#ffffff;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:2;stroke-dasharray:none;stroke-opacity:1"
+       id="plyr-image-container"
+       width="348"
+       height="435.56717"
+       x="1306.6353"
+       y="54.142071" />
+      <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:300;font-stretch:normal;font-size:26.6667px;line-height:31.2503px;font-family:'Chivo Mono';-inkscape-font-specification:'Chivo Mono Light';text-align:start;letter-spacing:-1px;word-spacing:-3px;writing-mode:lr-tb;direction:ltr;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:3;stroke-linejoin:round;stroke-miterlimit:0;stroke-dasharray:none;stroke-opacity:1"
+       x="1675.0452"
+       y="215.68057"
+       id="plyr-college-text">UNIVERSITY OF CONNECTICUT</text>
+      <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:300;font-stretch:normal;font-size:24px;line-height:28.1253px;font-family:'Chivo Mono';-inkscape-font-specification:'Chivo Mono Light';text-align:center;letter-spacing:-1px;word-spacing:-3px;writing-mode:lr-tb;direction:ltr;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:3;stroke-linejoin:round;stroke-miterlimit:0;stroke-dasharray:none;stroke-opacity:1"
+       x="1906.2152"
+       y="267.81931"
+       id="plyr-draft-text">Drafted in 2019 - Picked by the Lynx
+      </text>
+  </g>
+</svg>
