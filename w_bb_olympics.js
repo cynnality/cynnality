@@ -27,8 +27,8 @@ async function init() {
     wnbaMapRes,
     positionRes
   ] = await Promise.all([
-    fetch("w_players_data.json"),
-    fetch("w_colleges_data.json"),
+    fetch("/w_players_data.json"),
+    fetch("/w_colleges_data.json"),
     fetch("/w_bb_olympics/team_usa_olympic_rosters.json"),
     fetch("/wbbal-main/wnba-cluster-data.json"),
     fetch("/w_bb_olympics/wnba_olympic_team_map.json"),
@@ -49,13 +49,44 @@ async function init() {
   // normalize teams by teamCode
   TEAMS = normalizeTeams(teamsData);
 
-  // jersey → team mapping
-  WNBA_TEAMS_BY_JERSEY = wnbaMapData;
+// jersey → team mapping
+WNBA_TEAMS_BY_JERSEY = wnbaMapData;
 
+// static 2024 page image, if present
+initStaticParisRosterImage();
+
+// dynamic roster page, if present
+if (
+  document.getElementById("roster") &&
+  document.getElementById("title") &&
+  document.getElementById("roster-img-container")
+) {
   displayRoster(1996);
+}
 }
 
 init();
+
+function initStaticParisRosterImage() {
+  const img = document.getElementById("roster-img-paris");
+  const wrapper = document.getElementById("paris-roster-wrapper");
+
+  if (!img || !wrapper) return;
+
+  wrapper.querySelectorAll(".image-map").forEach(map => map.remove());
+
+  function buildMap() {
+    createSVGMap(2024, wrapper);
+
+    document.dispatchEvent(new CustomEvent("parisRosterMapReady"));
+  }
+
+  if (img.complete) {
+    buildMap();
+  } else {
+    img.onload = buildMap;
+  }
+}
 
 function normalizeTeams(data) {
   const normalized = {};
@@ -73,9 +104,6 @@ function getWNBATeamForJersey(year, jersey) {
 
   return yearData[`wTeam${jersey}Id`] || null;
 }
-
-
-
 
 
 
