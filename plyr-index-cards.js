@@ -78,19 +78,24 @@ function buildTeamsByCode(teamsData) {
 function getPlayerIndexCardSVG() {
   return `
 <svg
-   width="1000"
-   height="460"
-   viewBox="0 0 1200 460"
+   width="999"
+   height="446"
+   viewBox="0 0 1000 458"
    version="1.1"
    class="player-index-card-svg"
    xmlns="http://www.w3.org/2000/svg">
 
   <g id="layer1" transform="translate(-1267.1353,-14.142135)">
-
+    <rect
+       style="fill:#ffffff;stroke:#000000;stroke-width:2"
+       width="992"
+       height="438"
+       x="1286"
+       y="28" />
     <rect
        style="fill:#ffffff;stroke:#000000;stroke-width:2"
        width="980"
-       height="430"
+       height="426"
        x="1292.1353"
        y="34.142132" />
 
@@ -335,12 +340,12 @@ function renderPlayerTeamTimeline(svg, player) {
   );
 
   const timelineX = 1640;
-  const timelineY = 320;
-  const timelineWidth = 600;
+  const timelineY = 300;
+  const timelineWidth = 560;
 
   const tickHeight = 10;
   const unitSize = 18;
-  const unitY = timelineY + 22;
+  const unitY = timelineY - 8;
 
   const totalYears = careerEnd - careerStart + 1;
   const yearWidth = timelineWidth / Math.max(totalYears - 1, 1);
@@ -522,13 +527,13 @@ function renderPlayerChampionships(svg, player) {
   );
 
   const timelineX = 1640;
-  const timelineY = 320;
-  const timelineWidth = 600;
-  const timelineHeight = 34;
+  const timelineY = 300;
+  const timelineWidth = 560;
+  const timelineHeight = 3;
   const totalYears = careerEnd - careerStart + 1;
   const yearWidth = timelineWidth / Math.max(totalYears - 1, 1);
 
-  const markerY = 400;
+  const markerY = 360;
 
   championships.forEach(chip => {
     const chipYear = Number(chip.year);

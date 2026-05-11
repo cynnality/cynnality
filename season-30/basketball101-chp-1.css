@@ -463,7 +463,11 @@
 }
 
 #wnba-season-vis {
-    width: 600px;
+    width: 900px;
+}
+
+.player-index-card svg {
+    transform: scale(0.8);
 }
 
 @media screen and (max-width: 1200px) {
