@@ -205,15 +205,6 @@
     padding: 0;
 }
 
-
-#medal-sport {
-    font-style: normal;
-    font-weight: 200;
-    font-size: 18px;
-    background: none;
-    border: none;
-}
-
 .gold-hl {
     background-color: #c7d361;
 }
@@ -263,14 +254,14 @@
     align-items: center;
     color: #19153D;
 
-    max-width: 500px;
+    max-width: 1100px;
 }
 
 .point-block p {
-    font-size: 20px;
-    font-weight: 00;
-    line-height: 1.5rem;
-    text-align: center;
+    font-size: 22px;
+    font-weight: 200;
+    line-height: 32px;
+    text-align: left;
     margin: 12px;
 }
 
