@@ -242,11 +242,11 @@
 
 .table-wrap.script {
   display: flex;
-  flex-direction: column;
-  justify-content: center;
-  margin: 0;
-  align-content: center;
-  align-items: center;
+  /*! flex-direction: column; */
+  /*! justify-content: center; */
+  margin: 12px;
+  /*! align-content: center; */
+  /*! align-items: center; */
 }
 
 .point-block {
@@ -397,10 +397,12 @@
     line-height: 28px;;
 }
 
+/** ======================================
 .slide-text p.descrip-rec {
     padding: 12px;
     border-bottom: dotted 2px #000;
 }
+ ====================================== */
 
 .tags {
   display: flex;
