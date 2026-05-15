@@ -1,0 +1,1 @@
+# Notes and thoughts relevant to this folder specifically
