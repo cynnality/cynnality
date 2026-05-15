@@ -1,0 +1,205 @@
+{
+    "1997": {
+        "champion": "HOU_COMETS",
+        "runnerUp": "NYL_LIBERTY",
+        "champ-coach": "Van Chancellor",
+        "finals-mvp": "Cynthia Cooper",
+        "runnerUpCoach": "Nancy Darsch"
+    },
+    "1998": {
+        "champion": "HOU_COMETS",
+        "runnerUp": "PHX_MERCURY",
+        "champ-coach": "Van Chancellor",
+        "finals-mvp": "Cynthia Cooper",
+        "runnerUpCoach": "Cheryl Miller"
+    },
+    "1999": {
+        "champion": "HOU_COMETS",
+        "runnerUp": "NYL_LIBERTY",
+        "champ-coach": "Van Chancellor",
+        "finals-mvp": "Cynthia Cooper",
+        "runnerUpCoach": "Richie Adubato"
+    },
+    "2000": {
+        "champion": "HOU_COMETS",
+        "runnerUp": "NYL_LIBERTY",
+        "champ-coach": "Van Chancellor",
+        "finals-mvp": "Cynthia Cooper",
+        "runnerUpCoach": "Richie Adubato"
+    },
+    "2001": {
+        "champion": "LOS_SPARKS",
+        "runnerUp": "CHA_STING",
+        "champ-coach": "Michael Cooper",
+        "finals-mvp": "Lisa Leslie",
+        "runnerUpCoach": "Anne Donovan"
+    },
+    "2002": {
+        "champion": "LOS_SPARKS",
+        "runnerUp": "NYL_LIBERTY",
+        "champ-coach": "Michael Cooper",
+        "finals-mvp": "Lisa Leslie",
+        "runnerUpCoach": "Richie Adubato"
+    },
+    "2003": {
+        "champion": "DET_SHOCK",
+        "runnerUp": "LOS_SPARKS",
+        "champ-coach": "Bill Laimbeer",
+        "finals-mvp": "Ruth Riley",
+        "runnerUpCoach": "Michael Cooper"
+    },
+    "2004": {
+        "champion": "SEA_STORM",
+        "runnerUp": "CON_SUN",
+        "champ-coach": "Anne Donovan",
+        "finals-mvp": "Betty Lennox",
+        "runnerUpCoach": "Mike Thibault"
+    },
+    "2005": {
+        "champion": "SAC_MONARCHS",
+        "runnerUp": "CON_SUN",
+        "champ-coach": "John Whisenant",
+        "finals-mvp": "Yolanda Griffith",
+        "runnerUpCoach": "Mike Thibault"
+    },
+    "2006": {
+        "champion": "DET_SHOCK",
+        "runnerUp": "SAC_MONARCHS",
+        "champ-coach": "Bill Laimbeer",
+        "finals-mvp": "Deanna Nolan",
+        "runnerUpCoach": "John Whisenant"
+    },
+    "2007": {
+        "champion": "PHX_MERCURY",
+        "runnerUp": "DET_SHOCK",
+        "champ-coach": "Paul Westhead",
+        "finals-mvp": "Cappie Pondexter",
+        "runnerUpCoach": "Bill Laimbeer"
+    },
+    "2008": {
+        "champion": "DET_SHOCK",
+        "runnerUp": "SA_SILVER_STARS",
+        "champ-coach": "Bill Laimbeer",
+        "finals-mvp": "Katie Smith",
+        "runnerUpCoach": "Dan Hughes"
+    },
+    "2009": {
+        "champion": "PHX_MERCURY",
+        "runnerUp": "IND_FEVER",
+        "champ-coach": "Corey Gaines",
+        "finals-mvp": "Diana Taurasi",
+        "runnerUpCoach": "Lin Dunn"
+    },
+    "2010": {
+        "champion": "SEA_STORM",
+        "runnerUp": "ATL_DREAM",
+        "champ-coach": "Brian Agler",
+        "finals-mvp": "Lauren Jackson",
+        "runnerUpCoach": "Marynell Meadors"
+    },
+    "2011": {
+        "champion": "MIN_LYNX",
+        "runnerUp": "ATL_DREAM",
+        "champ-coach": "Cheryl Reeve",
+        "finals-mvp": "Seimone Augustus",
+        "runnerUpCoach": "Marynell Meadors"
+    },
+    "2012": {
+        "champion": "IND_FEVER",
+        "runnerUp": "MIN_LYNX",
+        "champ-coach": "Lin Dunn",
+        "finals-mvp": "Tamika Catchings",
+        "runnerUpCoach": "Cheryl Reeve"
+    },
+    "2013": {
+        "champion": "MIN_LYNX",
+        "runnerUp": "ATL_DREAM",
+        "champ-coach": "Cheryl Reeve",
+        "finals-mvp": "Maya Moore",
+        "runnerUpCoach": "Fred Williams"
+    },
+    "2014": {
+        "champion": "PHX_MERCURY",
+        "runnerUp": "CHI_SKY",
+        "champ-coach": "Sandy Brondello",
+        "finals-mvp": "Diana Taurasi",
+        "runnerUpCoach": "Pokey Chatman"
+    },
+    "2015": {
+        "champion": "MIN_LYNX",
+        "runnerUp": "IND_FEVER",
+        "champ-coach": "Cheryl Reeve",
+        "finals-mvp": "Sylvia Fowles",
+        "runnerUpCoach": "Stephanie White"
+    },
+    "2016": {
+        "champion": "LOS_SPARKS",
+        "runnerUp": "MIN_LYNX",
+        "champ-coach": "Brian Agler",
+        "finals-mvp": "Candace Parker",
+        "runnerUpCoach": "Cheryl Reeve"
+    },
+    "2017": {
+        "champion": "MIN_LYNX",
+        "runnerUp": "LOS_SPARKS",
+        "champ-coach": "Cheryl Reeve",
+        "finals-mvp": "Sylvia Fowles",
+        "runnerUpCoach": "Brian Agler"
+    },
+    "2018": {
+        "champion": "SEA_STORM",
+        "runnerUp": "WAS_MYSTICS",
+        "champ-coach": "Dan Hughes",
+        "finals-mvp": "Breanna Stewart",
+        "runnerUpCoach": "Mike Thibault"
+    },
+    "2019": {
+        "champion": "WAS_MYSTICS",
+        "runnerUp": "CON_SUN",
+        "champ-coach": "Mike Thibault",
+        "finals-mvp": "Emma Meesseman",
+        "runnerUpCoach": "Curt Miller"
+    },
+    "2020": {
+        "champion": "SEA_STORM",
+        "runnerUp": "LVA_ACES",
+        "champ-coach": "Gary Kloppenburg",
+        "finals-mvp": "Breanna Stewart",
+        "runnerUpCoach": "Bill Laimbeer"
+    },
+    "2021": {
+        "champion": "CHI_SKY",
+        "runnerUp": "PHX_MERCURY",
+        "champ-coach": "James Wade",
+        "finals-mvp": "Kahleah Copper",
+        "runnerUpCoach": "Sandy Brondello"
+    },
+    "2022": {
+        "champion": "LVA_ACES",
+        "runnerUp": "CON_SUN",
+        "champ-coach": "Becky Hammon",
+        "finals-mvp": "Chelsea Gray",
+        "runnerUpCoach": "Curt Miller"
+    },
+    "2023": {
+        "champion": "LVA_ACES",
+        "runnerUp": "NYL_LIBERTY",
+        "champ-coach": "Becky Hammon",
+        "finals-mvp": "A'ja Wilson",
+        "runnerUpCoach": "Sandy Brondello"
+    },
+    "2024": {
+        "champion": "NYL_LIBERTY",
+        "runnerUp": "MIN_LYNX",
+        "champ-coach": "Sandy Brondello",
+        "finals-mvp": "Jonquel Jones",
+        "runnerUpCoach": "Cheryl Reeve"
+    },
+    "2025": {
+        "champion": "LVA_ACES",
+        "runnerUp": "PHX_MERCURY",
+        "champ-coach": "Becky Hammon",
+        "finals-mvp": "A'ja Wilson",
+        "runnerUpCoach": "Nate Tibbetts"
+    }
+}

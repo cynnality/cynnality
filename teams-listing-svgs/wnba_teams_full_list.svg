@@ -2,1263 +2,1415 @@
 <!-- Created with Inkscape (http://www.inkscape.org/) -->
 
 <svg
-   width="727.68549"
-   height="1197.8926"
-   viewBox="0 0 727.68544 1197.8926"
+   width="729.77222"
+   height="1243.8002"
+   viewBox="0 0 729.77217 1243.8002"
    version="1.1"
    id="svg1"
    xmlns="http://www.w3.org/2000/svg"
    xmlns:svg="http://www.w3.org/2000/svg">
   <defs
      id="defs1" />
-  <path
-     style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-linejoin:round;stroke-miterlimit:0;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
-     d="M 57.627713,528.69615 H 152.62772"
-     id="path349-7-7" />
-  <path
-     style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-linejoin:round;stroke-miterlimit:0;stroke-dasharray:none;stroke-opacity:1"
-     d="M 57.627713,287.68055 H 152.62772"
-     id="path35-8" />
-  <path
-     style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-linejoin:round;stroke-miterlimit:0;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
-     d="M 57.627713,1008.6961 H 152.62772"
-     id="path445-1-4" />
-  <path
-     style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-linejoin:round;stroke-miterlimit:0;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
-     d="M 57.627713,816.66735 H 152.62772"
-     id="path435-3-5" />
-  <path
-     style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-linejoin:round;stroke-miterlimit:0;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
-     d="M 57.627713,480.69625 H 152.62772"
-     id="path349-7-0-0" />
-  <path
-     style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-linejoin:round;stroke-miterlimit:0;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
-     d="M 57.627713,144.64955 H 152.62772"
-     id="path14-3" />
-  <path
-     style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-linejoin:round;stroke-miterlimit:0;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
-     d="M 57.627713,384.69615 H 152.62772"
-     id="path65-6" />
-  <path
-     style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-linejoin:round;stroke-miterlimit:0;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
-     d="M 57.627713,96.196254 H 152.62772"
-     id="path69-1" />
-  <path
-     style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-linejoin:round;stroke-miterlimit:0;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
-     d="M 57.627713,336.76065 H 152.62772"
-     id="path384-0" />
-  <path
-     style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-linejoin:round;stroke-miterlimit:0;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
-     d="M 57.627713,864.19635 H 152.62772"
-     id="path1-6" />
-  <path
-     style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-linejoin:round;stroke-miterlimit:0;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
-     d="M 57.627713,47.667344 H 152.62772"
-     id="path4-3" />
-  <path
-     style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-linejoin:round;stroke-miterlimit:0;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
-     d="M 57.627713,1056.1674 H 152.62772"
-     id="path12-2" />
-  <path
-     style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-linejoin:round;stroke-miterlimit:0;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
-     d="M 57.627713,912.60295 H 152.62772"
-     id="path26-0" />
-  <path
-     style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-linejoin:round;stroke-miterlimit:0;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
-     d="M 57.627713,959.24865 H 152.62772"
-     id="path255" />
-  <path
-     style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-linejoin:round;stroke-miterlimit:0;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
-     d="M 57.627713,1152.6962 H 152.62772"
-     id="path325" />
-  <path
-     style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-linejoin:round;stroke-miterlimit:0;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
-     d="M 57.627713,192.14975 H 152.62772"
-     id="path335" />
-  <text
-     xml:space="preserve"
-     style="font-style:normal;font-variant:normal;font-weight:300;font-stretch:normal;font-size:32px;line-height:37.5005px;font-family:'Chivo Mono';-inkscape-font-specification:'Chivo Mono Light';text-align:center;letter-spacing:0px;word-spacing:-3px;writing-mode:lr-tb;direction:ltr;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:2;stroke-linejoin:round;stroke-miterlimit:0;stroke-dasharray:none;stroke-opacity:1"
-     x="583.79047"
-     y="1167.6963"
-     id="text342">WINGS</text>
-  <text
-     xml:space="preserve"
-     style="font-style:normal;font-variant:normal;font-weight:300;font-stretch:normal;font-size:32px;line-height:37.5005px;font-family:'Chivo Mono';-inkscape-font-specification:'Chivo Mono Light';text-align:center;letter-spacing:0px;word-spacing:-3px;writing-mode:lr-tb;direction:ltr;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:2;stroke-linejoin:round;stroke-miterlimit:0;stroke-dasharray:none;stroke-opacity:1"
-     x="583.79047"
-     y="975.3761"
-     id="text343">STING</text>
-  <text
-     xml:space="preserve"
-     style="font-style:normal;font-variant:normal;font-weight:300;font-stretch:normal;font-size:32px;line-height:37.5005px;font-family:'Chivo Mono';-inkscape-font-specification:'Chivo Mono Light';text-align:center;letter-spacing:0px;word-spacing:-3px;writing-mode:lr-tb;direction:ltr;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:2;stroke-linejoin:round;stroke-miterlimit:0;stroke-dasharray:none;stroke-opacity:1"
-     x="564.59064"
-     y="543.69617"
-     id="text344">ROCKERS</text>
-  <text
-     xml:space="preserve"
-     style="font-style:normal;font-variant:normal;font-weight:300;font-stretch:normal;font-size:32px;line-height:37.5005px;font-family:'Chivo Mono';-inkscape-font-specification:'Chivo Mono Light';text-align:center;letter-spacing:0px;word-spacing:-3px;writing-mode:lr-tb;direction:ltr;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:2;stroke-linejoin:round;stroke-miterlimit:0;stroke-dasharray:none;stroke-opacity:1"
-     x="563.88654"
-     y="303.6962"
-     id="text345">LIBERTY</text>
-  <text
-     xml:space="preserve"
-     style="font-style:normal;font-variant:normal;font-weight:300;font-stretch:normal;font-size:32px;line-height:37.5005px;font-family:'Chivo Mono';-inkscape-font-specification:'Chivo Mono Light';text-align:center;letter-spacing:0px;word-spacing:-3px;writing-mode:lr-tb;direction:ltr;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:2;stroke-linejoin:round;stroke-miterlimit:0;stroke-dasharray:none;stroke-opacity:1"
-     x="584.52643"
-     y="1023.6962"
-     id="text346">STORM</text>
-  <text
-     xml:space="preserve"
-     style="font-style:normal;font-variant:normal;font-weight:300;font-stretch:normal;font-size:32px;line-height:37.5005px;font-family:'Chivo Mono';-inkscape-font-specification:'Chivo Mono Light';text-align:center;letter-spacing:0px;word-spacing:-3px;writing-mode:lr-tb;direction:ltr;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:2;stroke-linejoin:round;stroke-miterlimit:0;stroke-dasharray:none;stroke-opacity:1"
-     x="574.19037"
-     y="831.69617"
-     id="text347">SPARKS</text>
-  <text
-     xml:space="preserve"
-     style="font-style:normal;font-variant:normal;font-weight:300;font-stretch:normal;font-size:32px;line-height:37.5005px;font-family:'Chivo Mono';-inkscape-font-specification:'Chivo Mono Light';text-align:center;letter-spacing:0px;word-spacing:-3px;writing-mode:lr-tb;direction:ltr;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:2;stroke-linejoin:round;stroke-miterlimit:0;stroke-dasharray:none;stroke-opacity:1"
-     x="564.59064"
-     y="495.6962"
-     id="text348">MYSTICS</text>
-  <text
-     xml:space="preserve"
-     style="font-style:normal;font-variant:normal;font-weight:300;font-stretch:normal;font-size:32px;line-height:37.5005px;font-family:'Chivo Mono';-inkscape-font-specification:'Chivo Mono Light';text-align:center;letter-spacing:0px;word-spacing:-3px;writing-mode:lr-tb;direction:ltr;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:2;stroke-linejoin:round;stroke-miterlimit:0;stroke-dasharray:none;stroke-opacity:1"
-     x="584.52655"
-     y="159.56825"
-     id="text349">DREAM</text>
-  <text
-     xml:space="preserve"
-     style="font-style:normal;font-variant:normal;font-weight:300;font-stretch:normal;font-size:32px;line-height:37.5005px;font-family:'Chivo Mono';-inkscape-font-specification:'Chivo Mono Light';text-align:center;letter-spacing:0px;word-spacing:-3px;writing-mode:lr-tb;direction:ltr;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:2;stroke-linejoin:round;stroke-miterlimit:0;stroke-dasharray:none;stroke-opacity:1"
-     x="563.88654"
-     y="399.6962"
-     id="text350">MERCURY</text>
-  <text
-     xml:space="preserve"
-     style="font-style:normal;font-variant:normal;font-weight:300;font-stretch:normal;font-size:32px;line-height:37.5005px;font-family:'Chivo Mono';-inkscape-font-specification:'Chivo Mono Light';text-align:center;letter-spacing:0px;word-spacing:-3px;writing-mode:lr-tb;direction:ltr;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:2;stroke-linejoin:round;stroke-miterlimit:0;stroke-dasharray:none;stroke-opacity:1"
-     x="574.19049"
-     y="111.37624"
-     id="text351">COMETS</text>
-  <text
-     xml:space="preserve"
-     style="font-style:normal;font-variant:normal;font-weight:300;font-stretch:normal;font-size:32px;line-height:37.5005px;font-family:'Chivo Mono';-inkscape-font-specification:'Chivo Mono Light';text-align:center;letter-spacing:0px;word-spacing:-3px;writing-mode:lr-tb;direction:ltr;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:2;stroke-linejoin:round;stroke-miterlimit:0;stroke-dasharray:none;stroke-opacity:1"
-     x="592.33453"
-     y="351.6962"
-     id="text352">LYNX</text>
-  <text
-     xml:space="preserve"
-     style="font-style:normal;font-variant:normal;font-weight:300;font-stretch:normal;font-size:32px;line-height:37.5005px;font-family:'Chivo Mono';-inkscape-font-specification:'Chivo Mono Light';text-align:center;letter-spacing:0px;word-spacing:-3px;writing-mode:lr-tb;direction:ltr;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:2;stroke-linejoin:round;stroke-miterlimit:0;stroke-dasharray:none;stroke-opacity:1"
-     x="593.39044"
-     y="63.696247"
-     id="text353">ACES</text>
-  <text
-     xml:space="preserve"
-     style="font-style:normal;font-variant:normal;font-weight:300;font-stretch:normal;font-size:32px;line-height:37.5005px;font-family:'Chivo Mono';-inkscape-font-specification:'Chivo Mono Light';text-align:center;letter-spacing:0px;word-spacing:-3px;writing-mode:lr-tb;direction:ltr;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:2;stroke-linejoin:round;stroke-miterlimit:0;stroke-dasharray:none;stroke-opacity:1"
-     x="604.1424"
-     y="1071.6962"
-     id="text354">SUN</text>
-  <text
-     xml:space="preserve"
-     style="font-style:normal;font-variant:normal;font-weight:300;font-stretch:normal;font-size:32px;line-height:37.5005px;font-family:'Chivo Mono';-inkscape-font-specification:'Chivo Mono Light';text-align:center;letter-spacing:0px;word-spacing:-3px;writing-mode:lr-tb;direction:ltr;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:2;stroke-linejoin:round;stroke-miterlimit:0;stroke-dasharray:none;stroke-opacity:1"
-     x="583.79034"
-     y="879.69617"
-     id="text355">STARS</text>
-  <text
-     xml:space="preserve"
-     style="font-style:normal;font-variant:normal;font-weight:300;font-stretch:normal;font-size:32px;line-height:37.5005px;font-family:'Chivo Mono';-inkscape-font-specification:'Chivo Mono Light';text-align:center;letter-spacing:0px;word-spacing:-3px;writing-mode:lr-tb;direction:ltr;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:2;stroke-linejoin:round;stroke-miterlimit:0;stroke-dasharray:none;stroke-opacity:1"
-     x="574.12653"
-     y="927.69617"
-     id="text356">STARZZ</text>
-  <text
-     xml:space="preserve"
-     style="font-style:normal;font-variant:normal;font-weight:300;font-stretch:normal;font-size:32px;line-height:37.5005px;font-family:'Chivo Mono';-inkscape-font-specification:'Chivo Mono Light';text-align:center;letter-spacing:0px;word-spacing:-3px;writing-mode:lr-tb;direction:ltr;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:2;stroke-linejoin:round;stroke-miterlimit:0;stroke-dasharray:none;stroke-opacity:1"
-     x="582.51056"
-     y="207.69618"
-     id="text357">FEVER</text>
-  <text
-     xml:space="preserve"
-     style="font-style:normal;font-variant:normal;font-weight:300;font-stretch:normal;font-size:32px;line-height:37.5005px;font-family:'Chivo Mono';-inkscape-font-specification:'Chivo Mono Light';text-align:center;letter-spacing:0px;word-spacing:-3px;writing-mode:lr-tb;direction:ltr;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:2;stroke-linejoin:round;stroke-miterlimit:0;stroke-dasharray:none;stroke-opacity:1"
-     x="209.42337"
-     y="1167.6963"
-     id="text574">DALLAS</text>
-  <text
-     xml:space="preserve"
-     style="font-style:normal;font-variant:normal;font-weight:300;font-stretch:normal;font-size:32px;line-height:37.5005px;font-family:'Chivo Mono';-inkscape-font-specification:'Chivo Mono Light';text-align:center;letter-spacing:0px;word-spacing:-3px;writing-mode:lr-tb;direction:ltr;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:2;stroke-linejoin:round;stroke-miterlimit:0;stroke-dasharray:none;stroke-opacity:1"
-     x="258.57523"
-     y="1071.6962"
-     id="text575">CONNECTICUT</text>
-  <text
-     xml:space="preserve"
-     style="font-style:normal;font-variant:normal;font-weight:300;font-stretch:normal;font-size:32px;line-height:37.5005px;font-family:'Chivo Mono';-inkscape-font-specification:'Chivo Mono Light';text-align:center;letter-spacing:0px;word-spacing:-3px;writing-mode:lr-tb;direction:ltr;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:2;stroke-linejoin:round;stroke-miterlimit:0;stroke-dasharray:none;stroke-opacity:1"
-     x="220.14334"
-     y="1023.6962"
-     id="text576">SEATTLE</text>
-  <text
-     xml:space="preserve"
-     style="font-style:normal;font-variant:normal;font-weight:300;font-stretch:normal;font-size:32px;line-height:37.5005px;font-family:'Chivo Mono';-inkscape-font-specification:'Chivo Mono Light';text-align:center;letter-spacing:0px;word-spacing:-3px;writing-mode:lr-tb;direction:ltr;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:2;stroke-linejoin:round;stroke-miterlimit:0;stroke-dasharray:none;stroke-opacity:1"
-     x="239.37527"
-     y="975.69617"
-     id="text577">CHARLOTTE</text>
-  <text
-     xml:space="preserve"
-     style="font-style:normal;font-variant:normal;font-weight:300;font-stretch:normal;font-size:32px;line-height:37.5005px;font-family:'Chivo Mono';-inkscape-font-specification:'Chivo Mono Light';text-align:center;letter-spacing:0px;word-spacing:-3px;writing-mode:lr-tb;direction:ltr;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:2;stroke-linejoin:round;stroke-miterlimit:0;stroke-dasharray:none;stroke-opacity:1"
-     x="190.51151"
-     y="927.37622"
-     id="text578">UTAH</text>
-  <text
-     xml:space="preserve"
-     style="font-style:normal;font-variant:normal;font-weight:300;font-stretch:normal;font-size:32px;line-height:37.5005px;font-family:'Chivo Mono';-inkscape-font-specification:'Chivo Mono Light';text-align:center;letter-spacing:0px;word-spacing:-3px;writing-mode:lr-tb;direction:ltr;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:2;stroke-linejoin:round;stroke-miterlimit:0;stroke-dasharray:none;stroke-opacity:1"
-     x="257.04324"
-     y="879.3761"
-     id="text579">SAN ANTONIO</text>
-  <text
-     xml:space="preserve"
-     style="font-style:normal;font-variant:normal;font-weight:300;font-stretch:normal;font-size:32px;line-height:37.5005px;font-family:'Chivo Mono';-inkscape-font-specification:'Chivo Mono Light';text-align:center;letter-spacing:0px;word-spacing:-3px;writing-mode:lr-tb;direction:ltr;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:2;stroke-linejoin:round;stroke-miterlimit:0;stroke-dasharray:none;stroke-opacity:1"
-     x="254.96341"
-     y="831.3761"
-     id="text580">LOS ANGELES</text>
-  <text
-     xml:space="preserve"
-     style="font-style:normal;font-variant:normal;font-weight:300;font-stretch:normal;font-size:32px;line-height:37.5005px;font-family:'Chivo Mono';-inkscape-font-specification:'Chivo Mono Light';text-align:center;letter-spacing:0px;word-spacing:-3px;writing-mode:lr-tb;direction:ltr;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:2;stroke-linejoin:round;stroke-miterlimit:0;stroke-dasharray:none;stroke-opacity:1"
-     x="216.05447"
-     y="399.6962"
-     id="text581">PHOENIX</text>
-  <text
-     xml:space="preserve"
-     style="font-style:normal;font-variant:normal;font-weight:300;font-stretch:normal;font-size:32px;line-height:37.5005px;font-family:'Chivo Mono';-inkscape-font-specification:'Chivo Mono Light';text-align:center;letter-spacing:0px;word-spacing:-3px;writing-mode:lr-tb;direction:ltr;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:2;stroke-linejoin:round;stroke-miterlimit:0;stroke-dasharray:none;stroke-opacity:1"
-     x="236.40652"
-     y="543.69617"
-     id="text582">CLEVELAND</text>
-  <text
-     xml:space="preserve"
-     style="font-style:normal;font-variant:normal;font-weight:300;font-stretch:normal;font-size:32px;line-height:37.5005px;font-family:'Chivo Mono';-inkscape-font-specification:'Chivo Mono Light';text-align:center;letter-spacing:0px;word-spacing:-3px;writing-mode:lr-tb;direction:ltr;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:2;stroke-linejoin:round;stroke-miterlimit:0;stroke-dasharray:none;stroke-opacity:1"
-     x="247.3826"
-     y="495.6962"
-     id="text583">WASHINGTON</text>
-  <text
-     xml:space="preserve"
-     style="font-style:normal;font-variant:normal;font-weight:300;font-stretch:normal;font-size:32px;line-height:37.5005px;font-family:'Chivo Mono';-inkscape-font-specification:'Chivo Mono Light';text-align:center;letter-spacing:0px;word-spacing:-3px;writing-mode:lr-tb;direction:ltr;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:2;stroke-linejoin:round;stroke-miterlimit:0;stroke-dasharray:none;stroke-opacity:1"
-     x="235.63846"
-     y="351.37613"
-     id="text584">MINNESOTA</text>
-  <text
-     xml:space="preserve"
-     style="font-style:normal;font-variant:normal;font-weight:300;font-stretch:normal;font-size:32px;line-height:37.5005px;font-family:'Chivo Mono';-inkscape-font-specification:'Chivo Mono Light';text-align:center;letter-spacing:0px;word-spacing:-3px;writing-mode:lr-tb;direction:ltr;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:2;stroke-linejoin:round;stroke-miterlimit:0;stroke-dasharray:none;stroke-opacity:1"
-     x="224.15457"
-     y="303.37625"
-     id="text585">NEW YORK</text>
-  <text
-     xml:space="preserve"
-     style="font-style:normal;font-variant:normal;font-weight:300;font-stretch:normal;font-size:32px;line-height:37.5005px;font-family:'Chivo Mono';-inkscape-font-specification:'Chivo Mono Light';text-align:center;letter-spacing:0px;word-spacing:-3px;writing-mode:lr-tb;direction:ltr;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:2;stroke-linejoin:round;stroke-miterlimit:0;stroke-dasharray:none;stroke-opacity:1"
-     x="216.11551"
-     y="207.69618"
-     id="text586">INDIANA</text>
-  <text
-     xml:space="preserve"
-     style="font-style:normal;font-variant:normal;font-weight:300;font-stretch:normal;font-size:32px;line-height:37.5005px;font-family:'Chivo Mono';-inkscape-font-specification:'Chivo Mono Light';text-align:center;letter-spacing:0px;word-spacing:-3px;writing-mode:lr-tb;direction:ltr;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:2;stroke-linejoin:round;stroke-miterlimit:0;stroke-dasharray:none;stroke-opacity:1"
-     x="219.31546"
-     y="159.69618"
-     id="text587">ATLANTA</text>
-  <text
-     xml:space="preserve"
-     style="font-style:normal;font-variant:normal;font-weight:300;font-stretch:normal;font-size:32px;line-height:37.5005px;font-family:'Chivo Mono';-inkscape-font-specification:'Chivo Mono Light';text-align:center;letter-spacing:0px;word-spacing:-3px;writing-mode:lr-tb;direction:ltr;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:2;stroke-linejoin:round;stroke-miterlimit:0;stroke-dasharray:none;stroke-opacity:1"
-     x="217.29959"
-     y="111.69618"
-     id="text588">HOUSTON</text>
-  <text
-     xml:space="preserve"
-     style="font-style:normal;font-variant:normal;font-weight:300;font-stretch:normal;font-size:32px;line-height:37.5005px;font-family:'Chivo Mono';-inkscape-font-specification:'Chivo Mono Light';text-align:center;letter-spacing:0px;word-spacing:-3px;writing-mode:lr-tb;direction:ltr;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:2;stroke-linejoin:round;stroke-miterlimit:0;stroke-dasharray:none;stroke-opacity:1"
-     x="234.03958"
-     y="63.37624"
-     id="text589">LAS VEGAS</text>
-  <path
-     style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-linejoin:round;stroke-miterlimit:0;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
-     d="M 57.627713,574.69645 H 152.62772"
-     id="path599" />
-  <path
-     style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-linejoin:round;stroke-miterlimit:0;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
-     d="M 57.627713,623.64405 H 152.62772"
-     id="path605" />
-  <path
-     style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-linejoin:round;stroke-miterlimit:0;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
-     d="M 57.627713,432.69645 H 152.62772"
-     id="path609" />
-  <path
-     style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-linejoin:round;stroke-miterlimit:0;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
-     d="M 57.627713,240.69625 H 152.62772"
-     id="path610" />
-  <text
-     xml:space="preserve"
-     style="font-style:normal;font-variant:normal;font-weight:300;font-stretch:normal;font-size:32px;line-height:37.5005px;font-family:'Chivo Mono';-inkscape-font-specification:'Chivo Mono Light';text-align:center;letter-spacing:0px;word-spacing:-3px;writing-mode:lr-tb;direction:ltr;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:2;stroke-linejoin:round;stroke-miterlimit:0;stroke-dasharray:none;stroke-opacity:1"
-     x="582.92657"
-     y="591.69617"
-     id="text618">SHOCK</text>
-  <text
-     xml:space="preserve"
-     style="font-style:normal;font-variant:normal;font-weight:300;font-stretch:normal;font-size:32px;line-height:37.5005px;font-family:'Chivo Mono';-inkscape-font-specification:'Chivo Mono Light';text-align:center;letter-spacing:0px;word-spacing:-3px;writing-mode:lr-tb;direction:ltr;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:2;stroke-linejoin:round;stroke-miterlimit:0;stroke-dasharray:none;stroke-opacity:1"
-     x="198.16653"
-     y="591.3761"
-     id="text619">TULSA</text>
-  <path
-     style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-linejoin:round;stroke-miterlimit:0;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
-     d="M 57.627713,671.24875 H 152.70552"
-     id="path620" />
-  <rect
-     style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0.999999;stroke-opacity:1"
-     id="rect625"
-     width="42.5"
-     height="31.884703"
-     x="646.09613"
-     y="655.3114"
-     rx="4"
-     ry="4" />
-  <rect
-     style="fill:#ffffff;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0.999999;stroke-opacity:1"
-     id="rect626"
-     width="15.937003"
-     height="27.000004"
-     x="649.35004"
-     y="657.75391"
-     rx="2"
-     ry="1.9999999" />
-  <text
-     xml:space="preserve"
-     style="font-style:normal;font-variant:normal;font-weight:300;font-stretch:normal;font-size:32px;line-height:37.5005px;font-family:'Chivo Mono';-inkscape-font-specification:'Chivo Mono Light';text-align:center;letter-spacing:0px;word-spacing:-3px;writing-mode:lr-tb;direction:ltr;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:2;stroke-linejoin:round;stroke-miterlimit:0;stroke-dasharray:none;stroke-opacity:1"
-     x="520.30402"
-     y="687.3761"
-     id="text626">SILVER STARS</text>
-  <text
-     xml:space="preserve"
-     style="font-style:normal;font-variant:normal;font-weight:300;font-stretch:normal;font-size:32px;line-height:37.5005px;font-family:'Chivo Mono';-inkscape-font-specification:'Chivo Mono Light';text-align:center;letter-spacing:0px;word-spacing:-3px;writing-mode:lr-tb;direction:ltr;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:2;stroke-linejoin:round;stroke-miterlimit:0;stroke-dasharray:none;stroke-opacity:1"
-     x="255.31937"
-     y="687.3761"
-     id="text627">SAN ANTONIO</text>
-  <rect
-     style="fill:#ffa400;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0.999999;stroke-opacity:1"
-     id="rect631"
-     width="42.5"
-     height="31.884703"
-     x="647.40533"
-     y="559.8114"
-     rx="4"
-     ry="4" />
-  <rect
-     style="fill:#006271;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0.999999;stroke-opacity:1"
-     id="rect632"
-     width="15.937003"
-     height="27.000004"
-     x="650.65924"
-     y="562.25378"
-     rx="2"
-     ry="1.9999999" />
-  <rect
-     style="fill:#a6192e;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0.999999;stroke-opacity:1"
-     id="rect633"
-     width="42.5"
-     height="31.884703"
-     x="647.40533"
-     y="607.3114"
-     rx="4"
-     ry="4" />
-  <rect
-     style="fill:#ffb81c;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0.999999;stroke-opacity:1"
-     id="rect634"
-     width="15.937003"
-     height="27.000004"
-     x="650.65924"
-     y="609.75378"
-     rx="2"
-     ry="1.9999999" />
-  <text
-     xml:space="preserve"
-     style="font-style:normal;font-variant:normal;font-weight:300;font-stretch:normal;font-size:32px;line-height:37.5005px;font-family:'Chivo Mono';-inkscape-font-specification:'Chivo Mono Light';text-align:center;letter-spacing:0px;word-spacing:-3px;writing-mode:lr-tb;direction:ltr;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:2;stroke-linejoin:round;stroke-miterlimit:0;stroke-dasharray:none;stroke-opacity:1"
-     x="582.92657"
-     y="639.69617"
-     id="text634">SHOCK</text>
-  <text
-     xml:space="preserve"
-     style="font-style:normal;font-variant:normal;font-weight:300;font-stretch:normal;font-size:32px;line-height:37.5005px;font-family:'Chivo Mono';-inkscape-font-specification:'Chivo Mono Light';text-align:center;letter-spacing:0px;word-spacing:-3px;writing-mode:lr-tb;direction:ltr;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:2;stroke-linejoin:round;stroke-miterlimit:0;stroke-dasharray:none;stroke-opacity:1"
-     x="216.05447"
-     y="639.69617"
-     id="text635">DETROIT</text>
-  <rect
-     style="fill:#753bbd;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0.999999;stroke-opacity:1"
-     id="rect635"
-     width="42.5"
-     height="31.884703"
-     x="647.40533"
-     y="415.31143"
-     rx="4"
-     ry="4" />
-  <rect
-     style="fill:#ba0c2f;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0.999999;stroke-opacity:1"
-     id="rect636"
-     width="15.937003"
-     height="27.000004"
-     x="650.65924"
-     y="417.75381"
-     rx="2"
-     ry="1.9999999" />
-  <text
-     xml:space="preserve"
-     style="font-style:normal;font-variant:normal;font-weight:300;font-stretch:normal;font-size:32px;line-height:37.5005px;font-family:'Chivo Mono';-inkscape-font-specification:'Chivo Mono Light';text-align:center;letter-spacing:0px;word-spacing:-3px;writing-mode:lr-tb;direction:ltr;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:2;stroke-linejoin:round;stroke-miterlimit:0;stroke-dasharray:none;stroke-opacity:1"
-     x="554.99054"
-     y="447.6962"
-     id="text636">MONARCHS</text>
-  <text
-     xml:space="preserve"
-     style="font-style:normal;font-variant:normal;font-weight:300;font-stretch:normal;font-size:32px;line-height:37.5005px;font-family:'Chivo Mono';-inkscape-font-specification:'Chivo Mono Light';text-align:center;letter-spacing:0px;word-spacing:-3px;writing-mode:lr-tb;direction:ltr;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:2;stroke-linejoin:round;stroke-miterlimit:0;stroke-dasharray:none;stroke-opacity:1"
-     x="245.9744"
-     y="447.37613"
-     id="text637">SACRAMENTO</text>
-  <rect
-     style="fill:#c8102e;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0.999999;stroke-opacity:1"
-     id="rect637"
-     width="42.5"
-     height="31.884703"
-     x="647.40533"
-     y="223.81154"
-     rx="4"
-     ry="4" />
-  <rect
-     style="fill:#010101;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0.999999;stroke-opacity:1"
-     id="rect638"
-     width="15.937003"
-     height="27.000004"
-     x="650.65924"
-     y="226.25392"
-     rx="2"
-     ry="1.9999999" />
-  <text
-     xml:space="preserve"
-     style="font-style:normal;font-variant:normal;font-weight:300;font-stretch:normal;font-size:32px;line-height:37.5005px;font-family:'Chivo Mono';-inkscape-font-specification:'Chivo Mono Light';text-align:center;letter-spacing:0px;word-spacing:-3px;writing-mode:lr-tb;direction:ltr;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:2;stroke-linejoin:round;stroke-miterlimit:0;stroke-dasharray:none;stroke-opacity:1"
-     x="593.96649"
-     y="255.69618"
-     id="text638">FIRE</text>
-  <text
-     xml:space="preserve"
-     style="font-style:normal;font-variant:normal;font-weight:300;font-stretch:normal;font-size:32px;line-height:37.5005px;font-family:'Chivo Mono';-inkscape-font-specification:'Chivo Mono Light';text-align:center;letter-spacing:0px;word-spacing:-3px;writing-mode:lr-tb;direction:ltr;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:2;stroke-linejoin:round;stroke-miterlimit:0;stroke-dasharray:none;stroke-opacity:1"
-     x="226.89944"
-     y="255.37624"
-     id="text639">PORTLAND</text>
-  <path
-     style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-linejoin:round;stroke-miterlimit:0;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
-     d="M 57.627713,768.69625 H 152.62772"
-     id="path640" />
-  <rect
-     style="fill:#fb9500;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0.999999;stroke-opacity:1"
-     id="rect641"
-     width="42.5"
-     height="31.884703"
-     x="647.40533"
-     y="751.43372"
-     rx="4"
-     ry="4" />
-  <rect
-     style="fill:#a6192e;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0.999999;stroke-opacity:1"
-     id="rect642"
-     width="15.937003"
-     height="27.000004"
-     x="650.65924"
-     y="753.8761"
-     rx="2"
-     ry="1.9999999" />
-  <text
-     xml:space="preserve"
-     style="font-style:normal;font-variant:normal;font-weight:300;font-stretch:normal;font-size:32px;line-height:37.5005px;font-family:'Chivo Mono';-inkscape-font-specification:'Chivo Mono Light';text-align:center;letter-spacing:0px;word-spacing:-3px;writing-mode:lr-tb;direction:ltr;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:2;stroke-linejoin:round;stroke-miterlimit:0;stroke-dasharray:none;stroke-opacity:1"
-     x="603.79047"
-     y="783.31848"
-     id="text642">SOL</text>
-  <text
-     xml:space="preserve"
-     style="font-style:normal;font-variant:normal;font-weight:300;font-stretch:normal;font-size:32px;line-height:37.5005px;font-family:'Chivo Mono';-inkscape-font-specification:'Chivo Mono Light';text-align:center;letter-spacing:0px;word-spacing:-3px;writing-mode:lr-tb;direction:ltr;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:2;stroke-linejoin:round;stroke-miterlimit:0;stroke-dasharray:none;stroke-opacity:1"
-     x="200.20755"
-     y="783.31848"
-     id="text643">MIAMI</text>
-  <path
-     style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-linejoin:round;stroke-miterlimit:0;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
-     d="M 57.627713,1104.1965 H 152.62772"
-     id="path643" />
-  <rect
-     style="fill:#ad96dc;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0.999999;stroke-opacity:1"
-     id="rect646"
-     width="42.5"
-     height="31.884703"
-     x="647.40533"
-     y="1087.6962"
-     rx="4"
-     ry="4" />
-  <rect
-     style="fill:#b9975b;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0.999999;stroke-opacity:1"
-     id="rect647"
-     width="15.937003"
-     height="27.000004"
-     x="650.65924"
-     y="1090.1385"
-     rx="2"
-     ry="1.9999999" />
-  <text
-     xml:space="preserve"
-     style="font-style:normal;font-variant:normal;font-weight:300;font-stretch:normal;font-size:32px;line-height:37.5005px;font-family:'Chivo Mono';-inkscape-font-specification:'Chivo Mono Light';text-align:center;letter-spacing:0px;word-spacing:-3px;writing-mode:lr-tb;direction:ltr;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:2;stroke-linejoin:round;stroke-miterlimit:0;stroke-dasharray:none;stroke-opacity:1"
-     x="545.39056"
-     y="1119.6962"
-     id="text647">VALKYRIES</text>
-  <text
-     xml:space="preserve"
-     style="font-style:normal;font-variant:normal;font-weight:300;font-stretch:normal;font-size:32px;line-height:37.5005px;font-family:'Chivo Mono';-inkscape-font-specification:'Chivo Mono Light';text-align:center;letter-spacing:0px;word-spacing:-3px;writing-mode:lr-tb;direction:ltr;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:2;stroke-linejoin:round;stroke-miterlimit:0;stroke-dasharray:none;stroke-opacity:1"
-     x="266.67532"
-     y="1119.3761"
-     id="text648">GOLDEN STATE</text>
-  <path
-     style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-linejoin:round;stroke-miterlimit:0;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
-     d="M 57.627713,719.19665 H 152.62772"
-     id="path648" />
-  <rect
-     style="fill:#408fdd;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0.999999;stroke-opacity:1"
-     id="rect651"
-     width="42.5"
-     height="31.884703"
-     x="647.40533"
-     y="703.19617"
-     rx="4"
-     ry="4" />
-  <rect
-     style="fill:#ffcc00;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0.999999;stroke-opacity:1"
-     id="rect652"
-     width="15.937003"
-     height="27.000004"
-     x="650.65924"
-     y="705.63855"
-     rx="2"
-     ry="1.9999999" />
-  <text
-     xml:space="preserve"
-     style="font-style:normal;font-variant:normal;font-weight:300;font-stretch:normal;font-size:32px;line-height:37.5005px;font-family:'Chivo Mono';-inkscape-font-specification:'Chivo Mono Light';text-align:center;letter-spacing:0px;word-spacing:-3px;writing-mode:lr-tb;direction:ltr;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:2;stroke-linejoin:round;stroke-miterlimit:0;stroke-dasharray:none;stroke-opacity:1"
-     x="602.28644"
-     y="734.69617"
-     id="text652">SKY</text>
-  <text
-     xml:space="preserve"
-     style="font-style:normal;font-variant:normal;font-weight:300;font-stretch:normal;font-size:32px;line-height:37.5005px;font-family:'Chivo Mono';-inkscape-font-specification:'Chivo Mono Light';text-align:center;letter-spacing:0px;word-spacing:-3px;writing-mode:lr-tb;direction:ltr;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:2;stroke-linejoin:round;stroke-miterlimit:0;stroke-dasharray:none;stroke-opacity:1"
-     x="220.17557"
-     y="734.69617"
-     id="text653">CHICAGO</text>
-  <rect
-     style="fill:#c4d600;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0.999999;stroke-opacity:1"
-     id="rect653"
-     width="42.5"
-     height="31.884703"
-     x="647.40533"
-     y="1135.8115"
-     rx="4"
-     ry="4" />
-  <rect
-     style="fill:#0c2340;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0.999999;stroke-opacity:1"
-     id="rect654"
-     width="15.937003"
-     height="27.000004"
-     x="650.65924"
-     y="1138.2539"
-     rx="2"
-     ry="1.9999999" />
-  <rect
-     style="fill:#dc4504;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0.999999;stroke-opacity:1"
-     id="rect655"
-     width="42.5"
-     height="31.884703"
-     x="647.40533"
-     y="1039.8114"
-     rx="4"
-     ry="4" />
-  <rect
-     style="fill:#ffc72e;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0.999999;stroke-opacity:1"
-     id="rect656"
-     width="15.937003"
-     height="27.000004"
-     x="650.65924"
-     y="1042.2538"
-     rx="2"
-     ry="1.9999999" />
-  <rect
-     style="fill:#fbe122;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0.999999;stroke-opacity:1"
-     id="rect657"
-     width="42.5"
-     height="31.884703"
-     x="647.40533"
-     y="991.31152"
-     rx="4"
-     ry="4" />
-  <rect
-     style="fill:#2c5234;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0.999999;stroke-opacity:1"
-     id="rect658"
-     width="15.937003"
-     height="27.000004"
-     x="650.65924"
-     y="993.75378"
-     rx="2"
-     ry="1.9999999" />
-  <rect
-     style="fill:#00778b;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0.999999;stroke-opacity:1"
-     id="rect659"
-     width="42.5"
-     height="31.884703"
-     x="647.40533"
-     y="943.31152"
-     rx="4"
-     ry="4" />
-  <rect
-     style="fill:#280071;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0.999999;stroke-opacity:1"
-     id="rect660"
-     width="15.937003"
-     height="27.000004"
-     x="650.65924"
-     y="945.75391"
-     rx="2"
-     ry="1.9999999" />
-  <rect
-     style="fill:#00a9e0;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0.999999;stroke-opacity:1"
-     id="rect661"
-     width="42.5"
-     height="31.884703"
-     x="647.40533"
-     y="896.19617"
-     rx="4"
-     ry="4" />
-  <rect
-     style="fill:#006271;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0.999999;stroke-opacity:1"
-     id="rect662"
-     width="15.937003"
-     height="27.000004"
-     x="650.65924"
-     y="898.63855"
-     rx="2"
-     ry="1.9999999" />
-  <rect
-     style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0.999999;stroke-opacity:1"
-     id="rect663"
-     width="42.5"
-     height="31.884703"
-     x="647.40533"
-     y="847.81152"
-     rx="4"
-     ry="4" />
-  <rect
-     style="fill:#ffffff;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0.999999;stroke-opacity:1"
-     id="rect664"
-     width="15.937003"
-     height="27.000004"
-     x="650.65924"
-     y="850.25391"
-     rx="2"
-     ry="1.9999999" />
-  <rect
-     style="fill:#702f8a;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0.999999;stroke-opacity:1"
-     id="rect665"
-     width="42.5"
-     height="31.884703"
-     x="647.40533"
-     y="799.8114"
-     rx="4"
-     ry="4" />
-  <rect
-     style="fill:#ffc72c;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0.999999;stroke-opacity:1"
-     id="rect666"
-     width="15.937003"
-     height="27.000004"
-     x="650.65924"
-     y="802.25378"
-     rx="2"
-     ry="1.9999999" />
-  <rect
-     style="fill:#236192;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0.999999;stroke-opacity:1"
-     id="rect667"
-     width="42.5"
-     height="31.884703"
-     x="647.40533"
-     y="319.31143"
-     rx="4"
-     ry="4" />
-  <rect
-     style="fill:#78be21;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0.999999;stroke-opacity:1"
-     id="rect668"
-     width="15.937003"
-     height="27.000004"
-     x="650.65924"
-     y="321.75381"
-     rx="2"
-     ry="1.9999999" />
-  <rect
-     style="fill:#201645;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0.999999;stroke-opacity:1"
-     id="rect669"
-     width="42.5"
-     height="31.884703"
-     x="647.40533"
-     y="367.81143"
-     rx="4"
-     ry="4" />
-  <rect
-     style="fill:#cb6115;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0.999999;stroke-opacity:1"
-     id="rect670"
-     width="15.937003"
-     height="27.000004"
-     x="650.65924"
-     y="370.25381"
-     rx="2"
-     ry="1.9999999" />
-  <rect
-     style="fill:#0059b8;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0.999999;stroke-opacity:1"
-     id="rect671"
-     width="42.5"
-     height="31.884703"
-     x="647.40533"
-     y="271.81155"
-     rx="4"
-     ry="4" />
-  <rect
-     style="fill:#6fceb1;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0.999999;stroke-opacity:1"
-     id="rect672"
-     width="15.937003"
-     height="27.000004"
-     x="650.65924"
-     y="274.25381"
-     rx="2"
-     ry="1.9999999" />
-  <rect
-     style="fill:#041e42;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0.999999;stroke-opacity:1"
-     id="rect673"
-     width="42.5"
-     height="31.884703"
-     x="647.40533"
-     y="175.69618"
-     rx="4"
-     ry="4" />
-  <rect
-     style="fill:#ffcd00;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0.999999;stroke-opacity:1"
-     id="rect674"
-     width="15.937003"
-     height="27.000004"
-     x="650.65924"
-     y="178.13857"
-     rx="2"
-     ry="1.9999999" />
-  <rect
-     style="fill:#0c2340;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0.999999;stroke-opacity:1"
-     id="rect675"
-     width="42.5"
-     height="31.884703"
-     x="647.40533"
-     y="463.81143"
-     rx="4"
-     ry="4" />
-  <rect
-     style="fill:#c8102e;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0.999999;stroke-opacity:1"
-     id="rect676"
-     width="15.937003"
-     height="27.000004"
-     x="650.65924"
-     y="466.25381"
-     rx="2"
-     ry="1.9999999" />
-  <rect
-     style="fill:#418fde;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0.999999;stroke-opacity:1"
-     id="rect677"
-     width="42.5"
-     height="31.884703"
-     x="646.90521"
-     y="127.81154"
-     rx="4"
-     ry="4" />
-  <rect
-     style="fill:#c8102e;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0.999999;stroke-opacity:1"
-     id="rect678"
-     width="15.937003"
-     height="27.000004"
-     x="650.15912"
-     y="130.25392"
-     rx="2"
-     ry="1.9999999" />
-  <rect
-     style="fill:#009fdf;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0.999999;stroke-opacity:1"
-     id="rect679"
-     width="42.5"
-     height="31.884703"
-     x="647.40533"
-     y="512.19617"
-     rx="4"
-     ry="4" />
-  <rect
-     style="fill:#8d9093;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0.999999;stroke-opacity:1"
-     id="rect680"
-     width="15.937003"
-     height="27.000004"
-     x="650.65924"
-     y="514.63855"
-     rx="2"
-     ry="1.9999999" />
-  <rect
-     style="fill:#ba0c2f;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0.999999;stroke-opacity:1"
-     id="rect681"
-     width="42.5"
-     height="31.884703"
-     x="647.71429"
-     y="33.753986"
-     rx="4"
-     ry="4" />
-  <rect
-     style="fill:#85714d;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0.999999;stroke-opacity:1"
-     id="rect682"
-     width="15.937003"
-     height="27.000004"
-     x="650.9682"
-     y="36.196247"
-     rx="2"
-     ry="1.9999999" />
-  <rect
-     style="fill:#ba0c2f;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0.999999;stroke-opacity:1"
-     id="rect683"
-     width="42.5"
-     height="31.884703"
-     x="647.40521"
-     y="79.811539"
-     rx="4"
-     ry="4" />
-  <rect
-     style="fill:#041e42;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0.999999;stroke-opacity:1"
-     id="rect684"
-     width="15.937003"
-     height="27.000004"
-     x="650.65912"
-     y="82.253922"
-     rx="2"
-     ry="1.9999999" />
-  <rect
-     style="fill:#009fdf;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0.999999;stroke-opacity:1"
-     id="rect346-6-6"
-     width="40"
-     height="30"
-     x="38.127712"
-     y="513.69617"
-     rx="4"
-     ry="4" />
-  <rect
-     style="fill:#8d9093;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0.999997;stroke-opacity:1"
-     id="rect347-2-1"
-     width="15.000003"
-     height="29.000004"
-     x="41.044704"
-     y="510.6962"
-     rx="1.9999999"
-     ry="2" />
-  <rect
-     style="fill:#0059b8;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0.999999;stroke-opacity:1"
-     id="rect433-2-5"
-     width="40"
-     height="30"
-     x="38.127712"
-     y="273.1962"
-     rx="4"
-     ry="4" />
-  <rect
-     style="fill:#6fceb1;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0.999997;stroke-opacity:1"
-     id="rect434-8-5"
-     width="15.000003"
-     height="29.000004"
-     x="41.190212"
-     y="270.1962"
-     rx="1.9999999"
-     ry="2" />
-  <rect
-     style="fill:#fbe122;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0.999999;stroke-opacity:1"
-     id="rect444-9-4"
-     width="40"
-     height="30"
-     x="38.127712"
-     y="993.69617"
-     rx="4"
-     ry="4" />
-  <rect
-     style="fill:#2c5234;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0.999997;stroke-opacity:1"
-     id="rect445-9-7"
-     width="15.000003"
-     height="29.000004"
-     x="41.190212"
-     y="990.69617"
-     rx="1.9999999"
-     ry="2" />
-  <rect
-     style="fill:#702f8a;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0.999995;stroke-opacity:1"
-     id="rect433-3-6"
-     width="40.000004"
-     height="29"
-     x="38.127712"
-     y="802.69617"
-     rx="4"
-     ry="4" />
-  <rect
-     style="fill:#ffc72c;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0.999997;stroke-opacity:1"
-     id="rect434-9-5"
-     width="29.000002"
-     height="15.000003"
-     x="798.69617"
-     y="-56.190212"
-     rx="2"
-     ry="2"
-     transform="rotate(90)" />
-  <rect
-     style="fill:#0c2340;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0.999999;stroke-opacity:1"
-     id="rect346-6-4-6"
-     width="40"
-     height="30"
-     x="38.127712"
-     y="465.6962"
-     rx="4"
-     ry="4" />
-  <rect
-     style="fill:#c8102e;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0.999997;stroke-opacity:1"
-     id="rect347-2-4-9"
-     width="15.000003"
-     height="29.000004"
-     x="41.044704"
-     y="462.6962"
-     rx="1.9999999"
-     ry="2" />
-  <rect
-     style="fill:#418fde;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0.999999;stroke-opacity:1"
-     id="rect10-3"
-     width="40"
-     height="30"
-     x="37.627712"
-     y="129.69618"
-     rx="4"
-     ry="4" />
-  <rect
-     style="fill:#c8102e;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0.999997;stroke-opacity:1"
-     id="rect11-7"
-     width="15.000003"
-     height="29.000004"
-     x="40.544704"
-     y="126.69618"
-     rx="1.9999999"
-     ry="2" />
-  <rect
-     style="fill:#201645;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0.999999;stroke-opacity:1"
-     id="rect61-4"
-     width="40"
-     height="30"
-     x="38.127712"
-     y="369.6962"
-     rx="4"
-     ry="4" />
-  <rect
-     style="fill:#cb6115;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0.999997;stroke-opacity:1"
-     id="rect62-5"
-     width="15.000003"
-     height="29.000004"
-     x="41.044704"
-     y="366.6962"
-     rx="1.9999999"
-     ry="2" />
-  <rect
-     style="fill:#ba0c2f;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0.999999;stroke-opacity:1"
-     id="rect65-2"
-     width="40"
-     height="30"
-     x="37.627712"
-     y="81.196243"
-     rx="4"
-     ry="4" />
-  <rect
-     style="fill:#041e42;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0.999997;stroke-opacity:1"
-     id="rect66-5"
-     width="15.000003"
-     height="29.000004"
-     x="40.544704"
-     y="78.196243"
-     rx="1.9999999"
-     ry="2" />
-  <rect
-     style="fill:#236192;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0.999995;stroke-opacity:1"
-     id="rect380-4"
-     width="40.000004"
-     height="29"
-     x="38.127712"
-     y="322.6962"
-     rx="4"
-     ry="4" />
-  <rect
-     style="fill:#78be21;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0.999997;stroke-opacity:1"
-     id="rect381-7"
-     width="29.000002"
-     height="15.000003"
-     x="318.6962"
-     y="-56.190212"
-     rx="2"
-     ry="2"
-     transform="rotate(90)" />
-  <rect
-     style="fill:#ba0c2f;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0.999999;stroke-opacity:1"
-     id="rect4-4"
-     width="40"
-     height="30"
-     x="37.471096"
-     y="33.196247"
-     rx="4"
-     ry="4" />
-  <rect
-     style="fill:#85714d;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0.999997;stroke-opacity:1"
-     id="rect5-4"
-     width="15.000003"
-     height="29.000004"
-     x="40.533596"
-     y="30.196245"
-     rx="1.9999999"
-     ry="2" />
-  <rect
-     style="fill:#dc4504;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0.999999;stroke-opacity:1"
-     id="rect6-3"
-     width="40"
-     height="30"
-     x="38.127712"
-     y="1041.6962"
-     rx="4"
-     ry="4" />
-  <rect
-     style="fill:#ffc72e;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0.999997;stroke-opacity:1"
-     id="rect7-0"
-     width="15.000003"
-     height="29.000004"
-     x="41.190212"
-     y="1038.6962"
-     rx="1.9999999"
-     ry="2" />
-  <rect
-     style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0.999999;stroke-opacity:1"
-     id="rect20-7"
-     width="40"
-     height="30"
-     x="38.127712"
-     y="849.19617"
-     rx="4"
-     ry="4" />
-  <rect
-     style="fill:#ffffff;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0.999997;stroke-opacity:1"
-     id="rect21-8"
-     width="15.000003"
-     height="29.000004"
-     x="41.190212"
-     y="846.19617"
-     rx="1.9999999"
-     ry="2" />
-  <rect
-     style="fill:#00a9e0;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0.999999;stroke-opacity:1"
-     id="rect22-6"
-     width="40"
-     height="30"
-     x="38.127712"
-     y="897.69617"
-     rx="4"
-     ry="4" />
-  <rect
-     style="fill:#006271;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0.999997;stroke-opacity:1"
-     id="rect23-8"
-     width="15.000003"
-     height="29.000004"
-     x="41.044704"
-     y="894.69617"
-     rx="1.9999999"
-     ry="2" />
-  <rect
-     style="fill:#00778b;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0.999999;stroke-opacity:1"
-     id="rect251"
-     width="40"
-     height="30"
-     x="38.127712"
-     y="944.24854"
-     rx="4"
-     ry="4" />
-  <rect
-     style="fill:#280071;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0.999997;stroke-opacity:1"
-     id="rect252"
-     width="15.000003"
-     height="29.000004"
-     x="41.044704"
-     y="941.24854"
-     rx="1.9999999"
-     ry="2" />
-  <rect
-     style="fill:#c4d600;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0.999999;stroke-opacity:1"
-     id="rect321"
-     width="40"
-     height="30"
-     x="38.127712"
-     y="1137.6963"
-     rx="4"
-     ry="4" />
-  <rect
-     style="fill:#0c2340;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0.999997;stroke-opacity:1"
-     id="rect322"
-     width="15.000003"
-     height="29.000004"
-     x="41.044704"
-     y="1134.6963"
-     rx="1.9999999"
-     ry="2" />
-  <rect
-     style="fill:#041e42;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0.999999;stroke-opacity:1"
-     id="rect331"
-     width="40"
-     height="30"
-     x="38.127712"
-     y="177.19618"
-     rx="4"
-     ry="4" />
-  <rect
-     style="fill:#ffcd00;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0.999997;stroke-opacity:1"
-     id="rect332"
-     width="15.000003"
-     height="29.000004"
-     x="41.044704"
-     y="174.19618"
-     rx="1.9999999"
-     ry="2" />
-  <rect
-     style="fill:#ffa400;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0.999999;stroke-opacity:1"
-     id="rect599"
-     width="40"
-     height="30"
-     x="38.127712"
-     y="559.69617"
-     rx="4"
-     ry="4" />
-  <rect
-     style="fill:#006271;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0.999997;stroke-opacity:1"
-     id="rect600"
-     width="15.000003"
-     height="29.000004"
-     x="41.044704"
-     y="556.62146"
-     rx="1.9999999"
-     ry="2" />
-  <rect
-     style="fill:#a6192e;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0.999999;stroke-opacity:1"
-     id="rect601"
-     width="40"
-     height="30"
-     x="38.127712"
-     y="607.69617"
-     rx="4"
-     ry="4" />
-  <rect
-     style="fill:#ffb81c;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0.999997;stroke-opacity:1"
-     id="rect602"
-     width="15.000003"
-     height="29.000004"
-     x="41.044704"
-     y="604.69617"
-     rx="1.9999999"
-     ry="2" />
-  <rect
-     style="fill:#753bbd;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0.999999;stroke-opacity:1"
-     id="rect605"
-     width="40"
-     height="30"
-     x="38.127712"
-     y="417.6962"
-     rx="4"
-     ry="4" />
-  <rect
-     style="fill:#ba0c2f;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0.999997;stroke-opacity:1"
-     id="rect606"
-     width="15.000003"
-     height="29.000004"
-     x="41.044704"
-     y="414.6962"
-     rx="1.9999999"
-     ry="2" />
-  <rect
-     style="fill:#c8102e;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0.999999;stroke-opacity:1"
-     id="rect609"
-     width="40"
-     height="30"
-     x="38.127712"
-     y="225.69618"
-     rx="4"
-     ry="4" />
-  <rect
-     style="fill:#010101;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0.999997;stroke-opacity:1"
-     id="rect610"
-     width="15.000003"
-     height="29.000004"
-     x="41.190212"
-     y="222.69618"
-     rx="1.9999999"
-     ry="2" />
-  <rect
-     style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0.999999;stroke-opacity:1"
-     id="rect623"
-     width="40"
-     height="30"
-     x="38.127712"
-     y="656.24817"
-     rx="4"
-     ry="4" />
-  <rect
-     style="fill:#ffffff;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0.999997;stroke-opacity:1"
-     id="rect624"
-     width="15.000003"
-     height="29.000004"
-     x="41.190212"
-     y="653.24817"
-     rx="1.9999999"
-     ry="2" />
-  <rect
-     style="fill:#fb9500;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0.999999;stroke-opacity:1"
-     id="rect639"
-     width="40"
-     height="30"
-     x="38.127712"
-     y="753.69617"
-     rx="4"
-     ry="4" />
-  <rect
-     style="fill:#a6192e;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0.999997;stroke-opacity:1"
-     id="rect640"
-     width="15.000003"
-     height="29.000004"
-     x="41.190212"
-     y="750.69617"
-     rx="1.9999999"
-     ry="2" />
-  <rect
-     style="fill:#ad96dc;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0.999999;stroke-opacity:1"
-     id="rect644"
-     width="40"
-     height="30"
-     x="38.127712"
-     y="1089.1962"
-     rx="4"
-     ry="4" />
-  <rect
-     style="fill:#b9975b;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0.999997;stroke-opacity:1"
-     id="rect645"
-     width="15.000003"
-     height="29.000004"
-     x="41.190212"
-     y="1086.1962"
-     rx="1.9999999"
-     ry="2" />
-  <rect
-     style="fill:#408fdd;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0.999999;stroke-opacity:1"
-     id="rect649"
-     width="40"
-     height="30"
-     x="38.127712"
-     y="704.19617"
-     rx="4"
-     ry="4" />
-  <rect
-     style="fill:#ffcc00;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0.999997;stroke-opacity:1"
-     id="rect650"
-     width="15.000003"
-     height="29.000004"
-     x="41.190212"
-     y="701.19617"
-     rx="1.9999999"
-     ry="2" />
+  <g
+     id="g12"
+     transform="translate(-183.43321,-667.52502)">
+    <path
+       style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-linejoin:round;stroke-miterlimit:0;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       d="m 242.10429,1242.3499 h 95"
+       id="path349-7-7" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:300;font-stretch:normal;font-size:32px;line-height:37.5005px;font-family:'Chivo Mono';-inkscape-font-specification:'Chivo Mono Light';text-align:center;letter-spacing:0px;word-spacing:-3px;writing-mode:lr-tb;direction:ltr;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:2;stroke-linejoin:round;stroke-miterlimit:0;stroke-dasharray:none;stroke-opacity:1"
+       x="749.0672"
+       y="1257.35"
+       id="text344">ROCKERS</text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:300;font-stretch:normal;font-size:32px;line-height:37.5005px;font-family:'Chivo Mono';-inkscape-font-specification:'Chivo Mono Light';text-align:center;letter-spacing:0px;word-spacing:-3px;writing-mode:lr-tb;direction:ltr;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:2;stroke-linejoin:round;stroke-miterlimit:0;stroke-dasharray:none;stroke-opacity:1"
+       x="420.88309"
+       y="1257.35"
+       id="text582">CLEVELAND</text>
+    <rect
+       style="fill:#009fdf;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0.999999;stroke-opacity:1"
+       id="rect679"
+       width="42.5"
+       height="31.884703"
+       x="831.8819"
+       y="1225.85"
+       rx="4"
+       ry="4" />
+    <rect
+       style="fill:#8d9093;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0.999999;stroke-opacity:1"
+       id="rect680"
+       width="15.937003"
+       height="27.000004"
+       x="835.1358"
+       y="1228.2924"
+       rx="2"
+       ry="1.9999999" />
+    <rect
+       style="fill:#009fdf;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0.999999;stroke-opacity:1"
+       id="rect346-6-6"
+       width="40"
+       height="30"
+       x="222.60429"
+       y="1227.35"
+       rx="4"
+       ry="4" />
+    <rect
+       style="fill:#8d9093;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0.999997;stroke-opacity:1"
+       id="rect347-2-1"
+       width="15.000003"
+       height="29.000004"
+       x="225.52129"
+       y="1224.35"
+       rx="1.9999999"
+       ry="2" />
+  </g>
+  <g
+     id="g7"
+     transform="translate(-183.43321,-714.27962)">
+    <path
+       style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-linejoin:round;stroke-miterlimit:0;stroke-dasharray:none;stroke-opacity:1"
+       d="m 242.10429,1001.3343 h 95"
+       id="path35-8" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:300;font-stretch:normal;font-size:32px;line-height:37.5005px;font-family:'Chivo Mono';-inkscape-font-specification:'Chivo Mono Light';text-align:center;letter-spacing:0px;word-spacing:-3px;writing-mode:lr-tb;direction:ltr;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:2;stroke-linejoin:round;stroke-miterlimit:0;stroke-dasharray:none;stroke-opacity:1"
+       x="748.3631"
+       y="1017.35"
+       id="text345">LIBERTY</text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:300;font-stretch:normal;font-size:32px;line-height:37.5005px;font-family:'Chivo Mono';-inkscape-font-specification:'Chivo Mono Light';text-align:center;letter-spacing:0px;word-spacing:-3px;writing-mode:lr-tb;direction:ltr;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:2;stroke-linejoin:round;stroke-miterlimit:0;stroke-dasharray:none;stroke-opacity:1"
+       x="408.63113"
+       y="1017.03"
+       id="text585">NEW YORK</text>
+    <rect
+       style="fill:#0059b8;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0.999999;stroke-opacity:1"
+       id="rect671"
+       width="42.5"
+       height="31.884703"
+       x="831.8819"
+       y="985.46527"
+       rx="4"
+       ry="4" />
+    <rect
+       style="fill:#6fceb1;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0.999999;stroke-opacity:1"
+       id="rect672"
+       width="15.937003"
+       height="27.000004"
+       x="835.1358"
+       y="987.90753"
+       rx="2"
+       ry="1.9999999" />
+    <rect
+       style="fill:#0059b8;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0.999999;stroke-opacity:1"
+       id="rect433-2-5"
+       width="40"
+       height="30"
+       x="222.60429"
+       y="986.84998"
+       rx="4"
+       ry="4" />
+    <rect
+       style="fill:#6fceb1;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0.999997;stroke-opacity:1"
+       id="rect434-8-5"
+       width="15.000003"
+       height="29.000004"
+       x="225.66679"
+       y="983.84998"
+       rx="1.9999999"
+       ry="2" />
+  </g>
+  <g
+     id="g22"
+     transform="translate(-183.43321,-665.40702)">
+    <path
+       style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-linejoin:round;stroke-miterlimit:0;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       d="m 242.10429,1722.3499 h 95"
+       id="path445-1-4" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:300;font-stretch:normal;font-size:32px;line-height:37.5005px;font-family:'Chivo Mono';-inkscape-font-specification:'Chivo Mono Light';text-align:center;letter-spacing:0px;word-spacing:-3px;writing-mode:lr-tb;direction:ltr;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:2;stroke-linejoin:round;stroke-miterlimit:0;stroke-dasharray:none;stroke-opacity:1"
+       x="769.00299"
+       y="1737.35"
+       id="text346">STORM</text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:300;font-stretch:normal;font-size:32px;line-height:37.5005px;font-family:'Chivo Mono';-inkscape-font-specification:'Chivo Mono Light';text-align:center;letter-spacing:0px;word-spacing:-3px;writing-mode:lr-tb;direction:ltr;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:2;stroke-linejoin:round;stroke-miterlimit:0;stroke-dasharray:none;stroke-opacity:1"
+       x="404.6199"
+       y="1737.35"
+       id="text576">SEATTLE</text>
+    <rect
+       style="fill:#fbe122;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0.999999;stroke-opacity:1"
+       id="rect657"
+       width="42.5"
+       height="31.884703"
+       x="831.8819"
+       y="1704.9653"
+       rx="4"
+       ry="4" />
+    <rect
+       style="fill:#2c5234;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0.999999;stroke-opacity:1"
+       id="rect658"
+       width="15.937003"
+       height="27.000004"
+       x="835.1358"
+       y="1707.4076"
+       rx="2"
+       ry="1.9999999" />
+    <rect
+       style="fill:#fbe122;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0.999999;stroke-opacity:1"
+       id="rect444-9-4"
+       width="40"
+       height="30"
+       x="222.60429"
+       y="1707.35"
+       rx="4"
+       ry="4" />
+    <rect
+       style="fill:#2c5234;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0.999997;stroke-opacity:1"
+       id="rect445-9-7"
+       width="15.000003"
+       height="29.000004"
+       x="225.66679"
+       y="1704.35"
+       rx="1.9999999"
+       ry="2" />
+  </g>
+  <g
+     id="g18"
+     transform="translate(-183.43321,-665.10086)">
+    <path
+       style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-linejoin:round;stroke-miterlimit:0;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       d="m 242.10429,1530.3211 h 95"
+       id="path435-3-5" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:300;font-stretch:normal;font-size:32px;line-height:37.5005px;font-family:'Chivo Mono';-inkscape-font-specification:'Chivo Mono Light';text-align:center;letter-spacing:0px;word-spacing:-3px;writing-mode:lr-tb;direction:ltr;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:2;stroke-linejoin:round;stroke-miterlimit:0;stroke-dasharray:none;stroke-opacity:1"
+       x="758.66693"
+       y="1545.35"
+       id="text347">SPARKS</text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:300;font-stretch:normal;font-size:32px;line-height:37.5005px;font-family:'Chivo Mono';-inkscape-font-specification:'Chivo Mono Light';text-align:center;letter-spacing:0px;word-spacing:-3px;writing-mode:lr-tb;direction:ltr;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:2;stroke-linejoin:round;stroke-miterlimit:0;stroke-dasharray:none;stroke-opacity:1"
+       x="439.43997"
+       y="1545.0299"
+       id="text580">LOS ANGELES</text>
+    <rect
+       style="fill:#702f8a;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0.999999;stroke-opacity:1"
+       id="rect665"
+       width="42.5"
+       height="31.884703"
+       x="831.8819"
+       y="1513.4652"
+       rx="4"
+       ry="4" />
+    <rect
+       style="fill:#ffc72c;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0.999999;stroke-opacity:1"
+       id="rect666"
+       width="15.937003"
+       height="27.000004"
+       x="835.1358"
+       y="1515.9076"
+       rx="2"
+       ry="1.9999999" />
+    <rect
+       style="fill:#702f8a;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0.999995;stroke-opacity:1"
+       id="rect433-3-6"
+       width="40.000004"
+       height="29"
+       x="222.60429"
+       y="1516.35"
+       rx="4"
+       ry="4" />
+    <rect
+       style="fill:#ffc72c;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0.999997;stroke-opacity:1"
+       id="rect434-9-5"
+       width="29.000002"
+       height="15.000003"
+       x="1512.35"
+       y="-240.66679"
+       rx="2"
+       ry="2"
+       transform="rotate(90)" />
+  </g>
+  <g
+     id="g11"
+     transform="translate(-183.43321,-666.91038)">
+    <path
+       style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-linejoin:round;stroke-miterlimit:0;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       d="m 242.10429,1194.35 h 95"
+       id="path349-7-0-0" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:300;font-stretch:normal;font-size:32px;line-height:37.5005px;font-family:'Chivo Mono';-inkscape-font-specification:'Chivo Mono Light';text-align:center;letter-spacing:0px;word-spacing:-3px;writing-mode:lr-tb;direction:ltr;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:2;stroke-linejoin:round;stroke-miterlimit:0;stroke-dasharray:none;stroke-opacity:1"
+       x="749.0672"
+       y="1209.35"
+       id="text348">MYSTICS</text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:300;font-stretch:normal;font-size:32px;line-height:37.5005px;font-family:'Chivo Mono';-inkscape-font-specification:'Chivo Mono Light';text-align:center;letter-spacing:0px;word-spacing:-3px;writing-mode:lr-tb;direction:ltr;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:2;stroke-linejoin:round;stroke-miterlimit:0;stroke-dasharray:none;stroke-opacity:1"
+       x="431.85916"
+       y="1209.35"
+       id="text583">WASHINGTON</text>
+    <rect
+       style="fill:#0c2340;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0.999999;stroke-opacity:1"
+       id="rect675"
+       width="42.5"
+       height="31.884703"
+       x="831.8819"
+       y="1177.4652"
+       rx="4"
+       ry="4" />
+    <rect
+       style="fill:#c8102e;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0.999999;stroke-opacity:1"
+       id="rect676"
+       width="15.937003"
+       height="27.000004"
+       x="835.1358"
+       y="1179.9076"
+       rx="2"
+       ry="1.9999999" />
+    <rect
+       style="fill:#0c2340;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0.999999;stroke-opacity:1"
+       id="rect346-6-4-6"
+       width="40"
+       height="30"
+       x="222.60429"
+       y="1179.35"
+       rx="4"
+       ry="4" />
+    <rect
+       style="fill:#c8102e;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0.999997;stroke-opacity:1"
+       id="rect347-2-4-9"
+       width="15.000003"
+       height="29.000004"
+       x="225.52129"
+       y="1176.35"
+       rx="1.9999999"
+       ry="2" />
+  </g>
+  <g
+     id="g4"
+     transform="translate(-183.43321,-713.3204)">
+    <path
+       style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-linejoin:round;stroke-miterlimit:0;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       d="m 242.10429,858.3033 h 95"
+       id="path14-3" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:300;font-stretch:normal;font-size:32px;line-height:37.5005px;font-family:'Chivo Mono';-inkscape-font-specification:'Chivo Mono Light';text-align:center;letter-spacing:0px;word-spacing:-3px;writing-mode:lr-tb;direction:ltr;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:2;stroke-linejoin:round;stroke-miterlimit:0;stroke-dasharray:none;stroke-opacity:1"
+       x="769.00311"
+       y="873.22198"
+       id="text349">DREAM</text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:300;font-stretch:normal;font-size:32px;line-height:37.5005px;font-family:'Chivo Mono';-inkscape-font-specification:'Chivo Mono Light';text-align:center;letter-spacing:0px;word-spacing:-3px;writing-mode:lr-tb;direction:ltr;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:2;stroke-linejoin:round;stroke-miterlimit:0;stroke-dasharray:none;stroke-opacity:1"
+       x="403.79202"
+       y="873.34998"
+       id="text587">ATLANTA</text>
+    <rect
+       style="fill:#418fde;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0.999999;stroke-opacity:1"
+       id="rect677"
+       width="42.5"
+       height="31.884703"
+       x="831.38184"
+       y="841.46527"
+       rx="4"
+       ry="4" />
+    <rect
+       style="fill:#c8102e;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0.999999;stroke-opacity:1"
+       id="rect678"
+       width="15.937003"
+       height="27.000004"
+       x="834.63568"
+       y="843.90765"
+       rx="2"
+       ry="1.9999999" />
+    <rect
+       style="fill:#418fde;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0.999999;stroke-opacity:1"
+       id="rect10-3"
+       width="40"
+       height="30"
+       x="222.10429"
+       y="843.34998"
+       rx="4"
+       ry="4" />
+    <rect
+       style="fill:#c8102e;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0.999997;stroke-opacity:1"
+       id="rect11-7"
+       width="15.000003"
+       height="29.000004"
+       x="225.02129"
+       y="840.34998"
+       rx="1.9999999"
+       ry="2" />
+  </g>
+  <g
+     id="g9"
+     transform="translate(-183.43321,-715.5089)">
+    <path
+       style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-linejoin:round;stroke-miterlimit:0;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       d="m 242.10429,1098.3499 h 95"
+       id="path65-6" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:300;font-stretch:normal;font-size:32px;line-height:37.5005px;font-family:'Chivo Mono';-inkscape-font-specification:'Chivo Mono Light';text-align:center;letter-spacing:0px;word-spacing:-3px;writing-mode:lr-tb;direction:ltr;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:2;stroke-linejoin:round;stroke-miterlimit:0;stroke-dasharray:none;stroke-opacity:1"
+       x="748.3631"
+       y="1113.35"
+       id="text350">MERCURY</text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:300;font-stretch:normal;font-size:32px;line-height:37.5005px;font-family:'Chivo Mono';-inkscape-font-specification:'Chivo Mono Light';text-align:center;letter-spacing:0px;word-spacing:-3px;writing-mode:lr-tb;direction:ltr;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:2;stroke-linejoin:round;stroke-miterlimit:0;stroke-dasharray:none;stroke-opacity:1"
+       x="400.53104"
+       y="1113.35"
+       id="text581">PHOENIX</text>
+    <rect
+       style="fill:#201645;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0.999999;stroke-opacity:1"
+       id="rect669"
+       width="42.5"
+       height="31.884703"
+       x="831.8819"
+       y="1081.4652"
+       rx="4"
+       ry="4" />
+    <rect
+       style="fill:#cb6115;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0.999999;stroke-opacity:1"
+       id="rect670"
+       width="15.937003"
+       height="27.000004"
+       x="835.1358"
+       y="1083.9076"
+       rx="2"
+       ry="1.9999999" />
+    <rect
+       style="fill:#201645;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0.999999;stroke-opacity:1"
+       id="rect61-4"
+       width="40"
+       height="30"
+       x="222.60429"
+       y="1083.35"
+       rx="4"
+       ry="4" />
+    <rect
+       style="fill:#cb6115;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0.999997;stroke-opacity:1"
+       id="rect62-5"
+       width="15.000003"
+       height="29.000004"
+       x="225.52129"
+       y="1080.35"
+       rx="1.9999999"
+       ry="2" />
+  </g>
+  <g
+     id="g3"
+     transform="translate(-183.43321,-712.70576)">
+    <path
+       style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-linejoin:round;stroke-miterlimit:0;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       d="m 242.10429,809.85003 h 95"
+       id="path69-1" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:300;font-stretch:normal;font-size:32px;line-height:37.5005px;font-family:'Chivo Mono';-inkscape-font-specification:'Chivo Mono Light';text-align:center;letter-spacing:0px;word-spacing:-3px;writing-mode:lr-tb;direction:ltr;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:2;stroke-linejoin:round;stroke-miterlimit:0;stroke-dasharray:none;stroke-opacity:1"
+       x="758.66705"
+       y="825.02997"
+       id="text351">COMETS</text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:300;font-stretch:normal;font-size:32px;line-height:37.5005px;font-family:'Chivo Mono';-inkscape-font-specification:'Chivo Mono Light';text-align:center;letter-spacing:0px;word-spacing:-3px;writing-mode:lr-tb;direction:ltr;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:2;stroke-linejoin:round;stroke-miterlimit:0;stroke-dasharray:none;stroke-opacity:1"
+       x="401.77615"
+       y="825.34998"
+       id="text588">HOUSTON</text>
+    <rect
+       style="fill:#ba0c2f;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0.999999;stroke-opacity:1"
+       id="rect683"
+       width="42.5"
+       height="31.884703"
+       x="831.88184"
+       y="793.46527"
+       rx="4"
+       ry="4" />
+    <rect
+       style="fill:#041e42;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0.999999;stroke-opacity:1"
+       id="rect684"
+       width="15.937003"
+       height="27.000004"
+       x="835.13568"
+       y="795.90765"
+       rx="2"
+       ry="1.9999999" />
+    <rect
+       style="fill:#ba0c2f;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0.999999;stroke-opacity:1"
+       id="rect65-2"
+       width="40"
+       height="30"
+       x="222.10429"
+       y="794.84998"
+       rx="4"
+       ry="4" />
+    <rect
+       style="fill:#041e42;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0.999997;stroke-opacity:1"
+       id="rect66-5"
+       width="15.000003"
+       height="29.000004"
+       x="225.02129"
+       y="791.84998"
+       rx="1.9999999"
+       ry="2" />
+  </g>
+  <g
+     id="g8"
+     transform="translate(-183.43321,-714.89426)">
+    <path
+       style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-linejoin:round;stroke-miterlimit:0;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       d="m 242.10429,1050.4144 h 95"
+       id="path384-0" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:300;font-stretch:normal;font-size:32px;line-height:37.5005px;font-family:'Chivo Mono';-inkscape-font-specification:'Chivo Mono Light';text-align:center;letter-spacing:0px;word-spacing:-3px;writing-mode:lr-tb;direction:ltr;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:2;stroke-linejoin:round;stroke-miterlimit:0;stroke-dasharray:none;stroke-opacity:1"
+       x="776.8111"
+       y="1065.35"
+       id="text352">LYNX</text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:300;font-stretch:normal;font-size:32px;line-height:37.5005px;font-family:'Chivo Mono';-inkscape-font-specification:'Chivo Mono Light';text-align:center;letter-spacing:0px;word-spacing:-3px;writing-mode:lr-tb;direction:ltr;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:2;stroke-linejoin:round;stroke-miterlimit:0;stroke-dasharray:none;stroke-opacity:1"
+       x="420.11502"
+       y="1065.0299"
+       id="text584">MINNESOTA</text>
+    <rect
+       style="fill:#236192;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0.999999;stroke-opacity:1"
+       id="rect667"
+       width="42.5"
+       height="31.884703"
+       x="831.8819"
+       y="1032.9652"
+       rx="4"
+       ry="4" />
+    <rect
+       style="fill:#78be21;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0.999999;stroke-opacity:1"
+       id="rect668"
+       width="15.937003"
+       height="27.000004"
+       x="835.1358"
+       y="1035.4076"
+       rx="2"
+       ry="1.9999999" />
+    <rect
+       style="fill:#236192;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0.999995;stroke-opacity:1"
+       id="rect380-4"
+       width="40.000004"
+       height="29"
+       x="222.60429"
+       y="1036.35"
+       rx="4"
+       ry="4" />
+    <rect
+       style="fill:#78be21;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0.999997;stroke-opacity:1"
+       id="rect381-7"
+       width="29.000002"
+       height="15.000003"
+       x="1032.35"
+       y="-240.66679"
+       rx="2"
+       ry="2"
+       transform="rotate(90)" />
+  </g>
+  <g
+     id="g2"
+     transform="translate(-183.43321,-714.53356)">
+    <path
+       style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-linejoin:round;stroke-miterlimit:0;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       d="m 242.10429,761.32107 h 95"
+       id="path4-3" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:300;font-stretch:normal;font-size:32px;line-height:37.5005px;font-family:'Chivo Mono';-inkscape-font-specification:'Chivo Mono Light';text-align:center;letter-spacing:0px;word-spacing:-3px;writing-mode:lr-tb;direction:ltr;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:2;stroke-linejoin:round;stroke-miterlimit:0;stroke-dasharray:none;stroke-opacity:1"
+       x="777.867"
+       y="777.34998"
+       id="text353">ACES</text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:300;font-stretch:normal;font-size:32px;line-height:37.5005px;font-family:'Chivo Mono';-inkscape-font-specification:'Chivo Mono Light';text-align:center;letter-spacing:0px;word-spacing:-3px;writing-mode:lr-tb;direction:ltr;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:2;stroke-linejoin:round;stroke-miterlimit:0;stroke-dasharray:none;stroke-opacity:1"
+       x="418.51614"
+       y="777.02997"
+       id="text589">LAS VEGAS</text>
+    <rect
+       style="fill:#ba0c2f;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0.999999;stroke-opacity:1"
+       id="rect681"
+       width="42.5"
+       height="31.884703"
+       x="832.19092"
+       y="747.40771"
+       rx="4"
+       ry="4" />
+    <rect
+       style="fill:#85714d;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0.999999;stroke-opacity:1"
+       id="rect682"
+       width="15.937003"
+       height="27.000004"
+       x="835.44482"
+       y="749.84998"
+       rx="2"
+       ry="1.9999999" />
+    <rect
+       style="fill:#ba0c2f;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0.999999;stroke-opacity:1"
+       id="rect4-4"
+       width="40"
+       height="30"
+       x="221.94768"
+       y="746.84998"
+       rx="4"
+       ry="4" />
+    <rect
+       style="fill:#85714d;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0.999997;stroke-opacity:1"
+       id="rect5-4"
+       width="15.000003"
+       height="29.000004"
+       x="225.01018"
+       y="743.84998"
+       rx="1.9999999"
+       ry="2" />
+  </g>
+  <g
+     id="g23"
+     transform="translate(-183.43321,-666.02166)">
+    <path
+       style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-linejoin:round;stroke-miterlimit:0;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       d="m 242.10429,1769.8212 h 95"
+       id="path12-2" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:300;font-stretch:normal;font-size:32px;line-height:37.5005px;font-family:'Chivo Mono';-inkscape-font-specification:'Chivo Mono Light';text-align:center;letter-spacing:0px;word-spacing:-3px;writing-mode:lr-tb;direction:ltr;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:2;stroke-linejoin:round;stroke-miterlimit:0;stroke-dasharray:none;stroke-opacity:1"
+       x="788.61896"
+       y="1785.35"
+       id="text354">SUN</text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:300;font-stretch:normal;font-size:32px;line-height:37.5005px;font-family:'Chivo Mono';-inkscape-font-specification:'Chivo Mono Light';text-align:center;letter-spacing:0px;word-spacing:-3px;writing-mode:lr-tb;direction:ltr;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:2;stroke-linejoin:round;stroke-miterlimit:0;stroke-dasharray:none;stroke-opacity:1"
+       x="443.05179"
+       y="1785.35"
+       id="text575">CONNECTICUT</text>
+    <rect
+       style="fill:#dc4504;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0.999999;stroke-opacity:1"
+       id="rect655"
+       width="42.5"
+       height="31.884703"
+       x="831.8819"
+       y="1753.4652"
+       rx="4"
+       ry="4" />
+    <rect
+       style="fill:#ffc72e;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0.999999;stroke-opacity:1"
+       id="rect656"
+       width="15.937003"
+       height="27.000004"
+       x="835.1358"
+       y="1755.9076"
+       rx="2"
+       ry="1.9999999" />
+    <rect
+       style="fill:#dc4504;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0.999999;stroke-opacity:1"
+       id="rect6-3"
+       width="40"
+       height="30"
+       x="222.60429"
+       y="1755.35"
+       rx="4"
+       ry="4" />
+    <rect
+       style="fill:#ffc72e;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0.999997;stroke-opacity:1"
+       id="rect7-0"
+       width="15.000003"
+       height="29.000004"
+       x="225.66679"
+       y="1752.35"
+       rx="1.9999999"
+       ry="2" />
+  </g>
+  <g
+     id="g19"
+     transform="translate(-183.43321,-665.2155)">
+    <path
+       style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-linejoin:round;stroke-miterlimit:0;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       d="m 242.10429,1577.8501 h 95"
+       id="path1-6" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:300;font-stretch:normal;font-size:32px;line-height:37.5005px;font-family:'Chivo Mono';-inkscape-font-specification:'Chivo Mono Light';text-align:center;letter-spacing:0px;word-spacing:-3px;writing-mode:lr-tb;direction:ltr;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:2;stroke-linejoin:round;stroke-miterlimit:0;stroke-dasharray:none;stroke-opacity:1"
+       x="768.26691"
+       y="1593.35"
+       id="text355">STARS</text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:300;font-stretch:normal;font-size:32px;line-height:37.5005px;font-family:'Chivo Mono';-inkscape-font-specification:'Chivo Mono Light';text-align:center;letter-spacing:0px;word-spacing:-3px;writing-mode:lr-tb;direction:ltr;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:2;stroke-linejoin:round;stroke-miterlimit:0;stroke-dasharray:none;stroke-opacity:1"
+       x="441.51981"
+       y="1593.0299"
+       id="text579">SAN ANTONIO</text>
+    <rect
+       style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0.999999;stroke-opacity:1"
+       id="rect663"
+       width="42.5"
+       height="31.884703"
+       x="831.8819"
+       y="1561.4653"
+       rx="4"
+       ry="4" />
+    <rect
+       style="fill:#ffffff;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0.999999;stroke-opacity:1"
+       id="rect664"
+       width="15.937003"
+       height="27.000004"
+       x="835.1358"
+       y="1563.9077"
+       rx="2"
+       ry="1.9999999" />
+    <rect
+       style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0.999999;stroke-opacity:1"
+       id="rect20-7"
+       width="40"
+       height="30"
+       x="222.60429"
+       y="1562.85"
+       rx="4"
+       ry="4" />
+    <rect
+       style="fill:#ffffff;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0.999997;stroke-opacity:1"
+       id="rect21-8"
+       width="15.000003"
+       height="29.000004"
+       x="225.66679"
+       y="1559.85"
+       rx="1.9999999"
+       ry="2" />
+  </g>
+  <g
+     id="g20"
+     transform="translate(-183.43321,-665.83008)">
+    <path
+       style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-linejoin:round;stroke-miterlimit:0;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       d="m 242.10429,1626.2567 h 95"
+       id="path26-0" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:300;font-stretch:normal;font-size:32px;line-height:37.5005px;font-family:'Chivo Mono';-inkscape-font-specification:'Chivo Mono Light';text-align:center;letter-spacing:0px;word-spacing:-3px;writing-mode:lr-tb;direction:ltr;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:2;stroke-linejoin:round;stroke-miterlimit:0;stroke-dasharray:none;stroke-opacity:1"
+       x="758.60309"
+       y="1641.35"
+       id="text356">STARZZ</text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:300;font-stretch:normal;font-size:32px;line-height:37.5005px;font-family:'Chivo Mono';-inkscape-font-specification:'Chivo Mono Light';text-align:center;letter-spacing:0px;word-spacing:-3px;writing-mode:lr-tb;direction:ltr;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:2;stroke-linejoin:round;stroke-miterlimit:0;stroke-dasharray:none;stroke-opacity:1"
+       x="374.98807"
+       y="1641.03"
+       id="text578">UTAH</text>
+    <rect
+       style="fill:#00a9e0;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0.999999;stroke-opacity:1"
+       id="rect661"
+       width="42.5"
+       height="31.884703"
+       x="831.8819"
+       y="1609.85"
+       rx="4"
+       ry="4" />
+    <rect
+       style="fill:#006271;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0.999999;stroke-opacity:1"
+       id="rect662"
+       width="15.937003"
+       height="27.000004"
+       x="835.1358"
+       y="1612.2924"
+       rx="2"
+       ry="1.9999999" />
+    <rect
+       style="fill:#00a9e0;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0.999999;stroke-opacity:1"
+       id="rect22-6"
+       width="40"
+       height="30"
+       x="222.60429"
+       y="1611.35"
+       rx="4"
+       ry="4" />
+    <rect
+       style="fill:#006271;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0.999997;stroke-opacity:1"
+       id="rect23-8"
+       width="15.000003"
+       height="29.000004"
+       x="225.52129"
+       y="1608.35"
+       rx="1.9999999"
+       ry="2" />
+  </g>
+  <g
+     id="g21"
+     transform="translate(-183.43321,-664.61239)">
+    <path
+       style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-linejoin:round;stroke-miterlimit:0;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       d="m 242.10429,1672.9024 h 95"
+       id="path255" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:300;font-stretch:normal;font-size:32px;line-height:37.5005px;font-family:'Chivo Mono';-inkscape-font-specification:'Chivo Mono Light';text-align:center;letter-spacing:0px;word-spacing:-3px;writing-mode:lr-tb;direction:ltr;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:2;stroke-linejoin:round;stroke-miterlimit:0;stroke-dasharray:none;stroke-opacity:1"
+       x="768.26703"
+       y="1689.0299"
+       id="text343">STING</text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:300;font-stretch:normal;font-size:32px;line-height:37.5005px;font-family:'Chivo Mono';-inkscape-font-specification:'Chivo Mono Light';text-align:center;letter-spacing:0px;word-spacing:-3px;writing-mode:lr-tb;direction:ltr;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:2;stroke-linejoin:round;stroke-miterlimit:0;stroke-dasharray:none;stroke-opacity:1"
+       x="423.85184"
+       y="1689.35"
+       id="text577">CHARLOTTE</text>
+    <rect
+       style="fill:#00778b;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0.999999;stroke-opacity:1"
+       id="rect659"
+       width="42.5"
+       height="31.884703"
+       x="831.8819"
+       y="1656.9653"
+       rx="4"
+       ry="4" />
+    <rect
+       style="fill:#280071;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0.999999;stroke-opacity:1"
+       id="rect660"
+       width="15.937003"
+       height="27.000004"
+       x="835.1358"
+       y="1659.4077"
+       rx="2"
+       ry="1.9999999" />
+    <rect
+       style="fill:#00778b;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0.999999;stroke-opacity:1"
+       id="rect251"
+       width="40"
+       height="30"
+       x="222.60429"
+       y="1657.9023"
+       rx="4"
+       ry="4" />
+    <rect
+       style="fill:#280071;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0.999997;stroke-opacity:1"
+       id="rect252"
+       width="15.000003"
+       height="29.000004"
+       x="225.52129"
+       y="1654.9023"
+       rx="1.9999999"
+       ry="2" />
+  </g>
+  <g
+     id="g25"
+     transform="translate(-183.43321,-666.86624)">
+    <path
+       style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-linejoin:round;stroke-miterlimit:0;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       d="m 242.10429,1866.35 h 95"
+       id="path325" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:300;font-stretch:normal;font-size:32px;line-height:37.5005px;font-family:'Chivo Mono';-inkscape-font-specification:'Chivo Mono Light';text-align:center;letter-spacing:0px;word-spacing:-3px;writing-mode:lr-tb;direction:ltr;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:2;stroke-linejoin:round;stroke-miterlimit:0;stroke-dasharray:none;stroke-opacity:1"
+       x="768.26703"
+       y="1881.35"
+       id="text342">WINGS</text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:300;font-stretch:normal;font-size:32px;line-height:37.5005px;font-family:'Chivo Mono';-inkscape-font-specification:'Chivo Mono Light';text-align:center;letter-spacing:0px;word-spacing:-3px;writing-mode:lr-tb;direction:ltr;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:2;stroke-linejoin:round;stroke-miterlimit:0;stroke-dasharray:none;stroke-opacity:1"
+       x="393.89993"
+       y="1881.35"
+       id="text574">DALLAS</text>
+    <rect
+       style="fill:#c4d600;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0.999999;stroke-opacity:1"
+       id="rect653"
+       width="42.5"
+       height="31.884703"
+       x="831.8819"
+       y="1849.4653"
+       rx="4"
+       ry="4" />
+    <rect
+       style="fill:#0c2340;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0.999999;stroke-opacity:1"
+       id="rect654"
+       width="15.937003"
+       height="27.000004"
+       x="835.1358"
+       y="1851.9076"
+       rx="2"
+       ry="1.9999999" />
+    <rect
+       style="fill:#c4d600;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0.999999;stroke-opacity:1"
+       id="rect321"
+       width="40"
+       height="30"
+       x="222.60429"
+       y="1851.35"
+       rx="4"
+       ry="4" />
+    <rect
+       style="fill:#0c2340;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0.999997;stroke-opacity:1"
+       id="rect322"
+       width="15.000003"
+       height="29.000004"
+       x="225.52129"
+       y="1848.35"
+       rx="1.9999999"
+       ry="2" />
+  </g>
+  <g
+     id="g5"
+     transform="translate(-183.43321,-713.43504)">
+    <path
+       style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-linejoin:round;stroke-miterlimit:0;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       d="m 242.10429,905.80352 h 95"
+       id="path335" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:300;font-stretch:normal;font-size:32px;line-height:37.5005px;font-family:'Chivo Mono';-inkscape-font-specification:'Chivo Mono Light';text-align:center;letter-spacing:0px;word-spacing:-3px;writing-mode:lr-tb;direction:ltr;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:2;stroke-linejoin:round;stroke-miterlimit:0;stroke-dasharray:none;stroke-opacity:1"
+       x="766.98712"
+       y="921.34998"
+       id="text357">FEVER</text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:300;font-stretch:normal;font-size:32px;line-height:37.5005px;font-family:'Chivo Mono';-inkscape-font-specification:'Chivo Mono Light';text-align:center;letter-spacing:0px;word-spacing:-3px;writing-mode:lr-tb;direction:ltr;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:2;stroke-linejoin:round;stroke-miterlimit:0;stroke-dasharray:none;stroke-opacity:1"
+       x="400.59207"
+       y="921.34998"
+       id="text586">INDIANA</text>
+    <rect
+       style="fill:#041e42;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0.999999;stroke-opacity:1"
+       id="rect673"
+       width="42.5"
+       height="31.884703"
+       x="831.8819"
+       y="889.34998"
+       rx="4"
+       ry="4" />
+    <rect
+       style="fill:#ffcd00;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0.999999;stroke-opacity:1"
+       id="rect674"
+       width="15.937003"
+       height="27.000004"
+       x="835.1358"
+       y="891.79236"
+       rx="2"
+       ry="1.9999999" />
+    <rect
+       style="fill:#041e42;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0.999999;stroke-opacity:1"
+       id="rect331"
+       width="40"
+       height="30"
+       x="222.60429"
+       y="890.84998"
+       rx="4"
+       ry="4" />
+    <rect
+       style="fill:#ffcd00;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0.999997;stroke-opacity:1"
+       id="rect332"
+       width="15.000003"
+       height="29.000004"
+       x="225.52129"
+       y="887.84998"
+       rx="1.9999999"
+       ry="2" />
+  </g>
+  <g
+     id="g13"
+     transform="translate(-183.43321,-665.68025)">
+    <path
+       style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-linejoin:round;stroke-miterlimit:0;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       d="m 242.10429,1288.3502 h 95"
+       id="path599" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:300;font-stretch:normal;font-size:32px;line-height:37.5005px;font-family:'Chivo Mono';-inkscape-font-specification:'Chivo Mono Light';text-align:center;letter-spacing:0px;word-spacing:-3px;writing-mode:lr-tb;direction:ltr;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:2;stroke-linejoin:round;stroke-miterlimit:0;stroke-dasharray:none;stroke-opacity:1"
+       x="767.40314"
+       y="1305.35"
+       id="text618">SHOCK</text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:300;font-stretch:normal;font-size:32px;line-height:37.5005px;font-family:'Chivo Mono';-inkscape-font-specification:'Chivo Mono Light';text-align:center;letter-spacing:0px;word-spacing:-3px;writing-mode:lr-tb;direction:ltr;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:2;stroke-linejoin:round;stroke-miterlimit:0;stroke-dasharray:none;stroke-opacity:1"
+       x="382.6431"
+       y="1305.0299"
+       id="text619">TULSA</text>
+    <rect
+       style="fill:#ffa400;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0.999999;stroke-opacity:1"
+       id="rect631"
+       width="42.5"
+       height="31.884703"
+       x="831.8819"
+       y="1273.4652"
+       rx="4"
+       ry="4" />
+    <rect
+       style="fill:#006271;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0.999999;stroke-opacity:1"
+       id="rect632"
+       width="15.937003"
+       height="27.000004"
+       x="835.1358"
+       y="1275.9076"
+       rx="2"
+       ry="1.9999999" />
+    <rect
+       style="fill:#ffa400;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0.999999;stroke-opacity:1"
+       id="rect599"
+       width="40"
+       height="30"
+       x="222.60429"
+       y="1273.35"
+       rx="4"
+       ry="4" />
+    <rect
+       style="fill:#006271;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0.999997;stroke-opacity:1"
+       id="rect600"
+       width="15.000003"
+       height="29.000004"
+       x="225.52129"
+       y="1270.2753"
+       rx="1.9999999"
+       ry="2" />
+  </g>
+  <g
+     id="g14"
+     transform="translate(-183.43321,-664.29495)">
+    <path
+       style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-linejoin:round;stroke-miterlimit:0;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       d="m 242.10429,1337.2978 h 95"
+       id="path605" />
+    <rect
+       style="fill:#a6192e;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0.999999;stroke-opacity:1"
+       id="rect633"
+       width="42.5"
+       height="31.884703"
+       x="831.8819"
+       y="1320.9652"
+       rx="4"
+       ry="4" />
+    <rect
+       style="fill:#ffb81c;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0.999999;stroke-opacity:1"
+       id="rect634"
+       width="15.937003"
+       height="27.000004"
+       x="835.1358"
+       y="1323.4076"
+       rx="2"
+       ry="1.9999999" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:300;font-stretch:normal;font-size:32px;line-height:37.5005px;font-family:'Chivo Mono';-inkscape-font-specification:'Chivo Mono Light';text-align:center;letter-spacing:0px;word-spacing:-3px;writing-mode:lr-tb;direction:ltr;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:2;stroke-linejoin:round;stroke-miterlimit:0;stroke-dasharray:none;stroke-opacity:1"
+       x="767.40314"
+       y="1353.35"
+       id="text634">SHOCK</text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:300;font-stretch:normal;font-size:32px;line-height:37.5005px;font-family:'Chivo Mono';-inkscape-font-specification:'Chivo Mono Light';text-align:center;letter-spacing:0px;word-spacing:-3px;writing-mode:lr-tb;direction:ltr;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:2;stroke-linejoin:round;stroke-miterlimit:0;stroke-dasharray:none;stroke-opacity:1"
+       x="400.53104"
+       y="1353.35"
+       id="text635">DETROIT</text>
+    <rect
+       style="fill:#a6192e;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0.999999;stroke-opacity:1"
+       id="rect601"
+       width="40"
+       height="30"
+       x="222.60429"
+       y="1321.35"
+       rx="4"
+       ry="4" />
+    <rect
+       style="fill:#ffb81c;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0.999997;stroke-opacity:1"
+       id="rect602"
+       width="15.000003"
+       height="29.000004"
+       x="225.52129"
+       y="1318.35"
+       rx="1.9999999"
+       ry="2" />
+  </g>
+  <g
+     id="g10"
+     transform="translate(-183.43321,-666.29574)">
+    <path
+       style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-linejoin:round;stroke-miterlimit:0;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       d="m 242.10429,1146.3502 h 95"
+       id="path609" />
+    <rect
+       style="fill:#753bbd;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0.999999;stroke-opacity:1"
+       id="rect635"
+       width="42.5"
+       height="31.884703"
+       x="831.8819"
+       y="1128.9652"
+       rx="4"
+       ry="4" />
+    <rect
+       style="fill:#ba0c2f;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0.999999;stroke-opacity:1"
+       id="rect636"
+       width="15.937003"
+       height="27.000004"
+       x="835.1358"
+       y="1131.4076"
+       rx="2"
+       ry="1.9999999" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:300;font-stretch:normal;font-size:32px;line-height:37.5005px;font-family:'Chivo Mono';-inkscape-font-specification:'Chivo Mono Light';text-align:center;letter-spacing:0px;word-spacing:-3px;writing-mode:lr-tb;direction:ltr;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:2;stroke-linejoin:round;stroke-miterlimit:0;stroke-dasharray:none;stroke-opacity:1"
+       x="739.4671"
+       y="1161.35"
+       id="text636">MONARCHS</text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:300;font-stretch:normal;font-size:32px;line-height:37.5005px;font-family:'Chivo Mono';-inkscape-font-specification:'Chivo Mono Light';text-align:center;letter-spacing:0px;word-spacing:-3px;writing-mode:lr-tb;direction:ltr;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:2;stroke-linejoin:round;stroke-miterlimit:0;stroke-dasharray:none;stroke-opacity:1"
+       x="430.45096"
+       y="1161.0299"
+       id="text637">SACRAMENTO</text>
+    <rect
+       style="fill:#753bbd;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0.999999;stroke-opacity:1"
+       id="rect605"
+       width="40"
+       height="30"
+       x="222.60429"
+       y="1131.35"
+       rx="4"
+       ry="4" />
+    <rect
+       style="fill:#ba0c2f;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0.999997;stroke-opacity:1"
+       id="rect606"
+       width="15.000003"
+       height="29.000004"
+       x="225.52129"
+       y="1128.35"
+       rx="1.9999999"
+       ry="2" />
+  </g>
+  <g
+     id="g6"
+     transform="translate(-183.43321,-714.16498)">
+    <path
+       style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-linejoin:round;stroke-miterlimit:0;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       d="m 242.10429,954.34997 h 95"
+       id="path610" />
+    <rect
+       style="fill:#c8102e;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0.999999;stroke-opacity:1"
+       id="rect637"
+       width="42.5"
+       height="31.884703"
+       x="831.8819"
+       y="937.46527"
+       rx="4"
+       ry="4" />
+    <rect
+       style="fill:#010101;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0.999999;stroke-opacity:1"
+       id="rect638"
+       width="15.937003"
+       height="27.000004"
+       x="835.1358"
+       y="939.90765"
+       rx="2"
+       ry="1.9999999" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:300;font-stretch:normal;font-size:32px;line-height:37.5005px;font-family:'Chivo Mono';-inkscape-font-specification:'Chivo Mono Light';text-align:center;letter-spacing:0px;word-spacing:-3px;writing-mode:lr-tb;direction:ltr;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:2;stroke-linejoin:round;stroke-miterlimit:0;stroke-dasharray:none;stroke-opacity:1"
+       x="778.44305"
+       y="969.34998"
+       id="text638">FIRE</text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:300;font-stretch:normal;font-size:32px;line-height:37.5005px;font-family:'Chivo Mono';-inkscape-font-specification:'Chivo Mono Light';text-align:center;letter-spacing:0px;word-spacing:-3px;writing-mode:lr-tb;direction:ltr;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:2;stroke-linejoin:round;stroke-miterlimit:0;stroke-dasharray:none;stroke-opacity:1"
+       x="411.37601"
+       y="969.02997"
+       id="text639">PORTLAND</text>
+    <rect
+       style="fill:#c8102e;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0.999999;stroke-opacity:1"
+       id="rect609"
+       width="40"
+       height="30"
+       x="222.60429"
+       y="939.34998"
+       rx="4"
+       ry="4" />
+    <rect
+       style="fill:#010101;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0.999997;stroke-opacity:1"
+       id="rect610"
+       width="15.000003"
+       height="29.000004"
+       x="225.66679"
+       y="936.34998"
+       rx="1.9999999"
+       ry="2" />
+  </g>
+  <g
+     id="g15"
+     transform="translate(-183.43321,-663.64158)">
+    <path
+       style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-linejoin:round;stroke-miterlimit:0;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       d="m 242.10429,1384.9025 h 95.0778"
+       id="path620" />
+    <rect
+       style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0.999999;stroke-opacity:1"
+       id="rect625"
+       width="42.5"
+       height="31.884703"
+       x="830.57269"
+       y="1368.9652"
+       rx="4"
+       ry="4" />
+    <rect
+       style="fill:#ffffff;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0.999999;stroke-opacity:1"
+       id="rect626"
+       width="15.937003"
+       height="27.000004"
+       x="833.8266"
+       y="1371.4077"
+       rx="2"
+       ry="1.9999999" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:300;font-stretch:normal;font-size:32px;line-height:37.5005px;font-family:'Chivo Mono';-inkscape-font-specification:'Chivo Mono Light';text-align:center;letter-spacing:0px;word-spacing:-3px;writing-mode:lr-tb;direction:ltr;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:2;stroke-linejoin:round;stroke-miterlimit:0;stroke-dasharray:none;stroke-opacity:1"
+       x="704.78058"
+       y="1401.0299"
+       id="text626">SILVER STARS</text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:300;font-stretch:normal;font-size:32px;line-height:37.5005px;font-family:'Chivo Mono';-inkscape-font-specification:'Chivo Mono Light';text-align:center;letter-spacing:0px;word-spacing:-3px;writing-mode:lr-tb;direction:ltr;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:2;stroke-linejoin:round;stroke-miterlimit:0;stroke-dasharray:none;stroke-opacity:1"
+       x="439.79593"
+       y="1401.0299"
+       id="text627">SAN ANTONIO</text>
+    <rect
+       style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0.999999;stroke-opacity:1"
+       id="rect623"
+       width="40"
+       height="30"
+       x="222.60429"
+       y="1369.902"
+       rx="4"
+       ry="4" />
+    <rect
+       style="fill:#ffffff;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0.999997;stroke-opacity:1"
+       id="rect624"
+       width="15.000003"
+       height="29.000004"
+       x="225.66679"
+       y="1366.902"
+       rx="1.9999999"
+       ry="2" />
+  </g>
+  <g
+     id="g17"
+     transform="translate(-183.43321,-664.48622)">
+    <path
+       style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-linejoin:round;stroke-miterlimit:0;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       d="m 242.10429,1482.35 h 95"
+       id="path640" />
+    <rect
+       style="fill:#fb9500;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0.999999;stroke-opacity:1"
+       id="rect641"
+       width="42.5"
+       height="31.884703"
+       x="831.8819"
+       y="1465.0875"
+       rx="4"
+       ry="4" />
+    <rect
+       style="fill:#a6192e;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0.999999;stroke-opacity:1"
+       id="rect642"
+       width="15.937003"
+       height="27.000004"
+       x="835.1358"
+       y="1467.5299"
+       rx="2"
+       ry="1.9999999" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:300;font-stretch:normal;font-size:32px;line-height:37.5005px;font-family:'Chivo Mono';-inkscape-font-specification:'Chivo Mono Light';text-align:center;letter-spacing:0px;word-spacing:-3px;writing-mode:lr-tb;direction:ltr;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:2;stroke-linejoin:round;stroke-miterlimit:0;stroke-dasharray:none;stroke-opacity:1"
+       x="788.26703"
+       y="1496.9723"
+       id="text642">SOL</text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:300;font-stretch:normal;font-size:32px;line-height:37.5005px;font-family:'Chivo Mono';-inkscape-font-specification:'Chivo Mono Light';text-align:center;letter-spacing:0px;word-spacing:-3px;writing-mode:lr-tb;direction:ltr;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:2;stroke-linejoin:round;stroke-miterlimit:0;stroke-dasharray:none;stroke-opacity:1"
+       x="384.68411"
+       y="1496.9723"
+       id="text643">MIAMI</text>
+    <rect
+       style="fill:#fb9500;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0.999999;stroke-opacity:1"
+       id="rect639"
+       width="40"
+       height="30"
+       x="222.60429"
+       y="1467.35"
+       rx="4"
+       ry="4" />
+    <rect
+       style="fill:#a6192e;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0.999997;stroke-opacity:1"
+       id="rect640"
+       width="15.000003"
+       height="29.000004"
+       x="225.66679"
+       y="1464.35"
+       rx="1.9999999"
+       ry="2" />
+  </g>
+  <g
+     id="g24"
+     transform="translate(-183.43321,-666.1363)">
+    <path
+       style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-linejoin:round;stroke-miterlimit:0;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       d="m 242.10429,1817.8503 h 95"
+       id="path643" />
+    <rect
+       style="fill:#ad96dc;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0.999999;stroke-opacity:1"
+       id="rect646"
+       width="42.5"
+       height="31.884703"
+       x="831.8819"
+       y="1801.35"
+       rx="4"
+       ry="4" />
+    <rect
+       style="fill:#b9975b;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0.999999;stroke-opacity:1"
+       id="rect647"
+       width="15.937003"
+       height="27.000004"
+       x="835.1358"
+       y="1803.7924"
+       rx="2"
+       ry="1.9999999" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:300;font-stretch:normal;font-size:32px;line-height:37.5005px;font-family:'Chivo Mono';-inkscape-font-specification:'Chivo Mono Light';text-align:center;letter-spacing:0px;word-spacing:-3px;writing-mode:lr-tb;direction:ltr;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:2;stroke-linejoin:round;stroke-miterlimit:0;stroke-dasharray:none;stroke-opacity:1"
+       x="729.86713"
+       y="1833.35"
+       id="text647">VALKYRIES</text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:300;font-stretch:normal;font-size:32px;line-height:37.5005px;font-family:'Chivo Mono';-inkscape-font-specification:'Chivo Mono Light';text-align:center;letter-spacing:0px;word-spacing:-3px;writing-mode:lr-tb;direction:ltr;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:2;stroke-linejoin:round;stroke-miterlimit:0;stroke-dasharray:none;stroke-opacity:1"
+       x="451.15189"
+       y="1833.0299"
+       id="text648">GOLDEN STATE</text>
+    <rect
+       style="fill:#ad96dc;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0.999999;stroke-opacity:1"
+       id="rect644"
+       width="40"
+       height="30"
+       x="222.60429"
+       y="1802.85"
+       rx="4"
+       ry="4" />
+    <rect
+       style="fill:#b9975b;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0.999997;stroke-opacity:1"
+       id="rect645"
+       width="15.000003"
+       height="29.000004"
+       x="225.66679"
+       y="1799.85"
+       rx="1.9999999"
+       ry="2" />
+  </g>
+  <g
+     id="g16"
+     transform="translate(-183.43321,-663.25628)">
+    <path
+       style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-linejoin:round;stroke-miterlimit:0;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       d="m 242.10429,1432.8504 h 95"
+       id="path648" />
+    <rect
+       style="fill:#408fdd;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0.999999;stroke-opacity:1"
+       id="rect651"
+       width="42.5"
+       height="31.884703"
+       x="831.8819"
+       y="1416.85"
+       rx="4"
+       ry="4" />
+    <rect
+       style="fill:#ffcc00;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0.999999;stroke-opacity:1"
+       id="rect652"
+       width="15.937003"
+       height="27.000004"
+       x="835.1358"
+       y="1419.2924"
+       rx="2"
+       ry="1.9999999" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:300;font-stretch:normal;font-size:32px;line-height:37.5005px;font-family:'Chivo Mono';-inkscape-font-specification:'Chivo Mono Light';text-align:center;letter-spacing:0px;word-spacing:-3px;writing-mode:lr-tb;direction:ltr;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:2;stroke-linejoin:round;stroke-miterlimit:0;stroke-dasharray:none;stroke-opacity:1"
+       x="786.763"
+       y="1448.35"
+       id="text652">SKY</text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:300;font-stretch:normal;font-size:32px;line-height:37.5005px;font-family:'Chivo Mono';-inkscape-font-specification:'Chivo Mono Light';text-align:center;letter-spacing:0px;word-spacing:-3px;writing-mode:lr-tb;direction:ltr;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:2;stroke-linejoin:round;stroke-miterlimit:0;stroke-dasharray:none;stroke-opacity:1"
+       x="404.65213"
+       y="1448.35"
+       id="text653">CHICAGO</text>
+    <rect
+       style="fill:#408fdd;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0.999999;stroke-opacity:1"
+       id="rect649"
+       width="40"
+       height="30"
+       x="222.60429"
+       y="1417.85"
+       rx="4"
+       ry="4" />
+    <rect
+       style="fill:#ffcc00;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0.999997;stroke-opacity:1"
+       id="rect650"
+       width="15.000003"
+       height="29.000004"
+       x="225.66679"
+       y="1414.85"
+       rx="1.9999999"
+       ry="2" />
+  </g>
+  <g
+     id="g1"
+     transform="translate(-183.43321,-281.92731)">
+    <path
+       style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-linejoin:round;stroke-miterlimit:0;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       d="m 242.10429,711.62486 h 95"
+       id="path2" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:300;font-stretch:normal;font-size:32px;line-height:37.5005px;font-family:'Chivo Mono';-inkscape-font-specification:'Chivo Mono Light';text-align:center;letter-spacing:0px;word-spacing:-3px;writing-mode:lr-tb;direction:ltr;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:2;stroke-linejoin:round;stroke-miterlimit:0;stroke-dasharray:none;stroke-opacity:1"
+       x="749.64313"
+       y="727.65375"
+       id="text2">MIRACLE</text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:300;font-stretch:normal;font-size:32px;line-height:37.5005px;font-family:'Chivo Mono';-inkscape-font-specification:'Chivo Mono Light';text-align:center;letter-spacing:0px;word-spacing:-3px;writing-mode:lr-tb;direction:ltr;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:2;stroke-linejoin:round;stroke-miterlimit:0;stroke-dasharray:none;stroke-opacity:1"
+       x="402.92819"
+       y="727.33374"
+       id="text3">ORLANDO</text>
+    <rect
+       style="fill:#0057b7;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0.999999;stroke-opacity:1"
+       id="rect3"
+       width="42.5"
+       height="31.884703"
+       x="832.19092"
+       y="697.71149"
+       rx="4"
+       ry="4" />
+    <rect
+       style="fill:#dc4405;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0.999999;stroke-opacity:1"
+       id="rect8"
+       width="15.937003"
+       height="27.000004"
+       x="835.44482"
+       y="700.15375"
+       rx="2"
+       ry="1.9999999" />
+    <rect
+       style="fill:#0057b7;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0.999999;stroke-opacity:1"
+       id="rect15"
+       width="40"
+       height="30"
+       x="221.94769"
+       y="697.15375"
+       rx="4"
+       ry="4" />
+    <rect
+       style="fill:#dc4405;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0.999997;stroke-opacity:1"
+       id="rect16"
+       width="15.000003"
+       height="29.000004"
+       x="225.01016"
+       y="694.15375"
+       rx="1.9999999"
+       ry="2" />
+  </g>
 </svg>

@@ -1,0 +1,5954 @@
+{
+  "1997": { 
+    "seasonInfo": {
+      "startDate": "1997-06-21",
+      "endDate": "1997-08-30",
+      "regSeasonGames": 28,
+      "numTeams": 8,
+      "playoffSeedType": "Overall"
+    },
+    "HOU_COMETS": {
+      "wins": 18,
+      "losses": 10,
+      "conference": "East",
+      "madePlayoffs": true,
+      "playoffSeed": 1
+    },
+    "NYL_LIBERTY": {
+      "wins": 17,
+      "losses": 11,
+      "conference": "East",
+      "madePlayoffs": true,
+      "playoffSeed": 2
+    },
+    "CHA_STING": {
+      "wins": 16,
+      "losses": 12,
+      "conference": "East",
+      "madePlayoffs": true,
+      "playoffSeed": 4
+    },
+    "CLE_ROCKERS": {
+      "wins": 15,
+      "losses": 13,
+      "conference": "East",
+      "madePlayoffs": false,
+      "playoffSeed": null
+    },
+    "PHX_MERCURY": {
+      "wins": 16,
+      "losses": 12,
+      "conference": "West",
+      "madePlayoffs": true,
+      "playoffSeed": 3
+    },
+    "LOS_SPARKS": {
+      "wins": 14,
+      "losses": 14,
+      "conference": "West",
+      "madePlayoffs": false,
+      "playoffSeed": null
+    },
+    "SAC_MONARCHS": {
+        "wins": 10,
+        "losses": 18,
+        "conference": "West",
+        "madePlayoffs": false,
+        "playoffSeed": null
+    },
+    "UTA_STARZZ": {
+        "wins": 7,
+        "losses": 21,
+        "conference": "West",
+        "madePlayoffs": false,
+        "playoffSeed": null
+    },
+  "playoffs": {
+    "structureType": "overall-bracket",
+    "conferenceChampionsDeterminedByPlayoffs": false,
+    "guaranteedCrossConferenceFinal": false,
+    "finalsConferenceType": "same-east",
+
+    "champion": {
+      "team": "HOU_COMETS",
+      "coach": "Van Chancellor",
+      "finalsMVP": "Cynthia Cooper"
+    },
+
+    "runnerUp": {
+      "team": "NYL_LIBERTY",
+      "coach": "Nancy Darsch"
+    },
+
+    "conferenceChampions": null,
+
+    "bracket": {
+      "rounds": [
+        {
+          "id": "SEMIFINALS",
+          "name": "WNBA Semifinals",
+          "conference": null,
+          "roundFormat": "single-elimination",
+
+          "matchups": [
+            {
+              "teamA": {
+                "code": "HOU_COMETS",
+                "seed": 1,
+                "gamesWon": 1
+              },
+              "teamB": {
+                "code": "CHA_STING",
+                "seed": 4,
+                "gamesWon": 0
+              },
+              "gamesPlayed": 1,
+              "winner": "HOU_COMETS"
+            },
+            {
+              "teamA": {
+                "code": "NYL_LIBERTY",
+                "seed": 2,
+                "gamesWon": 1
+              },
+              "teamB": {
+                "code": "PHX_MERCURY",
+                "seed": 3,
+                "gamesWon": 0
+              },
+              "gamesPlayed": 1,
+              "winner": "NYL_LIBERTY"
+            }
+          ]
+        },
+
+        {
+          "id": "FINALS",
+          "name": "WNBA Finals",
+          "conference": null,
+          "roundFormat": "single-elimination",
+
+          "matchups": [
+            {
+              "teamA": {
+                "code": "HOU_COMETS",
+                "seed": 1,
+                "gamesWon": 1
+              },
+              "teamB": {
+                "code": "NYL_LIBERTY",
+                "seed": 2,
+                "gamesWon": 0
+              },
+              "gamesPlayed": 1,
+              "winner": "HOU_COMETS"
+            }
+          ]
+        }
+      ]
+    }
+  }
+  },
+  "1998": {
+    "seasonInfo": {
+      "startDate": "1998-06-11",
+      "endDate": "1998-09-01",
+      "regSeasonGames": 30,
+      "numTeams": 10,
+      "playoffSeedType": "Conference"
+    },
+    "CLE_ROCKERS": {
+      "wins": 20,
+      "losses": 10,
+      "conference": "East",
+      "madePlayoffs": true,
+      "playoffSeed": "E1"
+    },
+    "CHA_STING": {
+      "wins": 18,
+      "losses": 12,
+      "conference": "East",
+      "madePlayoffs": true,
+      "playoffSeed": "E2"
+    },
+    "NYL_LIBERTY": {
+      "wins": 18,
+      "losses": 12,
+      "conference": "East",
+      "madePlayoffs": false,
+      "playoffSeed": null
+    },
+    "DET_SHOCK": {
+      "wins": 17,
+      "losses": 13,
+      "conference": "East",
+      "madePlayoffs": false,
+      "playoffSeed": null
+    },
+    "WAS_MYSTICS": {
+      "wins": 3,
+      "losses": 27,
+      "conference": "East",
+      "madePlayoffs": false,
+      "playoffSeed": null
+    },
+    "HOU_COMETS": {
+      "wins": 27,
+      "losses": 3,
+      "conference": "West",
+      "madePlayoffs": true,
+      "playoffSeed": "W1"
+    },
+    "PHX_MERCURY": {
+      "wins": 19,
+      "losses": 11,
+      "conference": "West",
+      "madePlayoffs": true,
+      "playoffSeed": "W2"
+    },
+    "LOS_SPARKS": {
+      "wins": 12,
+      "losses": 18,
+      "conference": "West",
+      "madePlayoffs": false,
+      "playoffSeed": null
+    },
+    "SAC_MONARCHS": {
+        "wins": 8,
+        "losses": 22,
+        "conference": "West",
+        "madePlayoffs": false,
+        "playoffSeed": null
+    },
+    "UTA_STARZZ": {
+        "wins": 8,
+        "losses": 22,
+        "conference": "West",
+        "madePlayoffs": false,
+        "playoffSeed": null
+    },
+    "playoffs": {
+    "structureType": "overall-bracket",
+    "conferenceChampionsDeterminedByPlayoffs": true,
+    "guaranteedCrossConferenceFinal": false,
+    "finalsConferenceType": "same-west",
+
+      "champion": {
+        "team": "HOU_COMETS",
+        "coach": "Van Chancellor",
+        "finalsMVP": "Cynthia Cooper"
+      },
+
+      "runnerUp": {
+        "team": "PHX_MERCURY",
+        "coach": "Cheryl Miller"
+      },
+
+      "conferenceChampions": {
+        "West": "HOU_COMETS",
+        "East": "PHX_MERCURY"
+      },
+
+      "bracket": {
+        "rounds": [
+
+          {
+            "id": "CONF_SEMIS",
+            "name": "Conference Semifinals",
+            "conference": "Mixed",
+            "roundFormat": "best-of-3",
+
+            "matchups": [
+
+              {
+                "teamA": {
+                  "code": "HOU_COMETS",
+                  "seed": null,
+                  "gamesWon": 2
+                },
+                "teamB": {
+                  "code": "CHA_STING",
+                  "seed": null,
+                  "gamesWon": 0
+                },
+                "gamesPlayed": 2,
+                "winner": "HOU_COMETS"
+              },
+
+              {
+                "teamA": {
+                  "code": "PHX_MERCURY",
+                  "seed": null,
+                  "gamesWon": 2
+                },
+                "teamB": {
+                  "code": "CLE_ROCKERS",
+                  "seed": null,
+                  "gamesWon": 1
+                },
+                "gamesPlayed": 3,
+                "winner": "PHX_MERCURY"
+              }
+
+            ]
+          },
+
+          {
+            "id": "FINALS",
+            "name": "WNBA Finals",
+            "conference": null,
+            "roundFormat": "best-of-3",
+
+            "matchups": [
+
+              {
+                "teamA": {
+                  "code": "HOU_COMETS",
+                  "seed": null,
+                  "gamesWon": 2
+                },
+                "teamB": {
+                  "code": "PHX_MERCURY",
+                  "seed": null,
+                  "gamesWon": 1
+                },
+                "gamesPlayed": 3,
+                "winner": "HOU_COMETS"
+              }
+
+            ]
+          }
+
+        ]
+      }
+    }
+  },
+  "1999": {
+    "seasonInfo": {
+      "startDate": "1999-06-10",
+      "endDate": "1999-09-05",
+      "regSeasonGames": 32,
+      "numTeams": 12,
+      "playoffSeedType": "Conference"
+    },
+    "NYL_LIBERTY": {
+      "wins": 18,
+      "losses": 14,
+      "conference": "East",
+      "madePlayoffs": true,
+      "playoffSeed": "E1"
+    },
+    "DET_SHOCK": {
+      "wins": 15,
+      "losses": 17,
+      "conference": "East",
+      "madePlayoffs": true,
+      "playoffSeed": "E2"
+    },
+    "CHA_STING": {
+      "wins": 15,
+      "losses": 17,
+      "conference": "East",
+      "madePlayoffs": true,
+      "playoffSeed": "E3"
+    },
+    "ORL_MIRACLE": {
+      "wins": 15,
+      "losses": 17,
+      "conference": "East",
+      "madePlayoffs": false,
+      "playoffSeed": null
+    },
+    "WAS_MYSTICS": {
+      "wins": 12,
+      "losses": 20,
+      "conference": "East",
+      "madePlayoffs": false,
+      "playoffSeed": null
+    },
+    "CLE_ROCKERS": {
+      "wins": 7,
+      "losses": 25,
+      "conference": "East",
+      "madePlayoffs": false,
+      "playoffSeed": null
+    },
+    "HOU_COMETS": {
+      "wins": 26,
+      "losses": 6,
+      "conference": "West",
+      "madePlayoffs": true,
+      "playoffSeed": "W1"
+    },
+    "LOS_SPARKS": {
+      "wins": 20,
+      "losses": 12,
+      "conference": "West",
+      "madePlayoffs": true,
+      "playoffSeed": "W2"
+    },
+    "SAC_MONARCHS": {
+      "wins": 19,
+      "losses": 13,
+      "conference": "West",
+      "madePlayoffs": true,
+      "playoffSeed": "W3"
+    },
+    "PHX_MERCURY": {
+      "wins": 15,
+      "losses": 17,
+      "conference": "West",
+      "madePlayoffs": false,
+      "playoffSeed": null
+    },
+    "MIN_LYNX": {
+      "wins": 15,
+      "losses": 17,
+      "conference": "West",
+      "madePlayoffs": false,
+      "playoffSeed": null
+    },
+    "UTA_STARZZ": {
+      "wins": 15,
+      "losses": 17,
+      "conference": "West",
+      "madePlayoffs": false,
+      "playoffSeed": null
+    },
+    "playoffs": {
+    "structureType": "conference-bracket",
+    "conferenceChampionsDeterminedByPlayoffs": true,
+    "guaranteedCrossConferenceFinal": true,
+    "finalsConferenceType": "east-west",
+
+      "champion": {
+        "team": "HOU_COMETS",
+        "coach": "Van Chancellor",
+        "finalsMVP": "Cynthia Cooper"
+      },
+
+      "runnerUp": {
+        "team": "NYL_LIBERTY",
+        "coach": "Richie Adubato"
+      },
+
+      "conferenceChampions": {
+        "East": "NYL_LIBERTY",
+        "West": "HOU_COMETS"
+      },
+
+      "bracket": {
+        "rounds": [
+
+          {
+            "id": "CONF_SEMIS",
+            "name": "Conference Semifinals",
+            "conference": "Conference",
+            "roundFormat": "single-elimination",
+
+            "matchups": [
+
+              {
+                "teamA": {
+                  "code": "DET_SHOCK",
+                  "seed": 2,
+                  "gamesWon": 0
+                },
+                "teamB": {
+                  "code": "CHA_STING",
+                  "seed": 3,
+                  "gamesWon": 1
+                },
+                "gamesPlayed": 1,
+                "winner": "CHA_STING"
+              },
+
+              {
+                "teamA": {
+                  "code": "LOS_SPARKS",
+                  "seed": 2,
+                  "gamesWon": 1
+                },
+                "teamB": {
+                  "code": "SAC_MONARCHS",
+                  "seed": 3,
+                  "gamesWon": 0
+                },
+                "gamesPlayed": 1,
+                "winner": "LOS_SPARKS"
+              }
+
+            ]
+          },
+
+          {
+            "id": "CONF_FINALS",
+            "name": "Conference Finals",
+            "conference": "Conference",
+            "roundFormat": "best-of-3",
+
+            "matchups": [
+
+              {
+                "teamA": {
+                  "code": "NYL_LIBERTY",
+                  "seed": 1,
+                  "gamesWon": 2
+                },
+                "teamB": {
+                  "code": "CHA_STING",
+                  "seed": 3,
+                  "gamesWon": 1
+                },
+                "gamesPlayed": 3,
+                "winner": "NYL_LIBERTY"
+              },
+
+              {
+                "teamA": {
+                  "code": "HOU_COMETS",
+                  "seed": 1,
+                  "gamesWon": 2
+                },
+                "teamB": {
+                  "code": "LOS_SPARKS",
+                  "seed": 2,
+                  "gamesWon": 1
+                },
+                "gamesPlayed": 3,
+                "winner": "HOU_COMETS"
+              }
+
+            ]
+          },
+
+          {
+            "id": "FINALS",
+            "name": "WNBA Finals",
+            "conference": null,
+            "roundFormat": "best-of-3",
+
+            "matchups": [
+
+              {
+                "teamA": {
+                  "code": "HOU_COMETS",
+                  "seed": 1,
+                  "gamesWon": 2
+                },
+                "teamB": {
+                  "code": "NYL_LIBERTY",
+                  "seed": 1,
+                  "gamesWon": 0
+                },
+                "gamesPlayed": 2,
+                "winner": "HOU_COMETS"
+              }
+
+            ]
+          }
+
+        ]
+      }
+    }
+  },
+  "2000": {
+    "seasonInfo": {
+        "startDate": "2000-05-29",
+        "endDate": "2000-08-26",
+        "regSeasonGames": 32,
+        "numTeams": 16,
+        "playoffSeedType": "Conference"
+    },
+    "NYL_LIBERTY": {
+        "wins": 20,
+        "losses": 12,
+        "conference": "East",
+        "madePlayoffs": true,
+        "playoffSeed": "E1"
+    },
+    "CLE_ROCKERS": {
+        "wins": 17,
+        "losses": 15,
+        "conference": "East",
+        "madePlayoffs": true,
+        "playoffSeed": "E2"
+    },
+    "ORL_MIRACLE": {
+        "wins": 16,
+        "losses": 16,
+        "conference": "East",
+        "madePlayoffs": true,
+        "playoffSeed": "E3"
+    },
+    "WAS_MYSTICS": {
+        "wins": 14,
+        "losses": 18,
+        "conference": "East",
+        "madePlayoffs": true,
+        "playoffSeed": "E4"
+    },
+    "DET_SHOCK": {
+        "wins": 14,
+        "losses": 18,
+        "conference": "East",
+        "madePlayoffs": false,
+        "playoffSeed": null
+    },"MIA_SOL": {
+        "wins": 13,
+        "losses": 19,
+        "conference": "East",
+        "madePlayoffs": false,
+        "playoffSeed": null
+    },
+    "IND_FEVER": {
+        "wins": 9,
+        "losses": 23,
+        "conference": "East",
+        "madePlayoffs": false,
+        "playoffSeed": null
+    },
+    "CHA_STING": {
+        "wins": 8,
+        "losses": 24,
+        "conference": "East",
+        "madePlayoffs": false,
+        "playoffSeed": null
+    },
+    "LOS_SPARKS": {
+        "wins": 28,
+        "losses": 4,
+        "conference": "West",
+        "madePlayoffs": true,
+        "playoffSeed": "W1"
+    },
+    "HOU_COMETS": {
+        "wins": 27,
+        "losses": 5,
+        "conference": "West",
+        "madePlayoffs": true,
+        "playoffSeed": "W2"
+    },
+    "SAC_MONARCHS": {
+        "wins": 21,
+        "losses": 11,
+        "conference": "West",
+        "madePlayoffs": true,
+        "playoffSeed": "W3"
+    },
+    "PHX_MERCURY": {
+        "wins": 20,
+        "losses": 12,
+        "conference": "West",
+        "madePlayoffs": true,
+        "playoffSeed": "W4"
+    },
+    "UTA_STARZZ": {
+        "wins": 18,
+        "losses": 14,
+        "conference": "West",
+        "madePlayoffs": false,
+        "playoffSeed": null
+    },
+    "MIN_LYNX": {
+        "wins": 15,
+        "losses": 17,
+        "conference": "West",
+        "madePlayoffs": false,
+        "playoffSeed": null
+    },
+    "POR_FIRE": {
+        "wins": 10,
+        "losses": 22,
+        "conference": "West",
+        "madePlayoffs": false,
+        "playoffSeed": null
+    },
+    "SEA_STORM": {
+        "wins": 6,
+        "losses": 26,
+        "conference": "West",
+        "madePlayoffs": false,
+        "playoffSeed": null
+    },
+    "playoffs": {
+    "structureType": "conference-bracket",
+    "conferenceChampionsDeterminedByPlayoffs": true,
+    "guaranteedCrossConferenceFinal": true,
+    "finalsConferenceType": "east-west",
+
+      "champion": {
+        "team": "HOU_COMETS",
+        "coach": "Van Chancellor",
+        "finalsMVP": "Cynthia Cooper"
+      },
+
+      "runnerUp": {
+        "team": "NYL_LIBERTY",
+        "coach": "Richie Adubato"
+      },
+
+      "conferenceChampions": {
+        "East": "NYL_LIBERTY",
+        "West": "HOU_COMETS"
+      },
+
+      "bracket": {
+        "rounds": [
+
+          {
+            "id": "CONF_SEMIS",
+            "name": "Conference Semifinals",
+            "conference": "Conference",
+            "roundFormat": "best-of-3",
+
+            "matchups": [
+
+              {
+                "teamA": {
+                  "code": "NYL_LIBERTY",
+                  "seed": 1,
+                  "gamesWon": 2
+                },
+                "teamB": {
+                  "code": "WAS_MYSTICS",
+                  "seed": 4,
+                  "gamesWon": 0
+                },
+                "gamesPlayed": 2,
+                "winner": "NYL_LIBERTY"
+              },
+
+              {
+                "teamA": {
+                  "code": "CLE_ROCKERS",
+                  "seed": 2,
+                  "gamesWon": 2
+                },
+                "teamB": {
+                  "code": "ORL_MIRACLE",
+                  "seed": 3,
+                  "gamesWon": 1
+                },
+                "gamesPlayed": 3,
+                "winner": "CLE_ROCKERS"
+              },
+
+              {
+                "teamA": {
+                  "code": "LOS_SPARKS",
+                  "seed": 1,
+                  "gamesWon": 2
+                },
+                "teamB": {
+                  "code": "PHX_MERCURY",
+                  "seed": 4,
+                  "gamesWon": 0
+                },
+                "gamesPlayed": 2,
+                "winner": "LOS_SPARKS"
+              },
+
+              {
+                "teamA": {
+                  "code": "HOU_COMETS",
+                  "seed": 2,
+                  "gamesWon": 2
+                },
+                "teamB": {
+                  "code": "SAC_MONARCHS",
+                  "seed": 3,
+                  "gamesWon": 0
+                },
+                "gamesPlayed": 2,
+                "winner": "HOU_COMETS"
+              }
+
+            ]
+          },
+
+          {
+            "id": "CONF_FINALS",
+            "name": "Conference Finals",
+            "conference": "Conference",
+            "roundFormat": "best-of-3",
+
+            "matchups": [
+
+              {
+                "teamA": {
+                  "code": "NYL_LIBERTY",
+                  "seed": 1,
+                  "gamesWon": 2
+                },
+                "teamB": {
+                  "code": "CLE_ROCKERS",
+                  "seed": 2,
+                  "gamesWon": 0
+                },
+                "gamesPlayed": 2,
+                "winner": "NYL_LIBERTY"
+              },
+
+              {
+                "teamA": {
+                  "code": "HOU_COMETS",
+                  "seed": 2,
+                  "gamesWon": 2
+                },
+                "teamB": {
+                  "code": "LOS_SPARKS",
+                  "seed": 1,
+                  "gamesWon": 0
+                },
+                "gamesPlayed": 2,
+                "winner": "HOU_COMETS"
+              }
+
+            ]
+          },
+
+          {
+            "id": "FINALS",
+            "name": "WNBA Finals",
+            "conference": null,
+            "roundFormat": "best-of-3",
+
+            "matchups": [
+
+              {
+                "teamA": {
+                  "code": "HOU_COMETS",
+                  "seed": 2,
+                  "gamesWon": 2
+                },
+                "teamB": {
+                  "code": "NYL_LIBERTY",
+                  "seed": 1,
+                  "gamesWon": 0
+                },
+                "gamesPlayed": 2,
+                "winner": "HOU_COMETS"
+              }
+
+            ]
+          }
+
+        ]
+      }
+    }
+  },
+  "2001": {
+    "seasonInfo": {
+        "startDate": "2001-05-28",
+        "endDate": "2001-09-01",
+        "regSeasonGames": 32,
+        "numTeams": 16,
+        "playoffSeedType": "Conference"
+    },
+    "CLE_ROCKERS": {
+        "wins": 22,
+        "losses": 10,
+        "conference": "East",
+        "madePlayoffs": true,
+        "playoffSeed": "E1"
+    },
+    "NYL_LIBERTY": {
+        "wins": 21,
+        "losses": 11,
+        "conference": "East",
+        "madePlayoffs": true,
+        "playoffSeed": "E2"
+    },
+    "MIA_SOL": {
+        "wins": 20,
+        "losses": 12,
+        "conference": "East",
+        "madePlayoffs": true,
+        "playoffSeed": "E3"
+    },
+    "CHA_STING": {
+        "wins": 18,
+        "losses": 14,
+        "conference": "East",
+        "madePlayoffs": true,
+        "playoffSeed": "E4"
+    },
+    "ORL_MIRACLE": {
+        "wins": 13,
+        "losses": 19,
+        "conference": "East",
+        "madePlayoffs": false,
+        "playoffSeed": null
+    },
+    "IND_FEVER": {
+        "wins": 10,
+        "losses": 22,
+        "conference": "East",
+        "madePlayoffs": false,
+        "playoffSeed": null
+    },
+    "DET_SHOCK": {
+        "wins": 10,
+        "losses": 22,
+        "conference": "East",
+        "madePlayoffs": false,
+        "playoffSeed": null
+    },
+    "WAS_MYSTICS": {
+        "wins": 10,
+        "losses": 22,
+        "conference": "East",
+        "madePlayoffs": false,
+        "playoffSeed": null
+    },
+    "LOS_SPARKS": {
+        "wins": 28,
+        "losses": 4,
+        "conference": "West",
+        "madePlayoffs": true,
+        "playoffSeed": "W1"
+    },
+    "SAC_MONARCHS": {
+        "wins": 20,
+        "losses": 12,
+        "conference": "West",
+        "madePlayoffs": true,
+        "playoffSeed": "W2"
+    },
+    "UTA_STARZZ": {
+        "wins": 19,
+        "losses": 13,
+        "conference": "West",
+        "madePlayoffs": true,
+        "playoffSeed": "W3"
+    },
+    "HOU_COMETS": {
+        "wins": 19,
+        "losses": 13,
+        "conference": "West",
+        "madePlayoffs": true,
+        "playoffSeed": "W4"
+    },
+    "PHX_MERCURY": {
+        "wins": 13,
+        "losses": 19,
+        "conference": "West",
+        "madePlayoffs": false,
+        "playoffSeed": null
+    },
+    "MIN_LYNX": {
+        "wins": 12,
+        "losses": 20,
+        "conference": "West",
+        "madePlayoffs": false,
+        "playoffSeed": null
+    },
+    "POR_FIRE": {
+        "wins": 11,
+        "losses": 21,
+        "conference": "West",
+        "madePlayoffs": false,
+        "playoffSeed": null
+    },
+    "SEA_STORM": {
+        "wins": 10,
+        "losses": 22,
+        "conference": "West",
+        "madePlayoffs": false,
+        "playoffSeed": null
+    },
+    "playoffs": {
+    "structureType": "conference-bracket",
+    "conferenceChampionsDeterminedByPlayoffs": true,
+    "guaranteedCrossConferenceFinal": true,
+    "finalsConferenceType": "east-west",
+
+      "champion": {
+        "team": "LOS_SPARKS",
+        "coach": "Michael Cooper",
+        "finalsMVP": "Lisa Leslie"
+      },
+
+      "runnerUp": {
+        "team": "CHA_STING",
+        "coach": "Anne Donovan"
+      },
+
+      "conferenceChampions": {
+        "East": "CHA_STING",
+        "West": "LOS_SPARKS"
+      },
+
+      "bracket": {
+        "rounds": [
+
+          {
+            "id": "CONF_SEMIS",
+            "name": "Conference Semifinals",
+            "conference": "Conference",
+            "roundFormat": "best-of-3",
+
+            "matchups": [
+
+              {
+                "teamA": {
+                  "code": "CLE_ROCKERS",
+                  "seed": 1,
+                  "gamesWon": 1
+                },
+                "teamB": {
+                  "code": "CHA_STING",
+                  "seed": 4,
+                  "gamesWon": 2
+                },
+                "gamesPlayed": 3,
+                "winner": "CHA_STING"
+              },
+
+              {
+                "teamA": {
+                  "code": "NYL_LIBERTY",
+                  "seed": 2,
+                  "gamesWon": 2
+                },
+                "teamB": {
+                  "code": "MIA_SOL",
+                  "seed": 3,
+                  "gamesWon": 1
+                },
+                "gamesPlayed": 3,
+                "winner": "NYL_LIBERTY"
+              },
+
+              {
+                "teamA": {
+                  "code": "LOS_SPARKS",
+                  "seed": 1,
+                  "gamesWon": 2
+                },
+                "teamB": {
+                  "code": "HOU_COMETS",
+                  "seed": 4,
+                  "gamesWon": 0
+                },
+                "gamesPlayed": 2,
+                "winner": "LOS_SPARKS"
+              },
+
+              {
+                "teamA": {
+                  "code": "SAC_MONARCHS",
+                  "seed": 2,
+                  "gamesWon": 2
+                },
+                "teamB": {
+                  "code": "UTA_STARZZ",
+                  "seed": 3,
+                  "gamesWon": 0
+                },
+                "gamesPlayed": 2,
+                "winner": "SAC_MONARCHS"
+              }
+
+            ]
+          },
+
+          {
+            "id": "CONF_FINALS",
+            "name": "Conference Finals",
+            "conference": "Conference",
+            "roundFormat": "best-of-3",
+
+            "matchups": [
+
+              {
+                "teamA": {
+                  "code": "CHA_STING",
+                  "seed": 4,
+                  "gamesWon": 2
+                },
+                "teamB": {
+                  "code": "NYL_LIBERTY",
+                  "seed": 2,
+                  "gamesWon": 0
+                },
+                "gamesPlayed": 2,
+                "winner": "CHA_STING"
+              },
+
+              {
+                "teamA": {
+                  "code": "LOS_SPARKS",
+                  "seed": 1,
+                  "gamesWon": 2
+                },
+                "teamB": {
+                  "code": "SAC_MONARCHS",
+                  "seed": 2,
+                  "gamesWon": 1
+                },
+                "gamesPlayed": 3,
+                "winner": "LOS_SPARKS"
+              }
+
+            ]
+          },
+
+          {
+            "id": "FINALS",
+            "name": "WNBA Finals",
+            "conference": null,
+            "roundFormat": "best-of-3",
+
+            "matchups": [
+
+              {
+                "teamA": {
+                  "code": "LOS_SPARKS",
+                  "seed": 1,
+                  "gamesWon": 2
+                },
+                "teamB": {
+                  "code": "CHA_STING",
+                  "seed": 4,
+                  "gamesWon": 0
+                },
+                "gamesPlayed": 2,
+                "winner": "LOS_SPARKS"
+              }
+
+            ]
+          }
+
+        ]
+      }
+    }
+  },
+  "2002": {
+    "seasonInfo": {
+        "startDate": "2002-05-25",
+        "endDate": "2002-08-31",
+        "regSeasonGames": 32,
+        "numTeams": 16,
+        "playoffSeedType": "Conference"
+    },
+    "NYL_LIBERTY": {
+        "wins": 18,
+        "losses": 14,
+        "conference": "East",
+        "madePlayoffs": true,
+        "playoffSeed": "E1"
+    },
+    "CHA_STING": {
+        "wins": 18,
+        "losses": 14,
+        "conference": "East",
+        "madePlayoffs": true,
+        "playoffSeed": "E2"
+    },
+    "WAS_MYSTICS": {
+        "wins": 17,
+        "losses": 15,
+        "conference": "East",
+        "madePlayoffs": true,
+        "playoffSeed": "E3"
+    },
+    "IND_FEVER": {
+        "wins": 16,
+        "losses": 16,
+        "conference": "East",
+        "madePlayoffs": true,
+        "playoffSeed": "E4"
+    },
+    "ORL_MIRACLE": {
+        "wins": 16,
+        "losses": 16,
+        "conference": "East",
+        "madePlayoffs": false,
+        "playoffSeed": null
+    },
+    "MIA_SOL": {
+        "wins": 15,
+        "losses": 17,
+        "conference": "East",
+        "madePlayoffs": false,
+        "playoffSeed": null
+    },
+    "CLE_ROCKERS": {
+        "wins": 10,
+        "losses": 22,
+        "conference": "East",
+        "madePlayoffs": false,
+        "playoffSeed": null
+    },
+    "DET_SHOCK": {
+        "wins": 9,
+        "losses": 23,
+        "conference": "East",
+        "madePlayoffs": false,
+        "playoffSeed": null
+    },
+    "LOS_SPARKS": {
+        "wins": 25,
+        "losses": 7,
+        "conference": "West",
+        "madePlayoffs": true,
+        "playoffSeed": "W1"
+    },
+    "HOU_COMETS": {
+        "wins": 24,
+        "losses": 8,
+        "conference": "West",
+        "madePlayoffs": true,
+        "playoffSeed": "W2"
+    },
+    "UTA_STARZZ": {
+        "wins": 20,
+        "losses": 12,
+        "conference": "West",
+        "madePlayoffs": true,
+        "playoffSeed": "W3"
+    },
+    "SEA_STORM": {
+        "wins": 17,
+        "losses": 15,
+        "conference": "West",
+        "madePlayoffs": true,
+        "playoffSeed": "W4"
+    },
+    "POR_FIRE": {
+        "wins": 16,
+        "losses": 16,
+        "conference": "West",
+        "madePlayoffs": false,
+        "playoffSeed": null
+    },
+    "SAC_MONARCHS": {
+        "wins": 14,
+        "losses": 18,
+        "conference": "West",
+        "madePlayoffs": false,
+        "playoffSeed": null
+    },
+    "PHX_MERCURY": {
+        "wins": 11,
+        "losses": 21,
+        "conference": "West",
+        "madePlayoffs": false,
+        "playoffSeed": null
+    },
+    "MIN_LYNX": {
+        "wins": 10,
+        "losses": 22,
+        "conference": "West",
+        "madePlayoffs": false,
+        "playoffSeed": null
+    },
+    "playoffs": {
+    "structureType": "conference-bracket",
+    "conferenceChampionsDeterminedByPlayoffs": true,
+    "guaranteedCrossConferenceFinal": true,
+    "finalsConferenceType": "east-west",
+
+      "champion": {
+        "team": "LOS_SPARKS",
+        "coach": "Michael Cooper",
+        "finalsMVP": "Lisa Leslie"
+      },
+
+      "runnerUp": {
+        "team": "NYL_LIBERTY",
+        "coach": "Richie Adubato"
+      },
+
+      "conferenceChampions": {
+        "East": "NYL_LIBERTY",
+        "West": "LOS_SPARKS"
+      },
+
+      "bracket": {
+        "rounds": [
+
+          {
+            "id": "CONF_SEMIS",
+            "name": "Conference Semifinals",
+            "conference": "Conference",
+            "roundFormat": "best-of-3",
+
+            "matchups": [
+
+              {
+                "teamA": {
+                  "code": "NYL_LIBERTY",
+                  "seed": 1,
+                  "gamesWon": 2
+                },
+                "teamB": {
+                  "code": "IND_FEVER",
+                  "seed": 4,
+                  "gamesWon": 1
+                },
+                "gamesPlayed": 3,
+                "winner": "NYL_LIBERTY"
+              },
+
+              {
+                "teamA": {
+                  "code": "CHA_STING",
+                  "seed": 2,
+                  "gamesWon": 0
+                },
+                "teamB": {
+                  "code": "WAS_MYSTICS",
+                  "seed": 3,
+                  "gamesWon": 2
+                },
+                "gamesPlayed": 2,
+                "winner": "WAS_MYSTICS"
+              },
+
+              {
+                "teamA": {
+                  "code": "LOS_SPARKS",
+                  "seed": 1,
+                  "gamesWon": 2
+                },
+                "teamB": {
+                  "code": "SEA_STORM",
+                  "seed": 4,
+                  "gamesWon": 0
+                },
+                "gamesPlayed": 2,
+                "winner": "LOS_SPARKS"
+              },
+
+              {
+                "teamA": {
+                  "code": "HOU_COMETS",
+                  "seed": 2,
+                  "gamesWon": 1
+                },
+                "teamB": {
+                  "code": "UTA_STARZZ",
+                  "seed": 3,
+                  "gamesWon": 2
+                },
+                "gamesPlayed": 3,
+                "winner": "UTA_STARZZ"
+              }
+
+            ]
+          },
+
+          {
+            "id": "CONF_FINALS",
+            "name": "Conference Finals",
+            "conference": "Conference",
+            "roundFormat": "best-of-3",
+
+            "matchups": [
+
+              {
+                "teamA": {
+                  "code": "NYL_LIBERTY",
+                  "seed": 1,
+                  "gamesWon": 2
+                },
+                "teamB": {
+                  "code": "WAS_MYSTICS",
+                  "seed": 3,
+                  "gamesWon": 0
+                },
+                "gamesPlayed": 2,
+                "winner": "NYL_LIBERTY"
+              },
+
+              {
+                "teamA": {
+                  "code": "LOS_SPARKS",
+                  "seed": 1,
+                  "gamesWon": 2
+                },
+                "teamB": {
+                  "code": "UTA_STARZZ",
+                  "seed": 3,
+                  "gamesWon": 0
+                },
+                "gamesPlayed": 2,
+                "winner": "LOS_SPARKS"
+              }
+
+            ]
+          },
+
+          {
+            "id": "FINALS",
+            "name": "WNBA Finals",
+            "conference": null,
+            "roundFormat": "best-of-3",
+
+            "matchups": [
+
+              {
+                "teamA": {
+                  "code": "LOS_SPARKS",
+                  "seed": 1,
+                  "gamesWon": 2
+                },
+                "teamB": {
+                  "code": "NYL_LIBERTY",
+                  "seed": 1,
+                  "gamesWon": 0
+                },
+                "gamesPlayed": 2,
+                "winner": "LOS_SPARKS"
+              }
+
+            ]
+          }
+
+        ]
+      }
+    }
+  },
+  "2003": {
+    "seasonInfo": {
+        "startDate": "2003-05-22",
+        "endDate": "2003-09-16",
+        "regSeasonGames": 34,
+        "numTeams": 14,
+        "playoffSeedType": "Conference"
+    },
+    "DET_SHOCK": {
+        "wins": 25,
+        "losses": 9,
+        "conference": "East",
+        "madePlayoffs": true,
+        "playoffSeed": "E1"
+    },
+    "CHA_STING": {
+        "wins": 18,
+        "losses": 16,
+        "conference": "East",
+        "madePlayoffs": true,
+        "playoffSeed": "E2"
+    },
+    "CON_SUN": {
+        "wins": 18,
+        "losses": 16,
+        "conference": "East",
+        "madePlayoffs": true,
+        "playoffSeed": "E3"
+    },
+    "CLE_ROCKERS": {
+        "wins": 17,
+        "losses": 17,
+        "conference": "East",
+        "madePlayoffs": true,
+        "playoffSeed": "E4"
+    },
+    "IND_FEVER": {
+        "wins": 16,
+        "losses": 18,
+        "conference": "East",
+        "madePlayoffs": false,
+        "playoffSeed": null
+    },
+    "NYL_LIBERTY": {
+        "wins": 16,
+        "losses": 18,
+        "conference": "East",
+        "madePlayoffs": false,
+        "playoffSeed": null
+    },
+    "WAS_MYSTICS": {
+        "wins": 9,
+        "losses": 25,
+        "conference": "East",
+        "madePlayoffs": false,
+        "playoffSeed": null
+    },
+    "LOS_SPARKS": {
+        "wins": 24,
+        "losses": 10,
+        "conference": "West",
+        "madePlayoffs": true,
+        "playoffSeed": "W1"
+    },
+    "HOU_COMETS": {
+        "wins": 20,
+        "losses": 14,
+        "conference": "West",
+        "madePlayoffs": true,
+        "playoffSeed": "W2"
+    },
+    "SAC_MONARCHS": {
+        "wins": 19,
+        "losses": 15,
+        "conference": "West",
+        "madePlayoffs": true,
+        "playoffSeed": "W3"
+    },
+    "MIN_LYNX": {
+        "wins": 18,
+        "losses": 16,
+        "conference": "West",
+        "madePlayoffs": true,
+        "playoffSeed": "W4"
+    },
+    "SEA_STORM": {
+        "wins": 18,
+        "losses": 16,
+        "conference": "West",
+        "madePlayoffs": false,
+        "playoffSeed": null
+    },
+    "SA_SILVER_STARS": {
+        "wins": 12,
+        "losses": 22,
+        "conference": "West",
+        "madePlayoffs": false,
+        "playoffSeed": null
+    },
+    "PHX_MERCURY": {
+        "wins": 8,
+        "losses": 26,
+        "conference": "West",
+        "madePlayoffs": false,
+        "playoffSeed": null
+    },
+    "playoffs": {
+    "structureType": "conference-bracket",
+    "conferenceChampionsDeterminedByPlayoffs": true,
+    "guaranteedCrossConferenceFinal": true,
+    "finalsConferenceType": "east-west",
+
+      "champion": {
+        "team": "DET_SHOCK",
+        "coach": "Bill Laimbeer",
+        "finalsMVP": "Ruth Riley"
+      },
+
+      "runnerUp": {
+        "team": "LOS_SPARKS",
+        "coach": "Michael Cooper"
+      },
+
+      "conferenceChampions": {
+        "East": "DET_SHOCK",
+        "West": "LOS_SPARKS"
+      },
+
+      "bracket": {
+        "rounds": [
+          {
+            "id": "CONF_SEMIS",
+            "name": "Conference Semifinals",
+            "conference": "Conference",
+            "roundFormat": "best-of-3",
+            "matchups": [
+              {
+                "teamA": { "code": "DET_SHOCK", "seed": 1, "gamesWon": 2 },
+                "teamB": { "code": "CLE_ROCKERS", "seed": 4, "gamesWon": 1 },
+                "gamesPlayed": 3,
+                "winner": "DET_SHOCK"
+              },
+              {
+                "teamA": { "code": "CON_SUN", "seed": 3, "gamesWon": 2 },
+                "teamB": { "code": "CHA_STING", "seed": 2, "gamesWon": 0 },
+                "gamesPlayed": 2,
+                "winner": "CON_SUN"
+              },
+              {
+                "teamA": { "code": "LOS_SPARKS", "seed": 1, "gamesWon": 2 },
+                "teamB": { "code": "MIN_LYNX", "seed": 4, "gamesWon": 1 },
+                "gamesPlayed": 3,
+                "winner": "LOS_SPARKS"
+              },
+              {
+                "teamA": { "code": "SAC_MONARCHS", "seed": 3, "gamesWon": 2 },
+                "teamB": { "code": "HOU_COMETS", "seed": 2, "gamesWon": 1 },
+                "gamesPlayed": 3,
+                "winner": "SAC_MONARCHS"
+              }
+            ]
+          },
+          {
+            "id": "CONF_FINALS",
+            "name": "Conference Finals",
+            "conference": "Conference",
+            "roundFormat": "best-of-3",
+            "matchups": [
+              {
+                "teamA": { "code": "DET_SHOCK", "seed": 1, "gamesWon": 2 },
+                "teamB": { "code": "CON_SUN", "seed": 3, "gamesWon": 0 },
+                "gamesPlayed": 2,
+                "winner": "DET_SHOCK"
+              },
+              {
+                "teamA": { "code": "LOS_SPARKS", "seed": 1, "gamesWon": 2 },
+                "teamB": { "code": "SAC_MONARCHS", "seed": 3, "gamesWon": 1 },
+                "gamesPlayed": 3,
+                "winner": "LOS_SPARKS"
+              }
+            ]
+          },
+          {
+            "id": "FINALS",
+            "name": "WNBA Finals",
+            "conference": null,
+            "roundFormat": "best-of-3",
+            "matchups": [
+              {
+                "teamA": { "code": "DET_SHOCK", "seed": 1, "gamesWon": 2 },
+                "teamB": { "code": "LOS_SPARKS", "seed": 1, "gamesWon": 1 },
+                "gamesPlayed": 3,
+                "winner": "DET_SHOCK"
+              }
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "2004": {
+    "seasonInfo": {
+        "startDate": "2004-05-20",
+        "endDate": "2004-10-12",
+        "regSeasonGames": 34,
+        "numTeams": 13,
+        "playoffSeedType": "Conference"
+    },
+    "CON_SUN": {
+        "wins": 18,
+        "losses": 16,
+        "conference": "East",
+        "madePlayoffs": true,
+        "playoffSeed": "E1"
+    },
+    "NYL_LIBERTY": {
+        "wins": 18,
+        "losses": 16,
+        "conference": "East",
+        "madePlayoffs": true,
+        "playoffSeed": "E2"
+    },
+    "DET_SHOCK": {
+        "wins": 17,
+        "losses": 17,
+        "conference": "East",
+        "madePlayoffs": true,
+        "playoffSeed": "E3"
+    },
+    "WAS_MYSTICS": {
+        "wins": 17,
+        "losses": 17,
+        "conference": "East",
+        "madePlayoffs": true,
+        "playoffSeed": "E4"
+    },
+    "CHA_STING": {
+        "wins": 16,
+        "losses": 18,
+        "conference": "East",
+        "madePlayoffs": false,
+        "playoffSeed": null
+    },
+    "IND_FEVER": {
+        "wins": 15,
+        "losses": 19,
+        "conference": "East",
+        "madePlayoffs": false,
+        "playoffSeed": null
+    },
+    "LOS_SPARKS": {
+        "wins": 25,
+        "losses": 9,
+        "conference": "West",
+        "madePlayoffs": true,
+        "playoffSeed": "W1"
+    },
+    "SEA_STORM": {
+        "wins": 20,
+        "losses": 14,
+        "conference": "West",
+        "madePlayoffs": true,
+        "playoffSeed": "W2"
+    },
+    "MIN_LYNX": {
+        "wins": 18,
+        "losses": 16,
+        "conference": "West",
+        "madePlayoffs": true,
+        "playoffSeed": "W3"
+    },
+    "SAC_MONARCHS": {
+        "wins": 18,
+        "losses": 16,
+        "conference": "West",
+        "madePlayoffs": true,
+        "playoffSeed": "W4"
+    },
+    "PHX_MERCURY": {
+        "wins": 17,
+        "losses": 17,
+        "conference": "West",
+        "madePlayoffs": false,
+        "playoffSeed": null
+    },
+    "HOU_COMETS": {
+        "wins": 13,
+        "losses": 21,
+        "conference": "West",
+        "madePlayoffs": false,
+        "playoffSeed": null
+    },
+    "SA_SILVER_STARS": {
+        "wins": 9,
+        "losses": 25,
+        "conference": "West",
+        "madePlayoffs": false,
+        "playoffSeed": null
+    },
+    "playoffs": {
+    "structureType": "conference-bracket",
+    "conferenceChampionsDeterminedByPlayoffs": true,
+    "guaranteedCrossConferenceFinal": true,
+    "finalsConferenceType": "east-west",
+
+      "champion": {
+        "team": "SEA_STORM",
+        "coach": "Anne Donovan",
+        "finalsMVP": "Betty Lennox"
+      },
+
+      "runnerUp": {
+        "team": "CON_SUN",
+        "coach": "Mike Thibault"
+      },
+
+      "conferenceChampions": {
+        "East": "CON_SUN",
+        "West": "SEA_STORM"
+      },
+
+      "bracket": {
+        "rounds": [
+
+          {
+            "id": "CONF_SEMIS",
+            "name": "Conference Semifinals",
+            "conference": "Conference",
+            "roundFormat": "best-of-3",
+
+            "matchups": [
+              {
+                "teamA": { "code": "CON_SUN", "seed": 1, "gamesWon": 2 },
+                "teamB": { "code": "WAS_MYSTICS", "seed": 4, "gamesWon": 1 },
+                "gamesPlayed": 3,
+                "winner": "CON_SUN"
+              },
+              {
+                "teamA": { "code": "NYL_LIBERTY", "seed": 2, "gamesWon": 2 },
+                "teamB": { "code": "DET_SHOCK", "seed": 3, "gamesWon": 1 },
+                "gamesPlayed": 3,
+                "winner": "NYL_LIBERTY"
+              },
+              {
+                "teamA": { "code": "LOS_SPARKS", "seed": 1, "gamesWon": 1 },
+                "teamB": { "code": "SAC_MONARCHS", "seed": 4, "gamesWon": 2 },
+                "gamesPlayed": 3,
+                "winner": "SAC_MONARCHS"
+              },
+              {
+                "teamA": { "code": "SEA_STORM", "seed": 2, "gamesWon": 2 },
+                "teamB": { "code": "MIN_LYNX", "seed": 3, "gamesWon": 0 },
+                "gamesPlayed": 2,
+                "winner": "SEA_STORM"
+              }
+            ]
+          },
+
+          {
+            "id": "CONF_FINALS",
+            "name": "Conference Finals",
+            "conference": "Conference",
+            "roundFormat": "best-of-3",
+
+            "matchups": [
+              {
+                "teamA": { "code": "CON_SUN", "seed": 1, "gamesWon": 2 },
+                "teamB": { "code": "NYL_LIBERTY", "seed": 2, "gamesWon": 0 },
+                "gamesPlayed": 2,
+                "winner": "CON_SUN"
+              },
+              {
+                "teamA": { "code": "SAC_MONARCHS", "seed": 4, "gamesWon": 1 },
+                "teamB": { "code": "SEA_STORM", "seed": 2, "gamesWon": 2 },
+                "gamesPlayed": 3,
+                "winner": "SEA_STORM"
+              }
+            ]
+          },
+
+          {
+            "id": "FINALS",
+            "name": "WNBA Finals",
+            "conference": null,
+            "roundFormat": "best-of-3",
+
+            "matchups": [
+              {
+                "teamA": { "code": "SEA_STORM", "seed": 2, "gamesWon": 2 },
+                "teamB": { "code": "CON_SUN", "seed": 1, "gamesWon": 1 },
+                "gamesPlayed": 3,
+                "winner": "SEA_STORM"
+              }
+            ]
+          }
+
+        ]
+      }
+    }
+  },
+  "2005": {
+    "seasonInfo": {
+        "startDate": "2005-05-21",
+        "endDate": "2005-09-20",
+        "regSeasonGames": 34,
+        "numTeams": 13,
+        "playoffSeedType": "Conference"
+    },
+    "CON_SUN": {
+        "wins": 26,
+        "losses": 8,
+        "conference": "East",
+        "madePlayoffs": true,
+        "playoffSeed": "E1"
+    },
+    "IND_FEVER": {
+        "wins": 21,
+        "losses": 13,
+        "conference": "East",
+        "madePlayoffs": true,
+        "playoffSeed": "E2"
+    },
+    "NYL_LIBERTY": {
+        "wins": 18,
+        "losses": 16,
+        "conference": "East",
+        "madePlayoffs": true,
+        "playoffSeed": "E3"
+    },
+    "DET_SHOCK": {
+        "wins": 16,
+        "losses": 18,
+        "conference": "East",
+        "madePlayoffs": true,
+        "playoffSeed": "E4"
+    },
+    "WAS_MYSTICS": {
+        "wins": 16,
+        "losses": 18,
+        "conference": "East",
+        "madePlayoffs": false,
+        "playoffSeed": null
+    },
+    "CHA_STING": {
+        "wins": 6,
+        "losses": 28,
+        "conference": "East",
+        "madePlayoffs": false,
+        "playoffSeed": null
+    },
+    "SAC_MONARCHS": {
+        "wins": 25,
+        "losses": 9,
+        "conference": "West",
+        "madePlayoffs": true,
+        "playoffSeed": "W1"
+    },
+    "SEA_STORM": {
+        "wins": 20,
+        "losses": 14,
+        "conference": "West",
+        "madePlayoffs": true,
+        "playoffSeed": "W2"
+    },
+    "HOU_COMETS": {
+        "wins": 19,
+        "losses": 15,
+        "conference": "West",
+        "madePlayoffs": true,
+        "playoffSeed": "W3"
+    },
+    "LOS_SPARKS": {
+        "wins": 17,
+        "losses": 17,
+        "conference": "West",
+        "madePlayoffs": true,
+        "playoffSeed": "W4"
+    },
+    "PHX_MERCURY": {
+        "wins": 16,
+        "losses": 18,
+        "conference": "West",
+        "madePlayoffs": false,
+        "playoffSeed": null
+    },
+    "MIN_LYNX": {
+        "wins": 14,
+        "losses": 20,
+        "conference": "West",
+        "madePlayoffs": false,
+        "playoffSeed": null
+    },
+    "SA_SILVER_STARS": {
+        "wins": 7,
+        "losses": 27,
+        "conference": "West",
+        "madePlayoffs": false,
+        "playoffSeed": null
+    },
+    "playoffs": {
+    "structureType": "conference-bracket",
+    "conferenceChampionsDeterminedByPlayoffs": true,
+    "guaranteedCrossConferenceFinal": true,
+    "finalsConferenceType": "east-west",
+
+      "champion": {
+        "team": "SAC_MONARCHS",
+        "coach": "John Whisenant",
+        "finalsMVP": "Yolanda Griffith"
+      },
+
+      "runnerUp": {
+        "team": "CON_SUN",
+        "coach": "Mike Thibault"
+      },
+
+      "conferenceChampions": {
+        "East": "CON_SUN",
+        "West": "SAC_MONARCHS"
+      },
+
+      "bracket": {
+        "rounds": [
+
+          {
+            "id": "CONF_SEMIS",
+            "name": "Conference Semifinals",
+            "conference": "Conference",
+            "roundFormat": "best-of-3",
+
+            "matchups": [
+              {
+                "teamA": { "code": "CON_SUN", "seed": 1, "gamesWon": 2 },
+                "teamB": { "code": "DET_SHOCK", "seed": 4, "gamesWon": 0 },
+                "gamesPlayed": 2,
+                "winner": "CON_SUN"
+              },
+              {
+                "teamA": { "code": "IND_FEVER", "seed": 2, "gamesWon": 2 },
+                "teamB": { "code": "NYL_LIBERTY", "seed": 3, "gamesWon": 0 },
+                "gamesPlayed": 2,
+                "winner": "IND_FEVER"
+              },
+              {
+                "teamA": { "code": "SAC_MONARCHS", "seed": 1, "gamesWon": 2 },
+                "teamB": { "code": "LOS_SPARKS", "seed": 4, "gamesWon": 0 },
+                "gamesPlayed": 2,
+                "winner": "SAC_MONARCHS"
+              },
+              {
+                "teamA": { "code": "SEA_STORM", "seed": 2, "gamesWon": 1 },
+                "teamB": { "code": "HOU_COMETS", "seed": 3, "gamesWon": 2 },
+                "gamesPlayed": 3,
+                "winner": "HOU_COMETS"
+              }
+            ]
+          },
+
+          {
+            "id": "CONF_FINALS",
+            "name": "Conference Finals",
+            "conference": "Conference",
+            "roundFormat": "best-of-3",
+
+            "matchups": [
+              {
+                "teamA": { "code": "CON_SUN", "seed": 1, "gamesWon": 2 },
+                "teamB": { "code": "IND_FEVER", "seed": 2, "gamesWon": 1 },
+                "gamesPlayed": 3,
+                "winner": "CON_SUN"
+              },
+              {
+                "teamA": { "code": "SAC_MONARCHS", "seed": 1, "gamesWon": 2 },
+                "teamB": { "code": "HOU_COMETS", "seed": 3, "gamesWon": 0 },
+                "gamesPlayed": 2,
+                "winner": "SAC_MONARCHS"
+              }
+            ]
+          },
+
+          {
+            "id": "FINALS",
+            "name": "WNBA Finals",
+            "conference": null,
+            "roundFormat": "best-of-5",
+
+            "matchups": [
+              {
+                "teamA": { "code": "SAC_MONARCHS", "seed": 1, "gamesWon": 3 },
+                "teamB": { "code": "CON_SUN", "seed": 1, "gamesWon": 1 },
+                "gamesPlayed": 4,
+                "winner": "SAC_MONARCHS"
+              }
+            ]
+          }
+
+        ]
+      }
+    }
+  },
+"2006": {
+  "seasonInfo": {
+    "startDate": "2006-05-20",
+    "endDate": "2006-09-09",
+    "regSeasonGames": 34,
+    "numTeams": 14,
+    "playoffSeedType": "Conference"
+  },
+  "CON_SUN": {
+    "wins": 26,
+    "losses": 8,
+    "conference": "East",
+    "madePlayoffs": true,
+    "playoffSeed": "E1"
+  },
+  "DET_SHOCK": {
+    "wins": 23,
+    "losses": 11,
+    "conference": "East",
+    "madePlayoffs": true,
+    "playoffSeed": "E2"
+  },
+  "IND_FEVER": {
+    "wins": 21,
+    "losses": 13,
+    "conference": "East",
+    "madePlayoffs": true,
+    "playoffSeed": "E3"
+  },
+  "WAS_MYSTICS": {
+    "wins": 18,
+    "losses": 16,
+    "conference": "East",
+    "madePlayoffs": true,
+    "playoffSeed": "E4"
+  },
+  "NYL_LIBERTY": {
+    "wins": 11,
+    "losses": 23,
+    "conference": "East",
+    "madePlayoffs": false,
+    "playoffSeed": null
+  },
+  "CHA_STING": {
+    "wins": 11,
+    "losses": 23,
+    "conference": "East",
+    "madePlayoffs": false,
+    "playoffSeed": null
+  },
+  "CHI_SKY": {
+    "wins": 5,
+    "losses": 29,
+    "conference": "East",
+    "madePlayoffs": false,
+    "playoffSeed": null
+  },
+  "LOS_SPARKS": {
+    "wins": 25,
+    "losses": 9,
+    "conference": "West",
+    "madePlayoffs": true,
+    "playoffSeed": "W1"
+  },
+  "SAC_MONARCHS": {
+    "wins": 21,
+    "losses": 13,
+    "conference": "West",
+    "madePlayoffs": true,
+    "playoffSeed": "W2"
+  },
+  "HOU_COMETS": {
+    "wins": 18,
+    "losses": 16,
+    "conference": "West",
+    "madePlayoffs": true,
+    "playoffSeed": "W3"
+  },
+  "SEA_STORM": {
+    "wins": 18,
+    "losses": 16,
+    "conference": "West",
+    "madePlayoffs": true,
+    "playoffSeed": "W4"
+  },
+  "PHX_MERCURY": {
+    "wins": 18,
+    "losses": 16,
+    "conference": "West",
+    "madePlayoffs": false,
+    "playoffSeed": null
+  },
+  "SA_SILVER_STARS": {
+    "wins": 13,
+    "losses": 21,
+    "conference": "West",
+    "madePlayoffs": false,
+    "playoffSeed": null
+  },
+  "MIN_LYNX": {
+    "wins": 10,
+    "losses": 24,
+    "conference": "West",
+    "madePlayoffs": false,
+    "playoffSeed": null
+  },
+"playoffs": {
+    "structureType": "conference-bracket",
+    "conferenceChampionsDeterminedByPlayoffs": true,
+    "guaranteedCrossConferenceFinal": true,
+    "finalsConferenceType": "east-west",
+
+  "champion": {
+    "team": "DET_SHOCK",
+    "coach": "Bill Laimbeer",
+    "finalsMVP": "Deanna Nolan"
+  },
+
+  "runnerUp": {
+    "team": "SAC_MONARCHS",
+    "coach": "John Whisenant"
+  },
+
+  "conferenceChampions": {
+    "East": "DET_SHOCK",
+    "West": "SAC_MONARCHS"
+  },
+
+  "bracket": {
+    "rounds": [
+
+      {
+        "id": "CONF_SEMIS",
+        "name": "Conference Semifinals",
+        "conference": "Conference",
+        "roundFormat": "best-of-3",
+
+        "matchups": [
+          {
+            "teamA": { "code": "CON_SUN", "seed": 1, "gamesWon": 2 },
+            "teamB": { "code": "WAS_MYSTICS", "seed": 4, "gamesWon": 0 },
+            "gamesPlayed": 2,
+            "winner": "CON_SUN"
+          },
+          {
+            "teamA": { "code": "DET_SHOCK", "seed": 2, "gamesWon": 2 },
+            "teamB": { "code": "IND_FEVER", "seed": 3, "gamesWon": 0 },
+            "gamesPlayed": 2,
+            "winner": "DET_SHOCK"
+          },
+          {
+            "teamA": { "code": "LOS_SPARKS", "seed": 1, "gamesWon": 2 },
+            "teamB": { "code": "SEA_STORM", "seed": 4, "gamesWon": 1 },
+            "gamesPlayed": 3,
+            "winner": "LOS_SPARKS"
+          },
+          {
+            "teamA": { "code": "SAC_MONARCHS", "seed": 2, "gamesWon": 2 },
+            "teamB": { "code": "HOU_COMETS", "seed": 3, "gamesWon": 0 },
+            "gamesPlayed": 2,
+            "winner": "SAC_MONARCHS"
+          }
+        ]
+      },
+
+      {
+        "id": "CONF_FINALS",
+        "name": "Conference Finals",
+        "conference": "Conference",
+        "roundFormat": "best-of-3",
+
+        "matchups": [
+          {
+            "teamA": { "code": "CON_SUN", "seed": 1, "gamesWon": 1 },
+            "teamB": { "code": "DET_SHOCK", "seed": 2, "gamesWon": 2 },
+            "gamesPlayed": 3,
+            "winner": "DET_SHOCK"
+          },
+          {
+            "teamA": { "code": "LOS_SPARKS", "seed": 1, "gamesWon": 0 },
+            "teamB": { "code": "SAC_MONARCHS", "seed": 2, "gamesWon": 2 },
+            "gamesPlayed": 2,
+            "winner": "SAC_MONARCHS"
+          }
+        ]
+      },
+
+      {
+        "id": "FINALS",
+        "name": "WNBA Finals",
+        "conference": null,
+        "roundFormat": "best-of-5",
+
+        "matchups": [
+          {
+            "teamA": { "code": "DET_SHOCK", "seed": 2, "gamesWon": 3 },
+            "teamB": { "code": "SAC_MONARCHS", "seed": 2, "gamesWon": 2 },
+            "gamesPlayed": 5,
+            "winner": "DET_SHOCK"
+          }
+        ]
+      }
+
+    ]
+  }
+}
+},
+"2007": {
+  "seasonInfo": {
+    "startDate": "2007-05-19",
+    "endDate": "2007-09-16",
+    "regSeasonGames": 34,
+    "numTeams": 13,
+    "playoffSeedType": "Conference"
+  },
+  "DET_SHOCK": {
+    "wins": 24,
+    "losses": 10,
+    "conference": "East",
+    "madePlayoffs": true,
+    "playoffSeed": "E1"
+  },
+  "IND_FEVER": {
+    "wins": 21,
+    "losses": 13,
+    "conference": "East",
+    "madePlayoffs": true,
+    "playoffSeed": "E2"
+  },
+  "CON_SUN": {
+    "wins": 18,
+    "losses": 16,
+    "conference": "East",
+    "madePlayoffs": true,
+    "playoffSeed": "E3"
+  },
+  "NYL_LIBERTY": {
+    "wins": 16,
+    "losses": 18,
+    "conference": "East",
+    "madePlayoffs": true,
+    "playoffSeed": "E4"
+  },
+  "WAS_MYSTICS": {
+    "wins": 16,
+    "losses": 18,
+    "conference": "East",
+    "madePlayoffs": false,
+    "playoffSeed": null
+  },
+  "CHI_SKY": {
+    "wins": 14,
+    "losses": 20,
+    "conference": "East",
+    "madePlayoffs": false,
+    "playoffSeed": null
+  },
+  "PHX_MERCURY": {
+    "wins": 23,
+    "losses": 11,
+    "conference": "West",
+    "madePlayoffs": true,
+    "playoffSeed": "W1"
+  },
+  "SA_SILVER_STARS": {
+    "wins": 20,
+    "losses": 14,
+    "conference": "West",
+    "madePlayoffs": true,
+    "playoffSeed": "W2"
+  },
+  "SAC_MONARCHS": {
+    "wins": 19,
+    "losses": 15,
+    "conference": "West",
+    "madePlayoffs": true,
+    "playoffSeed": "W3"
+  },
+  "SEA_STORM": {
+    "wins": 17,
+    "losses": 17,
+    "conference": "West",
+    "madePlayoffs": true,
+    "playoffSeed": "W4"
+  },
+  "HOU_COMETS": {
+    "wins": 13,
+    "losses": 21,
+    "conference": "West",
+    "madePlayoffs": false,
+    "playoffSeed": null
+  },
+  "MIN_LYNX": {
+    "wins": 10,
+    "losses": 24,
+    "conference": "West",
+    "madePlayoffs": false,
+    "playoffSeed": null
+  },
+  "LOS_SPARKS": {
+    "wins": 10,
+    "losses": 24,
+    "conference": "West",
+    "madePlayoffs": false,
+    "playoffSeed": null
+  },
+  "playoffs": {
+    "structureType": "conference-bracket",
+    "conferenceChampionsDeterminedByPlayoffs": true,
+    "guaranteedCrossConferenceFinal": true,
+    "finalsConferenceType": "east-west",
+
+    "champion": {
+      "team": "PHX_MERCURY",
+      "coach": "Paul Westhead",
+      "finalsMVP": "Cappie Pondexter"
+    },
+
+    "runnerUp": {
+      "team": "DET_SHOCK",
+      "coach": "Bill Laimbeer"
+    },
+
+    "conferenceChampions": {
+      "East": "DET_SHOCK",
+      "West": "PHX_MERCURY"
+    },
+
+    "bracket": {
+      "rounds": [
+
+        {
+          "id": "FIRST_ROUND",
+          "name": "First Round",
+          "conference": "Conference",
+          "roundFormat": "best-of-3",
+
+          "matchups": [
+            {
+              "teamA": { "code": "DET_SHOCK", "seed": 1, "gamesWon": 2 },
+              "teamB": { "code": "NYL_LIBERTY", "seed": 4, "gamesWon": 1 },
+              "gamesPlayed": 3,
+              "winner": "DET_SHOCK"
+            },
+            {
+              "teamA": { "code": "IND_FEVER", "seed": 2, "gamesWon": 2 },
+              "teamB": { "code": "CON_SUN", "seed": 3, "gamesWon": 1 },
+              "gamesPlayed": 3,
+              "winner": "IND_FEVER"
+            },
+            {
+              "teamA": { "code": "PHX_MERCURY", "seed": 1, "gamesWon": 2 },
+              "teamB": { "code": "SEA_STORM", "seed": 4, "gamesWon": 0 },
+              "gamesPlayed": 2,
+              "winner": "PHX_MERCURY"
+            },
+            {
+              "teamA": { "code": "SA_SILVER_STARS", "seed": 2, "gamesWon": 2 },
+              "teamB": { "code": "SAC_MONARCHS", "seed": 3, "gamesWon": 1 },
+              "gamesPlayed": 3,
+              "winner": "SA_SILVER_STARS"
+            }
+          ]
+        },
+
+        {
+          "id": "CONF_FINALS",
+          "name": "Conference Finals",
+          "conference": "Conference",
+          "roundFormat": "best-of-3",
+
+          "matchups": [
+            {
+              "teamA": { "code": "DET_SHOCK", "seed": 1, "gamesWon": 2 },
+              "teamB": { "code": "IND_FEVER", "seed": 2, "gamesWon": 1 },
+              "gamesPlayed": 3,
+              "winner": "DET_SHOCK"
+            },
+            {
+              "teamA": { "code": "PHX_MERCURY", "seed": 1, "gamesWon": 2 },
+              "teamB": { "code": "SA_SILVER_STARS", "seed": 2, "gamesWon": 0 },
+              "gamesPlayed": 2,
+              "winner": "PHX_MERCURY"
+            }
+          ]
+        },
+
+        {
+          "id": "FINALS",
+          "name": "WNBA Finals",
+          "conference": null,
+          "roundFormat": "best-of-5",
+
+          "matchups": [
+            {
+              "teamA": { "code": "PHX_MERCURY", "seed": 1, "gamesWon": 3 },
+              "teamB": { "code": "DET_SHOCK", "seed": 1, "gamesWon": 2 },
+              "gamesPlayed": 5,
+              "winner": "PHX_MERCURY"
+            }
+          ]
+        }
+
+      ]
+    }
+  }
+},
+"2008": {
+  "seasonInfo": {
+    "startDate": "2008-05-17",
+    "endDate": "2008-10-05",
+    "regSeasonGames": 34,
+    "numTeams": 14,
+    "playoffSeedType": "Conference"
+  },
+  "DET_SHOCK": {
+    "wins": 22,
+    "losses": 12,
+    "conference": "East",
+    "madePlayoffs": true,
+    "playoffSeed": "E1"
+  },
+  "CON_SUN": {
+    "wins": 21,
+    "losses": 13,
+    "conference": "East",
+    "madePlayoffs": true,
+    "playoffSeed": "E2"
+  },
+  "NYL_LIBERTY": {
+    "wins": 19,
+    "losses": 15,
+    "conference": "East",
+    "madePlayoffs": true,
+    "playoffSeed": "E3"
+  },
+  "IND_FEVER": {
+    "wins": 17,
+    "losses": 17,
+    "conference": "East",
+    "madePlayoffs": true,
+    "playoffSeed": "E4"
+  },
+  "CHI_SKY": {
+    "wins": 12,
+    "losses": 22,
+    "conference": "East",
+    "madePlayoffs": false,
+    "playoffSeed": null
+  },
+  "WAS_MYSTICS": {
+    "wins": 10,
+    "losses": 24,
+    "conference": "East",
+    "madePlayoffs": false,
+    "playoffSeed": null
+  },
+  "ATL_DREAM": {
+    "wins": 4,
+    "losses": 30,
+    "conference": "East",
+    "madePlayoffs": false,
+    "playoffSeed": null
+  },
+  "SA_SILVER_STARS": {
+    "wins": 24,
+    "losses": 10,
+    "conference": "West",
+    "madePlayoffs": true,
+    "playoffSeed": "W1"
+  },
+  "SEA_STORM": {
+    "wins": 22,
+    "losses": 12,
+    "conference": "West",
+    "madePlayoffs": true,
+    "playoffSeed": "W2"
+  },
+  "LOS_SPARKS": {
+    "wins": 20,
+    "losses": 14,
+    "conference": "West",
+    "madePlayoffs": true,
+    "playoffSeed": "W3"
+  },
+  "SAC_MONARCHS": {
+    "wins": 18,
+    "losses": 16,
+    "conference": "West",
+    "madePlayoffs": true,
+    "playoffSeed": "W4"
+  },
+  "HOU_COMETS": {
+    "wins": 17,
+    "losses": 17,
+    "conference": "West",
+    "madePlayoffs": false,
+    "playoffSeed": null
+  },
+  "MIN_LYNX": {
+    "wins": 16,
+    "losses": 18,
+    "conference": "West",
+    "madePlayoffs": false,
+    "playoffSeed": null
+  },
+  "PHX_MERCURY": {
+    "wins": 16,
+    "losses": 18,
+    "conference": "West",
+    "madePlayoffs": false,
+    "playoffSeed": null
+  },
+  "playoffs": {
+    "structureType": "conference-bracket",
+    "conferenceChampionsDeterminedByPlayoffs": true,
+    "guaranteedCrossConferenceFinal": true,
+    "finalsConferenceType": "east-west",
+
+    "champion": {
+      "team": "DET_SHOCK",
+      "coach": "Bill Laimbeer",
+      "finalsMVP": "Katie Smith"
+    },
+
+    "runnerUp": {
+      "team": "SA_SILVER_STARS",
+      "coach": "Dan Hughes"
+    },
+
+    "conferenceChampions": {
+      "East": "DET_SHOCK",
+      "West": "PHX_MERCURY"
+    },
+
+    "bracket": {
+      "rounds": [
+
+        {
+          "id": "FIRST_ROUND",
+          "name": "First Round",
+          "conference": "Conference",
+          "roundFormat": "best-of-3",
+
+          "matchups": [
+            {
+              "teamA": { "code": "DET_SHOCK", "seed": 1, "gamesWon": 2 },
+              "teamB": { "code": "IND_FEVER", "seed": 4, "gamesWon": 1 },
+              "gamesPlayed": 3,
+              "winner": "DET_SHOCK"
+            },
+            {
+              "teamA": { "code": "CON_SUN", "seed": 2, "gamesWon": 1 },
+              "teamB": { "code": "NYL_LIBERTY", "seed": 3, "gamesWon": 2 },
+              "gamesPlayed": 3,
+              "winner": "NYL_LIBERTY"
+            },
+            {
+              "teamA": { "code": "SA_SILVER_STARS", "seed": 1, "gamesWon": 2 },
+              "teamB": { "code": "SAC_MONARCHS", "seed": 4, "gamesWon": 1 },
+              "gamesPlayed": 3,
+              "winner": "SA_SILVER_STARS"
+            },
+            {
+              "teamA": { "code": "SEA_STORM", "seed": 2, "gamesWon": 1 },
+              "teamB": { "code": "LOS_SPARKS", "seed": 3, "gamesWon": 2 },
+              "gamesPlayed": 3,
+              "winner": "LOS_SPARKS"
+            }
+          ]
+        },
+
+        {
+          "id": "CONF_FINALS",
+          "name": "Conference Finals",
+          "conference": "Conference",
+          "roundFormat": "best-of-3",
+
+          "matchups": [
+            {
+              "teamA": { "code": "DET_SHOCK", "seed": 1, "gamesWon": 2 },
+              "teamB": { "code": "NYL_LIBERTY", "seed": 2, "gamesWon": 1 },
+              "gamesPlayed": 3,
+              "winner": "DET_SHOCK"
+            },
+            {
+              "teamA": { "code": "SA_SILVER_STARS", "seed": 1, "gamesWon": 2 },
+              "teamB": { "code": "LOS_SPARKS", "seed": 3, "gamesWon": 1 },
+              "gamesPlayed": 3,
+              "winner": "SA_SILVER_STARS"
+            }
+          ]
+        },
+
+        {
+          "id": "FINALS",
+          "name": "WNBA Finals",
+          "conference": null,
+          "roundFormat": "best-of-5",
+
+          "matchups": [
+            {
+              "teamA": { "code": "SA_SILVER_STARS", "seed": 1, "gamesWon": 0 },
+              "teamB": { "code": "DET_SHOCK", "seed": 1, "gamesWon": 3 },
+              "gamesPlayed": 3,
+              "winner": "DET_SHOCK"
+            }
+          ]
+        }
+
+      ]
+    }
+  }
+},
+"2009": {
+  "seasonInfo": {
+    "startDate": "2009-06-06",
+    "endDate": "2009-10-09",
+    "regSeasonGames": 34,
+    "numTeams": 13,
+    "playoffSeedType": "Conference"
+  },
+  "IND_FEVER": {
+    "wins": 22,
+    "losses": 12,
+    "conference": "East",
+    "madePlayoffs": true,
+    "playoffSeed": "E1"
+  },
+  "ATL_DREAM": {
+    "wins": 18,
+    "losses": 16,
+    "conference": "East",
+    "madePlayoffs": true,
+    "playoffSeed": "E2"
+  },
+  "DET_SHOCK": {
+    "wins": 18,
+    "losses": 16,
+    "conference": "East",
+    "madePlayoffs": true,
+    "playoffSeed": "E3"
+  },
+  "WAS_MYSTICS": {
+    "wins": 16,
+    "losses": 18,
+    "conference": "East",
+    "madePlayoffs": true,
+    "playoffSeed": "E4"
+  },
+  "CHI_SKY": {
+    "wins": 16,
+    "losses": 18,
+    "conference": "East",
+    "madePlayoffs": false,
+    "playoffSeed": null
+  },
+  "CON_SUN": {
+    "wins": 16,
+    "losses": 18,
+    "conference": "East",
+    "madePlayoffs": false,
+    "playoffSeed": null
+  },
+  "NYL_LIBERTY": {
+    "wins": 13,
+    "losses": 21,
+    "conference": "East",
+    "madePlayoffs": false,
+    "playoffSeed": null
+  },
+  "PHX_MERCURY": {
+    "wins": 23,
+    "losses": 11,
+    "conference": "West",
+    "madePlayoffs": true,
+    "playoffSeed": "W1"
+  },
+  "SEA_STORM": {
+    "wins": 20,
+    "losses": 14,
+    "conference": "West",
+    "madePlayoffs": true,
+    "playoffSeed": "W2"
+  },
+  "LOS_SPARKS": {
+    "wins": 18,
+    "losses": 16,
+    "conference": "West",
+    "madePlayoffs": true,
+    "playoffSeed": "W3"
+  },
+  "SA_SILVER_STARS": {
+    "wins": 15,
+    "losses": 19,
+    "conference": "West",
+    "madePlayoffs": true,
+    "playoffSeed": "W4"
+  },
+  "MIN_LYNX": {
+    "wins": 14,
+    "losses": 20,
+    "conference": "West",
+    "madePlayoffs": false,
+    "playoffSeed": null
+  },
+  "SAC_MONARCHS": {
+    "wins": 12,
+    "losses": 22,
+    "conference": "West",
+    "madePlayoffs": false,
+    "playoffSeed": null
+  },
+  "playoffs": {
+    "structureType": "conference-bracket",
+    "conferenceChampionsDeterminedByPlayoffs": true,
+    "guaranteedCrossConferenceFinal": true,
+    "finalsConferenceType": "east-west",
+
+    "champion": {
+      "team": "PHX_MERCURY",
+      "coach": "Corey Gaines",
+      "finalsMVP": "Diana Taurasi"
+    },
+
+    "runnerUp": {
+      "team": "IND_FEVER",
+      "coach": "Lin Dunn"
+    },
+
+    "conferenceChampions": {
+      "East": "IND_FEVER",
+      "West": "PHX_MERCURY"
+    },
+
+    "bracket": {
+      "rounds": [
+
+        {
+          "id": "CONF_SEMIS",
+          "name": "Conference Semifinals",
+          "conference": "Conference",
+          "roundFormat": "best-of-3",
+
+          "matchups": [
+            {
+              "teamA": { "code": "IND_FEVER", "seed": 1, "gamesWon": 2 },
+              "teamB": { "code": "WAS_MYSTICS", "seed": 4, "gamesWon": 0 },
+              "gamesPlayed": 2,
+              "winner": "IND_FEVER"
+            },
+            {
+              "teamA": { "code": "ATL_DREAM", "seed": 2, "gamesWon": 0 },
+              "teamB": { "code": "DET_SHOCK", "seed": 3, "gamesWon": 2 },
+              "gamesPlayed": 2,
+              "winner": "DET_SHOCK"
+            },
+            {
+              "teamA": { "code": "PHX_MERCURY", "seed": 1, "gamesWon": 2 },
+              "teamB": { "code": "SA_SILVER_STARS", "seed": 4, "gamesWon": 1 },
+              "gamesPlayed": 3,
+              "winner": "PHX_MERCURY"
+            },
+            {
+              "teamA": { "code": "SEA_STORM", "seed": 2, "gamesWon": 1 },
+              "teamB": { "code": "LOS_SPARKS", "seed": 3, "gamesWon": 2 },
+              "gamesPlayed": 3,
+              "winner": "LOS_SPARKS"
+            }
+          ]
+        },
+
+        {
+          "id": "CONF_FINALS",
+          "name": "Conference Finals",
+          "conference": "Conference",
+          "roundFormat": "best-of-3",
+
+          "matchups": [
+            {
+              "teamA": { "code": "IND_FEVER", "seed": 1, "gamesWon": 2 },
+              "teamB": { "code": "DET_SHOCK", "seed": 3, "gamesWon": 1 },
+              "gamesPlayed": 3,
+              "winner": "IND_FEVER"
+            },
+            {
+              "teamA": { "code": "PHX_MERCURY", "seed": 1, "gamesWon": 2 },
+              "teamB": { "code": "LOS_SPARKS", "seed": 3, "gamesWon": 1 },
+              "gamesPlayed": 3,
+              "winner": "PHX_MERCURY"
+            }
+          ]
+        },
+
+        {
+          "id": "FINALS",
+          "name": "WNBA Finals",
+          "conference": null,
+          "roundFormat": "best-of-5",
+
+          "matchups": [
+            {
+              "teamA": { "code": "PHX_MERCURY", "seed": 1, "gamesWon": 3 },
+              "teamB": { "code": "IND_FEVER", "seed": 1, "gamesWon": 2 },
+              "gamesPlayed": 5,
+              "winner": "PHX_MERCURY"
+            }
+          ]
+        }
+
+      ]
+    }
+  }
+},
+"2010": {
+  "seasonInfo": {
+    "startDate": "2010-05-15",
+    "endDate": "2010-09-16",
+    "regSeasonGames": 34,
+    "numTeams": 12,
+    "playoffSeedType": "Conference"
+  },
+  "WAS_MYSTICS": {
+    "wins": 22,
+    "losses": 12,
+    "conference": "East",
+    "madePlayoffs": true,
+    "playoffSeed": "E1"
+  },
+  "NYL_LIBERTY": {
+    "wins": 22,
+    "losses": 12,
+    "conference": "East",
+    "madePlayoffs": true,
+    "playoffSeed": "E2"
+  },
+  "IND_FEVER": {
+    "wins": 21,
+    "losses": 13,
+    "conference": "East",
+    "madePlayoffs": true,
+    "playoffSeed": "E3"
+  },
+  "ATL_DREAM": {
+    "wins": 19,
+    "losses": 15,
+    "conference": "East",
+    "madePlayoffs": true,
+    "playoffSeed": "E4"
+  },
+  "CON_SUN": {
+    "wins": 17,
+    "losses": 17,
+    "conference": "East",
+    "madePlayoffs": false,
+    "playoffSeed": null
+  },
+  "CHI_SKY": {
+    "wins": 14,
+    "losses": 20,
+    "conference": "East",
+    "madePlayoffs": false,
+    "playoffSeed": null
+  },
+  "SEA_STORM": {
+    "wins": 28,
+    "losses": 6,
+    "conference": "West",
+    "madePlayoffs": true,
+    "playoffSeed": "W1"
+  },
+  "PHX_MERCURY": {
+    "wins": 15,
+    "losses": 19,
+    "conference": "West",
+    "madePlayoffs": true,
+    "playoffSeed": "W2"
+  },
+  "SA_SILVER_STARS": {
+    "wins": 14,
+    "losses": 20,
+    "conference": "West",
+    "madePlayoffs": true,
+    "playoffSeed": "W3"
+  },
+  "LOS_SPARKS": {
+    "wins": 13,
+    "losses": 21,
+    "conference": "West",
+    "madePlayoffs": true,
+    "playoffSeed": "W4"
+  },
+  "MIN_LYNX": {
+    "wins": 13,
+    "losses": 21,
+    "conference": "West",
+    "madePlayoffs": false,
+    "playoffSeed": null
+  },
+  "TUL_SHOCK": {
+    "wins": 6,
+    "losses": 28,
+    "conference": "West",
+    "madePlayoffs": false,
+    "playoffSeed": null
+  },
+  "playoffs": {
+    "structureType": "conference-bracket",
+    "conferenceChampionsDeterminedByPlayoffs": true,
+    "guaranteedCrossConferenceFinal": true,
+    "finalsConferenceType": "east-west",
+
+    "champion": {
+      "team": "SEA_STORM",
+      "coach": "Brian Agler",
+      "finalsMVP": "Lauren Jackson"
+    },
+
+    "runnerUp": {
+      "team": "ATL_DREAM",
+      "coach": "Marynell Meadors"
+    },
+
+    "conferenceChampions": {
+      "East": "ATL_DREAM",
+      "West": "SEA_STORM"
+    },
+
+    "bracket": {
+      "rounds": [
+
+        {
+          "id": "CONF_SEMIS",
+          "name": "Conference Semifinals",
+          "conference": "Conference",
+          "roundFormat": "best-of-3",
+
+          "matchups": [
+            {
+              "teamA": { "code": "WAS_MYSTICS", "seed": 1, "gamesWon": 0 },
+              "teamB": { "code": "ATL_DREAM", "seed": 4, "gamesWon": 2 },
+              "gamesPlayed": 2,
+              "winner": "ATL_DREAM"
+            },
+            {
+              "teamA": { "code": "NYL_LIBERTY", "seed": 2, "gamesWon": 2 },
+              "teamB": { "code": "IND_FEVER", "seed": 3, "gamesWon": 1 },
+              "gamesPlayed": 3,
+              "winner": "NYL_LIBERTY"
+            },
+            {
+              "teamA": { "code": "SEA_STORM", "seed": 1, "gamesWon": 2 },
+              "teamB": { "code": "LOS_SPARKS", "seed": 4, "gamesWon": 0 },
+              "gamesPlayed": 2,
+              "winner": "SEA_STORM"
+            },
+            {
+              "teamA": { "code": "PHX_MERCURY", "seed": 2, "gamesWon": 2 },
+              "teamB": { "code": "SA_SILVER_STARS", "seed": 3, "gamesWon": 0 },
+              "gamesPlayed": 2,
+              "winner": "PHX_MERCURY"
+            }
+          ]
+        },
+
+        {
+          "id": "CONF_FINALS",
+          "name": "Conference Finals",
+          "conference": "Conference",
+          "roundFormat": "best-of-3",
+
+          "matchups": [
+            {
+              "teamA": { "code": "ATL_DREAM", "seed": 4, "gamesWon": 2 },
+              "teamB": { "code": "NYL_LIBERTY", "seed": 2, "gamesWon": 0 },
+              "gamesPlayed": 2,
+              "winner": "ATL_DREAM"
+            },
+            {
+              "teamA": { "code": "SEA_STORM", "seed": 1, "gamesWon": 2 },
+              "teamB": { "code": "PHX_MERCURY", "seed": 2, "gamesWon": 0 },
+              "gamesPlayed": 2,
+              "winner": "SEA_STORM"
+            }
+          ]
+        },
+
+        {
+          "id": "FINALS",
+          "name": "WNBA Finals",
+          "conference": null,
+          "roundFormat": "best-of-5",
+
+          "matchups": [
+            {
+              "teamA": { "code": "SEA_STORM", "seed": 1, "gamesWon": 3 },
+              "teamB": { "code": "ATL_DREAM", "seed": 4, "gamesWon": 0 },
+              "gamesPlayed": 3,
+              "winner": "SEA_STORM"
+            }
+          ]
+        }
+
+      ]
+    }
+  }
+},
+"2011": {
+  "seasonInfo": {
+    "startDate": "2011-06-03",
+    "endDate": "2011-10-07",
+    "regSeasonGames": 34,
+    "numTeams": 12,
+    "playoffSeedType": "Conference"
+  },
+  "IND_FEVER": {
+    "wins": 21,
+    "losses": 13,
+    "conference": "East",
+    "madePlayoffs": true,
+    "playoffSeed": "E1"
+  },
+  "CON_SUN": {
+    "wins": 21,
+    "losses": 13,
+    "conference": "East",
+    "madePlayoffs": true,
+    "playoffSeed": "E2"
+  },
+  "ATL_DREAM": {
+    "wins": 20,
+    "losses": 14,
+    "conference": "East",
+    "madePlayoffs": true,
+    "playoffSeed": "E3"
+  },
+  "NYL_LIBERTY": {
+    "wins": 19,
+    "losses": 15,
+    "conference": "East",
+    "madePlayoffs": true,
+    "playoffSeed": "E4"
+  },
+  "CHI_SKY": {
+    "wins": 14,
+    "losses": 20,
+    "conference": "East",
+    "madePlayoffs": false,
+    "playoffSeed": null
+  },
+  "WAS_MYSTICS": {
+    "wins": 6,
+    "losses": 28,
+    "conference": "East",
+    "madePlayoffs": false,
+    "playoffSeed": null
+  },
+  "MIN_LYNX": {
+    "wins": 27,
+    "losses": 7,
+    "conference": "West",
+    "madePlayoffs": true,
+    "playoffSeed": "W1"
+  },
+  "SEA_STORM": {
+    "wins": 21,
+    "losses": 13,
+    "conference": "West",
+    "madePlayoffs": true,
+    "playoffSeed": "W2"
+  },
+  "PHX_MERCURY": {
+    "wins": 19,
+    "losses": 15,
+    "conference": "West",
+    "madePlayoffs": true,
+    "playoffSeed": "W3"
+  },
+  "SA_SILVER_STARS": {
+    "wins": 18,
+    "losses": 16,
+    "conference": "West",
+    "madePlayoffs": true,
+    "playoffSeed": "W4"
+  },
+  "LOS_SPARKS": {
+    "wins": 15,
+    "losses": 19,
+    "conference": "West",
+    "madePlayoffs": false,
+    "playoffSeed": null
+  },
+  "TUL_SHOCK": {
+    "wins": 3,
+    "losses": 31,
+    "conference": "West",
+    "madePlayoffs": false,
+    "playoffSeed": null
+  },
+  "playoffs": {
+    "structureType": "conference-bracket",
+    "conferenceChampionsDeterminedByPlayoffs": true,
+    "guaranteedCrossConferenceFinal": true,
+    "finalsConferenceType": "east-west",
+
+    "champion": {
+      "team": "MIN_LYNX",
+      "coach": "Cheryl Reeve",
+      "finalsMVP": "Seimone Augustus"
+    },
+
+    "runnerUp": {
+      "team": "ATL_DREAM",
+      "coach": "Marynell Meadors"
+    },
+
+    "conferenceChampions": {
+      "East": "ATL_DREAM",
+      "West": "MIN_LYNX"
+    },
+
+    "bracket": {
+      "rounds": [
+
+        {
+          "id": "CONF_SEMIS",
+          "name": "Conference Semifinals",
+          "conference": "Conference",
+          "roundFormat": "best-of-3",
+
+          "matchups": [
+            {
+              "teamA": { "code": "IND_FEVER", "seed": 1, "gamesWon": 2 },
+              "teamB": { "code": "NYL_LIBERTY", "seed": 4, "gamesWon": 1 },
+              "gamesPlayed": 3,
+              "winner": "IND_FEVER"
+            },
+            {
+              "teamA": { "code": "CON_SUN", "seed": 2, "gamesWon": 0 },
+              "teamB": { "code": "ATL_DREAM", "seed": 3, "gamesWon": 2 },
+              "gamesPlayed": 2,
+              "winner": "ATL_DREAM"
+            },
+            {
+              "teamA": { "code": "MIN_LYNX", "seed": 1, "gamesWon": 2 },
+              "teamB": { "code": "SA_SILVER_STARS", "seed": 4, "gamesWon": 1 },
+              "gamesPlayed": 3,
+              "winner": "MIN_LYNX"
+            },
+            {
+              "teamA": { "code": "SEA_STORM", "seed": 2, "gamesWon": 1 },
+              "teamB": { "code": "PHX_MERCURY", "seed": 3, "gamesWon": 2 },
+              "gamesPlayed": 3,
+              "winner": "PHX_MERCURY"
+            }
+          ]
+        },
+
+        {
+          "id": "CONF_FINALS",
+          "name": "Conference Finals",
+          "conference": "Conference",
+          "roundFormat": "best-of-3",
+
+          "matchups": [
+            {
+              "teamA": { "code": "IND_FEVER", "seed": 1, "gamesWon": 1 },
+              "teamB": { "code": "ATL_DREAM", "seed": 3, "gamesWon": 2 },
+              "gamesPlayed": 3,
+              "winner": "ATL_DREAM"
+            },
+            {
+              "teamA": { "code": "MIN_LYNX", "seed": 1, "gamesWon": 2 },
+              "teamB": { "code": "PHX_MERCURY", "seed": 3, "gamesWon": 0 },
+              "gamesPlayed": 2,
+              "winner": "MIN_LYNX"
+            }
+          ]
+        },
+
+        {
+          "id": "FINALS",
+          "name": "WNBA Finals",
+          "conference": null,
+          "roundFormat": "best-of-5",
+
+          "matchups": [
+            {
+              "teamA": { "code": "MIN_LYNX", "seed": 1, "gamesWon": 3 },
+              "teamB": { "code": "ATL_DREAM", "seed": 3, "gamesWon": 0 },
+              "gamesPlayed": 3,
+              "winner": "MIN_LYNX"
+            }
+          ]
+        }
+
+      ]
+    }
+  }
+},
+"2012": {
+  "seasonInfo": {
+    "startDate": "2012-05-18",
+    "endDate": "2012-10-21",
+    "regSeasonGames": 34,
+    "numTeams": 12,
+    "playoffSeedType": "Conference"
+  },
+  "CON_SUN": {
+    "wins": 25,
+    "losses": 9,
+    "conference": "East",
+    "madePlayoffs": true,
+    "playoffSeed": "E1"
+  },
+  "IND_FEVER": {
+    "wins": 22,
+    "losses": 12,
+    "conference": "East",
+    "madePlayoffs": true,
+    "playoffSeed": "E2"
+  },
+  "ATL_DREAM": {
+    "wins": 19,
+    "losses": 15,
+    "conference": "East",
+    "madePlayoffs": true,
+    "playoffSeed": "E3"
+  },
+  "NYL_LIBERTY": {
+    "wins": 15,
+    "losses": 19,
+    "conference": "East",
+    "madePlayoffs": true,
+    "playoffSeed": "E4"
+  },
+  "CHI_SKY": {
+    "wins": 14,
+    "losses": 20,
+    "conference": "East",
+    "madePlayoffs": false,
+    "playoffSeed": null
+  },
+  "WAS_MYSTICS": {
+    "wins": 5,
+    "losses": 29,
+    "conference": "East",
+    "madePlayoffs": false,
+    "playoffSeed": null
+  },
+  "MIN_LYNX": {
+    "wins": 27,
+    "losses": 7,
+    "conference": "West",
+    "madePlayoffs": true,
+    "playoffSeed": "W1"
+  },
+  "LOS_SPARKS": {
+    "wins": 24,
+    "losses": 10,
+    "conference": "West",
+    "madePlayoffs": true,
+    "playoffSeed": "W2"
+  },
+  "SA_SILVER_STARS": {
+    "wins": 21,
+    "losses": 13,
+    "conference": "West",
+    "madePlayoffs": true,
+    "playoffSeed": "W3"
+  },
+  "SEA_STORM": {
+    "wins": 16,
+    "losses": 18,
+    "conference": "West",
+    "madePlayoffs": true,
+    "playoffSeed": "W4"
+  },
+  "TUL_SHOCK": {
+    "wins": 9,
+    "losses": 25,
+    "conference": "West",
+    "madePlayoffs": false,
+    "playoffSeed": null
+  },
+  "PHX_MERCURY": {
+    "wins": 7,
+    "losses": 27,
+    "conference": "West",
+    "madePlayoffs": false,
+    "playoffSeed": null
+  },
+  "playoffs": {
+    "structureType": "conference-bracket",
+    "conferenceChampionsDeterminedByPlayoffs": true,
+    "guaranteedCrossConferenceFinal": true,
+    "finalsConferenceType": "east-west",
+
+    "champion": {
+      "team": "IND_FEVER",
+      "coach": "Lin Dunn",
+      "finalsMVP": "Tamika Catchings"
+    },
+
+    "runnerUp": {
+      "team": "MIN_LYNX",
+      "coach": "Cheryl Reeve"
+    },
+
+    "conferenceChampions": {
+      "East": "IND_FEVER",
+      "West": "MIN_LYNX"
+    },
+
+    "bracket": {
+      "rounds": [
+
+        {
+          "id": "CONF_SEMIS",
+          "name": "Conference Semifinals",
+          "conference": "Conference",
+          "roundFormat": "best-of-3",
+
+          "matchups": [
+            {
+              "teamA": { "code": "CON_SUN", "seed": 1, "gamesWon": 2 },
+              "teamB": { "code": "NYL_LIBERTY", "seed": 4, "gamesWon": 0 },
+              "gamesPlayed": 2,
+              "winner": "CON_SUN"
+            },
+            {
+              "teamA": { "code": "IND_FEVER", "seed": 2, "gamesWon": 2 },
+              "teamB": { "code": "ATL_DREAM", "seed": 3, "gamesWon": 1 },
+              "gamesPlayed": 3,
+              "winner": "IND_FEVER"
+            },
+            {
+              "teamA": { "code": "MIN_LYNX", "seed": 1, "gamesWon": 2 },
+              "teamB": { "code": "SEA_STORM", "seed": 4, "gamesWon": 1 },
+              "gamesPlayed": 3,
+              "winner": "MIN_LYNX"
+            },
+            {
+              "teamA": { "code": "LOS_SPARKS", "seed": 2, "gamesWon": 2 },
+              "teamB": { "code": "SA_SILVER_STARS", "seed": 3, "gamesWon": 0 },
+              "gamesPlayed": 2,
+              "winner": "LOS_SPARKS"
+            }
+          ]
+        },
+
+        {
+          "id": "CONF_FINALS",
+          "name": "Conference Finals",
+          "conference": "Conference",
+          "roundFormat": "best-of-3",
+
+          "matchups": [
+            {
+              "teamA": { "code": "CON_SUN", "seed": 1, "gamesWon": 1 },
+              "teamB": { "code": "IND_FEVER", "seed": 2, "gamesWon": 2 },
+              "gamesPlayed": 3,
+              "winner": "IND_FEVER"
+            },
+            {
+              "teamA": { "code": "MIN_LYNX", "seed": 1, "gamesWon": 2 },
+              "teamB": { "code": "LOS_SPARKS", "seed": 2, "gamesWon": 0 },
+              "gamesPlayed": 2,
+              "winner": "MIN_LYNX"
+            }
+          ]
+        },
+
+        {
+          "id": "FINALS",
+          "name": "WNBA Finals",
+          "conference": null,
+          "roundFormat": "best-of-5",
+
+          "matchups": [
+            {
+              "teamA": { "code": "IND_FEVER", "seed": 2, "gamesWon": 3 },
+              "teamB": { "code": "MIN_LYNX", "seed": 1, "gamesWon": 1 },
+              "gamesPlayed": 4,
+              "winner": "IND_FEVER"
+            }
+          ]
+        }
+
+      ]
+    }
+  }
+},
+"2013": {
+  "seasonInfo": {
+    "startDate": "2013-05-24",
+    "endDate": "2013-10-10",
+    "regSeasonGames": 34,
+    "numTeams": 12,
+    "playoffSeedType": "Conference"
+  },
+  "CHI_SKY": {
+    "wins": 24,
+    "losses": 10,
+    "conference": "East",
+    "madePlayoffs": true,
+    "playoffSeed": "E1"
+  },
+  "ATL_DREAM": {
+    "wins": 17,
+    "losses": 17,
+    "conference": "East",
+    "madePlayoffs": true,
+    "playoffSeed": "E2"
+  },
+  "WAS_MYSTICS": {
+    "wins": 17,
+    "losses": 17,
+    "conference": "East",
+    "madePlayoffs": true,
+    "playoffSeed": "E3"
+  },
+  "IND_FEVER": {
+    "wins": 16,
+    "losses": 18,
+    "conference": "East",
+    "madePlayoffs": true,
+    "playoffSeed": "E4"
+  },
+  "NYL_LIBERTY": {
+    "wins": 11,
+    "losses": 23,
+    "conference": "East",
+    "madePlayoffs": false,
+    "playoffSeed": null
+  },
+  "CON_SUN": {
+    "wins": 10,
+    "losses": 24,
+    "conference": "East",
+    "madePlayoffs": false,
+    "playoffSeed": null
+  },
+  "MIN_LYNX": {
+    "wins": 26,
+    "losses": 8,
+    "conference": "West",
+    "madePlayoffs": true,
+    "playoffSeed": "W1"
+  },
+  "LOS_SPARKS": {
+    "wins": 24,
+    "losses": 10,
+    "conference": "West",
+    "madePlayoffs": true,
+    "playoffSeed": "W2"
+  },
+  "PHX_MERCURY": {
+    "wins": 19,
+    "losses": 15,
+    "conference": "West",
+    "madePlayoffs": true,
+    "playoffSeed": "W3"
+  },
+  "SEA_STORM": {
+    "wins": 17,
+    "losses": 17,
+    "conference": "West",
+    "madePlayoffs": true,
+    "playoffSeed": "W4"
+  },
+  "SA_SILVER_STARS": {
+    "wins": 12,
+    "losses": 22,
+    "conference": "West",
+    "madePlayoffs": false,
+    "playoffSeed": null
+  },
+  "TUL_SHOCK": {
+    "wins": 11,
+    "losses": 23,
+    "conference": "West",
+    "madePlayoffs": false,
+    "playoffSeed": null
+  },
+  "playoffs": {
+    "structureType": "conference-bracket",
+    "conferenceChampionsDeterminedByPlayoffs": true,
+    "guaranteedCrossConferenceFinal": true,
+    "finalsConferenceType": "east-west",
+
+    "champion": {
+      "team": "MIN_LYNX",
+      "coach": "Cheryl Reeve",
+      "finalsMVP": "Maya Moore"
+    },
+
+    "runnerUp": {
+      "team": "ATL_DREAM",
+      "coach": "Fred Williams"
+    },
+
+    "conferenceChampions": {
+      "East": "ATL_DREAM",
+      "West": "MIN_LYNX"
+    },
+
+    "bracket": {
+      "rounds": [
+
+        {
+          "id": "CONF_SEMIS",
+          "name": "Conference Semifinals",
+          "conference": "Conference",
+          "roundFormat": "best-of-3",
+
+          "matchups": [
+            {
+              "teamA": { "code": "CHI_SKY", "seed": 1, "gamesWon": 0 },
+              "teamB": { "code": "IND_FEVER", "seed": 4, "gamesWon": 2 },
+              "gamesPlayed": 2,
+              "winner": "IND_FEVER"
+            },
+            {
+              "teamA": { "code": "ATL_DREAM", "seed": 2, "gamesWon": 2 },
+              "teamB": { "code": "WAS_MYSTICS", "seed": 3, "gamesWon": 1 },
+              "gamesPlayed": 3,
+              "winner": "ATL_DREAM"
+            },
+            {
+              "teamA": { "code": "MIN_LYNX", "seed": 1, "gamesWon": 2 },
+              "teamB": { "code": "SEA_STORM", "seed": 4, "gamesWon": 0 },
+              "gamesPlayed": 2,
+              "winner": "MIN_LYNX"
+            },
+            {
+              "teamA": { "code": "LOS_SPARKS", "seed": 2, "gamesWon": 1 },
+              "teamB": { "code": "PHX_MERCURY", "seed": 3, "gamesWon": 2 },
+              "gamesPlayed": 3,
+              "winner": "PHX_MERCURY"
+            }
+          ]
+        },
+
+        {
+          "id": "CONF_FINALS",
+          "name": "Conference Finals",
+          "conference": "Conference",
+          "roundFormat": "best-of-3",
+
+          "matchups": [
+            {
+              "teamA": { "code": "IND_FEVER", "seed": 4, "gamesWon": 0 },
+              "teamB": { "code": "ATL_DREAM", "seed": 2, "gamesWon": 2 },
+              "gamesPlayed": 2,
+              "winner": "ATL_DREAM"
+            },
+            {
+              "teamA": { "code": "MIN_LYNX", "seed": 1, "gamesWon": 2 },
+              "teamB": { "code": "PHX_MERCURY", "seed": 3, "gamesWon": 0 },
+              "gamesPlayed": 2,
+              "winner": "MIN_LYNX"
+            }
+          ]
+        },
+
+        {
+          "id": "FINALS",
+          "name": "WNBA Finals",
+          "conference": null,
+          "roundFormat": "best-of-5",
+
+          "matchups": [
+            {
+              "teamA": { "code": "MIN_LYNX", "seed": 1, "gamesWon": 3 },
+              "teamB": { "code": "ATL_DREAM", "seed": 2, "gamesWon": 0 },
+              "gamesPlayed": 3,
+              "winner": "MIN_LYNX"
+            }
+          ]
+        }
+
+      ]
+    }
+  }
+},
+"2014": {
+  "seasonInfo": {
+    "startDate": "2014-05-16",
+    "endDate": "2014-09-12",
+    "regSeasonGames": 34,
+    "numTeams": 12,
+    "playoffSeedType": "Conference"
+  },
+  "ATL_DREAM": {
+    "wins": 19,
+    "losses": 15,
+    "conference": "East",
+    "madePlayoffs": true,
+    "playoffSeed": "E1"
+  },
+  "IND_FEVER": {
+    "wins": 16,
+    "losses": 18,
+    "conference": "East",
+    "madePlayoffs": true,
+    "playoffSeed": "E2"
+  },
+  "WAS_MYSTICS": {
+    "wins": 16,
+    "losses": 18,
+    "conference": "East",
+    "madePlayoffs": true,
+    "playoffSeed": "E3"
+  },
+  "CHI_SKY": {
+    "wins": 15,
+    "losses": 19,
+    "conference": "East",
+    "madePlayoffs": true,
+    "playoffSeed": "E4"
+  },
+  "NYL_LIBERTY": {
+    "wins": 15,
+    "losses": 19,
+    "conference": "East",
+    "madePlayoffs": false,
+    "playoffSeed": null
+  },
+  "CON_SUN": {
+    "wins": 13,
+    "losses": 21,
+    "conference": "East",
+    "madePlayoffs": false,
+    "playoffSeed": null
+  },
+  "PHX_MERCURY": {
+    "wins": 29,
+    "losses": 5,
+    "conference": "West",
+    "madePlayoffs": true,
+    "playoffSeed": "W1"
+  },
+  "MIN_LYNX": {
+    "wins": 25,
+    "losses": 9,
+    "conference": "West",
+    "madePlayoffs": true,
+    "playoffSeed": "W2"
+  },
+  "SA_STARS": {
+    "wins": 16,
+    "losses": 18,
+    "conference": "West",
+    "madePlayoffs": true,
+    "playoffSeed": "W3"
+  },
+  "LOS_SPARKS": {
+    "wins": 16,
+    "losses": 18,
+    "conference": "West",
+    "madePlayoffs": true,
+    "playoffSeed": "W4"
+  },
+  "TUL_SHOCK": {
+    "wins": 12,
+    "losses": 22,
+    "conference": "West",
+    "madePlayoffs": false,
+    "playoffSeed": null
+  },
+  "SEA_STORM": {
+    "wins": 12,
+    "losses": 22,
+    "conference": "West",
+    "madePlayoffs": false,
+    "playoffSeed": null
+  },
+  "playoffs": {
+    "structureType": "conference-bracket",
+    "conferenceChampionsDeterminedByPlayoffs": true,
+    "guaranteedCrossConferenceFinal": true,
+    "finalsConferenceType": "east-west",
+
+    "champion": {
+      "team": "PHX_MERCURY",
+      "coach": "Sandy Brondello",
+      "finalsMVP": "Diana Taurasi"
+    },
+
+    "runnerUp": {
+      "team": "CHI_SKY",
+      "coach": "Pokey Chatman"
+    },
+
+    "conferenceChampions": {
+      "East": "CHI_SKY",
+      "West": "PHX_MERCURY"
+    },
+
+    "bracket": {
+      "rounds": [
+
+        {
+          "id": "CONF_SEMIS",
+          "name": "Conference Semifinals",
+          "conference": "Conference",
+          "roundFormat": "best-of-3",
+
+          "matchups": [
+            {
+              "teamA": { "code": "ATL_DREAM", "seed": 1, "gamesWon": 1 },
+              "teamB": { "code": "CHI_SKY", "seed": 4, "gamesWon": 2 },
+              "gamesPlayed": 3,
+              "winner": "CHI_SKY"
+            },
+            {
+              "teamA": { "code": "IND_FEVER", "seed": 2, "gamesWon": 2 },
+              "teamB": { "code": "WAS_MYSTICS", "seed": 3, "gamesWon": 0 },
+              "gamesPlayed": 2,
+              "winner": "IND_FEVER"
+            },
+            {
+              "teamA": { "code": "PHX_MERCURY", "seed": 1, "gamesWon": 2 },
+              "teamB": { "code": "LOS_SPARKS", "seed": 4, "gamesWon": 0 },
+              "gamesPlayed": 2,
+              "winner": "PHX_MERCURY"
+            },
+            {
+              "teamA": { "code": "MIN_LYNX", "seed": 2, "gamesWon": 2 },
+              "teamB": { "code": "SA_SILVER_STARS", "seed": 3, "gamesWon": 0 },
+              "gamesPlayed": 2,
+              "winner": "MIN_LYNX"
+            }
+          ]
+        },
+
+        {
+          "id": "CONF_FINALS",
+          "name": "Conference Finals",
+          "conference": "Conference",
+          "roundFormat": "best-of-3",
+
+          "matchups": [
+            {
+              "teamA": { "code": "CHI_SKY", "seed": 4, "gamesWon": 2 },
+              "teamB": { "code": "IND_FEVER", "seed": 2, "gamesWon": 1 },
+              "gamesPlayed": 3,
+              "winner": "CHI_SKY"
+            },
+            {
+              "teamA": { "code": "PHX_MERCURY", "seed": 1, "gamesWon": 2 },
+              "teamB": { "code": "MIN_LYNX", "seed": 2, "gamesWon": 0 },
+              "gamesPlayed": 2,
+              "winner": "PHX_MERCURY"
+            }
+          ]
+        },
+
+        {
+          "id": "FINALS",
+          "name": "WNBA Finals",
+          "conference": null,
+          "roundFormat": "best-of-5",
+
+          "matchups": [
+            {
+              "teamA": { "code": "PHX_MERCURY", "seed": 1, "gamesWon": 3 },
+              "teamB": { "code": "CHI_SKY", "seed": 4, "gamesWon": 0 },
+              "gamesPlayed": 3,
+              "winner": "PHX_MERCURY"
+            }
+          ]
+        }
+
+      ]
+    }
+  }
+},
+"2015": {
+  "seasonInfo": {
+    "startDate": "2015-06-05",
+    "endDate": "2015-10-14",
+    "regSeasonGames": 34,
+    "numTeams": 12,
+    "playoffSeedType": "Conference"
+  },
+  "NYL_LIBERTY": {
+    "wins": 23,
+    "losses": 11,
+    "conference": "East",
+    "madePlayoffs": true,
+    "playoffSeed": "E1"
+  },
+  "CHI_SKY": {
+    "wins": 21,
+    "losses": 13,
+    "conference": "East",
+    "madePlayoffs": true,
+    "playoffSeed": "E2"
+  },
+  "IND_FEVER": {
+    "wins": 20,
+    "losses": 14,
+    "conference": "East",
+    "madePlayoffs": true,
+    "playoffSeed": "E3"
+  },
+  "WAS_MYSTICS": {
+    "wins": 18,
+    "losses": 16,
+    "conference": "East",
+    "madePlayoffs": true,
+    "playoffSeed": "E4"
+  },
+  "ATL_DREAM": {
+    "wins": 15,
+    "losses": 19,
+    "conference": "East",
+    "madePlayoffs": false,
+    "playoffSeed": null
+  },
+  "CON_SUN": {
+    "wins": 15,
+    "losses": 19,
+    "conference": "East",
+    "madePlayoffs": false,
+    "playoffSeed": null
+  },
+  "MIN_LYNX": {
+    "wins": 22,
+    "losses": 12,
+    "conference": "West",
+    "madePlayoffs": true,
+    "playoffSeed": "W1"
+  },
+  "PHX_MERCURY": {
+    "wins": 20,
+    "losses": 14,
+    "conference": "West",
+    "madePlayoffs": true,
+    "playoffSeed": "W2"
+  },
+  "TUL_SHOCK": {
+    "wins": 18,
+    "losses": 16,
+    "conference": "West",
+    "madePlayoffs": true,
+    "playoffSeed": "W3"
+  },
+  "LOS_SPARKS": {
+    "wins": 14,
+    "losses": 20,
+    "conference": "West",
+    "madePlayoffs": true,
+    "playoffSeed": "W4"
+  },
+  "SEA_STORM": {
+    "wins": 10,
+    "losses": 24,
+    "conference": "West",
+    "madePlayoffs": false,
+    "playoffSeed": null
+  },
+  "SA_STARS": {
+    "wins": 8,
+    "losses": 26,
+    "conference": "West",
+    "madePlayoffs": false,
+    "playoffSeed": null
+  },
+  "playoffs": {
+    "structureType": "conference-bracket",
+    "conferenceChampionsDeterminedByPlayoffs": true,
+    "guaranteedCrossConferenceFinal": true,
+    "finalsConferenceType": "east-west",
+
+    "champion": {
+      "team": "MIN_LYNX",
+      "coach": "Cheryl Reeve",
+      "finalsMVP": "Sylvia Fowles"
+    },
+
+    "runnerUp": {
+      "team": "IND_FEVER",
+      "coach": "Lin Dunn"
+    },
+
+    "conferenceChampions": {
+      "East": "IND_FEVER",
+      "West": "MIN_LYNX"
+    },
+
+    "bracket": {
+      "rounds": [
+
+        {
+          "id": "CONF_SEMIS",
+          "name": "Conference Semifinals",
+          "conference": "Conference",
+          "roundFormat": "best-of-3",
+
+          "matchups": [
+            {
+              "teamA": { "code": "NYL_LIBERTY", "seed": 1, "gamesWon": 2 },
+              "teamB": { "code": "WAS_MYSTICS", "seed": 4, "gamesWon": 1 },
+              "gamesPlayed": 3,
+              "winner": "NYL_LIBERTY"
+            },
+            {
+              "teamA": { "code": "CHI_SKY", "seed": 2, "gamesWon": 1 },
+              "teamB": { "code": "IND_FEVER", "seed": 3, "gamesWon": 2 },
+              "gamesPlayed": 3,
+              "winner": "IND_FEVER"
+            },
+            {
+              "teamA": { "code": "MIN_LYNX", "seed": 1, "gamesWon": 2 },
+              "teamB": { "code": "LOS_SPARKS", "seed": 4, "gamesWon": 1 },
+              "gamesPlayed": 3,
+              "winner": "MIN_LYNX"
+            },
+            {
+              "teamA": { "code": "PHX_MERCURY", "seed": 2, "gamesWon": 2 },
+              "teamB": { "code": "TUL_SHOCK", "seed": 3, "gamesWon": 0 },
+              "gamesPlayed": 2,
+              "winner": "PHX_MERCURY"
+            }
+          ]
+        },
+
+        {
+          "id": "CONF_FINALS",
+          "name": "Conference Finals",
+          "conference": "Conference",
+          "roundFormat": "best-of-3",
+
+          "matchups": [
+            {
+              "teamA": { "code": "NYL_LIBERTY", "seed": 1, "gamesWon": 1 },
+              "teamB": { "code": "IND_FEVER", "seed": 3, "gamesWon": 2 },
+              "gamesPlayed": 3,
+              "winner": "IND_FEVER"
+            },
+            {
+              "teamA": { "code": "MIN_LYNX", "seed": 1, "gamesWon": 2 },
+              "teamB": { "code": "PHX_MERCURY", "seed": 2, "gamesWon": 0 },
+              "gamesPlayed": 2,
+              "winner": "MIN_LYNX"
+            }
+          ]
+        },
+
+        {
+          "id": "FINALS",
+          "name": "WNBA Finals",
+          "conference": null,
+          "roundFormat": "best-of-5",
+
+          "matchups": [
+            {
+              "teamA": { "code": "MIN_LYNX", "seed": 1, "gamesWon": 3 },
+              "teamB": { "code": "IND_FEVER", "seed": 3, "gamesWon": 2 },
+              "gamesPlayed": 5,
+              "winner": "MIN_LYNX"
+            }
+          ]
+        }
+
+      ]
+    }
+  }
+},
+"2016": {
+  "seasonInfo": {
+    "startDate": "2016-05-14",
+    "endDate": "2016-10-06",
+    "regSeasonGames": 34,
+    "numTeams": 12,
+    "playoffSeedType": "Overall"
+  },
+  "MIN_LYNX": {
+    "wins": 28,
+    "losses": 6,
+    "conference": "West",
+    "madePlayoffs": true,
+    "playoffSeed": 1
+  },
+  "LOS_SPARKS": {
+    "wins": 26,
+    "losses": 8,
+    "conference": "West",
+    "madePlayoffs": true,
+    "playoffSeed": 2
+  },
+  "NYL_LIBERTY": {
+    "wins": 21,
+    "losses": 13,
+    "conference": "East",
+    "madePlayoffs": true,
+    "playoffSeed": 3
+  },
+  "CHI_SKY": {
+    "wins": 18,
+    "losses": 16,
+    "conference": "East",
+    "madePlayoffs": true,
+    "playoffSeed": 4
+  },
+  "IND_FEVER": {
+    "wins": 17,
+    "losses": 17,
+    "conference": "East",
+    "madePlayoffs": true,
+    "playoffSeed": 5
+  },
+  "ATL_DREAM": {
+    "wins": 17,
+    "losses": 17,
+    "conference": "East",
+    "madePlayoffs": true,
+    "playoffSeed": 6
+  },
+  "SEA_STORM": {
+    "wins": 16,
+    "losses": 18,
+    "conference": "West",
+    "madePlayoffs": true,
+    "playoffSeed": 7
+  },
+  "PHX_MERCURY": {
+    "wins": 16,
+    "losses": 18,
+    "conference": "West",
+    "madePlayoffs": true,
+    "playoffSeed": 8
+  },
+  "CON_SUN": {
+    "wins": 14,
+    "losses": 20,
+    "conference": "East",
+    "madePlayoffs": false,
+    "playoffSeed": null
+  },
+  "WAS_MYSTICS": {
+    "wins": 13,
+    "losses": 21,
+    "conference": "East",
+    "madePlayoffs": false,
+    "playoffSeed": null
+  },
+  "DAL_WINGS": {
+    "wins": 11,
+    "losses": 23,
+    "conference": "West",
+    "madePlayoffs": false,
+    "playoffSeed": null
+  },
+  "SA_STARS": {
+    "wins": 7,
+    "losses": 27,
+    "conference": "West",
+    "madePlayoffs": false,
+    "playoffSeed": null
+  },
+  "playoffs": {
+    "structureType": "overall-bracket",
+    "conferenceChampionsDeterminedByPlayoffs": false,
+    "guaranteedCrossConferenceFinal": false,
+    "finalsConferenceType": "same-west",
+
+    "champion": {
+      "team": "LOS_SPARKS",
+      "coach": "Brian Agler",
+      "finalsMVP": "Candace Parker"
+    },
+
+    "runnerUp": {
+      "team": "MIN_LYNX",
+      "coach": "Cheryl Reeve"
+    },
+
+    "conferenceChampions": null,
+
+    "bracket": {
+      "rounds": [
+
+        {
+          "id": "FIRST_ROUND",
+          "name": "First Round",
+          "conference": null,
+          "roundFormat": "single-elimination",
+
+          "matchups": [
+            {
+              "teamA": { "code": "PHX_MERCURY", "seed": 8, "gamesWon": 1 },
+              "teamB": { "code": "IND_FEVER", "seed": 5, "gamesWon": 0 },
+              "gamesPlayed": 1,
+              "winner": "PHX_MERCURY"
+            },
+            {
+              "teamA": { "code": "CHI_SKY", "seed": 4, "gamesWon": 1 },
+              "teamB": { "code": "ATL_DREAM", "seed": 6, "gamesWon": 0 },
+              "gamesPlayed": 1,
+              "winner": "CHI_SKY"
+            }
+          ]
+        },
+
+        {
+          "id": "SECOND_ROUND",
+          "name": "Second Round",
+          "conference": null,
+          "roundFormat": "single-elimination",
+
+          "matchups": [
+            {
+              "teamA": { "code": "NYL_LIBERTY", "seed": 3, "gamesWon": 0 },
+              "teamB": { "code": "PHX_MERCURY", "seed": 8, "gamesWon": 1 },
+              "gamesPlayed": 1,
+              "winner": "PHX_MERCURY"
+            },
+            {
+              "teamA": { "code": "LOS_SPARKS", "seed": 2, "gamesWon": 1 },
+              "teamB": { "code": "CHI_SKY", "seed": 4, "gamesWon": 0 },
+              "gamesPlayed": 1,
+              "winner": "LOS_SPARKS"
+            }
+          ]
+        },
+
+        {
+          "id": "SEMIFINALS",
+          "name": "Semifinals",
+          "conference": null,
+          "roundFormat": "best-of-5",
+
+          "matchups": [
+            {
+              "teamA": { "code": "MIN_LYNX", "seed": 1, "gamesWon": 3 },
+              "teamB": { "code": "PHX_MERCURY", "seed": 8, "gamesWon": 0 },
+              "gamesPlayed": 3,
+              "winner": "MIN_LYNX"
+            },
+            {
+              "teamA": { "code": "LOS_SPARKS", "seed": 2, "gamesWon": 3 },
+              "teamB": { "code": "CHI_SKY", "seed": 4, "gamesWon": 1 },
+              "gamesPlayed": 4,
+              "winner": "LOS_SPARKS"
+            }
+          ]
+        },
+
+        {
+          "id": "FINALS",
+          "name": "WNBA Finals",
+          "conference": null,
+          "roundFormat": "best-of-5",
+
+          "matchups": [
+            {
+              "teamA": { "code": "MIN_LYNX", "seed": 1, "gamesWon": 2 },
+              "teamB": { "code": "LOS_SPARKS", "seed": 2, "gamesWon": 3 },
+              "gamesPlayed": 5,
+              "winner": "LOS_SPARKS"
+            }
+          ]
+        }
+
+      ]
+    }
+  }
+},
+"2017": {
+  "seasonInfo": {
+    "startDate": "2017-05-03",
+    "endDate": "2017-09-17",
+    "regSeasonGames": 34,
+    "numTeams": 12,
+    "playoffSeedType": "Overall"
+  },
+  "MIN_LYNX": {
+    "wins": 27,
+    "losses": 7,
+    "conference": "West",
+    "madePlayoffs": true,
+    "playoffSeed": 1
+  },
+  "LOS_SPARKS": {
+    "wins": 26,
+    "losses": 8,
+    "conference": "West",
+    "madePlayoffs": true,
+    "playoffSeed": 2
+  },
+  "NYL_LIBERTY": {
+    "wins": 22,
+    "losses": 12,
+    "conference": "East",
+    "madePlayoffs": true,
+    "playoffSeed": 3
+  },
+  "CON_SUN": {
+    "wins": 21,
+    "losses": 13,
+    "conference": "East",
+    "madePlayoffs": true,
+    "playoffSeed": 4
+  },
+  "PHX_MERCURY": {
+    "wins": 18,
+    "losses": 16,
+    "conference": "West",
+    "madePlayoffs": true,
+    "playoffSeed": 5
+  },
+  "WAS_MYSTICS": {
+    "wins": 18,
+    "losses": 16,
+    "conference": "East",
+    "madePlayoffs": true,
+    "playoffSeed": 6
+  },
+  "DAL_WINGS": {
+    "wins": 16,
+    "losses": 18,
+    "conference": "West",
+    "madePlayoffs": true,
+    "playoffSeed": 7
+  },
+  "SEA_STORM": {
+    "wins": 15,
+    "losses": 19,
+    "conference": "West",
+    "madePlayoffs": true,
+    "playoffSeed": 8
+  },
+  "CHI_SKY": {
+    "wins": 12,
+    "losses": 22,
+    "conference": "East",
+    "madePlayoffs": false,
+    "playoffSeed": null
+  },
+  "ATL_DREAM": {
+    "wins": 12,
+    "losses": 22,
+    "conference": "East",
+    "madePlayoffs": false,
+    "playoffSeed": null
+  },
+  "IND_FEVER": {
+    "wins": 9,
+    "losses": 25,
+    "conference": "East",
+    "madePlayoffs": false,
+    "playoffSeed": null
+  },
+  "SA_STARS": {
+    "wins": 8,
+    "losses": 26,
+    "conference": "West",
+    "madePlayoffs": false,
+    "playoffSeed": null
+  },
+  "playoffs": {
+    "structureType": "overall-bracket",
+    "conferenceChampionsDeterminedByPlayoffs": false,
+    "guaranteedCrossConferenceFinal": false,
+    "finalsConferenceType": "same-west",
+
+    "champion": {
+      "team": "MIN_LYNX",
+      "coach": "Cheryl Reeve",
+      "finalsMVP": "Sylvia Fowles"
+    },
+
+    "runnerUp": {
+      "team": "LOS_SPARKS",
+      "coach": "Brian Agler"
+    },
+
+    "conferenceChampions": null,
+
+    "bracket": {
+      "rounds": [
+
+        {
+          "id": "FIRST_ROUND",
+          "name": "First Round",
+          "conference": null,
+          "roundFormat": "single-elimination",
+
+          "matchups": [
+            {
+              "teamA": { "code": "PHX_MERCURY", "seed": 5, "gamesWon": 1 },
+              "teamB": { "code": "SEA_STORM", "seed": 8, "gamesWon": 0 },
+              "gamesPlayed": 1,
+              "winner": "PHX_MERCURY"
+            },
+            {
+              "teamA": { "code": "WAS_MYSTICS", "seed": 6, "gamesWon": 1 },
+              "teamB": { "code": "DAL_WINGS", "seed": 7, "gamesWon": 0 },
+              "gamesPlayed": 1,
+              "winner": "WAS_MYSTICS"
+            }
+          ]
+        },
+
+        {
+          "id": "SECOND_ROUND",
+          "name": "Second Round",
+          "conference": null,
+          "roundFormat": "single-elimination",
+
+          "matchups": [
+            {
+              "teamA": { "code": "CON_SUN", "seed": 4, "gamesWon": 0 },
+              "teamB": { "code": "PHX_MERCURY", "seed": 5, "gamesWon": 1 },
+              "gamesPlayed": 1,
+              "winner": "PHX_MERCURY"
+            },
+            {
+              "teamA": { "code": "NYL_LIBERTY", "seed": 3, "gamesWon": 0 },
+              "teamB": { "code": "WAS_MYSTICS", "seed": 6, "gamesWon": 1 },
+              "gamesPlayed": 1,
+              "winner": "WAS_MYSTICS"
+            }
+          ]
+        },
+
+        {
+          "id": "SEMIFINALS",
+          "name": "Semifinals",
+          "conference": null,
+          "roundFormat": "best-of-5",
+
+          "matchups": [
+            {
+              "teamA": { "code": "MIN_LYNX", "seed": 1, "gamesWon": 3 },
+              "teamB": { "code": "WAS_MYSTICS", "seed": 6, "gamesWon": 0 },
+              "gamesPlayed": 3,
+              "winner": "MIN_LYNX"
+            },
+            {
+              "teamA": { "code": "LOS_SPARKS", "seed": 2, "gamesWon": 3 },
+              "teamB": { "code": "PHX_MERCURY", "seed": 5, "gamesWon": 0 },
+              "gamesPlayed": 3,
+              "winner": "LOS_SPARKS"
+            }
+          ]
+        },
+
+        {
+          "id": "FINALS",
+          "name": "WNBA Finals",
+          "conference": null,
+          "roundFormat": "best-of-5",
+
+          "matchups": [
+            {
+              "teamA": { "code": "MIN_LYNX", "seed": 1, "gamesWon": 3 },
+              "teamB": { "code": "LOS_SPARKS", "seed": 2, "gamesWon": 2 },
+              "gamesPlayed": 5,
+              "winner": "MIN_LYNX"
+            }
+          ]
+        }
+
+      ]
+    }
+  }
+},
+"2018": {
+  "seasonInfo": {
+    "startDate": "2018-05-18",
+    "endDate": "2018-09-12",
+    "regSeasonGames": 34,
+    "numTeams": 12,
+    "playoffSeedType": "Overall"
+  },
+  "SEA_STORM": {
+    "wins": 26,
+    "losses": 8,
+    "conference": "West",
+    "madePlayoffs": true,
+    "playoffSeed": 1
+  },
+  "ATL_DREAM": {
+    "wins": 23,
+    "losses": 11,
+    "conference": "East",
+    "madePlayoffs": true,
+    "playoffSeed": 2
+  },
+  "WAS_MYSTICS": {
+    "wins": 22,
+    "losses": 12,
+    "conference": "East",
+    "madePlayoffs": true,
+    "playoffSeed": 3
+  },
+  "CON_SUN": {
+    "wins": 21,
+    "losses": 13,
+    "conference": "East",
+    "madePlayoffs": true,
+    "playoffSeed": 4
+  },
+  "PHX_MERCURY": {
+    "wins": 20,
+    "losses": 14,
+    "conference": "West",
+    "madePlayoffs": true,
+    "playoffSeed": 5
+  },
+  "LOS_SPARKS": {
+    "wins": 19,
+    "losses": 15,
+    "conference": "West",
+    "madePlayoffs": true,
+    "playoffSeed": 6
+  },
+  "MIN_LYNX": {
+    "wins": 18,
+    "losses": 16,
+    "conference": "West",
+    "madePlayoffs": true,
+    "playoffSeed": 7
+  },
+  "DAL_WINGS": {
+    "wins": 15,
+    "losses": 19,
+    "conference": "West",
+    "madePlayoffs": true,
+    "playoffSeed": 8
+  },
+  "LVA_ACES": {
+    "wins": 14,
+    "losses": 20,
+    "conference": "West",
+    "madePlayoffs": false,
+    "playoffSeed": null
+  },
+  "CHI_SKY": {
+    "wins": 13,
+    "losses": 21,
+    "conference": "East",
+    "madePlayoffs": false,
+    "playoffSeed": null
+  },
+  "NYL_LIBERTY": {
+    "wins": 7,
+    "losses": 27,
+    "conference": "East",
+    "madePlayoffs": false,
+    "playoffSeed": null
+  },
+  "IND_FEVER": {
+    "wins": 6,
+    "losses": 28,
+    "conference": "East",
+    "madePlayoffs": false,
+    "playoffSeed": null
+  },
+  "playoffs": {
+    "structureType": "overall-bracket",
+    "conferenceChampionsDeterminedByPlayoffs": false,
+    "guaranteedCrossConferenceFinal": false,
+    "finalsConferenceType": "east-west",
+
+    "champion": {
+      "team": "SEA_STORM",
+      "coach": "Dan Hughes",
+      "finalsMVP": "Breanna Stewart"
+    },
+
+    "runnerUp": {
+      "team": "WAS_MYSTICS",
+      "coach": "Mike Thibault"
+    },
+
+    "conferenceChampions": null,
+
+    "bracket": {
+      "rounds": [
+
+        {
+          "id": "FIRST_ROUND",
+          "name": "First Round",
+          "conference": null,
+          "roundFormat": "single-elimination",
+
+          "matchups": [
+            {
+              "teamA": { "code": "PHX_MERCURY", "seed": 5, "gamesWon": 1 },
+              "teamB": { "code": "DAL_WINGS", "seed": 8, "gamesWon": 0 },
+              "gamesPlayed": 1,
+              "winner": "PHX_MERCURY"
+            },
+            {
+              "teamA": { "code": "WAS_MYSTICS", "seed": 3, "gamesWon": 1 },
+              "teamB": { "code": "LOS_SPARKS", "seed": 6, "gamesWon": 0 },
+              "gamesPlayed": 1,
+              "winner": "WAS_MYSTICS"
+            }
+          ]
+        },
+
+        {
+          "id": "SECOND_ROUND",
+          "name": "Second Round",
+          "conference": null,
+          "roundFormat": "single-elimination",
+
+          "matchups": [
+            {
+              "teamA": { "code": "CON_SUN", "seed": 4, "gamesWon": 0 },
+              "teamB": { "code": "PHX_MERCURY", "seed": 5, "gamesWon": 1 },
+              "gamesPlayed": 1,
+              "winner": "PHX_MERCURY"
+            },
+            {
+              "teamA": { "code": "ATL_DREAM", "seed": 2, "gamesWon": 0 },
+              "teamB": { "code": "WAS_MYSTICS", "seed": 3, "gamesWon": 1 },
+              "gamesPlayed": 1,
+              "winner": "WAS_MYSTICS"
+            }
+          ]
+        },
+
+        {
+          "id": "SEMIFINALS",
+          "name": "Semifinals",
+          "conference": null,
+          "roundFormat": "best-of-5",
+
+          "matchups": [
+            {
+              "teamA": { "code": "SEA_STORM", "seed": 1, "gamesWon": 3 },
+              "teamB": { "code": "PHX_MERCURY", "seed": 5, "gamesWon": 2 },
+              "gamesPlayed": 5,
+              "winner": "SEA_STORM"
+            },
+            {
+              "teamA": { "code": "WAS_MYSTICS", "seed": 3, "gamesWon": 3 },
+              "teamB": { "code": "ATL_DREAM", "seed": 2, "gamesWon": 0 },
+              "gamesPlayed": 3,
+              "winner": "WAS_MYSTICS"
+            }
+          ]
+        },
+
+        {
+          "id": "FINALS",
+          "name": "WNBA Finals",
+          "conference": null,
+          "roundFormat": "best-of-5",
+
+          "matchups": [
+            {
+              "teamA": { "code": "SEA_STORM", "seed": 1, "gamesWon": 3 },
+              "teamB": { "code": "WAS_MYSTICS", "seed": 3, "gamesWon": 0 },
+              "gamesPlayed": 3,
+              "winner": "SEA_STORM"
+            }
+          ]
+        }
+
+      ]
+    }
+  }
+},
+"2019": {
+  "seasonInfo": {
+    "startDate": "2019-05-24",
+    "endDate": "2019-10-10",
+    "regSeasonGames": 34,
+    "numTeams": 12,
+    "playoffSeedType": "Overall"
+  },
+  "WAS_MYSTICS": {
+    "wins": 26,
+    "losses": 8,
+    "conference": "East",
+    "madePlayoffs": true,
+    "playoffSeed": 1
+  },
+  "CON_SUN": {
+    "wins": 23,
+    "losses": 11,
+    "conference": "East",
+    "madePlayoffs": true,
+    "playoffSeed": 2
+  },
+  "LOS_SPARKS": {
+    "wins": 22,
+    "losses": 12,
+    "conference": "West",
+    "madePlayoffs": true,
+    "playoffSeed": 3
+  },
+  "LVA_ACES": {
+    "wins": 21,
+    "losses": 13,
+    "conference": "West",
+    "madePlayoffs": true,
+    "playoffSeed": 4
+  },
+  "CHI_SKY": {
+    "wins": 20,
+    "losses": 14,
+    "conference": "East",
+    "madePlayoffs": true,
+    "playoffSeed": 5
+  },
+  "SEA_STORM": {
+    "wins": 18,
+    "losses": 16,
+    "conference": "West",
+    "madePlayoffs": true,
+    "playoffSeed": 6
+  },
+  "MIN_LYNX": {
+    "wins": 18,
+    "losses": 16,
+    "conference": "West",
+    "madePlayoffs": true,
+    "playoffSeed": 7
+  },
+  "PHX_MERCURY": {
+    "wins": 15,
+    "losses": 19,
+    "conference": "West",
+    "madePlayoffs": true,
+    "playoffSeed": 8
+  },
+  "IND_FEVER": {
+    "wins": 13,
+    "losses": 21,
+    "conference": "East",
+    "madePlayoffs": false,
+    "playoffSeed": null
+  },
+  "NYL_LIBERTY": {
+    "wins": 10,
+    "losses": 24,
+    "conference": "East",
+    "madePlayoffs": false,
+    "playoffSeed": null
+  },
+  "ATL_DREAM": {
+    "wins": 8,
+    "losses": 26,
+    "conference": "East",
+    "madePlayoffs": false,
+    "playoffSeed": null
+  },
+  "DAL_WINGS": {
+    "wins": 10,
+    "losses": 24,
+    "conference": "West",
+    "madePlayoffs": false,
+    "playoffSeed": null
+  },
+  "playoffs": {
+    "structureType": "overall-bracket",
+    "conferenceChampionsDeterminedByPlayoffs": false,
+    "guaranteedCrossConferenceFinal": false,
+    "finalsConferenceType": "same-east",
+
+    "champion": {
+      "team": "WAS_MYSTICS",
+      "coach": "Mike Thibault",
+      "finalsMVP": "Emma Meesseman"
+    },
+
+    "runnerUp": {
+      "team": "CON_SUN",
+      "coach": "Curt Miller"
+    },
+
+    "conferenceChampions": null,
+
+    "bracket": {
+      "rounds": [
+
+        {
+          "id": "FIRST_ROUND",
+          "name": "First Round",
+          "conference": null,
+          "roundFormat": "single-elimination",
+
+          "matchups": [
+            {
+              "teamA": { "code": "CHI_SKY", "seed": 5, "gamesWon": 1 },
+              "teamB": { "code": "PHX_MERCURY", "seed": 8, "gamesWon": 0 },
+              "gamesPlayed": 1,
+              "winner": "CHI_SKY"
+            },
+            {
+              "teamA": { "code": "LVA_ACES", "seed": 4, "gamesWon": 1 },
+              "teamB": { "code": "MIN_LYNX", "seed": 7, "gamesWon": 0 },
+              "gamesPlayed": 1,
+              "winner": "LVA_ACES"
+            }
+          ]
+        },
+
+        {
+          "id": "SECOND_ROUND",
+          "name": "Second Round",
+          "conference": null,
+          "roundFormat": "single-elimination",
+
+          "matchups": [
+            {
+              "teamA": { "code": "LOS_SPARKS", "seed": 3, "gamesWon": 0 },
+              "teamB": { "code": "LVA_ACES", "seed": 4, "gamesWon": 1 },
+              "gamesPlayed": 1,
+              "winner": "LVA_ACES"
+            },
+            {
+              "teamA": { "code": "CON_SUN", "seed": 2, "gamesWon": 1 },
+              "teamB": { "code": "CHI_SKY", "seed": 5, "gamesWon": 0 },
+              "gamesPlayed": 1,
+              "winner": "CON_SUN"
+            }
+          ]
+        },
+
+        {
+          "id": "SEMIFINALS",
+          "name": "Semifinals",
+          "conference": null,
+          "roundFormat": "best-of-5",
+
+          "matchups": [
+            {
+              "teamA": { "code": "WAS_MYSTICS", "seed": 1, "gamesWon": 3 },
+              "teamB": { "code": "LVA_ACES", "seed": 4, "gamesWon": 1 },
+              "gamesPlayed": 4,
+              "winner": "WAS_MYSTICS"
+            },
+            {
+              "teamA": { "code": "CON_SUN", "seed": 2, "gamesWon": 3 },
+              "teamB": { "code": "LVA_ACES", "seed": 4, "gamesWon": 0 },
+              "gamesPlayed": 3,
+              "winner": "CON_SUN"
+            }
+          ]
+        },
+
+        {
+          "id": "FINALS",
+          "name": "WNBA Finals",
+          "conference": null,
+          "roundFormat": "best-of-5",
+
+          "matchups": [
+            {
+              "teamA": { "code": "WAS_MYSTICS", "seed": 1, "gamesWon": 3 },
+              "teamB": { "code": "CON_SUN", "seed": 2, "gamesWon": 2 },
+              "gamesPlayed": 5,
+              "winner": "WAS_MYSTICS"
+            }
+          ]
+        }
+
+      ]
+    }
+  }
+},
+"2020": {
+  "seasonInfo": {
+    "startDate": "2020-07-25",
+    "endDate": "2020-10-06",
+    "regSeasonGames": 22,
+    "numTeams": 12,
+    "playoffSeedType": "Overall"
+  },
+  "LVA_ACES": {
+    "wins": 18,
+    "losses": 4,
+    "conference": "West",
+    "madePlayoffs": true,
+    "playoffSeed": 1
+  },
+  "SEA_STORM": {
+    "wins": 18,
+    "losses": 4,
+    "conference": "West",
+    "madePlayoffs": true,
+    "playoffSeed": 2
+  },
+  "LOS_SPARKS": {
+    "wins": 15,
+    "losses": 7,
+    "conference": "West",
+    "madePlayoffs": true,
+    "playoffSeed": 3
+  },
+  "MIN_LYNX": {
+    "wins": 14,
+    "losses": 8,
+    "conference": "West",
+    "madePlayoffs": true,
+    "playoffSeed": 4
+  },
+  "PHX_MERCURY": {
+    "wins": 13,
+    "losses": 9,
+    "conference": "West",
+    "madePlayoffs": true,
+    "playoffSeed": 5
+  },
+  "CHI_SKY": {
+    "wins": 12,
+    "losses": 10,
+    "conference": "East",
+    "madePlayoffs": true,
+    "playoffSeed": 6
+  },
+  "CON_SUN": {
+    "wins": 10,
+    "losses": 12,
+    "conference": "East",
+    "madePlayoffs": true,
+    "playoffSeed": 7
+  },
+  "WAS_MYSTICS": {
+    "wins": 9,
+    "losses": 13,
+    "conference": "East",
+    "madePlayoffs": true,
+    "playoffSeed": 8
+  },
+  "DAL_WINGS": {
+    "wins": 8,
+    "losses": 14,
+    "conference": "West",
+    "madePlayoffs": false,
+    "playoffSeed": null
+  },
+  "ATL_DREAM": {
+    "wins": 7,
+    "losses": 15,
+    "conference": "East",
+    "madePlayoffs": false,
+    "playoffSeed": null
+  },
+  "IND_FEVER": {
+    "wins": 6,
+    "losses": 16,
+    "conference": "East",
+    "madePlayoffs": false,
+    "playoffSeed": null
+  },
+  "NYL_LIBERTY": {
+    "wins": 2,
+    "losses": 20,
+    "conference": "East",
+    "madePlayoffs": false,
+    "playoffSeed": null
+  },
+  "playoffs": {
+    "structureType": "overall-bracket",
+    "conferenceChampionsDeterminedByPlayoffs": false,
+    "guaranteedCrossConferenceFinal": false,
+    "finalsConferenceType": "same-west",
+
+    "champion": {
+      "team": "SEA_STORM",
+      "coach": "Gary Kloppenburg",
+      "finalsMVP": "Breanna Stewart"
+    },
+
+    "runnerUp": {
+      "team": "LVA_ACES",
+      "coach": "Bill Laimbeer"
+    },
+
+    "conferenceChampions": null,
+
+    "bracket": {
+      "rounds": [
+
+        {
+          "id": "FIRST_ROUND",
+          "name": "First Round",
+          "conference": null,
+          "roundFormat": "single-elimination",
+
+          "matchups": [
+            {
+              "teamA": { "code": "PHX_MERCURY", "seed": 5, "gamesWon": 1 },
+              "teamB": { "code": "WAS_MYSTICS", "seed": 8, "gamesWon": 0 },
+              "gamesPlayed": 1,
+              "winner": "PHX_MERCURY"
+            },
+            {
+              "teamA": { "code": "CON_SUN", "seed": 7, "gamesWon": 1 },
+              "teamB": { "code": "CHI_SKY", "seed": 6, "gamesWon": 0 },
+              "gamesPlayed": 1,
+              "winner": "CON_SUN"
+            }
+          ]
+        },
+
+        {
+          "id": "SECOND_ROUND",
+          "name": "Second Round",
+          "conference": null,
+          "roundFormat": "single-elimination",
+
+          "matchups": [
+            {
+              "teamA": { "code": "MIN_LYNX", "seed": 4, "gamesWon": 0 },
+              "teamB": { "code": "PHX_MERCURY", "seed": 5, "gamesWon": 1 },
+              "gamesPlayed": 1,
+              "winner": "PHX_MERCURY"
+            },
+            {
+              "teamA": { "code": "LOS_SPARKS", "seed": 3, "gamesWon": 0 },
+              "teamB": { "code": "CON_SUN", "seed": 7, "gamesWon": 1 },
+              "gamesPlayed": 1,
+              "winner": "CON_SUN"
+            }
+          ]
+        },
+
+        {
+          "id": "SEMIFINALS",
+          "name": "Semifinals",
+          "conference": null,
+          "roundFormat": "best-of-5",
+
+          "matchups": [
+            {
+              "teamA": { "code": "SEA_STORM", "seed": 2, "gamesWon": 3 },
+              "teamB": { "code": "MIN_LYNX", "seed": 4, "gamesWon": 0 },
+              "gamesPlayed": 3,
+              "winner": "SEA_STORM"
+            },
+            {
+              "teamA": { "code": "LVA_ACES", "seed": 1, "gamesWon": 3 },
+              "teamB": { "code": "CON_SUN", "seed": 7, "gamesWon": 1 },
+              "gamesPlayed": 4,
+              "winner": "LVA_ACES"
+            }
+          ]
+        },
+
+        {
+          "id": "FINALS",
+          "name": "WNBA Finals",
+          "conference": null,
+          "roundFormat": "best-of-5",
+
+          "matchups": [
+            {
+              "teamA": { "code": "SEA_STORM", "seed": 2, "gamesWon": 3 },
+              "teamB": { "code": "LVA_ACES", "seed": 1, "gamesWon": 0 },
+              "gamesPlayed": 3,
+              "winner": "SEA_STORM"
+            }
+          ]
+        }
+
+      ]
+    }
+  }
+},
+"2021": {
+  "seasonInfo": {
+    "startDate": "2021-05-14",
+    "endDate": "2021-10-17",
+    "regSeasonGames": 32,
+    "numTeams": 12,
+    "playoffSeedType": "Overall"
+  },
+  "CON_SUN": {
+    "wins": 26,
+    "losses": 6,
+    "conference": "East",
+    "madePlayoffs": true,
+    "playoffSeed": 1
+  },
+  "LVA_ACES": {
+    "wins": 24,
+    "losses": 8,
+    "conference": "West",
+    "madePlayoffs": true,
+    "playoffSeed": 2
+  },
+  "MIN_LYNX": {
+    "wins": 22,
+    "losses": 10,
+    "conference": "West",
+    "madePlayoffs": true,
+    "playoffSeed": 3
+  },
+  "SEA_STORM": {
+    "wins": 21,
+    "losses": 11,
+    "conference": "West",
+    "madePlayoffs": true,
+    "playoffSeed": 4
+  },
+  "PHX_MERCURY": {
+    "wins": 19,
+    "losses": 13,
+    "conference": "West",
+    "madePlayoffs": true,
+    "playoffSeed": 5
+  },
+  "CHI_SKY": {
+    "wins": 16,
+    "losses": 16,
+    "conference": "East",
+    "madePlayoffs": true,
+    "playoffSeed": 6
+  },
+  "DAL_WINGS": {
+    "wins": 14,
+    "losses": 18,
+    "conference": "West",
+    "madePlayoffs": true,
+    "playoffSeed": 7
+  },
+  "NYL_LIBERTY": {
+    "wins": 12,
+    "losses": 20,
+    "conference": "East",
+    "madePlayoffs": true,
+    "playoffSeed": 8
+  },
+  "WAS_MYSTICS": {
+    "wins": 12,
+    "losses": 20,
+    "conference": "East",
+    "madePlayoffs": false,
+    "playoffSeed": null
+  },
+  "LOS_SPARKS": {
+    "wins": 12,
+    "losses": 20,
+    "conference": "West",
+    "madePlayoffs": false,
+    "playoffSeed": null
+  },
+  "ATL_DREAM": {
+    "wins": 8,
+    "losses": 24,
+    "conference": "East",
+    "madePlayoffs": false,
+    "playoffSeed": null
+  },
+  "IND_FEVER": {
+    "wins": 6,
+    "losses": 26,
+    "conference": "East",
+    "madePlayoffs": false,
+    "playoffSeed": null
+  },
+  "playoffs": {
+    "structureType": "overall-bracket",
+    "conferenceChampionsDeterminedByPlayoffs": false,
+    "guaranteedCrossConferenceFinal": false,
+    "finalsConferenceType": "east-west",
+
+    "champion": {
+      "team": "CHI_SKY",
+      "coach": "James Wade",
+      "finalsMVP": "Kahleah Copper"
+    },
+
+    "runnerUp": {
+      "team": "PHX_MERCURY",
+      "coach": "Sandy Brondello"
+    },
+
+    "conferenceChampions": null,
+
+    "bracket": {
+      "rounds": [
+
+        {
+          "id": "FIRST_ROUND",
+          "name": "First Round",
+          "conference": null,
+          "roundFormat": "single-elimination",
+
+          "matchups": [
+            {
+              "teamA": { "code": "PHX_MERCURY", "seed": 5, "gamesWon": 1 },
+              "teamB": { "code": "NYL_LIBERTY", "seed": 8, "gamesWon": 0 },
+              "gamesPlayed": 1,
+              "winner": "PHX_MERCURY"
+            },
+            {
+              "teamA": { "code": "CHI_SKY", "seed": 6, "gamesWon": 1 },
+              "teamB": { "code": "DAL_WINGS", "seed": 7, "gamesWon": 0 },
+              "gamesPlayed": 1,
+              "winner": "CHI_SKY"
+            }
+          ]
+        },
+
+        {
+          "id": "SECOND_ROUND",
+          "name": "Second Round",
+          "conference": null,
+          "roundFormat": "single-elimination",
+
+          "matchups": [
+            {
+              "teamA": { "code": "SEA_STORM", "seed": 4, "gamesWon": 0 },
+              "teamB": { "code": "PHX_MERCURY", "seed": 5, "gamesWon": 1 },
+              "gamesPlayed": 1,
+              "winner": "PHX_MERCURY"
+            },
+            {
+              "teamA": { "code": "MIN_LYNX", "seed": 3, "gamesWon": 0 },
+              "teamB": { "code": "CHI_SKY", "seed": 6, "gamesWon": 1 },
+              "gamesPlayed": 1,
+              "winner": "CHI_SKY"
+            }
+          ]
+        },
+
+        {
+          "id": "SEMIFINALS",
+          "name": "Semifinals",
+          "conference": null,
+          "roundFormat": "best-of-5",
+
+          "matchups": [
+            {
+              "teamA": { "code": "LVA_ACES", "seed": 1, "gamesWon": 2 },
+              "teamB": { "code": "PHX_MERCURY", "seed": 5, "gamesWon": 3 },
+              "gamesPlayed": 5,
+              "winner": "PHX_MERCURY"
+            },
+            {
+              "teamA": { "code": "CON_SUN", "seed": 2, "gamesWon": 1 },
+              "teamB": { "code": "CHI_SKY", "seed": 6, "gamesWon": 3 },
+              "gamesPlayed": 4,
+              "winner": "CHI_SKY"
+            }
+          ]
+        },
+
+        {
+          "id": "FINALS",
+          "name": "WNBA Finals",
+          "conference": null,
+          "roundFormat": "best-of-5",
+
+          "matchups": [
+            {
+              "teamA": { "code": "CHI_SKY", "seed": 6, "gamesWon": 3 },
+              "teamB": { "code": "PHX_MERCURY", "seed": 5, "gamesWon": 1 },
+              "gamesPlayed": 4,
+              "winner": "CHI_SKY"
+            }
+          ]
+        }
+
+      ]
+    }
+  }
+},
+"2022": {
+  "seasonInfo": {
+    "startDate": "2022-05-06",
+    "endDate": "2022-09-18",
+    "regSeasonGames": 36,
+    "numTeams": 12,
+    "playoffSeedType": "Overall"
+  },
+  "LVA_ACES": {
+    "wins": 26,
+    "losses": 10,
+    "conference": "West",
+    "madePlayoffs": true,
+    "playoffSeed": 1
+  },
+  "CHI_SKY": {
+    "wins": 26,
+    "losses": 10,
+    "conference": "East",
+    "madePlayoffs": true,
+    "playoffSeed": 2
+  },
+  "CON_SUN": {
+    "wins": 25,
+    "losses": 11,
+    "conference": "East",
+    "madePlayoffs": true,
+    "playoffSeed": 3
+  },
+  "SEA_STORM": {
+    "wins": 22,
+    "losses": 14,
+    "conference": "West",
+    "madePlayoffs": true,
+    "playoffSeed": 4
+  },
+  "WAS_MYSTICS": {
+    "wins": 22,
+    "losses": 14,
+    "conference": "East",
+    "madePlayoffs": true,
+    "playoffSeed": 5
+  },
+  "DAL_WINGS": {
+    "wins": 18,
+    "losses": 18,
+    "conference": "West",
+    "madePlayoffs": true,
+    "playoffSeed": 6
+  },
+  "NYL_LIBERTY": {
+    "wins": 16,
+    "losses": 20,
+    "conference": "East",
+    "madePlayoffs": true,
+    "playoffSeed": 7
+  },
+  "PHX_MERCURY": {
+    "wins": 15,
+    "losses": 21,
+    "conference": "West",
+    "madePlayoffs": true,
+    "playoffSeed": 8
+  },
+  "MIN_LYNX": {
+    "wins": 14,
+    "losses": 22,
+    "conference": "West",
+    "madePlayoffs": false,
+    "playoffSeed": null
+  },
+  "ATL_DREAM": {
+    "wins": 14,
+    "losses": 22,
+    "conference": "East",
+    "madePlayoffs": false,
+    "playoffSeed": null
+  },
+  "LOS_SPARKS": {
+    "wins": 13,
+    "losses": 23,
+    "conference": "West",
+    "madePlayoffs": false,
+    "playoffSeed": null
+  },
+  "IND_FEVER": {
+    "wins": 5,
+    "losses": 31,
+    "conference": "East",
+    "madePlayoffs": false,
+    "playoffSeed": null
+  },
+  "playoffs": {
+    "structureType": "overall-bracket",
+    "conferenceChampionsDeterminedByPlayoffs": false,
+    "guaranteedCrossConferenceFinal": false,
+    "finalsConferenceType": "east-west",
+
+    "champion": {
+      "team": "LVA_ACES",
+      "coach": "Becky Hammon",
+      "finalsMVP": "Chelsea Gray"
+    },
+
+    "runnerUp": {
+      "team": "CON_SUN",
+      "coach": "Curt Miller"
+    },
+
+    "conferenceChampions": null,
+
+    "bracket": {
+      "rounds": [
+
+        {
+          "id": "FIRST_ROUND",
+          "name": "First Round",
+          "conference": null,
+          "roundFormat": "best-of-3",
+
+          "matchups": [
+            {
+              "teamA": { "code": "LVA_ACES", "seed": 1, "gamesWon": 2 },
+              "teamB": { "code": "PHX_MERCURY", "seed": 8, "gamesWon": 0 },
+              "gamesPlayed": 2,
+              "winner": "LVA_ACES"
+            },
+            {
+              "teamA": { "code": "SEA_STORM", "seed": 4, "gamesWon": 2 },
+              "teamB": { "code": "WAS_MYSTICS", "seed": 5, "gamesWon": 0 },
+              "gamesPlayed": 2,
+              "winner": "SEA_STORM"
+            },
+            {
+              "teamA": { "code": "CHI_SKY", "seed": 2, "gamesWon": 2 },
+              "teamB": { "code": "NYL_LIBERTY", "seed": 7, "gamesWon": 1 },
+              "gamesPlayed": 3,
+              "winner": "CHI_SKY"
+            },
+            {
+              "teamA": { "code": "CON_SUN", "seed": 3, "gamesWon": 2 },
+              "teamB": { "code": "DAL_WINGS", "seed": 6, "gamesWon": 1 },
+              "gamesPlayed": 3,
+              "winner": "CON_SUN"
+            }
+          ]
+        },
+
+        {
+          "id": "SEMIFINALS",
+          "name": "Semifinals",
+          "conference": null,
+          "roundFormat": "best-of-5",
+
+          "matchups": [
+            {
+              "teamA": { "code": "LVA_ACES", "seed": 1, "gamesWon": 3 },
+              "teamB": { "code": "SEA_STORM", "seed": 4, "gamesWon": 1 },
+              "gamesPlayed": 4,
+              "winner": "LVA_ACES"
+            },
+            {
+              "teamA": { "code": "CON_SUN", "seed": 3, "gamesWon": 3 },
+              "teamB": { "code": "CHI_SKY", "seed": 2, "gamesWon": 2 },
+              "gamesPlayed": 5,
+              "winner": "CON_SUN"
+            }
+          ]
+        },
+
+        {
+          "id": "FINALS",
+          "name": "WNBA Finals",
+          "conference": null,
+          "roundFormat": "best-of-5",
+
+          "matchups": [
+            {
+              "teamA": { "code": "LVA_ACES", "seed": 1, "gamesWon": 3 },
+              "teamB": { "code": "CON_SUN", "seed": 3, "gamesWon": 1 },
+              "gamesPlayed": 4,
+              "winner": "LVA_ACES"
+            }
+          ]
+        }
+
+      ]
+    }
+  }
+},
+"2023": {
+  "seasonInfo": {
+    "startDate": "2023-05-19",
+    "endDate": "2023-10-18",
+    "regSeasonGames": 40,
+    "numTeams": 12,
+    "playoffSeedType": "Overall"
+  },
+  "LVA_ACES": {
+    "wins": 34,
+    "losses": 6,
+    "conference": "West",
+    "madePlayoffs": true,
+    "playoffSeed": 1
+  },
+  "NYL_LIBERTY": {
+    "wins": 32,
+    "losses": 8,
+    "conference": "East",
+    "madePlayoffs": true,
+    "playoffSeed": 2
+  },
+  "CON_SUN": {
+    "wins": 27,
+    "losses": 13,
+    "conference": "East",
+    "madePlayoffs": true,
+    "playoffSeed": 3
+  },
+  "DAL_WINGS": {
+    "wins": 22,
+    "losses": 18,
+    "conference": "West",
+    "madePlayoffs": true,
+    "playoffSeed": 4
+  },
+  "ATL_DREAM": {
+    "wins": 19,
+    "losses": 21,
+    "conference": "East",
+    "madePlayoffs": true,
+    "playoffSeed": 5
+  },
+  "MIN_LYNX": {
+    "wins": 19,
+    "losses": 21,
+    "conference": "West",
+    "madePlayoffs": true,
+    "playoffSeed": 6
+  },
+  "WAS_MYSTICS": {
+    "wins": 19,
+    "losses": 21,
+    "conference": "East",
+    "madePlayoffs": true,
+    "playoffSeed": 7
+  },
+  "CHI_SKY": {
+    "wins": 18,
+    "losses": 22,
+    "conference": "East",
+    "madePlayoffs": true,
+    "playoffSeed": 8
+  },
+  "LOS_SPARKS": {
+    "wins": 17,
+    "losses": 23,
+    "conference": "West",
+    "madePlayoffs": false,
+    "playoffSeed": null
+  },
+  "IND_FEVER": {
+    "wins": 13,
+    "losses": 27,
+    "conference": "East",
+    "madePlayoffs": false,
+    "playoffSeed": null
+  },
+  "SEA_STORM": {
+    "wins": 11,
+    "losses": 29,
+    "conference": "West",
+    "madePlayoffs": false,
+    "playoffSeed": null
+  },
+  "PHX_MERCURY": {
+    "wins": 9,
+    "losses": 31,
+    "conference": "West",
+    "madePlayoffs": false,
+    "playoffSeed": null
+  },
+  "playoffs": {
+    "structureType": "overall-bracket",
+    "conferenceChampionsDeterminedByPlayoffs": false,
+    "guaranteedCrossConferenceFinal": false,
+    "finalsConferenceType": "east-west",
+
+    "champion": {
+      "team": "LVA_ACES",
+      "coach": "Becky Hammon",
+      "finalsMVP": "A'ja Wilson"
+    },
+
+    "runnerUp": {
+      "team": "NYL_LIBERTY",
+      "coach": "Sandy Brondello"
+    },
+
+    "conferenceChampions": null,
+
+    "bracket": {
+      "rounds": [
+
+        {
+          "id": "FIRST_ROUND",
+          "name": "First Round",
+          "conference": null,
+          "roundFormat": "best-of-3",
+
+          "matchups": [
+            {
+              "teamA": { "code": "LVA_ACES", "seed": 1, "gamesWon": 2 },
+              "teamB": { "code": "CHI_SKY", "seed": 8, "gamesWon": 0 },
+              "gamesPlayed": 2,
+              "winner": "LVA_ACES"
+            },
+            {
+              "teamA": { "code": "DAL_WINGS", "seed": 4, "gamesWon": 2 },
+              "teamB": { "code": "ATL_DREAM", "seed": 5, "gamesWon": 0 },
+              "gamesPlayed": 2,
+              "winner": "DAL_WINGS"
+            },
+            {
+              "teamA": { "code": "NYL_LIBERTY", "seed": 2, "gamesWon": 2 },
+              "teamB": { "code": "WAS_MYSTICS", "seed": 7, "gamesWon": 0 },
+              "gamesPlayed": 2,
+              "winner": "NYL_LIBERTY"
+            },
+            {
+              "teamA": { "code": "CON_SUN", "seed": 3, "gamesWon": 2 },
+              "teamB": { "code": "MIN_LYNX", "seed": 6, "gamesWon": 1 },
+              "gamesPlayed": 3,
+              "winner": "CON_SUN"
+            }
+          ]
+        },
+
+        {
+          "id": "SEMIFINALS",
+          "name": "Semifinals",
+          "conference": null,
+          "roundFormat": "best-of-5",
+
+          "matchups": [
+            {
+              "teamA": { "code": "LVA_ACES", "seed": 1, "gamesWon": 3 },
+              "teamB": { "code": "DAL_WINGS", "seed": 4, "gamesWon": 0 },
+              "gamesPlayed": 3,
+              "winner": "LVA_ACES"
+            },
+            {
+              "teamA": { "code": "NYL_LIBERTY", "seed": 2, "gamesWon": 3 },
+              "teamB": { "code": "CON_SUN", "seed": 3, "gamesWon": 1 },
+              "gamesPlayed": 4,
+              "winner": "NYL_LIBERTY"
+            }
+          ]
+        },
+
+        {
+          "id": "FINALS",
+          "name": "WNBA Finals",
+          "conference": null,
+          "roundFormat": "best-of-5",
+
+          "matchups": [
+            {
+              "teamA": { "code": "LVA_ACES", "seed": 1, "gamesWon": 3 },
+              "teamB": { "code": "NYL_LIBERTY", "seed": 2, "gamesWon": 1 },
+              "gamesPlayed": 4,
+              "winner": "LVA_ACES"
+            }
+          ]
+        }
+
+      ]
+    }
+  }
+},
+"2024": {
+  "seasonInfo": {
+    "startDate": "2024-05-14",
+    "endDate": "2024-10-20",
+    "regSeasonGames": 40,
+    "numTeams": 12,
+    "playoffSeedType": "Overall"
+  },
+  "NYL_LIBERTY": {
+    "wins": 32,
+    "losses": 8,
+    "conference": "East",
+    "madePlayoffs": true,
+    "playoffSeed": 1
+  },
+  "MIN_LYNX": {
+    "wins": 30,
+    "losses": 10,
+    "conference": "West",
+    "madePlayoffs": true,
+    "playoffSeed": 2
+  },
+  "CON_SUN": {
+    "wins": 28,
+    "losses": 12,
+    "conference": "East",
+    "madePlayoffs": true,
+    "playoffSeed": 3
+  },
+  "LVA_ACES": {
+    "wins": 27,
+    "losses": 13,
+    "conference": "West",
+    "madePlayoffs": true,
+    "playoffSeed": 4
+  },
+  "SEA_STORM": {
+    "wins": 25,
+    "losses": 15,
+    "conference": "West",
+    "madePlayoffs": true,
+    "playoffSeed": 5
+  },
+  "IND_FEVER": {
+    "wins": 20,
+    "losses": 20,
+    "conference": "East",
+    "madePlayoffs": true,
+    "playoffSeed": 6
+  },
+  "PHX_MERCURY": {
+    "wins": 19,
+    "losses": 21,
+    "conference": "West",
+    "madePlayoffs": true,
+    "playoffSeed": 7
+  },
+  "ATL_DREAM": {
+    "wins": 15,
+    "losses": 25,
+    "conference": "East",
+    "madePlayoffs": true,
+    "playoffSeed": 8
+  },
+  "WAS_MYSTICS": {
+    "wins": 14,
+    "losses": 26,
+    "conference": "East",
+    "madePlayoffs": false,
+    "playoffSeed": null
+  },
+  "CHI_SKY": {
+    "wins": 13,
+    "losses": 27,
+    "conference": "East",
+    "madePlayoffs": false,
+    "playoffSeed": null
+  },
+  "DAL_WINGS": {
+    "wins": 9,
+    "losses": 31,
+    "conference": "West",
+    "madePlayoffs": false,
+    "playoffSeed": null
+  },
+  "LOS_SPARKS": {
+    "wins": 8,
+    "losses": 32,
+    "conference": "West",
+    "madePlayoffs": false,
+    "playoffSeed": null
+  },
+  "playoffs": {
+    "structureType": "overall-bracket",
+    "conferenceChampionsDeterminedByPlayoffs": false,
+    "guaranteedCrossConferenceFinal": false,
+    "finalsConferenceType": "east-west",
+
+    "champion": {
+      "team": "NYL_LIBERTY",
+      "coach": "Sandy Brondello",
+      "finalsMVP": "Jonquel Jones"
+    },
+
+    "runnerUp": {
+      "team": "MIN_LYNX",
+      "coach": "Cheryl Reeve"
+    },
+
+    "conferenceChampions": null,
+
+    "bracket": {
+      "rounds": [
+
+        {
+          "id": "FIRST_ROUND",
+          "name": "First Round",
+          "conference": null,
+          "roundFormat": "best-of-3",
+
+          "matchups": [
+            {
+              "teamA": { "code": "NYL_LIBERTY", "seed": 1, "gamesWon": 2 },
+              "teamB": { "code": "ATL_DREAM", "seed": 8, "gamesWon": 0 },
+              "gamesPlayed": 2,
+              "winner": "NYL_LIBERTY"
+            },
+            {
+              "teamA": { "code": "LVA_ACES", "seed": 4, "gamesWon": 2 },
+              "teamB": { "code": "SEA_STORM", "seed": 5, "gamesWon": 0 },
+              "gamesPlayed": 2,
+              "winner": "LVA_ACES"
+            },
+            {
+              "teamA": { "code": "MIN_LYNX", "seed": 2, "gamesWon": 2 },
+              "teamB": { "code": "PHX_MERCURY", "seed": 7, "gamesWon": 0 },
+              "gamesPlayed": 2,
+              "winner": "MIN_LYNX"
+            },
+            {
+              "teamA": { "code": "CON_SUN", "seed": 3, "gamesWon": 2 },
+              "teamB": { "code": "IND_FEVER", "seed": 6, "gamesWon": 0 },
+              "gamesPlayed": 2,
+              "winner": "CON_SUN"
+            }
+          ]
+        },
+
+        {
+          "id": "SEMIFINALS",
+          "name": "Semifinals",
+          "conference": null,
+          "roundFormat": "best-of-5",
+
+          "matchups": [
+            {
+              "teamA": { "code": "NYL_LIBERTY", "seed": 1, "gamesWon": 3 },
+              "teamB": { "code": "LVA_ACES", "seed": 4, "gamesWon": 1 },
+              "gamesPlayed": 4,
+              "winner": "NYL_LIBERTY"
+            },
+            {
+              "teamA": { "code": "MIN_LYNX", "seed": 2, "gamesWon": 3 },
+              "teamB": { "code": "CON_SUN", "seed": 3, "gamesWon": 2 },
+              "gamesPlayed": 5,
+              "winner": "MIN_LYNX"
+            }
+          ]
+        },
+
+        {
+          "id": "FINALS",
+          "name": "WNBA Finals",
+          "conference": null,
+          "roundFormat": "best-of-5",
+
+          "matchups": [
+            {
+              "teamA": { "code": "NYL_LIBERTY", "seed": 1, "gamesWon": 3 },
+              "teamB": { "code": "MIN_LYNX", "seed": 2, "gamesWon": 2 },
+              "gamesPlayed": 5,
+              "winner": "NYL_LIBERTY"
+            }
+          ]
+        }
+
+      ]
+    }
+  }
+},
+"2025": {
+  "seasonInfo": {
+    "startDate": "2025-05-16",
+    "endDate": "2025-10-10",
+    "regSeasonGames": 44,
+    "numTeams": 13,
+    "playoffSeedType": "Overall"
+  },
+  "MIN_LYNX": {
+    "wins": 34,
+    "losses": 10,
+    "conference": "West",
+    "madePlayoffs": true,
+    "playoffSeed": 1
+  },
+  "LVA_ACES": {
+    "wins": 30,
+    "losses": 14,
+    "conference": "West",
+    "madePlayoffs": true,
+    "playoffSeed": 2
+  },
+  "ATL_DREAM": {
+    "wins": 30,
+    "losses": 14,
+    "conference": "East",
+    "madePlayoffs": true,
+    "playoffSeed": 3
+  },
+  "PHX_MERCURY": {
+    "wins": 27,
+    "losses": 17,
+    "conference": "West",
+    "madePlayoffs": true,
+    "playoffSeed": 4
+  },
+  "NYL_LIBERTY": {
+    "wins": 27,
+    "losses": 17,
+    "conference": "East",
+    "madePlayoffs": true,
+    "playoffSeed": 5
+  },
+  "IND_FEVER": {
+    "wins": 24,
+    "losses": 20,
+    "conference": "East",
+    "madePlayoffs": true,
+    "playoffSeed": 6
+  },
+  "SEA_STORM": {
+    "wins": 23,
+    "losses": 21,
+    "conference": "West",
+    "madePlayoffs": true,
+    "playoffSeed": 7
+  },
+  "GSV_VALKYRIES": {
+    "wins": 23,
+    "losses": 21,
+    "conference": "West",
+    "madePlayoffs": true,
+    "playoffSeed": 8
+  },
+  "LOS_SPARKS": {
+    "wins": 21,
+    "losses": 23,
+    "conference": "West",
+    "madePlayoffs": false,
+    "playoffSeed": null
+  },
+  "WAS_MYSTICS": {
+    "wins": 16,
+    "losses": 28,
+    "conference": "East",
+    "madePlayoffs": false,
+    "playoffSeed": null
+  },
+  "CON_SUN": {
+    "wins": 11,
+    "losses": 33,
+    "conference": "East",
+    "madePlayoffs": false,
+    "playoffSeed": null
+  },
+  "CHI_SKY": {
+    "wins": 10,
+    "losses": 34,
+    "conference": "East",
+    "madePlayoffs": false,
+    "playoffSeed": null
+  },
+  "DAL_WINGS": {
+    "wins": 10,
+    "losses": 34,
+    "conference": "West",
+    "madePlayoffs": false,
+    "playoffSeed": null
+  },
+  "playoffs": {
+    "structureType": "overall-bracket",
+    "conferenceChampionsDeterminedByPlayoffs": false,
+    "guaranteedCrossConferenceFinal": false,
+    "finalsConferenceType": "same-west",
+
+    "champion": {
+      "team": "LVA_ACES",
+      "coach": "Becky Hammon",
+      "finalsMVP": "A'ja Wilson"
+    },
+
+    "runnerUp": {
+      "team": "PHX_MERCURY",
+      "coach": "Nate Tibbetts"
+    },
+
+    "conferenceChampions": null,
+
+    "bracket": {
+      "rounds": [
+
+        {
+          "id": "FIRST_ROUND",
+          "name": "First Round",
+          "conference": null,
+          "roundFormat": "best-of-3",
+
+          "matchups": [
+            {
+              "teamA": { "code": "MIN_LYNX", "seed": 1, "gamesWon": 2 },
+              "teamB": { "code": "GSV_VALKYRIES", "seed": 8, "gamesWon": 0 },
+              "gamesPlayed": 2,
+              "winner": "MIN_LYNX"
+            },
+            {
+              "teamA": { "code": "PHX_MERCURY", "seed": 4, "gamesWon": 2 },
+              "teamB": { "code": "NYL_LIBERTY", "seed": 5, "gamesWon": 1 },
+              "gamesPlayed": 3,
+              "winner": "PHX_MERCURY"
+            },
+            {
+              "teamA": { "code": "LVA_ACES", "seed": 2, "gamesWon": 2 },
+              "teamB": { "code": "SEA_STORM", "seed": 7, "gamesWon": 1 },
+              "gamesPlayed": 3,
+              "winner": "LVA_ACES"
+            },
+            {
+              "teamA": { "code": "IND_FEVER", "seed": 6, "gamesWon": 2 },
+              "teamB": { "code": "ATL_DREAM", "seed": 3, "gamesWon": 1 },
+              "gamesPlayed": 3,
+              "winner": "IND_FEVER"
+            }
+          ]
+        },
+
+        {
+          "id": "SEMIFINALS",
+          "name": "Semifinals",
+          "conference": null,
+          "roundFormat": "best-of-5",
+
+          "matchups": [
+            {
+              "teamA": { "code": "MIN_LYNX", "seed": 1, "gamesWon": 1 },
+              "teamB": { "code": "PHX_MERCURY", "seed": 4, "gamesWon": 3 },
+              "gamesPlayed": 4,
+              "winner": "PHX_MERCURY"
+            },
+            {
+              "teamA": { "code": "LVA_ACES", "seed": 2, "gamesWon": 3 },
+              "teamB": { "code": "IND_FEVER", "seed": 6, "gamesWon": 2 },
+              "gamesPlayed": 5,
+              "winner": "LVA_ACES"
+            }
+          ]
+        },
+
+        {
+          "id": "FINALS",
+          "name": "WNBA Finals",
+          "conference": null,
+          "roundFormat": "best-of-7",
+
+          "matchups": [
+            {
+              "teamA": { "code": "LVA_ACES", "seed": 2, "gamesWon": 4 },
+              "teamB": { "code": "PHX_MERCURY", "seed": 4, "gamesWon": 2 },
+              "gamesPlayed": 6,
+              "winner": "LVA_ACES"
+            }
+          ]
+        }
+
+      ]
+    }
+  }
+}
+}
