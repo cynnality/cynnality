@@ -1,0 +1,3076 @@
+{
+  "1997": { 
+    "teamCount": 8,
+    "teams": [
+      {
+        "teamCode": "NYL_LIBERTY",
+        "franchiseId": null,
+        "isExpansion": true,
+        "isFinalSeason": false,
+        "isRelocatingNextYear": false,
+        "isFirstSeasonAfterRelocation": false
+      },
+      {
+        "teamCode": "PHX_MERCURY",
+        "franchiseId": null,
+        "isExpansion": true,
+        "isFinalSeason": false,
+        "isRelocatingNextYear": false,
+        "isFirstSeasonAfterRelocation": false
+      },
+      {
+        "teamCode": "LOS_SPARKS",
+        "franchiseId": null,
+        "isExpansion": true,
+        "isFinalSeason": false,
+        "isRelocatingNextYear": false,
+        "isFirstSeasonAfterRelocation": false
+      },
+      {
+        "teamCode": "CHA_STING",
+        "franchiseId": null,
+        "isExpansion": true,
+        "isFinalSeason": false,
+        "isRelocatingNextYear": false,
+        "isFirstSeasonAfterRelocation": false
+      },
+      {
+        "teamCode": "CLE_ROCKERS",
+        "franchiseId": null,
+        "isExpansion": true,
+        "isFinalSeason": false,
+        "isRelocatingNextYear": false,
+        "isFirstSeasonAfterRelocation": false
+      },
+      {
+        "teamCode": "HOU_COMETS",
+        "franchiseId": null,
+        "isExpansion": true,
+        "isFinalSeason": false,
+        "isRelocatingNextYear": false,
+        "isFirstSeasonAfterRelocation": false
+      },
+      {
+        "teamCode": "SAC_MONARCHS",
+        "franchiseId": null,
+        "isExpansion": true,
+        "isFinalSeason": false,
+        "isRelocatingNextYear": false,
+        "isFirstSeasonAfterRelocation": false
+      },
+      {
+        "teamCode": "UTA_STARZZ",
+        "franchiseId": "ACES_FRANCHISE",
+        "isExpansion": true,
+        "isFinalSeason": false,
+        "isRelocatingNextYear": false,
+        "isFirstSeasonAfterRelocation": false
+      }
+    ]
+  },
+  "1998": {
+    "teamCount": 10,
+    "teams": [
+      {
+        "teamCode": "NYL_LIBERTY",
+        "franchiseId": null,
+        "isExpansion": false,
+        "isFinalSeason": false,
+        "isRelocatingNextYear": false,
+        "isFirstSeasonAfterRelocation": false
+      },
+      {
+        "teamCode": "PHX_MERCURY",
+        "franchiseId": null,
+        "isExpansion": false,
+        "isFinalSeason": false,
+        "isRelocatingNextYear": false,
+        "isFirstSeasonAfterRelocation": false
+      },
+      {
+        "teamCode": "WAS_MYSTICS",
+        "franchiseId": null,
+        "isExpansion": true,
+        "isFinalSeason": false,
+        "isRelocatingNextYear": false,
+        "isFirstSeasonAfterRelocation": false
+      },
+      {
+        "teamCode": "LOS_SPARKS",
+        "franchiseId": null,
+        "isExpansion": false,
+        "isFinalSeason": false,
+        "isRelocatingNextYear": false,
+        "isFirstSeasonAfterRelocation": false
+      },
+      {
+        "teamCode": "CHA_STING",
+        "franchiseId": null,
+        "isExpansion": false,
+        "isFinalSeason": false,
+        "isRelocatingNextYear": false,
+        "isFirstSeasonAfterRelocation": false
+      },
+      {
+        "teamCode": "CLE_ROCKERS",
+        "franchiseId": null,
+        "isExpansion": false,
+        "isFinalSeason": false,
+        "isRelocatingNextYear": false,
+        "isFirstSeasonAfterRelocation": false
+      },
+      {
+        "teamCode": "HOU_COMETS",
+        "franchiseId": null,
+        "isExpansion": false,
+        "isFinalSeason": false,
+        "isRelocatingNextYear": false,
+        "isFirstSeasonAfterRelocation": false
+      },
+      {
+        "teamCode": "SAC_MONARCHS",
+        "franchiseId": null,
+        "isExpansion": false,
+        "isFinalSeason": false,
+        "isRelocatingNextYear": false,
+        "isFirstSeasonAfterRelocation": false
+      },
+      {
+        "teamCode": "DET_SHOCK",
+        "franchiseId": "WINGS_FRANCHISE",
+        "isExpansion": true,
+        "isFinalSeason": false,
+        "isRelocatingNextYear": false,
+        "isFirstSeasonAfterRelocation": false
+      },
+      {
+        "teamCode": "UTA_STARZZ",
+        "franchiseId": "ACES_FRANCHISE",
+        "isExpansion": false,
+        "isFinalSeason": false,
+        "isRelocatingNextYear": false,
+        "isFirstSeasonAfterRelocation": false
+      }
+    ]
+  },
+  "1999": {
+    "teamCount": 12,
+    "teams": [
+      {
+        "teamCode": "NYL_LIBERTY",
+        "franchiseId": null,
+        "isExpansion": false,
+        "isFinalSeason": false,
+        "isRelocatingNextYear": false,
+        "isFirstSeasonAfterRelocation": false
+      },
+      {
+        "teamCode": "MIN_LYNX",
+        "franchiseId": null,
+        "isExpansion": true,
+        "isFinalSeason": false,
+        "isRelocatingNextYear": false,
+        "isFirstSeasonAfterRelocation": false
+      },
+      {
+        "teamCode": "PHX_MERCURY",
+        "franchiseId": null,
+        "isExpansion": false,
+        "isFinalSeason": false,
+        "isRelocatingNextYear": false,
+        "isFirstSeasonAfterRelocation": false
+      },
+      {
+        "teamCode": "WAS_MYSTICS",
+        "franchiseId": null,
+        "isExpansion": false,
+        "isFinalSeason": false,
+        "isRelocatingNextYear": false,
+        "isFirstSeasonAfterRelocation": false
+      },
+      {
+        "teamCode": "LOS_SPARKS",
+        "franchiseId": null,
+        "isExpansion": false,
+        "isFinalSeason": false,
+        "isRelocatingNextYear": false,
+        "isFirstSeasonAfterRelocation": false
+      },
+      {
+        "teamCode": "CHA_STING",
+        "franchiseId": null,
+        "isExpansion": false,
+        "isFinalSeason": false,
+        "isRelocatingNextYear": false,
+        "isFirstSeasonAfterRelocation": false
+      },
+      {
+        "teamCode": "CLE_ROCKERS",
+        "franchiseId": null,
+        "isExpansion": false,
+        "isFinalSeason": false,
+        "isRelocatingNextYear": false,
+        "isFirstSeasonAfterRelocation": false
+      },
+      {
+        "teamCode": "HOU_COMETS",
+        "franchiseId": null,
+        "isExpansion": false,
+        "isFinalSeason": false,
+        "isRelocatingNextYear": false,
+        "isFirstSeasonAfterRelocation": false
+      },
+      {
+        "teamCode": "SAC_MONARCHS",
+        "franchiseId": null,
+        "isExpansion": false,
+        "isFinalSeason": false,
+        "isRelocatingNextYear": false,
+        "isFirstSeasonAfterRelocation": false
+      },
+      {
+        "teamCode": "DET_SHOCK",
+        "franchiseId": "WINGS_FRANCHISE",
+        "isExpansion": false,
+        "isFinalSeason": false,
+        "isRelocatingNextYear": false,
+        "isFirstSeasonAfterRelocation": false
+      },
+      {
+        "teamCode": "ORL_MIRACLE",
+        "franchiseId": "SUN_FRANCHISE",
+        "isExpansion": true,
+        "isFinalSeason": false,
+        "isRelocatingNextYear": false,
+        "isFirstSeasonAfterRelocation": false
+      },
+      {
+        "teamCode": "UTA_STARZZ",
+        "franchiseId": "ACES_FRANCHISE",
+        "isExpansion": false,
+        "isFinalSeason": false,
+        "isRelocatingNextYear": false,
+        "isFirstSeasonAfterRelocation": false
+      }
+    ]
+  },
+  "2000": {
+    "teamCount": 16,
+    "teams": [
+      {
+        "teamCode": "IND_FEVER",
+        "franchiseId": null,
+        "isExpansion": true,
+        "isFinalSeason": false,
+        "isRelocatingNextYear": false,
+        "isFirstSeasonAfterRelocation": false
+      },
+      {
+        "teamCode": "NYL_LIBERTY",
+        "franchiseId": null,
+        "isExpansion": false,
+        "isFinalSeason": false,
+        "isRelocatingNextYear": false,
+        "isFirstSeasonAfterRelocation": false
+      },
+      {
+        "teamCode": "MIN_LYNX",
+        "franchiseId": null,
+        "isExpansion": false,
+        "isFinalSeason": false,
+        "isRelocatingNextYear": false,
+        "isFirstSeasonAfterRelocation": false
+      },
+      {
+        "teamCode": "PHX_MERCURY",
+        "franchiseId": null,
+        "isExpansion": false,
+        "isFinalSeason": false,
+        "isRelocatingNextYear": false,
+        "isFirstSeasonAfterRelocation": false
+      },
+      {
+        "teamCode": "WAS_MYSTICS",
+        "franchiseId": null,
+        "isExpansion": false,
+        "isFinalSeason": false,
+        "isRelocatingNextYear": false,
+        "isFirstSeasonAfterRelocation": false
+      },
+      {
+        "teamCode": "LOS_SPARKS",
+        "franchiseId": null,
+        "isExpansion": false,
+        "isFinalSeason": false,
+        "isRelocatingNextYear": false,
+        "isFirstSeasonAfterRelocation": false
+      },
+      {
+        "teamCode": "SEA_STORM",
+        "franchiseId": null,
+        "isExpansion": true,
+        "isFinalSeason": false,
+        "isRelocatingNextYear": false,
+        "isFirstSeasonAfterRelocation": false
+      },
+      {
+        "teamCode": "CHA_STING",
+        "franchiseId": null,
+        "isExpansion": false,
+        "isFinalSeason": false,
+        "isRelocatingNextYear": false,
+        "isFirstSeasonAfterRelocation": false
+      },
+      {
+        "teamCode": "CLE_ROCKERS",
+        "franchiseId": null,
+        "isExpansion": false,
+        "isFinalSeason": false,
+        "isRelocatingNextYear": false,
+        "isFirstSeasonAfterRelocation": false
+      },
+      {
+        "teamCode": "HOU_COMETS",
+        "franchiseId": null,
+        "isExpansion": false,
+        "isFinalSeason": false,
+        "isRelocatingNextYear": false,
+        "isFirstSeasonAfterRelocation": false
+      },
+      {
+        "teamCode": "MIA_SOL",
+        "franchiseId": null,
+        "isExpansion": true,
+        "isFinalSeason": false,
+        "isRelocatingNextYear": false,
+        "isFirstSeasonAfterRelocation": false
+      },
+      {
+        "teamCode": "POR_FIRE",
+        "franchiseId": null,
+        "isExpansion": true,
+        "isFinalSeason": false,
+        "isRelocatingNextYear": false,
+        "isFirstSeasonAfterRelocation": false
+      },
+      {
+        "teamCode": "SAC_MONARCHS",
+        "franchiseId": null,
+        "isExpansion": false,
+        "isFinalSeason": false,
+        "isRelocatingNextYear": false,
+        "isFirstSeasonAfterRelocation": false
+      },
+      {
+        "teamCode": "DET_SHOCK",
+        "franchiseId": "WINGS_FRANCHISE",
+        "isExpansion": false,
+        "isFinalSeason": false,
+        "isRelocatingNextYear": false,
+        "isFirstSeasonAfterRelocation": false
+      },
+      {
+        "teamCode": "ORL_MIRACLE",
+        "franchiseId": "SUN_FRANCHISE",
+        "isExpansion": false,
+        "isFinalSeason": false,
+        "isRelocatingNextYear": false,
+        "isFirstSeasonAfterRelocation": false
+      },
+      {
+        "teamCode": "UTA_STARZZ",
+        "franchiseId": "ACES_FRANCHISE",
+        "isExpansion": false,
+        "isFinalSeason": false,
+        "isRelocatingNextYear": false,
+        "isFirstSeasonAfterRelocation": false
+      }
+    ]
+  },
+  "2001": {
+    "teamCount": 16,
+    "teams": [
+      {
+        "teamCode": "IND_FEVER",
+        "franchiseId": null,
+        "isExpansion": false,
+        "isFinalSeason": false,
+        "isRelocatingNextYear": false,
+        "isFirstSeasonAfterRelocation": false
+      },
+      {
+        "teamCode": "NYL_LIBERTY",
+        "franchiseId": null,
+        "isExpansion": false,
+        "isFinalSeason": false,
+        "isRelocatingNextYear": false,
+        "isFirstSeasonAfterRelocation": false
+      },
+      {
+        "teamCode": "MIN_LYNX",
+        "franchiseId": null,
+        "isExpansion": false,
+        "isFinalSeason": false,
+        "isRelocatingNextYear": false,
+        "isFirstSeasonAfterRelocation": false
+      },
+      {
+        "teamCode": "PHX_MERCURY",
+        "franchiseId": null,
+        "isExpansion": false,
+        "isFinalSeason": false,
+        "isRelocatingNextYear": false,
+        "isFirstSeasonAfterRelocation": false
+      },
+      {
+        "teamCode": "WAS_MYSTICS",
+        "franchiseId": null,
+        "isExpansion": false,
+        "isFinalSeason": false,
+        "isRelocatingNextYear": false,
+        "isFirstSeasonAfterRelocation": false
+      },
+      {
+        "teamCode": "LOS_SPARKS",
+        "franchiseId": null,
+        "isExpansion": false,
+        "isFinalSeason": false,
+        "isRelocatingNextYear": false,
+        "isFirstSeasonAfterRelocation": false
+      },
+      {
+        "teamCode": "SEA_STORM",
+        "franchiseId": null,
+        "isExpansion": false,
+        "isFinalSeason": false,
+        "isRelocatingNextYear": false,
+        "isFirstSeasonAfterRelocation": false
+      },
+      {
+        "teamCode": "CHA_STING",
+        "franchiseId": null,
+        "isExpansion": false,
+        "isFinalSeason": false,
+        "isRelocatingNextYear": false,
+        "isFirstSeasonAfterRelocation": false
+      },
+      {
+        "teamCode": "CLE_ROCKERS",
+        "franchiseId": null,
+        "isExpansion": false,
+        "isFinalSeason": false,
+        "isRelocatingNextYear": false,
+        "isFirstSeasonAfterRelocation": false
+      },
+      {
+        "teamCode": "HOU_COMETS",
+        "franchiseId": null,
+        "isExpansion": false,
+        "isFinalSeason": false,
+        "isRelocatingNextYear": false,
+        "isFirstSeasonAfterRelocation": false
+      },
+      {
+        "teamCode": "MIA_SOL",
+        "franchiseId": null,
+        "isExpansion": false,
+        "isFinalSeason": false,
+        "isRelocatingNextYear": false,
+        "isFirstSeasonAfterRelocation": false
+      },
+      {
+        "teamCode": "POR_FIRE",
+        "franchiseId": null,
+        "isExpansion": false,
+        "isFinalSeason": false,
+        "isRelocatingNextYear": false,
+        "isFirstSeasonAfterRelocation": false
+      },
+      {
+        "teamCode": "SAC_MONARCHS",
+        "franchiseId": null,
+        "isExpansion": false,
+        "isFinalSeason": false,
+        "isRelocatingNextYear": false,
+        "isFirstSeasonAfterRelocation": false
+      },
+      {
+        "teamCode": "DET_SHOCK",
+        "franchiseId": "WINGS_FRANCHISE",
+        "isExpansion": false,
+        "isFinalSeason": false,
+        "isRelocatingNextYear": false,
+        "isFirstSeasonAfterRelocation": false
+      },
+      {
+        "teamCode": "ORL_MIRACLE",
+        "franchiseId": "SUN_FRANCHISE",
+        "isExpansion": false,
+        "isFinalSeason": false,
+        "isRelocatingNextYear": false,
+        "isFirstSeasonAfterRelocation": false
+      },
+      {
+        "teamCode": "UTA_STARZZ",
+        "franchiseId": "ACES_FRANCHISE",
+        "isExpansion": false,
+        "isFinalSeason": false,
+        "isRelocatingNextYear": false,
+        "isFirstSeasonAfterRelocation": false
+      }
+    ]
+  },
+  "2002": {
+    "teamCount": 16,
+    "teams": [
+      {
+        "teamCode": "IND_FEVER",
+        "franchiseId": null,
+        "isExpansion": false,
+        "isFinalSeason": false,
+        "isRelocatingNextYear": false,
+        "isFirstSeasonAfterRelocation": false
+      },
+      {
+        "teamCode": "NYL_LIBERTY",
+        "franchiseId": null,
+        "isExpansion": false,
+        "isFinalSeason": false,
+        "isRelocatingNextYear": false,
+        "isFirstSeasonAfterRelocation": false
+      },
+      {
+        "teamCode": "MIN_LYNX",
+        "franchiseId": null,
+        "isExpansion": false,
+        "isFinalSeason": false,
+        "isRelocatingNextYear": false,
+        "isFirstSeasonAfterRelocation": false
+      },
+      {
+        "teamCode": "PHX_MERCURY",
+        "franchiseId": null,
+        "isExpansion": false,
+        "isFinalSeason": false,
+        "isRelocatingNextYear": false,
+        "isFirstSeasonAfterRelocation": false
+      },
+      {
+        "teamCode": "WAS_MYSTICS",
+        "franchiseId": null,
+        "isExpansion": false,
+        "isFinalSeason": false,
+        "isRelocatingNextYear": false,
+        "isFirstSeasonAfterRelocation": false
+      },
+      {
+        "teamCode": "LOS_SPARKS",
+        "franchiseId": null,
+        "isExpansion": false,
+        "isFinalSeason": false,
+        "isRelocatingNextYear": false,
+        "isFirstSeasonAfterRelocation": false
+      },
+      {
+        "teamCode": "SEA_STORM",
+        "franchiseId": null,
+        "isExpansion": false,
+        "isFinalSeason": false,
+        "isRelocatingNextYear": false,
+        "isFirstSeasonAfterRelocation": false
+      },
+      {
+        "teamCode": "CHA_STING",
+        "franchiseId": null,
+        "isExpansion": false,
+        "isFinalSeason": false,
+        "isRelocatingNextYear": false,
+        "isFirstSeasonAfterRelocation": false
+      },
+      {
+        "teamCode": "CLE_ROCKERS",
+        "franchiseId": null,
+        "isExpansion": false,
+        "isFinalSeason": false,
+        "isRelocatingNextYear": false,
+        "isFirstSeasonAfterRelocation": false
+      },
+      {
+        "teamCode": "HOU_COMETS",
+        "franchiseId": null,
+        "isExpansion": false,
+        "isFinalSeason": false,
+        "isRelocatingNextYear": false,
+        "isFirstSeasonAfterRelocation": false
+      },
+      {
+        "teamCode": "MIA_SOL",
+        "franchiseId": null,
+        "isExpansion": false,
+        "isFinalSeason": true,
+        "isRelocatingNextYear": false,
+        "isFirstSeasonAfterRelocation": false
+      },
+      {
+        "teamCode": "POR_FIRE",
+        "franchiseId": null,
+        "isExpansion": false,
+        "isFinalSeason": true,
+        "isRelocatingNextYear": false,
+        "isFirstSeasonAfterRelocation": false
+      },
+      {
+        "teamCode": "SAC_MONARCHS",
+        "franchiseId": null,
+        "isExpansion": false,
+        "isFinalSeason": false,
+        "isRelocatingNextYear": false,
+        "isFirstSeasonAfterRelocation": false
+      },
+      {
+        "teamCode": "DET_SHOCK",
+        "franchiseId": "WINGS_FRANCHISE",
+        "isExpansion": false,
+        "isFinalSeason": false,
+        "isRelocatingNextYear": false,
+        "isFirstSeasonAfterRelocation": false
+      },
+      {
+        "teamCode": "ORL_MIRACLE",
+        "franchiseId": "SUN_FRANCHISE",
+        "isExpansion": false,
+        "isFinalSeason": false,
+        "isRelocatingNextYear": true,
+        "isFirstSeasonAfterRelocation": false
+      },
+      {
+        "teamCode": "UTA_STARZZ",
+        "franchiseId": "ACES_FRANCHISE",
+        "isExpansion": false,
+        "isFinalSeason": false,
+        "isRelocatingNextYear": true,
+        "isFirstSeasonAfterRelocation": false
+      }
+    ]
+  },
+  "2003": {
+    "teamCount": 14,
+    "teams": [
+      {
+        "teamCode": "IND_FEVER",
+        "franchiseId": null,
+        "isExpansion": false,
+        "isFinalSeason": false,
+        "isRelocatingNextYear": false,
+        "isFirstSeasonAfterRelocation": false
+      },
+      {
+        "teamCode": "NYL_LIBERTY",
+        "franchiseId": null,
+        "isExpansion": false,
+        "isFinalSeason": false,
+        "isRelocatingNextYear": false,
+        "isFirstSeasonAfterRelocation": false
+      },
+      {
+        "teamCode": "MIN_LYNX",
+        "franchiseId": null,
+        "isExpansion": false,
+        "isFinalSeason": false,
+        "isRelocatingNextYear": false,
+        "isFirstSeasonAfterRelocation": false
+      },
+      {
+        "teamCode": "PHX_MERCURY",
+        "franchiseId": null,
+        "isExpansion": false,
+        "isFinalSeason": false,
+        "isRelocatingNextYear": false,
+        "isFirstSeasonAfterRelocation": false
+      },
+      {
+        "teamCode": "WAS_MYSTICS",
+        "franchiseId": null,
+        "isExpansion": false,
+        "isFinalSeason": false,
+        "isRelocatingNextYear": false,
+        "isFirstSeasonAfterRelocation": false
+      },
+      {
+        "teamCode": "LOS_SPARKS",
+        "franchiseId": null,
+        "isExpansion": false,
+        "isFinalSeason": false,
+        "isRelocatingNextYear": false,
+        "isFirstSeasonAfterRelocation": false
+      },
+      {
+        "teamCode": "SEA_STORM",
+        "franchiseId": null,
+        "isExpansion": false,
+        "isFinalSeason": false,
+        "isRelocatingNextYear": false,
+        "isFirstSeasonAfterRelocation": false
+      },
+      {
+        "teamCode": "CON_SUN",
+        "franchiseId": "SUN_FRANCHISE",
+        "isExpansion": true,
+        "isFinalSeason": false,
+        "isRelocatingNextYear": false,
+        "isFirstSeasonAfterRelocation": true
+      },
+      {
+        "teamCode": "CHA_STING",
+        "franchiseId": null,
+        "isExpansion": false,
+        "isFinalSeason": false,
+        "isRelocatingNextYear": false,
+        "isFirstSeasonAfterRelocation": false
+      },
+      {
+        "teamCode": "CLE_ROCKERS",
+        "franchiseId": null,
+        "isExpansion": false,
+        "isFinalSeason": true,
+        "isRelocatingNextYear": false,
+        "isFirstSeasonAfterRelocation": false
+      },
+      {
+        "teamCode": "HOU_COMETS",
+        "franchiseId": null,
+        "isExpansion": false,
+        "isFinalSeason": false,
+        "isRelocatingNextYear": false,
+        "isFirstSeasonAfterRelocation": false
+      },
+      {
+        "teamCode": "SAC_MONARCHS",
+        "franchiseId": null,
+        "isExpansion": false,
+        "isFinalSeason": false,
+        "isRelocatingNextYear": false,
+        "isFirstSeasonAfterRelocation": false
+      },
+      {
+        "teamCode": "DET_SHOCK",
+        "franchiseId": "WINGS_FRANCHISE",
+        "isExpansion": false,
+        "isFinalSeason": false,
+        "isRelocatingNextYear": false,
+        "isFirstSeasonAfterRelocation": false
+      },
+      {
+        "teamCode": "SA_SILVER_STARS",
+        "franchiseId": "ACES_FRANCHISE",
+        "isExpansion": true,
+        "isFinalSeason": false,
+        "isRelocatingNextYear": false,
+        "isFirstSeasonAfterRelocation": true
+      }
+    ]
+  },
+  "2004": {
+    "teamCount": 13,
+    "teams": [
+      {
+        "teamCode": "IND_FEVER",
+        "franchiseId": null,
+        "isExpansion": false,
+        "isFinalSeason": false,
+        "isRelocatingNextYear": false,
+        "isFirstSeasonAfterRelocation": false
+      },
+      {
+        "teamCode": "NYL_LIBERTY",
+        "franchiseId": null,
+        "isExpansion": false,
+        "isFinalSeason": false,
+        "isRelocatingNextYear": false,
+        "isFirstSeasonAfterRelocation": false
+      },
+      {
+        "teamCode": "MIN_LYNX",
+        "franchiseId": null,
+        "isExpansion": false,
+        "isFinalSeason": false,
+        "isRelocatingNextYear": false,
+        "isFirstSeasonAfterRelocation": false
+      },
+      {
+        "teamCode": "PHX_MERCURY",
+        "franchiseId": null,
+        "isExpansion": false,
+        "isFinalSeason": false,
+        "isRelocatingNextYear": false,
+        "isFirstSeasonAfterRelocation": false
+      },
+      {
+        "teamCode": "WAS_MYSTICS",
+        "franchiseId": null,
+        "isExpansion": false,
+        "isFinalSeason": false,
+        "isRelocatingNextYear": false,
+        "isFirstSeasonAfterRelocation": false
+      },
+      {
+        "teamCode": "LOS_SPARKS",
+        "franchiseId": null,
+        "isExpansion": false,
+        "isFinalSeason": false,
+        "isRelocatingNextYear": false,
+        "isFirstSeasonAfterRelocation": false
+      },
+      {
+        "teamCode": "SEA_STORM",
+        "franchiseId": null,
+        "isExpansion": false,
+        "isFinalSeason": false,
+        "isRelocatingNextYear": false,
+        "isFirstSeasonAfterRelocation": false
+      },
+      {
+        "teamCode": "CON_SUN",
+        "franchiseId": "SUN_FRANCHISE",
+        "isExpansion": false,
+        "isFinalSeason": false,
+        "isRelocatingNextYear": false,
+        "isFirstSeasonAfterRelocation": false
+      },
+      {
+        "teamCode": "CHA_STING",
+        "franchiseId": null,
+        "isExpansion": false,
+        "isFinalSeason": false,
+        "isRelocatingNextYear": false,
+        "isFirstSeasonAfterRelocation": false
+      },
+      {
+        "teamCode": "HOU_COMETS",
+        "franchiseId": null,
+        "isExpansion": false,
+        "isFinalSeason": false,
+        "isRelocatingNextYear": false,
+        "isFirstSeasonAfterRelocation": false
+      },
+      {
+        "teamCode": "SAC_MONARCHS",
+        "franchiseId": null,
+        "isExpansion": false,
+        "isFinalSeason": false,
+        "isRelocatingNextYear": false,
+        "isFirstSeasonAfterRelocation": false
+      },
+      {
+        "teamCode": "DET_SHOCK",
+        "franchiseId": "WINGS_FRANCHISE",
+        "isExpansion": false,
+        "isFinalSeason": false,
+        "isRelocatingNextYear": false,
+        "isFirstSeasonAfterRelocation": false
+      },
+      {
+        "teamCode": "SA_SILVER_STARS",
+        "franchiseId": "ACES_FRANCHISE",
+        "isExpansion": false,
+        "isFinalSeason": false,
+        "isRelocatingNextYear": false,
+        "isFirstSeasonAfterRelocation": false
+      }
+    ]
+  },
+  "2005": {
+    "teamCount": 14,
+    "teams": [
+      {
+        "teamCode": "IND_FEVER",
+        "franchiseId": null,
+        "isExpansion": false,
+        "isFinalSeason": false,
+        "isRelocatingNextYear": false,
+        "isFirstSeasonAfterRelocation": false
+      },
+      {
+        "teamCode": "NYL_LIBERTY",
+        "franchiseId": null,
+        "isExpansion": false,
+        "isFinalSeason": false,
+        "isRelocatingNextYear": false,
+        "isFirstSeasonAfterRelocation": false
+      },
+      {
+        "teamCode": "MIN_LYNX",
+        "franchiseId": null,
+        "isExpansion": false,
+        "isFinalSeason": false,
+        "isRelocatingNextYear": false,
+        "isFirstSeasonAfterRelocation": false
+      },
+      {
+        "teamCode": "PHX_MERCURY",
+        "franchiseId": null,
+        "isExpansion": false,
+        "isFinalSeason": false,
+        "isRelocatingNextYear": false,
+        "isFirstSeasonAfterRelocation": false
+      },
+      {
+        "teamCode": "WAS_MYSTICS",
+        "franchiseId": null,
+        "isExpansion": false,
+        "isFinalSeason": false,
+        "isRelocatingNextYear": false,
+        "isFirstSeasonAfterRelocation": false
+      },
+      {
+        "teamCode": "CHI_SKY",
+        "franchiseId": null,
+        "isExpansion": true,
+        "isFinalSeason": false,
+        "isRelocatingNextYear": false,
+        "isFirstSeasonAfterRelocation": false
+      },
+      {
+        "teamCode": "LOS_SPARKS",
+        "franchiseId": null,
+        "isExpansion": false,
+        "isFinalSeason": false,
+        "isRelocatingNextYear": false,
+        "isFirstSeasonAfterRelocation": false
+      },
+      {
+        "teamCode": "SEA_STORM",
+        "franchiseId": null,
+        "isExpansion": false,
+        "isFinalSeason": false,
+        "isRelocatingNextYear": false,
+        "isFirstSeasonAfterRelocation": false
+      },
+      {
+        "teamCode": "CON_SUN",
+        "franchiseId": "SUN_FRANCHISE",
+        "isExpansion": false,
+        "isFinalSeason": false,
+        "isRelocatingNextYear": false,
+        "isFirstSeasonAfterRelocation": false
+      },
+      {
+        "teamCode": "CHA_STING",
+        "franchiseId": null,
+        "isExpansion": false,
+        "isFinalSeason": false,
+        "isRelocatingNextYear": false,
+        "isFirstSeasonAfterRelocation": false
+      },
+      {
+        "teamCode": "HOU_COMETS",
+        "franchiseId": null,
+        "isExpansion": false,
+        "isFinalSeason": false,
+        "isRelocatingNextYear": false,
+        "isFirstSeasonAfterRelocation": false
+      },
+      {
+        "teamCode": "SAC_MONARCHS",
+        "franchiseId": null,
+        "isExpansion": false,
+        "isFinalSeason": false,
+        "isRelocatingNextYear": false,
+        "isFirstSeasonAfterRelocation": false
+      },
+      {
+        "teamCode": "DET_SHOCK",
+        "franchiseId": "WINGS_FRANCHISE",
+        "isExpansion": false,
+        "isFinalSeason": false,
+        "isRelocatingNextYear": false,
+        "isFirstSeasonAfterRelocation": false
+      },
+      {
+        "teamCode": "SA_SILVER_STARS",
+        "franchiseId": "ACES_FRANCHISE",
+        "isExpansion": false,
+        "isFinalSeason": false,
+        "isRelocatingNextYear": false,
+        "isFirstSeasonAfterRelocation": false
+      }
+    ]
+  },
+  "2006": {
+    "teamCount": 14,
+    "teams": [
+      {
+        "teamCode": "IND_FEVER",
+        "franchiseId": null,
+        "isExpansion": false,
+        "isFinalSeason": false,
+        "isRelocatingNextYear": false,
+        "isFirstSeasonAfterRelocation": false
+      },
+      {
+        "teamCode": "NYL_LIBERTY",
+        "franchiseId": null,
+        "isExpansion": false,
+        "isFinalSeason": false,
+        "isRelocatingNextYear": false,
+        "isFirstSeasonAfterRelocation": false
+      },
+      {
+        "teamCode": "MIN_LYNX",
+        "franchiseId": null,
+        "isExpansion": false,
+        "isFinalSeason": false,
+        "isRelocatingNextYear": false,
+        "isFirstSeasonAfterRelocation": false
+      },
+      {
+        "teamCode": "PHX_MERCURY",
+        "franchiseId": null,
+        "isExpansion": false,
+        "isFinalSeason": false,
+        "isRelocatingNextYear": false,
+        "isFirstSeasonAfterRelocation": false
+      },
+      {
+        "teamCode": "WAS_MYSTICS",
+        "franchiseId": null,
+        "isExpansion": false,
+        "isFinalSeason": false,
+        "isRelocatingNextYear": false,
+        "isFirstSeasonAfterRelocation": false
+      },
+      {
+        "teamCode": "CHI_SKY",
+        "franchiseId": null,
+        "isExpansion": false,
+        "isFinalSeason": false,
+        "isRelocatingNextYear": false,
+        "isFirstSeasonAfterRelocation": false
+      },
+      {
+        "teamCode": "LOS_SPARKS",
+        "franchiseId": null,
+        "isExpansion": false,
+        "isFinalSeason": false,
+        "isRelocatingNextYear": false,
+        "isFirstSeasonAfterRelocation": false
+      },
+      {
+        "teamCode": "SEA_STORM",
+        "franchiseId": null,
+        "isExpansion": false,
+        "isFinalSeason": false,
+        "isRelocatingNextYear": false,
+        "isFirstSeasonAfterRelocation": false
+      },
+      {
+        "teamCode": "CON_SUN",
+        "franchiseId": "SUN_FRANCHISE",
+        "isExpansion": false,
+        "isFinalSeason": false,
+        "isRelocatingNextYear": false,
+        "isFirstSeasonAfterRelocation": false
+      },
+      {
+        "teamCode": "CHA_STING",
+        "franchiseId": null,
+        "isExpansion": false,
+        "isFinalSeason": true,
+        "isRelocatingNextYear": false,
+        "isFirstSeasonAfterRelocation": false
+      },
+      {
+        "teamCode": "HOU_COMETS",
+        "franchiseId": null,
+        "isExpansion": false,
+        "isFinalSeason": false,
+        "isRelocatingNextYear": false,
+        "isFirstSeasonAfterRelocation": false
+      },
+      {
+        "teamCode": "SAC_MONARCHS",
+        "franchiseId": null,
+        "isExpansion": false,
+        "isFinalSeason": false,
+        "isRelocatingNextYear": false,
+        "isFirstSeasonAfterRelocation": false
+      },
+      {
+        "teamCode": "DET_SHOCK",
+        "franchiseId": "WINGS_FRANCHISE",
+        "isExpansion": false,
+        "isFinalSeason": false,
+        "isRelocatingNextYear": false,
+        "isFirstSeasonAfterRelocation": false
+      },
+      {
+        "teamCode": "SA_SILVER_STARS",
+        "franchiseId": "ACES_FRANCHISE",
+        "isExpansion": false,
+        "isFinalSeason": false,
+        "isRelocatingNextYear": false,
+        "isFirstSeasonAfterRelocation": false
+      }
+    ]
+  },
+  "2007": {
+    "teamCount": 13,
+    "teams": [
+      {
+        "teamCode": "IND_FEVER",
+        "franchiseId": null,
+        "isExpansion": false,
+        "isFinalSeason": false,
+        "isRelocatingNextYear": false,
+        "isFirstSeasonAfterRelocation": false
+      },
+      {
+        "teamCode": "NYL_LIBERTY",
+        "franchiseId": null,
+        "isExpansion": false,
+        "isFinalSeason": false,
+        "isRelocatingNextYear": false,
+        "isFirstSeasonAfterRelocation": false
+      },
+      {
+        "teamCode": "MIN_LYNX",
+        "franchiseId": null,
+        "isExpansion": false,
+        "isFinalSeason": false,
+        "isRelocatingNextYear": false,
+        "isFirstSeasonAfterRelocation": false
+      },
+      {
+        "teamCode": "PHX_MERCURY",
+        "franchiseId": null,
+        "isExpansion": false,
+        "isFinalSeason": false,
+        "isRelocatingNextYear": false,
+        "isFirstSeasonAfterRelocation": false
+      },
+      {
+        "teamCode": "WAS_MYSTICS",
+        "franchiseId": null,
+        "isExpansion": false,
+        "isFinalSeason": false,
+        "isRelocatingNextYear": false,
+        "isFirstSeasonAfterRelocation": false
+      },
+      {
+        "teamCode": "CHI_SKY",
+        "franchiseId": null,
+        "isExpansion": false,
+        "isFinalSeason": false,
+        "isRelocatingNextYear": false,
+        "isFirstSeasonAfterRelocation": false
+      },
+      {
+        "teamCode": "LOS_SPARKS",
+        "franchiseId": null,
+        "isExpansion": false,
+        "isFinalSeason": false,
+        "isRelocatingNextYear": false,
+        "isFirstSeasonAfterRelocation": false
+      },
+      {
+        "teamCode": "SEA_STORM",
+        "franchiseId": null,
+        "isExpansion": false,
+        "isFinalSeason": false,
+        "isRelocatingNextYear": false,
+        "isFirstSeasonAfterRelocation": false
+      },
+      {
+        "teamCode": "CON_SUN",
+        "franchiseId": "SUN_FRANCHISE",
+        "isExpansion": false,
+        "isFinalSeason": false,
+        "isRelocatingNextYear": false,
+        "isFirstSeasonAfterRelocation": false
+      },
+      {
+        "teamCode": "HOU_COMETS",
+        "franchiseId": null,
+        "isExpansion": false,
+        "isFinalSeason": false,
+        "isRelocatingNextYear": false,
+        "isFirstSeasonAfterRelocation": false
+      },
+      {
+        "teamCode": "SAC_MONARCHS",
+        "franchiseId": null,
+        "isExpansion": false,
+        "isFinalSeason": false,
+        "isRelocatingNextYear": false,
+        "isFirstSeasonAfterRelocation": false
+      },
+      {
+        "teamCode": "DET_SHOCK",
+        "franchiseId": "WINGS_FRANCHISE",
+        "isExpansion": false,
+        "isFinalSeason": false,
+        "isRelocatingNextYear": false,
+        "isFirstSeasonAfterRelocation": false
+      },
+      {
+        "teamCode": "SA_SILVER_STARS",
+        "franchiseId": "ACES_FRANCHISE",
+        "isExpansion": false,
+        "isFinalSeason": false,
+        "isRelocatingNextYear": false,
+        "isFirstSeasonAfterRelocation": false
+      }
+    ]
+  },
+  "2008": {
+    "teamCount": 14,
+    "teams": [
+      {
+        "teamCode": "ATL_DREAM",
+        "franchiseId": null,
+        "isExpansion": true,
+        "isFinalSeason": false,
+        "isRelocatingNextYear": false,
+        "isFirstSeasonAfterRelocation": false
+      },
+      {
+        "teamCode": "IND_FEVER",
+        "franchiseId": null,
+        "isExpansion": false,
+        "isFinalSeason": false,
+        "isRelocatingNextYear": false,
+        "isFirstSeasonAfterRelocation": false
+      },
+      {
+        "teamCode": "NYL_LIBERTY",
+        "franchiseId": null,
+        "isExpansion": false,
+        "isFinalSeason": false,
+        "isRelocatingNextYear": false,
+        "isFirstSeasonAfterRelocation": false
+      },
+      {
+        "teamCode": "MIN_LYNX",
+        "franchiseId": null,
+        "isExpansion": false,
+        "isFinalSeason": false,
+        "isRelocatingNextYear": false,
+        "isFirstSeasonAfterRelocation": false
+      },
+      {
+        "teamCode": "PHX_MERCURY",
+        "franchiseId": null,
+        "isExpansion": false,
+        "isFinalSeason": false,
+        "isRelocatingNextYear": false,
+        "isFirstSeasonAfterRelocation": false
+      },
+      {
+        "teamCode": "WAS_MYSTICS",
+        "franchiseId": null,
+        "isExpansion": false,
+        "isFinalSeason": false,
+        "isRelocatingNextYear": false,
+        "isFirstSeasonAfterRelocation": false
+      },
+      {
+        "teamCode": "CHI_SKY",
+        "franchiseId": null,
+        "isExpansion": false,
+        "isFinalSeason": false,
+        "isRelocatingNextYear": false,
+        "isFirstSeasonAfterRelocation": false
+      },
+      {
+        "teamCode": "LOS_SPARKS",
+        "franchiseId": null,
+        "isExpansion": false,
+        "isFinalSeason": false,
+        "isRelocatingNextYear": false,
+        "isFirstSeasonAfterRelocation": false
+      },
+      {
+        "teamCode": "SEA_STORM",
+        "franchiseId": null,
+        "isExpansion": false,
+        "isFinalSeason": false,
+        "isRelocatingNextYear": false,
+        "isFirstSeasonAfterRelocation": false
+      },
+      {
+        "teamCode": "CON_SUN",
+        "franchiseId": "SUN_FRANCHISE",
+        "isExpansion": false,
+        "isFinalSeason": false,
+        "isRelocatingNextYear": false,
+        "isFirstSeasonAfterRelocation": false
+      },
+      {
+        "teamCode": "HOU_COMETS",
+        "franchiseId": null,
+        "isExpansion": false,
+        "isFinalSeason": true,
+        "isRelocatingNextYear": false,
+        "isFirstSeasonAfterRelocation": false
+      },
+      {
+        "teamCode": "SAC_MONARCHS",
+        "franchiseId": null,
+        "isExpansion": false,
+        "isFinalSeason": false,
+        "isRelocatingNextYear": false,
+        "isFirstSeasonAfterRelocation": false
+      },
+      {
+        "teamCode": "DET_SHOCK",
+        "franchiseId": "WINGS_FRANCHISE",
+        "isExpansion": false,
+        "isFinalSeason": false,
+        "isRelocatingNextYear": false,
+        "isFirstSeasonAfterRelocation": false
+      },
+      {
+        "teamCode": "SA_SILVER_STARS",
+        "franchiseId": "ACES_FRANCHISE",
+        "isExpansion": false,
+        "isFinalSeason": false,
+        "isRelocatingNextYear": false,
+        "isFirstSeasonAfterRelocation": false
+      }
+    ]
+  },
+  "2009": {
+    "teamCount": 13,
+    "teams": [
+      {
+        "teamCode": "ATL_DREAM",
+        "franchiseId": null,
+        "isExpansion": false,
+        "isFinalSeason": false,
+        "isRelocatingNextYear": false,
+        "isFirstSeasonAfterRelocation": false
+      },
+      {
+        "teamCode": "IND_FEVER",
+        "franchiseId": null,
+        "isExpansion": false,
+        "isFinalSeason": false,
+        "isRelocatingNextYear": false,
+        "isFirstSeasonAfterRelocation": false
+      },
+      {
+        "teamCode": "NYL_LIBERTY",
+        "franchiseId": null,
+        "isExpansion": false,
+        "isFinalSeason": false,
+        "isRelocatingNextYear": false,
+        "isFirstSeasonAfterRelocation": false
+      },
+      {
+        "teamCode": "MIN_LYNX",
+        "franchiseId": null,
+        "isExpansion": false,
+        "isFinalSeason": false,
+        "isRelocatingNextYear": false,
+        "isFirstSeasonAfterRelocation": false
+      },
+      {
+        "teamCode": "PHX_MERCURY",
+        "franchiseId": null,
+        "isExpansion": false,
+        "isFinalSeason": false,
+        "isRelocatingNextYear": false,
+        "isFirstSeasonAfterRelocation": false
+      },
+      {
+        "teamCode": "WAS_MYSTICS",
+        "franchiseId": null,
+        "isExpansion": false,
+        "isFinalSeason": false,
+        "isRelocatingNextYear": false,
+        "isFirstSeasonAfterRelocation": false
+      },
+      {
+        "teamCode": "CHI_SKY",
+        "franchiseId": null,
+        "isExpansion": false,
+        "isFinalSeason": false,
+        "isRelocatingNextYear": false,
+        "isFirstSeasonAfterRelocation": false
+      },
+      {
+        "teamCode": "LOS_SPARKS",
+        "franchiseId": null,
+        "isExpansion": false,
+        "isFinalSeason": false,
+        "isRelocatingNextYear": false,
+        "isFirstSeasonAfterRelocation": false
+      },
+      {
+        "teamCode": "SEA_STORM",
+        "franchiseId": null,
+        "isExpansion": false,
+        "isFinalSeason": false,
+        "isRelocatingNextYear": false,
+        "isFirstSeasonAfterRelocation": false
+      },
+      {
+        "teamCode": "CON_SUN",
+        "franchiseId": "SUN_FRANCHISE",
+        "isExpansion": false,
+        "isFinalSeason": false,
+        "isRelocatingNextYear": false,
+        "isFirstSeasonAfterRelocation": false
+      },
+      {
+        "teamCode": "SAC_MONARCHS",
+        "franchiseId": null,
+        "isExpansion": false,
+        "isFinalSeason": true,
+        "isRelocatingNextYear": false,
+        "isFirstSeasonAfterRelocation": false
+      },
+      {
+        "teamCode": "DET_SHOCK",
+        "franchiseId": "WINGS_FRANCHISE",
+        "isExpansion": false,
+        "isFinalSeason": false,
+        "isRelocatingNextYear": true,
+        "isFirstSeasonAfterRelocation": false
+      },
+      {
+        "teamCode": "SA_SILVER_STARS",
+        "franchiseId": "ACES_FRANCHISE",
+        "isExpansion": false,
+        "isFinalSeason": false,
+        "isRelocatingNextYear": false,
+        "isFirstSeasonAfterRelocation": false
+      }
+    ]
+  },
+  "2010": {
+    "teamCount": 12,
+    "teams": [
+      {
+        "teamCode": "ATL_DREAM",
+        "franchiseId": null,
+        "isExpansion": false,
+        "isFinalSeason": false,
+        "isRelocatingNextYear": false,
+        "isFirstSeasonAfterRelocation": false
+      },
+      {
+        "teamCode": "IND_FEVER",
+        "franchiseId": null,
+        "isExpansion": false,
+        "isFinalSeason": false,
+        "isRelocatingNextYear": false,
+        "isFirstSeasonAfterRelocation": false
+      },
+      {
+        "teamCode": "NYL_LIBERTY",
+        "franchiseId": null,
+        "isExpansion": false,
+        "isFinalSeason": false,
+        "isRelocatingNextYear": false,
+        "isFirstSeasonAfterRelocation": false
+      },
+      {
+        "teamCode": "MIN_LYNX",
+        "franchiseId": null,
+        "isExpansion": false,
+        "isFinalSeason": false,
+        "isRelocatingNextYear": false,
+        "isFirstSeasonAfterRelocation": false
+      },
+      {
+        "teamCode": "PHX_MERCURY",
+        "franchiseId": null,
+        "isExpansion": false,
+        "isFinalSeason": false,
+        "isRelocatingNextYear": false,
+        "isFirstSeasonAfterRelocation": false
+      },
+      {
+        "teamCode": "WAS_MYSTICS",
+        "franchiseId": null,
+        "isExpansion": false,
+        "isFinalSeason": false,
+        "isRelocatingNextYear": false,
+        "isFirstSeasonAfterRelocation": false
+      },
+      {
+        "teamCode": "CHI_SKY",
+        "franchiseId": null,
+        "isExpansion": false,
+        "isFinalSeason": false,
+        "isRelocatingNextYear": false,
+        "isFirstSeasonAfterRelocation": false
+      },
+      {
+        "teamCode": "LOS_SPARKS",
+        "franchiseId": null,
+        "isExpansion": false,
+        "isFinalSeason": false,
+        "isRelocatingNextYear": false,
+        "isFirstSeasonAfterRelocation": false
+      },
+      {
+        "teamCode": "SEA_STORM",
+        "franchiseId": null,
+        "isExpansion": false,
+        "isFinalSeason": false,
+        "isRelocatingNextYear": false,
+        "isFirstSeasonAfterRelocation": false
+      },
+      {
+        "teamCode": "CON_SUN",
+        "franchiseId": "SUN_FRANCHISE",
+        "isExpansion": false,
+        "isFinalSeason": false,
+        "isRelocatingNextYear": false,
+        "isFirstSeasonAfterRelocation": false
+      },
+      {
+        "teamCode": "TUL_SHOCK",
+        "franchiseId": "WINGS_FRANCHISE",
+        "isExpansion": true,
+        "isFinalSeason": false,
+        "isRelocatingNextYear": false,
+        "isFirstSeasonAfterRelocation": true
+      },
+      {
+        "teamCode": "SA_SILVER_STARS",
+        "franchiseId": "ACES_FRANCHISE",
+        "isExpansion": false,
+        "isFinalSeason": false,
+        "isRelocatingNextYear": false,
+        "isFirstSeasonAfterRelocation": false
+      }
+    ]
+  },
+  "2011": {
+    "teamCount": 12,
+    "teams": [
+      {
+        "teamCode": "ATL_DREAM",
+        "franchiseId": null,
+        "isExpansion": false,
+        "isFinalSeason": false,
+        "isRelocatingNextYear": false,
+        "isFirstSeasonAfterRelocation": false
+      },
+      {
+        "teamCode": "IND_FEVER",
+        "franchiseId": null,
+        "isExpansion": false,
+        "isFinalSeason": false,
+        "isRelocatingNextYear": false,
+        "isFirstSeasonAfterRelocation": false
+      },
+      {
+        "teamCode": "NYL_LIBERTY",
+        "franchiseId": null,
+        "isExpansion": false,
+        "isFinalSeason": false,
+        "isRelocatingNextYear": false,
+        "isFirstSeasonAfterRelocation": false
+      },
+      {
+        "teamCode": "MIN_LYNX",
+        "franchiseId": null,
+        "isExpansion": false,
+        "isFinalSeason": false,
+        "isRelocatingNextYear": false,
+        "isFirstSeasonAfterRelocation": false
+      },
+      {
+        "teamCode": "PHX_MERCURY",
+        "franchiseId": null,
+        "isExpansion": false,
+        "isFinalSeason": false,
+        "isRelocatingNextYear": false,
+        "isFirstSeasonAfterRelocation": false
+      },
+      {
+        "teamCode": "WAS_MYSTICS",
+        "franchiseId": null,
+        "isExpansion": false,
+        "isFinalSeason": false,
+        "isRelocatingNextYear": false,
+        "isFirstSeasonAfterRelocation": false
+      },
+      {
+        "teamCode": "CHI_SKY",
+        "franchiseId": null,
+        "isExpansion": false,
+        "isFinalSeason": false,
+        "isRelocatingNextYear": false,
+        "isFirstSeasonAfterRelocation": false
+      },
+      {
+        "teamCode": "LOS_SPARKS",
+        "franchiseId": null,
+        "isExpansion": false,
+        "isFinalSeason": false,
+        "isRelocatingNextYear": false,
+        "isFirstSeasonAfterRelocation": false
+      },
+      {
+        "teamCode": "SEA_STORM",
+        "franchiseId": null,
+        "isExpansion": false,
+        "isFinalSeason": false,
+        "isRelocatingNextYear": false,
+        "isFirstSeasonAfterRelocation": false
+      },
+      {
+        "teamCode": "CON_SUN",
+        "franchiseId": "SUN_FRANCHISE",
+        "isExpansion": false,
+        "isFinalSeason": false,
+        "isRelocatingNextYear": false,
+        "isFirstSeasonAfterRelocation": false
+      },
+      {
+        "teamCode": "TUL_SHOCK",
+        "franchiseId": "WINGS_FRANCHISE",
+        "isExpansion": false,
+        "isFinalSeason": false,
+        "isRelocatingNextYear": false,
+        "isFirstSeasonAfterRelocation": false
+      },
+      {
+        "teamCode": "SA_SILVER_STARS",
+        "franchiseId": "ACES_FRANCHISE",
+        "isExpansion": false,
+        "isFinalSeason": false,
+        "isRelocatingNextYear": false,
+        "isFirstSeasonAfterRelocation": false
+      }
+    ]
+  },
+  "2012": {
+    "teamCount": 12,
+    "teams": [
+      {
+        "teamCode": "ATL_DREAM",
+        "franchiseId": null,
+        "isExpansion": false,
+        "isFinalSeason": false,
+        "isRelocatingNextYear": false,
+        "isFirstSeasonAfterRelocation": false
+      },
+      {
+        "teamCode": "IND_FEVER",
+        "franchiseId": null,
+        "isExpansion": false,
+        "isFinalSeason": false,
+        "isRelocatingNextYear": false,
+        "isFirstSeasonAfterRelocation": false
+      },
+      {
+        "teamCode": "NYL_LIBERTY",
+        "franchiseId": null,
+        "isExpansion": false,
+        "isFinalSeason": false,
+        "isRelocatingNextYear": false,
+        "isFirstSeasonAfterRelocation": false
+      },
+      {
+        "teamCode": "MIN_LYNX",
+        "franchiseId": null,
+        "isExpansion": false,
+        "isFinalSeason": false,
+        "isRelocatingNextYear": false,
+        "isFirstSeasonAfterRelocation": false
+      },
+      {
+        "teamCode": "PHX_MERCURY",
+        "franchiseId": null,
+        "isExpansion": false,
+        "isFinalSeason": false,
+        "isRelocatingNextYear": false,
+        "isFirstSeasonAfterRelocation": false
+      },
+      {
+        "teamCode": "WAS_MYSTICS",
+        "franchiseId": null,
+        "isExpansion": false,
+        "isFinalSeason": false,
+        "isRelocatingNextYear": false,
+        "isFirstSeasonAfterRelocation": false
+      },
+      {
+        "teamCode": "CHI_SKY",
+        "franchiseId": null,
+        "isExpansion": false,
+        "isFinalSeason": false,
+        "isRelocatingNextYear": false,
+        "isFirstSeasonAfterRelocation": false
+      },
+      {
+        "teamCode": "LOS_SPARKS",
+        "franchiseId": null,
+        "isExpansion": false,
+        "isFinalSeason": false,
+        "isRelocatingNextYear": false,
+        "isFirstSeasonAfterRelocation": false
+      },
+      {
+        "teamCode": "SEA_STORM",
+        "franchiseId": null,
+        "isExpansion": false,
+        "isFinalSeason": false,
+        "isRelocatingNextYear": false,
+        "isFirstSeasonAfterRelocation": false
+      },
+      {
+        "teamCode": "CON_SUN",
+        "franchiseId": "SUN_FRANCHISE",
+        "isExpansion": false,
+        "isFinalSeason": false,
+        "isRelocatingNextYear": false,
+        "isFirstSeasonAfterRelocation": false
+      },
+      {
+        "teamCode": "TUL_SHOCK",
+        "franchiseId": "WINGS_FRANCHISE",
+        "isExpansion": false,
+        "isFinalSeason": false,
+        "isRelocatingNextYear": false,
+        "isFirstSeasonAfterRelocation": false
+      },
+      {
+        "teamCode": "SA_SILVER_STARS",
+        "franchiseId": "ACES_FRANCHISE",
+        "isExpansion": false,
+        "isFinalSeason": false,
+        "isRelocatingNextYear": false,
+        "isFirstSeasonAfterRelocation": false
+      }
+    ]
+  },
+  "2013": {
+    "teamCount": 12,
+    "teams": [
+      {
+        "teamCode": "ATL_DREAM",
+        "franchiseId": null,
+        "isExpansion": false,
+        "isFinalSeason": false,
+        "isRelocatingNextYear": false,
+        "isFirstSeasonAfterRelocation": false
+      },
+      {
+        "teamCode": "IND_FEVER",
+        "franchiseId": null,
+        "isExpansion": false,
+        "isFinalSeason": false,
+        "isRelocatingNextYear": false,
+        "isFirstSeasonAfterRelocation": false
+      },
+      {
+        "teamCode": "NYL_LIBERTY",
+        "franchiseId": null,
+        "isExpansion": false,
+        "isFinalSeason": false,
+        "isRelocatingNextYear": false,
+        "isFirstSeasonAfterRelocation": false
+      },
+      {
+        "teamCode": "MIN_LYNX",
+        "franchiseId": null,
+        "isExpansion": false,
+        "isFinalSeason": false,
+        "isRelocatingNextYear": false,
+        "isFirstSeasonAfterRelocation": false
+      },
+      {
+        "teamCode": "PHX_MERCURY",
+        "franchiseId": null,
+        "isExpansion": false,
+        "isFinalSeason": false,
+        "isRelocatingNextYear": false,
+        "isFirstSeasonAfterRelocation": false
+      },
+      {
+        "teamCode": "WAS_MYSTICS",
+        "franchiseId": null,
+        "isExpansion": false,
+        "isFinalSeason": false,
+        "isRelocatingNextYear": false,
+        "isFirstSeasonAfterRelocation": false
+      },
+      {
+        "teamCode": "CHI_SKY",
+        "franchiseId": null,
+        "isExpansion": false,
+        "isFinalSeason": false,
+        "isRelocatingNextYear": false,
+        "isFirstSeasonAfterRelocation": false
+      },
+      {
+        "teamCode": "LOS_SPARKS",
+        "franchiseId": null,
+        "isExpansion": false,
+        "isFinalSeason": false,
+        "isRelocatingNextYear": false,
+        "isFirstSeasonAfterRelocation": false
+      },
+      {
+        "teamCode": "SEA_STORM",
+        "franchiseId": null,
+        "isExpansion": false,
+        "isFinalSeason": false,
+        "isRelocatingNextYear": false,
+        "isFirstSeasonAfterRelocation": false
+      },
+      {
+        "teamCode": "CON_SUN",
+        "franchiseId": "SUN_FRANCHISE",
+        "isExpansion": false,
+        "isFinalSeason": false,
+        "isRelocatingNextYear": false,
+        "isFirstSeasonAfterRelocation": false
+      },
+      {
+        "teamCode": "TUL_SHOCK",
+        "franchiseId": "WINGS_FRANCHISE",
+        "isExpansion": false,
+        "isFinalSeason": false,
+        "isRelocatingNextYear": false,
+        "isFirstSeasonAfterRelocation": false
+      },
+      {
+        "teamCode": "SA_SILVER_STARS",
+        "franchiseId": "ACES_FRANCHISE",
+        "isExpansion": false,
+        "isFinalSeason": false,
+        "isRelocatingNextYear": true,
+        "isFirstSeasonAfterRelocation": false
+      }
+    ]
+  },
+  "2014": {
+    "teamCount": 12,
+    "teams": [
+      {
+        "teamCode": "ATL_DREAM",
+        "franchiseId": null,
+        "isExpansion": false,
+        "isFinalSeason": false,
+        "isRelocatingNextYear": false,
+        "isFirstSeasonAfterRelocation": false
+      },
+      {
+        "teamCode": "IND_FEVER",
+        "franchiseId": null,
+        "isExpansion": false,
+        "isFinalSeason": false,
+        "isRelocatingNextYear": false,
+        "isFirstSeasonAfterRelocation": false
+      },
+      {
+        "teamCode": "NYL_LIBERTY",
+        "franchiseId": null,
+        "isExpansion": false,
+        "isFinalSeason": false,
+        "isRelocatingNextYear": false,
+        "isFirstSeasonAfterRelocation": false
+      },
+      {
+        "teamCode": "MIN_LYNX",
+        "franchiseId": null,
+        "isExpansion": false,
+        "isFinalSeason": false,
+        "isRelocatingNextYear": false,
+        "isFirstSeasonAfterRelocation": false
+      },
+      {
+        "teamCode": "PHX_MERCURY",
+        "franchiseId": null,
+        "isExpansion": false,
+        "isFinalSeason": false,
+        "isRelocatingNextYear": false,
+        "isFirstSeasonAfterRelocation": false
+      },
+      {
+        "teamCode": "WAS_MYSTICS",
+        "franchiseId": null,
+        "isExpansion": false,
+        "isFinalSeason": false,
+        "isRelocatingNextYear": false,
+        "isFirstSeasonAfterRelocation": false
+      },
+      {
+        "teamCode": "CHI_SKY",
+        "franchiseId": null,
+        "isExpansion": false,
+        "isFinalSeason": false,
+        "isRelocatingNextYear": false,
+        "isFirstSeasonAfterRelocation": false
+      },
+      {
+        "teamCode": "LOS_SPARKS",
+        "franchiseId": null,
+        "isExpansion": false,
+        "isFinalSeason": false,
+        "isRelocatingNextYear": false,
+        "isFirstSeasonAfterRelocation": false
+      },
+      {
+        "teamCode": "SEA_STORM",
+        "franchiseId": null,
+        "isExpansion": false,
+        "isFinalSeason": false,
+        "isRelocatingNextYear": false,
+        "isFirstSeasonAfterRelocation": false
+      },
+      {
+        "teamCode": "CON_SUN",
+        "franchiseId": "SUN_FRANCHISE",
+        "isExpansion": false,
+        "isFinalSeason": false,
+        "isRelocatingNextYear": false,
+        "isFirstSeasonAfterRelocation": false
+      },
+      {
+        "teamCode": "TUL_SHOCK",
+        "franchiseId": "WINGS_FRANCHISE",
+        "isExpansion": false,
+        "isFinalSeason": false,
+        "isRelocatingNextYear": false,
+        "isFirstSeasonAfterRelocation": false
+      },
+      {
+        "teamCode": "SA_STARS",
+        "franchiseId": "ACES_FRANCHISE",
+        "isExpansion": true,
+        "isFinalSeason": false,
+        "isRelocatingNextYear": false,
+        "isFirstSeasonAfterRelocation": true
+      }
+    ]
+  },
+  "2015": {
+    "teamCount": 12,
+    "teams": [
+      {
+        "teamCode": "ATL_DREAM",
+        "franchiseId": null,
+        "isExpansion": false,
+        "isFinalSeason": false,
+        "isRelocatingNextYear": false,
+        "isFirstSeasonAfterRelocation": false
+      },
+      {
+        "teamCode": "IND_FEVER",
+        "franchiseId": null,
+        "isExpansion": false,
+        "isFinalSeason": false,
+        "isRelocatingNextYear": false,
+        "isFirstSeasonAfterRelocation": false
+      },
+      {
+        "teamCode": "NYL_LIBERTY",
+        "franchiseId": null,
+        "isExpansion": false,
+        "isFinalSeason": false,
+        "isRelocatingNextYear": false,
+        "isFirstSeasonAfterRelocation": false
+      },
+      {
+        "teamCode": "MIN_LYNX",
+        "franchiseId": null,
+        "isExpansion": false,
+        "isFinalSeason": false,
+        "isRelocatingNextYear": false,
+        "isFirstSeasonAfterRelocation": false
+      },
+      {
+        "teamCode": "PHX_MERCURY",
+        "franchiseId": null,
+        "isExpansion": false,
+        "isFinalSeason": false,
+        "isRelocatingNextYear": false,
+        "isFirstSeasonAfterRelocation": false
+      },
+      {
+        "teamCode": "WAS_MYSTICS",
+        "franchiseId": null,
+        "isExpansion": false,
+        "isFinalSeason": false,
+        "isRelocatingNextYear": false,
+        "isFirstSeasonAfterRelocation": false
+      },
+      {
+        "teamCode": "CHI_SKY",
+        "franchiseId": null,
+        "isExpansion": false,
+        "isFinalSeason": false,
+        "isRelocatingNextYear": false,
+        "isFirstSeasonAfterRelocation": false
+      },
+      {
+        "teamCode": "LOS_SPARKS",
+        "franchiseId": null,
+        "isExpansion": false,
+        "isFinalSeason": false,
+        "isRelocatingNextYear": false,
+        "isFirstSeasonAfterRelocation": false
+      },
+      {
+        "teamCode": "SEA_STORM",
+        "franchiseId": null,
+        "isExpansion": false,
+        "isFinalSeason": false,
+        "isRelocatingNextYear": false,
+        "isFirstSeasonAfterRelocation": false
+      },
+      {
+        "teamCode": "CON_SUN",
+        "franchiseId": "SUN_FRANCHISE",
+        "isExpansion": false,
+        "isFinalSeason": false,
+        "isRelocatingNextYear": false,
+        "isFirstSeasonAfterRelocation": false
+      },
+      {
+        "teamCode": "TUL_SHOCK",
+        "franchiseId": "WINGS_FRANCHISE",
+        "isExpansion": false,
+        "isFinalSeason": false,
+        "isRelocatingNextYear": true,
+        "isFirstSeasonAfterRelocation": false
+      },
+      {
+        "teamCode": "SA_STARS",
+        "franchiseId": "ACES_FRANCHISE",
+        "isExpansion": false,
+        "isFinalSeason": false,
+        "isRelocatingNextYear": false,
+        "isFirstSeasonAfterRelocation": false
+      }
+    ]
+  },
+  "2016": {
+    "teamCount": 12,
+    "teams": [
+      {
+        "teamCode": "ATL_DREAM",
+        "franchiseId": null,
+        "isExpansion": false,
+        "isFinalSeason": false,
+        "isRelocatingNextYear": false,
+        "isFirstSeasonAfterRelocation": false
+      },
+      {
+        "teamCode": "IND_FEVER",
+        "franchiseId": null,
+        "isExpansion": false,
+        "isFinalSeason": false,
+        "isRelocatingNextYear": false,
+        "isFirstSeasonAfterRelocation": false
+      },
+      {
+        "teamCode": "NYL_LIBERTY",
+        "franchiseId": null,
+        "isExpansion": false,
+        "isFinalSeason": false,
+        "isRelocatingNextYear": false,
+        "isFirstSeasonAfterRelocation": false
+      },
+      {
+        "teamCode": "MIN_LYNX",
+        "franchiseId": null,
+        "isExpansion": false,
+        "isFinalSeason": false,
+        "isRelocatingNextYear": false,
+        "isFirstSeasonAfterRelocation": false
+      },
+      {
+        "teamCode": "PHX_MERCURY",
+        "franchiseId": null,
+        "isExpansion": false,
+        "isFinalSeason": false,
+        "isRelocatingNextYear": false,
+        "isFirstSeasonAfterRelocation": false
+      },
+      {
+        "teamCode": "WAS_MYSTICS",
+        "franchiseId": null,
+        "isExpansion": false,
+        "isFinalSeason": false,
+        "isRelocatingNextYear": false,
+        "isFirstSeasonAfterRelocation": false
+      },
+      {
+        "teamCode": "CHI_SKY",
+        "franchiseId": null,
+        "isExpansion": false,
+        "isFinalSeason": false,
+        "isRelocatingNextYear": false,
+        "isFirstSeasonAfterRelocation": false
+      },
+      {
+        "teamCode": "LOS_SPARKS",
+        "franchiseId": null,
+        "isExpansion": false,
+        "isFinalSeason": false,
+        "isRelocatingNextYear": false,
+        "isFirstSeasonAfterRelocation": false
+      },
+      {
+        "teamCode": "SEA_STORM",
+        "franchiseId": null,
+        "isExpansion": false,
+        "isFinalSeason": false,
+        "isRelocatingNextYear": false,
+        "isFirstSeasonAfterRelocation": false
+      },
+      {
+        "teamCode": "CON_SUN",
+        "franchiseId": "SUN_FRANCHISE",
+        "isExpansion": false,
+        "isFinalSeason": false,
+        "isRelocatingNextYear": false,
+        "isFirstSeasonAfterRelocation": false
+      },
+      {
+        "teamCode": "DAL_WINGS",
+        "franchiseId": "WINGS_FRANCHISE",
+        "isExpansion": true,
+        "isFinalSeason": false,
+        "isRelocatingNextYear": false,
+        "isFirstSeasonAfterRelocation": true
+      },
+      {
+        "teamCode": "SA_STARS",
+        "franchiseId": "ACES_FRANCHISE",
+        "isExpansion": false,
+        "isFinalSeason": false,
+        "isRelocatingNextYear": false,
+        "isFirstSeasonAfterRelocation": false
+      }
+    ]
+  },
+  "2017": {
+    "teamCount": 12,
+    "teams": [
+      {
+        "teamCode": "ATL_DREAM",
+        "franchiseId": null,
+        "isExpansion": false,
+        "isFinalSeason": false,
+        "isRelocatingNextYear": false,
+        "isFirstSeasonAfterRelocation": false
+      },
+      {
+        "teamCode": "IND_FEVER",
+        "franchiseId": null,
+        "isExpansion": false,
+        "isFinalSeason": false,
+        "isRelocatingNextYear": false,
+        "isFirstSeasonAfterRelocation": false
+      },
+      {
+        "teamCode": "NYL_LIBERTY",
+        "franchiseId": null,
+        "isExpansion": false,
+        "isFinalSeason": false,
+        "isRelocatingNextYear": false,
+        "isFirstSeasonAfterRelocation": false
+      },
+      {
+        "teamCode": "MIN_LYNX",
+        "franchiseId": null,
+        "isExpansion": false,
+        "isFinalSeason": false,
+        "isRelocatingNextYear": false,
+        "isFirstSeasonAfterRelocation": false
+      },
+      {
+        "teamCode": "PHX_MERCURY",
+        "franchiseId": null,
+        "isExpansion": false,
+        "isFinalSeason": false,
+        "isRelocatingNextYear": false,
+        "isFirstSeasonAfterRelocation": false
+      },
+      {
+        "teamCode": "WAS_MYSTICS",
+        "franchiseId": null,
+        "isExpansion": false,
+        "isFinalSeason": false,
+        "isRelocatingNextYear": false,
+        "isFirstSeasonAfterRelocation": false
+      },
+      {
+        "teamCode": "CHI_SKY",
+        "franchiseId": null,
+        "isExpansion": false,
+        "isFinalSeason": false,
+        "isRelocatingNextYear": false,
+        "isFirstSeasonAfterRelocation": false
+      },
+      {
+        "teamCode": "LOS_SPARKS",
+        "franchiseId": null,
+        "isExpansion": false,
+        "isFinalSeason": false,
+        "isRelocatingNextYear": false,
+        "isFirstSeasonAfterRelocation": false
+      },
+      {
+        "teamCode": "SEA_STORM",
+        "franchiseId": null,
+        "isExpansion": false,
+        "isFinalSeason": false,
+        "isRelocatingNextYear": false,
+        "isFirstSeasonAfterRelocation": false
+      },
+      {
+        "teamCode": "CON_SUN",
+        "franchiseId": "SUN_FRANCHISE",
+        "isExpansion": false,
+        "isFinalSeason": false,
+        "isRelocatingNextYear": false,
+        "isFirstSeasonAfterRelocation": false
+      },
+      {
+        "teamCode": "DAL_WINGS",
+        "franchiseId": "WINGS_FRANCHISE",
+        "isExpansion": false,
+        "isFinalSeason": false,
+        "isRelocatingNextYear": false,
+        "isFirstSeasonAfterRelocation": false
+      },
+      {
+        "teamCode": "SA_STARS",
+        "franchiseId": "ACES_FRANCHISE",
+        "isExpansion": false,
+        "isFinalSeason": false,
+        "isRelocatingNextYear": true,
+        "isFirstSeasonAfterRelocation": false
+      }
+    ]
+  },
+  "2018": {
+    "teamCount": 12,
+    "teams": [
+      {
+        "teamCode": "LVA_ACES",
+        "franchiseId": "ACES_FRANCHISE",
+        "isExpansion": true,
+        "isFinalSeason": false,
+        "isRelocatingNextYear": false,
+        "isFirstSeasonAfterRelocation": true
+      },
+      {
+        "teamCode": "ATL_DREAM",
+        "franchiseId": null,
+        "isExpansion": false,
+        "isFinalSeason": false,
+        "isRelocatingNextYear": false,
+        "isFirstSeasonAfterRelocation": false
+      },
+      {
+        "teamCode": "IND_FEVER",
+        "franchiseId": null,
+        "isExpansion": false,
+        "isFinalSeason": false,
+        "isRelocatingNextYear": false,
+        "isFirstSeasonAfterRelocation": false
+      },
+      {
+        "teamCode": "NYL_LIBERTY",
+        "franchiseId": null,
+        "isExpansion": false,
+        "isFinalSeason": false,
+        "isRelocatingNextYear": false,
+        "isFirstSeasonAfterRelocation": false
+      },
+      {
+        "teamCode": "MIN_LYNX",
+        "franchiseId": null,
+        "isExpansion": false,
+        "isFinalSeason": false,
+        "isRelocatingNextYear": false,
+        "isFirstSeasonAfterRelocation": false
+      },
+      {
+        "teamCode": "PHX_MERCURY",
+        "franchiseId": null,
+        "isExpansion": false,
+        "isFinalSeason": false,
+        "isRelocatingNextYear": false,
+        "isFirstSeasonAfterRelocation": false
+      },
+      {
+        "teamCode": "WAS_MYSTICS",
+        "franchiseId": null,
+        "isExpansion": false,
+        "isFinalSeason": false,
+        "isRelocatingNextYear": false,
+        "isFirstSeasonAfterRelocation": false
+      },
+      {
+        "teamCode": "CHI_SKY",
+        "franchiseId": null,
+        "isExpansion": false,
+        "isFinalSeason": false,
+        "isRelocatingNextYear": false,
+        "isFirstSeasonAfterRelocation": false
+      },
+      {
+        "teamCode": "LOS_SPARKS",
+        "franchiseId": null,
+        "isExpansion": false,
+        "isFinalSeason": false,
+        "isRelocatingNextYear": false,
+        "isFirstSeasonAfterRelocation": false
+      },
+      {
+        "teamCode": "SEA_STORM",
+        "franchiseId": null,
+        "isExpansion": false,
+        "isFinalSeason": false,
+        "isRelocatingNextYear": false,
+        "isFirstSeasonAfterRelocation": false
+      },
+      {
+        "teamCode": "CON_SUN",
+        "franchiseId": "SUN_FRANCHISE",
+        "isExpansion": false,
+        "isFinalSeason": false,
+        "isRelocatingNextYear": false,
+        "isFirstSeasonAfterRelocation": false
+      },
+      {
+        "teamCode": "DAL_WINGS",
+        "franchiseId": "WINGS_FRANCHISE",
+        "isExpansion": false,
+        "isFinalSeason": false,
+        "isRelocatingNextYear": false,
+        "isFirstSeasonAfterRelocation": false
+      }
+    ]
+  },
+  "2019": {
+    "teamCount": 12,
+    "teams": [
+      {
+        "teamCode": "LVA_ACES",
+        "franchiseId": "ACES_FRANCHISE",
+        "isExpansion": false,
+        "isFinalSeason": false,
+        "isRelocatingNextYear": false,
+        "isFirstSeasonAfterRelocation": false
+      },
+      {
+        "teamCode": "ATL_DREAM",
+        "franchiseId": null,
+        "isExpansion": false,
+        "isFinalSeason": false,
+        "isRelocatingNextYear": false,
+        "isFirstSeasonAfterRelocation": false
+      },
+      {
+        "teamCode": "IND_FEVER",
+        "franchiseId": null,
+        "isExpansion": false,
+        "isFinalSeason": false,
+        "isRelocatingNextYear": false,
+        "isFirstSeasonAfterRelocation": false
+      },
+      {
+        "teamCode": "NYL_LIBERTY",
+        "franchiseId": null,
+        "isExpansion": false,
+        "isFinalSeason": false,
+        "isRelocatingNextYear": false,
+        "isFirstSeasonAfterRelocation": false
+      },
+      {
+        "teamCode": "MIN_LYNX",
+        "franchiseId": null,
+        "isExpansion": false,
+        "isFinalSeason": false,
+        "isRelocatingNextYear": false,
+        "isFirstSeasonAfterRelocation": false
+      },
+      {
+        "teamCode": "PHX_MERCURY",
+        "franchiseId": null,
+        "isExpansion": false,
+        "isFinalSeason": false,
+        "isRelocatingNextYear": false,
+        "isFirstSeasonAfterRelocation": false
+      },
+      {
+        "teamCode": "WAS_MYSTICS",
+        "franchiseId": null,
+        "isExpansion": false,
+        "isFinalSeason": false,
+        "isRelocatingNextYear": false,
+        "isFirstSeasonAfterRelocation": false
+      },
+      {
+        "teamCode": "CHI_SKY",
+        "franchiseId": null,
+        "isExpansion": false,
+        "isFinalSeason": false,
+        "isRelocatingNextYear": false,
+        "isFirstSeasonAfterRelocation": false
+      },
+      {
+        "teamCode": "LOS_SPARKS",
+        "franchiseId": null,
+        "isExpansion": false,
+        "isFinalSeason": false,
+        "isRelocatingNextYear": false,
+        "isFirstSeasonAfterRelocation": false
+      },
+      {
+        "teamCode": "SEA_STORM",
+        "franchiseId": null,
+        "isExpansion": false,
+        "isFinalSeason": false,
+        "isRelocatingNextYear": false,
+        "isFirstSeasonAfterRelocation": false
+      },
+      {
+        "teamCode": "CON_SUN",
+        "franchiseId": "SUN_FRANCHISE",
+        "isExpansion": false,
+        "isFinalSeason": false,
+        "isRelocatingNextYear": false,
+        "isFirstSeasonAfterRelocation": false
+      },
+      {
+        "teamCode": "DAL_WINGS",
+        "franchiseId": "WINGS_FRANCHISE",
+        "isExpansion": false,
+        "isFinalSeason": false,
+        "isRelocatingNextYear": false,
+        "isFirstSeasonAfterRelocation": false
+      }
+    ]
+  },
+  "2020": {
+    "teamCount": 12,
+    "teams": [
+      {
+        "teamCode": "LVA_ACES",
+        "franchiseId": "ACES_FRANCHISE",
+        "isExpansion": false,
+        "isFinalSeason": false,
+        "isRelocatingNextYear": false,
+        "isFirstSeasonAfterRelocation": false
+      },
+      {
+        "teamCode": "ATL_DREAM",
+        "franchiseId": null,
+        "isExpansion": false,
+        "isFinalSeason": false,
+        "isRelocatingNextYear": false,
+        "isFirstSeasonAfterRelocation": false
+      },
+      {
+        "teamCode": "IND_FEVER",
+        "franchiseId": null,
+        "isExpansion": false,
+        "isFinalSeason": false,
+        "isRelocatingNextYear": false,
+        "isFirstSeasonAfterRelocation": false
+      },
+      {
+        "teamCode": "NYL_LIBERTY",
+        "franchiseId": null,
+        "isExpansion": false,
+        "isFinalSeason": false,
+        "isRelocatingNextYear": false,
+        "isFirstSeasonAfterRelocation": false
+      },
+      {
+        "teamCode": "MIN_LYNX",
+        "franchiseId": null,
+        "isExpansion": false,
+        "isFinalSeason": false,
+        "isRelocatingNextYear": false,
+        "isFirstSeasonAfterRelocation": false
+      },
+      {
+        "teamCode": "PHX_MERCURY",
+        "franchiseId": null,
+        "isExpansion": false,
+        "isFinalSeason": false,
+        "isRelocatingNextYear": false,
+        "isFirstSeasonAfterRelocation": false
+      },
+      {
+        "teamCode": "WAS_MYSTICS",
+        "franchiseId": null,
+        "isExpansion": false,
+        "isFinalSeason": false,
+        "isRelocatingNextYear": false,
+        "isFirstSeasonAfterRelocation": false
+      },
+      {
+        "teamCode": "CHI_SKY",
+        "franchiseId": null,
+        "isExpansion": false,
+        "isFinalSeason": false,
+        "isRelocatingNextYear": false,
+        "isFirstSeasonAfterRelocation": false
+      },
+      {
+        "teamCode": "LOS_SPARKS",
+        "franchiseId": null,
+        "isExpansion": false,
+        "isFinalSeason": false,
+        "isRelocatingNextYear": false,
+        "isFirstSeasonAfterRelocation": false
+      },
+      {
+        "teamCode": "SEA_STORM",
+        "franchiseId": null,
+        "isExpansion": false,
+        "isFinalSeason": false,
+        "isRelocatingNextYear": false,
+        "isFirstSeasonAfterRelocation": false
+      },
+      {
+        "teamCode": "CON_SUN",
+        "franchiseId": "SUN_FRANCHISE",
+        "isExpansion": false,
+        "isFinalSeason": false,
+        "isRelocatingNextYear": false,
+        "isFirstSeasonAfterRelocation": false
+      },
+      {
+        "teamCode": "DAL_WINGS",
+        "franchiseId": "WINGS_FRANCHISE",
+        "isExpansion": false,
+        "isFinalSeason": false,
+        "isRelocatingNextYear": false,
+        "isFirstSeasonAfterRelocation": false
+      }
+    ]
+  },
+  "2021": {
+    "teamCount": 12,
+    "teams": [
+      {
+        "teamCode": "LVA_ACES",
+        "franchiseId": "ACES_FRANCHISE",
+        "isExpansion": false,
+        "isFinalSeason": false,
+        "isRelocatingNextYear": false,
+        "isFirstSeasonAfterRelocation": false
+      },
+      {
+        "teamCode": "ATL_DREAM",
+        "franchiseId": null,
+        "isExpansion": false,
+        "isFinalSeason": false,
+        "isRelocatingNextYear": false,
+        "isFirstSeasonAfterRelocation": false
+      },
+      {
+        "teamCode": "IND_FEVER",
+        "franchiseId": null,
+        "isExpansion": false,
+        "isFinalSeason": false,
+        "isRelocatingNextYear": false,
+        "isFirstSeasonAfterRelocation": false
+      },
+      {
+        "teamCode": "NYL_LIBERTY",
+        "franchiseId": null,
+        "isExpansion": false,
+        "isFinalSeason": false,
+        "isRelocatingNextYear": false,
+        "isFirstSeasonAfterRelocation": false
+      },
+      {
+        "teamCode": "MIN_LYNX",
+        "franchiseId": null,
+        "isExpansion": false,
+        "isFinalSeason": false,
+        "isRelocatingNextYear": false,
+        "isFirstSeasonAfterRelocation": false
+      },
+      {
+        "teamCode": "PHX_MERCURY",
+        "franchiseId": null,
+        "isExpansion": false,
+        "isFinalSeason": false,
+        "isRelocatingNextYear": false,
+        "isFirstSeasonAfterRelocation": false
+      },
+      {
+        "teamCode": "WAS_MYSTICS",
+        "franchiseId": null,
+        "isExpansion": false,
+        "isFinalSeason": false,
+        "isRelocatingNextYear": false,
+        "isFirstSeasonAfterRelocation": false
+      },
+      {
+        "teamCode": "CHI_SKY",
+        "franchiseId": null,
+        "isExpansion": false,
+        "isFinalSeason": false,
+        "isRelocatingNextYear": false,
+        "isFirstSeasonAfterRelocation": false
+      },
+      {
+        "teamCode": "LOS_SPARKS",
+        "franchiseId": null,
+        "isExpansion": false,
+        "isFinalSeason": false,
+        "isRelocatingNextYear": false,
+        "isFirstSeasonAfterRelocation": false
+      },
+      {
+        "teamCode": "SEA_STORM",
+        "franchiseId": null,
+        "isExpansion": false,
+        "isFinalSeason": false,
+        "isRelocatingNextYear": false,
+        "isFirstSeasonAfterRelocation": false
+      },
+      {
+        "teamCode": "CON_SUN",
+        "franchiseId": "SUN_FRANCHISE",
+        "isExpansion": false,
+        "isFinalSeason": false,
+        "isRelocatingNextYear": false,
+        "isFirstSeasonAfterRelocation": false
+      },
+      {
+        "teamCode": "DAL_WINGS",
+        "franchiseId": "WINGS_FRANCHISE",
+        "isExpansion": false,
+        "isFinalSeason": false,
+        "isRelocatingNextYear": false,
+        "isFirstSeasonAfterRelocation": false
+      }
+    ]
+  },
+  "2022": {
+    "teamCount": 12,
+    "teams": [
+      {
+        "teamCode": "LVA_ACES",
+        "franchiseId": "ACES_FRANCHISE",
+        "isExpansion": false,
+        "isFinalSeason": false,
+        "isRelocatingNextYear": false,
+        "isFirstSeasonAfterRelocation": false
+      },
+      {
+        "teamCode": "ATL_DREAM",
+        "franchiseId": null,
+        "isExpansion": false,
+        "isFinalSeason": false,
+        "isRelocatingNextYear": false,
+        "isFirstSeasonAfterRelocation": false
+      },
+      {
+        "teamCode": "IND_FEVER",
+        "franchiseId": null,
+        "isExpansion": false,
+        "isFinalSeason": false,
+        "isRelocatingNextYear": false,
+        "isFirstSeasonAfterRelocation": false
+      },
+      {
+        "teamCode": "NYL_LIBERTY",
+        "franchiseId": null,
+        "isExpansion": false,
+        "isFinalSeason": false,
+        "isRelocatingNextYear": false,
+        "isFirstSeasonAfterRelocation": false
+      },
+      {
+        "teamCode": "MIN_LYNX",
+        "franchiseId": null,
+        "isExpansion": false,
+        "isFinalSeason": false,
+        "isRelocatingNextYear": false,
+        "isFirstSeasonAfterRelocation": false
+      },
+      {
+        "teamCode": "PHX_MERCURY",
+        "franchiseId": null,
+        "isExpansion": false,
+        "isFinalSeason": false,
+        "isRelocatingNextYear": false,
+        "isFirstSeasonAfterRelocation": false
+      },
+      {
+        "teamCode": "WAS_MYSTICS",
+        "franchiseId": null,
+        "isExpansion": false,
+        "isFinalSeason": false,
+        "isRelocatingNextYear": false,
+        "isFirstSeasonAfterRelocation": false
+      },
+      {
+        "teamCode": "CHI_SKY",
+        "franchiseId": null,
+        "isExpansion": false,
+        "isFinalSeason": false,
+        "isRelocatingNextYear": false,
+        "isFirstSeasonAfterRelocation": false
+      },
+      {
+        "teamCode": "LOS_SPARKS",
+        "franchiseId": null,
+        "isExpansion": false,
+        "isFinalSeason": false,
+        "isRelocatingNextYear": false,
+        "isFirstSeasonAfterRelocation": false
+      },
+      {
+        "teamCode": "SEA_STORM",
+        "franchiseId": null,
+        "isExpansion": false,
+        "isFinalSeason": false,
+        "isRelocatingNextYear": false,
+        "isFirstSeasonAfterRelocation": false
+      },
+      {
+        "teamCode": "CON_SUN",
+        "franchiseId": "SUN_FRANCHISE",
+        "isExpansion": false,
+        "isFinalSeason": false,
+        "isRelocatingNextYear": false,
+        "isFirstSeasonAfterRelocation": false
+      },
+      {
+        "teamCode": "DAL_WINGS",
+        "franchiseId": "WINGS_FRANCHISE",
+        "isExpansion": false,
+        "isFinalSeason": false,
+        "isRelocatingNextYear": false,
+        "isFirstSeasonAfterRelocation": false
+      }
+    ]
+  },
+  "2023": {
+    "teamCount": 12,
+    "teams": [
+      {
+        "teamCode": "LVA_ACES",
+        "franchiseId": "ACES_FRANCHISE",
+        "isExpansion": false,
+        "isFinalSeason": false,
+        "isRelocatingNextYear": false,
+        "isFirstSeasonAfterRelocation": false
+      },
+      {
+        "teamCode": "ATL_DREAM",
+        "franchiseId": null,
+        "isExpansion": false,
+        "isFinalSeason": false,
+        "isRelocatingNextYear": false,
+        "isFirstSeasonAfterRelocation": false
+      },
+      {
+        "teamCode": "IND_FEVER",
+        "franchiseId": null,
+        "isExpansion": false,
+        "isFinalSeason": false,
+        "isRelocatingNextYear": false,
+        "isFirstSeasonAfterRelocation": false
+      },
+      {
+        "teamCode": "NYL_LIBERTY",
+        "franchiseId": null,
+        "isExpansion": false,
+        "isFinalSeason": false,
+        "isRelocatingNextYear": false,
+        "isFirstSeasonAfterRelocation": false
+      },
+      {
+        "teamCode": "MIN_LYNX",
+        "franchiseId": null,
+        "isExpansion": false,
+        "isFinalSeason": false,
+        "isRelocatingNextYear": false,
+        "isFirstSeasonAfterRelocation": false
+      },
+      {
+        "teamCode": "PHX_MERCURY",
+        "franchiseId": null,
+        "isExpansion": false,
+        "isFinalSeason": false,
+        "isRelocatingNextYear": false,
+        "isFirstSeasonAfterRelocation": false
+      },
+      {
+        "teamCode": "WAS_MYSTICS",
+        "franchiseId": null,
+        "isExpansion": false,
+        "isFinalSeason": false,
+        "isRelocatingNextYear": false,
+        "isFirstSeasonAfterRelocation": false
+      },
+      {
+        "teamCode": "CHI_SKY",
+        "franchiseId": null,
+        "isExpansion": false,
+        "isFinalSeason": false,
+        "isRelocatingNextYear": false,
+        "isFirstSeasonAfterRelocation": false
+      },
+      {
+        "teamCode": "LOS_SPARKS",
+        "franchiseId": null,
+        "isExpansion": false,
+        "isFinalSeason": false,
+        "isRelocatingNextYear": false,
+        "isFirstSeasonAfterRelocation": false
+      },
+      {
+        "teamCode": "SEA_STORM",
+        "franchiseId": null,
+        "isExpansion": false,
+        "isFinalSeason": false,
+        "isRelocatingNextYear": false,
+        "isFirstSeasonAfterRelocation": false
+      },
+      {
+        "teamCode": "CON_SUN",
+        "franchiseId": "SUN_FRANCHISE",
+        "isExpansion": false,
+        "isFinalSeason": false,
+        "isRelocatingNextYear": false,
+        "isFirstSeasonAfterRelocation": false
+      },
+      {
+        "teamCode": "DAL_WINGS",
+        "franchiseId": "WINGS_FRANCHISE",
+        "isExpansion": false,
+        "isFinalSeason": false,
+        "isRelocatingNextYear": false,
+        "isFirstSeasonAfterRelocation": false
+      }
+    ]
+  },
+  "2024": {
+    "teamCount": 12,
+    "teams": [
+      {
+        "teamCode": "LVA_ACES",
+        "franchiseId": "ACES_FRANCHISE",
+        "isExpansion": false,
+        "isFinalSeason": false,
+        "isRelocatingNextYear": false,
+        "isFirstSeasonAfterRelocation": false
+      },
+      {
+        "teamCode": "ATL_DREAM",
+        "franchiseId": null,
+        "isExpansion": false,
+        "isFinalSeason": false,
+        "isRelocatingNextYear": false,
+        "isFirstSeasonAfterRelocation": false
+      },
+      {
+        "teamCode": "IND_FEVER",
+        "franchiseId": null,
+        "isExpansion": false,
+        "isFinalSeason": false,
+        "isRelocatingNextYear": false,
+        "isFirstSeasonAfterRelocation": false
+      },
+      {
+        "teamCode": "NYL_LIBERTY",
+        "franchiseId": null,
+        "isExpansion": false,
+        "isFinalSeason": false,
+        "isRelocatingNextYear": false,
+        "isFirstSeasonAfterRelocation": false
+      },
+      {
+        "teamCode": "MIN_LYNX",
+        "franchiseId": null,
+        "isExpansion": false,
+        "isFinalSeason": false,
+        "isRelocatingNextYear": false,
+        "isFirstSeasonAfterRelocation": false
+      },
+      {
+        "teamCode": "PHX_MERCURY",
+        "franchiseId": null,
+        "isExpansion": false,
+        "isFinalSeason": false,
+        "isRelocatingNextYear": false,
+        "isFirstSeasonAfterRelocation": false
+      },
+      {
+        "teamCode": "WAS_MYSTICS",
+        "franchiseId": null,
+        "isExpansion": false,
+        "isFinalSeason": false,
+        "isRelocatingNextYear": false,
+        "isFirstSeasonAfterRelocation": false
+      },
+      {
+        "teamCode": "CHI_SKY",
+        "franchiseId": null,
+        "isExpansion": false,
+        "isFinalSeason": false,
+        "isRelocatingNextYear": false,
+        "isFirstSeasonAfterRelocation": false
+      },
+      {
+        "teamCode": "LOS_SPARKS",
+        "franchiseId": null,
+        "isExpansion": false,
+        "isFinalSeason": false,
+        "isRelocatingNextYear": false,
+        "isFirstSeasonAfterRelocation": false
+      },
+      {
+        "teamCode": "SEA_STORM",
+        "franchiseId": null,
+        "isExpansion": false,
+        "isFinalSeason": false,
+        "isRelocatingNextYear": false,
+        "isFirstSeasonAfterRelocation": false
+      },
+      {
+        "teamCode": "CON_SUN",
+        "franchiseId": "SUN_FRANCHISE",
+        "isExpansion": false,
+        "isFinalSeason": false,
+        "isRelocatingNextYear": false,
+        "isFirstSeasonAfterRelocation": false
+      },
+      {
+        "teamCode": "DAL_WINGS",
+        "franchiseId": "WINGS_FRANCHISE",
+        "isExpansion": false,
+        "isFinalSeason": false,
+        "isRelocatingNextYear": false,
+        "isFirstSeasonAfterRelocation": false
+      }
+    ]
+  },
+  "2025": {
+    "teamCount": 13,
+    "teams": [
+      {
+        "teamCode": "LVA_ACES",
+        "franchiseId": "ACES_FRANCHISE",
+        "isExpansion": false,
+        "isFinalSeason": false,
+        "isRelocatingNextYear": false,
+        "isFirstSeasonAfterRelocation": false
+      },
+      {
+        "teamCode": "ATL_DREAM",
+        "franchiseId": null,
+        "isExpansion": false,
+        "isFinalSeason": false,
+        "isRelocatingNextYear": false,
+        "isFirstSeasonAfterRelocation": false
+      },
+      {
+        "teamCode": "IND_FEVER",
+        "franchiseId": null,
+        "isExpansion": false,
+        "isFinalSeason": false,
+        "isRelocatingNextYear": false,
+        "isFirstSeasonAfterRelocation": false
+      },
+      {
+        "teamCode": "NYL_LIBERTY",
+        "franchiseId": null,
+        "isExpansion": false,
+        "isFinalSeason": false,
+        "isRelocatingNextYear": false,
+        "isFirstSeasonAfterRelocation": false
+      },
+      {
+        "teamCode": "MIN_LYNX",
+        "franchiseId": null,
+        "isExpansion": false,
+        "isFinalSeason": false,
+        "isRelocatingNextYear": false,
+        "isFirstSeasonAfterRelocation": false
+      },
+      {
+        "teamCode": "PHX_MERCURY",
+        "franchiseId": null,
+        "isExpansion": false,
+        "isFinalSeason": false,
+        "isRelocatingNextYear": false,
+        "isFirstSeasonAfterRelocation": false
+      },
+      {
+        "teamCode": "WAS_MYSTICS",
+        "franchiseId": null,
+        "isExpansion": false,
+        "isFinalSeason": false,
+        "isRelocatingNextYear": false,
+        "isFirstSeasonAfterRelocation": false
+      },
+      {
+        "teamCode": "CHI_SKY",
+        "franchiseId": null,
+        "isExpansion": false,
+        "isFinalSeason": false,
+        "isRelocatingNextYear": false,
+        "isFirstSeasonAfterRelocation": false
+      },
+      {
+        "teamCode": "LOS_SPARKS",
+        "franchiseId": null,
+        "isExpansion": false,
+        "isFinalSeason": false,
+        "isRelocatingNextYear": false,
+        "isFirstSeasonAfterRelocation": false
+      },
+      {
+        "teamCode": "SEA_STORM",
+        "franchiseId": null,
+        "isExpansion": false,
+        "isFinalSeason": false,
+        "isRelocatingNextYear": false,
+        "isFirstSeasonAfterRelocation": false
+      },
+      {
+        "teamCode": "CON_SUN",
+        "franchiseId": "SUN_FRANCHISE",
+        "isExpansion": false,
+        "isFinalSeason": false,
+        "isRelocatingNextYear": false,
+        "isFirstSeasonAfterRelocation": false
+      },
+      {
+        "teamCode": "GSV_VALKYRIES",
+        "franchiseId": null,
+        "isExpansion": true,
+        "isFinalSeason": false,
+        "isRelocatingNextYear": false,
+        "isFirstSeasonAfterRelocation": false
+      },
+      {
+        "teamCode": "DAL_WINGS",
+        "franchiseId": "WINGS_FRANCHISE",
+        "isExpansion": false,
+        "isFinalSeason": false,
+        "isRelocatingNextYear": false,
+        "isFirstSeasonAfterRelocation": false
+      }
+    ]
+  }
+}
+

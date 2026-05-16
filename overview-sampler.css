@@ -84,7 +84,25 @@
 
 .career-bar-label {
   font-family: "Chivo Mono", monospace;
-  font-size: 11px;
+  font-size: 18px;
   fill: white;
   pointer-events: none;
+}
+
+
+
+.player-label.clickable:hover {
+  fill: #666;
+  text-decoration: underline;
+}
+
+#player-card-overlay {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: white;
+  padding: 20px;
+  z-index: 1000;
+  border: 2px solid black;
 }

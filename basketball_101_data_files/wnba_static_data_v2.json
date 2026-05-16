@@ -1,0 +1,1604 @@
+{ 
+  "teams": {
+    "LVA_ACES": {
+      "teamCode": "LVA_ACES",
+      "franchiseId": "ACES_FRANCHISE",
+
+      "name": {
+        "full": "Las Vegas Aces",
+        "city": "Las Vegas",
+        "mascot": "Aces",
+        "short": "Aces"
+      },
+
+      "status": {
+        "isActive": true,
+        "isOriginalTeam": false,
+        "founded": 2018,
+        "ended": null,
+        "endType": null
+      },
+
+      "league": {
+        "conference": "west"
+      },
+
+      "location": {
+        "market": "Las Vegas",
+        "state": "Nevada",
+        "city": "Las Vegas, Nevada",
+        "arena": "Michelob Ultra Arena"
+      },
+
+      "branding": {
+        "slug": "las-vegas-aces",
+        "logo": {
+          "src": "/assets/logos-wnba/las-vegas-aces-logo.svg",
+          "alt": "Las Vegas Aces Logo"
+        },
+        "colors": {
+          "color1": "#BA0C2F",
+          "color2": "#85714D",
+          "color3": "#8A8D8F"
+        },
+        "courtColors": {
+          "main": "#BB0C2F",
+          "lines": "#8A734C",
+          "accent": "#8B8F92"
+        }
+      },
+
+      "history": {
+        "formerTeamCode": "SA_STARS",
+        "relocatedFrom": "SA_STARS",
+        "relocatedTo": null
+      },
+
+      "championshipYears": [2022, 2023, 2025],
+
+      "meta": {
+        "favorite": true
+      }
+    },
+    "ATL_DREAM": {
+      "teamCode": "ATL_DREAM",
+      "franchiseId": "DREAM_FRANCHISE",
+
+      "name": {
+        "full": "Atlanta Dream",
+        "city": "Atlanta",
+        "mascot": "Dream",
+        "short": "Dream"
+      },
+
+      "status": {
+        "isActive": true,
+        "isOriginalTeam": false,
+        "founded": 2008,
+        "ended": null,
+        "endType": null
+      },
+
+      "league": {
+        "conference": "east"
+      },
+
+      "location": {
+        "market": "College Park",
+        "state": "Georgia",
+        "city": "College Park, Georgia",
+        "arena": "Gateway Center Arena"
+      },
+
+      "branding": {
+        "slug": "atlanta-dream",
+        "logo": {
+          "src": "/assets/logos-wnba/atlanta-dream-logo.svg",
+          "alt": "Atlanta Dream Logo"
+        },
+        "colors": {
+          "color1": "#418FDE",
+          "color2": "#C8102E",
+          "color3": "#9EA2A2"
+        },
+        "courtColors": {
+          "main": "#418FDE",
+          "lines": "#C8102E",
+          "accent": "#9EA2A2"
+        }
+      },
+
+      "history": {
+        "formerTeamCode": null,
+        "relocatedFrom": null,
+        "relocatedTo": null
+      },
+
+      "championshipYears": [],
+
+      "meta": {
+        "favorite": true
+      }
+    },
+    "IND_FEVER": {
+      "teamCode": "IND_FEVER",
+      "franchiseId": "FEVER_FRANCHISE",
+
+      "name": {
+        "full": "Indiana Fever",
+        "city": "Indiana",
+        "mascot": "Fever",
+        "short": "Fever"
+      },
+
+      "status": {
+        "isActive": true,
+        "isOriginalTeam": false,
+        "founded": 2000,
+        "ended": null,
+        "endType": null
+      },
+
+      "league": {
+        "conference": "east"
+      },
+
+      "location": {
+        "market": "Indianapolis",
+        "state": "Indiana",
+        "city": "Indianapolis, Indiana",
+        "arena": "Gainbridge Fieldhouse"
+      },
+
+      "branding": {
+        "slug": "indiana-fever",
+        "logo": {
+          "src": "/assets/logos-wnba/indiana-fever-logo.svg",
+          "alt": "Indiana Fever Logo"
+        },
+        "colors": {
+          "color1": "#041E42",
+          "color2": "#FFCD00",
+          "color3": "#C8102E"
+        },
+        "courtColors": {
+          "main": "#041E42",
+          "lines": "#FFCD00",
+          "accent": "#C8102E"
+        }
+      },
+
+      "history": {
+        "formerTeamCode": null,
+        "relocatedFrom": null,
+        "relocatedTo": null
+      },
+
+      "championshipYears": [2012],
+
+      "meta": {
+        "favorite": false
+      }
+    },
+    "NYL_LIBERTY": {  
+      "teamCode": "NYL_LIBERTY",
+      "franchiseId": "LIBERTY_FRANCHISE",
+
+      "name": {
+        "full": "New York Liberty",
+        "city": "New York",
+        "mascot": "Liberty",
+        "short": "Liberty"
+      },
+
+      "status": {
+        "isActive": true,
+        "isOriginalTeam": true,
+        "founded": 1997,
+        "ended": null,
+        "endType": null
+      },
+
+      "league": {
+        "conference": "east"
+      },
+
+      "location": {
+        "market": "New York",
+        "state": "New York",
+        "city": "New York, New York",
+        "arena": "Barclays Center"
+      },
+
+      "branding": {
+        "slug": "new-york-liberty",
+        "logo": {
+          "src": "/assets/logos-wnba/new-york-liberty-logo.svg",
+          "alt": "New York Liberty Logo"
+        },
+        "colors": {
+          "color1": "#6ECEB2",
+          "color2": "#FF6720",
+          "color3": "#003DA5"
+        },
+        "courtColors": {
+          "main": "#6ECEB2",
+          "lines": "#FF6720",
+          "accent": "#003DA5"
+        }
+      },
+
+      "history": {
+        "formerTeamCode": null,
+        "relocatedFrom": null,
+        "relocatedTo": null
+      },
+
+      "championshipYears": [2024],
+
+      "meta": {
+        "favorite": false
+      }
+    },
+    "MIN_LYNX": {
+      "teamCode": "MIN_LYNX",
+      "franchiseId": "LYNX_FRANCHISE",
+
+      "name": {
+        "full": "Minnesota Lynx",
+        "city": "Minnesota",
+        "mascot": "Lynx",
+        "short": "Lynx"
+      },
+
+      "status": {
+        "isActive": true,
+        "isOriginalTeam": false,
+        "founded": 1999,
+        "ended": null,
+        "endType": null
+      },
+
+      "league": {
+        "conference": "west"
+      },
+
+      "location": {
+        "market": "Minneapolis",
+        "state": "Minnesota",
+        "city": "Minneapolis, Minnesota",
+        "arena": "Target Center"
+      },
+
+      "branding": {
+        "slug": "minnesota-lynx",
+        "logo": {
+          "src": "/assets/logos-wnba/minnesota-lynx-logo.svg",
+          "alt": "Minnesota Lynx Logo"
+        },
+        "colors": {
+          "color1": "#236192",
+          "color2": "#78BE21",
+          "color3": "#0C2340"
+        },
+        "courtColors": {
+          "main": "#236192",
+          "lines": "#78BE21",
+          "accent": "#0C2340"
+        }
+      },
+
+      "history": {
+        "formerTeamCode": null,
+        "relocatedFrom": null,
+        "relocatedTo": null
+      },
+
+      "championshipYears": [2011, 2013, 2015, 2017],
+
+      "meta": {
+        "favorite": false
+      }
+    },
+    "PHX_MERCURY": {
+      "teamCode": "PHX_MERCURY",
+      "franchiseId": "MERCURY_FRANCHISE",
+
+      "name": {
+        "full": "Phoenix Mercury",
+        "city": "Phoenix",
+        "mascot": "Mercury",
+        "short": "Mercury"
+      },
+
+      "status": {
+        "isActive": true,
+        "isOriginalTeam": true,
+        "founded": 1997,
+        "ended": null,
+        "endType": null
+      },
+
+      "league": {
+        "conference": "west"
+      },
+
+      "location": {
+        "market": "Phoenix",
+        "state": "Arizona",
+        "city": "Phoenix, Arizona",
+        "arena": "Footprint Center"
+      },
+
+      "branding": {
+        "slug": "phoenix-mercury",
+        "logo": {
+          "src": "/assets/logos-wnba/phoenix-mercury-logo.svg",
+          "alt": "Phoenix Mercury Logo"
+        },
+        "colors": {
+          "color1": "#6937AF",
+          "color2": "#CB6015",
+          "color3": "#B1B3B3"
+        },
+        "courtColors": {
+          "main": "#6937AF",
+          "lines": "#CB6015",
+          "accent": "#B1B3B3"
+        }
+      },
+
+      "history": {
+        "formerTeamCode": null,
+        "relocatedFrom": null,
+        "relocatedTo": null
+      },
+
+      "championshipYears": [2007, 2009, 2014],
+
+      "meta": {
+        "favorite": true
+      }
+    },
+    "WAS_MYSTICS": {
+      "teamCode": "WAS_MYSTICS",
+      "franchiseId": "MYSTICS_FRANCHISE",
+
+      "name": {
+        "full": "Washington Mystics",
+        "city": "Washington",
+        "mascot": "Mystics",
+        "short": "Mystics"
+      },
+
+      "status": {
+        "isActive": true,
+        "isOriginalTeam": false,
+        "founded": 1998,
+        "ended": null,
+        "endType": null
+      },
+
+      "league": {
+        "conference": "east"
+      },
+
+      "location": {
+        "market": "Washington",
+        "state": "D.C.",
+        "city": "Washington, D.C.",
+        "arena": "Entertainment and Sports Arena"
+      },
+
+      "branding": {
+        "slug": "washington-mystics",
+        "logo": {
+          "src": "/assets/logos-wnba/washington-mystics-logo.svg",
+          "alt": "Washington Mystics Logo"
+        },
+        "colors": {
+          "color1": "#0C2340",
+          "color2": "#C8102E",
+          "color3": "#8D9093"
+        },
+        "courtColors": {
+          "main": "#0C2340",
+          "lines": "#C8102E",
+          "accent": "#8D9093"
+        }
+      },
+
+      "history": {
+        "formerTeamCode": null,
+        "relocatedFrom": null,
+        "relocatedTo": null
+      },
+
+      "championshipYears": [2019],
+
+      "meta": {
+        "favorite": false
+      }
+    },
+    "CHI_SKY": {
+      "teamCode": "CHI_SKY",
+      "franchiseId": "SKY_FRANCHISE",
+
+      "name": {
+        "full": "Chicago Sky",
+        "city": "Chicago",
+        "mascot": "Sky",
+        "short": "Sky"
+      },
+
+      "status": {
+        "isActive": true,
+        "isOriginalTeam": false,
+        "founded": 2005,
+        "ended": null,
+        "endType": null
+      },
+
+      "league": {
+        "conference": "east"
+      },
+
+      "location": {
+        "market": "Chicago",
+        "state": "Illinois",
+        "city": "Chicago, Illinois",
+        "arena": "Wintrust Arena"
+      },
+
+      "branding": {
+        "slug": "chicago-sky",
+        "logo": {
+          "src": "/assets/logos-wnba/chicago-sky-logo.svg",
+          "alt": "Chicago Sky Logo"
+        },
+        "colors": {
+          "color1": "#FFCD00",
+          "color2": "#418FDE",
+          "color3": "#B1B3B3"
+        },
+        "courtColors": {
+          "main": "#FFCD00",
+          "lines": "#418FDE",
+          "accent": "#B1B3B3"
+        }
+      },
+
+      "history": {
+        "formerTeamCode": null,
+        "relocatedFrom": null,
+        "relocatedTo": null
+      },
+
+      "championshipYears": [2021],
+
+      "meta": {
+        "favorite": true
+      }
+    },
+    "LOS_SPARKS": {
+      "teamCode": "LOS_SPARKS",
+      "franchiseId": "SPARKS_FRANCHISE",
+
+      "name": {
+        "full": "Los Angeles Sparks",
+        "city": "Los Angeles",
+        "mascot": "Sparks",
+        "short": "Sparks"
+      },
+
+      "status": {
+        "isActive": true,
+        "isOriginalTeam": true,
+        "founded": 1997,
+        "ended": null,
+        "endType": null
+      },
+
+      "league": {
+        "conference": "west"
+      },
+
+      "location": {
+        "market": "Los Angeles",
+        "state": "California",
+        "city": "Los Angeles, California",
+        "arena": "Crypto.com Arena"
+      },
+
+      "branding": {
+        "slug": "los-angeles-sparks",
+        "logo": {
+          "src": "/assets/logos-wnba/los-angeles-sparks-logo.svg",
+          "alt": "Los Angeles Sparks Logo"
+        },
+        "colors": {
+          "color1": "#702F8A",
+          "color2": "#FFC72C",
+          "color3": "#00B398"
+        },
+        "courtColors": {
+          "main": "#702F8A",
+          "lines": "#FFC72C",
+          "accent": "#00B398"
+        }
+      },
+
+      "history": {
+        "formerTeamCode": null,
+        "relocatedFrom": null,
+        "relocatedTo": null
+      },
+
+      "championshipYears": [2001, 2002, 2016],
+
+      "meta": {
+        "favorite": false
+      }
+    },
+    "SEA_STORM": {
+      "teamCode": "SEA_STORM",
+      "franchiseId": "STORM_FRANCHISE",
+
+      "name": {
+        "full": "Seattle Storm",
+        "city": "Seattle",
+        "mascot": "Storm",
+        "short": "Storm"
+      },
+
+      "status": {
+        "isActive": true,
+        "isOriginalTeam": false,
+        "founded": 2000,
+        "ended": null,
+        "endType": null
+      },
+
+      "league": {
+        "conference": "west"
+      },
+
+      "location": {
+        "market": "Seattle",
+        "state": "Washington",
+        "city": "Seattle, Washington",
+        "arena": "Climate Pledge Arena"
+      },
+
+      "branding": {
+        "slug": "seattle-storm",
+        "logo": {
+          "src": "/assets/logos-wnba/seattle-storm-logo.svg",
+          "alt": "Seattle Storm Logo"
+        },
+        "colors": {
+          "color1": "#FBE122",
+          "color2": "#2C5234",
+          "color3": "#78BE21"
+        },
+        "courtColors": {
+          "main": "#FBE122",
+          "lines": "#2C5234",
+          "accent": "#78BE21"
+        }
+      },
+
+      "history": {
+        "formerTeamCode": null,
+        "relocatedFrom": null,
+        "relocatedTo": null
+      },
+
+      "championshipYears": [2004, 2010, 2018, 2020],
+
+      "meta": {
+        "favorite": true
+      }
+    },
+    "CON_SUN": {
+      "teamCode": "CON_SUN",
+      "franchiseId": "SUN_FRANCHISE",
+
+      "name": {
+        "full": "Connecticut Sun",
+        "city": "Connecticut",
+        "mascot": "Sun",
+        "short": "Sun"
+      },
+
+      "status": {
+        "isActive": true,
+        "isOriginalTeam": false,
+        "founded": 2003,
+        "ended": null,
+        "endType": null
+      },
+
+      "league": {
+        "conference": "east"
+      },
+
+      "location": {
+        "market": "Connecticut",
+        "state": "Connecticut",
+        "city": "Uncasville",
+        "arena": "Mohegan Sun Arena"
+      },
+
+      "branding": {
+        "slug": "connecticut-sun",
+        "logo": {
+          "src": "/assets/logos-wnba/connecticut-sun-logo.svg",
+          "alt": "Connecticut Sun Logo"
+        },
+        "colors": {
+          "color1": "#DC4405",
+          "color2": "#041E42",
+          "color3": "#FFC72C"
+        },
+        "courtColors": {
+          "main": "#DC4405",
+          "lines": "#041E42",
+          "accent": "#FFC72C"
+        }
+      },
+
+      "history": {
+        "formerTeamCode": "ORL_MIRACLE",
+        "relocatedFrom": "ORL_MIRACLE",
+        "relocatedTo": null
+      },
+
+      "championshipYears": [],
+
+      "meta": {
+        "favorite": false
+      }
+    },
+    "GSV_VALKYRIES": {
+      "teamCode": "GSV_VALKYRIES",
+      "franchiseId": "VALKYRIES_FRANCHISE",
+
+      "name": {
+        "full": "Golden State Valkyries",
+        "city": "San Francisco",
+        "mascot": "Valkyries",
+        "short": "Valks"
+      },
+
+      "status": {
+        "isActive": true,
+        "isOriginalTeam": false,
+        "founded": 2025,
+        "ended": null,
+        "endType": null
+      },
+
+      "league": {
+        "conference": "west"
+      },
+
+      "location": {
+        "market": "San Francisco Bay Area",
+        "state": "California",
+        "city": "San Francisco",
+        "arena": "Chase Center"
+      },
+
+      "branding": {
+        "slug": "golden-state-valkyries",
+        "logo": {
+          "src": "/assets/logos-wnba/golden-state-valkyries-logo.svg",
+          "alt": "Golden State Valkyries Logo"
+        },
+        "colors": {
+          "color1": "#AF98DD",
+          "color2": "#B9965B",
+          "color3": "#000000 "
+        },
+        "courtColors": {
+          "main": "#AF98DD",
+          "lines": "#B9965B",
+          "accent": "#000000"
+        }
+      },
+
+      "history": {
+        "formerTeamCode": null,
+        "relocatedFrom": null,
+        "relocatedTo": null
+      },
+
+      "championshipYears": [],
+
+      "meta": {
+        "favorite": false
+      }
+    },
+    "DAL_WINGS": {
+      "teamCode": "DAL_WINGS",
+      "franchiseId": "WINGS_FRANCHISE",
+
+      "name": {
+        "full": "Dallas Wings",
+        "city": "Dallas",
+        "mascot": "Wings",
+        "short": "Wings"
+      },
+
+      "status": {
+        "isActive": true,
+        "isOriginalTeam": false,
+        "founded": 2016,
+        "ended": null,
+        "endType": null
+      },
+
+      "league": {
+        "conference": "west"
+      },
+
+      "location": {
+        "market": "Dallas-Fort Worth",
+        "state": "Texas",
+        "city": "Dallas",
+        "arena": "College Park Center"
+      },
+
+      "branding": {
+        "slug": "dallas-wings",
+        "logo": {
+          "src": "/assets/logos-wnba/dallas-wings-logo.svg",
+          "alt": "Dallas Wings Logo"
+        },
+        "colors": {
+          "color1": "#C4D600",
+          "color2": "#0C2340",
+          "color3": "#00A9E0"
+        },
+        "courtColors": {
+          "main": "#C4D600",
+          "lines": "#0C2340",
+          "accent": "#00A9E0"
+        }
+      },
+
+      "history": {
+        "formerTeamCode": "TUL_SHOCK",
+        "relocatedFrom": "TUL_SHOCK",
+        "relocatedTo": null
+      },
+
+      "championshipYears": [],
+
+      "meta": {
+        "favorite": false
+      }
+    },
+    "CHA_STING": {
+      "teamCode": "CHA_STING",
+      "franchiseId": "STING_FRANCHISE",
+
+      "name": {
+        "full": "Charlotte Sting",
+        "city": "Charlotte",
+        "mascot": "Sting",
+        "short": "Sting"
+      },
+
+      "status": {
+        "isActive": false,
+        "isOriginalTeam": true,
+        "founded": 1997,
+        "ended": 2006,
+        "endType": "folded"
+      },
+
+      "league": {
+        "conference": "east"
+      },
+
+      "location": {
+        "market": "Charlotte",
+        "state": "North Carolina",
+        "city": "Charlotte",
+        "arena": null
+      },
+
+      "branding": {
+        "slug": "charlotte-sting",
+        "logo": {
+          "src": "/assets/logos-wnba/charlotte-sting-logo.svg",
+          "alt": "Charlotte Sting Logo"
+        },
+        "colors": {
+          "color1": "#00778B",
+          "color2": "#280071",
+          "color3": "#DC4405"
+        },
+        "courtColors": {
+          "main": "#00778B",
+          "lines": "#280071",
+          "accent": "#DC4405"
+        }
+      },
+
+      "history": {
+        "formerTeamCode": null,
+        "relocatedFrom": null,
+        "relocatedTo": null
+      },
+
+      "championshipYears": [],
+
+      "meta": {
+        "favorite": false
+      }
+    },
+    "CLE_ROCKERS": {
+      "teamCode": "CLE_ROCKERS",
+      "franchiseId": "ROCKERS_FRANCHISE",
+
+      "name": {
+        "full": "Cleveland Rockers",
+        "city": "Cleveland",
+        "mascot": "Rockers",
+        "short": "Rockers"
+      },
+
+      "status": {
+        "isActive": false,
+        "isOriginalTeam": true,
+        "founded": 1997,
+        "ended": 2003,
+        "endType": "folded"
+      },
+
+      "league": {
+        "conference": "east"
+      },
+
+      "location": {
+        "market": "Cleveland",
+        "state": "Ohio",
+        "city": "Cleveland",
+        "arena": null
+      },
+
+      "branding": {
+        "slug": "cleveland-rockers",
+        "logo": {
+          "src": "/assets/logos-wnba/cleveland-rockers-logo.svg",
+          "alt": "Cleveland Rockers Logo"
+        },
+        "colors": {
+          "color1": "#009FDF",
+          "color2": "#8D9093",
+          "color3": "#DC4405"
+        },
+        "courtColors": {
+          "main": "#009FDF",
+          "lines": "#8D9093",
+          "accent": "#DC4405"
+        }
+      },
+
+      "history": {
+        "formerTeamCode": null,
+        "relocatedFrom": null,
+        "relocatedTo": null
+      },
+
+      "championshipYears": [],
+
+      "meta": {
+        "favorite": false
+      }
+    },
+    "HOU_COMETS": {
+      "teamCode": "HOU_COMETS",
+      "franchiseId": "COMETS_FRANCHISE",
+
+      "name": {
+        "full": "Houston Comets",
+        "city": "Houston",
+        "mascot": "Comets",
+        "short": "Comets"
+      },
+
+      "status": {
+        "isActive": false,
+        "isOriginalTeam": true,
+        "founded": 1997,
+        "ended": 2008,
+        "endType": "folded"
+      },
+
+      "league": {
+        "conference": "west"
+      },
+
+      "location": {
+        "market": "Houston",
+        "state": "Texas",
+        "city": "Houston",
+        "arena": null
+      },
+
+      "branding": {
+        "slug": "houston-comets",
+        "logo": {
+          "src": "/assets/logos-wnba/houston-comets-logo.svg",
+          "alt": "Houston Comets Logo"
+        },
+        "colors": {
+          "color1": "#BA0C2F",
+          "color2": "#041E42",
+          "color3": "#8D9093"
+        },
+        "courtColors": {
+          "main": "#BA0C2F",
+          "lines": "#041E42",
+          "accent": "#8D9093"
+        }
+      },
+
+      "history": {
+        "formerTeamCode": null,
+        "relocatedFrom": null,
+        "relocatedTo": null
+      },
+
+      "championshipYears": [1997, 1998, 1999, 2000],
+
+      "meta": {
+        "favorite": false
+      }
+    },
+    "MIAMI_SOL": {
+      "teamCode": "MIAMI_SOL",
+      "franchiseId": "SOL_FRANCHISE",
+
+      "name": {
+        "full": "Miami Sol",
+        "city": "Miami",
+        "mascot": "Sol",
+        "short": "Sol"
+      },
+
+      "status": {
+        "isActive": false,
+        "isOriginalTeam": false,
+        "founded": 2000,
+        "ended": 2002,
+        "endType": "folded"
+      },
+
+      "league": {
+        "conference": "east"
+      },
+
+      "location": {
+        "market": "Miami",
+        "state": "Florida",
+        "city": "Miami",
+        "arena": null
+      },
+
+      "branding": {
+        "slug": "miami-sol",
+        "logo": {
+          "src": "/assets/logos-wnba/miami-sol-logo.svg",
+          "alt": "Miami Sol Logo"
+        },
+        "colors": {
+          "color1": "#FB9500",
+          "color2": "#A6192E",
+          "color3": "#010101"
+        },
+        "courtColors": {
+          "main": "#FB9500",
+          "lines": "#A6192E",
+          "accent": "#010101"
+        }
+      },
+
+      "history": {
+        "formerTeamCode": null,
+        "relocatedFrom": null,
+        "relocatedTo": null
+      },
+
+      "championshipYears": [],
+
+      "meta": {
+        "favorite": false
+      }
+    },
+    "POR_FIRE_2000": {
+      "teamCode": "POR_FIRE_2000",
+      "franchiseId": "FIRE_OLD_FRANCHISE",
+
+      "name": {
+        "full": "Portland Fire",
+        "city": "Portland",
+        "mascot": "Fire",
+        "short": "Fire"
+      },
+
+      "status": {
+        "isActive": false,
+        "isOriginalTeam": false,
+        "founded": 2000,
+        "ended": 2002,
+        "endType": "folded"
+      },
+
+      "league": {
+        "conference": "west"
+      },
+
+      "location": {
+        "market": "Portland",
+        "state": "Oregon",
+        "city": "Portland",
+        "arena": null
+      },
+
+      "branding": {
+        "slug": "portland-fire-2000",
+        "logo": {
+          "src": "/assets/logos-wnba/portland-fire-2000-logo.svg",
+          "alt": "Portland Fire Logo"
+        },
+        "colors": {
+          "color1": "#C8102E",
+          "color2": "#010101",
+          "color3": "#896C4C"
+        },
+        "courtColors": {
+          "main": "#C8102E",
+          "lines": "#010101",
+          "accent": "#896C4C"
+        }
+      },
+
+      "history": {
+        "brandStatus": "original-folded-team",
+        "revivedByTeamCode": "POR_FIRE"
+      },
+
+      "championshipYears": [],
+
+      "meta": {
+        "favorite": false
+      }
+    },
+    "POR_FIRE": {
+      "teamCode": "POR_FIRE",
+      "franchiseId": "FIRE_FRANCHISE",
+
+      "name": {
+        "full": "Portland Fire",
+        "city": "Portland",
+        "mascot": "Fire",
+        "short": "Fire"
+      },
+
+      "status": {
+        "isActive": true,
+        "isOriginalTeam": false,
+        "founded": 2026,
+        "ended": null,
+        "endType": null
+      },
+
+      "league": {
+        "conference": "west"
+      },
+
+      "location": {
+        "market": "Portland",
+        "state": "Oregon",
+        "city": "Portland",
+        "arena": null
+      },
+
+      "branding": {
+        "slug": "portland-fire",
+        "logo": {
+          "src": "/assets/logos-wnba/portland-fire-logo.svg",
+          "alt": "Portland Fire Logo"
+        },
+        "colors": {
+          "color1": "#C8102E",
+          "color2": "#010101",
+          "color3": "#896C4C"
+        },
+        "courtColors": {
+          "main": "#C8102E",
+          "lines": "#010101",
+          "accent": "#896C4C"
+        }
+      },
+
+      "history": {
+        "brandStatus": "revived-brand",
+        "revivesTeamCode": "POR_FIRE_2000",
+        "formerTeamCode": null,
+        "relocatedFrom": null,
+        "relocatedTo": null
+      },
+
+      "championshipYears": [],
+
+      "meta": {
+        "favorite": false
+      }
+    },
+    "SAC_MONARCHS": {
+      "teamCode": "SAC_MONARCHS",
+      "franchiseId": "MONARCHS_FRANCHISE",
+
+      "name": {
+        "full": "Sacramento Monarchs",
+        "city": "Sacramento",
+        "mascot": "Monarchs",
+        "short": "Monarchs"
+      },
+
+      "status": {
+        "isActive": false,
+        "isOriginalTeam": true,
+        "founded": 1997,
+        "ended": 2009,
+        "endType": "folded"
+      },
+
+      "league": {
+        "conference": "west"
+      },
+
+      "location": {
+        "market": "Sacramento",
+        "state": "California",
+        "city": "Sacramento",
+        "arena": null
+      },
+
+      "branding": {
+        "slug": "sacramento-monarchs",
+        "logo": {
+          "src": "/assets/logos-wnba/sacramento-monarchs-logo.svg",
+          "alt": "Sacramento Monarchs Logo"
+        },
+        "colors": {
+          "color1": "#753BBD",
+          "color2": "#BA0C2F",
+          "color3": "#8D9093"
+        },
+        "courtColors": {
+          "main": "#753BBD",
+          "lines": "#BA0C2F",
+          "accent": "#8D9093"
+        }
+      },
+
+      "history": {
+        "formerTeamCode": null,
+        "relocatedFrom": null,
+        "relocatedTo": null
+      },
+
+      "championshipYears": [2005],
+
+      "meta": {
+        "favorite": false
+      }
+    },
+    "DET_SHOCK": {
+      "teamCode": "DET_SHOCK",
+      "franchiseId": "WINGS_FRANCHISE",
+
+      "name": {
+        "full": "Detroit Shock",
+        "city": "Detroit",
+        "mascot": "Shock",
+        "short": "Shock"
+      },
+
+      "status": {
+        "isActive": false,
+        "isOriginalTeam": false,
+        "founded": 1998,
+        "ended": 2009,
+        "endType": "relocated"
+      },
+
+      "league": {
+        "conference": "east"
+      },
+
+      "location": {
+        "market": "Detroit",
+        "state": "Michigan",
+        "city": "Detroit",
+        "arena": null
+      },
+
+      "branding": {
+        "slug": "detroit-shock",
+        "logo": {
+          "src": "/assets/logos-wnba/detroit-shock-logo.svg",
+          "alt": "Detroit Shock Logo"
+        },
+        "colors": {
+          "color1": "#FFA400",
+          "color2": "#006271",
+          "color3": "#9D2235"
+        },
+        "courtColors": {
+          "main": "#FFA400",
+          "lines": "#006271",
+          "accent": "#9D2235"
+        }
+      },
+
+      "history": {
+        "formerTeamCode": null,
+        "relocatedFrom": null,
+        "relocatedTo": "TUL_SHOCK"
+      },
+
+      "championshipYears": [2003, 2006, 2008],
+
+      "meta": {
+        "favorite": true
+      }
+    },
+    "TUL_SHOCK": {
+      "teamCode": "TUL_SHOCK",
+      "franchiseId": "WINGS_FRANCHISE",
+
+      "name": {
+        "full": "Tulsa Shock",
+        "city": "Tulsa",
+        "mascot": "Shock",
+        "short": "Shock"
+      },
+
+      "status": {
+        "isActive": false,
+        "isOriginalTeam": false,
+        "founded": 2010,
+        "ended": 2015,
+        "endType": "relocated"
+      },
+
+      "league": {
+        "conference": "west"
+      },
+
+      "location": {
+        "market": "Tulsa",
+        "state": "Oklahoma",
+        "city": "Tulsa",
+        "arena": null
+      },
+
+      "branding": {
+        "slug": "tulsa-shock",
+        "logo": {
+          "src": "/assets/logos-wnba/tulsa-shock-logo.svg",
+          "alt": "Tulsa Shock Logo"
+        },
+        "colors": {
+          "color1": "#A6192E",
+          "color2": "#FFB81C",
+          "color3": "#8D9093"
+        },
+        "courtColors": {
+          "main": "#A6192E",
+          "lines": "#FFB81C",
+          "accent": "#8D9093"
+        }
+      },
+
+      "history": {
+        "formerTeamCode": "DET_SHOCK",
+        "relocatedFrom": "Detroit",
+        "relocatedTo": "DAL_WINGS"
+      },
+
+      "championshipYears": [],
+
+      "meta": {
+        "favorite": false
+      }
+    },
+    "ORL_MIRACLE": {
+      "teamCode": "ORL_MIRACLE",
+      "franchiseId": "SUN_FRANCHISE",
+
+      "name": {
+        "full": "Orlando Miracle",
+        "city": "Orlando",
+        "mascot": "Miracle",
+        "short": "Miracle"
+      },
+
+      "status": {
+        "isActive": false,
+        "isOriginalTeam": false,
+        "founded": 1999,
+        "ended": 2002,
+        "endType": "relocated"
+      },
+
+      "league": {
+        "conference": "east"
+      },
+
+      "location": {
+        "market": "Orlando",
+        "state": "Florida",
+        "city": "Orlando",
+        "arena": null
+      },
+
+      "branding": {
+        "slug": "orlando-miracle",
+        "logo": {
+          "src": "/assets/logos-wnba/orlando-miracle-logo.svg",
+          "alt": "Orlando Miracle Logo"
+        },
+        "colors": {
+          "color1": "#0057B7",
+          "color2": "#DC4405",
+          "color3": "#8D9093"
+        },
+        "courtColors": {
+          "main": "#0057B7",
+          "lines": "#DC4405",
+          "accent": "#8D9093"
+        }
+      },
+
+      "history": {
+        "formerTeamCode": null,
+        "relocatedFrom": null,
+        "relocatedTo": "CON_SUN"
+      },
+
+      "championshipYears": [],
+
+      "meta": {
+        "favorite": false
+      }
+    },
+    "UTA_STARZZ": {
+      "teamCode": "UTA_STARZZ",
+      "franchiseId": "ACES_FRANCHISE",
+
+      "name": {
+        "full": "Utah Starzz",
+        "city": "Salt Lake City",
+        "mascot": "Starzz",
+        "short": "Starzz"
+      },
+
+      "status": {
+        "isActive": false,
+        "isOriginalTeam": true,
+        "founded": 1997,
+        "ended": 2002,
+        "endType": "relocated"
+      },
+
+      "league": {
+        "conference": "west"
+      },
+
+      "location": {
+        "market": "Salt Lake City",
+        "state": "Utah",
+        "city": "Salt Lake City",
+        "arena": null
+      },
+
+      "branding": {
+        "slug": "utah-starzz",
+        "logo": {
+          "src": "/assets/logos-wnba/utah-starzz-logo.svg",
+          "alt": "Utah Starzz Logo"
+        },
+        "colors": {
+          "color1": "#753BBD",
+          "color2": "#00A9E0",
+          "color3": "#753BBD"
+        },
+        "courtColors": {
+          "main": "#753BBD",
+          "lines": "#00A9E0",
+          "accent": "#753BBD"
+        }
+      },
+
+      "history": {
+        "formerTeamCode": null,
+        "relocatedFrom": null,
+        "relocatedTo": "SA_SILVER_STARS"
+      },
+
+      "championshipYears": [],
+
+      "meta": {
+        "favorite": false
+      }
+    },
+    "SA_SILVER_STARS": {
+      "teamCode": "SA_SILVER_STARS",
+      "franchiseId": "ACES_FRANCHISE",
+
+      "name": {
+        "full": "San Antonio Silver Stars",
+        "city": "San Antonio",
+        "mascot": "Silver Stars",
+        "short": "Silver Stars"
+      },
+
+      "status": {
+        "isActive": false,
+        "isOriginalTeam": false,
+        "founded": 2003,
+        "ended": 2017,
+        "endType": "name change"
+      },
+
+      "league": {
+        "conference": "west"
+      },
+
+      "location": {
+        "market": "San Antonio",
+        "state": "Texas",
+        "city": "San Antonio",
+        "arena": null
+      },
+
+      "branding": {
+        "slug": "san-antonio-silver-stars",
+        "logo": {
+          "src": "/assets/logos-wnba/san-antonio-silver-stars-logo.svg",
+          "alt": "San Antonio Silver Stars Logo"
+        },
+        "colors": {
+          "color1": "#010101",
+          "color2": "#FFFFFF",
+          "color3": "#8D9093"
+        },
+        "courtColors": {
+          "main": "#010101",
+          "lines": "#FFFFFF",
+          "accent": "#8D9093"
+        }
+      },
+
+      "history": {
+        "formerTeamCode": "UTA_STARZZ",
+        "relocatedFrom": "UTA_STARZZ",
+        "relocatedTo": "SA_SILVER_STARS"
+      },
+
+      "championshipYears": [],
+
+      "meta": {
+        "favorite": false
+      }
+    },
+    "SA_STARS": {
+      "teamCode": "SA_STARS",
+      "franchiseId": "ACES_FRANCHISE",
+
+      "name": {
+        "full": "San Antonio Stars",
+        "city": "San Antonio",
+        "mascot": "Stars",
+        "short": "Stars"
+      },
+
+      "status": {
+        "isActive": false,
+        "isOriginalTeam": false,
+        "founded": 2014,
+        "ended": 2017,
+        "endType": "relocated"
+      },
+
+      "league": {
+        "conference": "west"
+      },
+
+      "location": {
+        "market": "San Antonio",
+        "state": "Texas",
+        "city": "San Antonio",
+        "arena": null
+      },
+
+      "branding": {
+        "slug": "san-antonio-stars",
+        "logo": {
+          "src": "/assets/logos-wnba/san-antonio-stars-logo.svg",
+          "alt": "San Antonio Stars Logo"
+        },
+        "colors": {
+          "color1": "#010101",
+          "color2": "#FFFFFF",
+          "color3": "#8D9093"
+        },
+        "courtColors": {
+          "main": "#010101",
+          "lines": "#FFFFFF",
+          "accent": "#8D9093"
+        }
+      },
+
+      "history": {
+        "formerTeamCode": "SA_SILVER_STARS",
+        "relocatedFrom": "SA_SILVER_STARS",
+        "relocatedTo": "LVA_ACES"
+      },
+
+      "championshipYears": [],
+
+      "meta": {
+        "favorite": false
+      }
+    }
+  },
+
+  "franchises": {
+    "ACES_FRANCHISE": {
+      "franchiseId": "ACES_FRANCHISE",
+      "currentTeamCode": "LVA_ACES",
+      "teamCodes": [
+        "UTA_STARZZ",
+        "SA_SILVER_STARS",
+        "SA_STARS",
+        "LVA_ACES"
+      ]
+    },
+
+    "WINGS_FRANCHISE": {
+      "franchiseId": "WINGS_FRANCHISE",
+      "currentTeamCode": "DAL_WINGS",
+      "teamCodes": [
+        "DET_SHOCK",
+        "TUL_SHOCK",
+        "DAL_WINGS"
+      ]
+    },
+
+    "SUN_FRANCHISE": {
+      "franchiseId": "SUN_FRANCHISE",
+      "currentTeamCode": "CON_SUN",
+      "teamCodes": [
+        "ORL_MIRACLE",
+        "CON_SUN"
+      ]
+    },
+    "FIRE_FRANCHISE": {
+      "franchiseId": "FIRE_FRANCHISE",
+      "currentTeamCode": "POR_FIRE",
+      "teamCodes": ["POR_FIRE"],
+      "brandLineage": ["POR_FIRE_2000", "POR_FIRE"]
+    }
+  }
+
+}

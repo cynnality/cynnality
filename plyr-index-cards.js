@@ -4,10 +4,12 @@
 // File location: /plyr-index-cards.js
 // =======================================================
 
+(() => {
+
 const PLAYER_CARD_PATHS = {
-  players: "/plyr-index-cards.json",
-  colleges: "/w_colleges_data.json",
-  teams: "/wbbal-main/wnba-cluster-data.json"
+  players: "basketball_101_data_files/wnba_olympic_players.json",
+  colleges: "basketball_101_data_files/wnba_colleges.json",
+  teams: "basketball_101_data_files/wnba_static_data_v2.json"
 };
 
 const CURRENT_DISPLAY_YEAR = 2025;
@@ -49,25 +51,32 @@ async function loadPlayerIndexCardData() {
 function buildTeamsByCode(teamsData) {
   const teamsByCode = {};
 
-  Object.values(teamsData).forEach(team => {
-    teamsByCode[team.teamCode] = team;
-
-    if (team.formerTeam) {
-      teamsByCode[team.formerTeam] = team;
-    }
-
-    if (team.lineage) {
-      team.lineage.forEach(oldTeam => {
-        teamsByCode[oldTeam.teamCode] = {
-          ...team,
-          teamCode: oldTeam.teamCode,
-          isLineageTeam: true
-        };
-      });
-    }
+  Object.entries(teamsData.teams).forEach(([teamCode, team]) => {
+    teamsByCode[teamCode] = team;
   });
 
   return teamsByCode;
+}
+
+function getTeamByCode(teamCode) {
+  return TEAMS_BY_CODE?.[teamCode] || null;
+}
+
+function getTeamColor(teamCode, colorKey = "color1", fallback = "#dddddd") {
+  const team = getTeamByCode(teamCode);
+  return team?.branding?.colors?.[colorKey] || fallback;
+}
+
+function getTeamDisplayName(teamCode, nameType = "short") {
+  const team = getTeamByCode(teamCode);
+
+  if (!team) return teamCode;
+
+  if (nameType === "full") return team.name?.full || teamCode;
+  if (nameType === "city") return team.name?.city || teamCode;
+  if (nameType === "mascot") return team.name?.mascot || teamCode;
+
+  return team.name?.short || teamCode;
 }
 
 // -------------------------------------------------------
@@ -213,7 +222,6 @@ function renderPlayerCard(container, playerId) {
 
 function renderBasicPlayerInfo(svg, player) {
   const college = COLLEGES[player.collegeId];
-  const draftTeam = TEAMS_BY_CODE[player.draft.teamCode];
 
   setSVGText(svg, "#plyr-name-text", player.playerName.toUpperCase());
 
@@ -223,9 +231,7 @@ function renderBasicPlayerInfo(svg, player) {
     college ? college.name.toUpperCase() : "COLLEGE UNKNOWN"
   );
 
-  const draftTeamName = draftTeam
-    ? draftTeam.teamName
-    : player.draft.teamCode;
+  const draftTeamName = getTeamDisplayName(player.draft.teamCode, "short");
 
   setSVGText(
     svg,
@@ -266,7 +272,7 @@ function renderPlayerTeamKey(svg, player) {
       y: y - squareSize + 5,
       width: squareSize,
       height: squareSize,
-      fill: team?.colors?.color1 || "#dddddd",
+      fill: getTeamColor(teamSpan.teamCode, "color1", "#dddddd"),
       stroke: "#000000",
       "stroke-width": 1
     });
@@ -280,7 +286,7 @@ function renderPlayerTeamKey(svg, player) {
       fill: "#000000"
     });
 
-    label.textContent = team?.teamName || teamSpan.teamCode;
+    label.textContent = getTeamDisplayName(teamSpan.teamCode, "short");
 
     keyLayer.appendChild(square);
     keyLayer.appendChild(label);
@@ -331,164 +337,125 @@ function renderPlayerTeamTimeline(svg, player) {
 
   timeline.innerHTML = "";
 
-  const careerStart = Math.min(
-    ...player.wnbaTeams.map(team => Number(team.startYear))
-  );
+  const years = buildPlayerTimelineYears(player);
 
-  const careerEnd = Math.max(
-    ...player.wnbaTeams.map(team => normalizeEndYear(team.endYear))
-  );
+  const layout = {
+    leftPad: 1640,
+    topPad: 285,
+    yearGap: 36,
+    squareSize: 26,
+    yearBoxSize: 28
+  };
 
-  const timelineX = 1640;
-  const timelineY = 300;
-  const timelineWidth = 560;
+  renderPlayerTimelineYearHeader(timeline, years, layout);
+  renderPlayerCareerSquares(timeline, player, years, layout);
+}
 
-  const tickHeight = 10;
-  const unitSize = 18;
-  const unitY = timelineY - 8;
+function buildPlayerTimelineYears(player) {
+  const allYears = [];
 
-  const totalYears = careerEnd - careerStart + 1;
-  const yearWidth = timelineWidth / Math.max(totalYears - 1, 1);
-  const yearLabelStep = getYearLabelStep(totalYears);
-
-  // generic horizontal timeline line
-  const baseLine = createSVGElement("line", {
-    x1: timelineX,
-    y1: timelineY,
-    x2: timelineX + timelineWidth,
-    y2: timelineY,
-    stroke: "#000000",
-    "stroke-width": 2
-  });
-
-  timeline.appendChild(baseLine);
-
-  // draw year ticks
-  for (let year = careerStart; year <= careerEnd; year++) {
-    const yearIndex = year - careerStart;
-    const x = timelineX + yearIndex * yearWidth;
-
-    const tick = createSVGElement("line", {
-      x1: x,
-      y1: timelineY - tickHeight / 2,
-      x2: x,
-      y2: timelineY + tickHeight / 2,
-      stroke: "#000000",
-      "stroke-width": 2
-    });
-
-    timeline.appendChild(tick);
-
-    const shouldShowYear =
-    year === careerStart ||
-    year === careerEnd ||
-    (year - careerStart) % yearLabelStep === 0;
-
-    if (shouldShowYear) {
-    const yearText = createSVGElement("text", {
-        x,
-        y: timelineY - 12,
-        "text-anchor": "middle",
-        "font-size": 16,
-        "font-family": "Chivo Mono",
-        fill: "#000000"
-    });
-
-    yearText.textContent = formatShortYear(year);
-
-    timeline.appendChild(yearText);
-    }
+  if (player.draft?.year) {
+    allYears.push(Number(player.draft.year));
   }
 
-  // draw colored team-year units
-  player.wnbaTeams.forEach(teamSpan => {
-    const team = TEAMS_BY_CODE[teamSpan.teamCode];
+  player.wnbaTeams.forEach(team => {
+    allYears.push(Number(team.startYear));
 
+    if (team.endYear === "present") {
+      allYears.push(CURRENT_DISPLAY_YEAR);
+    } else {
+      allYears.push(Number(team.endYear));
+    }
+  });
+
+  player.championships.forEach(champ => {
+    allYears.push(Number(champ.year));
+  });
+
+  const minYear = Math.min(...allYears);
+  const maxYear = Math.max(...allYears, CURRENT_DISPLAY_YEAR);
+
+  const years = [];
+
+  for (let year = minYear; year <= maxYear; year++) {
+    years.push(year);
+  }
+
+  return years;
+}
+
+function getPlayerTimelineYearX(year, years, layout) {
+  const index = years.indexOf(Number(year));
+  return layout.leftPad + index * layout.yearGap;
+}
+
+function renderPlayerTimelineYearHeader(timeline, years, layout) {
+  years.forEach(year => {
+    const x = getPlayerTimelineYearX(year, years, layout);
+    const y = layout.topPad;
+
+    const rect = createSVGElement("rect", {
+      x: x - layout.yearBoxSize / 2,
+      y: y - layout.yearBoxSize / 2,
+      width: layout.yearBoxSize,
+      height: layout.yearBoxSize,
+      fill: "#ffffff",
+      stroke: "#000000",
+      "stroke-width": 1,
+      class: "player-card-year-box"
+    });
+
+    const text = createSVGElement("text", {
+      x,
+      y: y + 5,
+      "text-anchor": "middle",
+      "font-size": 13,
+      "font-family": "Chivo Mono",
+      fill: "#000000",
+      class: "player-card-year-label"
+    });
+
+    text.textContent = `’${String(year).slice(-2)}`;
+
+    timeline.appendChild(rect);
+    timeline.appendChild(text);
+  });
+}
+
+function renderPlayerCareerSquares(timeline, player, years, layout) {
+  const squareSize = 26;
+  const squareY = layout.topPad + 48;
+
+  player.wnbaTeams.forEach(teamSpan => {
     const startYear = Number(teamSpan.startYear);
     const endYear = normalizeEndYear(teamSpan.endYear);
 
     for (let year = startYear; year <= endYear; year++) {
-      const yearIndex = year - careerStart;
-      const x = timelineX + yearIndex * yearWidth;
+      const x = getPlayerTimelineYearX(year, years, layout);
 
       const square = createSVGElement("rect", {
-        x: x - unitSize / 2,
-        y: unitY,
-        width: unitSize,
-        height: unitSize,
-        fill: team?.colors?.color1 || "#dddddd",
+        x: x - squareSize / 2,
+        y: squareY - squareSize / 2,
+        width: squareSize,
+        height: squareSize,
+        rx: 2,
+        ry: 2,
+        fill: getTeamColor(teamSpan.teamCode, "color1", "#dddddd"),
         stroke: "#000000",
-        "stroke-width": 1
+        "stroke-width": 1,
+        class: "player-card-career-square",
+        "data-team-code": teamSpan.teamCode,
+        "data-year": year
       });
 
       timeline.appendChild(square);
     }
   });
-
-/*   // optional team span labels below the squares
-  player.wnbaTeams.forEach(teamSpan => {
-    const team = TEAMS_BY_CODE[teamSpan.teamCode];
-
-    const startYear = Number(teamSpan.startYear);
-    const endYear = normalizeEndYear(teamSpan.endYear);
-
-    const startX = timelineX + (startYear - careerStart) * yearWidth;
-    const endX = timelineX + (endYear - careerStart) * yearWidth;
-    const centerX = (startX + endX) / 2;
-
-    const teamText = createSVGElement("text", {
-      x: centerX,
-      y: unitY + 36,
-      "text-anchor": "middle",
-      "font-size": 11,
-      "font-family": "Chivo Mono",
-      fill: "#000000"
-    });
-
-    teamText.textContent = team?.teamName || teamSpan.teamCode;
-
-    timeline.appendChild(teamText);
-  }); */
-} 
+}
 
 function normalizeEndYear(endYear) {
   if (endYear === "present") return CURRENT_DISPLAY_YEAR;
   return Number(endYear);
-}
-
-function renderTimelineYearLabels(
-  timeline,
-  careerStart,
-  careerEnd,
-  timelineX,
-  timelineY,
-  timelineWidth,
-  yearWidth
-) {
-  const startText = createSVGElement("text", {
-    x: timelineX,
-    y: timelineY + 55,
-    "text-anchor": "start",
-    "font-size": 11,
-    "font-family": "Chivo Mono",
-    fill: "#000000"
-  });
-
-  startText.textContent = careerStart;
-
-  const endText = createSVGElement("text", {
-    x: timelineX + timelineWidth,
-    y: timelineY + 55,
-    "text-anchor": "end",
-    "font-size": 11,
-    "font-family": "Chivo Mono",
-    fill: "#000000"
-  });
-
-  endText.textContent = careerEnd;
-
-  timeline.appendChild(startText);
-  timeline.appendChild(endText);
 }
 
 // -------------------------------------------------------
@@ -518,36 +485,30 @@ function renderPlayerChampionships(svg, player) {
     return;
   }
 
-  const careerStart = Math.min(
-    ...player.wnbaTeams.map(team => Number(team.startYear))
-  );
+    const years = buildPlayerTimelineYears(player);
 
-  const careerEnd = Math.max(
-    ...player.wnbaTeams.map(team => normalizeEndYear(team.endYear))
-  );
+    const layout = {
+      leftPad: 1640,
+      topPad: 285,
+      yearGap: 36,
+      squareSize: 26,
+      yearBoxSize: 28
+    };
 
-  const timelineX = 1640;
-  const timelineY = 300;
-  const timelineWidth = 560;
-  const timelineHeight = 3;
-  const totalYears = careerEnd - careerStart + 1;
-  const yearWidth = timelineWidth / Math.max(totalYears - 1, 1);
-
-  const markerY = 360;
+    const timelineY = layout.topPad + 48;
+    const markerY = 385;
 
   championships.forEach(chip => {
     const chipYear = Number(chip.year);
-    const team = TEAMS_BY_CODE[chip.teamCode];
 
-    const chipX =
-      timelineX + (chipYear - careerStart) * yearWidth;
+    const chipX = getPlayerTimelineYearX(chipYear, years, layout);
 
     const connectorLine = createSVGElement("line", {
         x1: chipX,
-        y1: timelineY + timelineHeight,
+        y1: timelineY,
         x2: chipX,
         y2: markerY - 12,
-        stroke: team?.colors?.color1 || "#000000",
+        stroke: getTeamColor(chip.teamCode, "color1", "#000000"),
         "stroke-width": 2,
         "stroke-dasharray": "4 3"
     });
@@ -557,7 +518,7 @@ function renderPlayerChampionships(svg, player) {
       cy: markerY,
       r: 10,
       fill: "none",
-      stroke: team?.colors?.color1 || "#000000",
+      stroke: getTeamColor(chip.teamCode, "color1", "#000000"),
       "stroke-width": 3
     });
 
@@ -581,7 +542,7 @@ function renderPlayerChampionships(svg, player) {
       fill: "#000000"
     });
 
-    teamText.textContent = team?.teamName || chip.teamCode;
+    teamText.textContent = getTeamDisplayName(chip.teamCode, "short");
 
     chipLayer.appendChild(connectorLine);
     chipLayer.appendChild(ring);
@@ -609,3 +570,7 @@ function createSVGElement(tag, attrs = {}) {
 // -------------------------------------------------------
 
 document.addEventListener("DOMContentLoaded", initPlayerIndexCards);
+
+window.renderPlayerCard = renderPlayerCard;
+
+})();

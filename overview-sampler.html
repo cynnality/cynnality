@@ -47,12 +47,33 @@ wnba_teams_history.json /////////// -> teams of the WNBA by year and team franch
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
 
-    <link rel="stylesheet" href="overview-sampler.css">
-
-
+    <link rel="stylesheet" href="overview-sampler.css"> 
+    <link rel="stylesheet" href="/season-30/basketball101-chp-1.css" />
+    <link rel="stylesheet" href="/cynnality_card_styles.css" />
 </head>
 
 <body>
+
+    <div class="top-section" style="margin-bottom: 42px;">
+        <div class="repeat-card">
+            <div class="main-sec">
+                <div class="opening-theme">
+                    <h1 class="slide-number"><em>Part One</em></h1>
+                    <h4>
+                        The WNBA careers of USA's 2024 Olympic Basketball Team and the connections between them.
+                    </h4>
+                    <p></p>
+                </div>
+            </div>
+            <div class="nav-type-buttons">
+                <div class="check-question-mark nav-type-button">
+                    <a href="index.html" class="nav-type-link">
+                        <h2>back</h2>
+                    </a>
+                </div>
+            </div> 
+        </div>
+    </div>
 
 <section class="olympic-overview" data-roster-year="2024">
   <div class="overview-controls">
@@ -63,10 +84,17 @@ wnba_teams_history.json /////////// -> teams of the WNBA by year and team franch
   </div>
 
   <div id="olympic-overview-viz"></div>
+
 </section>
 
+<div id="player-card-overlay"></div>
 
-    <script src="overview-sampler.js" defer></script>
+    <div class="player-index-card" data-player-id="diana_taurasi"></div>
+
+<script src="overview-sampler.js" defer></script>
+<script src="plyr-index-cards.js" defer></script>
+
+
 </body>
 
 </html>

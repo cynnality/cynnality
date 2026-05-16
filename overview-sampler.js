@@ -1,8 +1,11 @@
+(() => {
+const CURRENT_DISPLAY_YEAR = 2025;
+
 const DATA_PATHS = {
   players: "basketball_101_data_files/wnba_olympic_players.json",
   colleges: "basketball_101_data_files/wnba_colleges.json",
   seasons: "basketball_101_data_files/wnba_season_stats.json",
-  teams: "basketball_101_data_files/wnba_static_data.json",
+  teams: "basketball_101_data_files/wnba_static_data_v2.json",
   finals: "basketball_101_data_files/wnba_finals.json"
 };
 
@@ -98,12 +101,12 @@ function renderOverviewTimeline(container, rosterYear, options = {}) {
     leftPad: 230,
     topPad: 60,
     yearGap: 52,
-    rowGap: options.rowGap || 48,
+    rowGap: options.rowGap || 34,
     yearBoxSize: 40,
     dotRadius: 20
   };
 
-  const width = layout.leftPad + years.length * layout.yearGap + 40;
+  const width = layout.leftPad + years.length * layout.yearGap;
   const height = layout.topPad + players.length * layout.rowGap + 60;
 
   const svg = createSvgElement("svg", {
@@ -151,6 +154,8 @@ function buildTimelineYearRange(players) {
 
       if (team.endYear !== "present") {
         allYears.push(Number(team.endYear));
+      } else {
+        allYears.push(CURRENT_DISPLAY_YEAR);
       }
     });
 
@@ -160,7 +165,7 @@ function buildTimelineYearRange(players) {
   });
 
   const minYear = Math.min(...allYears);
-  const maxYear = Math.max(...allYears, 2025);
+  const maxYear = Math.max(...allYears, CURRENT_DISPLAY_YEAR);
 
   const years = [];
 
@@ -175,14 +180,14 @@ function buildTimelineYearRange(players) {
 function getPlayerTeamForYear(player, year) {
   return player.wnbaTeams.find(team => {
     const start = Number(team.startYear);
-    const end = team.endYear === "present" ? 2025 : Number(team.endYear);
+    const end = team.endYear === "present" ? CURRENT_DISPLAY_YEAR : Number(team.endYear);
 
     return year >= start && year <= end;
   });
 }
 
 function renderCareerSquares(svg, players, years, layout) {
-  const squareSize = 25;
+  const squareSize = 30;
 
   players.forEach((player, playerIndex) => {
     const y = getPlayerY(playerIndex, layout);
@@ -200,8 +205,7 @@ function renderCareerSquares(svg, players, years, layout) {
 
     if (isChampionshipYear || isFinalsLossYear) return;
 
-      const team = DATA.teamsByCode[teamSeason.teamCode];
-      const color1 = team?.colors?.color1 || "#ddd";
+      const color1 = getTeamColor(teamSeason.teamCode, "color1", "#ddd");
 
       const x = getYearX(year, years, layout);
 
@@ -225,30 +229,27 @@ function renderCareerSquares(svg, players, years, layout) {
 }
 
 function renderCareerBars(svg, players, years, layout) {
-  const barHeight = 28;
+  const barHeight = 32;
 
   players.forEach((player, playerIndex) => {
     const rowY = getPlayerY(playerIndex, layout);
-    const barY = rowY + 18;
+    const barY = rowY;
 
     player.wnbaTeams.forEach(teamSpan => {
       const startYear = Number(teamSpan.startYear);
-      const endYear = teamSpan.endYear === "present" ? 2025 : Number(teamSpan.endYear);
+      const endYear = teamSpan.endYear === "present" ? CURRENT_DISPLAY_YEAR : Number(teamSpan.endYear);
 
       const x1 = getYearX(startYear, years, layout);
       const x2 = getYearX(endYear, years, layout);
 
-      const team = DATA.teamsByCode[teamSpan.teamCode];
-      const color1 = team?.colors?.color1 || "#ddd";
-      const teamName = team?.teamNameCity || teamSpan.teamCode;
+      const color1 = getTeamColor(teamSpan.teamCode, "color1", "#ddd");
+      const teamName = getTeamDisplayName(teamSpan.teamCode, "short"); 
 
       const bar = createSvgElement("rect", {
         x: x1 - layout.yearGap / 2,
         y: barY - barHeight / 2,
         width: x2 - x1 + layout.yearGap,
         height: barHeight,
-        rx: 4,
-        ry: 4,
         fill: color1,
         class: "career-bar",
         "data-player-id": player.playerId,
@@ -264,7 +265,7 @@ function renderCareerBars(svg, players, years, layout) {
         "text-anchor": "middle"
       });
 
-      label.textContent = teamName;
+      label.textContent = teamName; 
 
       svg.appendChild(bar);
       svg.appendChild(label);
@@ -285,26 +286,32 @@ function createSvgElement(tag, attrs = {}) {
 function buildTeamsByCode(teamsData) {
   const teamsByCode = {};
 
-  Object.values(teamsData).forEach(team => {
-    teamsByCode[team.teamCode] = team;
-
-    if (team.lineage) {
-      team.lineage.forEach(oldTeam => {
-        teamsByCode[oldTeam.teamCode] = {
-          ...team,
-          teamCode: oldTeam.teamCode,
-          parentTeamCode: team.teamCode,
-          lineageYears: oldTeam.years
-        };
-      });
-    }
-
-    if (team.formerTeam) {
-      teamsByCode[team.formerTeam] = team;
-    }
+  Object.entries(teamsData.teams).forEach(([teamCode, team]) => {
+    teamsByCode[teamCode] = team;
   });
 
   return teamsByCode;
+}
+
+function getTeamByCode(teamCode) {
+  return DATA.teamsByCode?.[teamCode] || null;
+}
+
+function getTeamColor(teamCode, colorKey = "color1", fallback = "#ddd") {
+  const team = getTeamByCode(teamCode);
+  return team?.branding?.colors?.[colorKey] || fallback;
+}
+
+function getTeamDisplayName(teamCode, nameType = "city") {
+  const team = getTeamByCode(teamCode);
+
+  if (!team) return teamCode;
+
+  if (nameType === "full") return team.name?.full || teamCode;
+  if (nameType === "short") return team.name?.short || teamCode;
+  if (nameType === "mascot") return team.name?.mascot || teamCode;
+
+  return team.name?.city || team.name?.short || teamCode;
 }
 
 function getYearX(year, years, layout) {
@@ -353,7 +360,14 @@ function renderOverviewPlayerRows(svg, players, years, layout) {
     const name = createSvgElement("text", {
       x: 20,
       y: y + 6,
-      class: "player-label"
+      class: "player-label clickable",
+      "data-player-id": player.playerId
+    });
+
+    name.style.cursor = "pointer";
+
+    name.addEventListener("click", () => {
+      openPlayerCard(player.playerId);
     });
 
     name.textContent = player.playerName;
@@ -369,6 +383,20 @@ function renderOverviewPlayerRows(svg, players, years, layout) {
     svg.appendChild(line);
     svg.appendChild(name);
   });
+}
+
+function openPlayerCard(playerId) {
+  const container = document.getElementById("player-card-overlay");
+
+  container.innerHTML = `
+    <div class="player-index-card" data-player-id="${playerId}"></div>
+  `;
+
+  // reuse your existing renderer
+  renderPlayerCard(
+    container.querySelector(".player-index-card"),
+    playerId
+  );
 }
 
 function renderChampionshipLines(svg, players, years, layout) {
@@ -398,10 +426,8 @@ function renderChampionshipDots(svg, players, years, layout) {
     player.championships.forEach(champ => {
       const x = getYearX(champ.year, years, layout);
 
-      const team = DATA.teamsByCode[champ.teamCode];
-
-      const color1 = team?.colors?.color1 || "#222";
-      const color2 = team?.colors?.color2 || "#fff";
+      const color1 = getTeamColor(champ.teamCode, "color1", "#222");
+      const color2 = getTeamColor(champ.teamCode, "color2", "#fff");
 
       const outerDot = createSvgElement("circle", {
         cx: x,
@@ -459,8 +485,7 @@ function renderFinalsLossDots(svg, players, years, layout) {
       if (!losingTeamCode) return;
 
       const x = getYearX(year, years, layout);
-      const team = DATA.teamsByCode[losingTeamCode];
-      const color1 = team?.colors?.color1 || "#999";
+      const color1 = getTeamColor(losingTeamCode, "color1", "#999");
 
       const dot = createSvgElement("circle", {
         cx: x,
@@ -496,3 +521,4 @@ function setupOverviewControls() {
     });
   });
 }
+})();
