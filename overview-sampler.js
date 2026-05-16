@@ -388,11 +388,24 @@ function renderOverviewPlayerRows(svg, players, years, layout) {
 function openPlayerCard(playerId) {
   const container = document.getElementById("player-card-overlay");
 
+  container.style.display = "block"; // show it
+
   container.innerHTML = `
     <div class="player-index-card" data-player-id="${playerId}"></div>
   `;
 
-  // reuse your existing renderer
+    container.innerHTML = `
+    <div class="card-wrapper">
+      <button class="close-card">✕</button>
+      <div class="player-index-card" data-player-id="${playerId}"></div>
+    </div>
+  `;
+
+      container.querySelector(".close-card").addEventListener("click", () => {
+      container.style.display = "none";
+      container.innerHTML = "";
+    });
+
   renderPlayerCard(
     container.querySelector(".player-index-card"),
     playerId

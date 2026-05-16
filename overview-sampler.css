@@ -97,6 +97,14 @@
 }
 
 #player-card-overlay {
+  display: none;
+}
+
+#player-card-overlay:empty {
+  display: none;
+}
+
+#player-card-overlay {
   position: fixed;
   top: 50%;
   left: 50%;
