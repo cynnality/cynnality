@@ -101,7 +101,8 @@
             font-style: normal;
         }
         .nav-type-buttons {
-        border: 2px solid var(--green_darker);
+        border-top: 2px solid var(--green_darker);
+
         }
         .nav-type-button {
             max-width: 30em;

@@ -1,0 +1,81 @@
+
+        .article-reuse-wrap {
+            display: flex;
+        }
+
+        .header {
+            display: flex;
+            flex-direction: column;
+            margin: 24px;
+        }
+        .header h1 {
+            max-width: 60%;
+        }
+
+        .entry {
+            display: flex;
+            flex-direction: column;
+            gap: 24px;
+            margin: 24px;
+            max-width: 600px;
+
+            border: solid 2px #000000;
+            padding: 24px;
+            border-radius: 12px;
+        }
+
+        .entry h3 {
+            font-size: 24px;        
+        }
+
+        .entry p {
+            font-size: 18px;
+        }
+
+        .main-points {
+            display: flex;
+            flex-direction: column;
+            gap: 48px;
+            margin: 24px;
+        }
+
+
+        .para {
+            font-family: "Chivo Mono", monospace;
+        }
+        .para.reg {
+            display: flex;
+            flex-direction: column;
+            max-width: 60%;
+        }
+        .para.reg .tab {
+            border: solid 2px #000000;
+            border-bottom: none;
+            padding: 12px;
+            margin-left: 24px;
+            border-top-left-radius: 6px;
+            border-top-right-radius: 6px;
+            width: max-content;
+            max-width: 70%;
+        }
+        .para.reg .blurb-container {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+
+            border: solid 2px #000000;
+        }
+        .para.reg h3 {
+            font-style: italic;
+        }
+        .para.reg .brow p {
+            font-size: 16px;
+            color: #2e2a2a;
+        }
+        .para.reg .blurb-container p {
+            font-size: 18px;
+            line-height: 28px;
+            padding: 12px;
+
+            max-width: 95%;
+        }
