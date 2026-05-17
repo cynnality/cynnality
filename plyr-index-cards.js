@@ -1,6 +1,6 @@
 // =======================================================
 // PLAYER INDEX CARDS
-// Reusable player card component
+// Reusable player card element
 // File location: /plyr-index-cards.js
 // =======================================================
 
@@ -88,8 +88,8 @@ function getPlayerIndexCardSVG() {
   return `
 <svg
    width="999"
-   height="446"
-   viewBox="0 0 1000 458"
+   height="640"
+   viewBox="0 0 1000 660"
    version="1.1"
    class="player-index-card-svg"
    xmlns="http://www.w3.org/2000/svg">
@@ -98,31 +98,21 @@ function getPlayerIndexCardSVG() {
     <rect
        style="fill:#ffffff;stroke:#000000;stroke-width:2"
        width="992"
-       height="438"
+       height="612"
        x="1286"
        y="28" />
     <rect
        style="fill:#ffffff;stroke:#000000;stroke-width:2"
        width="980"
-       height="426"
+       height="600"
        x="1292.1353"
        y="34.142132" />
-
-    <rect
-       style="fill:#ffffff;stroke:#000000;stroke-width:2"
-       id="plyr-name-box"
-       width="478"
-       height="70"
-       x="1620"
-       y="54.142136" />
 
     <text
        style="font-style:italic;font-weight:600;font-size:38px;font-family:'Chivo Mono';text-anchor:left;letter-spacing:-1px;word-spacing:-3px;fill:#000000"
        x="1640"
        y="100"
        id="plyr-name-text">PLAYER NAME</text>
-
-    <g id="plyr-team-key"></g>
 
     <rect
        style="fill:#ffffff;stroke:#000000;stroke-width:1.5"
@@ -145,23 +135,16 @@ function getPlayerIndexCardSVG() {
        height="40"
        x="1620"
        y="210" />
-
     <text
        style="font-weight:300;font-size:18px;font-family:'Chivo Mono';text-anchor:left;letter-spacing:-1px;word-spacing:-3px;fill:#000000"
        x="1630"
        y="236"
        id="plyr-draft-text">DRAFT INFO</text>
-
-
-
-    <g id="plyr-team-timeline"></g>
-
     <text
        style="font-weight:300;font-size:22px;font-family:'Chivo Mono';text-anchor:middle;letter-spacing:-1px;word-spacing:-3px;fill:#000000"
        x="1906"
        y="456"
        id="plyr-chip-history-text">CHAMPIONSHIPS</text>
-
     <rect
        style="fill:#ffffff;stroke:#000000;stroke-width:2"
        id="plyr-image-container"
@@ -170,6 +153,9 @@ function getPlayerIndexCardSVG() {
        x="1300"
        y="48" />
 
+
+    <g id="plyr-team-key"></g>
+    <g id="plyr-team-timeline"></g>
     <g id="plyr-image-layer"></g>
 
   </g>
@@ -340,8 +326,8 @@ function renderPlayerTeamTimeline(svg, player) {
   const years = buildPlayerTimelineYears(player);
 
   const layout = {
-    leftPad: 1640,
-    topPad: 285,
+    leftPad: 1400,
+    topPad: 485,
     yearGap: 36,
     squareSize: 26,
     yearBoxSize: 28
@@ -488,15 +474,15 @@ function renderPlayerChampionships(svg, player) {
     const years = buildPlayerTimelineYears(player);
 
     const layout = {
-      leftPad: 1640,
-      topPad: 285,
+      leftPad: 1400,
+      topPad: 485,
       yearGap: 36,
       squareSize: 26,
       yearBoxSize: 28
     };
 
     const timelineY = layout.topPad + 48;
-    const markerY = 385;
+    const markerY = 585;
 
   championships.forEach(chip => {
     const chipYear = Number(chip.year);
