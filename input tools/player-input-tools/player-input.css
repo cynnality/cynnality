@@ -1,0 +1,258 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 32px;
+  font-family: "Chivo Mono", monospace;
+  background: #ffffff;
+  color: #111;
+}
+
+.tool-wrap {
+    display: flex;
+    gap: 24px;
+    margin: 24px;
+    justify-content: space-between;
+}
+
+.tool-shell {
+  width: 1200px;
+}
+
+h1 {
+  font-size: 2.4rem;
+  text-transform: uppercase;
+  letter-spacing: -0.05em;
+  margin-bottom: 24px;
+}
+
+.panel {
+  background: #fff;
+  border: 3px solid #111;
+  border-radius: 4px;
+  padding: 6px;
+  margin-bottom: 24px;
+}
+
+.panel.input > h2 {
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.panel.input > h2::after {
+  content: "−";
+  font-family: "Chivo Mono", monospace;
+}
+
+.panel.input.collapsed > h2::after {
+  content: "+";
+}
+
+.panel.input.collapsed > *:not(h2) {
+  display: none;
+}
+
+.panel h2 {
+  margin-top: 0;
+  font-size: 1.15rem;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  border-bottom: 2px solid #111;
+  padding-bottom: 8px;
+}
+
+.sub-panel {
+  margin-top: 16px;
+  padding: 14px;
+  border: 2px dotted #111;
+  background: #fafafa;
+}
+
+input,
+textarea,
+select {
+  width: 100%;
+  display: block;
+  margin: 10px 0;
+  padding: 10px 12px;
+  border: 2px solid #111;
+  background: #e2d6d6;
+  font: inherit;
+}
+
+textarea {
+  min-height: 90px;
+  resize: vertical;
+}
+
+button {
+  
+  padding: 6px 12px;
+  border: 2px solid #111;
+  background: #4A6020;
+  color: #ffffff;
+  font-weight: 500;
+  text-transform: uppercase;
+  cursor: pointer;
+  /*! margin-top: 10px; */
+}
+
+button:hover {
+  transform: translate(1px, 1px);
+  box-shadow: 0px 0px 0 #111;
+}
+
+button:active {
+  transform: translate(3px, 3px);
+  box-shadow: none;
+}
+
+ul {
+  padding-left: 18px;
+}
+
+li {
+  margin: 6px 0;
+  font-family: "Chivo Mono", monospace;
+  font-size: 0.9rem;
+}
+
+.panel.data {
+    height: fit-content;
+    width: fit-content;
+}
+
+#jsonPreview {
+  background: #111;
+  color: #f4f0e8;
+  padding: 18px;
+  border: 2px solid #111;
+  overflow-x: auto;
+  min-height: 260px;
+  height: 1000px;
+  width: 425px;
+  font-family: "Chivo Mono", monospace;
+  font-size: 0.85rem;
+  line-height: 1.5;
+}
+
+.status-card-group {
+  display: flex;
+  gap: 10px;
+}
+
+.wnba-timeline {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin: 18px 0;
+}
+
+.timeline-year-card {
+  width: 74px;
+  border: 2px solid #111;
+  background: #fff;
+  color: #000000;
+  cursor: pointer;
+  text-align: center;
+  padding: 6px;
+}
+
+.timeline-year-card .year-label {
+  font-family: "DM Mono", monospace;
+  font-size: 0.75rem;
+  margin-bottom: 6px;
+  color: #000000;
+}
+
+.timeline-year-card .year-square {
+  height: 44px;
+  border: 2px solid #111;
+  background: #eee;
+}
+
+.timeline-year-card.played .year-square {
+  background: #ffcd00;
+}
+
+.timeline-year-card.missed .year-square {
+  background: #111;
+}
+
+.timeline-year-card.selected {
+  transform: translate(3px, 3px);
+  box-shadow: 1px 1px 0 #111;
+}
+
+.season-editor {
+  border: 2px dashed #111;
+  padding: 14px;
+  margin-top: 16px;
+  background: #fafafa;
+}
+
+.season-editor-actions {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin: 12px 0 18px;
+}
+
+.editor-choice-group {
+  display: flex;
+  gap: 12px;
+  align-items: stretch;
+  margin: 14px 0;
+}
+
+.choice-label {
+  flex: 1;
+  min-width: 140px;
+  font-family: "DM Mono", monospace;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+
+.editor-choice-card {
+  flex: 1;
+  cursor: pointer;
+}
+
+.editor-choice-card input {
+  display: none;
+}
+
+.editor-choice-card span {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 74px;
+  border: 2px solid #111;
+  background: #fff;
+  box-shadow: 4px 4px 0 #111;
+  font-family: "DM Mono", monospace;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+
+.editor-choice-card input:checked + span {
+  background: #ffcd00;
+  transform: translate(3px, 3px);
+  box-shadow: 1px 1px 0 #111;
+}
+
+.conditional-field {
+  display: none;
+}
+
+.partial-segment-card {
+  border: 2px solid #111;
+  background: #fff;
+  box-shadow: 3px 3px 0 #111;
+  padding: 10px;
+  margin: 10px 0;
+}

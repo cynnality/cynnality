@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <title>wnba-teams input</title>
+
+    <!-- ======================== MONO FONTS ========================
+         CHIVO MONO 
+         ---- (monospaced // kinda playful ? serif) 
+
+         DM MONO 
+         ---- (monospaced, serif, gives digital feel - could be good replacement for v323)
+
+         JET BRAINS MONO 
+         ---- (monospaced, generally sans-serif. 
+         ---- want to use for all caps / titles / such things big bold (and oblique) style header feel)
+         ============================================================-->
+
+    <!--=====================================================================================
+
+COPIED ALL WNBA DATA FILES, AND MOVED THEM INTO "basketball_101_data_files" FOLDER !!!!
+
+wnba_colleges.json //////////////// ->  college id's / college names / college nickanmes 
+wnba_finals.json ////////////////// -> finals matchups / winners / coaches / finals mvps
+wnba_olympic_players.json ///////// -> data connecting players to olympic jersey numbers/rosters AND wnba teams
+wnba_reg_season_awards.json /////// -> regular season PLAYER awards
+wnba_season_stats.json //////////// -> regular season team rankings
+wnba_static_data.json ///////////// -> static main/general data for WNBA (team colors, ids, locations, etc.)
+wnba_teams_history.json /////////// -> teams of the WNBA by year and team franchise lineage
+
+=====================================================================================-->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Chivo+Mono:ital,wght@0,100..900;1,100..900&family=DM+Mono:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap"
+        rel="stylesheet">
+    <!--=====================================================================================-->
+
+    <link rel="stylesheet" href="wnba-teams-input.css">
+</head>
+
+<body>
+
+    <div class="top-pager">
+        <h1><em>add a WNBA team</em></h1>
+
+
+
+    </div>
+    <div class="tool-wrap">
+        <section class="tool-shell">
+
+            <section class="panel">
+                <h2>Load Existing Team</h2>
+
+                <label for="teamSelect">Choose existing team</label>
+                <select id="teamSelect">
+                    <option value="">-- Select team --</option>
+                </select>
+
+                <button id="clearFormBtn" type="button">Clear / New Team</button>
+            </section>
+
+            <div class="panel-group">
+                <section class="panel input locked mini">
+                    <div class="panel-header">
+                        <h2>Names and codes</h2>
+                        <label class="edit-toggle">
+                            <input type="checkbox" class="edit-panel-toggle">
+                            <span>Edit</span>
+                        </label>
+                    </div>
+                    <div class="item">
+                        <input id="nameFull" placeholder="Full name, ex: Las Vegas Aces">
+                        <input id="nameShort" placeholder="Short name, ex: Aces">
+                    </div>
+                    <div class="item">
+                        <label for="teamCode">Team codes always start with 3 letters (location) + underscore + full team
+                            name</label>
+                        <label for="teamCode" class="brow">*Not in all cases tho (i.e. LVA, NYL, PHX, SA)</label>
+                        <input id="teamCode" placeholder="teamCode, ex: LVA_ACES">
+                    </div>
+                    <div class="item">
+                        <label for="franchiseId">The <em>franchise</em> Id for the team</label>
+                        <label for="franchiseId" class="brow">For relocated / revived teams, the franchise Id belongs to the
+                            active or newest team</label>
+                        <input id="franchiseId" placeholder="franchiseId, ex: ACES_FRANCHISE">
+                    </div>
+                </section>
+
+                <section class="panel input locked mini">
+                    <div class="panel-header">
+                        <h2>Status</h2>
+                        <label class="edit-toggle">
+                            <input type="checkbox" class="edit-panel-toggle">
+                            <span>Edit</span>
+                        </label>
+                    </div>
+                    <div class="item">
+                        <div class="status-card-group two-options">
+                            <label class="status-card">
+                                <input type="radio" name="originalTeam" value="true" id="originalYes">
+                                <span>OG Team</span>
+                            </label>
+
+                            <label class="status-card">
+                                <input type="radio" name="originalTeam" value="false" id="originalNo">
+                                <span>Not OG</span>
+                            </label>
+                        </div>
+                        <input id="founded" placeholder="Founded year, ex: 1997">
+                    </div>
+
+                    <div class="item">
+                        <div class="status-card-group">
+                            <label class="status-card">
+                                <input type="radio" name="teamStatus" value="active" id="statusActive">
+                                <span>Active</span>
+                            </label>
+
+                            <label class="status-card">
+                                <input type="radio" name="teamStatus" value="folded" id="statusFolded">
+                                <span>Folded</span>
+                            </label>
+
+                            <label class="status-card">
+                                <input type="radio" name="teamStatus" value="relocated" id="statusRelocated">
+                                <span>Relocated</span>
+                            </label>
+                        </div>
+                        <div id="endedFieldWrapper" class="conditional-field">
+                            <input id="ended" placeholder="Ended year">
+                        </div>
+                    </div>
+
+                    <div class="item">
+                        <input id="endType" placeholder="If team didn't end with fold or relocation">
+                    </div>
+                </section>
+            </div>
+            <div class="panel-group">
+                <section class="panel input locked mini">
+                    <div class="panel-header">
+                        <h2>Location</h2>
+                        <label class="edit-toggle">
+                            <input type="checkbox" class="edit-panel-toggle">
+                            <span>Edit</span>
+                        </label>
+                    </div>
+
+                    <div class="status-card-group two-options">
+                        <label class="status-card">
+                            <input type="radio" name="conference" value="west" id="conferenceWest">
+                            <span>West</span>
+                        </label>
+                        <label class="status-card">
+                            <input type="radio" name="conference" value="east" id="conferenceEast">
+                            <span>East</span>
+                        </label>
+                        <input id="cityStateInput" placeholder="City, State ex: Las Vegas, Nevada">
+                    </div>
+
+                    <input id="market" placeholder="Market, ex: Las Vegas">
+
+                    <input id="arena" placeholder="Arena">
+                </section>
+
+                <section class="panel input locked mini">
+                    <div class="panel-header">
+                        <h2>Rings</h2>
+                        <label class="edit-toggle">
+                            <input type="checkbox" class="edit-panel-toggle">
+                            <span>Edit</span>
+                        </label>
+                    </div>
+                    <div class="item">
+                    <input id="championshipYear" placeholder="Year, ex: 2024">
+                    <button id="addChampionshipYearBtn" type="button">Add Championship Year</button>
+                    </div>
+
+                    <ul id="championshipYearsList"></ul>
+                </section>
+            </div>
+            <section class="panel input locked">
+                <div class="panel-header">
+                    <h2>Looks</h2>
+                    <label class="edit-toggle">
+                        <input type="checkbox" class="edit-panel-toggle">
+                        <span>Edit</span>
+                    </label>
+                </div>
+
+                <input id="slug" placeholder="slug, ex: las-vegas-aces">
+
+                <input id="logoSrc" placeholder="Logo src">
+
+                <div class="color-preview-grid">
+
+                    <div class="color-card">
+                        <input id="color1" placeholder="color1, ex: #BA0C2F">
+                        <div class="color-box" id="color1Box"></div>
+                        <button type="button" class="copy-color-btn" data-color-input="color1">copy</button>
+                    </div>
+
+                    <div class="color-card">
+                        <input id="color2" placeholder="color2">
+                        <div class="color-box" id="color2Box"></div>
+                        <button type="button" class="copy-color-btn" data-color-input="color2">copy</button>
+                    </div>
+
+                    <div class="color-card">
+                        <input id="color3" placeholder="color3">
+                        <div class="color-box" id="color3Box"></div>
+                        <button type="button" class="copy-color-btn" data-color-input="color3">copy</button>
+                    </div>
+                </div>
+
+                <input id="courtMain" placeholder="court main color">
+                <input id="courtLines" placeholder="court lines color">
+                <input id="courtAccent" placeholder="court accent color">
+            </section>
+
+            <section class="panel input locked">
+                <div class="panel-header">
+                    <h2>"Lineage"</h2>
+                    <label class="edit-toggle">
+                        <input type="checkbox" class="edit-panel-toggle">
+                        <span>Edit</span>
+                    </label>
+                </div>
+                <div class="item">
+                    <label for="formerTeamCode">Former team code</label>
+                    <input id="formerTeamCode" placeholder="or leave blank">
+                    <label for="relocatedFrom">Relocated from</label>
+                    <input id="relocatedFrom" placeholder="or leave blank">
+                    <label for="relocatedTo">Relocated to</label>
+                    <input id="relocatedTo" placeholder="or leave blank">
+                </div>
+                <div class="item">
+                    <div class="item-descip">
+                        <label for="brandStatus">Team revival (status)</label>
+                        <input id="brandStatus" placeholder="brandStatus, optional">
+                        <label for="brandStatus" class="brow">Original folded team or revived brand</label>
+                    </div>
+                    <div class="item-descrip">
+                    <label for="revivedByTeamCode">Revived by (NEW team code)</label>
+                    <input id="revivedByTeamCode" placeholder="revivedByTeamCode, optional">
+                    <label for="revivedByTeamCode" class="brow">POR_FIRE (new team) revived POR_FIRE_2000 (old team)</label>
+                    </div>
+                    <div class="item-descrip">
+                    <label for="revivesTeamCode">Revives (OLD team code)</label>
+                    <input id="revivesTeamCode" placeholder="revivesTeamCode, optional">
+                    <label for="revivesTeamCode" class="brow">POR_FIRE_2000 (old team) is revived by POR_FIRE (new team)</label>
+                    </div>
+                </div>
+            </section>
+
+
+
+            <section class="panel input locked">
+                <div class="panel-header">
+                    <h2>Meta</h2>
+                    <label class="edit-toggle">
+                        <input type="checkbox" class="edit-panel-toggle">
+                        <span>Edit</span>
+                    </label>
+                </div>
+
+                <label>
+                    <input type="checkbox" id="favorite">
+                    Favorite team
+                </label>
+            </section>
+
+        </section>
+
+        <section class="panel data">
+
+            <h2>Data Preview</h2>
+
+            <div class="tool-note">
+                <p><strong>Note:</strong> This tool generates a single WNBA team object for the static team data file.
+                </p>
+                <p class="path">main project folder → basketball_101_data_files → wnba_static_data_v2.json</p>
+            </div>
+
+
+
+            <button id="copyJsonBtn" type="button">Copy JSON</button>
+            <pre id="jsonPreview"></pre>
+        </section>
+    </div>
+
+    <script src="wnba-teams-input.js" defer></script>
+</body>
+
+</html>
