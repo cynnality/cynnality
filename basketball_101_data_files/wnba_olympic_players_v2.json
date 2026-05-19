@@ -1,0 +1,805 @@
+{
+    "players": {
+        "jewell_loyd": {
+            "playerName": "Jewell Loyd",
+            "teamUsaJersey": "4",
+            "careerDetails": {
+                "collegeCareer": {
+                    "collegeId": "u_of_notre_dame",
+                    "startYear": "2012",
+                    "endYear": "2015",
+                    "ncaaChampionships": []
+                },
+                "draftDetails": {
+                    "year": "2015",
+                    "pick": "1",
+                    "draftedBy": "SEA_STORM"
+                },
+                "missedWnbaSeasons": [],
+                "overseasTeams": [
+                    {
+                        "season": "2015-16",
+                        "team": "Galatasaray",
+                        "country": "Turkey"
+                    },
+                    {
+                        "season": "2016-17",
+                        "team": "Shanxi Flame",
+                        "country": "China"
+                    },
+                    {
+                        "season": "2017-18",
+                        "team": "Guri KDB Bank Winnus",
+                        "country": "South Korea"
+                    },
+                    {
+                        "season": "2018-19",
+                        "team": "Botas SK",
+                        "country": "Turkey"
+                    },
+                    {
+                        "season": "2019-20",
+                        "team": "Perfumerias Avenida",
+                        "country": "Spain"
+                    }
+                ],
+                "unrivaledTeams": [
+                    {
+                        "year": "2025",
+                        "team": "Mist"
+                    }
+                ],
+                "teamUsaMedals": [
+                    {
+                        "year": "2014",
+                        "competition": "3x3 World Cup",
+                        "medal": "Gold"
+                    },
+                    {
+                        "year": "2018",
+                        "competition": "World Cup",
+                        "medal": "Gold"
+                    },
+                    {
+                        "year": "2022",
+                        "competition": "World Cup",
+                        "medal": "Gold"
+                    }
+                ]
+            },
+            "image": {
+                "src": "/season-30/connection-imgs/jewell-loyd-individual-aces.avif",
+                "alt": "Jewell Loyd"
+            },
+            "wnbaTeams": [
+                {
+                    "teamCode": "SEA_STORM",
+                    "startYear": "2015",
+                    "endYear": "2024"
+                },
+                {
+                    "teamCode": "LVA_ACES",
+                    "startYear": "2025",
+                    "endYear": "present",
+                    "transactionNote": "Traded"
+                }
+            ],
+            "championships": [
+                {
+                    "year": "2018",
+                    "teamCode": "SEA_STORM"
+                },
+                {
+                    "year": "2020",
+                    "teamCode": "SEA_STORM"
+                },
+                {
+                    "year": "2025",
+                    "teamCode": "LVA_ACES"
+                }
+            ]
+        },
+        "kelsey_plum": {
+            "playerName": "Kelsey Plum",
+            "teamUsaJersey": "5",
+            "careerDetails": {
+                "collegeCareer": {
+                    "collegeId": "u_of_washington",
+                    "startYear": "2013",
+                    "endYear": "2017",
+                    "ncaaChampionships": []
+                },
+                "draftDetails": {
+                    "year": "2017",
+                    "pick": "1",
+                    "draftedBy": "SA_STARS"
+                },
+                "missedWnbaSeasons": [],
+                "overseasTeams": [
+                    {
+                        "season": "2017-18",
+                        "team": "Fenerbahce",
+                        "country": "Turkey"
+                    },
+                    {
+                        "season": "2018-19",
+                        "team": "Fenerbahce",
+                        "country": "Turkey"
+                    },
+                    {
+                        "season": "2019-20",
+                        "team": "Fenerbahce",
+                        "country": "Turkey"
+                    },
+                    {
+                        "season": "2020-21",
+                        "team": "Fenerbahce",
+                        "country": "Turkey"
+                    },
+                    {
+                        "season": "2021-22",
+                        "team": "Fenerbahce",
+                        "country": "Turkey"
+                    },
+                    {
+                        "season": "2022",
+                        "team": "Galatasaray",
+                        "country": "Turkey"
+                    }
+                ],
+                "unrivaledTeams": [
+                    {
+                        "year": "2026",
+                        "team": "Phantom"
+                    }
+                ],
+                "teamUsaMedals": [
+                    {
+                        "year": "2015",
+                        "competition": "Pan American Games",
+                        "medal": "Silver"
+                    },
+                    {
+                        "year": "2018",
+                        "competition": "World Cup",
+                        "medal": "Gold"
+                    },
+                    {
+                        "year": "2020",
+                        "competition": "3x3 Olympics",
+                        "medal": "Gold"
+                    },
+                    {
+                        "year": "2022",
+                        "competition": "World Cup",
+                        "medal": "Gold"
+                    }
+                ]
+            },
+            "image": {
+                "src": "/season-30/connection-imgs/kelsey-plum-cele.jpg",
+                "alt": "Kelsey Plum"
+            },
+            "wnbaTeams": [
+                {
+                    "teamCode": "SA_STARS",
+                    "startYear": "2017",
+                    "endYear": "2017"
+                },
+                {
+                    "teamCode": "LVA_ACES",
+                    "startYear": "2018",
+                    "endYear": "2024"
+                },
+                {
+                    "teamCode": "LOS_SPARKS",
+                    "startYear": "2025",
+                    "endYear": "present"
+                }
+            ],
+            "championships": [
+                {
+                    "year": "2022",
+                    "teamCode": "LVA_ACES"
+                },
+                {
+                    "year": "2023",
+                    "teamCode": "LVA_ACES"
+                }
+            ]
+        },
+        "sabrina_ionescu": {
+            "playerName": "Sabrina Ionescu",
+            "teamUsaJersey": "6",
+            "collegeId": "u_of_oregon",
+            "draft": {
+                "year": "2020",
+                "teamCode": "NYL_LIBERTY"
+            },
+            "image": {
+                "src": "/season-30/connection-imgs/sab_ion_2024_finals.webp",
+                "alt": "Sabrina Ionescu"
+            },
+            "wnbaTeams": [
+                {
+                    "teamCode": "NYL_LIBERTY",
+                    "startYear": "2020",
+                    "endYear": "present"
+                }
+            ],
+            "championships": [
+                {
+                    "year": "2024",
+                    "teamCode": "NYL_LIBERTY"
+                }
+            ]
+        },
+        "kahleah_copper": {
+            "playerName": "Kahleah Copper",
+            "teamUsaJersey": "7",
+            "collegeId": "rutgers_u",
+            "draft": {
+                "year": "2016",
+                "teamCode": "WAS_MYSTICS"
+            },
+            "image": {
+                "src": "/season-30/connection-imgs/kahleah-copper-individual-sky.jpg",
+                "alt": "Kahleah Copper"
+            },
+            "wnbaTeams": [
+                {
+                    "teamCode": "WAS_MYSTICS",
+                    "startYear": "2016",
+                    "endYear": "2016"
+                },
+                {
+                    "teamCode": "CHI_SKY",
+                    "startYear": "2017",
+                    "endYear": "2023"
+                },
+                {
+                    "teamCode": "PHX_MERCURY",
+                    "startYear": "2024",
+                    "endYear": "present"
+                }
+            ],
+            "championships": [
+                {
+                    "year": "2021",
+                    "teamCode": "CHI_SKY",
+                    "finalsMVP": true
+                }
+            ]
+        },
+        "chelsea_gray": {
+            "playerName": "Chelsea Gray",
+            "teamUsaJersey": "8",
+            "careerDetails": {
+                "collegeCareer": {
+                    "collegeId": "duke_u",
+                    "startYear": "2009",
+                    "endYear": "2014",
+                    "ncaaChampionships": []
+                },
+                "draftDetails": {
+                    "year": "2014",
+                    "pick": "11",
+                    "draftedBy": "CON_SUN"
+                },
+                "missedWnbaSeasons": [
+                    {
+                        "year": "2014",
+                        "teamCode": "CON_SUN",
+                        "reason": "Injury",
+                        "note": "Due to injury she got while playing her final year in college at Duke"
+                    }
+                ],
+                "overseasTeams": [
+                    {
+                        "season": "2015",
+                        "teamCode": "uni_girona"
+                    },
+                    {
+                        "season": "2015-16",
+                        "teamCode": "kayseri_basketbol"
+                    },
+                    {
+                        "season": "2016-17",
+                        "teamCode": "kayseri_basketbol"
+                    },
+                    {
+                        "season": "2017-18",
+                        "teamCode": "botas_sk"
+                    },
+                    {
+                        "season": "2019",
+                        "teamCode": "curkova"
+                    },
+                    {
+                        "season": "2020",
+                        "teamCode": "fenerbahce"
+                    },
+                    {
+                        "season": "2020-21",
+                        "teamCode": "uni_girona"
+                    }
+                ],
+                "unrivaledTeams": [
+                    {
+                        "year": 2025,
+                        "teamCode": "bc_rose"
+                    },
+                    {
+                        "year": 2026,
+                        "teamCode": "bc_rose"
+                    }
+                ],
+                "teamUsaMedals": [
+                    {
+                        "year": "2022",
+                        "competition": "World Cup",
+                        "medal": "Gold"
+                    }
+                ]
+            },
+            "image": {
+                "src": "/season-30/connection-imgs/chelsea-gray-individual.jpg",
+                "alt": "Chelsea Gray"
+            },
+            "wnbaTeams": [
+                {
+                    "teamCode": "CON_SUN",
+                    "startYear": "2015",
+                    "endYear": "2015"
+                },
+                {
+                    "teamCode": "LOS_SPARKS",
+                    "startYear": "2016",
+                    "endYear": "2020"
+                },
+                {
+                    "teamCode": "LVA_ACES",
+                    "startYear": "2021",
+                    "endYear": "2026"
+                }
+            ],
+            "championships": [
+                {
+                    "year": "2016",
+                    "teamCode": "LOS_SPARKS"
+                },
+                {
+                    "year": "2022",
+                    "teamCode": "LVA_ACES",
+                    "finalsMVP": true
+                },
+                {
+                    "year": "2023",
+                    "teamCode": "LVA_ACES"
+                },
+                {
+                    "year": "2025",
+                    "teamCode": "LVA_ACES"
+                }
+            ]
+        },
+        "aja_wilson": {
+            "playerName": "A'ja Wilson",
+            "teamUsaJersey": "9",
+            "collegeId": "u_of_south_carolina",
+            "draft": {
+                "year": "2018",
+                "teamCode": "LVA_ACES"
+            },
+            "image": {
+                "src": "/season-30/connection-imgs/aja-individual.jpg",
+                "alt": "A'ja Wilson"
+            },
+            "wnbaTeams": [
+                {
+                    "teamCode": "LVA_ACES",
+                    "startYear": "2018",
+                    "endYear": "present"
+                }
+            ],
+            "championships": [
+                {
+                    "year": "2022",
+                    "teamCode": "LVA_ACES"
+                },
+                {
+                    "year": "2023",
+                    "teamCode": "LVA_ACES"
+                },
+                {
+                    "year": "2025",
+                    "teamCode": "LVA_ACES"
+                }
+            ]
+        },
+        "breanna_stewart": {
+            "playerName": "Breanna Stewart",
+            "teamUsaJersey": "10",
+            "collegeId": "u_of_conn",
+            "image": {
+                "src": "/season-30/connection-imgs/breanna-stewart-storm.jpg",
+                "alt": "Breanna Stewart"
+            },
+            "draft": {
+                "year": "2016",
+                "teamCode": "SEA_STORM"
+            },
+            "wnbaTeams": [
+                {
+                    "teamCode": "SEA_STORM",
+                    "startYear": "2016",
+                    "endYear": "2022"
+                },
+                {
+                    "teamCode": "NYL_LIBERTY",
+                    "startYear": "2023",
+                    "endYear": "present"
+                }
+            ],
+            "championships": [
+                {
+                    "year": "2018",
+                    "teamCode": "SEA_STORM"
+                },
+                {
+                    "year": "2020",
+                    "teamCode": "SEA_STORM"
+                },
+                {
+                    "year": "2024",
+                    "teamCode": "NYL_LIBERTY"
+                }
+            ]
+        },
+        "napheesa_collier": {
+            "playerName": "Napheesa Collier",
+            "teamUsaJersey": "11",
+            "collegeId": "u_of_conn",
+            "draft": {
+                "year": "2019",
+                "teamCode": "MIN_LYNX"
+            },
+            "image": {
+                "src": "/season-30/connection-imgs/n-collier-individual-2.webp",
+                "alt": "Napheesa Collier"
+            },
+            "wnbaTeams": [
+                {
+                    "teamCode": "MIN_LYNX",
+                    "startYear": "2019",
+                    "endYear": "present"
+                }
+            ],
+            "championships": []
+        },
+        "diana_taurasi": {
+            "playerName": "Diana Taurasi",
+            "teamUsaJersey": "12",
+            "collegeId": "u_of_conn",
+            "draft": {
+                "year": "2004",
+                "teamCode": "PHX_MERCURY"
+            },
+            "image": {
+                "src": "/season-30/connection-imgs/diana-taurasi-individual.jpg",
+                "alt": "Diana Taurasi"
+            },
+            "wnbaTeams": [
+                {
+                    "teamCode": "PHX_MERCURY",
+                    "startYear": "2004",
+                    "endYear": "2024",
+                    "status": "retired"
+                }
+            ],
+            "championships": [
+                {
+                    "year": "2007",
+                    "teamCode": "PHX_MERCURY"
+                },
+                {
+                    "year": "2009",
+                    "teamCode": "PHX_MERCURY"
+                },
+                {
+                    "year": "2014",
+                    "teamCode": "PHX_MERCURY"
+                }
+            ]
+        },
+        "jackie_young": {
+            "playerName": "Jackie Young",
+            "teamUsaJersey": "13",
+            "collegeId": "u_of_notre_dame",
+            "draft": {
+                "year": "2019",
+                "teamCode": "LVA_ACES"
+            },
+            "image": {
+                "src": "/season-30/connection-imgs/jackie-young-individual.webp",
+                "alt": "Jackie Young"
+            },
+            "wnbaTeams": [
+                {
+                    "teamCode": "LVA_ACES",
+                    "startYear": "2019",
+                    "endYear": "present"
+                }
+            ],
+            "championships": [
+                {
+                    "year": "2022",
+                    "teamCode": "LVA_ACES"
+                },
+                {
+                    "year": "2023",
+                    "teamCode": "LVA_ACES"
+                },
+                {
+                    "year": "2025",
+                    "teamCode": "LVA_ACES"
+                }
+            ]
+        },
+        "alyssa_thomas": {
+            "playerName": "Alyssa Thomas",
+            "teamUsaJersey": "14",
+            "careerDetails": {
+                "collegeCareer": {
+                    "collegeId": "u_of_maryland",
+                    "startYear": "2010",
+                    "endYear": "2014",
+                    "ncaaChampionships": []
+                },
+                "draftDetails": {
+                    "year": "2014",
+                    "pick": "4",
+                    "draftedBy": "NYL_LIBERTY",
+                    "acquiredBy": "CON_SUN",
+                    "transactionNote": "Draft day trade"
+                },
+                "missedWnbaSeasons": [],
+                "overseasTeams": [
+                    {
+                        "season": "2014-15",
+                        "team": "Bucheon KEB Hana Bank",
+                        "country": "South Korea"
+                    },
+                    {
+                        "season": "2015-16",
+                        "team": "Yakin Dogu",
+                        "country": "Turkey"
+                    },
+                    {
+                        "season": "2016-17",
+                        "team": "Yongin Blueminx",
+                        "country": "South Korea"
+                    },
+                    {
+                        "season": "2017-18",
+                        "team": "Yongin Blueminx",
+                        "country": "South Korea"
+                    },
+                    {
+                        "season": "2018-19",
+                        "team": "USK Praha",
+                        "country": "Czech Republic"
+                    },
+                    {
+                        "season": "2019-20",
+                        "team": "USK Praha",
+                        "country": "Czech Republic"
+                    },
+                    {
+                        "season": "2020-21",
+                        "team": "USK Praha",
+                        "country": "Czech Republic"
+                    },
+                    {
+                        "season": "2021-22",
+                        "team": "USK Praha",
+                        "country": "Czech Republic"
+                    },
+                    {
+                        "season": "2022-23",
+                        "team": "USK Praha",
+                        "country": "Czech Republic"
+                    },
+                    {
+                        "season": "2023-24",
+                        "team": "Shanxi Flame",
+                        "country": "China"
+                    }
+                ],
+                "unrivaledTeams": [
+                    {
+                        "year": "2025",
+                        "team": "Laces"
+                    },
+                    {
+                        "year": "2026",
+                        "team": "Laces"
+                    }
+                ],
+                "teamUsaMedals": [
+                    {
+                        "year": "2012",
+                        "competition": "3x3 World Cup",
+                        "medal": "Gold"
+                    },
+                    {
+                        "year": "2022",
+                        "competition": "World Cup",
+                        "medal": "Gold"
+                    }
+                ]
+            },
+            "image": {
+                "src": "/season-30/connection-imgs/alyssa-thomas-individual.jpg",
+                "alt": "Alyssa Thomas"
+            },
+            "wnbaTeams": [
+                {
+                    "teamCode": "CON_SUN",
+                    "startYear": "2014",
+                    "endYear": "2024"
+                },
+                {
+                    "teamCode": "PHX_MERCURY",
+                    "startYear": "2025",
+                    "transactionNote": "Traded",
+                    "endYear": "present"
+                }
+            ],
+            "championships": []
+        },
+        "brittney_griner": {
+            "playerName": "Brittney Griner",
+            "teamUsaJersey": "15",
+            "careerDetails": {
+                "collegeCareer": {
+                    "collegeId": "baylor_u",
+                    "startYear": "2009",
+                    "endYear": "2013",
+                    "ncaaChampionships": [
+                        {
+                            "year": "2012",
+                            "collegeId": "baylor_u"
+                        }
+                    ]
+                },
+                "draftDetails": {
+                    "year": "2013",
+                    "pick": "1",
+                    "draftedBy": "PHX_MERCURY"
+                },
+                "missedWnbaSeasons": [
+                    {
+                        "year": "2020",
+                        "teamCode": "PHX_MERCURY",
+                        "reason": "Not Disclosed",
+                        "note": "Was dealing with a lot of personal issues leading up to the COVID pandemic. Did not play in the bubble for 2020"
+                    },
+                    {
+                        "year": "2022",
+                        "teamCode": "",
+                        "reason": "Arrested in Russia"
+                    }
+                ],
+                "overseasTeams": [
+                    {
+                        "season": "2013-14",
+                        "team": "Zhejiang Golden Bulls",
+                        "country": "China"
+                    },
+                    {
+                        "season": "2014-15",
+                        "team": "Beijing Great Wall",
+                        "country": "China"
+                    },
+                    {
+                        "season": "2015-16",
+                        "team": "UMMC Ekaterinberg",
+                        "country": "Russia"
+                    },
+                    {
+                        "season": "2016-17",
+                        "team": "UMMC Ekaterinberg",
+                        "country": "Russia"
+                    },
+                    {
+                        "season": "2017-18",
+                        "team": "UMMC Ekaterinberg",
+                        "country": "Russia"
+                    },
+                    {
+                        "season": "2018-19",
+                        "team": "UMMC Ekaterinberg",
+                        "country": "Russia"
+                    },
+                    {
+                        "season": "2019-2020",
+                        "team": "UMMC Ekaterinberg",
+                        "country": "Russia"
+                    },
+                    {
+                        "season": "2020-21",
+                        "team": "UMMC Ekaterinberg",
+                        "country": "Russia"
+                    },
+                    {
+                        "season": "2021-2022",
+                        "team": "UMMC Ekaterinberg",
+                        "country": "Russia"
+                    }
+                ],
+                "unrivaledTeams": [
+                    {
+                        "year": "2025",
+                        "team": "Phantom"
+                    },
+                    {
+                        "year": "2026",
+                        "team": "Vinyl"
+                    }
+                ],
+                "teamUsaMedals": [
+                    {
+                        "year": "2014",
+                        "competition": "World Cup",
+                        "medal": "Gold"
+                    },
+                    {
+                        "year": "2018",
+                        "competition": "World Cup",
+                        "medal": "Gold"
+                    }
+                ]
+            },
+            "image": {
+                "src": "/season-30/connection-imgs/brittney-griner-individual-mercury.webp",
+                "alt": "Brittney Griner"
+            },
+            "wnbaTeams": [
+                {
+                    "teamCode": "PHX_MERCURY",
+                    "startYear": "2013",
+                    "endYear": "2019"
+                },
+                {
+                    "teamCode": "PHX_MERCURY",
+                    "startYear": "2021",
+                    "endYear": "2021"
+                },
+                {
+                    "teamCode": "PHX_MERCURY",
+                    "startYear": "2023",
+                    "endYear": "2024"
+                },
+                {
+                    "teamCode": "ATL_DREAM",
+                    "startYear": "2025",
+                    "endYear": "2025",
+                    "transactionNote": "Signed one-year contract"
+                },
+                {
+                    "teamCode": "CON_SUN",
+                    "startYear": "2026",
+                    "endYear": "present",
+                    "transactionNote": "Signed one-year contract"
+                }
+            ],
+            "championships": [
+                {
+                    "year": "2014",
+                    "teamCode": "PHX_MERCURY"
+                }
+            ]
+        }
+    }
+}

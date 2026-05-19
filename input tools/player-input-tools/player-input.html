@@ -219,10 +219,19 @@ wnba_teams_history.json /////////// -> teams of the WNBA by year and team franch
 
             <section class="panel input">
                 <h2>Overseas Teams</h2>
+
                 <input id="overseasSeason" placeholder="Season, ex: 2023-24">
-                <input id="overseasTeam" placeholder="Team">
-                <input id="overseasCountry" placeholder="Country">
-                <button id="addOverseasBtn">Add Overseas Team</button>
+
+                <label for="overseasTeamSelect">Overseas Team</label>
+                <select id="overseasTeamSelect">
+                    <option value="">-- Select overseas team --</option>
+                </select>
+
+                <input id="overseasTeam" placeholder="Or enter teamCode manually">
+
+                <button id="addOverseasBtn" type="button">Add Overseas Team</button>
+                <button id="saveOverseasEditBtn" type="button" style="display:none;">Save Team Edit</button>
+                <button id="cancelOverseasEditBtn" type="button" style="display:none;">Cancel Edit</button>
                 <ul id="overseasList"></ul>
             </section>
 
@@ -250,9 +259,20 @@ wnba_teams_history.json /////////// -> teams of the WNBA by year and team franch
 
             <section class="panel input">
                 <h2>Unrivaled</h2>
+
                 <input id="unrivaledYear" placeholder="Year">
-                <input id="unrivaledTeam" placeholder="Team">
-                <button id="addUnrivaledBtn">Add Unrivaled Team</button>
+
+                <label for="unrivaledTeamSelect">Unrivaled Team</label>
+                <select id="unrivaledTeamSelect">
+                    <option value="">-- Select Unrivaled team --</option>
+                </select>
+
+                <input id="unrivaledTeam" placeholder="Or enter teamCode manually">
+
+                <button id="addUnrivaledBtn" type="button">Add Unrivaled Team</button>
+                <button id="saveUnrivaledEditBtn" type="button" style="display:none;">Save Team Edit</button>
+                <button id="cancelUnrivaledEditBtn" type="button" style="display:none;">Cancel Edit</button>
+
                 <ul id="unrivaledList"></ul>
             </section>
 

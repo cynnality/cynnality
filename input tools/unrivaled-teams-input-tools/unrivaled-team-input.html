@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <title>unrivaled-team input</title>
+
+    <!-- ======================== MONO FONTS ========================
+         CHIVO MONO 
+         ---- (monospaced // kinda playful ? serif) 
+
+         DM MONO 
+         ---- (monospaced, serif, gives digital feel - could be good replacement for v323)
+
+         JET BRAINS MONO 
+         ---- (monospaced, generally sans-serif. 
+         ---- want to use for all caps / titles / such things big bold (and oblique) style header feel)
+         ============================================================-->
+
+    <!--=====================================================================================
+
+COPIED ALL WNBA DATA FILES, AND MOVED THEM INTO "basketball_101_data_files" FOLDER !!!!
+
+overseas_leagues_data.json ///////////// -> overseas leagues data
+overseas_teams_data.json ///////////// -> overseas teams data
+unrivaled_teams_data.json ///////////// -> unrivaled teams data
+
+wnba_colleges.json //////////////// ->  college id's / college names / college nickanmes 
+wnba_finals.json ////////////////// -> finals matchups / winners / coaches / finals mvps
+wnba_olympic_players_v2.json ///////// -> data connecting players to olympic jersey numbers/rosters AND wnba teams
+wnba_reg_season_awards.json /////// -> regular season PLAYER awards
+wnba_season_stats.json //////////// -> regular season team rankings
+wnba_static_data_v2.json ///////////// -> static main/general data for WNBA (team colors, ids, locations, etc.)
+wnba_teams_history.json /////////// -> teams of the WNBA by year and team franchise lineage
+
+=====================================================================================-->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Chivo+Mono:ital,wght@0,100..900;1,100..900&family=DM+Mono:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap"
+        rel="stylesheet">
+    <!--=====================================================================================-->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+
+
+    <link rel="stylesheet" href="unrivaled-team-input.css">
+</head>
+
+<body>
+
+    <div class="top-pager">
+        <h1><em>add an unrivaled team</em></h1>
+    </div>
+
+    <div class="tool-wrap">
+        <section class="tool-shell">
+
+            <!-- ===================== NAMES ===================== -->
+            <section class="panel input mini">
+                <div class="panel-header">
+                    <h2>Names and codes</h2>
+                </div>
+
+                <div class="item">
+                    <label for="teamName">Team name</label>
+                    <input id="teamName" autocomplete="off" placeholder="ex: Club Rose">
+
+                    <label for="teamCode">Team code</label>
+                    <label class="brow">Auto-generates as bc_*</label>
+                    <input id="teamCode" autocomplete="off" placeholder="ex: bc_rose">
+                </div>
+            </section>
+
+            <!-- ===================== ACTIVE SEASONS ===================== -->
+            <section class="panel input mini">
+                <div class="panel-header">
+                    <h2>Active Seasons</h2>
+                </div>
+
+                <div class="item">
+                    <label for="startYear">Start Year</label>
+                    <input id="startYear" autocomplete="off" placeholder="ex: 2025">
+
+                    <label for="endYear">End Year</label>
+                    <input id="endYear" autocomplete="off" placeholder="present">
+
+                    <label for="activeYears">Active Years</label>
+                    <label class="brow">Comma-separated, ex: 2025, 2026</label>
+                    <input id="activeYears" autocomplete="off" placeholder="ex: 2025, 2026">
+                </div>
+            </section>
+
+            <!-- ===================== CHAMPIONSHIPS ===================== -->
+            <section class="panel input">
+                <div class="panel-header">
+                    <h2>Championships</h2>
+                </div>
+
+                <div class="item">
+                    <div id="championshipList"></div>
+                    <button id="addChampionshipBtn" type="button">Add Championship Year</button>
+                </div>
+            </section>
+
+            <!-- ===================== COLORS ===================== -->
+            <section class="panel input">
+                <div class="panel-header">
+                    <h2>Team colors</h2>
+                </div>
+
+                <div class="item color-preview-grid">
+
+                    <div class="color-card">
+                        <label>Primary (color1)</label>
+                        <input id="color1" placeholder="#000000">
+                        <div class="color-box" id="preview1"></div>
+                    </div>
+
+                    <div class="color-card">
+                        <label>Secondary (color2)</label>
+                        <input id="color2" placeholder="#ffffff">
+                        <div class="color-box" id="preview2"></div>
+                    </div>
+
+                    <div class="color-card">
+                        <label>Accent (color3)</label>
+                        <input id="color3" placeholder="#ff0000 (optional)">
+                        <div class="color-box" id="preview3"></div>
+                    </div>
+
+                </div>
+            </section>
+        </section>
+
+        <!-- ===================== DATA ===================== -->
+        <section class="panel data">
+            <h2>Data Preview</h2>
+
+            <div class="tool-note">
+                <p><strong>Note:</strong> Paste directly into <em>unrivaled_teams_data.json</em></p>
+            </div>
+
+            <button id="copyJsonBtn">Copy JSON</button>
+            <pre id="jsonPreview"></pre>
+        </section>
+    </div>
+
+    <script src="unrivaled-team-input.js" defer></script>
+</body>
+
+</html>

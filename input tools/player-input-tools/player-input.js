@@ -3,7 +3,13 @@ console.log("Player input tool loaded");
 const playerSelect = document.getElementById("playerSelect");
 
 let PLAYERS = {};
-const PLAYERS_PATH = "../../basketball_101_data_files/wnba_olympic_players.json";
+const PLAYERS_PATH = "../../basketball_101_data_files/wnba_olympic_players_v2.json";
+
+const OVERSEAS_TEAMS_PATH = "/basketball_101_data_files/overseas_teams_data.json";
+const UNRIVALED_TEAMS_PATH = "/basketball_101_data_files/unrivaled_teams_data.json";
+
+let OVERSEAS_TEAMS = {};
+let UNRIVALED_TEAMS = {};
 
 const ncaaChampionships = [];
 
@@ -106,16 +112,27 @@ const championshipTeamSelect = document.getElementById("championshipTeamSelect")
 
 // overseas team inputs
 const seasonInput = document.getElementById("overseasSeason");
+const overseasTeamSelect = document.getElementById("overseasTeamSelect");
 const teamInput = document.getElementById("overseasTeam");
-const countryInput = document.getElementById("overseasCountry");
 const addOverseasBtn = document.getElementById("addOverseasBtn");
 const overseasList = document.getElementById("overseasList");
 
+let editingOverseasIndex = null;
+
+const saveOverseasEditBtn = document.getElementById("saveOverseasEditBtn");
+const cancelOverseasEditBtn = document.getElementById("cancelOverseasEditBtn");
+
 // unrivaled inputs
 const unrivaledYearInput = document.getElementById("unrivaledYear");
+const unrivaledTeamSelect = document.getElementById("unrivaledTeamSelect");
 const unrivaledTeamInput = document.getElementById("unrivaledTeam");
 const addUnrivaledBtn = document.getElementById("addUnrivaledBtn");
 const unrivaledList = document.getElementById("unrivaledList");
+
+let editingUnrivaledIndex = null;
+
+const saveUnrivaledEditBtn = document.getElementById("saveUnrivaledEditBtn");
+const cancelUnrivaledEditBtn = document.getElementById("cancelUnrivaledEditBtn");
 
 // FIBA / national team play inputs
 const medalYearInput = document.getElementById("medalYear");
@@ -398,6 +415,69 @@ function copyPreviousSeasonTeam() {
   updateJSONPreview();
 }
 
+function replaceArrayContents(targetArray, sourceArray = []) {
+  targetArray.length = 0;
+  targetArray.push(...sourceArray);
+}
+
+function loadWnbaTimelineFromPlayer(player) {
+  wnbaSeasonTimeline = [];
+
+  const wnbaTeams = player.wnbaTeams || [];
+  const missedSeasons = player.careerDetails?.missedWnbaSeasons || [];
+
+  wnbaTeams.forEach((span) => {
+    const start = Number(span.startYear);
+    const end = span.endYear === "present" ? 2026 : Number(span.endYear);
+
+    for (let year = start; year <= end; year++) {
+      wnbaSeasonTimeline.push({
+        year,
+        seasonType: "full",
+        status: "played",
+        teamCode: span.teamCode,
+        segments: [],
+        reason: "",
+        note: ""
+      });
+    }
+  });
+
+  missedSeasons.forEach((missed) => {
+    const year = Number(missed.year);
+    let season = wnbaSeasonTimeline.find(item => item.year === year);
+
+    if (!season) {
+      season = {
+        year,
+        seasonType: "full",
+        status: "missed",
+        teamCode: missed.teamCode || "",
+        segments: [],
+        reason: missed.reason || "",
+        note: missed.note || ""
+      };
+
+      wnbaSeasonTimeline.push(season);
+    } else if (missed.partialSeason) {
+      season.seasonType = "partial";
+      season.segments.push({
+        type: "sit_out",
+        reason: missed.reason || "",
+        note: missed.note || ""
+      });
+    } else {
+      season.status = "missed";
+      season.teamCode = missed.teamCode || "";
+      season.reason = missed.reason || "";
+      season.note = missed.note || "";
+    }
+  });
+
+  wnbaSeasonTimeline.sort((a, b) => a.year - b.year);
+  selectedTimelineYear = null;
+}
+
 // ======== LIVE UPDATE LISTENERS ======================
 // ======== LIVE UPDATE LISTENERS ======================
 // ==============================================
@@ -420,17 +500,13 @@ function copyPreviousSeasonTeam() {
 });
 
 
-
-// JSON PREVIEW
+//========== JSON PREVIEW ================
 const jsonPreview = document.getElementById("jsonPreview");
-
 
 
 // ======== LIST RENDERERS ======================
 // ======== LIST RENDERERS ======================
 // ==============================================
-
-
 // College NCAA championships LIST
 function renderNcaaChampionshipsList() {
   ncaaChampionshipsList.innerHTML = "";
@@ -458,10 +534,32 @@ function renderChampionshipsList() {
 function renderOverseasList() {
   overseasList.innerHTML = "";
 
-  overseasTeams.forEach((entry) => {
+  overseasTeams.forEach((entry, index) => {
     const li = document.createElement("li");
-    li.textContent = `${entry.season} - ${entry.team} (${entry.country})`;
+
+    li.innerHTML = `
+      <span>${entry.season} - ${entry.teamCode}</span>
+      <button type="button" data-index="${index}" class="edit-overseas-btn">Edit</button>
+    `;
+
     overseasList.appendChild(li);
+  });
+
+  document.querySelectorAll(".edit-overseas-btn").forEach((btn) => {
+    btn.addEventListener("click", () => {
+      const index = Number(btn.dataset.index);
+      const entry = overseasTeams[index];
+
+      editingOverseasIndex = index;
+
+      seasonInput.value = entry.season || "";
+      teamInput.value = entry.teamCode || "";
+      overseasTeamSelect.value = entry.teamCode || "";
+
+      addOverseasBtn.style.display = "none";
+      saveOverseasEditBtn.style.display = "inline-block";
+      cancelOverseasEditBtn.style.display = "inline-block";
+    });
   });
 }
 
@@ -469,10 +567,32 @@ function renderOverseasList() {
 function renderUnrivaledList() {
   unrivaledList.innerHTML = "";
 
-  unrivaledTeams.forEach((entry) => {
+  unrivaledTeams.forEach((entry, index) => {
     const li = document.createElement("li");
-    li.textContent = `${entry.year} - ${entry.team}`;
+
+    li.innerHTML = `
+      <span>${entry.year} - ${entry.teamCode}</span>
+      <button type="button" data-index="${index}" class="edit-unrivaled-btn">Edit</button>
+    `;
+
     unrivaledList.appendChild(li);
+  });
+
+  document.querySelectorAll(".edit-unrivaled-btn").forEach((btn) => {
+    btn.addEventListener("click", () => {
+      const index = Number(btn.dataset.index);
+      const entry = unrivaledTeams[index];
+
+      editingUnrivaledIndex = index;
+
+      unrivaledYearInput.value = entry.year || "";
+      unrivaledTeamInput.value = entry.teamCode || "";
+      unrivaledTeamSelect.value = entry.teamCode || "";
+
+      addUnrivaledBtn.style.display = "none";
+      saveUnrivaledEditBtn.style.display = "inline-block";
+      cancelUnrivaledEditBtn.style.display = "inline-block";
+    });
   });
 }
 
@@ -494,14 +614,17 @@ function syncTeamSelectToInput(select, input) {
   });
 }
 
+// =======================================================================
+//           selections -> entered into the data/json generated
+// ========================================================================
 syncTeamSelectToInput(draftedBySelect, draftedByInput);
 syncTeamSelectToInput(acquiredBySelect, acquiredByInput);
 syncTeamSelectToInput(championshipTeamSelect, championshipTeamCodeInput);
-
+syncTeamSelectToInput(overseasTeamSelect, teamInput);
+syncTeamSelectToInput(unrivaledTeamSelect, unrivaledTeamInput);
+//========================================================================
 
 // ================ JSON PREVIEW =================
-// ================ JSON PREVIEW =================
-// ----------------------------------------------
 function updateJSONPreview() {
   const playerId = playerIdInput.value || "player_id_here";
 
@@ -552,12 +675,10 @@ function updateJSONPreview() {
 
   jsonPreview.textContent = JSON.stringify(output, null, 2);
 }
+//==============================================
 
-
-// ======== CLICK HANDLERS ======================
-// ======== CLICK HANDLERS ======================
+// ======== CLICK HANDLERS btns======================
 // ==============================================
-
 // college NCAA championship button
 addNcaaChampionshipBtn.addEventListener("click", () => {
   const newEntry = {
@@ -599,8 +720,7 @@ addChampionshipBtn.addEventListener("click", () => {
 addOverseasBtn.addEventListener("click", () => {
   const newEntry = {
     season: seasonInput.value,
-    team: teamInput.value,
-    country: countryInput.value
+    teamCode: teamInput.value
   };
 
   overseasTeams.push(newEntry);
@@ -610,14 +730,14 @@ addOverseasBtn.addEventListener("click", () => {
 
   seasonInput.value = "";
   teamInput.value = "";
-  countryInput.value = "";
+  overseasTeamSelect.value = "";
 });
 
 // unrivaled button
 addUnrivaledBtn.addEventListener("click", () => {
   const newEntry = {
-    year: unrivaledYearInput.value,
-    team: unrivaledTeamInput.value
+    year: Number(unrivaledYearInput.value),
+    teamCode: unrivaledTeamInput.value.trim()
   };
 
   unrivaledTeams.push(newEntry);
@@ -627,6 +747,7 @@ addUnrivaledBtn.addEventListener("click", () => {
 
   unrivaledYearInput.value = "";
   unrivaledTeamInput.value = "";
+  unrivaledTeamSelect.value = "";
 });
 
 // FIBA / national team button
@@ -664,7 +785,7 @@ copyJsonBtn.addEventListener("click", async () => {
   }
 });
 
-// playerId edit button
+// ================ PLAYERID editing buttons =================
 playerNameInput.addEventListener("input", () => {
   if (!playerIdManualMode) {
     playerIdInput.value = createPlayerIdFromName(playerNameInput.value);
@@ -694,7 +815,7 @@ function confirmPlayerIdEdit() {
   updateJSONPreview();
 }
 
-// collapse / expand panels
+// collapse / expand panels 
 document.querySelectorAll(".panel > h2").forEach((heading) => {
   const panel = heading.closest(".panel");
 
@@ -719,9 +840,10 @@ window.addEventListener("load", () => {
   loadPlayerMenu();
   loadCollegeMenu();
   loadWnbaTeamMenu();
+  loadOverseasTeamMenu();
+  loadUnrivaledTeamMenu();
 });
 
-// ======== PLAYER MENU / SELECT ======================
 // ======== PLAYER MENU / SELECT ======================
 // ==============================================
 async function loadPlayerMenu() {
@@ -778,6 +900,40 @@ function fillFormFromPlayer(playerId) {
   acquiredByInput.value = player.careerDetails?.draftDetails?.acquiredBy || "";
   transactionNoteInput.value = player.careerDetails?.draftDetails?.transactionNote || "";
 
+    replaceArrayContents(
+      ncaaChampionships,
+      player.careerDetails?.collegeCareer?.ncaaChampionships || []
+    );
+
+    replaceArrayContents(
+      championships,
+      player.championships || []
+    );
+
+    replaceArrayContents(
+      overseasTeams,
+      player.careerDetails?.overseasTeams || []
+    );
+
+    replaceArrayContents(
+      unrivaledTeams,
+      player.careerDetails?.unrivaledTeams || []
+    );
+
+    replaceArrayContents(
+      teamUsaMedals,
+      player.careerDetails?.teamUsaMedals || []
+    );
+
+    loadWnbaTimelineFromPlayer(player);
+
+    renderNcaaChampionshipsList();
+    renderChampionshipsList();
+    renderOverseasList();
+    renderUnrivaledList();
+    renderMedalList();
+    renderWnbaTimeline();
+
   updateJSONPreview();
 }
 
@@ -785,7 +941,6 @@ playerSelect.addEventListener("change", () => {
   fillFormFromPlayer(playerSelect.value);
 });
 
-// ======== COLLEGE MENU / SELECT ======================
 // ======== COLLEGE MENU / SELECT ======================
 // ==============================================
 async function loadCollegeMenu() {
@@ -822,7 +977,6 @@ collegeSelect.addEventListener("change", () => {
 });
 
 
-// ======== WNBA TEAM MENU / SELECT ======================
 // ======== WNBA TEAM MENU / SELECT ======================
 // ==============================================
 async function loadWnbaTeamMenu() {
@@ -957,3 +1111,154 @@ nextSeasonBtn.addEventListener("click", () => goToAdjacentSeason(1));
 copyPreviousTeamBtn.addEventListener("click", copyPreviousSeasonTeam);
 
 saveSeasonBtn.addEventListener("click", saveSelectedSeason);
+
+// ======== overseas MENU / SELECT ======================
+// ======== overseas TEAM MENU / SELECT ======================
+// ==============================================
+
+async function loadOverseasTeamMenu() {
+  try {
+    const res = await fetch(OVERSEAS_TEAMS_PATH);
+
+    if (!res.ok) {
+      throw new Error(`Could not load overseas teams: ${res.status}`);
+    }
+
+    const data = await res.json();
+    OVERSEAS_TEAMS = data.teams || data;
+
+    populateOverseasTeamSelect();
+  } catch (error) {
+    console.error("Could not load overseas teams:", error);
+  }
+}
+
+function populateOverseasTeamSelect() {
+  overseasTeamSelect.innerHTML = `<option value="">-- Select overseas team --</option>`;
+
+  Object.entries(OVERSEAS_TEAMS)
+    .sort(([, a], [, b]) => {
+      const nameA = a.name?.full || a.teamCode || "";
+      const nameB = b.name?.full || b.teamCode || "";
+      return nameA.localeCompare(nameB);
+    })
+    .forEach(([teamCode, team]) => {
+      const option = document.createElement("option");
+
+      option.value = team.teamCode || teamCode;
+
+      const country = team.location?.country ? ` — ${team.location.country}` : "";
+      option.textContent = `${team.name?.full || option.value}${country} (${option.value})`;
+
+      overseasTeamSelect.appendChild(option);
+    });
+
+  overseasTeamSelect.value = "";
+}
+saveOverseasEditBtn.addEventListener("click", () => {
+  if (editingOverseasIndex === null) return;
+
+  overseasTeams[editingOverseasIndex] = {
+    season: seasonInput.value.trim(),
+    teamCode: teamInput.value.trim()
+  };
+
+  editingOverseasIndex = null;
+
+  seasonInput.value = "";
+  teamInput.value = "";
+  overseasTeamSelect.value = "";
+
+  addOverseasBtn.style.display = "inline-block";
+  saveOverseasEditBtn.style.display = "none";
+  cancelOverseasEditBtn.style.display = "none";
+
+  renderOverseasList();
+  updateJSONPreview();
+});
+
+cancelOverseasEditBtn.addEventListener("click", () => {
+  editingOverseasIndex = null;
+
+  seasonInput.value = "";
+  teamInput.value = "";
+  overseasTeamSelect.value = "";
+
+  addOverseasBtn.style.display = "inline-block";
+  saveOverseasEditBtn.style.display = "none";
+  cancelOverseasEditBtn.style.display = "none";
+});
+
+// ======== unrivaled MENU / SELECT ======================
+// ======== unrivaled TEAM MENU / SELECT ======================
+// ==============================================
+async function loadUnrivaledTeamMenu() {
+  try {
+    const res = await fetch(UNRIVALED_TEAMS_PATH);
+
+    if (!res.ok) {
+      throw new Error(`Could not load Unrivaled teams: ${res.status}`);
+    }
+
+    const data = await res.json();
+    UNRIVALED_TEAMS = data.teams || data;
+
+    populateUnrivaledTeamSelect();
+  } catch (error) {
+    console.error("Could not load Unrivaled teams:", error);
+  }
+}
+
+function populateUnrivaledTeamSelect() {
+  unrivaledTeamSelect.innerHTML = `<option value="">-- Select Unrivaled team --</option>`;
+
+  Object.entries(UNRIVALED_TEAMS)
+    .sort(([, a], [, b]) => {
+      const nameA = a.name?.full || a.teamCode || "";
+      const nameB = b.name?.full || b.teamCode || "";
+      return nameA.localeCompare(nameB);
+    })
+    .forEach(([teamCode, team]) => {
+      const option = document.createElement("option");
+
+      option.value = team.teamCode || teamCode;
+      option.textContent = `${team.name?.full || option.value} (${option.value})`;
+
+      unrivaledTeamSelect.appendChild(option);
+    });
+
+  unrivaledTeamSelect.value = "";
+}
+saveUnrivaledEditBtn.addEventListener("click", () => {
+  if (editingUnrivaledIndex === null) return;
+
+  unrivaledTeams[editingUnrivaledIndex] = {
+    year: Number(unrivaledYearInput.value),
+    teamCode: unrivaledTeamInput.value.trim()
+  };
+
+  editingUnrivaledIndex = null;
+
+  unrivaledYearInput.value = "";
+  unrivaledTeamInput.value = "";
+  unrivaledTeamSelect.value = "";
+
+  addUnrivaledBtn.style.display = "inline-block";
+  saveUnrivaledEditBtn.style.display = "none";
+  cancelUnrivaledEditBtn.style.display = "none";
+
+  renderUnrivaledList();
+  updateJSONPreview();
+});
+
+cancelUnrivaledEditBtn.addEventListener("click", () => {
+  editingUnrivaledIndex = null;
+
+  unrivaledYearInput.value = "";
+  unrivaledTeamInput.value = "";
+  unrivaledTeamSelect.value = "";
+
+  addUnrivaledBtn.style.display = "inline-block";
+  saveUnrivaledEditBtn.style.display = "none";
+  cancelUnrivaledEditBtn.style.display = "none";
+});

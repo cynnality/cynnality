@@ -1,0 +1,362 @@
+{
+    "teams": {
+        "uni_girona": {
+            "teamCode": "uni_girona",
+            "name": {
+                "full": "uni girona",
+                "commonNames": [
+                    "Uni Girona Club de Basquet"
+                ]
+            },
+            "location": {
+                "area": "Girona",
+                "country": "Spain",
+                "display": "Girona, Spain"
+            },
+            "league": {
+                "leagueCode": "liga_femenina_de_baloncesto"
+            },
+            "nameHistory": [],
+            "links": [],
+            "meta": {
+                "notes": "",
+                "lastUpdated": ""
+            }
+        },
+        "perfumerias_avenida": {
+            "teamCode": "perfumerias_avenida",
+            "name": {
+                "full": "perfumerias avenida",
+                "commonNames": []
+            },
+            "location": {
+                "area": "Salamanca",
+                "country": "Spain",
+                "display": "Salamanca, Spain"
+            },
+            "league": {
+                "leagueCode": "liga_femenina_de_baloncesto"
+            },
+            "nameHistory": [
+                {
+                    "name": "Universidad de Salamanca",
+                    "startYear": 1988,
+                    "endYear": 1994
+                },
+                {
+                    "name": "Halcon Viajes",
+                    "startYear": 1994,
+                    "endYear": 2002
+                },
+                {
+                    "name": "Perfumerias Avenida",
+                    "startYear": 2002,
+                    "endYear": "present"
+                }
+            ],
+            "links": [],
+            "meta": {
+                "notes": "",
+                "lastUpdated": ""
+            }
+        },
+       "ogm_ormanspor": {
+        "teamCode": "ogm_ormanspor",
+        "name": {
+            "full": "OGM Ormanspor",
+            "commonNames": []
+        },
+        "location": {
+            "area": "Ankara",
+            "country": "Turkey",
+            "display": "Ankara, Turkey"
+        },
+        "league": {
+            "leagueCode": "kadinlar_basketball_super_ligi"
+        },
+        "nameHistory": [],
+        "links": [
+            {
+            "label": "Wiki",
+            "url": "https://en.wikipedia.org/wiki/OGM_Ormanspor_(women)",
+            "type": "Quick reference"
+            },
+            {
+            "label": "Team site",
+            "url": "https://www.ormanspor.org.tr/anasayfa",
+            "type": "official"
+            }
+        ],
+        "meta": {
+            "notes": "Is apart of the OGM Ormanspor men's basketball team. Has official colors... to add soon",
+            "lastUpdated": ""
+        }
+        },
+        "kayseri_basketbol": {
+        "teamCode": "kayseri_basketbol",
+        "name": {
+            "full": "Kayseri Basketbol",
+            "commonNames": [
+            "Kayseri"
+            ]
+        },
+        "location": {
+            "area": "Kayseri",
+            "country": "Turkey",
+            "display": "Kayseri, Turkey"
+        },
+        "league": {
+            "leagueCode": "kadinlar_basketball_super_ligi"
+        },
+        "nameHistory": [
+            {
+            "name": "TED Kayseri Koleji",
+            "startYear": 2005,
+            "endYear": 2007
+            },
+            {
+            "name": "Pankup TED Kayseri Koleji",
+            "startYear": 2007,
+            "endYear": 2009
+            },
+            {
+            "name": "Pankup Kayseri Sekerspor",
+            "startYear": 2009,
+            "endYear": 2011
+            },
+            {
+            "name": "Kayseri Kaski Spor",
+            "startYear": 2011,
+            "endYear": 2014
+            },
+            {
+            "name": "Abdullah Gui Universitesi",
+            "startYear": 2014,
+            "endYear": 2018
+            },
+            {
+            "name": "Melikgazi Kayseri Basketbol",
+            "startYear": 2018,
+            "endYear": "present"
+            }
+        ],
+        "links": [
+            {
+            "label": "Wiki",
+            "url": "https://en.wikipedia.org/wiki/Kayseri_Basketbol",
+            "type": "Quick reference"
+            },
+            {
+            "label": "Team site",
+            "url": "https://www.kayseribasketbol.com/",
+            "type": "official"
+            }
+        ],
+        "meta": {
+            "notes": "",
+            "lastUpdated": ""
+        }
+        },
+        "fenerbahce": {
+        "teamCode": "fenerbahce",
+        "name": {
+            "full": "Fenerbahce",
+            "commonNames": [
+            "Fenerbahce Opet",
+            "Fenerbahce SK",
+            "Fenerbahce Istanbul"
+            ]
+        },
+        "location": {
+            "area": "Istanbul",
+            "country": "Turkey",
+            "display": "Istanbul, Turkey"
+        },
+        "league": {
+            "leagueCode": "kadinlar_basketball_super_ligi"
+        },
+        "nameHistory": [],
+        "links": [
+            {
+            "label": "Team site",
+            "url": "https://www.fenerbahce.org/branches/menbasketball/news",
+            "type": "official"
+            }
+        ],
+        "meta": {
+            "notes": "",
+            "lastUpdated": ""
+        }
+        },
+        "galatasaray": {
+        "teamCode": "galatasaray",
+        "name": {
+            "full": "Galatasaray",
+            "commonNames": [
+            "Galatasaray Çağdaş Faktoring"
+            ]
+        },
+        "location": {
+            "area": "Istanbul",
+            "country": "Turkey",
+            "display": "Istanbul, Turkey"
+        },
+        "league": {
+            "leagueCode": "kadinlar_basketball_super_ligi"
+        },
+        "nameHistory": [
+            {
+            "name": "Galatasaray",
+            "startYear": 1954,
+            "endYear": 2010
+            },
+            {
+            "name": "Galatasaray Medical Park",
+            "startYear": 2010,
+            "endYear": 2012
+            },
+            {
+            "name": "Galatasaray",
+            "startYear": 2012,
+            "endYear": 2013
+            },
+            {
+            "name": "Galatasaray Odeabank",
+            "startYear": 2013,
+            "endYear": 2015
+            },
+            {
+            "name": "Galatasaray",
+            "startYear": 2015,
+            "endYear": 2022
+            },
+            {
+            "name": "Galatasaray Çağdaş Faktoring",
+            "startYear": 2022,
+            "endYear": "present"
+            }
+        ],
+        "links": [
+            {
+            "label": "Wiki",
+            "url": "https://en.wikipedia.org/wiki/Galatasaray_S.K._(women%27s_basketball)",
+            "type": "Quick reference"
+            }
+        ],
+        "meta": {
+            "notes": "",
+            "lastUpdated": ""
+        }
+        },
+        "botas_sk": {
+        "teamCode": "botas_sk",
+        "name": {
+            "full": "Botas SK",
+            "commonNames": []
+        },
+        "location": {
+            "area": "Ankara",
+            "country": "Turkey",
+            "display": "Ankara, Turkey"
+        },
+        "league": {
+            "leagueCode": "kadinlar_basketball_super_ligi"
+        },
+        "nameHistory": [],
+        "links": [
+            {
+            "label": "Wiki",
+            "url": "https://en.wikipedia.org/wiki/Bota%C5%9F_SK",
+            "type": "Quick reference"
+            }
+        ],
+        "meta": {
+            "notes": "",
+            "lastUpdated": ""
+        }
+        },
+        "curkova": {
+        "teamCode": "curkova",
+        "name": {
+            "full": "Curkova",
+            "commonNames": [
+            "CBK Mersin",
+            "CIMSA CBK Mersin"
+            ]
+        },
+        "location": {
+            "area": "Mersin",
+            "country": "Turkey",
+            "display": "Mersin, Turkey"
+        },
+        "league": {
+            "leagueCode": "kadinlar_basketball_super_ligi"
+        },
+        "nameHistory": [
+            {
+            "name": "Çukurova Basketbol",
+            "startYear": 2017,
+            "endYear": 2020
+            },
+            {
+            "name": "ÇBK Mersin Yenişehir Belediyesi",
+            "startYear": 2020,
+            "endYear": 2023
+            },
+            {
+            "name": "Çukurova Basketbol Kulübü Mersin",
+            "startYear": 2023,
+            "endYear": 2025
+            },
+            {
+            "name": "ÇİMSA ÇBK Mersin",
+            "startYear": 2025,
+            "endYear": "present"
+            }
+        ],
+        "links": [
+            {
+            "label": "Wiki",
+            "url": "https://en.wikipedia.org/wiki/%C3%87ukurova_Basketbol",
+            "type": "Quick reference"
+            }
+        ],
+        "meta": {
+            "notes": "",
+            "lastUpdated": ""
+        }
+        },
+        "yakin_dogu_universitesi": {
+        "teamCode": "yakin_dogu_universitesi",
+        "name": {
+            "full": "Yakin Dogu Universitesi",
+            "commonNames": [
+            "YDÜ Melekler",
+            "NEU Angels",
+            "Near East University",
+            "Yakın Doğu Üniversitesi"
+            ]
+        },
+        "location": {
+            "area": "Istanbul",
+            "country": "Turkey",
+            "display": "Istanbul, Turkey"
+        },
+        "league": {
+            "leagueCode": "kadinlar_basketball_super_ligi"
+        },
+        "nameHistory": [],
+        "links": [
+            {
+            "label": "wiki",
+            "url": "https://en.wikipedia.org/wiki/Yak%C4%B1n_Do%C4%9Fu_%C3%9Cniversitesi_(women%27s_basketball)",
+            "type": "Quick reference"
+            }
+        ],
+        "meta": {
+            "notes": "",
+            "lastUpdated": ""
+        }
+        }
+    }
+}
