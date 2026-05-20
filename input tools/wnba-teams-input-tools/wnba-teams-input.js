@@ -73,6 +73,8 @@ const favoriteInput = document.getElementById("favorite");
 const copyJsonBtn = document.getElementById("copyJsonBtn");
 const jsonPreview = document.getElementById("jsonPreview");
 
+const saveJsonBtn = document.getElementById("saveJsonBtn");
+
 async function loadTeamsData() {
   try {
     const res = await fetch(DATA_PATH);
@@ -138,7 +140,7 @@ function fillFormFromTeam(team) {
     }
 
   setInputValue(marketInput, team.location?.market);
-setInputValue(cityStateInput, `${team.location?.city || ""}, ${team.location?.state || ""}`.replace(/^,\s*/, "").replace(/,\s*$/, ""));
+  setInputValue(cityStateInput, `${team.location?.city || ""}, ${team.location?.state || ""}`.replace(/^,\s*/, "").replace(/,\s*$/, ""));
   setInputValue(arenaInput, team.location?.arena);
 
   setInputValue(slugInput, team.branding?.slug);
@@ -173,7 +175,7 @@ setInputValue(cityStateInput, `${team.location?.city || ""}, ${team.location?.st
     updateJSONPreview();
 }
 
-function buildTeamObject() {
+function getTeamObject() {
   const teamCode = teamCodeInput.value || "TEAM_CODE_HERE";
 
   const history = {
@@ -198,62 +200,67 @@ function buildTeamObject() {
   const parsedLocation = parseCityState(cityStateInput.value);
 
   return {
-    [teamCode]: {
-      teamCode: teamCode,
-      franchiseId: franchiseIdInput.value || null,
+    teamCode: teamCode,
+    franchiseId: franchiseIdInput.value || null,
 
-      name: {
-        full: nameFullInput.value,
-        city: parsedName.city,
-        mascot: parsedName.mascot,
-        short: nameShortInput.value
+    name: {
+      full: nameFullInput.value,
+      city: parsedName.city,
+      mascot: parsedName.mascot,
+      short: nameShortInput.value
+    },
+
+    status: {
+      isActive: statusActiveInput.checked,
+      isOriginalTeam: originalYesInput.checked,
+      founded: foundedInput.value ? Number(foundedInput.value) : null,
+      ended: endedInput.value ? Number(endedInput.value) : null,
+      endType: endTypeInput.value || null
+    },
+
+    league: {
+      conference: conferenceEastInput.checked ? "east" : conferenceWestInput.checked ? "west" : ""
+    },
+
+    location: {
+      market: marketInput.value,
+      state: parsedLocation.state,
+      city: parsedLocation.city,
+      arena: arenaInput.value || null
+    },
+
+    branding: {
+      slug: slugInput.value,
+      logo: {
+        src: logoSrcInput.value,
+        alt: `${nameFullInput.value} Logo`
       },
-
-      status: {
-        isActive: statusActiveInput.checked,
-        isOriginalTeam: originalYesInput.checked,
-        founded: foundedInput.value ? Number(foundedInput.value) : null,
-        ended: endedInput.value ? Number(endedInput.value) : null,
-        endType: endTypeInput.value || null
+      colors: {
+        color1: color1Input.value,
+        color2: color2Input.value,
+        color3: color3Input.value
       },
-
-      league: {
-        conference: conferenceEastInput.checked ? "east" : conferenceWestInput.checked ? "west" : ""
-      },
-
-      location: {
-        market: marketInput.value,
-        state: parsedLocation.state,
-        city: parsedLocation.city,
-        arena: arenaInput.value || null
-      },
-
-      branding: {
-        slug: slugInput.value,
-        logo: {
-          src: logoSrcInput.value,
-          alt: `${nameFullInput.value} Logo`
-        },
-        colors: {
-          color1: color1Input.value,
-          color2: color2Input.value,
-          color3: color3Input.value
-        },
-        courtColors: {
-          main: courtMainInput.value,
-          lines: courtLinesInput.value,
-          accent: courtAccentInput.value
-        }
-      },
-
-      history: history,
-
-      championshipYears: championshipYears,
-
-      meta: {
-        favorite: favoriteInput.checked
+      courtColors: {
+        main: courtMainInput.value,
+        lines: courtLinesInput.value,
+        accent: courtAccentInput.value
       }
+    },
+
+    history: history,
+
+    championshipYears: championshipYears,
+
+    meta: {
+      favorite: favoriteInput.checked
     }
+  };
+}
+
+function buildTeamObject() {
+  const teamObject = getTeamObject();
+  return {
+    [teamObject.teamCode]: teamObject
   };
 }
 
@@ -470,6 +477,35 @@ copyJsonBtn.addEventListener("click", async () => {
   } catch (error) {
     console.error("Copy failed:", error);
     alert("Copy failed. You can still manually select and copy the JSON.");
+  }
+});
+
+saveJsonBtn.addEventListener("click", async () => {
+  const teamObject = getTeamObject();
+
+  try {
+    const response = await fetch("http://127.0.0.1:8787/save-wnba-team", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json"
+      },
+      body: JSON.stringify(teamObject)
+    });
+
+    const result = await response.json();
+
+    if (!result.ok) {
+      throw new Error(result.error || "Save failed");
+    }
+
+    saveJsonBtn.textContent = "Saved!";
+
+    setTimeout(() => {
+      saveJsonBtn.textContent = "Save JSON File";
+    }, 1200);
+  } catch (error) {
+    console.error(error);
+    alert("Save failed. Make sure the local save server is running.");
   }
 });
 

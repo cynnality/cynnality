@@ -14,6 +14,8 @@ const addLinkBtn = document.getElementById("addLinkBtn");
 const jsonPreview = document.getElementById("jsonPreview");
 const copyJsonBtn = document.getElementById("copyJsonBtn");
 
+const saveJsonBtn = document.getElementById("saveJsonBtn");
+
 let leagueCodeEdited = false;
 
 function makeCode(value) {
@@ -159,11 +161,11 @@ function getLinks() {
         .filter(link => link.label || link.url);
 }
 
-function buildLeagueObject() {
+function getLeagueObject() {
     const leagueName = leagueNameInput.value.trim();
     const leagueCode = leagueCodeInput.value.trim() || "league_code_here";
 
-    const leagueObject = {
+    return {
         leagueCode,
 
         name: {
@@ -185,8 +187,11 @@ function buildLeagueObject() {
             lastUpdated: ""
         }
     };
+}
 
-    return `"${leagueCode}": ${JSON.stringify(leagueObject, null, 2)}`;
+function buildLeagueObject() {
+    const leagueObject = getLeagueObject();
+    return `"${leagueObject.leagueCode}": ${JSON.stringify(leagueObject, null, 2)}`;
 }
 
 function renderJson() {
@@ -238,6 +243,35 @@ copyJsonBtn.addEventListener("click", async () => {
     setTimeout(() => {
         copyJsonBtn.textContent = "Copy JSON";
     }, 1000);
+});
+
+saveJsonBtn.addEventListener("click", async () => {
+    const leagueObject = getLeagueObject();
+
+    try {
+        const response = await fetch("http://127.0.0.1:8787/save-overseas-league", {
+            method: "POST",
+            headers: {
+                "Content-Type": "application/json"
+            },
+            body: JSON.stringify(leagueObject)
+        });
+
+        const result = await response.json();
+
+        if (!result.ok) {
+            throw new Error(result.error || "Save failed");
+        }
+
+        saveJsonBtn.textContent = "Saved!";
+
+        setTimeout(() => {
+            saveJsonBtn.textContent = "Save JSON File";
+        }, 1200);
+    } catch (error) {
+        console.error(error);
+        alert("Save failed. Make sure the local save server is running.");
+    }
 });
 
 resetFormOnLoad();

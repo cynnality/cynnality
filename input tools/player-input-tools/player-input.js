@@ -21,8 +21,19 @@ const overseasTeams = [];
 const unrivaledTeams = [];
 const teamUsaMedals = [];
 
+// wrappers for yes/no areas and conditional fields/elements 
+const teamUsaJerseyWrapper = document.getElementById("teamUsaJerseyWrapper");
+const ncaaChampionshipsWrapper = document.getElementById("ncaaChampionshipsWrapper");
+const draftDayTradeWrapper = document.getElementById("draftDayTradeWrapper");
+const overseasExperienceWrapper = document.getElementById("overseasExperienceWrapper");
+const unrivaledExperienceWrapper = document.getElementById("unrivaledExperienceWrapper");
+const wnbaChampionshipsWrapper = document.getElementById("wnbaChampionshipsWrapper");
+const nationalTeamWrapper = document.getElementById("nationalTeamWrapper");
+const medalEventTypeInput = document.getElementById("medalEventType");
+
 // TOOL / FUNCTIONAL INPUT/BUTTON REFERENCES
 const copyJsonBtn = document.getElementById("copyJsonBtn");
+const saveJsonBtn = document.getElementById("saveJsonBtn");
 
 // college select
 const collegeSelect = document.getElementById("collegeSelect");
@@ -78,26 +89,11 @@ const seasonEditor = document.getElementById("seasonEditor");
 const selectedSeasonLabel = document.getElementById("selectedSeasonLabel");
 const prevSeasonBtn = document.getElementById("prevSeasonBtn");
 const nextSeasonBtn = document.getElementById("nextSeasonBtn");
-const copyPreviousTeamBtn = document.getElementById("copyPreviousTeamBtn");
+const addSeasonTeamEntryBtn = document.getElementById("addSeasonTeamEntryBtn");
+const addSeasonSitOutEntryBtn = document.getElementById("addSeasonSitOutEntryBtn");
+const seasonEntriesList = document.getElementById("seasonEntriesList");
 
-const seasonFullInput = document.getElementById("seasonFull");
-const seasonPartialInput = document.getElementById("seasonPartial");
-
-const playedSeasonOptions = document.getElementById("playedSeasonOptions");
-const missedSeasonOptions = document.getElementById("missedSeasonOptions");
-const partialSeasonOptions = document.getElementById("partialSeasonOptions");
-
-const missedTimelineTeamSelect = document.getElementById("missedTimelineTeamSelect");
-
-const addPartialTeamBtn = document.getElementById("addPartialTeamBtn");
-const addPartialSitOutBtn = document.getElementById("addPartialSitOutBtn");
-const partialSegmentsList = document.getElementById("partialSegmentsList");
-
-const seasonTeamSelect = document.getElementById("seasonTeamSelect");
-const seasonPlayedInput = document.getElementById("seasonPlayed");
-const seasonMissedInput = document.getElementById("seasonMissed");
-const seasonReasonInput = document.getElementById("seasonReason");
-const seasonNoteInput = document.getElementById("seasonNote");
+const copyPreviousSeasonBtn = document.getElementById("copyPreviousSeasonBtn");
 const saveSeasonBtn = document.getElementById("saveSeasonBtn");
 
 // wnba championship inputs
@@ -141,6 +137,38 @@ const medalTypeInput = document.getElementById("medalType");
 const addMedalBtn = document.getElementById("addMedalBtn");
 const medalList = document.getElementById("medalList");
 
+// =============================================================================
+// ========== yes/no fields and conditional element helpers ====================
+// =============================================================================
+function getRadioBoolean(name) {
+  const selected = document.querySelector(`input[name="${name}"]:checked`);
+  if (!selected) return false;
+  return selected.value === "true";
+}
+
+function setRadioBoolean(name, value) {
+  const input = document.querySelector(
+    `input[name="${name}"][value="${value ? "true" : "false"}"]`
+  );
+
+  if (input) input.checked = true;
+}
+
+function bindConditionalBoolean(name, wrapperEl, onNo = null) {
+  document.querySelectorAll(`input[name="${name}"]`).forEach((input) => {
+    input.addEventListener("change", () => {
+      const isYes = getRadioBoolean(name);
+      wrapperEl.style.display = isYes ? "block" : "none";
+
+      if (!isYes && typeof onNo === "function") {
+        onNo();
+      }
+
+      updateJSONPreview();
+    });
+  });
+}
+// =============================================================================
 
 // playerId creation 
 function createPlayerIdFromName(name) {
@@ -206,17 +234,11 @@ function renderWnbaTimeline() {
       card.classList.add("selected");
     }
 
-      const colors = [];
+      const entries = ensureSeasonEntries(season);
 
-      if (season.teamCode) {
-        colors.push(getTeamColor(season.teamCode));
-      }
-
-      season.segments
-        .filter((segment) => segment.type === "team" && segment.teamCode)
-        .forEach((segment) => {
-          colors.push(getTeamColor(segment.teamCode));
-        });
+      const colors = entries
+        .filter((entry) => entry.type === "team" && entry.teamCode)
+        .map((entry) => getTeamColor(entry.teamCode));
 
       const squareStyle = colors.length > 1
         ? `background: linear-gradient(90deg, ${colors.map((color, index) => {
@@ -229,7 +251,12 @@ function renderWnbaTimeline() {
     card.innerHTML = `
       <div class="year-label">${season.year}</div>
       <div class="year-square" style="${squareStyle}"></div>
-      <div class="team-label">${season.secondTeamCode ? `${season.teamCode}/${season.secondTeamCode}` : season.teamCode || "—"}</div>
+      <div class="team-label">${
+        entries
+          .filter((entry) => entry.type === "team" && entry.teamCode)
+          .map((entry) => entry.teamCode)
+          .join("/") || "—"
+      }</div>    
     `;
 
     card.addEventListener("click", () => {
@@ -242,71 +269,39 @@ function renderWnbaTimeline() {
   });
 }
 
-function openSeasonEditor(year) {
-  const season = wnbaSeasonTimeline.find((item) => item.year === year);
-  if (!season) return;
-
-  selectedSeasonLabel.textContent = `Editing ${year}`;
-
-  seasonPlayedInput.checked = season.status === "played";
-  seasonMissedInput.checked = season.status === "missed";
-
-  seasonFullInput.checked = season.seasonType !== "partial";
-  seasonPartialInput.checked = season.seasonType === "partial";
-
-  seasonTeamSelect.value = season.teamCode || "";
-  missedTimelineTeamSelect.value = season.teamCode || "";
-
-  seasonReasonInput.value = season.reason || "";
-  seasonNoteInput.value = season.note || "";
-
-  renderPartialSegmentsList(season);
-  syncSeasonEditorVisibility();
-}
-
-function saveSelectedSeason() {
-  const season = wnbaSeasonTimeline.find((item) => item.year === selectedTimelineYear);
-  if (!season) return;
-
-  season.status = seasonMissedInput.checked ? "missed" : "played";
-  season.seasonType = seasonPartialInput.checked ? "partial" : "full";
-
-  if (season.status === "missed") {
-    season.teamCode = missedTimelineTeamSelect.value;
-    season.reason = seasonReasonInput.value;
-    season.note = seasonNoteInput.value;
-    season.segments = [];
-  } else {
-    season.teamCode = seasonTeamSelect.value;
-    season.reason = "";
-    season.note = "";
-
-    if (season.seasonType === "full") {
-      season.segments = [];
-    }
-  }
-
-  renderWnbaTimeline();
-  updateJSONPreview();
-}
-
 function buildWnbaTeamsFromTimeline() {
-  const playedSeasons = wnbaSeasonTimeline.filter(
-    (season) => season.status === "played" && season.teamCode
-  );
+  const teamSeasons = [];
 
-  if (!playedSeasons.length) return [];
+  wnbaSeasonTimeline.forEach((season) => {
+    const entries = ensureSeasonEntries(season);
+
+    entries
+      .filter((entry) => entry.type === "team" && entry.teamCode)
+      .forEach((entry) => {
+        teamSeasons.push({
+          year: season.year,
+          teamCode: entry.teamCode,
+          note: entry.note || ""
+        });
+      });
+  });
+
+  if (!teamSeasons.length) return [];
 
   const spans = [];
   let currentSpan = {
-    teamCode: playedSeasons[0].teamCode,
-    startYear: String(playedSeasons[0].year),
-    endYear: String(playedSeasons[0].year)
+    teamCode: teamSeasons[0].teamCode,
+    startYear: String(teamSeasons[0].year),
+    endYear: String(teamSeasons[0].year)
   };
 
-  for (let i = 1; i < playedSeasons.length; i++) {
-    const season = playedSeasons[i];
-    const previous = playedSeasons[i - 1];
+  if (teamSeasons[0].note) {
+    currentSpan.note = teamSeasons[0].note;
+  }
+
+  for (let i = 1; i < teamSeasons.length; i++) {
+    const season = teamSeasons[i];
+    const previous = teamSeasons[i - 1];
 
     const sameTeam = season.teamCode === currentSpan.teamCode;
     const consecutive = season.year === previous.year + 1;
@@ -314,18 +309,21 @@ function buildWnbaTeamsFromTimeline() {
     if (sameTeam && consecutive) {
       currentSpan.endYear = String(season.year);
     } else {
-      addMovementToSpan(currentSpan);
       spans.push(currentSpan);
+
       currentSpan = {
         teamCode: season.teamCode,
         startYear: String(season.year),
         endYear: String(season.year)
       };
+
+      if (season.note) {
+        currentSpan.note = season.note;
+      }
     }
   }
 
-    addMovementToSpan(currentSpan);
-    spans.push(currentSpan);
+  spans.push(currentSpan);
 
   if (playerActiveYesInput.checked && spans.length) {
     spans[spans.length - 1].endYear = "present";
@@ -334,59 +332,198 @@ function buildWnbaTeamsFromTimeline() {
   return spans;
 }
 
-function addMovementToSpan(span) {
-  const startSeason = wnbaSeasonTimeline.find(
-    (season) => String(season.year) === span.startYear && season.teamCode === span.teamCode
-  );
-
-  if (!startSeason) return;
-
-  if (startSeason.movementType) {
-    span.movementType = startSeason.movementType;
-  }
-
-  if (startSeason.movementNote) {
-    span.movementNote = startSeason.movementNote;
-  }
-
-  if (startSeason.secondTeamCode) {
-    span.secondTeamCode = startSeason.secondTeamCode;
-  }
-}
-
 function buildMissedSeasonsFromTimeline() {
   const missed = [];
 
   wnbaSeasonTimeline.forEach((season) => {
-    if (season.status === "missed") {
-      const entry = {
-        year: String(season.year),
-        teamCode: season.teamCode,
-        reason: season.reason
-      };
+    const entries = ensureSeasonEntries(season);
 
-      if (season.note) entry.note = season.note;
-
-      missed.push(entry);
-    }
-
-    season.segments
-      .filter((segment) => segment.type === "sit_out")
-      .forEach((segment) => {
-        const entry = {
+    entries
+      .filter((entry) => entry.type === "sit_out")
+      .forEach((entry) => {
+        const missedEntry = {
           year: String(season.year),
-          teamCode: season.teamCode,
-          reason: segment.reason
+          teamCode: entry.teamCode || "",
+          reason: entry.reason || ""
         };
 
-        if (segment.note) entry.note = segment.note;
-        entry.partialSeason = true;
+        if (entry.note) {
+          missedEntry.note = entry.note;
+        }
 
-        missed.push(entry);
+        const hasTeamEntry = entries.some(
+          (item) => item.type === "team" && item.teamCode
+        );
+
+        if (hasTeamEntry) {
+          missedEntry.partialSeason = true;
+        }
+
+        missed.push(missedEntry);
       });
   });
 
   return missed;
+}
+
+function getSelectedSeason() {
+  return wnbaSeasonTimeline.find((season) => season.year === selectedTimelineYear);
+}
+
+function ensureSeasonEntries(season) {
+  if (!season.entries) {
+    season.entries = [];
+
+    if (season.status === "played" && season.teamCode) {
+      season.entries.push({
+        type: "team",
+        teamCode: season.teamCode,
+        note: season.note || ""
+      });
+    }
+
+    if (season.status === "missed") {
+      season.entries.push({
+        type: "sit_out",
+        teamCode: season.teamCode || "",
+        reason: season.reason || "",
+        note: season.note || ""
+      });
+    }
+
+    (season.segments || []).forEach((segment) => {
+      if (segment.type === "team") {
+        season.entries.push({
+          type: "team",
+          teamCode: segment.teamCode || "",
+          note: segment.movementNote || segment.note || ""
+        });
+      }
+
+      if (segment.type === "sit_out") {
+        season.entries.push({
+          type: "sit_out",
+          teamCode: season.teamCode || "",
+          reason: segment.reason || "",
+          note: segment.note || ""
+        });
+      }
+    });
+  }
+
+  return season.entries;
+}
+
+function openSeasonEditor(year) {
+  const season = wnbaSeasonTimeline.find((item) => item.year === year);
+  if (!season) return;
+
+  selectedSeasonLabel.textContent = `Editing ${year}`;
+  ensureSeasonEntries(season);
+  renderSeasonEntriesList(season);
+}
+
+function addSeasonEntry(type) {
+  const season = getSelectedSeason();
+  if (!season) return;
+
+  ensureSeasonEntries(season);
+
+  season.entries.push({
+    type,
+    teamCode: "",
+    reason: "",
+    note: ""
+  });
+
+  renderSeasonEntriesList(season);
+  renderWnbaTimeline();
+  updateJSONPreview();
+}
+
+function copyPreviousSeasonEntries() {
+  const currentIndex = getSelectedSeasonIndex();
+  if (currentIndex <= 0) return;
+
+  const currentSeason = wnbaSeasonTimeline[currentIndex];
+  const previousSeason = wnbaSeasonTimeline[currentIndex - 1];
+
+  const previousEntries = ensureSeasonEntries(previousSeason);
+
+  currentSeason.entries = previousEntries.map(entry => ({ ...entry }));
+
+  renderSeasonEntriesList(currentSeason);
+  renderWnbaTimeline();
+  updateJSONPreview();
+}
+
+function renderSeasonEntriesList(season) {
+  seasonEntriesList.innerHTML = "";
+
+  const entries = ensureSeasonEntries(season);
+
+  if (!entries.length) {
+    seasonEntriesList.innerHTML = `<p class="empty-note">No entries yet. Add a team or sit-out.</p>`;
+    return;
+  }
+
+  entries.forEach((entry, index) => {
+    const card = document.createElement("div");
+    card.className = "season-entry-card";
+
+    card.innerHTML = `
+      <div class="season-entry-card-header">
+        <strong>Entry ${index + 1}: ${entry.type === "sit_out" ? "Sit Out" : "Team"}</strong>
+        <button type="button" class="remove-season-entry-btn">Remove</button>
+      </div>
+
+      <label>Team</label>
+      <select class="entry-team-select wnba-team-select">
+        <option value="">-- Select team --</option>
+      </select>
+
+      ${
+        entry.type === "sit_out"
+          ? `<input class="entry-reason" placeholder="Reason" value="${entry.reason || ""}">`
+          : ""
+      }
+
+      <textarea class="entry-note" placeholder="Note/details">${entry.note || ""}</textarea>
+    `;
+
+    const teamSelect = card.querySelector(".entry-team-select");
+    populateSingleWnbaTeamSelect(teamSelect);
+    teamSelect.value = entry.teamCode || "";
+
+    teamSelect.addEventListener("change", () => {
+      entry.teamCode = teamSelect.value;
+      renderWnbaTimeline();
+      updateJSONPreview();
+    });
+
+    const reasonInput = card.querySelector(".entry-reason");
+    if (reasonInput) {
+      reasonInput.addEventListener("input", () => {
+        entry.reason = reasonInput.value;
+        updateJSONPreview();
+      });
+    }
+
+    const noteInput = card.querySelector(".entry-note");
+    noteInput.addEventListener("input", () => {
+      entry.note = noteInput.value;
+      updateJSONPreview();
+    });
+
+    card.querySelector(".remove-season-entry-btn").addEventListener("click", () => {
+      entries.splice(index, 1);
+      renderSeasonEntriesList(season);
+      renderWnbaTimeline();
+      updateJSONPreview();
+    });
+
+    seasonEntriesList.appendChild(card);
+  });
 }
 
 function getSelectedSeasonIndex() {
@@ -405,19 +542,23 @@ function goToAdjacentSeason(direction) {
   renderWnbaTimeline();
 }
 
-function copyPreviousSeasonTeam() {
-  const currentIndex = getSelectedSeasonIndex();
-  if (currentIndex <= 0) return;
-
-  const previousSeason = wnbaSeasonTimeline[currentIndex - 1];
-
-  seasonTeamSelect.value = previousSeason.teamCode || "";
-  updateJSONPreview();
-}
-
 function replaceArrayContents(targetArray, sourceArray = []) {
   targetArray.length = 0;
   targetArray.push(...sourceArray);
+}
+
+function normalizeOverseasTeamEntry(entry) {
+  return {
+    season: entry.season || "",
+    teamCode: entry.teamCode || entry.team || ""
+  };
+}
+
+function normalizeUnrivaledTeamEntry(entry) {
+  return {
+    year: Number(entry.year),
+    teamCode: entry.teamCode || entry.team || ""
+  };
 }
 
 function loadWnbaTimelineFromPlayer(player) {
@@ -431,15 +572,25 @@ function loadWnbaTimelineFromPlayer(player) {
     const end = span.endYear === "present" ? 2026 : Number(span.endYear);
 
     for (let year = start; year <= end; year++) {
-      wnbaSeasonTimeline.push({
-        year,
-        seasonType: "full",
-        status: "played",
-        teamCode: span.teamCode,
-        segments: [],
-        reason: "",
-        note: ""
-      });
+      let existingSeason = wnbaSeasonTimeline.find(item => item.year === year);
+
+      if (!existingSeason) {
+        wnbaSeasonTimeline.push({
+          year,
+          seasonType: "full",
+          status: "played",
+          teamCode: span.teamCode,
+          segments: [],
+          reason: "",
+          note: ""
+        });
+      } else if (existingSeason.teamCode !== span.teamCode) {
+        existingSeason.seasonType = "partial";
+        existingSeason.segments.push({
+          type: "team",
+          teamCode: span.teamCode
+        });
+      }
     }
   });
 
@@ -477,6 +628,22 @@ function loadWnbaTimelineFromPlayer(player) {
   wnbaSeasonTimeline.sort((a, b) => a.year - b.year);
   selectedTimelineYear = null;
 }
+//wnba championship yes/no button option helper
+function syncActivePlayerUI() {
+  const isActive = getRadioBoolean("playerActive2026");
+
+  retiredYearWrapper.style.display = isActive ? "none" : "block";
+
+  if (isActive) {
+    retiredYearInput.value = "";
+  }
+
+  updateJSONPreview();
+}
+  
+retiredYearInput.addEventListener("input", updateJSONPreview);
+playerActiveYesInput.addEventListener("change", syncActivePlayerUI);
+playerActiveNoInput.addEventListener("change", syncActivePlayerUI);
 
 // ======== LIVE UPDATE LISTENERS ======================
 // ======== LIVE UPDATE LISTENERS ======================
@@ -529,6 +696,7 @@ function renderChampionshipsList() {
     championshipsList.appendChild(li);
   });
 }
+
 
 // overseas LIST
 function renderOverseasList() {
@@ -625,55 +793,78 @@ syncTeamSelectToInput(unrivaledTeamSelect, unrivaledTeamInput);
 //========================================================================
 
 // ================ JSON PREVIEW =================
-function updateJSONPreview() {
-  const playerId = playerIdInput.value || "player_id_here";
+function getPlayerId() {
+  return playerIdInput.value || "player_id_here";
+}
 
-    const draftDetails = {
-        year: draftYearInput.value,
-        pick: draftPickInput.value,
-        draftedBy: draftedByInput.value
-    };
+function getPlayerData() {
+  const draftDetails = {
+    year: draftYearInput.value,
+    pick: draftPickInput.value,
+    draftedBy: draftedByInput.value
+  };
 
+  if (getRadioBoolean("wasDraftDayTrade")) {
     if (acquiredByInput.value) {
-        draftDetails.acquiredBy = acquiredByInput.value;
+      draftDetails.acquiredBy = acquiredByInput.value;
     }
 
     if (transactionNoteInput.value) {
-        draftDetails.transactionNote = transactionNoteInput.value;
+      draftDetails.transactionNote = transactionNoteInput.value;
     }
+  }
 
-  const output = {
-    [playerId]: {
-      playerName: playerNameInput.value,
-      teamUsaJersey: teamUsaJerseyInput.value,
+  return {
+    playerName: playerNameInput.value,
+    teamUsaJersey: getRadioBoolean("isOlympicPlayer") ? teamUsaJerseyInput.value : "",
 
-      careerDetails: {
-        collegeCareer: {
-          collegeId: collegeIdInput.value,
-          startYear: collegeStartInput.value,
-          endYear: collegeEndInput.value,
-          ncaaChampionships: ncaaChampionships
-        },
+    playerStatus: {
+      isActive: getRadioBoolean("playerActive2026"),
+      hasNcaaChampionships: getRadioBoolean("hasNcaaChampionships"),
+      wasDraftDayTrade: getRadioBoolean("wasDraftDayTrade"),
+      hasWnbaChampionships: getRadioBoolean("hasWnbaChampionships"),
+      hasOverseasExperience: getRadioBoolean("hasOverseasExperience"),
+      hasUnrivaledExperience: getRadioBoolean("hasUnrivaledExperience"),
+      isOlympicPlayer: getRadioBoolean("hasOlympicExperience"),
+      hasNationalTeamExperience: getRadioBoolean("hasNationalTeamExperience"),
+      hasOlympicExperience: getRadioBoolean("hasOlympicExperience"),
+    },
 
-        draftDetails: draftDetails,
-
-        missedWnbaSeasons: buildMissedSeasonsFromTimeline(),
-        overseasTeams: overseasTeams,
-        unrivaledTeams: unrivaledTeams,
-        teamUsaMedals: teamUsaMedals
+    careerDetails: {
+      collegeCareer: {
+        collegeId: collegeIdInput.value,
+        startYear: collegeStartInput.value,
+        endYear: collegeEndInput.value,
+        ncaaChampionships: getRadioBoolean("hasNcaaChampionships") ? ncaaChampionships : []
       },
 
-      image: {
-        src: imageSrcInput.value,
-        alt: imageAltInput.value
-      },
+      draftDetails: draftDetails,
 
-      wnbaTeams: buildWnbaTeamsFromTimeline(),
-      championships: championships
-    }
+      missedWnbaSeasons: buildMissedSeasonsFromTimeline(),
+      overseasTeams: getRadioBoolean("hasOverseasExperience") ? overseasTeams : [],
+      unrivaledTeams: getRadioBoolean("hasUnrivaledExperience") ? unrivaledTeams : [],
+      teamUsaMedals: getRadioBoolean("hasNationalTeamExperience") ? teamUsaMedals : []
+    },
+
+    image: {
+      src: imageSrcInput.value,
+      alt: imageAltInput.value
+    },
+
+    wnbaTeams: buildWnbaTeamsFromTimeline(),
+    championships: getRadioBoolean("hasWnbaChampionships") ? championships : []
   };
+}
 
-  jsonPreview.textContent = JSON.stringify(output, null, 2);
+function buildPlayerPreviewText() {
+  const playerId = getPlayerId();
+  const playerData = getPlayerData();
+
+  return `"${playerId}": ${JSON.stringify(playerData, null, 2)}`;
+}
+
+function updateJSONPreview() {
+  jsonPreview.textContent = buildPlayerPreviewText();
 }
 //==============================================
 
@@ -755,6 +946,7 @@ addMedalBtn.addEventListener("click", () => {
   const newEntry = {
     year: medalYearInput.value,
     competition: medalCompetitionInput.value,
+    eventType: medalEventTypeInput.value,
     medal: medalTypeInput.value
   };
 
@@ -765,6 +957,7 @@ addMedalBtn.addEventListener("click", () => {
 
   medalYearInput.value = "";
   medalCompetitionInput.value = "";
+  medalEventTypeInput.value = "";
   medalTypeInput.value = "";
 });
 
@@ -782,6 +975,38 @@ copyJsonBtn.addEventListener("click", async () => {
   } catch (error) {
     console.error("Copy failed:", error);
     alert("Copy failed. You can still manually select and copy the JSON.");
+  }
+});
+
+saveJsonBtn.addEventListener("click", async () => {
+  const payload = {
+    playerId: getPlayerId(),
+    playerData: getPlayerData()
+  };
+
+  try {
+    const response = await fetch("http://127.0.0.1:8787/save-player", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json"
+      },
+      body: JSON.stringify(payload)
+    });
+
+    const result = await response.json();
+
+    if (!result.ok) {
+      throw new Error(result.error || "Save failed");
+    }
+
+    saveJsonBtn.textContent = "Saved!";
+
+    setTimeout(() => {
+      saveJsonBtn.textContent = "Save JSON File";
+    }, 1200);
+  } catch (error) {
+    console.error(error);
+    alert("Save failed. Make sure the local save server is running.");
   }
 });
 
@@ -813,7 +1038,7 @@ function confirmPlayerIdEdit() {
   playerIdInput.readOnly = true;
   editPlayerIdBtn.textContent = "Edit playerId";
   updateJSONPreview();
-}
+} 
 
 // collapse / expand panels 
 document.querySelectorAll(".panel > h2").forEach((heading) => {
@@ -825,6 +1050,58 @@ document.querySelectorAll(".panel > h2").forEach((heading) => {
     panel.classList.toggle("collapsed");
   });
 });
+
+// =============================================================================
+// ========== yes/mp no fields and conditional element =========================
+// ==================== event listeners ========================================
+bindConditionalBoolean("isOlympicPlayer", teamUsaJerseyWrapper, () => {
+  teamUsaJerseyInput.value = "";
+});
+
+bindConditionalBoolean("hasNcaaChampionships", ncaaChampionshipsWrapper, () => {
+  ncaaChampionships.length = 0;
+  renderNcaaChampionshipsList();
+});
+
+bindConditionalBoolean("wasDraftDayTrade", draftDayTradeWrapper, () => {
+  acquiredByInput.value = "";
+  acquiredBySelect.value = "";
+  transactionNoteInput.value = "";
+});
+
+bindConditionalBoolean("hasOverseasExperience", overseasExperienceWrapper, () => {
+  overseasTeams.length = 0;
+  renderOverseasList();
+});
+
+bindConditionalBoolean("hasUnrivaledExperience", unrivaledExperienceWrapper, () => {
+  unrivaledTeams.length = 0;
+  renderUnrivaledList();
+});
+
+bindConditionalBoolean("hasWnbaChampionships", wnbaChampionshipsWrapper, () => {
+  championships.length = 0;
+  renderChampionshipsList();
+
+  championshipYearInput.value = "";
+  championshipTeamCodeInput.value = "";
+  championshipTeamSelect.value = "";
+  finalsMvpInput.checked = false;
+});
+
+bindConditionalBoolean("hasNationalTeamExperience", nationalTeamWrapper, () => {
+  teamUsaMedals.length = 0;
+  renderMedalList();
+
+  setRadioBoolean("hasOlympicExperience", false);
+  teamUsaJerseyInput.value = "";
+  teamUsaJerseyWrapper.style.display = "none";
+});
+
+bindConditionalBoolean("hasOlympicExperience", teamUsaJerseyWrapper, () => {
+  teamUsaJerseyInput.value = "";
+});
+// =============================================================================
 
 // forcing fresh preview on page load
 window.addEventListener("load", () => {
@@ -881,10 +1158,50 @@ function fillFormFromPlayer(playerId) {
 
   playerIdInput.value = playerId;
   playerNameInput.value = player.playerName || "";
+
+  const isActive =
+    player.playerStatus?.isActive ??
+    player.wnbaTeams?.some((team) => {
+      if (team.endYear === "present") return true;
+      return Number(team.endYear) >= 2026;
+  });
+
+  setRadioBoolean("playerActive2026", isActive);
+  syncActivePlayerUI();
+  
   teamUsaJerseyInput.value = player.teamUsaJersey || "";
 
   imageSrcInput.value = player.image?.src || "";
   imageAltInput.value = player.image?.alt || "";
+
+  setRadioBoolean("isOlympicPlayer", Boolean(player.teamUsaJersey));
+  setRadioBoolean(
+    "hasNcaaChampionships",
+    Boolean(player.careerDetails?.collegeCareer?.ncaaChampionships?.length)
+  );
+  setRadioBoolean(
+    "wasDraftDayTrade",
+    Boolean(player.careerDetails?.draftDetails?.acquiredBy)
+  );
+  setRadioBoolean(
+    "hasWnbaChampionships",
+    Boolean(player.championships?.length)
+  );
+  setRadioBoolean(
+    "hasOverseasExperience",
+    Boolean(player.careerDetails?.overseasTeams?.length)
+  );
+  setRadioBoolean(
+    "hasUnrivaledExperience",
+    Boolean(player.careerDetails?.unrivaledTeams?.length)
+  );
+
+  teamUsaJerseyWrapper.style.display = getRadioBoolean("isOlympicPlayer") ? "block" : "none";
+  ncaaChampionshipsWrapper.style.display = getRadioBoolean("hasNcaaChampionships") ? "block" : "none";
+  draftDayTradeWrapper.style.display = getRadioBoolean("wasDraftDayTrade") ? "block" : "none";
+  overseasExperienceWrapper.style.display = getRadioBoolean("hasOverseasExperience") ? "block" : "none";
+  unrivaledExperienceWrapper.style.display = getRadioBoolean("hasUnrivaledExperience") ? "block" : "none";
+  wnbaChampionshipsWrapper.style.display = getRadioBoolean("hasWnbaChampionships") ? "block" : "none";
 
   collegeIdInput.value = player.careerDetails?.collegeCareer?.collegeId || player.collegeId || "";
   collegeStartInput.value = player.careerDetails?.collegeCareer?.startYear || "";
@@ -912,12 +1229,12 @@ function fillFormFromPlayer(playerId) {
 
     replaceArrayContents(
       overseasTeams,
-      player.careerDetails?.overseasTeams || []
+      (player.careerDetails?.overseasTeams || []).map(normalizeOverseasTeamEntry)
     );
 
     replaceArrayContents(
       unrivaledTeams,
-      player.careerDetails?.unrivaledTeams || []
+      (player.careerDetails?.unrivaledTeams || []).map(normalizeUnrivaledTeamEntry)
     );
 
     replaceArrayContents(
@@ -1008,109 +1325,34 @@ function populateWnbaTeamSelects() {
   });
 }
 
-function syncSeasonEditorVisibility() {
-  playedSeasonOptions.style.display = seasonPlayedInput.checked ? "block" : "none";
-  missedSeasonOptions.style.display = seasonMissedInput.checked ? "block" : "none";
-
-  partialSeasonOptions.style.display =
-    seasonPlayedInput.checked && seasonPartialInput.checked ? "block" : "none";
-}
-
-function getSelectedSeason() {
-  return wnbaSeasonTimeline.find((season) => season.year === selectedTimelineYear);
-}
-
-function addPartialTeamSegment() {
-  const season = getSelectedSeason();
-  if (!season) return;
-
-  const teamCode = prompt("Enter teamCode for additional team segment:");
-  if (!teamCode) return;
-
-  const movementNote = prompt("Movement note, optional:") || "";
-
-  season.seasonType = "partial";
-  season.status = "played";
-  season.segments.push({
-    type: "team",
-    teamCode: teamCode,
-    movementNote: movementNote
-  });
-
-  seasonPartialInput.checked = true;
-  renderPartialSegmentsList(season);
-  renderWnbaTimeline();
-  updateJSONPreview();
-}
-
-function addPartialSitOutSegment() {
-  const season = getSelectedSeason();
-  if (!season) return;
-
-  const reason = prompt("Reason for sit-out segment:") || "";
-  const note = prompt("Extra note/details, optional:") || "";
-
-  season.seasonType = "partial";
-  season.status = "played";
-  season.segments.push({
-    type: "sit_out",
-    reason: reason,
-    note: note
-  });
-
-  seasonPartialInput.checked = true;
-  renderPartialSegmentsList(season);
-  renderWnbaTimeline();
-  updateJSONPreview();
-}
-
-function renderPartialSegmentsList(season) {
-  partialSegmentsList.innerHTML = "";
-
-  if (!season || !season.segments.length) {
-    partialSegmentsList.innerHTML = `<p class="empty-note">No partial segments yet.</p>`;
-    return;
-  }
-
-  season.segments.forEach((segment, index) => {
-    const div = document.createElement("div");
-    div.className = "partial-segment-card";
-
-    if (segment.type === "team") {
-      div.textContent = `Segment ${index + 1}: Team - ${segment.teamCode}`;
-    }
-
-    if (segment.type === "sit_out") {
-      div.textContent = `Segment ${index + 1}: Sit-out - ${segment.reason}`;
-    }
-
-    partialSegmentsList.appendChild(div);
-  });
-}
-
-[seasonPlayedInput, seasonMissedInput, seasonFullInput, seasonPartialInput].forEach((input) => {
-  input.addEventListener("change", syncSeasonEditorVisibility);
-});
-
-addPartialTeamBtn.addEventListener("click", addPartialTeamSegment);
-addPartialSitOutBtn.addEventListener("click", addPartialSitOutSegment);
-
-playerActiveYesInput.addEventListener("change", () => {
-  retiredYearWrapper.style.display = "none";
-  retiredYearInput.value = "";
-});
-
-playerActiveNoInput.addEventListener("change", () => {
-  retiredYearWrapper.style.display = "block";
-});
-
 generateWnbaTimelineBtn.addEventListener("click", generateWnbaSeasonTimeline);
+
+function populateSingleWnbaTeamSelect(select) {
+  select.innerHTML = `<option value="">-- Select team --</option>`;
+
+  Object.entries(WNBA_TEAMS)
+    .sort((a, b) => a[1].name.full.localeCompare(b[1].name.full))
+    .forEach(([teamCode, team]) => {
+      const option = document.createElement("option");
+      option.value = teamCode;
+      option.textContent = `${team.name.full} (${teamCode})`;
+      select.appendChild(option);
+    });
+}
 
 prevSeasonBtn.addEventListener("click", () => goToAdjacentSeason(-1));
 nextSeasonBtn.addEventListener("click", () => goToAdjacentSeason(1));
-copyPreviousTeamBtn.addEventListener("click", copyPreviousSeasonTeam);
 
-saveSeasonBtn.addEventListener("click", saveSelectedSeason);
+copyPreviousSeasonBtn.addEventListener("click", copyPreviousSeasonEntries);
+
+addSeasonTeamEntryBtn.addEventListener("click", () => {
+  addSeasonEntry("team");
+});
+
+addSeasonSitOutEntryBtn.addEventListener("click", () => {
+  addSeasonEntry("sit_out");
+});
+
 
 // ======== overseas MENU / SELECT ======================
 // ======== overseas TEAM MENU / SELECT ======================

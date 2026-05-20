@@ -47,26 +47,26 @@ wnba_teams_history.json /////////// -> teams of the WNBA by year and team franch
 </head>
 
 <body>
-            <h1><em>add a player</em></h1>
+    <h1><em>add a player</em></h1>
 
     <div class="tool-wrap">
 
         <section class="tool-shell">
 
-
             <section class="panel input">
-                <h2>Player</h2>
-                <select id="playerSelect"></select> 
-
-                <div class="sub-panel">
-                    <h2>Basic Info</h2>
-                    <input id="playerName" placeholder="Player name">
-                    <div class="player-id-row">
-                        <input id="playerId" placeholder="playerId auto-generated" readonly>
-                        <button id="editPlayerIdBtn" type="button">Edit Id ?</button>
-                    </div>
-                    
-                    <input id="teamUsaJersey" placeholder="Team USA jersey #">
+                    <div class="select-and-or-group">
+                        <div class="sub-panel select-opt">
+                            <h2><em>Load</em> an existing player</h2>
+                            <select id="playerSelect"></select>
+                        </div>
+                        <div class="sub-panel or-opt">
+                            <h2>enter a new player</h2>
+                            <input id="playerName" placeholder="Player name">
+                            <div class="player-id-row">
+                                <input id="playerId" placeholder="playerId auto-generated" readonly>
+                                <button id="editPlayerIdBtn" type="button">Edit Id ?</button>
+                            </div>
+                        </div>
                 </div>
 
                 <div class="sub-panel">
@@ -81,216 +81,275 @@ wnba_teams_history.json /////////// -> teams of the WNBA by year and team franch
 
             <section class="panel input">
                 <h2>College</h2>
-
-                <label for="collegeSelect">Choose existing college</label>
-                <select id="collegeSelect">
-                <option value="">-- Select college --</option>
-                </select>
+                <div class="select-and-or-group">
+                    <div class="entry-group-horizontal">
+                        <div class="sub-panel select-opt">
+                            <label for="collegeSelect">Where did they play in college?</label>
+                            <select id="collegeSelect">
+                                <option value="">choose a college</option>
+                            </select>
+                        </div>
+                        <div class="sub-panel start-end">
+                            <div class="start-yr">
+                                <label for="collegeStartYear">College start YYYY</label>
+                                <input id="collegeStartYear" placeholder="Start year">
+                            </div>
+                            <div class="end-yr">
+                                <label for="collegeEndYear">College end<br> YYYY</label>
+                                <input id="collegeEndYear" placeholder="End year">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="sub-panel or-opt">
+                        <label for="collegeId">or put placeholder college name here</label>
+                        <input id="collegeId" placeholder="collegeId" autocomplete="off">
+                    </div>
+                </div>
 
                 <div class="sub-panel">
-                    <label for="collegeId">Or, enter college info</label>
-                    <input id="collegeId" placeholder="collegeId" autocomplete="off">
+                    <div class="yes-no-row">
+                        <p>Does this player have NCAA championships?</p>
+                        <label><input type="radio" name="hasNcaaChampionships" value="true"> Yes</label>
+                        <label><input type="radio" name="hasNcaaChampionships" value="false"> No</label>
+                    </div>
+
+                    <div id="ncaaChampionshipsWrapper" class="conditional-field">
+                        <label for="ncaaChampionshipYear">Year</label>
+                        <input id="ncaaChampionshipYear" placeholder="ex: 2024">
+                        <label for="ncaaChampionshipCollegeId">College</label>
+                        <input id="ncaaChampionshipCollegeId" placeholder="Or enter collegeId manually">
+                        <ul id="ncaaChampionshipsList"></ul>
+                        <button id="addNcaaChampionshipBtn">Add NCAA Championship</button>
+                    </div>
                 </div>
-                <input id="collegeStartYear" placeholder="Start year">
-                <input id="collegeEndYear" placeholder="End year">
-
-                <div class="sub-panel">
-                    <h3>NCAA Championships</h3>
-
-                    <input id="ncaaChampionshipYear" placeholder="Year, ex: 2012">
-                    <input id="ncaaChampionshipCollegeId" placeholder="collegeId, ex: baylor_u">
-
-                    <button id="addNcaaChampionshipBtn">Add NCAA Championship</button>
-
-                    <ul id="ncaaChampionshipsList"></ul>
-                </div>
-
             </section>
 
             <section class="panel input">
                 <h2>Draft Details</h2>
-                <input id="draftYear" placeholder="Draft year">
-                <input id="draftPick" placeholder="Pick">
-                <label>Drafted by</label>
-                <select id="draftedBySelect" class="wnba-team-select">
-                <option value="">-- Select team --</option>
-                </select>
-                <input id="draftedBy" placeholder="Or enter draftedBy manually">
-                <div class="sub-panel">
-                    <label for="acquiredBy">If player was traded on draft day enter info here</label>
-                    <label>Acquired by</label>
-                    <select id="acquiredBySelect" class="wnba-team-select">
-                    <option value="">-- Select team --</option>
-                    </select>
-                    <input id="acquiredBy" placeholder="Or enter acquiredBy manually">
-                    <input id="transactionNote" placeholder="Transaction note">
+                <div class="entry-group-horizontal">
+                    <div class="sub-panel">
+                        <label for="draftYear">Draft year</label>
+                        <input id="draftYear" placeholder="ex: 2024">
+                    </div>
+                    <div class="sub-panel">
+                        <label for="draftPick">Overall pick #</label>
+                        <input id="draftPick" placeholder="ex: 1">
+                    </div>
                 </div>
+
+                <div class="select-and-or-group">
+                    <div class="sub-panel select-opt">
+                        <label for="draftedBy">Drafted by</label>
+                        <select id="draftedBySelect" class="wnba-team-select">
+                            <option value="">-- Select team --</option>
+                        </select>
+                    </div>
+                    <div class="sub-panel or-opt">
+                        <input id="draftedBy" placeholder="Or enter draftedBy manually">
+                    </div>
+                </div>
+
+                <div class="sub-panel">
+                    <div class="yes-no-row">
+                        <p>Was this player traded on draft day?</p>
+                        <label><input type="radio" name="wasDraftDayTrade" value="true"> Yes</label>
+                        <label><input type="radio" name="wasDraftDayTrade" value="false"> No</label>
+                    </div>
+                </div>
+
+                <div id="draftDayTradeWrapper" class="sub-panel conditional-field">
+                    <div class="sub-panel">
+                        <label for="acquiredBy">If player was traded on draft day enter info here</label>
+                        <label>Acquired by</label>
+                        <select id="acquiredBySelect" class="wnba-team-select">
+                            <option value="">-- Select team --</option>
+                        </select>
+                        <input id="acquiredBy" placeholder="Or enter acquiredBy manually">
+                        <input id="transactionNote" placeholder="Transaction note">
+                    </div>
+                </div>
+
             </section>
 
-            <section class="panel"> 
-            <h2>WNBA Career Timeline</h2>
+            <section class="panel">
+                <h2>WNBA Career Timeline</h2>
 
-            <p>It’s 2026 — is this player active?</p>
+                    <div class="yes-no-row">
+                    <p>Is this player active?</p>
 
-            <div class="status-card-group two-options">
-                <label class="status-card">
-                <input type="radio" name="playerActive2026" value="yes" id="playerActiveYes">
-                <span>Yes</span>
-                </label>
+                    <label>
+                        <input type="radio" name="playerActive2026" value="true" id="playerActiveYes">
+                        Yes
+                    </label>
 
-                <label class="status-card">
-                <input type="radio" name="playerActive2026" value="no" id="playerActiveNo">
-                <span>No</span>
-                </label>
-            </div>
+                    <label>
+                        <input type="radio" name="playerActive2026" value="false" id="playerActiveNo">
+                        No
+                    </label>
+                    </div>
 
-            <div id="retiredYearWrapper" class="conditional-field">
-                <input id="retiredYear" placeholder="Last WNBA season, ex: 2024">
-            </div>
-
-            <button id="generateWnbaTimelineBtn" type="button">get a timeline</button>
-
-            <div id="wnbaTimeline" class="wnba-timeline"></div>
-
-            <div id="seasonEditor" class="season-editor">
-            <h3>Edit Season</h3>
-            <p id="selectedSeasonLabel">Select a year square</p>
-
-            <div class="season-editor-actions">
-                <button id="prevSeasonBtn" type="button">← Previous</button>
-                <button id="copyPreviousTeamBtn" type="button">Copy Previous Team</button>
-                <button id="saveSeasonBtn" type="button">Save Season</button>
-                <button id="nextSeasonBtn" type="button">Next →</button>
-            </div>
-
-            <div class="editor-choice-group">
-                <p class="choice-label">Season result</p>
-
-                <label class="editor-choice-card">
-                <input type="radio" name="seasonStatus" value="played" id="seasonPlayed" checked>
-                <span>Played</span>
-                </label>
-
-                <label class="editor-choice-card">
-                <input type="radio" name="seasonStatus" value="missed" id="seasonMissed">
-                <span>Sat Out</span>
-                </label>
-            </div>
-
-            <div id="playedSeasonOptions">
-                <div class="editor-choice-group">
-                <p class="choice-label">Played season type</p>
-
-                <label class="editor-choice-card">
-                    <input type="radio" name="playedSeasonType" value="full" id="seasonFull" checked>
-                    <span>Full Season</span>
-                </label>
-
-                <label class="editor-choice-card">
-                    <input type="radio" name="playedSeasonType" value="partial" id="seasonPartial">
-                    <span>Partial Season</span>
-                </label>
+                <div id="retiredYearWrapper" class="conditional-field">
+                    <input id="retiredYear" placeholder="Last WNBA season, ex: 2024">
                 </div>
 
-                <label>Primary Team</label>
-                <select id="seasonTeamSelect" class="wnba-team-select">
-                <option value="">-- Select team --</option>
-                </select>
+                <button id="generateWnbaTimelineBtn" type="button">get a timeline</button>
 
-                <div id="partialSeasonOptions" class="conditional-field">
-                <button id="addPartialTeamBtn" type="button">Add Team Segment</button>
-                <button id="addPartialSitOutBtn" type="button">Add Sit-Out Segment</button>
+                <div id="wnbaTimeline" class="wnba-timeline"></div>
 
-                <div id="partialSegmentsList"></div>
+                    <div id="seasonEditor" class="season-editor">
+                    <h3>Edit Season</h3>
+                    <p id="selectedSeasonLabel">Select a year square</p>
+
+                    <div class="season-editor-actions">
+                        <button id="prevSeasonBtn" type="button">← Previous</button>
+                        <button id="copyPreviousSeasonBtn" type="button">Copy Previous Season</button>
+                        <button id="saveSeasonBtn" type="button">Save Season</button>
+                        <button id="nextSeasonBtn" type="button">Next →</button>
+                    </div>
+
+                    <div class="season-entry-actions">
+                        <button id="addSeasonTeamEntryBtn" type="button">Add Team</button>
+                        <button id="addSeasonSitOutEntryBtn" type="button">Add Sit Out</button>
+                    </div>
+
+                    <div id="seasonEntriesList"></div>
+                    </div>
+            </section>
+
+            <section class="panel input">
+                <h2>WNBA Championships</h2>
+
+                <div class="yes-no-row">
+                <p>Does this player have WNBA championships?</p>
+                <label><input type="radio" name="hasWnbaChampionships" value="true"> Yes</label>
+                <label><input type="radio" name="hasWnbaChampionships" value="false"> No</label>
                 </div>
-            </div>
 
-            <div id="missedSeasonOptions" class="conditional-field">
-                <label>Team attached to missed season</label>
-                <select id="missedTimelineTeamSelect" class="wnba-team-select">
-                <option value="">-- Select team --</option>
-                </select>
+                <div id="wnbaChampionshipsWrapper" class="conditional-field">
+                    <input id="championshipYear" placeholder="Year, ex: 2022">
 
-                <input id="seasonReason" placeholder="Reason">
-                <textarea id="seasonNote" placeholder="Specific sit-out note/details"></textarea>
-            </div>
-            </div>
+                    <label>Championship Team</label>
+                    <select id="championshipTeamSelect" class="wnba-team-select">
+                        <option value="">-- Select team --</option>
+                    </select>
+
+                    <input id="championshipTeamCode" placeholder="Or enter teamCode manually">
+
+                    <label>
+                        <input type="checkbox" id="finalsMvp">
+                        Finals MVP
+                    </label>
+
+                    <button id="addChampionshipBtn">Add Championship</button>
+
+                    <ul id="championshipsList"></ul>
+                </div>
             </section>
 
             <section class="panel input">
                 <h2>Overseas Teams</h2>
 
-                <input id="overseasSeason" placeholder="Season, ex: 2023-24">
+                <div class="yes-no-row">
+                    <p>Does this player have overseas pro experience?</p>
+                    <label><input type="radio" name="hasOverseasExperience" value="true"> Yes</label>
+                    <label><input type="radio" name="hasOverseasExperience" value="false"> No</label>
+                </div>
 
-                <label for="overseasTeamSelect">Overseas Team</label>
-                <select id="overseasTeamSelect">
-                    <option value="">-- Select overseas team --</option>
-                </select>
+                <div id="overseasExperienceWrapper" class="conditional-field">
+                    <input id="overseasSeason" placeholder="Season, ex: 2023-24">
 
-                <input id="overseasTeam" placeholder="Or enter teamCode manually">
+                    <label for="overseasTeamSelect">Overseas Team</label>
+                    <select id="overseasTeamSelect">
+                        <option value="">-- Select overseas team --</option>
+                    </select>
 
-                <button id="addOverseasBtn" type="button">Add Overseas Team</button>
-                <button id="saveOverseasEditBtn" type="button" style="display:none;">Save Team Edit</button>
-                <button id="cancelOverseasEditBtn" type="button" style="display:none;">Cancel Edit</button>
-                <ul id="overseasList"></ul>
-            </section>
+                    <input id="overseasTeam" placeholder="Or enter teamCode manually">
 
-            <section class="panel input">
-            <h2>WNBA Championships</h2>
-
-            <input id="championshipYear" placeholder="Year, ex: 2022">
-
-            <label>Championship Team</label>
-            <select id="championshipTeamSelect" class="wnba-team-select">
-                <option value="">-- Select team --</option>
-            </select>
-
-            <input id="championshipTeamCode" placeholder="Or enter teamCode manually">
-
-            <label>
-                <input type="checkbox" id="finalsMvp">
-                Finals MVP
-            </label>
-
-            <button id="addChampionshipBtn">Add Championship</button>
-
-            <ul id="championshipsList"></ul>
+                    <button id="addOverseasBtn" type="button">Add Overseas Team</button>
+                    <button id="saveOverseasEditBtn" type="button" style="display:none;">Save Team Edit</button>
+                    <button id="cancelOverseasEditBtn" type="button" style="display:none;">Cancel Edit</button>
+                    <ul id="overseasList"></ul>
+                </div>
             </section>
 
             <section class="panel input">
                 <h2>Unrivaled</h2>
 
-                <input id="unrivaledYear" placeholder="Year">
+                <div class="yes-no-row">
+                <p>Does this player have Unrivaled experience?</p>
+                <label><input type="radio" name="hasUnrivaledExperience" value="true"> Yes</label>
+                <label><input type="radio" name="hasUnrivaledExperience" value="false"> No</label>
+                </div>
 
-                <label for="unrivaledTeamSelect">Unrivaled Team</label>
-                <select id="unrivaledTeamSelect">
-                    <option value="">-- Select Unrivaled team --</option>
-                </select>
+                <div id="unrivaledExperienceWrapper" class="conditional-field">
+                    <input id="unrivaledYear" placeholder="Year">
 
-                <input id="unrivaledTeam" placeholder="Or enter teamCode manually">
+                    <label for="unrivaledTeamSelect">Unrivaled Team</label>
+                    <select id="unrivaledTeamSelect">
+                        <option value="">-- Select Unrivaled team --</option>
+                    </select>
 
-                <button id="addUnrivaledBtn" type="button">Add Unrivaled Team</button>
-                <button id="saveUnrivaledEditBtn" type="button" style="display:none;">Save Team Edit</button>
-                <button id="cancelUnrivaledEditBtn" type="button" style="display:none;">Cancel Edit</button>
+                    <input id="unrivaledTeam" placeholder="Or enter teamCode manually">
 
-                <ul id="unrivaledList"></ul>
+                    <button id="addUnrivaledBtn" type="button">Add Unrivaled Team</button>
+                    <button id="saveUnrivaledEditBtn" type="button" style="display:none;">Save Team Edit</button>
+                    <button id="cancelUnrivaledEditBtn" type="button" style="display:none;">Cancel Edit</button>
+
+                    <ul id="unrivaledList"></ul>
+                </div>
             </section>
 
-            <section class="panel input">
-                <h2>Team USA / FIBA Medals</h2>
+        <section class="panel input">
+        <h2>National Team / FIBA / Olympics</h2>
+
+            <div class="yes-no-row">
+                <p>Has this player been on a national team?</p>
+                <label><input type="radio" name="hasNationalTeamExperience" value="true"> Yes</label>
+                <label><input type="radio" name="hasNationalTeamExperience" value="false"> No</label>
+            </div>
+
+            <div id="nationalTeamWrapper" class="conditional-field">
+
+                <div class="yes-no-row">
+                <p>Has this player played in the Olympics?</p>
+                <label><input type="radio" name="hasOlympicExperience" value="true"> Yes</label>
+                <label><input type="radio" name="hasOlympicExperience" value="false"> No</label>
+                </div>
+
+                <div id="teamUsaJerseyWrapper" class="conditional-field">
+                <input id="teamUsaJersey" placeholder="Team USA jersey #">
+                </div>
+
                 <input id="medalYear" placeholder="Year">
                 <input id="medalCompetition" placeholder="Competition">
-                <input id="medalType" placeholder="Medal">
+
+                <select id="medalEventType">
+                <option value="">-- Select event type --</option>
+                <option value="Olympics">Olympics</option>
+                <option value="FIBA">FIBA</option>
+                <option value="3x3">3x3</option>
+                <option value="Other">Other</option>
+                </select>
+
+                <select id="medalType">
+                <option value="">-- Select medal --</option>
+                <option value="Gold">Gold</option>
+                <option value="Silver">Silver</option>
+                <option value="Bronze">Bronze</option>
+                <option value="No medal">No medal</option>
+                </select>
+
                 <button id="addMedalBtn">Add Medal</button>
                 <ul id="medalList"></ul>
-            </section>
+            </div>
+        </section>
 
         </section>
 
         <section class="panel data">
             <h2>Data Preview</h2>
             <button id="copyJsonBtn">Copy JSON</button>
-            <button id="exportJsonBtn">Export JSON</button>
+            <button id="saveJsonBtn" type="button">Save JSON File</button>
             <pre id="jsonPreview"></pre>
         </section>
 

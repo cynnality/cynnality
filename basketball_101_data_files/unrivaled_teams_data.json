@@ -1,214 +1,214 @@
 {
-    "teams": {
-        "bc_laces": {
-        "teamCode": "bc_laces",
-        "name": {
-            "full": "Club Laces",
-            "short": "Laces"
-        },
-        "activeSeasons": {
-            "startYear": 2025,
-            "endYear": "present",
-            "years": [
-            2025,
-            2026
-            ]
-        },
-        "branding": {
-            "colors": {
-            "color1": "#e14e54",
-            "color2": "#44b49e"
-            }
-        },
-        "championshipYears": [],
-        "meta": {
-            "notes": "",
-            "lastUpdated": ""
+  "teams": {
+    "bc_laces": {
+      "teamCode": "bc_laces",
+      "name": {
+        "full": "Club Laces",
+        "short": "Laces"
+      },
+      "activeSeasons": {
+        "startYear": 2025,
+        "endYear": "present",
+        "years": [
+          2025,
+          2026
+        ]
+      },
+      "branding": {
+        "colors": {
+          "color1": "#e14e54",
+          "color2": "#44b49e"
         }
-        },
-        "bc_lunar_owls": {
-        "teamCode": "bc_lunar_owls",
-        "name": {
-            "full": "Lunar Owls",
-            "short": "Lunar Owls"
-        },
-        "activeSeasons": {
-            "startYear": 2025,
-            "endYear": "present",
-            "years": [
-            2025,
-            2026
-            ]
-        },
-        "branding": {
-            "colors": {
-            "color1": "#3e3681",
-            "color2": "#f2e584"
-            }
-        },
-        "championshipYears": [],
-        "meta": {
-            "notes": "",
-            "lastUpdated": ""
+      },
+      "championshipYears": [],
+      "meta": {
+        "notes": "",
+        "lastUpdated": ""
+      }
+    },
+    "bc_lunar_owls": {
+      "teamCode": "bc_lunar_owls",
+      "name": {
+        "full": "Lunar Owls",
+        "short": "Lunar Owls"
+      },
+      "activeSeasons": {
+        "startYear": 2025,
+        "endYear": "present",
+        "years": [
+          2025,
+          2026
+        ]
+      },
+      "branding": {
+        "colors": {
+          "color1": "#3e3681",
+          "color2": "#f2e584"
         }
-        },
-        "bc_mist": {
-        "teamCode": "bc_mist",
-        "name": {
-            "full": "Mist",
-            "short": "Mist"
-        },
-        "activeSeasons": {
-            "startYear": 2025,
-            "endYear": "present",
-            "years": [
-            2025,
-            2026
-            ]
-        },
-        "branding": {
-            "colors": {
-            "color1": "#a5d5ec",
-            "color2": "#113863"
-            }
-        },
-        "championshipYears": [
-            2026
-        ],
-        "meta": {
-            "notes": "",
-            "lastUpdated": ""
+      },
+      "championshipYears": [],
+      "meta": {
+        "notes": "",
+        "lastUpdated": ""
+      }
+    },
+    "bc_mist": {
+      "teamCode": "bc_mist",
+      "name": {
+        "full": "Mist",
+        "short": "Mist"
+      },
+      "activeSeasons": {
+        "startYear": 2025,
+        "endYear": "present",
+        "years": [
+          2025,
+          2026
+        ]
+      },
+      "branding": {
+        "colors": {
+          "color1": "#a5d5ec",
+          "color2": "#113863"
         }
-        },
-        "bc_rose": {
-        "teamCode": "bc_rose",
-        "name": {
-            "full": "Club Rose",
-            "short": "Rose"
-        },
-        "activeSeasons": {
-            "startYear": 2025,
-            "endYear": "present",
-            "years": [
-            2025,
-            2026
-            ]
-        },
-        "branding": {
-            "colors": {
-            "color1": "#1a5853",
-            "color2": "#e29f8a"
-            }
-        },
-        "championshipYears": [
-            2025
-        ],
-        "meta": {
-            "notes": "",
-            "lastUpdated": ""
+      },
+      "championshipYears": [
+        2026
+      ],
+      "meta": {
+        "notes": "",
+        "lastUpdated": ""
+      }
+    },
+    "bc_rose": {
+      "teamCode": "bc_rose",
+      "name": {
+        "full": "Club Rose",
+        "short": "Rose"
+      },
+      "activeSeasons": {
+        "startYear": 2025,
+        "endYear": "present",
+        "years": [
+          2025,
+          2026
+        ]
+      },
+      "branding": {
+        "colors": {
+          "color1": "#1a5853",
+          "color2": "#e29f8a"
         }
-        },
-        "bc_phantom": {
-        "teamCode": "bc_phantom",
-        "name": {
-            "full": "Phantom",
-            "short": "Phantom"
-        },
-        "activeSeasons": {
-            "startYear": 2025,
-            "endYear": "present",
-            "years": [
-            2025,
-            2026
-            ]
-        },
-        "branding": {
-            "colors": {
-            "color1": "#b2b2b2",
-            "color2": "#000000"
-            }
-        },
-        "championshipYears": [],
-        "meta": {
-            "notes": "",
-            "lastUpdated": ""
+      },
+      "championshipYears": [
+        2025
+      ],
+      "meta": {
+        "notes": "",
+        "lastUpdated": ""
+      }
+    },
+    "bc_phantom": {
+      "teamCode": "bc_phantom",
+      "name": {
+        "full": "Phantom",
+        "short": "Phantom"
+      },
+      "activeSeasons": {
+        "startYear": 2025,
+        "endYear": "present",
+        "years": [
+          2025,
+          2026
+        ]
+      },
+      "branding": {
+        "colors": {
+          "color1": "#b2b2b2",
+          "color2": "#000000"
         }
-        },
-        "bc_vinyl": {
-        "teamCode": "bc_vinyl",
-        "name": {
-            "full": "Vinyl",
-            "short": "Vinyl"
-        },
-        "activeSeasons": {
-            "startYear": 2025,
-            "endYear": "present",
-            "years": [
-            2025,
-            2026
-            ]
-        },
-        "branding": {
-            "colors": {
-            "color1": "#841536",
-            "color2": "#80c6c9"
-            }
-        },
-        "championshipYears": [],
-        "meta": {
-            "notes": "",
-            "lastUpdated": ""
+      },
+      "championshipYears": [],
+      "meta": {
+        "notes": "",
+        "lastUpdated": ""
+      }
+    },
+    "bc_vinyl": {
+      "teamCode": "bc_vinyl",
+      "name": {
+        "full": "Vinyl",
+        "short": "Vinyl"
+      },
+      "activeSeasons": {
+        "startYear": 2025,
+        "endYear": "present",
+        "years": [
+          2025,
+          2026
+        ]
+      },
+      "branding": {
+        "colors": {
+          "color1": "#841536",
+          "color2": "#80c6c9"
         }
-        },
-        "bc_breeze": {
-        "teamCode": "bc_breeze",
-        "name": {
-            "full": "Breeze",
-            "short": "Breeze"
-        },
-        "activeSeasons": {
-            "startYear": 2026,
-            "endYear": "present",
-            "years": [
-            2026
-            ]
-        },
-        "branding": {
-            "colors": {
-            "color1": "#b62f72",
-            "color2": "#4c3970"
-            }
-        },
-        "championshipYears": [],
-        "meta": {
-            "notes": "",
-            "lastUpdated": ""
+      },
+      "championshipYears": [],
+      "meta": {
+        "notes": "",
+        "lastUpdated": ""
+      }
+    },
+    "bc_breeze": {
+      "teamCode": "bc_breeze",
+      "name": {
+        "full": "Breeze",
+        "short": "Breeze"
+      },
+      "activeSeasons": {
+        "startYear": 2026,
+        "endYear": "present",
+        "years": [
+          2026
+        ]
+      },
+      "branding": {
+        "colors": {
+          "color1": "#b62f72",
+          "color2": "#4c3970"
         }
-        },
-        "bc_hive": {
-        "teamCode": "bc_hive",
-        "name": {
-            "full": "Hive",
-            "short": "Hive"
-        },
-        "activeSeasons": {
-            "startYear": 2026,
-            "endYear": "present",
-            "years": [
-            2026
-            ]
-        },
-        "branding": {
-            "colors": {
-            "color1": "#ffc728",
-            "color2": "#525a57"
-            }
-        },
-        "championshipYears": [],
-        "meta": {
-            "notes": "",
-            "lastUpdated": ""
+      },
+      "championshipYears": [],
+      "meta": {
+        "notes": "",
+        "lastUpdated": ""
+      }
+    },
+    "bc_hive": {
+      "teamCode": "bc_hive",
+      "name": {
+        "full": "Hive",
+        "short": "Hive"
+      },
+      "activeSeasons": {
+        "startYear": 2026,
+        "endYear": "present",
+        "years": [
+          2026
+        ]
+      },
+      "branding": {
+        "colors": {
+          "color1": "#ffc728",
+          "color2": "#525a57"
         }
-        }
+      },
+      "championshipYears": [],
+      "meta": {
+        "notes": "",
+        "lastUpdated": ""
+      }
     }
+  }
 }

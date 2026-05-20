@@ -1,73 +1,91 @@
 {
-    "leagues": {
-
-        "liga_femenina_de_baloncesto": {
-        "leagueCode": "liga_femenina_de_baloncesto",
-        "name": {
-            "full": "Liga Femenina de Baloncesto",
-            "commonNames": [
-            "Liga Femenina Endesa",
-            "LF Endesa"
-            ]
+  "leagues": {
+    "liga_femenina_de_baloncesto": {
+      "leagueCode": "liga_femenina_de_baloncesto",
+      "name": {
+        "full": "Liga Femenina de Baloncesto",
+        "commonNames": [
+          "Liga Femenina Endesa",
+          "LF Endesa"
+        ]
+      },
+      "location": {
+        "country": "Spain",
+        "region": "Europe"
+      },
+      "nameHistory": [],
+      "links": [
+        {
+          "label": "League Website",
+          "url": "https://www.feb.es/lfendesa/inicio.aspx",
+          "type": "official"
         },
-        "location": {
-            "country": "Spain",
-            "region": "Europe"
-        },
-        "nameHistory": [],
-        "links": [
-            {
-            "label": "League Website",
-            "url": "https://www.feb.es/lfendesa/inicio.aspx",
-            "type": "official"
-            },
-            {
-            "label": "Wiki page",
-            "url": "https://en.wikipedia.org/wiki/Liga_Femenina_de_Baloncesto",
-            "type": "Quick reference"
-            }
-        ],
-        "meta": {
-            "notes": "",
-            "lastUpdated": ""
+        {
+          "label": "Wiki page",
+          "url": "https://en.wikipedia.org/wiki/Liga_Femenina_de_Baloncesto",
+          "type": "Quick reference"
         }
-        },
-        "kadinlar_basketball_super_ligi": {
-        "leagueCode": "kadinlar_basketball_super_ligi",
-        "name": {
-            "full": "Kadinlar Basketball Super Ligi",
-            "commonNames": [
-            "KBSL",
-            "Halkbank Women's Basketball Super League"
-            ]
-        },
-        "location": {
-            "country": "Turkey",
-            "region": "Europe"
-        },
-        "nameHistory": [
-            {
-            "name": "TBF Turkish Women’s First Basketball League",
-            "startYear": null,
-            "endYear": null
-            }
-        ],
-        "links": [
-            {
-            "label": "Wiki page",
-            "url": "https://en.wikipedia.org/wiki/Women%27s_Basketball_Super_League",
-            "type": "Quick reference"
-            },
-            {
-            "label": "League Site",
-            "url": "https://www.tbf.org.tr/ligler/kbsl",
-            "type": "official"
-            }
-        ],
-        "meta": {
-            "notes": "Not to be confused with the Turkish Women's Basketball League (TKBL) which is the 2nd tier pro league in Turkey",
-            "lastUpdated": ""
+      ],
+      "meta": {
+        "notes": "",
+        "lastUpdated": ""
+      }
+    },
+    "kadinlar_basketball_super_ligi": {
+      "leagueCode": "kadinlar_basketball_super_ligi",
+      "name": {
+        "full": "Kadinlar Basketball Super Ligi",
+        "commonNames": [
+          "KBSL",
+          "Halkbank Women's Basketball Super League"
+        ]
+      },
+      "location": {
+        "country": "Turkey",
+        "region": "Europe"
+      },
+      "nameHistory": [
+        {
+          "name": "TBF Turkish Women’s First Basketball League",
+          "startYear": null,
+          "endYear": null
         }
-        } 
+      ],
+      "links": [
+        {
+          "label": "Wiki page",
+          "url": "https://en.wikipedia.org/wiki/Women%27s_Basketball_Super_League",
+          "type": "Quick reference"
+        },
+        {
+          "label": "League Site",
+          "url": "https://www.tbf.org.tr/ligler/kbsl",
+          "type": "official"
+        }
+      ],
+      "meta": {
+        "notes": "Not to be confused with the Turkish Women's Basketball League (TKBL) which is the 2nd tier pro league in Turkey",
+        "lastUpdated": ""
+      }
+    },
+    "basket_liga_kobiet": {
+      "leagueCode": "basket_liga_kobiet",
+      "name": {
+        "full": "Basket Liga Kobiet",
+        "commonNames": [
+          "BLK"
+        ]
+      },
+      "location": {
+        "country": "Poland",
+        "region": "Europe"
+      },
+      "nameHistory": [],
+      "links": [],
+      "meta": {
+        "notes": "",
+        "lastUpdated": ""
+      }
     }
+  }
 }

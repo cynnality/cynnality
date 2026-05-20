@@ -21,6 +21,8 @@ const addChampionshipBtn = document.getElementById("addChampionshipBtn");
 const jsonPreview = document.getElementById("jsonPreview");
 const copyJsonBtn = document.getElementById("copyJsonBtn");
 
+const saveJsonBtn = document.getElementById("saveJsonBtn");
+
 let teamCodeEdited = false;
 
 function makeTeamCode(value) {
@@ -110,11 +112,11 @@ function updateColorPreview(input, preview) {
     });
 }
 
-function buildTeamObject() {
+function getTeamObject() {
     const teamName = teamNameInput.value.trim();
     const teamCode = teamCodeInput.value.trim() || "bc_team_here";
 
-    const teamObject = {
+    return {
         teamCode,
 
         name: {
@@ -139,8 +141,11 @@ function buildTeamObject() {
             lastUpdated: ""
         }
     };
+}
 
-    return `"${teamCode}": ${JSON.stringify(teamObject, null, 2)}`;
+function buildTeamObject() {
+    const teamObject = getTeamObject();
+    return `"${teamObject.teamCode}": ${JSON.stringify(teamObject, null, 2)}`;
 }
 
 function renderJson() {
@@ -193,6 +198,35 @@ copyJsonBtn.addEventListener("click", async () => {
     setTimeout(() => {
         copyJsonBtn.textContent = "Copy JSON";
     }, 1000);
+});
+
+saveJsonBtn.addEventListener("click", async () => {
+    const teamObject = getTeamObject();
+
+    try {
+        const response = await fetch("http://127.0.0.1:8787/save-unrivaled-team", {
+            method: "POST",
+            headers: {
+                "Content-Type": "application/json"
+            },
+            body: JSON.stringify(teamObject)
+        });
+
+        const result = await response.json();
+
+        if (!result.ok) {
+            throw new Error(result.error || "Save failed");
+        }
+
+        saveJsonBtn.textContent = "Saved!";
+
+        setTimeout(() => {
+            saveJsonBtn.textContent = "Save JSON File";
+        }, 1200);
+    } catch (error) {
+        console.error(error);
+        alert("Save failed. Make sure the local save server is running.");
+    }
 });
 
 addChampionshipBtn.addEventListener("click", createChampionshipRow);
