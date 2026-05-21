@@ -86,6 +86,236 @@
         "notes": "",
         "lastUpdated": ""
       }
+    },
+    "russian_premier_league": {
+      "leagueCode": "russian_premier_league",
+      "name": {
+        "full": "Russian Premier League",
+        "commonNames": []
+      },
+      "location": {
+        "country": "Russia",
+        "region": "Europe"
+      },
+      "nameHistory": [],
+      "links": [
+        {
+          "label": "wiki",
+          "url": "https://en.wikipedia.org/wiki/Russian_Women%27s_Basketball_Premier_League",
+          "type": "Quick reference"
+        },
+        {
+          "label": "League site",
+          "url": "https://russiabasket.ru/",
+          "type": "official site"
+        }
+      ],
+      "meta": {
+        "notes": "",
+        "lastUpdated": ""
+      }
+    },
+    "womens_korean_basketball_league": {
+      "leagueCode": "womens_korean_basketball_league",
+      "name": {
+        "full": "Women's Korean Basketball League",
+        "commonNames": [
+          "WKBL"
+        ]
+      },
+      "location": {
+        "country": "South Korea",
+        "region": "Asia"
+      },
+      "nameHistory": [],
+      "links": [
+        {
+          "label": "Wiki",
+          "url": "https://en.wikipedia.org/wiki/Women%27s_Korean_Basketball_League",
+          "type": "Quick reference"
+        },
+        {
+          "label": "League site",
+          "url": "https://www.wkbl.or.kr/eng/",
+          "type": "official site"
+        }
+      ],
+      "meta": {
+        "notes": "",
+        "lastUpdated": ""
+      }
+    },
+    "womens_chinese_basketball_association": {
+      "leagueCode": "womens_chinese_basketball_association",
+      "name": {
+        "full": "Women's Chinese Basketball Association",
+        "commonNames": [
+          "WCBA"
+        ]
+      },
+      "location": {
+        "country": "China",
+        "region": "Asia"
+      },
+      "nameHistory": [],
+      "links": [
+        {
+          "label": "Wiki",
+          "url": "https://en.wikipedia.org/wiki/Women%27s_Chinese_Basketball_Association",
+          "type": "Quick reference"
+        }
+      ],
+      "meta": {
+        "notes": "",
+        "lastUpdated": ""
+      }
+    },
+    "czech_womens_basketball_league": {
+      "leagueCode": "czech_womens_basketball_league",
+      "name": {
+        "full": "Czech Women's Basketball League",
+        "commonNames": [
+          "Česká ženská basketbalová liga"
+        ]
+      },
+      "location": {
+        "country": "Czech Republic",
+        "region": "Europe"
+      },
+      "nameHistory": [],
+      "links": [
+        {
+          "label": "Wiki",
+          "url": "https://en.wikipedia.org/wiki/Czech_Women%27s_Basketball_League",
+          "type": "QF"
+        },
+        {
+          "label": "League History",
+          "url": "https://www.eurobasket.com/Czech-Republic/Zenska-Basketbolova-Liga-History.aspx",
+          "type": "League History"
+        }
+      ],
+      "meta": {
+        "notes": "",
+        "lastUpdated": ""
+      }
+    },
+    "slovak_womens_basketball_extraliga": {
+      "leagueCode": "slovak_womens_basketball_extraliga",
+      "name": {
+        "full": "Slovak Women's Basketball Extraliga",
+        "commonNames": []
+      },
+      "location": {
+        "country": "Slovakia",
+        "region": "Europe"
+      },
+      "nameHistory": [],
+      "links": [
+        {
+          "label": "Wiki",
+          "url": "https://en.wikipedia.org/wiki/Slovak_Women%27s_Basketball_Extraliga",
+          "type": "QF"
+        }
+      ],
+      "meta": {
+        "notes": "",
+        "lastUpdated": ""
+      }
+    },
+    "la_boulangere_wonderligue": {
+      "leagueCode": "la_boulangere_wonderligue",
+      "name": {
+        "full": "La Boulangere Wonderligue",
+        "commonNames": [
+          "Ligue Féminine de Basketball",
+          "LBWL",
+          "LFB"
+        ]
+      },
+      "location": {
+        "country": "",
+        "region": ""
+      },
+      "nameHistory": [
+        {
+          "name": "Ligue Féminine de Basketball",
+          "startYear": 1998,
+          "endYear": 2023
+        },
+        {
+          "name": "La Boulangère Wonderligue",
+          "startYear": 2024,
+          "endYear": "present"
+        }
+      ],
+      "links": [
+        {
+          "label": "League site",
+          "url": "https://basketlfb.com/laboulangerewonderligue",
+          "type": "official site"
+        },
+        {
+          "label": "Wiki",
+          "url": "https://en.wikipedia.org/wiki/Ligue_F%C3%A9minine_de_Basketball",
+          "type": "QF"
+        }
+      ],
+      "meta": {
+        "notes": "",
+        "lastUpdated": ""
+      }
+    },
+    "womens_national_basketball_league": {
+      "leagueCode": "womens_national_basketball_league",
+      "name": {
+        "full": "Women's National Basketball League",
+        "commonNames": [
+          "WNBL"
+        ]
+      },
+      "location": {
+        "country": "Australia",
+        "region": "FIBA Oceania"
+      },
+      "nameHistory": [],
+      "links": [
+        {
+          "label": "Wiki",
+          "url": "https://en.wikipedia.org/wiki/Women%27s_National_Basketball_League",
+          "type": "QF"
+        }
+      ],
+      "meta": {
+        "notes": "",
+        "lastUpdated": ""
+      }
+    },
+    "belgian_womens_basketball_league": {
+      "leagueCode": "belgian_womens_basketball_league",
+      "name": {
+        "full": "Belgian Women's Basketball League",
+        "commonNames": [
+          "The Belgian Jupiler Women's Basketball League",
+          "Championnat de Belgique de basketball féminin"
+        ]
+      },
+      "location": {
+        "country": "Belgium",
+        "region": "Europe"
+      },
+      "nameHistory": [],
+      "links": [
+        {
+          "label": "Wiki",
+          "url": "https://en.wikipedia.org/wiki/Belgian_Women%27s_Basketball_League",
+          "type": "QF"
+        }
+      ],
+      "meta": {
+        "notes": "",
+        "lastUpdated": ""
+      }
     }
   }
 }

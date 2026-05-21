@@ -378,6 +378,530 @@
         "notes": "",
         "lastUpdated": ""
       }
+    },
+    "ummc_ekaterinburg": {
+      "teamCode": "ummc_ekaterinburg",
+      "name": {
+        "full": "UMMC ekaterinburg",
+        "commonNames": []
+      },
+      "location": {
+        "area": "Yekaterinburg",
+        "country": "Russia",
+        "display": "Yekaterinburg, Russia"
+      },
+      "league": {
+        "leagueCode": "russian_premier_league"
+      },
+      "nameHistory": [],
+      "links": [
+        {
+          "label": "Wiki",
+          "url": "https://en.wikipedia.org/wiki/UMMC_Ekaterinburg",
+          "type": "Quick reference"
+        }
+      ],
+      "meta": {
+        "notes": "",
+        "lastUpdated": ""
+      }
+    },
+    "dynamo_kursk": {
+      "teamCode": "dynamo_kursk",
+      "name": {
+        "full": "Dynamo Kursk",
+        "commonNames": []
+      },
+      "location": {
+        "area": "Kursk",
+        "country": "Russia",
+        "display": "Kursk, Russia"
+      },
+      "league": {
+        "leagueCode": "russian_premier_league"
+      },
+      "nameHistory": [
+        {
+          "name": "Svetlana Kursk",
+          "startYear": 1994,
+          "endYear": 1997
+        },
+        {
+          "name": "Dynamo Kursk",
+          "startYear": 1997,
+          "endYear": "present"
+        }
+      ],
+      "links": [
+        {
+          "label": "Wiki",
+          "url": "https://en.wikipedia.org/wiki/Dynamo_Kursk",
+          "type": "Quick reference"
+        }
+      ],
+      "meta": {
+        "notes": "",
+        "lastUpdated": ""
+      }
+    },
+    "dynamo_moscow": {
+      "teamCode": "dynamo_moscow",
+      "name": {
+        "full": "Dynamo Moscow",
+        "commonNames": []
+      },
+      "location": {
+        "area": "Moscow",
+        "country": "Russia",
+        "display": "Moscow, Russia"
+      },
+      "league": {
+        "leagueCode": "russian_premier_league"
+      },
+      "nameHistory": [],
+      "links": [],
+      "meta": {
+        "notes": "",
+        "lastUpdated": ""
+      }
+    },
+    "spartek_moscow": {
+      "teamCode": "spartek_moscow",
+      "name": {
+        "full": "Spartek Moscow",
+        "commonNames": []
+      },
+      "location": {
+        "area": "Moscow",
+        "country": "Russia",
+        "display": "Moscow, Russia"
+      },
+      "league": {
+        "leagueCode": "russian_premier_league"
+      },
+      "nameHistory": [],
+      "links": [],
+      "meta": {
+        "notes": "",
+        "lastUpdated": ""
+      }
+    },
+    "azs_ajp_gorzow_wielkopolski": {
+      "teamCode": "azs_ajp_gorzow_wielkopolski",
+      "name": {
+        "full": "AZS AJP Gorzów Wielkopolski",
+        "commonNames": []
+      },
+      "location": {
+        "area": "Gorzów Wielkopolski",
+        "country": "Poland",
+        "display": "Gorzów Wielkopolski, Poland"
+      },
+      "league": {
+        "leagueCode": "basket_liga_kobiet"
+      },
+      "nameHistory": [],
+      "links": [
+        {
+          "label": "Wiki",
+          "url": "https://en.wikipedia.org/wiki/AZS_AJP_Gorz%C3%B3w_Wielkopolski",
+          "type": "Quick reference"
+        }
+      ],
+      "meta": {
+        "notes": "",
+        "lastUpdated": ""
+      }
+    },
+    "busan_bnk_sum": {
+      "teamCode": "busan_bnk_sum",
+      "name": {
+        "full": "Busan BNK Sum",
+        "commonNames": []
+      },
+      "location": {
+        "area": "Busan",
+        "country": "South Korea",
+        "display": "Busan, South Korea"
+      },
+      "league": {
+        "leagueCode": "womens_korean_basketball_league"
+      },
+      "nameHistory": [
+        {
+          "name": "Incheon Kumho Life Insurance Falcons",
+          "startYear": 2000,
+          "endYear": 2005
+        },
+        {
+          "name": "Guri Kumho Life Insurance Falcons",
+          "startYear": 2005,
+          "endYear": 2007
+        },
+        {
+          "name": "Guri Kumho Life Insurance Redwings",
+          "startYear": 2007,
+          "endYear": 2010
+        },
+        {
+          "name": "Guri KDB Life Winnus",
+          "startYear": 2010,
+          "endYear": 2018
+        },
+        {
+          "name": "Suwon OK SavingsBank OK Shoot",
+          "startYear": 2018,
+          "endYear": 2019
+        },
+        {
+          "name": "Busan BNK Sum",
+          "startYear": 2019,
+          "endYear": "present"
+        }
+      ],
+      "links": [
+        {
+          "label": "Wiki",
+          "url": "https://en.wikipedia.org/wiki/Busan_BNK_Sum",
+          "type": "Quick reference"
+        }
+      ],
+      "meta": {
+        "notes": "",
+        "lastUpdated": ""
+      }
+    },
+    "yongin_samsung_life_blueminx": {
+      "teamCode": "yongin_samsung_life_blueminx",
+      "name": {
+        "full": "Yongin Samsung Life Blueminx",
+        "commonNames": []
+      },
+      "location": {
+        "area": "Yongin",
+        "country": "South Korea",
+        "display": "Yongin, South Korea"
+      },
+      "league": {
+        "leagueCode": "womens_korean_basketball_league"
+      },
+      "nameHistory": [],
+      "links": [
+        {
+          "label": "Wiki",
+          "url": "https://en.wikipedia.org/wiki/Samsung_Life_Blueminx",
+          "type": "Quick reference"
+        }
+      ],
+      "meta": {
+        "notes": "",
+        "lastUpdated": ""
+      }
+    },
+    "bucheon_hana_bank": {
+      "teamCode": "bucheon_hana_bank",
+      "name": {
+        "full": "Bucheon Hana Bank",
+        "commonNames": []
+      },
+      "location": {
+        "area": "Bucheon",
+        "country": "South Korea",
+        "display": "Bucheon, South Korea"
+      },
+      "league": {
+        "leagueCode": "womens_korean_basketball_league"
+      },
+      "nameHistory": [],
+      "links": [],
+      "meta": {
+        "notes": "",
+        "lastUpdated": ""
+      }
+    },
+    "shaanxi_red_wolves": {
+      "teamCode": "shaanxi_red_wolves",
+      "name": {
+        "full": "Shaanxi Red Wolves",
+        "commonNames": [
+          "Shaanxi Tianze Red Wolves"
+        ]
+      },
+      "location": {
+        "area": "Shaanxi",
+        "country": "China",
+        "display": "Shaanxi, China"
+      },
+      "league": {
+        "leagueCode": "womens_chinese_basketball_association"
+      },
+      "nameHistory": [],
+      "links": [
+        {
+          "label": "Wiki",
+          "url": "https://en.wikipedia.org/wiki/Shaanxi_Red_Wolves",
+          "type": "Quick reference"
+        }
+      ],
+      "meta": {
+        "notes": "",
+        "lastUpdated": ""
+      }
+    },
+    "shanxi_flame": {
+      "teamCode": "shanxi_flame",
+      "name": {
+        "full": "Shanxi Flame",
+        "commonNames": [
+          "Shanxi Xing Rui Flame"
+        ]
+      },
+      "location": {
+        "area": "Shanxi",
+        "country": "China",
+        "display": "Shanxi, China"
+      },
+      "league": {
+        "leagueCode": "womens_chinese_basketball_association"
+      },
+      "nameHistory": [],
+      "links": [
+        {
+          "label": "Wiki",
+          "url": "https://en.wikipedia.org/wiki/Shanxi_Flame",
+          "type": "Quick reference"
+        }
+      ],
+      "meta": {
+        "notes": "",
+        "lastUpdated": ""
+      }
+    },
+    "zhejiang_golden_bulls": {
+      "teamCode": "zhejiang_golden_bulls",
+      "name": {
+        "full": "Zhejiang Golden Bulls",
+        "commonNames": []
+      },
+      "location": {
+        "area": "Zhejiang",
+        "country": "China",
+        "display": "Zhejiang, China"
+      },
+      "league": {
+        "leagueCode": "womens_chinese_basketball_association"
+      },
+      "nameHistory": [],
+      "links": [
+        {
+          "label": "Asia Basket team page",
+          "url": "https://basketball.asia-basket.com/team/Zhejiang-Golden-Bulls/10818/Stats?Women=1#google_vignette",
+          "type": "FIBA link"
+        }
+      ],
+      "meta": {
+        "notes": "",
+        "lastUpdated": ""
+      }
+    },
+    "shanghai_baoshan_dahua_swordfish": {
+      "teamCode": "shanghai_baoshan_dahua_swordfish",
+      "name": {
+        "full": "Shanghai Baoshan Dahua Swordfish",
+        "commonNames": [
+          "Shanghai Swordfish"
+        ]
+      },
+      "location": {
+        "area": "Shanghai",
+        "country": "China",
+        "display": "Shanghai, China"
+      },
+      "league": {
+        "leagueCode": "womens_chinese_basketball_association"
+      },
+      "nameHistory": [],
+      "links": [
+        {
+          "label": "Wiki",
+          "url": "https://en.wikipedia.org/wiki/Shanghai_Swordfish",
+          "type": "Quick referece"
+        }
+      ],
+      "meta": {
+        "notes": "",
+        "lastUpdated": ""
+      }
+    },
+    "beijing_great_wall": {
+      "teamCode": "beijing_great_wall",
+      "name": {
+        "full": "Beijing Great Wall",
+        "commonNames": []
+      },
+      "location": {
+        "area": "Beijing",
+        "country": "China",
+        "display": "Beijing, China"
+      },
+      "league": {
+        "leagueCode": "womens_chinese_basketball_association"
+      },
+      "nameHistory": [],
+      "links": [
+        {
+          "label": "Wiki",
+          "url": "https://en.wikipedia.org/wiki/Beijing_Great_Wall",
+          "type": "quick reference"
+        }
+      ],
+      "meta": {
+        "notes": "",
+        "lastUpdated": ""
+      }
+    },
+    "good_angels_kosice": {
+      "teamCode": "good_angels_kosice",
+      "name": {
+        "full": "Good Angels Košice",
+        "commonNames": []
+      },
+      "location": {
+        "area": "Košice",
+        "country": "Slovakia",
+        "display": "Košice, Slovakia"
+      },
+      "league": {
+        "leagueCode": "slovak_womens_basketball_extraliga"
+      },
+      "nameHistory": [],
+      "links": [
+        {
+          "label": "Wiki",
+          "url": "https://en.wikipedia.org/wiki/Good_Angels_Ko%C5%A1ice",
+          "type": "QF"
+        }
+      ],
+      "meta": {
+        "notes": "",
+        "lastUpdated": ""
+      }
+    },
+    "usk_praha": {
+      "teamCode": "usk_praha",
+      "name": {
+        "full": "USK Praha",
+        "commonNames": [
+          "ZVVZ USK Praha"
+        ]
+      },
+      "location": {
+        "area": "Prague",
+        "country": "Czech Republic",
+        "display": "Prague, Czech Republic"
+      },
+      "league": {
+        "leagueCode": "czech_womens_basketball_league"
+      },
+      "nameHistory": [],
+      "links": [
+        {
+          "label": "Wiki",
+          "url": "https://en.wikipedia.org/wiki/USK_Praha_(women%27s_basketball)",
+          "type": "QF"
+        }
+      ],
+      "meta": {
+        "notes": "",
+        "lastUpdated": ""
+      }
+    },
+    "lattes_montpellier": {
+      "teamCode": "lattes_montpellier",
+      "name": {
+        "full": "Lattes Montpellier",
+        "commonNames": [
+          "Basket Lattes Montpellier Agglomeration",
+          "BLMA"
+        ]
+      },
+      "location": {
+        "area": "Lattes",
+        "country": "France",
+        "display": "Lattes, France"
+      },
+      "league": {
+        "leagueCode": "la_boulangere_wonderligue"
+      },
+      "nameHistory": [],
+      "links": [
+        {
+          "label": "Wiki",
+          "url": "https://en.wikipedia.org/wiki/Basket_Lattes_Montpellier_Agglom%C3%A9ration",
+          "type": "QF"
+        }
+      ],
+      "meta": {
+        "notes": "",
+        "lastUpdated": ""
+      }
+    },
+    "perth_lynx": {
+      "teamCode": "perth_lynx",
+      "name": {
+        "full": "Perth Lynx",
+        "commonNames": []
+      },
+      "location": {
+        "area": "Perth",
+        "country": "Western Australia",
+        "display": "Perth, Western Australia"
+      },
+      "league": {
+        "leagueCode": "womens_national_basketball_league"
+      },
+      "nameHistory": [],
+      "links": [
+        {
+          "label": "Wiki",
+          "url": "https://en.wikipedia.org/wiki/Perth_Lynx",
+          "type": "QF"
+        }
+      ],
+      "meta": {
+        "notes": "",
+        "lastUpdated": ""
+      }
+    },
+    "bc_castors_braine": {
+      "teamCode": "bc_castors_braine",
+      "name": {
+        "full": "BC Castors Braine",
+        "commonNames": [
+          "Castors Braine",
+          "Basketball Club Braine Beavers"
+        ]
+      },
+      "location": {
+        "area": "Braine-l'Alleud",
+        "country": "Belgium",
+        "display": "Braine-l'Alleud, Belgium"
+      },
+      "league": {
+        "leagueCode": "belgian_womens_basketball_league"
+      },
+      "nameHistory": [],
+      "links": [
+        {
+          "label": "Wiki",
+          "url": "https://en.wikipedia.org/wiki/BC_Castors_Braine",
+          "type": "QF"
+        }
+      ],
+      "meta": {
+        "notes": "",
+        "lastUpdated": ""
+      }
     }
   }
 }

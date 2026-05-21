@@ -257,7 +257,7 @@ function renderCollegeSection(card, player) {
       <p class="player-card__section-subtitle">
         ${college ? college.name : collegeCareer.collegeId}
       </p>
-
+ 
       <div 
         class="player-mini-timeline"
         style="grid-template-columns: repeat(${years.length}, 34px);"
@@ -337,7 +337,7 @@ function renderProCareerSection(card, player) {
     <h3 class="player-card__section-title">Pro Careers</h3>
 
     <div class="player-card__pro-timeline">
-
+ 
 <div 
   class="player-pro-grid"
   style="grid-template-columns: 90px repeat(${years.length}, 46px);"

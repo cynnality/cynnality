@@ -99,7 +99,7 @@ body {
 }
 
 /* COLLEGE TIMELINE */
-.player-mini-timeline {
+.player-mini-timeline { 
   display: grid;
   gap: 4px;
   overflow-x: auto;

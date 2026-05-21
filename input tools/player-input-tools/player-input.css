@@ -4,9 +4,9 @@
 
 body {
   margin: 0;
-  padding: 32px;
+  padding: 16px;
   font-family: "Chivo Mono", monospace;
-  background: #ffffff;
+  background: #c4fcff3a;
   color: #111;
 }
 
@@ -22,74 +22,103 @@ body {
   display: flex;
   flex-direction: column;
   padding: 24px;
-  border: solid #000 4px;
   border-radius: 4px;
-  background-color: #7C23E8;
+  height: 250vh;
+  overflow-y: scroll;
 }
-
 h1 {
-  font-size: 2.4rem;
+  font-size: 32px;
   text-transform: uppercase;
-  letter-spacing: -0.05em;
-  margin-bottom: 24px;
+  margin: 12px;
 }
 
 .panel {
-  background: #fff;
-  border: 2px solid #111;
+  border: 3px solid #111;
   border-radius: 4px;
-  padding: 24px;
-  margin-bottom: 24px;
+  margin-bottom: 12px;
+  background-color: #a147b73a;
+  width: fit-content;
 }
 
-.panel.input > h2 {
+.panel.input .p-category {
   cursor: pointer;
+}
+
+.panel.input .p-category h2 {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
-.panel.input > h2::after {
+.panel.input .p-category h2::after {
   content: "−";
   font-family: "Chivo Mono", monospace;
+  font-style: normal;
+  margin-left: 16px;
 }
 
-.panel.input.collapsed > h2::after {
+.panel.input.collapsed .p-category h2::after {
   content: "+";
 }
 
-.panel.input.collapsed > *:not(h2) {
+.panel.input.collapsed .p-body {
   display: none;
 }
 
-.panel h2 {
+#player-input.panel {
+  padding: 24px;
+  background-color: transparent;
+}
+#player-input.panel h2{
   margin-top: 0;
-  font-size: 20px;
-  text-transform: uppercase;
+  font-style: italic;
+  font-size: 22px;
   letter-spacing: 0.04em;
   border-bottom: 2px solid #111;
-  padding-bottom: 8px;
+  /*! padding-bottom: 8px; */
+  /*! padding-left: 6px; */
+  padding: 6px;
+}
+
+.p-category h2 {
+  margin-top: 0;
+  margin-bottom: 0;
+  font-style: italic;
+  font-size: 22px;
+  letter-spacing: 0.04em;
+  border-bottom: 2px solid #111;
+  background-color: #f333d079;
+  /*! padding-bottom: 8px; */
+  /*! padding-left: 6px; */
+  padding: 6px;
+}
+
+.p-body {
+  padding: 24px;
+  padding-top: 6px;
 }
 
 .sub-panel {
   width: max-content;
-  margin-top: 16px;
-  padding: 8px 20px;
+  margin-top: 10px;
+  /*! padding: 8px 20px; */
   border: 2px solid #111;
-  background: #fafafa;
+  background: #a147b746;
+  border-radius: 4px;
 }
+
+
 
 input,
 textarea,
 select {
   /*! width: 100%; */
   display: block;
-  margin: 10px 0;
+  margin: 6px;
   padding: 10px 12px;
   border: 1.5px solid #111;
   background: #e2d6d6;
   font: inherit;
-  margin-left: 24px;
 }
 
 textarea {
@@ -119,6 +148,11 @@ button:active {
   box-shadow: none;
 }
 
+.remove-season-entry-btn,
+.remove-image-btn {
+  background-color: red;
+}
+
 ul {
   padding-left: 18px;
 }
@@ -129,10 +163,22 @@ li {
   font-size: 0.9rem;
 }
 
+#player-input .select-and-or-group {
+flex-direction: row;
+}
+
 .player-id-row {
   display: flex;
   gap: 12px;
   align-items: baseline;
+}
+
+label {
+  display: block;
+  margin: 6px;
+  font-family: "Chivo Mono", monospace;
+  font-size: 16px;
+  max-width: fit-content;
 }
 
 #draftPick {
@@ -152,7 +198,6 @@ li {
   border: 2px solid #111;
   overflow-x: auto;
   min-height: 260px;
-  height: 1000px;
   width: 425px;
   font-family: "Chivo Mono", monospace;
   font-size: 0.85rem;
@@ -172,9 +217,9 @@ li {
 }
 
 .timeline-year-card {
-  width: 74px;
+  width: 60px;
   border: 2px solid #111;
-  background: #fff;
+  background: #ffffff73;
   color: #000000;
   cursor: pointer;
   text-align: center;
@@ -183,13 +228,14 @@ li {
 
 .timeline-year-card .year-label {
   font-family: "DM Mono", monospace;
-  font-size: 0.75rem;
+  font-size: 16px;
   margin-bottom: 6px;
   color: #000000;
 }
 
 .timeline-year-card .year-square {
-  height: 44px;
+  height: 45px;
+  width: 45px;
   border: 2px solid #111;
   background: #eee;
 }
@@ -203,30 +249,91 @@ li {
 }
 
 .timeline-year-card.selected {
-  transform: translate(3px, 3px);
+  transform: translate(0px, -3px);
   box-shadow: 1px 1px 0 #111;
 }
 
+
+
+.season-editor p {
+  margin: 8px;
+}
 .season-editor {
-  border: 2px dashed #111;
-  padding: 14px;
-  margin-top: 16px;
-  background: #fafafa;
+  border: 3px solid #111;
+  border-radius: 4px;
+  margin-top: 18px;
+  padding: 0;
+  background: #a147b746;
+  width: fit-content;
+  max-width: 100%;
 }
 
-.season-editor-actions {
+.season-editor h3 {
+  margin: 0;
+  padding: 8px 12px;
+  border-bottom: 2px solid #111;
+  background: #f333d079;
+  font-size: 20px;
+  font-style: italic;
+  text-transform: uppercase;
+}
+
+#selectedSeasonLabel {
+  margin: 12px;
+  font-style: italic;
+  font-size: 16px;
+}
+
+.season-editor-actions,
+.season-entry-actions {
   display: flex;
-  gap: 10px;
   flex-wrap: wrap;
-  margin: 12px 0 18px;
+  gap: 8px;
+  margin: 12px;
 }
 
-.editor-choice-group {
+#seasonEntriesList {
   display: flex;
+  flex-direction: column;
   gap: 12px;
-  align-items: stretch;
-  margin: 14px 0;
+  margin: 12px;
 }
+
+.season-entry-card {
+  border: 2px solid #111;
+  border-radius: 4px;
+  background: #459a537e;
+  padding: 12px;
+  width: fit-content;
+}
+
+.season-entry-card-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  border-bottom: 2px solid #111;
+  padding-bottom: 8px;
+  margin-bottom: 10px;
+}
+
+.season-entry-card-header strong {
+  font-style: italic;
+  text-transform: uppercase;
+}
+
+.season-entry-card select,
+.season-entry-card input,
+.season-entry-card textarea {
+  background: #e2d6d6;
+  max-width: 320px;
+}
+
+.season-entry-card textarea {
+  width: 320px;
+  min-height: 80px;
+}
+
 
 .choice-label {
   flex: 1;
@@ -268,50 +375,34 @@ li {
   display: none;
 }
 
-.partial-segment-card {
-  border: 2px solid #111;
-  background: #fff;
-  box-shadow: 3px 3px 0 #111;
-  padding: 10px;
-  margin: 10px 0;
-}
-
 .yes-no-row {
-  margin: 12px 0;
+  margin: 28px;
   padding: 12px;
   border: 2px solid #111;
-  background: #fafafa;
+  border-radius: 4px;
+  background-color: #459a537e;
 }
 
-.yes-no-row label {
-  display: inline-flex;
-  align-items: baseline;
-  gap: 6px;
-}
-
-.yes-no-row p {
-  margin: 0 0 8px;
-  font-weight: 800;
-  text-transform: uppercase;
+.sub-panel .yes-no-row {
+  border: none;
 }
 
 .yes-no-row p {
   margin: 0 0 8px;
-  font-weight: 600;
-  text-transform: uppercase;
-  font-size: 16px;
+  font-size: 18px;
   font-style: italic;
 }
 
 .select-and-or-group {
   display: flex;
   flex-direction: column;
+  justify-content: left;
+  gap: 12px;
 }
 .select-opt {
  
 }
 .select-and-or-group .or-opt {
-margin: 8px;
 padding: 4px;
 }
 
@@ -324,7 +415,7 @@ display: flex;
 justify-content: space-between;
 margin: 0;
 padding: 4px;
-width: 230px;
+width: 305px;
 }
 .sub-panel.start-end label {
   margin: 4px;
@@ -332,7 +423,7 @@ width: 230px;
 .sub-panel.start-end .start-yr,.sub-panel.start-end .end-yr {
   display: flex;
   flex-direction: column;
-  width: 80px;
+  /*! width: 80px; */
   font-size: 16px;
   font-style: italic;
 }
@@ -344,8 +435,46 @@ width: 230px;
   margin: 4px;
 }
 
-.entry-group-horizontal {
+.entry-group {
   display: flex;
+  flex-direction: column;
   gap: 12px;
-  align-items: flex-end;
+}
+
+.yes-no-row label {
+  display: inline-flex;
+  align-items: baseline;
+  gap: 6px;
+}
+
+.custom-radio input {
+  display: none;
+}
+
+label.custom-radio {
+  display: inline-flex;
+  align-items: center;
+}
+
+.radio-shape {
+  width: 30px;
+  height: 30px;
+  display: inline-block;
+  border-radius: 0;
+  border: 2px solid #000;
+  cursor: pointer;
+}
+
+#imageFileTypeWrapper {
+  padding: 0;
+}
+
+#imageFileTypeWrapper label.custom-radio p {
+  margin: 0;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.custom-radio input:checked + .radio-shape {
+  background-color: #007bff; /* Color when selected */
 }

@@ -3,6 +3,16 @@
     "jewell_loyd": {
       "playerName": "Jewell Loyd",
       "teamUsaJersey": "4",
+      "playerStatus": {
+        "isActive": true,
+        "hasNcaaChampionships": false,
+        "wasDraftDayTrade": false,
+        "hasWnbaChampionships": true,
+        "hasOverseasExperience": true,
+        "hasUnrivaledExperience": true,
+        "hasNationalTeamExperience": true,
+        "hasOlympicExperience": true
+      },
       "careerDetails": {
         "collegeCareer": {
           "collegeId": "u_of_notre_dame",
@@ -19,49 +29,62 @@
         "overseasTeams": [
           {
             "season": "2015-16",
-            "team": "Galatasaray",
-            "country": "Turkey"
+            "teamCode": "galatasaray"
           },
           {
             "season": "2016-17",
-            "team": "Shanxi Flame",
-            "country": "China"
+            "teamCode": "shanxi_flame"
           },
           {
             "season": "2017-18",
-            "team": "Guri KDB Bank Winnus",
-            "country": "South Korea"
+            "teamCode": "busan_bnk_sum"
           },
           {
             "season": "2018-19",
-            "team": "Botas SK",
-            "country": "Turkey"
+            "teamCode": "botas_sk"
           },
           {
             "season": "2019-20",
-            "team": "Perfumerias Avenida",
-            "country": "Spain"
+            "teamCode": "perfumerias_avenida"
           }
         ],
         "unrivaledTeams": [
           {
-            "year": "2025",
-            "team": "Mist"
+            "year": 2025,
+            "teamCode": "bc_mist"
           }
         ],
         "teamUsaMedals": [
           {
-            "year": "2014",
-            "competition": "3x3 World Cup",
-            "medal": "Gold"
-          },
-          {
+            "eventType": "FIBA",
+            "format": "5x5",
             "year": "2018",
             "competition": "World Cup",
             "medal": "Gold"
           },
           {
+            "eventType": "FIBA",
+            "format": "5x5",
             "year": "2022",
+            "competition": "World Cup",
+            "medal": "Gold"
+          },
+          {
+            "eventType": "Olympics",
+            "format": "5x5",
+            "year": "2020",
+            "medal": "Gold"
+          },
+          {
+            "eventType": "Olympics",
+            "format": "5x5",
+            "year": "2024",
+            "medal": "Gold"
+          },
+          {
+            "eventType": "FIBA",
+            "format": "3x3",
+            "year": "2014",
             "competition": "World Cup",
             "medal": "Gold"
           }
@@ -71,6 +94,122 @@
         "src": "/season-30/connection-imgs/jewell-loyd-individual-aces.avif",
         "alt": "Jewell Loyd"
       },
+      "images": [
+        {
+          "src": "/season-30/connection-imgs/jewell-loyd-individual-aces.avif",
+          "alt": "Jewell Loyd"
+        }
+      ],
+      "wnbaSeasons": [
+        {
+          "year": "2015",
+          "entries": [
+            {
+              "type": "team",
+              "teamCode": "SEA_STORM"
+            }
+          ]
+        },
+        {
+          "year": "2016",
+          "entries": [
+            {
+              "type": "team",
+              "teamCode": "SEA_STORM"
+            }
+          ]
+        },
+        {
+          "year": "2017",
+          "entries": [
+            {
+              "type": "team",
+              "teamCode": "SEA_STORM"
+            }
+          ]
+        },
+        {
+          "year": "2018",
+          "entries": [
+            {
+              "type": "team",
+              "teamCode": "SEA_STORM"
+            }
+          ]
+        },
+        {
+          "year": "2019",
+          "entries": [
+            {
+              "type": "team",
+              "teamCode": "SEA_STORM"
+            }
+          ]
+        },
+        {
+          "year": "2020",
+          "entries": [
+            {
+              "type": "team",
+              "teamCode": "SEA_STORM"
+            }
+          ]
+        },
+        {
+          "year": "2021",
+          "entries": [
+            {
+              "type": "team",
+              "teamCode": "SEA_STORM"
+            }
+          ]
+        },
+        {
+          "year": "2022",
+          "entries": [
+            {
+              "type": "team",
+              "teamCode": "SEA_STORM"
+            }
+          ]
+        },
+        {
+          "year": "2023",
+          "entries": [
+            {
+              "type": "team",
+              "teamCode": "SEA_STORM"
+            }
+          ]
+        },
+        {
+          "year": "2024",
+          "entries": [
+            {
+              "type": "team",
+              "teamCode": "SEA_STORM"
+            }
+          ]
+        },
+        {
+          "year": "2025",
+          "entries": [
+            {
+              "type": "team",
+              "teamCode": "LVA_ACES"
+            }
+          ]
+        },
+        {
+          "year": "2026",
+          "entries": [
+            {
+              "type": "team",
+              "teamCode": "LVA_ACES"
+            }
+          ]
+        }
+      ],
       "wnbaTeams": [
         {
           "teamCode": "SEA_STORM",
@@ -80,8 +219,7 @@
         {
           "teamCode": "LVA_ACES",
           "startYear": "2025",
-          "endYear": "present",
-          "transactionNote": "Traded"
+          "endYear": "present"
         }
       ],
       "championships": [
@@ -102,6 +240,16 @@
     "kelsey_plum": {
       "playerName": "Kelsey Plum",
       "teamUsaJersey": "5",
+      "playerStatus": {
+        "isActive": true,
+        "hasNcaaChampionships": false,
+        "wasDraftDayTrade": false,
+        "hasWnbaChampionships": true,
+        "hasOverseasExperience": true,
+        "hasUnrivaledExperience": true,
+        "hasNationalTeamExperience": true,
+        "hasOlympicExperience": true
+      },
       "careerDetails": {
         "collegeCareer": {
           "collegeId": "u_of_washington",
@@ -118,60 +266,67 @@
         "overseasTeams": [
           {
             "season": "2017-18",
-            "team": "Fenerbahce",
-            "country": "Turkey"
+            "teamCode": "fenerbahce"
           },
           {
             "season": "2018-19",
-            "team": "Fenerbahce",
-            "country": "Turkey"
+            "teamCode": "fenerbahce"
           },
           {
             "season": "2019-20",
-            "team": "Fenerbahce",
-            "country": "Turkey"
+            "teamCode": "fenerbahce"
           },
           {
             "season": "2020-21",
-            "team": "Fenerbahce",
-            "country": "Turkey"
+            "teamCode": "fenerbahce"
           },
           {
             "season": "2021-22",
-            "team": "Fenerbahce",
-            "country": "Turkey"
+            "teamCode": "fenerbahce"
           },
           {
             "season": "2022",
-            "team": "Galatasaray",
-            "country": "Turkey"
+            "teamCode": "galatasaray"
           }
         ],
         "unrivaledTeams": [
           {
-            "year": "2026",
-            "team": "Phantom"
+            "year": 2026,
+            "teamCode": "bc_phantom"
           }
         ],
         "teamUsaMedals": [
           {
+            "eventType": "FIBA",
+            "format": "5x5",
             "year": "2015",
             "competition": "Pan American Games",
             "medal": "Silver"
           },
           {
+            "eventType": "FIBA",
+            "format": "5x5",
             "year": "2018",
             "competition": "World Cup",
             "medal": "Gold"
           },
           {
+            "eventType": "Olympics",
+            "format": "3x3",
             "year": "2020",
-            "competition": "3x3 Olympics",
             "medal": "Gold"
           },
           {
+            "eventType": "FIBA",
+            "format": "5x5",
             "year": "2022",
             "competition": "World Cup",
+            "medal": "Gold"
+          },
+          {
+            "eventType": "Olympics",
+            "format": "5x5",
+            "year": "2024",
             "medal": "Gold"
           }
         ]
@@ -180,6 +335,104 @@
         "src": "/season-30/connection-imgs/kelsey-plum-cele.jpg",
         "alt": "Kelsey Plum"
       },
+      "images": [
+        {
+          "src": "/season-30/connection-imgs/kelsey-plum-cele.jpg",
+          "alt": "Kelsey Plum"
+        }
+      ],
+      "wnbaSeasons": [
+        {
+          "year": "2017",
+          "entries": [
+            {
+              "type": "team",
+              "teamCode": "SA_STARS"
+            }
+          ]
+        },
+        {
+          "year": "2018",
+          "entries": [
+            {
+              "type": "team",
+              "teamCode": "LVA_ACES"
+            }
+          ]
+        },
+        {
+          "year": "2019",
+          "entries": [
+            {
+              "type": "team",
+              "teamCode": "LVA_ACES"
+            }
+          ]
+        },
+        {
+          "year": "2020",
+          "entries": [
+            {
+              "type": "team",
+              "teamCode": "LVA_ACES"
+            }
+          ]
+        },
+        {
+          "year": "2021",
+          "entries": [
+            {
+              "type": "team",
+              "teamCode": "LVA_ACES"
+            }
+          ]
+        },
+        {
+          "year": "2022",
+          "entries": [
+            {
+              "type": "team",
+              "teamCode": "LVA_ACES"
+            }
+          ]
+        },
+        {
+          "year": "2023",
+          "entries": [
+            {
+              "type": "team",
+              "teamCode": "LVA_ACES"
+            }
+          ]
+        },
+        {
+          "year": "2024",
+          "entries": [
+            {
+              "type": "team",
+              "teamCode": "LVA_ACES"
+            }
+          ]
+        },
+        {
+          "year": "2025",
+          "entries": [
+            {
+              "type": "team",
+              "teamCode": "LOS_SPARKS"
+            }
+          ]
+        },
+        {
+          "year": "2026",
+          "entries": [
+            {
+              "type": "team",
+              "teamCode": "LOS_SPARKS"
+            }
+          ]
+        }
+      ],
       "wnbaTeams": [
         {
           "teamCode": "SA_STARS",
@@ -211,6 +464,16 @@
     "sabrina_ionescu": {
       "playerName": "Sabrina Ionescu",
       "teamUsaJersey": "6",
+      "playerStatus": {
+        "isActive": true,
+        "hasNcaaChampionships": false,
+        "wasDraftDayTrade": false,
+        "hasWnbaChampionships": true,
+        "hasOverseasExperience": false,
+        "hasUnrivaledExperience": true,
+        "hasNationalTeamExperience": true,
+        "hasOlympicExperience": true
+      },
       "careerDetails": {
         "collegeCareer": {
           "collegeId": "u_of_oregon",
@@ -241,6 +504,26 @@
             "year": "2019",
             "competition": "3x3 Pan American Games",
             "medal": "Gold"
+          },
+          {
+            "eventType": "Olympics",
+            "format": "5x5",
+            "year": "2024",
+            "medal": "Gold"
+          },
+          {
+            "eventType": "FIBA",
+            "format": "5x5",
+            "year": "2022",
+            "competition": "World Cup",
+            "medal": "Gold"
+          },
+          {
+            "eventType": "FIBA",
+            "format": "3x3",
+            "year": "2019",
+            "competition": "Pan American Games",
+            "medal": "Gold"
           }
         ]
       },
@@ -248,6 +531,77 @@
         "src": "/season-30/connection-imgs/sab_ion_2024_finals.webp",
         "alt": "Sabrina Ionescu"
       },
+      "images": [
+        {
+          "src": "/season-30/connection-imgs/sab_ion_2024_finals.webp",
+          "alt": "Sabrina Ionescu"
+        }
+      ],
+      "wnbaSeasons": [
+        {
+          "year": "2020",
+          "entries": [
+            {
+              "type": "team",
+              "teamCode": "NYL_LIBERTY"
+            }
+          ]
+        },
+        {
+          "year": "2021",
+          "entries": [
+            {
+              "type": "team",
+              "teamCode": "NYL_LIBERTY"
+            }
+          ]
+        },
+        {
+          "year": "2022",
+          "entries": [
+            {
+              "type": "team",
+              "teamCode": "NYL_LIBERTY"
+            }
+          ]
+        },
+        {
+          "year": "2023",
+          "entries": [
+            {
+              "type": "team",
+              "teamCode": "NYL_LIBERTY"
+            }
+          ]
+        },
+        {
+          "year": "2024",
+          "entries": [
+            {
+              "type": "team",
+              "teamCode": "NYL_LIBERTY"
+            }
+          ]
+        },
+        {
+          "year": "2025",
+          "entries": [
+            {
+              "type": "team",
+              "teamCode": "NYL_LIBERTY"
+            }
+          ]
+        },
+        {
+          "year": "2026",
+          "entries": [
+            {
+              "type": "team",
+              "teamCode": "NYL_LIBERTY"
+            }
+          ]
+        }
+      ],
       "wnbaTeams": [
         {
           "teamCode": "NYL_LIBERTY",
@@ -265,15 +619,198 @@
     "kahleah_copper": {
       "playerName": "Kahleah Copper",
       "teamUsaJersey": "7",
-      "collegeId": "rutgers_u",
-      "draft": {
-        "year": "2016",
-        "teamCode": "WAS_MYSTICS"
+      "playerStatus": {
+        "isActive": true,
+        "hasNcaaChampionships": false,
+        "wasDraftDayTrade": false,
+        "hasWnbaChampionships": true,
+        "hasOverseasExperience": true,
+        "hasUnrivaledExperience": true,
+        "hasNationalTeamExperience": true,
+        "hasOlympicExperience": true
+      },
+      "careerDetails": {
+        "collegeCareer": {
+          "collegeId": "rutgers_u",
+          "startYear": "2012",
+          "endYear": "2016",
+          "ncaaChampionships": []
+        },
+        "draftDetails": {
+          "year": "2016",
+          "pick": "7",
+          "draftedBy": "WAS_MYSTICS"
+        },
+        "missedWnbaSeasons": [],
+        "overseasTeams": [
+          {
+            "season": "2016-17",
+            "teamCode": "bc_castors_braine",
+            "note": ""
+          },
+          {
+            "season": "2017-18",
+            "teamCode": "arka_gdynia",
+            "note": ""
+          },
+          {
+            "season": "2018-19",
+            "teamCode": "ogm_ormanspor",
+            "note": ""
+          },
+          {
+            "season": "2019-20",
+            "teamCode": "azs_ajp_gorzow_wielkopolski",
+            "note": ""
+          },
+          {
+            "season": "2021-22",
+            "teamCode": "perfumerias_avenida",
+            "note": ""
+          },
+          {
+            "season": "2023-24",
+            "teamCode": "curkova",
+            "note": ""
+          }
+        ],
+        "unrivaledTeams": [
+          {
+            "year": 2025,
+            "teamCode": "bc_rose"
+          },
+          {
+            "year": 2026,
+            "teamCode": "bc_rose"
+          }
+        ],
+        "teamUsaMedals": [
+          {
+            "eventType": "Olympics",
+            "format": "5x5",
+            "year": "2024",
+            "medal": "Gold"
+          },
+          {
+            "eventType": "FIBA",
+            "format": "5x5",
+            "year": "2022",
+            "competition": "World Cup",
+            "medal": "Gold"
+          }
+        ]
       },
       "image": {
         "src": "/season-30/connection-imgs/kahleah-copper-individual-sky.jpg",
         "alt": "Kahleah Copper"
       },
+      "images": [
+        {
+          "src": "/season-30/connection-imgs/kahleah-copper-individual-sky.jpg",
+          "alt": "Kahleah Copper"
+        }
+      ],
+      "wnbaSeasons": [
+        {
+          "year": "2016",
+          "entries": [
+            {
+              "type": "team",
+              "teamCode": "WAS_MYSTICS"
+            }
+          ]
+        },
+        {
+          "year": "2017",
+          "entries": [
+            {
+              "type": "team",
+              "teamCode": "CHI_SKY"
+            }
+          ]
+        },
+        {
+          "year": "2018",
+          "entries": [
+            {
+              "type": "team",
+              "teamCode": "CHI_SKY"
+            }
+          ]
+        },
+        {
+          "year": "2019",
+          "entries": [
+            {
+              "type": "team",
+              "teamCode": "CHI_SKY"
+            }
+          ]
+        },
+        {
+          "year": "2020",
+          "entries": [
+            {
+              "type": "team",
+              "teamCode": "CHI_SKY"
+            }
+          ]
+        },
+        {
+          "year": "2021",
+          "entries": [
+            {
+              "type": "team",
+              "teamCode": "CHI_SKY"
+            }
+          ]
+        },
+        {
+          "year": "2022",
+          "entries": [
+            {
+              "type": "team",
+              "teamCode": "CHI_SKY"
+            }
+          ]
+        },
+        {
+          "year": "2023",
+          "entries": [
+            {
+              "type": "team",
+              "teamCode": "CHI_SKY"
+            }
+          ]
+        },
+        {
+          "year": "2024",
+          "entries": [
+            {
+              "type": "team",
+              "teamCode": "PHX_MERCURY"
+            }
+          ]
+        },
+        {
+          "year": "2025",
+          "entries": [
+            {
+              "type": "team",
+              "teamCode": "PHX_MERCURY"
+            }
+          ]
+        },
+        {
+          "year": "2026",
+          "entries": [
+            {
+              "type": "team",
+              "teamCode": "PHX_MERCURY"
+            }
+          ]
+        }
+      ],
       "wnbaTeams": [
         {
           "teamCode": "WAS_MYSTICS",
@@ -302,6 +839,16 @@
     "chelsea_gray": {
       "playerName": "Chelsea Gray",
       "teamUsaJersey": "8",
+      "playerStatus": {
+        "isActive": true,
+        "hasNcaaChampionships": false,
+        "wasDraftDayTrade": false,
+        "hasWnbaChampionships": true,
+        "hasOverseasExperience": true,
+        "hasUnrivaledExperience": true,
+        "hasNationalTeamExperience": true,
+        "hasOlympicExperience": true
+      },
       "careerDetails": {
         "collegeCareer": {
           "collegeId": "duke_u",
@@ -364,6 +911,20 @@
         ],
         "teamUsaMedals": [
           {
+            "eventType": "Olympics",
+            "format": "5x5",
+            "year": "2024",
+            "medal": "Gold"
+          },
+          {
+            "eventType": "Olympics",
+            "format": "5x5",
+            "year": "2020",
+            "medal": "Gold"
+          },
+          {
+            "eventType": "FIBA",
+            "format": "5x5",
             "year": "2022",
             "competition": "World Cup",
             "medal": "Gold"
@@ -374,6 +935,133 @@
         "src": "/season-30/connection-imgs/chelsea-gray-individual.jpg",
         "alt": "Chelsea Gray"
       },
+      "images": [
+        {
+          "src": "/season-30/connection-imgs/chelsea-gray-individual.jpg",
+          "alt": "Chelsea Gray"
+        }
+      ],
+      "wnbaSeasons": [
+        {
+          "year": "2014",
+          "entries": [
+            {
+              "type": "sit_out",
+              "teamCode": "CON_SUN",
+              "reason": "Injury",
+              "note": "Due to injury she got while playing her final year in college at Duke"
+            }
+          ]
+        },
+        {
+          "year": "2015",
+          "entries": [
+            {
+              "type": "team",
+              "teamCode": "CON_SUN"
+            }
+          ]
+        },
+        {
+          "year": "2016",
+          "entries": [
+            {
+              "type": "team",
+              "teamCode": "LOS_SPARKS"
+            }
+          ]
+        },
+        {
+          "year": "2017",
+          "entries": [
+            {
+              "type": "team",
+              "teamCode": "LOS_SPARKS"
+            }
+          ]
+        },
+        {
+          "year": "2018",
+          "entries": [
+            {
+              "type": "team",
+              "teamCode": "LOS_SPARKS"
+            }
+          ]
+        },
+        {
+          "year": "2019",
+          "entries": [
+            {
+              "type": "team",
+              "teamCode": "LOS_SPARKS"
+            }
+          ]
+        },
+        {
+          "year": "2020",
+          "entries": [
+            {
+              "type": "team",
+              "teamCode": "LOS_SPARKS"
+            }
+          ]
+        },
+        {
+          "year": "2021",
+          "entries": [
+            {
+              "type": "team",
+              "teamCode": "LVA_ACES"
+            }
+          ]
+        },
+        {
+          "year": "2022",
+          "entries": [
+            {
+              "type": "team",
+              "teamCode": "LVA_ACES"
+            }
+          ]
+        },
+        {
+          "year": "2023",
+          "entries": [
+            {
+              "type": "team",
+              "teamCode": "LVA_ACES"
+            }
+          ]
+        },
+        {
+          "year": "2024",
+          "entries": [
+            {
+              "type": "team",
+              "teamCode": "LVA_ACES"
+            }
+          ]
+        },
+        {
+          "year": "2025",
+          "entries": [
+            {
+              "type": "team",
+              "teamCode": "LVA_ACES"
+            }
+          ]
+        },
+        {
+          "year": "2026",
+          "entries": [
+            {
+              "type": "team",
+              "teamCode": "LVA_ACES"
+            }
+          ]
+        }
+      ],
       "wnbaTeams": [
         {
           "teamCode": "CON_SUN",
@@ -388,7 +1076,7 @@
         {
           "teamCode": "LVA_ACES",
           "startYear": "2021",
-          "endYear": "2026"
+          "endYear": "present"
         }
       ],
       "championships": [
@@ -414,15 +1102,169 @@
     "aja_wilson": {
       "playerName": "A'ja Wilson",
       "teamUsaJersey": "9",
-      "collegeId": "u_of_south_carolina",
-      "draft": {
-        "year": "2018",
-        "teamCode": "LVA_ACES"
+      "playerStatus": {
+        "isActive": true,
+        "hasNcaaChampionships": true,
+        "wasDraftDayTrade": false,
+        "hasWnbaChampionships": true,
+        "hasOverseasExperience": true,
+        "hasUnrivaledExperience": false,
+        "hasNationalTeamExperience": true,
+        "hasOlympicExperience": true
+      },
+      "careerDetails": {
+        "collegeCareer": {
+          "collegeId": "u_of_south_carolina",
+          "startYear": "2014",
+          "endYear": "2018",
+          "ncaaChampionships": [
+            {
+              "year": "2017",
+              "collegeId": "u_of_south_carolina"
+            }
+          ]
+        },
+        "draftDetails": {
+          "year": "2018",
+          "pick": "1",
+          "draftedBy": "LVA_ACES"
+        },
+        "missedWnbaSeasons": [],
+        "overseasTeams": [
+          {
+            "season": "2018-19",
+            "teamCode": "shanxi_flame",
+            "note": ""
+          },
+          {
+            "season": "2019-20",
+            "teamCode": "shanxi_flame",
+            "note": ""
+          }
+        ],
+        "unrivaledTeams": [],
+        "teamUsaMedals": [
+          {
+            "eventType": "Olympics",
+            "format": "5x5",
+            "year": "2020",
+            "medal": "Gold"
+          },
+          {
+            "eventType": "Olympics",
+            "format": "5x5",
+            "year": "2024",
+            "medal": "Gold"
+          },
+          {
+            "eventType": "FIBA",
+            "format": "5x5",
+            "year": "2018",
+            "competition": "World Cup",
+            "medal": "Gold"
+          },
+          {
+            "eventType": "FIBA",
+            "format": "",
+            "year": "2022",
+            "competition": "World Cup",
+            "medal": "Gold"
+          }
+        ]
       },
       "image": {
         "src": "/season-30/connection-imgs/aja-individual.jpg",
         "alt": "A'ja Wilson"
       },
+      "images": [
+        {
+          "src": "/season-30/connection-imgs/aja-individual.jpg",
+          "alt": "A'ja Wilson"
+        }
+      ],
+      "wnbaSeasons": [
+        {
+          "year": "2018",
+          "entries": [
+            {
+              "type": "team",
+              "teamCode": "LVA_ACES"
+            }
+          ]
+        },
+        {
+          "year": "2019",
+          "entries": [
+            {
+              "type": "team",
+              "teamCode": "LVA_ACES"
+            }
+          ]
+        },
+        {
+          "year": "2020",
+          "entries": [
+            {
+              "type": "team",
+              "teamCode": "LVA_ACES"
+            }
+          ]
+        },
+        {
+          "year": "2021",
+          "entries": [
+            {
+              "type": "team",
+              "teamCode": "LVA_ACES"
+            }
+          ]
+        },
+        {
+          "year": "2022",
+          "entries": [
+            {
+              "type": "team",
+              "teamCode": "LVA_ACES"
+            }
+          ]
+        },
+        {
+          "year": "2023",
+          "entries": [
+            {
+              "type": "team",
+              "teamCode": "LVA_ACES"
+            }
+          ]
+        },
+        {
+          "year": "2024",
+          "entries": [
+            {
+              "type": "team",
+              "teamCode": "LVA_ACES"
+            }
+          ]
+        },
+        {
+          "year": "2025",
+          "entries": [
+            {
+              "type": "team",
+              "teamCode": "LVA_ACES"
+            }
+          ]
+        },
+        {
+          "year": "2026",
+          "entries": [
+            {
+              "type": "team",
+              "teamCode": "LVA_ACES"
+            }
+          ]
+        }
+      ],
       "wnbaTeams": [
         {
           "teamCode": "LVA_ACES",
@@ -437,26 +1279,266 @@
         },
         {
           "year": "2023",
-          "teamCode": "LVA_ACES"
+          "teamCode": "LVA_ACES",
+          "finalsMVP": true
         },
         {
           "year": "2025",
-          "teamCode": "LVA_ACES"
+          "teamCode": "LVA_ACES",
+          "finalsMVP": true
         }
       ]
     },
     "breanna_stewart": {
       "playerName": "Breanna Stewart",
       "teamUsaJersey": "10",
-      "collegeId": "u_of_conn",
+      "playerStatus": {
+        "isActive": true,
+        "hasNcaaChampionships": true,
+        "wasDraftDayTrade": false,
+        "hasWnbaChampionships": true,
+        "hasOverseasExperience": true,
+        "hasUnrivaledExperience": true,
+        "hasNationalTeamExperience": true,
+        "hasOlympicExperience": true
+      },
+      "careerDetails": {
+        "collegeCareer": {
+          "collegeId": "u_of_conn",
+          "startYear": "2012",
+          "endYear": "2016",
+          "ncaaChampionships": [
+            {
+              "year": "2013",
+              "collegeId": "u_of_conn"
+            },
+            {
+              "year": "2014",
+              "collegeId": "u_of_conn"
+            },
+            {
+              "year": "2015",
+              "collegeId": "u_of_conn"
+            },
+            {
+              "year": "2016",
+              "collegeId": "u_of_conn"
+            }
+          ]
+        },
+        "draftDetails": {
+          "year": "2016",
+          "pick": "1",
+          "draftedBy": "SEA_STORM"
+        },
+        "missedWnbaSeasons": [],
+        "overseasTeams": [
+          {
+            "season": "2016-17",
+            "teamCode": "shanghai_baoshan_dahua_swordfish",
+            "note": ""
+          },
+          {
+            "season": "2017-18",
+            "teamCode": "shanghai_baoshan_dahua_swordfish",
+            "note": ""
+          },
+          {
+            "season": "2018-19",
+            "teamCode": "dynamo_kursk",
+            "note": ""
+          },
+          {
+            "season": "2020-21",
+            "teamCode": "ummc_ekaterinburg",
+            "note": ""
+          },
+          {
+            "season": "2021-22",
+            "teamCode": "ummc_ekaterinburg",
+            "note": ""
+          },
+          {
+            "season": "2022-23",
+            "teamCode": "fenerbahce",
+            "note": ""
+          },
+          {
+            "season": "2026",
+            "teamCode": "fenerbahce",
+            "note": ""
+          }
+        ],
+        "unrivaledTeams": [
+          {
+            "year": 2025,
+            "teamCode": "bc_mist"
+          },
+          {
+            "year": 2026,
+            "teamCode": "bc_mist"
+          }
+        ],
+        "teamUsaMedals": [
+          {
+            "eventType": "FIBA",
+            "format": "5x5",
+            "year": "2015",
+            "competition": "Pan American Games",
+            "medal": "Silver"
+          },
+          {
+            "eventType": "FIBA",
+            "format": "5x5",
+            "year": "2014",
+            "competition": "World Cup",
+            "medal": "Gold"
+          },
+          {
+            "eventType": "FIBA",
+            "format": "5x5",
+            "year": "2018",
+            "competition": "World Cup",
+            "medal": "Gold"
+          },
+          {
+            "eventType": "FIBA",
+            "format": "5x5",
+            "year": "2022",
+            "competition": "World Cup",
+            "medal": "Gold"
+          },
+          {
+            "eventType": "Olympics",
+            "format": "5x5",
+            "year": "2016",
+            "medal": "Gold"
+          },
+          {
+            "eventType": "Olympics",
+            "format": "5x5",
+            "year": "2020",
+            "medal": "Gold"
+          },
+          {
+            "eventType": "Olympics",
+            "format": "5x5",
+            "year": "2024",
+            "medal": "Gold"
+          }
+        ]
+      },
       "image": {
         "src": "/season-30/connection-imgs/breanna-stewart-storm.jpg",
         "alt": "Breanna Stewart"
       },
-      "draft": {
-        "year": "2016",
-        "teamCode": "SEA_STORM"
-      },
+      "images": [
+        {
+          "src": "/season-30/connection-imgs/breanna-stewart-storm.jpg",
+          "alt": "Breanna Stewart"
+        }
+      ],
+      "wnbaSeasons": [
+        {
+          "year": "2016",
+          "entries": [
+            {
+              "type": "team",
+              "teamCode": "SEA_STORM"
+            }
+          ]
+        },
+        {
+          "year": "2017",
+          "entries": [
+            {
+              "type": "team",
+              "teamCode": "SEA_STORM"
+            }
+          ]
+        },
+        {
+          "year": "2018",
+          "entries": [
+            {
+              "type": "team",
+              "teamCode": "SEA_STORM"
+            }
+          ]
+        },
+        {
+          "year": "2019",
+          "entries": [
+            {
+              "type": "team",
+              "teamCode": "SEA_STORM"
+            }
+          ]
+        },
+        {
+          "year": "2020",
+          "entries": [
+            {
+              "type": "team",
+              "teamCode": "SEA_STORM"
+            }
+          ]
+        },
+        {
+          "year": "2021",
+          "entries": [
+            {
+              "type": "team",
+              "teamCode": "SEA_STORM"
+            }
+          ]
+        },
+        {
+          "year": "2022",
+          "entries": [
+            {
+              "type": "team",
+              "teamCode": "SEA_STORM"
+            }
+          ]
+        },
+        {
+          "year": "2023",
+          "entries": [
+            {
+              "type": "team",
+              "teamCode": "NYL_LIBERTY"
+            }
+          ]
+        },
+        {
+          "year": "2024",
+          "entries": [
+            {
+              "type": "team",
+              "teamCode": "NYL_LIBERTY"
+            }
+          ]
+        },
+        {
+          "year": "2025",
+          "entries": [
+            {
+              "type": "team",
+              "teamCode": "NYL_LIBERTY"
+            }
+          ]
+        },
+        {
+          "year": "2026",
+          "entries": [
+            {
+              "type": "team",
+              "teamCode": "NYL_LIBERTY"
+            }
+          ]
+        }
+      ],
       "wnbaTeams": [
         {
           "teamCode": "SEA_STORM",
@@ -472,11 +1554,13 @@
       "championships": [
         {
           "year": "2018",
-          "teamCode": "SEA_STORM"
+          "teamCode": "SEA_STORM",
+          "finalsMVP": true
         },
         {
           "year": "2020",
-          "teamCode": "SEA_STORM"
+          "teamCode": "SEA_STORM",
+          "finalsMVP": true
         },
         {
           "year": "2024",
@@ -508,21 +1592,187 @@
     "diana_taurasi": {
       "playerName": "Diana Taurasi",
       "teamUsaJersey": "12",
-      "collegeId": "u_of_conn",
-      "draft": {
-        "year": "2004",
-        "teamCode": "PHX_MERCURY"
+      "playerStatus": {
+        "isActive": false,
+        "hasNcaaChampionships": true,
+        "wasDraftDayTrade": false,
+        "hasWnbaChampionships": true,
+        "hasOverseasExperience": true,
+        "hasUnrivaledExperience": false,
+        "hasNationalTeamExperience": true,
+        "hasOlympicExperience": true
+      },
+      "careerDetails": {
+        "collegeCareer": {
+          "collegeId": "u_of_conn",
+          "startYear": "2000",
+          "endYear": "2004",
+          "ncaaChampionships": [
+            {
+              "year": "2002",
+              "collegeId": "u_of_conn"
+            },
+            {
+              "year": "2003",
+              "collegeId": "u_of_conn"
+            },
+            {
+              "year": "2004",
+              "collegeId": "u_of_conn"
+            }
+          ]
+        },
+        "draftDetails": {
+          "year": "2004",
+          "pick": "1",
+          "draftedBy": "PHX_MERCURY"
+        },
+        "missedWnbaSeasons": [
+          {
+            "year": "2015",
+            "teamCode": "PHX_MERCURY",
+            "reason": "Played in Russia instead",
+            "note": "Russia paid more than WNBA"
+          }
+        ],
+        "overseasTeams": [
+          {
+            "season": "2005-06",
+            "teamCode": "dynamo_moscow"
+          },
+          {
+            "season": "2006-07",
+            "teamCode": "spartek_moscow"
+          },
+          {
+            "season": "2007-08",
+            "teamCode": "spartek_moscow"
+          },
+          {
+            "season": "2008-09",
+            "teamCode": "spartek_moscow"
+          },
+          {
+            "season": "2009-10",
+            "teamCode": "spartek_moscow"
+          },
+          {
+            "season": "2010-11",
+            "teamCode": "fenerbahce"
+          },
+          {
+            "season": "2011-12",
+            "teamCode": "galatasaray"
+          },
+          {
+            "season": "2012-13",
+            "teamCode": "ummc_ekaterinburg"
+          },
+          {
+            "season": "2013-14",
+            "teamCode": "ummc_ekaterinburg"
+          },
+          {
+            "season": "2014-15",
+            "teamCode": "ummc_ekaterinburg"
+          },
+          {
+            "season": "2015-16",
+            "teamCode": "ummc_ekaterinburg"
+          },
+          {
+            "season": "2016-17",
+            "teamCode": "ummc_ekaterinburg"
+          },
+          {
+            "season": "2017-18",
+            "teamCode": "ummc_ekaterinburg"
+          }
+        ],
+        "unrivaledTeams": [],
+        "teamUsaMedals": [
+          {
+            "year": "2006",
+            "competition": "World Cup",
+            "eventType": "FIBA",
+            "medal": "Bronze"
+          },
+          {
+            "year": "2010",
+            "competition": "World Cup",
+            "eventType": "FIBA",
+            "medal": "Gold"
+          },
+          {
+            "year": "2014",
+            "competition": "World Cup",
+            "eventType": "FIBA",
+            "medal": "Gold"
+          },
+          {
+            "year": "2018",
+            "competition": "World Cup",
+            "eventType": "FIBA",
+            "medal": "Gold"
+          },
+          {
+            "year": "2004",
+            "competition": "",
+            "eventType": "Olympics",
+            "medal": "Gold"
+          },
+          {
+            "year": "2008",
+            "competition": "",
+            "eventType": "Olympics",
+            "medal": "Gold"
+          },
+          {
+            "year": "2012",
+            "competition": "",
+            "eventType": "Olympics",
+            "medal": "Gold"
+          },
+          {
+            "year": "2016",
+            "competition": "",
+            "eventType": "Olympics",
+            "medal": "Gold"
+          },
+          {
+            "year": "2020",
+            "competition": "",
+            "eventType": "Olympics",
+            "medal": "Gold"
+          },
+          {
+            "year": "2024",
+            "competition": "",
+            "eventType": "Olympics",
+            "medal": "Gold"
+          }
+        ]
       },
       "image": {
         "src": "/season-30/connection-imgs/diana-taurasi-individual.jpg",
         "alt": "Diana Taurasi"
       },
+      "images": [
+        {
+          "src": "/season-30/connection-imgs/diana-taurasi-individual.jpg",
+          "alt": "Diana Taurasi"
+        }
+      ],
       "wnbaTeams": [
         {
           "teamCode": "PHX_MERCURY",
           "startYear": "2004",
-          "endYear": "2024",
-          "status": "retired"
+          "endYear": "2014"
+        },
+        {
+          "teamCode": "PHX_MERCURY",
+          "startYear": "2016",
+          "endYear": "2024"
         }
       ],
       "championships": [
@@ -532,11 +1782,13 @@
         },
         {
           "year": "2009",
-          "teamCode": "PHX_MERCURY"
+          "teamCode": "PHX_MERCURY",
+          "finalsMVP": true
         },
         {
           "year": "2014",
-          "teamCode": "PHX_MERCURY"
+          "teamCode": "PHX_MERCURY",
+          "finalsMVP": true
         }
       ]
     },
