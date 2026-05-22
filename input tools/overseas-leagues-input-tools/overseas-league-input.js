@@ -4,12 +4,19 @@ const countryInput = document.getElementById("countryInput");
 const regionInput = document.getElementById("regionInput");
 
 const commonNamesList = document.getElementById("commonNamesList");
+const abbreviationsList = document.getElementById("abbreviationsList");
+const englishTranslationsList = document.getElementById("englishTranslationsList");
 const nameHistoryList = document.getElementById("nameHistoryList");
 const linksList = document.getElementById("linksList");
 
 const addCommonNameBtn = document.getElementById("addCommonNameBtn");
+const addAbbreviationBtn = document.getElementById("addAbbreviationBtn");
+const addEnglishTranslationBtn = document.getElementById("addEnglishTranslationBtn");
 const addNameHistoryBtn = document.getElementById("addNameHistoryBtn");
 const addLinkBtn = document.getElementById("addLinkBtn");
+
+const metaNotesInput = document.getElementById("metaNotes");
+const lastUpdatedInput = document.getElementById("lastUpdated");
 
 const jsonPreview = document.getElementById("jsonPreview");
 const copyJsonBtn = document.getElementById("copyJsonBtn");
@@ -59,6 +66,58 @@ function createCommonNameRow() {
     row.querySelector("input").addEventListener("input", renderJson);
 
     commonNamesList.appendChild(row);
+}
+
+function createAbbreviationRow() {
+    const row = document.createElement("div");
+    row.className = "dynamic-row abbreviation-row";
+
+    row.innerHTML = `
+        <label>
+            Abbreviation
+            <input class="abbreviation-input" autocomplete="off" placeholder="ex: WKBL">
+        </label>
+
+        <button type="button" class="remove-row-btn">Remove</button>
+    `;
+
+    row.querySelector(".remove-row-btn").addEventListener("click", () => {
+        row.remove();
+        renderJson();
+    });
+
+    row.querySelector("input").addEventListener("input", renderJson);
+    abbreviationsList.appendChild(row);
+}
+
+function createEnglishTranslationRow() {
+    const row = document.createElement("div");
+    row.className = "dynamic-row translation-row";
+
+    row.innerHTML = `
+        <label>
+            Original / non-English name
+            <input class="translation-name-input" autocomplete="off" placeholder="ex: Kadınlar Basketbol Süper Ligi">
+        </label>
+
+        <label>
+            English translation
+            <input class="translation-english-input" autocomplete="off" placeholder="ex: Women's Basketball Super League">
+        </label>
+
+        <button type="button" class="remove-row-btn">Remove</button>
+    `;
+
+    row.querySelector(".remove-row-btn").addEventListener("click", () => {
+        row.remove();
+        renderJson();
+    });
+
+    row.querySelectorAll("input").forEach(input => {
+        input.addEventListener("input", renderJson);
+    });
+
+    englishTranslationsList.appendChild(row);
 }
 
 function createNameHistoryRow() {
@@ -137,11 +196,29 @@ function getCommonNames() {
         .filter(Boolean);
 }
 
+function getAbbreviations() {
+    return [...document.querySelectorAll(".abbreviation-input")]
+        .map(input => input.value.trim())
+        .filter(Boolean);
+}
+
+function getEnglishTranslations() {
+    return [...document.querySelectorAll(".translation-row")]
+        .map(row => ({
+            name: row.querySelector(".translation-name-input").value.trim(),
+            translation: row.querySelector(".translation-english-input").value.trim()
+        }))
+        .filter(entry => entry.name || entry.translation);
+}
+
 function getNameHistory() {
     return [...document.querySelectorAll(".history-row")]
         .map(row => {
+            const name = row.querySelector(".history-name-input").value.trim();
+
             return {
-                name: row.querySelector(".history-name-input").value.trim(),
+                name,
+                nameSlug: makeCode(name),
                 startYear: parseYear(row.querySelector(".history-start-input").value),
                 endYear: parseYear(row.querySelector(".history-end-input").value)
             };
@@ -170,6 +247,8 @@ function getLeagueObject() {
 
         name: {
             full: leagueName,
+            abbreviations: getAbbreviations(),
+            englishTranslations: getEnglishTranslations(),
             commonNames: getCommonNames()
         },
 
@@ -183,8 +262,8 @@ function getLeagueObject() {
         links: getLinks(),
 
         meta: {
-            notes: "",
-            lastUpdated: ""
+            notes: metaNotesInput.value.trim(),
+            lastUpdated: lastUpdatedInput.value.trim()
         }
     };
 }
@@ -204,9 +283,14 @@ function resetFormOnLoad() {
     countryInput.value = "";
     regionInput.value = "";
 
+    abbreviationsList.innerHTML = "";
+    englishTranslationsList.innerHTML = "";
     commonNamesList.innerHTML = "";
     nameHistoryList.innerHTML = "";
     linksList.innerHTML = "";
+
+    metaNotesInput.value = "";
+    lastUpdatedInput.value = "";
 
     leagueCodeEdited = false;
 }
@@ -231,6 +315,16 @@ leagueCodeInput.addEventListener("input", () => {
 ].forEach(input => {
     input.addEventListener("input", renderJson);
 });
+
+[
+    metaNotesInput,
+    lastUpdatedInput
+].forEach(input => {
+    input.addEventListener("input", renderJson);
+});
+
+addAbbreviationBtn.addEventListener("click", createAbbreviationRow);
+addEnglishTranslationBtn.addEventListener("click", createEnglishTranslationRow);
 
 addCommonNameBtn.addEventListener("click", createCommonNameRow);
 addNameHistoryBtn.addEventListener("click", createNameHistoryRow);
@@ -279,4 +373,4 @@ resetFormOnLoad();
 createCommonNameRow();
 createNameHistoryRow();
 createLinkRow();
-renderJson();
+renderJson(); 

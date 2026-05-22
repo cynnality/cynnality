@@ -95,11 +95,23 @@ wnba_teams_history.json /////////// -> teams of the WNBA by year and team franch
 
             <section class="panel input">
                 <div class="panel-header">
-                    <h2>Common names</h2>
-
+                    <h2>Name details</h2>
                 </div>
 
                 <div class="item">
+                    <h3>Abbreviations</h3>
+                    <div id="abbreviationsList"></div>
+                    <button id="addAbbreviationBtn" type="button">Add Abbreviation</button>
+                </div>
+
+                <div class="item">
+                    <h3>English translations</h3>
+                    <div id="englishTranslationsList"></div>
+                    <button id="addEnglishTranslationBtn" type="button">Add English Translation</button>
+                </div>
+
+                <div class="item">
+                    <h3>Other common names</h3>
                     <div id="commonNamesList"></div>
                     <button id="addCommonNameBtn" type="button">Add Common Name</button>
                 </div>
@@ -125,6 +137,20 @@ wnba_teams_history.json /////////// -> teams of the WNBA by year and team franch
                 <div class="item">
                     <div id="linksList"></div>
                     <button id="addLinkBtn" type="button">Add Link</button>
+                </div>
+            </section>
+
+            <section class="panel input">
+                <div class="panel-header">
+                    <h2>Meta notes</h2>
+                </div>
+
+                <div class="item">
+                    <label for="metaNotes">Notes</label>
+                    <textarea id="metaNotes" placeholder="Add notes, source reminders, confusion warnings, etc."></textarea>
+
+                    <label for="lastUpdated">Last updated</label>
+                    <input id="lastUpdated" autocomplete="off" placeholder="ex: 2026-05-21">
                 </div>
             </section>
 

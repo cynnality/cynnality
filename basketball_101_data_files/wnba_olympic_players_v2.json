@@ -496,16 +496,6 @@
         ],
         "teamUsaMedals": [
           {
-            "year": "2022",
-            "competition": "World Cup",
-            "medal": "Gold"
-          },
-          {
-            "year": "2019",
-            "competition": "3x3 Pan American Games",
-            "medal": "Gold"
-          },
-          {
             "eventType": "Olympics",
             "format": "5x5",
             "year": "2024",
@@ -1165,7 +1155,7 @@
           },
           {
             "eventType": "FIBA",
-            "format": "",
+            "format": "5x5",
             "year": "2022",
             "competition": "World Cup",
             "medal": "Gold"
@@ -1346,7 +1336,7 @@
           {
             "season": "2018-19",
             "teamCode": "dynamo_kursk",
-            "note": ""
+            "note": "married a teammate from Dynamo Kursk"
           },
           {
             "season": "2020-21",
@@ -1571,20 +1561,183 @@
     "napheesa_collier": {
       "playerName": "Napheesa Collier",
       "teamUsaJersey": "11",
-      "collegeId": "u_of_conn",
-      "draft": {
-        "year": "2019",
-        "teamCode": "MIN_LYNX"
+      "playerStatus": {
+        "isActive": true,
+        "hasNcaaChampionships": true,
+        "wasDraftDayTrade": false,
+        "hasWnbaChampionships": false,
+        "hasOverseasExperience": true,
+        "hasUnrivaledExperience": true,
+        "hasNationalTeamExperience": true,
+        "hasOlympicExperience": true
+      },
+      "careerDetails": {
+        "collegeCareer": {
+          "collegeId": "u_of_conn",
+          "startYear": "2015",
+          "endYear": "2019",
+          "ncaaChampionships": [
+            {
+              "year": "2016",
+              "collegeId": "u_of_conn"
+            }
+          ]
+        },
+        "draftDetails": {
+          "year": "2019",
+          "pick": "6",
+          "draftedBy": "MIN_LYNX"
+        },
+        "missedWnbaSeasons": [
+          {
+            "year": "2022",
+            "teamCode": "MIN_LYNX",
+            "reason": "Maternity leave",
+            "note": "She played 4 games so she could play with Sylvia Fowles again since Fowles was retiring after the 2022 season",
+            "partialSeason": true
+          }
+        ],
+        "overseasTeams": [
+          {
+            "season": "2020-21",
+            "teamCode": "lattes_montpellier",
+            "note": ""
+          },
+          {
+            "season": "2023-24",
+            "teamCode": "fenerbahce",
+            "note": ""
+          }
+        ],
+        "unrivaledTeams": [
+          {
+            "year": 2025,
+            "teamCode": "bc_lunar_owls"
+          },
+          {
+            "year": 2026,
+            "teamCode": "bc_lunar_owls"
+          }
+        ],
+        "teamUsaMedals": [
+          {
+            "eventType": "FIBA",
+            "format": "5x5",
+            "year": "2019",
+            "competition": "Americup",
+            "medal": "Gold"
+          },
+          {
+            "eventType": "Olympics",
+            "format": "5x5",
+            "year": "2020",
+            "medal": "Gold"
+          },
+          {
+            "eventType": "Olympics",
+            "format": "5x5",
+            "year": "2024",
+            "medal": "Gold"
+          }
+        ]
       },
       "image": {
         "src": "/season-30/connection-imgs/n-collier-individual-2.webp",
         "alt": "Napheesa Collier"
       },
+      "images": [
+        {
+          "src": "/season-30/connection-imgs/n-collier-individual-2.webp",
+          "alt": "Napheesa Collier"
+        }
+      ],
+      "wnbaSeasons": [
+        {
+          "year": "2019",
+          "entries": [
+            {
+              "type": "team",
+              "teamCode": "MIN_LYNX"
+            }
+          ]
+        },
+        {
+          "year": "2020",
+          "entries": [
+            {
+              "type": "team",
+              "teamCode": "MIN_LYNX"
+            }
+          ]
+        },
+        {
+          "year": "2021",
+          "entries": [
+            {
+              "type": "team",
+              "teamCode": "MIN_LYNX"
+            }
+          ]
+        },
+        {
+          "year": "2022",
+          "entries": [
+            {
+              "type": "team",
+              "teamCode": "MIN_LYNX"
+            },
+            {
+              "type": "sit_out",
+              "teamCode": "MIN_LYNX",
+              "reason": "Maternity leave",
+              "note": "She played 4 games so she could play with Sylvia Fowles again since Fowles was retiring after the 2022 season"
+            }
+          ]
+        },
+        {
+          "year": "2023",
+          "entries": [
+            {
+              "type": "team",
+              "teamCode": "MIN_LYNX"
+            }
+          ]
+        },
+        {
+          "year": "2024",
+          "entries": [
+            {
+              "type": "team",
+              "teamCode": "MIN_LYNX"
+            }
+          ]
+        },
+        {
+          "year": "2025",
+          "entries": [
+            {
+              "type": "team",
+              "teamCode": "MIN_LYNX",
+              "note": "Collier was injured during the 2025 playoffs semis against the Mercury"
+            }
+          ]
+        },
+        {
+          "year": "2026",
+          "entries": [
+            {
+              "type": "team",
+              "teamCode": "MIN_LYNX"
+            }
+          ]
+        }
+      ],
       "wnbaTeams": [
         {
           "teamCode": "MIN_LYNX",
           "startYear": "2019",
-          "endYear": "present"
+          "endYear": "present",
+          "note": "2025: Collier was injured during the 2025 playoffs semis against the Mercury"
         }
       ],
       "championships": []
@@ -1692,63 +1845,67 @@
         "unrivaledTeams": [],
         "teamUsaMedals": [
           {
+            "eventType": "FIBA",
+            "format": "5x5",
             "year": "2006",
             "competition": "World Cup",
-            "eventType": "FIBA",
             "medal": "Bronze"
           },
           {
+            "eventType": "FIBA",
+            "format": "5x5",
             "year": "2010",
             "competition": "World Cup",
-            "eventType": "FIBA",
             "medal": "Gold"
           },
           {
+            "eventType": "FIBA",
+            "format": "5x5",
             "year": "2014",
             "competition": "World Cup",
-            "eventType": "FIBA",
             "medal": "Gold"
           },
           {
+            "eventType": "FIBA",
+            "format": "5x5",
             "year": "2018",
             "competition": "World Cup",
-            "eventType": "FIBA",
             "medal": "Gold"
           },
           {
+            "eventType": "Olympics",
+            "format": "5x5",
             "year": "2004",
-            "competition": "",
-            "eventType": "Olympics",
             "medal": "Gold"
           },
           {
+            "eventType": "Olympics",
+            "format": "5x5",
             "year": "2008",
-            "competition": "",
-            "eventType": "Olympics",
             "medal": "Gold"
           },
           {
+            "eventType": "Olympics",
+            "format": "5x5",
             "year": "2012",
-            "competition": "",
-            "eventType": "Olympics",
             "medal": "Gold"
           },
           {
+            "eventType": "Olympics",
+            "format": "5x5",
             "year": "2016",
-            "competition": "",
-            "eventType": "Olympics",
             "medal": "Gold"
           },
           {
+            "eventType": "Olympics",
+            "format": "5x5",
             "year": "2020",
-            "competition": "",
-            "eventType": "Olympics",
             "medal": "Gold"
           },
           {
-            "year": "2024",
-            "competition": "",
             "eventType": "Olympics",
+            "format": "5x5",
+            "year": "2024",
             "medal": "Gold"
           }
         ]
@@ -1761,6 +1918,199 @@
         {
           "src": "/season-30/connection-imgs/diana-taurasi-individual.jpg",
           "alt": "Diana Taurasi"
+        }
+      ],
+      "wnbaSeasons": [
+        {
+          "year": "2004",
+          "entries": [
+            {
+              "type": "team",
+              "teamCode": "PHX_MERCURY"
+            }
+          ]
+        },
+        {
+          "year": "2005",
+          "entries": [
+            {
+              "type": "team",
+              "teamCode": "PHX_MERCURY"
+            }
+          ]
+        },
+        {
+          "year": "2006",
+          "entries": [
+            {
+              "type": "team",
+              "teamCode": "PHX_MERCURY"
+            }
+          ]
+        },
+        {
+          "year": "2007",
+          "entries": [
+            {
+              "type": "team",
+              "teamCode": "PHX_MERCURY"
+            }
+          ]
+        },
+        {
+          "year": "2008",
+          "entries": [
+            {
+              "type": "team",
+              "teamCode": "PHX_MERCURY"
+            }
+          ]
+        },
+        {
+          "year": "2009",
+          "entries": [
+            {
+              "type": "team",
+              "teamCode": "PHX_MERCURY"
+            }
+          ]
+        },
+        {
+          "year": "2010",
+          "entries": [
+            {
+              "type": "team",
+              "teamCode": "PHX_MERCURY"
+            }
+          ]
+        },
+        {
+          "year": "2011",
+          "entries": [
+            {
+              "type": "team",
+              "teamCode": "PHX_MERCURY"
+            }
+          ]
+        },
+        {
+          "year": "2012",
+          "entries": [
+            {
+              "type": "team",
+              "teamCode": "PHX_MERCURY"
+            }
+          ]
+        },
+        {
+          "year": "2013",
+          "entries": [
+            {
+              "type": "team",
+              "teamCode": "PHX_MERCURY"
+            }
+          ]
+        },
+        {
+          "year": "2014",
+          "entries": [
+            {
+              "type": "team",
+              "teamCode": "PHX_MERCURY"
+            }
+          ]
+        },
+        {
+          "year": "2015",
+          "entries": [
+            {
+              "type": "sit_out",
+              "teamCode": "PHX_MERCURY",
+              "reason": "Played in Russia instead",
+              "note": "Russia paid more than WNBA"
+            }
+          ]
+        },
+        {
+          "year": "2016",
+          "entries": [
+            {
+              "type": "team",
+              "teamCode": "PHX_MERCURY"
+            }
+          ]
+        },
+        {
+          "year": "2017",
+          "entries": [
+            {
+              "type": "team",
+              "teamCode": "PHX_MERCURY"
+            }
+          ]
+        },
+        {
+          "year": "2018",
+          "entries": [
+            {
+              "type": "team",
+              "teamCode": "PHX_MERCURY"
+            }
+          ]
+        },
+        {
+          "year": "2019",
+          "entries": [
+            {
+              "type": "team",
+              "teamCode": "PHX_MERCURY"
+            }
+          ]
+        },
+        {
+          "year": "2020",
+          "entries": [
+            {
+              "type": "team",
+              "teamCode": "PHX_MERCURY"
+            }
+          ]
+        },
+        {
+          "year": "2021",
+          "entries": [
+            {
+              "type": "team",
+              "teamCode": "PHX_MERCURY"
+            }
+          ]
+        },
+        {
+          "year": "2022",
+          "entries": [
+            {
+              "type": "team",
+              "teamCode": "PHX_MERCURY"
+            }
+          ]
+        },
+        {
+          "year": "2023",
+          "entries": [
+            {
+              "type": "team",
+              "teamCode": "PHX_MERCURY"
+            }
+          ]
+        },
+        {
+          "year": "2024",
+          "entries": [
+            {
+              "type": "team",
+              "teamCode": "PHX_MERCURY"
+            }
+          ]
         }
       ],
       "wnbaTeams": [
@@ -1795,15 +2145,150 @@
     "jackie_young": {
       "playerName": "Jackie Young",
       "teamUsaJersey": "13",
-      "collegeId": "u_of_notre_dame",
-      "draft": {
-        "year": "2019",
-        "teamCode": "LVA_ACES"
+      "playerStatus": {
+        "isActive": true,
+        "hasNcaaChampionships": true,
+        "wasDraftDayTrade": false,
+        "hasWnbaChampionships": true,
+        "hasOverseasExperience": true,
+        "hasUnrivaledExperience": true,
+        "hasNationalTeamExperience": true,
+        "hasOlympicExperience": true
+      },
+      "careerDetails": {
+        "collegeCareer": {
+          "collegeId": "u_of_notre_dame",
+          "startYear": "2016",
+          "endYear": "2019",
+          "ncaaChampionships": [
+            {
+              "year": "2018",
+              "collegeId": "u_of_notre_dame"
+            }
+          ]
+        },
+        "draftDetails": {
+          "year": "2019",
+          "pick": "1",
+          "draftedBy": "LVA_ACES"
+        },
+        "missedWnbaSeasons": [],
+        "overseasTeams": [
+          {
+            "season": "2021-22",
+            "teamCode": "perth_lynx",
+            "note": ""
+          }
+        ],
+        "unrivaledTeams": [
+          {
+            "year": 2025,
+            "teamCode": "bc_laces"
+          },
+          {
+            "year": 2026,
+            "teamCode": "bc_laces"
+          }
+        ],
+        "teamUsaMedals": [
+          {
+            "eventType": "Olympics",
+            "format": "3x3",
+            "year": "2020",
+            "medal": "Gold"
+          },
+          {
+            "eventType": "Olympics",
+            "format": "5x5",
+            "year": "2024",
+            "medal": "Gold"
+          }
+        ]
       },
       "image": {
         "src": "/season-30/connection-imgs/jackie-young-individual.webp",
         "alt": "Jackie Young"
       },
+      "images": [
+        {
+          "src": "/season-30/connection-imgs/jackie-young-individual.webp",
+          "alt": "Jackie Young"
+        }
+      ],
+      "wnbaSeasons": [
+        {
+          "year": "2019",
+          "entries": [
+            {
+              "type": "team",
+              "teamCode": "LVA_ACES"
+            }
+          ]
+        },
+        {
+          "year": "2020",
+          "entries": [
+            {
+              "type": "team",
+              "teamCode": "LVA_ACES"
+            }
+          ]
+        },
+        {
+          "year": "2021",
+          "entries": [
+            {
+              "type": "team",
+              "teamCode": "LVA_ACES"
+            }
+          ]
+        },
+        {
+          "year": "2022",
+          "entries": [
+            {
+              "type": "team",
+              "teamCode": "LVA_ACES"
+            }
+          ]
+        },
+        {
+          "year": "2023",
+          "entries": [
+            {
+              "type": "team",
+              "teamCode": "LVA_ACES"
+            }
+          ]
+        },
+        {
+          "year": "2024",
+          "entries": [
+            {
+              "type": "team",
+              "teamCode": "LVA_ACES"
+            }
+          ]
+        },
+        {
+          "year": "2025",
+          "entries": [
+            {
+              "type": "team",
+              "teamCode": "LVA_ACES"
+            }
+          ]
+        },
+        {
+          "year": "2026",
+          "entries": [
+            {
+              "type": "team",
+              "teamCode": "LVA_ACES"
+            }
+          ]
+        }
+      ],
       "wnbaTeams": [
         {
           "teamCode": "LVA_ACES",
@@ -1829,6 +2314,16 @@
     "alyssa_thomas": {
       "playerName": "Alyssa Thomas",
       "teamUsaJersey": "14",
+      "playerStatus": {
+        "isActive": true,
+        "hasNcaaChampionships": false,
+        "wasDraftDayTrade": true,
+        "hasWnbaChampionships": false,
+        "hasOverseasExperience": true,
+        "hasUnrivaledExperience": true,
+        "hasNationalTeamExperience": true,
+        "hasOlympicExperience": true
+      },
       "careerDetails": {
         "collegeCareer": {
           "collegeId": "u_of_maryland",
@@ -1847,63 +2342,63 @@
         "overseasTeams": [
           {
             "season": "2014-15",
-            "team": "Bucheon KEB Hana Bank",
-            "country": "South Korea"
+            "teamCode": "bucheon_hana_bank",
+            "note": ""
           },
           {
             "season": "2015-16",
-            "team": "Yakin Dogu",
-            "country": "Turkey"
+            "teamCode": "yakin_dogu_universitesi",
+            "note": ""
           },
           {
             "season": "2016-17",
-            "team": "Yongin Blueminx",
-            "country": "South Korea"
+            "teamCode": "yongin_samsung_life_blueminx",
+            "note": ""
           },
           {
             "season": "2017-18",
-            "team": "Yongin Blueminx",
-            "country": "South Korea"
+            "teamCode": "yongin_samsung_life_blueminx",
+            "note": ""
           },
           {
             "season": "2018-19",
-            "team": "USK Praha",
-            "country": "Czech Republic"
+            "teamCode": "usk_praha",
+            "note": ""
           },
           {
             "season": "2019-20",
-            "team": "USK Praha",
-            "country": "Czech Republic"
+            "teamCode": "usk_praha",
+            "note": ""
           },
           {
             "season": "2020-21",
-            "team": "USK Praha",
-            "country": "Czech Republic"
+            "teamCode": "usk_praha",
+            "note": ""
           },
           {
             "season": "2021-22",
-            "team": "USK Praha",
-            "country": "Czech Republic"
+            "teamCode": "usk_praha",
+            "note": ""
           },
           {
             "season": "2022-23",
-            "team": "USK Praha",
-            "country": "Czech Republic"
+            "teamCode": "usk_praha",
+            "note": ""
           },
           {
             "season": "2023-24",
-            "team": "Shanxi Flame",
-            "country": "China"
+            "teamCode": "shanxi_flame",
+            "note": ""
           }
         ],
         "unrivaledTeams": [
           {
-            "year": "2025",
-            "team": "Laces"
+            "year": 2025,
+            "teamCode": "bc_laces"
           },
           {
-            "year": "2026",
-            "team": "Laces"
+            "year": 2026,
+            "teamCode": "bc_laces"
           }
         ],
         "teamUsaMedals": [
@@ -1916,6 +2411,26 @@
             "year": "2022",
             "competition": "World Cup",
             "medal": "Gold"
+          },
+          {
+            "eventType": "Olympics",
+            "format": "5x5",
+            "year": "2024",
+            "medal": "Gold"
+          },
+          {
+            "eventType": "FIBA",
+            "format": "5x5",
+            "year": "2022",
+            "competition": "World Cup",
+            "medal": "Gold"
+          },
+          {
+            "eventType": "FIBA",
+            "format": "3x3",
+            "year": "2012",
+            "competition": "World Cup",
+            "medal": "Gold"
           }
         ]
       },
@@ -1923,6 +2438,131 @@
         "src": "/season-30/connection-imgs/alyssa-thomas-individual.jpg",
         "alt": "Alyssa Thomas"
       },
+      "images": [
+        {
+          "src": "/season-30/connection-imgs/alyssa-thomas-individual.jpg",
+          "alt": "Alyssa Thomas"
+        }
+      ],
+      "wnbaSeasons": [
+        {
+          "year": "2014",
+          "entries": [
+            {
+              "type": "team",
+              "teamCode": "CON_SUN"
+            }
+          ]
+        },
+        {
+          "year": "2015",
+          "entries": [
+            {
+              "type": "team",
+              "teamCode": "CON_SUN"
+            }
+          ]
+        },
+        {
+          "year": "2016",
+          "entries": [
+            {
+              "type": "team",
+              "teamCode": "CON_SUN"
+            }
+          ]
+        },
+        {
+          "year": "2017",
+          "entries": [
+            {
+              "type": "team",
+              "teamCode": "CON_SUN"
+            }
+          ]
+        },
+        {
+          "year": "2018",
+          "entries": [
+            {
+              "type": "team",
+              "teamCode": "CON_SUN"
+            }
+          ]
+        },
+        {
+          "year": "2019",
+          "entries": [
+            {
+              "type": "team",
+              "teamCode": "CON_SUN"
+            }
+          ]
+        },
+        {
+          "year": "2020",
+          "entries": [
+            {
+              "type": "team",
+              "teamCode": "CON_SUN"
+            }
+          ]
+        },
+        {
+          "year": "2021",
+          "entries": [
+            {
+              "type": "team",
+              "teamCode": "CON_SUN"
+            }
+          ]
+        },
+        {
+          "year": "2022",
+          "entries": [
+            {
+              "type": "team",
+              "teamCode": "CON_SUN"
+            }
+          ]
+        },
+        {
+          "year": "2023",
+          "entries": [
+            {
+              "type": "team",
+              "teamCode": "CON_SUN"
+            }
+          ]
+        },
+        {
+          "year": "2024",
+          "entries": [
+            {
+              "type": "team",
+              "teamCode": "CON_SUN"
+            }
+          ]
+        },
+        {
+          "year": "2025",
+          "entries": [
+            {
+              "type": "team",
+              "teamCode": "PHX_MERCURY"
+            }
+          ]
+        },
+        {
+          "year": "2026",
+          "entries": [
+            {
+              "type": "team",
+              "teamCode": "PHX_MERCURY"
+            }
+          ]
+        }
+      ],
       "wnbaTeams": [
         {
           "teamCode": "CON_SUN",
@@ -1932,7 +2572,6 @@
         {
           "teamCode": "PHX_MERCURY",
           "startYear": "2025",
-          "transactionNote": "Traded",
           "endYear": "present"
         }
       ],
@@ -1941,6 +2580,16 @@
     "brittney_griner": {
       "playerName": "Brittney Griner",
       "teamUsaJersey": "15",
+      "playerStatus": {
+        "isActive": true,
+        "hasNcaaChampionships": true,
+        "wasDraftDayTrade": false,
+        "hasWnbaChampionships": true,
+        "hasOverseasExperience": true,
+        "hasUnrivaledExperience": true,
+        "hasNationalTeamExperience": true,
+        "hasOlympicExperience": true
+      },
       "careerDetails": {
         "collegeCareer": {
           "collegeId": "baylor_u",
@@ -1974,67 +2623,89 @@
         "overseasTeams": [
           {
             "season": "2013-14",
-            "team": "Zhejiang Golden Bulls",
-            "country": "China"
+            "teamCode": "zhejiang_golden_bulls",
+            "note": ""
           },
           {
             "season": "2014-15",
-            "team": "Beijing Great Wall",
-            "country": "China"
+            "teamCode": "beijing_great_wall",
+            "note": ""
           },
           {
             "season": "2015-16",
-            "team": "UMMC Ekaterinberg",
-            "country": "Russia"
+            "teamCode": "ummc_ekaterinburg",
+            "note": ""
           },
           {
             "season": "2016-17",
-            "team": "UMMC Ekaterinberg",
-            "country": "Russia"
+            "teamCode": "ummc_ekaterinburg",
+            "note": ""
           },
           {
             "season": "2017-18",
-            "team": "UMMC Ekaterinberg",
-            "country": "Russia"
+            "teamCode": "ummc_ekaterinburg",
+            "note": ""
           },
           {
             "season": "2018-19",
-            "team": "UMMC Ekaterinberg",
-            "country": "Russia"
+            "teamCode": "ummc_ekaterinburg",
+            "note": ""
           },
           {
             "season": "2019-2020",
-            "team": "UMMC Ekaterinberg",
-            "country": "Russia"
+            "teamCode": "ummc_ekaterinburg",
+            "note": ""
           },
           {
             "season": "2020-21",
-            "team": "UMMC Ekaterinberg",
-            "country": "Russia"
+            "teamCode": "ummc_ekaterinburg",
+            "note": ""
           },
           {
             "season": "2021-2022",
-            "team": "UMMC Ekaterinberg",
-            "country": "Russia"
+            "teamCode": "ummc_ekaterinburg",
+            "note": ""
           }
         ],
         "unrivaledTeams": [
           {
-            "year": "2025",
-            "team": "Phantom"
+            "year": 2025,
+            "teamCode": "bc_phantom"
           },
           {
-            "year": "2026",
-            "team": "Vinyl"
+            "year": 2026,
+            "teamCode": "bc_vinyl"
           }
         ],
         "teamUsaMedals": [
           {
+            "eventType": "Olympics",
+            "format": "5x5",
+            "year": "2016",
+            "medal": "Gold"
+          },
+          {
+            "eventType": "Olympics",
+            "format": "5x5",
+            "year": "2020",
+            "medal": "Gold"
+          },
+          {
+            "eventType": "Olympics",
+            "format": "5x5",
+            "year": "2024",
+            "medal": "Gold"
+          },
+          {
+            "eventType": "FIBA",
+            "format": "5x5",
             "year": "2014",
             "competition": "World Cup",
             "medal": "Gold"
           },
           {
+            "eventType": "FIBA",
+            "format": "5x5",
             "year": "2018",
             "competition": "World Cup",
             "medal": "Gold"
@@ -2045,6 +2716,142 @@
         "src": "/season-30/connection-imgs/brittney-griner-individual-mercury.webp",
         "alt": "Brittney Griner"
       },
+      "images": [
+        {
+          "src": "/season-30/connection-imgs/brittney-griner-individual-mercury.webp",
+          "alt": "Brittney Griner"
+        }
+      ],
+      "wnbaSeasons": [
+        {
+          "year": "2013",
+          "entries": [
+            {
+              "type": "team",
+              "teamCode": "PHX_MERCURY"
+            }
+          ]
+        },
+        {
+          "year": "2014",
+          "entries": [
+            {
+              "type": "team",
+              "teamCode": "PHX_MERCURY"
+            }
+          ]
+        },
+        {
+          "year": "2015",
+          "entries": [
+            {
+              "type": "team",
+              "teamCode": "PHX_MERCURY"
+            }
+          ]
+        },
+        {
+          "year": "2016",
+          "entries": [
+            {
+              "type": "team",
+              "teamCode": "PHX_MERCURY"
+            }
+          ]
+        },
+        {
+          "year": "2017",
+          "entries": [
+            {
+              "type": "team",
+              "teamCode": "PHX_MERCURY"
+            }
+          ]
+        },
+        {
+          "year": "2018",
+          "entries": [
+            {
+              "type": "team",
+              "teamCode": "PHX_MERCURY"
+            }
+          ]
+        },
+        {
+          "year": "2019",
+          "entries": [
+            {
+              "type": "team",
+              "teamCode": "PHX_MERCURY"
+            }
+          ]
+        },
+        {
+          "year": "2020",
+          "entries": [
+            {
+              "type": "sit_out",
+              "teamCode": "PHX_MERCURY",
+              "reason": "Not Disclosed",
+              "note": "Was dealing with a lot of personal issues leading up to the COVID pandemic. Did not play in the bubble for 2020"
+            }
+          ]
+        },
+        {
+          "year": "2021",
+          "entries": [
+            {
+              "type": "team",
+              "teamCode": "PHX_MERCURY"
+            }
+          ]
+        },
+        {
+          "year": "2022",
+          "entries": [
+            {
+              "type": "sit_out",
+              "reason": "Arrested in Russia"
+            }
+          ]
+        },
+        {
+          "year": "2023",
+          "entries": [
+            {
+              "type": "team",
+              "teamCode": "PHX_MERCURY"
+            }
+          ]
+        },
+        {
+          "year": "2024",
+          "entries": [
+            {
+              "type": "team",
+              "teamCode": "PHX_MERCURY"
+            }
+          ]
+        },
+        {
+          "year": "2025",
+          "entries": [
+            {
+              "type": "team",
+              "teamCode": "ATL_DREAM"
+            }
+          ]
+        },
+        {
+          "year": "2026",
+          "entries": [
+            {
+              "type": "team",
+              "teamCode": "CON_SUN"
+            }
+          ]
+        }
+      ],
       "wnbaTeams": [
         {
           "teamCode": "PHX_MERCURY",
@@ -2064,14 +2871,12 @@
         {
           "teamCode": "ATL_DREAM",
           "startYear": "2025",
-          "endYear": "2025",
-          "transactionNote": "Signed one-year contract"
+          "endYear": "2025"
         },
         {
           "teamCode": "CON_SUN",
           "startYear": "2026",
-          "endYear": "present",
-          "transactionNote": "Signed one-year contract"
+          "endYear": "present"
         }
       ],
       "championships": [

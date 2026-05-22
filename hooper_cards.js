@@ -110,8 +110,19 @@ function getTeamDisplayName(teamCode, nameType = "short") {
 }
 
 // -------------------------------------------------------
-// ============== HTML template ===============
+// Render all cards on page
 // -------------------------------------------------------
+async function initPlayerIndexCards() {
+  await loadPlayerIndexCardData();
+
+  const cardContainers = document.querySelectorAll(".player-index-card");
+
+  cardContainers.forEach(container => {
+    const playerId = container.dataset.playerId;
+    renderPlayerCard(container, playerId);
+  });
+}
+
 function getPlayerIndexCardHTML() {
   return `
     <article class="player-card">
@@ -129,31 +140,13 @@ function getPlayerIndexCardHTML() {
             <p class="player-card__college"></p>
             <p class="player-card__draft"></p>
           </section>
-
-          <section class="player-card__college player-card__section"></section>
         </div>
       </div>
 
-      <section class="player-card__pro-careers player-card__section"></section>
-
-      <section class="player-card__team-usa player-card__section"></section>
+      <section class="player-card__career-timeline player-card__section"></section>
 
     </article>
   `;
-}
-
-// -------------------------------------------------------
-// Render all cards on page
-// -------------------------------------------------------
-async function initPlayerIndexCards() {
-  await loadPlayerIndexCardData();
-
-  const cardContainers = document.querySelectorAll(".player-index-card");
-
-  cardContainers.forEach(container => {
-    const playerId = container.dataset.playerId;
-    renderPlayerCard(container, playerId);
-  });
 }
 
 // -------------------------------------------------------
@@ -173,19 +166,9 @@ function renderPlayerCard(container, playerId) {
 
   renderBasicPlayerInfo(card, player);
   renderPlayerImage(card, player);
-  //renderCollegeCareerTimeline(card, player);
-  //renderPlayerTeamKey(card, player);
-  //renderPlayerTeamTimeline(card, player);
-  //renderExtraCareerTimelines(card, player);
-
-  renderCollegeSection(card, player);
-  renderProCareerSection(card, player);
-  renderTeamUsaSection(card, player);
+  renderCareerTimelineSection(card, player);
 }
 
-// -------------------------------------------------------
-// Basic info section
-// -------------------------------------------------------
 function renderBasicPlayerInfo(card, player) {
   const college =
     COLLEGES[player.careerDetails?.collegeCareer?.collegeId || player.collegeId];
@@ -226,371 +209,6 @@ function renderBasicPlayerInfo(card, player) {
   }
 }
 
-// =======================================================
-// ======= NEW SECTIONING for grouped timelines ===========
-// =======================================================
-function renderCollegeSection(card, player) {
-  const section = card.querySelector(".player-card__college");
-  const collegeCareer = player.careerDetails?.collegeCareer;
-
-  if (!section || !collegeCareer) return;
-
-  const college = COLLEGES[collegeCareer.collegeId];
-  const startYear = Number(collegeCareer.startYear);
-  const endYear = Number(collegeCareer.endYear);
-
-  const years = [];
-  for (let year = startYear; year <= endYear; year++) {
-    years.push(year);
-  }
-
-  const ncaaChampsByYear = {};
-
-  collegeCareer.ncaaChampionships?.forEach(champ => {
-    ncaaChampsByYear[Number(champ.year)] = champ;
-  });
-
-  section.innerHTML = `
-    <h3 class="player-card__section-title">College</h3>
-
-    <div class="player-card__college-inner">
-      <p class="player-card__section-subtitle">
-        ${college ? college.name : collegeCareer.collegeId}
-      </p>
- 
-      <div 
-        class="player-mini-timeline"
-        style="grid-template-columns: repeat(${years.length}, 34px);"
-      >
-        ${years.map(year => `
-          <div class="player-mini-year">${formatShortYear(year)}</div>
-        `).join("")}
-
-        ${years.map(year => {
-          const champ = ncaaChampsByYear[year];
-
-          return `
-            <button
-              class="player-mini-square ${champ ? "has-ncaa-championship" : ""}"
-              type="button"
-              data-year="${year}"
-              title="${year}"
-            >
-              ${champ ? `<span class="college-champ-marker"></span>` : ""}
-            </button>
-          `;
-        }).join("")}
-      </div>
-
-      <div class="player-card__college-note" hidden></div>
-    </div>
-  `;
-
-  section.querySelectorAll(".has-ncaa-championship").forEach(square => {
-    square.addEventListener("click", () => {
-      const year = Number(square.dataset.year);
-      const champ = ncaaChampsByYear[year];
-      const noteBox = section.querySelector(".player-card__college-note");
-
-      section.querySelectorAll(".has-ncaa-championship").forEach(el => {
-        el.classList.remove("is-open");
-      });
-
-      square.classList.add("is-open");
-
-      noteBox.hidden = false;
-      noteBox.innerHTML = `
-        <strong>${year} NCAA Championship</strong>
-        <p>${champ?.champNote || `${player.playerName} won the ${year} NCAA championship with ${college ? college.name : "their college team"}.`}</p>
-      `;
-    });
-  });
-}
-
-function renderProCareerSection(card, player) {
-  const section = card.querySelector(".player-card__pro-careers");
-  if (!section) return;
-
-  const years = buildProCareerYears(player);
-  const yearToWnbaTeam = {};
-  const champsByYear = {};
-  const missedByYear = {};
-
-  player.wnbaTeams?.forEach(teamSpan => {
-    const start = Number(teamSpan.startYear);
-    const end = normalizeEndYear(teamSpan.endYear);
-
-    for (let year = start; year <= end; year++) {
-      yearToWnbaTeam[year] = teamSpan.teamCode;
-    }
-  });
-
-  player.championships?.forEach(champ => {
-    champsByYear[Number(champ.year)] = champ;
-  });
-
-  player.careerDetails?.missedWnbaSeasons?.forEach(item => {
-    missedByYear[Number(item.year)] = item;
-  });
-
-  section.innerHTML = `
-    <h3 class="player-card__section-title">Pro Careers</h3>
-
-    <div class="player-card__pro-timeline">
- 
-<div 
-  class="player-pro-grid"
-  style="grid-template-columns: 90px repeat(${years.length}, 46px);"
->
-
-  <div class="player-pro-row-label">WNBA</div>
-
-  ${years.map(year => {
-    const teamCode = yearToWnbaTeam[year];
-    const champ = champsByYear[year];
-    const missed = missedByYear[year];
-
-    return `
-      <button
-        class="player-pro-square ${champ ? "has-championship" : ""} ${missed ? "has-missed-season" : ""}"
-        style="background:${teamCode ? getTeamColor(teamCode, "color1", "#fff") : "#fff"};"
-        data-year="${year}"
-        type="button"
-        title="${year} ${teamCode ? getTeamDisplayName(teamCode, "short") : "No WNBA team"}"
-      >
-        ${champ ? `
-          <span 
-            class="champ-marker"
-            style="border-color:${getTeamColor(champ.teamCode, "color1", "#000")};"
-          ></span>
-        ` : ""}
-
-        ${missed ? `<span class="missed-season-marker">×</span>` : ""}
-      </button>
-    `;
-  }).join("")}
-
-  <div class="player-pro-row-label"></div>
-
-  ${years.map(year => `
-    <div class="player-pro-year">${formatShortYear(year)}</div>
-  `).join("")}
-
-  <div class="player-pro-row-label">Offseason</div>
-
-  ${renderOffseasonTimelineItems(player, years)}
-
-</div>
-
-        <div class="player-card__champ-note" hidden></div>
-        <div class="player-card__offseason-note" hidden></div>
-
-    </div>
-  `;
-
-  section.querySelectorAll(".has-championship").forEach(square => {
-    square.addEventListener("click", () => {
-      const year = Number(square.dataset.year);
-      const champ = champsByYear[year];
-      const noteBox = section.querySelector(".player-card__champ-note");
-
-      section.querySelectorAll(".has-championship").forEach(el => {
-        el.classList.remove("is-open");
-      });
-
-      square.classList.add("is-open");
-
-      noteBox.hidden = false;
-      noteBox.innerHTML = `
-        <strong>${champ.year} WNBA Championship</strong>
-        <p>
-          ${champ.champNote || `${player.playerName} won the ${champ.year} WNBA championship with the ${getTeamDisplayName(champ.teamCode, "full")}.`}
-        </p>
-        ${champ.finalsMVP ? `<p class="champ-note-tag">Finals MVP</p>` : ""}
-      `;
-    });
-  });
-
-    section.querySelectorAll(".player-offseason-square").forEach(square => {
-    square.addEventListener("click", () => {
-        const noteBox = section.querySelector(".player-card__offseason-note");
-
-        section.querySelectorAll(".player-offseason-square").forEach(el => {
-        el.classList.remove("is-open");
-        });
-
-        square.classList.add("is-open");
-
-        const type = square.dataset.offseasonType;
-        const season = square.dataset.season;
-        const team = square.dataset.team;
-        const country = square.dataset.country;
-        const league = square.dataset.league;
-
-        noteBox.hidden = false;
-        noteBox.innerHTML = `
-          <strong>${type} · ${season}</strong>
-          <p>${team}</p>
-          ${league ? `<p>${league}</p>` : ""}
-          ${country ? `<p>${country}</p>` : ""}
-        `;
-    });
-    });
-
-}
-
-function getTeamInitial(teamName) {
-  if (!teamName) return "?";
-  return String(teamName).trim().charAt(0).toUpperCase();
-}
-
-function renderOffseasonTimelineItems(player, years) {
-  const details = player.careerDetails;
-  if (!details) return renderEmptyOffseasonCells(years);
-
-  const items = [];
-
-  details.overseasTeams?.forEach(item => {
-    const overseasTeam = item.teamCode
-      ? OVERSEAS_TEAMS_BY_CODE[item.teamCode]
-      : null;
-
-    const league = overseasTeam
-      ? OVERSEAS_LEAGUES_BY_CODE[overseasTeam?.league?.leagueCode]
-      : null;
-
-    const span = parseSeasonSpan(item.season);
-    const startYear = span.startYear;
-    const startIndex = years.indexOf(startYear) + 2;
-
-    if (startIndex < 2) return;
-
-    const teamName =
-      overseasTeam?.name?.full ||
-      item.team ||
-      item.teamCode ||
-      "Unknown Team";
-
-    const country =
-      overseasTeam?.location?.country ||
-      item.country ||
-      "";
-
-    const leagueName =
-      league?.name?.full ||
-      "";
-
-    items.push(`
-      <button
-        class="player-offseason-square player-offseason-square--overseas"
-        style="
-          grid-column: ${startIndex} / ${startIndex + 1};
-          transform: translateX(calc(var(--pro-year-col) / 2));
-        "
-        type="button"
-        data-offseason-type="Overseas"
-        data-season="${item.season}"
-        data-team="${teamName}"
-        data-country="${country}"
-        data-league="${leagueName}"
-        title="Overseas ${item.season}: ${teamName}"
-      >
-        ${getTeamInitial(teamName)}
-      </button>
-    `);
-  });
-
-  details.unrivaledTeams?.forEach(item => {
-    const unrivaledTeam = item.teamCode
-      ? UNRIVALED_TEAMS_BY_CODE[item.teamCode]
-      : null;
-
-    const year = Number(item.year);
-    const startIndex = years.indexOf(year) + 2;
-
-    if (startIndex < 2) return;
-
-    const teamName =
-      unrivaledTeam?.name?.short ||
-      unrivaledTeam?.name?.full ||
-      item.team ||
-      item.teamCode ||
-      "Unknown";
-
-    const color =
-      unrivaledTeam?.branding?.colors?.color1 ||
-      "#fff";
-
-    items.push(`
-      <button
-        class="player-offseason-square player-offseason-square--unrivaled"
-        style="
-          grid-column: ${startIndex} / ${startIndex + 1};
-          transform: translateX(calc(var(--pro-year-col) / 2));
-          background: ${color};
-        "
-        type="button"
-        data-offseason-type="Unrivaled"
-        data-season="${item.year}"
-        data-team="${teamName}"
-        data-country=""
-        data-league="Unrivaled"
-        title="Unrivaled ${item.year}: ${teamName}"
-      >
-        ${getTeamInitial(teamName)}
-      </button>
-    `);
-  });
-
-  if (!items.length) {
-    return renderEmptyOffseasonCells(years);
-  }
-
-  return items.join("");
-}
-
-function renderEmptyOffseasonCells(years) {
-  return years.map(year => `
-    <div class="player-pro-offseason-cell" data-year="${year}"></div>
-  `).join("");
-}
-
-function renderTeamUsaSection(card, player) {
-  const section = card.querySelector(".player-card__team-usa");
-  if (!section) return;
-
-  section.innerHTML = `
-    <h3 class="player-card__section-title">Team USA / International</h3>
-    <div class="player-card__team-usa-timeline"></div>
-  `;
-}
-
-// -------------------------------------------------------
-// Player team history quick key / legend
-// -------------------------------------------------------
-function renderPlayerTeamKey(card, player) {
-  const keyContainer = card.querySelector(".player-card__team-key");
-  if (!keyContainer || !player.wnbaTeams?.length) return;
-
-  const uniqueTeamCodes = [...new Set(player.wnbaTeams.map(team => team.teamCode))];
-
-  keyContainer.innerHTML = `
-    <h3 class="player-card__section-title">WNBA Teams</h3>
-
-    <div class="player-card__team-key-list">
-      ${uniqueTeamCodes.map(teamCode => `
-        <div class="player-card__team-key-item">
-          <span 
-            class="player-card__team-color"
-            style="background:${getTeamColor(teamCode, "color1", "#ddd")};"
-          ></span>
-          <span>${getTeamDisplayName(teamCode, "short")}</span>
-        </div>
-      `).join("")}
-    </div>
-  `;
-}
-
 // -------------------------------------------------------
 // Player image
 // -------------------------------------------------------
@@ -604,34 +222,83 @@ function renderPlayerImage(card, player) {
   `;
 }
 
-// -------------------------------------------------------
-// Team timeline helpers
-// -------------------------------------------------------
-function formatShortYear(year) {
-  return `’${String(year).slice(-2)}`;
+// ============ TIMELINE SECTION ===============
+// =======================================================
+// ============== COMBINED CAREER TIMELINE ===============
+// =======================================================
+//
+// Main idea:
+// Instead of rendering separate timeline systems for college,
+// WNBA, overseas, Unrivaled, and medals, this builds one shared
+// year axis and lets every row line up to that same axis.
+//
+// Row order:
+// 1. College
+// 2. Years
+// 3. WNBA
+// 4. One row for each overseas league
+// 5. Unrivaled
+// 6. Medals
+//
+// This keeps the structure general. If you later add awards,
+// playoffs, injuries, coaching, Athletes Unlimited, etc., you can
+// build another row object and pass it into the same renderer.
+
+function renderCareerTimelineSection(card, player) {
+  const section = card.querySelector(".player-card__career-timeline");
+  if (!section) return;
+
+  const years = buildCareerTimelineYears(player);
+  const rows = buildCareerTimelineRows(player, years);
+
+  section.innerHTML = `
+    <h3 class="player-card__section-title">Career Timeline</h3>
+
+    <div 
+      class="player-career-grid"
+      style="grid-template-columns: 115px repeat(${years.length}, var(--career-cell-size));"
+    >
+      ${rows.map(row => renderTimelineRow(row, years)).join("")}
+    </div>
+
+    <div class="player-career-note" hidden></div>
+  `;
+
+  bindCareerTimelineInteractions(section);
 }
 
 // -------------------------------------------------------
-// pro career timeline helpers
+// Build one shared year range for the whole card
 // -------------------------------------------------------
+//
+// Start:
+// Always starts at the player's college start year.
+//
+// End:
+// If player is active, use CURRENT_DISPLAY_YEAR.
+// If player is retired, use the latest meaningful year in their data.
+// This allows Diana Taurasi to end around 2024 instead of forcing 2026.
 
-function normalizeEndYear(endYear) {
-  if (endYear === "present") return CURRENT_DISPLAY_YEAR;
-  return Number(endYear);
-}
-
-function buildProCareerYears(player) {
+function buildCareerTimelineYears(player) {
   const allYears = [];
 
-  const draftYear =
-    player.careerDetails?.draftDetails?.year ||
-    player.draft?.year;
+  const collegeCareer = player.careerDetails?.collegeCareer;
 
-  if (draftYear) allYears.push(Number(draftYear));
+  if (collegeCareer?.startYear) {
+    allYears.push(Number(collegeCareer.startYear));
+  }
 
-  player.wnbaTeams?.forEach(team => {
-    allYears.push(Number(team.startYear));
-    allYears.push(normalizeEndYear(team.endYear));
+  if (collegeCareer?.endYear) {
+    allYears.push(Number(collegeCareer.endYear));
+  }
+
+  player.wnbaSeasons?.forEach(season => {
+    allYears.push(Number(season.year));
+  });
+
+  player.wnbaTeams?.forEach(teamSpan => {
+    allYears.push(Number(teamSpan.startYear));
+    allYears.push(normalizeEndYear(teamSpan.endYear, player));
   });
 
   player.championships?.forEach(champ => {
@@ -642,18 +309,27 @@ function buildProCareerYears(player) {
     allYears.push(Number(item.year));
   });
 
-  player.careerDetails?.unrivaledTeams?.forEach(item => {
-    allYears.push(Number(item.year));
-  });
-
   player.careerDetails?.overseasTeams?.forEach(item => {
     const span = parseSeasonSpan(item.season);
     if (span.startYear) allYears.push(span.startYear);
     if (span.endYear) allYears.push(span.endYear);
   });
 
+  player.careerDetails?.unrivaledTeams?.forEach(item => {
+    allYears.push(Number(item.year));
+  });
+
+  player.careerDetails?.teamUsaMedals?.forEach(item => {
+    allYears.push(Number(item.year));
+  });
+
+  if (!allYears.length) return [];
+
   const minYear = Math.min(...allYears);
-  const maxYear = Math.max(...allYears, CURRENT_DISPLAY_YEAR);
+
+  const maxYear = player.playerStatus?.isActive
+    ? CURRENT_DISPLAY_YEAR
+    : Math.max(...allYears);
 
   const years = [];
 
@@ -662,6 +338,517 @@ function buildProCareerYears(player) {
   }
 
   return years;
+}
+
+// -------------------------------------------------------
+// End year normalizer
+// -------------------------------------------------------
+//
+// The JSON uses "present" for active spans.
+// For active players, "present" becomes 2026.
+// For inactive players, this function avoids forcing 2026 unless
+// the player is actually active.
+
+function normalizeEndYear(endYear, player = null) {
+  if (endYear === "present") {
+    return player?.playerStatus?.isActive
+      ? CURRENT_DISPLAY_YEAR
+      : CURRENT_DISPLAY_YEAR;
+  }
+
+  return Number(endYear);
+}
+
+// -------------------------------------------------------
+// Build all row objects for the shared grid
+// -------------------------------------------------------
+
+function buildCareerTimelineRows(player, years) {
+  return [
+    buildCollegeTimelineRow(player, years),
+    buildYearLabelRow(years),
+    buildWnbaTimelineRow(player, years),
+    ...buildOverseasLeagueRows(player, years),
+    buildUnrivaledTimelineRow(player, years),
+    buildMedalsTimelineRow(player, years)
+  ].filter(Boolean);
+}
+
+// -------------------------------------------------------
+// College row
+// -------------------------------------------------------
+
+function buildCollegeTimelineRow(player, years) {
+  const collegeCareer = player.careerDetails?.collegeCareer;
+  if (!collegeCareer) return null;
+
+  const college = COLLEGES[collegeCareer.collegeId];
+  const collegeName = college?.name || collegeCareer.collegeId;
+
+  const startYear = Number(collegeCareer.startYear);
+  const endYear = Number(collegeCareer.endYear);
+
+  const championshipsByYear = {};
+
+  collegeCareer.ncaaChampionships?.forEach(champ => {
+    championshipsByYear[Number(champ.year)] = champ;
+  });
+
+  return {
+    label: "College",
+    rowType: "college",
+    cells: years.map(year => {
+      const isCollegeYear = year >= startYear && year <= endYear;
+      const champ = championshipsByYear[year];
+
+      if (!isCollegeYear) {
+        return createEmptyCell(year);
+      }
+
+      return {
+        year,
+        type: "college",
+        classes: [
+          "has-entry",
+          champ ? "has-ring" : ""
+        ],
+        text: "",
+        style: "",
+        ring: Boolean(champ),
+        note: champ
+          ? {
+              title: `${year} NCAA Championship`,
+              body: champ.champNote || `${player.playerName} won the ${year} NCAA championship with ${collegeName}.`
+            }
+          : {
+              title: `${year} College Season`,
+              body: `${player.playerName} played college basketball at ${collegeName}.`
+            }
+      };
+    })
+  };
+}
+
+// -------------------------------------------------------
+// Year label row
+// -------------------------------------------------------
+
+function buildYearLabelRow(years) {
+  return {
+    label: "",
+    rowType: "years",
+    cells: years.map(year => ({
+      year,
+      type: "year-label",
+      classes: ["is-year-label"],
+      text: formatShortYear(year),
+      style: "",
+      note: null
+    }))
+  };
+}
+
+// -------------------------------------------------------
+// WNBA row
+// -------------------------------------------------------
+//
+// Uses player.wnbaSeasons first because that is your more detailed
+// season-by-season structure. This lets the row display sit-out years,
+// partial years, and season-specific notes more easily than wnbaTeams.
+
+function buildWnbaTimelineRow(player, years) {
+  const seasonsByYear = {};
+  const championshipsByYear = {};
+
+  player.wnbaSeasons?.forEach(season => {
+    seasonsByYear[Number(season.year)] = season;
+  });
+
+  player.championships?.forEach(champ => {
+    championshipsByYear[Number(champ.year)] = champ;
+  });
+
+  return {
+    label: "WNBA",
+    rowType: "wnba",
+    cells: years.map(year => {
+      const season = seasonsByYear[year];
+      const champ = championshipsByYear[year];
+
+      if (!season && !champ) {
+        return createEmptyCell(year);
+      }
+
+      const entries = season?.entries || [];
+      const teamEntry = entries.find(entry => entry.type === "team");
+      const sitOutEntry = entries.find(entry => entry.type === "sit_out");
+
+      const teamCode =
+        teamEntry?.teamCode ||
+        sitOutEntry?.teamCode ||
+        champ?.teamCode ||
+        "";
+
+      const teamName = teamCode
+        ? getTeamDisplayName(teamCode, "full")
+        : "No WNBA team listed";
+
+      const bgColor = teamCode
+        ? getTeamColor(teamCode, "color1", "#ffffff")
+        : "#ffffff";
+
+      let noteTitle = `${year} WNBA Season`;
+      let noteBody = teamCode
+        ? `${player.playerName} was connected to the ${teamName}.`
+        : `${player.playerName} has a WNBA entry for this season.`;
+
+      if (sitOutEntry) {
+        noteTitle = `${year} WNBA Season Note`;
+        noteBody = sitOutEntry.note || sitOutEntry.reason || `${player.playerName} did not play this WNBA season.`;
+      }
+
+      if (champ) {
+        noteTitle = `${year} WNBA Championship`;
+        noteBody = champ.champNote || `${player.playerName} won the ${year} WNBA championship with the ${getTeamDisplayName(champ.teamCode, "full")}.`;
+      }
+
+      return {
+        year,
+        type: "wnba",
+        classes: [
+          "has-entry",
+          champ ? "has-ring" : "",
+          sitOutEntry ? "has-missed-season" : ""
+        ],
+        text: sitOutEntry ? "×" : "",
+        style: `background:${bgColor};`,
+        ring: Boolean(champ),
+        note: {
+          title: noteTitle,
+          body: noteBody,
+          tag: champ?.finalsMVP ? "Finals MVP" : ""
+        }
+      };
+    })
+  };
+}
+
+// -------------------------------------------------------
+// Overseas league rows
+// -------------------------------------------------------
+//
+// Your player JSON stores overseas teams.
+// The team lookup tells us which league that team belongs to.
+// This groups overseas entries by league, then creates one row per league.
+
+function buildOverseasLeagueRows(player, years) {
+  const overseasItems = player.careerDetails?.overseasTeams || [];
+  if (!overseasItems.length) return [];
+
+  const itemsByLeagueCode = {};
+
+  overseasItems.forEach(item => {
+    const overseasTeam = getOverseasTeamByCode(item.teamCode);
+    const leagueCode =
+      overseasTeam?.league?.leagueCode ||
+      "unknown_overseas_league";
+
+    if (!itemsByLeagueCode[leagueCode]) {
+      itemsByLeagueCode[leagueCode] = [];
+    }
+
+    itemsByLeagueCode[leagueCode].push(item);
+  });
+
+  return Object.entries(itemsByLeagueCode).map(([leagueCode, leagueItems]) => {
+    const league = OVERSEAS_LEAGUES_BY_CODE[leagueCode];
+
+    const leagueName =
+      league?.name?.short ||
+      league?.name?.full ||
+      "Overseas";
+
+    const itemsByStartYear = {};
+
+    leagueItems.forEach(item => {
+      const span = parseSeasonSpan(item.season);
+      if (!span.startYear) return;
+
+      if (!itemsByStartYear[span.startYear]) {
+        itemsByStartYear[span.startYear] = [];
+      }
+
+      itemsByStartYear[span.startYear].push(item);
+    });
+
+    return {
+      label: leagueName,
+      rowType: "overseas",
+      cells: years.map(year => {
+        const items = itemsByStartYear[year];
+
+        if (!items?.length) {
+          return createEmptyCell(year);
+        }
+
+        const item = items[0];
+        const overseasTeam = getOverseasTeamByCode(item.teamCode);
+
+        const teamName =
+          overseasTeam?.name?.full ||
+          item.team ||
+          item.teamCode ||
+          "Unknown overseas team";
+
+        const country =
+          overseasTeam?.location?.country ||
+          item.country ||
+          "";
+
+        return {
+          year,
+          type: "overseas",
+          classes: ["has-entry"],
+          text: getTeamInitial(teamName),
+          style: "",
+          ring: false,
+          note: {
+            title: `${item.season} Overseas Season`,
+            body: [
+              teamName,
+              leagueName,
+              country,
+              item.note
+            ].filter(Boolean).join(" · ")
+          }
+        };
+      })
+    };
+  });
+}
+
+// -------------------------------------------------------
+// Unrivaled row
+// -------------------------------------------------------
+
+function buildUnrivaledTimelineRow(player, years) {
+  const unrivaledItems = player.careerDetails?.unrivaledTeams || [];
+
+  const itemsByYear = {};
+
+  unrivaledItems.forEach(item => {
+    itemsByYear[Number(item.year)] = item;
+  });
+
+  return {
+    label: "Unrivaled",
+    rowType: "unrivaled",
+    cells: years.map(year => {
+      const item = itemsByYear[year];
+
+      if (!item) {
+        return createEmptyCell(year);
+      }
+
+      const team = getUnrivaledTeamByCode(item.teamCode);
+
+      const teamName =
+        team?.name?.full ||
+        team?.name?.short ||
+        item.teamCode ||
+        "Unknown Unrivaled team";
+
+      const bgColor =
+        team?.branding?.colors?.color1 ||
+        "#ffffff";
+
+      return {
+        year,
+        type: "unrivaled",
+        classes: ["has-entry"],
+        text: getTeamInitial(teamName),
+        style: `background:${bgColor};`,
+        ring: false,
+        note: {
+          title: `${year} Unrivaled`,
+          body: `${player.playerName} played for ${teamName}.`
+        }
+      };
+    })
+  };
+}
+
+// -------------------------------------------------------
+// Medals row
+// -------------------------------------------------------
+
+function buildMedalsTimelineRow(player, years) {
+  const medals = player.careerDetails?.teamUsaMedals || [];
+
+  const medalsByYear = {};
+
+  medals.forEach(medal => {
+    const year = Number(medal.year);
+
+    if (!medalsByYear[year]) {
+      medalsByYear[year] = [];
+    }
+
+    medalsByYear[year].push(medal);
+  });
+
+  return {
+    label: "Medals",
+    rowType: "medals",
+    cells: years.map(year => {
+      const yearMedals = medalsByYear[year];
+
+      if (!yearMedals?.length) {
+        return createEmptyCell(year);
+      }
+
+      const medalText = yearMedals
+        .map(item => {
+          const eventType = item.eventType || "International";
+          const format = item.format ? ` ${item.format}` : "";
+          const competition = item.competition ? ` ${item.competition}` : "";
+          return `${item.medal} · ${eventType}${format}${competition}`;
+        })
+        .join("<br>");
+
+      return {
+        year,
+        type: "medals",
+        classes: ["has-entry"],
+        text: yearMedals.length > 1 ? yearMedals.length : medalShortLabel(yearMedals[0].medal),
+        style: "",
+        ring: false,
+        note: {
+          title: `${year} Team USA Medal${yearMedals.length > 1 ? "s" : ""}`,
+          body: medalText
+        }
+      };
+    })
+  };
+}
+
+// -------------------------------------------------------
+// Generic row renderer
+// -------------------------------------------------------
+
+function renderTimelineRow(row, years) {
+  return `
+    <div class="player-career-row-label player-career-row-label--${row.rowType}">
+      ${row.label}
+    </div>
+
+    ${row.cells.map(cell => renderTimelineCell(cell)).join("")}
+  `;
+}
+
+// -------------------------------------------------------
+// Generic cell renderer
+// -------------------------------------------------------
+//
+// Most cells use the same markup.
+// Special styling should come from classes, not separate HTML systems.
+
+function renderTimelineCell(cell) {
+  const classes = [
+    "player-career-cell",
+    `player-career-cell--${cell.type}`,
+    ...(cell.classes || [])
+  ].filter(Boolean).join(" ");
+
+  const noteData = cell.note
+    ? encodeURIComponent(JSON.stringify(cell.note))
+    : "";
+
+  const tagName = cell.note ? "button" : "div";
+  const typeAttr = cell.note ? `type="button"` : "";
+
+  return `
+    <${tagName}
+      class="${classes}"
+      ${typeAttr}
+      style="${cell.style || ""}"
+      data-year="${cell.year}"
+      ${cell.note ? `data-note="${noteData}"` : ""}
+      title="${cell.year}"
+    >
+      ${cell.ring ? `<span class="career-ring-marker"></span>` : ""}
+      ${cell.text ? `<span class="career-cell-text">${cell.text}</span>` : ""}
+    </${tagName}>
+  `;
+}
+
+function createEmptyCell(year) {
+  return {
+    year,
+    type: "empty",
+    classes: [],
+    text: "",
+    style: "",
+    ring: false,
+    note: null
+  };
+}
+
+// -------------------------------------------------------
+// Generic click handling for every interactive square
+// -------------------------------------------------------
+
+function bindCareerTimelineInteractions(section) {
+  const noteBox = section.querySelector(".player-career-note");
+
+  section.querySelectorAll(".player-career-cell[data-note]").forEach(cell => {
+    cell.addEventListener("click", () => {
+      const note = JSON.parse(decodeURIComponent(cell.dataset.note));
+
+      section.querySelectorAll(".player-career-cell.is-open").forEach(openCell => {
+        openCell.classList.remove("is-open");
+      });
+
+      cell.classList.add("is-open");
+
+      noteBox.hidden = false;
+      noteBox.innerHTML = `
+        <strong>${note.title}</strong>
+        <p>${note.body}</p>
+        ${note.tag ? `<p class="career-note-tag">${note.tag}</p>` : ""}
+      `;
+    });
+  });
+}
+
+// -------------------------------------------------------
+// Lookup helpers for non-WNBA teams
+// -------------------------------------------------------
+
+function getOverseasTeamByCode(teamCode) {
+  return OVERSEAS_TEAMS_BY_CODE?.[teamCode] || null;
+}
+
+function getUnrivaledTeamByCode(teamCode) {
+  return UNRIVALED_TEAMS_BY_CODE?.[teamCode] || null;
+}
+
+// -------------------------------------------------------
+// Small display helpers
+// -------------------------------------------------------
+
+function getTeamInitial(teamName) {
+  if (!teamName) return "?";
+  return String(teamName).trim().charAt(0).toUpperCase();
+}
+
+function medalShortLabel(medal) {
+  if (!medal) return "M";
+  return String(medal).charAt(0).toUpperCase();
+}
+
+function formatShortYear(year) {
+  return `’${String(year).slice(-2)}`;
 }
 
 function parseSeasonSpan(season) {
@@ -691,12 +878,7 @@ function parseSeasonSpan(season) {
 
   return { startYear, endYear };
 }
-
-// -------------------------------------------------------
-// Championships
-// -------------------------------------------------------
-
-
+// ============ END === END === END ===============
 
 // -------------------------------------------------------
 // Start after page loads
