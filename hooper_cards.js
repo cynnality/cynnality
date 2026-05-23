@@ -255,8 +255,8 @@ function renderCareerTimelineSection(card, player) {
     <h3 class="player-card__section-title">Career Timeline</h3>
 
     <div 
-      class="player-career-grid"
-      style="grid-template-columns: 115px repeat(${years.length}, var(--career-cell-size));"
+      class="player-career-timeline"
+      style="--career-year-count: ${years.length};"
     >
       ${rows.map(row => renderTimelineRow(row, years)).join("")}
     </div>
@@ -360,6 +360,13 @@ function normalizeEndYear(endYear, player = null) {
 }
 
 // -------------------------------------------------------
+// positioning helper
+// -------------------------------------------------------
+function getYearColumn(year, years) {
+  return years.indexOf(Number(year)) + 2;
+}
+
+// -------------------------------------------------------
 // Build all row objects for the shared grid
 // -------------------------------------------------------
 
@@ -394,41 +401,36 @@ function buildCollegeTimelineRow(player, years) {
     championshipsByYear[Number(champ.year)] = champ;
   });
 
+  const items = [];
+
+  for (let year = startYear; year <= endYear; year++) {
+    const champ = championshipsByYear[year];
+
+    items.push({
+      year,
+      type: "college",
+      classes: ["has-entry", champ ? "has-ring" : ""],
+      text: "",
+      style: "",
+      ring: Boolean(champ),
+      note: champ
+        ? {
+            title: `${year} NCAA Championship`,
+            body: champ.champNote || `${player.playerName} won the ${year} NCAA championship with ${collegeName}.`
+          }
+        : {
+            title: `${year} College Season`,
+            body: `${player.playerName} played college basketball at ${collegeName}.`
+          }
+    });
+  }
+
   return {
     label: "College",
     rowType: "college",
-    cells: years.map(year => {
-      const isCollegeYear = year >= startYear && year <= endYear;
-      const champ = championshipsByYear[year];
-
-      if (!isCollegeYear) {
-        return createEmptyCell(year);
-      }
-
-      return {
-        year,
-        type: "college",
-        classes: [
-          "has-entry",
-          champ ? "has-ring" : ""
-        ],
-        text: "",
-        style: "",
-        ring: Boolean(champ),
-        note: champ
-          ? {
-              title: `${year} NCAA Championship`,
-              body: champ.champNote || `${player.playerName} won the ${year} NCAA championship with ${collegeName}.`
-            }
-          : {
-              title: `${year} College Season`,
-              body: `${player.playerName} played college basketball at ${collegeName}.`
-            }
-      };
-    })
+    items
   };
 }
-
 // -------------------------------------------------------
 // Year label row
 // -------------------------------------------------------
@@ -437,7 +439,7 @@ function buildYearLabelRow(years) {
   return {
     label: "",
     rowType: "years",
-    cells: years.map(year => ({
+    items: years.map(year => ({
       year,
       type: "year-label",
       classes: ["is-year-label"],
@@ -468,68 +470,42 @@ function buildWnbaTimelineRow(player, years) {
     championshipsByYear[Number(champ.year)] = champ;
   });
 
-  return {
-    label: "WNBA",
-    rowType: "wnba",
-    cells: years.map(year => {
+  const items = years
+    .map(year => {
       const season = seasonsByYear[year];
       const champ = championshipsByYear[year];
 
-      if (!season && !champ) {
-        return createEmptyCell(year);
-      }
+      if (!season && !champ) return null;
 
       const entries = season?.entries || [];
       const teamEntry = entries.find(entry => entry.type === "team");
       const sitOutEntry = entries.find(entry => entry.type === "sit_out");
 
-      const teamCode =
-        teamEntry?.teamCode ||
-        sitOutEntry?.teamCode ||
-        champ?.teamCode ||
-        "";
-
-      const teamName = teamCode
-        ? getTeamDisplayName(teamCode, "full")
-        : "No WNBA team listed";
-
-      const bgColor = teamCode
-        ? getTeamColor(teamCode, "color1", "#ffffff")
-        : "#ffffff";
-
-      let noteTitle = `${year} WNBA Season`;
-      let noteBody = teamCode
-        ? `${player.playerName} was connected to the ${teamName}.`
-        : `${player.playerName} has a WNBA entry for this season.`;
-
-      if (sitOutEntry) {
-        noteTitle = `${year} WNBA Season Note`;
-        noteBody = sitOutEntry.note || sitOutEntry.reason || `${player.playerName} did not play this WNBA season.`;
-      }
-
-      if (champ) {
-        noteTitle = `${year} WNBA Championship`;
-        noteBody = champ.champNote || `${player.playerName} won the ${year} WNBA championship with the ${getTeamDisplayName(champ.teamCode, "full")}.`;
-      }
+      const teamCode = teamEntry?.teamCode || sitOutEntry?.teamCode || champ?.teamCode || "";
+      const bgColor = teamCode ? getTeamColor(teamCode, "color1", "#ffffff") : "#ffffff";
 
       return {
         year,
         type: "wnba",
-        classes: [
-          "has-entry",
-          champ ? "has-ring" : "",
-          sitOutEntry ? "has-missed-season" : ""
-        ],
+        classes: ["has-entry", champ ? "has-ring" : "", sitOutEntry ? "has-missed-season" : ""],
         text: sitOutEntry ? "×" : "",
         style: `background:${bgColor};`,
         ring: Boolean(champ),
         note: {
-          title: noteTitle,
-          body: noteBody,
+          title: champ ? `${year} WNBA Championship` : `${year} WNBA Season`,
+          body: champ
+            ? `${player.playerName} won the ${year} WNBA championship with the ${getTeamDisplayName(champ.teamCode, "full")}.`
+            : sitOutEntry?.note || `${player.playerName} played for the ${getTeamDisplayName(teamCode, "full")}.`,
           tag: champ?.finalsMVP ? "Finals MVP" : ""
         }
       };
     })
+    .filter(Boolean);
+
+  return {
+    label: "WNBA",
+    rowType: "wnba",
+    items
   };
 }
 
@@ -584,11 +560,11 @@ function buildOverseasLeagueRows(player, years) {
     return {
       label: leagueName,
       rowType: "overseas",
-      cells: years.map(year => {
+      items: years.map(year => {
         const items = itemsByStartYear[year];
 
         if (!items?.length) {
-          return createEmptyCell(year);
+          return null;
         }
 
         const item = items[0];
@@ -622,7 +598,7 @@ function buildOverseasLeagueRows(player, years) {
             ].filter(Boolean).join(" · ")
           }
         };
-      })
+      }).filter(Boolean)
     };
   });
 }
@@ -643,11 +619,11 @@ function buildUnrivaledTimelineRow(player, years) {
   return {
     label: "Unrivaled",
     rowType: "unrivaled",
-    cells: years.map(year => {
+    items: years.map(year => {
       const item = itemsByYear[year];
 
       if (!item) {
-        return createEmptyCell(year);
+        return null;
       }
 
       const team = getUnrivaledTeamByCode(item.teamCode);
@@ -674,7 +650,7 @@ function buildUnrivaledTimelineRow(player, years) {
           body: `${player.playerName} played for ${teamName}.`
         }
       };
-    })
+    }).filter(Boolean)
   };
 }
 
@@ -700,11 +676,11 @@ function buildMedalsTimelineRow(player, years) {
   return {
     label: "Medals",
     rowType: "medals",
-    cells: years.map(year => {
+    items: years.map(year => {
       const yearMedals = medalsByYear[year];
 
       if (!yearMedals?.length) {
-        return createEmptyCell(year);
+        return null;
       }
 
       const medalText = yearMedals
@@ -728,7 +704,7 @@ function buildMedalsTimelineRow(player, years) {
           body: medalText
         }
       };
-    })
+    }).filter(Boolean)
   };
 }
 
@@ -737,15 +713,19 @@ function buildMedalsTimelineRow(player, years) {
 // -------------------------------------------------------
 
 function renderTimelineRow(row, years) {
-  return `
-    <div class="player-career-row-label player-career-row-label--${row.rowType}">
-      ${row.label}
-    </div>
+  const labelHTML = row.rowType === "years"
+    ? `<div class="player-career-row-label-spacer"></div>`
+    : `<div class="player-career-row-label player-career-row-label--${row.rowType}">
+        ${row.label}
+      </div>`;
 
-    ${row.cells.map(cell => renderTimelineCell(cell)).join("")}
+  return `
+    <div class="player-career-row player-career-row--${row.rowType}">
+      ${labelHTML}
+      ${row.items.map(item => renderTimelineItem(item, years)).join("")}
+    </div>
   `;
 }
-
 // -------------------------------------------------------
 // Generic cell renderer
 // -------------------------------------------------------
@@ -753,45 +733,33 @@ function renderTimelineRow(row, years) {
 // Most cells use the same markup.
 // Special styling should come from classes, not separate HTML systems.
 
-function renderTimelineCell(cell) {
+function renderTimelineItem(item, years) {
   const classes = [
     "player-career-cell",
-    `player-career-cell--${cell.type}`,
-    ...(cell.classes || [])
+    `player-career-cell--${item.type}`,
+    ...(item.classes || [])
   ].filter(Boolean).join(" ");
 
-  const noteData = cell.note
-    ? encodeURIComponent(JSON.stringify(cell.note))
+  const noteData = item.note
+    ? encodeURIComponent(JSON.stringify(item.note))
     : "";
 
-  const tagName = cell.note ? "button" : "div";
-  const typeAttr = cell.note ? `type="button"` : "";
+  const tagName = item.note ? "button" : "div";
+  const typeAttr = item.note ? `type="button"` : "";
 
   return `
     <${tagName}
       class="${classes}"
       ${typeAttr}
-      style="${cell.style || ""}"
-      data-year="${cell.year}"
-      ${cell.note ? `data-note="${noteData}"` : ""}
-      title="${cell.year}"
+      style="grid-column:${getYearColumn(item.year, years)}; ${item.style || ""}"
+      data-year="${item.year}"
+      ${item.note ? `data-note="${noteData}"` : ""}
+      title="${item.year}"
     >
-      ${cell.ring ? `<span class="career-ring-marker"></span>` : ""}
-      ${cell.text ? `<span class="career-cell-text">${cell.text}</span>` : ""}
+      ${item.ring ? `<span class="career-ring-marker"></span>` : ""}
+      ${item.text ? `<span class="career-cell-text">${item.text}</span>` : ""}
     </${tagName}>
   `;
-}
-
-function createEmptyCell(year) {
-  return {
-    year,
-    type: "empty",
-    classes: [],
-    text: "",
-    style: "",
-    ring: false,
-    note: null
-  };
 }
 
 // -------------------------------------------------------

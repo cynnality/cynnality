@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>pushing apples</title>
+  <link rel="stylesheet" href="pushing_apples.css" />
+</head>
+
+<body>
+  <main class="game">
+
+    <header class="game-header">
+      <h1>Pushing Apples</h1>
+      <p id="moneyDisplay">$0</p>
+    </header>
+
+    <section class="game-world">
+
+      <section class="apple-area">
+        <button id="shakeTreeBtn" class="apple-tree">
+          Apple Tree<br>
+          Shake Tree
+        </button>
+
+        <div class="apple-storage">
+          Apple Storage:
+          <span id="appleStorageDisplay">0</span>
+        </div>
+      </section>
+
+      <div id="factoryArea" class="factory-area"></div>
+
+      <div id="mainBelt" class="belt main-belt"></div>
+
+      <div id="factoryInputBelt" class="belt factory-input-belt hidden"></div>
+      <div id="factoryOutputBelt" class="belt factory-output-belt hidden"></div>
+
+      <div class="market">Market</div>
+
+    </section>
+
+    <section class="game-controls">
+
+      <button id="buyJuiceFactoryBtn">
+        Buy Apple Juice Factory - $10
+      </button>
+
+      <label>
+        Factory Diversion:
+        <select id="diversionSelect">
+          <option value="0">0%</option>
+          <option value="0.5" selected>50%</option>
+          <option value="1">100%</option>
+        </select>
+      </label>
+
+    </section>
+
+  </main>
+
+  <script src="menu.js"></script>
+  <script src="logic.js"></script>
+  <script src="look.js"></script>
+</body>
+</html>
