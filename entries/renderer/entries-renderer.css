@@ -1,0 +1,136 @@
+.entries-page-panel {
+    padding: 0;
+    overflow: hidden;
+}
+
+.entries-page-panel.collapsed .entries-panel-body {
+    display: none;
+}
+
+.entries-panel-toggle {
+    width: 100%;
+    padding: 14px 18px;
+    border: 0;
+    background: #111;
+    color: #fff;
+    font: inherit;
+    font-weight: 900;
+    text-align: left;
+    cursor: pointer;
+}
+
+.entries-panel-body {
+    padding: 18px;
+}
+
+.page-entries-list {
+    display: grid;
+    gap: 10px;
+}
+
+.page-entry-card {
+    border: 2px solid #111;
+    border-radius: 12px;
+    padding: 12px;
+    background: #fafafa;
+    cursor: pointer;
+}
+
+.page-entry-card-title {
+    font-weight: 900;
+}
+
+.page-entry-card-meta {
+    margin-top: 4px;
+    font-size: 12px;
+    color: #555;
+}
+
+.entry-tooltip-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+    padding: 4px 8px;
+    border: 2px solid #111;
+    border-radius: 999px;
+    background: #fff;
+    color: #111;
+    font: inherit;
+    font-size: 11px;
+    font-weight: 900;
+    cursor: pointer;
+}
+
+.entry-tooltip-btn:hover {
+    background: #111;
+    color: #fff;
+}
+
+.entry-modal.hidden {
+    display: none;
+}
+
+.entry-modal {
+    position: fixed;
+    inset: 0;
+    z-index: 9999;
+}
+
+.entry-modal-backdrop {
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.55);
+}
+
+.entry-modal-card {
+    position: relative;
+    z-index: 1;
+    max-width: 720px;
+    max-height: 80vh;
+    overflow: auto;
+    margin: 8vh auto;
+    padding: 24px;
+    border: 3px solid #111;
+    border-radius: 16px;
+    background: #fff;
+    box-shadow: 8px 8px 0 #111;
+}
+
+.entry-modal-close {
+    position: absolute;
+    top: 12px;
+    right: 12px;
+    border: 2px solid #111;
+    background: #fff;
+    font-size: 24px;
+    font-weight: 900;
+    line-height: 1;
+    cursor: pointer;
+}
+
+.entry-modal-category {
+    margin: 0 0 8px;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    font-size: 12px;
+    font-weight: 900;
+    color: #666;
+}
+
+.entry-modal-description {
+    font-weight: 700;
+    color: #555;
+}
+
+.entry-modal-content {
+    margin-top: 18px;
+    line-height: 1.55;
+}
+
+.entry-modal-content .definition {
+    border-left: 5px solid #111;
+    padding: 10px 12px;
+    background: #f4f4f4;
+    font-weight: 900;
+}

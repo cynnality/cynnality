@@ -1,0 +1,91 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: "Chivo Mono", monospace;
+    background: #f4f4f4;
+    color: #111;
+}
+
+.viewer-shell {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 32px;
+}
+
+.viewer-header {
+    margin-bottom: 24px;
+}
+
+.eyebrow {
+    text-transform: uppercase;
+    font-size: 12px;
+    letter-spacing: 0.12em;
+    color: #666;
+}
+
+.panel,
+.draft-panel,
+.pick-card {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 14px;
+    padding: 20px;
+    margin-bottom: 18px;
+}
+
+label {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    font-weight: 800;
+}
+
+input {
+    max-width: 220px;
+    padding: 10px;
+    border: 1px solid #bbb;
+    border-radius: 8px;
+    font: inherit;
+}
+
+button {
+    margin-top: 14px;
+    padding: 10px 16px;
+    border: 0;
+    border-radius: 999px;
+    background: #111;
+    color: white;
+    font-weight: 800;
+    cursor: pointer;
+}
+
+.draft-panel {
+    cursor: pointer;
+}
+
+.draft-panel:hover,
+.pick-card:hover {
+    outline: 2px solid #111;
+}
+
+.draft-meta,
+.pick-meta {
+    color: #555;
+    font-size: 13px;
+    margin-top: 4px;
+}
+
+.picks-grid {
+    display: grid;
+    gap: 10px;
+    margin-top: 16px;
+}
+
+.pick-card {
+    margin-bottom: 0;
+    cursor: pointer;
+    background: #fafafa;
+}

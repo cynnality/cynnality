@@ -31,6 +31,57 @@ const SAVE_TARGETS = {
         __dirname,
         "basketball_101_data_files",
         "wnba_static_data_v2.json"
+    ),
+    teamSeasonRosters: path.join(
+    __dirname,
+    "basketball_101_data_files",
+    "wnba_team_season_rosters_data.json"
+    ),
+    seasonGeneralInfo: path.join(
+        __dirname,
+        "basketball_101_data_files",
+        "wnba_season_general_info_data.json"
+    ),
+    gamedayCalendar: path.join(
+        __dirname,
+        "basketball_101_data_files",
+        "wnba_gameday_calendar_data.json"
+    ),
+    regularSeasonAwards: path.join(
+        __dirname,
+        "basketball_101_data_files",
+        "wnba_regular_season_awards_data.json"
+    ),
+    drafts: path.join(
+        __dirname,
+        "basketball_101_data_files",
+        "wnba_drafts_data.json"
+    ),
+    colleges: path.join(
+        __dirname,
+        "basketball_101_data_files",
+        "wnba_colleges.json"
+    ),
+    entriesWnba: path.join(
+        __dirname,
+        "entries",
+        "entry data",
+        "wnba",
+        "wnba_entries_data.json"
+    ),
+
+    entryMarkdownWnba: path.join(
+        __dirname,
+        "entries",
+        "entry data",
+        "wnba",
+        "text"
+    ),
+    postsData: path.join(
+        __dirname,
+        "posts",
+        "post data",
+        "posts_data.json"
     )
 };
 
@@ -185,6 +236,280 @@ const server = http.createServer((req, res) => {
                     topLevelKey: "teams",
                     idField: "teamCode"
                 });
+                return;
+            }
+
+            if (
+                req.url === "/save-season-general-info" ||
+                req.url === "/save-season-calendar"
+            ) {
+                saveByKey({
+                    res,
+                    incomingData,
+                    filePath: SAVE_TARGETS.seasonGeneralInfo,
+                    topLevelKey: "seasons",
+                    idField: "seasonId"
+                });
+                return;
+            }
+
+            if (req.url === "/save-team-season-roster") {
+                saveByKey({
+                    res,
+                    incomingData,
+                    filePath: SAVE_TARGETS.teamSeasonRosters,
+                    topLevelKey: "teamSeasons",
+                    idField: "teamSeasonId"
+                });
+                return;
+            }
+
+            if (req.url === "/save-gameday-calendar-game") {
+                const { seasonId, gameId } = incomingData;
+
+                if (!seasonId || !gameId) {
+                    sendJson(res, 400, {
+                        ok: false,
+                        error: "Missing seasonId or gameId"
+                    });
+                    return;
+                }
+
+                let existingData = { seasons: {} };
+
+                if (fs.existsSync(SAVE_TARGETS.gamedayCalendar)) {
+                    const raw = fs.readFileSync(SAVE_TARGETS.gamedayCalendar, "utf8");
+                    existingData = JSON.parse(raw);
+                }
+
+                if (!existingData.seasons[seasonId]) {
+                    existingData.seasons[seasonId] = {
+                        season: Number(seasonId),
+                        seasonId,
+                        games: {}
+                    };
+                }
+
+                if (!existingData.seasons[seasonId].games) {
+                    existingData.seasons[seasonId].games = {};
+                }
+
+                existingData.seasons[seasonId].games[gameId] = incomingData;
+
+                fs.writeFileSync(
+                    SAVE_TARGETS.gamedayCalendar,
+                    JSON.stringify(existingData, null, 2) + "\n",
+                    "utf8"
+                );
+
+                sendJson(res, 200, {
+                    ok: true,
+                    message: `Saved ${gameId}`,
+                    filePath: SAVE_TARGETS.gamedayCalendar
+                });
+
+                return;
+            }
+
+            if (req.url === "/update-gameday-game") {
+                const { seasonId, gameId } = incomingData;
+
+                if (!seasonId || !gameId) {
+                    sendJson(res, 400, {
+                        ok: false,
+                        error: "Missing seasonId or gameId"
+                    });
+                    return;
+                }
+
+                let existingData = { seasons: {} };
+
+                if (fs.existsSync(SAVE_TARGETS.gamedayCalendar)) {
+                    const raw = fs.readFileSync(SAVE_TARGETS.gamedayCalendar, "utf8");
+                    existingData = JSON.parse(raw);
+                }
+
+                if (!existingData.seasons?.[seasonId]?.games?.[gameId]) {
+                    sendJson(res, 404, {
+                        ok: false,
+                        error: `Game not found: ${gameId}`
+                    });
+                    return;
+                }
+
+                existingData.seasons[seasonId].games[gameId] = {
+                    ...existingData.seasons[seasonId].games[gameId],
+                    ...incomingData
+                };
+
+                fs.writeFileSync(
+                    SAVE_TARGETS.gamedayCalendar,
+                    JSON.stringify(existingData, null, 2) + "\n",
+                    "utf8"
+                );
+
+                sendJson(res, 200, {
+                    ok: true,
+                    message: `Updated ${gameId}`,
+                    filePath: SAVE_TARGETS.gamedayCalendar
+                });
+
+                return;
+            }
+
+            if (req.url === "/save-regular-season-award") {
+                const { seasonId, awardId } = incomingData;
+
+                if (!seasonId || !awardId) {
+                    sendJson(res, 400, {
+                        ok: false,
+                        error: "Missing seasonId or awardId"
+                    });
+                    return;
+                }
+
+                let existingData = { seasons: {} };
+
+                if (fs.existsSync(SAVE_TARGETS.regularSeasonAwards)) {
+                    const raw = fs.readFileSync(SAVE_TARGETS.regularSeasonAwards, "utf8");
+                    existingData = JSON.parse(raw);
+                }
+
+                if (!existingData.seasons[seasonId]) {
+                    existingData.seasons[seasonId] = {
+                        season: Number(seasonId),
+                        seasonId,
+                        awards: {}
+                    };
+                }
+
+                if (!existingData.seasons[seasonId].awards) {
+                    existingData.seasons[seasonId].awards = {};
+                }
+
+                existingData.seasons[seasonId].awards[awardId] = incomingData;
+
+                fs.writeFileSync(
+                    SAVE_TARGETS.regularSeasonAwards,
+                    JSON.stringify(existingData, null, 2) + "\n",
+                    "utf8"
+                );
+
+                sendJson(res, 200, {
+                    ok: true,
+                    message: `Saved ${awardId}`,
+                    filePath: SAVE_TARGETS.regularSeasonAwards
+                });
+
+                return;
+            }
+
+            if (req.url === "/save-draft") {
+                const { seasonId, draftId } = incomingData;
+
+                if (!seasonId || !draftId) {
+                    sendJson(res, 400, {
+                        ok: false,
+                        error: "Missing seasonId or draftId"
+                    });
+                    return;
+                }
+
+                let existingData = { drafts: {} };
+
+                if (fs.existsSync(SAVE_TARGETS.drafts)) {
+                    const raw = fs.readFileSync(SAVE_TARGETS.drafts, "utf8");
+                    existingData = JSON.parse(raw);
+                }
+
+                if (!existingData.drafts) {
+                    existingData.drafts = {};
+                }
+
+                existingData.drafts[draftId] = incomingData;
+
+                fs.writeFileSync(
+                    SAVE_TARGETS.drafts,
+                    JSON.stringify(existingData, null, 2) + "\n",
+                    "utf8"
+                );
+
+                sendJson(res, 200, {
+                    ok: true,
+                    message: `Saved ${draftId}`,
+                    filePath: SAVE_TARGETS.drafts
+                });
+
+                return;
+            }
+
+            if (req.url === "/save-college") {
+                saveByKey({
+                    res,
+                    incomingData,
+                    filePath: SAVE_TARGETS.colleges,
+                    topLevelKey: "colleges",
+                    idField: "collegeId"
+                });
+                return;
+            }
+
+            if (req.url === "/save-wnba-entry") {
+                saveByKey({
+                    res,
+                    incomingData,
+                    filePath: SAVE_TARGETS.entriesWnba,
+                    topLevelKey: "entries",
+                    idField: "entryId"
+                });
+                return;
+            }
+
+            if (req.url === "/save-wnba-entry-markdown") {
+                const filePath = path.join(
+                    __dirname,
+                    incomingData.contentFile
+                );
+
+                fs.mkdirSync(path.dirname(filePath), { recursive: true });
+
+                fs.writeFileSync(filePath, incomingData.markdownContent || "", "utf8");
+
+                res.writeHead(200, { "Content-Type": "application/json" });
+                res.end(JSON.stringify({ ok: true, savedTo: filePath }));
+                return;
+            }
+
+            if (req.url === "/save-post") {
+                saveByKey({
+                    res,
+                    incomingData,
+                    filePath: SAVE_TARGETS.postsData,
+                    topLevelKey: "posts",
+                    idField: "postId"
+                });
+                return;
+            }
+
+            if (req.url === "/save-post-content") {
+                const filePath = path.join(__dirname, incomingData.contentFile);
+
+                fs.mkdirSync(path.dirname(filePath), { recursive: true });
+                fs.writeFileSync(filePath, incomingData.content || "", "utf8");
+
+                res.writeHead(200, { "Content-Type": "application/json" });
+                res.end(JSON.stringify({ ok: true, savedTo: filePath }));
+                return;
+            }
+
+            if (req.url === "/save-post-style") {
+                const filePath = path.join(__dirname, incomingData.styleFile);
+
+                fs.mkdirSync(path.dirname(filePath), { recursive: true });
+                fs.writeFileSync(filePath, incomingData.css || "", "utf8");
+
+                res.writeHead(200, { "Content-Type": "application/json" });
+                res.end(JSON.stringify({ ok: true, savedTo: filePath }));
                 return;
             }
 

@@ -1,0 +1,176 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>Season General Info Input Tool</title>
+    <link rel="stylesheet" href="season-general-info-input.css" />
+
+    <!-- ======================== MONO FONTS ========================
+         CHIVO MONO 
+         ---- (monospaced // kinda playful ? serif) 
+
+         DM MONO 
+         ---- (monospaced, serif, gives digital feel - could be good replacement for v323)
+
+         JET BRAINS MONO 
+         ---- (monospaced, generally sans-serif. 
+         ---- want to use for all caps / titles / such things big bold (and oblique) style header feel)
+         ============================================================-->
+
+    <!--=====================================================================================
+
+COPIED ALL WNBA DATA FILES, AND MOVED THEM INTO "basketball_101_data_files" FOLDER !!!!
+
+wnba_colleges.json //////////////// ->  college id's / college names / college nickanmes 
+wnba_finals.json ////////////////// -> finals matchups / winners / coaches / finals mvps
+wnba_olympic_players.json ///////// -> data connecting players to olympic jersey numbers/rosters AND wnba teams
+wnba_reg_season_awards.json /////// -> regular season PLAYER awards
+wnba_season_stats.json //////////// -> regular season team rankings
+wnba_static_data.json ///////////// -> static main/general data for WNBA (team colors, ids, locations, etc.)
+wnba_teams_history.json /////////// -> teams of the WNBA by year and team franchise lineage
+
+=====================================================================================-->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Chivo+Mono:ital,wght@0,100..900;1,100..900&family=DM+Mono:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap"
+        rel="stylesheet">
+    <!--=====================================================================================-->
+
+</head>
+
+<body>
+    <main class="tool-shell">
+        <header class="tool-header">
+            <p class="eyebrow">WNBA Data Tool</p>
+            <h1>Season General Info Input</h1>
+            <p>Create or update season-level general info.</p>
+        </header>
+
+        <section class="panel">
+            <label>
+                Season
+                <select id="seasonSelect"></select>
+            </label>
+
+            <button id="addSeasonBtn" type="button">
+                Add Season
+            </button>
+
+            <div class="form-grid">
+                <label>
+                    Start Date
+                    <input id="startDateInput" type="date" />
+                </label>
+
+                <label>
+                    End Date
+                    <input id="endDateInput" type="date" />
+                </label>
+
+                <label>
+                    Regular Season Games Per Team
+                    <input id="regularSeasonGamesInput" type="number" />
+                </label> 
+
+                <label>
+                    Number of Teams
+                    <input id="numTeamsInput" type="number" />
+                </label>
+
+                <label>
+                    CBA Season?
+                    <select id="isCbaSeasonInput">
+                        <option value="false">No</option>
+                        <option value="true">Yes</option>
+                    </select>
+                </label>
+
+                <label>
+                    Expansion Year?
+                    <select id="isExpansionYearInput">
+                        <option value="false">No</option>
+                        <option value="true">Yes</option>
+                    </select>
+                </label>
+
+                <label>
+                    Folded Team Year?
+                    <select id="hasFoldedTeamsInput">
+                        <option value="false">No</option>
+                        <option value="true">Yes</option>
+                    </select>
+                </label>
+
+                <label>
+                    Relocation Year?
+                    <select id="hasRelocationsInput">
+                        <option value="false">No</option>
+                        <option value="true">Yes</option>
+                    </select>
+                </label>
+
+                <label>
+                    Dispersal Draft Year?
+                    <select id="hasDispersalDraftInput">
+                        <option value="false">No</option>
+                        <option value="true">Yes</option>
+                    </select>
+                </label>
+
+                <label>
+                    Expansion Draft Year?
+                    <select id="hasExpansionDraftInput">
+                        <option value="false">No</option>
+                        <option value="true">Yes</option>
+                    </select>
+                </label>
+
+                <label>
+                    Special Season Type
+                    <input id="specialSeasonTypeInput" placeholder="covid, strike, expansion, etc." />
+                </label>
+            </div>
+
+            <label>
+                Season Notes
+                <textarea id="notesInput" rows="6"></textarea>
+            </label>
+
+            <div class="links-section">
+                <h2>Season Links</h2>
+
+                <div class="form-grid">
+                    <label>
+                        Link Title
+                        <input id="linkTitleInput" />
+                    </label>
+
+                    <label>
+                        Link URL
+                        <input id="linkUrlInput" />
+                    </label>
+                </div>
+
+                <label>
+                    Link Description
+                    <textarea id="linkDescriptionInput" rows="3"></textarea>
+                </label>
+
+                <button type="button" id="addLinkBtn">
+                    Add Link
+                </button>
+
+                <div id="linksList"></div>
+            </div>
+
+            <button id="saveSeasonBtn">Save Season General Info</button>
+
+            <p id="statusMessage" class="status-message"></p>
+        </section>
+    </main>
+
+    <script src="season-general-info-input.js"></script>
+</body>
+</html>

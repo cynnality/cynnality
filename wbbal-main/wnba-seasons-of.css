@@ -203,6 +203,174 @@ mini timeline styles
     text-anchor: start;
 }
 
+/* ============================================================
+   HTML REGULAR SEASON INTRO PANEL
+============================================================ */
+
+#intro-to-section {
+  margin: 24px;
+  max-width: 1000px;
+}
+
+.season-intro-panel {
+  display: grid;
+  gap: 22px;
+  font-family: "Chivo Mono", monospace;
+}
+
+.season-card {
+  border: 3px solid #000;
+  background: #fff;
+  padding: 18px;
+}
+
+.season-card__title {
+  width: fit-content;
+  margin: 0 0 16px;
+  padding: 10px 14px;
+  border: 2px solid #000;
+  background: #fff;
+  font-size: 24px;
+  line-height: 1.1;
+  text-transform: uppercase;
+}
+
+.season-card__subtitle {
+  margin: 22px 0 10px;
+  font-size: 16px;
+  text-transform: uppercase;
+}
+
+.season-date-row,
+.season-stat-row,
+.conference-record-grid,
+.playoff-info-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 14px;
+}
+
+.playoff-info-grid {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.season-date-box,
+.mini-stat,
+.conference-record,
+.draft-pick-card {
+  border: 2px solid #000;
+  padding: 14px;
+  background: #fff;
+}
+
+.season-label,
+.mini-stat__label,
+.conference-label {
+  display: block;
+  margin-bottom: 8px;
+  font-size: 13px;
+  text-transform: uppercase;
+}
+
+.season-value,
+.mini-stat__num {
+  display: block;
+  font-size: 28px;
+  font-weight: 800;
+}
+
+.draft-pick-name {
+  margin: 0;
+  font-size: 28px;
+  font-weight: 800;
+}
+
+.draft-pick-team {
+  margin: 10px 0 0;
+  font-size: 18px;
+}
+
+.conference-record h3 {
+  margin: 0 0 14px;
+  font-size: 26px;
+}
+
+.conference-record p {
+  margin: 6px 0;
+}
+
+.award-list {
+  border: 2px solid #000;
+}
+
+.award-row {
+  display: grid;
+  grid-template-columns: 220px 1fr 160px;
+  gap: 12px;
+  align-items: center;
+  min-height: 42px;
+  padding: 8px 12px;
+  border-bottom: 2px solid #000;
+}
+
+.award-row:last-child {
+  border-bottom: 0;
+}
+
+.award-row span:first-child {
+  font-size: 14px;
+  text-transform: uppercase;
+}
+
+.award-row strong {
+  font-size: 18px;
+}
+
+.award-row span:last-child {
+  text-align: right;
+  font-size: 14px;
+}
+
+.finals-matchup {
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+  gap: 14px;
+  align-items: center;
+}
+
+.finals-matchup span {
+  border: 2px solid #000;
+  padding: 18px;
+  text-align: center;
+  font-size: 24px;
+  font-weight: 800;
+}
+
+.finals-matchup .versus-line {
+  border: 0;
+  padding: 0;
+  font-size: 16px;
+}
+
+@media screen and (max-width: 700px) {
+  #intro-to-section {
+    margin: 16px;
+  }
+
+  .season-date-row,
+  .season-stat-row,
+  .conference-record-grid,
+  .playoff-info-grid,
+  .finals-matchup,
+  .award-row {
+    grid-template-columns: 1fr;
+  }
+
+  .award-row span:last-child {
+    text-align: left;
+  }
+}
+
 /*=========================================*/
 @media screen and (max-width: 600px) {
 

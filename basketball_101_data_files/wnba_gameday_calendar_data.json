@@ -1,0 +1,1091 @@
+{
+  "seasons": {
+    "2026": {
+      "season": 2026,
+      "seasonId": "2026",
+      "games": {
+        "2026-05-28_LVA_ACES_DAL_WINGS": {
+          "gameId": "2026-05-28_LVA_ACES_DAL_WINGS",
+          "season": 2026,
+          "seasonId": "2026",
+          "date": "2026-05-28",
+          "awayTeam": "LVA_ACES",
+          "homeTeam": "DAL_WINGS",
+          "gameType": "regular-season",
+          "status": "scheduled",
+          "links": [],
+          "notes": "",
+          "entryIds": [],
+          "score": {
+            "awayScore": 87,
+            "homeScore": 95,
+            "winner": "DAL_WINGS",
+            "isFinal": true
+          }
+        },
+        "2026-05-28_IND_FEVER_GSV_VALKYRIES": {
+          "gameId": "2026-05-28_IND_FEVER_GSV_VALKYRIES",
+          "season": 2026,
+          "seasonId": "2026",
+          "date": "2026-05-28",
+          "awayTeam": "IND_FEVER",
+          "homeTeam": "GSV_VALKYRIES",
+          "gameType": "regular-season",
+          "status": "scheduled",
+          "links": [],
+          "notes": "",
+          "entryIds": [],
+          "score": {
+            "awayScore": 88,
+            "homeScore": 90,
+            "winner": "GSV_VALKYRIES",
+            "isFinal": true
+          }
+        },
+        "2026-05-29_PHX_MERCURY_NYL_LIBERTY": {
+          "gameId": "2026-05-29_PHX_MERCURY_NYL_LIBERTY",
+          "season": 2026,
+          "seasonId": "2026",
+          "date": "2026-05-29",
+          "awayTeam": "PHX_MERCURY",
+          "homeTeam": "NYL_LIBERTY",
+          "gameType": "regular-season",
+          "status": "scheduled",
+          "links": [],
+          "notes": "",
+          "entryIds": [],
+          "score": {
+            "awayScore": 68,
+            "homeScore": 75,
+            "winner": "NYL_LIBERTY",
+            "isFinal": true
+          }
+        },
+        "2026-05-29_LOS_SPARKS_WAS_MYSTICS": {
+          "gameId": "2026-05-29_LOS_SPARKS_WAS_MYSTICS",
+          "season": 2026,
+          "seasonId": "2026",
+          "date": "2026-05-29",
+          "awayTeam": "LOS_SPARKS",
+          "homeTeam": "WAS_MYSTICS",
+          "gameType": "regular-season",
+          "status": "scheduled",
+          "links": [],
+          "notes": "",
+          "entryIds": [],
+          "score": {
+            "awayScore": 92,
+            "homeScore": 87,
+            "winner": "LOS_SPARKS",
+            "isFinal": true
+          }
+        },
+        "2026-05-29_MIN_LYNX_CHI_SKY": {
+          "gameId": "2026-05-29_MIN_LYNX_CHI_SKY",
+          "season": 2026,
+          "seasonId": "2026",
+          "date": "2026-05-29",
+          "awayTeam": "MIN_LYNX",
+          "homeTeam": "CHI_SKY",
+          "gameType": "regular-season",
+          "status": "scheduled",
+          "links": [],
+          "notes": "",
+          "entryIds": [],
+          "score": {
+            "awayScore": 79,
+            "homeScore": 58,
+            "winner": "MIN_LYNX",
+            "isFinal": true
+          }
+        },
+        "2026-05-29_ATL_DREAM_POR_FIRE": {
+          "gameId": "2026-05-29_ATL_DREAM_POR_FIRE",
+          "season": 2026,
+          "seasonId": "2026",
+          "date": "2026-05-29",
+          "awayTeam": "ATL_DREAM",
+          "homeTeam": "POR_FIRE",
+          "gameType": "regular-season",
+          "status": "scheduled",
+          "links": [],
+          "notes": "",
+          "entryIds": [],
+          "score": {
+            "awayScore": 86,
+            "homeScore": 66,
+            "winner": "ATL_DREAM",
+            "isFinal": true
+          }
+        },
+        "2026-05-27_PHX_MERCURY_NYL_LIBERTY": {
+          "gameId": "2026-05-27_PHX_MERCURY_NYL_LIBERTY",
+          "season": 2026,
+          "seasonId": "2026",
+          "date": "2026-05-27",
+          "awayTeam": "PHX_MERCURY",
+          "homeTeam": "NYL_LIBERTY",
+          "gameType": "regular-season",
+          "status": "scheduled",
+          "entryIds": [],
+          "score": {
+            "awayScore": 74,
+            "homeScore": 84,
+            "winner": "NYL_LIBERTY",
+            "isFinal": true
+          }
+        },
+        "2026-05-27_TOR_TEMPO_CHI_SKY": {
+          "gameId": "2026-05-27_TOR_TEMPO_CHI_SKY",
+          "season": 2026,
+          "seasonId": "2026",
+          "date": "2026-05-27",
+          "awayTeam": "TOR_TEMPO",
+          "homeTeam": "CHI_SKY",
+          "gameType": "regular-season",
+          "status": "scheduled",
+          "entryIds": [],
+          "score": {
+            "awayScore": 111,
+            "homeScore": 104,
+            "winner": "TOR_TEMPO",
+            "isFinal": true
+          }
+        },
+        "2026-05-27_ATL_DREAM_MIN_LYNX": {
+          "gameId": "2026-05-27_ATL_DREAM_MIN_LYNX",
+          "season": 2026,
+          "seasonId": "2026",
+          "date": "2026-05-27",
+          "awayTeam": "ATL_DREAM",
+          "homeTeam": "MIN_LYNX",
+          "gameType": "regular-season",
+          "status": "scheduled",
+          "entryIds": [],
+          "score": {
+            "awayScore": 81,
+            "homeScore": 96,
+            "winner": "MIN_LYNX",
+            "isFinal": true
+          }
+        },
+        "2026-05-27_CON_SUN_POR_FIRE": {
+          "gameId": "2026-05-27_CON_SUN_POR_FIRE",
+          "season": 2026,
+          "seasonId": "2026",
+          "date": "2026-05-27",
+          "awayTeam": "CON_SUN",
+          "homeTeam": "POR_FIRE",
+          "gameType": "regular-season",
+          "status": "scheduled",
+          "entryIds": [],
+          "score": {
+            "awayScore": 61,
+            "homeScore": 71,
+            "winner": "POR_FIRE",
+            "isFinal": true
+          }
+        },
+        "2026-05-27_WAS_MYSTICS_SEA_STORM": {
+          "gameId": "2026-05-27_WAS_MYSTICS_SEA_STORM",
+          "season": 2026,
+          "seasonId": "2026",
+          "date": "2026-05-27",
+          "awayTeam": "WAS_MYSTICS",
+          "homeTeam": "SEA_STORM",
+          "gameType": "regular-season",
+          "status": "scheduled",
+          "entryIds": [],
+          "score": {
+            "awayScore": 78,
+            "homeScore": 64,
+            "winner": "WAS_MYSTICS",
+            "isFinal": true
+          }
+        },
+        "2026-05-25_POR_FIRE_NYL_LIBERTY": {
+          "gameId": "2026-05-25_POR_FIRE_NYL_LIBERTY",
+          "season": 2026,
+          "seasonId": "2026",
+          "date": "2026-05-25",
+          "awayTeam": "POR_FIRE",
+          "homeTeam": "NYL_LIBERTY",
+          "gameType": "regular-season",
+          "status": "scheduled",
+          "entryIds": [],
+          "score": {
+            "awayScore": 81,
+            "homeScore": 74,
+            "winner": "POR_FIRE",
+            "isFinal": false
+          }
+        },
+        "2026-05-25_CON_SUN_GSV_VALKYRIES": {
+          "gameId": "2026-05-25_CON_SUN_GSV_VALKYRIES",
+          "season": 2026,
+          "seasonId": "2026",
+          "date": "2026-05-25",
+          "awayTeam": "CON_SUN",
+          "homeTeam": "GSV_VALKYRIES",
+          "gameType": "regular-season",
+          "status": "scheduled",
+          "entryIds": [],
+          "score": {
+            "awayScore": 70,
+            "homeScore": 97,
+            "winner": "GSV_VALKYRIES",
+            "isFinal": true
+          }
+        },
+        "2026-05-24_PHX_MERCURY_ATL_DREAM": {
+          "gameId": "2026-05-24_PHX_MERCURY_ATL_DREAM",
+          "season": 2026,
+          "seasonId": "2026",
+          "date": "2026-05-24",
+          "awayTeam": "PHX_MERCURY",
+          "homeTeam": "ATL_DREAM",
+          "gameType": "regular-season",
+          "status": "scheduled",
+          "entryIds": [],
+          "score": {
+            "awayScore": 80,
+            "homeScore": 82,
+            "winner": "ATL_DREAM",
+            "isFinal": true
+          }
+        },
+        "2026-05-24_DAL_WINGS_NYL_LIBERTY": {
+          "gameId": "2026-05-24_DAL_WINGS_NYL_LIBERTY",
+          "season": 2026,
+          "seasonId": "2026",
+          "date": "2026-05-24",
+          "awayTeam": "DAL_WINGS",
+          "homeTeam": "NYL_LIBERTY",
+          "gameType": "regular-season",
+          "status": "scheduled",
+          "entryIds": [],
+          "score": {
+            "awayScore": 91,
+            "homeScore": 76,
+            "winner": "DAL_WINGS",
+            "isFinal": true
+          }
+        },
+        "2026-05-24_WAS_MYSTICS_SEA_STORM": {
+          "gameId": "2026-05-24_WAS_MYSTICS_SEA_STORM",
+          "season": 2026,
+          "seasonId": "2026",
+          "date": "2026-05-24",
+          "awayTeam": "WAS_MYSTICS",
+          "homeTeam": "SEA_STORM",
+          "gameType": "regular-season",
+          "status": "scheduled",
+          "entryIds": [],
+          "score": {
+            "awayScore": 85,
+            "homeScore": 97,
+            "winner": "SEA_STORM",
+            "isFinal": true
+          }
+        },
+        "2026-05-23_MIN_LYNX_CHI_SKY": {
+          "gameId": "2026-05-23_MIN_LYNX_CHI_SKY",
+          "season": 2026,
+          "seasonId": "2026",
+          "date": "2026-05-23",
+          "awayTeam": "MIN_LYNX",
+          "homeTeam": "CHI_SKY",
+          "gameType": "regular-season",
+          "status": "scheduled",
+          "entryIds": [],
+          "score": {
+            "awayScore": 85,
+            "homeScore": 75,
+            "winner": "MIN_LYNX",
+            "isFinal": true
+          }
+        },
+        "2026-05-23_POR_FIRE_TOR_TEMPO": {
+          "gameId": "2026-05-23_POR_FIRE_TOR_TEMPO",
+          "season": 2026,
+          "seasonId": "2026",
+          "date": "2026-05-23",
+          "awayTeam": "POR_FIRE",
+          "homeTeam": "TOR_TEMPO",
+          "gameType": "regular-season",
+          "status": "scheduled",
+          "entryIds": [],
+          "score": {
+            "awayScore": 99,
+            "homeScore": 80,
+            "winner": "POR_FIRE",
+            "isFinal": true
+          }
+        },
+        "2026-05-23_LOS_SPARKS_LVA_ACES": {
+          "gameId": "2026-05-23_LOS_SPARKS_LVA_ACES",
+          "season": 2026,
+          "seasonId": "2026",
+          "date": "2026-05-23",
+          "awayTeam": "LOS_SPARKS",
+          "homeTeam": "LVA_ACES",
+          "gameType": "regular-season",
+          "status": "scheduled",
+          "entryIds": [],
+          "score": {
+            "awayScore": 101,
+            "homeScore": 95,
+            "winner": "LOS_SPARKS",
+            "isFinal": true
+          }
+        },
+        "2026-05-22_DAL_WINGS_ATL_DREAM": {
+          "gameId": "2026-05-22_DAL_WINGS_ATL_DREAM",
+          "season": 2026,
+          "seasonId": "2026",
+          "date": "2026-05-22",
+          "awayTeam": "DAL_WINGS",
+          "homeTeam": "ATL_DREAM",
+          "gameType": "regular-season",
+          "status": "scheduled",
+          "entryIds": [],
+          "score": {
+            "awayScore": 69,
+            "homeScore": 86,
+            "winner": "ATL_DREAM",
+            "isFinal": true
+          }
+        },
+        "2026-05-22_GSV_VALKYRIES_IND_FEVER": {
+          "gameId": "2026-05-22_GSV_VALKYRIES_IND_FEVER",
+          "season": 2026,
+          "seasonId": "2026",
+          "date": "2026-05-22",
+          "awayTeam": "GSV_VALKYRIES",
+          "homeTeam": "IND_FEVER",
+          "gameType": "regular-season",
+          "status": "scheduled",
+          "entryIds": [],
+          "score": {
+            "awayScore": 82,
+            "homeScore": 90,
+            "winner": "IND_FEVER",
+            "isFinal": true
+          }
+        },
+        "2026-05-22_CON_SUN_SEA_STORM": {
+          "gameId": "2026-05-22_CON_SUN_SEA_STORM",
+          "season": 2026,
+          "seasonId": "2026",
+          "date": "2026-05-22",
+          "awayTeam": "CON_SUN",
+          "homeTeam": "SEA_STORM",
+          "gameType": "regular-season",
+          "status": "scheduled",
+          "entryIds": [],
+          "score": {
+            "awayScore": 59,
+            "homeScore": 77,
+            "winner": "SEA_STORM",
+            "isFinal": true
+          }
+        },
+        "2026-05-21_GSV_VALKYRIES_NYL_LIBERTY": {
+          "gameId": "2026-05-21_GSV_VALKYRIES_NYL_LIBERTY",
+          "season": 2026,
+          "seasonId": "2026",
+          "date": "2026-05-21",
+          "awayTeam": "GSV_VALKYRIES",
+          "homeTeam": "NYL_LIBERTY",
+          "gameType": "regular-season",
+          "status": "scheduled",
+          "entryIds": [],
+          "score": {
+            "awayScore": 87,
+            "homeScore": 70,
+            "winner": "GSV_VALKYRIES",
+            "isFinal": true
+          }
+        },
+        "2026-05-21_TOR_TEMPO_MIN_LYNX": {
+          "gameId": "2026-05-21_TOR_TEMPO_MIN_LYNX",
+          "season": 2026,
+          "seasonId": "2026",
+          "date": "2026-05-21",
+          "awayTeam": "TOR_TEMPO",
+          "homeTeam": "MIN_LYNX",
+          "gameType": "regular-season",
+          "status": "scheduled",
+          "entryIds": [],
+          "score": {
+            "awayScore": 72,
+            "homeScore": 100,
+            "winner": "MIN_LYNX",
+            "isFinal": true
+          }
+        },
+        "2026-05-21_LOS_SPARKS_PHX_MERCURY": {
+          "gameId": "2026-05-21_LOS_SPARKS_PHX_MERCURY",
+          "season": 2026,
+          "seasonId": "2026",
+          "date": "2026-05-21",
+          "awayTeam": "LOS_SPARKS",
+          "homeTeam": "PHX_MERCURY",
+          "gameType": "regular-season",
+          "status": "scheduled",
+          "entryIds": [],
+          "score": {
+            "awayScore": 97,
+            "homeScore": 88,
+            "winner": "LOS_SPARKS",
+            "isFinal": true
+          }
+        },
+        "2026-05-20_POR_FIRE_IND_FEVER": {
+          "gameId": "2026-05-20_POR_FIRE_IND_FEVER",
+          "season": 2026,
+          "seasonId": "2026",
+          "date": "2026-05-20",
+          "awayTeam": "POR_FIRE",
+          "homeTeam": "IND_FEVER",
+          "gameType": "regular-season",
+          "status": "scheduled",
+          "entryIds": [],
+          "score": {
+            "awayScore": 73,
+            "homeScore": 90,
+            "winner": "IND_FEVER",
+            "isFinal": true
+          }
+        },
+        "2026-05-20_DAL_WINGS_CHI_SKY": {
+          "gameId": "2026-05-20_DAL_WINGS_CHI_SKY",
+          "season": 2026,
+          "seasonId": "2026",
+          "date": "2026-05-20",
+          "awayTeam": "DAL_WINGS",
+          "homeTeam": "CHI_SKY",
+          "gameType": "regular-season",
+          "status": "scheduled",
+          "entryIds": [],
+          "score": {
+            "awayScore": 99,
+            "homeScore": 89,
+            "winner": "DAL_WINGS",
+            "isFinal": true
+          }
+        },
+        "2026-05-20_CON_SUN_SEA_STORM": {
+          "gameId": "2026-05-20_CON_SUN_SEA_STORM",
+          "season": 2026,
+          "seasonId": "2026",
+          "date": "2026-05-20",
+          "awayTeam": "CON_SUN",
+          "homeTeam": "SEA_STORM",
+          "gameType": "regular-season",
+          "status": "scheduled",
+          "entryIds": [],
+          "score": {
+            "awayScore": 80,
+            "homeScore": 78,
+            "winner": "CON_SUN",
+            "isFinal": true
+          }
+        },
+        "2026-05-19_TOR_TEMPO_PHX_MERCURY": {
+          "gameId": "2026-05-19_TOR_TEMPO_PHX_MERCURY",
+          "season": 2026,
+          "seasonId": "2026",
+          "date": "2026-05-19",
+          "awayTeam": "TOR_TEMPO",
+          "homeTeam": "PHX_MERCURY",
+          "gameType": "regular-season",
+          "status": "scheduled",
+          "entryIds": [],
+          "score": {
+            "awayScore": 98,
+            "homeScore": 90,
+            "winner": "TOR_TEMPO",
+            "isFinal": true
+          }
+        },
+        "2026-05-18_WAS_MYSTICS_DAL_WINGS": {
+          "gameId": "2026-05-18_WAS_MYSTICS_DAL_WINGS",
+          "season": 2026,
+          "seasonId": "2026",
+          "date": "2026-05-18",
+          "awayTeam": "WAS_MYSTICS",
+          "homeTeam": "DAL_WINGS",
+          "gameType": "regular-season",
+          "status": "scheduled",
+          "entryIds": [],
+          "score": {
+            "awayScore": 69,
+            "homeScore": 92,
+            "winner": "DAL_WINGS",
+            "isFinal": true
+          }
+        },
+        "2026-05-18_CON_SUN_POR_FIRE": {
+          "gameId": "2026-05-18_CON_SUN_POR_FIRE",
+          "season": 2026,
+          "seasonId": "2026",
+          "date": "2026-05-18",
+          "awayTeam": "CON_SUN",
+          "homeTeam": "POR_FIRE",
+          "gameType": "regular-season",
+          "status": "scheduled",
+          "entryIds": [],
+          "score": {
+            "awayScore": 82,
+            "homeScore": 83,
+            "winner": "POR_FIRE",
+            "isFinal": true
+          }
+        },
+        "2026-05-17_LVA_ACES_ATL_DREAM": {
+          "gameId": "2026-05-17_LVA_ACES_ATL_DREAM",
+          "season": 2026,
+          "seasonId": "2026",
+          "date": "2026-05-17",
+          "awayTeam": "LVA_ACES",
+          "homeTeam": "ATL_DREAM",
+          "gameType": "regular-season",
+          "status": "scheduled",
+          "entryIds": [],
+          "score": {
+            "awayScore": 85,
+            "homeScore": 84,
+            "winner": "LVA_ACES",
+            "isFinal": true
+          }
+        },
+        "2026-05-17_SEA_STORM_IND_FEVER": {
+          "gameId": "2026-05-17_SEA_STORM_IND_FEVER",
+          "season": 2026,
+          "seasonId": "2026",
+          "date": "2026-05-17",
+          "awayTeam": "SEA_STORM",
+          "homeTeam": "IND_FEVER",
+          "gameType": "regular-season",
+          "status": "scheduled",
+          "entryIds": [],
+          "score": {
+            "awayScore": 78,
+            "homeScore": 89,
+            "winner": "IND_FEVER",
+            "isFinal": true
+          }
+        },
+        "2026-05-17_CHI_SKY_MIN_LYNX": {
+          "gameId": "2026-05-17_CHI_SKY_MIN_LYNX",
+          "season": 2026,
+          "seasonId": "2026",
+          "date": "2026-05-17",
+          "awayTeam": "CHI_SKY",
+          "homeTeam": "MIN_LYNX",
+          "gameType": "regular-season",
+          "status": "scheduled",
+          "entryIds": [],
+          "score": {
+            "awayScore": 86,
+            "homeScore": 79,
+            "winner": "CHI_SKY",
+            "isFinal": true
+          }
+        },
+        "2026-05-17_TOR_TEMPO_LOS_SPARKS": {
+          "gameId": "2026-05-17_TOR_TEMPO_LOS_SPARKS",
+          "season": 2026,
+          "seasonId": "2026",
+          "date": "2026-05-17",
+          "awayTeam": "TOR_TEMPO",
+          "homeTeam": "LOS_SPARKS",
+          "gameType": "regular-season",
+          "status": "scheduled",
+          "entryIds": [],
+          "score": {
+            "awayScore": 106,
+            "homeScore": 96,
+            "winner": "TOR_TEMPO",
+            "isFinal": true
+          }
+        },
+        "2026-05-08_CON_SUN_NYL_LIBERTY": {
+          "gameId": "2026-05-08_CON_SUN_NYL_LIBERTY",
+          "season": 2026,
+          "seasonId": "2026",
+          "date": "2026-05-08",
+          "awayTeam": "CON_SUN",
+          "homeTeam": "NYL_LIBERTY",
+          "gameType": "regular-season",
+          "status": "scheduled",
+          "entryIds": [],
+          "score": {
+            "awayScore": 75,
+            "homeScore": 106,
+            "winner": "NYL_LIBERTY",
+            "isFinal": true
+          }
+        },
+        "2026-05-08_WAS_MYSTICS_TOR_TEMPO": {
+          "gameId": "2026-05-08_WAS_MYSTICS_TOR_TEMPO",
+          "season": 2026,
+          "seasonId": "2026",
+          "date": "2026-05-08",
+          "awayTeam": "WAS_MYSTICS",
+          "homeTeam": "TOR_TEMPO",
+          "gameType": "regular-season",
+          "status": "scheduled",
+          "entryIds": [],
+          "score": {
+            "awayScore": 68,
+            "homeScore": 65,
+            "winner": "WAS_MYSTICS",
+            "isFinal": true
+          }
+        },
+        "2026-05-08_GSV_VALKYRIES_SEA_STORM": {
+          "gameId": "2026-05-08_GSV_VALKYRIES_SEA_STORM",
+          "season": 2026,
+          "seasonId": "2026",
+          "date": "2026-05-08",
+          "awayTeam": "GSV_VALKYRIES",
+          "homeTeam": "SEA_STORM",
+          "gameType": "regular-season",
+          "status": "scheduled",
+          "entryIds": [],
+          "score": {
+            "awayScore": 91,
+            "homeScore": 80,
+            "winner": "GSV_VALKYRIES",
+            "isFinal": true
+          }
+        },
+        "2026-05-09_DAL_WINGS_IND_FEVER": {
+          "gameId": "2026-05-09_DAL_WINGS_IND_FEVER",
+          "season": 2026,
+          "seasonId": "2026",
+          "date": "2026-05-09",
+          "awayTeam": "DAL_WINGS",
+          "homeTeam": "IND_FEVER",
+          "gameType": "regular-season",
+          "status": "scheduled",
+          "entryIds": [],
+          "score": {
+            "awayScore": 107,
+            "homeScore": 104,
+            "winner": "DAL_WINGS",
+            "isFinal": true
+          }
+        },
+        "2026-05-09_PHX_MERCURY_LVA_ACES": {
+          "gameId": "2026-05-09_PHX_MERCURY_LVA_ACES",
+          "season": 2026,
+          "seasonId": "2026",
+          "date": "2026-05-09",
+          "awayTeam": "PHX_MERCURY",
+          "homeTeam": "LVA_ACES",
+          "gameType": "regular-season",
+          "status": "scheduled",
+          "entryIds": [],
+          "score": {
+            "awayScore": 99,
+            "homeScore": 66,
+            "winner": "PHX_MERCURY",
+            "isFinal": true
+          }
+        },
+        "2026-05-09_ATL_DREAM_MIN_LYNX": {
+          "gameId": "2026-05-09_ATL_DREAM_MIN_LYNX",
+          "season": 2026,
+          "seasonId": "2026",
+          "date": "2026-05-09",
+          "awayTeam": "ATL_DREAM",
+          "homeTeam": "MIN_LYNX",
+          "gameType": "regular-season",
+          "status": "scheduled",
+          "entryIds": [],
+          "score": {
+            "awayScore": 91,
+            "homeScore": 90,
+            "winner": "ATL_DREAM",
+            "isFinal": true
+          }
+        },
+        "2026-05-09_CHI_SKY_POR_FIRE": {
+          "gameId": "2026-05-09_CHI_SKY_POR_FIRE",
+          "season": 2026,
+          "seasonId": "2026",
+          "date": "2026-05-09",
+          "awayTeam": "CHI_SKY",
+          "homeTeam": "POR_FIRE",
+          "gameType": "regular-season",
+          "status": "scheduled",
+          "entryIds": [],
+          "score": {
+            "awayScore": 98,
+            "homeScore": 83,
+            "winner": "CHI_SKY",
+            "isFinal": true
+          }
+        },
+        "2026-05-10_SEA_STORM_CON_SUN": {
+          "gameId": "2026-05-10_SEA_STORM_CON_SUN",
+          "season": 2026,
+          "seasonId": "2026",
+          "date": "2026-05-10",
+          "awayTeam": "SEA_STORM",
+          "homeTeam": "CON_SUN",
+          "gameType": "regular-season",
+          "status": "scheduled",
+          "entryIds": [],
+          "score": {
+            "awayScore": 89,
+            "homeScore": 82,
+            "winner": "SEA_STORM",
+            "isFinal": true
+          }
+        },
+        "2026-05-10_NYL_LIBERTY_WAS_MYSTICS": {
+          "gameId": "2026-05-10_NYL_LIBERTY_WAS_MYSTICS",
+          "season": 2026,
+          "seasonId": "2026",
+          "date": "2026-05-10",
+          "awayTeam": "NYL_LIBERTY",
+          "homeTeam": "WAS_MYSTICS",
+          "gameType": "regular-season",
+          "status": "scheduled",
+          "entryIds": [],
+          "score": {
+            "awayScore": 98,
+            "homeScore": 93,
+            "winner": "NYL_LIBERTY",
+            "isFinal": true
+          }
+        },
+        "2026-05-10_LVA_ACES_LOS_SPARKS": {
+          "gameId": "2026-05-10_LVA_ACES_LOS_SPARKS",
+          "season": 2026,
+          "seasonId": "2026",
+          "date": "2026-05-10",
+          "awayTeam": "LVA_ACES",
+          "homeTeam": "LOS_SPARKS",
+          "gameType": "regular-season",
+          "status": "scheduled",
+          "entryIds": [],
+          "score": {
+            "awayScore": 105,
+            "homeScore": 78,
+            "winner": "LVA_ACES",
+            "isFinal": true
+          }
+        },
+        "2026-05-10_PHX_MERCURY_GSV_VALKYRIES": {
+          "gameId": "2026-05-10_PHX_MERCURY_GSV_VALKYRIES",
+          "season": 2026,
+          "seasonId": "2026",
+          "date": "2026-05-10",
+          "awayTeam": "PHX_MERCURY",
+          "homeTeam": "GSV_VALKYRIES",
+          "gameType": "regular-season",
+          "status": "scheduled",
+          "entryIds": [],
+          "score": {
+            "awayScore": 79,
+            "homeScore": 95,
+            "winner": "GSV_VALKYRIES",
+            "isFinal": true
+          }
+        },
+        "2026-05-12_ATL_DREAM_DAL_WINGS": {
+          "gameId": "2026-05-12_ATL_DREAM_DAL_WINGS",
+          "season": 2026,
+          "seasonId": "2026",
+          "date": "2026-05-12",
+          "awayTeam": "ATL_DREAM",
+          "homeTeam": "DAL_WINGS",
+          "gameType": "regular-season",
+          "status": "scheduled",
+          "entryIds": [],
+          "score": {
+            "awayScore": 77,
+            "homeScore": 72,
+            "winner": "ATL_DREAM",
+            "isFinal": true
+          }
+        },
+        "2026-05-12_MIN_LYNX_PHX_MERCURY": {
+          "gameId": "2026-05-12_MIN_LYNX_PHX_MERCURY",
+          "season": 2026,
+          "seasonId": "2026",
+          "date": "2026-05-12",
+          "awayTeam": "MIN_LYNX",
+          "homeTeam": "PHX_MERCURY",
+          "gameType": "regular-season",
+          "status": "scheduled",
+          "entryIds": [],
+          "score": {
+            "awayScore": 88,
+            "homeScore": 84,
+            "winner": "MIN_LYNX",
+            "isFinal": true
+          }
+        },
+        "2026-05-12_NYL_LIBERTY_POR_FIRE": {
+          "gameId": "2026-05-12_NYL_LIBERTY_POR_FIRE",
+          "season": 2026,
+          "seasonId": "2026",
+          "date": "2026-05-12",
+          "awayTeam": "NYL_LIBERTY",
+          "homeTeam": "POR_FIRE",
+          "gameType": "regular-season",
+          "status": "scheduled",
+          "entryIds": [],
+          "score": {
+            "awayScore": 96,
+            "homeScore": 98,
+            "winner": "POR_FIRE",
+            "isFinal": true
+          }
+        },
+        "2026-05-13_SEA_STORM_TOR_TEMPO": {
+          "gameId": "2026-05-13_SEA_STORM_TOR_TEMPO",
+          "season": 2026,
+          "seasonId": "2026",
+          "date": "2026-05-13",
+          "awayTeam": "SEA_STORM",
+          "homeTeam": "TOR_TEMPO",
+          "gameType": "regular-season",
+          "status": "scheduled",
+          "entryIds": [],
+          "score": {
+            "awayScore": 73,
+            "homeScore": 86,
+            "winner": "TOR_TEMPO",
+            "isFinal": true
+          }
+        },
+        "2026-05-13_LVA_ACES_CON_SUN": {
+          "gameId": "2026-05-13_LVA_ACES_CON_SUN",
+          "season": 2026,
+          "seasonId": "2026",
+          "date": "2026-05-13",
+          "awayTeam": "LVA_ACES",
+          "homeTeam": "CON_SUN",
+          "gameType": "regular-season",
+          "status": "scheduled",
+          "entryIds": [],
+          "score": {
+            "awayScore": 98,
+            "homeScore": 69,
+            "winner": "LVA_ACES",
+            "isFinal": true
+          }
+        },
+        "2026-05-13_CHI_SKY_GSV_VALKYRIES": {
+          "gameId": "2026-05-13_CHI_SKY_GSV_VALKYRIES",
+          "season": 2026,
+          "seasonId": "2026",
+          "date": "2026-05-13",
+          "awayTeam": "CHI_SKY",
+          "homeTeam": "GSV_VALKYRIES",
+          "gameType": "regular-season",
+          "status": "scheduled",
+          "entryIds": [],
+          "score": {
+            "awayScore": 69,
+            "homeScore": 63,
+            "winner": "CHI_SKY",
+            "isFinal": true
+          }
+        },
+        "2026-05-13_IND_FEVER_LOS_SPARKS": {
+          "gameId": "2026-05-13_IND_FEVER_LOS_SPARKS",
+          "season": 2026,
+          "seasonId": "2026",
+          "date": "2026-05-13",
+          "awayTeam": "IND_FEVER",
+          "homeTeam": "LOS_SPARKS",
+          "gameType": "regular-season",
+          "status": "scheduled",
+          "entryIds": [],
+          "score": {
+            "awayScore": 87,
+            "homeScore": 78,
+            "winner": "IND_FEVER",
+            "isFinal": true
+          }
+        },
+        "2026-05-14_MIN_LYNX_DAL_WINGS": {
+          "gameId": "2026-05-14_MIN_LYNX_DAL_WINGS",
+          "season": 2026,
+          "seasonId": "2026",
+          "date": "2026-05-14",
+          "awayTeam": "MIN_LYNX",
+          "homeTeam": "DAL_WINGS",
+          "gameType": "regular-season",
+          "status": "scheduled",
+          "entryIds": [],
+          "score": {
+            "awayScore": 90,
+            "homeScore": 86,
+            "winner": "MIN_LYNX",
+            "isFinal": true
+          }
+        },
+        "2026-05-14_NYL_LIBERTY_POR_FIRE": {
+          "gameId": "2026-05-14_NYL_LIBERTY_POR_FIRE",
+          "season": 2026,
+          "seasonId": "2026",
+          "date": "2026-05-14",
+          "awayTeam": "NYL_LIBERTY",
+          "homeTeam": "POR_FIRE",
+          "gameType": "regular-season",
+          "status": "scheduled",
+          "entryIds": [],
+          "score": {
+            "awayScore": 100,
+            "homeScore": 82,
+            "winner": "NYL_LIBERTY",
+            "isFinal": true
+          }
+        },
+        "2026-05-15_LVA_ACES_CON_SUN": {
+          "gameId": "2026-05-15_LVA_ACES_CON_SUN",
+          "season": 2026,
+          "seasonId": "2026",
+          "date": "2026-05-15",
+          "awayTeam": "LVA_ACES",
+          "homeTeam": "CON_SUN",
+          "gameType": "regular-season",
+          "status": "scheduled",
+          "entryIds": [],
+          "score": {
+            "awayScore": 101,
+            "homeScore": 94,
+            "winner": "LVA_ACES",
+            "isFinal": true
+          }
+        },
+        "2026-05-15_WAS_MYSTICS_IND_FEVER": {
+          "gameId": "2026-05-15_WAS_MYSTICS_IND_FEVER",
+          "season": 2026,
+          "seasonId": "2026",
+          "date": "2026-05-15",
+          "awayTeam": "WAS_MYSTICS",
+          "homeTeam": "IND_FEVER",
+          "gameType": "regular-season",
+          "status": "scheduled",
+          "entryIds": [],
+          "score": {
+            "awayScore": 104,
+            "homeScore": 102,
+            "winner": "WAS_MYSTICS",
+            "isFinal": true
+          }
+        },
+        "2026-05-15_TOR_TEMPO_LOS_SPARKS": {
+          "gameId": "2026-05-15_TOR_TEMPO_LOS_SPARKS",
+          "season": 2026,
+          "seasonId": "2026",
+          "date": "2026-05-15",
+          "awayTeam": "TOR_TEMPO",
+          "homeTeam": "LOS_SPARKS",
+          "gameType": "regular-season",
+          "status": "scheduled",
+          "entryIds": [],
+          "score": {
+            "awayScore": 95,
+            "homeScore": 99,
+            "winner": "LOS_SPARKS",
+            "isFinal": true
+          }
+        },
+        "2026-05-15_CHI_SKY_PHX_MERCURY": {
+          "gameId": "2026-05-15_CHI_SKY_PHX_MERCURY",
+          "season": 2026,
+          "seasonId": "2026",
+          "date": "2026-05-15",
+          "awayTeam": "CHI_SKY",
+          "homeTeam": "PHX_MERCURY",
+          "gameType": "regular-season",
+          "status": "scheduled",
+          "entryIds": [],
+          "score": {
+            "awayScore": 83,
+            "homeScore": 91,
+            "winner": "PHX_MERCURY",
+            "isFinal": true
+          }
+        },
+        "2026-05-30_SEA_STORM_TOR_TEMPO": {
+          "gameId": "2026-05-30_SEA_STORM_TOR_TEMPO",
+          "season": 2026,
+          "seasonId": "2026",
+          "date": "2026-05-30",
+          "awayTeam": "SEA_STORM",
+          "homeTeam": "TOR_TEMPO",
+          "gameType": "regular-season",
+          "status": "scheduled",
+          "entryIds": []
+        },
+        "2026-05-30_LOS_SPARKS_CON_SUN": {
+          "gameId": "2026-05-30_LOS_SPARKS_CON_SUN",
+          "season": 2026,
+          "seasonId": "2026",
+          "date": "2026-05-30",
+          "awayTeam": "LOS_SPARKS",
+          "homeTeam": "CON_SUN",
+          "gameType": "regular-season",
+          "status": "scheduled",
+          "entryIds": []
+        },
+        "2026-05-30_IND_FEVER_POR_FIRE": {
+          "gameId": "2026-05-30_IND_FEVER_POR_FIRE",
+          "season": 2026,
+          "seasonId": "2026",
+          "date": "2026-05-30",
+          "awayTeam": "IND_FEVER",
+          "homeTeam": "POR_FIRE",
+          "gameType": "regular-season",
+          "status": "scheduled",
+          "entryIds": []
+        },
+        "2026-05-31_LVA_ACES_GSV_VALKYRIES": {
+          "gameId": "2026-05-31_LVA_ACES_GSV_VALKYRIES",
+          "season": 2026,
+          "seasonId": "2026",
+          "date": "2026-05-31",
+          "awayTeam": "LVA_ACES",
+          "homeTeam": "GSV_VALKYRIES",
+          "gameType": "regular-season",
+          "status": "scheduled",
+          "entryIds": []
+        },
+        "2026-06-01_SEA_STORM_DAL_WINGS": {
+          "gameId": "2026-06-01_SEA_STORM_DAL_WINGS",
+          "season": 2026,
+          "seasonId": "2026",
+          "date": "2026-06-01",
+          "awayTeam": "SEA_STORM",
+          "homeTeam": "DAL_WINGS",
+          "gameType": "special-event",
+          "status": "scheduled",
+          "entryIds": []
+        },
+        "2026-06-01_MIN_LYNX_PHX_MERCURY": {
+          "gameId": "2026-06-01_MIN_LYNX_PHX_MERCURY",
+          "season": 2026,
+          "seasonId": "2026",
+          "date": "2026-06-01",
+          "awayTeam": "MIN_LYNX",
+          "homeTeam": "PHX_MERCURY",
+          "gameType": "special-event",
+          "status": "scheduled",
+          "entryIds": []
+        }
+      }
+    }
+  }
+}

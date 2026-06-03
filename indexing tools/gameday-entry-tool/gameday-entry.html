@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>Gameday Entry Tool</title>
+    <link rel="stylesheet" href="gameday-entry.css" />
+</head>
+
+<body>
+    <main class="entry-shell">
+        <div class="entry-top">
+        <header class="entry-header">
+            <p class="eyebrow">WNBA Indexing Tool</p>
+            <h1>Gameday Entry Tool</h1>
+            <p id="gameContext">Loading game...</p>
+
+        <div class="game-nav">
+            <button id="prevGameBtn" type="button">← Previous Game</button>
+            <button id="backToCalendarBtn" type="button">Back to Calendar</button>
+            <button id="nextGameBtn" type="button">Next Game →</button>
+        </div>
+
+        </header>
+
+        <section class="panel matchup-panel" id="matchupPanel"></section>
+        </div>
+
+        <section id="finalScorePanel" class="panel">
+            <h2>Final Score</h2>
+
+            <div class="score-grid">
+                <label>
+                    <span id="awayScoreLabel">Away Score</span>
+                    <input id="awayScoreInput" type="number" />
+                </label>
+
+                <label>
+                    <span id="homeScoreLabel">Home Score</span>
+                    <input id="homeScoreInput" type="number" />
+                </label>
+            </div>
+
+            <label class="checkbox-row">
+                <input id="isFinalInput" type="checkbox" />
+                Game is final
+            </label>
+
+            <button id="saveScoreBtn" type="button">Save Final Score</button>
+
+            <p id="statusMessage" class="status-message"></p>
+        </section>
+
+        <section class="panel">
+            <h2>Entries</h2>
+            <p>Future: add markdown notes, links, images, and video files attached to this game.</p>
+        </section>
+    </main>
+
+    <script src="gameday-entry.js"></script>
+</body>
+</html>

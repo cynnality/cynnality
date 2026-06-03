@@ -1,0 +1,250 @@
+{
+  "seasons": {
+    "2025": {
+      "season": 2025,
+      "seasonId": "2025",
+      "awards": {
+        "2025_mvp": {
+          "awardId": "2025_mvp",
+          "season": 2025,
+          "seasonId": "2025",
+          "awardKey": "mvp",
+          "awardName": "Most Valuable Player",
+          "recipient": {
+            "playerId": "aja_wilson",
+            "playerName": "A'ja Wilson",
+            "teamCode": "LVA_ACES"
+          },
+          "notes": "",
+          "links": [],
+          "entryIds": []
+        },
+        "2025_topscorer": {
+          "awardId": "2025_topscorer",
+          "season": 2025,
+          "seasonId": "2025",
+          "awardKey": "topscorer",
+          "awardName": "Top Scorer",
+          "recipient": {
+            "playerId": "aja_wilson",
+            "playerName": "A'ja Wilson",
+            "teamCode": "LVA_ACES"
+          },
+          "notes": "",
+          "links": [],
+          "entryIds": []
+        },
+        "2025_topdraftpick": {
+          "awardId": "2025_topdraftpick",
+          "season": 2025,
+          "seasonId": "2025",
+          "awardKey": "topdraftpick",
+          "awardName": "Top draft pick",
+          "recipient": {
+            "playerId": "paige_bueckers",
+            "playerName": "Paige Bueckers",
+            "teamCode": "DAL_WINGS"
+          },
+          "notes": "",
+          "links": [],
+          "entryIds": []
+        },
+        "2025_dpoy": {
+          "awardId": "2025_dpoy",
+          "season": 2025,
+          "seasonId": "2025",
+          "awardKey": "dpoy",
+          "awardName": "Defensive Player of the Year",
+          "recipient": {
+            "playerId": "aja_wilson",
+            "playerName": "A'ja Wilson",
+            "teamCode": "LVA_ACES"
+          },
+          "notes": "",
+          "links": [],
+          "entryIds": []
+        },
+        "2025_defensiveplayeroftheyearcowinner": {
+          "awardId": "2025_defensiveplayeroftheyearcowinner",
+          "season": 2025,
+          "seasonId": "2025",
+          "awardKey": "defensiveplayeroftheyearcowinner",
+          "awardName": "Defensive Player of the Year - co winner",
+          "recipient": {
+            "playerId": "alanna_smith",
+            "playerName": "Alanna Smith",
+            "teamCode": "MIN_LYNX"
+          },
+          "notes": "",
+          "links": [],
+          "entryIds": []
+        },
+        "2025_mip": {
+          "awardId": "2025_mip",
+          "season": 2025,
+          "seasonId": "2025",
+          "awardKey": "mip",
+          "awardName": "Most Improved Player",
+          "recipient": {
+            "playerId": "veronica_burton",
+            "playerName": "Veronica Burton",
+            "teamCode": "GSV_VALKYRIES"
+          },
+          "notes": "",
+          "links": [],
+          "entryIds": []
+        },
+        "2025_peakperformerscoring": {
+          "awardId": "2025_peakperformerscoring",
+          "season": 2025,
+          "seasonId": "2025",
+          "awardKey": "peakperformerscoring",
+          "awardName": "TOP SCORER",
+          "recipient": {
+            "playerId": "aja_wilson",
+            "playerName": "A'ja Wilson",
+            "teamCode": "LVA_ACES"
+          },
+          "notes": "",
+          "links": [],
+          "entryIds": []
+        },
+        "2025_peakperformerrebounding": {
+          "awardId": "2025_peakperformerrebounding",
+          "season": 2025,
+          "seasonId": "2025",
+          "awardKey": "peakperformerrebounding",
+          "awardName": "TOP REBOUNDER",
+          "recipient": {
+            "playerId": "angel_reese",
+            "playerName": "Angel Reese",
+            "teamCode": "CHI_SKY"
+          },
+          "notes": "",
+          "links": [],
+          "entryIds": []
+        },
+        "2025_peakperformerdishandassist": {
+          "awardId": "2025_peakperformerdishandassist",
+          "season": 2025,
+          "seasonId": "2025",
+          "awardKey": "peakperformerdishandassist",
+          "awardName": "TOP DISTRIBUTOR",
+          "recipient": {
+            "playerId": "alyssa_thomas",
+            "playerName": "Alyssa Thomas",
+            "teamCode": "PHX_MERCURY"
+          },
+          "notes": "",
+          "links": [],
+          "entryIds": []
+        },
+        "2025_sixth_player": {
+          "awardId": "2025_sixth_player",
+          "season": 2025,
+          "seasonId": "2025",
+          "awardKey": "sixth_player",
+          "awardName": "Sixth Player of the Year",
+          "recipient": {
+            "playerId": "naz_hillmon",
+            "playerName": "Naz Hillmon",
+            "teamCode": "ATL_DREAM"
+          },
+          "notes": "",
+          "links": [],
+          "entryIds": []
+        },
+        "2025_roy": {
+          "awardId": "2025_roy",
+          "season": 2025,
+          "seasonId": "2025",
+          "awardKey": "roy",
+          "awardName": "Rookie of the Year",
+          "recipient": {
+            "playerId": "paige_bueckers",
+            "playerName": "Paige Bueckers",
+            "teamCode": "DAL_WINGS"
+          },
+          "notes": "",
+          "links": [],
+          "entryIds": []
+        },
+        "2025_kim_perrot_sportsmanship": {
+          "awardId": "2025_kim_perrot_sportsmanship",
+          "season": 2025,
+          "seasonId": "2025",
+          "awardKey": "kim_perrot_sportsmanship",
+          "awardName": "Kim Perrot Sportsmanship Award",
+          "recipient": {
+            "playerId": "nneka_ogwumike",
+            "playerName": "Nneka Ogwumike",
+            "teamCode": "SEA_STORM"
+          },
+          "notes": "",
+          "links": [],
+          "entryIds": []
+        },
+        "2025_dawnstaleycommunityleadershipaward": {
+          "awardId": "2025_dawnstaleycommunityleadershipaward",
+          "season": 2025,
+          "seasonId": "2025",
+          "awardKey": "dawnstaleycommunityleadershipaward",
+          "awardName": "Dawn Staley Community Leadership Award",
+          "recipient": {
+            "playerId": "tina_charles",
+            "playerName": "Tina Charles",
+            "teamCode": "CON_SUN"
+          },
+          "notes": "",
+          "links": [],
+          "entryIds": []
+        },
+        "2025_coach_of_the_year": {
+          "awardId": "2025_coach_of_the_year",
+          "season": 2025,
+          "seasonId": "2025",
+          "awardKey": "coach_of_the_year",
+          "awardName": "Coach of the Year",
+          "recipient": {
+            "playerId": "natalie_nakase",
+            "playerName": "Natalie Nakase",
+            "teamCode": "GSV_VALKYRIES"
+          },
+          "notes": "",
+          "links": [],
+          "entryIds": []
+        },
+        "2025_executive_of_the_year": {
+          "awardId": "2025_executive_of_the_year",
+          "season": 2025,
+          "seasonId": "2025",
+          "awardKey": "executive_of_the_year",
+          "awardName": "Executive of the Year",
+          "recipient": {
+            "playerId": "dan_padover",
+            "playerName": "Dan Padover",
+            "teamCode": "ATL_DREAM"
+          },
+          "notes": "",
+          "links": [],
+          "entryIds": []
+        },
+        "2025_basketballexecutiveleadershipaward": {
+          "awardId": "2025_basketballexecutiveleadershipaward",
+          "season": 2025,
+          "seasonId": "2025",
+          "awardKey": "basketballexecutiveleadershipaward",
+          "awardName": "Basketball Executive Leadership Award",
+          "recipient": {
+            "playerId": "jess_smith",
+            "playerName": "Jess Smith",
+            "teamCode": "GSV_VALKYRIES"
+          },
+          "notes": "",
+          "links": [],
+          "entryIds": []
+        }
+      }
+    }
+  }
+}

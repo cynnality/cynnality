@@ -1,0 +1,295 @@
+{
+  "drafts": {
+    "2025_college": {
+      "draftId": "2025_college",
+      "season": 2025,
+      "seasonId": "2025",
+      "draftType": "college",
+      "draftName": "2025 WNBA College Draft",
+      "roundsCount": 3,
+      "specialTeams": {
+        "expansionTeams": [],
+        "dispersalTeams": []
+      },
+      "rounds": {
+        "1": {
+          "roundNumber": 1,
+          "picks": {
+            "2025_college_r1_p1": {
+              "pickId": "2025_college_r1_p1",
+              "overallPick": 1,
+              "round": 1,
+              "roundPick": 1,
+              "player": {
+                "playerId": "paige_bueckers",
+                "playerName": "Paige Bueckers"
+              },
+              "college": {
+                "collegeId": "u_of_conn",
+                "collegeName": "University of Connecticut",
+                "existsInCollegeFile": true
+              },
+              "team": {
+                "teamCode": "DAL_WINGS",
+                "teamName": "Dallas Wings"
+              },
+              "previousTeam": null,
+              "notes": "",
+              "links": [],
+              "entryIds": []
+            },
+            "2025_college_r1_p3": {
+              "pickId": "2025_college_r1_p3",
+              "overallPick": 3,
+              "round": 1,
+              "roundPick": 3,
+              "player": {
+                "playerId": "sonia_citron",
+                "playerName": "Sonia Citron"
+              },
+              "college": {
+                "collegeId": "u_of_notre_dame",
+                "collegeName": "University of Notre Dame",
+                "existsInCollegeFile": true
+              },
+              "team": {
+                "teamCode": "WAS_MYSTICS",
+                "teamName": "Washington Mystics"
+              },
+              "previousTeam": null,
+              "notes": "Mystics got this pick from Sky",
+              "links": [],
+              "entryIds": []
+            },
+            "2025_college_r1_p2": {
+              "pickId": "2025_college_r1_p2",
+              "overallPick": 2,
+              "round": 1,
+              "roundPick": 2,
+              "player": {
+                "playerId": "dominique_malonga",
+                "playerName": "Dominique Malonga"
+              },
+              "college": null,
+              "overseas": {
+                "country": "France",
+                "leagueCode": "la_boulangere_wonderligue",
+                "leagueName": "La Boulangere Wonderligue",
+                "teamCode": null,
+                "teamName": "",
+                "existsInOverseasData": false
+              },
+              "team": {
+                "teamCode": "SEA_STORM",
+                "teamName": "Seattle Storm"
+              },
+              "previousTeam": null,
+              "notes": "Malonga played for ASVEL Féminin before being drafted into the WNBA",
+              "links": [],
+              "entryIds": []
+            }
+          }
+        },
+        "2": {
+          "roundNumber": 2,
+          "picks": {}
+        },
+        "3": {
+          "roundNumber": 3,
+          "picks": {}
+        }
+      },
+      "notes": "",
+      "links": [],
+      "entryIds": [],
+      "draftDate": null
+    },
+    "2025_expansion": {
+      "draftId": "2025_expansion",
+      "season": 2025,
+      "seasonId": "2025",
+      "draftType": "expansion",
+      "draftName": "2025 WNBA Expansion Draft",
+      "roundsCount": 1,
+      "specialTeams": {
+        "expansionTeams": [
+          {
+            "teamCode": "GSV_VALKYRIES",
+            "teamName": "Golden State Valkyries"
+          }
+        ],
+        "dispersalTeams": []
+      },
+      "rounds": {
+        "1": {
+          "roundNumber": 1,
+          "picks": {
+            "2025_expansion_r1_p1": {
+              "pickId": "2025_expansion_r1_p1",
+              "overallPick": 1,
+              "round": 1,
+              "roundPick": 1,
+              "player": {
+                "playerId": "iliana_rupert",
+                "playerName": "Iliana Rupert"
+              },
+              "college": null,
+              "overseas": null,
+              "team": {
+                "teamCode": "GSV_VALKYRIES",
+                "teamName": "Golden State Valkyries"
+              },
+              "previousTeam": {
+                "teamCode": "ATL_DREAM",
+                "teamName": "Atlanta Dream"
+              },
+              "notes": "",
+              "links": [],
+              "entryIds": []
+            },
+            "2025_expansion_r1_p2": {
+              "pickId": "2025_expansion_r1_p2",
+              "overallPick": 2,
+              "round": 1,
+              "roundPick": 2,
+              "player": {
+                "playerId": "maria_conde",
+                "playerName": "Maria Conde"
+              },
+              "college": {
+                "collegeId": "u_of_florida",
+                "collegeName": "University of Florida",
+                "existsInCollegeFile": true
+              },
+              "overseas": null,
+              "team": {
+                "teamCode": "GSV_VALKYRIES",
+                "teamName": "Golden State Valkyries"
+              },
+              "previousTeam": {
+                "teamCode": "CHI_SKY",
+                "teamName": "Chicago Sky"
+              },
+              "notes": "",
+              "links": [],
+              "entryIds": []
+            },
+            "2025_expansion_r1_p3": {
+              "pickId": "2025_expansion_r1_p3",
+              "overallPick": 3,
+              "round": 1,
+              "roundPick": 3,
+              "player": {
+                "playerId": "veronica_burton",
+                "playerName": "Veronica Burton"
+              },
+              "college": {
+                "collegeId": "northwestern_u",
+                "collegeName": "Northwestern University",
+                "existsInCollegeFile": true
+              },
+              "overseas": null,
+              "team": {
+                "teamCode": "GSV_VALKYRIES",
+                "teamName": "Golden State Valkyries"
+              },
+              "previousTeam": {
+                "teamCode": "CON_SUN",
+                "teamName": "Connecticut Sun"
+              },
+              "notes": "",
+              "links": [],
+              "entryIds": []
+            }
+          }
+        }
+      },
+      "notes": "",
+      "links": [],
+      "entryIds": [],
+      "draftDate": null
+    },
+    "2010_dispersal": {
+      "draftId": "2010_dispersal",
+      "season": 2010,
+      "seasonId": "2010",
+      "draftType": "dispersal",
+      "draftName": "2010 WNBA Dispersal Draft",
+      "draftDate": "2009-12-14",
+      "roundsCount": 1,
+      "specialTeams": {
+        "expansionTeams": [],
+        "dispersalTeams": [
+          {
+            "teamCode": "SAC_MONARCHS",
+            "teamName": "Sacramento Monarchs"
+          }
+        ]
+      },
+      "rounds": {
+        "1": {
+          "roundNumber": 1,
+          "picks": {
+            "2010_dispersal_r1_p1": {
+              "pickId": "2010_dispersal_r1_p1",
+              "overallPick": 1,
+              "round": 1,
+              "roundPick": 1,
+              "player": {
+                "playerId": "nicole_powell",
+                "playerName": "Nicole Powell"
+              },
+              "college": {
+                "collegeId": "stanford_u",
+                "collegeName": "Stanford University",
+                "existsInCollegeFile": true
+              },
+              "overseas": null,
+              "team": {
+                "teamCode": "NYL_LIBERTY",
+                "teamName": "New York Liberty"
+              },
+              "previousTeam": {
+                "teamCode": "SAC_MONARCHS",
+                "teamName": "Sacramento Monarchs"
+              },
+              "notes": "",
+              "links": [],
+              "entryIds": []
+            },
+            "2010_dispersal_r1_p2": {
+              "pickId": "2010_dispersal_r1_p2",
+              "overallPick": 2,
+              "round": 1,
+              "roundPick": 2,
+              "player": {
+                "playerId": "rebekkah_brunson",
+                "playerName": "Rebekkah Brunson"
+              },
+              "college": {
+                "collegeId": "georgetown",
+                "collegeName": "Georgetown",
+                "existsInCollegeFile": false
+              },
+              "overseas": null,
+              "team": {
+                "teamCode": "MIN_LYNX",
+                "teamName": "Minnesota Lynx"
+              },
+              "previousTeam": {
+                "teamCode": "SAC_MONARCHS",
+                "teamName": "Sacramento Monarchs"
+              },
+              "notes": "",
+              "links": [],
+              "entryIds": []
+            }
+          }
+        }
+      },
+      "notes": "",
+      "links": [],
+      "entryIds": []
+    }
+  }
+}

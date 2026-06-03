@@ -61,53 +61,35 @@ function injectAward(prefix,index,awardId){
    AWARD RENDERING
 ================================ */
 
-function populateAwardSection(list,prefix,maxSlots){
+function populateAwardSection(list, prefix, maxSlots) {
+  for (let i = 1; i <= maxSlots; i++) {
+    const award = list[i - 1];
 
-  for(let i=1;i<=maxSlots;i++){
+    const titleEl = document.getElementById(`${prefix}-${i}-title`);
+    const winnerEl = document.getElementById(`${prefix}-${i}-winner`);
+    const teamEl = document.getElementById(`${prefix}-${i}-team`);
+    const container = document.getElementById(`${prefix}-${i}-container`);
 
-    const award = list[i-1];
+    if (!titleEl || !winnerEl || !teamEl) continue;
 
-    const titleEl =
-      document.getElementById(`${prefix}-${i}-title`);
-
-    const winnerEl =
-      document.getElementById(`${prefix}-${i}-winner`);
-
-    const teamEl =
-      document.getElementById(`${prefix}-${i}-team`);
-
-    const container =
-      document.getElementById(`${prefix}-${i}-container`);
-
-    if(!titleEl || !winnerEl || !teamEl) continue;
-
-    /* ---- NO AWARD THIS YEAR ---- */
-
-    if(!award){
-
-      if(container) container.style.opacity = 0.25;
+    if (!award) {
+      if (container) container.style.display = "none";
 
       titleEl.textContent = "";
       winnerEl.textContent = "";
       teamEl.textContent = "";
 
       continue;
-
     }
 
     const team = TEAMS[award.teamCode];
 
     titleEl.textContent = award.award;
     winnerEl.textContent = award.winner;
+    teamEl.textContent = team ? team.teamName : "";
 
-    if(team){
-      teamEl.textContent = team.teamName;
-    }
-
-    if(container) container.style.opacity = 1;
-
+    if (container) container.style.display = "grid";
   }
-
 }
 
 
@@ -366,7 +348,6 @@ teams.forEach(teamCode => {
     const team = TEAMS[eastLeader.teamCode];
 
     document.getElementById("east-conference-most-game-wins")
-      .querySelector("tspan")
       .textContent = `${team.teamName}`;
 
     document.getElementById("east-conference-most-game-wins-win-num")
@@ -384,7 +365,6 @@ teams.forEach(teamCode => {
     const team = TEAMS[westLeader.teamCode];
 
     document.getElementById("west-conference-most-game-wins")
-      .querySelector("tspan")
       .textContent = `${team.teamName}`;
 
     document.getElementById("west-conference-most-game-wins-win-num")

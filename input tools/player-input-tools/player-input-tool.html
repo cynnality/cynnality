@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>Player Input Tool</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Chivo+Mono:ital,wght@0,100..900;1,100..900&family=DM+Mono:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap"
+    rel="stylesheet">
+
+  <link rel="stylesheet" href="player-input-tool.css">
+</head>
+
+<body>
+  <main class="player-tool-page">
+
+    <header class="tool-header">
+    <div>
+        <p class="eyebrow">WNBA data editor</p>
+        <h1>Player Input Tool</h1>
+    </div>
+
+    <button id="saveJsonBtn" type="button" class="primary-action">
+        Save Player
+    </button>
+    </header>
+
+    <section class="player-editing-header">
+    <div>
+        <p class="editing-label">Currently editing</p>
+        <h2 id="summaryName">No player selected</h2>
+        <p class="summary-id">ID: <span id="summaryId">—</span></p>
+    </div>
+
+    <div id="playerSummary" class="summary-grid">
+        <div><strong>Status:</strong> <span id="summaryStatus">—</span></div>
+        <div><strong>Draft:</strong> <span id="summaryDraft">—</span></div>
+        <div><strong>College:</strong> <span id="summaryCollege">—</span></div>
+        <div><strong>Draft Team:</strong> <span id="summaryWnba">—</span></div>
+    </div>
+    </section>
+
+    <section class="editor-grid">
+    <section class="editor-main">
+
+        <section class="panel open">
+          <button class="panel-header" type="button">
+            <span>Load / Create Player</span>
+            <span class="panel-toggle">−</span>
+          </button>
+
+          <div class="panel-body">
+            <div class="two-col">
+              <div class="field-card">
+                <h2>Load Existing</h2>
+                <label for="playerSelect">Player menu</label>
+                <select id="playerSelect"></select>
+              </div>
+
+              <div class="field-card">
+                <h2>Create New</h2>
+                <label for="playerName">Player name</label>
+                <input id="playerName" placeholder="A'ja Wilson">
+
+                <label for="playerId">Player ID</label>
+                <div class="inline-row">
+                  <input id="playerId" placeholder="aja_wilson" readonly>
+                  <button id="editPlayerIdBtn" type="button">Edit ID</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="panel">
+          <button class="panel-header" type="button">
+            <span>Images</span>
+            <span class="panel-toggle">+</span>
+          </button>
+
+          <div class="panel-body">
+            <label for="imageFileName">Image file name</label>
+            <input id="imageFileName" placeholder="chelsea-gray-individual">
+
+            <div class="radio-row">
+              <label><input type="radio" name="imageFileType" value=".jpg"> .jpg</label>
+              <label><input type="radio" name="imageFileType" value=".png"> .png</label>
+              <label><input type="radio" name="imageFileType" value=".avif"> .avif</label>
+              <label><input type="radio" name="imageFileType" value=".webp"> .webp</label>
+            </div>
+
+            <label for="imageAlt">Alt text</label>
+            <input id="imageAlt" placeholder="Chelsea Gray">
+
+            <label for="imageSourceLink">Source link</label>
+            <input id="imageSourceLink" placeholder="optional">
+
+            <button id="addImageBtn" type="button">Add Image</button>
+            <ul id="imagesList" class="entry-list"></ul>
+          </div>
+        </section>
+
+        <section class="panel">
+          <button class="panel-header" type="button">
+            <span>College</span>
+            <span class="panel-toggle">+</span>
+          </button>
+
+          <div class="panel-body">
+            <label for="collegeSelect">College menu</label>
+            <select id="collegeSelect"></select>
+
+            <label for="collegeId">College ID / manual entry</label>
+            <input id="collegeId" placeholder="u_of_south_carolina">
+
+            <div class="inline-row">
+              <div>
+                <label for="collegeStartYear">Start year</label>
+                <input id="collegeStartYear" placeholder="2014">
+              </div>
+              <div>
+                <label for="collegeEndYear">End year</label>
+                <input id="collegeEndYear" placeholder="2018">
+              </div>
+            </div>
+
+            <div class="yes-no-row">
+              <p>NCAA championships?</p>
+              <label><input type="radio" name="hasNcaaChampionships" value="true"> Yes</label>
+              <label><input type="radio" name="hasNcaaChampionships" value="false"> No</label>
+            </div>
+
+            <div id="ncaaChampionshipsWrapper" class="conditional-field">
+              <label for="ncaaChampionshipYear">Championship year</label>
+              <input id="ncaaChampionshipYear" placeholder="2017">
+              <button id="addNcaaChampionshipBtn" type="button">Add NCAA Championship</button>
+              <ul id="ncaaChampionshipsList" class="entry-list"></ul>
+            </div>
+          </div>
+        </section>
+
+        <section class="panel">
+          <button class="panel-header" type="button">
+            <span>Draft Details</span>
+            <span class="panel-toggle">+</span>
+          </button>
+
+          <div class="panel-body">
+            <div class="inline-row">
+              <div>
+                <label for="draftYear">Draft year</label>
+                <input id="draftYear" placeholder="2018">
+              </div>
+              <div>
+                <label for="draftPick">Pick</label>
+                <input id="draftPick" placeholder="1">
+              </div>
+            </div>
+
+            <label for="draftedBySelect">Drafted by</label>
+            <select id="draftedBySelect" class="wnba-team-select"></select>
+
+            <label for="draftedBy">Manual team code</label>
+            <input id="draftedBy" placeholder="LVA_ACES">
+
+            <div class="yes-no-row">
+              <p>Draft-day trade?</p>
+              <label><input type="radio" name="wasDraftDayTrade" value="true"> Yes</label>
+              <label><input type="radio" name="wasDraftDayTrade" value="false"> No</label>
+            </div>
+
+            <div id="draftDayTradeWrapper" class="conditional-field">
+              <label for="acquiredBySelect">Acquired by</label>
+              <select id="acquiredBySelect" class="wnba-team-select"></select>
+
+              <label for="acquiredBy">Manual acquiredBy</label>
+              <input id="acquiredBy">
+
+              <label for="transactionNote">Transaction note</label>
+              <input id="transactionNote">
+            </div>
+          </div>
+        </section>
+
+        <!-- KEEPING TIMELINE IDS THE SAME ON PURPOSE -->
+        <section class="panel open">
+          <button class="panel-header" type="button">
+            <span>WNBA Career Timeline</span>
+            <span class="panel-toggle">−</span>
+          </button>
+
+          <div class="panel-body">
+            <div class="yes-no-row">
+              <p>Active as of the WNBA 2026 season?</p>
+              <label><input type="radio" name="playerActive2026" value="true" id="playerActiveYes"> Yes</label>
+              <label><input type="radio" name="playerActive2026" value="false" id="playerActiveNo"> No</label>
+            </div>
+
+            <div id="retiredYearWrapper" class="conditional-field">
+              <label for="retiredYear">Last WNBA season</label>
+              <input id="retiredYear" placeholder="2024">
+            </div>
+
+            <div id="wnbaTimeline" class="wnba-timeline"></div>
+
+            <div id="seasonEditor" class="season-editor">
+              <h3>Edit Season</h3>
+              <p id="selectedSeasonLabel">Select a year on the timeline to add info</p>
+
+              <div class="season-editor-actions">
+                <button id="prevSeasonBtn" type="button">← Previous</button>
+                <button id="copyPreviousSeasonBtn" type="button">Copy Previous Season</button>
+                <button id="saveSeasonBtn" type="button">Save Season</button>
+                <button id="nextSeasonBtn" type="button">Next →</button>
+              </div>
+
+              <div class="season-entry-actions">
+                <button id="addSeasonTeamEntryBtn" type="button">Add Team</button>
+                <button id="addSeasonSitOutEntryBtn" type="button">Add Sit Out</button>
+              </div>
+
+              <div id="seasonEntriesList"></div>
+            </div>
+          </div>
+        </section>
+
+        <section class="panel">
+          <button class="panel-header" type="button">
+            <span>WNBA Championships</span>
+            <span class="panel-toggle">+</span>
+          </button>
+
+          <div class="panel-body">
+            <div class="yes-no-row">
+              <p>WNBA championships?</p>
+              <label>
+                <input type="radio" name="hasWnbaChampionships" value="true">
+                Yes
+              </label>
+              <label>
+                <input type="radio" name="hasWnbaChampionships" value="false">
+                No
+              </label>
+            </div>
+
+            <div id="wnbaChampionshipsWrapper" class="conditional-field">
+              <label for="championshipYear">Championship year</label>
+              <input id="championshipYear" placeholder="2022">
+
+              <label for="championshipTeamSelect">Championship team menu</label>
+              <select id="championshipTeamSelect" class="wnba-team-select"></select>
+
+              <label for="championshipTeamCode">Manual team code</label>
+              <input id="championshipTeamCode" placeholder="LVA_ACES">
+
+              <label class="checkbox-row">
+                <input type="checkbox" id="finalsMvp">
+                Finals MVP
+              </label>
+
+              <button id="addChampionshipBtn" type="button">
+                Add Championship
+              </button>
+
+              <ul id="championshipsList" class="entry-list"></ul>
+            </div>
+          </div>
+        </section>
+
+        <section class="panel">
+            <button class="panel-header" type="button">
+                <span>Overseas Teams</span>
+                <span class="panel-toggle">+</span>
+            </button>
+
+            <div class="panel-body">
+                <div class="yes-no-row">
+                <p>Overseas pro experience?</p>
+                <label><input type="radio" name="hasOverseasExperience" value="true"> Yes</label>
+                <label><input type="radio" name="hasOverseasExperience" value="false"> No</label>
+                </div>
+
+                <div id="overseasExperienceWrapper" class="conditional-field">
+                <label for="overseasTeamSelect">Overseas team menu</label>
+                <select id="overseasTeamSelect"></select>
+
+                <label for="overseasTeam">Manual team code</label>
+                <input id="overseasTeam">
+
+                <label for="overseasSeason">Season</label>
+                <input id="overseasSeason" placeholder="2023-24">
+
+                <label for="overseasNote">Note</label>
+                <input id="overseasNote">
+
+                <button id="copyPreviousOverseasBtn" type="button">Copy Previous Overseas</button>
+                <button id="addOverseasBtn" type="button">Add Overseas Team</button>
+                <button id="saveOverseasEditBtn" type="button" style="display:none;">Save Team Edit</button>
+                <button id="cancelOverseasEditBtn" type="button" style="display:none;">Cancel Edit</button>
+
+                <ul id="overseasList" class="entry-list"></ul>
+                </div>
+            </div>
+        </section>
+
+        <section class="panel">
+        <button class="panel-header" type="button">
+            <span>Unrivaled</span>
+            <span class="panel-toggle">+</span>
+        </button>
+
+        <div class="panel-body">
+            <div class="yes-no-row">
+            <p>Unrivaled experience?</p>
+            <label><input type="radio" name="hasUnrivaledExperience" value="true"> Yes</label>
+            <label><input type="radio" name="hasUnrivaledExperience" value="false"> No</label>
+            </div>
+
+            <div id="unrivaledExperienceWrapper" class="conditional-field">
+            <label for="unrivaledTeamSelect">Unrivaled team menu</label>
+            <select id="unrivaledTeamSelect"></select>
+
+            <label for="unrivaledTeam">Manual team code</label>
+            <input id="unrivaledTeam">
+
+            <label for="unrivaledYear">Year</label>
+            <input id="unrivaledYear" placeholder="2025">
+
+            <button id="addUnrivaledBtn" type="button">Add Unrivaled Team</button>
+            <button id="saveUnrivaledEditBtn" type="button" style="display:none;">Save Team Edit</button>
+            <button id="cancelUnrivaledEditBtn" type="button" style="display:none;">Cancel Edit</button>
+
+            <ul id="unrivaledList" class="entry-list"></ul>
+            </div>
+        </div>
+        </section>
+
+        <section class="panel">
+        <button class="panel-header" type="button">
+            <span>National Team / Olympics / FIBA</span>
+            <span class="panel-toggle">+</span>
+        </button>
+
+        <div class="panel-body">
+            <div class="yes-no-row">
+            <p>National team experience?</p>
+            <label><input type="radio" name="hasNationalTeamExperience" value="true"> Yes</label>
+            <label><input type="radio" name="hasNationalTeamExperience" value="false"> No</label>
+            </div>
+
+            <div id="nationalTeamWrapper" class="conditional-field">
+            <div class="yes-no-row">
+                <p>Olympic experience?</p>
+                <label><input type="radio" name="hasOlympicExperience" value="true"> Yes</label>
+                <label><input type="radio" name="hasOlympicExperience" value="false"> No</label>
+            </div>
+
+            <div id="teamUsaJerseyWrapper" class="conditional-field">
+                <label for="teamUsaJersey">Team USA jersey #</label>
+                <input id="teamUsaJersey">
+            </div>
+
+            <div class="field-card">
+                <h2>Olympics</h2>
+
+                <label for="olympicFormat">Format</label>
+                <select id="olympicFormat">
+                <option value="">format menu</option>
+                <option value="5x5">5x5</option>
+                <option value="3x3">3x3</option>
+                </select>
+
+                <label for="olympicMedalYear">Year</label>
+                <input id="olympicMedalYear">
+
+                <label for="olympicMedalType">Medal</label>
+                <select id="olympicMedalType">
+                <option value="">medals menu</option>
+                <option value="Gold">Gold</option>
+                <option value="Silver">Silver</option>
+                <option value="Bronze">Bronze</option>
+                <option value="No medal">No medal</option>
+                </select>
+
+                <button id="addOlympicMedalBtn" type="button">Add Olympic Entry</button>
+                <button id="saveOlympicEditBtn" type="button" style="display:none;">Save Olympic Edit</button>
+                <button id="cancelOlympicEditBtn" type="button" style="display:none;">Cancel Edit</button>
+
+                <ul id="olympicMedalList" class="entry-list"></ul>
+            </div>
+
+            <div class="field-card">
+                <h2>FIBA</h2>
+
+                <label for="fibaFormat">Format</label>
+                <select id="fibaFormat">
+                <option value="">format menu</option>
+                <option value="5x5">5x5</option>
+                <option value="3x3">3x3</option>
+                </select>
+
+                <label for="fibaMedalYear">Year</label>
+                <input id="fibaMedalYear">
+
+                <label for="fibaCompetition">Competition</label>
+                <input id="fibaCompetition" placeholder="World Cup">
+
+                <label for="fibaMedalType">Medal</label>
+                <select id="fibaMedalType">
+                <option value="">medals menu</option>
+                <option value="Gold">Gold</option>
+                <option value="Silver">Silver</option>
+                <option value="Bronze">Bronze</option>
+                <option value="No medal">No medal</option>
+                </select>
+
+                <button id="addFibaMedalBtn" type="button">Add FIBA Entry</button>
+                <button id="saveFibaEditBtn" type="button" style="display:none;">Save FIBA Edit</button>
+                <button id="cancelFibaEditBtn" type="button" style="display:none;">Cancel Edit</button>
+
+                <ul id="fibaMedalList" class="entry-list"></ul>
+            </div>
+            </div>
+        </div>
+        </section>
+
+        <section class="panel">
+          <button class="panel-header" type="button">
+            <span>Connected Data / Future Entries</span>
+            <span class="panel-toggle">+</span>
+          </button>
+
+          <div class="panel-body">
+            <p class="muted-note">
+              Placeholder for future draft entries, awards, team-season records, media, markdown notes, and reusable entryIds.
+            </p>
+          </div>
+        </section>
+
+        <section class="panel debug-panel">
+          <button class="panel-header" type="button">
+            <span>Debug / JSON Preview</span>
+            <span class="panel-toggle">+</span>
+          </button>
+
+          <div class="panel-body">
+            <button id="copyJsonBtn" type="button">Copy JSON</button>
+            <pre id="jsonPreview"></pre>
+          </div>
+        </section>
+
+      </section>
+    </section>
+  </main>
+
+  <script src="player-input-tool.js" defer></script>
+</body>
+</html>

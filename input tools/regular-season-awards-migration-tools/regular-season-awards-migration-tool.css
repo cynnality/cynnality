@@ -1,0 +1,91 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #f4f4f4;
+    color: #111;
+}
+
+.tool-shell {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 32px;
+}
+
+.tool-header {
+    margin-bottom: 24px;
+}
+
+.eyebrow {
+    text-transform: uppercase;
+    font-size: 12px;
+    letter-spacing: 0.12em;
+    color: #666;
+}
+
+h1 {
+    margin: 0 0 8px;
+}
+
+.panel {
+    background: white;
+    border: 1px solid #ddd;
+    border-radius: 14px;
+    padding: 24px;
+    margin-bottom: 20px;
+}
+
+label {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+select {
+    max-width: 220px;
+    padding: 10px;
+    border: 1px solid #bbb;
+    border-radius: 8px;
+    font: inherit;
+}
+
+.awards-list {
+    display: grid;
+    gap: 12px;
+}
+
+.award-card {
+    border: 2px solid #111;
+    border-radius: 14px;
+    padding: 16px;
+    background: #fafafa;
+}
+
+.award-card h3 {
+    margin: 0 0 8px;
+}
+
+.award-meta {
+    display: grid;
+    gap: 4px;
+    font-size: 14px;
+}
+
+.award-actions {
+    margin-top: 14px;
+}
+
+button {
+    padding: 10px 14px;
+    border: 0;
+    border-radius: 999px;
+    background: #111;
+    color: white;
+    font-weight: 700;
+    cursor: pointer;
+}

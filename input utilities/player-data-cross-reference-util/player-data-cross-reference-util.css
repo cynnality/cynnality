@@ -1,0 +1,122 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: "Chivo Mono", monospace;
+    background: #f4f4f4;
+    color: #111;
+}
+
+.tool-shell {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 32px;
+}
+
+.tool-header {
+    margin-bottom: 24px;
+}
+
+.eyebrow {
+    text-transform: uppercase;
+    font-size: 12px;
+    letter-spacing: 0.12em;
+    color: #666;
+}
+
+h1 {
+    margin: 0 0 8px;
+}
+
+.panel {
+    background: white;
+    border: 1px solid #ddd;
+    border-radius: 14px;
+    padding: 24px;
+    margin-bottom: 20px;
+}
+
+button {
+    padding: 12px 18px;
+    border: 0;
+    border-radius: 999px;
+    background: #111;
+    color: white;
+    font-weight: 800;
+    cursor: pointer;
+}
+
+.summary-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 14px;
+    margin-top: 18px;
+}
+
+.summary-grid > div {
+    border: 2px solid #111;
+    border-radius: 14px;
+    padding: 16px;
+    background: #fafafa;
+}
+
+.summary-number {
+    display: block;
+    font-size: 32px;
+    font-weight: 900;
+}
+
+.summary-label {
+    font-size: 13px;
+    font-weight: 800;
+    color: #555;
+}
+
+.status-message {
+    margin-top: 14px;
+    font-weight: 700;
+}
+
+.issue-list {
+    display: grid;
+    gap: 12px;
+}
+
+.issue-card {
+    border: 2px solid #111;
+    border-radius: 14px;
+    padding: 16px;
+    background: #fafafa;
+}
+
+.issue-title {
+    font-size: 18px;
+    font-weight: 900;
+    margin-bottom: 8px;
+}
+
+.issue-meta {
+    display: grid;
+    gap: 4px;
+    font-size: 14px;
+}
+
+.issue-actions {
+    margin-top: 14px;
+    display: flex;
+    gap: 8px;
+    flex-wrap: wrap;
+}
+
+.secondary-btn {
+    background: white;
+    color: #111;
+    border: 2px solid #111;
+}
+
+.empty-message {
+    color: #666;
+    font-weight: 700;
+}

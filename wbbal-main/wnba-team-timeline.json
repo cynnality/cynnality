@@ -346,8 +346,8 @@
         "isFirstSeasonAfterRelocation": false
       },
       {
-        "teamCode": "POR_FIRE",
-        "franchiseId": null,
+        "teamCode": "POR_FIRE_2000",
+        "franchiseId": "FIRE_OLD_FRANCHISE",
         "isExpansion": true,
         "isFinalSeason": false,
         "isRelocatingNextYear": false,
@@ -479,8 +479,8 @@
         "isFirstSeasonAfterRelocation": false
       },
       {
-        "teamCode": "POR_FIRE",
-        "franchiseId": null,
+        "teamCode": "POR_FIRE_2000",
+        "franchiseId": "FIRE_OLD_FRANCHISE",
         "isExpansion": false,
         "isFinalSeason": false,
         "isRelocatingNextYear": false,
@@ -612,8 +612,8 @@
         "isFirstSeasonAfterRelocation": false
       },
       {
-        "teamCode": "POR_FIRE",
-        "franchiseId": null,
+        "teamCode": "POR_FIRE_2000",
+        "franchiseId": "FIRE_OLD_FRANCHISE",
         "isExpansion": false,
         "isFinalSeason": true,
         "isRelocatingNextYear": false,
@@ -3070,6 +3070,133 @@
         "isRelocatingNextYear": false,
         "isFirstSeasonAfterRelocation": false
       }
+    ]
+  },
+  "2026": {
+    "teamCount": 15,
+    "teams": [
+      {
+        "teamCode": "LVA_ACES",
+        "franchiseId": "ACES_FRANCHISE",
+        "isExpansion": false,
+        "isFinalSeason": false,
+        "isRelocatingNextYear": false,
+        "isFirstSeasonAfterRelocation": false
+      },
+      {
+        "teamCode": "ATL_DREAM",
+        "franchiseId": null,
+        "isExpansion": false,
+        "isFinalSeason": false,
+        "isRelocatingNextYear": false,
+        "isFirstSeasonAfterRelocation": false
+      },
+      {
+        "teamCode": "IND_FEVER",
+        "franchiseId": null,
+        "isExpansion": false,
+        "isFinalSeason": false,
+        "isRelocatingNextYear": false,
+        "isFirstSeasonAfterRelocation": false
+      },
+      {
+        "teamCode": "NYL_LIBERTY",
+        "franchiseId": null,
+        "isExpansion": false,
+        "isFinalSeason": false,
+        "isRelocatingNextYear": false,
+        "isFirstSeasonAfterRelocation": false
+      },
+      {
+        "teamCode": "MIN_LYNX",
+        "franchiseId": null,
+        "isExpansion": false,
+        "isFinalSeason": false,
+        "isRelocatingNextYear": false,
+        "isFirstSeasonAfterRelocation": false
+      },
+      {
+        "teamCode": "PHX_MERCURY",
+        "franchiseId": null,
+        "isExpansion": false,
+        "isFinalSeason": false,
+        "isRelocatingNextYear": false,
+        "isFirstSeasonAfterRelocation": false
+      },
+      {
+        "teamCode": "WAS_MYSTICS",
+        "franchiseId": null,
+        "isExpansion": false,
+        "isFinalSeason": false,
+        "isRelocatingNextYear": false,
+        "isFirstSeasonAfterRelocation": false
+      },
+      {
+        "teamCode": "CHI_SKY",
+        "franchiseId": null,
+        "isExpansion": false,
+        "isFinalSeason": false,
+        "isRelocatingNextYear": false,
+        "isFirstSeasonAfterRelocation": false
+      },
+      {
+        "teamCode": "LOS_SPARKS",
+        "franchiseId": null,
+        "isExpansion": false,
+        "isFinalSeason": false,
+        "isRelocatingNextYear": false,
+        "isFirstSeasonAfterRelocation": false
+      },
+      {
+        "teamCode": "SEA_STORM",
+        "franchiseId": null,
+        "isExpansion": false,
+        "isFinalSeason": false,
+        "isRelocatingNextYear": false,
+        "isFirstSeasonAfterRelocation": false
+      },
+      {
+        "teamCode": "CON_SUN",
+        "franchiseId": "SUN_FRANCHISE",
+        "isExpansion": false,
+        "isFinalSeason": false,
+        "isRelocatingNextYear": false,
+        "isFirstSeasonAfterRelocation": false
+      },
+      {
+        "teamCode": "GSV_VALKYRIES",
+        "franchiseId": null,
+        "isExpansion": false,
+        "isFinalSeason": false,
+        "isRelocatingNextYear": false,
+        "isFirstSeasonAfterRelocation": false
+      },
+      {
+        "teamCode": "DAL_WINGS",
+        "franchiseId": "WINGS_FRANCHISE",
+        "isExpansion": false,
+        "isFinalSeason": false,
+        "isRelocatingNextYear": false,
+        "isFirstSeasonAfterRelocation": false
+      },
+      {
+        "teamCode": "POR_FIRE",
+        "franchiseId": "FIRE_FRANCHISE",
+        "isExpansion": true,
+        "isFinalSeason": false,
+        "isRelocatingNextYear": false,
+        "isFirstSeasonAfterRelocation": false,
+        "isBrandRevival": true,
+        "revivesTeamCode": "POR_FIRE_2000"
+      },
+      {
+        "teamCode": "TOR_TEMPO",
+        "franchiseId": null,
+        "isExpansion": true,
+        "isFinalSeason": false,
+        "isRelocatingNextYear": false,
+        "isFirstSeasonAfterRelocation": false
+      } 
     ]
   }
 }

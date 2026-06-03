@@ -1,0 +1,316 @@
+ * {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #f4f4f4;
+    color: #111;
+}
+
+.tool-shell {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 32px;
+}
+
+.tool-header {
+    margin-bottom: 24px;
+}
+
+.eyebrow {
+    text-transform: uppercase;
+    font-size: 12px;
+    letter-spacing: 0.12em;
+    color: #666;
+}
+
+h1 {
+    margin: 0 0 8px;
+}
+
+.panel {
+    background: white;
+    border: 1px solid #ddd;
+    border-radius: 14px;
+    padding: 24px;
+}
+
+.form-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 16px;
+    margin: 16px 0;
+}
+
+label {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+input,
+select,
+textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #bbb;
+    border-radius: 8px;
+    font: inherit;
+}
+
+textarea {
+    resize: vertical;
+} 
+
+button {
+    margin-top: 18px;
+    padding: 12px 18px;
+    border: 0;
+    border-radius: 999px;
+    background: #111;
+    color: white;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.status-message {
+    margin-top: 14px;
+    font-size: 14px;
+}
+
+.matchup-columns {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 20px;
+    margin: 18px 0;
+}
+
+.team-button-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(72px, 1fr));
+    gap: 6px;
+}
+
+.team-pick-btn {
+    border: 1px solid #111;
+    border-radius: 8px;
+    padding: 6px 7px;
+    min-height: 34px;
+    color: white;
+    font-size: 11px;
+    font-weight: 800;
+    cursor: pointer;
+    text-align: center;
+}
+
+.team-pick-btn.selected {
+    outline: 3px solid #111;
+    outline-offset: 1px;
+}
+
+.gameday-builder-panel {
+    border: 2px solid #111;
+    background: #fffdf2;
+}
+
+.section-toggle {
+    width: 100%;
+    margin: 0;
+    border-radius: 12px;
+    background: #111;
+    color: white;
+    text-align: left;
+}
+
+.gameday-builder-content {
+    margin-top: 20px;
+}
+
+.matchup-rows-container {
+    display: grid;
+    gap: 18px;
+    margin-top: 18px;
+}
+
+.matchup-row {
+    border: 2px solid #111;
+    border-radius: 14px;
+    padding: 16px;
+    background: white;
+}
+
+.matchup-row-header {
+    display: flex;
+    justify-content: space-between;
+    gap: 12px;
+    margin-bottom: 12px;
+}
+
+.matchup-row-title {
+    font-weight: 900;
+}
+
+.matchup-row-preview {
+    font-size: 13px;
+    color: #555;
+}
+
+.small-team-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(64px, 1fr));
+    gap: 6px;
+    margin-bottom: 12px;
+}
+
+.small-team-btn {
+    border: 1px solid #111;
+    border-radius: 8px;
+    min-height: 30px;
+    padding: 5px;
+    font-size: 10px;
+    font-weight: 800;
+    color: white;
+    cursor: pointer;
+}
+
+.small-team-btn.selected {
+    outline: 3px solid #111;
+    outline-offset: 1px;
+}
+
+.schedule-date-group {
+    padding: 14px;
+    border: 1px solid #ddd;
+    border-radius: 14px;
+    background: #fafafa;
+}
+
+.schedule-date-group h4 {
+    margin: 0 0 10px;
+}
+
+.schedule-games-list {
+    display: grid;
+    gap: 8px;
+}
+
+.schedule-game-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 8px 10px;
+    border-radius: 10px;
+    background: white;
+    border: 1px solid #e2e2e2;
+}
+
+.team-chip {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    font-weight: 800;
+}
+
+.team-color-box {
+    width: 12px;
+    height: 12px;
+    border-radius: 3px;
+    border: 1px solid #111;
+}
+
+.at-symbol {
+    color: #666;
+    font-size: 12px;
+    font-weight: 700;
+}
+
+.matchup-selected-display {
+    display: flex;
+    align-items: stretch;
+    gap: 10px;
+    margin: 12px 0 14px;
+}
+
+.selected-team-box {
+    flex: 1;
+    border: 2px solid #111;
+    border-radius: 12px;
+    padding: 12px;
+    background: #f5f5f5;
+}
+
+.selected-label {
+    display: block;
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: #666;
+    margin-bottom: 4px;
+}
+
+.selected-team-box strong {
+    font-size: 22px;
+}
+
+.matchup-at {
+    display: grid;
+    place-items: center;
+    font-size: 12px;
+    font-weight: 900;
+    text-transform: uppercase;
+    color: #666;
+}
+
+.team-picker-wide {
+    margin-top: 10px;
+}
+
+.team-picker-help {
+    font-size: 14px;
+    font-weight: 900;
+    margin-bottom: 10px;
+}
+
+.conference-team-group {
+    margin-bottom: 10px;
+}
+
+.conference-team-group h5 {
+    margin: 0 0 6px;
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+}
+
+.team-picker-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+}
+
+.team-select-pill {
+    border: 1px solid #111;
+    border-radius: 999px;
+    padding: 7px 10px;
+    font-size: 11px;
+    font-weight: 900;
+    cursor: pointer;
+}
+
+.team-select-pill.selected-away {
+    outline: 3px solid #111;
+    outline-offset: 1px;
+}
+
+.team-select-pill.selected-home {
+    outline: 3px dashed #111;
+    outline-offset: 1px;
+}
+
+.hidden {
+    display: none;
+}

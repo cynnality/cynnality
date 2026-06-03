@@ -1,0 +1,31 @@
+{
+  "entries": {
+    "what_is_6th_player_of_the_year": {
+      "entryId": "what_is_6th_player_of_the_year",
+      "title": "What is 6th player of the year?",
+      "description": "giving the definition of the regular season WNBA award: Sixth Player of the Year",
+      "collection": "wnba",
+      "category": "award-definition",
+      "entryType": "definition",
+      "contentType": "markdown",
+      "contentFile": "entries/entry data/wnba/text/award-definitions/what_is_6th_player_of_the_year.md",
+      "tags": [
+        "wnba regular season award",
+        "award definition",
+        "sixth player of the year"
+      ],
+      "wires": [
+        "regular-season-awards-viewer"
+      ],
+      "attachedTo": [
+        {
+          "type": "award",
+          "id": "sixth_player"
+        }
+      ],
+      "references": [],
+      "links": [],
+      "assets": []
+    }
+  }
+}

@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>College Data Cross Reference Utility</title>
+
+            <!-- ======================== MONO FONTS ========================
+                CHIVO MONO 
+                ---- (monospaced // kinda playful ? serif) 
+
+                DM MONO 
+                ---- (monospaced, serif, gives digital feel - could be good replacement for v323)
+
+                JET BRAINS MONO 
+                ---- (monospaced, generally sans-serif. 
+                ---- want to use for all caps / titles / such things big bold (and oblique) style header feel)
+                ============================================================-->
+
+            <!--=====================================================================================
+
+        COPIED ALL WNBA DATA FILES, AND MOVED THEM INTO "basketball_101_data_files" FOLDER !!!!
+
+        wnba_colleges.json //////////////// ->  college id's / college names / college nickanmes 
+        wnba_finals.json ////////////////// -> finals matchups / winners / coaches / finals mvps
+        wnba_olympic_players.json ///////// -> data connecting players to olympic jersey numbers/rosters AND wnba teams
+        wnba_reg_season_awards.json /////// -> regular season PLAYER awards
+        wnba_season_stats.json //////////// -> regular season team rankings
+        wnba_static_data.json ///////////// -> static main/general data for WNBA (team colors, ids, locations, etc.)
+        wnba_teams_history.json /////////// -> teams of the WNBA by year and team franchise lineage
+
+        =====================================================================================-->
+
+            <link rel="preconnect" href="https://fonts.googleapis.com">
+            <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+            <link
+                href="https://fonts.googleapis.com/css2?family=Chivo+Mono:ital,wght@0,100..900;1,100..900&family=DM+Mono:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap"
+                rel="stylesheet">
+            <!--=====================================================================================-->   
+
+    <link rel="stylesheet" href="college-data-cross-reference-util.css" />
+</head>
+<body>
+    <main class="tool-shell">
+        <header class="tool-header">
+            <p class="eyebrow">WNBA Data Utility</p>
+            <h1>College Data Checker</h1>
+            <p>Find college references that are missing from the main college data file.</p>
+        </header>
+
+        <section class="panel summary-panel">
+            <button id="runChecksBtn" type="button">Run College Checks</button>
+
+            <div class="summary-grid">
+                <div>
+                    <span id="missingCollegeCount" class="summary-number">0</span>
+                    <span class="summary-label">Missing colleges</span>
+                </div>
+
+                <div>
+                    <span id="okCollegeCount" class="summary-number">0</span>
+                    <span class="summary-label">Looks okay</span>
+                </div>
+            </div>
+
+            <p id="statusMessage" class="status-message"></p>
+        </section>
+
+        <section class="panel">
+            <h2>Missing Colleges</h2>
+            <div id="missingCollegeList" class="issue-list"></div>
+        </section>
+
+        <section class="panel">
+            <h2>College References That Look Okay</h2>
+            <div id="okCollegeList" class="issue-list"></div>
+        </section>
+    </main>
+
+    <div id="collegeModalOverlay" class="modal-overlay hidden">
+        <section class="modal-panel">
+            <header class="modal-header">
+                <h2>Add College</h2>
+                <button id="closeModalBtn" type="button" class="secondary-btn">Close</button>
+            </header>
+
+            <div class="form-grid">
+                <label>
+                    College Name
+                    <input id="collegeNameInput" />
+                </label>
+
+                <label>
+                    College ID
+                    <input id="collegeIdInput" />
+                </label>
+
+                <label>
+                    Ref Name 1
+                    <input id="refName1Input" />
+                </label>
+
+                <label>
+                    Ref Name 2
+                    <input id="refName2Input" />
+                </label>
+
+                <label>
+                    Ref Name 3
+                    <input id="refName3Input" />
+                </label>
+
+                <label>
+                    Ref Name 4
+                    <input id="refName4Input" />
+                </label>
+            </div>
+
+            <button id="saveCollegeBtn" type="button">Save College + Resolve Reference</button>
+            <p id="modalStatusMessage" class="status-message"></p>
+        </section>
+    </div>
+
+    <script src="college-data-cross-reference-util.js"></script>
+</body>
+</html>

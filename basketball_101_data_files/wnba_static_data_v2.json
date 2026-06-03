@@ -1393,6 +1393,58 @@
       "meta": {
         "favorite": false
       }
+    },
+    "TOR_TEMPO": {
+      "teamCode": "TOR_TEMPO",
+      "franchiseId": "TEMPO_FRANCHISE",
+      "name": {
+        "full": "Toronto Tempo",
+        "city": "Toronto",
+        "mascot": "Tempo",
+        "short": "Tempo"
+      },
+      "status": {
+        "isActive": true,
+        "isOriginalTeam": false,
+        "founded": 2026,
+        "ended": null,
+        "endType": null
+      },
+      "league": {
+        "conference": "east"
+      },
+      "location": {
+        "market": "Toronto",
+        "state": "Ontario",
+        "city": "Toronto",
+        "arena": "Coca Cola Colliseum"
+      },
+      "branding": {
+        "slug": "toronto-tempo",
+        "logo": {
+          "src": "/assets/logos-wnba/Toronto_Tempo_logo.png",
+          "alt": "Toronto Tempo Logo"
+        },
+        "colors": {
+          "color1": "#441E36",
+          "color2": "#B3C7E7",
+          "color3": "#000000"
+        },
+        "courtColors": {
+          "main": "#441E36",
+          "lines": "#B3C7E7",
+          "accent": "#000000"
+        }
+      },
+      "history": {
+        "formerTeamCode": null,
+        "relocatedFrom": null,
+        "relocatedTo": null
+      },
+      "championshipYears": [],
+      "meta": {
+        "favorite": false
+      }
     }
   },
   "franchises": {

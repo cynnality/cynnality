@@ -1,268 +1,361 @@
 let TEAMS = {};
-let FRANCHISE_MAP = {};
-
+let FRANCHISES = {};
 let SEASON_TEAMS = {};
-let SEASON_STATS = {};
 
-function buildFranchiseMap() {
-  Object.values(TEAMS).forEach(team => {
-    const franchiseId = team.franchiseId || team.teamCode;
+const DATA_PATHS = {
+  staticTeams: "basketball_101_data_files/wnba_static_data_v2.json",
+  teamHistory: "basketball_101_data_files/wnba_teams_history.json"
+};
 
-    // map current team
-    FRANCHISE_MAP[team.teamCode] = franchiseId;
+const boardEl = document.getElementById("main_board");
+const resetBtn = document.getElementById("resetTimelineBtn");
 
-    // map lineage teams
-    if (team.lineage) {
-      team.lineage.forEach(entry => {
-        FRANCHISE_MAP[entry.teamCode] = franchiseId;
-      });
-    }
+/* ============================================================
+   SMALL DATA HELPERS
+============================================================ */
 
-    // map formerTeam if exists
-    if (team.formerTeam) {
-      FRANCHISE_MAP[team.formerTeam] = franchiseId;
-    }
-  });
+function normalizeTeamCode(teamCode) {
+  const aliases = {
+    MIA_SOL: "MIAMI_SOL",
+    POR_FIRE_OLD: "POR_FIRE_2000"
+  };
 
-  console.log("FRANCHISE_MAP:", FRANCHISE_MAP);
+  return aliases[teamCode] || teamCode;
 }
 
-async function loadData() {
-  const res = await fetch('/wbbal-main/wnba-cluster-data.json');
+function getYears() {
+  return Object.keys(SEASON_TEAMS)
+    .map(Number)
+    .sort((a, b) => a - b);
+}
+
+function getShortYear(year) {
+  return String(year).slice(-2);
+}
+
+function getTeam(teamCode) {
+  return TEAMS[normalizeTeamCode(teamCode)];
+}
+
+function getTeamDisplayName(teamCode) {
+  const team = getTeam(teamCode);
+
+  if (!team) return teamCode;
+
+  return team.name?.full || teamCode;
+}
+
+function getTeamShortName(teamCode) {
+  const team = getTeam(teamCode);
+
+  if (!team) return teamCode;
+
+  return team.name?.short || team.name?.mascot || team.name?.full || teamCode;
+}
+
+function getTeamColor(teamCode) {
+  const team = getTeam(teamCode);
+
+  return team?.branding?.colors?.color1 || "#ffffff";
+}
+
+function getFranchiseIdForTeam(teamCode) {
+  const cleanCode = normalizeTeamCode(teamCode);
+  const team = getTeam(cleanCode);
+
+  return team?.franchiseId || cleanCode;
+}
+
+/* 
+  This controls visual rows.
+
+  Normal relocated franchises stay together by franchiseId:
+  UTA → SA → LVA
+
+  Brand revivals can also stay together visually:
+  POR_FIRE_2000 → POR_FIRE
+*/
+function getTimelineGroupId(teamCode) {
+  const cleanCode = normalizeTeamCode(teamCode);
+  const team = getTeam(cleanCode);
+
+  if (!team) return cleanCode;
+
+  const franchise = FRANCHISES[team.franchiseId];
+
+  if (franchise?.timelineRowGroup?.length) {
+    return franchise.timelineRowGroup.map(normalizeTeamCode).join("__");
+  }
+
+  if (franchise?.brandLineage?.includes(cleanCode)) {
+    return franchise.brandLineage.map(normalizeTeamCode).join("__");
+  }
+
+  return team.franchiseId || cleanCode;
+}
+
+/* ============================================================
+   LOAD DATA
+============================================================ */
+
+async function loadStaticData() {
+  const res = await fetch(DATA_PATHS.staticTeams);
   const data = await res.json();
 
-  Object.values(data).forEach(team => {
-    TEAMS[team.teamCode] = team;
-  });
-
-  console.log("Mapped TEAMS:", TEAMS);
+  TEAMS = data.teams || {};
+  FRANCHISES = data.franchises || {};
 }
 
-// loading the teams for each season json data - wnbbal-main folder -> wnba-team-timeline.json
-async function loadSeasonTeams() {
-  const res = await fetch('/wbbal-main/wnba-team-timeline.json'); 
-  const data = await res.json();
-
-  SEASON_TEAMS = data;
-
-  console.log("SEASON_TEAMS:", SEASON_TEAMS);
+async function loadTeamHistory() {
+  const res = await fetch(DATA_PATHS.teamHistory);
+  SEASON_TEAMS = await res.json();
 }
 
-// loading the stats for each season json data - wnbbal-main folder -> wnba-season-stats.json
-async function loadSeasonStats() {
-  const res = await fetch('/wbbal-main/wnba-season-stats.json');
-  const data = await res.json();
+/* ============================================================
+   ROW BUILDING
+============================================================ */
 
-  SEASON_STATS = data;
+function getFranchiseRows() {
+  const rowsByGroup = {};
 
-  console.log("SEASON_STATS:", SEASON_STATS);
-}
+  Object.values(SEASON_TEAMS).forEach(season => {
+    if (!season.teams) return;
 
-function getTeamCode(el) {
-  return [...el.classList].find(c =>
-    c !== 'season-square' &&
-    !c.startsWith('y_') &&
-    c !== 'year-indicator'
-  );
-}
+    season.teams.forEach(teamObj => {
+      const teamCode = normalizeTeamCode(teamObj.teamCode);
+      const timelineGroupId = getTimelineGroupId(teamCode);
+      const franchiseId = getFranchiseIdForTeam(teamCode);
 
-function getBarTeamCode(el) {
-  return [...el.classList].find(c => c !== 'team-bar');
-}
-
-function applyTeamColors() {
-  document.querySelectorAll('.season-square').forEach(el => {
-    const teamCode = getTeamCode(el);
-    if (!teamCode) return;
-
-    const team = TEAMS[teamCode];
-    if (!team) return;
-
-    el.style.fill = team.colors.color1;
-  });
-
-  document.querySelectorAll('.team-bar').forEach(el => {
-    const teamCode = getBarTeamCode(el);
-    if (!teamCode) return;
-
-    const team = TEAMS[teamCode];
-    if (!team) return;
-
-    el.style.fill = team.colors.color1;
-  });
-}
-
-function extendYearBorder(year) {
-
-  // resetting all borders 
-  document.querySelectorAll('.y_border').forEach(el => {
-    el.setAttribute("height", el.dataset.originalHeight);
-  });
-
-  // target selected year
-  const border = document.querySelector(`.y_border.y_${year}`);
-  if (!border) return;
-
-  const baseHeight = parseFloat(border.dataset.originalHeight);
-  const extra = 240; 
-
-  border.setAttribute("height", baseHeight + extra);
-}
-
-function showFranchiseBars(teamCode) {
-  const franchiseId = FRANCHISE_MAP[teamCode];
-  if (!franchiseId) return;
-
-  //  hide all bars + labels first
-  document.querySelectorAll('.team-bar').forEach(el => {
-    el.classList.remove('visible');
-  });
-
-  document.querySelectorAll('.team-name-label').forEach(el => {
-    el.classList.remove('visible');
-  });
-
-  //  show matching franchise bars + labels
-  document.querySelectorAll('.team-bar').forEach(el => {
-    const code = getBarTeamCode(el);
-    if (!code) return;
-
-    if (FRANCHISE_MAP[code] === franchiseId) {
-      el.classList.add('visible');
-
-      //  also show matching label
-      const label = document.querySelector(`.team-name-label.${code}`);
-      if (label) {
-        label.classList.add('visible');
+      if (!rowsByGroup[timelineGroupId]) {
+        rowsByGroup[timelineGroupId] = {
+          timelineGroupId,
+          franchiseId,
+          teamCodes: new Set()
+        };
       }
+
+      rowsByGroup[timelineGroupId].teamCodes.add(teamCode);
+    });
+  });
+
+  return Object.values(rowsByGroup).map(row => ({
+    timelineGroupId: row.timelineGroupId,
+    franchiseId: row.franchiseId,
+    teamCodes: [...row.teamCodes]
+  }));
+}
+
+function getTeamCodeForRowYear(franchiseRow, year) {
+  const season = SEASON_TEAMS[String(year)];
+
+  if (!season || !season.teams) return null;
+
+  const foundTeam = season.teams.find(teamObj => {
+    const teamCode = normalizeTeamCode(teamObj.teamCode);
+    return franchiseRow.teamCodes.includes(teamCode);
+  });
+
+  return foundTeam ? normalizeTeamCode(foundTeam.teamCode) : null;
+}
+
+function getRowDisplayName(franchiseRow) {
+  const latestTeamCode = franchiseRow.teamCodes[franchiseRow.teamCodes.length - 1];
+
+  return getTeamDisplayName(latestTeamCode);
+}
+
+/* ============================================================
+   RENDERING
+============================================================ */
+
+function renderHeaderRow(years) {
+  const row = document.createElement("div");
+  row.className = "timeline-row timeline-row--header";
+
+  const spacer = document.createElement("div");
+  spacer.className = "timeline-team-label";
+  spacer.textContent = "Team";
+  row.appendChild(spacer);
+
+  years.forEach(year => {
+    const button = document.createElement("button");
+
+    button.type = "button";
+    button.className = "timeline-year-cell";
+    button.dataset.year = year;
+    button.textContent = getShortYear(year);
+
+    button.addEventListener("click", () => {
+      showYearView(year);
+    });
+
+    row.appendChild(button);
+  });
+
+  boardEl.appendChild(row);
+}
+
+function renderFranchiseRow(franchiseRow, years) {
+  const row = document.createElement("div");
+
+  row.className = "timeline-row";
+  row.dataset.timelineGroupId = franchiseRow.timelineGroupId;
+  row.dataset.franchiseId = franchiseRow.franchiseId;
+
+  const label = document.createElement("div");
+  label.className = "timeline-team-label";
+  label.textContent = getRowDisplayName(franchiseRow);
+  label.dataset.defaultLabel = getRowDisplayName(franchiseRow);
+  row.appendChild(label);
+
+  years.forEach(year => {
+    const teamCode = getTeamCodeForRowYear(franchiseRow, year);
+
+    const square = document.createElement("button");
+
+    square.type = "button";
+    square.className = "timeline-square";
+    square.dataset.year = year;
+    square.dataset.timelineGroupId = franchiseRow.timelineGroupId;
+    square.dataset.franchiseId = franchiseRow.franchiseId;
+
+    if (teamCode) {
+      square.dataset.teamCode = teamCode;
+      square.title = `${getTeamDisplayName(teamCode)} — ${year}`;
+      square.style.backgroundColor = getTeamColor(teamCode);
+
+      square.addEventListener("click", () => {
+        showTimelineGroupView(teamCode);
+      });
+    } else {
+      square.classList.add("is-empty");
+      square.disabled = true;
+    }
+
+    row.appendChild(square);
+  });
+
+  boardEl.appendChild(row);
+}
+
+function renderTimeline() {
+  const years = getYears();
+  const franchiseRows = getFranchiseRows();
+
+  boardEl.innerHTML = "";
+  boardEl.style.setProperty("--year-count", years.length);
+
+  renderHeaderRow(years);
+
+  franchiseRows.forEach(franchiseRow => {
+    renderFranchiseRow(franchiseRow, years);
+  });
+}
+
+/* ============================================================
+   INTERACTION
+============================================================ */
+
+function resetView() {
+  document.querySelectorAll(".timeline-square").forEach(square => {
+    square.classList.remove("is-muted", "is-highlighted", "is-franchise-match", "is-year-match");
+  });
+
+  document.querySelectorAll(".timeline-row").forEach(row => {
+    row.classList.remove("is-franchise-match", "is-year-match");
+  });
+
+  document.querySelectorAll(".timeline-year-cell").forEach(cell => {
+    cell.classList.remove("is-active");
+  });
+
+  document.querySelectorAll(".timeline-team-label").forEach(label => {
+    label.classList.remove("is-muted");
+
+    if (label.dataset.defaultLabel) {
+      label.textContent = label.dataset.defaultLabel;
     }
   });
 }
 
-function initSquareClicks() {
-  document.querySelectorAll('.season-square').forEach(el => {
-    el.addEventListener('click', () => {
+function showTimelineGroupView(teamCode) {
+  resetView();
 
-      resetView(); 
+  const timelineGroupId = getTimelineGroupId(teamCode);
 
-      const teamCode = getTeamCode(el);
-      if (!teamCode) return;
+  document.querySelectorAll(".timeline-square:not(.is-empty)").forEach(square => {
+    square.classList.add("is-muted");
 
-      showFranchiseBars(teamCode);
-
-      const year = [...el.classList].find(c => c.startsWith('y_'));
-
-      console.log({
-        teamCode,
-        year,
-        teamData: TEAMS[teamCode]
-      });
-    });
+    if (square.dataset.timelineGroupId === timelineGroupId) {
+      square.classList.remove("is-muted");
+      square.classList.add("is-franchise-match");
+    }
   });
-}
 
-function initYearClicks() {
-  document.querySelectorAll('.year-indicator.season-square').forEach(el => {
-    el.addEventListener('click', (e) => {
-
-      e.stopPropagation();
-
-      const yearClass = [...el.classList].find(c => c.startsWith('y_'));
-      if (!yearClass) return;
-
-      const year = yearClass.replace('y_', '');
-
-      resetView(); // resetting to "refresh" instead of adding onto whena new yr indicator box is lcickied
-      showYearView(year);
-      extendYearBorder(year);
-
-      console.log("YEAR CLICK:", year);
-
-    });
+  document.querySelectorAll(".timeline-row").forEach(row => {
+    if (row.dataset.timelineGroupId === timelineGroupId) {
+      row.classList.add("is-franchise-match");
+    }
   });
 }
 
 function showYearView(year) {
-  const season = SEASON_TEAMS[year];
-  if (!season) return;
+  resetView();
 
-  const teams = season.teams;
+  document.querySelectorAll(".timeline-square:not(.is-empty)").forEach(square => {
+    square.classList.add("is-muted");
 
-  // hiding everything first
-  document.querySelectorAll('.team-bar').forEach(el => {
-    el.classList.remove('visible');
+    if (Number(square.dataset.year) === Number(year)) {
+      square.classList.remove("is-muted");
+      square.classList.add("is-year-match");
+    }
   });
 
-  document.querySelectorAll('.team-name-label').forEach(el => {
-    el.classList.remove('visible');
-  });
+  document.querySelectorAll(".timeline-row").forEach(row => {
+    const label = row.querySelector(".timeline-team-label");
 
-  document.querySelectorAll('.season-square').forEach(el => {
-    el.style.opacity = 0.15;
-  });
-
-  // showing only teams from JSON
-  teams.forEach(teamObj => {
-    const teamCode = teamObj.teamCode;
-
-    const stats = SEASON_STATS?.[year]?.[teamCode];
-      if (!stats) return;
-
-    // showing bars
-    document.querySelectorAll(`.team-bar.${teamCode}`).forEach(el => {
-      el.classList.add('visible');
-    });
-
-    // showing labels
-    const label = document.querySelector(`.team-name-label.${teamCode}`);
-    if (label) {
-      label.classList.add('visible');
+    if (label && row.dataset.timelineGroupId) {
+      label.classList.add("is-muted");
     }
 
-    // highlighting squares
-    document.querySelectorAll(`.season-square.${teamCode}.y_${year}`).forEach(el => {
-      el.style.opacity = 1;
-    });
+    const activeSquare = row.querySelector(
+      `.timeline-square:not(.is-empty)[data-year="${year}"]`
+    );
+
+    if (activeSquare) {
+      row.classList.add("is-year-match");
+
+      const teamCode = activeSquare.dataset.teamCode;
+
+      if (label && teamCode) {
+        label.textContent = getTeamDisplayName(teamCode);
+        label.classList.remove("is-muted");
+      }
+    }
   });
+
+  const activeYearCell = document.querySelector(`.timeline-year-cell[data-year="${year}"]`);
+
+  if (activeYearCell) {
+    activeYearCell.classList.add("is-active");
+  }
 }
 
-function resetView() {
-  // only team squares
-  document.querySelectorAll('.season-square:not(.year-indicator)').forEach(el => {
-    el.style.opacity = 1;
-  });
-
-  document.querySelectorAll('.team-bar').forEach(el => {
-    el.classList.remove('visible');
-  });
-
-  document.querySelectorAll('.team-name-label').forEach(el => {
-    el.classList.remove('visible');
-  });
-
-  document.querySelectorAll('.y_border').forEach(el => {
-    el.setAttribute("height", el.dataset.originalHeight);
-  });
-}
+/* ============================================================
+   INIT
+============================================================ */
 
 async function init() {
-  const squares = document.querySelectorAll('.season-square');
-  console.log("Squares:", squares.length);
+  await loadStaticData();
+  await loadTeamHistory();
 
-  document.querySelectorAll('.y_border').forEach(el => {
-    el.dataset.originalHeight = el.getAttribute("height");
-  });
+  renderTimeline();
 
-  await loadData();
-  await loadSeasonTeams();
-  await loadSeasonStats();
-  buildFranchiseMap();
-  applyTeamColors();
+  if (resetBtn) {
+    resetBtn.addEventListener("click", resetView);
+  }
 
-  initSquareClicks();   // franchise logic)
-  initYearClicks();     // (year logic)
-
-  console.log("INIT COMPLETE");
+  console.log("WNBA team timeline loaded with new data files");
 }
 
-document.addEventListener('DOMContentLoaded', init);
+document.addEventListener("DOMContentLoaded", init);

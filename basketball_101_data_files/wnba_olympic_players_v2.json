@@ -2885,6 +2885,77 @@
           "teamCode": "PHX_MERCURY"
         }
       ]
+    },
+    "paige_bueckers": {
+      "playerName": "Paige Bueckers",
+      "teamUsaJersey": "",
+      "playerStatus": {
+        "isActive": true,
+        "hasNcaaChampionships": true,
+        "wasDraftDayTrade": false,
+        "hasWnbaChampionships": false,
+        "hasOverseasExperience": false,
+        "hasUnrivaledExperience": true,
+        "hasNationalTeamExperience": false,
+        "hasOlympicExperience": false
+      },
+      "careerDetails": {
+        "collegeCareer": {
+          "collegeId": "u_of_conn",
+          "startYear": "2020",
+          "endYear": "2025",
+          "ncaaChampionships": [
+            {
+              "year": "2025",
+              "collegeId": "u_of_conn"
+            }
+          ]
+        },
+        "draftDetails": {
+          "year": "2025",
+          "pick": "1",
+          "draftedBy": "DAL_WINGS"
+        },
+        "missedWnbaSeasons": [],
+        "overseasTeams": [],
+        "unrivaledTeams": [
+          {
+            "year": 2026,
+            "teamCode": "bc_breeze"
+          }
+        ],
+        "teamUsaMedals": []
+      },
+      "image": null,
+      "images": [],
+      "wnbaSeasons": [
+        {
+          "year": "2025",
+          "entries": [
+            {
+              "type": "team",
+              "teamCode": "DAL_WINGS"
+            }
+          ]
+        },
+        {
+          "year": "2026",
+          "entries": [
+            {
+              "type": "team",
+              "teamCode": "DAL_WINGS"
+            }
+          ]
+        }
+      ],
+      "wnbaTeams": [
+        {
+          "teamCode": "DAL_WINGS",
+          "startYear": "2025",
+          "endYear": "present"
+        }
+      ],
+      "championships": []
     }
   }
 }

@@ -1,0 +1,131 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #f4f4f4;
+    color: #111;
+}
+
+.viewer-shell {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 32px;
+}
+
+.viewer-header {
+    margin-bottom: 24px;
+}
+
+.eyebrow {
+    text-transform: uppercase;
+    font-size: 12px;
+    letter-spacing: 0.12em;
+    color: #666;
+}
+
+h1 {
+    margin: 0 0 8px;
+}
+
+.panel {
+    background: white;
+    border: 1px solid #ddd;
+    border-radius: 14px;
+    padding: 24px;
+    margin-bottom: 20px;
+}
+
+.controls-panel {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+label {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+select {
+    min-width: 180px;
+    padding: 10px;
+    border: 1px solid #bbb;
+    border-radius: 8px;
+    font: inherit;
+}
+
+.section-heading {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    gap: 16px;
+    margin-bottom: 18px;
+}
+
+.section-heading h2,
+.section-heading p {
+    margin: 0;
+}
+
+.awards-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+    gap: 14px;
+}
+
+.award-node {
+    border: 2px solid #111;
+    border-radius: 14px;
+    padding: 16px;
+    background: #fafafa;
+    cursor: pointer;
+    transition: transform 0.12s ease, box-shadow 0.12s ease;
+}
+
+.award-node:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 0 #111;
+}
+
+.award-key {
+    font-size: 11px;
+    font-weight: 900;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: #666;
+    margin-bottom: 8px;
+}
+
+.award-name {
+    font-size: 18px;
+    font-weight: 900;
+    margin-bottom: 12px;
+}
+
+.recipient-name {
+    font-size: 16px;
+    font-weight: 800;
+}
+
+.team-line {
+    margin-top: 4px;
+    font-size: 13px;
+    color: #555;
+}
+
+.note-indicator {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 4px 8px;
+    border-radius: 999px;
+    background: #111;
+    color: white;
+    font-size: 11px;
+    font-weight: 800;
+}

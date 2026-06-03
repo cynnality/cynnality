@@ -1,0 +1,243 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 32px;
+    font-family: "Chivo Mono", monospace;
+    background: #ffffff;
+    color: #111;
+}
+
+.tool-shell {
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.tool-header {
+    border: 3px solid #111;
+    padding: 18px;
+    margin-bottom: 24px;
+    box-shadow: 5px 5px 0 #111;
+    background: #f4f0e8;
+}
+
+.eyebrow {
+    margin: 0 0 8px;
+    text-transform: uppercase;
+    letter-spacing: 0.12em;
+    font-size: 12px;
+    font-weight: 900;
+}
+
+h1 {
+    margin: 0;
+    font-size: 42px;
+    text-transform: uppercase;
+    letter-spacing: -0.06em;
+}
+
+.tool-header p:last-child {
+    margin-bottom: 0;
+}
+
+.panel {
+    background: #fff;
+    border: 3px solid #111;
+    padding: 16px;
+    margin-bottom: 22px;
+    box-shadow: 4px 4px 0 #111;
+}
+
+.panel h2 {
+    margin: 0 0 16px;
+    padding-bottom: 8px;
+    border-bottom: 2px solid #111;
+    text-transform: uppercase;
+    font-size: 18px;
+    letter-spacing: 0.04em;
+}
+
+.form-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 14px;
+}
+
+label {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    margin-bottom: 14px;
+    font-size: 13px;
+    font-weight: 900;
+    text-transform: uppercase;
+}
+
+input,
+select,
+textarea {
+    width: 100%;
+    padding: 10px 12px;
+    border: 2px solid #111;
+    background: #e2d6d6;
+    color: #111;
+    font: inherit;
+    text-transform: none;
+}
+
+textarea {
+    min-height: 90px;
+    resize: vertical;
+}
+
+.large-textarea {
+    min-height: 280px;
+    line-height: 1.5;
+    font-family: "DM Mono", monospace;
+}
+
+button {
+    padding: 9px 14px;
+    border: 2px solid #111;
+    background: #4A6020;
+    color: #fff;
+    font: inherit;
+    font-weight: 900;
+    text-transform: uppercase;
+    cursor: pointer;
+    box-shadow: 3px 3px 0 #111;
+}
+
+button:hover {
+    transform: translate(1px, 1px);
+    box-shadow: 2px 2px 0 #111;
+}
+
+button:active {
+    transform: translate(3px, 3px);
+    box-shadow: none;
+}
+
+.actions-panel {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    flex-wrap: wrap;
+}
+
+.status-message {
+    margin: 0;
+    font-weight: 900;
+}
+
+.data-panel {
+    background: #f4f0e8;
+}
+
+#jsonPreview {
+    margin: 0;
+    padding: 18px;
+    max-height: 420px;
+    overflow: auto;
+    border: 2px solid #111;
+    background: #111;
+    color: #f4f0e8;
+    font-family: "DM Mono", monospace;
+    font-size: 13px;
+    line-height: 1.5;
+    white-space: pre-wrap;
+}
+
+.collapsible-panel {
+    padding: 0;
+    overflow: hidden;
+}
+
+.panel-toggle {
+    width: 100%;
+    margin: 0;
+    padding: 14px 16px;
+    text-align: left;
+    background: #111;
+    color: #f4f0e8;
+    box-shadow: none;
+}
+
+.panel-body {
+    padding: 16px;
+}
+
+.collapsible-panel.collapsed .panel-body {
+    display: none;
+}
+
+.content-preview {
+    padding: 18px;
+    border: 2px solid #111;
+    background: #f4f0e8;
+    min-height: 120px;
+    line-height: 1.5;
+}
+
+.content-preview h1,
+.content-preview h2,
+.content-preview h3 {
+    margin-top: 0.75em;
+    margin-bottom: 0.35em;
+    text-transform: uppercase;
+}
+
+.content-preview .definition {
+    border-left: 5px solid #111;
+    padding: 10px 12px;
+    background: #fff;
+    font-weight: 900;
+}
+
+.content-editor-layout {
+    display: grid;
+    grid-template-columns: minmax(0, 1.1fr) minmax(320px, 0.9fr);
+    gap: 18px;
+    align-items: start;
+}
+
+.content-input-side,
+.content-preview-side {
+    min-width: 0;
+}
+
+.content-preview-side {
+    border: 2px solid #111;
+    background: #fff;
+}
+
+.content-preview-side .panel-toggle {
+    border: 0;
+    border-bottom: 2px solid #111;
+}
+
+.content-preview-side .panel-body {
+    padding: 14px;
+}
+
+@media (max-width: 900px) {
+    .content-editor-layout {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 760px) {
+    body {
+        padding: 18px;
+    }
+
+    .form-grid {
+        grid-template-columns: 1fr;
+    }
+
+    h1 {
+        font-size: 32px;
+    }
+}

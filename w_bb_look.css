@@ -1,42 +1,167 @@
-#main_board {
-  transform-origin: top left;
-  transform: scale(.7);
+:root {
+  --year-cell-size: 42px;
+  --timeline-cell-size: 32px;
+  --team-label-width: 120px;
+  --timeline-gap: 8px;
 }
 
-.team-bar {
-  opacity: 0;
+body {
+  margin: 0;
+  font-family: "Chivo Mono", monospace;
+  background: #f7f7f7;
+}
+
+.wbb-page {
+  padding: 24px;
+}
+
+.timeline-shell {
+  max-width: 100%;
+}
+
+.timeline-header {
+  display: grid;
+  gap: 10px;
+  width: fit-content;
+  height: fit-content;
+  background: #fff;
+  border: 3px solid #000;
+  padding: 14px;
+  border-radius: 8px;
+}
+
+.timeline-header h1 {
+  margin: 0;
+  font-size: 32px;
+  text-transform: uppercase;
+}
+
+.timeline-header p {
+  margin: 0;
+  max-width: 360px;
+}
+
+#resetTimelineBtn {
+  width: fit-content;
+  border: 2px solid #000;
+  background: #fff;
+  padding: 8px 12px;
+  font-family: inherit;
+  font-weight: 800;
+  cursor: pointer;
+}
+
+.timeline-board {
+  display: grid;
+  gap: var(--timeline-gap);
+  overflow-x: auto;
+  /*! border: 3px solid #000; */
+  /*! background: #fff; */
+  padding: 14px;
+}
+
+.timeline-row {
+  display: grid;
+  grid-template-columns: var(--team-label-width) repeat(var(--year-count), var(--year-cell-size));
+  gap: var(--timeline-gap);
+  align-items: center;
+}
+
+.timeline-team-label {
+  border: 2px solid #000;
+  padding: 0px 4px;
+  min-height: var(--year-cell-size);
+  display: grid;
+  align-items: center;
+  font-size: 16px;
+  font-weight: 600;
+  text-transform: uppercase;
+  background: #fff;
+}
+
+.timeline-year-cell {
+  width: var(--year-cell-size);
+  height: var(--year-cell-size);
+  border: 2px solid #000;
+
+    font-family: inherit;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.timeline-square {
+  width: var(--timeline-cell-size);
+  height: var(--timeline-cell-size);
+  border: 2px solid #000;
+}
+
+.timeline-year-cell,
+.timeline-square {
+    border-radius: 4px;
+    background: #fff;
+    display: grid;
+    place-items: center;
+}
+
+.timeline-year-cell {
+  cursor: pointer;
+}
+
+.timeline-square {
+  padding: 0;
+  cursor: pointer;
+}
+
+.timeline-square.is-empty {
+  opacity: 0.04;
   pointer-events: none;
-  transition: opacity 0.25s ease;
 }
 
-.team-bar.visible {
+.timeline-square.is-muted {
+  opacity: 0.15;
+}
+.timeline-team-label.is-muted {
+  opacity: 0.2;
+}
+
+.timeline-square.is-highlighted {
+  opacity: 1;
+  outline: 3px solid #000;
+  outline-offset: 2px;
+}
+
+.timeline-team-label.is-visible {
+  background: #000;
+  color: #fff;
+}
+
+.timeline-row.is-franchise-match .timeline-team-label {
+  background: #000;
+  color: #fff;
+}
+
+.timeline-row.is-year-match .timeline-team-label {
+  background: #000;
+  color: #fff;
+}
+
+.timeline-year-cell.is-active {
+  background: #000;
+  color: #fff;
+}
+
+.timeline-square.is-franchise-match,
+.timeline-square.is-year-match {
   opacity: 1;
 }
 
-.season-square.year-indicator {
-  fill: #ffffff;
-  stroke: #000000;
-  stroke-width: 2;
-}
-.y_label {
-  pointer-events: none;
-}
+@media screen and (max-width: 700px) {
+  :root {
+    --year-cell-size: 36px;
+    --team-label-width: 140px;
+  }
 
-.team-name-label {
-  opacity: 0;
-  transition: opacity 0.25s ease;
-  pointer-events: none;
-}
-
-.team-name-label.visible {
-  opacity: 1;
-}
-
-.y_border {
-  display: block;
-  border-bottom: none;
-}
-
-.y_border {
-  transition: height 0.25s ease;
+  .wbb-page {
+    padding: 12px;
+  }
 }

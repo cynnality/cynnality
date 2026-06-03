@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>WNBA Draft Input Tool</title>
+
+        <!-- ======================== MONO FONTS ========================
+            CHIVO MONO 
+            ---- (monospaced // kinda playful ? serif) 
+
+            DM MONO 
+            ---- (monospaced, serif, gives digital feel - could be good replacement for v323)
+
+            JET BRAINS MONO 
+            ---- (monospaced, generally sans-serif. 
+            ---- want to use for all caps / titles / such things big bold (and oblique) style header feel)
+            ============================================================-->
+
+        <!--=====================================================================================
+
+    COPIED ALL WNBA DATA FILES, AND MOVED THEM INTO "basketball_101_data_files" FOLDER !!!!
+
+    wnba_colleges.json //////////////// ->  college id's / college names / college nickanmes 
+    wnba_finals.json ////////////////// -> finals matchups / winners / coaches / finals mvps
+    wnba_olympic_players.json ///////// -> data connecting players to olympic jersey numbers/rosters AND wnba teams
+    wnba_reg_season_awards.json /////// -> regular season PLAYER awards
+    wnba_season_stats.json //////////// -> regular season team rankings
+    wnba_static_data.json ///////////// -> static main/general data for WNBA (team colors, ids, locations, etc.)
+    wnba_teams_history.json /////////// -> teams of the WNBA by year and team franchise lineage
+
+    =====================================================================================-->
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link
+            href="https://fonts.googleapis.com/css2?family=Chivo+Mono:ital,wght@0,100..900;1,100..900&family=DM+Mono:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap"
+            rel="stylesheet">
+        <!--=====================================================================================-->    
+
+    <link rel="stylesheet" href="draft-input-tool.css" />
+</head>
+<body>
+    <main class="tool-shell">
+        <header class="tool-header">
+            <p class="eyebrow">WNBA Data Tool</p>
+            <h1>Draft Input Tool</h1>
+            <p>Start with college draft entries. Expansion and dispersal drafts will come next.</p>
+        </header>
+
+        <section class="panel">
+            <h2>Draft Setup</h2>
+
+            <div class="form-grid">
+                <label>
+                    Draft Year
+                    <input id="draftYearInput" type="number" value="2026" />
+                </label>
+
+                <label id="draftDateField" class="hidden">
+                    Draft Date
+                    <input id="draftDateInput" type="date" />
+                </label>
+
+                <label>
+                    Draft Type
+                    <select id="draftTypeInput">
+                        <option value="college">College Draft</option>
+                        <option value="expansion">Expansion Draft</option>
+                        <option value="dispersal">Dispersal Draft</option>
+                    </select>
+                </label>
+
+                <label>
+                    Number of Rounds
+                    <input id="roundsCountInput" type="number" min="1" value="3" />
+                </label>
+
+                <label>
+                    Draft Name
+                    <input id="draftNameInput" placeholder="2026 WNBA College Draft" />
+                </label>
+            </div>
+
+            <div id="expansionSetupSection" class="conditional-section hidden">
+                <h3>Expansion Draft Setup</h3>
+
+                <div class="form-grid">
+                    <label>
+                        Number of Expansion Teams
+                        <input id="expansionTeamCountInput" type="number" min="1" value="1" />
+                    </label>
+                </div>
+
+                <div id="expansionTeamsList" class="team-list"></div>
+
+            </div>
+
+            <div id="dispersalSetupSection" class="conditional-section hidden">
+                <h3>Dispersal Draft Setup</h3>
+
+                <div class="form-grid">
+                    <label>
+                        Number of Dispersal Teams
+                        <input id="dispersalTeamCountInput" type="number" min="1" value="1" />
+                    </label>
+                </div>
+
+                <div id="dispersalTeamsList" class="team-list"></div>
+            </div>
+
+            <button id="buildDraftBtn" type="button">Build Draft</button>
+        </section>
+
+        <section class="panel">
+            <h2>Add Pick</h2>
+
+            <div class="form-grid">
+                <label>
+                    Round
+                    <select id="pickRoundInput"></select>
+                </label>
+
+                <label>
+                    Round Pick
+                    <input id="roundPickInput" type="number" min="1" value="1" />
+                </label>
+
+                <label>
+                    Overall Pick
+                    <input id="overallPickInput" type="number" min="1" value="1" />
+                </label>
+
+                <label>
+                    Player Name
+                    <input id="playerNameInput" placeholder="Paige Bueckers" />
+                </label>
+
+                <label>
+                    Player ID
+                    <input id="playerIdInput" placeholder="paige_bueckers" />
+                </label>
+
+                <label class="checkbox-row">
+                    <input id="isOverseasPlayerInput" type="checkbox" />
+                    Overseas player?
+                </label>
+
+                <div id="collegeOriginSection">
+                    <label>
+                        College
+                        <input id="collegeNameInput" list="collegeOptions" placeholder="University of Connecticut" />
+                        <datalist id="collegeOptions"></datalist>
+                    </label>
+                </div>
+
+                <div id="overseasOriginSection" class="conditional-section hidden">
+                    <h3>Overseas Player Info</h3>
+
+                    <div class="form-grid">
+                        <select id="overseasCountryInput">
+                            <option value="">Select country</option>
+                        </select>
+
+                        <label>
+                            Auto-Matched League
+                            <input id="overseasLeagueNameInput" readonly />
+                        </label>
+
+                        <label>
+                            Overseas Team
+                            <select id="overseasTeamCodeInput">
+                                <option value="">Select overseas team</option>
+                            </select>
+                        </label>
+                    </div>
+                </div>
+
+                <label>
+                    Drafting Team
+                    <select id="teamCodeInput">
+                        <option value="">Select team</option>
+                    </select>
+                </label>
+
+                <label id="previousTeamField" class="hidden">
+                    Previous Team
+                    <select id="previousTeamCodeInput">
+                        <option value="">Select previous team</option>
+                    </select>
+                </label>
+
+            </div>
+
+            <label>
+                Notes
+                <textarea id="pickNotesInput" rows="3"></textarea>
+            </label>
+
+            <button id="addPickBtn" type="button">Add / Update Pick</button>
+        </section>
+
+        <section class="panel">
+            <h2>Current Draft Picks</h2>
+            <div id="picksList" class="picks-list"></div>
+        </section>
+
+        <section class="panel">
+            <h2>JSON Preview</h2>
+            <pre id="jsonPreview">{}</pre>
+            <button id="saveDraftBtn" type="button">Save Draft</button>
+            <p id="statusMessage" class="status-message"></p>
+        </section>
+    </main>
+
+    <script src="draft-input-tool.js"></script>
+</body>
+</html>

@@ -9,7 +9,7 @@ const OVERSEAS_TEAMS_PATH = "/basketball_101_data_files/overseas_teams_data.json
 const UNRIVALED_TEAMS_PATH = "/basketball_101_data_files/unrivaled_teams_data.json";
 
 let OVERSEAS_TEAMS = {};
-let UNRIVALED_TEAMS = {};
+let UNRIVALED_TEAMS = {}; 
 
 const ncaaChampionships = [];
 

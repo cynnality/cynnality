@@ -1,0 +1,107 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: "Chivo Mono", monospace;
+    background: #f4f4f4;
+    color: #111;
+}
+
+.tool-shell {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 32px;
+}
+
+.tool-header {
+    margin-bottom: 24px;
+}
+
+.eyebrow {
+    text-transform: uppercase;
+    font-size: 12px;
+    letter-spacing: 0.12em;
+    color: #666;
+}
+
+h1 {
+    margin: 0 0 8px;
+}
+
+.panel {
+    background: white;
+    border: 1px solid #ddd;
+    border-radius: 14px;
+    padding: 24px;
+    margin-bottom: 20px;
+}
+
+.form-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 16px;
+    margin-bottom: 16px;
+}
+
+label {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+input,
+select,
+textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #bbb;
+    border-radius: 8px;
+    font: inherit;
+}
+
+textarea {
+    resize: vertical;
+}
+
+button {
+    margin-top: 18px;
+    padding: 12px 18px;
+    border: 0;
+    border-radius: 999px;
+    background: #111;
+    color: white;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.status-message {
+    margin-top: 14px;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.saved-awards-list {
+    display: grid;
+    gap: 10px;
+}
+
+.award-card {
+    border: 1px solid #ddd;
+    border-radius: 12px;
+    padding: 14px;
+    background: #fafafa;
+}
+
+.award-card-title {
+    font-weight: 900;
+}
+
+.award-card-meta {
+    margin-top: 4px;
+    font-size: 13px;
+    color: #555;
+}

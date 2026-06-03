@@ -2,8 +2,6 @@
 
 - add Houston Comets revival to the main static data file with the new formatting (added the notes for this to project sources)
 
-- go through and update js from overview sampler for new JSOn formatting for the main static data file 
-
 
 
 ---
@@ -54,3 +52,9 @@ champCoach
 runnerUpCoach
 finalsMvp
 
+---
+---
+
+## NEED:
+- add a specific JSON field in the overseas teams and leagues for ABBREVIATED NAMES !!!!
+  - to get and use the abbrv. name for the player card page 

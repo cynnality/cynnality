@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>add entry...</title>
+
+            <!-- ======================== MONO FONTS ========================
+                CHIVO MONO 
+                ---- (monospaced // kinda playful ? serif) 
+
+                DM MONO 
+                ---- (monospaced, serif, gives digital feel - could be good replacement for v323)
+
+                JET BRAINS MONO 
+                ---- (monospaced, generally sans-serif. 
+                ---- want to use for all caps / titles / such things big bold (and oblique) style header feel)
+                ============================================================-->
+
+            <!--=====================================================================================
+
+        COPIED ALL WNBA DATA FILES, AND MOVED THEM INTO "basketball_101_data_files" FOLDER !!!!
+
+        wnba_colleges.json //////////////// ->  college id's / college names / college nickanmes 
+        wnba_finals.json ////////////////// -> finals matchups / winners / coaches / finals mvps
+        wnba_olympic_players.json ///////// -> data connecting players to olympic jersey numbers/rosters AND wnba teams
+        wnba_reg_season_awards.json /////// -> regular season PLAYER awards
+        wnba_season_stats.json //////////// -> regular season team rankings
+        wnba_static_data.json ///////////// -> static main/general data for WNBA (team colors, ids, locations, etc.)
+        wnba_teams_history.json /////////// -> teams of the WNBA by year and team franchise lineage
+
+        =====================================================================================-->
+
+            <link rel="preconnect" href="https://fonts.googleapis.com">
+            <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+            <link
+                href="https://fonts.googleapis.com/css2?family=Chivo+Mono:ital,wght@0,100..900;1,100..900&family=DM+Mono:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap"
+                rel="stylesheet">
+            <!--=====================================================================================-->  
+
+    <link rel="stylesheet" href="add-entry-tool.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Chivo+Mono:ital,wght@0,100..900;1,100..900&family=DM+Mono:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <main class="tool-shell">
+        <header class="tool-header">
+            <p class="eyebrow">Entries System</p>
+            <h1>Add Entry</h1>
+            <p>Create reusable markdown, link, or asset entries that can connect to viewer pages, utility pages, and data objects.</p>
+        </header>
+
+        <section class="panel">
+            <h2>Entry Identity</h2>
+
+            <div class="form-grid">
+
+                <label>
+                    Collection
+                    <select id="collectionInput">
+                        <option value="wnba">WNBA</option>
+                        <option value="general">General</option>
+                    </select>
+                </label>
+
+                <label>
+                    Category
+                    <select id="categoryInput">
+                        <option value="award-definitions">Award Definitions</option>
+                        <option value="draft-definitions">Draft Definitions</option>
+                        <option value="season-notes">Season Notes</option>
+                        <option value="team-history">Team History</option>
+                        <option value="utility-notes">Utility Notes</option>
+                    </select>
+                </label>
+
+                <label>
+                    Entry Type
+                    <select id="entryTypeInput">
+                        <option value="definition">Definition</option>
+                        <option value="context_note">Context Note</option>
+                        <option value="utility_note">Utility Note</option>
+                        <option value="external_link">External Link</option>
+                        <option value="asset_entry">Asset Entry</option>
+                    </select>
+                </label>
+
+                <label>
+                    Content Type
+                    <select id="contentTypeInput">
+                        <option value="markdown">Markdown</option>
+                        <option value="link">Link</option>
+                        <option value="asset">Asset</option>
+                    </select>
+                </label>
+            </div>
+
+        </section>
+
+        <section class="panel content-editor-panel">
+            <h2>Entry Content</h2>
+
+            <div class="content-editor-layout">
+                <div class="content-input-side">
+                    <label>
+                        Entry Title
+                        <input id="entryTitleInput" placeholder="Sixth Player of the Year" />
+                    </label>
+
+                    <label>
+                        Entry ID
+                        <input id="entryIdInput" placeholder="sixth_player_definition" />
+                    </label>
+
+                    <label>
+                        Description
+                        <textarea id="descriptionInput" placeholder="Short optional description for this entry."></textarea>
+                    </label>
+
+                    <label>
+                        Markdown File Path
+                        <input id="contentFileInput" placeholder="auto-generated from collection/category/title" />
+                    </label>
+
+                    <label>
+                        Markdown Text
+                        <textarea id="markdownInput" class="large-textarea" placeholder="# Sixth Player of the Year&#10;&#10;<p class=&quot;definition&quot;>Definition text here.</p>"></textarea>
+                    </label>
+                </div>
+
+                <section class="content-preview-side collapsible-panel collapsed" id="contentPreviewPanel">
+                    <button
+                        class="panel-toggle"
+                        data-closed-label="View generated entry content"
+                        data-open-label="Hide generated entry content">
+                        View generated entry content
+                    </button>
+
+                    <div class="panel-body">
+                        <div id="contentPreview" class="content-preview"></div>
+                    </div>
+                </section>
+            </div>
+        </section>
+
+        <section class="panel">
+            <h2>Connections</h2>
+
+            <div class="form-grid">
+                <label>
+                    Wire / Page
+                    <input id="wireInput" placeholder="regular-season-awards-viewer" />
+                </label>
+
+                <label>
+                    Attached Type
+                    <select id="attachedTypeInput">
+                        <option value="">None</option>
+                        <option value="award">Award</option>
+                        <option value="draft">Draft</option>
+                        <option value="player">Player</option>
+                        <option value="team">Team</option>
+                        <option value="season">Season</option>
+                        <option value="game">Game</option>
+                        <option value="utility">Utility</option>
+                    </select>
+                </label>
+
+                <label>
+                    Attached ID
+                    <input id="attachedIdInput" placeholder="sixth_player" />
+                </label>
+
+                <label>
+                    Tags
+                    <input id="tagsInput" placeholder="award, sixth_player, definition" />
+                </label>
+            </div>
+        </section>
+
+        <section class="panel">
+            <h2>References / Links</h2>
+
+            <label>
+                Reference Notes
+                <textarea id="referencesInput" placeholder="Optional reference notes, source reminders, or related objects."></textarea>
+            </label>
+
+            <label>
+                Links
+                <textarea id="linksInput" placeholder="One link per line."></textarea>
+            </label>
+        </section>
+
+        <section class="panel actions-panel">
+            <button id="generatePreviewBtn" type="button">Generate Preview</button>
+            <button id="saveEntryBtn" type="button">Save Entry</button>
+            <p id="statusMessage" class="status-message"></p>
+        </section>
+
+        <section class="panel collapsible-panel collapsed" id="jsonPreviewPanel">
+            <button
+                class="panel-toggle"
+                type="button"
+                data-closed-label="View entry JSON data"
+                data-open-label="Hide entry JSON data">
+                View entry JSON data
+            </button>
+
+            <div class="panel-body">
+                <pre id="jsonPreview">{}</pre>
+            </div>
+        </section>
+    </main>
+
+    <script src="add-entry-tool.js"></script>
+</body>
+</html>

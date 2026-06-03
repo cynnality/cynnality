@@ -1,0 +1,146 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: "Chivo Mono", monospace;
+    background: #f4f4f4;
+    color: #111;
+}
+
+.tool-shell {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 32px;
+}
+
+.tool-header {
+    margin-bottom: 24px;
+}
+
+.eyebrow {
+    text-transform: uppercase;
+    font-size: 12px;
+    letter-spacing: 0.12em;
+    color: #666;
+}
+
+h1,
+h2 {
+    margin-top: 0;
+}
+
+.panel {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 14px;
+    padding: 24px;
+    margin-bottom: 20px;
+}
+
+.form-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 16px;
+    margin-bottom: 16px;
+}
+
+label {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+input,
+select,
+textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #bbb;
+    border-radius: 8px;
+    font: inherit;
+}
+
+textarea {
+    resize: vertical;
+}
+
+button {
+    margin-top: 16px;
+    padding: 12px 18px;
+    border: 0;
+    border-radius: 999px;
+    background: #111;
+    color: white;
+    font-weight: 800;
+    cursor: pointer;
+}
+
+.picks-list {
+    display: grid;
+    gap: 10px;
+}
+
+.pick-card {
+    border: 1px solid #ddd;
+    border-radius: 12px;
+    padding: 14px;
+    background: #fafafa;
+}
+
+.pick-card-title {
+    font-weight: 900;
+}
+
+.pick-card-meta {
+    margin-top: 4px;
+    font-size: 13px;
+    color: #555;
+}
+
+pre {
+    background: #111;
+    color: #f6f6f6;
+    padding: 16px;
+    border-radius: 12px;
+    overflow: auto;
+    max-height: 420px;
+}
+
+.status-message {
+    margin-top: 12px;
+    font-weight: 800;
+}
+
+/** expansion draft */
+.hidden {
+    display: none;
+}
+
+.conditional-section {
+    margin-top: 18px;
+    padding: 18px;
+    border: 1px dashed #bbb;
+    border-radius: 12px;
+    background: #fafafa;
+}
+
+.team-list {
+    display: grid;
+    gap: 12px;
+    margin-top: 12px;
+}
+
+.checkbox-row {
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+    margin: 12px 0;
+}
+
+.checkbox-row input {
+    width: auto;
+}

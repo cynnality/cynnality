@@ -1,0 +1,56 @@
+{
+  "seasons": {
+    "2025": {
+      "season": 2025,
+      "seasonId": "2025",
+      "startDate": "2025-05-16",
+      "endDate": "2025-10-10",
+      "regularSeasonGamesPerTeam": 44,
+      "regularSeasonTeamGameSlots": 572,
+      "numTeams": 13,
+      "isCbaSeason": false,
+      "flags": {
+        "isCbaSeason": false,
+        "isExpansionYear": true,
+        "hasFoldedTeams": false,
+        "hasRelocations": false,
+        "hasDispersalDraft": false,
+        "hasExpansionDraft": true,
+        "hasCollegeDraft": true,
+        "hasPlayoffs": true,
+        "hasRegularSeasonAwards": true
+      },
+      "specialSeasonType": null,
+      "notes": "",
+      "links": [],
+      "cells": {},
+      "entryIds": []
+    },
+    "2026": {
+      "season": 2026,
+      "seasonId": "2026",
+      "startDate": "2026-05-08",
+      "endDate": "2026-09-24",
+      "regularSeasonGamesPerTeam": 44,
+      "regularSeasonTeamGameSlots": 660,
+      "numTeams": 15,
+      "isCbaSeason": true,
+      "flags": {
+        "isCbaSeason": true,
+        "isExpansionYear": true,
+        "hasFoldedTeams": false,
+        "hasRelocations": false,
+        "hasDispersalDraft": false,
+        "hasExpansionDraft": true,
+        "hasCollegeDraft": true,
+        "hasPlayoffs": true,
+        "hasRegularSeasonAwards": true
+      },
+      "specialSeasonType": null,
+      "notes": "",
+      "links": [],
+      "cells": {},
+      "entryIds": []
+    }
+  }
+}

@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>Team Season Details Input</title>
+    <link rel="stylesheet" href="team-season-details-input.css" />
+</head>
+
+<body>
+    <main class="tool-shell">
+        <header class="tool-header">
+            <p class="eyebrow">WNBA Data Tool</p>
+            <h1>Team Season Details Input</h1>
+            <p>Edit team-season roster details, links, notes, and game-slot cells.</p>
+        </header>
+
+        <section class="panel">
+            <div class="form-grid">
+                <label>
+                    Season
+                    <select id="seasonSelect">
+                        <option value="2026">2026</option>
+                    </select>
+                </label>
+
+            <div>
+                <h2>Select Team</h2>
+                <div id="teamPickerGrid" class="team-picker-grid"></div>
+            </div>
+            </div>
+
+            <div id="seasonSummary" class="season-summary"></div>
+        </section>
+
+        <section class="panel">
+            <h2>Game Slots</h2>
+            <p class="help-text">These are game slots for this team, not dated schedule games yet.</p>
+            <div id="gameCellsGrid" class="game-cells-grid"></div>
+        </section>
+
+        <section class="panel">
+            <h2>Add Player</h2>
+
+            <div class="form-grid">
+                <label>
+                    Player ID
+                    <input id="playerIdInput" placeholder="aja_wilson" />
+                </label>
+
+                <label>
+                    Player Name
+                    <input id="playerNameInput" placeholder="A'ja Wilson" />
+                </label>
+
+                <label>
+                    Roster Status
+                    <select id="rosterStatusInput">
+                        <option value="full-season">Full Season</option>
+                        <option value="partial-season">Partial Season</option>
+                        <option value="training-camp">Training Camp</option>
+                        <option value="unknown">Unknown</option>
+                    </select>
+                </label>
+
+                <label>
+                    Start Date
+                    <input id="playerStartDateInput" type="date" />
+                </label>
+
+                <label>
+                    End Date
+                    <input id="playerEndDateInput" type="date" />
+                </label>
+            </div>
+
+            <label>
+                Player Notes
+                <textarea id="playerNotesInput" rows="3"></textarea>
+            </label>
+
+            <button id="addPlayerBtn" type="button">Add Player</button>
+
+            <div id="playersList" class="list"></div>
+        </section>
+
+        <section class="panel">
+            <h2>Links</h2>
+
+            <div class="form-grid">
+                <label>
+                    Link Title
+                    <input id="linkTitleInput" />
+                </label>
+
+                <label>
+                    Link URL
+                    <input id="linkUrlInput" />
+                </label>
+            </div>
+
+            <label>
+                Link Description
+                <textarea id="linkDescriptionInput" rows="3"></textarea>
+            </label>
+
+            <button id="addLinkBtn" type="button">Add Link</button>
+
+            <div id="linksList" class="list"></div>
+        </section>
+
+        <section class="panel">
+            <h2>Team-Season Notes</h2>
+
+            <label>
+                Notes
+                <textarea id="teamNotesInput" rows="6"></textarea>
+            </label>
+
+            <button id="saveTeamSeasonBtn" type="button">Save Team Season</button>
+
+            <p id="statusMessage" class="status-message"></p>
+        </section>
+    </main>
+
+    <script src="team-season-details-input.js"></script>
+</body>
+</html>

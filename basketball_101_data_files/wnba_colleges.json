@@ -1,217 +1,225 @@
 {
-    "colleges": {
-        "u_of_conn": {
-            "name": "University of Connecticut",
-            "refNames": {
-                "refName1": "Connecticut",
-                "refName2": "UCONN",
-                "refName3": "Huskies"
-            }
-        },
-        "auburn_u": {
-            "name": "Auburn University",
-            "refNames": {
-                "refName1": "Auburn",
-                "refName2": "Tigers"
-            }
-        },
-        "u_of_georgia": {
-            "name": "University of Georgia",
-            "refNames": {
-                "refName1": "Georgia",
-                "refName2": "Bulldogs"
-            }
-        },
-        "louisiana_tech_u": {
-            "name": "Louisiana Tech University",
-            "refNames": {
-                "refName1": "Louisiana Tech",
-                "refName2": "Lady Techsters",
-                "refName3": "Bulldogs"
-            }
-        },
-        "u_of_southern_california": {
-            "name": "University of Southern California",
-            "refNames": {
-                "refName1": "Southern California",
-                "refName2": "USC",
-                "refName3": "Trojans"
-            }
-        },
-        "u_of_tenn": {
-            "name": "University of Tennessee",
-            "refNames": {
-                "refName1": "Tennessee",
-                "refName2": "Lady Vols"
-            }
-        },
-        "u_of_virginia": {
-            "name": "University of Virginia",
-            "refNames": {
-                "refName1": "Virginia",
-                "refName2": "UVA",
-                "refName3": "Cavaliers",
-                "refName4": "'Hoos'"
-            }
-        },
-        "texas_tech_u": {
-            "name": "Texas Tech University",
-            "refNames": {
-                "refName1": "Texas Tech",
-                "refName2": "Red Raiders"
-            }
-        },
-        "stanford_u": {
-            "name": "Stanford University",
-            "refNames": {
-                "refName1": "Stanford",
-                "refName2": "Cardinal"
-            }
-        },
-        "u_of_florida": {
-            "name": "University of Florida",
-            "refNames": {
-                "refName1": "Florida",
-                "refName2": "UF",
-                "refName3": "Gators"
-            }
-        },
-        "ohio_state_u": {
-            "name": "Ohio State University",
-            "refNames": {
-                "refName1": "Ohio State",
-                "refName2": "Buckeyes"
-            }
-        },
-        "florida_atlantic_u": {
-            "name": "Florida Atlantic University",
-            "refNames": {
-                "refName1": "Florida Atlantic",
-                "refName2": "FAU",
-                "refName3": "Owls"
-            }
-        },
-        "u_of_california_la": {
-            "name": "University of California Los Angeles",
-            "refNames": {
-                "refName1": "UCLA",
-                "refName2": "Bruins"
-            }
-        },
-        "u_of_south_carolina": {
-            "name": "University of South Carolina",
-            "refNames": {
-                "refName1": "South Carolina",
-                "refName2": "Gamecocks"
-            }
-        },
-        "u_of_notre_dame": {
-            "name": "University of Notre Dame",
-            "refNames": {
-                "refName1": "Notre Dame",
-                "refName2": "Fighting Irish"
-            }
-        },
-        "rutgers_u": {
-            "name": "Rutgers University",
-            "refNames": {
-                "refName1": "Rutgers",
-                "refName2": "Scarlet Knights"
-            }
-        },
-        "duke_u": {
-            "name": "Duke University",
-            "refNames": {
-                "refName1": "Duke",
-                "refName2": "Blue Devils"
-            }
-        },
-        "louisiana_state_u": {
-            "name": "Louisiana State University",
-            "refNames": {
-                "refName1": "Louisiana State",
-                "refName2": "LSU",
-                "refName3": "Tigers"
-            }
-        },
-        "u_of_minnesota": {
-            "name": "University of Minnesota",
-            "refNames": {
-                "refName1": "Minnesota",
-                "refName2": "Golden Gophers"
-            }
-        },
-        "u_of_louisville": {
-            "name": "Universty of Louisville",
-            "refNames": {
-                "refName1": "Louisville",
-                "refName2": "Cardinals"
-            }
-        },
-        "baylor_u": {
-            "name": "Baylor University",
-            "refNames": {
-                "refName1": "Baylor",
-                "refName2": "Bears"
-            }
-        },
-        "u_of_oregon": {
-            "name": "University of Oregon",
-            "refNames": {
-                "refName1": "Oregon",
-                "refName2": "Ducks"
-            }
-        },
-        "u_of_washington": {
-            "name": "University of Washington",
-            "refNames": {
-                "refName1": "Washington",
-                "refName2": "Huskies"
-            }
-        },
-        "u_of_maryland": {
-            "name": "University of Maryland",
-            "refNames": {
-                "refName1": "Maryland",
-                "refName2": "Terrapins",
-                "refName3": "Terps"
-            }
-        },
-        "u_of_delaware": {
-            "name": "University of Delaware",
-            "refNames": {
-                "refName1": "Delaware",
-                "refName2": "Fightin' Blue Hens"
-            }
-        },
-        "u_of_texas": {
-            "name": "University of Texas",
-            "refNames": {
-                "refName1": "Texas",
-                "refName2": "Longhorns",
-                "refName3": "Horns"
-            }
-        },
-        "mississippi_state_u": {
-            "name": "Mississippi State University",
-            "refNames": {
-                "refName1": "Mississippi State",
-                "refName2": "Bulldogs"
-            }
-        },
-        "u_of_kentucky": {
-            "name": "University of Kentucky",
-            "refNames": {
-                "refName1": "Kentucky",
-                "refName2": "Wildcats"
-            }
-        },
-        "u_of_iowa": {
-            "name": "University of Iowa",
-            "refNames": {
-                "refName1": "Iowa",
-                "refName2": "Hawkeyes"
-            }
-        }
+  "colleges": {
+    "u_of_conn": {
+      "name": "University of Connecticut",
+      "refNames": {
+        "refName1": "Connecticut",
+        "refName2": "UCONN",
+        "refName3": "Huskies"
+      }
+    },
+    "auburn_u": {
+      "name": "Auburn University",
+      "refNames": {
+        "refName1": "Auburn",
+        "refName2": "Tigers"
+      }
+    },
+    "u_of_georgia": {
+      "name": "University of Georgia",
+      "refNames": {
+        "refName1": "Georgia",
+        "refName2": "Bulldogs"
+      }
+    },
+    "louisiana_tech_u": {
+      "name": "Louisiana Tech University",
+      "refNames": {
+        "refName1": "Louisiana Tech",
+        "refName2": "Lady Techsters",
+        "refName3": "Bulldogs"
+      }
+    },
+    "u_of_southern_california": {
+      "name": "University of Southern California",
+      "refNames": {
+        "refName1": "Southern California",
+        "refName2": "USC",
+        "refName3": "Trojans"
+      }
+    },
+    "u_of_tenn": {
+      "name": "University of Tennessee",
+      "refNames": {
+        "refName1": "Tennessee",
+        "refName2": "Lady Vols"
+      }
+    },
+    "u_of_virginia": {
+      "name": "University of Virginia",
+      "refNames": {
+        "refName1": "Virginia",
+        "refName2": "UVA",
+        "refName3": "Cavaliers",
+        "refName4": "'Hoos'"
+      }
+    },
+    "texas_tech_u": {
+      "name": "Texas Tech University",
+      "refNames": {
+        "refName1": "Texas Tech",
+        "refName2": "Red Raiders"
+      }
+    },
+    "stanford_u": {
+      "name": "Stanford University",
+      "refNames": {
+        "refName1": "Stanford",
+        "refName2": "Cardinal"
+      }
+    },
+    "u_of_florida": {
+      "name": "University of Florida",
+      "refNames": {
+        "refName1": "Florida",
+        "refName2": "UF",
+        "refName3": "Gators"
+      }
+    },
+    "ohio_state_u": {
+      "name": "Ohio State University",
+      "refNames": {
+        "refName1": "Ohio State",
+        "refName2": "Buckeyes"
+      }
+    },
+    "florida_atlantic_u": {
+      "name": "Florida Atlantic University",
+      "refNames": {
+        "refName1": "Florida Atlantic",
+        "refName2": "FAU",
+        "refName3": "Owls"
+      }
+    },
+    "u_of_california_la": {
+      "name": "University of California Los Angeles",
+      "refNames": {
+        "refName1": "UCLA",
+        "refName2": "Bruins"
+      }
+    },
+    "u_of_south_carolina": {
+      "name": "University of South Carolina",
+      "refNames": {
+        "refName1": "South Carolina",
+        "refName2": "Gamecocks"
+      }
+    },
+    "u_of_notre_dame": {
+      "name": "University of Notre Dame",
+      "refNames": {
+        "refName1": "Notre Dame",
+        "refName2": "Fighting Irish"
+      }
+    },
+    "rutgers_u": {
+      "name": "Rutgers University",
+      "refNames": {
+        "refName1": "Rutgers",
+        "refName2": "Scarlet Knights"
+      }
+    },
+    "duke_u": {
+      "name": "Duke University",
+      "refNames": {
+        "refName1": "Duke",
+        "refName2": "Blue Devils"
+      }
+    },
+    "louisiana_state_u": {
+      "name": "Louisiana State University",
+      "refNames": {
+        "refName1": "Louisiana State",
+        "refName2": "LSU",
+        "refName3": "Tigers"
+      }
+    },
+    "u_of_minnesota": {
+      "name": "University of Minnesota",
+      "refNames": {
+        "refName1": "Minnesota",
+        "refName2": "Golden Gophers"
+      }
+    },
+    "u_of_louisville": {
+      "name": "Universty of Louisville",
+      "refNames": {
+        "refName1": "Louisville",
+        "refName2": "Cardinals"
+      }
+    },
+    "baylor_u": {
+      "name": "Baylor University",
+      "refNames": {
+        "refName1": "Baylor",
+        "refName2": "Bears"
+      }
+    },
+    "u_of_oregon": {
+      "name": "University of Oregon",
+      "refNames": {
+        "refName1": "Oregon",
+        "refName2": "Ducks"
+      }
+    },
+    "u_of_washington": {
+      "name": "University of Washington",
+      "refNames": {
+        "refName1": "Washington",
+        "refName2": "Huskies"
+      }
+    },
+    "u_of_maryland": {
+      "name": "University of Maryland",
+      "refNames": {
+        "refName1": "Maryland",
+        "refName2": "Terrapins",
+        "refName3": "Terps"
+      }
+    },
+    "u_of_delaware": {
+      "name": "University of Delaware",
+      "refNames": {
+        "refName1": "Delaware",
+        "refName2": "Fightin' Blue Hens"
+      }
+    },
+    "u_of_texas": {
+      "name": "University of Texas",
+      "refNames": {
+        "refName1": "Texas",
+        "refName2": "Longhorns",
+        "refName3": "Horns"
+      }
+    },
+    "mississippi_state_u": {
+      "name": "Mississippi State University",
+      "refNames": {
+        "refName1": "Mississippi State",
+        "refName2": "Bulldogs"
+      }
+    },
+    "u_of_kentucky": {
+      "name": "University of Kentucky",
+      "refNames": {
+        "refName1": "Kentucky",
+        "refName2": "Wildcats"
+      }
+    },
+    "u_of_iowa": {
+      "name": "University of Iowa",
+      "refNames": {
+        "refName1": "Iowa",
+        "refName2": "Hawkeyes"
+      }
+    },
+    "northwestern_u": {
+      "collegeId": "northwestern_u",
+      "name": "Northwestern University",
+      "refNames": {
+        "refName1": "Northwestern",
+        "refName2": "Wildcats"
+      }
     }
+  }
 }

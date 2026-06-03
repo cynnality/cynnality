@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>WNBA Season Calendar</title>
+    <link rel="stylesheet" href="season-calendar.css" />
+
+
+    <!-- ======================== MONO FONTS ========================
+         CHIVO MONO 
+         ---- (monospaced // kinda playful ? serif) 
+
+         DM MONO 
+         ---- (monospaced, serif, gives digital feel - could be good replacement for v323)
+
+         JET BRAINS MONO 
+         ---- (monospaced, generally sans-serif. 
+         ---- want to use for all caps / titles / such things big bold (and oblique) style header feel)
+         ============================================================-->
+
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Chivo+Mono:ital,wght@0,100..900;1,100..900&family=DM+Mono:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap"
+        rel="stylesheet">
+    <!--=====================================================================================-->
+
+</head>
+
+<body>
+    <main class="calendar-shell">
+        <header class="calendar-header">
+            <p class="eyebrow">WNBA Season Index</p>
+            <h1>Season Calendar</h1>
+            <p>Visual placeholder for saved gameday matchups.</p>
+
+            <label>
+                Season
+                <select id="seasonSelect"></select>
+            </label>
+
+            <div class="viewer-actions">
+                <button id="openMatchupEditorBtn" type="button">
+                    Add / Edit Gameday Matchups
+                </button>
+            </div>
+
+        </header>
+
+        <section id="calendarGrid" class="calendar-grid"></section>
+
+        <aside id="selectedGamePanel" class="selected-game-panel">
+            <h2>Selected Matchup</h2>
+            <p>Click a matchup cell to preview it.</p>
+        </aside>
+    </main>
+
+    <script src="season-calendar.js"></script>
+</body>
+</html>

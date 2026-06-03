@@ -1,0 +1,21 @@
+{
+  "posts": {
+    "starter-01": {
+      "postId": "starter-01",
+      "title": "Starter-01",
+      "slug": "starter-01",
+      "page": "general",
+      "status": "draft",
+      "tags": [
+        "personal",
+        "test",
+        "inspired"
+      ],
+      "contentType": "markdown-html",
+      "contentFile": "posts/post data/text/general/starter-01.md",
+      "styleFile": "posts/post data/styles/general/starter-01.css",
+      "createdAt": "",
+      "updatedAt": "2026-06-03T04:55:19.192Z"
+    }
+  }
+}
