@@ -1,0 +1,85 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #f5f2eb;
+    color: #111;
+}
+
+.page-shell {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 32px;
+}
+
+.eyebrow {
+    text-transform: uppercase;
+    letter-spacing: 0.12em;
+    font-size: 12px;
+    font-weight: 800;
+}
+
+.page-header h1 {
+    margin: 0 0 8px;
+    font-size: 42px;
+}
+
+.toolbar {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    margin: 24px 0;
+}
+
+button {
+    padding: 10px 16px;
+    border: 2px solid #111;
+    border-radius: 999px;
+    background: #111;
+    color: white;
+    font-weight: 900;
+    cursor: pointer;
+}
+
+.correspondence-list {
+    display: grid;
+    gap: 20px;
+}
+
+.correspondence-card {
+    background: white;
+    border: 2px solid #111;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 4px 4px 0 #111;
+}
+
+.correspondence-card h2 {
+    margin: 0 0 8px;
+}
+
+.correspondence-meta {
+    font-size: 13px;
+    font-weight: 800;
+    color: #555;
+    margin-bottom: 16px;
+}
+
+.correspondence-content {
+    line-height: 1.6;
+}
+
+.correspondence-content h1,
+.correspondence-content h2,
+.correspondence-content h3 {
+    margin-top: 20px;
+}
+
+.correspondence-content hr {
+    border: 0;
+    border-top: 2px solid #111;
+    margin: 24px 0;
+}

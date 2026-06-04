@@ -346,6 +346,76 @@
               "notes": "",
               "links": [],
               "entryIds": []
+            },
+            "2025_expansion_r1_p10": {
+              "pickId": "2025_expansion_r1_p10",
+              "overallPick": 10,
+              "round": 1,
+              "roundPick": 10,
+              "pickStatus": "selection",
+              "player": {
+                "playerId": "monique_billings",
+                "playerName": "Monique Billings"
+              },
+              "college": {
+                "collegeId": "u_of_california_la",
+                "collegeName": "University of California Los Angeles",
+                "existsInCollegeFile": true
+              },
+              "overseas": null,
+              "team": {
+                "teamCode": "GSV_VALKYRIES",
+                "teamName": "Golden State Valkyries"
+              },
+              "previousTeam": {
+                "teamCode": "PHX_MERCURY",
+                "teamName": "Phoenix Mercury"
+              },
+              "notes": "",
+              "links": [],
+              "entryIds": []
+            },
+            "2025_expansion_r1_p12": {
+              "pickId": "2025_expansion_r1_p12",
+              "overallPick": 12,
+              "round": 1,
+              "roundPick": 12,
+              "pickStatus": "selection",
+              "player": {
+                "playerId": "julie_vanloo",
+                "playerName": "Julie Vanloo"
+              },
+              "college": null,
+              "overseas": null,
+              "team": {
+                "teamCode": "GSV_VALKYRIES",
+                "teamName": "Golden State Valkyries"
+              },
+              "previousTeam": {
+                "teamCode": "WAS_MYSTICS",
+                "teamName": "Washington Mystics"
+              },
+              "notes": "Belgian",
+              "links": [],
+              "entryIds": []
+            },
+            "2025_expansion_r1_p11": {
+              "pickId": "2025_expansion_r1_p11",
+              "overallPick": 11,
+              "round": 1,
+              "roundPick": 11,
+              "pickStatus": "no_pick",
+              "player": null,
+              "college": null,
+              "overseas": null,
+              "team": {
+                "teamCode": "GSV_VALKYRIES",
+                "teamName": "Golden State Valkyries"
+              },
+              "previousTeam": null,
+              "notes": "",
+              "links": [],
+              "entryIds": []
             }
           }
         }
@@ -353,7 +423,11 @@
       "notes": "",
       "links": [],
       "entryIds": [],
-      "draftDate": null
+      "draftDate": "2024-12-06",
+      "status": {
+        "isFinalized": false,
+        "finalizedAt": null
+      }
     },
     "2010_dispersal": {
       "draftId": "2010_dispersal",
@@ -720,10 +794,8 @@
               "overallPick": 12,
               "round": 1,
               "roundPick": 12,
-              "player": {
-                "playerId": "no_pick",
-                "playerName": "no pick"
-              },
+              "pickStatus": "no_pick",
+              "player": null,
               "college": null,
               "overseas": null,
               "team": {
@@ -950,29 +1022,6 @@
               "links": [],
               "entryIds": []
             },
-            "2026_expansion_r2_p10": {
-              "pickId": "2026_expansion_r2_p10",
-              "overallPick": 22,
-              "round": 2,
-              "roundPick": 10,
-              "player": {
-                "playerId": "no_pick",
-                "playerName": "no pick"
-              },
-              "college": null,
-              "overseas": null,
-              "team": {
-                "teamCode": "POR_FIRE",
-                "teamName": "Portland Fire"
-              },
-              "previousTeam": {
-                "teamCode": "SAC_MONARCHS",
-                "teamName": "Sacramento Monarchs"
-              },
-              "notes": "",
-              "links": [],
-              "entryIds": []
-            },
             "2026_expansion_r2_p11": {
               "pickId": "2026_expansion_r2_p11",
               "overallPick": 23,
@@ -1018,13 +1067,35 @@
               "notes": "Croatian",
               "links": [],
               "entryIds": []
+            },
+            "2026_expansion_r2_p10": {
+              "pickId": "2026_expansion_r2_p10",
+              "overallPick": 22,
+              "round": 2,
+              "roundPick": 10,
+              "pickStatus": "no_pick",
+              "player": null,
+              "college": null,
+              "overseas": null,
+              "team": {
+                "teamCode": "POR_FIRE",
+                "teamName": "Portland Fire"
+              },
+              "previousTeam": null,
+              "notes": "",
+              "links": [],
+              "entryIds": []
             }
           }
         }
       },
       "notes": "",
       "links": [],
-      "entryIds": []
+      "entryIds": [],
+      "status": {
+        "isFinalized": false,
+        "finalizedAt": null
+      }
     },
     "2008_expansion": {
       "draftId": "2008_expansion",
@@ -1366,6 +1437,390 @@
         "3": {
           "roundNumber": 3,
           "picks": {}
+        }
+      },
+      "notes": "",
+      "links": [],
+      "entryIds": [],
+      "status": {
+        "isFinalized": false,
+        "finalizedAt": null
+      }
+    },
+    "2003_dispersal": {
+      "draftId": "2003_dispersal",
+      "season": 2003,
+      "seasonId": "2003",
+      "draftType": "dispersal",
+      "draftName": "2003 WNBA Dispersal Draft",
+      "draftDate": "2003-04-24",
+      "roundsCount": 1,
+      "specialTeams": {
+        "expansionTeams": [],
+        "dispersalTeams": [
+          {
+            "teamCode": "POR_FIRE_2000",
+            "teamName": "Portland Fire"
+          },
+          {
+            "teamCode": "MIAMI_SOL",
+            "teamName": "Miami Sol"
+          }
+        ]
+      },
+      "rounds": {
+        "1": {
+          "roundNumber": 1,
+          "picks": {
+            "2003_dispersal_r1_p1": {
+              "pickId": "2003_dispersal_r1_p1",
+              "overallPick": 1,
+              "round": 1,
+              "roundPick": 1,
+              "pickStatus": "selection",
+              "player": {
+                "playerId": "ruth_riley",
+                "playerName": "Ruth Riley"
+              },
+              "college": {
+                "collegeId": "u_of_notre_dame",
+                "collegeName": "University of Notre Dame",
+                "existsInCollegeFile": true
+              },
+              "overseas": null,
+              "team": {
+                "teamCode": "DET_SHOCK",
+                "teamName": "Detroit Shock"
+              },
+              "previousTeam": {
+                "teamCode": "MIAMI_SOL",
+                "teamName": "Miami Sol"
+              },
+              "notes": "",
+              "links": [],
+              "entryIds": []
+            },
+            "2003_dispersal_r1_p2": {
+              "pickId": "2003_dispersal_r1_p2",
+              "overallPick": 2,
+              "round": 1,
+              "roundPick": 2,
+              "pickStatus": "selection",
+              "player": {
+                "playerId": "sheri_sam",
+                "playerName": "Sheri Sam"
+              },
+              "college": {
+                "collegeId": "vanderbilt",
+                "collegeName": "Vanderbilt",
+                "existsInCollegeFile": false
+              },
+              "overseas": null,
+              "team": {
+                "teamCode": "MIN_LYNX",
+                "teamName": "Minnesota Lynx"
+              },
+              "previousTeam": {
+                "teamCode": "MIAMI_SOL",
+                "teamName": "Miami Sol"
+              },
+              "notes": "",
+              "links": [],
+              "entryIds": []
+            },
+            "2003_dispersal_r1_p3": {
+              "pickId": "2003_dispersal_r1_p3",
+              "overallPick": 3,
+              "round": 1,
+              "roundPick": 3,
+              "pickStatus": "selection",
+              "player": {
+                "playerId": "betty_lennox",
+                "playerName": "Betty Lennox"
+              },
+              "college": {
+                "collegeId": "louisiana_tech_u",
+                "collegeName": "Louisiana Tech University",
+                "existsInCollegeFile": true
+              },
+              "overseas": null,
+              "team": {
+                "teamCode": "CLE_ROCKERS",
+                "teamName": "Cleveland Rockers"
+              },
+              "previousTeam": {
+                "teamCode": "MIAMI_SOL",
+                "teamName": "Miami Sol"
+              },
+              "notes": "",
+              "links": [],
+              "entryIds": []
+            },
+            "2003_dispersal_r1_p4": {
+              "pickId": "2003_dispersal_r1_p4",
+              "overallPick": 4,
+              "round": 1,
+              "roundPick": 4,
+              "pickStatus": "selection",
+              "player": {
+                "playerId": "tamicha_jackson",
+                "playerName": "Tamicha Jackson"
+              },
+              "college": null,
+              "overseas": null,
+              "team": {
+                "teamCode": "PHX_MERCURY",
+                "teamName": "Phoenix Mercury"
+              },
+              "previousTeam": {
+                "teamCode": "POR_FIRE_2000",
+                "teamName": "Portland Fire"
+              },
+              "notes": "",
+              "links": [],
+              "entryIds": []
+            },
+            "2003_dispersal_r1_p5": {
+              "pickId": "2003_dispersal_r1_p5",
+              "overallPick": 5,
+              "round": 1,
+              "roundPick": 5,
+              "pickStatus": "selection",
+              "player": {
+                "playerId": "demya_walker",
+                "playerName": "DeMya Walker"
+              },
+              "college": null,
+              "overseas": null,
+              "team": {
+                "teamCode": "SAC_MONARCHS",
+                "teamName": "Sacramento Monarchs"
+              },
+              "previousTeam": {
+                "teamCode": "POR_FIRE_2000",
+                "teamName": "Portland Fire"
+              },
+              "notes": "",
+              "links": [],
+              "entryIds": []
+            },
+            "2003_dispersal_r1_p6": {
+              "pickId": "2003_dispersal_r1_p6",
+              "overallPick": 6,
+              "round": 1,
+              "roundPick": 6,
+              "pickStatus": "selection",
+              "player": {
+                "playerId": "debbie_black",
+                "playerName": "Debbie Black"
+              },
+              "college": null,
+              "overseas": null,
+              "team": {
+                "teamCode": "CON_SUN",
+                "teamName": "Connecticut Sun"
+              },
+              "previousTeam": {
+                "teamCode": "MIAMI_SOL",
+                "teamName": "Miami Sol"
+              },
+              "notes": "",
+              "links": [],
+              "entryIds": []
+            },
+            "2003_dispersal_r1_p7": {
+              "pickId": "2003_dispersal_r1_p7",
+              "overallPick": 7,
+              "round": 1,
+              "roundPick": 7,
+              "pickStatus": "selection",
+              "player": {
+                "playerId": "sylvia_crawley",
+                "playerName": "Sylvia Crawley"
+              },
+              "college": null,
+              "overseas": null,
+              "team": {
+                "teamCode": "IND_FEVER",
+                "teamName": "Indiana Fever"
+              },
+              "previousTeam": {
+                "teamCode": "POR_FIRE_2000",
+                "teamName": "Portland Fire"
+              },
+              "notes": "",
+              "links": [],
+              "entryIds": []
+            },
+            "2003_dispersal_r1_p8": {
+              "pickId": "2003_dispersal_r1_p8",
+              "overallPick": 8,
+              "round": 1,
+              "roundPick": 8,
+              "pickStatus": "selection",
+              "player": {
+                "playerId": "jenny_mowe",
+                "playerName": "Jenny Mowe"
+              },
+              "college": null,
+              "overseas": null,
+              "team": {
+                "teamCode": "WAS_MYSTICS",
+                "teamName": "Washington Mystics"
+              },
+              "previousTeam": {
+                "teamCode": "POR_FIRE_2000",
+                "teamName": "Portland Fire"
+              },
+              "notes": "",
+              "links": [],
+              "entryIds": []
+            },
+            "2003_dispersal_r1_p9": {
+              "pickId": "2003_dispersal_r1_p9",
+              "overallPick": 9,
+              "round": 1,
+              "roundPick": 9,
+              "pickStatus": "selection",
+              "player": {
+                "playerId": "alisa_burras",
+                "playerName": "Alisa Burras"
+              },
+              "college": null,
+              "overseas": null,
+              "team": {
+                "teamCode": "SEA_STORM",
+                "teamName": "Seattle Storm"
+              },
+              "previousTeam": {
+                "teamCode": "POR_FIRE_2000",
+                "teamName": "Portland Fire"
+              },
+              "notes": "",
+              "links": [],
+              "entryIds": []
+            },
+            "2003_dispersal_r1_p10": {
+              "pickId": "2003_dispersal_r1_p10",
+              "overallPick": 10,
+              "round": 1,
+              "roundPick": 10,
+              "pickStatus": "selection",
+              "player": {
+                "playerId": "pollyanna_johns_kimbrough",
+                "playerName": "Pollyanna Johns Kimbrough"
+              },
+              "college": null,
+              "overseas": null,
+              "team": {
+                "teamCode": "CHA_STING",
+                "teamName": "Charlotte Sting"
+              },
+              "previousTeam": {
+                "teamCode": "MIAMI_SOL",
+                "teamName": "Miami Sol"
+              },
+              "notes": "",
+              "links": [],
+              "entryIds": []
+            },
+            "2003_dispersal_r1_p11": {
+              "pickId": "2003_dispersal_r1_p11",
+              "overallPick": 11,
+              "round": 1,
+              "roundPick": 11,
+              "pickStatus": "selection",
+              "player": {
+                "playerId": "elena_baranova",
+                "playerName": "Elena Baranova"
+              },
+              "college": null,
+              "overseas": null,
+              "team": {
+                "teamCode": "NYL_LIBERTY",
+                "teamName": "New York Liberty"
+              },
+              "previousTeam": {
+                "teamCode": "MIAMI_SOL",
+                "teamName": "Miami Sol"
+              },
+              "notes": "",
+              "links": [],
+              "entryIds": []
+            },
+            "2003_dispersal_r1_p12": {
+              "pickId": "2003_dispersal_r1_p12",
+              "overallPick": 12,
+              "round": 1,
+              "roundPick": 12,
+              "pickStatus": "selection",
+              "player": {
+                "playerId": "laquanda_barksdale",
+                "playerName": "LaQuanda Barksdale"
+              },
+              "college": null,
+              "overseas": null,
+              "team": {
+                "teamCode": "SA_SILVER_STARS",
+                "teamName": "San Antonio Silver Stars"
+              },
+              "previousTeam": {
+                "teamCode": "POR_FIRE_2000",
+                "teamName": "Portland Fire"
+              },
+              "notes": "",
+              "links": [],
+              "entryIds": []
+            },
+            "2003_dispersal_r1_p13": {
+              "pickId": "2003_dispersal_r1_p13",
+              "overallPick": 13,
+              "round": 1,
+              "roundPick": 13,
+              "pickStatus": "selection",
+              "player": {
+                "playerId": "ukari_figgs",
+                "playerName": "Ukari Figgs"
+              },
+              "college": null,
+              "overseas": null,
+              "team": {
+                "teamCode": "HOU_COMETS",
+                "teamName": "Houston Comets"
+              },
+              "previousTeam": {
+                "teamCode": "POR_FIRE_2000",
+                "teamName": "Portland Fire"
+              },
+              "notes": "",
+              "links": [],
+              "entryIds": []
+            },
+            "2003_dispersal_r1_p14": {
+              "pickId": "2003_dispersal_r1_p14",
+              "overallPick": 14,
+              "round": 1,
+              "roundPick": 14,
+              "pickStatus": "selection",
+              "player": {
+                "playerId": "jackie_stiles",
+                "playerName": "Jackie Stiles"
+              },
+              "college": null,
+              "overseas": null,
+              "team": {
+                "teamCode": "LOS_SPARKS",
+                "teamName": "Los Angeles Sparks"
+              },
+              "previousTeam": {
+                "teamCode": "POR_FIRE_2000",
+                "teamName": "Portland Fire"
+              },
+              "notes": "",
+              "links": [],
+              "entryIds": []
+            }
+          }
         }
       },
       "notes": "",
