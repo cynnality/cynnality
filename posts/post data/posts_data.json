@@ -21,8 +21,8 @@
       "postId": "explainingintentions",
       "title": "explaining/intentions",
       "slug": "explainingintentions",
-      "page": "basketball",
-      "status": "draft",
+      "page": "general",
+      "status": "published",
       "tags": [
         "personal",
         "blog",
@@ -33,7 +33,7 @@
       "contentFile": "posts/post data/text/basketball/explainingintentions.md",
       "styleFile": "posts/post data/styles/basketball/explainingintentions.css",
       "createdAt": "",
-      "updatedAt": "2026-06-04T03:53:51.899Z"
+      "updatedAt": "2026-06-04T05:58:53.836Z"
     }
   }
 }
