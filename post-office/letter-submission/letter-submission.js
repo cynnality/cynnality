@@ -1,4 +1,4 @@
-const API_BASE = "http://localhost:8788";
+const API_BASE = "https://post-office-api.yesandcynn.workers.dev";
 
 const titleInput = document.getElementById("letterTitleInput");
 const descriptionInput = document.getElementById("letterDescriptionInput");
