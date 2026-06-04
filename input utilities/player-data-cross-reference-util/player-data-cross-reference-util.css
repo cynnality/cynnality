@@ -10,7 +10,7 @@ body {
 }
 
 .tool-shell {
-    max-width: 1000px;
+    max-width: 80%;
     margin: 0 auto;
     padding: 32px;
 }
@@ -50,7 +50,7 @@ button {
 
 .summary-grid {
     display: grid;
-    grid-template-columns: repeat(3, minmax(0, 1fr));
+    grid-template-columns: repeat(3, minmax(0, 200px)) minmax(0, 1fr);
     gap: 14px;
     margin-top: 18px;
 }
@@ -58,20 +58,49 @@ button {
 .summary-grid > div {
     border: 2px solid #111;
     border-radius: 14px;
-    padding: 16px;
+    padding: 10px;
     background: #fafafa;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .summary-number {
     display: block;
     font-size: 32px;
-    font-weight: 900;
+    font-weight: 400;
 }
 
 .summary-label {
-    font-size: 13px;
-    font-weight: 800;
+    font-size: 16px;
+    font-weight: 600;
+    font-style: italic;
     color: #555;
+}
+
+.summary-grid #missingPlayersLabel {
+    color: #b42b2b;
+}
+
+#missingPlayersPanel h2 {
+    color: #b42b2b;
+}
+
+.summary-grid #teamMismatchLabel {
+    color: #b47a2b;
+}
+
+#teamMismatchPanel h2 {
+    color: #b47a2b;
+}
+
+.summary-grid #okLabel {
+    color: #2b7a2b;
+}
+
+#okPanel h2 {
+    color: #2b7a2b;
 }
 
 .status-message {
@@ -99,8 +128,10 @@ button {
 
 .issue-meta {
     display: grid;
-    gap: 4px;
+    gap: 19px;
     font-size: 14px;
+    /*! width: 562px; */
+    max-width: 76%;
 }
 
 .issue-actions {

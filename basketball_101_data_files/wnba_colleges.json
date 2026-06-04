@@ -220,6 +220,15 @@
         "refName1": "Northwestern",
         "refName2": "Wildcats"
       }
+    },
+    "university_of_texas_at_el_paso": {
+      "collegeId": "university_of_texas_at_el_paso",
+      "name": "University of Texas at El Paso",
+      "refNames": {
+        "refName1": "University of Texas at El Paso",
+        "refName2": "UTEP",
+        "refName3": "Miners"
+      }
     }
   }
 }

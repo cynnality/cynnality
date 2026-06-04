@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>Posts Index</title>
+
+    <!-- ======================== MONO FONTS ========================
+         CHIVO MONO 
+         ---- (monospaced // kinda playful ? serif) 
+
+         DM MONO 
+         ---- (monospaced, serif, gives digital feel - could be good replacement for v323)
+
+         JET BRAINS MONO 
+         ---- (monospaced, generally sans-serif. 
+         ---- want to use for all caps / titles / such things big bold (and oblique) style header feel)
+         ============================================================-->
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Chivo+Mono:ital,wght@0,100..900;1,100..900&family=DM+Mono:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap" rel="stylesheet">
+<!--=====================================================================================-->
+
+    <link rel="stylesheet" href="posts-index.css" />
+</head>
+
+<body>
+    <main class="posts-shell">
+        <div class="horz-bar">
+            <div class="vert-bar">
+                <div class="bar">
+                    <header class="posts-header">
+                        <h1>All the posts that have ever been posted</h1>
+                        <p>browse, search, read, etc.</p>
+                    </header>
+
+                    <section class="panel controls-panel">
+                        <label>
+                            Search
+                            <input id="searchInput" placeholder="Search by title, tag, or page" />
+                        </label>
+
+                        <label>
+                            Page
+                            <select id="pageFilter">
+                                <option value="">All pages</option>
+                            </select>
+                        </label>
+
+                        <label class="statusSelect">
+                            Status
+                            <select id="statusFilter">
+                                <option value="">All statuses</option>
+                                <option value="draft">Draft</option>
+                                <option value="published">Published</option>
+                            </select>
+                        </label>
+                    </section>
+                </div>
+                <section class="panel" id="postsPanel">
+                    <h2>Posts</h2>
+                    <div id="postsList" class="posts-list"></div>
+                </section>
+            </div>
+
+            <section class="panel reader-panel hidden" id="readerPanel">
+                <div class="reader-header">
+                    <div>
+                        <p id="readerMeta" class="reader-meta"></p>
+                        <h2 id="readerTitle"></h2>
+                    </div>
+
+                    <button id="closeReaderBtn" type="button">Close</button>
+                </div>
+
+                <style id="readerStyle"></style>
+                <article id="readerContent" class="reader-content"></article>
+            </section>
+        </div>
+    </main>
+
+    <script src="posts-index.js"></script>
+</body>
+</html>

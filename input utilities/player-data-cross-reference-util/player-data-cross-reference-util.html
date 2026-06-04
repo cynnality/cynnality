@@ -43,9 +43,8 @@
 <body>
     <main class="tool-shell">
         <header class="tool-header">
-            <p class="eyebrow">WNBA Data Utility</p>
-            <h1>Data Cross Reference Tool</h1>
-            <p>Find players referenced in other data files that may be missing or inconsistent in the main player data.</p>
+            <p class="eyebrow">Data Utility</p>
+            <h1>Cross Reference Tool</h1>
         </header>
 
         <section class="panel summary-panel">
@@ -54,34 +53,34 @@
             <div class="summary-grid">
                 <div>
                     <span class="summary-number" id="missingPlayersCount">0</span>
-                    <span class="summary-label">Missing players</span>
+                    <span class="summary-label" id="missingPlayersLabel">Missing players</span>
                 </div>
 
                 <div>
                     <span class="summary-number" id="teamMismatchCount">0</span>
-                    <span class="summary-label">Team mismatches</span>
+                    <span class="summary-label" id="teamMismatchLabel">Team mismatches</span>
                 </div>
 
                 <div>
                     <span class="summary-number" id="okCount">0</span>
-                    <span class="summary-label">Looks okay</span>
+                    <span class="summary-label" id="okLabel">Looks okay</span>
                 </div>
             </div>
 
             <p id="statusMessage" class="status-message"></p>
         </section>
 
-        <section class="panel">
-            <h2>Players Missing From Main Player File</h2>
+        <section class="panel" id="missingPlayersPanel">
+            <h2>Missing Players</h2>
             <div id="missingPlayersList" class="issue-list"></div>
         </section>
 
-        <section class="panel">
+        <section class="panel" id="teamMismatchPanel">
             <h2>Possible Team History Mismatches</h2>
             <div id="teamMismatchList" class="issue-list"></div>
         </section>
 
-        <section class="panel">
+        <section class="panel" id="okPanel">
             <h2>References That Look Okay</h2>
             <div id="okList" class="issue-list"></div>
         </section>

@@ -15,7 +15,25 @@
       "contentFile": "posts/post data/text/general/starter-01.md",
       "styleFile": "posts/post data/styles/general/starter-01.css",
       "createdAt": "",
-      "updatedAt": "2026-06-03T04:55:19.192Z"
+      "updatedAt": "2026-06-04T02:21:13.752Z"
+    },
+    "explainingintentions": {
+      "postId": "explainingintentions",
+      "title": "explaining/intentions",
+      "slug": "explainingintentions",
+      "page": "basketball",
+      "status": "draft",
+      "tags": [
+        "personal",
+        "blog",
+        "documenting",
+        "explaining"
+      ],
+      "contentType": "markdown-html",
+      "contentFile": "posts/post data/text/basketball/explainingintentions.md",
+      "styleFile": "posts/post data/styles/basketball/explainingintentions.css",
+      "createdAt": "",
+      "updatedAt": "2026-06-04T03:53:51.899Z"
     }
   }
 }

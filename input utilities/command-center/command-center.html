@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Data Command Center</title>
+
+            <!-- ======================== MONO FONTS ========================
+                CHIVO MONO 
+                ---- (monospaced // kinda playful ? serif) 
+
+                DM MONO 
+                ---- (monospaced, serif, gives digital feel - could be good replacement for v323)
+
+                JET BRAINS MONO 
+                ---- (monospaced, generally sans-serif. 
+                ---- want to use for all caps / titles / such things big bold (and oblique) style header feel)
+                ============================================================-->
+
+        <!--=====================================================================================
+
+        COPIED ALL WNBA DATA FILES, AND MOVED THEM INTO "basketball_101_data_files" FOLDER !!!!
+
+        wnba_colleges.json //////////////// ->  college id's / college names / college nickanmes 
+        wnba_finals.json ////////////////// -> finals matchups / winners / coaches / finals mvps
+        wnba_olympic_players.json ///////// -> data connecting players to olympic jersey numbers/rosters AND wnba teams
+        wnba_reg_season_awards.json /////// -> regular season PLAYER awards
+        wnba_season_stats.json //////////// -> regular season team rankings
+        wnba_static_data.json ///////////// -> static main/general data for WNBA (team colors, ids, locations, etc.)
+        wnba_teams_history.json /////////// -> teams of the WNBA by year and team franchise lineage
+
+        =====================================================================================-->
+
+            <link rel="preconnect" href="https://fonts.googleapis.com">
+            <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+            <link
+                href="https://fonts.googleapis.com/css2?family=Chivo+Mono:ital,wght@0,100..900;1,100..900&family=DM+Mono:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap"
+                rel="stylesheet">
+            <!--=====================================================================================-->
+
+    <link rel="stylesheet" href="command-center.css">
+</head>
+
+<body>
+
+<main class="page-shell">
+
+    <header class="page-header">
+        <p class="eyebrow">WNBA Data Utilities</p>
+        <h1>Data Command Center</h1>
+        <p>
+            Cross-reference checker and data maintenance dashboard.
+        </p>
+    </header>
+
+    <section class="summary-grid">
+
+        <article class="summary-card" id="missingPlayersSummary">
+            <span class="summary-number" id="missingPlayersCount">0</span>
+            <span class="summary-label">Missing Players</span>
+        </article>
+
+        <article class="summary-card" id="missingCollegesSummary">
+            <span class="summary-number" id="missingCollegesCount">0</span>
+            <span class="summary-label">Missing Colleges</span>
+        </article>
+
+        <article class="summary-card">
+            <span class="summary-number" id="quickAddPlayersCount">0</span>
+            <span class="summary-label">Quick Add Players</span>
+        </article>
+
+        <article class="summary-card" id="teamMismatchSummary">
+            <span class="summary-number" id="teamMismatchCount">0</span>
+            <span class="summary-label">Team Mismatches</span>
+        </article>
+
+        <article class="summary-card" id="okSummary">
+            <span class="summary-number" id="okCount">0</span>
+            <span class="summary-label">Looks Good</span>
+        </article>
+
+    </section>
+
+    <section class="panel">
+
+        <div class="toolbar">
+
+            <button id="runChecksBtn">
+                Run Checks
+            </button>
+
+            <span id="statusMessage">
+                Ready.
+            </span>
+
+        </div>
+
+    </section>
+
+    <section class="panel issue-panel" id="missingPlayersPanel">
+        <button class="panel-toggle" type="button">
+            <span>Missing Players</span>
+            <span class="panel-toggle-icon">−</span>
+        </button>
+
+        <div class="panel-body">
+            <div id="missingPlayersList" class="issue-list"></div>
+        </div>
+    </section>
+
+    <section class="panel issue-panel" id="missingCollegesPanel">
+        <button class="panel-toggle" type="button">
+            <span>Missing Colleges</span>
+            <span class="panel-toggle-icon">−</span>
+        </button>
+
+        <div class="panel-body">
+            <div id="missingCollegesList" class="issue-list"></div>
+        </div>
+    </section>
+
+    <section class="panel issue-panel" id="quickAddPlayersPanel">
+        <button class="panel-toggle" type="button">
+            <span>Quick-Added Players Needing Full Profile</span> 
+            <span class="panel-toggle-icon">−</span>
+        </button>
+
+        <div class="panel-body">
+            <div id="quickAddPlayersList" class="issue-list"></div>
+        </div>
+    </section>
+
+    <section class="panel issue-panel" id="teamMismatchPanel">
+        <button class="panel-toggle" type="button">
+            <span>Team History Mismatches</span>
+            <span class="panel-toggle-icon">−</span>
+        </button>
+
+        <div class="panel-body">
+            <div id="teamMismatchList" class="issue-list"></div>
+        </div>
+    </section>
+
+    <section class="panel issue-panel" id="okPanel">
+        <button class="panel-toggle" type="button">
+            <span>Looks Good</span>
+            <span class="panel-toggle-icon">−</span>
+        </button>
+
+        <div class="panel-body">
+            <div id="okList" class="issue-list"></div>
+        </div>
+    </section>
+
+</main>
+
+<script src="command-center.js"></script>
+
+</body>
+</html>

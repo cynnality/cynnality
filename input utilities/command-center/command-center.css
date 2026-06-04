@@ -1,0 +1,138 @@
+body {
+
+    font-family: "Chivo Mono", monospace;
+
+    margin: 0;
+    padding: 20px;
+}
+
+.page-shell {
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.summary-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 12px;
+    margin-bottom: 20px;
+}
+
+.summary-card {
+    padding: 16px;
+    border: 1px solid #ddd;
+}
+
+.summary-number {
+    display: block;
+    font-size: 32px;
+    font-weight: bold;
+}
+
+.panel {
+    margin-bottom: 20px;
+    padding: 10px;
+    border: 1px solid #ddd;
+}
+
+.toolbar {
+    display: flex;
+    gap: 12px;
+    align-items: center;
+}
+
+.issue-panel {
+    border: 2px solid #111;
+    border-radius: 14px;
+    background: white;
+}
+
+.panel-toggle {
+    width: 100%;
+    margin: 0;
+    border-radius: 0;
+    background: transparent;
+    color: #111;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font: inherit;
+    font-size: 22px;
+    font-weight: 600;
+    text-align: left;
+    padding: 0 0 12px;
+    border: none;
+}
+
+.panel-body {
+    padding-top: 16px;
+}
+
+.issue-panel.collapsed .panel-body {
+    display: none;
+}
+
+.issue-card {
+    border: 2px solid #111;
+    border-radius: 14px;
+    padding: 16px;
+    background: #fafafa;
+}
+
+.issue-card.missing-player {
+    border-color: #b42b2b;
+}
+#missingPlayersPanel button.panel-toggle {
+    color: #b42b2b;
+}
+#missingPlayersSummary .summary-label {
+    color: #b42b2b;
+}
+
+.issue-card.missing-college {
+    border-color: #b42b2b;
+}
+#missingCollegesPanel button.panel-toggle {
+    color: #b42b2b;
+}
+#missingCollegesSummary .summary-label {
+    color: #b42b2b;
+}
+
+.issue-card.ok {
+    border-color: #2b7a2b;
+}
+#okPanel button.panel-toggle {
+    color: #2b7a2b;
+}
+#okSummary .summary-label {
+    color: #2b7a2b;
+}
+
+.issue-list {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.issue-label {
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 0.12em;
+    font-weight: 900;
+    color: #666;
+}
+
+.issue-value {
+    font-size: 15px;
+    font-weight: 700;
+}
+
+.issue-type-text {
+    font-style: italic;
+}
+
+.issue-source-list {
+    margin: 4px 0 0;
+    padding-left: 18px;
+}

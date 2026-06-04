@@ -200,6 +200,152 @@
               "notes": "",
               "links": [],
               "entryIds": []
+            },
+            "2025_expansion_r1_p4": {
+              "pickId": "2025_expansion_r1_p4",
+              "overallPick": 4,
+              "round": 1,
+              "roundPick": 4,
+              "player": {
+                "playerId": "carla_leite",
+                "playerName": "Carla Leite"
+              },
+              "college": null,
+              "overseas": null,
+              "team": {
+                "teamCode": "GSV_VALKYRIES",
+                "teamName": "Golden State Valkyries"
+              },
+              "previousTeam": {
+                "teamCode": "DAL_WINGS",
+                "teamName": "Dallas Wings"
+              },
+              "notes": "",
+              "links": [],
+              "entryIds": []
+            },
+            "2025_expansion_r1_p5": {
+              "pickId": "2025_expansion_r1_p5",
+              "overallPick": 5,
+              "round": 1,
+              "roundPick": 5,
+              "player": {
+                "playerId": "temi_fagbenle",
+                "playerName": "Temi Fágbénlé"
+              },
+              "college": null,
+              "overseas": null,
+              "team": {
+                "teamCode": "GSV_VALKYRIES",
+                "teamName": "Golden State Valkyries"
+              },
+              "previousTeam": {
+                "teamCode": "IND_FEVER",
+                "teamName": "Indiana Fever"
+              },
+              "notes": "",
+              "links": [],
+              "entryIds": []
+            },
+            "2025_expansion_r1_p6": {
+              "pickId": "2025_expansion_r1_p6",
+              "overallPick": 6,
+              "round": 1,
+              "roundPick": 6,
+              "player": {
+                "playerId": "kate_martin",
+                "playerName": "Kate Martin"
+              },
+              "college": {
+                "collegeId": "u_of_iowa",
+                "collegeName": "University of Iowa",
+                "existsInCollegeFile": true
+              },
+              "overseas": null,
+              "team": {
+                "teamCode": "GSV_VALKYRIES",
+                "teamName": "Golden State Valkyries"
+              },
+              "previousTeam": {
+                "teamCode": "LVA_ACES",
+                "teamName": "Las Vegas Aces"
+              },
+              "notes": "",
+              "links": [],
+              "entryIds": []
+            },
+            "2025_expansion_r1_p7": {
+              "pickId": "2025_expansion_r1_p7",
+              "overallPick": 7,
+              "round": 1,
+              "roundPick": 7,
+              "player": {
+                "playerId": "stephanie_talbot",
+                "playerName": "Stephanie Talbot"
+              },
+              "college": null,
+              "overseas": null,
+              "team": {
+                "teamCode": "GSV_VALKYRIES",
+                "teamName": "Golden State Valkyries"
+              },
+              "previousTeam": {
+                "teamCode": "LOS_SPARKS",
+                "teamName": "Los Angeles Sparks"
+              },
+              "notes": "",
+              "links": [],
+              "entryIds": []
+            },
+            "2025_expansion_r1_p8": {
+              "pickId": "2025_expansion_r1_p8",
+              "overallPick": 8,
+              "round": 1,
+              "roundPick": 8,
+              "player": {
+                "playerId": "cecilia_zandalasini",
+                "playerName": "Cecilia Zandalasini"
+              },
+              "college": null,
+              "overseas": null,
+              "team": {
+                "teamCode": "GSV_VALKYRIES",
+                "teamName": "Golden State Valkyries"
+              },
+              "previousTeam": {
+                "teamCode": "MIN_LYNX",
+                "teamName": "Minnesota Lynx"
+              },
+              "notes": "",
+              "links": [],
+              "entryIds": []
+            },
+            "2025_expansion_r1_p9": {
+              "pickId": "2025_expansion_r1_p9",
+              "overallPick": 9,
+              "round": 1,
+              "roundPick": 9,
+              "player": {
+                "playerId": "kayla_thornton",
+                "playerName": "Kayla Thornton"
+              },
+              "college": {
+                "collegeId": "university_of_texas_at_el_paso",
+                "collegeName": "University of Texas at El Paso",
+                "existsInCollegeFile": true
+              },
+              "overseas": null,
+              "team": {
+                "teamCode": "GSV_VALKYRIES",
+                "teamName": "Golden State Valkyries"
+              },
+              "previousTeam": {
+                "teamCode": "NYL_LIBERTY",
+                "teamName": "New York Liberty"
+              },
+              "notes": "",
+              "links": [],
+              "entryIds": []
             }
           }
         }
@@ -290,6 +436,945 @@
       "notes": "",
       "links": [],
       "entryIds": []
+    },
+    "2026_expansion": {
+      "draftId": "2026_expansion",
+      "season": 2026,
+      "seasonId": "2026",
+      "draftType": "expansion",
+      "draftName": "2026 WNBA Expansion Draft",
+      "draftDate": "2026-04-03",
+      "roundsCount": 2,
+      "specialTeams": {
+        "expansionTeams": [
+          {
+            "teamCode": "POR_FIRE",
+            "teamName": "Portland Fire"
+          },
+          {
+            "teamCode": "TOR_TEMPO",
+            "teamName": "Toronto Tempo"
+          }
+        ],
+        "dispersalTeams": []
+      },
+      "rounds": {
+        "1": {
+          "roundNumber": 1,
+          "picks": {
+            "2026_expansion_r1_p1": {
+              "pickId": "2026_expansion_r1_p1",
+              "overallPick": 1,
+              "round": 1,
+              "roundPick": 1,
+              "player": {
+                "playerId": "bridget_carleton",
+                "playerName": "Bridget Carleton"
+              },
+              "college": null,
+              "overseas": null,
+              "team": {
+                "teamCode": "POR_FIRE",
+                "teamName": "Portland Fire"
+              },
+              "previousTeam": {
+                "teamCode": "MIN_LYNX",
+                "teamName": "Minnesota Lynx"
+              },
+              "notes": "Canadian",
+              "links": [],
+              "entryIds": []
+            },
+            "2026_expansion_r1_p2": {
+              "pickId": "2026_expansion_r1_p2",
+              "overallPick": 2,
+              "round": 1,
+              "roundPick": 2,
+              "player": {
+                "playerId": "julie_allemand",
+                "playerName": "Julie Allemand"
+              },
+              "college": null,
+              "overseas": null,
+              "team": {
+                "teamCode": "TOR_TEMPO",
+                "teamName": "Toronto Tempo"
+              },
+              "previousTeam": {
+                "teamCode": "LOS_SPARKS",
+                "teamName": "Los Angeles Sparks"
+              },
+              "notes": "Belgian",
+              "links": [],
+              "entryIds": []
+            },
+            "2026_expansion_r1_p3": {
+              "pickId": "2026_expansion_r1_p3",
+              "overallPick": 3,
+              "round": 1,
+              "roundPick": 3,
+              "player": {
+                "playerId": "carla_leite",
+                "playerName": "Carla Leite"
+              },
+              "college": null,
+              "overseas": null,
+              "team": {
+                "teamCode": "POR_FIRE",
+                "teamName": "Portland Fire"
+              },
+              "previousTeam": {
+                "teamCode": "GSV_VALKYRIES",
+                "teamName": "Golden State Valkyries"
+              },
+              "notes": "French",
+              "links": [],
+              "entryIds": []
+            },
+            "2026_expansion_r1_p4": {
+              "pickId": "2026_expansion_r1_p4",
+              "overallPick": 4,
+              "round": 1,
+              "roundPick": 4,
+              "player": {
+                "playerId": "nyara_sabally",
+                "playerName": "Nyara Sabally"
+              },
+              "college": null,
+              "overseas": null,
+              "team": {
+                "teamCode": "TOR_TEMPO",
+                "teamName": "Toronto Tempo"
+              },
+              "previousTeam": {
+                "teamCode": "NYL_LIBERTY",
+                "teamName": "New York Liberty"
+              },
+              "notes": "German",
+              "links": [],
+              "entryIds": []
+            },
+            "2026_expansion_r1_p5": {
+              "pickId": "2026_expansion_r1_p5",
+              "overallPick": 5,
+              "round": 1,
+              "roundPick": 5,
+              "player": {
+                "playerId": "luisa_geiselsoder",
+                "playerName": "Luisa Geiselsöder"
+              },
+              "college": null,
+              "overseas": null,
+              "team": {
+                "teamCode": "POR_FIRE",
+                "teamName": "Portland Fire"
+              },
+              "previousTeam": {
+                "teamCode": "DAL_WINGS",
+                "teamName": "Dallas Wings"
+              },
+              "notes": "German",
+              "links": [],
+              "entryIds": []
+            },
+            "2026_expansion_r1_p6": {
+              "pickId": "2026_expansion_r1_p6",
+              "overallPick": 6,
+              "round": 1,
+              "roundPick": 6,
+              "player": {
+                "playerId": "marina_mabrey",
+                "playerName": "Marina Mabrey"
+              },
+              "college": null,
+              "overseas": null,
+              "team": {
+                "teamCode": "TOR_TEMPO",
+                "teamName": "Toronto Tempo"
+              },
+              "previousTeam": {
+                "teamCode": "CON_SUN",
+                "teamName": "Connecticut Sun"
+              },
+              "notes": "",
+              "links": [],
+              "entryIds": []
+            },
+            "2026_expansion_r1_p7": {
+              "pickId": "2026_expansion_r1_p7",
+              "overallPick": 7,
+              "round": 1,
+              "roundPick": 7,
+              "player": {
+                "playerId": "emily_engstler",
+                "playerName": "Emily Engstler"
+              },
+              "college": null,
+              "overseas": null,
+              "team": {
+                "teamCode": "POR_FIRE",
+                "teamName": "Portland Fire"
+              },
+              "previousTeam": {
+                "teamCode": "WAS_MYSTICS",
+                "teamName": "Washington Mystics"
+              },
+              "notes": "",
+              "links": [],
+              "entryIds": []
+            },
+            "2026_expansion_r1_p8": {
+              "pickId": "2026_expansion_r1_p8",
+              "overallPick": 8,
+              "round": 1,
+              "roundPick": 8,
+              "player": {
+                "playerId": "aaliyah_nye",
+                "playerName": "Aaliyah Nye"
+              },
+              "college": null,
+              "overseas": null,
+              "team": {
+                "teamCode": "TOR_TEMPO",
+                "teamName": "Toronto Tempo"
+              },
+              "previousTeam": {
+                "teamCode": "LVA_ACES",
+                "teamName": "Las Vegas Aces"
+              },
+              "notes": "",
+              "links": [],
+              "entryIds": []
+            },
+            "2026_expansion_r1_p9": {
+              "pickId": "2026_expansion_r1_p9",
+              "overallPick": 9,
+              "round": 1,
+              "roundPick": 9,
+              "player": {
+                "playerId": "maya_caldwell",
+                "playerName": "Maya Caldwell"
+              },
+              "college": null,
+              "overseas": null,
+              "team": {
+                "teamCode": "POR_FIRE",
+                "teamName": "Portland Fire"
+              },
+              "previousTeam": {
+                "teamCode": "ATL_DREAM",
+                "teamName": "Atlanta Dream"
+              },
+              "notes": "",
+              "links": [],
+              "entryIds": []
+            },
+            "2026_expansion_r1_p10": {
+              "pickId": "2026_expansion_r1_p10",
+              "overallPick": 10,
+              "round": 1,
+              "roundPick": 10,
+              "player": {
+                "playerId": "lexi_held",
+                "playerName": "Lexi Held"
+              },
+              "college": null,
+              "overseas": null,
+              "team": {
+                "teamCode": "TOR_TEMPO",
+                "teamName": "Toronto Tempo"
+              },
+              "previousTeam": {
+                "teamCode": "PHX_MERCURY",
+                "teamName": "Phoenix Mercury"
+              },
+              "notes": "",
+              "links": [],
+              "entryIds": []
+            },
+            "2026_expansion_r1_p11": {
+              "pickId": "2026_expansion_r1_p11",
+              "overallPick": 11,
+              "round": 1,
+              "roundPick": 11,
+              "player": {
+                "playerId": "chloe_bibby",
+                "playerName": "Chloe Bibby"
+              },
+              "college": null,
+              "overseas": null,
+              "team": {
+                "teamCode": "POR_FIRE",
+                "teamName": "Portland Fire"
+              },
+              "previousTeam": {
+                "teamCode": "IND_FEVER",
+                "teamName": "Indiana Fever"
+              },
+              "notes": "Australian",
+              "links": [],
+              "entryIds": []
+            },
+            "2026_expansion_r1_p12": {
+              "pickId": "2026_expansion_r1_p12",
+              "overallPick": 12,
+              "round": 1,
+              "roundPick": 12,
+              "player": {
+                "playerId": "no_pick",
+                "playerName": "no pick"
+              },
+              "college": null,
+              "overseas": null,
+              "team": {
+                "teamCode": "POR_FIRE",
+                "teamName": "Portland Fire"
+              },
+              "previousTeam": {
+                "teamCode": "SAC_MONARCHS",
+                "teamName": "Sacramento Monarchs"
+              },
+              "notes": "",
+              "links": [],
+              "entryIds": []
+            }
+          }
+        },
+        "2": {
+          "roundNumber": 2,
+          "picks": {
+            "2026_expansion_r2_p1": {
+              "pickId": "2026_expansion_r2_p1",
+              "overallPick": 13,
+              "round": 2,
+              "roundPick": 1,
+              "player": {
+                "playerId": "maria_conde",
+                "playerName": "María Conde"
+              },
+              "college": null,
+              "overseas": null,
+              "team": {
+                "teamCode": "TOR_TEMPO",
+                "teamName": "Toronto Tempo"
+              },
+              "previousTeam": {
+                "teamCode": "GSV_VALKYRIES",
+                "teamName": "Golden State Valkyries"
+              },
+              "notes": "Spanish",
+              "links": [],
+              "entryIds": []
+            },
+            "2026_expansion_r2_p2": {
+              "pickId": "2026_expansion_r2_p2",
+              "overallPick": 14,
+              "round": 2,
+              "roundPick": 2,
+              "player": {
+                "playerId": "haley_jones",
+                "playerName": "Haley Jones"
+              },
+              "college": null,
+              "overseas": null,
+              "team": {
+                "teamCode": "POR_FIRE",
+                "teamName": "Portland Fire"
+              },
+              "previousTeam": {
+                "teamCode": "DAL_WINGS",
+                "teamName": "Dallas Wings"
+              },
+              "notes": "",
+              "links": [],
+              "entryIds": []
+            },
+            "2026_expansion_r2_p3": {
+              "pickId": "2026_expansion_r2_p3",
+              "overallPick": 15,
+              "round": 2,
+              "roundPick": 3,
+              "player": {
+                "playerId": "maria_kliundikova",
+                "playerName": "Maria Kliundikova"
+              },
+              "college": null,
+              "overseas": null,
+              "team": {
+                "teamCode": "TOR_TEMPO",
+                "teamName": "Toronto Tempo"
+              },
+              "previousTeam": {
+                "teamCode": "MIN_LYNX",
+                "teamName": "Minnesota Lynx"
+              },
+              "notes": "Russian",
+              "links": [],
+              "entryIds": []
+            },
+            "2026_expansion_r2_p4": {
+              "pickId": "2026_expansion_r2_p4",
+              "overallPick": 16,
+              "round": 2,
+              "roundPick": 4,
+              "player": {
+                "playerId": "nyadiew_puoch",
+                "playerName": "Nyadiew Puoch"
+              },
+              "college": null,
+              "overseas": null,
+              "team": {
+                "teamCode": "POR_FIRE",
+                "teamName": "Portland Fire"
+              },
+              "previousTeam": {
+                "teamCode": "ATL_DREAM",
+                "teamName": "Atlanta Dream"
+              },
+              "notes": "Australian",
+              "links": [],
+              "entryIds": []
+            },
+            "2026_expansion_r2_p5": {
+              "pickId": "2026_expansion_r2_p5",
+              "overallPick": 17,
+              "round": 2,
+              "roundPick": 5,
+              "player": {
+                "playerId": "adja_kane",
+                "playerName": "Adja Kane"
+              },
+              "college": null,
+              "overseas": null,
+              "team": {
+                "teamCode": "TOR_TEMPO",
+                "teamName": "Toronto Tempo"
+              },
+              "previousTeam": {
+                "teamCode": "NYL_LIBERTY",
+                "teamName": "New York Liberty"
+              },
+              "notes": "French",
+              "links": [],
+              "entryIds": []
+            },
+            "2026_expansion_r2_p6": {
+              "pickId": "2026_expansion_r2_p6",
+              "overallPick": 18,
+              "round": 2,
+              "roundPick": 6,
+              "player": {
+                "playerId": "sarah_ashlee_barker",
+                "playerName": "Sarah Ashlee Barker"
+              },
+              "college": null,
+              "overseas": null,
+              "team": {
+                "teamCode": "POR_FIRE",
+                "teamName": "Portland Fire"
+              },
+              "previousTeam": {
+                "teamCode": "LOS_SPARKS",
+                "teamName": "Los Angeles Sparks"
+              },
+              "notes": "",
+              "links": [],
+              "entryIds": []
+            },
+            "2026_expansion_r2_p7": {
+              "pickId": "2026_expansion_r2_p7",
+              "overallPick": 19,
+              "round": 2,
+              "roundPick": 7,
+              "player": {
+                "playerId": "nikolina_milic",
+                "playerName": "Nikolina Milić"
+              },
+              "college": null,
+              "overseas": null,
+              "team": {
+                "teamCode": "TOR_TEMPO",
+                "teamName": "Toronto Tempo"
+              },
+              "previousTeam": {
+                "teamCode": "CON_SUN",
+                "teamName": "Connecticut Sun"
+              },
+              "notes": "Serbian",
+              "links": [],
+              "entryIds": []
+            },
+            "2026_expansion_r2_p8": {
+              "pickId": "2026_expansion_r2_p8",
+              "overallPick": 20,
+              "round": 2,
+              "roundPick": 8,
+              "player": {
+                "playerId": "sug_sutton",
+                "playerName": "Sug Sutton"
+              },
+              "college": null,
+              "overseas": null,
+              "team": {
+                "teamCode": "POR_FIRE",
+                "teamName": "Portland Fire"
+              },
+              "previousTeam": {
+                "teamCode": "WAS_MYSTICS",
+                "teamName": "Washington Mystics"
+              },
+              "notes": "",
+              "links": [],
+              "entryIds": []
+            },
+            "2026_expansion_r2_p9": {
+              "pickId": "2026_expansion_r2_p9",
+              "overallPick": 21,
+              "round": 2,
+              "roundPick": 9,
+              "player": {
+                "playerId": "kitija_laksa",
+                "playerName": "Kitija Laksa"
+              },
+              "college": null,
+              "overseas": null,
+              "team": {
+                "teamCode": "TOR_TEMPO",
+                "teamName": "Toronto Tempo"
+              },
+              "previousTeam": {
+                "teamCode": "PHX_MERCURY",
+                "teamName": "Phoenix Mercury"
+              },
+              "notes": "Latvian",
+              "links": [],
+              "entryIds": []
+            },
+            "2026_expansion_r2_p10": {
+              "pickId": "2026_expansion_r2_p10",
+              "overallPick": 22,
+              "round": 2,
+              "roundPick": 10,
+              "player": {
+                "playerId": "no_pick",
+                "playerName": "no pick"
+              },
+              "college": null,
+              "overseas": null,
+              "team": {
+                "teamCode": "POR_FIRE",
+                "teamName": "Portland Fire"
+              },
+              "previousTeam": {
+                "teamCode": "SAC_MONARCHS",
+                "teamName": "Sacramento Monarchs"
+              },
+              "notes": "",
+              "links": [],
+              "entryIds": []
+            },
+            "2026_expansion_r2_p11": {
+              "pickId": "2026_expansion_r2_p11",
+              "overallPick": 23,
+              "round": 2,
+              "roundPick": 11,
+              "player": {
+                "playerId": "kristy_wallace",
+                "playerName": "Kristy Wallace"
+              },
+              "college": null,
+              "overseas": null,
+              "team": {
+                "teamCode": "TOR_TEMPO",
+                "teamName": "Toronto Tempo"
+              },
+              "previousTeam": {
+                "teamCode": "IND_FEVER",
+                "teamName": "Indiana Fever"
+              },
+              "notes": "",
+              "links": [],
+              "entryIds": []
+            },
+            "2026_expansion_r2_p12": {
+              "pickId": "2026_expansion_r2_p12",
+              "overallPick": 24,
+              "round": 2,
+              "roundPick": 12,
+              "player": {
+                "playerId": "nika_muhl",
+                "playerName": "Nika Mühl"
+              },
+              "college": null,
+              "overseas": null,
+              "team": {
+                "teamCode": "POR_FIRE",
+                "teamName": "Portland Fire"
+              },
+              "previousTeam": {
+                "teamCode": "SEA_STORM",
+                "teamName": "Seattle Storm"
+              },
+              "notes": "Croatian",
+              "links": [],
+              "entryIds": []
+            }
+          }
+        }
+      },
+      "notes": "",
+      "links": [],
+      "entryIds": []
+    },
+    "2008_expansion": {
+      "draftId": "2008_expansion",
+      "season": 2008,
+      "seasonId": "2008",
+      "draftType": "expansion",
+      "draftName": "2008 WNBA Expansion Draft",
+      "draftDate": "2008-02-06",
+      "roundsCount": 1,
+      "specialTeams": {
+        "expansionTeams": [
+          {
+            "teamCode": "ATL_DREAM",
+            "teamName": "Atlanta Dream"
+          }
+        ],
+        "dispersalTeams": []
+      },
+      "rounds": {
+        "1": {
+          "roundNumber": 1,
+          "picks": {
+            "2008_expansion_r1_p1": {
+              "pickId": "2008_expansion_r1_p1",
+              "overallPick": 1,
+              "round": 1,
+              "roundPick": 1,
+              "player": {
+                "playerId": "carla_thomas",
+                "playerName": "Carla Thomas"
+              },
+              "college": {
+                "collegeId": "vanderbilt",
+                "collegeName": "Vanderbilt",
+                "existsInCollegeFile": false
+              },
+              "overseas": null,
+              "team": {
+                "teamCode": "ATL_DREAM",
+                "teamName": "Atlanta Dream"
+              },
+              "previousTeam": {
+                "teamCode": "CHI_SKY",
+                "teamName": "Chicago Sky"
+              },
+              "notes": "Vanderbilt Commodores women's basketball team\nVanderbilt University\nCommodores",
+              "links": [],
+              "entryIds": []
+            },
+            "2008_expansion_r1_p2": {
+              "pickId": "2008_expansion_r1_p2",
+              "overallPick": 2,
+              "round": 1,
+              "roundPick": 2,
+              "player": {
+                "playerId": "erika_de_souza",
+                "playerName": "Érika de Souza"
+              },
+              "college": null,
+              "overseas": null,
+              "team": {
+                "teamCode": "ATL_DREAM",
+                "teamName": "Atlanta Dream"
+              },
+              "previousTeam": {
+                "teamCode": "CON_SUN",
+                "teamName": "Connecticut Sun"
+              },
+              "notes": "Brazilian",
+              "links": [],
+              "entryIds": []
+            },
+            "2008_expansion_r1_p3": {
+              "pickId": "2008_expansion_r1_p3",
+              "overallPick": 3,
+              "round": 1,
+              "roundPick": 3,
+              "player": {
+                "playerId": "katie_feenstra",
+                "playerName": "Katie Feenstra"
+              },
+              "college": null,
+              "overseas": null,
+              "team": {
+                "teamCode": "ATL_DREAM",
+                "teamName": "Atlanta Dream"
+              },
+              "previousTeam": {
+                "teamCode": "DET_SHOCK",
+                "teamName": "Detroit Shock"
+              },
+              "notes": "",
+              "links": [],
+              "entryIds": []
+            },
+            "2008_expansion_r1_p4": {
+              "pickId": "2008_expansion_r1_p4",
+              "overallPick": 4,
+              "round": 1,
+              "roundPick": 4,
+              "player": {
+                "playerId": "roneeka_hodges",
+                "playerName": "Roneeka Hodges"
+              },
+              "college": null,
+              "overseas": null,
+              "team": {
+                "teamCode": "ATL_DREAM",
+                "teamName": "Atlanta Dream"
+              },
+              "previousTeam": {
+                "teamCode": "HOU_COMETS",
+                "teamName": "Houston Comets"
+              },
+              "notes": "Traded to Seattle...",
+              "links": [],
+              "entryIds": []
+            },
+            "2008_expansion_r1_p5": {
+              "pickId": "2008_expansion_r1_p5",
+              "overallPick": 5,
+              "round": 1,
+              "roundPick": 5,
+              "player": {
+                "playerId": "ann_strother",
+                "playerName": "Ann Strother"
+              },
+              "college": null,
+              "overseas": null,
+              "team": {
+                "teamCode": "ATL_DREAM",
+                "teamName": "Atlanta Dream"
+              },
+              "previousTeam": {
+                "teamCode": "IND_FEVER",
+                "teamName": "Indiana Fever"
+              },
+              "notes": "",
+              "links": [],
+              "entryIds": []
+            },
+            "2008_expansion_r1_p6": {
+              "pickId": "2008_expansion_r1_p6",
+              "overallPick": 6,
+              "round": 1,
+              "roundPick": 6,
+              "player": {
+                "playerId": "latoya_thomas",
+                "playerName": "LaToya Thomas"
+              },
+              "college": null,
+              "overseas": null,
+              "team": {
+                "teamCode": "ATL_DREAM",
+                "teamName": "Atlanta Dream"
+              },
+              "previousTeam": {
+                "teamCode": "LOS_SPARKS",
+                "teamName": "Los Angeles Sparks"
+              },
+              "notes": "Traded to Detroit Shock",
+              "links": [],
+              "entryIds": []
+            },
+            "2008_expansion_r1_p7": {
+              "pickId": "2008_expansion_r1_p7",
+              "overallPick": 7,
+              "round": 1,
+              "roundPick": 7,
+              "pickStatus": "selection",
+              "player": {
+                "playerId": "kristen_mann",
+                "playerName": "Kristen Mann"
+              },
+              "college": null,
+              "overseas": null,
+              "team": {
+                "teamCode": "ATL_DREAM",
+                "teamName": "Atlanta Dream"
+              },
+              "previousTeam": {
+                "teamCode": "MIN_LYNX",
+                "teamName": "Minnesota Lynx"
+              },
+              "notes": "",
+              "links": [],
+              "entryIds": []
+            },
+            "2008_expansion_r1_p8": {
+              "pickId": "2008_expansion_r1_p8",
+              "overallPick": 8,
+              "round": 1,
+              "roundPick": 8,
+              "pickStatus": "selection",
+              "player": {
+                "playerId": "ann_wauters",
+                "playerName": "Ann Wauters"
+              },
+              "college": null,
+              "overseas": null,
+              "team": {
+                "teamCode": "ATL_DREAM",
+                "teamName": "Atlanta Dream"
+              },
+              "previousTeam": {
+                "teamCode": "NYL_LIBERTY",
+                "teamName": "New York Liberty"
+              },
+              "notes": "Belgian\nTraded to San Antonio Silver Stars",
+              "links": [],
+              "entryIds": []
+            },
+            "2008_expansion_r1_p9": {
+              "pickId": "2008_expansion_r1_p9",
+              "overallPick": 9,
+              "round": 1,
+              "roundPick": 9,
+              "pickStatus": "selection",
+              "player": {
+                "playerId": "jennifer_lacy",
+                "playerName": "Jennifer Lacy"
+              },
+              "college": null,
+              "overseas": null,
+              "team": {
+                "teamCode": "ATL_DREAM",
+                "teamName": "Atlanta Dream"
+              },
+              "previousTeam": {
+                "teamCode": "PHX_MERCURY",
+                "teamName": "Phoenix Mercury"
+              },
+              "notes": "",
+              "links": [],
+              "entryIds": []
+            },
+            "2008_expansion_r1_p10": {
+              "pickId": "2008_expansion_r1_p10",
+              "overallPick": 10,
+              "round": 1,
+              "roundPick": 10,
+              "pickStatus": "selection",
+              "player": {
+                "playerId": "kristin_haynie",
+                "playerName": "Kristin Haynie"
+              },
+              "college": null,
+              "overseas": null,
+              "team": {
+                "teamCode": "ATL_DREAM",
+                "teamName": "Atlanta Dream"
+              },
+              "previousTeam": {
+                "teamCode": "SAC_MONARCHS",
+                "teamName": "Sacramento Monarchs"
+              },
+              "notes": "",
+              "links": [],
+              "entryIds": []
+            },
+            "2008_expansion_r1_p11": {
+              "pickId": "2008_expansion_r1_p11",
+              "overallPick": 11,
+              "round": 1,
+              "roundPick": 11,
+              "pickStatus": "selection",
+              "player": {
+                "playerId": "chantelle_anderson",
+                "playerName": "Chantelle Anderson"
+              },
+              "college": null,
+              "overseas": null,
+              "team": {
+                "teamCode": "ATL_DREAM",
+                "teamName": "Atlanta Dream"
+              },
+              "previousTeam": {
+                "teamCode": "SA_SILVER_STARS",
+                "teamName": "San Antonio Silver Stars"
+              },
+              "notes": "",
+              "links": [],
+              "entryIds": []
+            },
+            "2008_expansion_r1_p12": {
+              "pickId": "2008_expansion_r1_p12",
+              "overallPick": 12,
+              "round": 1,
+              "roundPick": 12,
+              "pickStatus": "selection",
+              "player": {
+                "playerId": "betty_lennox",
+                "playerName": "Betty Lennox"
+              },
+              "college": null,
+              "overseas": null,
+              "team": {
+                "teamCode": "ATL_DREAM",
+                "teamName": "Atlanta Dream"
+              },
+              "previousTeam": {
+                "teamCode": "SEA_STORM",
+                "teamName": "Seattle Storm"
+              },
+              "notes": "",
+              "links": [],
+              "entryIds": []
+            },
+            "2008_expansion_r1_p13": {
+              "pickId": "2008_expansion_r1_p13",
+              "overallPick": 13,
+              "round": 1,
+              "roundPick": 13,
+              "pickStatus": "selection",
+              "player": {
+                "playerId": "yelena_leuchanka",
+                "playerName": "Yelena Leuchanka"
+              },
+              "college": null,
+              "overseas": null,
+              "team": {
+                "teamCode": "ATL_DREAM",
+                "teamName": "Atlanta Dream"
+              },
+              "previousTeam": {
+                "teamCode": "WAS_MYSTICS",
+                "teamName": "Washington Mystics"
+              },
+              "notes": "from Belarus",
+              "links": [],
+              "entryIds": []
+            }
+          }
+        },
+        "2": {
+          "roundNumber": 2,
+          "picks": {}
+        },
+        "3": {
+          "roundNumber": 3,
+          "picks": {}
+        }
+      },
+      "notes": "",
+      "links": [],
+      "entryIds": [],
+      "status": {
+        "isFinalized": false,
+        "finalizedAt": null
+      }
     }
   }
 }

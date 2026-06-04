@@ -11,15 +11,25 @@ body {
 }
 
 .tool-shell {
-    max-width: 1400px;
     margin: 0 auto;
 }
 
+.helpers {
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+}
+
+.vert-bar {
+    display: flex;
+    flex-direction: column;
+}
+
 .tool-header {
+    width: fit-content;
     border: 3px solid #111;
-    padding: 18px;
+    padding: 10px;
     margin-bottom: 24px;
-    background: #f4f0e8;
     box-shadow: 5px 5px 0 #111;
 }
 
@@ -33,9 +43,8 @@ body {
 
 h1 {
     margin: 0;
-    font-size: 42px;
+    font-size: 38px;
     text-transform: uppercase;
-    letter-spacing: -0.06em;
 }
 
 .panel {
@@ -58,6 +67,24 @@ h1 {
     display: grid;
     grid-template-columns: repeat(2, minmax(0, 1fr));
     gap: 14px;
+}
+
+#postPagePanel {
+    width: 300px;
+}
+
+#postPagePanel .form-grid {
+    grid-template-columns: 1fr;
+}
+
+#postSetupPanel {
+    width: 600px;
+    box-shadow: none;
+    
+}
+
+#postSetupPanel .form-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
 }
 
 label {
@@ -175,7 +202,7 @@ button:active {
     background: #111;
     color: #fff;
     text-align: left;
-    box-shadow: none;
+    box-shadow: none; 
 }
 
 .panel-body {

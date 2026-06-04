@@ -39,6 +39,12 @@ const savePostBtn = document.getElementById("savePostBtn");
 const statusMessage = document.getElementById("statusMessage");
 const jsonPreview = document.getElementById("jsonPreview");
 
+const DATA_PATHS = {
+    posts: "../post data/posts_data.json"
+};
+
+let POSTS_DATA = { posts: {} };
+
 
 // ======================================================
 // HELPERS
@@ -96,6 +102,41 @@ function buildStyleFilePath() {
     return `posts/post data/styles/${page}/${postId}.css`;
 }
 
+async function loadJson(path, fallback) {
+    try {
+        const response = await fetch(path);
+        if (!response.ok) return fallback;
+
+        const text = await response.text();
+        if (!text.trim()) return fallback;
+
+        return JSON.parse(text);
+    } catch (error) {
+        console.warn(`Could not load ${path}`, error);
+        return fallback;
+    }
+}
+
+async function loadText(path) {
+    if (!path) return "";
+
+    try {
+        const safePath = path.replaceAll(" ", "%20");
+
+        const response = await fetch(`../../${safePath}`);
+
+        if (!response.ok) {
+            console.warn("Could not load text file:", safePath, response.status);
+            return "";
+        }
+
+        return await response.text();
+
+    } catch (error) {
+        console.warn(`Could not load ${path}`, error);
+        return "";
+    }
+}
 
 // Simple markdown support for preview.
 // Real HTML typed into the content box will still render as HTML.
@@ -157,6 +198,45 @@ function buildPostObject() {
     };
 }
 
+// ======================================================
+// loaders
+// ======================================================
+async function loadPostForEditing(postId) {
+    const post = POSTS_DATA.posts?.[postId];
+
+    if (!post) {
+        statusMessage.textContent = `Post not found: ${postId}`;
+        return;
+    }
+
+    postTitleInput.value = post.title || "";
+    postIdInput.value = post.postId || "";
+    slugInput.value = post.slug || "";
+    statusInput.value = post.status || "draft";
+    tagsInput.value = (post.tags || []).join(", ");
+    contentTypeInput.value = post.contentType || "markdown-html";
+    contentFileInput.value = post.contentFile || "";
+    styleFileInput.value = post.styleFile || "";
+
+    pageSelect.value = post.page || "general";
+
+    postIdInput.dataset.manual = "true";
+    slugInput.dataset.manual = "true";
+    contentFileInput.dataset.manual = "true";
+    styleFileInput.dataset.manual = "true";
+
+    console.log("Loading post content file:", post.contentFile);
+    console.log("Loading post style file:", post.styleFile);
+
+    contentInput.value = await loadText(post.contentFile);
+    styleInput.value = await loadText(post.styleFile);
+
+    console.log("Loaded CSS:", styleInput.value);
+
+    statusMessage.textContent = `Editing post: ${post.title}`;
+    updatePreview();
+}
+
 
 // ======================================================
 // PREVIEW
@@ -181,6 +261,21 @@ function updatePreview() {
             ? `<div class="post-preview-content">${renderedContent}</div>`
             : `<p>Post preview will appear here.</p>`;
 }
+
+async function init() {
+    POSTS_DATA = await loadJson(DATA_PATHS.posts, { posts: {} });
+
+    const params = new URLSearchParams(window.location.search);
+    const postId = params.get("postId");
+
+    if (postId) {
+        await loadPostForEditing(postId);
+    } else {
+        updatePreview();
+    }
+}
+
+init();
 
 
 // ======================================================
@@ -272,7 +367,7 @@ async function savePost() {
     try {
         statusMessage.textContent = "Saving post...";
 
-        await fetch("http://localhost:8787/save-post", {
+        await fetch("http://127.0.0.1:8787/save-post", {
             method: "POST",
             headers: {
                 "Content-Type": "application/json"
@@ -280,7 +375,7 @@ async function savePost() {
             body: JSON.stringify(post)
         });
 
-        await fetch("http://localhost:8787/save-post-content", {
+        await fetch("http://127.0.0.1:8787/save-post-content", {
             method: "POST",
             headers: {
                 "Content-Type": "application/json"
@@ -291,7 +386,7 @@ async function savePost() {
             })
         });
 
-        await fetch("http://localhost:8787/save-post-style", {
+        const styleResponse = await fetch("http://127.0.0.1:8787/save-post-style", {
             method: "POST",
             headers: {
                 "Content-Type": "application/json"
@@ -301,6 +396,10 @@ async function savePost() {
                 css: styleInput.value
             })
         });
+
+        if (!styleResponse.ok) {
+            throw new Error("Style file save failed.");
+        }
 
         statusMessage.textContent = "Post saved successfully.";
         updatePreview();
@@ -312,10 +411,3 @@ async function savePost() {
 }
 
 savePostBtn.addEventListener("click", savePost);
-
-
-// ======================================================
-// INITIAL PREVIEW
-// ======================================================
-
-updatePreview();

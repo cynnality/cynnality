@@ -190,41 +190,13 @@ const server = http.createServer((req, res) => {
             }
 
             if (req.url === "/save-player") {
-                const { playerId, playerData } = incomingData;
-
-                if (!playerId || !playerData) {
-                    sendJson(res, 400, {
-                    ok: false,
-                    error: "Missing playerId or playerData"
-                    });
-                    return;
-                }
-
-                let existingData = { players: {} };
-
-                if (fs.existsSync(SAVE_TARGETS.players)) {
-                    const raw = fs.readFileSync(SAVE_TARGETS.players, "utf8");
-                    existingData = JSON.parse(raw);
-                }
-
-                if (!existingData.players) {
-                    existingData.players = {};
-                }
-
-                existingData.players[playerId] = playerData;
-
-                fs.writeFileSync(
-                    SAVE_TARGETS.players,
-                    JSON.stringify(existingData, null, 2) + "\n",
-                    "utf8"
-                );
-
-                sendJson(res, 200, {
-                    ok: true,
-                    message: `Saved ${playerId}`,
-                    filePath: SAVE_TARGETS.players
+                saveByKey({
+                    res,
+                    incomingData,
+                    filePath: SAVE_TARGETS.players,
+                    topLevelKey: "players",
+                    idField: "playerId"
                 });
-
                 return;
             }
 
@@ -494,22 +466,33 @@ const server = http.createServer((req, res) => {
             if (req.url === "/save-post-content") {
                 const filePath = path.join(__dirname, incomingData.contentFile);
 
+                console.log("Saving post content to:", filePath);
+
                 fs.mkdirSync(path.dirname(filePath), { recursive: true });
                 fs.writeFileSync(filePath, incomingData.content || "", "utf8");
 
-                res.writeHead(200, { "Content-Type": "application/json" });
-                res.end(JSON.stringify({ ok: true, savedTo: filePath }));
+                sendJson(res, 200, {
+                    ok: true,
+                    savedTo: filePath
+                });
+
                 return;
             }
 
             if (req.url === "/save-post-style") {
                 const filePath = path.join(__dirname, incomingData.styleFile);
 
+                console.log("Saving post CSS to:", filePath);
+                console.log("CSS length:", (incomingData.css || "").length);
+
                 fs.mkdirSync(path.dirname(filePath), { recursive: true });
                 fs.writeFileSync(filePath, incomingData.css || "", "utf8");
 
-                res.writeHead(200, { "Content-Type": "application/json" });
-                res.end(JSON.stringify({ ok: true, savedTo: filePath }));
+                sendJson(res, 200, {
+                    ok: true,
+                    savedTo: filePath
+                });
+
                 return;
             }
 

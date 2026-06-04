@@ -18,7 +18,6 @@ let OVERSEAS_LEAGUES = {};
 let OVERSEAS_TEAMS = {};
 
 let URL_PARAMS = {};
-let editingPickId = null;
 
 const draftYearInput = document.getElementById("draftYearInput");
 const draftDateField = document.getElementById("draftDateField");
@@ -27,6 +26,14 @@ const draftTypeInput = document.getElementById("draftTypeInput");
 const roundsCountInput = document.getElementById("roundsCountInput");
 const draftNameInput = document.getElementById("draftNameInput");
 const buildDraftBtn = document.getElementById("buildDraftBtn");
+
+const draftStartPanel = document.getElementById("draftStartPanel");
+const startNewDraftBtn = document.getElementById("startNewDraftBtn");
+const pullExistingDraftBtn = document.getElementById("pullExistingDraftBtn");
+const existingDraftPicker = document.getElementById("existingDraftPicker");
+const existingDraftSelect = document.getElementById("existingDraftSelect");
+const loadExistingDraftBtn = document.getElementById("loadExistingDraftBtn");
+const finalizeDraftBtn = document.getElementById("finalizeDraftBtn");
 
 const pickRoundInput = document.getElementById("pickRoundInput");
 const roundPickInput = document.getElementById("roundPickInput");
@@ -60,6 +67,12 @@ const previousTeamCodeInput = document.getElementById("previousTeamCodeInput");
 
 let selectedExpansionTeams = [];
 let selectedDispersalTeams = [];
+
+const pickStatusInput = document.getElementById("pickStatusInput");
+const cancelPickEditBtn = document.getElementById("cancelPickEditBtn");
+
+let editingPickId = null;
+let editingPickRound = null;
 
 const picksList = document.getElementById("picksList");
 const jsonPreview = document.getElementById("jsonPreview");
@@ -155,14 +168,16 @@ async function init() {
     applyUrlParamsToForm();
     updateOriginUI();
 
-    buildDraft();
+    populateExistingDraftSelect();
+    showStartOnly();
+    renderPreview();
 
-    if (URL_PARAMS.mode === "draft" && currentDraft) {
-        statusMessage.textContent = `Editing draft: ${currentDraft.draftId}`;
-    }
+    if (URL_PARAMS.draftId && DRAFTS[URL_PARAMS.draftId]) {
+        loadExistingDraftById(URL_PARAMS.draftId);
 
-    if (URL_PARAMS.mode === "pick" && URL_PARAMS.pickId) {
-        loadPickIntoForm(URL_PARAMS.pickId);
+        if (URL_PARAMS.mode === "pick" && URL_PARAMS.pickId) {
+            loadPickIntoForm(URL_PARAMS.pickId);
+        }
     }
 }
 
@@ -184,6 +199,17 @@ function loadPickIntoForm(pickId) {
     }
 
     editingPickId = pickId;
+
+    editingPickRound = String(pick.round || 1);
+    addPickBtn.textContent = "Save Pick Edit";
+
+    if (cancelPickEditBtn) {
+        cancelPickEditBtn.classList.remove("hidden");
+    }
+
+    if (pickStatusInput) {
+        pickStatusInput.value = pick.pickStatus || "selection";
+    }
 
     pickRoundInput.value = String(pick.round || 1);
     roundPickInput.value = pick.roundPick || 1;
@@ -262,6 +288,44 @@ function populateRoundSelect(roundsCount) {
         option.textContent = `Round ${round}`;
         pickRoundInput.appendChild(option);
     }
+}
+
+function populateExistingDraftSelect() {
+    if (!existingDraftSelect) return;
+
+    existingDraftSelect.innerHTML = `<option value="">Select draft</option>`;
+
+    Object.values(DRAFTS)
+        .sort((a, b) => {
+            const seasonA = Number(a.season || 0);
+            const seasonB = Number(b.season || 0);
+
+            if (seasonA !== seasonB) {
+                return seasonB - seasonA;
+            }
+
+            return String(a.draftName || "").localeCompare(String(b.draftName || ""));
+        })
+        .forEach(draft => {
+            const option = document.createElement("option");
+            option.value = draft.draftId;
+            option.textContent = `${draft.season} — ${draft.draftName || draft.draftId}`;
+            existingDraftSelect.appendChild(option);
+        });
+}
+
+function showDraftEditor() {
+    document.querySelectorAll(".panel").forEach(panel => {
+        panel.classList.remove("hidden");
+    });
+}
+
+function showStartOnly() {
+    document.querySelectorAll(".panel").forEach(panel => {
+        if (panel.id !== "draftStartPanel") {
+            panel.classList.add("hidden");
+        }
+    });
 }
 
 function populateCollegeOptions() {
@@ -434,6 +498,7 @@ function setExpansionTeamFieldsFromDraft(draft) {
     });
 
     updatePickTeamOptions();
+    autoSelectSingleExpansionTeam();
 }
 
 function getSelectedExpansionTeamCodes() {
@@ -450,9 +515,19 @@ function updatePickTeamOptions() {
         return;
     }
 
-    const selectedCodes = getSelectedExpansionTeamCodes();
+    let selectedCodes = [];
 
-    teamCodeInput.innerHTML = `<option value="">Select team</option>`;
+    if (currentDraft?.specialTeams?.expansionTeams?.length) {
+        selectedCodes = currentDraft.specialTeams.expansionTeams
+            .map(team => team.teamCode)
+            .filter(Boolean);
+    }
+
+    if (!selectedCodes.length) {
+        selectedCodes = getSelectedExpansionTeamCodes();
+    }
+
+    teamCodeInput.innerHTML = `<option value="">Select drafting team</option>`;
 
     selectedCodes.forEach(teamCode => {
         const option = document.createElement("option");
@@ -460,6 +535,34 @@ function updatePickTeamOptions() {
         option.textContent = getTeamName(teamCode);
         teamCodeInput.appendChild(option);
     });
+
+    autoSelectSingleExpansionTeam();
+}
+
+function autoSelectSingleExpansionTeam() {
+    if (draftTypeInput.value !== "expansion") {
+        return;
+    }
+
+    const options = [...teamCodeInput.options]
+        .filter(option => option.value);
+
+    if (options.length === 1) {
+        teamCodeInput.value = options[0].value;
+    }
+}
+
+function autoSelectSingleDispersalTeam() {
+    if (draftTypeInput.value !== "dispersal") {
+        return;
+    }
+
+    const options = [...previousTeamCodeInput.options]
+        .filter(option => option.value);
+
+    if (options.length === 1) {
+        previousTeamCodeInput.value = options[0].value;
+    }
 }
 
 function buildExpansionTeamFields() {
@@ -580,6 +683,7 @@ function setDispersalTeamFieldsFromDraft(draft) {
     });
 
     updatePreviousTeamOptions();
+    autoSelectSingleDispersalTeam();
 }
 
 function updatePreviousTeamOptions() {
@@ -632,7 +736,47 @@ function updateDraftTypeUI() {
     updatePreviousTeamOptions();
 }
 
+function loadExistingDraftById(draftId) {
+    const draft = DRAFTS[draftId];
+
+    if (!draft) {
+        statusMessage.textContent = `Draft not found: ${draftId}`;
+        return;
+    }
+
+    currentDraft = cloneData(draft);
+
+    draftYearInput.value = currentDraft.season || "";
+    draftTypeInput.value = currentDraft.draftType || "college";
+    roundsCountInput.value = currentDraft.roundsCount || 1;
+    draftNameInput.value = currentDraft.draftName || "";
+
+    draftDateInput.value = currentDraft.draftDate
+        ? String(currentDraft.draftDate).slice(0, 10)
+        : "";
+
+    updateDraftTypeUI();
+    populateRoundSelect(Number(currentDraft.roundsCount) || 1);
+
+    if (currentDraft.draftType === "expansion") {
+        setExpansionTeamFieldsFromDraft(currentDraft);
+        updatePickTeamOptions();
+        autoSelectSingleExpansionTeam();
+    } else if (currentDraft.draftType === "dispersal") {
+        setDispersalTeamFieldsFromDraft(currentDraft);
+    } else {
+        populateTeamSelect();
+        populatePreviousTeamSelect();
+    }
+
+    showDraftEditor();
+    renderAll();
+
+    statusMessage.textContent = `Loaded ${currentDraft.draftId}`;
+}
+
 function buildDraft() {
+    showDraftEditor();
     const year = Number(draftYearInput.value);
     const draftType = draftTypeInput.value;
     const roundsCount = Number(roundsCountInput.value) || 1;
@@ -642,7 +786,12 @@ function buildDraft() {
 
             draftNameInput.value = currentDraft.draftName || "";
             draftTypeInput.value = currentDraft.draftType || draftType;
-            draftDateInput.value = currentDraft.draftDate || "";
+
+            updateDraftTypeUI();
+
+            draftDateInput.value = currentDraft.draftDate
+                ? String(currentDraft.draftDate).slice(0, 10)
+                : "";
             roundsCountInput.value = currentDraft.roundsCount || 1;
 
             populateRoundSelect(Number(currentDraft.roundsCount) || 1);
@@ -692,7 +841,11 @@ function buildDraft() {
         rounds: {},
         notes: "",
         links: [],
-        entryIds: []
+        entryIds: [],
+        status: {
+            isFinalized: false,
+            finalizedAt: null
+        },
     };
 
     for (let round = 1; round <= roundsCount; round++) {
@@ -736,12 +889,23 @@ function buildPickFromForm() {
         return null;
     }
 
-    if (!playerName || !playerId || !teamCode) {
-        alert("Please add player name, player ID, and drafting team.");
+    const pickStatus = pickStatusInput?.value || "selection";
+
+    if (!teamCode) {
+        alert("Please select the drafting team.");
         return null;
     }
 
-    if ((draftType === "expansion" || draftType === "dispersal") && !previousTeamCode) {
+    if (pickStatus === "selection" && (!playerName || !playerId)) {
+        alert("Please add player name and player ID.");
+        return null;
+    }
+
+    if (
+        pickStatus === "selection" &&
+        (draftType === "expansion" || draftType === "dispersal") &&
+        !previousTeamCode
+    ) {
         alert("Please select the player's previous team.");
         return null;
     }
@@ -758,12 +922,12 @@ function buildPickFromForm() {
         overallPick,
         round,
         roundPick,
-        player: {
-            playerId,
-            playerName
-        },
-        college,
-        overseas,
+        pickStatus,
+        player: pickStatus === "selection"
+            ? { playerId, playerName }
+            : null,
+        college: pickStatus === "selection" ? college : null,
+        overseas: pickStatus === "selection" ? overseas : null,
         team: {
             teamCode,
             teamName: getTeamName(teamCode)
@@ -788,11 +952,14 @@ function addOrUpdatePick() {
         };
     }
 
-    const savePickId = editingPickId || pick.pickId;
-    pick.pickId = savePickId;
+    if (editingPickId && editingPickRound) {
+        delete currentDraft.rounds[editingPickRound]?.picks?.[editingPickId];
+    }
 
-    currentDraft.rounds[roundKey].picks[savePickId] = pick;
+    currentDraft.rounds[roundKey].picks[pick.pickId] = pick;
+
     editingPickId = null;
+    editingPickRound = null;
 
     clearPickFormAfterAdd();
     renderAll();
@@ -819,6 +986,21 @@ function clearPickFormAfterAdd() {
     teamCodeInput.value = "";
     pickNotesInput.value = "";
     previousTeamCodeInput.value = "";
+
+    editingPickRound = null;
+    addPickBtn.textContent = "Add Pick";
+
+    if (cancelPickEditBtn) {
+        cancelPickEditBtn.classList.add("hidden");
+    }
+
+    if (pickStatusInput) {
+        pickStatusInput.value = "selection";
+    }
+
+    updatePickTeamOptions();
+    autoSelectSingleExpansionTeam();
+    autoSelectSingleDispersalTeam();
 }
 
 function renderPicksList() {
@@ -851,13 +1033,13 @@ function renderPicksList() {
 
             card.innerHTML = `
                 <div class="pick-card-title">
-                    #${pick.overallPick} — ${pick.player.playerName}
+                    #${pick.overallPick} — ${pick.player?.playerName || "No Pick"}
                 </div>
                 <div class="pick-card-meta">
                     Round ${pick.round}, Pick ${pick.roundPick} • ${pick.team.teamName}
                 </div>
                 <div class="pick-card-meta">
-                    Player ID: ${pick.player.playerId}
+                    Player ID: ${pick.player?.playerId || "—"}
                 </div>
                 <div class="pick-card-meta">
                     College: ${pick.college?.collegeName || "—"}
@@ -866,6 +1048,11 @@ function renderPicksList() {
                     Overseas: ${pick.overseas?.teamName || pick.overseas?.country || "—"}
                 </div>
             `;
+
+            card.style.cursor = "pointer";
+            card.addEventListener("click", () => {
+                loadPickIntoForm(pick.pickId);
+            });
 
             picksList.appendChild(card);
         });
@@ -881,6 +1068,22 @@ function renderAll() {
     renderPreview();
 }
 
+function finalizeDraft() {
+    if (!currentDraft) {
+        alert("Load or build a draft first.");
+        return;
+    }
+
+    currentDraft.status = {
+        ...(currentDraft.status || {}),
+        isFinalized: true,
+        finalizedAt: new Date().toISOString()
+    };
+
+    renderAll();
+    statusMessage.textContent = `${currentDraft.draftId} marked as finalized. Save draft to keep this change.`;
+}
+
 async function saveDraft() {
     if (!currentDraft) {
         alert("Build the draft first.");
@@ -890,6 +1093,20 @@ async function saveDraft() {
     currentDraft.draftName = draftNameInput.value.trim();
     currentDraft.draftDate = draftDateInput.value || null;
     currentDraft.roundsCount = Number(roundsCountInput.value) || 1;
+
+    currentDraft.specialTeams = {
+        expansionTeams: currentDraft.draftType === "expansion"
+            ? collectExpansionTeams()
+            : [],
+        dispersalTeams: currentDraft.draftType === "dispersal"
+            ? collectDispersalTeams()
+            : []
+    };
+
+    currentDraft.status = currentDraft.status || {
+        isFinalized: false,
+        finalizedAt: null
+    };
 
     try {
         const response = await fetch(SAVE_URL, {
@@ -914,6 +1131,31 @@ async function saveDraft() {
 }
 
 function bindEvents() {
+
+    if (startNewDraftBtn) {
+        startNewDraftBtn.addEventListener("click", () => {
+            showDraftEditor();
+            currentDraft = null;
+            buildDraft();
+        });
+    }
+
+    if (pullExistingDraftBtn) {
+        pullExistingDraftBtn.addEventListener("click", () => {
+            existingDraftPicker.classList.toggle("hidden");
+        });
+    }
+
+    if (loadExistingDraftBtn) {
+        loadExistingDraftBtn.addEventListener("click", () => {
+            loadExistingDraftById(existingDraftSelect.value);
+        });
+    }
+
+    if (finalizeDraftBtn) {
+        finalizeDraftBtn.addEventListener("click", finalizeDraft);
+    }
+
     buildDraftBtn.addEventListener("click", buildDraft);
     addPickBtn.addEventListener("click", addOrUpdatePick);
     saveDraftBtn.addEventListener("click", saveDraft);
@@ -938,6 +1180,10 @@ function bindEvents() {
         buildDispersalTeamFields();
         buildDraft();
     });
+
+    if (cancelPickEditBtn) {
+        cancelPickEditBtn.addEventListener("click", clearPickFormAfterAdd);
+    }
 
 }
 

@@ -2956,6 +2956,106 @@
         }
       ],
       "championships": []
+    },
+    "angel_reese": {
+      "playerId": "angel_reese",
+      "playerData": {
+        "playerName": "Angel Reese",
+        "teamUsaJersey": "",
+        "playerStatus": {
+          "isActive": true,
+          "hasNcaaChampionships": true,
+          "wasDraftDayTrade": false,
+          "hasWnbaChampionships": false,
+          "hasOverseasExperience": false,
+          "hasUnrivaledExperience": true,
+          "hasNationalTeamExperience": true,
+          "hasOlympicExperience": false
+        },
+        "careerDetails": {
+          "collegeCareer": {
+            "collegeId": "louisiana_state_u",
+            "startYear": "2020",
+            "endYear": "2024",
+            "ncaaChampionships": [
+              {
+                "year": "2023",
+                "collegeId": "louisiana_state_u"
+              }
+            ]
+          },
+          "draftDetails": {
+            "year": "2024",
+            "pick": "7",
+            "draftedBy": "CHI_SKY"
+          },
+          "missedWnbaSeasons": [],
+          "overseasTeams": [],
+          "unrivaledTeams": [
+            {
+              "year": 2025,
+              "teamCode": "bc_rose"
+            },
+            {
+              "year": 2026,
+              "teamCode": "bc_rose"
+            }
+          ],
+          "teamUsaMedals": [
+            {
+              "eventType": "FIBA",
+              "format": "5x5",
+              "year": "2023",
+              "competition": "Americup",
+              "medal": "Silver"
+            }
+          ]
+        },
+        "image": null,
+        "images": [],
+        "wnbaSeasons": [
+          {
+            "year": "2024",
+            "entries": [
+              {
+                "type": "team",
+                "teamCode": "CHI_SKY"
+              }
+            ]
+          },
+          {
+            "year": "2025",
+            "entries": [
+              {
+                "type": "team",
+                "teamCode": "CHI_SKY"
+              }
+            ]
+          },
+          {
+            "year": "2026",
+            "entries": [
+              {
+                "type": "team",
+                "teamCode": "ATL_DREAM"
+              }
+            ]
+          }
+        ],
+        "wnbaTeams": [
+          {
+            "teamCode": "CHI_SKY",
+            "startYear": "2024",
+            "endYear": "2025"
+          },
+          {
+            "teamCode": "ATL_DREAM",
+            "startYear": "2026",
+            "endYear": "present"
+          }
+        ],
+        "championships": []
+      }
     }
   }
 }

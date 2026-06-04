@@ -16,7 +16,7 @@
             ---- want to use for all caps / titles / such things big bold (and oblique) style header feel)
             ============================================================-->
 
-        <!--=====================================================================================
+        <!--===================================================================================== 
 
     COPIED ALL WNBA DATA FILES, AND MOVED THEM INTO "basketball_101_data_files" FOLDER !!!!
 
@@ -46,6 +46,26 @@
             <h1>Draft Input Tool</h1>
             <p>Start with college draft entries. Expansion and dispersal drafts will come next.</p>
         </header>
+
+        <section id="draftStartPanel" class="panel">
+            <h2>Start Draft Editor</h2>
+
+            <div class="button-row">
+                <button id="startNewDraftBtn" type="button">Start New Draft</button>
+                <button id="pullExistingDraftBtn" type="button">Pull Up Existing Draft</button>
+            </div>
+
+            <div id="existingDraftPicker" class="conditional-section hidden">
+                <label>
+                    Select Existing Draft
+                    <select id="existingDraftSelect">
+                        <option value="">Select draft</option>
+                    </select>
+                </label>
+
+                <button id="loadExistingDraftBtn" type="button">Load Draft</button>
+            </div>
+        </section>
 
         <section class="panel">
             <h2>Draft Setup</h2>
@@ -114,6 +134,13 @@
         <section class="panel">
             <h2>Add Pick</h2>
 
+                <p id="pickEditModeMessage" class="edit-mode-message hidden">
+                    Editing existing pick
+                </p>
+
+                <input id="editingPickIdInput" type="hidden" />
+                <input id="editingPickRoundInput" type="hidden" />
+
             <div class="form-grid">
                 <label>
                     Round
@@ -128,6 +155,15 @@
                 <label>
                     Overall Pick
                     <input id="overallPickInput" type="number" min="1" value="1" />
+                </label>
+
+                <label>
+                    Pick Status
+                    <select id="pickStatusInput">
+                        <option value="selection">Selection</option>
+                        <option value="no_pick">No Pick</option>
+                        <option value="passed">Passed</option>
+                    </select>
                 </label>
 
                 <label>
@@ -196,7 +232,10 @@
                 <textarea id="pickNotesInput" rows="3"></textarea>
             </label>
 
-            <button id="addPickBtn" type="button">Add / Update Pick</button>
+            <div class="button-row">
+                <button id="addPickBtn" type="button">Add Pick</button>
+                <button id="cancelPickEditBtn" class="secondary-btn hidden" type="button">Cancel Edit</button>
+            </div>
         </section>
 
         <section class="panel">

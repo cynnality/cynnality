@@ -1,0 +1,185 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 32px;
+    font-family: "Chivo Mono", monospace;
+    background: #fff;
+    color: #111;
+}
+
+.posts-shell {
+    margin: 0 auto;
+}
+
+.horz-bar {
+    display: flex;
+    gap: 12px;
+}
+
+.vert-bar {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.bar {
+    
+}
+
+.posts-header {
+    border: 2px solid #111;
+    padding: 16px;
+
+    max-width: 400px;
+}
+.posts-header h1 {
+    margin: 0 0 8px;
+    font-size: 32px;
+}
+.posts-header p {
+    margin: 0;
+    font-size: 18px;
+}
+
+.panel {
+    border: 2px solid #111;
+    padding: 16px;
+    margin-bottom: 18px;
+}
+
+#postsPanel {
+    max-width: 400px;
+}
+
+#readerPanel {
+    width: 600px;
+}
+
+.eyebrow {
+    margin: 0 0 6px;
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: 800;
+    letter-spacing: 0.1em;
+}
+
+h1,
+h2 {
+    margin: 0;
+}
+
+.controls-panel {
+    display: grid;
+    grid-template-rows: 80px 80px;
+    width: 400px;
+}
+
+.statusSelect {
+    display: none;
+}
+
+label {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    font-weight: 800;
+}
+
+input,
+select {
+    padding: 10px;
+    border: 2px solid #111;
+    font: inherit;
+}
+
+.posts-list {
+    display: grid;
+    gap: 12px;
+}
+
+.post-card {
+    border: 2px solid #111;
+    padding: 14px;
+    cursor: pointer;
+    background: #fafafa;
+}
+
+.post-card:hover {
+    background: #f0f0f0;
+}
+
+.post-card-title {
+    font-weight: 900;
+    font-size: 18px;
+}
+
+.post-card-meta {
+    margin-top: 6px;
+    font-size: 13px;
+    color: #555;
+}
+
+.post-card-tags {
+    margin-top: 8px;
+    display: flex;
+    gap: 6px;
+    flex-wrap: wrap;
+}
+
+.post-tag {
+    border: 1px solid #111;
+    padding: 3px 7px;
+    font-size: 12px;
+}
+
+.hidden {
+    display: none;
+}
+
+.reader-header {
+    display: flex;
+    justify-content: space-between;
+    gap: 16px;
+    align-items: start;
+    border-bottom: 2px solid #111;
+    margin-bottom: 16px;
+}
+
+.reader-meta {
+    margin: 0 0 6px;
+    font-size: 12px;
+    text-transform: uppercase;
+    font-weight: 800;
+    color: #666;
+}
+
+.reader-content {
+    line-height: 1.6;
+}
+
+button {
+    padding: 8px 12px;
+    border: 2px solid #111;
+    background: #111;
+    color: white;
+    font-weight: 800;
+    cursor: pointer;
+}
+
+.post-card-actions {
+    margin-top: 10px;
+}
+
+.edit-post-btn {
+    padding: 6px 10px;
+    font-size: 12px;
+}
+
+@media (max-width: 800px) {
+    .controls-panel {
+        grid-template-columns: 1fr;
+    }
+}
