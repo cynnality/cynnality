@@ -33,7 +33,7 @@ body {
     border: 2px solid #111;
     padding: 16px;
 
-    max-width: 400px;
+    max-width: 300px;
 }
 .posts-header h1 {
     margin: 0 0 8px;
@@ -51,11 +51,11 @@ body {
 }
 
 #postsPanel {
-    max-width: 400px;
+    max-width: 300px;
 }
 
 #readerPanel {
-    width: 600px;
+    width: 80%;
 }
 
 .eyebrow {
@@ -74,7 +74,8 @@ h2 {
 .controls-panel {
     display: grid;
     grid-template-rows: 80px 80px;
-    width: 400px;
+    width: 300px;
+    margin-bottom: 0;
 }
 
 .statusSelect {

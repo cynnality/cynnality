@@ -3056,6 +3056,112 @@
         ],
         "championships": []
       }
+    },
+    "alanna_smith": {
+      "playerId": "alanna_smith",
+      "playerName": "Alanna Smith",
+      "playerStatus": {
+        "isActive": true,
+        "hasNcaaChampionships": false,
+        "wasDraftDayTrade": false,
+        "hasWnbaChampionships": false,
+        "hasOverseasExperience": false,
+        "hasUnrivaledExperience": false,
+        "hasNationalTeamExperience": false,
+        "hasOlympicExperience": false
+      },
+      "careerDetails": {
+        "collegeCareer": {
+          "collegeId": "",
+          "collegeName": "",
+          "startYear": "",
+          "endYear": "",
+          "ncaaChampionships": []
+        },
+        "draftDetails": {
+          "year": "",
+          "pick": "",
+          "round": "",
+          "roundPick": "",
+          "draftedBy": "",
+          "acquiredBy": "",
+          "transactionNote": ""
+        },
+        "wnbaTeams": [
+          {
+            "teamCode": "MIN_LYNX",
+            "startYear": 2025,
+            "endYear": "",
+            "transactionNote": "Quick-added from award reference."
+          }
+        ],
+        "missedWnbaSeasons": [],
+        "overseasTeams": [],
+        "unrivaledTeams": [],
+        "teamUsaMedals": []
+      },
+      "wnbaSeasons": {},
+      "images": [],
+      "dataStatus": {
+        "isQuickAdd": true,
+        "needsFullProfile": true,
+        "quickAddSource": "command-center",
+        "quickAddReason": "missing-player-reference",
+        "quickAddedAt": "2026-06-05T00:57:29.902Z"
+      }
+    },
+    "veronica_burton": {
+      "playerId": "veronica_burton",
+      "playerName": "Veronica Burton",
+      "playerStatus": {
+        "isActive": true,
+        "hasNcaaChampionships": false,
+        "wasDraftDayTrade": false,
+        "hasWnbaChampionships": false,
+        "hasOverseasExperience": false,
+        "hasUnrivaledExperience": false,
+        "hasNationalTeamExperience": false,
+        "hasOlympicExperience": false
+      },
+      "careerDetails": {
+        "collegeCareer": {
+          "collegeId": "northwestern_u",
+          "collegeName": "Northwestern University",
+          "startYear": "",
+          "endYear": "",
+          "ncaaChampionships": []
+        },
+        "draftDetails": {
+          "year": 2025,
+          "pick": 3,
+          "round": 1,
+          "roundPick": 3,
+          "draftedBy": "GSV_VALKYRIES",
+          "acquiredBy": "",
+          "transactionNote": ""
+        },
+        "wnbaTeams": [
+          {
+            "teamCode": "GSV_VALKYRIES",
+            "startYear": 2025,
+            "endYear": "",
+            "transactionNote": "Quick-added from award reference."
+          }
+        ],
+        "missedWnbaSeasons": [],
+        "overseasTeams": [],
+        "unrivaledTeams": [],
+        "teamUsaMedals": []
+      },
+      "wnbaSeasons": {},
+      "images": [],
+      "dataStatus": {
+        "isQuickAdd": true,
+        "needsFullProfile": true,
+        "quickAddSource": "command-center",
+        "quickAddReason": "missing-player-reference",
+        "quickAddedAt": "2026-06-05T00:57:39.751Z"
+      }
     }
   }
 }
