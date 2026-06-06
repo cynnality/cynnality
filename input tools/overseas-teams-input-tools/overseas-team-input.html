@@ -56,6 +56,15 @@ wnba_teams_history.json /////////// -> teams of the WNBA by year and team franch
     <div class="tool-wrap">
         <section class="tool-shell">
 
+        <section class="panel input">
+            <div class="panel-header">
+                <h2>Open Utility Entries</h2>
+                <button id="reloadUtilityEntriesBtn" type="button">Reload</button>
+            </div>
+
+            <div id="utilityEntriesList" class="entry-list"></div>
+        </section>
+
             <div class="panel-group">
                 <section class="panel input mini">
                     <div class="panel-header">
@@ -194,7 +203,7 @@ wnba_teams_history.json /////////// -> teams of the WNBA by year and team franch
                 </div>
             </section>
 
-        </section>
+        </section> 
 
         <aside class="side-rail">
 
@@ -227,7 +236,8 @@ wnba_teams_history.json /////////// -> teams of the WNBA by year and team franch
         </aside>
     </div>
 
-    <script src="overseas-team-input.js" defer></script>
+    <script src="../../entries/shared/utility-entry-service.js"></script>
+    <script src="overseas-team-input.js"></script>
 </body>
 
 </html>

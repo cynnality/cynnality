@@ -1,0 +1,184 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 32px;
+    font-family: "Chivo Mono", monospace;
+    background: #fff;
+    color: #111;
+}
+
+.top-pager {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+h1 {
+    font-size: 2.4rem;
+    text-transform: uppercase;
+    letter-spacing: -0.05em;
+}
+
+.tool-wrap {
+    display: flex;
+    gap: 24px;
+    margin-top: 24px;
+}
+
+.tool-shell {
+    width: 900px;
+}
+
+.panel {
+    background: #fff;
+    border: 3px solid #111;
+    border-radius: 4px;
+    padding: 6px;
+    margin-bottom: 24px;
+}
+
+.panel-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid #111;
+    margin-bottom: 14px;
+}
+
+.panel-header h2 {
+    margin: 0;
+    padding-bottom: 8px;
+    text-transform: uppercase;
+    font-size: 1.15rem;
+}
+
+.item {
+    display: grid;
+    gap: 8px;
+    margin: 14px;
+    padding: 14px;
+    border: 2px dotted #111;
+}
+
+input,
+textarea,
+select {
+    width: 100%;
+    padding: 10px 12px;
+    border: 2px solid #111;
+    background: #e2d6d6;
+    font: inherit;
+}
+
+textarea {
+    min-height: 120px;
+    resize: vertical;
+}
+
+button {
+    padding: 6px 12px;
+    border: 2px solid #111;
+    background: #4A6020;
+    color: #fff;
+    font-weight: 500;
+    text-transform: uppercase;
+    cursor: pointer;
+    box-shadow: 3px 3px 0 #111;
+}
+
+button:hover {
+    transform: translate(1px, 1px);
+    box-shadow: none;
+}
+
+.panel.data {
+    width: 420px;
+    height: fit-content;
+}
+
+#jsonPreview,
+.utility-entry-card pre {
+    background: #111;
+    color: #f4f0e8;
+    padding: 14px;
+    overflow-x: auto;
+    font-size: 0.85rem;
+}
+
+.entry-list {
+    display: grid;
+    gap: 12px;
+}
+
+.utility-entry-card {
+    border: 2px solid #111;
+    padding: 12px;
+    background: #fafafa;
+}
+
+.utility-entry-card h3 {
+    margin-top: 0;
+    text-transform: uppercase;
+}
+
+.utility-manager-layout {
+    align-items: flex-start;
+}
+
+.utility-detail-panel {
+    position: sticky;
+    top: 24px;
+}
+
+.utility-entry-card {
+    border: 2px solid #111;
+    padding: 12px;
+    background: #fafafa;
+    cursor: pointer;
+}
+
+.utility-entry-card:hover {
+    background: #ffcd00;
+}
+
+.utility-entry-card h3 {
+    margin: 0 0 8px;
+    text-transform: uppercase;
+}
+
+.detail-row {
+    display: grid;
+    grid-template-columns: 140px 1fr;
+    gap: 12px;
+    border-bottom: 1px dotted #111;
+    padding: 6px 0;
+}
+
+.utility-detail-actions {
+    display: flex;
+    gap: 10px;
+    margin: 16px 0;
+}
+
+button:disabled {
+    opacity: 0.45;
+    cursor: not-allowed;
+}
+
+.muted {
+    opacity: 0.65;
+}
+
+@media (max-width: 900px) {
+    .tool-wrap {
+        flex-direction: column;
+    }
+
+    .tool-shell,
+    .panel.data {
+        width: 100%;
+    }
+}

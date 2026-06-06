@@ -52,6 +52,12 @@ const teamCardsList = document.getElementById("teamCardsList");
 const teamSearchInput = document.getElementById("teamSearchInput");
 const teamLeagueFilter = document.getElementById("teamLeagueFilter");
 
+const utilityEntriesList = document.getElementById("utilityEntriesList");
+const reloadUtilityEntriesBtn = document.getElementById("reloadUtilityEntriesBtn");
+
+let openUtilityEntries = [];
+let activeUtilityEntryId = null;
+
 let teamCodeEdited = false;
 let activeTeamCode = null;
 
@@ -124,6 +130,129 @@ function rebuildLocationDisplayFromFields() {
     ].filter(Boolean);
 
     locationInput.value = parts.join(", ");
+}
+
+async function loadUtilityEntries() {
+    const data = await UtilityEntryService.loadEntries();
+
+    openUtilityEntries = Object.values(data.openEntries || {})
+        .filter(entry =>
+            entry.category === "overseas-reference" &&
+            (entry.wires || []).includes("overseas-team-input-tool")
+        );
+
+    renderUtilityEntries();
+}
+
+function renderUtilityEntries() {
+    utilityEntriesList.innerHTML = "";
+
+    if (!openUtilityEntries.length) {
+        utilityEntriesList.innerHTML = `<p>No open overseas utility entries.</p>`;
+        return;
+    }
+
+    openUtilityEntries.forEach(entry => {
+        const request = entry.referenceRequest || {};
+
+        const card = document.createElement("article");
+        card.className = "record-card utility-entry-card";
+
+        card.innerHTML = `
+            <div class="record-card-title">${request.teamName || entry.title || "Unnamed Utility Entry"}</div>
+            <div class="record-card-meta">League: ${request.leagueName || "—"}</div>
+            <div class="record-card-meta">Location: ${[request.city, request.country].filter(Boolean).join(", ") || "—"}</div>
+            <div class="record-card-meta">From: ${entry.createdFrom?.tool || "—"}</div>
+
+            <div class="button-row">
+                <button type="button" class="load-utility-entry-btn">Load Into Form</button>
+                <button type="button" class="resolve-utility-entry-btn">Mark Resolved</button>
+            </div>
+        `;
+
+        card.querySelector(".load-utility-entry-btn").addEventListener("click", () => {
+            loadUtilityEntryIntoTeamForm(entry);
+        });
+
+        card.querySelector(".resolve-utility-entry-btn").addEventListener("click", () => {
+            resolveUtilityEntryForTeam(entry);
+        });
+
+        utilityEntriesList.appendChild(card);
+    });
+}
+
+function findLeagueCodeByName(leagueName) {
+    const cleanName = String(leagueName || "").trim().toLowerCase();
+
+    if (!cleanName) return "";
+
+    const match = Object.values(overseasLeaguesData.leagues || {}).find(league => {
+        const names = [
+            league.name?.full,
+            league.name?.official,
+            league.name?.display,
+            ...(league.name?.commonNames || [])
+        ];
+
+        return names
+            .filter(Boolean)
+            .some(name => String(name).trim().toLowerCase() === cleanName);
+    });
+
+    return match?.leagueCode || "";
+}
+
+function loadUtilityEntryIntoTeamForm(entry) {
+    const request = entry.referenceRequest || {};
+
+    activeUtilityEntryId = entry.entryId;
+
+    if (request.teamName) {
+        teamNameInput.value = request.teamName;
+        displayNameInput.value = request.teamName;
+
+        if (!teamCodeEdited) {
+            teamCodeInput.value = makeCode(request.teamName);
+        }
+    }
+
+    const matchedLeagueCode = findLeagueCodeByName(request.leagueName);
+
+    if (matchedLeagueCode) {
+        leagueCodeInput.value = matchedLeagueCode;
+    }
+
+    cityInput.value = request.city || "";
+    countryInput.value = request.country || "";
+    rebuildLocationDisplayFromFields();
+
+    metaNotesInput.value = [
+        metaNotesInput.value,
+        `Utility entry: ${entry.entryId}`,
+        request.leagueName ? `Requested league: ${request.leagueName}` : "",
+        request.season ? `Related season: ${request.season}` : "",
+        entry.notes ? `Entry notes: ${entry.notes}` : ""
+    ].filter(Boolean).join("\n");
+
+    renderJson();
+}
+
+async function resolveUtilityEntryForTeam(entry) {
+    const teamObject = getTeamObject();
+
+    const resolvedEntry = UtilityEntryService.resolveEntry(
+        entry,
+        {
+            teamCode: teamObject.teamCode,
+            leagueCode: teamObject.league?.leagueCode || ""
+        },
+        "overseas-team-input-tool"
+    );
+
+    await UtilityEntryService.saveEntry(resolvedEntry);
+    activeUtilityEntryId = null;
+    await loadUtilityEntries();
 }
 
 async function fetchFirstWorkingJson(paths) {
@@ -703,6 +832,25 @@ saveJsonBtn.addEventListener("click", async () => {
         overseasTeamsData.teams[teamObject.teamCode] = teamObject;
         activeTeamCode = teamObject.teamCode;
 
+        if (activeUtilityEntryId) {
+            const entry = openUtilityEntries.find(item => item.entryId === activeUtilityEntryId);
+
+            if (entry) {
+                const resolvedEntry = UtilityEntryService.resolveEntry(
+                    entry,
+                    {
+                        teamCode: teamObject.teamCode,
+                        leagueCode: teamObject.league?.leagueCode || ""
+                    },
+                    "overseas-team-input-tool"
+                );
+
+                await UtilityEntryService.saveEntry(resolvedEntry);
+                activeUtilityEntryId = null;
+                await loadUtilityEntries();
+            }
+        }
+
         renderTeamCards();
         renderJson();
 
@@ -718,4 +866,5 @@ saveJsonBtn.addEventListener("click", async () => {
 });
 
 resetFormOnLoad();
-loadAllData();
+loadAllData(); 
+loadUtilityEntries();

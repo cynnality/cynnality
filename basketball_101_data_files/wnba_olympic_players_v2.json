@@ -6329,55 +6329,264 @@
     },
     "alysha_clark": {
       "playerId": "alysha_clark",
-      "playerName": "Alysha Clark",
-      "playerStatus": {
-        "isActive": true,
-        "hasNcaaChampionships": false,
-        "wasDraftDayTrade": false,
-        "hasWnbaChampionships": false,
-        "hasOverseasExperience": false,
-        "hasUnrivaledExperience": false,
-        "hasNationalTeamExperience": false,
-        "hasOlympicExperience": false
-      },
-      "careerDetails": {
-        "collegeCareer": {
-          "collegeId": "",
-          "collegeName": "",
-          "startYear": "",
-          "endYear": "",
-          "ncaaChampionships": []
+      "playerData": {
+        "playerName": "Alysha Clark",
+        "teamUsaJersey": "",
+        "playerStatus": {
+          "isActive": true,
+          "hasNcaaChampionships": false,
+          "wasDraftDayTrade": false,
+          "hasWnbaChampionships": true,
+          "hasOverseasExperience": true,
+          "hasUnrivaledExperience": false,
+          "hasNationalTeamExperience": false,
+          "hasOlympicExperience": false
         },
-        "draftDetails": {
-          "year": "",
-          "pick": "",
-          "round": "",
-          "roundPick": "",
-          "draftedBy": "",
-          "acquiredBy": "",
-          "transactionNote": ""
+        "careerDetails": {
+          "collegeCareer": {
+            "collegeId": "Middle Tennessee State University",
+            "startYear": "2005",
+            "endYear": "2010",
+            "ncaaChampionships": []
+          },
+          "draftDetails": {
+            "year": "2010",
+            "pick": "17",
+            "draftedBy": "SA_SILVER_STARS"
+          },
+          "missedWnbaSeasons": [
+            {
+              "year": "2010",
+              "teamCode": "SA_SILVER_STARS",
+              "reason": "Did not make the roster"
+            },
+            {
+              "year": "2011",
+              "teamCode": "SA_SILVER_STARS",
+              "reason": "Did not make the roster"
+            }
+          ],
+          "overseasTeams": [
+            {
+              "season": "2017-18",
+              "referenceMode": "utility",
+              "teamCode": "",
+              "leagueName": "Basket Liga Kobiet",
+              "teamName": "KGHM BC Polkowice",
+              "country": "Poland",
+              "city": "Polkowice",
+              "utilityEntryId": "utility_overseas_reference_kghm_bc_polkowice_alysha_clark_1780784177173",
+              "utilityEntryStatus": "open",
+              "note": ""
+            }
+          ],
+          "unrivaledTeams": [],
+          "teamUsaMedals": []
         },
-        "wnbaTeams": [
+        "image": null,
+        "images": [],
+        "wnbaSeasons": [
           {
-            "teamCode": "LVA_ACES",
-            "startYear": 2023,
-            "endYear": "",
-            "transactionNote": "Quick-added from award reference."
+            "year": "2010",
+            "entries": [
+              {
+                "type": "sit_out",
+                "teamCode": "SA_SILVER_STARS",
+                "reason": "Did not make the roster"
+              }
+            ]
+          },
+          {
+            "year": "2011",
+            "entries": [
+              {
+                "type": "sit_out",
+                "teamCode": "SA_SILVER_STARS",
+                "reason": "Did not make the roster"
+              }
+            ]
+          },
+          {
+            "year": "2012",
+            "entries": [
+              {
+                "type": "team",
+                "teamCode": "SEA_STORM"
+              }
+            ]
+          },
+          {
+            "year": "2013",
+            "entries": [
+              {
+                "type": "team",
+                "teamCode": "SEA_STORM"
+              }
+            ]
+          },
+          {
+            "year": "2014",
+            "entries": [
+              {
+                "type": "team",
+                "teamCode": "SEA_STORM"
+              }
+            ]
+          },
+          {
+            "year": "2015",
+            "entries": [
+              {
+                "type": "team",
+                "teamCode": "SEA_STORM"
+              }
+            ]
+          },
+          {
+            "year": "2016",
+            "entries": [
+              {
+                "type": "team",
+                "teamCode": "SEA_STORM"
+              }
+            ]
+          },
+          {
+            "year": "2017",
+            "entries": [
+              {
+                "type": "team",
+                "teamCode": "SEA_STORM"
+              }
+            ]
+          },
+          {
+            "year": "2018",
+            "entries": [
+              {
+                "type": "team",
+                "teamCode": "SEA_STORM"
+              }
+            ]
+          },
+          {
+            "year": "2019",
+            "entries": [
+              {
+                "type": "team",
+                "teamCode": "SEA_STORM"
+              }
+            ]
+          },
+          {
+            "year": "2020",
+            "entries": [
+              {
+                "type": "team",
+                "teamCode": "SEA_STORM"
+              }
+            ]
+          },
+          {
+            "year": "2022",
+            "entries": [
+              {
+                "type": "team",
+                "teamCode": "WAS_MYSTICS"
+              }
+            ]
+          },
+          {
+            "year": "2023",
+            "entries": [
+              {
+                "type": "team",
+                "teamCode": "LVA_ACES"
+              }
+            ]
+          },
+          {
+            "year": "2024",
+            "entries": [
+              {
+                "type": "team",
+                "teamCode": "LVA_ACES"
+              }
+            ]
+          },
+          {
+            "year": "2025",
+            "entries": [
+              {
+                "type": "team",
+                "teamCode": "SEA_STORM",
+                "note": "signed with the storm on February 9, 2025"
+              },
+              {
+                "type": "team",
+                "teamCode": "WAS_MYSTICS",
+                "note": "Storm traded her to the Mystics on August 5, 2025 and also gave Mystics their 2026 first round draft pick in exchange for Brittney Sykes"
+              }
+            ]
+          },
+          {
+            "year": "2026",
+            "entries": [
+              {
+                "type": "team",
+                "teamCode": "DAL_WINGS"
+              }
+            ]
           }
         ],
-        "missedWnbaSeasons": [],
-        "overseasTeams": [],
-        "unrivaledTeams": [],
-        "teamUsaMedals": []
-      },
-      "wnbaSeasons": {},
-      "images": [],
-      "dataStatus": {
-        "isQuickAdd": true,
-        "needsFullProfile": true,
-        "quickAddSource": "command-center",
-        "quickAddReason": "missing-player-reference",
-        "quickAddedAt": "2026-06-06T01:44:37.845Z"
+        "wnbaTeams": [
+          {
+            "teamCode": "SEA_STORM",
+            "startYear": "2012",
+            "endYear": "2020"
+          },
+          {
+            "teamCode": "WAS_MYSTICS",
+            "startYear": "2022",
+            "endYear": "2022"
+          },
+          {
+            "teamCode": "LVA_ACES",
+            "startYear": "2023",
+            "endYear": "2024"
+          },
+          {
+            "teamCode": "SEA_STORM",
+            "startYear": "2025",
+            "endYear": "2025",
+            "note": "signed with the storm on February 9, 2025"
+          },
+          {
+            "teamCode": "WAS_MYSTICS",
+            "startYear": "2025",
+            "endYear": "2025",
+            "note": "Storm traded her to the Mystics on August 5, 2025 and also gave Mystics their 2026 first round draft pick in exchange for Brittney Sykes"
+          },
+          {
+            "teamCode": "DAL_WINGS",
+            "startYear": "2026",
+            "endYear": "present"
+          }
+        ],
+        "championships": [
+          {
+            "year": "2018",
+            "teamCode": "SEA_STORM"
+          },
+          {
+            "year": "2020",
+            "teamCode": "SEA_STORM"
+          },
+          {
+            "year": "2023",
+            "teamCode": "LVA_ACES"
+          }
+        ]
       }
     },
     "courtney_vandersloot": {

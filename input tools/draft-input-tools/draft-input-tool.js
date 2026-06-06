@@ -6,6 +6,36 @@ const DATA_PATHS = {
     overseasTeams: "../../basketball_101_data_files/overseas_teams_data.json",
 };
 
+const utilityLeagueNameInput =
+    document.getElementById("utilityLeagueNameInput");
+
+const utilityTeamNameInput =
+    document.getElementById("utilityTeamNameInput");
+
+const utilityCountryInput =
+    document.getElementById("utilityCountryInput");
+
+const utilityCityInput =
+    document.getElementById("utilityCityInput");
+
+const utilityOverseasSeasonInput =
+    document.getElementById("utilityOverseasSeasonInput");
+
+const utilityEntryNotesInput =
+    document.getElementById("utilityEntryNotesInput");
+
+const saveOverseasUtilityEntryBtn =
+    document.getElementById("saveOverseasUtilityEntryBtn");
+
+const utilityEntryStatusMessage =
+    document.getElementById("utilityEntryStatusMessage");
+
+const overseasExistingReferenceFields =
+    document.getElementById("overseasExistingReferenceFields");
+
+const overseasUtilityEntryFields =
+    document.getElementById("overseasUtilityEntryFields");
+
 const SAVE_URL = "http://127.0.0.1:8787/save-draft";
 
 let DRAFTS = {};
@@ -120,6 +150,27 @@ function applyUrlParamsToForm() {
     updateDraftTypeUI();
 }
 
+function getOverseasReferenceMode() {
+    return document.querySelector(
+        'input[name="overseasReferenceMode"]:checked'
+    )?.value || "select";
+}
+
+function updateOverseasReferenceModeUI() {
+
+    const mode = getOverseasReferenceMode();
+
+    overseasExistingReferenceFields.classList.toggle(
+        "hidden",
+        mode !== "select"
+    );
+
+    overseasUtilityEntryFields.classList.toggle(
+        "hidden",
+        mode !== "utility"
+    );
+}
+
 function getTeamName(teamCode) {
     return TEAMS?.[teamCode]?.name?.full || teamCode || "";
 }
@@ -167,6 +218,7 @@ async function init() {
 
     applyUrlParamsToForm();
     updateOriginUI();
+    updateOverseasReferenceModeUI();
 
     populateExistingDraftSelect();
     showStartOnly();
@@ -179,6 +231,98 @@ async function init() {
             loadPickIntoForm(URL_PARAMS.pickId);
         }
     }
+}
+
+async function createOverseasUtilityEntry() {
+
+    const entry = UtilityEntryService.buildUtilityEntry({
+
+        title:
+            utilityTeamNameInput.value.trim(),
+
+        category:
+            "overseas-reference",
+
+        createdFrom: {
+
+            tool:
+                "draft-input-tool",
+
+            contextType:
+                "draft-overseas-player",
+
+            contextId:
+                currentDraft?.draftId || ""
+
+        },
+
+        task: {
+
+            taskType:
+                "create-or-connect-reference",
+
+            targetDataType:
+                "overseas-team",
+
+            actionNeeded:
+                "Create overseas team reference."
+
+        },
+
+        referenceRequest: {
+
+            leagueName:
+                utilityLeagueNameInput.value.trim(),
+
+            teamName:
+                utilityTeamNameInput.value.trim(),
+
+            country:
+                utilityCountryInput.value.trim(),
+
+            city:
+                utilityCityInput.value.trim(),
+
+            season:
+                utilityOverseasSeasonInput.value.trim()
+
+        },
+
+        wires: [
+
+            "draft-input-tool",
+            "overseas-league-input-tool",
+            "overseas-team-input-tool"
+
+        ],
+
+        attachedTo: [
+            {
+                type: "draft",
+                id: currentDraft?.draftId || ""
+            },
+            {
+                type: "draft-pick",
+                id: createPickId({
+                    year: Number(draftYearInput.value),
+                    draftType: draftTypeInput.value,
+                    round: Number(pickRoundInput.value),
+                    roundPick: Number(roundPickInput.value)
+                })
+            }
+        ],
+
+        notes:
+            utilityEntryNotesInput.value.trim()
+
+    });
+
+    await UtilityEntryService.saveEntry(entry);
+
+    utilityEntryStatusMessage.textContent =
+        "Utility entry saved.";
+
+    return entry;
 }
 
 function getAllPicksFromDraft(draft) {
@@ -447,6 +591,18 @@ function updateOverseasLeagueAndTeams() {
 function buildOverseasObject() {
     if (!isOverseasPlayerInput.checked) {
         return null;
+    }
+
+    if (getOverseasReferenceMode() === "utility") {
+        return {
+            country: utilityCountryInput.value.trim(),
+            leagueCode: null,
+            leagueName: utilityLeagueNameInput.value.trim(),
+            teamCode: null,
+            teamName: utilityTeamNameInput.value.trim(),
+            existsInOverseasData: false,
+            referenceMode: "utility"
+        };
     }
 
     const country = overseasCountryInput.value.trim();
@@ -859,7 +1015,7 @@ function buildDraft() {
     renderAll();
 }
 
-function buildPickFromForm() {
+function buildPickFromForm(utilityEntry = null) {
     const year = Number(draftYearInput.value);
     const draftType = draftTypeInput.value;
     const round = Number(pickRoundInput.value);
@@ -927,7 +1083,13 @@ function buildPickFromForm() {
             ? { playerId, playerName }
             : null,
         college: pickStatus === "selection" ? college : null,
-        overseas: pickStatus === "selection" ? overseas : null,
+        overseas: pickStatus === "selection"
+            ? {
+                ...overseas,
+                utilityEntryId: utilityEntry?.entryId || "",
+                utilityEntryStatus: utilityEntry ? "open" : ""
+            }
+            : null,
         team: {
             teamCode,
             teamName: getTeamName(teamCode)
@@ -935,12 +1097,27 @@ function buildPickFromForm() {
         previousTeam,
         notes: pickNotesInput.value.trim(),
         links: [],
-        entryIds: []
+        entryIds: utilityEntry?.entryId ? [utilityEntry.entryId] : []
     };
 }
 
-function addOrUpdatePick() {
-    const pick = buildPickFromForm();
+async function addOrUpdatePick() {
+    let utilityEntry = null;
+
+    const isUtilityMode =
+        isOverseasPlayerInput.checked &&
+        getOverseasReferenceMode() === "utility";
+
+    if (isUtilityMode) {
+        if (!utilityTeamNameInput.value.trim()) {
+            alert("Please enter the overseas team name for the utility entry.");
+            return;
+        }
+
+        utilityEntry = await createOverseasUtilityEntry();
+    }
+
+    const pick = buildPickFromForm(utilityEntry);
     if (!pick) return;
 
     const roundKey = String(pick.round);
@@ -963,6 +1140,8 @@ function addOrUpdatePick() {
 
     clearPickFormAfterAdd();
     renderAll();
+
+    await saveDraft();
 }
 
 function clearPickFormAfterAdd() {
@@ -988,7 +1167,7 @@ function clearPickFormAfterAdd() {
     previousTeamCodeInput.value = "";
 
     editingPickRound = null;
-    addPickBtn.textContent = "Add Pick";
+    addPickBtn.textContent = "Save Pick";
 
     if (cancelPickEditBtn) {
         cancelPickEditBtn.classList.add("hidden");
@@ -1131,6 +1310,19 @@ async function saveDraft() {
 }
 
 function bindEvents() {
+
+    document
+        .querySelectorAll(
+            'input[name="overseasReferenceMode"]'
+        )
+        .forEach(radio => {
+
+            radio.addEventListener(
+                "change",
+                updateOverseasReferenceModeUI
+            );
+
+        });
 
     if (startNewDraftBtn) {
         startNewDraftBtn.addEventListener("click", () => {

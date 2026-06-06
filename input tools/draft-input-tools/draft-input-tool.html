@@ -192,7 +192,19 @@
                 <div id="overseasOriginSection" class="conditional-section hidden">
                     <h3>Overseas Player Info</h3>
 
-                    <div class="form-grid">
+                    <div class="status-card-group two-options">
+                        <label class="status-card">
+                            <input type="radio" name="overseasReferenceMode" value="select" checked />
+                            <span>Select Existing League / Team</span>
+                        </label>
+
+                        <label class="status-card">
+                            <input type="radio" name="overseasReferenceMode" value="utility" />
+                            <span>Add Utility Entry</span>
+                        </label>
+                    </div>
+
+                    <div id="overseasExistingReferenceFields" class="form-grid">
                         <select id="overseasCountryInput">
                             <option value="">Select country</option>
                         </select>
@@ -208,6 +220,46 @@
                                 <option value="">Select overseas team</option>
                             </select>
                         </label>
+                    </div>
+
+                    <div id="overseasUtilityEntryFields" class="conditional-section hidden">
+                        <div class="form-grid">
+                            <label>
+                                League Name
+                                <input id="utilityLeagueNameInput" placeholder="ex: Turkish Super League" />
+                            </label>
+
+                            <label>
+                                Team Name
+                                <input id="utilityTeamNameInput" placeholder="ex: Fenerbahçe" />
+                            </label>
+
+                            <label>
+                                Country
+                                <input id="utilityCountryInput" placeholder="ex: Turkey" />
+                            </label>
+
+                            <label>
+                                City / Region
+                                <input id="utilityCityInput" placeholder="ex: Istanbul" />
+                            </label>
+
+                            <label>
+                                Overseas Season
+                                <input id="utilityOverseasSeasonInput" placeholder="ex: 2026 or 2025-26" />
+                            </label>
+                        </div>
+
+                        <label>
+                            Utility Entry Notes
+                            <textarea id="utilityEntryNotesInput" rows="3" placeholder="Source reminder, context, uncertainty, etc."></textarea>
+                        </label>
+
+                        <!--<button id="saveOverseasUtilityEntryBtn" type="button">
+                            Save Utility Entry
+                        </button>-->
+
+                        <p id="utilityEntryStatusMessage" class="status-message"></p>
                     </div>
                 </div>
 
@@ -233,7 +285,7 @@
             </label>
 
             <div class="button-row">
-                <button id="addPickBtn" type="button">Add Pick</button>
+                <button id="addPickBtn" type="button">Save Pick</button>
                 <button id="cancelPickEditBtn" class="secondary-btn hidden" type="button">Cancel Edit</button>
             </div>
         </section>
@@ -251,6 +303,7 @@
         </section>
     </main>
 
+    <script src="../../entries/shared/utility-entry-service.js"></script>
     <script src="draft-input-tool.js"></script>
 </body>
 </html>

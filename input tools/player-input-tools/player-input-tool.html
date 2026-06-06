@@ -283,24 +283,57 @@
                 </div>
 
                 <div id="overseasExperienceWrapper" class="conditional-field">
-                <label for="overseasTeamSelect">Overseas team menu</label>
-                <select id="overseasTeamSelect"></select>
+                  <div class="status-card-group two-options">
+                    <label class="status-card">
+                      <input type="radio" name="overseasReferenceMode" value="select" checked>
+                      <span>Select Existing Team</span>
+                    </label>
 
-                <label for="overseasTeam">Manual team code</label>
-                <input id="overseasTeam">
+                    <label class="status-card">
+                      <input type="radio" name="overseasReferenceMode" value="utility">
+                      <span>Add Utility Entry</span>
+                    </label>
+                  </div>
 
-                <label for="overseasSeason">Season</label>
-                <input id="overseasSeason" placeholder="2023-24">
+                  <div id="overseasExistingReferenceFields">
+                    <label for="overseasTeamSelect">Overseas team menu</label>
+                    <select id="overseasTeamSelect"></select>
 
-                <label for="overseasNote">Note</label>
-                <input id="overseasNote">
+                    <label for="overseasTeam">Manual team code</label>
+                    <input id="overseasTeam">
+                  </div>
 
-                <button id="copyPreviousOverseasBtn" type="button">Copy Previous Overseas</button>
-                <button id="addOverseasBtn" type="button">Add Overseas Team</button>
-                <button id="saveOverseasEditBtn" type="button" style="display:none;">Save Team Edit</button>
-                <button id="cancelOverseasEditBtn" type="button" style="display:none;">Cancel Edit</button>
+                  <div id="overseasUtilityEntryFields" class="conditional-field">
+                    <label for="utilityLeagueNameInput">League Name</label>
+                    <input id="utilityLeagueNameInput" placeholder="ex: Turkish Super League">
 
-                <ul id="overseasList" class="entry-list"></ul>
+                    <label for="utilityTeamNameInput">Team Name</label>
+                    <input id="utilityTeamNameInput" placeholder="ex: Fenerbahçe">
+
+                    <label for="utilityCountryInput">Country</label>
+                    <input id="utilityCountryInput" placeholder="ex: Turkey">
+
+                    <label for="utilityCityInput">City / Region</label>
+                    <input id="utilityCityInput" placeholder="ex: Istanbul">
+
+                    <label for="utilityEntryNotesInput">Utility Entry Notes</label>
+                    <textarea id="utilityEntryNotesInput" rows="3"></textarea>
+
+                    <p id="utilityEntryStatusMessage" class="status-message"></p>
+                  </div>
+
+                  <label for="overseasSeason">Season</label>
+                  <input id="overseasSeason" placeholder="2023-24">
+
+                  <label for="overseasNote">Note</label>
+                  <input id="overseasNote">
+
+                  <button id="copyPreviousOverseasBtn" type="button">Copy Previous Overseas</button>
+                  <button id="addOverseasBtn" type="button">Save Overseas Team</button>
+                  <button id="saveOverseasEditBtn" type="button" style="display:none;">Save Team Edit</button>
+                  <button id="cancelOverseasEditBtn" type="button" style="display:none;">Cancel Edit</button>
+
+                  <ul id="overseasList" class="entry-list"></ul>
                 </div>
             </div>
         </section>
@@ -455,6 +488,7 @@
     </section>
   </main>
 
+  <script src="../../entries/shared/utility-entry-service.js"></script>
   <script src="player-input-tool.js" defer></script>
 </body>
 </html>

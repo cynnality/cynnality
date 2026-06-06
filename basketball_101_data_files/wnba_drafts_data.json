@@ -66,6 +66,7 @@
               "overallPick": 2,
               "round": 1,
               "roundPick": 2,
+              "pickStatus": "selection",
               "player": {
                 "playerId": "dominique_malonga",
                 "playerName": "Dominique Malonga"
@@ -73,11 +74,14 @@
               "college": null,
               "overseas": {
                 "country": "France",
-                "leagueCode": "la_boulangere_wonderligue",
+                "leagueCode": null,
                 "leagueName": "La Boulangere Wonderligue",
                 "teamCode": null,
-                "teamName": "",
-                "existsInOverseasData": false
+                "teamName": "ASVEL Féminin",
+                "existsInOverseasData": false,
+                "referenceMode": "utility",
+                "utilityEntryId": "utility_overseas_reference_asvel_feminin_asvel_feminin_1780780283582",
+                "utilityEntryStatus": "open"
               },
               "team": {
                 "teamCode": "SEA_STORM",
@@ -86,7 +90,9 @@
               "previousTeam": null,
               "notes": "Malonga played for ASVEL Féminin before being drafted into the WNBA",
               "links": [],
-              "entryIds": []
+              "entryIds": [
+                "utility_overseas_reference_asvel_feminin_asvel_feminin_1780780283582"
+              ]
             }
           }
         },
@@ -102,7 +108,11 @@
       "notes": "",
       "links": [],
       "entryIds": [],
-      "draftDate": null
+      "draftDate": null,
+      "status": {
+        "isFinalized": false,
+        "finalizedAt": null
+      }
     },
     "2025_expansion": {
       "draftId": "2025_expansion",

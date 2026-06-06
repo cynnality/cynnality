@@ -88,6 +88,11 @@ const SAVE_TARGETS = {
         "posts",
         "post data",
         "pages_data.json"
+    ),
+    utilityEntries: path.join(
+        __dirname,
+        "basketball_101_data_files",
+        "utility_entries_data.json"
     )
 };
 
@@ -541,6 +546,42 @@ const server = http.createServer((req, res) => {
 
                 res.writeHead(200, { "Content-Type": "application/json" });
                 res.end(JSON.stringify({ ok: true, savedTo: filePath }));
+                return;
+            }
+
+            if (req.url === "/save-utility-entry") {
+                const filePath = SAVE_TARGETS.utilityEntries;
+
+                const existingData = fs.existsSync(filePath)
+                    ? JSON.parse(fs.readFileSync(filePath, "utf8"))
+                    : { openEntries: {}, resolvedEntries: {} };
+
+                if (!existingData.openEntries) existingData.openEntries = {};
+                if (!existingData.resolvedEntries) existingData.resolvedEntries = {};
+
+                if (!incomingData.entryId) {
+                    sendJson(res, 400, {
+                        ok: false,
+                        error: "Missing entryId"
+                    });
+                    return;
+                }
+
+                if (incomingData.status === "resolved") {
+                    delete existingData.openEntries[incomingData.entryId];
+                    existingData.resolvedEntries[incomingData.entryId] = incomingData;
+                } else {
+                    delete existingData.resolvedEntries[incomingData.entryId];
+                    existingData.openEntries[incomingData.entryId] = incomingData;
+                }
+
+                fs.writeFileSync(filePath, JSON.stringify(existingData, null, 2));
+
+                sendJson(res, 200, {
+                    ok: true,
+                    saved: incomingData.entryId
+                });
+
                 return;
             }
 

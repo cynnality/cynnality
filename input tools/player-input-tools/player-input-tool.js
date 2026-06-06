@@ -125,6 +125,16 @@ const saveOverseasEditBtn = document.getElementById("saveOverseasEditBtn");
 const cancelOverseasEditBtn = document.getElementById("cancelOverseasEditBtn");
 const overseasList = document.getElementById("overseasList");
 
+const overseasExistingReferenceFields = document.getElementById("overseasExistingReferenceFields");
+const overseasUtilityEntryFields = document.getElementById("overseasUtilityEntryFields");
+
+const utilityLeagueNameInput = document.getElementById("utilityLeagueNameInput");
+const utilityTeamNameInput = document.getElementById("utilityTeamNameInput");
+const utilityCountryInput = document.getElementById("utilityCountryInput");
+const utilityCityInput = document.getElementById("utilityCityInput");
+const utilityEntryNotesInput = document.getElementById("utilityEntryNotesInput");
+const utilityEntryStatusMessage = document.getElementById("utilityEntryStatusMessage");
+
 // Unrivaled
 const unrivaledExperienceWrapper = document.getElementById("unrivaledExperienceWrapper");
 const unrivaledTeamSelect = document.getElementById("unrivaledTeamSelect");
@@ -860,7 +870,11 @@ function renderOverseasList() {
     const li = document.createElement("li");
 
     li.innerHTML = `
-      <span>${entry.season} - ${entry.teamCode}${entry.note ? ` — ${entry.note}` : ""}</span>
+      <span>
+        ${entry.season} - ${entry.teamCode || entry.teamName || "Utility Entry"}
+        ${entry.utilityEntryId ? ` — utility: ${entry.utilityEntryStatus || "open"}` : ""}
+        ${entry.note ? ` — ${entry.note}` : ""}
+      </span>
       <button type="button" data-index="${index}" class="edit-overseas-btn">Edit</button>
       <button type="button" data-index="${index}" class="remove-overseas-btn">Remove</button>
     `;
@@ -1064,6 +1078,93 @@ function renderImagesList() {
 }
 
 // =======================================================
+// overseas helpers
+// =======================================================
+function getOverseasReferenceMode() {
+  return document.querySelector(
+    'input[name="overseasReferenceMode"]:checked'
+  )?.value || "select";
+}
+
+function updateOverseasReferenceModeUI() {
+  const mode = getOverseasReferenceMode();
+
+  overseasExistingReferenceFields.style.display =
+    mode === "select" ? "block" : "none";
+
+  overseasUtilityEntryFields.style.display =
+    mode === "utility" ? "block" : "none";
+
+  updateAll();
+}
+
+async function createPlayerOverseasUtilityEntry() {
+  const playerId = getPlayerId();
+  const playerName = playerNameInput.value.trim();
+  const teamName = utilityTeamNameInput.value.trim();
+
+  if (!teamName) {
+    alert("Please enter the overseas team name.");
+    return null;
+  }
+
+  const entry = UtilityEntryService.buildUtilityEntry({
+    title: teamName,
+
+    category: "overseas-reference",
+
+    createdFrom: {
+      tool: "player-input-tool",
+      contextType: "player-overseas-career",
+      contextId: playerId
+    },
+
+    task: {
+      taskType: "create-or-connect-reference",
+      targetDataType: "overseas-team",
+      actionNeeded: "Create or connect overseas team reference."
+    },
+
+    referenceRequest: {
+      playerId,
+      playerName,
+      leagueName: utilityLeagueNameInput.value.trim(),
+      teamName,
+      country: utilityCountryInput.value.trim(),
+      city: utilityCityInput.value.trim(),
+      season: overseasSeasonInput.value.trim()
+    },
+
+    wires: [
+      "player-input-tool",
+      "overseas-league-input-tool",
+      "overseas-team-input-tool"
+    ],
+
+    attachedTo: [
+      {
+        type: "player",
+        id: playerId
+      },
+      {
+        type: "player-overseas-career",
+        id: `${playerId}_${overseasSeasonInput.value.trim()}_${UtilityEntryService.slugify(teamName)}`
+      }
+    ],
+
+    notes: utilityEntryNotesInput.value.trim()
+  });
+
+  await UtilityEntryService.saveEntry(entry);
+
+  if (utilityEntryStatusMessage) {
+    utilityEntryStatusMessage.textContent = "Utility entry saved.";
+  }
+
+  return entry;
+}
+
+// =======================================================
 // NCAA championship list
 // =======================================================
 function renderNcaaChampionshipsList() {
@@ -1244,7 +1345,6 @@ function populateCollegeSelect() {
 
 // =======================================================
 // Player data build
-// Small starter version — timeline/extra lists come next
 // =======================================================
 function getPlayerId() {
   return playerIdInput.value.trim() || "player_id_here";
@@ -1689,26 +1789,59 @@ function bindLiveInputs() {
     updateAll();
   });
 
-  addOverseasBtn.addEventListener("click", () => {
-    overseasTeams.push({
-      season: overseasSeasonInput.value.trim(),
-      teamCode: overseasTeamInput.value.trim(),
-      note: overseasNoteInput.value.trim()
+    addOverseasBtn.addEventListener("click", async () => {
+      const mode = getOverseasReferenceMode();
+
+      let utilityEntry = null;
+
+      if (mode === "utility") {
+        utilityEntry = await createPlayerOverseasUtilityEntry();
+
+        if (!utilityEntry) return;
+
+        overseasTeams.push({
+          season: overseasSeasonInput.value.trim(),
+          referenceMode: "utility",
+          teamCode: "",
+          leagueName: utilityLeagueNameInput.value.trim(),
+          teamName: utilityTeamNameInput.value.trim(),
+          country: utilityCountryInput.value.trim(),
+          city: utilityCityInput.value.trim(),
+          utilityEntryId: utilityEntry.entryId,
+          utilityEntryStatus: "open",
+          note: overseasNoteInput.value.trim()
+        });
+      } else {
+        overseasTeams.push({
+          season: overseasSeasonInput.value.trim(),
+          referenceMode: "select",
+          teamCode: overseasTeamInput.value.trim(),
+          note: overseasNoteInput.value.trim()
+        });
+      }
+
+      overseasSeasonInput.value = "";
+      overseasTeamInput.value = "";
+      overseasTeamSelect.value = "";
+      overseasNoteInput.value = "";
+
+      utilityLeagueNameInput.value = "";
+      utilityTeamNameInput.value = "";
+      utilityCountryInput.value = "";
+      utilityCityInput.value = "";
+      utilityEntryNotesInput.value = "";
+
+      renderOverseasList();
+      updateAll();
+
+      await savePlayer();
     });
-
-    overseasSeasonInput.value = "";
-    overseasTeamInput.value = "";
-    overseasTeamSelect.value = "";
-    overseasNoteInput.value = "";
-
-    renderOverseasList();
-    updateAll();
-  });
 
   saveOverseasEditBtn.addEventListener("click", () => {
     if (editingOverseasIndex === null) return;
 
     overseasTeams[editingOverseasIndex] = {
+      ...overseasTeams[editingOverseasIndex],
       season: overseasSeasonInput.value.trim(),
       teamCode: overseasTeamInput.value.trim(),
       note: overseasNoteInput.value.trim()
@@ -1741,6 +1874,12 @@ function bindLiveInputs() {
     saveOverseasEditBtn.style.display = "none";
     cancelOverseasEditBtn.style.display = "none";
   });
+
+  document
+    .querySelectorAll('input[name="overseasReferenceMode"]')
+    .forEach((radio) => {
+      radio.addEventListener("change", updateOverseasReferenceModeUI);
+    });
 
   bindConditionalBoolean("hasOverseasExperience", overseasExperienceWrapper, () => {
     overseasTeams.length = 0;
@@ -1942,5 +2081,6 @@ window.addEventListener("load", async () => {
 
   applyUrlParams();
 
+  updateOverseasReferenceModeUI();
   updateAll();
 });
