@@ -50,6 +50,7 @@ wnba_teams_history.json /////////// -> teams of the WNBA by year and team franch
 
     <div class="top-pager">
         <h1><em>add an overseas league</em></h1>
+        <button id="newLeagueBtn" type="button">New League</button>
     </div>
 
     <div class="tool-wrap">
@@ -62,6 +63,16 @@ wnba_teams_history.json /////////// -> teams of the WNBA by year and team franch
                     </div>
 
                     <div class="item">
+
+                        <label for="displayName">Display name</label>
+                        <input id="displayName" autocomplete="off" placeholder="ex: Turkish Super League">
+
+                        <label for="localName">Local / official language name</label>
+                        <input id="localName" autocomplete="off" placeholder="ex: Kadınlar Basketbol Süper Ligi">
+
+                        <label for="currentSponsor">Current sponsor</label>
+                        <input id="currentSponsor" autocomplete="off" placeholder="ex: ING">
+
                         <label for="leagueName">League name</label>
                         <input id="leagueName" autocomplete="off" placeholder="ex: Women's British Basketball League">
 
@@ -85,7 +96,28 @@ wnba_teams_history.json /////////// -> teams of the WNBA by year and team franch
                         <input id="regionInput" autocomplete="off" placeholder="ex: Europe">
                     </div>
                 </section>
+
             </div>
+
+            <section class="panel input">
+                <div class="panel-header">
+                    <h2>League details</h2>
+                </div>
+
+                <div class="item">
+                    <label for="foundedYear">Founded year</label>
+                    <input id="foundedYear" autocomplete="off" placeholder="ex: 1980">
+
+                    <label for="defunctYear">Defunct year</label>
+                    <input id="defunctYear" autocomplete="off" placeholder="leave blank if active">
+
+                    <label for="competitionTier">Competition tier</label>
+                    <input id="competitionTier" autocomplete="off" placeholder="domestic / continental / cup">
+
+                    <label for="genderInput">Gender</label>
+                    <input id="genderInput" autocomplete="off" placeholder="women">
+                </div>
+            </section>
 
             <section class="panel input">
                 <div class="panel-header">
@@ -149,18 +181,31 @@ wnba_teams_history.json /////////// -> teams of the WNBA by year and team franch
 
         </section>
 
-        <section class="panel data">
-            <h2>Data Preview</h2>
+        <aside class="side-rail">
 
-            <div class="tool-note">
-                <p><strong>Note:</strong> This tool generates a single overseas league object.</p>
-                <p class="path">paste into main overseas leagues data file</p>
-            </div>
+            <section class="panel records-panel">
+                <div class="panel-header">
+                    <h2>Current Leagues</h2>
+                </div>
 
-            <button id="copyJsonBtn" type="button">Copy JSON</button>
-            <button id="saveJsonBtn" type="button">Save JSON File</button>
-            <pre id="jsonPreview"></pre>
-        </section>
+                <input id="leagueSearchInput" autocomplete="off" placeholder="Search leagues...">
+                <div id="leagueCardsList" class="record-list"></div>
+            </section>
+
+            <section class="panel data collapsed-preview">
+                <h2>Data Preview</h2>
+
+                <div class="tool-note">
+                    <p><strong>Note:</strong> This preview shows the current league object.</p>
+                    <p class="path">basketball_101_data_files → overseas_leagues_data.json</p>
+                </div>
+
+                <button id="copyJsonBtn" type="button">Copy JSON</button>
+                <button id="saveJsonBtn" type="button">Save League</button>
+                <pre id="jsonPreview"></pre>
+            </section>
+
+        </aside>
     </div>
 
     <script src="overseas-league-input.js" defer></script>

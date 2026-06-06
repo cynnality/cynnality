@@ -4,6 +4,20 @@
       "leagueCode": "liga_femenina_de_baloncesto",
       "name": {
         "full": "Liga Femenina de Baloncesto",
+        "official": "Liga Femenina de Baloncesto",
+        "display": "Liga Femenina de Baloncesto",
+        "local": "Liga Femenina de Baloncesto",
+        "currentSponsor": "Endesa",
+        "abbreviations": [
+          "LF Endesa",
+          "LFB"
+        ],
+        "englishTranslations": [
+          {
+            "name": "Liga Femenina de Baloncesto",
+            "translation": "Women's Basketball League"
+          }
+        ],
         "commonNames": [
           "Liga Femenina Endesa",
           "LF Endesa"
@@ -13,7 +27,21 @@
         "country": "Spain",
         "region": "Europe"
       },
-      "nameHistory": [],
+      "details": {
+        "founded": 1964,
+        "defunct": null,
+        "competitionTier": "",
+        "gender": "women"
+      },
+      "nameHistory": [
+        {
+          "name": "Liga Femenina Endesa",
+          "nameSlug": "liga_femenina_endesa",
+          "startYear": 1864,
+          "endYear": null,
+          "sponsorName": "Endesa"
+        }
+      ],
       "links": [
         {
           "label": "League Website",
@@ -35,20 +63,66 @@
       "leagueCode": "kadinlar_basketball_super_ligi",
       "name": {
         "full": "Kadinlar Basketball Super Ligi",
-        "commonNames": [
-          "KBSL",
-          "Halkbank Women's Basketball Super League"
-        ]
+        "official": "Kadinlar Basketball Super Ligi",
+        "display": "Kadinlar Basketball Super Ligi",
+        "local": "Kadinlar Basketball Super Ligi",
+        "currentSponsor": "ING",
+        "abbreviations": [
+          "KBSL"
+        ],
+        "englishTranslations": [
+          {
+            "name": "Kadinlar Basketball Super Ligi",
+            "translation": "Women's Basketball Super League"
+          }
+        ],
+        "commonNames": []
       },
       "location": {
         "country": "Turkey",
         "region": "Europe"
       },
+      "details": {
+        "founded": 1980,
+        "defunct": null,
+        "competitionTier": "",
+        "gender": "women"
+      },
       "nameHistory": [
         {
-          "name": "TBF Turkish Women’s First Basketball League",
-          "startYear": null,
-          "endYear": null
+          "name": "TBFTurkish Women’s Basketball League",
+          "nameSlug": "tbfturkish_women_s_basketball_league",
+          "startYear": 1980,
+          "endYear": 2014,
+          "sponsorName": ""
+        },
+        {
+          "name": "Women's Basketball Super League",
+          "nameSlug": "women_s_basketball_super_league",
+          "startYear": 2015,
+          "endYear": 2015,
+          "sponsorName": ""
+        },
+        {
+          "name": "Bilyoner.com Women's Basketball Super League",
+          "nameSlug": "bilyoner_com_women_s_basketball_super_league",
+          "startYear": 2016,
+          "endYear": 2018,
+          "sponsorName": "Bilyoner.com"
+        },
+        {
+          "name": "Herbalife Nutrition Women's Basketball Super League",
+          "nameSlug": "herbalife_nutrition_women_s_basketball_super_league",
+          "startYear": 2019,
+          "endYear": 2021,
+          "sponsorName": "Herbalife Nutrition"
+        },
+        {
+          "name": "ING Women's Basketball Super League",
+          "nameSlug": "ing_women_s_basketball_super_league",
+          "startYear": 2022,
+          "endYear": "present",
+          "sponsorName": "ING"
         }
       ],
       "links": [
@@ -72,16 +146,40 @@
       "leagueCode": "basket_liga_kobiet",
       "name": {
         "full": "Basket Liga Kobiet",
-        "commonNames": [
-          "BLK"
-        ]
+        "official": "Basket Liga Kobiet",
+        "display": "Basket Liga Kobiet",
+        "local": "Basket Liga Kobiet",
+        "currentSponsor": "Orlen",
+        "abbreviations": [
+          "BLK",
+          "OBLK"
+        ],
+        "englishTranslations": [
+          {
+            "name": "Basket Liga Kobiet",
+            "translation": "Basketball League Women"
+          }
+        ],
+        "commonNames": []
       },
       "location": {
         "country": "Poland",
         "region": "Europe"
       },
+      "details": {
+        "founded": 1929,
+        "defunct": null,
+        "competitionTier": "",
+        "gender": "women"
+      },
       "nameHistory": [],
-      "links": [],
+      "links": [
+        {
+          "label": "Wiki",
+          "url": "https://en.wikipedia.org/wiki/Basket_Liga_Kobiet",
+          "type": "Quick reference"
+        }
+      ],
       "meta": {
         "notes": "",
         "lastUpdated": ""
@@ -119,13 +217,25 @@
       "leagueCode": "womens_korean_basketball_league",
       "name": {
         "full": "Women's Korean Basketball League",
-        "commonNames": [
+        "official": "Women's Korean Basketball League",
+        "display": "Women's Korean Basketball League",
+        "local": "",
+        "currentSponsor": "",
+        "abbreviations": [
           "WKBL"
-        ]
+        ],
+        "englishTranslations": [],
+        "commonNames": []
       },
       "location": {
         "country": "South Korea",
         "region": "Asia"
+      },
+      "details": {
+        "founded": null,
+        "defunct": null,
+        "competitionTier": "",
+        "gender": "women"
       },
       "nameHistory": [],
       "links": [
@@ -149,13 +259,25 @@
       "leagueCode": "womens_chinese_basketball_association",
       "name": {
         "full": "Women's Chinese Basketball Association",
-        "commonNames": [
+        "official": "Women's Chinese Basketball Association",
+        "display": "Women's Chinese Basketball Association",
+        "local": "",
+        "currentSponsor": "",
+        "abbreviations": [
           "WCBA"
-        ]
+        ],
+        "englishTranslations": [],
+        "commonNames": []
       },
       "location": {
         "country": "China",
         "region": "Asia"
+      },
+      "details": {
+        "founded": null,
+        "defunct": null,
+        "competitionTier": "",
+        "gender": "women"
       },
       "nameHistory": [],
       "links": [
@@ -174,13 +296,33 @@
       "leagueCode": "czech_womens_basketball_league",
       "name": {
         "full": "Czech Women's Basketball League",
+        "official": "Czech Women's Basketball League",
+        "display": "Czech Women's Basketball League",
+        "local": "Česká ženská basketbalová liga",
+        "currentSponsor": "Chance",
+        "abbreviations": [
+          "ZBL"
+        ],
+        "englishTranslations": [
+          {
+            "name": "Česká ženská basketbalová liga",
+            "translation": "Czech Women's Basketball League"
+          }
+        ],
         "commonNames": [
-          "Česká ženská basketbalová liga"
+          "Česká ženská basketbalová liga",
+          "Chance ZBL"
         ]
       },
       "location": {
         "country": "Czech Republic",
         "region": "Europe"
+      },
+      "details": {
+        "founded": null,
+        "defunct": null,
+        "competitionTier": "",
+        "gender": "women"
       },
       "nameHistory": [],
       "links": [
@@ -193,6 +335,11 @@
           "label": "League History",
           "url": "https://www.eurobasket.com/Czech-Republic/Zenska-Basketbolova-Liga-History.aspx",
           "type": "League History"
+        },
+        {
+          "label": "League Site",
+          "url": "https://zbl.basketball/",
+          "type": "official site"
         }
       ],
       "meta": {
@@ -227,6 +374,20 @@
       "leagueCode": "la_boulangere_wonderligue",
       "name": {
         "full": "La Boulangere Wonderligue",
+        "official": "La Boulangere Wonderligue",
+        "display": "La Boulangere Wonderligue",
+        "local": "La Boulangere Wonderligue",
+        "currentSponsor": "",
+        "abbreviations": [
+          "LFB",
+          "LBWL"
+        ],
+        "englishTranslations": [
+          {
+            "name": "Ligue Féminine de Basketball",
+            "translation": "Women's Basketball League"
+          }
+        ],
         "commonNames": [
           "Ligue Féminine de Basketball",
           "LBWL",
@@ -237,16 +398,26 @@
         "country": "France",
         "region": "Europe"
       },
+      "details": {
+        "founded": 1998,
+        "defunct": null,
+        "competitionTier": "",
+        "gender": "women"
+      },
       "nameHistory": [
         {
           "name": "Ligue Féminine de Basketball",
+          "nameSlug": "ligue_feminine_de_basketball",
           "startYear": 1998,
-          "endYear": 2023
+          "endYear": 2023,
+          "sponsorName": ""
         },
         {
           "name": "La Boulangère Wonderligue",
+          "nameSlug": "la_boulangere_wonderligue",
           "startYear": 2024,
-          "endYear": "present"
+          "endYear": "present",
+          "sponsorName": ""
         }
       ],
       "links": [
@@ -270,13 +441,25 @@
       "leagueCode": "womens_national_basketball_league",
       "name": {
         "full": "Women's National Basketball League",
-        "commonNames": [
+        "official": "Women's National Basketball League",
+        "display": "Women's National Basketball League",
+        "local": "",
+        "currentSponsor": "",
+        "abbreviations": [
           "WNBL"
-        ]
+        ],
+        "englishTranslations": [],
+        "commonNames": []
       },
       "location": {
         "country": "Australia",
         "region": "FIBA Oceania"
+      },
+      "details": {
+        "founded": null,
+        "defunct": null,
+        "competitionTier": "",
+        "gender": "women"
       },
       "nameHistory": [],
       "links": [
@@ -295,6 +478,17 @@
       "leagueCode": "belgian_womens_basketball_league",
       "name": {
         "full": "Belgian Women's Basketball League",
+        "official": "Belgian Women's Basketball League",
+        "display": "Belgian Women's Basketball League",
+        "local": "",
+        "currentSponsor": "Jupiler",
+        "abbreviations": [],
+        "englishTranslations": [
+          {
+            "name": "Championnat de Belgique de basketball féminin",
+            "translation": "Belgian Women's Basketball Championship"
+          }
+        ],
         "commonNames": [
           "The Belgian Jupiler Women's Basketball League",
           "Championnat de Belgique de basketball féminin"
@@ -304,12 +498,23 @@
         "country": "Belgium",
         "region": "Europe"
       },
+      "details": {
+        "founded": 1934,
+        "defunct": null,
+        "competitionTier": "",
+        "gender": "women"
+      },
       "nameHistory": [],
       "links": [
         {
           "label": "Wiki",
           "url": "https://en.wikipedia.org/wiki/Belgian_Women%27s_Basketball_League",
           "type": "QF"
+        },
+        {
+          "label": "League Site",
+          "url": "https://www.basketfeminin.com/",
+          "type": "official site"
         }
       ],
       "meta": {

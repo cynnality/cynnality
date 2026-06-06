@@ -50,6 +50,7 @@ wnba_teams_history.json /////////// -> teams of the WNBA by year and team franch
 
     <div class="top-pager">
         <h1><em>add an overseas team</em></h1>
+        <button id="newTeamBtn" type="button">New Team</button>
     </div>
 
     <div class="tool-wrap">
@@ -63,6 +64,19 @@ wnba_teams_history.json /////////// -> teams of the WNBA by year and team franch
                     </div>
 
                     <div class="item">
+
+                        <label for="displayName">Display name</label>
+                        <input id="displayName" autocomplete="off" placeholder="ex: Fenerbahçe Opet">
+
+                        <label for="clubName">Club / base name</label>
+                        <input id="clubName" autocomplete="off" placeholder="ex: Fenerbahçe">
+
+                        <label for="localName">Local / official language name</label>
+                        <input id="localName" autocomplete="off" placeholder="ex: Fenerbahçe Opet">
+
+                        <label for="currentSponsor">Current sponsor</label>
+                        <input id="currentSponsor" autocomplete="off" placeholder="ex: Opet">
+
                         <label for="teamName">Team name</label>
                         <input id="teamName" placeholder="ex: Fenerbahçe Opet">
 
@@ -86,12 +100,38 @@ wnba_teams_history.json /////////// -> teams of the WNBA by year and team franch
                     </div>
 
                     <div class="item">
-                        <label for="locationInput">Location</label>
-                        <label for="locationInput" class="brow">Enter as: Area, Country</label>
-                        <input id="locationInput" placeholder="ex: Istanbul, Turkey">
+                        <label for="locationInput">Location display</label>
+                        <label for="locationInput" class="brow">Use commas for any depth: town, city/province, country</label>
+                        <input id="locationInput" placeholder="ex: Asan, South Chungcheong, South Korea">
+
+                        <label for="cityInput">City / town</label>
+                        <input id="cityInput" placeholder="auto-filled from location">
+
+                        <label for="subRegionInput">State / province / district</label>
+                        <input id="subRegionInput" placeholder="optional">
+
+                        <label for="countryInput">Country</label>
+                        <input id="countryInput" placeholder="auto-filled from location">
                     </div>
                 </section>
             </div>
+
+            <section class="panel input">
+                <div class="panel-header">
+                    <h2>Team details</h2>
+                </div>
+
+                <div class="item">
+                    <label for="arenaInput">Arena</label>
+                    <input id="arenaInput" autocomplete="off" placeholder="ex: Ülker Sports Arena">
+
+                    <label for="foundedYear">Founded year</label>
+                    <input id="foundedYear" autocomplete="off" placeholder="ex: 1954">
+
+                    <label for="defunctYear">Defunct year</label>
+                    <input id="defunctYear" autocomplete="off" placeholder="leave blank if active">
+                </div>
+            </section>
 
             <section class="panel input">
                 <div class="panel-header">
@@ -156,18 +196,35 @@ wnba_teams_history.json /////////// -> teams of the WNBA by year and team franch
 
         </section>
 
-        <section class="panel data">
-            <h2>Data Preview</h2>
+        <aside class="side-rail">
 
-            <div class="tool-note">
-                <p><strong>Note:</strong> This tool generates a single overseas team object.</p>
-                <p class="path">input-tools → overseas-teams-input-tools → overseas-team-input.js</p>
-            </div>
+            <section class="panel records-panel">
+                <div class="panel-header">
+                    <h2>Current Teams</h2>
+                </div>
 
-            <button id="copyJsonBtn" type="button">Copy JSON</button>
-            <button id="saveJsonBtn" type="button">Save JSON File</button>
-            <pre id="jsonPreview"></pre>
-        </section>
+                <select id="teamLeagueFilter">
+                    <option value="">All leagues</option>
+                </select>
+
+                <input id="teamSearchInput" autocomplete="off" placeholder="Search teams...">
+                <div id="teamCardsList" class="record-list"></div>
+            </section>
+
+            <section class="panel data collapsed-preview">
+                <h2>Data Preview</h2>
+
+                <div class="tool-note">
+                    <p><strong>Note:</strong> This preview shows the current team object.</p>
+                    <p class="path">basketball_101_data_files → overseas_teams_data.json</p>
+                </div>
+
+                <button id="copyJsonBtn" type="button">Copy JSON</button>
+                <button id="saveJsonBtn" type="button">Save Team</button>
+                <pre id="jsonPreview"></pre>
+            </section>
+
+        </aside>
     </div>
 
     <script src="overseas-team-input.js" defer></script>

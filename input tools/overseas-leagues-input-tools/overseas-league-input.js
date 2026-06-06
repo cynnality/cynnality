@@ -1,7 +1,22 @@
+const DATA_PATHS = [
+    "../../basketball_101_data_files/overseas_leagues_data.json",
+    "../basketball_101_data_files/overseas_leagues_data.json",
+    "basketball_101_data_files/overseas_leagues_data.json"
+];
+
 const leagueNameInput = document.getElementById("leagueName");
+const displayNameInput = document.getElementById("displayName");
+const localNameInput = document.getElementById("localName");
+const currentSponsorInput = document.getElementById("currentSponsor");
 const leagueCodeInput = document.getElementById("leagueCode");
+
 const countryInput = document.getElementById("countryInput");
 const regionInput = document.getElementById("regionInput");
+
+const foundedYearInput = document.getElementById("foundedYear");
+const defunctYearInput = document.getElementById("defunctYear");
+const competitionTierInput = document.getElementById("competitionTier");
+const genderInput = document.getElementById("genderInput");
 
 const commonNamesList = document.getElementById("commonNamesList");
 const abbreviationsList = document.getElementById("abbreviationsList");
@@ -20,10 +35,15 @@ const lastUpdatedInput = document.getElementById("lastUpdated");
 
 const jsonPreview = document.getElementById("jsonPreview");
 const copyJsonBtn = document.getElementById("copyJsonBtn");
-
 const saveJsonBtn = document.getElementById("saveJsonBtn");
+const newLeagueBtn = document.getElementById("newLeagueBtn");
+
+const leagueCardsList = document.getElementById("leagueCardsList");
+const leagueSearchInput = document.getElementById("leagueSearchInput");
 
 let leagueCodeEdited = false;
+let overseasLeaguesData = { leagues: {} };
+let activeLeagueCode = null;
 
 function makeCode(value) {
     return value
@@ -36,8 +56,7 @@ function makeCode(value) {
 }
 
 function parseYear(value) {
-    const trimmed = value.trim();
-
+    const trimmed = String(value || "").trim();
     if (!trimmed) return null;
     if (trimmed.toLowerCase() === "present") return "present";
 
@@ -45,7 +64,88 @@ function parseYear(value) {
     return Number.isNaN(numberValue) ? trimmed : numberValue;
 }
 
-function createCommonNameRow() {
+async function fetchFirstWorkingJson(paths) {
+    for (const path of paths) {
+        try {
+            const response = await fetch(path);
+            if (response.ok) return await response.json();
+        } catch (error) {
+            console.warn(`Could not load ${path}`, error);
+        }
+    }
+
+    return { leagues: {} };
+}
+
+function normalizeLeaguesData(data) {
+    if (data?.leagues) return data;
+
+    return {
+        leagues: data || {}
+    };
+}
+
+async function loadExistingLeagues() {
+    const data = await fetchFirstWorkingJson(DATA_PATHS);
+    overseasLeaguesData = normalizeLeaguesData(data);
+    renderLeagueCards();
+}
+
+function getLeagueDisplayName(league) {
+    return (
+        league?.name?.display ||
+        league?.name?.full ||
+        league?.name?.official ||
+        league?.leagueCode ||
+        "Unnamed League"
+    );
+}
+
+function renderLeagueCards() {
+    const search = leagueSearchInput.value.trim().toLowerCase();
+    const leagues = Object.values(overseasLeaguesData.leagues || {})
+        .sort((a, b) => getLeagueDisplayName(a).localeCompare(getLeagueDisplayName(b)))
+        .filter(league => {
+            const text = [
+                getLeagueDisplayName(league),
+                league.leagueCode,
+                league.location?.country,
+                league.location?.region
+            ].join(" ").toLowerCase();
+
+            return text.includes(search);
+        });
+
+    leagueCardsList.innerHTML = "";
+
+    if (!leagues.length) {
+        leagueCardsList.innerHTML = `<p>No leagues found.</p>`;
+        return;
+    }
+
+    leagues.forEach(league => {
+        const card = document.createElement("article");
+        card.className = "record-card";
+
+        if (league.leagueCode === activeLeagueCode) {
+            card.classList.add("active");
+        }
+
+        card.innerHTML = `
+            <div class="record-card-title">${getLeagueDisplayName(league)}</div>
+            <div class="record-card-meta">${league.leagueCode || ""}</div>
+            <div class="record-card-meta">${league.location?.country || ""} ${league.location?.region ? "• " + league.location.region : ""}</div>
+        `;
+
+        card.addEventListener("click", () => {
+            loadLeagueIntoForm(league.leagueCode);
+        });
+
+        leagueCardsList.appendChild(card);
+    });
+}
+
+function createCommonNameRow(value = "") {
     const row = document.createElement("div");
     row.className = "dynamic-row common-name-row";
 
@@ -54,9 +154,10 @@ function createCommonNameRow() {
             Common Name
             <input class="common-name-input" autocomplete="off" placeholder="ex: KBSL">
         </label>
-
         <button type="button" class="remove-row-btn">Remove</button>
     `;
+
+    row.querySelector("input").value = value;
 
     row.querySelector(".remove-row-btn").addEventListener("click", () => {
         row.remove();
@@ -64,11 +165,10 @@ function createCommonNameRow() {
     });
 
     row.querySelector("input").addEventListener("input", renderJson);
-
     commonNamesList.appendChild(row);
 }
 
-function createAbbreviationRow() {
+function createAbbreviationRow(value = "") {
     const row = document.createElement("div");
     row.className = "dynamic-row abbreviation-row";
 
@@ -77,9 +177,10 @@ function createAbbreviationRow() {
             Abbreviation
             <input class="abbreviation-input" autocomplete="off" placeholder="ex: WKBL">
         </label>
-
         <button type="button" class="remove-row-btn">Remove</button>
     `;
+
+    row.querySelector("input").value = value;
 
     row.querySelector(".remove-row-btn").addEventListener("click", () => {
         row.remove();
@@ -90,7 +191,7 @@ function createAbbreviationRow() {
     abbreviationsList.appendChild(row);
 }
 
-function createEnglishTranslationRow() {
+function createEnglishTranslationRow(entry = {}) {
     const row = document.createElement("div");
     row.className = "dynamic-row translation-row";
 
@@ -108,6 +209,9 @@ function createEnglishTranslationRow() {
         <button type="button" class="remove-row-btn">Remove</button>
     `;
 
+    row.querySelector(".translation-name-input").value = entry.name || "";
+    row.querySelector(".translation-english-input").value = entry.translation || entry.englishTranslation || "";
+
     row.querySelector(".remove-row-btn").addEventListener("click", () => {
         row.remove();
         renderJson();
@@ -120,7 +224,7 @@ function createEnglishTranslationRow() {
     englishTranslationsList.appendChild(row);
 }
 
-function createNameHistoryRow() {
+function createNameHistoryRow(entry = {}) {
     const row = document.createElement("div");
     row.className = "dynamic-row history-row";
 
@@ -140,8 +244,18 @@ function createNameHistoryRow() {
             <input class="history-end-input" autocomplete="off" placeholder="ex: present">
         </label>
 
+        <label>
+            Sponsor Name
+            <input class="history-sponsor-input" autocomplete="off" placeholder="optional">
+        </label>
+
         <button type="button" class="remove-row-btn">Remove</button>
     `;
+
+    row.querySelector(".history-name-input").value = entry.name || "";
+    row.querySelector(".history-start-input").value = entry.startYear || "";
+    row.querySelector(".history-end-input").value = entry.endYear || "";
+    row.querySelector(".history-sponsor-input").value = entry.sponsorName || "";
 
     row.querySelector(".remove-row-btn").addEventListener("click", () => {
         row.remove();
@@ -155,7 +269,7 @@ function createNameHistoryRow() {
     nameHistoryList.appendChild(row);
 }
 
-function createLinkRow() {
+function createLinkRow(link = {}) {
     const row = document.createElement("div");
     row.className = "dynamic-row link-row";
 
@@ -177,6 +291,10 @@ function createLinkRow() {
 
         <button type="button" class="remove-row-btn">Remove</button>
     `;
+
+    row.querySelector(".link-label-input").value = link.label || "";
+    row.querySelector(".link-url-input").value = link.url || "";
+    row.querySelector(".link-type-input").value = link.type || "";
 
     row.querySelector(".remove-row-btn").addEventListener("click", () => {
         row.remove();
@@ -220,7 +338,8 @@ function getNameHistory() {
                 name,
                 nameSlug: makeCode(name),
                 startYear: parseYear(row.querySelector(".history-start-input").value),
-                endYear: parseYear(row.querySelector(".history-end-input").value)
+                endYear: parseYear(row.querySelector(".history-end-input").value),
+                sponsorName: row.querySelector(".history-sponsor-input")?.value.trim() || ""
             };
         })
         .filter(entry => entry.name);
@@ -228,13 +347,11 @@ function getNameHistory() {
 
 function getLinks() {
     return [...document.querySelectorAll(".link-row")]
-        .map(row => {
-            return {
-                label: row.querySelector(".link-label-input").value.trim(),
-                url: row.querySelector(".link-url-input").value.trim(),
-                type: row.querySelector(".link-type-input").value.trim()
-            };
-        })
+        .map(row => ({
+            label: row.querySelector(".link-label-input").value.trim(),
+            url: row.querySelector(".link-url-input").value.trim(),
+            type: row.querySelector(".link-type-input").value.trim()
+        }))
         .filter(link => link.label || link.url);
 }
 
@@ -247,6 +364,10 @@ function getLeagueObject() {
 
         name: {
             full: leagueName,
+            official: leagueName,
+            display: displayNameInput.value.trim() || leagueName,
+            local: localNameInput.value.trim(),
+            currentSponsor: currentSponsorInput.value.trim(),
             abbreviations: getAbbreviations(),
             englishTranslations: getEnglishTranslations(),
             commonNames: getCommonNames()
@@ -257,8 +378,14 @@ function getLeagueObject() {
             region: regionInput.value.trim()
         },
 
-        nameHistory: getNameHistory(),
+        details: {
+            founded: parseYear(foundedYearInput.value),
+            defunct: parseYear(defunctYearInput.value),
+            competitionTier: competitionTierInput.value.trim(),
+            gender: genderInput.value.trim() || "women"
+        },
 
+        nameHistory: getNameHistory(),
         links: getLinks(),
 
         meta: {
@@ -278,10 +405,21 @@ function renderJson() {
 }
 
 function resetFormOnLoad() {
+    activeLeagueCode = null;
+
     leagueNameInput.value = "";
+    displayNameInput.value = "";
+    localNameInput.value = "";
+    currentSponsorInput.value = "";
     leagueCodeInput.value = "";
+
     countryInput.value = "";
     regionInput.value = "";
+
+    foundedYearInput.value = "";
+    defunctYearInput.value = "";
+    competitionTierInput.value = "";
+    genderInput.value = "women";
 
     abbreviationsList.innerHTML = "";
     englishTranslationsList.innerHTML = "";
@@ -293,11 +431,66 @@ function resetFormOnLoad() {
     lastUpdatedInput.value = "";
 
     leagueCodeEdited = false;
+
+    createCommonNameRow();
+    createNameHistoryRow();
+    createLinkRow();
+
+    renderLeagueCards();
+    renderJson();
+}
+
+function loadLeagueIntoForm(leagueCode) {
+    const league = overseasLeaguesData.leagues?.[leagueCode];
+    if (!league) return;
+
+    activeLeagueCode = leagueCode;
+    leagueCodeEdited = true;
+
+    leagueNameInput.value = league.name?.official || league.name?.full || "";
+    displayNameInput.value = league.name?.display || league.name?.full || "";
+    localNameInput.value = league.name?.local || "";
+    currentSponsorInput.value = league.name?.currentSponsor || "";
+    leagueCodeInput.value = league.leagueCode || leagueCode;
+
+    countryInput.value = league.location?.country || "";
+    regionInput.value = league.location?.region || "";
+
+    foundedYearInput.value = league.details?.founded || "";
+    defunctYearInput.value = league.details?.defunct || "";
+    competitionTierInput.value = league.details?.competitionTier || "";
+    genderInput.value = league.details?.gender || "women";
+
+    abbreviationsList.innerHTML = "";
+    englishTranslationsList.innerHTML = "";
+    commonNamesList.innerHTML = "";
+    nameHistoryList.innerHTML = "";
+    linksList.innerHTML = "";
+
+    (league.name?.abbreviations || []).forEach(createAbbreviationRow);
+    (league.name?.englishTranslations || []).forEach(createEnglishTranslationRow);
+    (league.name?.commonNames || []).forEach(createCommonNameRow);
+    (league.nameHistory || []).forEach(createNameHistoryRow);
+    (league.links || []).forEach(createLinkRow);
+
+    if (!document.querySelector(".common-name-input")) createCommonNameRow();
+    if (!document.querySelector(".history-row")) createNameHistoryRow();
+    if (!document.querySelector(".link-row")) createLinkRow();
+
+    metaNotesInput.value = league.meta?.notes || "";
+    lastUpdatedInput.value = league.meta?.lastUpdated || "";
+
+    renderLeagueCards();
+    renderJson();
 }
 
 leagueNameInput.addEventListener("input", () => {
     if (!leagueCodeEdited) {
         leagueCodeInput.value = makeCode(leagueNameInput.value);
+    }
+
+    if (!displayNameInput.value.trim()) {
+        displayNameInput.value = leagueNameInput.value;
     }
 
     renderJson();
@@ -310,25 +503,29 @@ leagueCodeInput.addEventListener("input", () => {
 });
 
 [
+    displayNameInput,
+    localNameInput,
+    currentSponsorInput,
     countryInput,
-    regionInput
-].forEach(input => {
-    input.addEventListener("input", renderJson);
-});
-
-[
+    regionInput,
+    foundedYearInput,
+    defunctYearInput,
+    competitionTierInput,
+    genderInput,
     metaNotesInput,
     lastUpdatedInput
 ].forEach(input => {
     input.addEventListener("input", renderJson);
 });
 
-addAbbreviationBtn.addEventListener("click", createAbbreviationRow);
-addEnglishTranslationBtn.addEventListener("click", createEnglishTranslationRow);
+addAbbreviationBtn.addEventListener("click", () => createAbbreviationRow());
+addEnglishTranslationBtn.addEventListener("click", () => createEnglishTranslationRow());
+addCommonNameBtn.addEventListener("click", () => createCommonNameRow());
+addNameHistoryBtn.addEventListener("click", () => createNameHistoryRow());
+addLinkBtn.addEventListener("click", () => createLinkRow());
 
-addCommonNameBtn.addEventListener("click", createCommonNameRow);
-addNameHistoryBtn.addEventListener("click", createNameHistoryRow);
-addLinkBtn.addEventListener("click", createLinkRow);
+newLeagueBtn.addEventListener("click", resetFormOnLoad);
+leagueSearchInput.addEventListener("input", renderLeagueCards);
 
 copyJsonBtn.addEventListener("click", async () => {
     await navigator.clipboard.writeText(jsonPreview.textContent);
@@ -357,10 +554,16 @@ saveJsonBtn.addEventListener("click", async () => {
             throw new Error(result.error || "Save failed");
         }
 
+        overseasLeaguesData.leagues[leagueObject.leagueCode] = leagueObject;
+        activeLeagueCode = leagueObject.leagueCode;
+
+        renderLeagueCards();
+        renderJson();
+
         saveJsonBtn.textContent = "Saved!";
 
         setTimeout(() => {
-            saveJsonBtn.textContent = "Save JSON File";
+            saveJsonBtn.textContent = "Save League";
         }, 1200);
     } catch (error) {
         console.error(error);
@@ -369,8 +572,4 @@ saveJsonBtn.addEventListener("click", async () => {
 });
 
 resetFormOnLoad();
-
-createCommonNameRow();
-createNameHistoryRow();
-createLinkRow();
-renderJson(); 
+loadExistingLeagues();
