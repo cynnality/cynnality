@@ -4,8 +4,8 @@
 
 body {
     margin: 0;
-    font-family: Arial, sans-serif;
-    background: #f5f2eb;
+    font-family: "Chivo Mono", monospace;
+    background: #459a5362;
     color: #111;
 }
 
@@ -29,14 +29,14 @@ body {
 .page-header h1 {
     margin: 0 0 8px;
     font-size: 42px;
+    font-weight: 600;
 }
 
 .panel {
-    background: #fff;
+    background: #ffffff6c;
     border: 2px solid #111;
     border-radius: 10px;
     padding: 24px;
-    box-shadow: 5px 5px 0 #111;
 }
 
 label {
@@ -54,7 +54,8 @@ textarea {
     border: 2px solid #111;
     border-radius: 6px;
     font: inherit;
-    background: #fffdf8;
+    font-weight: 400;
+    background: #fffdf885;
 }
 
 textarea {
@@ -69,11 +70,16 @@ textarea {
 button {
     padding: 12px 18px;
     border: 2px solid #111;
-    border-radius: 999px;
-    background: #111;
-    color: #fff;
+    border-radius: 4px;
+    background: #ffffff;
+    color: #45472B;
     font-weight: 900;
+    font-style: italic;
     cursor: pointer;
+}
+
+button:hover {
+    background: #ffffff67;
 }
 
 button:disabled {
