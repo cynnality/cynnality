@@ -82,8 +82,23 @@ const SAVE_TARGETS = {
         "posts",
         "post data",
         "posts_data.json"
+    ),
+    postsPagesData: path.join(
+        __dirname,
+        "posts",
+        "post data",
+        "pages_data.json"
     )
 };
+
+function getGamedayCalendarFilePath(seasonId) {
+    return path.join(
+        __dirname,
+        "basketball_101_data_files",
+        "wnba_calendar_data",
+        `wnba_${seasonId}_calendar_data.json`
+    );
+}
 
 function sendJson(res, statusCode, data) {
     res.writeHead(statusCode, {
@@ -113,7 +128,10 @@ function saveByKey({ res, incomingData, filePath, topLevelKey, idField }) {
 
     if (fs.existsSync(filePath)) {
         const raw = fs.readFileSync(filePath, "utf8");
-        existingData = JSON.parse(raw);
+
+        if (raw.trim()) {
+            existingData = JSON.parse(raw);
+        }
     }
 
     if (!existingData[topLevelKey]) {
@@ -247,29 +265,29 @@ const server = http.createServer((req, res) => {
                     return;
                 }
 
-                let existingData = { seasons: {} };
+                const filePath = getGamedayCalendarFilePath(seasonId);
 
-                if (fs.existsSync(SAVE_TARGETS.gamedayCalendar)) {
-                    const raw = fs.readFileSync(SAVE_TARGETS.gamedayCalendar, "utf8");
+                let existingData = {
+                    season: Number(seasonId),
+                    seasonId,
+                    games: {}
+                };
+
+                if (fs.existsSync(filePath)) {
+                    const raw = fs.readFileSync(filePath, "utf8");
                     existingData = JSON.parse(raw);
                 }
 
-                if (!existingData.seasons[seasonId]) {
-                    existingData.seasons[seasonId] = {
-                        season: Number(seasonId),
-                        seasonId,
-                        games: {}
-                    };
+                if (!existingData.games) {
+                    existingData.games = {};
                 }
 
-                if (!existingData.seasons[seasonId].games) {
-                    existingData.seasons[seasonId].games = {};
-                }
+                existingData.games[gameId] = incomingData;
 
-                existingData.seasons[seasonId].games[gameId] = incomingData;
+                fs.mkdirSync(path.dirname(filePath), { recursive: true });
 
                 fs.writeFileSync(
-                    SAVE_TARGETS.gamedayCalendar,
+                    filePath,
                     JSON.stringify(existingData, null, 2) + "\n",
                     "utf8"
                 );
@@ -277,7 +295,7 @@ const server = http.createServer((req, res) => {
                 sendJson(res, 200, {
                     ok: true,
                     message: `Saved ${gameId}`,
-                    filePath: SAVE_TARGETS.gamedayCalendar
+                    filePath
                 });
 
                 return;
@@ -294,14 +312,20 @@ const server = http.createServer((req, res) => {
                     return;
                 }
 
-                let existingData = { seasons: {} };
+                const filePath = getGamedayCalendarFilePath(seasonId);
 
-                if (fs.existsSync(SAVE_TARGETS.gamedayCalendar)) {
-                    const raw = fs.readFileSync(SAVE_TARGETS.gamedayCalendar, "utf8");
+                let existingData = {
+                    season: Number(seasonId),
+                    seasonId,
+                    games: {}
+                };
+
+                if (fs.existsSync(filePath)) {
+                    const raw = fs.readFileSync(filePath, "utf8");
                     existingData = JSON.parse(raw);
                 }
 
-                if (!existingData.seasons?.[seasonId]?.games?.[gameId]) {
+                if (!existingData.games?.[gameId]) {
                     sendJson(res, 404, {
                         ok: false,
                         error: `Game not found: ${gameId}`
@@ -309,13 +333,15 @@ const server = http.createServer((req, res) => {
                     return;
                 }
 
-                existingData.seasons[seasonId].games[gameId] = {
-                    ...existingData.seasons[seasonId].games[gameId],
+                existingData.games[gameId] = {
+                    ...existingData.games[gameId],
                     ...incomingData
                 };
 
+                fs.mkdirSync(path.dirname(filePath), { recursive: true });
+
                 fs.writeFileSync(
-                    SAVE_TARGETS.gamedayCalendar,
+                    filePath,
                     JSON.stringify(existingData, null, 2) + "\n",
                     "utf8"
                 );
@@ -323,7 +349,7 @@ const server = http.createServer((req, res) => {
                 sendJson(res, 200, {
                     ok: true,
                     message: `Updated ${gameId}`,
-                    filePath: SAVE_TARGETS.gamedayCalendar
+                    filePath
                 });
 
                 return;
@@ -493,6 +519,28 @@ const server = http.createServer((req, res) => {
                     savedTo: filePath
                 });
 
+                return;
+            }
+
+            if (req.url === "/save-post-page") {
+                saveByKey({
+                    res,
+                    incomingData,
+                    filePath: SAVE_TARGETS.postsPagesData,
+                    topLevelKey: "pages",
+                    idField: "pageId"
+                });
+                return;
+            }
+
+            if (req.url === "/save-post-page-style") {
+                const filePath = path.join(__dirname, incomingData.styleFile);
+
+                fs.mkdirSync(path.dirname(filePath), { recursive: true });
+                fs.writeFileSync(filePath, incomingData.css || "", "utf8");
+
+                res.writeHead(200, { "Content-Type": "application/json" });
+                res.end(JSON.stringify({ ok: true, savedTo: filePath }));
                 return;
             }
 

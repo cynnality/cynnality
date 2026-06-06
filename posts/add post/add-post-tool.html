@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8" />
-    <title>Add Post Tool</title>
+    <title>Add Post Tool</title> 
 
     <link rel="stylesheet" href="add-post-tool.css" />
 
@@ -22,7 +22,7 @@
                 </header>
 
                 <section class="panel" id="postPagePanel">
-                    <h3>add it to a page</h3>
+                    <h2>add it to a page</h2>
 
                     <div class="form-grid">
                         <label>
@@ -34,10 +34,34 @@
 
                         <label>
                             Or New Page Name
-                            <input id="newPageInput" placeholder="yapping...or, recipes" />
+                            <input id="newPageInput" placeholder="basketball" />
+                        </label>
+
+                        <label>
+                            Page Title
+                            <input id="pageTitleInput" placeholder="Basketball" />
+                        </label>
+
+                        <label>
+                            Page Description
+                            <input id="pageDescriptionInput" placeholder="Posts about basketball, WNBA, drafts, awards, etc." />
                         </label>
                     </div>
+
+                    <label>
+                        Page Style File Path
+                        <input id="pageStyleFileInput" placeholder="auto-generated" />
+                    </label>
+
+                    <label>
+                        Page CSS
+                        <textarea
+                            id="pageStyleInput"
+                            class="style-textarea"
+                            placeholder="body { background: #f5f1ea; }"></textarea>
+                    </label>
                 </section>
+
             </div>
 
             <section class="panel" id="postSetupPanel">

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>Post Page</title>
+
+        <!-- ======================== MONO FONTS ========================  
+            CHIVO MONO 
+            ---- (monospaced // kinda playful ? serif) 
+
+            DM MONO 
+            ---- (monospaced, serif, gives digital feel - could be good replacement for v323)
+
+            JET BRAINS MONO 
+            ---- (monospaced, generally sans-serif. 
+            ---- want to use for all caps / titles / such things big bold (and oblique) style header feel)
+            ============================================================-->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Chivo+Mono:ital,wght@0,100..900;1,100..900&family=DM+Mono:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap" rel="stylesheet">
+    <!--=====================================================================================-->
+
+    <link rel="stylesheet" href="post-page.css" />
+</head>
+
+<body>
+    <main class="post-page-shell">
+        <header class="post-page-header">
+            <a href="../posts index/posts-index.html">← Back to Posts Index</a>
+
+            <p class="eyebrow">Posts Page</p>
+            <h1 id="pageTitle">Post Page</h1>
+            <p id="pageDescription"></p>
+        </header>
+
+        <style id="pageStyle"></style>
+
+        <section class="panel">
+            <h2>Posts</h2>
+            <div id="pagePostsList" class="page-posts-list"></div>
+        </section>
+
+        <section class="panel reader-panel hidden" id="readerPanel">
+            <div class="reader-header">
+                <div>
+                    <p id="readerMeta" class="reader-meta"></p>
+                    <h2 id="readerTitle"></h2>
+                </div>
+
+                <button id="closeReaderBtn" type="button">Close</button>
+            </div>
+
+            <style id="readerStyle"></style>
+            <article id="readerContent" class="reader-content"></article>
+        </section>
+    </main>
+
+    <script src="post-page.js"></script>
+</body>
+</html>

@@ -482,14 +482,15 @@
               "overallPick": 2,
               "round": 1,
               "roundPick": 2,
+              "pickStatus": "selection",
               "player": {
                 "playerId": "rebekkah_brunson",
                 "playerName": "Rebekkah Brunson"
               },
               "college": {
-                "collegeId": "georgetown",
-                "collegeName": "Georgetown",
-                "existsInCollegeFile": false
+                "collegeId": "georgetown_u",
+                "collegeName": "Georgetown University",
+                "existsInCollegeFile": true
               },
               "overseas": null,
               "team": {
@@ -509,7 +510,11 @@
       },
       "notes": "",
       "links": [],
-      "entryIds": []
+      "entryIds": [],
+      "status": {
+        "isFinalized": false,
+        "finalizedAt": null
+      }
     },
     "2026_expansion": {
       "draftId": "2026_expansion",
@@ -802,10 +807,7 @@
                 "teamCode": "POR_FIRE",
                 "teamName": "Portland Fire"
               },
-              "previousTeam": {
-                "teamCode": "SAC_MONARCHS",
-                "teamName": "Sacramento Monarchs"
-              },
+              "previousTeam": null,
               "notes": "",
               "links": [],
               "entryIds": []
@@ -1118,33 +1120,6 @@
         "1": {
           "roundNumber": 1,
           "picks": {
-            "2008_expansion_r1_p1": {
-              "pickId": "2008_expansion_r1_p1",
-              "overallPick": 1,
-              "round": 1,
-              "roundPick": 1,
-              "player": {
-                "playerId": "carla_thomas",
-                "playerName": "Carla Thomas"
-              },
-              "college": {
-                "collegeId": "vanderbilt",
-                "collegeName": "Vanderbilt",
-                "existsInCollegeFile": false
-              },
-              "overseas": null,
-              "team": {
-                "teamCode": "ATL_DREAM",
-                "teamName": "Atlanta Dream"
-              },
-              "previousTeam": {
-                "teamCode": "CHI_SKY",
-                "teamName": "Chicago Sky"
-              },
-              "notes": "Vanderbilt Commodores women's basketball team\nVanderbilt University\nCommodores",
-              "links": [],
-              "entryIds": []
-            },
             "2008_expansion_r1_p2": {
               "pickId": "2008_expansion_r1_p2",
               "overallPick": 2,
@@ -1427,6 +1402,34 @@
               "notes": "from Belarus",
               "links": [],
               "entryIds": []
+            },
+            "2008_expansion_r1_p1": {
+              "pickId": "2008_expansion_r1_p1",
+              "overallPick": 1,
+              "round": 1,
+              "roundPick": 1,
+              "pickStatus": "selection",
+              "player": {
+                "playerId": "carla_thomas",
+                "playerName": "Carla Thomas"
+              },
+              "college": {
+                "collegeId": "vanderbilt_u",
+                "collegeName": "Vanderbilt University",
+                "existsInCollegeFile": true
+              },
+              "overseas": null,
+              "team": {
+                "teamCode": "ATL_DREAM",
+                "teamName": "Atlanta Dream"
+              },
+              "previousTeam": {
+                "teamCode": "CHI_SKY",
+                "teamName": "Chicago Sky"
+              },
+              "notes": "Vanderbilt Commodores women's basketball team\nVanderbilt University\nCommodores",
+              "links": [],
+              "entryIds": []
             }
           }
         },
@@ -1491,34 +1494,6 @@
               "team": {
                 "teamCode": "DET_SHOCK",
                 "teamName": "Detroit Shock"
-              },
-              "previousTeam": {
-                "teamCode": "MIAMI_SOL",
-                "teamName": "Miami Sol"
-              },
-              "notes": "",
-              "links": [],
-              "entryIds": []
-            },
-            "2003_dispersal_r1_p2": {
-              "pickId": "2003_dispersal_r1_p2",
-              "overallPick": 2,
-              "round": 1,
-              "roundPick": 2,
-              "pickStatus": "selection",
-              "player": {
-                "playerId": "sheri_sam",
-                "playerName": "Sheri Sam"
-              },
-              "college": {
-                "collegeId": "vanderbilt",
-                "collegeName": "Vanderbilt",
-                "existsInCollegeFile": false
-              },
-              "overseas": null,
-              "team": {
-                "teamCode": "MIN_LYNX",
-                "teamName": "Minnesota Lynx"
               },
               "previousTeam": {
                 "teamCode": "MIAMI_SOL",
@@ -1815,6 +1790,34 @@
               "previousTeam": {
                 "teamCode": "POR_FIRE_2000",
                 "teamName": "Portland Fire"
+              },
+              "notes": "",
+              "links": [],
+              "entryIds": []
+            },
+            "2003_dispersal_r1_p2": {
+              "pickId": "2003_dispersal_r1_p2",
+              "overallPick": 2,
+              "round": 1,
+              "roundPick": 2,
+              "pickStatus": "selection",
+              "player": {
+                "playerId": "sheri_sam",
+                "playerName": "Sheri Sam"
+              },
+              "college": {
+                "collegeId": "vanderbilt_u",
+                "collegeName": "Vanderbilt University",
+                "existsInCollegeFile": true
+              },
+              "overseas": null,
+              "team": {
+                "teamCode": "MIN_LYNX",
+                "teamName": "Minnesota Lynx"
+              },
+              "previousTeam": {
+                "teamCode": "MIAMI_SOL",
+                "teamName": "Miami Sol"
               },
               "notes": "",
               "links": [],

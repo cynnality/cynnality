@@ -136,3 +136,15 @@ body {
     margin: 4px 0 0;
     padding-left: 18px;
 }
+
+.issue-card.missing-player-image {
+    border-color: #bd7b2f;
+}
+
+#missingImagesPanel button.panel-toggle {
+    color: #bd7b2f;
+}
+
+#missingImagesSummary .summary-label {
+    color: #bd7b2f;
+}

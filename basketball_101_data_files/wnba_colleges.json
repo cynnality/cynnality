@@ -68,6 +68,20 @@
         "refName2": "Cardinal"
       }
     },
+    "vanderbilt_u": {
+      "name": "Vanderbilt University",
+      "refNames": {
+        "refName1": "Vanderbilt",
+        "refName2": "Commodores"
+      }
+    },
+    "georgetown_u": {
+      "name": "Georgetown University",
+      "refNames": {
+        "refName1": "Georgetown",
+        "refName2": "Hoyas"
+      }
+    },
     "u_of_florida": {
       "name": "University of Florida",
       "refNames": {

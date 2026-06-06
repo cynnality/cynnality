@@ -214,3 +214,39 @@ body {
     color: #666;
     text-transform: uppercase;
 }
+
+.compact-matchup-cell.is-final {
+    border-color: #111;
+    background: #f7f7f7;
+}
+
+.final-label {
+    display: inline-flex;
+    width: fit-content;
+    padding: 3px 7px;
+    border-radius: 999px;
+    background: #111;
+    color: white;
+    font-size: 10px;
+    font-weight: 900;
+    text-transform: uppercase;
+    margin-bottom: 4px;
+}
+
+.winner-team {
+    transform: scale(1.05);
+    font-weight: 900;
+}
+
+.winner-team-box {
+    width: 18px;
+    height: 18px;
+    border-width: 2px;
+}
+
+.team-score {
+    display: block;
+    font-size: 13px;
+    font-weight: 900;
+    line-height: 1;
+}

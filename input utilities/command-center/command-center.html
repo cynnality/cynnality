@@ -69,6 +69,11 @@
             <span class="summary-label">Quick Add Players</span>
         </article>
 
+        <article class="summary-card" id="missingImagesSummary">
+            <span class="summary-number" id="missingImagesCount">0</span>
+            <span class="summary-label">Missing Images</span>
+        </article>
+
         <article class="summary-card" id="teamMismatchSummary">
             <span class="summary-number" id="teamMismatchCount">0</span>
             <span class="summary-label">Team Mismatches</span>
@@ -127,6 +132,17 @@
 
         <div class="panel-body">
             <div id="quickAddPlayersList" class="issue-list"></div>
+        </div>
+    </section>
+
+    <section class="panel issue-panel" id="missingImagesPanel">
+        <button class="panel-toggle" type="button">
+            <span>Players Missing Images</span>
+            <span class="panel-toggle-icon">−</span>
+        </button>
+
+        <div class="panel-body">
+            <div id="missingImagesList" class="issue-list"></div>
         </div>
     </section>
 

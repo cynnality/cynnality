@@ -1,6 +1,6 @@
 const DATA_PATHS = {
     seasonGeneralInfo: "../../basketball_101_data_files/wnba_season_general_info_data.json",
-    gamedayCalendar: "../../basketball_101_data_files/wnba_gameday_calendar_data.json",
+    calendarFolder: "../../basketball_101_data_files/wnba_calendar_data",
     teams: "../../basketball_101_data_files/wnba_static_data_v2.json"
 };
 
@@ -31,15 +31,33 @@ async function loadJson(path, fallback) {
 
 async function initViewer() {
     SEASON_GENERAL_INFO_DATA = await loadJson(DATA_PATHS.seasonGeneralInfo, { seasons: {} });
-    GAMEDAY_CALENDAR_DATA = await loadJson(DATA_PATHS.gamedayCalendar, { seasons: {} });
     TEAMS_DATA = await loadJson(DATA_PATHS.teams, { teams: {} });
 
     renderSeasonOptions();
+
+    await loadCalendarForSeason(getSelectedSeasonId());
+
     renderCalendar();
 }
 
+async function loadCalendarForSeason(seasonId) {
+    GAMEDAY_CALENDAR_DATA = await loadJson(
+        getCalendarPathForSeason(seasonId),
+        {
+            season: Number(seasonId),
+            seasonId,
+            games: {}
+        }
+    );
+}
+
+function getCalendarPathForSeason(seasonId) {
+    return `${DATA_PATHS.calendarFolder}/wnba_${seasonId}_calendar_data.json`;
+}
+
 function renderSeasonOptions() {
-    const seasonIds = Object.keys(GAMEDAY_CALENDAR_DATA.seasons || {}).sort();
+    const seasonIds = Object.keys(SEASON_GENERAL_INFO_DATA.seasons || {})
+        .sort((a, b) => Number(b) - Number(a));
 
     seasonSelect.innerHTML = "";
 
@@ -50,7 +68,12 @@ function renderSeasonOptions() {
         seasonSelect.appendChild(option);
     });
 
-    if (seasonIds.includes("2026")) {
+    const params = new URLSearchParams(window.location.search);
+    const seasonFromUrl = params.get("season");
+
+    if (seasonFromUrl && seasonIds.includes(seasonFromUrl)) {
+        seasonSelect.value = seasonFromUrl;
+    } else if (seasonIds.includes("2026")) {
         seasonSelect.value = "2026";
     }
 }
@@ -60,11 +83,7 @@ function getSelectedSeasonId() {
 }
 
 function getGamesForSeason() {
-    const seasonId = getSelectedSeasonId();
-
-    return Object.values(
-        GAMEDAY_CALENDAR_DATA?.seasons?.[seasonId]?.games || {}
-    );
+    return Object.values(GAMEDAY_CALENDAR_DATA?.games || {});
 }
 
 // helper functions for new "week" calendar organization
@@ -181,15 +200,38 @@ function renderCalendar() {
                 cell.type = "button";
                 cell.className = "compact-matchup-cell";
 
+                const isFinal =
+                    game.status === "final" ||
+                    game.score?.isFinal === true;
+
+                const awayScore = game.score?.awayScore ?? "";
+                const homeScore = game.score?.homeScore ?? "";
+
+                const awayIsWinner =
+                    isFinal && game.score?.winner === game.awayTeam;
+
+                const homeIsWinner =
+                    isFinal && game.score?.winner === game.homeTeam;
+
+                cell.classList.toggle("is-final", isFinal);
+
                 cell.innerHTML = `
-                    <span class="compact-team away">
-                        <span class="team-color-box" style="background:${getTeamColor(game.awayTeam)}"></span>
-                        ${getTeamLabel(game.awayTeam)}
+                    ${isFinal ? `<span class="final-label">Final</span>` : ""}
+
+                    <span class="compact-team away ${awayIsWinner ? "winner-team" : ""}">
+                        <span class="team-color-box ${awayIsWinner ? "winner-team-box" : ""}" style="background:${getTeamColor(game.awayTeam)}"></span>
+                        <span>
+                            ${getTeamLabel(game.awayTeam)}
+                            ${isFinal ? `<span class="team-score">${awayScore}</span>` : ""}
+                        </span>
                     </span>
 
-                    <span class="compact-team home">
-                        ${getTeamLabel(game.homeTeam)}
-                        <span class="team-color-box" style="background:${getTeamColor(game.homeTeam)}"></span>
+                    <span class="compact-team home ${homeIsWinner ? "winner-team" : ""}">
+                        <span>
+                            ${getTeamLabel(game.homeTeam)}
+                            ${isFinal ? `<span class="team-score">${homeScore}</span>` : ""}
+                        </span>
+                        <span class="team-color-box ${homeIsWinner ? "winner-team-box" : ""}" style="background:${getTeamColor(game.homeTeam)}"></span>
                     </span>
                 `;
 
@@ -222,7 +264,10 @@ function renderSelectedGame(game) {
     `;
 }
 
-seasonSelect.addEventListener("change", renderCalendar);
+seasonSelect.addEventListener("change", async () => {
+    await loadCalendarForSeason(getSelectedSeasonId());
+    renderCalendar();
+});
 
 openMatchupEditorBtn.addEventListener("click", openSeasonCalendarInputTool);
 

@@ -73,50 +73,67 @@ select {
     margin: 0;
 }
 
-.awards-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
-    gap: 14px;
-}
-
-.award-node {
+.awards-table {
+    display: block;
     border: 2px solid #111;
-    border-radius: 14px;
-    padding: 16px;
-    background: #fafafa;
-    cursor: pointer;
-    transition: transform 0.12s ease, box-shadow 0.12s ease;
+    background: #fff;
 }
 
-.award-node:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 6px 0 #111;
+.awards-table-header,
+.award-row-main {
+    display: grid;
+    grid-template-columns: 1.4fr 1.2fr 1.2fr 0.8fr;
+    gap: 12px;
+    align-items: center;
 }
 
-.award-key {
-    font-size: 11px;
+.awards-table-header {
+    padding: 10px 12px;
+    border-bottom: 2px solid #111;
+    background: #eee5d8;
+    font-size: 12px;
     font-weight: 900;
     text-transform: uppercase;
-    letter-spacing: 0.08em;
-    color: #666;
-    margin-bottom: 8px;
+}
+
+.award-row {
+    border-bottom: 1px solid #111;
+    cursor: pointer;
+}
+
+.award-row:last-child {
+    border-bottom: none;
+}
+
+.award-row-main {
+    padding: 12px;
+}
+
+.award-row:hover {
+    background: #fafafa;
 }
 
 .award-name {
-    font-size: 18px;
     font-weight: 900;
-    margin-bottom: 12px;
 }
 
 .recipient-name {
-    font-size: 16px;
-    font-weight: 800;
+    font-weight: 700;
 }
 
 .team-line {
-    margin-top: 4px;
     font-size: 13px;
-    color: #555;
+    font-weight: 800;
+}
+
+.award-entry-actions {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.no-entry-text {
+    color: #777;
+    font-weight: 900;
 }
 
 .note-indicator {

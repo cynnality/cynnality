@@ -5,7 +5,7 @@
 // - Generates post metadata
 // - Auto-builds content/style file paths
 // - Renders live markdown/html preview
-// - Injects custom CSS into preview
+// - Injects custom CSS into preview 
 // ======================================================
 
 
@@ -15,6 +15,11 @@
 
 const pageSelect = document.getElementById("pageSelect");
 const newPageInput = document.getElementById("newPageInput");
+
+const pageTitleInput = document.getElementById("pageTitleInput");
+const pageDescriptionInput = document.getElementById("pageDescriptionInput");
+const pageStyleFileInput = document.getElementById("pageStyleFileInput");
+const pageStyleInput = document.getElementById("pageStyleInput");
 
 const postTitleInput = document.getElementById("postTitleInput");
 const postIdInput = document.getElementById("postIdInput");
@@ -40,10 +45,12 @@ const statusMessage = document.getElementById("statusMessage");
 const jsonPreview = document.getElementById("jsonPreview");
 
 const DATA_PATHS = {
-    posts: "../post data/posts_data.json"
+    posts: "../post data/posts_data.json",
+    pages: "../post data/pages_data.json"
 };
 
 let POSTS_DATA = { posts: {} };
+let PAGES_DATA = { pages: {} };
 
 
 // ======================================================
@@ -100,6 +107,64 @@ function buildStyleFilePath() {
     if (!page || !postId) return "";
 
     return `posts/post data/styles/${page}/${postId}.css`;
+}
+
+function buildPageStyleFilePath() {
+    const page = getSelectedPage();
+
+    if (!page) return "";
+
+    return `posts/post data/page styles/${page}.css`;
+}
+
+function buildPageObject() {
+    const pageId = getSelectedPage();
+
+    return {
+        pageId,
+        title: pageTitleInput.value.trim() || pageId,
+        slug: pageId,
+        description: pageDescriptionInput.value.trim(),
+        styleFile: pageStyleFileInput.value.trim() || buildPageStyleFilePath()
+    };
+}
+
+function populatePageSelect() {
+    pageSelect.innerHTML = "";
+
+    Object.values(PAGES_DATA.pages || {})
+        .sort((a, b) => (a.title || "").localeCompare(b.title || ""))
+        .forEach(page => {
+            const option = document.createElement("option");
+            option.value = page.pageId;
+            option.textContent = page.title || page.pageId;
+            pageSelect.appendChild(option);
+        });
+
+    if (!pageSelect.value && PAGES_DATA.pages?.general) {
+        pageSelect.value = "general";
+    }
+}
+
+function fillPageFieldsFromSelectedPage() {
+    const pageId = pageSelect.value;
+    const page = PAGES_DATA.pages?.[pageId];
+
+    if (!page || newPageInput.value.trim()) return;
+
+    pageTitleInput.value = page.title || "";
+    pageDescriptionInput.value = page.description || "";
+    pageStyleFileInput.value = page.styleFile || buildPageStyleFilePath();
+}
+
+function updateGeneratedPageFields() {
+    if (newPageInput.value.trim()) {
+        pageTitleInput.value = newPageInput.value.trim();
+    }
+
+    if (!pageStyleFileInput.dataset.manual) {
+        pageStyleFileInput.value = buildPageStyleFilePath();
+    }
 }
 
 async function loadJson(path, fallback) {
@@ -173,6 +238,8 @@ function updateGeneratedPostFields() {
     if (!styleFileInput.dataset.manual) {
         styleFileInput.value = buildStyleFilePath();
     }
+
+    updateGeneratedPageFields();
 }
 
 
@@ -219,6 +286,7 @@ async function loadPostForEditing(postId) {
     styleFileInput.value = post.styleFile || "";
 
     pageSelect.value = post.page || "general";
+    fillPageFieldsFromSelectedPage();
 
     postIdInput.dataset.manual = "true";
     slugInput.dataset.manual = "true";
@@ -230,6 +298,7 @@ async function loadPostForEditing(postId) {
 
     contentInput.value = await loadText(post.contentFile);
     styleInput.value = await loadText(post.styleFile);
+    pageStyleInput.value = await loadText(pageStyleFileInput.value);
 
     console.log("Loaded CSS:", styleInput.value);
 
@@ -251,7 +320,7 @@ function updatePreview() {
         JSON.stringify(post, null, 4);
 
     previewStyle.textContent =
-        styleInput.value;
+        `${pageStyleInput.value}\n\n${styleInput.value}`;
 
     const renderedContent =
         renderSimpleMarkdown(contentInput.value);
@@ -264,6 +333,10 @@ function updatePreview() {
 
 async function init() {
     POSTS_DATA = await loadJson(DATA_PATHS.posts, { posts: {} });
+    PAGES_DATA = await loadJson(DATA_PATHS.pages, { pages: {} });
+
+    populatePageSelect();
+    fillPageFieldsFromSelectedPage();
 
     const params = new URLSearchParams(window.location.search);
     const postId = params.get("postId");
@@ -325,8 +398,20 @@ styleFileInput.addEventListener("input", () => {
     updatePreview();
 });
 
-pageSelect.addEventListener("input", updatePreview);
-newPageInput.addEventListener("input", updatePreview);
+pageSelect.addEventListener("change", () => {
+    fillPageFieldsFromSelectedPage();
+    updatePreview();
+});
+
+newPageInput.addEventListener("input", () => {
+    updateGeneratedPageFields();
+    updatePreview();
+});
+
+pageStyleFileInput.addEventListener("input", () => {
+    pageStyleFileInput.dataset.manual = "true";
+    updatePreview();
+});
 
 document
     .querySelectorAll("input, select, textarea")
@@ -394,6 +479,27 @@ async function savePost() {
             body: JSON.stringify({
                 styleFile: post.styleFile,
                 css: styleInput.value
+            })
+        });
+
+        const page = buildPageObject();
+
+        await fetch("http://127.0.0.1:8787/save-post-page", {
+            method: "POST",
+            headers: {
+                "Content-Type": "application/json"
+            },
+            body: JSON.stringify(page)
+        });
+
+        await fetch("http://127.0.0.1:8787/save-post-page-style", {
+            method: "POST",
+            headers: {
+                "Content-Type": "application/json"
+            },
+            body: JSON.stringify({
+                styleFile: page.styleFile,
+                css: pageStyleInput.value
             })
         });
 

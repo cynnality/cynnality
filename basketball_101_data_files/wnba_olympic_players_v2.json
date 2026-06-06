@@ -2887,75 +2887,53 @@
       ]
     },
     "paige_bueckers": {
-      "playerName": "Paige Bueckers",
-      "teamUsaJersey": "",
-      "playerStatus": {
-        "isActive": true,
-        "hasNcaaChampionships": true,
-        "wasDraftDayTrade": false,
-        "hasWnbaChampionships": false,
-        "hasOverseasExperience": false,
-        "hasUnrivaledExperience": true,
-        "hasNationalTeamExperience": false,
-        "hasOlympicExperience": false
-      },
-      "careerDetails": {
-        "collegeCareer": {
-          "collegeId": "u_of_conn",
-          "startYear": "2020",
-          "endYear": "2025",
-          "ncaaChampionships": [
-            {
-              "year": "2025",
-              "collegeId": "u_of_conn"
-            }
-          ]
+      "playerId": "paige_bueckers",
+      "playerData": {
+        "playerName": "Paige Bueckers",
+        "teamUsaJersey": "",
+        "playerStatus": {
+          "isActive": false,
+          "hasNcaaChampionships": false,
+          "wasDraftDayTrade": false,
+          "hasWnbaChampionships": false,
+          "hasOverseasExperience": false,
+          "hasUnrivaledExperience": false,
+          "hasNationalTeamExperience": false,
+          "hasOlympicExperience": false
         },
-        "draftDetails": {
-          "year": "2025",
-          "pick": "1",
-          "draftedBy": "DAL_WINGS"
+        "careerDetails": {
+          "collegeCareer": {
+            "collegeId": "",
+            "startYear": "",
+            "endYear": "",
+            "ncaaChampionships": []
+          },
+          "draftDetails": {
+            "year": "",
+            "pick": "",
+            "draftedBy": ""
+          },
+          "missedWnbaSeasons": [],
+          "overseasTeams": [],
+          "unrivaledTeams": [],
+          "teamUsaMedals": []
         },
-        "missedWnbaSeasons": [],
-        "overseasTeams": [],
-        "unrivaledTeams": [
+        "image": {
+          "src": "/season30/connection-imgs/paige_bueckers_individual.jpg",
+          "alt": "Paige Bueckers",
+          "sourceLink": "https://www.si.com/wnba/wings/paige-bueckers-unrivaled-coach-delivers-highest-praise-dallas-wings-star-"
+        },
+        "images": [
           {
-            "year": 2026,
-            "teamCode": "bc_breeze"
+            "src": "/season30/connection-imgs/paige_bueckers_individual.jpg",
+            "alt": "Paige Bueckers",
+            "sourceLink": "https://www.si.com/wnba/wings/paige-bueckers-unrivaled-coach-delivers-highest-praise-dallas-wings-star-"
           }
         ],
-        "teamUsaMedals": []
-      },
-      "image": null,
-      "images": [],
-      "wnbaSeasons": [
-        {
-          "year": "2025",
-          "entries": [
-            {
-              "type": "team",
-              "teamCode": "DAL_WINGS"
-            }
-          ]
-        },
-        {
-          "year": "2026",
-          "entries": [
-            {
-              "type": "team",
-              "teamCode": "DAL_WINGS"
-            }
-          ]
-        }
-      ],
-      "wnbaTeams": [
-        {
-          "teamCode": "DAL_WINGS",
-          "startYear": "2025",
-          "endYear": "present"
-        }
-      ],
-      "championships": []
+        "wnbaSeasons": [],
+        "wnbaTeams": [],
+        "championships": []
+      }
     },
     "angel_reese": {
       "playerId": "angel_reese",
@@ -2963,97 +2941,46 @@
         "playerName": "Angel Reese",
         "teamUsaJersey": "",
         "playerStatus": {
-          "isActive": true,
-          "hasNcaaChampionships": true,
+          "isActive": false,
+          "hasNcaaChampionships": false,
           "wasDraftDayTrade": false,
           "hasWnbaChampionships": false,
           "hasOverseasExperience": false,
-          "hasUnrivaledExperience": true,
-          "hasNationalTeamExperience": true,
+          "hasUnrivaledExperience": false,
+          "hasNationalTeamExperience": false,
           "hasOlympicExperience": false
         },
         "careerDetails": {
           "collegeCareer": {
-            "collegeId": "louisiana_state_u",
-            "startYear": "2020",
-            "endYear": "2024",
-            "ncaaChampionships": [
-              {
-                "year": "2023",
-                "collegeId": "louisiana_state_u"
-              }
-            ]
+            "collegeId": "",
+            "startYear": "",
+            "endYear": "",
+            "ncaaChampionships": []
           },
           "draftDetails": {
-            "year": "2024",
-            "pick": "7",
-            "draftedBy": "CHI_SKY"
+            "year": "",
+            "pick": "",
+            "draftedBy": ""
           },
           "missedWnbaSeasons": [],
           "overseasTeams": [],
-          "unrivaledTeams": [
-            {
-              "year": 2025,
-              "teamCode": "bc_rose"
-            },
-            {
-              "year": 2026,
-              "teamCode": "bc_rose"
-            }
-          ],
-          "teamUsaMedals": [
-            {
-              "eventType": "FIBA",
-              "format": "5x5",
-              "year": "2023",
-              "competition": "Americup",
-              "medal": "Silver"
-            }
-          ]
+          "unrivaledTeams": [],
+          "teamUsaMedals": []
         },
-        "image": null,
-        "images": [],
-        "wnbaSeasons": [
+        "image": {
+          "src": "/season30/connection-imgs/angel_reese_individual.webp",
+          "alt": "Angel Reese",
+          "sourceLink": "https://chicago.suntimes.com/chicago-sky/2025/08/19/angel-reese-returns-to-play-with-a-bang-and-a-touch-of-mystery"
+        },
+        "images": [
           {
-            "year": "2024",
-            "entries": [
-              {
-                "type": "team",
-                "teamCode": "CHI_SKY"
-              }
-            ]
-          },
-          {
-            "year": "2025",
-            "entries": [
-              {
-                "type": "team",
-                "teamCode": "CHI_SKY"
-              }
-            ]
-          },
-          {
-            "year": "2026",
-            "entries": [
-              {
-                "type": "team",
-                "teamCode": "ATL_DREAM"
-              }
-            ]
+            "src": "/season30/connection-imgs/angel_reese_individual.webp",
+            "alt": "Angel Reese",
+            "sourceLink": "https://chicago.suntimes.com/chicago-sky/2025/08/19/angel-reese-returns-to-play-with-a-bang-and-a-touch-of-mystery"
           }
         ],
-        "wnbaTeams": [
-          {
-            "teamCode": "CHI_SKY",
-            "startYear": "2024",
-            "endYear": "2025"
-          },
-          {
-            "teamCode": "ATL_DREAM",
-            "startYear": "2026",
-            "endYear": "present"
-          }
-        ],
+        "wnbaSeasons": [],
+        "wnbaTeams": [],
         "championships": []
       }
     },
@@ -3161,6 +3088,3614 @@
         "quickAddSource": "command-center",
         "quickAddReason": "missing-player-reference",
         "quickAddedAt": "2026-06-05T00:57:39.751Z"
+      }
+    },
+    "naz_hillmon": {
+      "playerId": "naz_hillmon",
+      "playerName": "Naz Hillmon",
+      "playerStatus": {
+        "isActive": true,
+        "hasNcaaChampionships": false,
+        "wasDraftDayTrade": false,
+        "hasWnbaChampionships": false,
+        "hasOverseasExperience": false,
+        "hasUnrivaledExperience": false,
+        "hasNationalTeamExperience": false,
+        "hasOlympicExperience": false
+      },
+      "careerDetails": {
+        "collegeCareer": {
+          "collegeId": "",
+          "collegeName": "",
+          "startYear": "",
+          "endYear": "",
+          "ncaaChampionships": []
+        },
+        "draftDetails": {
+          "year": "",
+          "pick": "",
+          "round": "",
+          "roundPick": "",
+          "draftedBy": "",
+          "acquiredBy": "",
+          "transactionNote": ""
+        },
+        "wnbaTeams": [
+          {
+            "teamCode": "ATL_DREAM",
+            "startYear": 2025,
+            "endYear": "",
+            "transactionNote": "Quick-added from award reference."
+          }
+        ],
+        "missedWnbaSeasons": [],
+        "overseasTeams": [],
+        "unrivaledTeams": [],
+        "teamUsaMedals": []
+      },
+      "wnbaSeasons": {},
+      "images": [],
+      "dataStatus": {
+        "isQuickAdd": true,
+        "needsFullProfile": true,
+        "quickAddSource": "command-center",
+        "quickAddReason": "missing-player-reference",
+        "quickAddedAt": "2026-06-05T23:27:04.203Z"
+      }
+    },
+    "nneka_ogwumike": {
+      "playerId": "nneka_ogwumike",
+      "playerName": "Nneka Ogwumike",
+      "playerStatus": {
+        "isActive": true,
+        "hasNcaaChampionships": false,
+        "wasDraftDayTrade": false,
+        "hasWnbaChampionships": false,
+        "hasOverseasExperience": false,
+        "hasUnrivaledExperience": false,
+        "hasNationalTeamExperience": false,
+        "hasOlympicExperience": false
+      },
+      "careerDetails": {
+        "collegeCareer": {
+          "collegeId": "",
+          "collegeName": "",
+          "startYear": "",
+          "endYear": "",
+          "ncaaChampionships": []
+        },
+        "draftDetails": {
+          "year": "",
+          "pick": "",
+          "round": "",
+          "roundPick": "",
+          "draftedBy": "",
+          "acquiredBy": "",
+          "transactionNote": ""
+        },
+        "wnbaTeams": [
+          {
+            "teamCode": "SEA_STORM",
+            "startYear": 2025,
+            "endYear": "",
+            "transactionNote": "Quick-added from award reference."
+          }
+        ],
+        "missedWnbaSeasons": [],
+        "overseasTeams": [],
+        "unrivaledTeams": [],
+        "teamUsaMedals": []
+      },
+      "wnbaSeasons": {},
+      "images": [],
+      "dataStatus": {
+        "isQuickAdd": true,
+        "needsFullProfile": true,
+        "quickAddSource": "command-center",
+        "quickAddReason": "missing-player-reference",
+        "quickAddedAt": "2026-06-05T23:27:05.203Z"
+      }
+    },
+    "tina_charles": {
+      "playerId": "tina_charles",
+      "playerName": "Tina Charles",
+      "playerStatus": {
+        "isActive": true,
+        "hasNcaaChampionships": false,
+        "wasDraftDayTrade": false,
+        "hasWnbaChampionships": false,
+        "hasOverseasExperience": false,
+        "hasUnrivaledExperience": false,
+        "hasNationalTeamExperience": false,
+        "hasOlympicExperience": false
+      },
+      "careerDetails": {
+        "collegeCareer": {
+          "collegeId": "",
+          "collegeName": "",
+          "startYear": "",
+          "endYear": "",
+          "ncaaChampionships": []
+        },
+        "draftDetails": {
+          "year": "",
+          "pick": "",
+          "round": "",
+          "roundPick": "",
+          "draftedBy": "",
+          "acquiredBy": "",
+          "transactionNote": ""
+        },
+        "wnbaTeams": [
+          {
+            "teamCode": "CON_SUN",
+            "startYear": 2025,
+            "endYear": "",
+            "transactionNote": "Quick-added from award reference."
+          }
+        ],
+        "missedWnbaSeasons": [],
+        "overseasTeams": [],
+        "unrivaledTeams": [],
+        "teamUsaMedals": []
+      },
+      "wnbaSeasons": {},
+      "images": [],
+      "dataStatus": {
+        "isQuickAdd": true,
+        "needsFullProfile": true,
+        "quickAddSource": "command-center",
+        "quickAddReason": "missing-player-reference",
+        "quickAddedAt": "2026-06-05T23:27:05.756Z"
+      }
+    },
+    "natalie_nakase": {
+      "playerId": "natalie_nakase",
+      "playerName": "Natalie Nakase",
+      "playerStatus": {
+        "isActive": true,
+        "hasNcaaChampionships": false,
+        "wasDraftDayTrade": false,
+        "hasWnbaChampionships": false,
+        "hasOverseasExperience": false,
+        "hasUnrivaledExperience": false,
+        "hasNationalTeamExperience": false,
+        "hasOlympicExperience": false
+      },
+      "careerDetails": {
+        "collegeCareer": {
+          "collegeId": "",
+          "collegeName": "",
+          "startYear": "",
+          "endYear": "",
+          "ncaaChampionships": []
+        },
+        "draftDetails": {
+          "year": "",
+          "pick": "",
+          "round": "",
+          "roundPick": "",
+          "draftedBy": "",
+          "acquiredBy": "",
+          "transactionNote": ""
+        },
+        "wnbaTeams": [
+          {
+            "teamCode": "GSV_VALKYRIES",
+            "startYear": 2025,
+            "endYear": "",
+            "transactionNote": "Quick-added from award reference."
+          }
+        ],
+        "missedWnbaSeasons": [],
+        "overseasTeams": [],
+        "unrivaledTeams": [],
+        "teamUsaMedals": []
+      },
+      "wnbaSeasons": {},
+      "images": [],
+      "dataStatus": {
+        "isQuickAdd": true,
+        "needsFullProfile": true,
+        "quickAddSource": "command-center",
+        "quickAddReason": "missing-player-reference",
+        "quickAddedAt": "2026-06-05T23:27:06.266Z"
+      }
+    },
+    "dan_padover": {
+      "playerId": "dan_padover",
+      "playerName": "Dan Padover",
+      "playerStatus": {
+        "isActive": true,
+        "hasNcaaChampionships": false,
+        "wasDraftDayTrade": false,
+        "hasWnbaChampionships": false,
+        "hasOverseasExperience": false,
+        "hasUnrivaledExperience": false,
+        "hasNationalTeamExperience": false,
+        "hasOlympicExperience": false
+      },
+      "careerDetails": {
+        "collegeCareer": {
+          "collegeId": "",
+          "collegeName": "",
+          "startYear": "",
+          "endYear": "",
+          "ncaaChampionships": []
+        },
+        "draftDetails": {
+          "year": "",
+          "pick": "",
+          "round": "",
+          "roundPick": "",
+          "draftedBy": "",
+          "acquiredBy": "",
+          "transactionNote": ""
+        },
+        "wnbaTeams": [
+          {
+            "teamCode": "ATL_DREAM",
+            "startYear": 2025,
+            "endYear": "",
+            "transactionNote": "Quick-added from award reference."
+          }
+        ],
+        "missedWnbaSeasons": [],
+        "overseasTeams": [],
+        "unrivaledTeams": [],
+        "teamUsaMedals": []
+      },
+      "wnbaSeasons": {},
+      "images": [],
+      "dataStatus": {
+        "isQuickAdd": true,
+        "needsFullProfile": true,
+        "quickAddSource": "command-center",
+        "quickAddReason": "missing-player-reference",
+        "quickAddedAt": "2026-06-05T23:27:06.707Z"
+      }
+    },
+    "jess_smith": {
+      "playerId": "jess_smith",
+      "playerName": "Jess Smith",
+      "playerStatus": {
+        "isActive": true,
+        "hasNcaaChampionships": false,
+        "wasDraftDayTrade": false,
+        "hasWnbaChampionships": false,
+        "hasOverseasExperience": false,
+        "hasUnrivaledExperience": false,
+        "hasNationalTeamExperience": false,
+        "hasOlympicExperience": false
+      },
+      "careerDetails": {
+        "collegeCareer": {
+          "collegeId": "",
+          "collegeName": "",
+          "startYear": "",
+          "endYear": "",
+          "ncaaChampionships": []
+        },
+        "draftDetails": {
+          "year": "",
+          "pick": "",
+          "round": "",
+          "roundPick": "",
+          "draftedBy": "",
+          "acquiredBy": "",
+          "transactionNote": ""
+        },
+        "wnbaTeams": [
+          {
+            "teamCode": "GSV_VALKYRIES",
+            "startYear": 2025,
+            "endYear": "",
+            "transactionNote": "Quick-added from award reference."
+          }
+        ],
+        "missedWnbaSeasons": [],
+        "overseasTeams": [],
+        "unrivaledTeams": [],
+        "teamUsaMedals": []
+      },
+      "wnbaSeasons": {},
+      "images": [],
+      "dataStatus": {
+        "isQuickAdd": true,
+        "needsFullProfile": true,
+        "quickAddSource": "command-center",
+        "quickAddReason": "missing-player-reference",
+        "quickAddedAt": "2026-06-05T23:27:07.259Z"
+      }
+    },
+    "sonia_citron": {
+      "playerId": "sonia_citron",
+      "playerName": "Sonia Citron",
+      "playerStatus": {
+        "isActive": true,
+        "hasNcaaChampionships": false,
+        "wasDraftDayTrade": false,
+        "hasWnbaChampionships": false,
+        "hasOverseasExperience": false,
+        "hasUnrivaledExperience": false,
+        "hasNationalTeamExperience": false,
+        "hasOlympicExperience": false
+      },
+      "careerDetails": {
+        "collegeCareer": {
+          "collegeId": "u_of_notre_dame",
+          "collegeName": "University of Notre Dame",
+          "startYear": "",
+          "endYear": "",
+          "ncaaChampionships": []
+        },
+        "draftDetails": {
+          "year": 2025,
+          "pick": 3,
+          "round": 1,
+          "roundPick": 3,
+          "draftedBy": "WAS_MYSTICS",
+          "acquiredBy": "",
+          "transactionNote": ""
+        },
+        "wnbaTeams": [],
+        "missedWnbaSeasons": [],
+        "overseasTeams": [],
+        "unrivaledTeams": [],
+        "teamUsaMedals": []
+      },
+      "wnbaSeasons": {},
+      "images": [],
+      "dataStatus": {
+        "isQuickAdd": true,
+        "needsFullProfile": true,
+        "quickAddSource": "command-center",
+        "quickAddReason": "missing-player-reference",
+        "quickAddedAt": "2026-06-05T23:27:08.131Z"
+      }
+    },
+    "dominique_malonga": {
+      "playerId": "dominique_malonga",
+      "playerName": "Dominique Malonga",
+      "playerStatus": {
+        "isActive": true,
+        "hasNcaaChampionships": false,
+        "wasDraftDayTrade": false,
+        "hasWnbaChampionships": false,
+        "hasOverseasExperience": false,
+        "hasUnrivaledExperience": false,
+        "hasNationalTeamExperience": false,
+        "hasOlympicExperience": false
+      },
+      "careerDetails": {
+        "collegeCareer": {
+          "collegeId": "",
+          "collegeName": "",
+          "startYear": "",
+          "endYear": "",
+          "ncaaChampionships": []
+        },
+        "draftDetails": {
+          "year": 2025,
+          "pick": 2,
+          "round": 1,
+          "roundPick": 2,
+          "draftedBy": "SEA_STORM",
+          "acquiredBy": "",
+          "transactionNote": ""
+        },
+        "wnbaTeams": [],
+        "missedWnbaSeasons": [],
+        "overseasTeams": [],
+        "unrivaledTeams": [],
+        "teamUsaMedals": []
+      },
+      "wnbaSeasons": {},
+      "images": [],
+      "dataStatus": {
+        "isQuickAdd": true,
+        "needsFullProfile": true,
+        "quickAddSource": "command-center",
+        "quickAddReason": "missing-player-reference",
+        "quickAddedAt": "2026-06-05T23:27:08.555Z"
+      }
+    },
+    "iliana_rupert": {
+      "playerId": "iliana_rupert",
+      "playerName": "Iliana Rupert",
+      "playerStatus": {
+        "isActive": true,
+        "hasNcaaChampionships": false,
+        "wasDraftDayTrade": false,
+        "hasWnbaChampionships": false,
+        "hasOverseasExperience": false,
+        "hasUnrivaledExperience": false,
+        "hasNationalTeamExperience": false,
+        "hasOlympicExperience": false
+      },
+      "careerDetails": {
+        "collegeCareer": {
+          "collegeId": "",
+          "collegeName": "",
+          "startYear": "",
+          "endYear": "",
+          "ncaaChampionships": []
+        },
+        "draftDetails": {
+          "year": 2025,
+          "pick": 1,
+          "round": 1,
+          "roundPick": 1,
+          "draftedBy": "GSV_VALKYRIES",
+          "acquiredBy": "",
+          "transactionNote": ""
+        },
+        "wnbaTeams": [],
+        "missedWnbaSeasons": [],
+        "overseasTeams": [],
+        "unrivaledTeams": [],
+        "teamUsaMedals": []
+      },
+      "wnbaSeasons": {},
+      "images": [],
+      "dataStatus": {
+        "isQuickAdd": true,
+        "needsFullProfile": true,
+        "quickAddSource": "command-center",
+        "quickAddReason": "missing-player-reference",
+        "quickAddedAt": "2026-06-05T23:27:09.019Z"
+      }
+    },
+    "maria_conde": {
+      "playerId": "maria_conde",
+      "playerName": "Maria Conde",
+      "playerStatus": {
+        "isActive": true,
+        "hasNcaaChampionships": false,
+        "wasDraftDayTrade": false,
+        "hasWnbaChampionships": false,
+        "hasOverseasExperience": false,
+        "hasUnrivaledExperience": false,
+        "hasNationalTeamExperience": false,
+        "hasOlympicExperience": false
+      },
+      "careerDetails": {
+        "collegeCareer": {
+          "collegeId": "u_of_florida",
+          "collegeName": "University of Florida",
+          "startYear": "",
+          "endYear": "",
+          "ncaaChampionships": []
+        },
+        "draftDetails": {
+          "year": 2025,
+          "pick": 2,
+          "round": 1,
+          "roundPick": 2,
+          "draftedBy": "GSV_VALKYRIES",
+          "acquiredBy": "",
+          "transactionNote": ""
+        },
+        "wnbaTeams": [],
+        "missedWnbaSeasons": [],
+        "overseasTeams": [],
+        "unrivaledTeams": [],
+        "teamUsaMedals": []
+      },
+      "wnbaSeasons": {},
+      "images": [],
+      "dataStatus": {
+        "isQuickAdd": true,
+        "needsFullProfile": true,
+        "quickAddSource": "command-center",
+        "quickAddReason": "missing-player-reference",
+        "quickAddedAt": "2026-06-05T23:27:10.251Z"
+      }
+    },
+    "carla_leite": {
+      "playerId": "carla_leite",
+      "playerName": "Carla Leite",
+      "playerStatus": {
+        "isActive": true,
+        "hasNcaaChampionships": false,
+        "wasDraftDayTrade": false,
+        "hasWnbaChampionships": false,
+        "hasOverseasExperience": false,
+        "hasUnrivaledExperience": false,
+        "hasNationalTeamExperience": false,
+        "hasOlympicExperience": false
+      },
+      "careerDetails": {
+        "collegeCareer": {
+          "collegeId": "",
+          "collegeName": "",
+          "startYear": "",
+          "endYear": "",
+          "ncaaChampionships": []
+        },
+        "draftDetails": {
+          "year": 2025,
+          "pick": 4,
+          "round": 1,
+          "roundPick": 4,
+          "draftedBy": "GSV_VALKYRIES",
+          "acquiredBy": "",
+          "transactionNote": ""
+        },
+        "wnbaTeams": [],
+        "missedWnbaSeasons": [],
+        "overseasTeams": [],
+        "unrivaledTeams": [],
+        "teamUsaMedals": []
+      },
+      "wnbaSeasons": {},
+      "images": [],
+      "dataStatus": {
+        "isQuickAdd": true,
+        "needsFullProfile": true,
+        "quickAddSource": "command-center",
+        "quickAddReason": "missing-player-reference",
+        "quickAddedAt": "2026-06-05T23:27:10.931Z"
+      }
+    },
+    "temi_fagbenle": {
+      "playerId": "temi_fagbenle",
+      "playerName": "Temi Fágbénlé",
+      "playerStatus": {
+        "isActive": true,
+        "hasNcaaChampionships": false,
+        "wasDraftDayTrade": false,
+        "hasWnbaChampionships": false,
+        "hasOverseasExperience": false,
+        "hasUnrivaledExperience": false,
+        "hasNationalTeamExperience": false,
+        "hasOlympicExperience": false
+      },
+      "careerDetails": {
+        "collegeCareer": {
+          "collegeId": "",
+          "collegeName": "",
+          "startYear": "",
+          "endYear": "",
+          "ncaaChampionships": []
+        },
+        "draftDetails": {
+          "year": 2025,
+          "pick": 5,
+          "round": 1,
+          "roundPick": 5,
+          "draftedBy": "GSV_VALKYRIES",
+          "acquiredBy": "",
+          "transactionNote": ""
+        },
+        "wnbaTeams": [],
+        "missedWnbaSeasons": [],
+        "overseasTeams": [],
+        "unrivaledTeams": [],
+        "teamUsaMedals": []
+      },
+      "wnbaSeasons": {},
+      "images": [],
+      "dataStatus": {
+        "isQuickAdd": true,
+        "needsFullProfile": true,
+        "quickAddSource": "command-center",
+        "quickAddReason": "missing-player-reference",
+        "quickAddedAt": "2026-06-05T23:27:11.723Z"
+      }
+    },
+    "kate_martin": {
+      "playerId": "kate_martin",
+      "playerName": "Kate Martin",
+      "playerStatus": {
+        "isActive": true,
+        "hasNcaaChampionships": false,
+        "wasDraftDayTrade": false,
+        "hasWnbaChampionships": false,
+        "hasOverseasExperience": false,
+        "hasUnrivaledExperience": false,
+        "hasNationalTeamExperience": false,
+        "hasOlympicExperience": false
+      },
+      "careerDetails": {
+        "collegeCareer": {
+          "collegeId": "u_of_iowa",
+          "collegeName": "University of Iowa",
+          "startYear": "",
+          "endYear": "",
+          "ncaaChampionships": []
+        },
+        "draftDetails": {
+          "year": 2025,
+          "pick": 6,
+          "round": 1,
+          "roundPick": 6,
+          "draftedBy": "GSV_VALKYRIES",
+          "acquiredBy": "",
+          "transactionNote": ""
+        },
+        "wnbaTeams": [],
+        "missedWnbaSeasons": [],
+        "overseasTeams": [],
+        "unrivaledTeams": [],
+        "teamUsaMedals": []
+      },
+      "wnbaSeasons": {},
+      "images": [],
+      "dataStatus": {
+        "isQuickAdd": true,
+        "needsFullProfile": true,
+        "quickAddSource": "command-center",
+        "quickAddReason": "missing-player-reference",
+        "quickAddedAt": "2026-06-05T23:27:12.204Z"
+      }
+    },
+    "stephanie_talbot": {
+      "playerId": "stephanie_talbot",
+      "playerName": "Stephanie Talbot",
+      "playerStatus": {
+        "isActive": true,
+        "hasNcaaChampionships": false,
+        "wasDraftDayTrade": false,
+        "hasWnbaChampionships": false,
+        "hasOverseasExperience": false,
+        "hasUnrivaledExperience": false,
+        "hasNationalTeamExperience": false,
+        "hasOlympicExperience": false
+      },
+      "careerDetails": {
+        "collegeCareer": {
+          "collegeId": "",
+          "collegeName": "",
+          "startYear": "",
+          "endYear": "",
+          "ncaaChampionships": []
+        },
+        "draftDetails": {
+          "year": 2025,
+          "pick": 7,
+          "round": 1,
+          "roundPick": 7,
+          "draftedBy": "GSV_VALKYRIES",
+          "acquiredBy": "",
+          "transactionNote": ""
+        },
+        "wnbaTeams": [],
+        "missedWnbaSeasons": [],
+        "overseasTeams": [],
+        "unrivaledTeams": [],
+        "teamUsaMedals": []
+      },
+      "wnbaSeasons": {},
+      "images": [],
+      "dataStatus": {
+        "isQuickAdd": true,
+        "needsFullProfile": true,
+        "quickAddSource": "command-center",
+        "quickAddReason": "missing-player-reference",
+        "quickAddedAt": "2026-06-05T23:27:12.603Z"
+      }
+    },
+    "cecilia_zandalasini": {
+      "playerId": "cecilia_zandalasini",
+      "playerName": "Cecilia Zandalasini",
+      "playerStatus": {
+        "isActive": true,
+        "hasNcaaChampionships": false,
+        "wasDraftDayTrade": false,
+        "hasWnbaChampionships": false,
+        "hasOverseasExperience": false,
+        "hasUnrivaledExperience": false,
+        "hasNationalTeamExperience": false,
+        "hasOlympicExperience": false
+      },
+      "careerDetails": {
+        "collegeCareer": {
+          "collegeId": "",
+          "collegeName": "",
+          "startYear": "",
+          "endYear": "",
+          "ncaaChampionships": []
+        },
+        "draftDetails": {
+          "year": 2025,
+          "pick": 8,
+          "round": 1,
+          "roundPick": 8,
+          "draftedBy": "GSV_VALKYRIES",
+          "acquiredBy": "",
+          "transactionNote": ""
+        },
+        "wnbaTeams": [],
+        "missedWnbaSeasons": [],
+        "overseasTeams": [],
+        "unrivaledTeams": [],
+        "teamUsaMedals": []
+      },
+      "wnbaSeasons": {},
+      "images": [],
+      "dataStatus": {
+        "isQuickAdd": true,
+        "needsFullProfile": true,
+        "quickAddSource": "command-center",
+        "quickAddReason": "missing-player-reference",
+        "quickAddedAt": "2026-06-05T23:27:13.075Z"
+      }
+    },
+    "kayla_thornton": {
+      "playerId": "kayla_thornton",
+      "playerName": "Kayla Thornton",
+      "playerStatus": {
+        "isActive": true,
+        "hasNcaaChampionships": false,
+        "wasDraftDayTrade": false,
+        "hasWnbaChampionships": false,
+        "hasOverseasExperience": false,
+        "hasUnrivaledExperience": false,
+        "hasNationalTeamExperience": false,
+        "hasOlympicExperience": false
+      },
+      "careerDetails": {
+        "collegeCareer": {
+          "collegeId": "university_of_texas_at_el_paso",
+          "collegeName": "University of Texas at El Paso",
+          "startYear": "",
+          "endYear": "",
+          "ncaaChampionships": []
+        },
+        "draftDetails": {
+          "year": 2025,
+          "pick": 9,
+          "round": 1,
+          "roundPick": 9,
+          "draftedBy": "GSV_VALKYRIES",
+          "acquiredBy": "",
+          "transactionNote": ""
+        },
+        "wnbaTeams": [],
+        "missedWnbaSeasons": [],
+        "overseasTeams": [],
+        "unrivaledTeams": [],
+        "teamUsaMedals": []
+      },
+      "wnbaSeasons": {},
+      "images": [],
+      "dataStatus": {
+        "isQuickAdd": true,
+        "needsFullProfile": true,
+        "quickAddSource": "command-center",
+        "quickAddReason": "missing-player-reference",
+        "quickAddedAt": "2026-06-05T23:27:13.468Z"
+      }
+    },
+    "monique_billings": {
+      "playerId": "monique_billings",
+      "playerName": "Monique Billings",
+      "playerStatus": {
+        "isActive": true,
+        "hasNcaaChampionships": false,
+        "wasDraftDayTrade": false,
+        "hasWnbaChampionships": false,
+        "hasOverseasExperience": false,
+        "hasUnrivaledExperience": false,
+        "hasNationalTeamExperience": false,
+        "hasOlympicExperience": false
+      },
+      "careerDetails": {
+        "collegeCareer": {
+          "collegeId": "u_of_california_la",
+          "collegeName": "University of California Los Angeles",
+          "startYear": "",
+          "endYear": "",
+          "ncaaChampionships": []
+        },
+        "draftDetails": {
+          "year": 2025,
+          "pick": 10,
+          "round": 1,
+          "roundPick": 10,
+          "draftedBy": "GSV_VALKYRIES",
+          "acquiredBy": "",
+          "transactionNote": ""
+        },
+        "wnbaTeams": [],
+        "missedWnbaSeasons": [],
+        "overseasTeams": [],
+        "unrivaledTeams": [],
+        "teamUsaMedals": []
+      },
+      "wnbaSeasons": {},
+      "images": [],
+      "dataStatus": {
+        "isQuickAdd": true,
+        "needsFullProfile": true,
+        "quickAddSource": "command-center",
+        "quickAddReason": "missing-player-reference",
+        "quickAddedAt": "2026-06-05T23:27:13.795Z"
+      }
+    },
+    "julie_vanloo": {
+      "playerId": "julie_vanloo",
+      "playerName": "Julie Vanloo",
+      "playerStatus": {
+        "isActive": true,
+        "hasNcaaChampionships": false,
+        "wasDraftDayTrade": false,
+        "hasWnbaChampionships": false,
+        "hasOverseasExperience": false,
+        "hasUnrivaledExperience": false,
+        "hasNationalTeamExperience": false,
+        "hasOlympicExperience": false
+      },
+      "careerDetails": {
+        "collegeCareer": {
+          "collegeId": "",
+          "collegeName": "",
+          "startYear": "",
+          "endYear": "",
+          "ncaaChampionships": []
+        },
+        "draftDetails": {
+          "year": 2025,
+          "pick": 12,
+          "round": 1,
+          "roundPick": 12,
+          "draftedBy": "GSV_VALKYRIES",
+          "acquiredBy": "",
+          "transactionNote": ""
+        },
+        "wnbaTeams": [],
+        "missedWnbaSeasons": [],
+        "overseasTeams": [],
+        "unrivaledTeams": [],
+        "teamUsaMedals": []
+      },
+      "wnbaSeasons": {},
+      "images": [],
+      "dataStatus": {
+        "isQuickAdd": true,
+        "needsFullProfile": true,
+        "quickAddSource": "command-center",
+        "quickAddReason": "missing-player-reference",
+        "quickAddedAt": "2026-06-05T23:27:14.139Z"
+      }
+    },
+    "nicole_powell": {
+      "playerId": "nicole_powell",
+      "playerName": "Nicole Powell",
+      "playerStatus": {
+        "isActive": true,
+        "hasNcaaChampionships": false,
+        "wasDraftDayTrade": false,
+        "hasWnbaChampionships": false,
+        "hasOverseasExperience": false,
+        "hasUnrivaledExperience": false,
+        "hasNationalTeamExperience": false,
+        "hasOlympicExperience": false
+      },
+      "careerDetails": {
+        "collegeCareer": {
+          "collegeId": "stanford_u",
+          "collegeName": "Stanford University",
+          "startYear": "",
+          "endYear": "",
+          "ncaaChampionships": []
+        },
+        "draftDetails": {
+          "year": 2010,
+          "pick": 1,
+          "round": 1,
+          "roundPick": 1,
+          "draftedBy": "NYL_LIBERTY",
+          "acquiredBy": "",
+          "transactionNote": ""
+        },
+        "wnbaTeams": [],
+        "missedWnbaSeasons": [],
+        "overseasTeams": [],
+        "unrivaledTeams": [],
+        "teamUsaMedals": []
+      },
+      "wnbaSeasons": {},
+      "images": [],
+      "dataStatus": {
+        "isQuickAdd": true,
+        "needsFullProfile": true,
+        "quickAddSource": "command-center",
+        "quickAddReason": "missing-player-reference",
+        "quickAddedAt": "2026-06-05T23:27:14.452Z"
+      }
+    },
+    "rebekkah_brunson": {
+      "playerId": "rebekkah_brunson",
+      "playerName": "Rebekkah Brunson",
+      "playerStatus": {
+        "isActive": true,
+        "hasNcaaChampionships": false,
+        "wasDraftDayTrade": false,
+        "hasWnbaChampionships": false,
+        "hasOverseasExperience": false,
+        "hasUnrivaledExperience": false,
+        "hasNationalTeamExperience": false,
+        "hasOlympicExperience": false
+      },
+      "careerDetails": {
+        "collegeCareer": {
+          "collegeId": "georgetown_u",
+          "collegeName": "Georgetown University",
+          "startYear": "",
+          "endYear": "",
+          "ncaaChampionships": []
+        },
+        "draftDetails": {
+          "year": 2010,
+          "pick": 2,
+          "round": 1,
+          "roundPick": 2,
+          "draftedBy": "MIN_LYNX",
+          "acquiredBy": "",
+          "transactionNote": ""
+        },
+        "wnbaTeams": [],
+        "missedWnbaSeasons": [],
+        "overseasTeams": [],
+        "unrivaledTeams": [],
+        "teamUsaMedals": []
+      },
+      "wnbaSeasons": {},
+      "images": [],
+      "dataStatus": {
+        "isQuickAdd": true,
+        "needsFullProfile": true,
+        "quickAddSource": "command-center",
+        "quickAddReason": "missing-player-reference",
+        "quickAddedAt": "2026-06-05T23:27:14.764Z"
+      }
+    },
+    "bridget_carleton": {
+      "playerId": "bridget_carleton",
+      "playerName": "Bridget Carleton",
+      "playerStatus": {
+        "isActive": true,
+        "hasNcaaChampionships": false,
+        "wasDraftDayTrade": false,
+        "hasWnbaChampionships": false,
+        "hasOverseasExperience": false,
+        "hasUnrivaledExperience": false,
+        "hasNationalTeamExperience": false,
+        "hasOlympicExperience": false
+      },
+      "careerDetails": {
+        "collegeCareer": {
+          "collegeId": "",
+          "collegeName": "",
+          "startYear": "",
+          "endYear": "",
+          "ncaaChampionships": []
+        },
+        "draftDetails": {
+          "year": 2026,
+          "pick": 1,
+          "round": 1,
+          "roundPick": 1,
+          "draftedBy": "POR_FIRE",
+          "acquiredBy": "",
+          "transactionNote": ""
+        },
+        "wnbaTeams": [],
+        "missedWnbaSeasons": [],
+        "overseasTeams": [],
+        "unrivaledTeams": [],
+        "teamUsaMedals": []
+      },
+      "wnbaSeasons": {},
+      "images": [],
+      "dataStatus": {
+        "isQuickAdd": true,
+        "needsFullProfile": true,
+        "quickAddSource": "command-center",
+        "quickAddReason": "missing-player-reference",
+        "quickAddedAt": "2026-06-05T23:27:15.076Z"
+      }
+    },
+    "julie_allemand": {
+      "playerId": "julie_allemand",
+      "playerName": "Julie Allemand",
+      "playerStatus": {
+        "isActive": true,
+        "hasNcaaChampionships": false,
+        "wasDraftDayTrade": false,
+        "hasWnbaChampionships": false,
+        "hasOverseasExperience": false,
+        "hasUnrivaledExperience": false,
+        "hasNationalTeamExperience": false,
+        "hasOlympicExperience": false
+      },
+      "careerDetails": {
+        "collegeCareer": {
+          "collegeId": "",
+          "collegeName": "",
+          "startYear": "",
+          "endYear": "",
+          "ncaaChampionships": []
+        },
+        "draftDetails": {
+          "year": 2026,
+          "pick": 2,
+          "round": 1,
+          "roundPick": 2,
+          "draftedBy": "TOR_TEMPO",
+          "acquiredBy": "",
+          "transactionNote": ""
+        },
+        "wnbaTeams": [],
+        "missedWnbaSeasons": [],
+        "overseasTeams": [],
+        "unrivaledTeams": [],
+        "teamUsaMedals": []
+      },
+      "wnbaSeasons": {},
+      "images": [],
+      "dataStatus": {
+        "isQuickAdd": true,
+        "needsFullProfile": true,
+        "quickAddSource": "command-center",
+        "quickAddReason": "missing-player-reference",
+        "quickAddedAt": "2026-06-05T23:27:15.379Z"
+      }
+    },
+    "nyara_sabally": {
+      "playerId": "nyara_sabally",
+      "playerName": "Nyara Sabally",
+      "playerStatus": {
+        "isActive": true,
+        "hasNcaaChampionships": false,
+        "wasDraftDayTrade": false,
+        "hasWnbaChampionships": false,
+        "hasOverseasExperience": false,
+        "hasUnrivaledExperience": false,
+        "hasNationalTeamExperience": false,
+        "hasOlympicExperience": false
+      },
+      "careerDetails": {
+        "collegeCareer": {
+          "collegeId": "",
+          "collegeName": "",
+          "startYear": "",
+          "endYear": "",
+          "ncaaChampionships": []
+        },
+        "draftDetails": {
+          "year": 2026,
+          "pick": 4,
+          "round": 1,
+          "roundPick": 4,
+          "draftedBy": "TOR_TEMPO",
+          "acquiredBy": "",
+          "transactionNote": ""
+        },
+        "wnbaTeams": [],
+        "missedWnbaSeasons": [],
+        "overseasTeams": [],
+        "unrivaledTeams": [],
+        "teamUsaMedals": []
+      },
+      "wnbaSeasons": {},
+      "images": [],
+      "dataStatus": {
+        "isQuickAdd": true,
+        "needsFullProfile": true,
+        "quickAddSource": "command-center",
+        "quickAddReason": "missing-player-reference",
+        "quickAddedAt": "2026-06-05T23:27:15.667Z"
+      }
+    },
+    "luisa_geiselsoder": {
+      "playerId": "luisa_geiselsoder",
+      "playerName": "Luisa Geiselsöder",
+      "playerStatus": {
+        "isActive": true,
+        "hasNcaaChampionships": false,
+        "wasDraftDayTrade": false,
+        "hasWnbaChampionships": false,
+        "hasOverseasExperience": false,
+        "hasUnrivaledExperience": false,
+        "hasNationalTeamExperience": false,
+        "hasOlympicExperience": false
+      },
+      "careerDetails": {
+        "collegeCareer": {
+          "collegeId": "",
+          "collegeName": "",
+          "startYear": "",
+          "endYear": "",
+          "ncaaChampionships": []
+        },
+        "draftDetails": {
+          "year": 2026,
+          "pick": 5,
+          "round": 1,
+          "roundPick": 5,
+          "draftedBy": "POR_FIRE",
+          "acquiredBy": "",
+          "transactionNote": ""
+        },
+        "wnbaTeams": [],
+        "missedWnbaSeasons": [],
+        "overseasTeams": [],
+        "unrivaledTeams": [],
+        "teamUsaMedals": []
+      },
+      "wnbaSeasons": {},
+      "images": [],
+      "dataStatus": {
+        "isQuickAdd": true,
+        "needsFullProfile": true,
+        "quickAddSource": "command-center",
+        "quickAddReason": "missing-player-reference",
+        "quickAddedAt": "2026-06-05T23:27:15.987Z"
+      }
+    },
+    "marina_mabrey": {
+      "playerId": "marina_mabrey",
+      "playerName": "Marina Mabrey",
+      "playerStatus": {
+        "isActive": true,
+        "hasNcaaChampionships": false,
+        "wasDraftDayTrade": false,
+        "hasWnbaChampionships": false,
+        "hasOverseasExperience": false,
+        "hasUnrivaledExperience": false,
+        "hasNationalTeamExperience": false,
+        "hasOlympicExperience": false
+      },
+      "careerDetails": {
+        "collegeCareer": {
+          "collegeId": "",
+          "collegeName": "",
+          "startYear": "",
+          "endYear": "",
+          "ncaaChampionships": []
+        },
+        "draftDetails": {
+          "year": 2026,
+          "pick": 6,
+          "round": 1,
+          "roundPick": 6,
+          "draftedBy": "TOR_TEMPO",
+          "acquiredBy": "",
+          "transactionNote": ""
+        },
+        "wnbaTeams": [],
+        "missedWnbaSeasons": [],
+        "overseasTeams": [],
+        "unrivaledTeams": [],
+        "teamUsaMedals": []
+      },
+      "wnbaSeasons": {},
+      "images": [],
+      "dataStatus": {
+        "isQuickAdd": true,
+        "needsFullProfile": true,
+        "quickAddSource": "command-center",
+        "quickAddReason": "missing-player-reference",
+        "quickAddedAt": "2026-06-05T23:27:16.267Z"
+      }
+    },
+    "emily_engstler": {
+      "playerId": "emily_engstler",
+      "playerName": "Emily Engstler",
+      "playerStatus": {
+        "isActive": true,
+        "hasNcaaChampionships": false,
+        "wasDraftDayTrade": false,
+        "hasWnbaChampionships": false,
+        "hasOverseasExperience": false,
+        "hasUnrivaledExperience": false,
+        "hasNationalTeamExperience": false,
+        "hasOlympicExperience": false
+      },
+      "careerDetails": {
+        "collegeCareer": {
+          "collegeId": "",
+          "collegeName": "",
+          "startYear": "",
+          "endYear": "",
+          "ncaaChampionships": []
+        },
+        "draftDetails": {
+          "year": 2026,
+          "pick": 7,
+          "round": 1,
+          "roundPick": 7,
+          "draftedBy": "POR_FIRE",
+          "acquiredBy": "",
+          "transactionNote": ""
+        },
+        "wnbaTeams": [],
+        "missedWnbaSeasons": [],
+        "overseasTeams": [],
+        "unrivaledTeams": [],
+        "teamUsaMedals": []
+      },
+      "wnbaSeasons": {},
+      "images": [],
+      "dataStatus": {
+        "isQuickAdd": true,
+        "needsFullProfile": true,
+        "quickAddSource": "command-center",
+        "quickAddReason": "missing-player-reference",
+        "quickAddedAt": "2026-06-05T23:27:16.539Z"
+      }
+    },
+    "aaliyah_nye": {
+      "playerId": "aaliyah_nye",
+      "playerName": "Aaliyah Nye",
+      "playerStatus": {
+        "isActive": true,
+        "hasNcaaChampionships": false,
+        "wasDraftDayTrade": false,
+        "hasWnbaChampionships": false,
+        "hasOverseasExperience": false,
+        "hasUnrivaledExperience": false,
+        "hasNationalTeamExperience": false,
+        "hasOlympicExperience": false
+      },
+      "careerDetails": {
+        "collegeCareer": {
+          "collegeId": "",
+          "collegeName": "",
+          "startYear": "",
+          "endYear": "",
+          "ncaaChampionships": []
+        },
+        "draftDetails": {
+          "year": 2026,
+          "pick": 8,
+          "round": 1,
+          "roundPick": 8,
+          "draftedBy": "TOR_TEMPO",
+          "acquiredBy": "",
+          "transactionNote": ""
+        },
+        "wnbaTeams": [],
+        "missedWnbaSeasons": [],
+        "overseasTeams": [],
+        "unrivaledTeams": [],
+        "teamUsaMedals": []
+      },
+      "wnbaSeasons": {},
+      "images": [],
+      "dataStatus": {
+        "isQuickAdd": true,
+        "needsFullProfile": true,
+        "quickAddSource": "command-center",
+        "quickAddReason": "missing-player-reference",
+        "quickAddedAt": "2026-06-05T23:27:16.795Z"
+      }
+    },
+    "maya_caldwell": {
+      "playerId": "maya_caldwell",
+      "playerName": "Maya Caldwell",
+      "playerStatus": {
+        "isActive": true,
+        "hasNcaaChampionships": false,
+        "wasDraftDayTrade": false,
+        "hasWnbaChampionships": false,
+        "hasOverseasExperience": false,
+        "hasUnrivaledExperience": false,
+        "hasNationalTeamExperience": false,
+        "hasOlympicExperience": false
+      },
+      "careerDetails": {
+        "collegeCareer": {
+          "collegeId": "",
+          "collegeName": "",
+          "startYear": "",
+          "endYear": "",
+          "ncaaChampionships": []
+        },
+        "draftDetails": {
+          "year": 2026,
+          "pick": 9,
+          "round": 1,
+          "roundPick": 9,
+          "draftedBy": "POR_FIRE",
+          "acquiredBy": "",
+          "transactionNote": ""
+        },
+        "wnbaTeams": [],
+        "missedWnbaSeasons": [],
+        "overseasTeams": [],
+        "unrivaledTeams": [],
+        "teamUsaMedals": []
+      },
+      "wnbaSeasons": {},
+      "images": [],
+      "dataStatus": {
+        "isQuickAdd": true,
+        "needsFullProfile": true,
+        "quickAddSource": "command-center",
+        "quickAddReason": "missing-player-reference",
+        "quickAddedAt": "2026-06-05T23:27:17.100Z"
+      }
+    },
+    "lexi_held": {
+      "playerId": "lexi_held",
+      "playerName": "Lexi Held",
+      "playerStatus": {
+        "isActive": true,
+        "hasNcaaChampionships": false,
+        "wasDraftDayTrade": false,
+        "hasWnbaChampionships": false,
+        "hasOverseasExperience": false,
+        "hasUnrivaledExperience": false,
+        "hasNationalTeamExperience": false,
+        "hasOlympicExperience": false
+      },
+      "careerDetails": {
+        "collegeCareer": {
+          "collegeId": "",
+          "collegeName": "",
+          "startYear": "",
+          "endYear": "",
+          "ncaaChampionships": []
+        },
+        "draftDetails": {
+          "year": 2026,
+          "pick": 10,
+          "round": 1,
+          "roundPick": 10,
+          "draftedBy": "TOR_TEMPO",
+          "acquiredBy": "",
+          "transactionNote": ""
+        },
+        "wnbaTeams": [],
+        "missedWnbaSeasons": [],
+        "overseasTeams": [],
+        "unrivaledTeams": [],
+        "teamUsaMedals": []
+      },
+      "wnbaSeasons": {},
+      "images": [],
+      "dataStatus": {
+        "isQuickAdd": true,
+        "needsFullProfile": true,
+        "quickAddSource": "command-center",
+        "quickAddReason": "missing-player-reference",
+        "quickAddedAt": "2026-06-05T23:27:17.372Z"
+      }
+    },
+    "chloe_bibby": {
+      "playerId": "chloe_bibby",
+      "playerName": "Chloe Bibby",
+      "playerStatus": {
+        "isActive": true,
+        "hasNcaaChampionships": false,
+        "wasDraftDayTrade": false,
+        "hasWnbaChampionships": false,
+        "hasOverseasExperience": false,
+        "hasUnrivaledExperience": false,
+        "hasNationalTeamExperience": false,
+        "hasOlympicExperience": false
+      },
+      "careerDetails": {
+        "collegeCareer": {
+          "collegeId": "",
+          "collegeName": "",
+          "startYear": "",
+          "endYear": "",
+          "ncaaChampionships": []
+        },
+        "draftDetails": {
+          "year": 2026,
+          "pick": 11,
+          "round": 1,
+          "roundPick": 11,
+          "draftedBy": "POR_FIRE",
+          "acquiredBy": "",
+          "transactionNote": ""
+        },
+        "wnbaTeams": [],
+        "missedWnbaSeasons": [],
+        "overseasTeams": [],
+        "unrivaledTeams": [],
+        "teamUsaMedals": []
+      },
+      "wnbaSeasons": {},
+      "images": [],
+      "dataStatus": {
+        "isQuickAdd": true,
+        "needsFullProfile": true,
+        "quickAddSource": "command-center",
+        "quickAddReason": "missing-player-reference",
+        "quickAddedAt": "2026-06-05T23:27:17.643Z"
+      }
+    },
+    "haley_jones": {
+      "playerId": "haley_jones",
+      "playerName": "Haley Jones",
+      "playerStatus": {
+        "isActive": true,
+        "hasNcaaChampionships": false,
+        "wasDraftDayTrade": false,
+        "hasWnbaChampionships": false,
+        "hasOverseasExperience": false,
+        "hasUnrivaledExperience": false,
+        "hasNationalTeamExperience": false,
+        "hasOlympicExperience": false
+      },
+      "careerDetails": {
+        "collegeCareer": {
+          "collegeId": "",
+          "collegeName": "",
+          "startYear": "",
+          "endYear": "",
+          "ncaaChampionships": []
+        },
+        "draftDetails": {
+          "year": 2026,
+          "pick": 14,
+          "round": 2,
+          "roundPick": 2,
+          "draftedBy": "POR_FIRE",
+          "acquiredBy": "",
+          "transactionNote": ""
+        },
+        "wnbaTeams": [],
+        "missedWnbaSeasons": [],
+        "overseasTeams": [],
+        "unrivaledTeams": [],
+        "teamUsaMedals": []
+      },
+      "wnbaSeasons": {},
+      "images": [],
+      "dataStatus": {
+        "isQuickAdd": true,
+        "needsFullProfile": true,
+        "quickAddSource": "command-center",
+        "quickAddReason": "missing-player-reference",
+        "quickAddedAt": "2026-06-05T23:27:17.907Z"
+      }
+    },
+    "maria_kliundikova": {
+      "playerId": "maria_kliundikova",
+      "playerName": "Maria Kliundikova",
+      "playerStatus": {
+        "isActive": true,
+        "hasNcaaChampionships": false,
+        "wasDraftDayTrade": false,
+        "hasWnbaChampionships": false,
+        "hasOverseasExperience": false,
+        "hasUnrivaledExperience": false,
+        "hasNationalTeamExperience": false,
+        "hasOlympicExperience": false
+      },
+      "careerDetails": {
+        "collegeCareer": {
+          "collegeId": "",
+          "collegeName": "",
+          "startYear": "",
+          "endYear": "",
+          "ncaaChampionships": []
+        },
+        "draftDetails": {
+          "year": 2026,
+          "pick": 15,
+          "round": 2,
+          "roundPick": 3,
+          "draftedBy": "TOR_TEMPO",
+          "acquiredBy": "",
+          "transactionNote": ""
+        },
+        "wnbaTeams": [],
+        "missedWnbaSeasons": [],
+        "overseasTeams": [],
+        "unrivaledTeams": [],
+        "teamUsaMedals": []
+      },
+      "wnbaSeasons": {},
+      "images": [],
+      "dataStatus": {
+        "isQuickAdd": true,
+        "needsFullProfile": true,
+        "quickAddSource": "command-center",
+        "quickAddReason": "missing-player-reference",
+        "quickAddedAt": "2026-06-05T23:27:18.163Z"
+      }
+    },
+    "nyadiew_puoch": {
+      "playerId": "nyadiew_puoch",
+      "playerName": "Nyadiew Puoch",
+      "playerStatus": {
+        "isActive": true,
+        "hasNcaaChampionships": false,
+        "wasDraftDayTrade": false,
+        "hasWnbaChampionships": false,
+        "hasOverseasExperience": false,
+        "hasUnrivaledExperience": false,
+        "hasNationalTeamExperience": false,
+        "hasOlympicExperience": false
+      },
+      "careerDetails": {
+        "collegeCareer": {
+          "collegeId": "",
+          "collegeName": "",
+          "startYear": "",
+          "endYear": "",
+          "ncaaChampionships": []
+        },
+        "draftDetails": {
+          "year": 2026,
+          "pick": 16,
+          "round": 2,
+          "roundPick": 4,
+          "draftedBy": "POR_FIRE",
+          "acquiredBy": "",
+          "transactionNote": ""
+        },
+        "wnbaTeams": [],
+        "missedWnbaSeasons": [],
+        "overseasTeams": [],
+        "unrivaledTeams": [],
+        "teamUsaMedals": []
+      },
+      "wnbaSeasons": {},
+      "images": [],
+      "dataStatus": {
+        "isQuickAdd": true,
+        "needsFullProfile": true,
+        "quickAddSource": "command-center",
+        "quickAddReason": "missing-player-reference",
+        "quickAddedAt": "2026-06-05T23:27:18.403Z"
+      }
+    },
+    "adja_kane": {
+      "playerId": "adja_kane",
+      "playerName": "Adja Kane",
+      "playerStatus": {
+        "isActive": true,
+        "hasNcaaChampionships": false,
+        "wasDraftDayTrade": false,
+        "hasWnbaChampionships": false,
+        "hasOverseasExperience": false,
+        "hasUnrivaledExperience": false,
+        "hasNationalTeamExperience": false,
+        "hasOlympicExperience": false
+      },
+      "careerDetails": {
+        "collegeCareer": {
+          "collegeId": "",
+          "collegeName": "",
+          "startYear": "",
+          "endYear": "",
+          "ncaaChampionships": []
+        },
+        "draftDetails": {
+          "year": 2026,
+          "pick": 17,
+          "round": 2,
+          "roundPick": 5,
+          "draftedBy": "TOR_TEMPO",
+          "acquiredBy": "",
+          "transactionNote": ""
+        },
+        "wnbaTeams": [],
+        "missedWnbaSeasons": [],
+        "overseasTeams": [],
+        "unrivaledTeams": [],
+        "teamUsaMedals": []
+      },
+      "wnbaSeasons": {},
+      "images": [],
+      "dataStatus": {
+        "isQuickAdd": true,
+        "needsFullProfile": true,
+        "quickAddSource": "command-center",
+        "quickAddReason": "missing-player-reference",
+        "quickAddedAt": "2026-06-05T23:27:18.659Z"
+      }
+    },
+    "sarah_ashlee_barker": {
+      "playerId": "sarah_ashlee_barker",
+      "playerName": "Sarah Ashlee Barker",
+      "playerStatus": {
+        "isActive": true,
+        "hasNcaaChampionships": false,
+        "wasDraftDayTrade": false,
+        "hasWnbaChampionships": false,
+        "hasOverseasExperience": false,
+        "hasUnrivaledExperience": false,
+        "hasNationalTeamExperience": false,
+        "hasOlympicExperience": false
+      },
+      "careerDetails": {
+        "collegeCareer": {
+          "collegeId": "",
+          "collegeName": "",
+          "startYear": "",
+          "endYear": "",
+          "ncaaChampionships": []
+        },
+        "draftDetails": {
+          "year": 2026,
+          "pick": 18,
+          "round": 2,
+          "roundPick": 6,
+          "draftedBy": "POR_FIRE",
+          "acquiredBy": "",
+          "transactionNote": ""
+        },
+        "wnbaTeams": [],
+        "missedWnbaSeasons": [],
+        "overseasTeams": [],
+        "unrivaledTeams": [],
+        "teamUsaMedals": []
+      },
+      "wnbaSeasons": {},
+      "images": [],
+      "dataStatus": {
+        "isQuickAdd": true,
+        "needsFullProfile": true,
+        "quickAddSource": "command-center",
+        "quickAddReason": "missing-player-reference",
+        "quickAddedAt": "2026-06-05T23:27:18.899Z"
+      }
+    },
+    "nikolina_milic": {
+      "playerId": "nikolina_milic",
+      "playerName": "Nikolina Milić",
+      "playerStatus": {
+        "isActive": true,
+        "hasNcaaChampionships": false,
+        "wasDraftDayTrade": false,
+        "hasWnbaChampionships": false,
+        "hasOverseasExperience": false,
+        "hasUnrivaledExperience": false,
+        "hasNationalTeamExperience": false,
+        "hasOlympicExperience": false
+      },
+      "careerDetails": {
+        "collegeCareer": {
+          "collegeId": "",
+          "collegeName": "",
+          "startYear": "",
+          "endYear": "",
+          "ncaaChampionships": []
+        },
+        "draftDetails": {
+          "year": 2026,
+          "pick": 19,
+          "round": 2,
+          "roundPick": 7,
+          "draftedBy": "TOR_TEMPO",
+          "acquiredBy": "",
+          "transactionNote": ""
+        },
+        "wnbaTeams": [],
+        "missedWnbaSeasons": [],
+        "overseasTeams": [],
+        "unrivaledTeams": [],
+        "teamUsaMedals": []
+      },
+      "wnbaSeasons": {},
+      "images": [],
+      "dataStatus": {
+        "isQuickAdd": true,
+        "needsFullProfile": true,
+        "quickAddSource": "command-center",
+        "quickAddReason": "missing-player-reference",
+        "quickAddedAt": "2026-06-05T23:27:19.227Z"
+      }
+    },
+    "sug_sutton": {
+      "playerId": "sug_sutton",
+      "playerName": "Sug Sutton",
+      "playerStatus": {
+        "isActive": true,
+        "hasNcaaChampionships": false,
+        "wasDraftDayTrade": false,
+        "hasWnbaChampionships": false,
+        "hasOverseasExperience": false,
+        "hasUnrivaledExperience": false,
+        "hasNationalTeamExperience": false,
+        "hasOlympicExperience": false
+      },
+      "careerDetails": {
+        "collegeCareer": {
+          "collegeId": "",
+          "collegeName": "",
+          "startYear": "",
+          "endYear": "",
+          "ncaaChampionships": []
+        },
+        "draftDetails": {
+          "year": 2026,
+          "pick": 20,
+          "round": 2,
+          "roundPick": 8,
+          "draftedBy": "POR_FIRE",
+          "acquiredBy": "",
+          "transactionNote": ""
+        },
+        "wnbaTeams": [],
+        "missedWnbaSeasons": [],
+        "overseasTeams": [],
+        "unrivaledTeams": [],
+        "teamUsaMedals": []
+      },
+      "wnbaSeasons": {},
+      "images": [],
+      "dataStatus": {
+        "isQuickAdd": true,
+        "needsFullProfile": true,
+        "quickAddSource": "command-center",
+        "quickAddReason": "missing-player-reference",
+        "quickAddedAt": "2026-06-05T23:27:19.485Z"
+      }
+    },
+    "kitija_laksa": {
+      "playerId": "kitija_laksa",
+      "playerName": "Kitija Laksa",
+      "playerStatus": {
+        "isActive": true,
+        "hasNcaaChampionships": false,
+        "wasDraftDayTrade": false,
+        "hasWnbaChampionships": false,
+        "hasOverseasExperience": false,
+        "hasUnrivaledExperience": false,
+        "hasNationalTeamExperience": false,
+        "hasOlympicExperience": false
+      },
+      "careerDetails": {
+        "collegeCareer": {
+          "collegeId": "",
+          "collegeName": "",
+          "startYear": "",
+          "endYear": "",
+          "ncaaChampionships": []
+        },
+        "draftDetails": {
+          "year": 2026,
+          "pick": 21,
+          "round": 2,
+          "roundPick": 9,
+          "draftedBy": "TOR_TEMPO",
+          "acquiredBy": "",
+          "transactionNote": ""
+        },
+        "wnbaTeams": [],
+        "missedWnbaSeasons": [],
+        "overseasTeams": [],
+        "unrivaledTeams": [],
+        "teamUsaMedals": []
+      },
+      "wnbaSeasons": {},
+      "images": [],
+      "dataStatus": {
+        "isQuickAdd": true,
+        "needsFullProfile": true,
+        "quickAddSource": "command-center",
+        "quickAddReason": "missing-player-reference",
+        "quickAddedAt": "2026-06-05T23:27:19.747Z"
+      }
+    },
+    "kristy_wallace": {
+      "playerId": "kristy_wallace",
+      "playerName": "Kristy Wallace",
+      "playerStatus": {
+        "isActive": true,
+        "hasNcaaChampionships": false,
+        "wasDraftDayTrade": false,
+        "hasWnbaChampionships": false,
+        "hasOverseasExperience": false,
+        "hasUnrivaledExperience": false,
+        "hasNationalTeamExperience": false,
+        "hasOlympicExperience": false
+      },
+      "careerDetails": {
+        "collegeCareer": {
+          "collegeId": "",
+          "collegeName": "",
+          "startYear": "",
+          "endYear": "",
+          "ncaaChampionships": []
+        },
+        "draftDetails": {
+          "year": 2026,
+          "pick": 23,
+          "round": 2,
+          "roundPick": 11,
+          "draftedBy": "TOR_TEMPO",
+          "acquiredBy": "",
+          "transactionNote": ""
+        },
+        "wnbaTeams": [],
+        "missedWnbaSeasons": [],
+        "overseasTeams": [],
+        "unrivaledTeams": [],
+        "teamUsaMedals": []
+      },
+      "wnbaSeasons": {},
+      "images": [],
+      "dataStatus": {
+        "isQuickAdd": true,
+        "needsFullProfile": true,
+        "quickAddSource": "command-center",
+        "quickAddReason": "missing-player-reference",
+        "quickAddedAt": "2026-06-05T23:27:20.027Z"
+      }
+    },
+    "nika_muhl": {
+      "playerId": "nika_muhl",
+      "playerName": "Nika Mühl",
+      "playerStatus": {
+        "isActive": true,
+        "hasNcaaChampionships": false,
+        "wasDraftDayTrade": false,
+        "hasWnbaChampionships": false,
+        "hasOverseasExperience": false,
+        "hasUnrivaledExperience": false,
+        "hasNationalTeamExperience": false,
+        "hasOlympicExperience": false
+      },
+      "careerDetails": {
+        "collegeCareer": {
+          "collegeId": "",
+          "collegeName": "",
+          "startYear": "",
+          "endYear": "",
+          "ncaaChampionships": []
+        },
+        "draftDetails": {
+          "year": 2026,
+          "pick": 24,
+          "round": 2,
+          "roundPick": 12,
+          "draftedBy": "POR_FIRE",
+          "acquiredBy": "",
+          "transactionNote": ""
+        },
+        "wnbaTeams": [],
+        "missedWnbaSeasons": [],
+        "overseasTeams": [],
+        "unrivaledTeams": [],
+        "teamUsaMedals": []
+      },
+      "wnbaSeasons": {},
+      "images": [],
+      "dataStatus": {
+        "isQuickAdd": true,
+        "needsFullProfile": true,
+        "quickAddSource": "command-center",
+        "quickAddReason": "missing-player-reference",
+        "quickAddedAt": "2026-06-05T23:27:20.292Z"
+      }
+    },
+    "erika_de_souza": {
+      "playerId": "erika_de_souza",
+      "playerName": "Érika de Souza",
+      "playerStatus": {
+        "isActive": true,
+        "hasNcaaChampionships": false,
+        "wasDraftDayTrade": false,
+        "hasWnbaChampionships": false,
+        "hasOverseasExperience": false,
+        "hasUnrivaledExperience": false,
+        "hasNationalTeamExperience": false,
+        "hasOlympicExperience": false
+      },
+      "careerDetails": {
+        "collegeCareer": {
+          "collegeId": "",
+          "collegeName": "",
+          "startYear": "",
+          "endYear": "",
+          "ncaaChampionships": []
+        },
+        "draftDetails": {
+          "year": 2008,
+          "pick": 2,
+          "round": 1,
+          "roundPick": 2,
+          "draftedBy": "ATL_DREAM",
+          "acquiredBy": "",
+          "transactionNote": ""
+        },
+        "wnbaTeams": [],
+        "missedWnbaSeasons": [],
+        "overseasTeams": [],
+        "unrivaledTeams": [],
+        "teamUsaMedals": []
+      },
+      "wnbaSeasons": {},
+      "images": [],
+      "dataStatus": {
+        "isQuickAdd": true,
+        "needsFullProfile": true,
+        "quickAddSource": "command-center",
+        "quickAddReason": "missing-player-reference",
+        "quickAddedAt": "2026-06-05T23:27:20.580Z"
+      }
+    },
+    "katie_feenstra": {
+      "playerId": "katie_feenstra",
+      "playerName": "Katie Feenstra",
+      "playerStatus": {
+        "isActive": true,
+        "hasNcaaChampionships": false,
+        "wasDraftDayTrade": false,
+        "hasWnbaChampionships": false,
+        "hasOverseasExperience": false,
+        "hasUnrivaledExperience": false,
+        "hasNationalTeamExperience": false,
+        "hasOlympicExperience": false
+      },
+      "careerDetails": {
+        "collegeCareer": {
+          "collegeId": "",
+          "collegeName": "",
+          "startYear": "",
+          "endYear": "",
+          "ncaaChampionships": []
+        },
+        "draftDetails": {
+          "year": 2008,
+          "pick": 3,
+          "round": 1,
+          "roundPick": 3,
+          "draftedBy": "ATL_DREAM",
+          "acquiredBy": "",
+          "transactionNote": ""
+        },
+        "wnbaTeams": [],
+        "missedWnbaSeasons": [],
+        "overseasTeams": [],
+        "unrivaledTeams": [],
+        "teamUsaMedals": []
+      },
+      "wnbaSeasons": {},
+      "images": [],
+      "dataStatus": {
+        "isQuickAdd": true,
+        "needsFullProfile": true,
+        "quickAddSource": "command-center",
+        "quickAddReason": "missing-player-reference",
+        "quickAddedAt": "2026-06-05T23:27:20.876Z"
+      }
+    },
+    "roneeka_hodges": {
+      "playerId": "roneeka_hodges",
+      "playerName": "Roneeka Hodges",
+      "playerStatus": {
+        "isActive": true,
+        "hasNcaaChampionships": false,
+        "wasDraftDayTrade": false,
+        "hasWnbaChampionships": false,
+        "hasOverseasExperience": false,
+        "hasUnrivaledExperience": false,
+        "hasNationalTeamExperience": false,
+        "hasOlympicExperience": false
+      },
+      "careerDetails": {
+        "collegeCareer": {
+          "collegeId": "",
+          "collegeName": "",
+          "startYear": "",
+          "endYear": "",
+          "ncaaChampionships": []
+        },
+        "draftDetails": {
+          "year": 2008,
+          "pick": 4,
+          "round": 1,
+          "roundPick": 4,
+          "draftedBy": "ATL_DREAM",
+          "acquiredBy": "",
+          "transactionNote": ""
+        },
+        "wnbaTeams": [],
+        "missedWnbaSeasons": [],
+        "overseasTeams": [],
+        "unrivaledTeams": [],
+        "teamUsaMedals": []
+      },
+      "wnbaSeasons": {},
+      "images": [],
+      "dataStatus": {
+        "isQuickAdd": true,
+        "needsFullProfile": true,
+        "quickAddSource": "command-center",
+        "quickAddReason": "missing-player-reference",
+        "quickAddedAt": "2026-06-05T23:27:21.179Z"
+      }
+    },
+    "ann_strother": {
+      "playerId": "ann_strother",
+      "playerName": "Ann Strother",
+      "playerStatus": {
+        "isActive": true,
+        "hasNcaaChampionships": false,
+        "wasDraftDayTrade": false,
+        "hasWnbaChampionships": false,
+        "hasOverseasExperience": false,
+        "hasUnrivaledExperience": false,
+        "hasNationalTeamExperience": false,
+        "hasOlympicExperience": false
+      },
+      "careerDetails": {
+        "collegeCareer": {
+          "collegeId": "",
+          "collegeName": "",
+          "startYear": "",
+          "endYear": "",
+          "ncaaChampionships": []
+        },
+        "draftDetails": {
+          "year": 2008,
+          "pick": 5,
+          "round": 1,
+          "roundPick": 5,
+          "draftedBy": "ATL_DREAM",
+          "acquiredBy": "",
+          "transactionNote": ""
+        },
+        "wnbaTeams": [],
+        "missedWnbaSeasons": [],
+        "overseasTeams": [],
+        "unrivaledTeams": [],
+        "teamUsaMedals": []
+      },
+      "wnbaSeasons": {},
+      "images": [],
+      "dataStatus": {
+        "isQuickAdd": true,
+        "needsFullProfile": true,
+        "quickAddSource": "command-center",
+        "quickAddReason": "missing-player-reference",
+        "quickAddedAt": "2026-06-05T23:27:21.491Z"
+      }
+    },
+    "latoya_thomas": {
+      "playerId": "latoya_thomas",
+      "playerName": "LaToya Thomas",
+      "playerStatus": {
+        "isActive": true,
+        "hasNcaaChampionships": false,
+        "wasDraftDayTrade": false,
+        "hasWnbaChampionships": false,
+        "hasOverseasExperience": false,
+        "hasUnrivaledExperience": false,
+        "hasNationalTeamExperience": false,
+        "hasOlympicExperience": false
+      },
+      "careerDetails": {
+        "collegeCareer": {
+          "collegeId": "",
+          "collegeName": "",
+          "startYear": "",
+          "endYear": "",
+          "ncaaChampionships": []
+        },
+        "draftDetails": {
+          "year": 2008,
+          "pick": 6,
+          "round": 1,
+          "roundPick": 6,
+          "draftedBy": "ATL_DREAM",
+          "acquiredBy": "",
+          "transactionNote": ""
+        },
+        "wnbaTeams": [],
+        "missedWnbaSeasons": [],
+        "overseasTeams": [],
+        "unrivaledTeams": [],
+        "teamUsaMedals": []
+      },
+      "wnbaSeasons": {},
+      "images": [],
+      "dataStatus": {
+        "isQuickAdd": true,
+        "needsFullProfile": true,
+        "quickAddSource": "command-center",
+        "quickAddReason": "missing-player-reference",
+        "quickAddedAt": "2026-06-05T23:27:21.802Z"
+      }
+    },
+    "kristen_mann": {
+      "playerId": "kristen_mann",
+      "playerName": "Kristen Mann",
+      "playerStatus": {
+        "isActive": true,
+        "hasNcaaChampionships": false,
+        "wasDraftDayTrade": false,
+        "hasWnbaChampionships": false,
+        "hasOverseasExperience": false,
+        "hasUnrivaledExperience": false,
+        "hasNationalTeamExperience": false,
+        "hasOlympicExperience": false
+      },
+      "careerDetails": {
+        "collegeCareer": {
+          "collegeId": "",
+          "collegeName": "",
+          "startYear": "",
+          "endYear": "",
+          "ncaaChampionships": []
+        },
+        "draftDetails": {
+          "year": 2008,
+          "pick": 7,
+          "round": 1,
+          "roundPick": 7,
+          "draftedBy": "ATL_DREAM",
+          "acquiredBy": "",
+          "transactionNote": ""
+        },
+        "wnbaTeams": [],
+        "missedWnbaSeasons": [],
+        "overseasTeams": [],
+        "unrivaledTeams": [],
+        "teamUsaMedals": []
+      },
+      "wnbaSeasons": {},
+      "images": [],
+      "dataStatus": {
+        "isQuickAdd": true,
+        "needsFullProfile": true,
+        "quickAddSource": "command-center",
+        "quickAddReason": "missing-player-reference",
+        "quickAddedAt": "2026-06-05T23:27:22.131Z"
+      }
+    },
+    "ann_wauters": {
+      "playerId": "ann_wauters",
+      "playerName": "Ann Wauters",
+      "playerStatus": {
+        "isActive": true,
+        "hasNcaaChampionships": false,
+        "wasDraftDayTrade": false,
+        "hasWnbaChampionships": false,
+        "hasOverseasExperience": false,
+        "hasUnrivaledExperience": false,
+        "hasNationalTeamExperience": false,
+        "hasOlympicExperience": false
+      },
+      "careerDetails": {
+        "collegeCareer": {
+          "collegeId": "",
+          "collegeName": "",
+          "startYear": "",
+          "endYear": "",
+          "ncaaChampionships": []
+        },
+        "draftDetails": {
+          "year": 2008,
+          "pick": 8,
+          "round": 1,
+          "roundPick": 8,
+          "draftedBy": "ATL_DREAM",
+          "acquiredBy": "",
+          "transactionNote": ""
+        },
+        "wnbaTeams": [],
+        "missedWnbaSeasons": [],
+        "overseasTeams": [],
+        "unrivaledTeams": [],
+        "teamUsaMedals": []
+      },
+      "wnbaSeasons": {},
+      "images": [],
+      "dataStatus": {
+        "isQuickAdd": true,
+        "needsFullProfile": true,
+        "quickAddSource": "command-center",
+        "quickAddReason": "missing-player-reference",
+        "quickAddedAt": "2026-06-05T23:27:22.427Z"
+      }
+    },
+    "jennifer_lacy": {
+      "playerId": "jennifer_lacy",
+      "playerName": "Jennifer Lacy",
+      "playerStatus": {
+        "isActive": true,
+        "hasNcaaChampionships": false,
+        "wasDraftDayTrade": false,
+        "hasWnbaChampionships": false,
+        "hasOverseasExperience": false,
+        "hasUnrivaledExperience": false,
+        "hasNationalTeamExperience": false,
+        "hasOlympicExperience": false
+      },
+      "careerDetails": {
+        "collegeCareer": {
+          "collegeId": "",
+          "collegeName": "",
+          "startYear": "",
+          "endYear": "",
+          "ncaaChampionships": []
+        },
+        "draftDetails": {
+          "year": 2008,
+          "pick": 9,
+          "round": 1,
+          "roundPick": 9,
+          "draftedBy": "ATL_DREAM",
+          "acquiredBy": "",
+          "transactionNote": ""
+        },
+        "wnbaTeams": [],
+        "missedWnbaSeasons": [],
+        "overseasTeams": [],
+        "unrivaledTeams": [],
+        "teamUsaMedals": []
+      },
+      "wnbaSeasons": {},
+      "images": [],
+      "dataStatus": {
+        "isQuickAdd": true,
+        "needsFullProfile": true,
+        "quickAddSource": "command-center",
+        "quickAddReason": "missing-player-reference",
+        "quickAddedAt": "2026-06-05T23:27:22.755Z"
+      }
+    },
+    "kristin_haynie": {
+      "playerId": "kristin_haynie",
+      "playerName": "Kristin Haynie",
+      "playerStatus": {
+        "isActive": true,
+        "hasNcaaChampionships": false,
+        "wasDraftDayTrade": false,
+        "hasWnbaChampionships": false,
+        "hasOverseasExperience": false,
+        "hasUnrivaledExperience": false,
+        "hasNationalTeamExperience": false,
+        "hasOlympicExperience": false
+      },
+      "careerDetails": {
+        "collegeCareer": {
+          "collegeId": "",
+          "collegeName": "",
+          "startYear": "",
+          "endYear": "",
+          "ncaaChampionships": []
+        },
+        "draftDetails": {
+          "year": 2008,
+          "pick": 10,
+          "round": 1,
+          "roundPick": 10,
+          "draftedBy": "ATL_DREAM",
+          "acquiredBy": "",
+          "transactionNote": ""
+        },
+        "wnbaTeams": [],
+        "missedWnbaSeasons": [],
+        "overseasTeams": [],
+        "unrivaledTeams": [],
+        "teamUsaMedals": []
+      },
+      "wnbaSeasons": {},
+      "images": [],
+      "dataStatus": {
+        "isQuickAdd": true,
+        "needsFullProfile": true,
+        "quickAddSource": "command-center",
+        "quickAddReason": "missing-player-reference",
+        "quickAddedAt": "2026-06-05T23:27:23.155Z"
+      }
+    },
+    "chantelle_anderson": {
+      "playerId": "chantelle_anderson",
+      "playerName": "Chantelle Anderson",
+      "playerStatus": {
+        "isActive": true,
+        "hasNcaaChampionships": false,
+        "wasDraftDayTrade": false,
+        "hasWnbaChampionships": false,
+        "hasOverseasExperience": false,
+        "hasUnrivaledExperience": false,
+        "hasNationalTeamExperience": false,
+        "hasOlympicExperience": false
+      },
+      "careerDetails": {
+        "collegeCareer": {
+          "collegeId": "",
+          "collegeName": "",
+          "startYear": "",
+          "endYear": "",
+          "ncaaChampionships": []
+        },
+        "draftDetails": {
+          "year": 2008,
+          "pick": 11,
+          "round": 1,
+          "roundPick": 11,
+          "draftedBy": "ATL_DREAM",
+          "acquiredBy": "",
+          "transactionNote": ""
+        },
+        "wnbaTeams": [],
+        "missedWnbaSeasons": [],
+        "overseasTeams": [],
+        "unrivaledTeams": [],
+        "teamUsaMedals": []
+      },
+      "wnbaSeasons": {},
+      "images": [],
+      "dataStatus": {
+        "isQuickAdd": true,
+        "needsFullProfile": true,
+        "quickAddSource": "command-center",
+        "quickAddReason": "missing-player-reference",
+        "quickAddedAt": "2026-06-05T23:27:23.500Z"
+      }
+    },
+    "betty_lennox": {
+      "playerId": "betty_lennox",
+      "playerName": "Betty Lennox",
+      "playerStatus": {
+        "isActive": true,
+        "hasNcaaChampionships": false,
+        "wasDraftDayTrade": false,
+        "hasWnbaChampionships": false,
+        "hasOverseasExperience": false,
+        "hasUnrivaledExperience": false,
+        "hasNationalTeamExperience": false,
+        "hasOlympicExperience": false
+      },
+      "careerDetails": {
+        "collegeCareer": {
+          "collegeId": "",
+          "collegeName": "",
+          "startYear": "",
+          "endYear": "",
+          "ncaaChampionships": []
+        },
+        "draftDetails": {
+          "year": 2008,
+          "pick": 12,
+          "round": 1,
+          "roundPick": 12,
+          "draftedBy": "ATL_DREAM",
+          "acquiredBy": "",
+          "transactionNote": ""
+        },
+        "wnbaTeams": [],
+        "missedWnbaSeasons": [],
+        "overseasTeams": [],
+        "unrivaledTeams": [],
+        "teamUsaMedals": []
+      },
+      "wnbaSeasons": {},
+      "images": [],
+      "dataStatus": {
+        "isQuickAdd": true,
+        "needsFullProfile": true,
+        "quickAddSource": "command-center",
+        "quickAddReason": "missing-player-reference",
+        "quickAddedAt": "2026-06-05T23:27:24.795Z"
+      }
+    },
+    "yelena_leuchanka": {
+      "playerId": "yelena_leuchanka",
+      "playerName": "Yelena Leuchanka",
+      "playerStatus": {
+        "isActive": true,
+        "hasNcaaChampionships": false,
+        "wasDraftDayTrade": false,
+        "hasWnbaChampionships": false,
+        "hasOverseasExperience": false,
+        "hasUnrivaledExperience": false,
+        "hasNationalTeamExperience": false,
+        "hasOlympicExperience": false
+      },
+      "careerDetails": {
+        "collegeCareer": {
+          "collegeId": "",
+          "collegeName": "",
+          "startYear": "",
+          "endYear": "",
+          "ncaaChampionships": []
+        },
+        "draftDetails": {
+          "year": 2008,
+          "pick": 13,
+          "round": 1,
+          "roundPick": 13,
+          "draftedBy": "ATL_DREAM",
+          "acquiredBy": "",
+          "transactionNote": ""
+        },
+        "wnbaTeams": [],
+        "missedWnbaSeasons": [],
+        "overseasTeams": [],
+        "unrivaledTeams": [],
+        "teamUsaMedals": []
+      },
+      "wnbaSeasons": {},
+      "images": [],
+      "dataStatus": {
+        "isQuickAdd": true,
+        "needsFullProfile": true,
+        "quickAddSource": "command-center",
+        "quickAddReason": "missing-player-reference",
+        "quickAddedAt": "2026-06-05T23:27:25.548Z"
+      }
+    },
+    "carla_thomas": {
+      "playerId": "carla_thomas",
+      "playerName": "Carla Thomas",
+      "playerStatus": {
+        "isActive": true,
+        "hasNcaaChampionships": false,
+        "wasDraftDayTrade": false,
+        "hasWnbaChampionships": false,
+        "hasOverseasExperience": false,
+        "hasUnrivaledExperience": false,
+        "hasNationalTeamExperience": false,
+        "hasOlympicExperience": false
+      },
+      "careerDetails": {
+        "collegeCareer": {
+          "collegeId": "vanderbilt_u",
+          "collegeName": "Vanderbilt University",
+          "startYear": "",
+          "endYear": "",
+          "ncaaChampionships": []
+        },
+        "draftDetails": {
+          "year": 2008,
+          "pick": 1,
+          "round": 1,
+          "roundPick": 1,
+          "draftedBy": "ATL_DREAM",
+          "acquiredBy": "",
+          "transactionNote": ""
+        },
+        "wnbaTeams": [],
+        "missedWnbaSeasons": [],
+        "overseasTeams": [],
+        "unrivaledTeams": [],
+        "teamUsaMedals": []
+      },
+      "wnbaSeasons": {},
+      "images": [],
+      "dataStatus": {
+        "isQuickAdd": true,
+        "needsFullProfile": true,
+        "quickAddSource": "command-center",
+        "quickAddReason": "missing-player-reference",
+        "quickAddedAt": "2026-06-05T23:27:25.891Z"
+      }
+    },
+    "ruth_riley": {
+      "playerId": "ruth_riley",
+      "playerName": "Ruth Riley",
+      "playerStatus": {
+        "isActive": true,
+        "hasNcaaChampionships": false,
+        "wasDraftDayTrade": false,
+        "hasWnbaChampionships": false,
+        "hasOverseasExperience": false,
+        "hasUnrivaledExperience": false,
+        "hasNationalTeamExperience": false,
+        "hasOlympicExperience": false
+      },
+      "careerDetails": {
+        "collegeCareer": {
+          "collegeId": "u_of_notre_dame",
+          "collegeName": "University of Notre Dame",
+          "startYear": "",
+          "endYear": "",
+          "ncaaChampionships": []
+        },
+        "draftDetails": {
+          "year": 2003,
+          "pick": 1,
+          "round": 1,
+          "roundPick": 1,
+          "draftedBy": "DET_SHOCK",
+          "acquiredBy": "",
+          "transactionNote": ""
+        },
+        "wnbaTeams": [],
+        "missedWnbaSeasons": [],
+        "overseasTeams": [],
+        "unrivaledTeams": [],
+        "teamUsaMedals": []
+      },
+      "wnbaSeasons": {},
+      "images": [],
+      "dataStatus": {
+        "isQuickAdd": true,
+        "needsFullProfile": true,
+        "quickAddSource": "command-center",
+        "quickAddReason": "missing-player-reference",
+        "quickAddedAt": "2026-06-05T23:27:26.034Z"
+      }
+    },
+    "tamicha_jackson": {
+      "playerId": "tamicha_jackson",
+      "playerName": "Tamicha Jackson",
+      "playerStatus": {
+        "isActive": true,
+        "hasNcaaChampionships": false,
+        "wasDraftDayTrade": false,
+        "hasWnbaChampionships": false,
+        "hasOverseasExperience": false,
+        "hasUnrivaledExperience": false,
+        "hasNationalTeamExperience": false,
+        "hasOlympicExperience": false
+      },
+      "careerDetails": {
+        "collegeCareer": {
+          "collegeId": "",
+          "collegeName": "",
+          "startYear": "",
+          "endYear": "",
+          "ncaaChampionships": []
+        },
+        "draftDetails": {
+          "year": 2003,
+          "pick": 4,
+          "round": 1,
+          "roundPick": 4,
+          "draftedBy": "PHX_MERCURY",
+          "acquiredBy": "",
+          "transactionNote": ""
+        },
+        "wnbaTeams": [],
+        "missedWnbaSeasons": [],
+        "overseasTeams": [],
+        "unrivaledTeams": [],
+        "teamUsaMedals": []
+      },
+      "wnbaSeasons": {},
+      "images": [],
+      "dataStatus": {
+        "isQuickAdd": true,
+        "needsFullProfile": true,
+        "quickAddSource": "command-center",
+        "quickAddReason": "missing-player-reference",
+        "quickAddedAt": "2026-06-05T23:27:26.197Z"
+      }
+    },
+    "demya_walker": {
+      "playerId": "demya_walker",
+      "playerName": "DeMya Walker",
+      "playerStatus": {
+        "isActive": true,
+        "hasNcaaChampionships": false,
+        "wasDraftDayTrade": false,
+        "hasWnbaChampionships": false,
+        "hasOverseasExperience": false,
+        "hasUnrivaledExperience": false,
+        "hasNationalTeamExperience": false,
+        "hasOlympicExperience": false
+      },
+      "careerDetails": {
+        "collegeCareer": {
+          "collegeId": "",
+          "collegeName": "",
+          "startYear": "",
+          "endYear": "",
+          "ncaaChampionships": []
+        },
+        "draftDetails": {
+          "year": 2003,
+          "pick": 5,
+          "round": 1,
+          "roundPick": 5,
+          "draftedBy": "SAC_MONARCHS",
+          "acquiredBy": "",
+          "transactionNote": ""
+        },
+        "wnbaTeams": [],
+        "missedWnbaSeasons": [],
+        "overseasTeams": [],
+        "unrivaledTeams": [],
+        "teamUsaMedals": []
+      },
+      "wnbaSeasons": {},
+      "images": [],
+      "dataStatus": {
+        "isQuickAdd": true,
+        "needsFullProfile": true,
+        "quickAddSource": "command-center",
+        "quickAddReason": "missing-player-reference",
+        "quickAddedAt": "2026-06-05T23:27:26.467Z"
+      }
+    },
+    "debbie_black": {
+      "playerId": "debbie_black",
+      "playerName": "Debbie Black",
+      "playerStatus": {
+        "isActive": true,
+        "hasNcaaChampionships": false,
+        "wasDraftDayTrade": false,
+        "hasWnbaChampionships": false,
+        "hasOverseasExperience": false,
+        "hasUnrivaledExperience": false,
+        "hasNationalTeamExperience": false,
+        "hasOlympicExperience": false
+      },
+      "careerDetails": {
+        "collegeCareer": {
+          "collegeId": "",
+          "collegeName": "",
+          "startYear": "",
+          "endYear": "",
+          "ncaaChampionships": []
+        },
+        "draftDetails": {
+          "year": 2003,
+          "pick": 6,
+          "round": 1,
+          "roundPick": 6,
+          "draftedBy": "CON_SUN",
+          "acquiredBy": "",
+          "transactionNote": ""
+        },
+        "wnbaTeams": [],
+        "missedWnbaSeasons": [],
+        "overseasTeams": [],
+        "unrivaledTeams": [],
+        "teamUsaMedals": []
+      },
+      "wnbaSeasons": {},
+      "images": [],
+      "dataStatus": {
+        "isQuickAdd": true,
+        "needsFullProfile": true,
+        "quickAddSource": "command-center",
+        "quickAddReason": "missing-player-reference",
+        "quickAddedAt": "2026-06-05T23:27:26.627Z"
+      }
+    },
+    "sylvia_crawley": {
+      "playerId": "sylvia_crawley",
+      "playerName": "Sylvia Crawley",
+      "playerStatus": {
+        "isActive": true,
+        "hasNcaaChampionships": false,
+        "wasDraftDayTrade": false,
+        "hasWnbaChampionships": false,
+        "hasOverseasExperience": false,
+        "hasUnrivaledExperience": false,
+        "hasNationalTeamExperience": false,
+        "hasOlympicExperience": false
+      },
+      "careerDetails": {
+        "collegeCareer": {
+          "collegeId": "",
+          "collegeName": "",
+          "startYear": "",
+          "endYear": "",
+          "ncaaChampionships": []
+        },
+        "draftDetails": {
+          "year": 2003,
+          "pick": 7,
+          "round": 1,
+          "roundPick": 7,
+          "draftedBy": "IND_FEVER",
+          "acquiredBy": "",
+          "transactionNote": ""
+        },
+        "wnbaTeams": [],
+        "missedWnbaSeasons": [],
+        "overseasTeams": [],
+        "unrivaledTeams": [],
+        "teamUsaMedals": []
+      },
+      "wnbaSeasons": {},
+      "images": [],
+      "dataStatus": {
+        "isQuickAdd": true,
+        "needsFullProfile": true,
+        "quickAddSource": "command-center",
+        "quickAddReason": "missing-player-reference",
+        "quickAddedAt": "2026-06-05T23:27:26.787Z"
+      }
+    },
+    "jenny_mowe": {
+      "playerId": "jenny_mowe",
+      "playerName": "Jenny Mowe",
+      "playerStatus": {
+        "isActive": true,
+        "hasNcaaChampionships": false,
+        "wasDraftDayTrade": false,
+        "hasWnbaChampionships": false,
+        "hasOverseasExperience": false,
+        "hasUnrivaledExperience": false,
+        "hasNationalTeamExperience": false,
+        "hasOlympicExperience": false
+      },
+      "careerDetails": {
+        "collegeCareer": {
+          "collegeId": "",
+          "collegeName": "",
+          "startYear": "",
+          "endYear": "",
+          "ncaaChampionships": []
+        },
+        "draftDetails": {
+          "year": 2003,
+          "pick": 8,
+          "round": 1,
+          "roundPick": 8,
+          "draftedBy": "WAS_MYSTICS",
+          "acquiredBy": "",
+          "transactionNote": ""
+        },
+        "wnbaTeams": [],
+        "missedWnbaSeasons": [],
+        "overseasTeams": [],
+        "unrivaledTeams": [],
+        "teamUsaMedals": []
+      },
+      "wnbaSeasons": {},
+      "images": [],
+      "dataStatus": {
+        "isQuickAdd": true,
+        "needsFullProfile": true,
+        "quickAddSource": "command-center",
+        "quickAddReason": "missing-player-reference",
+        "quickAddedAt": "2026-06-05T23:27:27.211Z"
+      }
+    },
+    "alisa_burras": {
+      "playerId": "alisa_burras",
+      "playerName": "Alisa Burras",
+      "playerStatus": {
+        "isActive": true,
+        "hasNcaaChampionships": false,
+        "wasDraftDayTrade": false,
+        "hasWnbaChampionships": false,
+        "hasOverseasExperience": false,
+        "hasUnrivaledExperience": false,
+        "hasNationalTeamExperience": false,
+        "hasOlympicExperience": false
+      },
+      "careerDetails": {
+        "collegeCareer": {
+          "collegeId": "",
+          "collegeName": "",
+          "startYear": "",
+          "endYear": "",
+          "ncaaChampionships": []
+        },
+        "draftDetails": {
+          "year": 2003,
+          "pick": 9,
+          "round": 1,
+          "roundPick": 9,
+          "draftedBy": "SEA_STORM",
+          "acquiredBy": "",
+          "transactionNote": ""
+        },
+        "wnbaTeams": [],
+        "missedWnbaSeasons": [],
+        "overseasTeams": [],
+        "unrivaledTeams": [],
+        "teamUsaMedals": []
+      },
+      "wnbaSeasons": {},
+      "images": [],
+      "dataStatus": {
+        "isQuickAdd": true,
+        "needsFullProfile": true,
+        "quickAddSource": "command-center",
+        "quickAddReason": "missing-player-reference",
+        "quickAddedAt": "2026-06-05T23:27:27.482Z"
+      }
+    },
+    "pollyanna_johns_kimbrough": {
+      "playerId": "pollyanna_johns_kimbrough",
+      "playerName": "Pollyanna Johns Kimbrough",
+      "playerStatus": {
+        "isActive": true,
+        "hasNcaaChampionships": false,
+        "wasDraftDayTrade": false,
+        "hasWnbaChampionships": false,
+        "hasOverseasExperience": false,
+        "hasUnrivaledExperience": false,
+        "hasNationalTeamExperience": false,
+        "hasOlympicExperience": false
+      },
+      "careerDetails": {
+        "collegeCareer": {
+          "collegeId": "",
+          "collegeName": "",
+          "startYear": "",
+          "endYear": "",
+          "ncaaChampionships": []
+        },
+        "draftDetails": {
+          "year": 2003,
+          "pick": 10,
+          "round": 1,
+          "roundPick": 10,
+          "draftedBy": "CHA_STING",
+          "acquiredBy": "",
+          "transactionNote": ""
+        },
+        "wnbaTeams": [],
+        "missedWnbaSeasons": [],
+        "overseasTeams": [],
+        "unrivaledTeams": [],
+        "teamUsaMedals": []
+      },
+      "wnbaSeasons": {},
+      "images": [],
+      "dataStatus": {
+        "isQuickAdd": true,
+        "needsFullProfile": true,
+        "quickAddSource": "command-center",
+        "quickAddReason": "missing-player-reference",
+        "quickAddedAt": "2026-06-05T23:27:27.862Z"
+      }
+    },
+    "elena_baranova": {
+      "playerId": "elena_baranova",
+      "playerName": "Elena Baranova",
+      "playerStatus": {
+        "isActive": true,
+        "hasNcaaChampionships": false,
+        "wasDraftDayTrade": false,
+        "hasWnbaChampionships": false,
+        "hasOverseasExperience": false,
+        "hasUnrivaledExperience": false,
+        "hasNationalTeamExperience": false,
+        "hasOlympicExperience": false
+      },
+      "careerDetails": {
+        "collegeCareer": {
+          "collegeId": "",
+          "collegeName": "",
+          "startYear": "",
+          "endYear": "",
+          "ncaaChampionships": []
+        },
+        "draftDetails": {
+          "year": 2003,
+          "pick": 11,
+          "round": 1,
+          "roundPick": 11,
+          "draftedBy": "NYL_LIBERTY",
+          "acquiredBy": "",
+          "transactionNote": ""
+        },
+        "wnbaTeams": [],
+        "missedWnbaSeasons": [],
+        "overseasTeams": [],
+        "unrivaledTeams": [],
+        "teamUsaMedals": []
+      },
+      "wnbaSeasons": {},
+      "images": [],
+      "dataStatus": {
+        "isQuickAdd": true,
+        "needsFullProfile": true,
+        "quickAddSource": "command-center",
+        "quickAddReason": "missing-player-reference",
+        "quickAddedAt": "2026-06-05T23:27:28.196Z"
+      }
+    },
+    "laquanda_barksdale": {
+      "playerId": "laquanda_barksdale",
+      "playerName": "LaQuanda Barksdale",
+      "playerStatus": {
+        "isActive": true,
+        "hasNcaaChampionships": false,
+        "wasDraftDayTrade": false,
+        "hasWnbaChampionships": false,
+        "hasOverseasExperience": false,
+        "hasUnrivaledExperience": false,
+        "hasNationalTeamExperience": false,
+        "hasOlympicExperience": false
+      },
+      "careerDetails": {
+        "collegeCareer": {
+          "collegeId": "",
+          "collegeName": "",
+          "startYear": "",
+          "endYear": "",
+          "ncaaChampionships": []
+        },
+        "draftDetails": {
+          "year": 2003,
+          "pick": 12,
+          "round": 1,
+          "roundPick": 12,
+          "draftedBy": "SA_SILVER_STARS",
+          "acquiredBy": "",
+          "transactionNote": ""
+        },
+        "wnbaTeams": [],
+        "missedWnbaSeasons": [],
+        "overseasTeams": [],
+        "unrivaledTeams": [],
+        "teamUsaMedals": []
+      },
+      "wnbaSeasons": {},
+      "images": [],
+      "dataStatus": {
+        "isQuickAdd": true,
+        "needsFullProfile": true,
+        "quickAddSource": "command-center",
+        "quickAddReason": "missing-player-reference",
+        "quickAddedAt": "2026-06-05T23:27:28.628Z"
+      }
+    },
+    "ukari_figgs": {
+      "playerId": "ukari_figgs",
+      "playerName": "Ukari Figgs",
+      "playerStatus": {
+        "isActive": true,
+        "hasNcaaChampionships": false,
+        "wasDraftDayTrade": false,
+        "hasWnbaChampionships": false,
+        "hasOverseasExperience": false,
+        "hasUnrivaledExperience": false,
+        "hasNationalTeamExperience": false,
+        "hasOlympicExperience": false
+      },
+      "careerDetails": {
+        "collegeCareer": {
+          "collegeId": "",
+          "collegeName": "",
+          "startYear": "",
+          "endYear": "",
+          "ncaaChampionships": []
+        },
+        "draftDetails": {
+          "year": 2003,
+          "pick": 13,
+          "round": 1,
+          "roundPick": 13,
+          "draftedBy": "HOU_COMETS",
+          "acquiredBy": "",
+          "transactionNote": ""
+        },
+        "wnbaTeams": [],
+        "missedWnbaSeasons": [],
+        "overseasTeams": [],
+        "unrivaledTeams": [],
+        "teamUsaMedals": []
+      },
+      "wnbaSeasons": {},
+      "images": [],
+      "dataStatus": {
+        "isQuickAdd": true,
+        "needsFullProfile": true,
+        "quickAddSource": "command-center",
+        "quickAddReason": "missing-player-reference",
+        "quickAddedAt": "2026-06-05T23:27:29.036Z"
+      }
+    },
+    "jackie_stiles": {
+      "playerId": "jackie_stiles",
+      "playerName": "Jackie Stiles",
+      "playerStatus": {
+        "isActive": true,
+        "hasNcaaChampionships": false,
+        "wasDraftDayTrade": false,
+        "hasWnbaChampionships": false,
+        "hasOverseasExperience": false,
+        "hasUnrivaledExperience": false,
+        "hasNationalTeamExperience": false,
+        "hasOlympicExperience": false
+      },
+      "careerDetails": {
+        "collegeCareer": {
+          "collegeId": "",
+          "collegeName": "",
+          "startYear": "",
+          "endYear": "",
+          "ncaaChampionships": []
+        },
+        "draftDetails": {
+          "year": 2003,
+          "pick": 14,
+          "round": 1,
+          "roundPick": 14,
+          "draftedBy": "LOS_SPARKS",
+          "acquiredBy": "",
+          "transactionNote": ""
+        },
+        "wnbaTeams": [],
+        "missedWnbaSeasons": [],
+        "overseasTeams": [],
+        "unrivaledTeams": [],
+        "teamUsaMedals": []
+      },
+      "wnbaSeasons": {},
+      "images": [],
+      "dataStatus": {
+        "isQuickAdd": true,
+        "needsFullProfile": true,
+        "quickAddSource": "command-center",
+        "quickAddReason": "missing-player-reference",
+        "quickAddedAt": "2026-06-05T23:27:29.459Z"
+      }
+    },
+    "sheri_sam": {
+      "playerId": "sheri_sam",
+      "playerName": "Sheri Sam",
+      "playerStatus": {
+        "isActive": true,
+        "hasNcaaChampionships": false,
+        "wasDraftDayTrade": false,
+        "hasWnbaChampionships": false,
+        "hasOverseasExperience": false,
+        "hasUnrivaledExperience": false,
+        "hasNationalTeamExperience": false,
+        "hasOlympicExperience": false
+      },
+      "careerDetails": {
+        "collegeCareer": {
+          "collegeId": "vanderbilt_u",
+          "collegeName": "Vanderbilt University",
+          "startYear": "",
+          "endYear": "",
+          "ncaaChampionships": []
+        },
+        "draftDetails": {
+          "year": 2003,
+          "pick": 2,
+          "round": 1,
+          "roundPick": 2,
+          "draftedBy": "MIN_LYNX",
+          "acquiredBy": "",
+          "transactionNote": ""
+        },
+        "wnbaTeams": [],
+        "missedWnbaSeasons": [],
+        "overseasTeams": [],
+        "unrivaledTeams": [],
+        "teamUsaMedals": []
+      },
+      "wnbaSeasons": {},
+      "images": [],
+      "dataStatus": {
+        "isQuickAdd": true,
+        "needsFullProfile": true,
+        "quickAddSource": "command-center",
+        "quickAddReason": "missing-player-reference",
+        "quickAddedAt": "2026-06-05T23:27:30.180Z"
+      }
+    },
+    "kelsey_mitchell": {
+      "playerId": "kelsey_mitchell",
+      "playerName": "Kelsey Mitchell",
+      "playerStatus": {
+        "isActive": true,
+        "hasNcaaChampionships": false,
+        "wasDraftDayTrade": false,
+        "hasWnbaChampionships": false,
+        "hasOverseasExperience": false,
+        "hasUnrivaledExperience": false,
+        "hasNationalTeamExperience": false,
+        "hasOlympicExperience": false
+      },
+      "careerDetails": {
+        "collegeCareer": {
+          "collegeId": "",
+          "collegeName": "",
+          "startYear": "",
+          "endYear": "",
+          "ncaaChampionships": []
+        },
+        "draftDetails": {
+          "year": "",
+          "pick": "",
+          "round": "",
+          "roundPick": "",
+          "draftedBy": "",
+          "acquiredBy": "",
+          "transactionNote": ""
+        },
+        "wnbaTeams": [
+          {
+            "teamCode": "IND_FEVER",
+            "startYear": 2023,
+            "endYear": "",
+            "transactionNote": "Quick-added from award reference."
+          }
+        ],
+        "missedWnbaSeasons": [],
+        "overseasTeams": [],
+        "unrivaledTeams": [],
+        "teamUsaMedals": []
+      },
+      "wnbaSeasons": {},
+      "images": [],
+      "dataStatus": {
+        "isQuickAdd": true,
+        "needsFullProfile": true,
+        "quickAddSource": "command-center",
+        "quickAddReason": "missing-player-reference",
+        "quickAddedAt": "2026-06-06T01:44:35.438Z"
+      }
+    },
+    "elizabeth_williams": {
+      "playerId": "elizabeth_williams",
+      "playerName": "Elizabeth Williams",
+      "playerStatus": {
+        "isActive": true,
+        "hasNcaaChampionships": false,
+        "wasDraftDayTrade": false,
+        "hasWnbaChampionships": false,
+        "hasOverseasExperience": false,
+        "hasUnrivaledExperience": false,
+        "hasNationalTeamExperience": false,
+        "hasOlympicExperience": false
+      },
+      "careerDetails": {
+        "collegeCareer": {
+          "collegeId": "",
+          "collegeName": "",
+          "startYear": "",
+          "endYear": "",
+          "ncaaChampionships": []
+        },
+        "draftDetails": {
+          "year": "",
+          "pick": "",
+          "round": "",
+          "roundPick": "",
+          "draftedBy": "",
+          "acquiredBy": "",
+          "transactionNote": ""
+        },
+        "wnbaTeams": [
+          {
+            "teamCode": "CHI_SKY",
+            "startYear": 2023,
+            "endYear": "",
+            "transactionNote": "Quick-added from award reference."
+          }
+        ],
+        "missedWnbaSeasons": [],
+        "overseasTeams": [],
+        "unrivaledTeams": [],
+        "teamUsaMedals": []
+      },
+      "wnbaSeasons": {},
+      "images": [],
+      "dataStatus": {
+        "isQuickAdd": true,
+        "needsFullProfile": true,
+        "quickAddSource": "command-center",
+        "quickAddReason": "missing-player-reference",
+        "quickAddedAt": "2026-06-06T01:44:35.997Z"
+      }
+    },
+    "aliyah_boston": {
+      "playerId": "aliyah_boston",
+      "playerName": "Aliyah Boston",
+      "playerStatus": {
+        "isActive": true,
+        "hasNcaaChampionships": false,
+        "wasDraftDayTrade": false,
+        "hasWnbaChampionships": false,
+        "hasOverseasExperience": false,
+        "hasUnrivaledExperience": false,
+        "hasNationalTeamExperience": false,
+        "hasOlympicExperience": false
+      },
+      "careerDetails": {
+        "collegeCareer": {
+          "collegeId": "",
+          "collegeName": "",
+          "startYear": "",
+          "endYear": "",
+          "ncaaChampionships": []
+        },
+        "draftDetails": {
+          "year": "",
+          "pick": "",
+          "round": "",
+          "roundPick": "",
+          "draftedBy": "",
+          "acquiredBy": "",
+          "transactionNote": ""
+        },
+        "wnbaTeams": [
+          {
+            "teamCode": "IND_FEVER",
+            "startYear": 2023,
+            "endYear": "",
+            "transactionNote": "Quick-added from award reference."
+          }
+        ],
+        "missedWnbaSeasons": [],
+        "overseasTeams": [],
+        "unrivaledTeams": [],
+        "teamUsaMedals": []
+      },
+      "wnbaSeasons": {},
+      "images": [],
+      "dataStatus": {
+        "isQuickAdd": true,
+        "needsFullProfile": true,
+        "quickAddSource": "command-center",
+        "quickAddReason": "missing-player-reference",
+        "quickAddedAt": "2026-06-06T01:44:37.109Z"
+      }
+    },
+    "alysha_clark": {
+      "playerId": "alysha_clark",
+      "playerName": "Alysha Clark",
+      "playerStatus": {
+        "isActive": true,
+        "hasNcaaChampionships": false,
+        "wasDraftDayTrade": false,
+        "hasWnbaChampionships": false,
+        "hasOverseasExperience": false,
+        "hasUnrivaledExperience": false,
+        "hasNationalTeamExperience": false,
+        "hasOlympicExperience": false
+      },
+      "careerDetails": {
+        "collegeCareer": {
+          "collegeId": "",
+          "collegeName": "",
+          "startYear": "",
+          "endYear": "",
+          "ncaaChampionships": []
+        },
+        "draftDetails": {
+          "year": "",
+          "pick": "",
+          "round": "",
+          "roundPick": "",
+          "draftedBy": "",
+          "acquiredBy": "",
+          "transactionNote": ""
+        },
+        "wnbaTeams": [
+          {
+            "teamCode": "LVA_ACES",
+            "startYear": 2023,
+            "endYear": "",
+            "transactionNote": "Quick-added from award reference."
+          }
+        ],
+        "missedWnbaSeasons": [],
+        "overseasTeams": [],
+        "unrivaledTeams": [],
+        "teamUsaMedals": []
+      },
+      "wnbaSeasons": {},
+      "images": [],
+      "dataStatus": {
+        "isQuickAdd": true,
+        "needsFullProfile": true,
+        "quickAddSource": "command-center",
+        "quickAddReason": "missing-player-reference",
+        "quickAddedAt": "2026-06-06T01:44:37.845Z"
+      }
+    },
+    "courtney_vandersloot": {
+      "playerId": "courtney_vandersloot",
+      "playerName": "Courtney Vandersloot",
+      "playerStatus": {
+        "isActive": true,
+        "hasNcaaChampionships": false,
+        "wasDraftDayTrade": false,
+        "hasWnbaChampionships": false,
+        "hasOverseasExperience": false,
+        "hasUnrivaledExperience": false,
+        "hasNationalTeamExperience": false,
+        "hasOlympicExperience": false
+      },
+      "careerDetails": {
+        "collegeCareer": {
+          "collegeId": "",
+          "collegeName": "",
+          "startYear": "",
+          "endYear": "",
+          "ncaaChampionships": []
+        },
+        "draftDetails": {
+          "year": "",
+          "pick": "",
+          "round": "",
+          "roundPick": "",
+          "draftedBy": "",
+          "acquiredBy": "",
+          "transactionNote": ""
+        },
+        "wnbaTeams": [
+          {
+            "teamCode": "NYL_LIBERTY",
+            "startYear": 2023,
+            "endYear": "",
+            "transactionNote": "Quick-added from award reference."
+          }
+        ],
+        "missedWnbaSeasons": [],
+        "overseasTeams": [],
+        "unrivaledTeams": [],
+        "teamUsaMedals": []
+      },
+      "wnbaSeasons": {},
+      "images": [],
+      "dataStatus": {
+        "isQuickAdd": true,
+        "needsFullProfile": true,
+        "quickAddSource": "command-center",
+        "quickAddReason": "missing-player-reference",
+        "quickAddedAt": "2026-06-06T01:44:38.332Z"
+      }
+    },
+    "satou_sabally": {
+      "playerId": "satou_sabally",
+      "playerName": "Satou Sabally",
+      "playerStatus": {
+        "isActive": true,
+        "hasNcaaChampionships": false,
+        "wasDraftDayTrade": false,
+        "hasWnbaChampionships": false,
+        "hasOverseasExperience": false,
+        "hasUnrivaledExperience": false,
+        "hasNationalTeamExperience": false,
+        "hasOlympicExperience": false
+      },
+      "careerDetails": {
+        "collegeCareer": {
+          "collegeId": "",
+          "collegeName": "",
+          "startYear": "",
+          "endYear": "",
+          "ncaaChampionships": []
+        },
+        "draftDetails": {
+          "year": "",
+          "pick": "",
+          "round": "",
+          "roundPick": "",
+          "draftedBy": "",
+          "acquiredBy": "",
+          "transactionNote": ""
+        },
+        "wnbaTeams": [
+          {
+            "teamCode": "DAL_WINGS",
+            "startYear": 2023,
+            "endYear": "",
+            "transactionNote": "Quick-added from award reference."
+          }
+        ],
+        "missedWnbaSeasons": [],
+        "overseasTeams": [],
+        "unrivaledTeams": [],
+        "teamUsaMedals": []
+      },
+      "wnbaSeasons": {},
+      "images": [],
+      "dataStatus": {
+        "isQuickAdd": true,
+        "needsFullProfile": true,
+        "quickAddSource": "command-center",
+        "quickAddReason": "missing-player-reference",
+        "quickAddedAt": "2026-06-06T01:44:38.820Z"
+      }
+    },
+    "caitlin_clark": {
+      "playerId": "caitlin_clark",
+      "playerName": "Caitlin Clark",
+      "playerStatus": {
+        "isActive": true,
+        "hasNcaaChampionships": false,
+        "wasDraftDayTrade": false,
+        "hasWnbaChampionships": false,
+        "hasOverseasExperience": false,
+        "hasUnrivaledExperience": false,
+        "hasNationalTeamExperience": false,
+        "hasOlympicExperience": false
+      },
+      "careerDetails": {
+        "collegeCareer": {
+          "collegeId": "",
+          "collegeName": "",
+          "startYear": "",
+          "endYear": "",
+          "ncaaChampionships": []
+        },
+        "draftDetails": {
+          "year": "",
+          "pick": "",
+          "round": "",
+          "roundPick": "",
+          "draftedBy": "",
+          "acquiredBy": "",
+          "transactionNote": ""
+        },
+        "wnbaTeams": [
+          {
+            "teamCode": "IND_FEVER",
+            "startYear": 2024,
+            "endYear": "",
+            "transactionNote": "Quick-added from award reference."
+          }
+        ],
+        "missedWnbaSeasons": [],
+        "overseasTeams": [],
+        "unrivaledTeams": [],
+        "teamUsaMedals": []
+      },
+      "wnbaSeasons": {},
+      "images": [],
+      "dataStatus": {
+        "isQuickAdd": true,
+        "needsFullProfile": true,
+        "quickAddSource": "command-center",
+        "quickAddReason": "missing-player-reference",
+        "quickAddedAt": "2026-06-06T01:44:39.813Z"
+      }
+    },
+    "dijonai_carrington": {
+      "playerId": "dijonai_carrington",
+      "playerName": "Dijonai Carrington",
+      "playerStatus": {
+        "isActive": true,
+        "hasNcaaChampionships": false,
+        "wasDraftDayTrade": false,
+        "hasWnbaChampionships": false,
+        "hasOverseasExperience": false,
+        "hasUnrivaledExperience": false,
+        "hasNationalTeamExperience": false,
+        "hasOlympicExperience": false
+      },
+      "careerDetails": {
+        "collegeCareer": {
+          "collegeId": "",
+          "collegeName": "",
+          "startYear": "",
+          "endYear": "",
+          "ncaaChampionships": []
+        },
+        "draftDetails": {
+          "year": "",
+          "pick": "",
+          "round": "",
+          "roundPick": "",
+          "draftedBy": "",
+          "acquiredBy": "",
+          "transactionNote": ""
+        },
+        "wnbaTeams": [
+          {
+            "teamCode": "CON_SUN",
+            "startYear": 2024,
+            "endYear": "",
+            "transactionNote": "Quick-added from award reference."
+          }
+        ],
+        "missedWnbaSeasons": [],
+        "overseasTeams": [],
+        "unrivaledTeams": [],
+        "teamUsaMedals": []
+      },
+      "wnbaSeasons": {},
+      "images": [],
+      "dataStatus": {
+        "isQuickAdd": true,
+        "needsFullProfile": true,
+        "quickAddSource": "command-center",
+        "quickAddReason": "missing-player-reference",
+        "quickAddedAt": "2026-06-06T01:44:40.621Z"
+      }
+    },
+    "tiffany_hayes": {
+      "playerId": "tiffany_hayes",
+      "playerName": "Tiffany Hayes",
+      "playerStatus": {
+        "isActive": true,
+        "hasNcaaChampionships": false,
+        "wasDraftDayTrade": false,
+        "hasWnbaChampionships": false,
+        "hasOverseasExperience": false,
+        "hasUnrivaledExperience": false,
+        "hasNationalTeamExperience": false,
+        "hasOlympicExperience": false
+      },
+      "careerDetails": {
+        "collegeCareer": {
+          "collegeId": "",
+          "collegeName": "",
+          "startYear": "",
+          "endYear": "",
+          "ncaaChampionships": []
+        },
+        "draftDetails": {
+          "year": "",
+          "pick": "",
+          "round": "",
+          "roundPick": "",
+          "draftedBy": "",
+          "acquiredBy": "",
+          "transactionNote": ""
+        },
+        "wnbaTeams": [
+          {
+            "teamCode": "LVA_ACES",
+            "startYear": 2024,
+            "endYear": "",
+            "transactionNote": "Quick-added from award reference."
+          }
+        ],
+        "missedWnbaSeasons": [],
+        "overseasTeams": [],
+        "unrivaledTeams": [],
+        "teamUsaMedals": []
+      },
+      "wnbaSeasons": {},
+      "images": [],
+      "dataStatus": {
+        "isQuickAdd": true,
+        "needsFullProfile": true,
+        "quickAddSource": "command-center",
+        "quickAddReason": "missing-player-reference",
+        "quickAddedAt": "2026-06-06T01:44:41.893Z"
+      }
+    },
+    "dearica_hamby": {
+      "playerId": "dearica_hamby",
+      "playerName": "Dearica Hamby",
+      "playerStatus": {
+        "isActive": true,
+        "hasNcaaChampionships": false,
+        "wasDraftDayTrade": false,
+        "hasWnbaChampionships": false,
+        "hasOverseasExperience": false,
+        "hasUnrivaledExperience": false,
+        "hasNationalTeamExperience": false,
+        "hasOlympicExperience": false
+      },
+      "careerDetails": {
+        "collegeCareer": {
+          "collegeId": "",
+          "collegeName": "",
+          "startYear": "",
+          "endYear": "",
+          "ncaaChampionships": []
+        },
+        "draftDetails": {
+          "year": "",
+          "pick": "",
+          "round": "",
+          "roundPick": "",
+          "draftedBy": "",
+          "acquiredBy": "",
+          "transactionNote": ""
+        },
+        "wnbaTeams": [
+          {
+            "teamCode": "LOS_SPARKS",
+            "startYear": 2024,
+            "endYear": "",
+            "transactionNote": "Quick-added from award reference."
+          }
+        ],
+        "missedWnbaSeasons": [],
+        "overseasTeams": [],
+        "unrivaledTeams": [],
+        "teamUsaMedals": []
+      },
+      "wnbaSeasons": {},
+      "images": [],
+      "dataStatus": {
+        "isQuickAdd": true,
+        "needsFullProfile": true,
+        "quickAddSource": "command-center",
+        "quickAddReason": "missing-player-reference",
+        "quickAddedAt": "2026-06-06T01:44:42.941Z"
       }
     }
   }

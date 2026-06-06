@@ -95,14 +95,24 @@ function renderAwards() {
         return;
     }
 
+    awardsGrid.className = "awards-table";
+
+    awardsGrid.innerHTML = `
+        <div class="awards-table-header">
+            <span>Award</span>
+            <span>Recipient</span>
+            <span>Team</span>
+            <span>Entries</span>
+        </div>
+    `;
+
     awards
         .sort((a, b) => (a.awardName || "").localeCompare(b.awardName || ""))
         .forEach(award => {
-            const node = document.createElement("article");
-            node.className = "award-node";
+            const row = document.createElement("article");
+            row.className = "award-row";
 
             const teamCode = award.recipient?.teamCode || "";
-            const hasNotes = Boolean(award.notes);
 
             const attachedEntries =
                 EntriesRenderer.getEntriesForAttachedTo(
@@ -111,16 +121,22 @@ function renderAwards() {
                     award.awardKey
                 );
 
-            node.innerHTML = `
-                <div class="award-key">${award.awardKey || award.awardId}</div>
-                <div class="award-name">${award.awardName || "Unnamed Award"}</div>
-                <div class="recipient-name">${award.recipient?.playerName || "No recipient"}</div>
-                <div class="team-line">${getTeamName(teamCode)}</div>
-                ${hasNotes ? `<span class="note-indicator">Has notes</span>` : ""}
-                ${attachedEntries.length ? `<button class="entry-tooltip-btn" type="button">Entry</button>` : ""}
+            row.innerHTML = `
+                <div class="award-row-main">
+                    <div class="award-name">${award.awardName || "Unnamed Award"}</div>
+                    <div class="recipient-name">${award.recipient?.playerName || "No recipient"}</div>
+                    <div class="team-line">${getTeamName(teamCode)}</div>
+                    <div class="award-entry-actions">
+                        ${
+                            attachedEntries.length
+                                ? `<button class="entry-tooltip-btn" type="button">View Entry</button>`
+                                : `<span class="no-entry-text">—</span>`
+                        }
+                    </div>
+                </div>
             `;
 
-            const entryBtn = node.querySelector(".entry-tooltip-btn");
+            const entryBtn = row.querySelector(".entry-tooltip-btn");
 
             if (entryBtn) {
                 entryBtn.addEventListener("click", event => {
@@ -129,11 +145,11 @@ function renderAwards() {
                 });
             }
 
-            node.addEventListener("click", () => {
+            row.addEventListener("click", () => {
                 window.location.href = buildEditorUrl(award);
             });
 
-            awardsGrid.appendChild(node);
+            awardsGrid.appendChild(row);
         });
 }
 

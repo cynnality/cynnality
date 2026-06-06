@@ -1,0 +1,685 @@
+* { box-sizing: border-box; }
+
+body {
+    margin: 0;
+    background: #f5f1ea;
+    color: #111;
+    font-family: "Chivo Mono", monospace;
+}
+
+.season-shell {
+    margin: 0 auto;
+    padding: 32px;
+}
+
+.season-header {
+    border: 2px solid #111;
+    background: #fff;
+    padding: 10px;
+    margin-bottom: 24px;
+}
+
+.eyebrow {
+    margin: 0 0 8px;
+    text-transform: uppercase;
+    letter-spacing: .16em;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+h1, h2, h3, p { margin-top: 0; }
+
+h1 {
+    margin-bottom: 8px;
+    font-family: "JetBrains Mono", monospace;
+    text-transform: uppercase;
+    letter-spacing: -0.05em;
+}
+
+.lede { max-width: 900px; margin-bottom: 0; }
+
+.control-panel,
+.season-hero,
+details.viewer-panel {
+    border: 2px solid #111;
+    background: #fff;
+    margin-bottom: 18px;
+}
+
+.control-panel {
+    display: grid;
+    align-items: end;
+    gap: 6px;
+    padding: 16px;
+}
+
+.season-rail-wrap {
+    min-width: 0;
+}
+
+.season-rail-header {
+    display: flex;
+    align-items: end;
+    gap: 12px;
+    margin-bottom: 10px;
+}
+
+.mini-label {
+    margin: 0 0 3px;
+    font-size: 12px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: .12em;
+}
+
+.season-rail-help {
+    margin: 0;
+    font-size: 12px;
+    font-weight: 400;
+    color: #555;
+}
+
+.season-select-fallback {
+    min-width: 92px;
+    max-width: 110px;
+    padding: 7px 8px;
+    font-size: 12px;
+}
+
+.season-rail {
+    display: flex;
+    gap: 8px;
+    overflow-x: auto;
+    padding: 10px 4px 14px;
+    border-bottom: 2px solid #111;
+}
+
+.season-cell {
+    position: relative;
+    width: 48px;
+    height: 88px;
+    /*! min-width: 58px; */
+    border: 2px solid #111;
+    background: #fff;
+    cursor: pointer;
+    text-align: center;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.season-cell:hover {
+    transform: translate(1px, 1px);
+    box-shadow: 1px 1px 0 #111;
+}
+
+.season-cell.selected::after {
+    content: "";
+    position: absolute;
+    left: 8px;
+    right: 8px;
+    bottom: 3px;
+    height: 4px;
+    background: #4a7c32;
+    border-radius: 999px;
+}
+
+.season-year {
+    display: block;
+    font-size: 13px;
+    font-weight: 600;
+}
+
+.season-node {
+    content: "";
+    position: absolute;
+    left: 8px;
+    right: 8px;
+    top: 14px;
+    height: 3px;
+    border-radius: 999px;
+}
+
+.season-cell.has-data .season-node {
+    background: #111;
+}
+
+.season-markers {
+    display: flex;
+    justify-content: center;
+    gap: 3px;
+    margin-top: 10px;
+    min-height: 13px;
+    flex-direction: column;
+    align-items: center;
+}
+
+.season-marker {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 13px;
+    height: 13px;
+    border: 1px solid #111;
+    border-radius: 50%;
+    font-size: 8px;
+    font-weight: 600;
+    line-height: 1;
+}
+
+.season-marker.expansion {
+    background: #d8ecff;
+}
+
+.season-marker.relocation {
+    background: #ffe1d1;
+}
+
+.season-marker.cba {
+    background: #dcf5d3;
+}
+
+.season-marker.draft {
+    background: #f3e2ff;
+}
+
+.season-rail-legend {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin: 8px 0 10px;
+    font-size: 12px;
+    font-weight: 400;
+}
+
+.legend-dot {
+    display: inline-block;
+    width: 9px;
+    height: 9px;
+    border: 2px solid #111;
+    border-radius: 50%;
+    margin-right: 4px;
+    vertical-align: middle;
+}
+
+.legend-dot.filled {
+    background: #111;
+}
+
+.legend-marker {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 13px;
+    height: 13px;
+    border: 1px solid #111;
+    border-radius: 50%;
+    font-size: 8px;
+    font-weight: 600;
+    margin-right: 4px;
+}
+
+.legend-marker.expansion {
+    background: #d8ecff;
+}
+
+.legend-marker.relocation {
+    background: #ffe1d1;
+}
+
+.legend-marker.cba {
+    background: #dcf5d3;
+}
+
+.legend-marker.draft {
+    background: #f3e2ff;
+}
+
+.season-cell:hover,
+.season-cell.active {
+    transform: translate(1px, 1px);
+    box-shadow: 0 0 0 #111;
+}
+
+.season-cell.active {
+    background: #111;
+    color: #fff;
+}
+
+.season-cell::after {
+    content: "";
+    position: absolute;
+    left: 6px;
+    right: 6px;
+    bottom: 4px;
+    height: 3px;
+    background: transparent;
+}
+
+.season-cell.has-relocation::after { background: #bd7b2f; }
+.season-cell.has-dispersal::after { background: #8f6bb8; }
+.season-cell.is-cba { border-style: dashed; }
+
+.season-cell-year {
+    display: block;
+}
+
+
+.control-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+label {
+    display: grid;
+    gap: 6px;
+    font-size: 13px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+select {
+    min-width: 180px;
+    padding: 10px;
+    border: 2px solid #111;
+    background: #eaded2;
+    font: inherit;
+}
+
+.status-message {
+    margin: 0;
+    font-size: 13px;
+    font-weight: 400;
+    text-align: right;
+}
+
+.season-hero { padding: 18px; }
+
+.hero-title-row {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    gap: 16px;
+    flex-wrap: wrap;
+    border-bottom: 2px solid #111;
+    padding-bottom: 12px;
+    margin-bottom: 12px;
+}
+
+.hero-title-row h2 { margin: 0; font-size: 34px; }
+
+.stat-grid {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 10px;
+}
+
+.stat-card {
+    border: 2px solid #111;
+    background: #fafafa;
+    padding: 12px;
+}
+
+.stat-label {
+    display: block;
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: 600;
+    color: #555;
+}
+
+.stat-value {
+    display: block;
+    margin-top: 4px;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+details.viewer-panel { 
+    padding: 0; 
+    max-width: 85%;
+
+}
+
+summary.panel-summary {
+    cursor: pointer;
+    list-style: none;
+    padding: 14px 16px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+    border-bottom: 2px solid #111;
+    font-weight: 600;
+    text-transform: uppercase;
+    background: #a147b73d;
+}
+
+summary.panel-summary::-webkit-details-marker { display: none; }
+summary.panel-summary::after {
+  content: "+";
+  font-size: 14px;
+}
+details[open] > summary.panel-summary::after { content: "−"; }
+
+.panel-body {
+  padding: 32px;
+  display: flex;
+  flex-direction: column;
+}
+
+.nested-stack { display: grid; gap: 12px; }
+
+details.nested-panel {
+    border: 2px solid #111;
+    background: #fbfbfb;
+    max-width: 85%;
+}
+
+.nested-panel summary {
+    cursor: pointer;
+    padding: 12px;
+    font-weight: 600;
+    display: flex;
+    justify-content: space-between;
+    gap: 12px;
+    background: #459a5348;
+}
+
+.nested-body {
+    border-top: 1px solid #111;
+    padding: 12px;
+}
+
+.chip-list { display: flex; flex-wrap: wrap; gap: 8px; }
+
+.chip {
+    border: 2px solid #111;
+    border-radius: 999px;
+    padding: 6px 10px;
+    background: #fff;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.chip.positive { background: #d8f0d0; }
+.chip.warning { background: #ffe3a3; }
+.chip.muted { color: #666; border-color: #999; }
+
+.team-grid,
+.award-grid,
+.game-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+    gap: 10px;
+}
+
+.team-card,
+.award-card,
+.game-card,
+.item-card {
+    border: 2px solid #111;
+    background: #fff;
+    padding: 12px;
+}
+
+.team-card { position: relative; overflow: hidden; }
+
+.team-color-bar {
+    height: 8px;
+    margin: -12px -12px 10px;
+    border-bottom: 2px solid #111;
+    background: #ddd;
+}
+
+.team-name,
+.item-title,
+.award-title,
+.game-title { font-weight: 600; }
+
+.team-meta,
+.small-meta,
+.award-meta,
+.game-meta {
+    font-size: 12px;
+    color: #444;
+    margin-top: 4px;
+}
+
+.item-list { display: grid; gap: 8px; }
+
+.meta-row {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    border-bottom: 1px solid #ddd;
+    padding: 6px 0;
+    font-size: 13px;
+}
+
+.meta-row strong { text-transform: uppercase; font-size: 11px; }
+
+.small-link {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid #111;
+    box-shadow: 2px 2px 0 #111;
+    background: #fff;
+    color: #111;
+    padding: 8px 10px;
+    text-decoration: none;
+    font-size: 12px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.small-link:hover {
+    transform: translate(1px, 1px);
+    box-shadow: 0 0 0 #111;
+}
+
+.empty-state {
+    border: 2px dashed #777;
+    padding: 14px;
+    background: #fafafa;
+    font-weight: 400;
+    color: #555;
+}
+
+.game-card.is-final {
+    border-color: #111;
+    background: #f8f8f8;
+}
+
+.game-title-row {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    align-items: center;
+}
+
+.final-chip {
+    display: inline-flex;
+    padding: 3px 7px;
+    border-radius: 999px;
+    background: #111;
+    color: #fff;
+    font-size: 10px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.game-score-row {
+    display: flex;
+    gap: 8px;
+    flex-wrap: wrap;
+    margin-top: 10px;
+}
+
+.game-team-chip {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    border: 2px solid #111;
+    border-radius: 999px;
+    padding: 6px 9px;
+    background: #fff;
+    font-weight: 600;
+}
+
+.winner-team-chip {
+    transform: scale(1.06);
+    box-shadow: 2px 2px 0 #111;
+}
+
+.awards-table {
+    border: 2px solid #111;
+    background: #fff;
+}
+
+.awards-table-header,
+.award-row-main {
+    display: grid;
+    grid-template-columns: 1.4fr 1.2fr 1.2fr;
+    gap: 12px;
+    align-items: center;
+}
+
+.awards-table-header {
+    padding: 10px 12px;
+    border-bottom: 2px solid #111;
+    background: #eee5d8;
+    font-size: 12px;
+    font-weight: 900;
+    text-transform: uppercase;
+}
+
+.award-row {
+    border-bottom: 1px solid #111;
+}
+
+.award-row:last-child {
+    border-bottom: none;
+}
+
+.award-row-main {
+    padding: 12px;
+}
+
+.award-name {
+    font-weight: 900;
+}
+
+.award-recipient {
+    font-weight: 700;
+}
+
+.team-pill {
+    display: inline-block;
+    border: 2px solid #111;
+    border-radius: 999px;
+    padding: 4px 8px;
+    font-size: 12px;
+    font-weight: 800;
+    background: #fff;
+}
+
+.award-attached-entries {
+    padding: 0 12px 12px;
+    display: grid;
+    gap: 8px;
+}
+
+.attached-entry-card {
+    border: 1px dashed #111;
+    background: #fafafa;
+    padding: 10px;
+}
+
+.attached-entry-label {
+    font-size: 10px;
+    font-weight: 900;
+    text-transform: uppercase;
+    color: #666;
+}
+
+.attached-entry-title {
+    margin-top: 3px;
+    font-weight: 900;
+}
+
+.attached-entry-meta {
+    margin-top: 2px;
+    font-size: 12px;
+    color: #555;
+}
+
+.entry-modal.hidden {
+    display: none;
+}
+
+.entry-modal {
+    position: fixed;
+    inset: 0;
+    z-index: 999;
+}
+
+.entry-modal-backdrop {
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.55);
+}
+
+.entry-modal-card {
+    position: relative;
+    z-index: 2;
+    width: min(720px, calc(100vw - 32px));
+    max-height: calc(100vh - 64px);
+    overflow-y: auto;
+    margin: 32px auto;
+    padding: 24px;
+    border: 3px solid #111;
+    background: #fff;
+    box-shadow: 6px 6px 0 #111;
+}
+
+.entry-modal-close {
+    position: absolute;
+    top: 10px;
+    right: 12px;
+    border: 2px solid #111;
+    background: #fff;
+    color: #111;
+    font-size: 22px;
+    font-weight: 900;
+    cursor: pointer;
+}
+
+.entry-modal-label {
+    font-size: 11px;
+    font-weight: 900;
+    text-transform: uppercase;
+    color: #666;
+}
+
+.entry-modal-content {
+    margin-top: 16px;
+    line-height: 1.5;
+}
+
+.attached-entry-card {
+    width: 100%;
+    text-align: left;
+    cursor: pointer;
+}
+
+@media (max-width: 760px) {
+    .season-shell { padding: 18px; }
+    .control-panel { grid-template-columns: 1fr; align-items: stretch; }
+    .season-rail-header { align-items: start; }
+    .season-rail { grid-template-columns: repeat(auto-fit, minmax(50px, 1fr)); max-height: 168px; }
+    .status-message { text-align: left; }
+    .stat-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}

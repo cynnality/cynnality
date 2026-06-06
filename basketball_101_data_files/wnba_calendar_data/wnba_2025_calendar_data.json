@@ -1,0 +1,78 @@
+{
+  "season": 2025,
+  "seasonId": "2025",
+  "games": {
+    "2025-05-16_ATL_DREAM_WAS_MYSTICS": {
+      "gameId": "2025-05-16_ATL_DREAM_WAS_MYSTICS",
+      "season": 2025,
+      "seasonId": "2025",
+      "date": "2025-05-16",
+      "awayTeam": "ATL_DREAM",
+      "homeTeam": "WAS_MYSTICS",
+      "gameType": "regular-season",
+      "specialGame": {
+        "label": "Regular Season",
+        "countsTowardRegularSeason": true,
+        "isNeutralSite": false
+      },
+      "status": "final",
+      "links": [],
+      "notes": "",
+      "entryIds": [],
+      "score": {
+        "awayScore": 90,
+        "homeScore": 94,
+        "winner": "WAS_MYSTICS",
+        "isFinal": true
+      }
+    },
+    "2025-05-16_MIN_LYNX_DAL_WINGS": {
+      "gameId": "2025-05-16_MIN_LYNX_DAL_WINGS",
+      "season": 2025,
+      "seasonId": "2025",
+      "date": "2025-05-16",
+      "awayTeam": "MIN_LYNX",
+      "homeTeam": "DAL_WINGS",
+      "gameType": "regular-season",
+      "specialGame": {
+        "label": "Regular Season",
+        "countsTowardRegularSeason": true,
+        "isNeutralSite": false
+      },
+      "status": "final",
+      "links": [],
+      "notes": "",
+      "entryIds": [],
+      "score": {
+        "awayScore": 99,
+        "homeScore": 84,
+        "winner": "MIN_LYNX",
+        "isFinal": true
+      }
+    },
+    "2025-05-16_LOS_SPARKS_GSV_VALKYRIES": {
+      "gameId": "2025-05-16_LOS_SPARKS_GSV_VALKYRIES",
+      "season": 2025,
+      "seasonId": "2025",
+      "date": "2025-05-16",
+      "awayTeam": "LOS_SPARKS",
+      "homeTeam": "GSV_VALKYRIES",
+      "gameType": "regular-season",
+      "specialGame": {
+        "label": "Regular Season",
+        "countsTowardRegularSeason": true,
+        "isNeutralSite": false
+      },
+      "status": "final",
+      "links": [],
+      "notes": "",
+      "entryIds": [],
+      "score": {
+        "awayScore": 84,
+        "homeScore": 67,
+        "winner": "LOS_SPARKS",
+        "isFinal": true
+      }
+    }
+  }
+}

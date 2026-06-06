@@ -2,6 +2,11 @@ const DATA_PATHS = {
     posts: "../post data/posts_data.json"
 };
 
+const PAGE_DATA_PATH = "../post%20data/pages_data.json";
+
+let PAGES_DATA = { pages: {} };
+let ACTIVE_PAGE = "";
+
 const ADD_POST_TOOL_PATH =
     "../add post/add-post-tool.html";
 
@@ -93,7 +98,10 @@ function getFilteredPosts() {
         const matchesStatus =
             !selectedStatus || status === selectedStatus;
 
-        return matchesSearch && matchesPage && matchesStatus;
+        const matchesActivePage =
+            !ACTIVE_PAGE || page === ACTIVE_PAGE;
+
+        return matchesSearch && matchesPage && matchesStatus && matchesActivePage;
     });
 }
 
@@ -102,6 +110,31 @@ function buildEditPostUrl(post) {
     params.set("postId", post.postId);
 
     return `${ADD_POST_TOOL_PATH}?${params.toString()}`;
+}
+
+function renderPageButtons() {
+    const pageButtons = document.getElementById("pageButtons");
+    pageButtons.innerHTML = "";
+
+    const allBtn = document.createElement("button");
+    allBtn.textContent = "All Posts";
+    allBtn.className = ACTIVE_PAGE ? "" : "active";
+    allBtn.addEventListener("click", () => {
+        window.location.href = "posts-index.html";
+    });
+    pageButtons.appendChild(allBtn);
+
+    Object.values(PAGES_DATA.pages || {}).forEach(page => {
+        const button = document.createElement("button");
+        button.textContent = page.title || page.pageId;
+        button.className = ACTIVE_PAGE === page.pageId ? "active" : "";
+
+        button.addEventListener("click", () => {
+            window.location.href = `../post page/post-page.html?page=${page.pageId}`;
+        });
+
+        pageButtons.appendChild(button);
+    });
 }
 
 function renderPosts() {
@@ -124,7 +157,7 @@ function renderPosts() {
             <div class="post-card-title">${post.title || "Untitled Post"}</div>
 
             <div class="post-card-meta">
-                ${post.page || "no-page"} · ${post.status || "draft"} · ${post.updatedAt || ""}
+                ${post.page || "no-page"} · ${post.status || "draft"}
             </div>
 
             <div class="post-card-tags">
@@ -180,15 +213,16 @@ closeReaderBtn.addEventListener("click", () => {
 
 async function init() {
     const postsData = await loadJson(DATA_PATHS.posts, { posts: {} });
-
-    console.log("postsData loaded:", postsData);
+    PAGES_DATA = await loadJson(PAGE_DATA_PATH, { pages: {} });
 
     POSTS = Object.values(postsData.posts || {})
-        .sort((a, b) => {
-            return (b.updatedAt || "").localeCompare(a.updatedAt || "");
-        });
+        .sort((a, b) => (b.updatedAt || "").localeCompare(a.updatedAt || ""));
+
+    const params = new URLSearchParams(window.location.search);
+    ACTIVE_PAGE = params.get("page") || "";
 
     populatePageFilter();
+    renderPageButtons();
     renderPosts();
 }
 

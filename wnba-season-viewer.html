@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>WNBA Season Viewer</title>
+    <link rel="stylesheet" href="wnba-season-viewer.css" />
+    <link rel="stylesheet" href="entries/renderer/entries-renderer.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Chivo+Mono:ital,wght@0,100..900;1,100..900&family=DM+Mono:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <main class="season-shell">
+        <header class="season-header">
+            <p class="eyebrow">WNBA Data Viewer</p>
+        </header>
+
+        <section class="control-panel">
+            <div class="season-rail-wrap">
+                <div class="season-rail-header">
+                    <div>
+                        <p class="mini-label">SEASONS</p>
+                        <p class="season-rail-help">click on a season</p>
+                    </div>
+
+                    <select id="seasonSelect" class="season-select-fallback" aria-label="Select season"></select>
+                </div>
+
+                <div id="seasonRail" class="season-rail" aria-label="WNBA season timeline"></div>
+
+                <div class="season-rail-legend">
+                    <span><span class="legend-dot filled"></span> data exists</span>
+                    <span><span class="legend-marker expansion">E</span> expansion</span>
+                    <span><span class="legend-marker relocation">R</span> relocation</span>
+                    <span><span class="legend-marker cba">C</span> CBA</span>
+                    <span><span class="legend-marker draft">D</span> draft</span>
+                </div>
+
+            </div>
+
+            <div class="control-actions">
+                <a id="seasonEditorLink" class="small-link" href="#">Open Season Editor</a>
+                <a id="calendarEditorLink" class="small-link" href="#">Open Calendar Editor</a>
+            </div>
+
+            <p id="statusMessage" class="status-message">Loading season data...</p>
+        </section>
+
+        <section id="seasonHero" class="season-hero"></section>
+        <section id="seasonPanels" class="season-panels"></section>
+
+        <div id="entryModal" class="entry-modal hidden">
+            <div id="entryModalBackdrop" class="entry-modal-backdrop"></div>
+
+            <section class="entry-modal-card">
+                <button id="closeEntryModalBtn" class="entry-modal-close" type="button">×</button>
+
+                <p id="entryModalCategory" class="entry-modal-label"></p>
+                <h2 id="entryModalTitle"></h2>
+                <p id="entryModalDescription" class="entry-modal-description"></p>
+
+                <div id="entryModalContent" class="entry-modal-content"></div>
+            </section>
+        </div>
+
+    </main>
+    <script src="entries/renderer/entries-renderer.js"></script>
+    <script src="wnba-season-viewer.js"></script>
+</body>
+</html>

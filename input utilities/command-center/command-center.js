@@ -38,12 +38,19 @@ const missingPlayersList = document.getElementById("missingPlayersList");
 const missingCollegesList = document.getElementById("missingCollegesList");
 const quickAddPlayersCount = document.getElementById("quickAddPlayersCount");
 const quickAddPlayersList = document.getElementById("quickAddPlayersList");
+const missingImagesCount = document.getElementById("missingImagesCount");
+const missingImagesList = document.getElementById("missingImagesList");
 const teamMismatchList = document.getElementById("teamMismatchList");
 const okList = document.getElementById("okList");
 
 async function loadJson(path, fallback) {
     try {
-        const response = await fetch(path);
+        const cacheBustPath = `${path}?v=${Date.now()}`;
+
+        const response = await fetch(cacheBustPath, {
+            cache: "no-store"
+        });
+
         if (!response.ok) return fallback;
 
         const text = await response.text();
@@ -68,6 +75,41 @@ function makeId(value) {
 
 function getTeamName(teamCode) {
     return TEAMS[teamCode]?.name?.full || teamCode || "No team listed";
+}
+
+function playerHasImage(player) {
+    if (!player) return false;
+
+    const data = player.playerData || player;
+
+    if (typeof data.image === "string" && data.image.trim() !== "") {
+        return true;
+    }
+
+    if (typeof data.image?.src === "string" && data.image.src.trim() !== "") {
+        return true;
+    }
+
+    if (typeof data.imagePath === "string" && data.imagePath.trim() !== "") {
+        return true;
+    }
+
+    if (typeof data.imageSrc === "string" && data.imageSrc.trim() !== "") {
+        return true;
+    }
+
+    if (Array.isArray(data.images)) {
+        return data.images.some(image => {
+            if (typeof image === "string") {
+                return image.trim() !== "";
+            }
+
+            return typeof image?.src === "string" &&
+                image.src.trim() !== "";
+        });
+    }
+
+    return false;
 }
 
 async function loadAllData() {
@@ -210,6 +252,22 @@ function buildIssues() {
             return;
         }
 
+        if (ref.entityId === "angel_reese") {
+            console.log("Angel Reese player object:", player);
+            console.log("Angel Reese has image?", playerHasImage(player));
+        }
+
+        if (!playerHasImage(player)) {
+            issues.push({
+                issueType: "missing-player-image",
+                entityType: "player",
+                entityId: ref.entityId,
+                displayName: ref.displayName,
+                sources: [ref]
+            });
+            return;
+        }
+
         issues.push({
             issueType: "ok",
             entityType: "player",
@@ -224,7 +282,7 @@ function buildIssues() {
     collegeRefs.forEach(ref => {
         const collegeExists = Boolean(COLLEGES[ref.entityId]);
 
-        if (!collegeExists || ref.existsInCollegeFile === false) {
+        if (!collegeExists) {
             issues.push({
                 issueType: "missing-college",
                 entityType: "college",
@@ -321,6 +379,7 @@ function getIssueLabel(issueType) {
         "missing-player": "Player needs to be added",
         "missing-college": "College needs to be added",
         "quick-add-player": "Quick-added player needs full profile",
+        "missing-player-image": "Player image needs to be added",
         "team-mismatch": "Team history needs review",
         "ok": "Looks okay"
     };
@@ -445,6 +504,14 @@ function renderIssueList(container, issues) {
             `;
         }
 
+        if (issue.issueType === "missing-player-image") {
+            primaryAction = `
+                <button type="button" data-url="${buildPlayerEditorUrl(issue)}">
+                    Open Player Editor
+                </button>
+            `;
+        }
+
         const sourceActions = issue.sources
             .map(source => {
                 if (source.sourceType === "draft") {
@@ -514,18 +581,21 @@ function renderIssueList(container, issues) {
 function renderResults(issues) {
     const missingPlayers = issues.filter(issue => issue.issueType === "missing-player");
     const quickAddPlayers = issues.filter(issue => issue.issueType === "quick-add-player");
+    const missingImages = issues.filter(issue => issue.issueType === "missing-player-image");
     const missingColleges = issues.filter(issue => issue.issueType === "missing-college");
     const teamMismatches = issues.filter(issue => issue.issueType === "team-mismatch");
     const okIssues = issues.filter(issue => issue.issueType === "ok");
 
     missingPlayersCount.textContent = missingPlayers.length;
     quickAddPlayersCount.textContent = quickAddPlayers.length;
+    missingImagesCount.textContent = missingImages.length;
     missingCollegesCount.textContent = missingColleges.length;
     teamMismatchCount.textContent = teamMismatches.length;
     okCount.textContent = okIssues.length;
 
     renderIssueList(missingPlayersList, missingPlayers);
     renderIssueList(quickAddPlayersList, quickAddPlayers);
+    renderIssueList(missingImagesList, missingImages);
     renderIssueList(missingCollegesList, missingColleges);
     renderIssueList(teamMismatchList, teamMismatches);
     renderIssueList(okList, okIssues);

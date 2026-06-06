@@ -1,9 +1,7 @@
 {
-  "seasons": {
-    "2026": {
-      "season": 2026,
-      "seasonId": "2026",
-      "games": {
+    "season": 2026,
+    "seasonId": "2026",
+    "games": {
         "2026-05-28_LVA_ACES_DAL_WINGS": {
           "gameId": "2026-05-28_LVA_ACES_DAL_WINGS",
           "season": 2026,
@@ -1559,7 +1557,5 @@
           "notes": "",
           "entryIds": []
         }
-      }
     }
-  }
 }

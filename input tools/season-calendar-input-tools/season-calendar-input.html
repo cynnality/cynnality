@@ -42,56 +42,77 @@ wnba_teams_history.json /////////// -> teams of the WNBA by year and team franch
 
 <body>
     <main class="tool-shell">
-        <header class="tool-header">
-            <p class="eyebrow">WNBA Data Tool</p>
-            <h1>Season Calendar Input</h1>
-            <p>create / edit season schedule</p>
-        </header>
+        <div class="top-shell">
+            <div class="corner-call">
+                <header class="tool-header">
+                    <p class="eyebrow">WNBA Data Tool</p>
+                    <h1>Add games to the schedule</h1>
+                </header>
 
-        <section class="panel">
-            <label>
-                Season
-                <select id="seasonSelect">
-                    <option value="2026">2026</option>
-                </select>
-            </label>
-        </section>
-
-        <section class="panel gameday-builder-panel">
-            <button id="toggleGamedayBuilderBtn" class="section-toggle" type="button">
-                Add Gameday Matchups
-            </button>
-
-            <div id="gamedayBuilderContent" class="gameday-builder-content hidden">
-
-            <section class="panel">
-                <h2>Gameday Matchup Builder</h2>
-
-                <div class="form-grid">
+                <section class="panel" id="seasonSelectPanel">
                     <label>
-                        Game Date
-                        <input id="gameDateInput" type="date" />
+                        Season
+                        <select id="seasonSelect">
+                            <option value="2026">2026</option>
+                        </select>
                     </label>
+                </section>
 
-                    <label>
-                        Games on This Date
-                        <input id="gamesOnDateInput" type="number" min="1" placeholder="optional" />
-                    </label>
-                </div>
+                <section class="panel season-date-picker-panel">
+                    <div class="season-date-picker-header">
+                        <div>
+                            <h2 id="seasonDatePickerTitle">Season Dates</h2>
+                            <p id="selectedDateLabel">No date selected.</p>
+                        </div>
 
-                <button id="generateGameRowsBtn" type="button">
-                    Generate Game Rows
-                </button>
+                        <div class="date-nav-buttons">
+                            <button id="prevDateBtn" type="button">Previous Day</button>
+                            <button id="nextDateBtn" type="button">Next Day</button>
+                        </div>
+                    </div>
 
-                <div id="matchupRowsContainer" class="matchup-rows-container"></div>
-
-                <button id="saveGameBtn" type="button">
-                    Save Gameday Matchups
-                </button>
-            </section>
+                    <div id="seasonDateCalendarGrid" class="season-date-calendar-grid"></div>
+                </section>
             </div>
-        </section>
+            <section class="panel gameday-builder-panel">
+                <button id="toggleGamedayBuilderBtn" class="section-toggle" type="button">
+                    Add Gameday Matchups
+                </button>
 
+                <div id="gamedayBuilderContent" class="gameday-builder-content hidden">
+
+                <section class="panel">
+                    <h2>Gameday Matchup Builder</h2>
+
+                    <div class="form-grid">
+                        <label>
+                            Game Date
+                            <input id="gameDateInput" type="date" />
+                        </label>
+
+                        <label>
+                            Games on This Date
+                            <input id="gamesOnDateInput" type="number" min="1" placeholder="optional" />
+                        </label>
+                    </div>
+
+                    <button id="generateGameRowsBtn" type="button">
+                        Generate Game Rows
+                    </button>
+
+                    <button id="generateRetroGameRowsBtn" type="button">
+                        Generate Retroactive Final Score Rows
+                    </button>
+
+                    <div id="matchupRowsContainer" class="matchup-rows-container"></div>
+
+                    <button id="saveGameBtn" type="button">
+                        Save Gameday Matchups
+                    </button>
+                </section>
+                </div>
+            </section>
+        </div>
         <section id="savedGamesPanel" class="panel">
 
             <h2>Saved Games</h2>
@@ -125,11 +146,6 @@ wnba_teams_history.json /////////// -> teams of the WNBA by year and team franch
                 </label>
 
             </div>
-
-            <label class="checkbox-row">
-                <input id="isFinalInput" type="checkbox">
-                Game is final
-            </label>
 
             <div class="game-nav">
 

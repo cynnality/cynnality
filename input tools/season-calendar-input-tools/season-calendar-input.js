@@ -1,6 +1,7 @@
 const DATA_PATHS = {
     teams: "../../basketball_101_data_files/wnba_static_data_v2.json",
-    gamedayCalendar: "../../basketball_101_data_files/wnba_gameday_calendar_data.json"
+    calendarFolder: "../../basketball_101_data_files/wnba_calendar_data",
+    seasonGeneralInfo: "../../basketball_101_data_files/wnba_season_general_info_data.json"
 };
 
 const SAVE_URLS = {
@@ -8,17 +9,95 @@ const SAVE_URLS = {
     updateGame: "http://127.0.0.1:8787/update-gameday-game"
 };
 
+const GAME_TYPE_META = {
+    "regular-season": {
+        label: "Regular Season",
+        countsTowardRegularSeason: true,
+        isNeutralSite: false
+    },
+    "preseason": {
+        label: "Preseason",
+        countsTowardRegularSeason: false,
+        isNeutralSite: false
+    },
+    "commissioners-cup": {
+        label: "Commissioner's Cup",
+        countsTowardRegularSeason: true,
+        isNeutralSite: false
+    },
+    "all-star-game": {
+        label: "WNBA All-Star Game",
+        countsTowardRegularSeason: false,
+        isNeutralSite: true
+    },
+    "postseason": {
+        label: "Postseason",
+        countsTowardRegularSeason: false,
+        isNeutralSite: false
+    },
+    "special-event": {
+        label: "Special Event",
+        countsTowardRegularSeason: false,
+        isNeutralSite: false
+    },
+    "other": {
+        label: "Other",
+        countsTowardRegularSeason: false,
+        isNeutralSite: false
+    }
+};
+
+const generateRetroGameRowsBtn =
+    document.getElementById("generateRetroGameRowsBtn");
+
+function getGameTypeMeta(gameType) {
+    return GAME_TYPE_META[gameType] || GAME_TYPE_META["regular-season"];
+}
+
 let TEAMS_DATA = {};
-let GAMEDAY_CALENDAR_DATA = {};
+let GAMEDAY_CALENDAR_DATA = {}; 
+let SEASON_GENERAL_INFO_DATA = {};
+let SELECTED_GAME_DATE = "";
 
 let CURRENT_MATCHUP_ROWS = [];
 let CURRENT_GAME = null;
+let CURRENT_ENTRY_MODE = "schedule-only";
 
 const seasonSelect = document.getElementById("seasonSelect");
 
 const statusMessage = document.getElementById("statusMessage");
 
 const gameDateInput = document.getElementById("gameDateInput");
+
+function getCalendarPathForSeason(seasonId) {
+    return `${DATA_PATHS.calendarFolder}/wnba_${seasonId}_calendar_data.json`;
+}
+
+async function loadCalendarForSeason(seasonId) {
+    GAMEDAY_CALENDAR_DATA = await loadJson(
+        getCalendarPathForSeason(seasonId),
+        {
+            season: Number(seasonId),
+            seasonId,
+            games: {}
+        }
+    );
+}
+
+const seasonDatePickerTitle =
+    document.getElementById("seasonDatePickerTitle");
+
+const selectedDateLabel =
+    document.getElementById("selectedDateLabel");
+
+const seasonDateCalendarGrid =
+    document.getElementById("seasonDateCalendarGrid");
+
+const prevDateBtn =
+    document.getElementById("prevDateBtn");
+
+const nextDateBtn =
+    document.getElementById("nextDateBtn");
 
 const toggleGamedayBuilderBtn = document.getElementById("toggleGamedayBuilderBtn");
 const gamedayBuilderContent = document.getElementById("gamedayBuilderContent");
@@ -77,13 +156,14 @@ async function initTool() {
             { teams: {} }
         );
 
-    GAMEDAY_CALENDAR_DATA =
+    SEASON_GENERAL_INFO_DATA =
         await loadJson(
-            DATA_PATHS.gamedayCalendar,
+            DATA_PATHS.seasonGeneralInfo,
             { seasons: {} }
         );
 
     populateSeasonSelect();
+    await loadCalendarForSeason(seasonSelect.value);
 
     const { gameId } = getUrlParams();
 
@@ -112,12 +192,62 @@ function getUrlParams() {
     };
 }
 
+function getSelectedSeasonInfo() {
+    const seasonId = seasonSelect.value;
+
+    return SEASON_GENERAL_INFO_DATA?.seasons?.[seasonId] || null;
+}
+
+function parseDateLocal(dateString) {
+    const [year, month, day] = dateString.split("-").map(Number);
+
+    return new Date(year, month - 1, day);
+}
+
+function formatDateIso(date) {
+    const year = date.getFullYear();
+    const month = String(date.getMonth() + 1).padStart(2, "0");
+    const day = String(date.getDate()).padStart(2, "0");
+
+    return `${year}-${month}-${day}`;
+}
+
+function addDays(dateString, amount) {
+    const date = parseDateLocal(dateString);
+
+    date.setDate(date.getDate() + amount);
+
+    return formatDateIso(date);
+}
+
+function getDateRange(startDate, endDate) {
+    const dates = [];
+
+    const current = parseDateLocal(startDate);
+    const end = parseDateLocal(endDate);
+
+    while (current <= end) {
+        dates.push(formatDateIso(current));
+        current.setDate(current.getDate() + 1);
+    }
+
+    return dates;
+}
+
+function getMonthLabel(dateString) {
+    const date = parseDateLocal(dateString);
+
+    return date.toLocaleDateString("en-US", {
+        month: "long",
+        year: "numeric"
+    });
+}
+
 function loadCurrentGame() {
-    const { seasonId, gameId } = getUrlParams();
+    const { gameId } = getUrlParams();
 
     CURRENT_GAME =
-        GAMEDAY_CALENDAR_DATA?.seasons?.[seasonId]?.games?.[gameId]
-        || null;
+        GAMEDAY_CALENDAR_DATA?.games?.[gameId] || null;
 }
 
 function getTeam(teamCode) {
@@ -125,15 +255,12 @@ function getTeam(teamCode) {
 }
 
 function populateSeasonSelect() {
-
     seasonSelect.innerHTML = "";
 
-    const seasonIds =
-        Object.keys(GAMEDAY_CALENDAR_DATA.seasons || {})
+    const seasonIds = Object.keys(SEASON_GENERAL_INFO_DATA.seasons || {})
         .sort((a, b) => Number(b) - Number(a));
 
     seasonIds.forEach(seasonId => {
-
         const option = document.createElement("option");
 
         option.value = seasonId;
@@ -142,13 +269,13 @@ function populateSeasonSelect() {
         seasonSelect.appendChild(option);
     });
 
-    const params = new URLSearchParams(window.location.search);
+    const { seasonId } = getUrlParams();
 
-    const seasonFromUrl = params.get("season");
-
-    if (seasonFromUrl) {
-        seasonSelect.value = seasonFromUrl;
+    if (seasonId && seasonIds.includes(seasonId)) {
+        seasonSelect.value = seasonId;
     }
+
+    renderSeasonDatePicker();
 }
 
 function initGameEditor() {
@@ -176,8 +303,10 @@ function renderGameEditor() {
         return;
     }
 
+    const gameTypeMeta = getGameTypeMeta(CURRENT_GAME.gameType);
+
     gameContext.textContent =
-        `${CURRENT_GAME.date} • ${CURRENT_GAME.gameType || "regular-season"}`;
+        `${CURRENT_GAME.date} • ${gameTypeMeta.label}`;
 
     matchupPanel.innerHTML = `
         <h2 class="matchup-title">
@@ -229,8 +358,9 @@ function renderGameEditor() {
     homeScoreInput.value =
         CURRENT_GAME.score?.homeScore ?? "";
 
-    isFinalInput.checked =
-        Boolean(CURRENT_GAME.score?.isFinal);
+    if (isFinalInput) {
+        isFinalInput.checked = Boolean(CURRENT_GAME.score?.isFinal);
+    }
 
     updateGameNavButtons();
 }
@@ -260,13 +390,17 @@ function buildUpdatedGameRecord() {
         ? null
         : Number(homeScoreInput.value);
 
+    const hasFinalScore =
+        awayScore !== null &&
+        homeScore !== null;
+
     return {
         ...CURRENT_GAME,
         score: {
             awayScore,
             homeScore,
             winner: getWinnerFromScore(awayScore, homeScore),
-            isFinal: isFinalInput.checked
+            isFinal: hasFinalScore
         }
     };
 }
@@ -361,7 +495,7 @@ function makeGameId({ date, awayTeam, homeTeam }) {
 
 function renderSavedGamesList() {
     const seasonId = seasonSelect.value;
-    const games = Object.values(GAMEDAY_CALENDAR_DATA?.seasons?.[seasonId]?.games || {});
+    const games = Object.values(GAMEDAY_CALENDAR_DATA?.games || {});
 
     savedGamesList.innerHTML = "";
 
@@ -399,17 +533,62 @@ function renderSavedGamesList() {
             const item = document.createElement("div");
             item.className = "schedule-game-item";
 
+            const gameTypeMeta = getGameTypeMeta(game.gameType);
+
+            const isFinal =
+                game.status === "final" ||
+                game.score?.isFinal === true;
+
+            const awayScore = game.score?.awayScore ?? "";
+            const homeScore = game.score?.homeScore ?? "";
+
+            const awayIsWinner =
+                isFinal && game.score?.winner === game.awayTeam;
+
+            const homeIsWinner =
+                isFinal && game.score?.winner === game.homeTeam;
+
+            item.classList.toggle("is-final", isFinal);
+
             item.innerHTML = `
-                <span class="team-chip">
-                    <span class="team-color-box" style="background:${awayTeam?.branding?.colors?.color1 || "#111"}"></span>
-                    ${awayTeam?.name?.short || game.awayTeam}
+                <span class="game-type-chip">
+                    ${gameTypeMeta.label}
                 </span>
 
-                <span class="at-symbol">at</span>
+                ${isFinal ? `
+                    <span class="final-game-indicator">Final</span>
+                ` : ""}
 
-                <span class="team-chip">
-                    <span class="team-color-box" style="background:${homeTeam?.branding?.colors?.color1 || "#111"}"></span>
-                    ${homeTeam?.name?.short || game.homeTeam}
+                <span class="team-chip ${awayIsWinner ? "winner-team-chip" : ""}">
+                    <span
+                        class="team-color-box ${awayIsWinner ? "winner-team-box" : ""}"
+                        style="background:${awayTeam?.branding?.colors?.color1 || "#111"}">
+                    </span>
+
+                    <span>
+                        ${awayTeam?.name?.short || game.awayTeam}
+
+                        ${isFinal ? `
+                            <span class="team-score">${awayScore}</span>
+                        ` : ""}
+                    </span>
+                </span>
+
+                <span class="at-symbol">${isFinal ? "vs" : "at"}</span>
+
+                <span class="team-chip ${homeIsWinner ? "winner-team-chip" : ""}">
+                    <span
+                        class="team-color-box ${homeIsWinner ? "winner-team-box" : ""}"
+                        style="background:${homeTeam?.branding?.colors?.color1 || "#111"}">
+                    </span>
+
+                    <span>
+                        ${homeTeam?.name?.short || game.homeTeam}
+
+                        ${isFinal ? `
+                            <span class="team-score">${homeScore}</span>
+                        ` : ""}
+                    </span>
                 </span>
             `;
 
@@ -420,6 +599,106 @@ function renderSavedGamesList() {
     });
 }
 
+function renderSeasonDatePicker() {
+    const seasonInfo = getSelectedSeasonInfo();
+
+    seasonDateCalendarGrid.innerHTML = "";
+
+    if (!seasonInfo?.startDate || !seasonInfo?.endDate) {
+        seasonDatePickerTitle.textContent = "Season Dates";
+        selectedDateLabel.textContent = "This season does not have start/end dates yet.";
+        return;
+    }
+
+    seasonDatePickerTitle.textContent =
+        `${seasonInfo.seasonId} Season Dates`;
+
+    if (!SELECTED_GAME_DATE) {
+        SELECTED_GAME_DATE = seasonInfo.startDate;
+        gameDateInput.value = SELECTED_GAME_DATE;
+    }
+
+    selectedDateLabel.textContent =
+        `Selected date: ${SELECTED_GAME_DATE}`;
+
+    const dates = getDateRange(seasonInfo.startDate, seasonInfo.endDate);
+
+    const datesByMonth = dates.reduce((grouped, dateString) => {
+        const monthKey = dateString.slice(0, 7);
+
+        if (!grouped[monthKey]) {
+            grouped[monthKey] = [];
+        }
+
+        grouped[monthKey].push(dateString);
+
+        return grouped;
+    }, {});
+
+    Object.entries(datesByMonth).forEach(([monthKey, monthDates]) => {
+        const monthEl = document.createElement("div");
+        monthEl.className = "season-month-block";
+
+        monthEl.innerHTML = `
+            <h3>${getMonthLabel(monthDates[0])}</h3>
+            <div class="season-date-grid"></div>
+        `;
+
+        const dateGrid = monthEl.querySelector(".season-date-grid");
+
+        monthDates.forEach(dateString => {
+            const date = parseDateLocal(dateString);
+
+            const button = document.createElement("button");
+            button.type = "button";
+            button.className = "season-date-btn";
+            button.textContent = date.getDate();
+
+            if (dateString === SELECTED_GAME_DATE) {
+                button.classList.add("selected");
+            }
+
+            button.addEventListener("click", () => {
+                SELECTED_GAME_DATE = dateString;
+                gameDateInput.value = dateString;
+                renderSeasonDatePicker();
+            });
+
+            dateGrid.appendChild(button);
+        });
+
+        seasonDateCalendarGrid.appendChild(monthEl);
+    });
+}
+
+function moveSelectedDate(direction) {
+    const seasonInfo = getSelectedSeasonInfo();
+
+    if (!seasonInfo?.startDate || !seasonInfo?.endDate) {
+        return;
+    }
+
+    const currentDate = SELECTED_GAME_DATE || seasonInfo.startDate;
+    const nextDate = addDays(currentDate, direction);
+
+    if (nextDate < seasonInfo.startDate || nextDate > seasonInfo.endDate) {
+        return;
+    }
+
+    SELECTED_GAME_DATE = nextDate;
+    gameDateInput.value = nextDate;
+
+    renderSeasonDatePicker();
+}
+
+prevDateBtn.addEventListener("click", () => {
+    moveSelectedDate(-1);
+});
+
+nextDateBtn.addEventListener("click", () => {
+    moveSelectedDate(1);
+});
+
 function createEmptyMatchupRow(index) {
     return {
         rowId: `row_${index}`,
@@ -427,8 +706,15 @@ function createEmptyMatchupRow(index) {
         homeTeam: null,
         gameType: "regular-season",
         status: "scheduled",
+        awayScore: "",
+        homeScore: "",
         entryIds: []
     };
+}
+
+function generateRetroMatchupRows() {
+    CURRENT_ENTRY_MODE = "retro-final";
+    generateMatchupRows();
 }
 
 function generateMatchupRows() {
@@ -447,7 +733,12 @@ function generateMatchupRows() {
     renderMatchupRows();
 }
 
-generateGameRowsBtn.addEventListener("click", generateMatchupRows);
+generateGameRowsBtn.addEventListener("click", () => {
+    CURRENT_ENTRY_MODE = "schedule-only";
+    generateMatchupRows();
+});
+
+generateRetroGameRowsBtn.addEventListener("click", generateRetroMatchupRows);
 
 function renderMatchupRows() {
     matchupRowsContainer.innerHTML = "";
@@ -470,7 +761,7 @@ function renderMatchupRows() {
                 Game Type
                     <select data-row-id="${row.rowId}" data-field="gameType">
                         <option value="regular-season">Regular Season</option>
-                        <option value="playoffs">Pre Season</option>
+                        <option value="preseason">Preseason</option>
                         <option value="commissioners-cup">Commissioner's Cup</option>
                         <option value="all-star-game">All-Star Game</option>
                         <option value="postseason">Postseason</option>
@@ -492,6 +783,30 @@ function renderMatchupRows() {
                     <strong>${getTeamShortName(row.homeTeam)}</strong>
                 </div>
             </div>
+
+            ${CURRENT_ENTRY_MODE === "retro-final" ? `
+                <div class="retro-score-grid">
+                    <label>
+                        Away Score
+                        <input
+                            type="number"
+                            min="0"
+                            data-row-id="${row.rowId}"
+                            data-field="awayScore"
+                            value="${row.awayScore}">
+                    </label>
+
+                    <label>
+                        Home Score
+                        <input
+                            type="number"
+                            min="0"
+                            data-row-id="${row.rowId}"
+                            data-field="homeScore"
+                            value="${row.homeScore}">
+                    </label>
+                </div>
+            ` : ""}
 
             <div class="team-picker-wide" data-row-id="${row.rowId}"></div>
 
@@ -677,7 +992,6 @@ function goBackToCalendar() {
         `../../season-calendar.html?season=${seasonId}`;
 }
 
-
 async function saveAllMatchupRows() {
     const date = gameDateInput.value;
 
@@ -701,6 +1015,13 @@ async function saveAllMatchupRows() {
             statusMessage.textContent = "Away team and home team cannot be the same.";
             return;
         }
+
+        if (CURRENT_ENTRY_MODE === "retro-final") {
+            if (row.awayScore === "" || row.homeScore === "") {
+                statusMessage.textContent = "Retroactive rows need both final scores.";
+                return;
+            }
+        }
     }
 
     try {
@@ -721,15 +1042,11 @@ async function saveAllMatchupRows() {
                 throw new Error(result.error || "Save failed");
             }
 
-            if (!GAMEDAY_CALENDAR_DATA.seasons[gameRecord.seasonId]) {
-                GAMEDAY_CALENDAR_DATA.seasons[gameRecord.seasonId] = {
-                    season: gameRecord.season,
-                    seasonId: gameRecord.seasonId,
-                    games: {}
-                };
+            if (!GAMEDAY_CALENDAR_DATA.games) {
+                GAMEDAY_CALENDAR_DATA.games = {};
             }
 
-            GAMEDAY_CALENDAR_DATA.seasons[gameRecord.seasonId].games[gameRecord.gameId] = gameRecord;
+            GAMEDAY_CALENDAR_DATA.games[gameRecord.gameId] = gameRecord;
         }
 
         CURRENT_MATCHUP_ROWS = [];
@@ -753,21 +1070,77 @@ function buildGameRecordFromRow(row) {
         homeTeam: row.homeTeam
     });
 
-    return {
+    const gameType = row.gameType || "regular-season";
+    const gameTypeMeta = getGameTypeMeta(gameType);
+
+    const awayScore = row.awayScore === "" ? null : Number(row.awayScore);
+    const homeScore = row.homeScore === "" ? null : Number(row.homeScore);
+
+    const hasFinalScore =
+        awayScore !== null &&
+        homeScore !== null;
+
+    const gameRecord = {
         gameId,
         season,
         seasonId,
         date,
         awayTeam: row.awayTeam,
         homeTeam: row.homeTeam,
-        gameType: row.gameType || "regular-season",
-        status: "scheduled",
+        gameType,
+        specialGame: {
+            label: gameTypeMeta.label,
+            countsTowardRegularSeason: gameTypeMeta.countsTowardRegularSeason,
+            isNeutralSite: gameTypeMeta.isNeutralSite
+        },
+        status: hasFinalScore ? "final" : "scheduled",
+        links: [],
+        notes: "",
         entryIds: row.entryIds || []
     };
+
+    if (hasFinalScore) {
+        gameRecord.score = {
+            awayScore,
+            homeScore,
+            winner: getWinnerFromScoreForTeams(
+                awayScore,
+                homeScore,
+                row.awayTeam,
+                row.homeTeam
+            ),
+            isFinal: true
+        };
+    }
+
+    return gameRecord;
 }
 
-seasonSelect.addEventListener("change", () => {
-    renderSeasonForm(seasonSelect.value);
+function getWinnerFromScoreForTeams(awayScore, homeScore, awayTeam, homeTeam) {
+    if (awayScore === null || homeScore === null) {
+        return null;
+    }
+
+    if (awayScore > homeScore) {
+        return awayTeam;
+    }
+
+    if (homeScore > awayScore) {
+        return homeTeam;
+    }
+
+    return null;
+}
+
+seasonSelect.addEventListener("change", async () => {
+    const seasonInfo = getSelectedSeasonInfo();
+
+    SELECTED_GAME_DATE = seasonInfo?.startDate || "";
+    gameDateInput.value = SELECTED_GAME_DATE;
+
+    await loadCalendarForSeason(seasonSelect.value);
+
+    renderSeasonDatePicker();
     renderSavedGamesList();
 });
 

@@ -1,5 +1,377 @@
 {
   "seasons": {
+    "2023": {
+      "season": 2023,
+      "seasonId": "2023",
+      "awards": {
+        "2023_dawnstaleycommunityleadershipaward": {
+          "awardId": "2023_dawnstaleycommunityleadershipaward",
+          "season": 2023,
+          "seasonId": "2023",
+          "awardKey": "dawnstaleycommunityleadershipaward",
+          "awardName": "Dawn Staley Community Leadership Award",
+          "recipient": {
+            "playerId": "kelsey_mitchell",
+            "playerName": "Kelsey Mitchell",
+            "teamCode": "IND_FEVER"
+          },
+          "notes": "",
+          "links": [],
+          "entryIds": []
+        },
+        "2023_kim_perrot_sportsmanship": {
+          "awardId": "2023_kim_perrot_sportsmanship",
+          "season": 2023,
+          "seasonId": "2023",
+          "awardKey": "kim_perrot_sportsmanship",
+          "awardName": "Kim Perrot Sportsmanship Award",
+          "recipient": {
+            "playerId": "elizabeth_williams",
+            "playerName": "Elizabeth Williams",
+            "teamCode": "CHI_SKY"
+          },
+          "notes": "",
+          "links": [],
+          "entryIds": []
+        },
+        "2023_roy": {
+          "awardId": "2023_roy",
+          "season": 2023,
+          "seasonId": "2023",
+          "awardKey": "roy",
+          "awardName": "Rookie of the Year",
+          "recipient": {
+            "playerId": "aliyah_boston",
+            "playerName": "Aliyah Boston",
+            "teamCode": "IND_FEVER"
+          },
+          "notes": "",
+          "links": [],
+          "entryIds": []
+        },
+        "2023_sixth_player": {
+          "awardId": "2023_sixth_player",
+          "season": 2023,
+          "seasonId": "2023",
+          "awardKey": "sixth_player",
+          "awardName": "Sixth Player of the Year",
+          "recipient": {
+            "playerId": "alysha_clark",
+            "playerName": "Alysha Clark",
+            "teamCode": "LVA_ACES"
+          },
+          "notes": "",
+          "links": [],
+          "entryIds": []
+        },
+        "2023_peakperformerdishandassist": {
+          "awardId": "2023_peakperformerdishandassist",
+          "season": 2023,
+          "seasonId": "2023",
+          "awardKey": "peakperformerdishandassist",
+          "awardName": "TOP DISTRIBUTOR",
+          "recipient": {
+            "playerId": "courtney_vandersloot",
+            "playerName": "Courtney Vandersloot",
+            "teamCode": "NYL_LIBERTY"
+          },
+          "notes": "",
+          "links": [],
+          "entryIds": []
+        },
+        "2023_peakperformerrebounding": {
+          "awardId": "2023_peakperformerrebounding",
+          "season": 2023,
+          "seasonId": "2023",
+          "awardKey": "peakperformerrebounding",
+          "awardName": "TOP REBOUNDER",
+          "recipient": {
+            "playerId": "alyssa_thomas",
+            "playerName": "Alyssa Thomas",
+            "teamCode": "CON_SUN"
+          },
+          "notes": "",
+          "links": [],
+          "entryIds": []
+        },
+        "2023_peakperformerscoring": {
+          "awardId": "2023_peakperformerscoring",
+          "season": 2023,
+          "seasonId": "2023",
+          "awardKey": "peakperformerscoring",
+          "awardName": "TOP SCORER",
+          "recipient": {
+            "playerId": "jewell_loyd",
+            "playerName": "Jewell Loyd",
+            "teamCode": "SEA_STORM"
+          },
+          "notes": "",
+          "links": [],
+          "entryIds": []
+        },
+        "2023_mip": {
+          "awardId": "2023_mip",
+          "season": 2023,
+          "seasonId": "2023",
+          "awardKey": "mip",
+          "awardName": "Most Improved Player",
+          "recipient": {
+            "playerId": "satou_sabally",
+            "playerName": "Satou Sabally",
+            "teamCode": "DAL_WINGS"
+          },
+          "notes": "",
+          "links": [],
+          "entryIds": []
+        },
+        "2023_dpoy": {
+          "awardId": "2023_dpoy",
+          "season": 2023,
+          "seasonId": "2023",
+          "awardKey": "dpoy",
+          "awardName": "Defensive Player of the Year",
+          "recipient": {
+            "playerId": "aja_wilson",
+            "playerName": "A'ja Wilson",
+            "teamCode": "LVA_ACES"
+          },
+          "notes": "",
+          "links": [],
+          "entryIds": []
+        },
+        "2023_topdraftpick": {
+          "awardId": "2023_topdraftpick",
+          "season": 2023,
+          "seasonId": "2023",
+          "awardKey": "topdraftpick",
+          "awardName": "Top draft pick",
+          "recipient": {
+            "playerId": "aliyah_boston",
+            "playerName": "Aliyah Boston",
+            "teamCode": "IND_FEVER"
+          },
+          "notes": "",
+          "links": [],
+          "entryIds": []
+        },
+        "2023_topscorer": {
+          "awardId": "2023_topscorer",
+          "season": 2023,
+          "seasonId": "2023",
+          "awardKey": "topscorer",
+          "awardName": "Top Scorer",
+          "recipient": {
+            "playerId": "jewell_loyd",
+            "playerName": "Jewell Loyd",
+            "teamCode": "SEA_STORM"
+          },
+          "notes": "",
+          "links": [],
+          "entryIds": []
+        },
+        "2023_mvp": {
+          "awardId": "2023_mvp",
+          "season": 2023,
+          "seasonId": "2023",
+          "awardKey": "mvp",
+          "awardName": "Most Valuable Player",
+          "recipient": {
+            "playerId": "breanna_stewart",
+            "playerName": "Breanna Stewart",
+            "teamCode": "NYL_LIBERTY"
+          },
+          "notes": "",
+          "links": [],
+          "entryIds": []
+        }
+      }
+    },
+    "2024": {
+      "season": 2024,
+      "seasonId": "2024",
+      "awards": {
+        "2024_mvp": {
+          "awardId": "2024_mvp",
+          "season": 2024,
+          "seasonId": "2024",
+          "awardKey": "mvp",
+          "awardName": "Most Valuable Player",
+          "recipient": {
+            "playerId": "aja_wilson",
+            "playerName": "A'ja Wilson",
+            "teamCode": "LVA_ACES"
+          },
+          "notes": "",
+          "links": [],
+          "entryIds": []
+        },
+        "2024_topscorer": {
+          "awardId": "2024_topscorer",
+          "season": 2024,
+          "seasonId": "2024",
+          "awardKey": "topscorer",
+          "awardName": "Top Scorer",
+          "recipient": {
+            "playerId": "aja_wilson",
+            "playerName": "A'ja Wilson",
+            "teamCode": "LVA_ACES"
+          },
+          "notes": "",
+          "links": [],
+          "entryIds": []
+        },
+        "2024_topdraftpick": {
+          "awardId": "2024_topdraftpick",
+          "season": 2024,
+          "seasonId": "2024",
+          "awardKey": "topdraftpick",
+          "awardName": "Top draft pick",
+          "recipient": {
+            "playerId": "caitlin_clark",
+            "playerName": "Caitlin Clark",
+            "teamCode": "IND_FEVER"
+          },
+          "notes": "",
+          "links": [],
+          "entryIds": []
+        },
+        "2024_dpoy": {
+          "awardId": "2024_dpoy",
+          "season": 2024,
+          "seasonId": "2024",
+          "awardKey": "dpoy",
+          "awardName": "Defensive Player of the Year",
+          "recipient": {
+            "playerId": "napheesa_collier",
+            "playerName": "Napheesa Collier",
+            "teamCode": "MIN_LYNX"
+          },
+          "notes": "",
+          "links": [],
+          "entryIds": []
+        },
+        "2024_mip": {
+          "awardId": "2024_mip",
+          "season": 2024,
+          "seasonId": "2024",
+          "awardKey": "mip",
+          "awardName": "Most Improved Player",
+          "recipient": {
+            "playerId": "dijonai_carrington",
+            "playerName": "Dijonai Carrington",
+            "teamCode": "CON_SUN"
+          },
+          "notes": "",
+          "links": [],
+          "entryIds": []
+        },
+        "2024_peakperformerscoring": {
+          "awardId": "2024_peakperformerscoring",
+          "season": 2024,
+          "seasonId": "2024",
+          "awardKey": "peakperformerscoring",
+          "awardName": "TOP SCORER",
+          "recipient": {
+            "playerId": "aja_wilson",
+            "playerName": "A'ja Wilson",
+            "teamCode": "LVA_ACES"
+          },
+          "notes": "",
+          "links": [],
+          "entryIds": []
+        },
+        "2024_peakperformerrebounding": {
+          "awardId": "2024_peakperformerrebounding",
+          "season": 2024,
+          "seasonId": "2024",
+          "awardKey": "peakperformerrebounding",
+          "awardName": "TOP REBOUNDER",
+          "recipient": {
+            "playerId": "angel_reese",
+            "playerName": "Angel Reese",
+            "teamCode": "CHI_SKY"
+          },
+          "notes": "",
+          "links": [],
+          "entryIds": []
+        },
+        "2024_peakperformerdishandassist": {
+          "awardId": "2024_peakperformerdishandassist",
+          "season": 2024,
+          "seasonId": "2024",
+          "awardKey": "peakperformerdishandassist",
+          "awardName": "TOP DISTRIBUTOR",
+          "recipient": {
+            "playerId": "caitlin_clark",
+            "playerName": "Caitlin Clark",
+            "teamCode": "IND_FEVER"
+          },
+          "notes": "",
+          "links": [],
+          "entryIds": []
+        },
+        "2024_sixth_player": {
+          "awardId": "2024_sixth_player",
+          "season": 2024,
+          "seasonId": "2024",
+          "awardKey": "sixth_player",
+          "awardName": "Sixth Player of the Year",
+          "recipient": {
+            "playerId": "tiffany_hayes",
+            "playerName": "Tiffany Hayes",
+            "teamCode": "LVA_ACES"
+          },
+          "notes": "",
+          "links": [],
+          "entryIds": []
+        },
+        "2024_roy": {
+          "awardId": "2024_roy",
+          "season": 2024,
+          "seasonId": "2024",
+          "awardKey": "roy",
+          "awardName": "Rookie of the Year",
+          "recipient": {
+            "playerId": "caitlin_clark",
+            "playerName": "Caitlin Clark",
+            "teamCode": "IND_FEVER"
+          },
+          "notes": "",
+          "links": [],
+          "entryIds": []
+        },
+        "2024_kim_perrot_sportsmanship": {
+          "awardId": "2024_kim_perrot_sportsmanship",
+          "season": 2024,
+          "seasonId": "2024",
+          "awardKey": "kim_perrot_sportsmanship",
+          "awardName": "Kim Perrot Sportsmanship Award",
+          "recipient": {
+            "playerId": "dearica_hamby",
+            "playerName": "Dearica Hamby",
+            "teamCode": "LOS_SPARKS"
+          },
+          "notes": "",
+          "links": [],
+          "entryIds": []
+        },
+        "2024_dawnstaleycommunityleadershipaward": {
+          "awardId": "2024_dawnstaleycommunityleadershipaward",
+          "season": 2024,
+          "seasonId": "2024",
+          "awardKey": "dawnstaleycommunityleadershipaward",
+          "awardName": "Dawn Staley Community Leadership Award",
+          "recipient": {
+            "playerId": "aja_wilson",
+            "playerName": "A'ja Wilson",
+            "teamCode": "LVA_ACES"
+          },
+          "notes": "",
+          "links": [],
+          "entryIds": []
+        }
+      }
+    },
     "2025": {
       "season": 2025,
       "seasonId": "2025",

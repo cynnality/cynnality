@@ -9,10 +9,21 @@ body {
     color: #111;
 }
 
-.tool-shell {
-    max-width: 900px;
+.tool-shell { 
     margin: 0 auto;
     padding: 32px;
+}
+
+.top-shell {
+    display: flex;
+    align-items: flex-start;
+}
+
+.corner-call {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    width: 690px;
 }
 
 .tool-header {
@@ -32,8 +43,8 @@ h1 {
 
 .panel {
     background: white;
-    border: 1px solid #ddd;
-    border-radius: 14px;
+    border: 2px solid #000000;
+    border-radius: 6px;
     padding: 24px;
 }
 
@@ -75,6 +86,10 @@ button {
     color: white;
     font-weight: 700;
     cursor: pointer;
+}
+
+#seasonSelectPanel {
+    width: 300px;
 }
 
 .status-message {
@@ -411,4 +426,145 @@ button {
 .game-nav button {
     flex: 1;
     padding: 8px 12px;
+}
+
+.game-type-chip {
+    display: inline-flex;
+    align-items: center;
+    padding: 4px 8px;
+    border: 1px solid #111;
+    border-radius: 999px;
+    background: #f1f1f1;
+    font-size: 11px;
+    font-weight: 900;
+    text-transform: uppercase;
+}
+
+.retro-score-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 12px;
+    margin: 14px 0;
+    padding: 12px;
+    border: 2px dashed #111;
+    border-radius: 12px;
+    background: #f8f8f8;
+}
+
+.final-game-indicator {
+    font-size: 11px;
+    font-weight: 900;
+    text-transform: uppercase;
+}
+
+.winner-team-chip {
+    transform: scale(1.08);
+    font-weight: 900;
+}
+
+.team-score {
+    display: block;
+    font-size: 13px;
+    font-weight: 900;
+}
+
+#gameDateInput {
+    display: none;
+}
+
+.season-date-picker-panel {
+    margin-bottom: 20px;
+}
+
+.season-date-picker-header {
+    display: flex;
+    justify-content: space-between;
+    gap: 16px;
+    align-items: flex-start;
+}
+
+.date-nav-buttons {
+    display: flex;
+    gap: 8px;
+    flex-wrap: wrap;
+}
+
+.season-date-calendar-grid {
+    display: grid;
+    gap: 16px;
+    margin-top: 18px;
+}
+
+.season-month-block {
+    border: 2px solid #111;
+    border-radius: 4px;
+    padding: 12px;
+    background: #fafafa;
+    width: fit-content;
+}
+
+.season-month-block h3 {
+    margin: 0 0 10px;
+    font-size: 14px;
+    text-transform: uppercase;
+}
+
+.season-date-grid {
+    display: grid;
+    grid-template-columns: repeat(7, minmax(10px, 80px));
+    gap: 6px;
+    width: fit-content;
+}
+
+.season-date-btn {
+    margin: 0;
+    padding: 8px 0;
+    border-radius: 8px;
+    background: white;
+    color: #111;
+    border: 1px solid #111;
+    box-shadow: none;
+    width: 80px;
+}
+
+.season-date-btn.selected {
+    background: #111;
+    color: white;
+}
+
+.schedule-game-item.is-final {
+    border-color: #111;
+    background: #f7f7f7;
+}
+
+.final-game-indicator {
+    display: inline-flex;
+    align-items: center;
+    padding: 4px 7px;
+    border: 1px solid #111;
+    border-radius: 999px;
+    background: #111;
+    color: white;
+    font-size: 10px;
+    font-weight: 900;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+}
+
+.winner-team-chip {
+    transform: scale(1.06);
+}
+
+.winner-team-box {
+    width: 18px;
+    height: 18px;
+    border-width: 2px;
+}
+
+.team-score {
+    display: block;
+    margin-top: 2px;
+    font-size: 13px;
+    font-weight: 900;
+    line-height: 1;
 }
