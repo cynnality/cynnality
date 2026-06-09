@@ -49,6 +49,25 @@
       "styleFile": "posts/post data/styles/tester/does_this_work.css",
       "createdAt": "",
       "updatedAt": "2026-06-06T03:38:37.602Z"
+    },
+    "an_update_of_sorts": {
+      "postId": "an_update_of_sorts",
+      "title": "An Update... of sorts",
+      "slug": "an-update-of-sorts",
+      "page": "basketball",
+      "status": "draft",
+      "tags": [
+        "personal",
+        "basketball",
+        "tracking",
+        "documenting",
+        "update"
+      ],
+      "contentType": "markdown-html",
+      "contentFile": "posts/post data/text/basketball/an_update_of_sorts.md",
+      "styleFile": "posts/post data/styles/basketball/an_update_of_sorts.css",
+      "createdAt": "",
+      "updatedAt": "2026-06-09T05:40:02.637Z"
     }
   }
 }
