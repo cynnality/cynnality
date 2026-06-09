@@ -1,7 +1,7 @@
 // WNBA Season Hub Viewer
 // These paths assume this HTML/CSS/JS file is a direct child of your main project folder.
 
-const DATA_PATHS = {
+const DATA_PATHS = { 
     seasonInfo: "basketball_101_data_files/wnba_season_general_info_data.json",
     teams: "basketball_101_data_files/wnba_static_data_v2.json",
     teamHistory: "basketball_101_data_files/wnba_teams_history.json",
@@ -37,8 +37,6 @@ const els = {
     statusMessage: document.getElementById("statusMessage"),
     seasonHero: document.getElementById("seasonHero"),
     seasonPanels: document.getElementById("seasonPanels"),
-    seasonEditorLink: document.getElementById("seasonEditorLink"),
-    calendarEditorLink: document.getElementById("calendarEditorLink")
 };
 
 async function loadJson(path, options = {}) {
@@ -137,28 +135,27 @@ function buildSeasonRail() {
         const record = getSeasonRecord(season);
         const flags = record?.flags || {};
 
-        const button = document.createElement("button");
-        button.type = "button";
-        button.className = "season-cell";
-        button.dataset.season = season;
+        const wrap = document.createElement("div");
+        wrap.className = "season-cell-wrap";
+        wrap.dataset.season = season;
 
-        if (record) {
-            button.classList.add("has-data");
-        }
+        if (record) wrap.classList.add("has-data");
 
-        button.innerHTML = `
-            <span class="season-year">${season}</span>
-            <span class="season-node"></span>
-            <span class="season-markers">
+        wrap.innerHTML = `
+            <button type="button" class="season-cell" aria-label="View ${season} season">
+                <span class="season-year">${season}</span>
+            </button>
+
+            <div class="season-markers">
                 ${getSeasonMarkers(flags)}
-            </span>
+            </div>
         `;
 
-        button.addEventListener("click", () => {
+        wrap.querySelector(".season-cell").addEventListener("click", () => {
             setSelectedSeason(season);
         });
 
-        els.seasonRail.appendChild(button);
+        els.seasonRail.appendChild(wrap);
     }
 
     updateSeasonRailActiveState();
@@ -193,10 +190,12 @@ async function loadGamedayForSeason(seasonId) {
 function updateSeasonRailActiveState() {
     if (!els.seasonRail) return;
 
-    els.seasonRail.querySelectorAll(".season-cell").forEach(button => {
-        const isActive = button.dataset.season === String(state.selectedSeason);
+    els.seasonRail.querySelectorAll(".season-cell-wrap").forEach(wrap => {
+        const isActive = wrap.dataset.season === String(state.selectedSeason);
 
-        button.classList.toggle("selected", isActive);
+        wrap.classList.toggle("selected", isActive);
+
+        const button = wrap.querySelector(".season-cell");
         button.setAttribute("aria-pressed", isActive ? "true" : "false");
     });
 }
@@ -244,7 +243,6 @@ function renderSelectedSeason() {
     }
 
     updateSeasonRailActiveState();
-    updateEditorLinks(seasonRecord);
     renderHero(seasonRecord);
     renderPanels(seasonRecord);
     bindEntryModalButtons();
@@ -263,12 +261,6 @@ function bindEntryModalButtons() {
             EntriesRenderer.openEntryModal(entry);
         });
     });
-}
-
-function updateEditorLinks(seasonRecord) {
-    const season = encodeURIComponent(seasonRecord.seasonId || seasonRecord.season);
-    els.seasonEditorLink.href = `${TOOL_PATHS.seasonGeneralInfo}?season=${season}`;
-    els.calendarEditorLink.href = `${TOOL_PATHS.seasonCalendar}?season=${season}`;
 }
 
 function getSeasonRecord(season) {
@@ -299,34 +291,24 @@ function formatDate(value) {
 }
 
 function renderHero(seasonRecord) {
-    const flags = seasonRecord.flags || {};
-    const activeFlagCount = Object.values(flags).filter(Boolean).length;
     const awardsCount = getAwardsForSeason(seasonRecord).length;
     const draftsCount = getDraftsForSeason(seasonRecord).length;
     const gamesCount = getGamesForSeason(seasonRecord).length;
 
     els.seasonHero.innerHTML = `
-        <div class="hero-title-row">
-            <h2>${seasonRecord.season} Season</h2>
-            <span class="chip">${activeFlagCount} active season flags</span>
-        </div>
-
-        <div class="stat-grid">
-            <div class="stat-group">
-                ${statCard("Start", formatDate(seasonRecord.startDate))}
-                ${statCard("End", formatDate(seasonRecord.endDate))}
+        <div class="compact-hero">
+            <div>
+                <p class="mini-label">Selected Season</p>
+                <h2>${seasonRecord.season}</h2>
             </div>
-            <div class="stat-group">
+
+            <div class="compact-stat-row">
+                ${statCard("Dates", `${formatDate(seasonRecord.startDate)} → ${formatDate(seasonRecord.endDate)}`)}
+                ${statCard("Teams", seasonRecord.numTeams ?? "—")}
+                ${statCard("Games", seasonRecord.regularSeasonGamesPerTeam ?? seasonRecord.regularSeasonGames ?? "—")}
+                ${statCard("Saved", gamesCount)}
                 ${statCard("Awards", awardsCount)}
                 ${statCard("Drafts", draftsCount)}
-            </div>
-            <div class="stat-group">
-                ${statCard("Teams", seasonRecord.numTeams ?? "—")}
-                ${statCard("Games per Team", seasonRecord.regularSeasonGamesPerTeam ?? seasonRecord.regularSeasonGames ?? "—")}
-            </div>
-            <div class="stat-group">
-                ${statCard("Saved Games", gamesCount)}
-                ${statCard("Team Slots", seasonRecord.regularSeasonTeamGameSlots ?? "—")}
             </div>
         </div>
     `;
@@ -383,15 +365,6 @@ function renderSeasonOverview(seasonRecord) {
         <div class="nested-stack">
 
             ${nestedPanel("Season Flags", `<div class="chip-list">${flagChips || "No flags found."}</div>`, true)}
-
-            ${nestedPanel("Details", `
-                <div class="item-card">
-                    ${metaRow("Season ID", seasonRecord.seasonId)}
-                    ${metaRow("Regular season team game slots", seasonRecord.regularSeasonTeamGameSlots ?? "—")}
-                    ${metaRow("Special season type", seasonRecord.specialSeasonType || "none")}
-                    ${metaRow("CBA season", seasonRecord.flags?.isCbaSeason ? "yes" : "no")}
-                </div>
-            `, true)}
 
             ${nestedPanel("Notes + Links", `
                 <div class="item-list">

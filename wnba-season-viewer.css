@@ -1,6 +1,6 @@
 * { box-sizing: border-box; }
 
-body {
+body { 
     margin: 0;
     background: #f5f1ea;
     color: #111;
@@ -38,19 +38,92 @@ h1 {
 
 .lede { max-width: 900px; margin-bottom: 0; }
 
-.control-panel,
-.season-hero,
+.season-panels {
+    position: relative;
+    padding-left: 28px;
+}
+
+.season-panels::before {
+    content: "";
+    position: absolute;
+    left: 12px;
+    top: 0;
+    bottom: 0;
+    width: 2px;
+    background: #111;
+}
+
 details.viewer-panel {
+    position: relative;
+    max-width: none;
+    width: 100%;
     border: 2px solid #111;
     background: #fff;
     margin-bottom: 18px;
 }
 
+details.viewer-panel::before {
+    content: "";
+    position: absolute;
+    left: -16px;
+    top: 24px;
+    width: 16px;
+    height: 2px;
+    background: #111;
+}
+
+details.nested-panel {
+    max-width: none;
+    width: 100%;
+    border: 2px solid #111;
+    background: #fbfbfb;
+}
+
+.season-hero {
+    position: relative;
+    padding: 10px 14px;
+    margin-top: 26px;
+    margin-bottom: 18px;
+    border: 2px solid #111;
+    background: #fff;
+}
+
+.season-hero::before {
+    content: "";
+    position: absolute;
+    top: -28px;
+    left: 28px;
+    width: 2px;
+    height: 28px;
+    background: #111;
+}
+
+.compact-hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 18px;
+    flex-wrap: wrap;
+}
+
+.compact-hero h2 {
+    margin: 0;
+    font-size: 28px;
+    line-height: 1;
+}
+
+.compact-stat-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
 .control-panel {
-    display: grid;
-    align-items: end;
-    gap: 6px;
-    padding: 16px;
+    position: relative;
+    border: 0;
+    background: transparent;
+    padding: 0;
+    margin-bottom: 14px;
 }
 
 .season-rail-wrap {
@@ -87,41 +160,52 @@ details.viewer-panel {
 }
 
 .season-rail {
-    display: flex;
-    gap: 8px;
-    overflow-x: auto;
-    padding: 10px 4px 14px;
-    border-bottom: 2px solid #111;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(54px, 1fr));
+    gap: 10px;
+    overflow: visible;
+    padding: 14px;
+    border: 2px solid #111;
+    background: #fff;
+}
+
+.season-cell-wrap {
+    position: relative;
+    display: grid;
+    justify-items: center;
+    gap: 5px;
 }
 
 .season-cell {
-    position: relative;
-    width: 48px;
-    height: 88px;
-    /*! min-width: 58px; */
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    height: auto;
     border: 2px solid #111;
     background: #fff;
     cursor: pointer;
-    text-align: center;
     padding: 0;
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    place-items: center;
+}
+
+.season-cell-wrap.selected .season-cell {
+    background: #111;
+    color: #fff;
+    box-shadow: 3px 3px 0 #4a7c32;
+}
+
+.season-cell-wrap.selected::after {
+    content: "";
+    position: absolute;
+    top: calc(100% + 4px);
+    width: 2px;
+    height: 28px;
+    background: #111;
 }
 
 .season-cell:hover {
     transform: translate(1px, 1px);
     box-shadow: 1px 1px 0 #111;
-}
-
-.season-cell.selected::after {
-    content: "";
-    position: absolute;
-    left: 8px;
-    right: 8px;
-    bottom: 3px;
-    height: 4px;
-    background: #4a7c32;
-    border-radius: 999px;
 }
 
 .season-year {
@@ -130,41 +214,24 @@ details.viewer-panel {
     font-weight: 600;
 }
 
-.season-node {
-    content: "";
-    position: absolute;
-    left: 8px;
-    right: 8px;
-    top: 14px;
-    height: 3px;
-    border-radius: 999px;
-}
-
-.season-cell.has-data .season-node {
-    background: #111;
+.season-node,
+.season-cell::after,
+.season-cell.selected::after,
+.season-cell.active {
+    display: none;
 }
 
 .season-markers {
+    min-height: 16px;
     display: flex;
     justify-content: center;
     gap: 3px;
-    margin-top: 10px;
-    min-height: 13px;
-    flex-direction: column;
-    align-items: center;
 }
 
 .season-marker {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    width: 13px;
-    height: 13px;
-    border: 1px solid #111;
-    border-radius: 50%;
+    width: 14px;
+    height: 14px;
     font-size: 8px;
-    font-weight: 600;
-    line-height: 1;
 }
 
 .season-marker.expansion {
@@ -235,42 +302,6 @@ details.viewer-panel {
     background: #f3e2ff;
 }
 
-.season-cell:hover,
-.season-cell.active {
-    transform: translate(1px, 1px);
-    box-shadow: 0 0 0 #111;
-}
-
-.season-cell.active {
-    background: #111;
-    color: #fff;
-}
-
-.season-cell::after {
-    content: "";
-    position: absolute;
-    left: 6px;
-    right: 6px;
-    bottom: 4px;
-    height: 3px;
-    background: transparent;
-}
-
-.season-cell.has-relocation::after { background: #bd7b2f; }
-.season-cell.has-dispersal::after { background: #8f6bb8; }
-.season-cell.is-cba { border-style: dashed; }
-
-.season-cell-year {
-    display: block;
-}
-
-
-.control-actions {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 8px;
-}
-
 label {
     display: grid;
     gap: 6px;
@@ -294,31 +325,9 @@ select {
     text-align: right;
 }
 
-.season-hero { padding: 18px; }
-
-.hero-title-row {
-    display: flex;
-    align-items: baseline;
-    justify-content: space-between;
-    gap: 16px;
-    flex-wrap: wrap;
-    border-bottom: 2px solid #111;
-    padding-bottom: 12px;
-    margin-bottom: 12px;
-}
-
-.hero-title-row h2 { margin: 0; font-size: 34px; }
-
-.stat-grid {
-    display: grid;
-    grid-template-columns: repeat(4, minmax(0, 1fr));
-    gap: 10px;
-}
-
 .stat-card {
-    border: 2px solid #111;
-    background: #fafafa;
-    padding: 12px;
+    padding: 7px 9px;
+    min-width: auto;
 }
 
 .stat-label {
@@ -334,12 +343,6 @@ select {
     margin-top: 4px;
     font-size: 20px;
     font-weight: 600;
-}
-
-details.viewer-panel { 
-    padding: 0; 
-    max-width: 85%;
-
 }
 
 summary.panel-summary {
@@ -370,12 +373,6 @@ details[open] > summary.panel-summary::after { content: "−"; }
 }
 
 .nested-stack { display: grid; gap: 12px; }
-
-details.nested-panel {
-    border: 2px solid #111;
-    background: #fbfbfb;
-    max-width: 85%;
-}
 
 .nested-panel summary {
     cursor: pointer;
@@ -459,26 +456,6 @@ details.nested-panel {
 }
 
 .meta-row strong { text-transform: uppercase; font-size: 11px; }
-
-.small-link {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    border: 2px solid #111;
-    box-shadow: 2px 2px 0 #111;
-    background: #fff;
-    color: #111;
-    padding: 8px 10px;
-    text-decoration: none;
-    font-size: 12px;
-    font-weight: 600;
-    text-transform: uppercase;
-}
-
-.small-link:hover {
-    transform: translate(1px, 1px);
-    box-shadow: 0 0 0 #111;
-}
 
 .empty-state {
     border: 2px dashed #777;
@@ -681,5 +658,4 @@ details.nested-panel {
     .season-rail-header { align-items: start; }
     .season-rail { grid-template-columns: repeat(auto-fit, minmax(50px, 1fr)); max-height: 168px; }
     .status-message { text-align: left; }
-    .stat-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
 }
