@@ -1,15 +1,24 @@
 const DATA_PATHS = {
     awards: "../basketball_101_data_files/wnba_regular_season_awards_data.json",
     teams: "../basketball_101_data_files/wnba_static_data_v2.json",
-    entries: "../entries/entry data/wnba/wnba_entries_data.json"
-};
+    entries: "../entries/entry data/wnba/wnba_entries_data.json",
 
-const INPUT_TOOL_PATH =
-    "../input tools/regular-season-awards-input-tools/regular-season-awards-input-tool.html";
+    players: "../basketball_101_data_files/wnba_olympic_players_v2.json",
+    colleges: "../basketball_101_data_files/wnba_colleges.json",
+    overseasTeams: "../basketball_101_data_files/overseas_teams_data.json",
+    overseasLeagues: "../basketball_101_data_files/overseas_leagues_data.json",
+    unrivaledTeams: "../basketball_101_data_files/unrivaled_teams_data.json"
+};
 
 let AWARDS_DATA = { seasons: {} };
 let TEAMS = {};
 let ENTRIES = [];
+
+let PLAYERS = {};
+let COLLEGES = {};
+let OVERSEAS_TEAMS = {};
+let OVERSEAS_LEAGUES = {};
+let UNRIVALED_TEAMS = {};
 
 const seasonSelect = document.getElementById("seasonSelect");
 const seasonTitle = document.getElementById("seasonTitle");
@@ -63,18 +72,38 @@ function populateSeasonSelect() {
     }
 }
 
-function buildEditorUrl(award) {
-    const params = new URLSearchParams();
+function normalizePlayerRecord(playerId, playerRecord) {
+    if (!playerRecord) return null;
 
-    params.set("season", award.seasonId || "");
-    params.set("awardId", award.awardId || "");
-    params.set("awardKey", award.awardKey || "");
-    params.set("awardName", award.awardName || "");
-    params.set("recipientName", award.recipient?.playerName || "");
-    params.set("playerId", award.recipient?.playerId || "");
-    params.set("teamCode", award.recipient?.teamCode || "");
+    return {
+        playerId,
+        isQuickAdd: !!playerRecord?.dataStatus?.isQuickAdd || !!playerRecord?.playerData,
+        data: playerRecord.playerData || playerRecord
+    };
+}
 
-    return `${INPUT_TOOL_PATH}?${params.toString()}`;
+function openPlayerReceipt(playerId) {
+    if (!playerId) {
+        alert("No playerId found for this award recipient.");
+        return;
+    }
+
+    const normalizedPlayer = normalizePlayerRecord(playerId, PLAYERS[playerId]);
+
+    if (!normalizedPlayer?.data) {
+        alert(`No player record found for ${playerId}.`);
+        return;
+    }
+
+    PlayerReceiptRenderer.openPlayerModal({
+        playerId: normalizedPlayer.playerId,
+        player: normalizedPlayer.data,
+        teams: TEAMS,
+        colleges: COLLEGES,
+        overseasTeams: OVERSEAS_TEAMS,
+        overseasLeagues: OVERSEAS_LEAGUES,
+        unrivaledTeams: UNRIVALED_TEAMS
+    });
 }
 
 function renderAwards() {
@@ -146,7 +175,7 @@ function renderAwards() {
             }
 
             row.addEventListener("click", () => {
-                window.location.href = buildEditorUrl(award);
+                openPlayerReceipt(award.recipient?.playerId || "");
             });
 
             awardsGrid.appendChild(row);
@@ -163,6 +192,21 @@ async function init() {
 
     const entriesData = await loadJson(DATA_PATHS.entries, { entries: {} });
     ENTRIES = Object.values(entriesData.entries || {});
+
+    const playersData = await loadJson(DATA_PATHS.players, { players: {} });
+    PLAYERS = playersData.players || {};
+
+    const collegesData = await loadJson(DATA_PATHS.colleges, { colleges: {} });
+    COLLEGES = collegesData.colleges || collegesData || {};
+
+    const overseasTeamsData = await loadJson(DATA_PATHS.overseasTeams, { teams: {} });
+    OVERSEAS_TEAMS = overseasTeamsData.teams || overseasTeamsData.overseasTeams || {};
+
+    const overseasLeaguesData = await loadJson(DATA_PATHS.overseasLeagues, { leagues: {} });
+    OVERSEAS_LEAGUES = overseasLeaguesData.leagues || overseasLeaguesData.overseasLeagues || {};
+
+    const unrivaledTeamsData = await loadJson(DATA_PATHS.unrivaledTeams, { teams: {} });
+    UNRIVALED_TEAMS = unrivaledTeamsData.teams || unrivaledTeamsData.unrivaledTeams || {};
 
     populateSeasonSelect();
 

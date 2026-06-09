@@ -1,0 +1,95 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 24px;
+  font-family: "Chivo Mono", monospace;
+  background: #fff;
+  color: #111;
+}
+
+.page-shell {
+  max-width: 980px;
+  margin: 0 auto;
+}
+
+.page-header {
+  border: 3px solid #111;
+  padding: 14px;
+  margin-bottom: 14px;
+}
+
+.eyebrow {
+  margin: 0 0 4px;
+  text-transform: uppercase;
+  font-size: 0.75rem;
+  font-weight: 800;
+}
+
+h1 {
+  margin: 0;
+  text-transform: uppercase;
+  letter-spacing: -0.05em;
+}
+
+.page-header p:last-child {
+  margin-bottom: 0;
+}
+
+.summary-strip {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 14px;
+}
+
+.summary-strip div {
+  border: 2px solid #111;
+  padding: 8px 10px;
+  min-width: 150px;
+}
+
+.summary-strip strong {
+  display: block;
+  font-size: 1.35rem;
+}
+
+.summary-strip span {
+  font-size: 0.75rem;
+  text-transform: uppercase;
+}
+
+.championship-list {
+  display: grid;
+  gap: 8px;
+}
+
+.champ-card {
+  display: grid;
+  grid-template-columns: 72px 1fr;
+  gap: 12px;
+  border: 2px solid #111;
+  padding: 10px;
+}
+
+.year {
+  font-size: 1.3rem;
+  font-weight: 900;
+}
+
+.team-name {
+  font-weight: 900;
+  text-transform: uppercase;
+}
+
+.meta {
+  margin-top: 4px;
+  font-size: 0.8rem;
+  line-height: 1.4;
+}
+
+.empty {
+  border: 2px dashed #111;
+  padding: 14px;
+}

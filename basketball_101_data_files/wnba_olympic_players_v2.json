@@ -2888,101 +2888,211 @@
     },
     "paige_bueckers": {
       "playerId": "paige_bueckers",
-      "playerData": {
-        "playerName": "Paige Bueckers",
-        "teamUsaJersey": "",
-        "playerStatus": {
-          "isActive": false,
-          "hasNcaaChampionships": false,
-          "wasDraftDayTrade": false,
-          "hasWnbaChampionships": false,
-          "hasOverseasExperience": false,
-          "hasUnrivaledExperience": false,
-          "hasNationalTeamExperience": false,
-          "hasOlympicExperience": false
+      "playerName": "Paige Bueckers",
+      "teamUsaJersey": "",
+      "playerStatus": {
+        "isActive": true,
+        "hasNcaaChampionships": true,
+        "wasDraftDayTrade": false,
+        "hasWnbaChampionships": false,
+        "hasOverseasExperience": false,
+        "hasUnrivaledExperience": true,
+        "hasNationalTeamExperience": false,
+        "hasOlympicExperience": false
+      },
+      "careerDetails": {
+        "collegeCareer": {
+          "collegeId": "u_of_conn",
+          "startYear": "2020",
+          "endYear": "2025",
+          "ncaaChampionships": [
+            {
+              "year": "2025",
+              "collegeId": "u_of_conn"
+            }
+          ]
         },
-        "careerDetails": {
-          "collegeCareer": {
-            "collegeId": "",
-            "startYear": "",
-            "endYear": "",
-            "ncaaChampionships": []
-          },
-          "draftDetails": {
-            "year": "",
-            "pick": "",
-            "draftedBy": ""
-          },
-          "missedWnbaSeasons": [],
-          "overseasTeams": [],
-          "unrivaledTeams": [],
-          "teamUsaMedals": []
+        "draftDetails": {
+          "year": "2025",
+          "pick": "1",
+          "draftedBy": "DAL_WINGS"
         },
-        "image": {
-          "src": "/season30/connection-imgs/paige_bueckers_individual.jpg",
-          "alt": "Paige Bueckers",
-          "sourceLink": "https://www.si.com/wnba/wings/paige-bueckers-unrivaled-coach-delivers-highest-praise-dallas-wings-star-"
-        },
-        "images": [
+        "missedWnbaSeasons": [],
+        "overseasTeams": [],
+        "unrivaledTeams": [
           {
-            "src": "/season30/connection-imgs/paige_bueckers_individual.jpg",
-            "alt": "Paige Bueckers",
-            "sourceLink": "https://www.si.com/wnba/wings/paige-bueckers-unrivaled-coach-delivers-highest-praise-dallas-wings-star-"
+            "year": 2026,
+            "teamCode": "bc_breeze"
           }
         ],
-        "wnbaSeasons": [],
-        "wnbaTeams": [],
-        "championships": []
-      }
+        "teamUsaMedals": []
+      },
+      "image": {
+        "src": "/season-30/connection-imgs/paige_bueckers_individual.jpg",
+        "alt": "Paige Bueckers",
+        "sourceLink": "https://www.si.com/wnba/wings/paige-bueckers-unrivaled-coach-delivers-highest-praise-dallas-wings-star-"
+      },
+      "images": [
+        {
+          "src": "/season-30/connection-imgs/paige_bueckers_individual.jpg",
+          "alt": "Paige Bueckers",
+          "sourceLink": "https://www.si.com/wnba/wings/paige-bueckers-unrivaled-coach-delivers-highest-praise-dallas-wings-star-"
+        }
+      ],
+      "wnbaSeasons": [
+        {
+          "year": "2025",
+          "entries": [
+            {
+              "type": "team",
+              "teamCode": "DAL_WINGS"
+            }
+          ]
+        },
+        {
+          "year": "2026",
+          "entries": [
+            {
+              "type": "team",
+              "teamCode": "DAL_WINGS"
+            }
+          ]
+        }
+      ],
+      "wnbaTeams": [
+        {
+          "teamCode": "DAL_WINGS",
+          "startYear": "2025",
+          "endYear": "present"
+        }
+      ],
+      "championships": []
     },
     "angel_reese": {
       "playerId": "angel_reese",
-      "playerData": {
-        "playerName": "Angel Reese",
-        "teamUsaJersey": "",
-        "playerStatus": {
-          "isActive": false,
-          "hasNcaaChampionships": false,
-          "wasDraftDayTrade": false,
-          "hasWnbaChampionships": false,
-          "hasOverseasExperience": false,
-          "hasUnrivaledExperience": false,
-          "hasNationalTeamExperience": false,
-          "hasOlympicExperience": false
+      "playerName": "Angel Reese",
+      "teamUsaJersey": "",
+      "playerStatus": {
+        "isActive": true,
+        "hasNcaaChampionships": true,
+        "wasDraftDayTrade": false,
+        "hasWnbaChampionships": false,
+        "hasOverseasExperience": false,
+        "hasUnrivaledExperience": true,
+        "hasNationalTeamExperience": true,
+        "hasOlympicExperience": false
+      },
+      "careerDetails": {
+        "collegeCareer": {
+          "collegeId": "u_of_maryland",
+          "collegeName": "University of Maryland",
+          "startYear": "2020",
+          "endYear": "2024",
+          "ncaaChampionships": [
+            {
+              "year": "2023",
+              "collegeId": "louisiana_state_u",
+              "collegeName": "Louisiana State University"
+            }
+          ]
         },
-        "careerDetails": {
-          "collegeCareer": {
-            "collegeId": "",
-            "startYear": "",
-            "endYear": "",
-            "ncaaChampionships": []
-          },
-          "draftDetails": {
-            "year": "",
-            "pick": "",
-            "draftedBy": ""
-          },
-          "missedWnbaSeasons": [],
-          "overseasTeams": [],
-          "unrivaledTeams": [],
-          "teamUsaMedals": []
-        },
-        "image": {
-          "src": "/season30/connection-imgs/angel_reese_individual.webp",
-          "alt": "Angel Reese",
-          "sourceLink": "https://chicago.suntimes.com/chicago-sky/2025/08/19/angel-reese-returns-to-play-with-a-bang-and-a-touch-of-mystery"
-        },
-        "images": [
+        "collegeCareers": [
           {
-            "src": "/season30/connection-imgs/angel_reese_individual.webp",
-            "alt": "Angel Reese",
-            "sourceLink": "https://chicago.suntimes.com/chicago-sky/2025/08/19/angel-reese-returns-to-play-with-a-bang-and-a-touch-of-mystery"
+            "collegeId": "u_of_maryland",
+            "collegeName": "University of Maryland",
+            "startYear": "2020",
+            "endYear": "2022"
+          },
+          {
+            "collegeId": "louisiana_state_u",
+            "collegeName": "Louisiana State University",
+            "startYear": "2022",
+            "endYear": "2024"
           }
         ],
-        "wnbaSeasons": [],
-        "wnbaTeams": [],
-        "championships": []
-      }
+        "draftDetails": {
+          "year": "2024",
+          "pick": "7",
+          "draftedBy": "CHI_SKY"
+        },
+        "missedWnbaSeasons": [],
+        "overseasTeams": [],
+        "unrivaledTeams": [
+          {
+            "year": 2025,
+            "teamCode": "bc_rose"
+          },
+          {
+            "year": 2026,
+            "teamCode": "bc_rose"
+          }
+        ],
+        "teamUsaMedals": [
+          {
+            "eventType": "FIBA",
+            "format": "5x5",
+            "year": "2023",
+            "competition": "AmeriCup",
+            "medal": "Silver"
+          }
+        ]
+      },
+      "image": {
+        "src": "/season-30/connection-imgs/angel_reese_individual.webp",
+        "alt": "Angel Reese",
+        "sourceLink": "https://chicago.suntimes.com/chicago-sky/2025/08/19/angel-reese-returns-to-play-with-a-bang-and-a-touch-of-mystery"
+      },
+      "images": [
+        {
+          "src": "/season-30/connection-imgs/angel_reese_individual.webp",
+          "alt": "Angel Reese",
+          "sourceLink": "https://chicago.suntimes.com/chicago-sky/2025/08/19/angel-reese-returns-to-play-with-a-bang-and-a-touch-of-mystery"
+        }
+      ],
+      "wnbaSeasons": [
+        {
+          "year": "2024",
+          "entries": [
+            {
+              "type": "team",
+              "teamCode": "CHI_SKY"
+            }
+          ]
+        },
+        {
+          "year": "2025",
+          "entries": [
+            {
+              "type": "team",
+              "teamCode": "CHI_SKY"
+            }
+          ]
+        },
+        {
+          "year": "2026",
+          "entries": [
+            {
+              "type": "team",
+              "teamCode": "ATL_DREAM",
+              "note": "Angel Reese was traded to the Dream on April 6 2026. The Sky got 2 of the Dream's first round picks - one in 2027 and the other in 2028. \nThe Dream also have right to swap second round picks with Chicago for the 2028 draft"
+            }
+          ]
+        }
+      ],
+      "wnbaTeams": [
+        {
+          "teamCode": "CHI_SKY",
+          "startYear": "2024",
+          "endYear": "2025"
+        },
+        {
+          "teamCode": "ATL_DREAM",
+          "startYear": "2026",
+          "endYear": "present",
+          "note": "Angel Reese was traded to the Dream on April 6 2026. The Sky got 2 of the Dream's first round picks - one in 2027 and the other in 2028. \nThe Dream also have right to swap second round picks with Chicago for the 2028 draft"
+        }
+      ],
+      "championships": []
     },
     "alanna_smith": {
       "playerId": "alanna_smith",
@@ -6329,265 +6439,50 @@
     },
     "alysha_clark": {
       "playerId": "alysha_clark",
-      "playerData": {
-        "playerName": "Alysha Clark",
-        "teamUsaJersey": "",
-        "playerStatus": {
-          "isActive": true,
-          "hasNcaaChampionships": false,
-          "wasDraftDayTrade": false,
-          "hasWnbaChampionships": true,
-          "hasOverseasExperience": true,
-          "hasUnrivaledExperience": false,
-          "hasNationalTeamExperience": false,
-          "hasOlympicExperience": false
+      "playerName": "Alysha Clark",
+      "teamUsaJersey": "",
+      "playerStatus": {
+        "isActive": true,
+        "hasNcaaChampionships": false,
+        "wasDraftDayTrade": false,
+        "hasWnbaChampionships": true,
+        "hasOverseasExperience": true,
+        "hasUnrivaledExperience": false,
+        "hasNationalTeamExperience": false,
+        "hasOlympicExperience": false
+      },
+      "careerDetails": {
+        "collegeCareer": {
+          "collegeId": "Middle Tennessee State University",
+          "startYear": "2005",
+          "endYear": "2010",
+          "ncaaChampionships": []
         },
-        "careerDetails": {
-          "collegeCareer": {
-            "collegeId": "Middle Tennessee State University",
-            "startYear": "2005",
-            "endYear": "2010",
-            "ncaaChampionships": []
-          },
-          "draftDetails": {
-            "year": "2010",
-            "pick": "17",
-            "draftedBy": "SA_SILVER_STARS"
-          },
-          "missedWnbaSeasons": [
-            {
-              "year": "2010",
-              "teamCode": "SA_SILVER_STARS",
-              "reason": "Did not make the roster"
-            },
-            {
-              "year": "2011",
-              "teamCode": "SA_SILVER_STARS",
-              "reason": "Did not make the roster"
-            }
-          ],
-          "overseasTeams": [
-            {
-              "season": "2017-18",
-              "referenceMode": "utility",
-              "teamCode": "",
-              "leagueName": "Basket Liga Kobiet",
-              "teamName": "KGHM BC Polkowice",
-              "country": "Poland",
-              "city": "Polkowice",
-              "utilityEntryId": "utility_overseas_reference_kghm_bc_polkowice_alysha_clark_1780784177173",
-              "utilityEntryStatus": "open",
-              "note": ""
-            }
-          ],
-          "unrivaledTeams": [],
-          "teamUsaMedals": []
+        "draftDetails": {
+          "year": "2010",
+          "pick": "17",
+          "draftedBy": "SA_SILVER_STARS"
         },
-        "image": null,
-        "images": [],
-        "wnbaSeasons": [
-          {
-            "year": "2010",
-            "entries": [
-              {
-                "type": "sit_out",
-                "teamCode": "SA_SILVER_STARS",
-                "reason": "Did not make the roster"
-              }
-            ]
-          },
-          {
-            "year": "2011",
-            "entries": [
-              {
-                "type": "sit_out",
-                "teamCode": "SA_SILVER_STARS",
-                "reason": "Did not make the roster"
-              }
-            ]
-          },
-          {
-            "year": "2012",
-            "entries": [
-              {
-                "type": "team",
-                "teamCode": "SEA_STORM"
-              }
-            ]
-          },
-          {
-            "year": "2013",
-            "entries": [
-              {
-                "type": "team",
-                "teamCode": "SEA_STORM"
-              }
-            ]
-          },
-          {
-            "year": "2014",
-            "entries": [
-              {
-                "type": "team",
-                "teamCode": "SEA_STORM"
-              }
-            ]
-          },
-          {
-            "year": "2015",
-            "entries": [
-              {
-                "type": "team",
-                "teamCode": "SEA_STORM"
-              }
-            ]
-          },
-          {
-            "year": "2016",
-            "entries": [
-              {
-                "type": "team",
-                "teamCode": "SEA_STORM"
-              }
-            ]
-          },
-          {
-            "year": "2017",
-            "entries": [
-              {
-                "type": "team",
-                "teamCode": "SEA_STORM"
-              }
-            ]
-          },
-          {
-            "year": "2018",
-            "entries": [
-              {
-                "type": "team",
-                "teamCode": "SEA_STORM"
-              }
-            ]
-          },
-          {
-            "year": "2019",
-            "entries": [
-              {
-                "type": "team",
-                "teamCode": "SEA_STORM"
-              }
-            ]
-          },
-          {
-            "year": "2020",
-            "entries": [
-              {
-                "type": "team",
-                "teamCode": "SEA_STORM"
-              }
-            ]
-          },
-          {
-            "year": "2022",
-            "entries": [
-              {
-                "type": "team",
-                "teamCode": "WAS_MYSTICS"
-              }
-            ]
-          },
-          {
-            "year": "2023",
-            "entries": [
-              {
-                "type": "team",
-                "teamCode": "LVA_ACES"
-              }
-            ]
-          },
-          {
-            "year": "2024",
-            "entries": [
-              {
-                "type": "team",
-                "teamCode": "LVA_ACES"
-              }
-            ]
-          },
-          {
-            "year": "2025",
-            "entries": [
-              {
-                "type": "team",
-                "teamCode": "SEA_STORM",
-                "note": "signed with the storm on February 9, 2025"
-              },
-              {
-                "type": "team",
-                "teamCode": "WAS_MYSTICS",
-                "note": "Storm traded her to the Mystics on August 5, 2025 and also gave Mystics their 2026 first round draft pick in exchange for Brittney Sykes"
-              }
-            ]
-          },
-          {
-            "year": "2026",
-            "entries": [
-              {
-                "type": "team",
-                "teamCode": "DAL_WINGS"
-              }
-            ]
-          }
-        ],
-        "wnbaTeams": [
-          {
-            "teamCode": "SEA_STORM",
-            "startYear": "2012",
-            "endYear": "2020"
-          },
-          {
-            "teamCode": "WAS_MYSTICS",
-            "startYear": "2022",
-            "endYear": "2022"
-          },
-          {
-            "teamCode": "LVA_ACES",
-            "startYear": "2023",
-            "endYear": "2024"
-          },
-          {
-            "teamCode": "SEA_STORM",
-            "startYear": "2025",
-            "endYear": "2025",
-            "note": "signed with the storm on February 9, 2025"
-          },
-          {
-            "teamCode": "WAS_MYSTICS",
-            "startYear": "2025",
-            "endYear": "2025",
-            "note": "Storm traded her to the Mystics on August 5, 2025 and also gave Mystics their 2026 first round draft pick in exchange for Brittney Sykes"
-          },
-          {
-            "teamCode": "DAL_WINGS",
-            "startYear": "2026",
-            "endYear": "present"
-          }
-        ],
-        "championships": [
-          {
-            "year": "2018",
-            "teamCode": "SEA_STORM"
-          },
-          {
-            "year": "2020",
-            "teamCode": "SEA_STORM"
-          },
-          {
-            "year": "2023",
-            "teamCode": "LVA_ACES"
-          }
-        ]
-      }
+        "missedWnbaSeasons": [],
+        "overseasTeams": [],
+        "unrivaledTeams": [],
+        "teamUsaMedals": []
+      },
+      "image": {
+        "src": "/season-30/connection-imgs/alysha_clark_individual.jpg",
+        "alt": "Alysha Clark",
+        "sourceLink": "https://sports.yahoo.com/aces-f-alysha-clark-named-wnba-sixth-player-of-the-year-180903259.html?guccounter=1&guce_referrer=aHR0cHM6Ly93d3cuZ29vZ2xlLmNvbS8&guce_referrer_sig=AQAAAAg0WGMUwC5FNYhkarZfe5AWE3WY2WHsJv88me83qstlXWdAXuHHfRPl2hzcdYrS7ZtyQGSMsfgpIuQA-QFfddJmomx1yk_Qyh_iRiX73Iuk7KpvwphYJaB5SlPQeEXsJwiQxBAKOLztCg_zl3jI-ywq621GeYBQPA5PitZgKRvo"
+      },
+      "images": [
+        {
+          "src": "/season-30/connection-imgs/alysha_clark_individual.jpg",
+          "alt": "Alysha Clark",
+          "sourceLink": "https://sports.yahoo.com/aces-f-alysha-clark-named-wnba-sixth-player-of-the-year-180903259.html?guccounter=1&guce_referrer=aHR0cHM6Ly93d3cuZ29vZ2xlLmNvbS8&guce_referrer_sig=AQAAAAg0WGMUwC5FNYhkarZfe5AWE3WY2WHsJv88me83qstlXWdAXuHHfRPl2hzcdYrS7ZtyQGSMsfgpIuQA-QFfddJmomx1yk_Qyh_iRiX73Iuk7KpvwphYJaB5SlPQeEXsJwiQxBAKOLztCg_zl3jI-ywq621GeYBQPA5PitZgKRvo"
+        }
+      ],
+      "wnbaSeasons": [],
+      "wnbaTeams": [],
+      "championships": []
     },
     "courtney_vandersloot": {
       "playerId": "courtney_vandersloot",
@@ -6906,6 +6801,173 @@
         "quickAddReason": "missing-player-reference",
         "quickAddedAt": "2026-06-06T01:44:42.941Z"
       }
+    },
+    "dana_evans": {
+      "playerId": "dana_evans",
+      "playerName": "Dana Evans",
+      "teamUsaJersey": "",
+      "playerStatus": {
+        "isActive": true,
+        "hasNcaaChampionships": false,
+        "wasDraftDayTrade": false,
+        "hasWnbaChampionships": true,
+        "hasOverseasExperience": true,
+        "hasUnrivaledExperience": true,
+        "hasNationalTeamExperience": false,
+        "hasOlympicExperience": false
+      },
+      "careerDetails": {
+        "collegeCareer": {
+          "collegeId": "University of Louisville",
+          "startYear": "2017",
+          "endYear": "2021",
+          "ncaaChampionships": []
+        },
+        "draftDetails": {
+          "year": "2021",
+          "pick": "13",
+          "draftedBy": "DAL_WINGS"
+        },
+        "missedWnbaSeasons": [],
+        "overseasTeams": [
+          {
+            "season": "2021",
+            "referenceMode": "select",
+            "teamCode": "ksc_szekszard",
+            "note": ""
+          },
+          {
+            "season": "2022-23",
+            "referenceMode": "select",
+            "teamCode": "besiktas_jk",
+            "note": ""
+          },
+          {
+            "season": "2023-24",
+            "referenceMode": "select",
+            "teamCode": "besiktas_jk",
+            "note": ""
+          },
+          {
+            "season": "2024-25",
+            "referenceMode": "select",
+            "teamCode": "besiktas_jk",
+            "note": ""
+          }
+        ],
+        "unrivaledTeams": [
+          {
+            "year": 2026,
+            "teamCode": "bc_phantom"
+          }
+        ],
+        "teamUsaMedals": []
+      },
+      "image": {
+        "src": "/season-30/connection-imgs/dana_evans_individual.jpg",
+        "alt": "Dana Evans",
+        "sourceLink": "https://en.wikipedia.org/wiki/Dana_Evans"
+      },
+      "images": [
+        {
+          "src": "/season-30/connection-imgs/dana_evans_individual.jpg",
+          "alt": "Dana Evans",
+          "sourceLink": "https://en.wikipedia.org/wiki/Dana_Evans"
+        }
+      ],
+      "wnbaSeasons": [
+        {
+          "year": "2021",
+          "entries": [
+            {
+              "type": "team",
+              "teamCode": "DAL_WINGS",
+              "note": "June 2 2021 - Wings traded Evans to the Chicago Sky in exchange for Shyla Heal, first-round-pick-swap option for the 2022 draft, and a 2022 third round draft pick"
+            },
+            {
+              "type": "team",
+              "teamCode": "CHI_SKY",
+              "note": "Traded to sky on June 2 2021"
+            }
+          ]
+        },
+        {
+          "year": "2022",
+          "entries": [
+            {
+              "type": "team",
+              "teamCode": "CHI_SKY"
+            }
+          ]
+        },
+        {
+          "year": "2023",
+          "entries": [
+            {
+              "type": "team",
+              "teamCode": "CHI_SKY"
+            }
+          ]
+        },
+        {
+          "year": "2024",
+          "entries": [
+            {
+              "type": "team",
+              "teamCode": "CHI_SKY"
+            }
+          ]
+        },
+        {
+          "year": "2025",
+          "entries": [
+            {
+              "type": "team",
+              "teamCode": "LVA_ACES",
+              "note": "February 7, 2025 - Evans was traded to the Aces in exchange for the 16th and 22nd pick in the 2025 draft"
+            }
+          ]
+        },
+        {
+          "year": "2026",
+          "entries": [
+            {
+              "type": "team",
+              "teamCode": "LVA_ACES"
+            }
+          ]
+        }
+      ],
+      "wnbaTeams": [
+        {
+          "teamCode": "DAL_WINGS",
+          "startYear": "2021",
+          "endYear": "2021",
+          "note": "June 2 2021 - Wings traded Evans to the Chicago Sky in exchange for Shyla Heal, first-round-pick-swap option for the 2022 draft, and a 2022 third round draft pick"
+        },
+        {
+          "teamCode": "CHI_SKY",
+          "startYear": "2021",
+          "endYear": "2024",
+          "note": "Traded to sky on June 2 2021"
+        },
+        {
+          "teamCode": "LVA_ACES",
+          "startYear": "2025",
+          "endYear": "present",
+          "note": "February 7, 2025 - Evans was traded to the Aces in exchange for the 16th and 22nd pick in the 2025 draft"
+        }
+      ],
+      "championships": [
+        {
+          "year": "2021",
+          "teamCode": "CHI_SKY"
+        },
+        {
+          "year": "2025",
+          "teamCode": "LVA_ACES"
+        }
+      ]
     }
   }
 }

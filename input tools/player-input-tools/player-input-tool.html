@@ -126,6 +126,13 @@
               </div>
             </div>
 
+            <button id="addCollegeCareerBtn" type="button">Add College Span</button>
+
+            <div class="sub-panel">
+                <h3>College Spans</h3>
+                <ul id="collegeCareersList"></ul>
+            </div>
+
             <div class="yes-no-row">
               <p>NCAA championships?</p>
               <label><input type="radio" name="hasNcaaChampionships" value="true"> Yes</label>
@@ -304,8 +311,26 @@
                   </div>
 
                   <div id="overseasUtilityEntryFields" class="conditional-field">
-                    <label for="utilityLeagueNameInput">League Name</label>
-                    <input id="utilityLeagueNameInput" placeholder="ex: Turkish Super League">
+
+                    <label>
+                      Reference Scope
+                      <select id="utilityReferenceScopeInput">
+                        <option value="league-and-team">New league + new team</option>
+                        <option value="team-only">New team in existing league</option>
+                      </select>
+                    </label>
+
+                    <label id="utilityExistingLeagueField" class="conditional-field">
+                      Existing League
+                      <select id="utilityExistingLeagueCodeInput">
+                        <option value="">Select existing league</option>
+                      </select>
+                    </label>
+
+                    <div id="utilityLeagueNameField">
+                      <label for="utilityLeagueNameInput">League Name</label>
+                      <input id="utilityLeagueNameInput" placeholder="ex: Turkish Super League">
+                    </div>
 
                     <label for="utilityTeamNameInput">Team Name</label>
                     <input id="utilityTeamNameInput" placeholder="ex: Fenerbahçe">

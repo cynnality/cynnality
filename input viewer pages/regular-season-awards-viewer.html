@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8" />
-    <title>Regular Season Awards Viewer</title>
+    <title>Regular Season Awards Viewer</title> 
 
             <!-- ======================== MONO FONTS ========================
                 CHIVO MONO 
@@ -38,15 +38,15 @@
             <!--=====================================================================================-->
 
     <link rel="stylesheet" href="regular-season-awards-viewer.css" />
+    <link rel="stylesheet" href="../basketball_101_shared/players/player-receipt-renderer.css" />
     <link rel="stylesheet" href="../entries/renderer/entries-renderer.css" />
 </head>
 
 <body>
     <main class="viewer-shell">
         <header class="viewer-header">
-            <p class="eyebrow">WNBA Input Viewer</p>
             <h1>Regular Season Awards</h1>
-            <p>View entered regular season awards by season. Click an award to open it in the editor.</p>
+            <p>View entered regular season awards by season. Click an award recipient to open the player receipt.</p>
         </header>
 
         <section class="panel controls-panel">
@@ -97,6 +97,7 @@
     </div>
 
     <script src="../entries/renderer/entries-renderer.js"></script>
+    <script src="../basketball_101_shared/players/player-receipt-renderer.js"></script>
     <script src="regular-season-awards-viewer.js"></script>
 
 </body>

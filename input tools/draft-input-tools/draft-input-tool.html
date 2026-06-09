@@ -42,9 +42,7 @@
 <body>
     <main class="tool-shell">
         <header class="tool-header">
-            <p class="eyebrow">WNBA Data Tool</p>
-            <h1>Draft Input Tool</h1>
-            <p>Start with college draft entries. Expansion and dispersal drafts will come next.</p>
+            <h1>WNBA Draft Input Tool</h1>
         </header>
 
         <section id="draftStartPanel" class="panel">
@@ -223,8 +221,24 @@
                     </div>
 
                     <div id="overseasUtilityEntryFields" class="conditional-section hidden">
+
+                        <label>
+                            Reference Scope
+                            <select id="utilityReferenceScopeInput">
+                                <option value="league-and-team">New league + new team</option>
+                                <option value="team-only">New team in existing league</option>
+                            </select>
+                        </label>
+
+                        <label id="utilityExistingLeagueField" class="conditional-section hidden">
+                            Existing League
+                            <select id="utilityExistingLeagueCodeInput">
+                                <option value="">Select existing league</option>
+                            </select>
+                        </label>
+
                         <div class="form-grid">
-                            <label>
+                            <label id="utilityLeagueNameField">
                                 League Name
                                 <input id="utilityLeagueNameInput" placeholder="ex: Turkish Super League" />
                             </label>

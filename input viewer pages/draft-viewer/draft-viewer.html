@@ -38,27 +38,28 @@
             <!--=====================================================================================-->    
 
     <link rel="stylesheet" href="draft-viewer.css" />
+    <link rel="stylesheet" href="../../basketball_101_shared/players/player-receipt-renderer.css" />
 </head>
 <body>
     <main class="viewer-shell">
         <header class="viewer-header">
-            <p class="eyebrow">WNBA Data Viewer</p>
-            <h1>Draft Viewer</h1>
-            <p>View drafts by season and open drafts or picks in the input tool.</p>
+            <h1>WNBA Draft Viewer</h1>
+            <p>College, expansion, and dispersal drafts!</p>
         </header>
 
-        <section class="panel">
-            <label>
-                Season
-                <input id="seasonInput" type="number" value="2025" />
-            </label>
-
-            <button id="loadSeasonBtn" type="button">Load Drafts</button>
+        <section class="panel viewer-controls">
+            <div class="filter-row" id="draftFilterControls">
+                <button class="filter-btn active" type="button" data-filter="all">All Drafts</button>
+                <button class="filter-btn" type="button" data-filter="college">College</button>
+                <button class="filter-btn" type="button" data-filter="expansion">Expansion</button>
+                <button class="filter-btn" type="button" data-filter="dispersal">Dispersal</button>
+            </div>
         </section>
 
         <section id="draftsContainer" class="drafts-container"></section>
     </main>
 
+    <script src="../../basketball_101_shared/players/player-receipt-renderer.js"></script>
     <script src="draft-viewer.js"></script>
 </body>
 </html>

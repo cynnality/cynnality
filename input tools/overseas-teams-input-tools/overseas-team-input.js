@@ -217,7 +217,8 @@ function loadUtilityEntryIntoTeamForm(entry) {
         }
     }
 
-    const matchedLeagueCode = findLeagueCodeByName(request.leagueName);
+    const matchedLeagueCode =
+        request.leagueCode || findLeagueCodeByName(request.leagueName);
 
     if (matchedLeagueCode) {
         leagueCodeInput.value = matchedLeagueCode;

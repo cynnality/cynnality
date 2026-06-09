@@ -65,9 +65,27 @@ const UtilityEntryService = (() => {
         return await response.json();
     }
 
+    function getOverseasUtilityWires(referenceScope, sourceTool = "") {
+        const sourceWires = sourceTool ? [sourceTool] : [];
+
+        if (referenceScope === "team-only") {
+            return [
+                ...sourceWires,
+                "overseas-team-input-tool"
+            ];
+        }
+
+        return [
+            ...sourceWires,
+            "overseas-league-input-tool",
+            "overseas-team-input-tool"
+        ];
+    }
+
     function buildUtilityEntry({
         title,
         category,
+        referenceScope = "",
         priority = "normal",
         createdFrom,
         task,
@@ -88,6 +106,7 @@ const UtilityEntryService = (() => {
             contentType: "data",
             collection: "wnba",
             category,
+            referenceScope,
             status: "open",
             priority,
 
@@ -132,6 +151,7 @@ const UtilityEntryService = (() => {
         loadEntries,
         saveEntry,
         buildUtilityEntry,
-        resolveEntry
+        resolveEntry,
+        getOverseasUtilityWires
     };
 })();

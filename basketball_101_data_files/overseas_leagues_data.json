@@ -453,7 +453,7 @@
       },
       "location": {
         "country": "Australia",
-        "region": "FIBA Oceania"
+        "region": "Oceania"
       },
       "details": {
         "founded": null,
@@ -519,6 +519,48 @@
       ],
       "meta": {
         "notes": "",
+        "lastUpdated": ""
+      }
+    },
+    "nemzeti_bajnoksag_i_a": {
+      "leagueCode": "nemzeti_bajnoksag_i_a",
+      "name": {
+        "full": "Nemzeti Bajnokság I/A",
+        "official": "Nemzeti Bajnokság I/A",
+        "display": "Nemzeti Bajnokság I/A",
+        "local": "Nemzeti Bajnokság I/A",
+        "currentSponsor": "",
+        "abbreviations": [
+          "NB I/A"
+        ],
+        "englishTranslations": [
+          {
+            "name": "Nemzeti Bajnokság I/A",
+            "translation": "National Championship I/A"
+          }
+        ],
+        "commonNames": []
+      },
+      "location": {
+        "country": "Hungary",
+        "region": "Europe"
+      },
+      "details": {
+        "founded": 1933,
+        "defunct": null,
+        "competitionTier": "",
+        "gender": "women"
+      },
+      "nameHistory": [],
+      "links": [
+        {
+          "label": "Wiki",
+          "url": "https://en.wikipedia.org/wiki/Nemzeti_Bajnoks%C3%A1g_I/A_(women%27s_basketball)",
+          "type": "Quick Reference"
+        }
+      ],
+      "meta": {
+        "notes": "Utility entry: utility_overseas_reference_ksc_szekszard_dana_evans_1780951127664\nRelated team: KSC Szekszárd\n\nleague is organized by Magyar Kosárlabdázók Országos Szövetsége (governing body of basketball in Hungary)",
         "lastUpdated": ""
       }
     }

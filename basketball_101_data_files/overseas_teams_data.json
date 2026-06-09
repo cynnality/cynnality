@@ -902,6 +902,252 @@
         "notes": "",
         "lastUpdated": ""
       }
+    },
+    "ksc_szekszard": {
+      "teamCode": "ksc_szekszard",
+      "name": {
+        "full": "KSC Szekszárd",
+        "official": "KSC Szekszárd",
+        "display": "KSC Szekszárd",
+        "club": "Szekszárd",
+        "local": "Atomerőmű KSC Szekszárd",
+        "currentSponsor": "Atomerőmű",
+        "abbreviations": [],
+        "englishTranslations": [
+          {
+            "name": "Atomerőmű",
+            "translation": "Paks Nuclear Power Plant"
+          }
+        ],
+        "commonNames": []
+      },
+      "location": {
+        "area": "Szekszárd",
+        "city": "Szekszárd",
+        "subRegion": "",
+        "country": "Hungary",
+        "parts": [
+          "Szekszárd",
+          "Hungary"
+        ],
+        "display": "Szekszárd, Hungary"
+      },
+      "league": {
+        "leagueCode": "nemzeti_bajnoksag_i_a",
+        "leagueName": "Nemzeti Bajnokság I/A"
+      },
+      "details": {
+        "arena": "City Sports Hall",
+        "founded": 1975,
+        "defunct": null
+      },
+      "nameHistory": [
+        {
+          "name": "Szekszárd Vasas Sport Kör",
+          "nameSlug": "szekszard_vasas_sport_kor",
+          "startYear": 1975,
+          "endYear": "n/a",
+          "sponsorName": ""
+        },
+        {
+          "name": "Atomerőmű KSC Szekszárd",
+          "nameSlug": "atomeromu_ksc_szekszard",
+          "startYear": 2000,
+          "endYear": "present",
+          "sponsorName": "Atomerőmű"
+        }
+      ],
+      "links": [
+        {
+          "label": "wiki",
+          "url": "https://en.wikipedia.org/wiki/KSC_Szeksz%C3%A1rd",
+          "type": "Quick reference"
+        }
+      ],
+      "meta": {
+        "notes": "Utility entry: utility_overseas_reference_ksc_szekszard_dana_evans_1780951127664\nRequested league: Nemzeti Bajnokság I/A\nRelated season: 2021",
+        "lastUpdated": ""
+      }
+    },
+    "asvel_feminin": {
+      "teamCode": "asvel_feminin",
+      "name": {
+        "full": "ASVEL Féminin",
+        "official": "ASVEL Féminin",
+        "display": "ASVEL Féminin",
+        "club": "Association Sportive de Villeurbanne Éveil Lyonnais",
+        "local": "LDLC ASVEL Féminin",
+        "currentSponsor": "LDLC",
+        "abbreviations": [],
+        "englishTranslations": [],
+        "commonNames": [
+          "Les Lionnes"
+        ]
+      },
+      "location": {
+        "area": "Lyon",
+        "city": "Lyon",
+        "subRegion": "",
+        "country": "France",
+        "parts": [
+          "Lyon",
+          "France"
+        ],
+        "display": "Lyon, France"
+      },
+      "league": {
+        "leagueCode": "la_boulangere_wonderligue",
+        "leagueName": "La Boulangere Wonderligue"
+      },
+      "details": {
+        "arena": "Gymnase Mado Bonnet",
+        "founded": 2000,
+        "defunct": null
+      },
+      "nameHistory": [
+        {
+          "name": "Lyon Basket féminin / FC Lyon Basket Féminin",
+          "nameSlug": "lyon_basket_feminin_fc_lyon_basket_feminin",
+          "startYear": 2000,
+          "endYear": 2017,
+          "sponsorName": ""
+        },
+        {
+          "name": "Lyon ASVEL Féminin",
+          "nameSlug": "lyon_asvel_feminin",
+          "startYear": 2017,
+          "endYear": 2019,
+          "sponsorName": ""
+        },
+        {
+          "name": "LDLC ASVEL Féminin",
+          "nameSlug": "ldlc_asvel_feminin",
+          "startYear": 2019,
+          "endYear": "present",
+          "sponsorName": "LDLC"
+        }
+      ],
+      "links": [
+        {
+          "label": "wiki",
+          "url": "https://en.wikipedia.org/wiki/ASVEL_F%C3%A9minin",
+          "type": "Quick reference"
+        }
+      ],
+      "meta": {
+        "notes": "Utility entry: utility_overseas_reference_asvel_feminin_asvel_feminin_1780780283582\nRequested league: La Boulangere Wonderligue\nRelated season: 2021-2025\n\nASVEL = Association Sportive de Villeurbanne Éveil Lyonnais = CLUB NAME\nASV and EL (Lyon Awakening) merged into one club to form ASVEL... ASVEL is the multisport company/club",
+        "lastUpdated": ""
+      }
+    },
+    "kghm_bc_polkowice": {
+      "teamCode": "kghm_bc_polkowice",
+      "name": {
+        "full": "KGHM BC Polkowice",
+        "official": "KGHM BC Polkowice",
+        "display": "KGHM BC Polkowice",
+        "club": "",
+        "local": "",
+        "currentSponsor": "",
+        "abbreviations": [],
+        "englishTranslations": [],
+        "commonNames": [
+          "CCC Polkowice-Polsat",
+          "CCC Polkowice"
+        ]
+      },
+      "location": {
+        "area": "Polkowice",
+        "city": "Polkowice",
+        "subRegion": "",
+        "country": "Poland",
+        "parts": [
+          "Polkowice",
+          "Poland"
+        ],
+        "display": "Polkowice, Poland"
+      },
+      "league": {
+        "leagueCode": "basket_liga_kobiet",
+        "leagueName": "Basket Liga Kobiet"
+      },
+      "details": {
+        "arena": "Hala Sportowa - Polkowice",
+        "founded": 1983,
+        "defunct": 2025
+      },
+      "nameHistory": [
+        {
+          "name": "CCC Polkowice",
+          "nameSlug": "ccc_polkowice",
+          "startYear": 2000,
+          "endYear": 2021,
+          "sponsorName": "CCC"
+        },
+        {
+          "name": "KGHM BC Polkowice",
+          "nameSlug": "kghm_bc_polkowice",
+          "startYear": 2021,
+          "endYear": 2025,
+          "sponsorName": "KGHM"
+        }
+      ],
+      "links": [
+        {
+          "label": "Wiki",
+          "url": "https://en.wikipedia.org/wiki/CCC_Polkowice_(basketball_team)",
+          "type": "Quick reference"
+        }
+      ],
+      "meta": {
+        "notes": "Utility entry: utility_overseas_reference_kghm_bc_polkowice_alysha_clark_1780784177173\nRequested league: Basket Liga Kobiet\nRelated season: 2017-18",
+        "lastUpdated": ""
+      }
+    },
+    "besiktas_jk": {
+      "teamCode": "besiktas_jk",
+      "name": {
+        "full": "Beşiktaş JK",
+        "official": "Beşiktaş JK",
+        "display": "Beşiktaş JK",
+        "club": "Beşiktaş JK",
+        "local": "Beşiktaş BOA",
+        "currentSponsor": "BOA",
+        "abbreviations": [],
+        "englishTranslations": [],
+        "commonNames": []
+      },
+      "location": {
+        "area": "Istanbul",
+        "city": "Istanbul",
+        "subRegion": "",
+        "country": "Turkey",
+        "parts": [
+          "Istanbul",
+          "Turkey"
+        ],
+        "display": "Istanbul, Turkey"
+      },
+      "league": {
+        "leagueCode": "kadinlar_basketball_super_ligi",
+        "leagueName": "Kadinlar Basketball Super Ligi"
+      },
+      "details": {
+        "arena": "BJK Akatlar Arena",
+        "founded": 1956,
+        "defunct": null
+      },
+      "nameHistory": [],
+      "links": [
+        {
+          "label": "Wiki",
+          "url": "https://en.wikipedia.org/wiki/Be%C5%9Fikta%C5%9F_JK_(women%27s_basketball)",
+          "type": "Quick reference"
+        }
+      ],
+      "meta": {
+        "notes": "Utility entry: utility_overseas_reference_besiktas_jk_dana_evans_1780951206066\nRequested league: Kadinlar Basketball Super Ligi\nRelated season: 2022-2025",
+        "lastUpdated": ""
+      }
     }
   }
-} 
+}

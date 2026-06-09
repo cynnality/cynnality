@@ -36,6 +36,11 @@ const overseasExistingReferenceFields =
 const overseasUtilityEntryFields =
     document.getElementById("overseasUtilityEntryFields");
 
+const utilityReferenceScopeInput = document.getElementById("utilityReferenceScopeInput");
+const utilityExistingLeagueField = document.getElementById("utilityExistingLeagueField");
+const utilityExistingLeagueCodeInput = document.getElementById("utilityExistingLeagueCodeInput");
+const utilityLeagueNameField = document.getElementById("utilityLeagueNameField");
+
 const SAVE_URL = "http://127.0.0.1:8787/save-draft";
 
 let DRAFTS = {};
@@ -183,6 +188,41 @@ function createPickId({ year, draftType, round, roundPick }) {
     return `${year}_${draftType}_r${round}_p${roundPick}`;
 }
 
+function getLeagueDisplayNameByCode(leagueCode) {
+    const league = OVERSEAS_LEAGUES?.[leagueCode];
+
+    return (
+        league?.name?.display ||
+        league?.name?.full ||
+        league?.name?.official ||
+        leagueCode ||
+        ""
+    );
+}
+
+function populateUtilityExistingLeagueSelect() {
+    utilityExistingLeagueCodeInput.innerHTML = `<option value="">Select existing league</option>`;
+
+    Object.entries(OVERSEAS_LEAGUES || {})
+        .sort(([, a], [, b]) => {
+            return getLeagueDisplayNameByCode(a.leagueCode)
+                .localeCompare(getLeagueDisplayNameByCode(b.leagueCode));
+        })
+        .forEach(([leagueCode, league]) => {
+            const option = document.createElement("option");
+            option.value = league.leagueCode || leagueCode;
+            option.textContent = `${getLeagueDisplayNameByCode(option.value)} (${option.value})`;
+            utilityExistingLeagueCodeInput.appendChild(option);
+        });
+}
+
+function updateUtilityReferenceScopeUI() {
+    const scope = utilityReferenceScopeInput.value;
+
+    utilityExistingLeagueField.classList.toggle("hidden", scope !== "team-only");
+    utilityLeagueNameField.classList.toggle("hidden", scope === "team-only");
+}
+
 async function loadJson(path, fallback) {
     try {
         const response = await fetch(path);
@@ -211,6 +251,9 @@ async function init() {
     populateCollegeOptions();
     populateOverseasCountrySelect();
 
+    populateUtilityExistingLeagueSelect();
+    updateUtilityReferenceScopeUI();
+
     bindEvents();
 
     buildExpansionTeamFields();
@@ -235,6 +278,12 @@ async function init() {
 
 async function createOverseasUtilityEntry() {
 
+    const referenceScope = utilityReferenceScopeInput.value;
+    const existingLeagueCode = utilityExistingLeagueCodeInput.value;
+    const leagueName = referenceScope === "team-only"
+        ? getLeagueDisplayNameByCode(existingLeagueCode)
+        : utilityLeagueNameInput.value.trim();
+
     const entry = UtilityEntryService.buildUtilityEntry({
 
         title:
@@ -257,44 +306,28 @@ async function createOverseasUtilityEntry() {
         },
 
         task: {
-
-            taskType:
-                "create-or-connect-reference",
-
-            targetDataType:
-                "overseas-team",
-
-            actionNeeded:
-                "Create overseas team reference."
-
+            taskType: "create-or-connect-reference",
+            targetDataType: referenceScope === "team-only"
+                ? "overseas-team"
+                : "overseas-league-and-team",
+            actionNeeded: referenceScope === "team-only"
+                ? "Create overseas team under existing league."
+                : "Create overseas league and team reference."
         },
 
         referenceRequest: {
-
-            leagueName:
-                utilityLeagueNameInput.value.trim(),
-
-            teamName:
-                utilityTeamNameInput.value.trim(),
-
-            country:
-                utilityCountryInput.value.trim(),
-
-            city:
-                utilityCityInput.value.trim(),
-
-            season:
-                utilityOverseasSeasonInput.value.trim()
-
+            leagueCode: referenceScope === "team-only" ? existingLeagueCode : "",
+            leagueName,
+            teamName: utilityTeamNameInput.value.trim(),
+            country: utilityCountryInput.value.trim(),
+            city: utilityCityInput.value.trim(),
+            season: utilityOverseasSeasonInput.value.trim()
         },
 
-        wires: [
-
-            "draft-input-tool",
-            "overseas-league-input-tool",
-            "overseas-team-input-tool"
-
-        ],
+        wires: UtilityEntryService.getOverseasUtilityWires(
+        referenceScope,
+        "player-input-tool"
+        ),
 
         attachedTo: [
             {
@@ -1357,6 +1390,8 @@ function bindEvents() {
 
     isOverseasPlayerInput.addEventListener("change", updateOriginUI);
     overseasCountryInput.addEventListener("change", updateOverseasLeagueAndTeams);
+
+    utilityReferenceScopeInput.addEventListener("change", updateUtilityReferenceScopeUI);
 
     playerNameInput.addEventListener("input", () => {
         playerIdInput.value = makeId(playerNameInput.value);

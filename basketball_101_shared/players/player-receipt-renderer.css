@@ -1,0 +1,124 @@
+.player-receipt {
+    border: 2px solid #111;
+    background: #fff;
+    padding: 10px;
+    font-family: "Chivo Mono", monospace;
+}
+
+.player-receipt.compact {
+    cursor: pointer;
+}
+
+.player-receipt-header {
+    display: grid;
+    grid-template-columns: 74px 1fr;
+    gap: 10px;
+    align-items: start;
+}
+
+.player-receipt-img {
+    width: 74px;
+    height: 90px;
+    object-fit: cover;
+    border: 2px solid #111;
+    background: #ddd;
+}
+
+.player-receipt-placeholder {
+    width: 74px;
+    height: 90px;
+    border: 2px solid #111;
+    background: #e2d6d6;
+    display: grid;
+    place-items: center;
+    font-weight: 900;
+    font-size: 26px;
+}
+
+.player-receipt h3 {
+    margin: 0;
+    font-size: 18px;
+    text-transform: uppercase;
+}
+
+.player-receipt-id {
+    font-size: 11px;
+    opacity: 0.7;
+}
+
+.receipt-section {
+    margin-top: 10px;
+    padding-top: 8px;
+    border-top: 1px dashed #111;
+}
+
+.receipt-section h4 {
+    margin: 0 0 6px;
+    font-size: 12px;
+    text-transform: uppercase;
+}
+
+.receipt-line {
+    font-size: 12px;
+    margin: 3px 0;
+}
+
+.receipt-chip-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+}
+
+.receipt-chip {
+    border: 1px solid #111;
+    padding: 3px 6px;
+    font-size: 11px;
+    background: #f4f0e8;
+}
+
+.player-receipt-modal-backdrop {
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.45);
+    z-index: 999;
+    display: grid;
+    place-items: center;
+    padding: 24px;
+}
+
+.player-receipt-modal {
+    background: #fff;
+    border: 3px solid #111;
+    max-width: 760px;
+    width: 100%;
+    max-height: 90vh;
+    overflow: auto;
+    padding: 14px;
+}
+
+.player-receipt-close {
+    float: right;
+    margin-bottom: 10px;
+}
+
+.quick-add-badge {
+    display: inline-block;
+    margin-left: 6px;
+    padding: 2px 5px;
+    border: 1px solid #111;
+    background: #ffcd00;
+    color: #111;
+    font-size: 10px;
+    text-transform: uppercase;
+}
+
+.active-status-badge {
+    display: inline-block;
+    padding: 2px 5px;
+    border: 1px solid #111;
+    background: #6fbf73;
+    color: #111;
+    font-size: 10px;
+    text-transform: uppercase;
+    font-weight: 800;
+}

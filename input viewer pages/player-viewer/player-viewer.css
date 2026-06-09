@@ -1,0 +1,66 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 32px;
+    font-family: "Chivo Mono", monospace;
+    background: #fff;
+    color: #111;
+}
+
+.page-shell {
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.page-header {
+    border: 3px solid #111;
+    padding: 14px;
+    margin-bottom: 18px;
+}
+
+.eyebrow {
+    margin: 0;
+    text-transform: uppercase;
+    font-size: 12px;
+}
+
+h1 {
+    margin: 4px 0;
+    text-transform: uppercase;
+    letter-spacing: -0.05em;
+}
+
+.toolbar {
+    display: grid;
+    grid-template-columns: 1fr 220px auto;
+    gap: 10px;
+    align-items: center;
+    margin-bottom: 18px;
+}
+
+input,
+select {
+    padding: 10px;
+    border: 2px solid #111;
+    background: #e2d6d6;
+    font: inherit;
+}
+
+.player-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(310px, 1fr));
+    gap: 18px;
+}
+
+button {
+    padding: 6px 12px;
+    border: 2px solid #111;
+    background: #4A6020;
+    color: #fff;
+    font: inherit;
+    text-transform: uppercase;
+    cursor: pointer;
+}

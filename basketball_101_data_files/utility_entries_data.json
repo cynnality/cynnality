@@ -1,110 +1,5 @@
 {
-  "openEntries": {
-    "utility_overseas_reference_asvel_feminin_asvel_feminin_1780780283582": {
-      "entryId": "utility_overseas_reference_asvel_feminin_asvel_feminin_1780780283582",
-      "title": "ASVEL Féminin",
-      "entryType": "utility_note",
-      "contentType": "data",
-      "collection": "wnba",
-      "category": "overseas-reference",
-      "status": "open",
-      "priority": "normal",
-      "createdAt": "2026-06-06T21:11:23.582Z",
-      "updatedAt": "2026-06-06T21:11:23.582Z",
-      "createdFrom": {
-        "tool": "draft-input-tool",
-        "contextType": "draft-overseas-player",
-        "contextId": "2025_college"
-      },
-      "task": {
-        "taskType": "create-or-connect-reference",
-        "targetDataType": "overseas-team",
-        "actionNeeded": "Create overseas team reference."
-      },
-      "referenceRequest": {
-        "leagueName": "La Boulangere Wonderligue",
-        "teamName": "ASVEL Féminin",
-        "country": "France",
-        "city": "Lyon",
-        "season": "2021-2025"
-      },
-      "wires": [
-        "draft-input-tool",
-        "overseas-league-input-tool",
-        "overseas-team-input-tool"
-      ],
-      "attachedTo": [
-        {
-          "type": "draft",
-          "id": "2025_college"
-        },
-        {
-          "type": "draft-pick",
-          "id": "2025_college_r1_p2"
-        }
-      ],
-      "notes": "",
-      "resolved": {
-        "isResolved": false,
-        "resolvedAt": "",
-        "resolvedByTool": "",
-        "resolvedIds": {}
-      }
-    },
-    "utility_overseas_reference_kghm_bc_polkowice_alysha_clark_1780784177173": {
-      "entryId": "utility_overseas_reference_kghm_bc_polkowice_alysha_clark_1780784177173",
-      "title": "KGHM BC Polkowice",
-      "entryType": "utility_note",
-      "contentType": "data",
-      "collection": "wnba",
-      "category": "overseas-reference",
-      "status": "open",
-      "priority": "normal",
-      "createdAt": "2026-06-06T22:16:17.173Z",
-      "updatedAt": "2026-06-06T22:16:17.173Z",
-      "createdFrom": {
-        "tool": "player-input-tool",
-        "contextType": "player-overseas-career",
-        "contextId": "alysha_clark"
-      },
-      "task": {
-        "taskType": "create-or-connect-reference",
-        "targetDataType": "overseas-team",
-        "actionNeeded": "Create or connect overseas team reference."
-      },
-      "referenceRequest": {
-        "playerId": "alysha_clark",
-        "playerName": "Alysha Clark",
-        "leagueName": "Basket Liga Kobiet",
-        "teamName": "KGHM BC Polkowice",
-        "country": "Poland",
-        "city": "Polkowice",
-        "season": "2017-18"
-      },
-      "wires": [
-        "player-input-tool",
-        "overseas-league-input-tool",
-        "overseas-team-input-tool"
-      ],
-      "attachedTo": [
-        {
-          "type": "player",
-          "id": "alysha_clark"
-        },
-        {
-          "type": "player-overseas-career",
-          "id": "alysha_clark_2017-18_kghm_bc_polkowice"
-        }
-      ],
-      "notes": "",
-      "resolved": {
-        "isResolved": false,
-        "resolvedAt": "",
-        "resolvedByTool": "",
-        "resolvedIds": {}
-      }
-    }
-  },
+  "openEntries": {},
   "resolvedEntries": {
     "utility_overseas_reference_fenerbahce_fenerbahce_1780778079925": {
       "entryId": "utility_overseas_reference_fenerbahce_fenerbahce_1780778079925",
@@ -151,6 +46,229 @@
         "resolvedAt": "2026-06-06T20:34:44.381Z",
         "resolvedByTool": "utility-entry-manager",
         "resolvedIds": {}
+      }
+    },
+    "utility_overseas_reference_ksc_szekszard_dana_evans_1780951127664": {
+      "entryId": "utility_overseas_reference_ksc_szekszard_dana_evans_1780951127664",
+      "title": "KSC Szekszárd",
+      "entryType": "utility_note",
+      "contentType": "data",
+      "collection": "wnba",
+      "category": "overseas-reference",
+      "status": "resolved",
+      "priority": "normal",
+      "createdAt": "2026-06-08T20:38:47.664Z",
+      "updatedAt": "2026-06-08T23:31:40.744Z",
+      "createdFrom": {
+        "tool": "player-input-tool",
+        "contextType": "player-overseas-career",
+        "contextId": "dana_evans"
+      },
+      "task": {
+        "taskType": "create-or-connect-reference",
+        "targetDataType": "overseas-league-and-team",
+        "actionNeeded": "Create overseas league and team reference."
+      },
+      "referenceRequest": {
+        "playerId": "dana_evans",
+        "playerName": "Dana Evans",
+        "leagueCode": "",
+        "leagueName": "Nemzeti Bajnokság I/A",
+        "teamName": "KSC Szekszárd",
+        "country": "Hungary",
+        "city": "Szekszárd",
+        "season": "2021"
+      },
+      "wires": [
+        "player-input-tool",
+        "overseas-league-input-tool",
+        "overseas-team-input-tool"
+      ],
+      "attachedTo": [
+        {
+          "type": "player",
+          "id": "dana_evans"
+        },
+        {
+          "type": "player-overseas-career",
+          "id": "dana_evans_2021_ksc_szekszard"
+        }
+      ],
+      "notes": "",
+      "resolved": {
+        "isResolved": true,
+        "resolvedAt": "2026-06-08T23:31:40.744Z",
+        "resolvedByTool": "overseas-team-input-tool",
+        "resolvedIds": {
+          "teamCode": "ksc_szekszard",
+          "leagueCode": "nemzeti_bajnoksag_i_a"
+        }
+      }
+    },
+    "utility_overseas_reference_asvel_feminin_asvel_feminin_1780780283582": {
+      "entryId": "utility_overseas_reference_asvel_feminin_asvel_feminin_1780780283582",
+      "title": "ASVEL Féminin",
+      "entryType": "utility_note",
+      "contentType": "data",
+      "collection": "wnba",
+      "category": "overseas-reference",
+      "status": "resolved",
+      "priority": "normal",
+      "createdAt": "2026-06-06T21:11:23.582Z",
+      "updatedAt": "2026-06-08T23:43:09.909Z",
+      "createdFrom": {
+        "tool": "draft-input-tool",
+        "contextType": "draft-overseas-player",
+        "contextId": "2025_college"
+      },
+      "task": {
+        "taskType": "create-or-connect-reference",
+        "targetDataType": "overseas-team",
+        "actionNeeded": "Create overseas team reference."
+      },
+      "referenceRequest": {
+        "leagueName": "La Boulangere Wonderligue",
+        "teamName": "ASVEL Féminin",
+        "country": "France",
+        "city": "Lyon",
+        "season": "2021-2025"
+      },
+      "wires": [
+        "draft-input-tool",
+        "overseas-league-input-tool",
+        "overseas-team-input-tool"
+      ],
+      "attachedTo": [
+        {
+          "type": "draft",
+          "id": "2025_college"
+        },
+        {
+          "type": "draft-pick",
+          "id": "2025_college_r1_p2"
+        }
+      ],
+      "notes": "",
+      "resolved": {
+        "isResolved": true,
+        "resolvedAt": "2026-06-08T23:43:09.909Z",
+        "resolvedByTool": "overseas-team-input-tool",
+        "resolvedIds": {
+          "teamCode": "asvel_feminin",
+          "leagueCode": "la_boulangere_wonderligue"
+        }
+      }
+    },
+    "utility_overseas_reference_kghm_bc_polkowice_alysha_clark_1780784177173": {
+      "entryId": "utility_overseas_reference_kghm_bc_polkowice_alysha_clark_1780784177173",
+      "title": "KGHM BC Polkowice",
+      "entryType": "utility_note",
+      "contentType": "data",
+      "collection": "wnba",
+      "category": "overseas-reference",
+      "status": "resolved",
+      "priority": "normal",
+      "createdAt": "2026-06-06T22:16:17.173Z",
+      "updatedAt": "2026-06-08T23:48:09.876Z",
+      "createdFrom": {
+        "tool": "player-input-tool",
+        "contextType": "player-overseas-career",
+        "contextId": "alysha_clark"
+      },
+      "task": {
+        "taskType": "create-or-connect-reference",
+        "targetDataType": "overseas-team",
+        "actionNeeded": "Create or connect overseas team reference."
+      },
+      "referenceRequest": {
+        "playerId": "alysha_clark",
+        "playerName": "Alysha Clark",
+        "leagueName": "Basket Liga Kobiet",
+        "teamName": "KGHM BC Polkowice",
+        "country": "Poland",
+        "city": "Polkowice",
+        "season": "2017-18"
+      },
+      "wires": [
+        "player-input-tool",
+        "overseas-league-input-tool",
+        "overseas-team-input-tool"
+      ],
+      "attachedTo": [
+        {
+          "type": "player",
+          "id": "alysha_clark"
+        },
+        {
+          "type": "player-overseas-career",
+          "id": "alysha_clark_2017-18_kghm_bc_polkowice"
+        }
+      ],
+      "notes": "",
+      "resolved": {
+        "isResolved": true,
+        "resolvedAt": "2026-06-08T23:48:09.876Z",
+        "resolvedByTool": "overseas-team-input-tool",
+        "resolvedIds": {
+          "teamCode": "kghm_bc_polkowice",
+          "leagueCode": "basket_liga_kobiet"
+        }
+      }
+    },
+    "utility_overseas_reference_besiktas_jk_dana_evans_1780951206066": {
+      "entryId": "utility_overseas_reference_besiktas_jk_dana_evans_1780951206066",
+      "title": "Beşiktaş JK",
+      "entryType": "utility_note",
+      "contentType": "data",
+      "collection": "wnba",
+      "category": "overseas-reference",
+      "status": "resolved",
+      "priority": "normal",
+      "createdAt": "2026-06-08T20:40:06.066Z",
+      "updatedAt": "2026-06-08T23:50:24.669Z",
+      "createdFrom": {
+        "tool": "player-input-tool",
+        "contextType": "player-overseas-career",
+        "contextId": "dana_evans"
+      },
+      "task": {
+        "taskType": "create-or-connect-reference",
+        "targetDataType": "overseas-team",
+        "actionNeeded": "Create overseas team under existing league."
+      },
+      "referenceRequest": {
+        "playerId": "dana_evans",
+        "playerName": "Dana Evans",
+        "leagueCode": "kadinlar_basketball_super_ligi",
+        "leagueName": "Kadinlar Basketball Super Ligi",
+        "teamName": "Beşiktaş JK",
+        "country": "Turkey",
+        "city": "Istanbul",
+        "season": "2022-2025"
+      },
+      "wires": [
+        "player-input-tool",
+        "overseas-team-input-tool"
+      ],
+      "attachedTo": [
+        {
+          "type": "player",
+          "id": "dana_evans"
+        },
+        {
+          "type": "player-overseas-career",
+          "id": "dana_evans_2022-2025_besiktas_jk"
+        }
+      ],
+      "notes": "",
+      "resolved": {
+        "isResolved": true,
+        "resolvedAt": "2026-06-08T23:50:24.669Z",
+        "resolvedByTool": "overseas-team-input-tool",
+        "resolvedIds": {
+          "teamCode": "besiktas_jk",
+          "leagueCode": "kadinlar_basketball_super_ligi"
+        }
       }
     }
   }

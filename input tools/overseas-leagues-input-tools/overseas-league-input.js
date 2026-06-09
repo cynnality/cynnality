@@ -71,13 +71,30 @@ function parseYear(value) {
 }
 
 async function loadUtilityEntries() {
+    if (!utilityEntriesList) return;
+
     const data = await UtilityEntryService.loadEntries();
 
+    console.log("All open utility entries:", data.openEntries);
+
     openUtilityEntries = Object.values(data.openEntries || {})
-        .filter(entry =>
-            entry.category === "overseas-reference" &&
-            (entry.wires || []).includes("overseas-league-input-tool")
-        );
+        .filter(entry => {
+            const scope =
+                entry.referenceScope ||
+                (
+                    entry.task?.targetDataType === "overseas-league-and-team"
+                        ? "league-and-team"
+                        : "team-only"
+                );
+
+            return (
+                entry.category === "overseas-reference" &&
+                scope === "league-and-team" &&
+                (entry.wires || []).includes("overseas-league-input-tool")
+            );
+        });
+
+    console.log("League page filtered utility entries:", openUtilityEntries);
 
     renderUtilityEntries();
 }
@@ -154,6 +171,11 @@ function loadUtilityEntryIntoLeagueForm(entry) {
 
 async function resolveUtilityEntryForLeague(entry) {
     const leagueObject = getLeagueObject();
+
+    if (!leagueObject.leagueCode || leagueObject.leagueCode === "league_code_here") {
+        alert("Load or save a league before marking this utility entry resolved.");
+        return;
+    }
 
     const resolvedEntry = UtilityEntryService.resolveEntry(
         entry,
@@ -630,6 +652,10 @@ addLinkBtn.addEventListener("click", () => createLinkRow());
 
 newLeagueBtn.addEventListener("click", resetFormOnLoad);
 leagueSearchInput.addEventListener("input", renderLeagueCards);
+
+if (reloadUtilityEntriesBtn) {
+    reloadUtilityEntriesBtn.addEventListener("click", loadUtilityEntries);
+}
 
 copyJsonBtn.addEventListener("click", async () => {
     await navigator.clipboard.writeText(jsonPreview.textContent);

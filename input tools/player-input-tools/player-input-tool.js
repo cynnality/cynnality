@@ -38,7 +38,10 @@ const collegeSelect = document.getElementById("collegeSelect");
 const collegeIdInput = document.getElementById("collegeId");
 const collegeStartInput = document.getElementById("collegeStartYear");
 const collegeEndInput = document.getElementById("collegeEndYear");
+const addCollegeCareerBtn = document.getElementById("addCollegeCareerBtn");
+const collegeCareersList = document.getElementById("collegeCareersList");
 
+const collegeCareers = [];
 const ncaaChampionships = [];
 const championships = [];
 const playerImages = [];
@@ -92,16 +95,6 @@ const addChampionshipBtn = document.getElementById("addChampionshipBtn");
 const championshipsList = document.getElementById("championshipsList");
 const wnbaChampionshipsWrapper = document.getElementById("wnbaChampionshipsWrapper");
 
-const OVERSEAS_TEAMS_PATH = "/basketball_101_data_files/overseas_teams_data.json";
-const UNRIVALED_TEAMS_PATH = "/basketball_101_data_files/unrivaled_teams_data.json";
-
-let OVERSEAS_TEAMS = {};
-let UNRIVALED_TEAMS = {};
-
-const overseasTeams = [];
-const unrivaledTeams = [];
-const teamUsaMedals = [];
-
 // =======================================================
 // WNBA timeline state
 // =======================================================
@@ -134,6 +127,24 @@ const utilityCountryInput = document.getElementById("utilityCountryInput");
 const utilityCityInput = document.getElementById("utilityCityInput");
 const utilityEntryNotesInput = document.getElementById("utilityEntryNotesInput");
 const utilityEntryStatusMessage = document.getElementById("utilityEntryStatusMessage");
+
+const utilityReferenceScopeInput = document.getElementById("utilityReferenceScopeInput");
+const utilityExistingLeagueField = document.getElementById("utilityExistingLeagueField");
+const utilityExistingLeagueCodeInput = document.getElementById("utilityExistingLeagueCodeInput");
+const utilityLeagueNameField = document.getElementById("utilityLeagueNameField");
+
+const OVERSEAS_TEAMS_PATH = "/basketball_101_data_files/overseas_teams_data.json";
+const UNRIVALED_TEAMS_PATH = "/basketball_101_data_files/unrivaled_teams_data.json";
+
+const OVERSEAS_LEAGUES_PATH = "/basketball_101_data_files/overseas_leagues_data.json";
+let OVERSEAS_LEAGUES = {};
+
+let OVERSEAS_TEAMS = {};
+let UNRIVALED_TEAMS = {};
+
+const overseasTeams = [];
+const unrivaledTeams = [];
+const teamUsaMedals = [];
 
 // Unrivaled
 const unrivaledExperienceWrapper = document.getElementById("unrivaledExperienceWrapper");
@@ -218,6 +229,48 @@ function syncSelectToInput(selectEl, inputEl) {
     inputEl.value = selectEl.value;
     updateAll();
   });
+}
+
+function getLeagueDisplayNameByCode(leagueCode) {
+  const league = OVERSEAS_LEAGUES?.[leagueCode];
+
+  return (
+    league?.name?.display ||
+    league?.name?.full ||
+    league?.name?.official ||
+    leagueCode ||
+    ""
+  );
+}
+
+function populateUtilityExistingLeagueSelect() {
+  if (!utilityExistingLeagueCodeInput) return;
+
+  utilityExistingLeagueCodeInput.innerHTML = `<option value="">Select existing league</option>`;
+
+  Object.entries(OVERSEAS_LEAGUES || {})
+    .sort(([, a], [, b]) => {
+      return getLeagueDisplayNameByCode(a.leagueCode)
+        .localeCompare(getLeagueDisplayNameByCode(b.leagueCode));
+    })
+    .forEach(([leagueCode, league]) => {
+      const option = document.createElement("option");
+      option.value = league.leagueCode || leagueCode;
+      option.textContent = `${getLeagueDisplayNameByCode(option.value)} (${option.value})`;
+      utilityExistingLeagueCodeInput.appendChild(option);
+    });
+}
+
+function updateUtilityReferenceScopeUI() {
+  if (!utilityReferenceScopeInput) return;
+
+  const scope = utilityReferenceScopeInput.value;
+
+  utilityExistingLeagueField.style.display =
+    scope === "team-only" ? "block" : "none";
+
+  utilityLeagueNameField.style.display =
+    scope === "team-only" ? "none" : "block";
 }
 
 // =======================================================
@@ -826,6 +879,78 @@ function replaceArrayContents(targetArray, sourceArray = []) {
 // =======================================================
 // list helpers
 // =======================================================
+
+function findCollegeForYear(year) {
+  const championshipYear = Number(year);
+
+  return collegeCareers.find((career) => {
+    const startYear = Number(career.startYear);
+    const endYear = Number(career.endYear);
+
+    return (
+      championshipYear &&
+      startYear &&
+      endYear &&
+      championshipYear >= startYear &&
+      championshipYear <= endYear
+    );
+  });
+}
+
+function buildLegacyCollegeCareer() {
+  const firstCareer = collegeCareers[0] || {
+    collegeId: collegeIdInput.value.trim(),
+    collegeName: "",
+    startYear: collegeStartInput.value.trim(),
+    endYear: collegeEndInput.value.trim()
+  };
+
+  const lastCareer = collegeCareers[collegeCareers.length - 1] || firstCareer;
+
+  return {
+    collegeId: firstCareer.collegeId || "",
+    collegeName: firstCareer.collegeName || "",
+    startYear: firstCareer.startYear || "",
+    endYear: lastCareer.endYear || firstCareer.endYear || "",
+    ncaaChampionships: getRadioBoolean("hasNcaaChampionships")
+      ? ncaaChampionships
+      : []
+  };
+}
+
+function renderCollegeCareersList() {
+  collegeCareersList.innerHTML = "";
+
+  if (!collegeCareers.length) {
+    collegeCareersList.innerHTML = `<p class="empty-note">No college spans added yet.</p>`;
+    return;
+  }
+
+  collegeCareers.forEach((career, index) => {
+    const li = document.createElement("li");
+
+    li.innerHTML = `
+      <span>
+        ${career.collegeName || getCollegeDisplayName(career.collegeId)}
+        (${career.collegeId})
+        — ${career.startYear || "?"}–${career.endYear || "?"}
+      </span>
+      <button type="button" data-index="${index}" class="remove-college-career-btn">Remove</button>
+    `;
+
+    collegeCareersList.appendChild(li);
+  });
+
+  document.querySelectorAll(".remove-college-career-btn").forEach((btn) => {
+    btn.addEventListener("click", () => {
+      collegeCareers.splice(Number(btn.dataset.index), 1);
+      renderCollegeCareersList();
+      renderNcaaChampionshipsList();
+      updateAll();
+    });
+  });
+}
+
 function populateOverseasTeamSelect() {
   overseasTeamSelect.innerHTML = `<option value="">Overseas teams menu</option>`;
 
@@ -1042,7 +1167,7 @@ function resetFibaInputs() {
 // =======================================================
 // Image helpers
 // =======================================================
-const IMAGE_BASE_PATH = "/season30/connection-imgs/";
+const IMAGE_BASE_PATH = "/season-30/connection-imgs/";
 
 function getSelectedImageFileType() {
   const selected = document.querySelector(`input[name="imageFileType"]:checked`);
@@ -1103,6 +1228,18 @@ async function createPlayerOverseasUtilityEntry() {
   const playerName = playerNameInput.value.trim();
   const teamName = utilityTeamNameInput.value.trim();
 
+  const referenceScope = utilityReferenceScopeInput.value;
+  const existingLeagueCode = utilityExistingLeagueCodeInput.value;
+
+  const leagueName = referenceScope === "team-only"
+    ? getLeagueDisplayNameByCode(existingLeagueCode)
+    : utilityLeagueNameInput.value.trim();
+
+  if (referenceScope === "team-only" && !existingLeagueCode) {
+    alert("Please select the existing overseas league.");
+    return null;
+  }
+
   if (!teamName) {
     alert("Please enter the overseas team name.");
     return null;
@@ -1121,25 +1258,29 @@ async function createPlayerOverseasUtilityEntry() {
 
     task: {
       taskType: "create-or-connect-reference",
-      targetDataType: "overseas-team",
-      actionNeeded: "Create or connect overseas team reference."
+      targetDataType: referenceScope === "team-only"
+        ? "overseas-team"
+        : "overseas-league-and-team",
+      actionNeeded: referenceScope === "team-only"
+        ? "Create overseas team under existing league."
+        : "Create overseas league and team reference."
     },
 
     referenceRequest: {
       playerId,
       playerName,
-      leagueName: utilityLeagueNameInput.value.trim(),
+      leagueCode: referenceScope === "team-only" ? existingLeagueCode : "",
+      leagueName,
       teamName,
       country: utilityCountryInput.value.trim(),
       city: utilityCityInput.value.trim(),
       season: overseasSeasonInput.value.trim()
     },
 
-    wires: [
-      "player-input-tool",
-      "overseas-league-input-tool",
-      "overseas-team-input-tool"
-    ],
+    wires: UtilityEntryService.getOverseasUtilityWires(
+      referenceScope,
+      "player-input-tool"
+    ),
 
     attachedTo: [
       {
@@ -1174,7 +1315,7 @@ function renderNcaaChampionshipsList() {
     const li = document.createElement("li");
 
     li.innerHTML = `
-      <span>${entry.year} - ${entry.collegeId}</span>
+      <span>${entry.year} - ${entry.collegeName || getCollegeDisplayName(entry.collegeId)}</span>
       <button type="button" data-index="${index}" class="remove-ncaa-btn">Remove</button>
     `;
 
@@ -1237,6 +1378,18 @@ function setupPanels() {
 // =======================================================
 // Loading data
 // =======================================================
+
+function normalizePlayerRecord(playerId, playerRecord) {
+  const hasPlayerDataWrapper = !!playerRecord?.playerData;
+  const hasQuickAddStatus = !!playerRecord?.dataStatus?.isQuickAdd;
+
+  return {
+    playerId,
+    isQuickAdd: hasPlayerDataWrapper || hasQuickAddStatus,
+    data: hasPlayerDataWrapper ? playerRecord.playerData : playerRecord
+  };
+}
+
 async function loadJson(path, fallback = {}) {
   try {
     const res = await fetch(path);
@@ -1253,10 +1406,18 @@ async function loadJson(path, fallback = {}) {
 }
 
 async function loadAllData() {
-  const [playersData, teamsData, collegesData, overseasData, unrivaledData] = await Promise.all([
+  const [
+    playersData,
+    teamsData,
+    collegesData,
+    overseasLeaguesData,
+    overseasData,
+    unrivaledData
+  ] = await Promise.all([
     loadJson(PLAYERS_PATH, { players: {} }),
     loadJson(WNBA_TEAMS_PATH, { teams: {} }),
     loadJson(COLLEGES_PATH, { colleges: {} }),
+    loadJson(OVERSEAS_LEAGUES_PATH, { leagues: {} }),
     loadJson(OVERSEAS_TEAMS_PATH, { teams: {} }),
     loadJson(UNRIVALED_TEAMS_PATH, { teams: {} })
   ]);
@@ -1264,6 +1425,7 @@ async function loadAllData() {
   PLAYERS = playersData.players || {};
   WNBA_TEAMS = teamsData.teams || {};
   COLLEGES = collegesData.colleges || {};
+  OVERSEAS_LEAGUES = overseasLeaguesData.leagues || {};
   OVERSEAS_TEAMS = overseasData.teams || overseasData || {};
   UNRIVALED_TEAMS = unrivaledData.teams || unrivaledData || {};
 
@@ -1271,6 +1433,7 @@ async function loadAllData() {
   populateWnbaTeamSelects();
   populateCollegeSelect();
   populateOverseasTeamSelect();
+  populateUtilityExistingLeagueSelect();
   populateUnrivaledTeamSelect();
 }
 
@@ -1306,11 +1469,22 @@ function populatePlayerSelect() {
   playerSelect.innerHTML = `<option value="">Player menu</option>`;
 
   Object.entries(PLAYERS)
-    .sort((a, b) => (a[1].playerName || "").localeCompare(b[1].playerName || ""))
-    .forEach(([playerId, player]) => {
+    .map(([playerId, playerRecord]) => normalizePlayerRecord(playerId, playerRecord))
+    .sort((a, b) => {
+      const nameA = a.data.playerName || a.playerId;
+      const nameB = b.data.playerName || b.playerId;
+
+      return nameA.localeCompare(nameB);
+    })
+    .forEach((normalized) => {
       const option = document.createElement("option");
-      option.value = playerId;
-      option.textContent = `${player.playerName || playerId} (${playerId})`;
+
+      option.value = normalized.playerId;
+
+      option.textContent = normalized.isQuickAdd
+        ? `${normalized.data.playerName || normalized.playerId} — quick add (${normalized.playerId})`
+        : `${normalized.data.playerName || normalized.playerId} (${normalized.playerId})`;
+
       playerSelect.appendChild(option);
     });
 }
@@ -1387,12 +1561,8 @@ function getPlayerData() {
     },
 
     careerDetails: {
-      collegeCareer: {
-        collegeId: collegeIdInput.value.trim(),
-        startYear: collegeStartInput.value.trim(),
-        endYear: collegeEndInput.value.trim(),
-        ncaaChampionships: getRadioBoolean("hasNcaaChampionships") ? ncaaChampionships : []
-      },
+      collegeCareer: buildLegacyCollegeCareer(),
+      collegeCareers: collegeCareers,
 
       draftDetails: getDraftDetails(),
 
@@ -1471,13 +1641,20 @@ function updateAll() {
 // Starter version — timeline/extra lists come next
 // =======================================================
 function fillFormFromPlayer(playerId) {
-  const player = PLAYERS[playerId];
-  if (!player) return;
+  const playerRecord = PLAYERS[playerId];
+  if (!playerRecord) return;
+
+  const normalized = normalizePlayerRecord(playerId, playerRecord);
+  const player = normalized.data;
 
   playerIdManualMode = true;
 
-  playerIdInput.value = playerId;
+  playerIdInput.value = normalized.playerId;
   playerNameInput.value = player.playerName || "";
+
+  if (normalized.isQuickAdd) {
+    console.log(`${normalized.playerId} is a quick-add player. Saving will convert it to full player shape.`);
+  }
 
   const isActive =
     player.playerStatus?.isActive ??
@@ -1489,10 +1666,35 @@ function fillFormFromPlayer(playerId) {
   setRadioBoolean("playerActive2026", Boolean(isActive));
 
   const collegeCareer = player.careerDetails?.collegeCareer || {};
-  collegeIdInput.value = collegeCareer.collegeId || player.collegeId || "";
-  collegeStartInput.value = collegeCareer.startYear || "";
-  collegeEndInput.value = collegeCareer.endYear || "";
+  const savedCollegeCareers =
+    player.careerDetails?.collegeCareers ||
+    player.collegeCareers ||
+    [];
+
+  replaceArrayContents(
+    collegeCareers,
+    savedCollegeCareers.length
+      ? savedCollegeCareers
+      : collegeCareer.collegeId
+        ? [
+            {
+              collegeId: collegeCareer.collegeId || "",
+              collegeName: collegeCareer.collegeName || getCollegeDisplayName(collegeCareer.collegeId),
+              startYear: collegeCareer.startYear || "",
+              endYear: collegeCareer.endYear || ""
+            }
+          ]
+        : []
+  );
+
+  const firstCollege = collegeCareers[0] || {};
+
+  collegeIdInput.value = firstCollege.collegeId || collegeCareer.collegeId || player.collegeId || "";
+  collegeStartInput.value = firstCollege.startYear || collegeCareer.startYear || "";
+  collegeEndInput.value = firstCollege.endYear || collegeCareer.endYear || "";
   collegeSelect.value = collegeIdInput.value;
+
+  renderCollegeCareersList();
 
   const draft = player.careerDetails?.draftDetails || player.draft || {};
   draftYearInput.value = draft.year || "";
@@ -1596,9 +1798,14 @@ function fillFormFromPlayer(playerId) {
 // Save / copy
 // =======================================================
 async function savePlayer() {
+  const playerId = getPlayerId();
+  const fullPlayerData = getPlayerData();
+  delete fullPlayerData.dataStatus;
+  delete fullPlayerData.playerId;
+
   const payload = {
-    playerId: getPlayerId(),
-    playerData: getPlayerData()
+    playerId,
+    ...fullPlayerData
   };
 
   try {
@@ -1615,6 +1822,11 @@ async function savePlayer() {
     if (!result.ok) {
       throw new Error(result.error || "Save failed");
     }
+
+    PLAYERS[playerId] = fullPlayerData;
+
+    populatePlayerSelect();
+    playerSelect.value = playerId;
 
     saveJsonBtn.textContent = "Saved!";
 
@@ -1682,6 +1894,32 @@ function bindLiveInputs() {
     updateAll();
   });
 
+  addCollegeCareerBtn.addEventListener("click", () => {
+    const collegeId = collegeIdInput.value.trim();
+    const startYear = collegeStartInput.value.trim();
+    const endYear = collegeEndInput.value.trim();
+
+    if (!collegeId || !startYear || !endYear) {
+      alert("Select a college and enter start/end years first.");
+      return;
+    }
+
+    collegeCareers.push({
+      collegeId,
+      collegeName: getCollegeDisplayName(collegeId),
+      startYear,
+      endYear
+    });
+
+    collegeIdInput.value = "";
+    collegeSelect.value = "";
+    collegeStartInput.value = "";
+    collegeEndInput.value = "";
+
+    renderCollegeCareersList();
+    updateAll();
+  });
+
   addImageBtn.addEventListener("click", () => {
     const fileName = imageFileNameInput.value.trim();
     const fileType = getSelectedImageFileType();
@@ -1715,11 +1953,20 @@ function bindLiveInputs() {
   });
 
   addNcaaChampionshipBtn.addEventListener("click", () => {
-    if (!ncaaChampionshipYearInput.value.trim()) return;
+    const year = ncaaChampionshipYearInput.value.trim();
+    if (!year) return;
+
+    const matchingCollege = findCollegeForYear(year);
+
+    if (!matchingCollege) {
+      alert("No college span matches that championship year. Add the player's college years first.");
+      return;
+    }
 
     ncaaChampionships.push({
-      year: ncaaChampionshipYearInput.value.trim(),
-      collegeId: collegeIdInput.value.trim()
+      year,
+      collegeId: matchingCollege.collegeId,
+      collegeName: matchingCollege.collegeName || getCollegeDisplayName(matchingCollege.collegeId)
     });
 
     ncaaChampionshipYearInput.value = "";
@@ -1789,6 +2036,10 @@ function bindLiveInputs() {
     updateAll();
   });
 
+    if (utilityReferenceScopeInput) {
+      utilityReferenceScopeInput.addEventListener("change", updateUtilityReferenceScopeUI);
+    }
+
     addOverseasBtn.addEventListener("click", async () => {
       const mode = getOverseasReferenceMode();
 
@@ -1802,13 +2053,25 @@ function bindLiveInputs() {
         overseasTeams.push({
           season: overseasSeasonInput.value.trim(),
           referenceMode: "utility",
+          referenceScope: utilityReferenceScopeInput.value,
+
           teamCode: "",
-          leagueName: utilityLeagueNameInput.value.trim(),
+
+          leagueCode: utilityReferenceScopeInput.value === "team-only"
+            ? utilityExistingLeagueCodeInput.value
+            : "",
+
+          leagueName: utilityReferenceScopeInput.value === "team-only"
+            ? getLeagueDisplayNameByCode(utilityExistingLeagueCodeInput.value)
+            : utilityLeagueNameInput.value.trim(),
+
           teamName: utilityTeamNameInput.value.trim(),
           country: utilityCountryInput.value.trim(),
           city: utilityCityInput.value.trim(),
+
           utilityEntryId: utilityEntry.entryId,
           utilityEntryStatus: "open",
+
           note: overseasNoteInput.value.trim()
         });
       } else {
@@ -1830,6 +2093,8 @@ function bindLiveInputs() {
       utilityCountryInput.value = "";
       utilityCityInput.value = "";
       utilityEntryNotesInput.value = "";
+      utilityExistingLeagueCodeInput.value = "";
+      updateUtilityReferenceScopeUI();
 
       renderOverseasList();
       updateAll();
@@ -2078,6 +2343,8 @@ window.addEventListener("load", async () => {
   bindLiveInputs();
 
   await loadAllData();
+
+  updateUtilityReferenceScopeUI();
 
   applyUrlParams();
 

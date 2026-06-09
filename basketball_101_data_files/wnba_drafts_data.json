@@ -74,25 +74,22 @@
               "college": null,
               "overseas": {
                 "country": "France",
-                "leagueCode": null,
+                "leagueCode": "la_boulangere_wonderligue",
                 "leagueName": "La Boulangere Wonderligue",
-                "teamCode": null,
+                "teamCode": "asvel_feminin",
                 "teamName": "ASVEL Féminin",
-                "existsInOverseasData": false,
-                "referenceMode": "utility",
-                "utilityEntryId": "utility_overseas_reference_asvel_feminin_asvel_feminin_1780780283582",
-                "utilityEntryStatus": "open"
+                "existsInOverseasData": true,
+                "utilityEntryId": "",
+                "utilityEntryStatus": ""
               },
               "team": {
                 "teamCode": "SEA_STORM",
                 "teamName": "Seattle Storm"
               },
               "previousTeam": null,
-              "notes": "Malonga played for ASVEL Féminin before being drafted into the WNBA",
+              "notes": "",
               "links": [],
-              "entryIds": [
-                "utility_overseas_reference_asvel_feminin_asvel_feminin_1780780283582"
-              ]
+              "entryIds": []
             }
           }
         },

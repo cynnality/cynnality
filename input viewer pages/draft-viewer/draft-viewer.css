@@ -10,13 +10,18 @@ body {
 }
 
 .viewer-shell {
-    max-width: 1100px;
     margin: 0 auto;
     padding: 32px;
 }
 
 .viewer-header {
-    margin-bottom: 24px;
+    padding: 6px;
+}
+
+.viewer-header p,
+.viewer-header h1 {
+    margin: 0;
+    
 }
 
 .eyebrow {
@@ -31,7 +36,6 @@ body {
 .pick-card {
     background: #fff;
     border: 1px solid #ddd;
-    border-radius: 14px;
     padding: 20px;
     margin-bottom: 18px;
 }
@@ -47,7 +51,6 @@ input {
     max-width: 220px;
     padding: 10px;
     border: 1px solid #bbb;
-    border-radius: 8px;
     font: inherit;
 }
 
@@ -55,7 +58,6 @@ button {
     margin-top: 14px;
     padding: 10px 16px;
     border: 0;
-    border-radius: 999px;
     background: #111;
     color: white;
     font-weight: 800;
@@ -73,19 +75,169 @@ button {
 
 .draft-meta,
 .pick-meta {
-    color: #555;
+    color: #000000;
     font-size: 13px;
-    margin-top: 4px;
+    /*! margin-top: 4px; */
 }
 
 .picks-grid {
     display: grid;
-    gap: 10px;
-    margin-top: 16px;
+    gap: 6px;
+    margin-left: 16px;
+    padding: 12px;
 }
 
 .pick-card {
-    margin-bottom: 0;
-    cursor: pointer;
-    background: #fafafa;
+    width: 100%;
+    display: flex;
+    gap: 12px;
+    margin: 0;
+    margin-top: 6px;
+    border: 2px solid #000000;
+    color: #000;
+    text-align: left;
+    box-shadow: none;
 }
+
+.viewer-controls {
+    width: fit-content;
+    display: flex;
+    gap: 12px;
+}
+
+.filter-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.filter-btn {
+    margin-top: 0;
+    background: #fff;
+    color: #111;
+    border: 2px solid #111;
+}
+
+.filter-btn.active {
+    background: #111;
+    color: #fff;
+}
+
+.draft-panel {
+    padding: 0;
+    overflow: hidden;
+    cursor: default;
+}
+
+#draftsContainer {
+    max-width: 1200px;
+    margin-left: 48px;
+    padding: 12px;
+}
+
+.draft-header,
+.round-header {
+    width: 100%;
+    margin: 0;
+    border: 0;
+    background: #ffffff;
+    color: #000000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: left;
+}
+
+.draft-header {
+    font-size: 14px;
+    font-weight: 600;
+    font-style: italic;
+}
+
+.draft-header-college {
+    background: #f5c400c4;
+}
+
+.draft-panel.draft-type-college {
+    border: solid 3px #f5c400c4;
+}
+
+.draft-type-college .round-body {
+    background: #f5c400c4;
+}
+
+.draft-header-expansion {
+    background: #4caf4fc4;
+}
+
+.draft-panel.draft-type-expansion {
+    border: solid 3px #4caf4fc4;
+}
+
+.draft-type-expansion .round-body {
+    background: #4caf4fc4;
+}
+
+.draft-header-dispersal {
+    background: #8d44adc9;
+}
+
+.draft-panel.draft-type-dispersal {
+    border: solid 3px #8d44adc9;
+}
+
+.draft-type-dispersal .round-body {
+    background: #8d44adc9;
+}
+
+.round-header p {
+    margin: 0;
+}
+
+.draft-header span {
+    display: grid;
+    gap: 4px;
+}
+
+.round-header span {
+    display: flex;
+    gap: 4px;
+}
+
+.draft-header small,
+.round-header small {
+    color: #ddd;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+.draft-body {
+    padding: 18px;
+}
+
+.draft-meta-row {
+    display: flex;
+    gap: 18px;
+    margin-bottom: 12px;
+}
+
+.round-panel {
+    margin-top: 16px;
+    overflow: hidden;
+}
+
+.round-header {
+    margin-bottom: 6px;
+    background: #d3cfcf;
+    color: #111;
+    border-bottom: 1px solid #ddd;
+}
+
+.round-header small {
+    color: #000000;
+}
+
+.collapsed {
+    display: none;
+}
+
