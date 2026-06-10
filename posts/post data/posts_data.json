@@ -1,22 +1,5 @@
 {
   "posts": {
-    "starter-01": {
-      "postId": "starter-01",
-      "title": "Starter-01",
-      "slug": "starter-01",
-      "page": "general",
-      "status": "draft",
-      "tags": [
-        "personal",
-        "test",
-        "inspired"
-      ],
-      "contentType": "markdown-html",
-      "contentFile": "posts/post data/text/general/starter-01.md",
-      "styleFile": "posts/post data/styles/general/starter-01.css",
-      "createdAt": "",
-      "updatedAt": "2026-06-06T04:04:49.457Z"
-    },
     "explainingintentions": {
       "postId": "explainingintentions",
       "title": "explaining/intentions",
@@ -35,25 +18,10 @@
       "createdAt": "",
       "updatedAt": "2026-06-06T04:02:48.567Z"
     },
-    "does_this_work": {
-      "postId": "does_this_work",
-      "title": "Does this work??",
-      "slug": "does-this-work",
-      "page": "tester",
-      "status": "draft",
-      "tags": [
-        "test"
-      ],
-      "contentType": "markdown-html",
-      "contentFile": "posts/post data/text/tester/does_this_work.md",
-      "styleFile": "posts/post data/styles/tester/does_this_work.css",
-      "createdAt": "",
-      "updatedAt": "2026-06-06T03:38:37.602Z"
-    },
-    "an_update_of_sorts": {
-      "postId": "an_update_of_sorts",
-      "title": "An Update... of sorts",
-      "slug": "an-update-of-sorts",
+    "explaining_01": {
+      "postId": "explaining_01",
+      "title": "explaining_01",
+      "slug": "explaining_01",
       "page": "basketball",
       "status": "draft",
       "tags": [
@@ -64,10 +32,10 @@
         "update"
       ],
       "contentType": "markdown-html",
-      "contentFile": "posts/post data/text/basketball/an_update_of_sorts.md",
-      "styleFile": "posts/post data/styles/basketball/an_update_of_sorts.css",
+      "contentFile": "posts/post data/text/basketball/explaining_01.md",
+      "styleFile": "posts/post data/styles/basketball/explaining_01.css",
       "createdAt": "",
-      "updatedAt": "2026-06-09T05:40:02.637Z"
+      "updatedAt": "2026-06-10T03:05:20.451Z"
     }
   }
 }

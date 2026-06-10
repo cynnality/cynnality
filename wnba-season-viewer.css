@@ -9,14 +9,204 @@ body {
 
 .season-shell {
     margin: 0 auto;
-    padding: 32px;
+    padding: 12px;
 }
 
 .season-header {
     border: 2px solid #111;
     background: #fff;
     padding: 10px;
-    margin-bottom: 24px;
+    display: flex;
+    align-items: center;
+}
+
+.season-rail-help {
+    margin: 0;
+    font-size: 12px;
+    font-weight: 400;
+    color: #555;
+}
+
+.season-select-fallback {
+    min-width: 92px;
+    max-width: 110px;
+    padding: 7px 8px;
+    font-size: 12px;
+}
+
+.season-rail {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(40px, 1fr));
+    gap: 6px;
+    overflow: visible;
+    padding: 8px;
+}
+
+.season-rail-wrap {
+    min-width: 0;
+}
+
+.season-rail-header {
+    display: flex;
+
+    gap: 12px;
+    margin-bottom: 10px;
+}
+
+.season-select-wrap {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.season-cell-wrap {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    
+    gap: 6px;
+    cursor: pointer;
+    border: solid 1.5px #000000;
+    padding: 6px;
+    border-radius: 4px;
+
+    font: inherit;
+    color: inherit;
+    background: transparent;
+    text-align: center;
+}
+
+.season-cell {
+    height: auto;
+    border: none;
+    background: none;
+    pointer-events: none;
+    /*! padding: 0; */
+}
+
+.season-cell-wrap.selected {
+    background: #111;
+    border: 1.5px solid #ffffff;
+    box-shadow: 2px 2px 0 #000000;
+}
+.season-cell-wrap.selected .season-year {
+    color: #fff;
+}
+
+.season-cell-wrap.selected::after {
+    content: "";
+    position: absolute;
+    width: 6px;
+    height: 111px;
+    background: #111;
+    top: 83px;
+    left: calc(50% - 3px);
+}
+
+.season-cell-wrap:hover {
+    transform: translate(1px, 1px);
+    box-shadow: 1px 1px 0 #111;
+}
+
+.season-year {
+    display: block;
+    font-size: 13px;
+    font-weight: 600;
+}
+
+.season-node,
+.season-cell::after,
+.season-cell.selected::after,
+.season-cell.active {
+    display: none;
+}
+
+.season-markers {
+    min-height: 16px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 3px;
+}
+
+.season-marker {
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    font-size: 10px;
+    border: .5px solid #111;
+    text-align: center;
+}
+
+.season-marker.expansion {
+    background: #d8ecff;
+}
+
+.season-marker.relocation {
+    background: #ffe1d1;
+}
+
+.season-marker.cba {
+    background: #dcf5d3;
+}
+
+.season-marker.draft {
+    background: #f3e2ff;
+}
+
+.season-rail-legend {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin: 20px 0 10px;
+    font-size: 12px;
+    font-weight: 400;
+}
+
+.legend-dot {
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    border: 2px solid #111;
+    border-radius: 50%;
+    margin-right: 4px;
+    vertical-align: middle;
+    pointer-events: none;
+}
+
+.legend-dot.filled {
+    background: #111;
+}
+
+.legend-marker {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 24px;
+    height: 24px;
+    border: 1px solid #111;
+    border-radius: 50%;
+    font-size: 10px;
+    font-weight: 600;
+    margin-right: 4px;
+}
+
+.legend-marker.expansion {
+    background: #d8ecff;
+}
+
+.legend-marker.relocation {
+    background: #ffe1d1;
+}
+
+.legend-marker.cba {
+    background: #dcf5d3;
+}
+
+.legend-marker.draft {
+    background: #f3e2ff;
 }
 
 .eyebrow {
@@ -47,7 +237,7 @@ h1 {
     content: "";
     position: absolute;
     left: 12px;
-    top: 0;
+    top: -20px;
     bottom: 0;
     width: 2px;
     background: #111;
@@ -57,9 +247,10 @@ details.viewer-panel {
     position: relative;
     max-width: none;
     width: 100%;
-    border: 2px solid #111;
-    background: #fff;
+    border: 3px solid #000000;
+    background: #ffffff5b;
     margin-bottom: 18px;
+    border-radius: 4px;
 }
 
 details.viewer-panel::before {
@@ -91,11 +282,11 @@ details.nested-panel {
 .season-hero::before {
     content: "";
     position: absolute;
-    top: -28px;
+    top: -1px;
     left: 28px;
     width: 2px;
     height: 28px;
-    background: #111;
+    /*! background: #111; */
 }
 
 .compact-hero {
@@ -126,180 +317,12 @@ details.nested-panel {
     margin-bottom: 14px;
 }
 
-.season-rail-wrap {
-    min-width: 0;
-}
-
-.season-rail-header {
-    display: flex;
-    align-items: end;
-    gap: 12px;
-    margin-bottom: 10px;
-}
-
 .mini-label {
     margin: 0 0 3px;
     font-size: 12px;
     font-weight: 600;
     text-transform: uppercase;
     letter-spacing: .12em;
-}
-
-.season-rail-help {
-    margin: 0;
-    font-size: 12px;
-    font-weight: 400;
-    color: #555;
-}
-
-.season-select-fallback {
-    min-width: 92px;
-    max-width: 110px;
-    padding: 7px 8px;
-    font-size: 12px;
-}
-
-.season-rail {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(54px, 1fr));
-    gap: 10px;
-    overflow: visible;
-    padding: 14px;
-    border: 2px solid #111;
-    background: #fff;
-}
-
-.season-cell-wrap {
-    position: relative;
-    display: grid;
-    justify-items: center;
-    gap: 5px;
-}
-
-.season-cell {
-    width: 100%;
-    aspect-ratio: 1 / 1;
-    height: auto;
-    border: 2px solid #111;
-    background: #fff;
-    cursor: pointer;
-    padding: 0;
-    display: grid;
-    place-items: center;
-}
-
-.season-cell-wrap.selected .season-cell {
-    background: #111;
-    color: #fff;
-    box-shadow: 3px 3px 0 #4a7c32;
-}
-
-.season-cell-wrap.selected::after {
-    content: "";
-    position: absolute;
-    top: calc(100% + 4px);
-    width: 2px;
-    height: 28px;
-    background: #111;
-}
-
-.season-cell:hover {
-    transform: translate(1px, 1px);
-    box-shadow: 1px 1px 0 #111;
-}
-
-.season-year {
-    display: block;
-    font-size: 13px;
-    font-weight: 600;
-}
-
-.season-node,
-.season-cell::after,
-.season-cell.selected::after,
-.season-cell.active {
-    display: none;
-}
-
-.season-markers {
-    min-height: 16px;
-    display: flex;
-    justify-content: center;
-    gap: 3px;
-}
-
-.season-marker {
-    width: 14px;
-    height: 14px;
-    font-size: 8px;
-}
-
-.season-marker.expansion {
-    background: #d8ecff;
-}
-
-.season-marker.relocation {
-    background: #ffe1d1;
-}
-
-.season-marker.cba {
-    background: #dcf5d3;
-}
-
-.season-marker.draft {
-    background: #f3e2ff;
-}
-
-.season-rail-legend {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 10px;
-    margin: 8px 0 10px;
-    font-size: 12px;
-    font-weight: 400;
-}
-
-.legend-dot {
-    display: inline-block;
-    width: 9px;
-    height: 9px;
-    border: 2px solid #111;
-    border-radius: 50%;
-    margin-right: 4px;
-    vertical-align: middle;
-}
-
-.legend-dot.filled {
-    background: #111;
-}
-
-.legend-marker {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    width: 13px;
-    height: 13px;
-    border: 1px solid #111;
-    border-radius: 50%;
-    font-size: 8px;
-    font-weight: 600;
-    margin-right: 4px;
-}
-
-.legend-marker.expansion {
-    background: #d8ecff;
-}
-
-.legend-marker.relocation {
-    background: #ffe1d1;
-}
-
-.legend-marker.cba {
-    background: #dcf5d3;
-}
-
-.legend-marker.draft {
-    background: #f3e2ff;
 }
 
 label {
@@ -387,6 +410,34 @@ details[open] > summary.panel-summary::after { content: "−"; }
 .nested-body {
     border-top: 1px solid #111;
     padding: 12px;
+}
+
+#seasonNotes p.small-meta {
+    font-size: 14px;
+    line-height: 1.5;
+    color: #000000;
+}
+
+.seasonlinkcards a,
+.seasonlinkcards p  {
+    margin: 0;
+}
+
+.seasonlinkcards a {
+    text-decoration: none;
+}
+
+.seasonlinkcards {
+    display: flex;
+    gap: 12px;
+}
+
+.link-item {
+    border: 2px solid #000000;
+    font-size: 16px;
+    border-radius: 4px;
+    padding: 12px;
+    
 }
 
 .chip-list { display: flex; flex-wrap: wrap; gap: 8px; }
@@ -529,7 +580,7 @@ details[open] > summary.panel-summary::after { content: "−"; }
     border-bottom: 2px solid #111;
     background: #eee5d8;
     font-size: 12px;
-    font-weight: 900;
+    font-weight: 600;
     text-transform: uppercase;
 }
 
@@ -546,7 +597,7 @@ details[open] > summary.panel-summary::after { content: "−"; }
 }
 
 .award-name {
-    font-weight: 900;
+    font-weight: 600;
 }
 
 .award-recipient {
@@ -577,14 +628,14 @@ details[open] > summary.panel-summary::after { content: "−"; }
 
 .attached-entry-label {
     font-size: 10px;
-    font-weight: 900;
+    font-weight: 600;
     text-transform: uppercase;
     color: #666;
 }
 
 .attached-entry-title {
     margin-top: 3px;
-    font-weight: 900;
+    font-weight: 600;
 }
 
 .attached-entry-meta {
@@ -630,13 +681,13 @@ details[open] > summary.panel-summary::after { content: "−"; }
     background: #fff;
     color: #111;
     font-size: 22px;
-    font-weight: 900;
+    font-weight: 600;
     cursor: pointer;
 }
 
 .entry-modal-label {
     font-size: 11px;
-    font-weight: 900;
+    font-weight: 600;
     text-transform: uppercase;
     color: #666;
 }

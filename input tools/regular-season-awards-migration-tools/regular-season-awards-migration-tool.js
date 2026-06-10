@@ -11,6 +11,8 @@ const seasonSelect = document.getElementById("seasonSelect");
 const seasonTitle = document.getElementById("seasonTitle");
 const awardsList = document.getElementById("awardsList");
 
+const openSeasonMigrationBtn = document.getElementById("openSeasonMigrationBtn");
+
 async function loadJson(path, fallback) {
     try {
         const response = await fetch(path);
@@ -64,6 +66,14 @@ function buildEditorUrl(season, award) {
     return `${INPUT_TOOL_PATH}?${params.toString()}`;
 }
 
+function buildSeasonMigrationUrl(season) {
+    const params = new URLSearchParams();
+
+    params.set("migrationSeason", season);
+
+    return `${INPUT_TOOL_PATH}?${params.toString()}`;
+}
+
 function renderAwardsForSeason() {
     const season = seasonSelect.value;
     const awards = LEGACY_AWARDS[season] || [];
@@ -108,6 +118,14 @@ function renderAwardsForSeason() {
 }
 
 seasonSelect.addEventListener("change", renderAwardsForSeason);
+
+openSeasonMigrationBtn.addEventListener("click", () => {
+    const season = seasonSelect.value;
+
+    if (!season) return;
+
+    window.location.href = buildSeasonMigrationUrl(season);
+});
 
 async function init() {
     LEGACY_AWARDS = await loadJson(DATA_PATHS.legacyAwards, {});

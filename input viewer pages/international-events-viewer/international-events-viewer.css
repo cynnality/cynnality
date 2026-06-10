@@ -1,0 +1,112 @@
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  background: #f5f1ea;
+  color: #111;
+  font-family: "Chivo Mono", monospace;
+}
+
+.events-shell {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 32px;
+}
+
+.events-header {
+  border: 2px solid #111;
+  background: #fff;
+  padding: 14px;
+  margin-bottom: 18px;
+}
+
+.eyebrow {
+  margin: 0 0 8px;
+  text-transform: uppercase;
+  letter-spacing: .16em;
+  font-size: 12px;
+  font-weight: 700;
+}
+
+h1 {
+  margin: 0 0 8px;
+  text-transform: uppercase;
+  letter-spacing: -0.06em;
+}
+
+.filter-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 22px;
+}
+
+.filter-btn {
+  border: 2px solid #111;
+  background: #fff;
+  padding: 8px 12px;
+  font: inherit;
+  text-transform: uppercase;
+  cursor: pointer;
+  box-shadow: 3px 3px 0 #111;
+}
+
+.filter-btn.active {
+  background: #ffcd00;
+  transform: translate(2px, 2px);
+  box-shadow: 1px 1px 0 #111;
+}
+
+.events-timeline {
+  display: grid;
+  gap: 14px;
+}
+
+.event-card {
+  border: 2px solid #111;
+  background: #fff;
+  padding: 12px;
+  display: grid;
+  grid-template-columns: 90px 1fr;
+  gap: 16px;
+}
+
+.event-year {
+  font-size: 1.6rem;
+  font-weight: 900;
+  letter-spacing: -0.08em;
+}
+
+.event-main h2 {
+  margin: 0 0 6px;
+  font-size: 1.05rem;
+  text-transform: uppercase;
+}
+
+.event-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-bottom: 10px;
+}
+
+.pill {
+  border: 1px solid #111;
+  padding: 3px 7px;
+  font-size: 12px;
+  background: #f5f1ea;
+  text-transform: uppercase;
+}
+
+.player-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.player-chip {
+  border: 1px solid #111;
+  padding: 4px 7px;
+  background: #fff;
+  font-size: 12px;
+}

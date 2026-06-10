@@ -1,5 +1,771 @@
 {
   "seasons": {
+    "1997": {
+      "season": 1997,
+      "seasonId": "1997",
+      "startDate": "1997-06-21",
+      "endDate": "1997-08-30",
+      "regularSeasonGamesPerTeam": 28,
+      "regularSeasonTeamGameSlots": 224,
+      "numTeams": 8,
+      "isCbaSeason": false,
+      "flags": {
+        "isCbaSeason": false,
+        "isExpansionYear": false,
+        "hasFoldedTeams": false,
+        "hasRelocations": false,
+        "hasDispersalDraft": false,
+        "hasExpansionDraft": false,
+        "hasCollegeDraft": true,
+        "hasPlayoffs": true,
+        "hasRegularSeasonAwards": true
+      },
+      "specialSeasonType": null,
+      "notes": "",
+      "links": [
+        {
+          "title": "wiki",
+          "url": "https://en.wikipedia.org/wiki/1997_WNBA_season",
+          "description": ""
+        }
+      ],
+      "cells": {},
+      "entryIds": []
+    },
+    "1998": {
+      "season": 1998,
+      "seasonId": "1998",
+      "startDate": "1998-06-11",
+      "endDate": "1998-09-01",
+      "regularSeasonGamesPerTeam": 30,
+      "regularSeasonTeamGameSlots": 300,
+      "numTeams": 10,
+      "isCbaSeason": false,
+      "flags": {
+        "isCbaSeason": false,
+        "isExpansionYear": true,
+        "hasFoldedTeams": false,
+        "hasRelocations": false,
+        "hasDispersalDraft": false,
+        "hasExpansionDraft": true,
+        "hasCollegeDraft": true,
+        "hasPlayoffs": true,
+        "hasRegularSeasonAwards": true
+      },
+      "specialSeasonType": null,
+      "notes": "Detroit Shock and Washington Mystics added as expansion teams\nexpansion draft held -> February 18, 1998 -> is labeled 1998 Expansion Draft\n\nHouston Comets move to the Western Conference with the new expansion teams to even the conferences",
+      "links": [
+        {
+          "title": "wiki",
+          "url": "https://en.wikipedia.org/wiki/1998_WNBA_season",
+          "description": ""
+        }
+      ],
+      "cells": {},
+      "entryIds": []
+    },
+    "1999": {
+      "season": 1999,
+      "seasonId": "1999",
+      "startDate": "1999-06-10",
+      "endDate": "1999-09-05",
+      "regularSeasonGamesPerTeam": 32,
+      "regularSeasonTeamGameSlots": 384,
+      "numTeams": 12,
+      "isCbaSeason": true,
+      "flags": {
+        "isCbaSeason": true,
+        "isExpansionYear": true,
+        "hasFoldedTeams": false,
+        "hasRelocations": false,
+        "hasDispersalDraft": false,
+        "hasExpansionDraft": true,
+        "hasCollegeDraft": true,
+        "hasPlayoffs": true,
+        "hasRegularSeasonAwards": true
+      },
+      "specialSeasonType": null,
+      "notes": "Minnesota Lynx and Orlando Miracle added as expansion teams\nExpansion draft held on -> April 6, 1999 -> is labeled as 1999 Expansion Draft",
+      "links": [
+        {
+          "title": "wiki",
+          "url": "https://en.wikipedia.org/wiki/1999_WNBA_season",
+          "description": ""
+        }
+      ],
+      "cells": {},
+      "entryIds": []
+    },
+    "2000": {
+      "season": 2000,
+      "seasonId": "2000",
+      "startDate": "2000-05-29",
+      "endDate": "2000-08-26",
+      "regularSeasonGamesPerTeam": 32,
+      "regularSeasonTeamGameSlots": 512,
+      "numTeams": 16,
+      "isCbaSeason": false,
+      "flags": {
+        "isCbaSeason": false,
+        "isExpansionYear": true,
+        "hasFoldedTeams": false,
+        "hasRelocations": false,
+        "hasDispersalDraft": false,
+        "hasExpansionDraft": true,
+        "hasCollegeDraft": true,
+        "hasPlayoffs": true,
+        "hasRegularSeasonAwards": true
+      },
+      "specialSeasonType": null,
+      "notes": "Seattle Storm, Indiana Fever, Portland Fire, and Miami Sol are all added as expansion teams\n\nexpansion draft help on -> December 15, 1999 -> is labeled the 2000 Expansion Draft",
+      "links": [
+        {
+          "title": "wiki",
+          "url": "https://en.wikipedia.org/wiki/2000_WNBA_season",
+          "description": ""
+        }
+      ],
+      "cells": {},
+      "entryIds": []
+    },
+    "2001": {
+      "season": 2001,
+      "seasonId": "2001",
+      "startDate": "2001-05-28",
+      "endDate": "2001-09-01",
+      "regularSeasonGamesPerTeam": 32,
+      "regularSeasonTeamGameSlots": 512,
+      "numTeams": 16,
+      "isCbaSeason": false,
+      "flags": {
+        "isCbaSeason": false,
+        "isExpansionYear": false,
+        "hasFoldedTeams": false,
+        "hasRelocations": false,
+        "hasDispersalDraft": false,
+        "hasExpansionDraft": false,
+        "hasCollegeDraft": true,
+        "hasPlayoffs": true,
+        "hasRegularSeasonAwards": true
+      },
+      "specialSeasonType": null,
+      "notes": "",
+      "links": [
+        {
+          "title": "wiki",
+          "url": "https://en.wikipedia.org/wiki/2001_WNBA_season",
+          "description": ""
+        }
+      ],
+      "cells": {},
+      "entryIds": []
+    },
+    "2002": {
+      "season": 2002,
+      "seasonId": "2002",
+      "startDate": "2002-05-25",
+      "endDate": "2002-08-31",
+      "regularSeasonGamesPerTeam": 32,
+      "regularSeasonTeamGameSlots": 512,
+      "numTeams": 16,
+      "isCbaSeason": false,
+      "flags": {
+        "isCbaSeason": false,
+        "isExpansionYear": false,
+        "hasFoldedTeams": false,
+        "hasRelocations": false,
+        "hasDispersalDraft": false,
+        "hasExpansionDraft": false,
+        "hasCollegeDraft": true,
+        "hasPlayoffs": true,
+        "hasRegularSeasonAwards": true
+      },
+      "specialSeasonType": null,
+      "notes": "",
+      "links": [
+        {
+          "title": "wiki",
+          "url": "https://en.wikipedia.org/wiki/2002_WNBA_season",
+          "description": ""
+        }
+      ],
+      "cells": {},
+      "entryIds": []
+    },
+    "2003": {
+      "season": 2003,
+      "seasonId": "2003",
+      "startDate": "2003-05-22",
+      "endDate": "2003-09-16",
+      "regularSeasonGamesPerTeam": 34,
+      "regularSeasonTeamGameSlots": 476,
+      "numTeams": 14,
+      "isCbaSeason": true,
+      "flags": {
+        "isCbaSeason": true,
+        "isExpansionYear": false,
+        "hasFoldedTeams": true,
+        "hasRelocations": true,
+        "hasDispersalDraft": true,
+        "hasExpansionDraft": false,
+        "hasCollegeDraft": true,
+        "hasPlayoffs": true,
+        "hasRegularSeasonAwards": true
+      },
+      "specialSeasonType": null,
+      "notes": "Orlando Miracle relocated to Connecticut Sun\n\nMiami Sol = folded\nPortland Fire = folded\n\ndispersal draft (1 round) held on April 24, 2003 -> is labeled as 2003 Dispersal Draft",
+      "links": [
+        {
+          "title": "wiki",
+          "url": "https://en.wikipedia.org/wiki/2003_WNBA_season",
+          "description": ""
+        }
+      ],
+      "cells": {},
+      "entryIds": []
+    },
+    "2004": {
+      "season": 2004,
+      "seasonId": "2004",
+      "startDate": "2004-05-20",
+      "endDate": "2004-10-12",
+      "regularSeasonGamesPerTeam": 34,
+      "regularSeasonTeamGameSlots": 442,
+      "numTeams": 13,
+      "isCbaSeason": false,
+      "flags": {
+        "isCbaSeason": false,
+        "isExpansionYear": false,
+        "hasFoldedTeams": true,
+        "hasRelocations": false,
+        "hasDispersalDraft": true,
+        "hasExpansionDraft": false,
+        "hasCollegeDraft": true,
+        "hasPlayoffs": true,
+        "hasRegularSeasonAwards": true
+      },
+      "specialSeasonType": null,
+      "notes": "Cleveland Rockers fold -> dispersal draft help on January 6, 2004 -> labeled as 2004 Dispersal Draft",
+      "links": [
+        {
+          "title": "wiki",
+          "url": "https://en.wikipedia.org/wiki/2004_WNBA_season",
+          "description": ""
+        }
+      ],
+      "cells": {},
+      "entryIds": []
+    },
+    "2005": {
+      "season": 2005,
+      "seasonId": "2005",
+      "startDate": "2005-05-21",
+      "endDate": "2005-09-20",
+      "regularSeasonGamesPerTeam": 34,
+      "regularSeasonTeamGameSlots": 442,
+      "numTeams": 13,
+      "isCbaSeason": false,
+      "flags": {
+        "isCbaSeason": false,
+        "isExpansionYear": false,
+        "hasFoldedTeams": false,
+        "hasRelocations": false,
+        "hasDispersalDraft": false,
+        "hasExpansionDraft": false,
+        "hasCollegeDraft": true,
+        "hasPlayoffs": true,
+        "hasRegularSeasonAwards": true
+      },
+      "specialSeasonType": null,
+      "notes": "",
+      "links": [
+        {
+          "title": "wiki",
+          "url": "https://en.wikipedia.org/wiki/2005_WNBA_season",
+          "description": ""
+        }
+      ],
+      "cells": {},
+      "entryIds": []
+    },
+    "2006": {
+      "season": 2006,
+      "seasonId": "2006",
+      "startDate": "2006-05-20",
+      "endDate": "2006-09-09",
+      "regularSeasonGamesPerTeam": 34,
+      "regularSeasonTeamGameSlots": 476,
+      "numTeams": 14,
+      "isCbaSeason": false,
+      "flags": {
+        "isCbaSeason": false,
+        "isExpansionYear": true,
+        "hasFoldedTeams": false,
+        "hasRelocations": false,
+        "hasDispersalDraft": false,
+        "hasExpansionDraft": true,
+        "hasCollegeDraft": true,
+        "hasPlayoffs": true,
+        "hasRegularSeasonAwards": true
+      },
+      "specialSeasonType": null,
+      "notes": "Chicago Sky is added as expansion team\nexpansion draft was held on -> November 16, 2005 -> is labeled the 2006 expansion draft",
+      "links": [
+        {
+          "title": "wiki",
+          "url": "https://en.wikipedia.org/wiki/2006_WNBA_season",
+          "description": ""
+        }
+      ],
+      "cells": {},
+      "entryIds": []
+    },
+    "2007": {
+      "season": 2007,
+      "seasonId": "2007",
+      "startDate": "2007-05-19",
+      "endDate": "2007-09-16",
+      "regularSeasonGamesPerTeam": 34,
+      "regularSeasonTeamGameSlots": 442,
+      "numTeams": 13,
+      "isCbaSeason": false,
+      "flags": {
+        "isCbaSeason": false,
+        "isExpansionYear": false,
+        "hasFoldedTeams": true,
+        "hasRelocations": false,
+        "hasDispersalDraft": true,
+        "hasExpansionDraft": false,
+        "hasCollegeDraft": true,
+        "hasPlayoffs": true,
+        "hasRegularSeasonAwards": true
+      },
+      "specialSeasonType": null,
+      "notes": "Charlotte Sting fold -> dispersal draft is help on January 8, 2007 -> is labeled as 2007 Dispersal Draft",
+      "links": [
+        {
+          "title": "wiki",
+          "url": "https://en.wikipedia.org/wiki/2007_WNBA_season",
+          "description": ""
+        }
+      ],
+      "cells": {},
+      "entryIds": []
+    },
+    "2008": {
+      "season": 2008,
+      "seasonId": "2008",
+      "startDate": "2008-05-17",
+      "endDate": "2008-10-05",
+      "regularSeasonGamesPerTeam": 34,
+      "regularSeasonTeamGameSlots": 476,
+      "numTeams": 14,
+      "isCbaSeason": true,
+      "flags": {
+        "isCbaSeason": true,
+        "isExpansionYear": true,
+        "hasFoldedTeams": false,
+        "hasRelocations": false,
+        "hasDispersalDraft": false,
+        "hasExpansionDraft": true,
+        "hasCollegeDraft": true,
+        "hasPlayoffs": true,
+        "hasRegularSeasonAwards": true
+      },
+      "specialSeasonType": null,
+      "notes": "no all star games due to olympic break\n\nAtlanta Dream are added as expansion team\nExpansion draft was held on February 6, 2008\n\nCandace Parker becomes the second player in WNBA history to dunk in a regular season game, doing so twice.\nA fight breaks out between the Los Angeles Sparks and the Detroit Shock resulting in four ejections and ten suspensions.\n\nThe first-ever outdoor professional basketball game is held at Arthur Ashe Stadium between the New York Liberty and the Indiana Fever.[4] Over 19,000 fans attended the game.\n\nFor the first time in WNBA history, the defending champion (Phoenix Mercury) does not qualify for the playoffs.\n\nCandace Parker wins the WNBA Rookie of the Year Award and the MVP Award. This is the first time in WNBA history and the third time in professional basketball history for the two awards to be won in the same year by the same player.",
+      "links": [
+        {
+          "title": "wiki",
+          "url": "https://en.wikipedia.org/wiki/2008_WNBA_season",
+          "description": ""
+        }
+      ],
+      "cells": {},
+      "entryIds": []
+    },
+    "2009": {
+      "season": 2009,
+      "seasonId": "2009",
+      "startDate": "2009-06-06",
+      "endDate": "2009-10-09",
+      "regularSeasonGamesPerTeam": 34,
+      "regularSeasonTeamGameSlots": 442,
+      "numTeams": 13,
+      "isCbaSeason": false,
+      "flags": {
+        "isCbaSeason": false,
+        "isExpansionYear": false,
+        "hasFoldedTeams": true,
+        "hasRelocations": false,
+        "hasDispersalDraft": true,
+        "hasExpansionDraft": false,
+        "hasCollegeDraft": true,
+        "hasPlayoffs": true,
+        "hasRegularSeasonAwards": true
+      },
+      "specialSeasonType": null,
+      "notes": "December 1, 2008 Houston Comets folded -> 2009 was first season without the Houston Comets -> dispersal draft was held on December 8, 2008 -> existing teams were picking players for the 2009 season -> so this dispersal draft is labeled as the 2009 Dispersal Draft\n\nOn August 10, 2009, Los Angeles Sparks center Lisa Leslie recorded her 6,000th career point in her team's win against the Indiana Fever. Leslie was the first player in WNBA history to reach the 6,000 point plateau.\n\nThe Phoenix Mercury shot 85.5% from the free-throw line. This clip is the best team free-throw percentage in WNBA and NBA history.\n\nOn September 25, 2009, NBA legend Larry Bird purchased about 9,000 balcony tickets to the Indiana Fever vs. Detroit Shock game three of the Eastern Conference Finals. The tickets were then distributed at the Fever box office free-of-charge to fans. Bird had the sole intent of filling the arena to support the Fever, who had never advanced to the WNBA Finals. Announced attendance at the game was 18,165 and the Fever beat the Shock.\nOn September 28, 2009, Phoenix Suns general manager Steve Kerr purchased about 7,000 balcony tickets to the Phoenix Mercury vs. Indiana Fever game one of the 2009 WNBA Finals. The tickets were then distributed at the Mercury box office free-of-charge to fans. Kerr wanted to follow up Bird's similar action stating that he knows how important a large crowd can be in a Finals series.",
+      "links": [
+        {
+          "title": "wiki",
+          "url": "https://en.wikipedia.org/wiki/2009_WNBA_season",
+          "description": ""
+        }
+      ],
+      "cells": {},
+      "entryIds": []
+    },
+    "2010": {
+      "season": 2010,
+      "seasonId": "2010",
+      "startDate": "2010-05-15",
+      "endDate": "2010-09-16",
+      "regularSeasonGamesPerTeam": 34,
+      "regularSeasonTeamGameSlots": 408,
+      "numTeams": 12,
+      "isCbaSeason": false,
+      "flags": {
+        "isCbaSeason": false,
+        "isExpansionYear": false,
+        "hasFoldedTeams": true,
+        "hasRelocations": true,
+        "hasDispersalDraft": true,
+        "hasExpansionDraft": false,
+        "hasCollegeDraft": true,
+        "hasPlayoffs": true,
+        "hasRegularSeasonAwards": true
+      },
+      "specialSeasonType": null,
+      "notes": "The first WNBA season without the Sacramento Monarchs (folded in 2009)\nMonarchs dispersal draft happened on December 14, 2009 -> existing teams were picking players for the 2010 season -> so this dispersal draft is labeled as the 2010 Dispersal Draft",
+      "links": [
+        {
+          "title": "wiki",
+          "url": "https://en.wikipedia.org/wiki/2010_WNBA_season",
+          "description": ""
+        }
+      ],
+      "cells": {},
+      "entryIds": []
+    },
+    "2011": {
+      "season": 2011,
+      "seasonId": "2011",
+      "startDate": "2011-06-03",
+      "endDate": "2011-10-07",
+      "regularSeasonGamesPerTeam": 34,
+      "regularSeasonTeamGameSlots": 408,
+      "numTeams": 12,
+      "isCbaSeason": false,
+      "flags": {
+        "isCbaSeason": false,
+        "isExpansionYear": false,
+        "hasFoldedTeams": false,
+        "hasRelocations": false,
+        "hasDispersalDraft": false,
+        "hasExpansionDraft": false,
+        "hasCollegeDraft": true,
+        "hasPlayoffs": true,
+        "hasRegularSeasonAwards": true
+      },
+      "specialSeasonType": null,
+      "notes": "",
+      "links": [
+        {
+          "title": "wiki",
+          "url": "https://en.wikipedia.org/wiki/2011_WNBA_season",
+          "description": ""
+        }
+      ],
+      "cells": {},
+      "entryIds": []
+    },
+    "2012": {
+      "season": 2012,
+      "seasonId": "2012",
+      "startDate": "2012-05-18",
+      "endDate": "2012-10-21",
+      "regularSeasonGamesPerTeam": 34,
+      "regularSeasonTeamGameSlots": 408,
+      "numTeams": 12,
+      "isCbaSeason": false,
+      "flags": {
+        "isCbaSeason": false,
+        "isExpansionYear": false,
+        "hasFoldedTeams": false,
+        "hasRelocations": false,
+        "hasDispersalDraft": false,
+        "hasExpansionDraft": false,
+        "hasCollegeDraft": true,
+        "hasPlayoffs": true,
+        "hasRegularSeasonAwards": true
+      },
+      "specialSeasonType": null,
+      "notes": "No all star game due to the Olympic break from mid-july -august",
+      "links": [
+        {
+          "title": "No all star game and Mercury are everything?",
+          "url": "https://abcnews.com/Sports/phoenix-center-wnba-universe/story?id=24632962",
+          "description": ""
+        },
+        {
+          "title": "wiki",
+          "url": "https://en.wikipedia.org/wiki/2012_WNBA_season",
+          "description": ""
+        }
+      ],
+      "cells": {},
+      "entryIds": []
+    },
+    "2013": {
+      "season": 2013,
+      "seasonId": "2013",
+      "startDate": "2013-05-24",
+      "endDate": "2013-10-10",
+      "regularSeasonGamesPerTeam": 34,
+      "regularSeasonTeamGameSlots": 408,
+      "numTeams": 12,
+      "isCbaSeason": false,
+      "flags": {
+        "isCbaSeason": false,
+        "isExpansionYear": false,
+        "hasFoldedTeams": false,
+        "hasRelocations": false,
+        "hasDispersalDraft": false,
+        "hasExpansionDraft": false,
+        "hasCollegeDraft": true,
+        "hasPlayoffs": true,
+        "hasRegularSeasonAwards": true
+      },
+      "specialSeasonType": null,
+      "notes": "the \"THREE TO SEE\" going into the 2013 season were ->\n- Brittney Griner (mercury)\n- Elena Delle Donne (sky)\n- Skylar Diggins (tulsa shock)",
+      "links": [
+        {
+          "title": "three to see - archived article",
+          "url": "https://web.archive.org/web/20130702205324/http://espn.go.com/wnba/notebook/_/page/3ToSee-2013/delle-donne-diggins-griner",
+          "description": "archived article detailing the \"three to see\" - rookies going into the 2013 WNBA season"
+        },
+        {
+          "title": "wiki",
+          "url": "https://en.wikipedia.org/wiki/2013_WNBA_season",
+          "description": ""
+        }
+      ],
+      "cells": {},
+      "entryIds": []
+    },
+    "2014": {
+      "season": 2014,
+      "seasonId": "2014",
+      "startDate": "2014-05-16",
+      "endDate": "2014-09-12",
+      "regularSeasonGamesPerTeam": 34,
+      "regularSeasonTeamGameSlots": 408,
+      "numTeams": 12,
+      "isCbaSeason": true,
+      "flags": {
+        "isCbaSeason": true,
+        "isExpansionYear": false,
+        "hasFoldedTeams": false,
+        "hasRelocations": false,
+        "hasDispersalDraft": false,
+        "hasExpansionDraft": false,
+        "hasCollegeDraft": true,
+        "hasPlayoffs": true,
+        "hasRegularSeasonAwards": true
+      },
+      "specialSeasonType": null,
+      "notes": "",
+      "links": [
+        {
+          "title": "Details of 2014 CBA - in context of finals",
+          "url": "https://www.swishappeal.com/2013/10/6/4801380/open-thread-wnba-finals-game-1",
+          "description": "Swish Appeal article with details of the 2014 CBA agreement and the timing of it all with the finals"
+        },
+        {
+          "title": "wiki",
+          "url": "https://en.wikipedia.org/wiki/2014_WNBA_season",
+          "description": ""
+        }
+      ],
+      "cells": {},
+      "entryIds": []
+    },
+    "2015": {
+      "season": 2015,
+      "seasonId": "2015",
+      "startDate": "2015-06-05",
+      "endDate": "2015-10-14",
+      "regularSeasonGamesPerTeam": 34,
+      "regularSeasonTeamGameSlots": 408,
+      "numTeams": 12,
+      "isCbaSeason": false,
+      "flags": {
+        "isCbaSeason": false,
+        "isExpansionYear": false,
+        "hasFoldedTeams": false,
+        "hasRelocations": false,
+        "hasDispersalDraft": false,
+        "hasExpansionDraft": false,
+        "hasCollegeDraft": true,
+        "hasPlayoffs": true,
+        "hasRegularSeasonAwards": true
+      },
+      "specialSeasonType": null,
+      "notes": "Diana Taurasi doesn't play in the WNBA for 2015 - instead choosing to play for her Russian pro team - UMMC Ekaterinburg since she got paid more in Russia than in the U.S.\n\nTulsa Shock were approved for relocation to Dallas (Dallas-Fort Worth)\nit would be the first relocation since the 2009 Monarchs fold and the initial Shock relocation from Detroit to Tulsa\nand the Shock would become the only franchise to relocate twice",
+      "links": [
+        {
+          "title": "Diana Taurasi 2015 sit out",
+          "url": "https://www.sbnation.com/nba/2015/2/3/7973177/diana-taurasi-sit-out-wnba-season-russian-salary",
+          "description": "Article about Taurasi sitting out of the WNBA 2015 season to play in Russia for more money\nfrom SBNation"
+        },
+        {
+          "title": "Wiki",
+          "url": "https://en.wikipedia.org/wiki/2015_WNBA_season",
+          "description": ""
+        }
+      ],
+      "cells": {},
+      "entryIds": []
+    },
+    "2016": {
+      "season": 2016,
+      "seasonId": "2016",
+      "startDate": "2016-05-14",
+      "endDate": "2016-10-06",
+      "regularSeasonGamesPerTeam": 34,
+      "regularSeasonTeamGameSlots": 408,
+      "numTeams": 12,
+      "isCbaSeason": false,
+      "flags": {
+        "isCbaSeason": false,
+        "isExpansionYear": false,
+        "hasFoldedTeams": false,
+        "hasRelocations": true,
+        "hasDispersalDraft": false,
+        "hasExpansionDraft": false,
+        "hasCollegeDraft": true,
+        "hasPlayoffs": true,
+        "hasRegularSeasonAwards": true
+      },
+      "specialSeasonType": null,
+      "notes": "New playoff format featured during this season - with the top 8 teams advancing to the post season tournament based on overall rank. Previously, the top 4 teams in the west conference and the top 4 teams in the east conference advanced to the playoffs.\n\nMarch 28, the WNBA introduced new jerseys for the 2016 season. Teams no longer had white home jerseys.\n\nBecky Hammon's San Antonio Stars no. 25 jersey was retired (first Stars jersey to be retired)\nLauren Jackson's Seattle Storm jersey retired (first Storm jersey to be retired)",
+      "links": [
+        {
+          "title": "wiki",
+          "url": "https://en.wikipedia.org/wiki/2016_WNBA_season",
+          "description": ""
+        },
+        {
+          "title": "new WNBA unis - 2016",
+          "url": "https://www.wnba.com/news/wnba-uniforms-20th-season-photos",
+          "description": "New WNBA uniforms for the 2016 season (no white home team jerseys anymore)"
+        }
+      ],
+      "cells": {},
+      "entryIds": []
+    },
+    "2017": {
+      "season": 2017,
+      "seasonId": "2017",
+      "startDate": "2017-05-03",
+      "endDate": "2017-09-17",
+      "regularSeasonGamesPerTeam": 34,
+      "regularSeasonTeamGameSlots": 408,
+      "numTeams": 12,
+      "isCbaSeason": false,
+      "flags": {
+        "isCbaSeason": false,
+        "isExpansionYear": false,
+        "hasFoldedTeams": false,
+        "hasRelocations": false,
+        "hasDispersalDraft": false,
+        "hasExpansionDraft": false,
+        "hasCollegeDraft": true,
+        "hasPlayoffs": true,
+        "hasRegularSeasonAwards": true
+      },
+      "specialSeasonType": null,
+      "notes": "Final Season for the San Antonio Stars\nThe Stars had been in San Antonio since 2003 - after being relocated from the Utah Starzz\nSpurs Sports & Entertainment sold the team to MGM Resorts International\nMGM moved the team to Las Vegas and changed the team name to the Aces",
+      "links": [
+        {
+          "title": "wiki",
+          "url": "https://en.wikipedia.org/wiki/2017_WNBA_season",
+          "description": ""
+        },
+        {
+          "title": "Stars to Aces - Relocation Article",
+          "url": "https://aces.wnba.com/news/mgm-resorts-selects-las-vegas-aces-as-new-name-for-wnba-franchise",
+          "description": "Article on the relocation of the San Antonio stars\n(from aces wnba website)"
+        }
+      ],
+      "cells": {},
+      "entryIds": []
+    },
+    "2018": {
+      "season": 2018,
+      "seasonId": "2018",
+      "startDate": "2018-05-18",
+      "endDate": "2018-09-12",
+      "regularSeasonGamesPerTeam": 34,
+      "regularSeasonTeamGameSlots": 408,
+      "numTeams": 12,
+      "isCbaSeason": false,
+      "flags": {
+        "isCbaSeason": false,
+        "isExpansionYear": false,
+        "hasFoldedTeams": false,
+        "hasRelocations": false,
+        "hasDispersalDraft": false,
+        "hasExpansionDraft": false,
+        "hasCollegeDraft": true,
+        "hasPlayoffs": true,
+        "hasRegularSeasonAwards": true
+      },
+      "specialSeasonType": null,
+      "notes": "",
+      "links": [
+        {
+          "title": "wiki",
+          "url": "https://en.wikipedia.org/wiki/2018_WNBA_season",
+          "description": ""
+        }
+      ],
+      "cells": {},
+      "entryIds": []
+    },
+    "2019": {
+      "season": 2019,
+      "seasonId": "2019",
+      "startDate": "2019-05-24",
+      "endDate": "2019-10-10",
+      "regularSeasonGamesPerTeam": 34,
+      "regularSeasonTeamGameSlots": 408,
+      "numTeams": 12,
+      "isCbaSeason": false,
+      "flags": {
+        "isCbaSeason": false,
+        "isExpansionYear": false,
+        "hasFoldedTeams": false,
+        "hasRelocations": false,
+        "hasDispersalDraft": false,
+        "hasExpansionDraft": false,
+        "hasCollegeDraft": true,
+        "hasPlayoffs": true,
+        "hasRegularSeasonAwards": true
+      },
+      "specialSeasonType": null,
+      "notes": "Mystics won their first WNBA championship this season",
+      "links": [
+        {
+          "title": "wiki",
+          "url": "https://en.wikipedia.org/wiki/2019_WNBA_season",
+          "description": ""
+        }
+      ],
+      "cells": {},
+      "entryIds": []
+    },
     "2020": {
       "season": 2020,
       "seasonId": "2020",

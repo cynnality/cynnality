@@ -33,7 +33,7 @@ body {
     border: 2px solid #111;
     padding: 16px;
 
-    max-width: 300px;
+    max-width: 400px;
 }
 .posts-header h1 {
     margin: 0 0 8px;
@@ -181,6 +181,7 @@ button {
 
 .page-buttons {
     display: flex;
+    flex-direction: column;
     gap: 8px;
     flex-wrap: wrap;
 }

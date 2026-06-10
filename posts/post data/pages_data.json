@@ -1,24 +1,17 @@
 {
   "pages": {
-    "tester": {
-      "pageId": "tester",
-      "title": "tester",
-      "slug": "tester",
-      "description": "a page for testing functionality",
-      "styleFile": "posts/post data/page styles/tester.css"
-    },
     "basketball": {
       "pageId": "basketball",
       "title": "basketball",
       "slug": "basketball",
-      "description": "explaining, yapping, about what im doing with all the basketball stuff on my website :)",
+      "description": "general page for basketball posts",
       "styleFile": "posts/post data/page styles/basketball.css"
     },
     "general": {
       "pageId": "general",
       "title": "general",
       "slug": "general",
-      "description": "misc. notes and posts :)",
+      "description": "misc. notes and posts",
       "styleFile": "posts/post data/page styles/general.css"
     }
   }

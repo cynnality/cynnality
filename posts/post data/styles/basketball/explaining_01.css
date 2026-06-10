@@ -1,0 +1,20 @@
+.postMain {
+font-size: 18px;
+font-weight: 600;
+}
+
+.postIssue {
+max-width: 90%
+}
+
+.purple-highlight {
+background-color: #a838ff50;
+max-width: fit-content;
+padding: 4px;
+}
+
+.green-highlight {
+background-color: #38ff4550;
+max-width: fit-content;
+padding: 4px;
+}

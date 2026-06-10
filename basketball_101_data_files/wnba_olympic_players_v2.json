@@ -2312,6 +2312,7 @@
       ]
     },
     "alyssa_thomas": {
+      "playerId": "alyssa_thomas",
       "playerName": "Alyssa Thomas",
       "teamUsaJersey": "14",
       "playerStatus": {
@@ -2327,10 +2328,19 @@
       "careerDetails": {
         "collegeCareer": {
           "collegeId": "u_of_maryland",
+          "collegeName": "University of Maryland",
           "startYear": "2010",
           "endYear": "2014",
           "ncaaChampionships": []
         },
+        "collegeCareers": [
+          {
+            "collegeId": "u_of_maryland",
+            "collegeName": "University of Maryland",
+            "startYear": "2010",
+            "endYear": "2014"
+          }
+        ],
         "draftDetails": {
           "year": "2014",
           "pick": "4",
@@ -2403,16 +2413,6 @@
         ],
         "teamUsaMedals": [
           {
-            "year": "2012",
-            "competition": "3x3 World Cup",
-            "medal": "Gold"
-          },
-          {
-            "year": "2022",
-            "competition": "World Cup",
-            "medal": "Gold"
-          },
-          {
             "eventType": "Olympics",
             "format": "5x5",
             "year": "2024",
@@ -2420,15 +2420,15 @@
           },
           {
             "eventType": "FIBA",
-            "format": "5x5",
-            "year": "2022",
+            "format": "3x3",
+            "year": "2012",
             "competition": "World Cup",
             "medal": "Gold"
           },
           {
             "eventType": "FIBA",
-            "format": "3x3",
-            "year": "2012",
+            "format": "5x5",
+            "year": "2022",
             "competition": "World Cup",
             "medal": "Gold"
           }
@@ -2549,7 +2549,8 @@
           "entries": [
             {
               "type": "team",
-              "teamCode": "PHX_MERCURY"
+              "teamCode": "PHX_MERCURY",
+              "note": "February 2, 2025 A.T. was traded to the Mercury - part of a 4 team trade"
             }
           ]
         },
@@ -2572,7 +2573,8 @@
         {
           "teamCode": "PHX_MERCURY",
           "startYear": "2025",
-          "endYear": "present"
+          "endYear": "present",
+          "note": "February 2, 2025 A.T. was traded to the Mercury - part of a 4 team trade"
         }
       ],
       "championships": []
@@ -5361,12 +5363,13 @@
     "ann_wauters": {
       "playerId": "ann_wauters",
       "playerName": "Ann Wauters",
+      "teamUsaJersey": "",
       "playerStatus": {
-        "isActive": true,
+        "isActive": false,
         "hasNcaaChampionships": false,
         "wasDraftDayTrade": false,
-        "hasWnbaChampionships": false,
-        "hasOverseasExperience": false,
+        "hasWnbaChampionships": true,
+        "hasOverseasExperience": true,
         "hasUnrivaledExperience": false,
         "hasNationalTeamExperience": false,
         "hasOlympicExperience": false
@@ -5379,30 +5382,293 @@
           "endYear": "",
           "ncaaChampionships": []
         },
+        "collegeCareers": [],
         "draftDetails": {
-          "year": 2008,
-          "pick": 8,
-          "round": 1,
-          "roundPick": 8,
-          "draftedBy": "ATL_DREAM",
-          "acquiredBy": "",
-          "transactionNote": ""
+          "year": "2000",
+          "pick": "1",
+          "draftedBy": "CLE_ROCKERS"
         },
-        "wnbaTeams": [],
-        "missedWnbaSeasons": [],
-        "overseasTeams": [],
+        "missedWnbaSeasons": [
+          {
+            "year": "2003",
+            "teamCode": "CLE_ROCKERS",
+            "reason": "Rest"
+          },
+          {
+            "year": "2006",
+            "teamCode": "",
+            "reason": "Rest"
+          },
+          {
+            "year": "2007",
+            "teamCode": "",
+            "reason": "Rest"
+          },
+          {
+            "year": "2010",
+            "teamCode": "",
+            "reason": "Rest"
+          },
+          {
+            "year": "2011",
+            "teamCode": "",
+            "reason": "Pregnant"
+          },
+          {
+            "year": "2013",
+            "teamCode": "",
+            "reason": "Rest"
+          },
+          {
+            "year": "2014",
+            "teamCode": "",
+            "reason": "Rest"
+          },
+          {
+            "year": "2015",
+            "teamCode": "",
+            "reason": "Rest"
+          }
+        ],
+        "overseasTeams": [
+          {
+            "season": "2003-04",
+            "referenceMode": "select",
+            "teamCode": "yongin_samsung_life_blueminx",
+            "note": "Played with them while the team was named -> \"Samsung Life Bichumi\""
+          },
+          {
+            "season": "2006-07",
+            "referenceMode": "select",
+            "teamCode": "yongin_samsung_life_blueminx",
+            "note": "Played with them while the team was named -> \"Samsung Life Bichumi\""
+          }
+        ],
         "unrivaledTeams": [],
         "teamUsaMedals": []
       },
-      "wnbaSeasons": {},
-      "images": [],
-      "dataStatus": {
-        "isQuickAdd": true,
-        "needsFullProfile": true,
-        "quickAddSource": "command-center",
-        "quickAddReason": "missing-player-reference",
-        "quickAddedAt": "2026-06-05T23:27:22.427Z"
-      }
+      "image": {
+        "src": "/season-30/connection-imgs/ann_wauters_individual.jpg",
+        "alt": "Ann Wauters",
+        "sourceLink": "https://www.cnn.com/2021/07/24/sport/ann-wauters-belgium-olympics-cmd-spt-intl"
+      },
+      "images": [
+        {
+          "src": "/season-30/connection-imgs/ann_wauters_individual.jpg",
+          "alt": "Ann Wauters",
+          "sourceLink": "https://www.cnn.com/2021/07/24/sport/ann-wauters-belgium-olympics-cmd-spt-intl"
+        }
+      ],
+      "wnbaSeasons": [
+        {
+          "year": "2000",
+          "entries": [
+            {
+              "type": "team",
+              "teamCode": "CLE_ROCKERS",
+              "note": "Youngest player in the wnba at the time\n\nFirst Belgian born player in the WNBA"
+            }
+          ]
+        },
+        {
+          "year": "2001",
+          "entries": [
+            {
+              "type": "team",
+              "teamCode": "CLE_ROCKERS"
+            }
+          ]
+        },
+        {
+          "year": "2002",
+          "entries": [
+            {
+              "type": "team",
+              "teamCode": "CLE_ROCKERS"
+            }
+          ]
+        },
+        {
+          "year": "2003",
+          "entries": [
+            {
+              "type": "sit_out",
+              "teamCode": "CLE_ROCKERS",
+              "reason": "Rest"
+            }
+          ]
+        },
+        {
+          "year": "2004",
+          "entries": [
+            {
+              "type": "team",
+              "teamCode": "NYL_LIBERTY",
+              "note": "Rockers folded in 2003 (wauters sat out that season) and wauters was picked by the Liberty in the Rockers dispersal draft"
+            }
+          ]
+        },
+        {
+          "year": "2005",
+          "entries": [
+            {
+              "type": "team",
+              "teamCode": "NYL_LIBERTY"
+            }
+          ]
+        },
+        {
+          "year": "2006",
+          "entries": [
+            {
+              "type": "sit_out",
+              "reason": "Rest"
+            }
+          ]
+        },
+        {
+          "year": "2007",
+          "entries": [
+            {
+              "type": "sit_out",
+              "reason": "Rest"
+            }
+          ]
+        },
+        {
+          "year": "2008",
+          "entries": [
+            {
+              "type": "team",
+              "teamCode": "ATL_DREAM",
+              "note": "Returned to the WNBA after a hiatus (playing overseas primarily during her rest from WNBA)\n\nshe was chosen by the dream in the 2008 Dream expansion draft"
+            },
+            {
+              "type": "team",
+              "teamCode": "SA_SILVER_STARS",
+              "note": "April 9 2008 ->\nAnn Wauters and Morenike Atunrase were traded from Dream to Silver Stars.\n\nThe Dream got Comille Little and Chioma Nnamaka and they also got the Silver Stars' 2009 first round college draft pick"
+            }
+          ]
+        },
+        {
+          "year": "2009",
+          "entries": [
+            {
+              "type": "team",
+              "teamCode": "SA_SILVER_STARS"
+            }
+          ]
+        },
+        {
+          "year": "2010",
+          "entries": [
+            {
+              "type": "sit_out",
+              "reason": "Rest"
+            }
+          ]
+        },
+        {
+          "year": "2011",
+          "entries": [
+            {
+              "type": "sit_out",
+              "reason": "Pregnant"
+            }
+          ]
+        },
+        {
+          "year": "2012",
+          "entries": [
+            {
+              "type": "team",
+              "teamCode": "SEA_STORM",
+              "note": "Signed with the Storm "
+            }
+          ]
+        },
+        {
+          "year": "2013",
+          "entries": [
+            {
+              "type": "sit_out",
+              "reason": "Rest"
+            }
+          ]
+        },
+        {
+          "year": "2014",
+          "entries": [
+            {
+              "type": "sit_out",
+              "reason": "Rest"
+            }
+          ]
+        },
+        {
+          "year": "2015",
+          "entries": [
+            {
+              "type": "sit_out",
+              "reason": "Rest"
+            }
+          ]
+        },
+        {
+          "year": "2016",
+          "entries": [
+            {
+              "type": "team",
+              "teamCode": "LOS_SPARKS",
+              "note": "Signed with the Sparks & won her first ring!"
+            }
+          ]
+        }
+      ],
+      "wnbaTeams": [
+        {
+          "teamCode": "CLE_ROCKERS",
+          "startYear": "2000",
+          "endYear": "2002",
+          "note": "Youngest player in the wnba at the time\n\nFirst Belgian born player in the WNBA"
+        },
+        {
+          "teamCode": "NYL_LIBERTY",
+          "startYear": "2004",
+          "endYear": "2005",
+          "note": "Rockers folded in 2003 (wauters sat out that season) and wauters was picked by the Liberty in the Rockers dispersal draft"
+        },
+        {
+          "teamCode": "ATL_DREAM",
+          "startYear": "2008",
+          "endYear": "2008",
+          "note": "Returned to the WNBA after a hiatus (playing overseas primarily during her rest from WNBA)\n\nshe was chosen by the dream in the 2008 Dream expansion draft"
+        },
+        {
+          "teamCode": "SA_SILVER_STARS",
+          "startYear": "2008",
+          "endYear": "2009",
+          "note": "April 9 2008 ->\nAnn Wauters and Morenike Atunrase were traded from Dream to Silver Stars.\n\nThe Dream got Comille Little and Chioma Nnamaka and they also got the Silver Stars' 2009 first round college draft pick"
+        },
+        {
+          "teamCode": "SEA_STORM",
+          "startYear": "2012",
+          "endYear": "2012",
+          "note": "Signed with the Storm "
+        },
+        {
+          "teamCode": "LOS_SPARKS",
+          "startYear": "2016",
+          "endYear": "2016",
+          "note": "Signed with the Sparks & won her first ring!"
+        }
+      ],
+      "championships": [
+        {
+          "year": "2016",
+          "teamCode": "LOS_SPARKS"
+        }
+      ]
     },
     "jennifer_lacy": {
       "playerId": "jennifer_lacy",

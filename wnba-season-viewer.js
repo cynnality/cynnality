@@ -135,23 +135,25 @@ function buildSeasonRail() {
         const record = getSeasonRecord(season);
         const flags = record?.flags || {};
 
-        const wrap = document.createElement("div");
+        const wrap = document.createElement("button");
+        wrap.type = "button";
         wrap.className = "season-cell-wrap";
         wrap.dataset.season = season;
+        wrap.setAttribute("aria-label", `View ${season} season`);
 
         if (record) wrap.classList.add("has-data");
 
         wrap.innerHTML = `
-            <button type="button" class="season-cell" aria-label="View ${season} season">
+            <div class="season-cell">
                 <span class="season-year">${season}</span>
-            </button>
+            </div>
 
             <div class="season-markers">
                 ${getSeasonMarkers(flags)}
             </div>
         `;
 
-        wrap.querySelector(".season-cell").addEventListener("click", () => {
+        wrap.addEventListener("click", () => {
             setSelectedSeason(season);
         });
 
@@ -194,9 +196,7 @@ function updateSeasonRailActiveState() {
         const isActive = wrap.dataset.season === String(state.selectedSeason);
 
         wrap.classList.toggle("selected", isActive);
-
-        const button = wrap.querySelector(".season-cell");
-        button.setAttribute("aria-pressed", isActive ? "true" : "false");
+        wrap.setAttribute("aria-pressed", isActive ? "true" : "false");
     });
 }
 
@@ -368,16 +368,22 @@ function renderSeasonOverview(seasonRecord) {
 
             ${nestedPanel("Notes + Links", `
                 <div class="item-list">
-                    <article class="item-card">
+                    <article id="seasonNotes" class="item-card">
                         <div class="item-title">Notes</div>
                         <p class="small-meta">${seasonRecord.notes || "No season notes yet."}</p>
                     </article>
-                    ${links.length ? links.map(link => `
-                        <article class="item-card">
-                            <div class="item-title">${link.label || link.title || "Source"}</div>
-                            <div class="small-meta">${link.url || "No URL"}</div>
-                        </article>
-                    `).join("") : `<p class="empty-state">No links saved for this season yet.</p>`}
+
+                    <div class="seasonlinkcards">
+                        ${links.length ? links.map((link, index) => `
+                            <article id="seasonLink${index}" class="item-card link-item">
+                                <div class="item-title">
+                                    <a href="${link.url}" target="_blank" rel="noopener noreferrer">
+                                        <p class="item-title">${link.label || link.title || "No URL"} →</p>
+                                    </a>
+                                </div>
+                            </article>
+                        `).join("") : `<p class="empty-state">No links saved for this season yet.</p>`}
+                    </div>
                 </div>
             `)}
         </div>

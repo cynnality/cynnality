@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8" />
-    <title>Regular Season Awards Migration Tool</title>
+  <meta charset="UTF-8" />
+  <title>International Events Viewer</title>
 
-    <!-- ======================== MONO FONTS ========================
+        <!-- ======================== MONO FONTS ========================
             CHIVO MONO 
             ---- (monospaced // kinda playful ? serif) 
 
@@ -37,35 +37,27 @@
             rel="stylesheet">
         <!--=====================================================================================-->
 
-    <link rel="stylesheet" href="regular-season-awards-migration-tool.css" />
+  <link rel="stylesheet" href="international-events-viewer.css" />
 </head>
-
 <body>
-    <main class="tool-shell">
-        <header class="tool-header">
-            <p class="eyebrow">WNBA Data Migration Tool</p>
-            <h1>Regular Season Awards Migration</h1>
-            <p>View old awards data and open entries in the new input tool.</p>
-        </header>
+  <main class="events-shell">
+    <header class="events-header">
+      <p class="eyebrow">Generated from player data</p>
+      <h1>International Events</h1>
+      <p id="eventCountText">Loading events...</p>
+    </header>
 
-        <section class="panel">
-            <label>
-                Season
-                <select id="seasonSelect"></select>
-            </label>
-        </section>
+    <section class="filter-row">
+      <button class="filter-btn active" data-filter="all">All</button>
+      <button class="filter-btn" data-filter="Olympics">Olympics</button>
+      <button class="filter-btn" data-filter="FIBA">FIBA</button>
+      <button class="filter-btn" data-format="5x5">5x5</button>
+      <button class="filter-btn" data-format="3x3">3x3</button>
+    </section>
 
-        <section class="panel">
-            <h2 id="seasonTitle">Awards</h2>
+    <section id="eventsTimeline" class="events-timeline"></section>
+  </main>
 
-            <button id="openSeasonMigrationBtn" type="button">
-                Open Entire Season in Awards Input Tool
-            </button>
-
-            <div id="awardsList" class="awards-list"></div>
-        </section>
-    </main>
-
-    <script src="regular-season-awards-migration-tool.js"></script>
+  <script src="international-events-viewer.js"></script>
 </body>
 </html>

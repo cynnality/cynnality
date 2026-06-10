@@ -48,7 +48,7 @@ wnba_teams_history.json /////////// -> teams of the WNBA by year and team franch
             <p>Add or update regular season award winners by season.</p>
         </header>
 
-        <section class="panel">
+        <section id="singleAwardPanel" class="panel">
             <div class="form-grid">
                 <label>
                     Season
@@ -108,6 +108,20 @@ wnba_teams_history.json /////////// -> teams of the WNBA by year and team franch
             <button id="saveAwardBtn" type="button">Save Award</button>
 
             <p id="statusMessage" class="status-message"></p>
+        </section>
+
+        <section id="migrationPanel" class="panel" hidden>
+            <h2 id="migrationTitle">Season Migration Editor</h2>
+
+            <p class="status-message">
+                Review/edit the converted awards below, then save the full season.
+            </p>
+
+            <div id="migrationAwardsEditor" class="migration-awards-editor"></div>
+
+            <button id="saveMigrationSeasonBtn" type="button">
+                Save Entire Season
+            </button>
         </section>
 
         <section class="panel">

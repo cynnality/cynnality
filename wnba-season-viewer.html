@@ -13,19 +13,16 @@
 </head>
 <body>
     <main class="season-shell">
-        <header class="season-header">
-            <p class="eyebrow">WNBA Data Viewer</p>
-        </header>
-
         <section class="control-panel">
             <div class="season-rail-wrap">
                 <div class="season-rail-header">
-                    <div>
-                        <p class="mini-label">SEASONS</p>
-                        <p class="season-rail-help">click on a season</p>
+                    <header class="season-header">
+                        <p class="eyebrow">WNBA Data Viewer</p>
+                    </header>
+                    <div class="season-select-wrap">
+                        <p class="mini-label">Select or click a season</p>
+                        <select id="seasonSelect" class="season-select-fallback" aria-label="Select season"></select>
                     </div>
-
-                    <select id="seasonSelect" class="season-select-fallback" aria-label="Select season"></select>
                 </div>
 
                 <div class="season-rail-legend">
@@ -35,12 +32,13 @@
                     <span><span class="legend-marker cba">C</span> CBA</span>
                     <span><span class="legend-marker draft">D</span> draft</span>
                 </div>
+                <p id="statusMessage" class="status-message">Loading season data...</p>
 
                 <div id="seasonRail" class="season-rail" aria-label="WNBA season timeline"></div>
 
             </div>
 
-            <p id="statusMessage" class="status-message">Loading season data...</p>
+            
         </section>
 
         <section id="seasonHero" class="season-hero"></section>

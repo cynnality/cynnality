@@ -1,5 +1,4886 @@
 {
   "seasons": {
+    "1997": {
+      "season": 1997,
+      "seasonId": "1997",
+      "awards": {
+        "1997_mvp": {
+          "awardId": "1997_mvp",
+          "season": 1997,
+          "seasonId": "1997",
+          "awardKey": "mvp",
+          "awardName": "Most Valuable Player",
+          "recipient": {
+            "playerId": "cynthia_cooper",
+            "playerName": "Cynthia Cooper",
+            "teamCode": "HOU_COMETS"
+          },
+          "notes": "",
+          "links": [],
+          "entryIds": []
+        },
+        "1997_topscorer": {
+          "awardId": "1997_topscorer",
+          "season": 1997,
+          "seasonId": "1997",
+          "awardKey": "topscorer",
+          "awardName": "Top Scorer",
+          "recipient": {
+            "playerId": "cynthia_cooper",
+            "playerName": "Cynthia Cooper",
+            "teamCode": "HOU_COMETS"
+          },
+          "notes": "",
+          "links": [],
+          "entryIds": []
+        },
+        "1997_topdraftpick": {
+          "awardId": "1997_topdraftpick",
+          "season": 1997,
+          "seasonId": "1997",
+          "awardKey": "topdraftpick",
+          "awardName": "Top draft pick",
+          "recipient": {
+            "playerId": "tina_thompson",
+            "playerName": "Tina Thompson",
+            "teamCode": "HOU_COMETS"
+          },
+          "notes": "",
+          "links": [],
+          "entryIds": []
+        },
+        "1997_dpoy": {
+          "awardId": "1997_dpoy",
+          "season": 1997,
+          "seasonId": "1997",
+          "awardKey": "dpoy",
+          "awardName": "Defensive Player of the Year",
+          "recipient": {
+            "playerId": "teresa_weatherspoon",
+            "playerName": "Teresa Weatherspoon",
+            "teamCode": "NYL_LIBERTY"
+          },
+          "notes": "",
+          "links": [],
+          "entryIds": []
+        },
+        "1997_shootingchampionseast": {
+          "awardId": "1997_shootingchampionseast",
+          "season": 1997,
+          "seasonId": "1997",
+          "awardKey": "shootingchampionseast",
+          "awardName": "EASTERN SHOOTING CHAMP",
+          "recipient": {
+            "playerId": "andrea_congreaves",
+            "playerName": "Andrea Congreaves",
+            "teamCode": "CHA_STING"
+          },
+          "notes": "",
+          "links": [],
+          "entryIds": []
+        },
+        "1997_shootingchampionswest": {
+          "awardId": "1997_shootingchampionswest",
+          "season": 1997,
+          "seasonId": "1997",
+          "awardKey": "shootingchampionswest",
+          "awardName": "WESTERN SHOOTING CHAMP",
+          "recipient": {
+            "playerId": "haixia_zheng",
+            "playerName": "Haixia Zheng",
+            "teamCode": "LOS_SPARKS"
+          },
+          "notes": "",
+          "links": [],
+          "entryIds": []
+        },
+        "1997_kim_perrot_sportsmanship": {
+          "awardId": "1997_kim_perrot_sportsmanship",
+          "season": 1997,
+          "seasonId": "1997",
+          "awardKey": "kim_perrot_sportsmanship",
+          "awardName": "Kim Perrot Sportsmanship Award",
+          "recipient": {
+            "playerId": "haixia_zheng",
+            "playerName": "Haixia Zheng",
+            "teamCode": "LOS_SPARKS"
+          },
+          "notes": "",
+          "links": [],
+          "entryIds": []
+        },
+        "1997_coach_of_the_year": {
+          "awardId": "1997_coach_of_the_year",
+          "season": 1997,
+          "seasonId": "1997",
+          "awardKey": "coach_of_the_year",
+          "awardName": "Coach of the Year",
+          "recipient": {
+            "playerId": "van_chancellor",
+            "playerName": "Van Chancellor",
+            "teamCode": "HOU_COMETS"
+          },
+          "notes": "",
+          "links": [],
+          "entryIds": []
+        }
+      }
+    },
+    "1998": {
+      "season": 1998,
+      "seasonId": "1998",
+      "awards": {
+        "1998_mvp": {
+          "awardId": "1998_mvp",
+          "season": 1998,
+          "seasonId": "1998",
+          "awardKey": "mvp",
+          "awardName": "Most Valuable Player",
+          "recipient": {
+            "playerId": "cynthia_cooper",
+            "playerName": "Cynthia Cooper",
+            "teamCode": "HOU_COMETS"
+          },
+          "notes": "",
+          "links": [],
+          "entryIds": []
+        },
+        "1998_topscorer": {
+          "awardId": "1998_topscorer",
+          "season": 1998,
+          "seasonId": "1998",
+          "awardKey": "topscorer",
+          "awardName": "Top Scorer",
+          "recipient": {
+            "playerId": "cynthia_cooper",
+            "playerName": "Cynthia Cooper",
+            "teamCode": "HOU_COMETS"
+          },
+          "notes": "",
+          "links": [],
+          "entryIds": []
+        },
+        "1998_topdraftpick": {
+          "awardId": "1998_topdraftpick",
+          "season": 1998,
+          "seasonId": "1998",
+          "awardKey": "topdraftpick",
+          "awardName": "Top draft pick",
+          "recipient": {
+            "playerId": "margo_dydek",
+            "playerName": "Margo Dydek",
+            "teamCode": "UTA_STARZZ"
+          },
+          "notes": "",
+          "links": [],
+          "entryIds": []
+        },
+        "1998_dpoy": {
+          "awardId": "1998_dpoy",
+          "season": 1998,
+          "seasonId": "1998",
+          "awardKey": "dpoy",
+          "awardName": "Defensive Player of the Year",
+          "recipient": {
+            "playerId": "teresa_weatherspoon",
+            "playerName": "Teresa Weatherspoon",
+            "teamCode": "NYL_LIBERTY"
+          },
+          "notes": "",
+          "links": [],
+          "entryIds": []
+        },
+        "1998_newcomeroftheyear": {
+          "awardId": "1998_newcomeroftheyear",
+          "season": 1998,
+          "seasonId": "1998",
+          "awardKey": "newcomeroftheyear",
+          "awardName": "Newcomer of the Year",
+          "recipient": {
+            "playerId": "suzie_mcconnell_serio",
+            "playerName": "Suzie McConnell Serio",
+            "teamCode": "CLE_ROCKERS"
+          },
+          "notes": "",
+          "links": [],
+          "entryIds": []
+        },
+        "1998_shootingchampionsfieldgoalpercentage": {
+          "awardId": "1998_shootingchampionsfieldgoalpercentage",
+          "season": 1998,
+          "seasonId": "1998",
+          "awardKey": "shootingchampionsfieldgoalpercentage",
+          "awardName": "BEST FIELD GOAL %",
+          "recipient": {
+            "playerId": "isabelle_fijalkowski",
+            "playerName": "Isabelle Fijalkowski",
+            "teamCode": "CLE_ROCKERS"
+          },
+          "notes": "",
+          "links": [],
+          "entryIds": []
+        },
+        "1998_shootingchampionsfreethrowpercentage": {
+          "awardId": "1998_shootingchampionsfreethrowpercentage",
+          "season": 1998,
+          "seasonId": "1998",
+          "awardKey": "shootingchampionsfreethrowpercentage",
+          "awardName": "BEST FREE THROW %",
+          "recipient": {
+            "playerId": "sandy_brondello",
+            "playerName": "Sandy Brondello",
+            "teamCode": "DET_SHOCK"
+          },
+          "notes": "",
+          "links": [],
+          "entryIds": []
+        },
+        "1998_roy": {
+          "awardId": "1998_roy",
+          "season": 1998,
+          "seasonId": "1998",
+          "awardKey": "roy",
+          "awardName": "Rookie of the Year",
+          "recipient": {
+            "playerId": "tracy_reid",
+            "playerName": "Tracy Reid",
+            "teamCode": "CHA_STING"
+          },
+          "notes": "",
+          "links": [],
+          "entryIds": []
+        },
+        "1998_kim_perrot_sportsmanship": {
+          "awardId": "1998_kim_perrot_sportsmanship",
+          "season": 1998,
+          "seasonId": "1998",
+          "awardKey": "kim_perrot_sportsmanship",
+          "awardName": "Kim Perrot Sportsmanship Award",
+          "recipient": {
+            "playerId": "suzie_mcconnell_serio",
+            "playerName": "Suzie McConnell Serio",
+            "teamCode": "CLE_ROCKERS"
+          },
+          "notes": "",
+          "links": [],
+          "entryIds": []
+        },
+        "1998_coach_of_the_year": {
+          "awardId": "1998_coach_of_the_year",
+          "season": 1998,
+          "seasonId": "1998",
+          "awardKey": "coach_of_the_year",
+          "awardName": "Coach of the Year",
+          "recipient": {
+            "playerId": "van_chancellor",
+            "playerName": "Van Chancellor",
+            "teamCode": "HOU_COMETS"
+          },
+          "notes": "",
+          "links": [],
+          "entryIds": []
+        }
+      }
+    },
+    "1999": {
+      "season": 1999,
+      "seasonId": "1999",
+      "awards": {
+        "1999_mvp": {
+          "awardId": "1999_mvp",
+          "season": 1999,
+          "seasonId": "1999",
+          "awardKey": "mvp",
+          "awardName": "Most Valuable Player",
+          "recipient": {
+            "playerId": "yolanda_griffith",
+            "playerName": "Yolanda Griffith",
+            "teamCode": "SAC_MONARCHS"
+          },
+          "notes": "",
+          "links": [],
+          "entryIds": []
+        },
+        "1999_topscorer": {
+          "awardId": "1999_topscorer",
+          "season": 1999,
+          "seasonId": "1999",
+          "awardKey": "topscorer",
+          "awardName": "Top Scorer",
+          "recipient": {
+            "playerId": "cynthia_cooper",
+            "playerName": "Cynthia Cooper",
+            "teamCode": "HOU_COMETS"
+          },
+          "notes": "",
+          "links": [],
+          "entryIds": []
+        },
+        "1999_topdraftpick": {
+          "awardId": "1999_topdraftpick",
+          "season": 1999,
+          "seasonId": "1999",
+          "awardKey": "topdraftpick",
+          "awardName": "Top draft pick",
+          "recipient": {
+            "playerId": "chamique_holdsclaw",
+            "playerName": "Chamique Holdsclaw",
+            "teamCode": "WAS_MYSTICS"
+          },
+          "notes": "",
+          "links": [],
+          "entryIds": []
+        },
+        "1999_dpoy": {
+          "awardId": "1999_dpoy",
+          "season": 1999,
+          "seasonId": "1999",
+          "awardKey": "dpoy",
+          "awardName": "Defensive Player of the Year",
+          "recipient": {
+            "playerId": "yolanda_griffith",
+            "playerName": "Yolanda Griffith",
+            "teamCode": "SAC_MONARCHS"
+          },
+          "notes": "",
+          "links": [],
+          "entryIds": []
+        },
+        "1999_newcomeroftheyear": {
+          "awardId": "1999_newcomeroftheyear",
+          "season": 1999,
+          "seasonId": "1999",
+          "awardKey": "newcomeroftheyear",
+          "awardName": "Newcomer of the Year",
+          "recipient": {
+            "playerId": "yolanda_griffith",
+            "playerName": "Yolanda Griffith",
+            "teamCode": "SAC_MONARCHS"
+          },
+          "notes": "",
+          "links": [],
+          "entryIds": []
+        },
+        "1999_shootingchampionsfieldgoalpercentage": {
+          "awardId": "1999_shootingchampionsfieldgoalpercentage",
+          "season": 1999,
+          "seasonId": "1999",
+          "awardKey": "shootingchampionsfieldgoalpercentage",
+          "awardName": "BEST FIELD GOAL %",
+          "recipient": {
+            "playerId": "murriel_page",
+            "playerName": "Murriel Page",
+            "teamCode": "WAS_MYSTICS"
+          },
+          "notes": "",
+          "links": [],
+          "entryIds": []
+        },
+        "1999_shootingchampionsfreethrowpercentage": {
+          "awardId": "1999_shootingchampionsfreethrowpercentage",
+          "season": 1999,
+          "seasonId": "1999",
+          "awardKey": "shootingchampionsfreethrowpercentage",
+          "awardName": "BEST FREE THROW %",
+          "recipient": {
+            "playerId": "eva_nemcova",
+            "playerName": "Eva Nemcova",
+            "teamCode": "CLE_ROCKERS"
+          },
+          "notes": "",
+          "links": [],
+          "entryIds": []
+        },
+        "1999_roy": {
+          "awardId": "1999_roy",
+          "season": 1999,
+          "seasonId": "1999",
+          "awardKey": "roy",
+          "awardName": "Rookie of the Year",
+          "recipient": {
+            "playerId": "chamique_holdsclaw",
+            "playerName": "Chamique Holdsclaw",
+            "teamCode": "WAS_MYSTICS"
+          },
+          "notes": "",
+          "links": [],
+          "entryIds": []
+        },
+        "1999_kim_perrot_sportsmanship": {
+          "awardId": "1999_kim_perrot_sportsmanship",
+          "season": 1999,
+          "seasonId": "1999",
+          "awardKey": "kim_perrot_sportsmanship",
+          "awardName": "Kim Perrot Sportsmanship Award",
+          "recipient": {
+            "playerId": "dawn_staley",
+            "playerName": "Dawn Staley",
+            "teamCode": "CHA_STING"
+          },
+          "notes": "",
+          "links": [],
+          "entryIds": []
+        },
+        "1999_entrepreneurialachievementaward": {
+          "awardId": "1999_entrepreneurialachievementaward",
+          "season": 1999,
+          "seasonId": "1999",
+          "awardKey": "entrepreneurialachievementaward",
+          "awardName": "Entrepreneurial Achievement Award",
+          "recipient": {
+            "playerId": "dawn_staley",
+            "playerName": "Dawn Staley",
+            "teamCode": "CHA_STING"
+          },
+          "notes": "",
+          "links": [],
+          "entryIds": []
+        },
+        "1999_coach_of_the_year": {
+          "awardId": "1999_coach_of_the_year",
+          "season": 1999,
+          "seasonId": "1999",
+          "awardKey": "coach_of_the_year",
+          "awardName": "Coach of the Year",
+          "recipient": {
+            "playerId": "van_chancellor",
+            "playerName": "Van Chancellor",
+            "teamCode": "HOU_COMETS"
+          },
+          "notes": "",
+          "links": [],
+          "entryIds": []
+        }
+      }
+    },
+    "2000": {
+      "season": 2000,
+      "seasonId": "2000",
+      "awards": {
+        "2000_mvp": {
+          "awardId": "2000_mvp",
+          "season": 2000,
+          "seasonId": "2000",
+          "awardKey": "mvp",
+          "awardName": "Most Valuable Player",
+          "recipient": {
+            "playerId": "sheryl_swoopes",
+            "playerName": "Sheryl Swoopes",
+            "teamCode": "HOU_COMETS"
+          },
+          "notes": "",
+          "links": [],
+          "entryIds": []
+        },
+        "2000_topscorer": {
+          "awardId": "2000_topscorer",
+          "season": 2000,
+          "seasonId": "2000",
+          "awardKey": "topscorer",
+          "awardName": "Top Scorer",
+          "recipient": {
+            "playerId": "sheryl_swoopes",
+            "playerName": "Sheryl Swoopes",
+            "teamCode": "HOU_COMETS"
+          },
+          "notes": "",
+          "links": [],
+          "entryIds": []
+        },
+        "2000_topdraftpick": {
+          "awardId": "2000_topdraftpick",
+          "season": 2000,
+          "seasonId": "2000",
+          "awardKey": "topdraftpick",
+          "awardName": "Top draft pick",
+          "recipient": {
+            "playerId": "ann_wauters",
+            "playerName": "Ann Wauters",
+            "teamCode": "CLE_ROCKERS"
+          },
+          "notes": "",
+          "links": [],
+          "entryIds": []
+        },
+        "2000_dpoy": {
+          "awardId": "2000_dpoy",
+          "season": 2000,
+          "seasonId": "2000",
+          "awardKey": "dpoy",
+          "awardName": "Defensive Player of the Year",
+          "recipient": {
+            "playerId": "sheryl_swoopes",
+            "playerName": "Sheryl Swoopes",
+            "teamCode": "HOU_COMETS"
+          },
+          "notes": "",
+          "links": [],
+          "entryIds": []
+        },
+        "2000_mip": {
+          "awardId": "2000_mip",
+          "season": 2000,
+          "seasonId": "2000",
+          "awardKey": "mip",
+          "awardName": "Most Improved Player",
+          "recipient": {
+            "playerId": "tari_phillips",
+            "playerName": "Tari Phillips",
+            "teamCode": "NYL_LIBERTY"
+          },
+          "notes": "",
+          "links": [],
+          "entryIds": []
+        },
+        "2000_shootingchampionsfieldgoalpercentage": {
+          "awardId": "2000_shootingchampionsfieldgoalpercentage",
+          "season": 2000,
+          "seasonId": "2000",
+          "awardKey": "shootingchampionsfieldgoalpercentage",
+          "awardName": "BEST FIELD GOAL %",
+          "recipient": {
+            "playerId": "murriel_page",
+            "playerName": "Murriel Page",
+            "teamCode": "WAS_MYSTICS"
+          },
+          "notes": "",
+          "links": [],
+          "entryIds": []
+        },
+        "2000_shootingchampionsfreethrowpercentage": {
+          "awardId": "2000_shootingchampionsfreethrowpercentage",
+          "season": 2000,
+          "seasonId": "2000",
+          "awardKey": "shootingchampionsfreethrowpercentage",
+          "awardName": "BEST FREE THROW %",
+          "recipient": {
+            "playerId": "jennifer_azzi",
+            "playerName": "Jennifer Azzi",
+            "teamCode": "UTA_STARZZ"
+          },
+          "notes": "",
+          "links": [],
+          "entryIds": []
+        },
+        "2000_roy": {
+          "awardId": "2000_roy",
+          "season": 2000,
+          "seasonId": "2000",
+          "awardKey": "roy",
+          "awardName": "Rookie of the Year",
+          "recipient": {
+            "playerId": "betty_lennox",
+            "playerName": "Betty Lennox",
+            "teamCode": "MIN_LYNX"
+          },
+          "notes": "",
+          "links": [],
+          "entryIds": []
+        },
+        "2000_kim_perrot_sportsmanship": {
+          "awardId": "2000_kim_perrot_sportsmanship",
+          "season": 2000,
+          "seasonId": "2000",
+          "awardKey": "kim_perrot_sportsmanship",
+          "awardName": "Kim Perrot Sportsmanship Award",
+          "recipient": {
+            "playerId": "suzie_mcconnell_serio",
+            "playerName": "Suzie McConnell Serio",
+            "teamCode": "CLE_ROCKERS"
+          },
+          "notes": "",
+          "links": [],
+          "entryIds": []
+        },
+        "2000_entrepreneurialachievementaward": {
+          "awardId": "2000_entrepreneurialachievementaward",
+          "season": 2000,
+          "seasonId": "2000",
+          "awardKey": "entrepreneurialachievementaward",
+          "awardName": "Entrepreneurial Achievement Award",
+          "recipient": {
+            "playerId": "monica_lamb",
+            "playerName": "Monica Lamb",
+            "teamCode": "HOU_COMETS"
+          },
+          "notes": "",
+          "links": [],
+          "entryIds": []
+        },
+        "2000_coach_of_the_year": {
+          "awardId": "2000_coach_of_the_year",
+          "season": 2000,
+          "seasonId": "2000",
+          "awardKey": "coach_of_the_year",
+          "awardName": "Coach of the Year",
+          "recipient": {
+            "playerId": "michael_cooper",
+            "playerName": "Michael Cooper",
+            "teamCode": "LOS_SPARKS"
+          },
+          "notes": "",
+          "links": [],
+          "entryIds": []
+        }
+      }
+    },
+    "2001": {
+      "season": 2001,
+      "seasonId": "2001",
+      "awards": {
+        "2001_mvp": {
+          "awardId": "2001_mvp",
+          "season": 2001,
+          "seasonId": "2001",
+          "awardKey": "mvp",
+          "awardName": "Most Valuable Player",
+          "recipient": {
+            "playerId": "lisa_leslie",
+            "playerName": "Lisa Leslie",
+            "teamCode": "LOS_SPARKS"
+          },
+          "notes": "",
+          "links": [],
+          "entryIds": []
+        },
+        "2001_topscorer": {
+          "awardId": "2001_topscorer",
+          "season": 2001,
+          "seasonId": "2001",
+          "awardKey": "topscorer",
+          "awardName": "Top Scorer",
+          "recipient": {
+            "playerId": "katie_smith",
+            "playerName": "Katie Smith",
+            "teamCode": "MIN_LYNX"
+          },
+          "notes": "",
+          "links": [],
+          "entryIds": []
+        },
+        "2001_topdraftpick": {
+          "awardId": "2001_topdraftpick",
+          "season": 2001,
+          "seasonId": "2001",
+          "awardKey": "topdraftpick",
+          "awardName": "Top draft pick",
+          "recipient": {
+            "playerId": "lauren_jackson",
+            "playerName": "Lauren Jackson",
+            "teamCode": "SEA_STORM"
+          },
+          "notes": "",
+          "links": [],
+          "entryIds": []
+        },
+        "2001_dpoy": {
+          "awardId": "2001_dpoy",
+          "season": 2001,
+          "seasonId": "2001",
+          "awardKey": "dpoy",
+          "awardName": "Defensive Player of the Year",
+          "recipient": {
+            "playerId": "debbie_black",
+            "playerName": "Debbie Black",
+            "teamCode": ""
+          },
+          "notes": "",
+          "links": [],
+          "entryIds": []
+        },
+        "2001_mip": {
+          "awardId": "2001_mip",
+          "season": 2001,
+          "seasonId": "2001",
+          "awardKey": "mip",
+          "awardName": "Most Improved Player",
+          "recipient": {
+            "playerId": "janeth_arcain",
+            "playerName": "Janeth Arcain",
+            "teamCode": "HOU_COMETS"
+          },
+          "notes": "",
+          "links": [],
+          "entryIds": []
+        },
+        "2001_shootingchampionsfieldgoalpercentage": {
+          "awardId": "2001_shootingchampionsfieldgoalpercentage",
+          "season": 2001,
+          "seasonId": "2001",
+          "awardKey": "shootingchampionsfieldgoalpercentage",
+          "awardName": "BEST FIELD GOAL %",
+          "recipient": {
+            "playerId": "latasha_byears",
+            "playerName": "Latasha Byears",
+            "teamCode": "LOS_SPARKS"
+          },
+          "notes": "",
+          "links": [],
+          "entryIds": []
+        },
+        "2001_shootingchampionsfreethrowpercentage": {
+          "awardId": "2001_shootingchampionsfreethrowpercentage",
+          "season": 2001,
+          "seasonId": "2001",
+          "awardKey": "shootingchampionsfreethrowpercentage",
+          "awardName": "BEST FREE THROW %",
+          "recipient": {
+            "playerId": "elena_baranova",
+            "playerName": "Elena Baranova",
+            "teamCode": ""
+          },
+          "notes": "",
+          "links": [],
+          "entryIds": []
+        },
+        "2001_roy": {
+          "awardId": "2001_roy",
+          "season": 2001,
+          "seasonId": "2001",
+          "awardKey": "roy",
+          "awardName": "Rookie of the Year",
+          "recipient": {
+            "playerId": "jackie_stiles",
+            "playerName": "Jackie Stiles",
+            "teamCode": "POR_FIRE"
+          },
+          "notes": "",
+          "links": [],
+          "entryIds": []
+        },
+        "2001_kim_perrot_sportsmanship": {
+          "awardId": "2001_kim_perrot_sportsmanship",
+          "season": 2001,
+          "seasonId": "2001",
+          "awardKey": "kim_perrot_sportsmanship",
+          "awardName": "Kim Perrot Sportsmanship Award",
+          "recipient": {
+            "playerId": "sue_wicks",
+            "playerName": "Sue Wicks",
+            "teamCode": "NYL_LIBERTY"
+          },
+          "notes": "",
+          "links": [],
+          "entryIds": []
+        },
+        "2001_coach_of_the_year": {
+          "awardId": "2001_coach_of_the_year",
+          "season": 2001,
+          "seasonId": "2001",
+          "awardKey": "coach_of_the_year",
+          "awardName": "Coach of the Year",
+          "recipient": {
+            "playerId": "dan_hughes",
+            "playerName": "Dan Hughes",
+            "teamCode": "CLE_ROCKERS"
+          },
+          "notes": "",
+          "links": [],
+          "entryIds": []
+        }
+      }
+    },
+    "2002": {
+      "season": 2002,
+      "seasonId": "2002",
+      "awards": {
+        "2002_mvp": {
+          "awardId": "2002_mvp",
+          "season": 2002,
+          "seasonId": "2002",
+          "awardKey": "mvp",
+          "awardName": "Most Valuable Player",
+          "recipient": {
+            "playerId": "sheryl_swoopes",
+            "playerName": "Sheryl Swoopes",
+            "teamCode": "HOU_COMETS"
+          },
+          "notes": "",
+          "links": [],
+          "entryIds": []
+        },
+        "2002_topscorer": {
+          "awardId": "2002_topscorer",
+          "season": 2002,
+          "seasonId": "2002",
+          "awardKey": "topscorer",
+          "awardName": "Top Scorer",
+          "recipient": {
+            "playerId": "chamique_holdsclaw",
+            "playerName": "Chamique Holdsclaw",
+            "teamCode": "WAS_MYSTICS"
+          },
+          "notes": "",
+          "links": [],
+          "entryIds": []
+        },
+        "2002_topdraftpick": {
+          "awardId": "2002_topdraftpick",
+          "season": 2002,
+          "seasonId": "2002",
+          "awardKey": "topdraftpick",
+          "awardName": "Top draft pick",
+          "recipient": {
+            "playerId": "sue_bird",
+            "playerName": "Sue Bird",
+            "teamCode": "SEA_STORM"
+          },
+          "notes": "",
+          "links": [],
+          "entryIds": []
+        },
+        "2002_dpoy": {
+          "awardId": "2002_dpoy",
+          "season": 2002,
+          "seasonId": "2002",
+          "awardKey": "dpoy",
+          "awardName": "Defensive Player of the Year",
+          "recipient": {
+            "playerId": "sheryl_swoopes",
+            "playerName": "Sheryl Swoopes",
+            "teamCode": "HOU_COMETS"
+          },
+          "notes": "",
+          "links": [],
+          "entryIds": []
+        },
+        "2002_mip": {
+          "awardId": "2002_mip",
+          "season": 2002,
+          "seasonId": "2002",
+          "awardKey": "mip",
+          "awardName": "Most Improved Player",
+          "recipient": {
+            "playerId": "coco_miller",
+            "playerName": "Coco Miller",
+            "teamCode": "WAS_MYSTICS"
+          },
+          "notes": "",
+          "links": [],
+          "entryIds": []
+        },
+        "2002_peakperformerscoring": {
+          "awardId": "2002_peakperformerscoring",
+          "season": 2002,
+          "seasonId": "2002",
+          "awardKey": "peakperformerscoring",
+          "awardName": "TOP SCORER",
+          "recipient": {
+            "playerId": "chamique_holdsclaw",
+            "playerName": "Chamique Holdsclaw",
+            "teamCode": "WAS_MYSTICS"
+          },
+          "notes": "",
+          "links": [],
+          "entryIds": []
+        },
+        "2002_peakperformerrebounding": {
+          "awardId": "2002_peakperformerrebounding",
+          "season": 2002,
+          "seasonId": "2002",
+          "awardKey": "peakperformerrebounding",
+          "awardName": "TOP REBOUNDER",
+          "recipient": {
+            "playerId": "chamique_holdsclaw",
+            "playerName": "Chamique Holdsclaw",
+            "teamCode": "WAS_MYSTICS"
+          },
+          "notes": "",
+          "links": [],
+          "entryIds": []
+        },
+        "2002_roy": {
+          "awardId": "2002_roy",
+          "season": 2002,
+          "seasonId": "2002",
+          "awardKey": "roy",
+          "awardName": "Rookie of the Year",
+          "recipient": {
+            "playerId": "tamika_catchings",
+            "playerName": "Tamika Catchings",
+            "teamCode": "IND_FEVER"
+          },
+          "notes": "",
+          "links": [],
+          "entryIds": []
+        },
+        "2002_kim_perrot_sportsmanship": {
+          "awardId": "2002_kim_perrot_sportsmanship",
+          "season": 2002,
+          "seasonId": "2002",
+          "awardKey": "kim_perrot_sportsmanship",
+          "awardName": "Kim Perrot Sportsmanship Award",
+          "recipient": {
+            "playerId": "jennifer_gillom",
+            "playerName": "Jennifer Gillom",
+            "teamCode": "PHX_MERCURY"
+          },
+          "notes": "",
+          "links": [],
+          "entryIds": []
+        },
+        "2002_coach_of_the_year": {
+          "awardId": "2002_coach_of_the_year",
+          "season": 2002,
+          "seasonId": "2002",
+          "awardKey": "coach_of_the_year",
+          "awardName": "Coach of the Year",
+          "recipient": {
+            "playerId": "marianne_stanley",
+            "playerName": "Marianne Stanley",
+            "teamCode": "WAS_MYSTICS"
+          },
+          "notes": "",
+          "links": [],
+          "entryIds": []
+        }
+      }
+    },
+    "2003": {
+      "season": 2003,
+      "seasonId": "2003",
+      "awards": {
+        "2003_mvp": {
+          "awardId": "2003_mvp",
+          "season": 2003,
+          "seasonId": "2003",
+          "awardKey": "mvp",
+          "awardName": "Most Valuable Player",
+          "recipient": {
+            "playerId": "lauren_jackson",
+            "playerName": "Lauren Jackson",
+            "teamCode": "SEA_STORM"
+          },
+          "notes": "",
+          "links": [],
+          "entryIds": []
+        },
+        "2003_topscorer": {
+          "awardId": "2003_topscorer",
+          "season": 2003,
+          "seasonId": "2003",
+          "awardKey": "topscorer",
+          "awardName": "Top Scorer",
+          "recipient": {
+            "playerId": "lauren_jackson",
+            "playerName": "Lauren Jackson",
+            "teamCode": "SEA_STORM"
+          },
+          "notes": "",
+          "links": [],
+          "entryIds": []
+        },
+        "2003_topdraftpick": {
+          "awardId": "2003_topdraftpick",
+          "season": 2003,
+          "seasonId": "2003",
+          "awardKey": "topdraftpick",
+          "awardName": "Top draft pick",
+          "recipient": {
+            "playerId": "latoya_thomas",
+            "playerName": "LaToya Thomas",
+            "teamCode": "CLE_ROCKERS"
+          },
+          "notes": "",
+          "links": [],
+          "entryIds": []
+        },
+        "2003_dpoy": {
+          "awardId": "2003_dpoy",
+          "season": 2003,
+          "seasonId": "2003",
+          "awardKey": "dpoy",
+          "awardName": "Defensive Player of the Year",
+          "recipient": {
+            "playerId": "sheryl_swoopes",
+            "playerName": "Sheryl Swoopes",
+            "teamCode": "HOU_COMETS"
+          },
+          "notes": "",
+          "links": [],
+          "entryIds": []
+        },
+        "2003_mip": {
+          "awardId": "2003_mip",
+          "season": 2003,
+          "seasonId": "2003",
+          "awardKey": "mip",
+          "awardName": "Most Improved Player",
+          "recipient": {
+            "playerId": "michelle_snow",
+            "playerName": "Michelle Snow",
+            "teamCode": "HOU_COMETS"
+          },
+          "notes": "",
+          "links": [],
+          "entryIds": []
+        },
+        "2003_peakperformerscoring": {
+          "awardId": "2003_peakperformerscoring",
+          "season": 2003,
+          "seasonId": "2003",
+          "awardKey": "peakperformerscoring",
+          "awardName": "TOP SCORER",
+          "recipient": {
+            "playerId": "lauren_jackson",
+            "playerName": "Lauren Jackson",
+            "teamCode": "SEA_STORM"
+          },
+          "notes": "",
+          "links": [],
+          "entryIds": []
+        },
+        "2003_peakperformerrebounding": {
+          "awardId": "2003_peakperformerrebounding",
+          "season": 2003,
+          "seasonId": "2003",
+          "awardKey": "peakperformerrebounding",
+          "awardName": "TOP REBOUNDER",
+          "recipient": {
+            "playerId": "chamique_holdsclaw",
+            "playerName": "Chamique Holdsclaw",
+            "teamCode": "WAS_MYSTICS"
+          },
+          "notes": "",
+          "links": [],
+          "entryIds": []
+        },
+        "2003_roy": {
+          "awardId": "2003_roy",
+          "season": 2003,
+          "seasonId": "2003",
+          "awardKey": "roy",
+          "awardName": "Rookie of the Year",
+          "recipient": {
+            "playerId": "cheryl_ford",
+            "playerName": "Cheryl Ford",
+            "teamCode": "DET_SHOCK"
+          },
+          "notes": "",
+          "links": [],
+          "entryIds": []
+        },
+        "2003_kim_perrot_sportsmanship": {
+          "awardId": "2003_kim_perrot_sportsmanship",
+          "season": 2003,
+          "seasonId": "2003",
+          "awardKey": "kim_perrot_sportsmanship",
+          "awardName": "Kim Perrot Sportsmanship Award",
+          "recipient": {
+            "playerId": "edna_campbell",
+            "playerName": "Edna Campbell",
+            "teamCode": "SAC_MONARCHS"
+          },
+          "notes": "",
+          "links": [],
+          "entryIds": []
+        },
+        "2003_coach_of_the_year": {
+          "awardId": "2003_coach_of_the_year",
+          "season": 2003,
+          "seasonId": "2003",
+          "awardKey": "coach_of_the_year",
+          "awardName": "Coach of the Year",
+          "recipient": {
+            "playerId": "bill_laimbeer",
+            "playerName": "Bill Laimbeer",
+            "teamCode": "DET_SHOCK"
+          },
+          "notes": "",
+          "links": [],
+          "entryIds": []
+        }
+      }
+    },
+    "2004": {
+      "season": 2004,
+      "seasonId": "2004",
+      "awards": {
+        "2004_mvp": {
+          "awardId": "2004_mvp",
+          "season": 2004,
+          "seasonId": "2004",
+          "awardKey": "mvp",
+          "awardName": "Most Valuable Player",
+          "recipient": {
+            "playerId": "lisa_leslie",
+            "playerName": "Lisa Leslie",
+            "teamCode": "LOS_SPARKS"
+          },
+          "notes": "",
+          "links": [],
+          "entryIds": []
+        },
+        "2004_topscorer": {
+          "awardId": "2004_topscorer",
+          "season": 2004,
+          "seasonId": "2004",
+          "awardKey": "topscorer",
+          "awardName": "Top Scorer",
+          "recipient": {
+            "playerId": "lauren_jackson",
+            "playerName": "Lauren Jackson",
+            "teamCode": "SEA_STORM"
+          },
+          "notes": "",
+          "links": [],
+          "entryIds": []
+        },
+        "2004_topdraftpick": {
+          "awardId": "2004_topdraftpick",
+          "season": 2004,
+          "seasonId": "2004",
+          "awardKey": "topdraftpick",
+          "awardName": "Top draft pick",
+          "recipient": {
+            "playerId": "diana_taurasi",
+            "playerName": "Diana Taurasi",
+            "teamCode": "PHX_MERCURY"
+          },
+          "notes": "",
+          "links": [],
+          "entryIds": []
+        },
+        "2004_dpoy": {
+          "awardId": "2004_dpoy",
+          "season": 2004,
+          "seasonId": "2004",
+          "awardKey": "dpoy",
+          "awardName": "Defensive Player of the Year",
+          "recipient": {
+            "playerId": "lisa_leslie",
+            "playerName": "Lisa Leslie",
+            "teamCode": "LOS_SPARKS"
+          },
+          "notes": "",
+          "links": [],
+          "entryIds": []
+        },
+        "2004_mostimprovedplayercowinner1": {
+          "awardId": "2004_mostimprovedplayercowinner1",
+          "season": 2004,
+          "seasonId": "2004",
+          "awardKey": "mostimprovedplayercowinner1",
+          "awardName": "Most Improved Player co-winner",
+          "recipient": {
+            "playerId": "kelly_miller",
+            "playerName": "Kelly Miller",
+            "teamCode": "IND_FEVER"
+          },
+          "notes": "",
+          "links": [],
+          "entryIds": []
+        },
+        "2004_mostimprovedplayercowinner2": {
+          "awardId": "2004_mostimprovedplayercowinner2",
+          "season": 2004,
+          "seasonId": "2004",
+          "awardKey": "mostimprovedplayercowinner2",
+          "awardName": "Most Improved Player co-winner",
+          "recipient": {
+            "playerId": "wendy_palmer",
+            "playerName": "Wendy Palmer",
+            "teamCode": "CON_SUN"
+          },
+          "notes": "",
+          "links": [],
+          "entryIds": []
+        },
+        "2004_peakperformerscoring": {
+          "awardId": "2004_peakperformerscoring",
+          "season": 2004,
+          "seasonId": "2004",
+          "awardKey": "peakperformerscoring",
+          "awardName": "TOP SCORER",
+          "recipient": {
+            "playerId": "lauren_jackson",
+            "playerName": "Lauren Jackson",
+            "teamCode": "SEA_STORM"
+          },
+          "notes": "",
+          "links": [],
+          "entryIds": []
+        },
+        "2004_peakperformerrebounding": {
+          "awardId": "2004_peakperformerrebounding",
+          "season": 2004,
+          "seasonId": "2004",
+          "awardKey": "peakperformerrebounding",
+          "awardName": "TOP REBOUNDER",
+          "recipient": {
+            "playerId": "lisa_leslie",
+            "playerName": "Lisa Leslie",
+            "teamCode": "LOS_SPARKS"
+          },
+          "notes": "",
+          "links": [],
+          "entryIds": []
+        },
+        "2004_roy": {
+          "awardId": "2004_roy",
+          "season": 2004,
+          "seasonId": "2004",
+          "awardKey": "roy",
+          "awardName": "Rookie of the Year",
+          "recipient": {
+            "playerId": "diana_taurasi",
+            "playerName": "Diana Taurasi",
+            "teamCode": "PHX_MERCURY"
+          },
+          "notes": "",
+          "links": [],
+          "entryIds": []
+        },
+        "2004_kim_perrot_sportsmanship": {
+          "awardId": "2004_kim_perrot_sportsmanship",
+          "season": 2004,
+          "seasonId": "2004",
+          "awardKey": "kim_perrot_sportsmanship",
+          "awardName": "Kim Perrot Sportsmanship Award",
+          "recipient": {
+            "playerId": "teresa_edwards",
+            "playerName": "Teresa Edwards",
+            "teamCode": "MIN_LYNX"
+          },
+          "notes": "",
+          "links": [],
+          "entryIds": []
+        },
+        "2004_coach_of_the_year": {
+          "awardId": "2004_coach_of_the_year",
+          "season": 2004,
+          "seasonId": "2004",
+          "awardKey": "coach_of_the_year",
+          "awardName": "Coach of the Year",
+          "recipient": {
+            "playerId": "suzie_mcconnell_serio",
+            "playerName": "Suzie McConnell Serio",
+            "teamCode": "MIN_LYNX"
+          },
+          "notes": "",
+          "links": [],
+          "entryIds": []
+        }
+      }
+    },
+    "2005": {
+      "season": 2005,
+      "seasonId": "2005",
+      "awards": {
+        "2005_mvp": {
+          "awardId": "2005_mvp",
+          "season": 2005,
+          "seasonId": "2005",
+          "awardKey": "mvp",
+          "awardName": "Most Valuable Player",
+          "recipient": {
+            "playerId": "sheryl_swoopes",
+            "playerName": "Sheryl Swoopes",
+            "teamCode": "HOU_COMETS"
+          },
+          "notes": "",
+          "links": [],
+          "entryIds": []
+        },
+        "2005_topscorer": {
+          "awardId": "2005_topscorer",
+          "season": 2005,
+          "seasonId": "2005",
+          "awardKey": "topscorer",
+          "awardName": "Top Scorer",
+          "recipient": {
+            "playerId": "sheryl_swoopes",
+            "playerName": "Sheryl Swoopes",
+            "teamCode": "HOU_COMETS"
+          },
+          "notes": "",
+          "links": [],
+          "entryIds": []
+        },
+        "2005_topdraftpick": {
+          "awardId": "2005_topdraftpick",
+          "season": 2005,
+          "seasonId": "2005",
+          "awardKey": "topdraftpick",
+          "awardName": "Top draft pick",
+          "recipient": {
+            "playerId": "janel_mccarville",
+            "playerName": "Janel McCarville",
+            "teamCode": "CHA_STING"
+          },
+          "notes": "",
+          "links": [],
+          "entryIds": []
+        },
+        "2005_dpoy": {
+          "awardId": "2005_dpoy",
+          "season": 2005,
+          "seasonId": "2005",
+          "awardKey": "dpoy",
+          "awardName": "Defensive Player of the Year",
+          "recipient": {
+            "playerId": "tamika_catchings",
+            "playerName": "Tamika Catchings",
+            "teamCode": "IND_FEVER"
+          },
+          "notes": "",
+          "links": [],
+          "entryIds": []
+        },
+        "2005_mip": {
+          "awardId": "2005_mip",
+          "season": 2005,
+          "seasonId": "2005",
+          "awardKey": "mip",
+          "awardName": "Most Improved Player",
+          "recipient": {
+            "playerId": "nicole_powell",
+            "playerName": "Nicole Powell",
+            "teamCode": "SAC_MONARCHS"
+          },
+          "notes": "",
+          "links": [],
+          "entryIds": []
+        },
+        "2005_peakperformerscoring": {
+          "awardId": "2005_peakperformerscoring",
+          "season": 2005,
+          "seasonId": "2005",
+          "awardKey": "peakperformerscoring",
+          "awardName": "TOP SCORER",
+          "recipient": {
+            "playerId": "sheryl_swoopes",
+            "playerName": "Sheryl Swoopes",
+            "teamCode": "HOU_COMETS"
+          },
+          "notes": "",
+          "links": [],
+          "entryIds": []
+        },
+        "2005_peakperformerrebounding": {
+          "awardId": "2005_peakperformerrebounding",
+          "season": 2005,
+          "seasonId": "2005",
+          "awardKey": "peakperformerrebounding",
+          "awardName": "TOP REBOUNDER",
+          "recipient": {
+            "playerId": "cheryl_ford",
+            "playerName": "Cheryl Ford",
+            "teamCode": "DET_SHOCK"
+          },
+          "notes": "",
+          "links": [],
+          "entryIds": []
+        },
+        "2005_peakperformerdishandassist": {
+          "awardId": "2005_peakperformerdishandassist",
+          "season": 2005,
+          "seasonId": "2005",
+          "awardKey": "peakperformerdishandassist",
+          "awardName": "TOP DISTRIBUTOR",
+          "recipient": {
+            "playerId": "sue_bird",
+            "playerName": "Sue Bird",
+            "teamCode": "SEA_STORM"
+          },
+          "notes": "",
+          "links": [],
+          "entryIds": []
+        },
+        "2005_roy": {
+          "awardId": "2005_roy",
+          "season": 2005,
+          "seasonId": "2005",
+          "awardKey": "roy",
+          "awardName": "Rookie of the Year",
+          "recipient": {
+            "playerId": "tameka_johnson",
+            "playerName": "Tameka Johnson",
+            "teamCode": "WAS_MYSTICS"
+          },
+          "notes": "",
+          "links": [],
+          "entryIds": []
+        },
+        "2005_kim_perrot_sportsmanship": {
+          "awardId": "2005_kim_perrot_sportsmanship",
+          "season": 2005,
+          "seasonId": "2005",
+          "awardKey": "kim_perrot_sportsmanship",
+          "awardName": "Kim Perrot Sportsmanship Award",
+          "recipient": {
+            "playerId": "taj_mcwilliams_franklin",
+            "playerName": "Taj McWilliams-Franklin",
+            "teamCode": "CON_SUN"
+          },
+          "notes": "",
+          "links": [],
+          "entryIds": []
+        },
+        "2005_coach_of_the_year": {
+          "awardId": "2005_coach_of_the_year",
+          "season": 2005,
+          "seasonId": "2005",
+          "awardKey": "coach_of_the_year",
+          "awardName": "Coach of the Year",
+          "recipient": {
+            "playerId": "john_whisenant",
+            "playerName": "John Whisenant",
+            "teamCode": "SAC_MONARCHS"
+          },
+          "notes": "",
+          "links": [],
+          "entryIds": []
+        }
+      }
+    },
+    "2006": {
+      "season": 2006,
+      "seasonId": "2006",
+      "awards": {
+        "2006_mvp": {
+          "awardId": "2006_mvp",
+          "season": 2006,
+          "seasonId": "2006",
+          "awardKey": "mvp",
+          "awardName": "Most Valuable Player",
+          "recipient": {
+            "playerId": "lisa_leslie",
+            "playerName": "Lisa Leslie",
+            "teamCode": "LOS_SPARKS"
+          },
+          "notes": "",
+          "links": [],
+          "entryIds": []
+        },
+        "2006_topscorer": {
+          "awardId": "2006_topscorer",
+          "season": 2006,
+          "seasonId": "2006",
+          "awardKey": "topscorer",
+          "awardName": "Top Scorer",
+          "recipient": {
+            "playerId": "diana_taurasi",
+            "playerName": "Diana Taurasi",
+            "teamCode": "PHX_MERCURY"
+          },
+          "notes": "",
+          "links": [],
+          "entryIds": []
+        },
+        "2006_topdraftpick": {
+          "awardId": "2006_topdraftpick",
+          "season": 2006,
+          "seasonId": "2006",
+          "awardKey": "topdraftpick",
+          "awardName": "Top draft pick",
+          "recipient": {
+            "playerId": "seimone_augustus",
+            "playerName": "Seimone Augustus",
+            "teamCode": "MIN_LYNX"
+          },
+          "notes": "",
+          "links": [],
+          "entryIds": []
+        },
+        "2006_dpoy": {
+          "awardId": "2006_dpoy",
+          "season": 2006,
+          "seasonId": "2006",
+          "awardKey": "dpoy",
+          "awardName": "Defensive Player of the Year",
+          "recipient": {
+            "playerId": "tamika_catchings",
+            "playerName": "Tamika Catchings",
+            "teamCode": "IND_FEVER"
+          },
+          "notes": "",
+          "links": [],
+          "entryIds": []
+        },
+        "2006_mip": {
+          "awardId": "2006_mip",
+          "season": 2006,
+          "seasonId": "2006",
+          "awardKey": "mip",
+          "awardName": "Most Improved Player",
+          "recipient": {
+            "playerId": "erin_buescher",
+            "playerName": "Erin Buescher",
+            "teamCode": "SAC_MONARCHS"
+          },
+          "notes": "",
+          "links": [],
+          "entryIds": []
+        },
+        "2006_peakperformerscoring": {
+          "awardId": "2006_peakperformerscoring",
+          "season": 2006,
+          "seasonId": "2006",
+          "awardKey": "peakperformerscoring",
+          "awardName": "TOP SCORER",
+          "recipient": {
+            "playerId": "diana_taurasi",
+            "playerName": "Diana Taurasi",
+            "teamCode": "PHX_MERCURY"
+          },
+          "notes": "",
+          "links": [],
+          "entryIds": []
+        },
+        "2006_peakperformerrebounding": {
+          "awardId": "2006_peakperformerrebounding",
+          "season": 2006,
+          "seasonId": "2006",
+          "awardKey": "peakperformerrebounding",
+          "awardName": "TOP REBOUNDER",
+          "recipient": {
+            "playerId": "cheryl_ford",
+            "playerName": "Cheryl Ford",
+            "teamCode": "DET_SHOCK"
+          },
+          "notes": "",
+          "links": [],
+          "entryIds": []
+        },
+        "2006_peakperformerdishandassist": {
+          "awardId": "2006_peakperformerdishandassist",
+          "season": 2006,
+          "seasonId": "2006",
+          "awardKey": "peakperformerdishandassist",
+          "awardName": "TOP DISTRIBUTOR",
+          "recipient": {
+            "playerId": "nikki_teasley",
+            "playerName": "Nikki Teasley",
+            "teamCode": "WAS_MYSTICS"
+          },
+          "notes": "",
+          "links": [],
+          "entryIds": []
+        },
+        "2006_roy": {
+          "awardId": "2006_roy",
+          "season": 2006,
+          "seasonId": "2006",
+          "awardKey": "roy",
+          "awardName": "Rookie of the Year",
+          "recipient": {
+            "playerId": "seimone_augustus",
+            "playerName": "Seimone Augustus",
+            "teamCode": "MIN_LYNX"
+          },
+          "notes": "",
+          "links": [],
+          "entryIds": []
+        },
+        "2006_kim_perrot_sportsmanship": {
+          "awardId": "2006_kim_perrot_sportsmanship",
+          "season": 2006,
+          "seasonId": "2006",
+          "awardKey": "kim_perrot_sportsmanship",
+          "awardName": "Kim Perrot Sportsmanship Award",
+          "recipient": {
+            "playerId": "dawn_staley",
+            "playerName": "Dawn Staley",
+            "teamCode": "HOU_COMETS"
+          },
+          "notes": "",
+          "links": [],
+          "entryIds": []
+        },
+        "2006_coach_of_the_year": {
+          "awardId": "2006_coach_of_the_year",
+          "season": 2006,
+          "seasonId": "2006",
+          "awardKey": "coach_of_the_year",
+          "awardName": "Coach of the Year",
+          "recipient": {
+            "playerId": "mike_thibault",
+            "playerName": "Mike Thibault",
+            "teamCode": "CON_SUN"
+          },
+          "notes": "",
+          "links": [],
+          "entryIds": []
+        }
+      }
+    },
+    "2007": {
+      "season": 2007,
+      "seasonId": "2007",
+      "awards": {
+        "2007_mvp": {
+          "awardId": "2007_mvp",
+          "season": 2007,
+          "seasonId": "2007",
+          "awardKey": "mvp",
+          "awardName": "Most Valuable Player",
+          "recipient": {
+            "playerId": "lauren_jackson",
+            "playerName": "Lauren Jackson",
+            "teamCode": "SEA_STORM"
+          },
+          "notes": "",
+          "links": [],
+          "entryIds": []
+        },
+        "2007_topscorer": {
+          "awardId": "2007_topscorer",
+          "season": 2007,
+          "seasonId": "2007",
+          "awardKey": "topscorer",
+          "awardName": "Top Scorer",
+          "recipient": {
+            "playerId": "lauren_jackson",
+            "playerName": "Lauren Jackson",
+            "teamCode": "SEA_STORM"
+          },
+          "notes": "",
+          "links": [],
+          "entryIds": []
+        },
+        "2007_topdraftpick": {
+          "awardId": "2007_topdraftpick",
+          "season": 2007,
+          "seasonId": "2007",
+          "awardKey": "topdraftpick",
+          "awardName": "Top draft pick",
+          "recipient": {
+            "playerId": "lindsey_harding",
+            "playerName": "Lindsey Harding",
+            "teamCode": "MIN_LYNX"
+          },
+          "notes": "",
+          "links": [],
+          "entryIds": []
+        },
+        "2007_dpoy": {
+          "awardId": "2007_dpoy",
+          "season": 2007,
+          "seasonId": "2007",
+          "awardKey": "dpoy",
+          "awardName": "Defensive Player of the Year",
+          "recipient": {
+            "playerId": "lauren_jackson",
+            "playerName": "Lauren Jackson",
+            "teamCode": "SEA_STORM"
+          },
+          "notes": "",
+          "links": [],
+          "entryIds": []
+        },
+        "2007_mip": {
+          "awardId": "2007_mip",
+          "season": 2007,
+          "seasonId": "2007",
+          "awardKey": "mip",
+          "awardName": "Most Improved Player",
+          "recipient": {
+            "playerId": "janel_mccarville",
+            "playerName": "Janel McCarville",
+            "teamCode": "NYL_LIBERTY"
+          },
+          "notes": "",
+          "links": [],
+          "entryIds": []
+        },
+        "2007_peakperformerscoring": {
+          "awardId": "2007_peakperformerscoring",
+          "season": 2007,
+          "seasonId": "2007",
+          "awardKey": "peakperformerscoring",
+          "awardName": "TOP SCORER",
+          "recipient": {
+            "playerId": "lauren_jackson",
+            "playerName": "Lauren Jackson",
+            "teamCode": "SEA_STORM"
+          },
+          "notes": "",
+          "links": [],
+          "entryIds": []
+        },
+        "2007_peakperformerrebounding": {
+          "awardId": "2007_peakperformerrebounding",
+          "season": 2007,
+          "seasonId": "2007",
+          "awardKey": "peakperformerrebounding",
+          "awardName": "TOP REBOUNDER",
+          "recipient": {
+            "playerId": "lauren_jackson",
+            "playerName": "Lauren Jackson",
+            "teamCode": "SEA_STORM"
+          },
+          "notes": "",
+          "links": [],
+          "entryIds": []
+        },
+        "2007_peakperformerdishandassist": {
+          "awardId": "2007_peakperformerdishandassist",
+          "season": 2007,
+          "seasonId": "2007",
+          "awardKey": "peakperformerdishandassist",
+          "awardName": "TOP DISTRIBUTOR",
+          "recipient": {
+            "playerId": "becky_hammon",
+            "playerName": "Becky Hammon",
+            "teamCode": "SA_SILVER_STARS"
+          },
+          "notes": "",
+          "links": [],
+          "entryIds": []
+        },
+        "2007_sixth_player": {
+          "awardId": "2007_sixth_player",
+          "season": 2007,
+          "seasonId": "2007",
+          "awardKey": "sixth_player",
+          "awardName": "Sixth Player of the Year",
+          "recipient": {
+            "playerId": "plenette_pierson",
+            "playerName": "Plenette Pierson",
+            "teamCode": "DET_SHOCK"
+          },
+          "notes": "",
+          "links": [],
+          "entryIds": []
+        },
+        "2007_roy": {
+          "awardId": "2007_roy",
+          "season": 2007,
+          "seasonId": "2007",
+          "awardKey": "roy",
+          "awardName": "Rookie of the Year",
+          "recipient": {
+            "playerId": "armintie_price",
+            "playerName": "Armintie Price",
+            "teamCode": "CHI_SKY"
+          },
+          "notes": "",
+          "links": [],
+          "entryIds": []
+        },
+        "2007_kim_perrot_sportsmanship": {
+          "awardId": "2007_kim_perrot_sportsmanship",
+          "season": 2007,
+          "seasonId": "2007",
+          "awardKey": "kim_perrot_sportsmanship",
+          "awardName": "Kim Perrot Sportsmanship Award",
+          "recipient": {
+            "playerId": "tully_bevilaqua",
+            "playerName": "Tully Bevilaqua",
+            "teamCode": "IND_FEVER"
+          },
+          "notes": "",
+          "links": [],
+          "entryIds": []
+        },
+        "2007_coach_of_the_year": {
+          "awardId": "2007_coach_of_the_year",
+          "season": 2007,
+          "seasonId": "2007",
+          "awardKey": "coach_of_the_year",
+          "awardName": "Coach of the Year",
+          "recipient": {
+            "playerId": "dan_hughes",
+            "playerName": "Dan Hughes",
+            "teamCode": "SA_SILVER_STARS"
+          },
+          "notes": "",
+          "links": [],
+          "entryIds": []
+        }
+      }
+    },
+    "2008": {
+      "season": 2008,
+      "seasonId": "2008",
+      "awards": {
+        "2008_mvp": {
+          "awardId": "2008_mvp",
+          "season": 2008,
+          "seasonId": "2008",
+          "awardKey": "mvp",
+          "awardName": "Most Valuable Player",
+          "recipient": {
+            "playerId": "candace_parker",
+            "playerName": "Candace Parker",
+            "teamCode": "LOS_SPARKS"
+          },
+          "notes": "",
+          "links": [],
+          "entryIds": []
+        },
+        "2008_topscorer": {
+          "awardId": "2008_topscorer",
+          "season": 2008,
+          "seasonId": "2008",
+          "awardKey": "topscorer",
+          "awardName": "Top Scorer",
+          "recipient": {
+            "playerId": "diana_taurasi",
+            "playerName": "Diana Taurasi",
+            "teamCode": "PHX_MERCURY"
+          },
+          "notes": "",
+          "links": [],
+          "entryIds": []
+        },
+        "2008_topdraftpick": {
+          "awardId": "2008_topdraftpick",
+          "season": 2008,
+          "seasonId": "2008",
+          "awardKey": "topdraftpick",
+          "awardName": "Top draft pick",
+          "recipient": {
+            "playerId": "candace_parker",
+            "playerName": "Candace Parker",
+            "teamCode": "LOS_SPARKS"
+          },
+          "notes": "",
+          "links": [],
+          "entryIds": []
+        },
+        "2008_dpoy": {
+          "awardId": "2008_dpoy",
+          "season": 2008,
+          "seasonId": "2008",
+          "awardKey": "dpoy",
+          "awardName": "Defensive Player of the Year",
+          "recipient": {
+            "playerId": "lisa_leslie",
+            "playerName": "Lisa Leslie",
+            "teamCode": "LOS_SPARKS"
+          },
+          "notes": "",
+          "links": [],
+          "entryIds": []
+        },
+        "2008_mip": {
+          "awardId": "2008_mip",
+          "season": 2008,
+          "seasonId": "2008",
+          "awardKey": "mip",
+          "awardName": "Most Improved Player",
+          "recipient": {
+            "playerId": "ebony_hoffman",
+            "playerName": "Ebony Hoffman",
+            "teamCode": "IND_FEVER"
+          },
+          "notes": "",
+          "links": [],
+          "entryIds": []
+        },
+        "2008_peakperformerscoring": {
+          "awardId": "2008_peakperformerscoring",
+          "season": 2008,
+          "seasonId": "2008",
+          "awardKey": "peakperformerscoring",
+          "awardName": "TOP SCORER",
+          "recipient": {
+            "playerId": "diana_taurasi",
+            "playerName": "Diana Taurasi",
+            "teamCode": "PHX_MERCURY"
+          },
+          "notes": "",
+          "links": [],
+          "entryIds": []
+        },
+        "2008_peakperformerrebounding": {
+          "awardId": "2008_peakperformerrebounding",
+          "season": 2008,
+          "seasonId": "2008",
+          "awardKey": "peakperformerrebounding",
+          "awardName": "TOP REBOUNDER",
+          "recipient": {
+            "playerId": "candace_parker",
+            "playerName": "Candace Parker",
+            "teamCode": "LOS_SPARKS"
+          },
+          "notes": "",
+          "links": [],
+          "entryIds": []
+        },
+        "2008_peakperformerdishandassist": {
+          "awardId": "2008_peakperformerdishandassist",
+          "season": 2008,
+          "seasonId": "2008",
+          "awardKey": "peakperformerdishandassist",
+          "awardName": "TOP DISTRIBUTOR",
+          "recipient": {
+            "playerId": "lindsay_whalen",
+            "playerName": "Lindsay Whalen",
+            "teamCode": "CON_SUN"
+          },
+          "notes": "",
+          "links": [],
+          "entryIds": []
+        },
+        "2008_sixth_player": {
+          "awardId": "2008_sixth_player",
+          "season": 2008,
+          "seasonId": "2008",
+          "awardKey": "sixth_player",
+          "awardName": "Sixth Player of the Year",
+          "recipient": {
+            "playerId": "candice_wiggins",
+            "playerName": "Candice Wiggins",
+            "teamCode": "MIN_LYNX"
+          },
+          "notes": "",
+          "links": [],
+          "entryIds": []
+        },
+        "2008_roy": {
+          "awardId": "2008_roy",
+          "season": 2008,
+          "seasonId": "2008",
+          "awardKey": "roy",
+          "awardName": "Rookie of the Year",
+          "recipient": {
+            "playerId": "candace_parker",
+            "playerName": "Candace Parker",
+            "teamCode": "LOS_SPARKS"
+          },
+          "notes": "",
+          "links": [],
+          "entryIds": []
+        },
+        "2008_kim_perrot_sportsmanship": {
+          "awardId": "2008_kim_perrot_sportsmanship",
+          "season": 2008,
+          "seasonId": "2008",
+          "awardKey": "kim_perrot_sportsmanship",
+          "awardName": "Kim Perrot Sportsmanship Award",
+          "recipient": {
+            "playerId": "vickie_johnson",
+            "playerName": "Vickie Johnson",
+            "teamCode": "SA_SILVER_STARS"
+          },
+          "notes": "",
+          "links": [],
+          "entryIds": []
+        },
+        "2008_dawnstaleycommunityleadershipaward": {
+          "awardId": "2008_dawnstaleycommunityleadershipaward",
+          "season": 2008,
+          "seasonId": "2008",
+          "awardKey": "dawnstaleycommunityleadershipaward",
+          "awardName": "Dawn Staley Community Leadership Award",
+          "recipient": {
+            "playerId": "tamika_catchings",
+            "playerName": "Tamika Catchings",
+            "teamCode": "IND_FEVER"
+          },
+          "notes": "",
+          "links": [],
+          "entryIds": []
+        },
+        "2008_coach_of_the_year": {
+          "awardId": "2008_coach_of_the_year",
+          "season": 2008,
+          "seasonId": "2008",
+          "awardKey": "coach_of_the_year",
+          "awardName": "Coach of the Year",
+          "recipient": {
+            "playerId": "mike_thibault",
+            "playerName": "Mike Thibault",
+            "teamCode": "CON_SUN"
+          },
+          "notes": "",
+          "links": [],
+          "entryIds": []
+        }
+      }
+    },
+    "2009": {
+      "season": 2009,
+      "seasonId": "2009",
+      "awards": {
+        "2009_mvp": {
+          "awardId": "2009_mvp",
+          "season": 2009,
+          "seasonId": "2009",
+          "awardKey": "mvp",
+          "awardName": "Most Valuable Player",
+          "recipient": {
+            "playerId": "diana_taurasi",
+            "playerName": "Diana Taurasi",
+            "teamCode": "PHX_MERCURY"
+          },
+          "notes": "",
+          "links": [],
+          "entryIds": []
+        },
+        "2009_topscorer": {
+          "awardId": "2009_topscorer",
+          "season": 2009,
+          "seasonId": "2009",
+          "awardKey": "topscorer",
+          "awardName": "Top Scorer",
+          "recipient": {
+            "playerId": "diana_taurasi",
+            "playerName": "Diana Taurasi",
+            "teamCode": "PHX_MERCURY"
+          },
+          "notes": "",
+          "links": [],
+          "entryIds": []
+        },
+        "2009_topdraftpick": {
+          "awardId": "2009_topdraftpick",
+          "season": 2009,
+          "seasonId": "2009",
+          "awardKey": "topdraftpick",
+          "awardName": "Top draft pick",
+          "recipient": {
+            "playerId": "angel_mccoughtry",
+            "playerName": "Angel McCoughtry",
+            "teamCode": "ATL_DREAM"
+          },
+          "notes": "",
+          "links": [],
+          "entryIds": []
+        },
+        "2009_dpoy": {
+          "awardId": "2009_dpoy",
+          "season": 2009,
+          "seasonId": "2009",
+          "awardKey": "dpoy",
+          "awardName": "Defensive Player of the Year",
+          "recipient": {
+            "playerId": "tamika_catchings",
+            "playerName": "Tamika Catchings",
+            "teamCode": "IND_FEVER"
+          },
+          "notes": "",
+          "links": [],
+          "entryIds": []
+        },
+        "2009_mip": {
+          "awardId": "2009_mip",
+          "season": 2009,
+          "seasonId": "2009",
+          "awardKey": "mip",
+          "awardName": "Most Improved Player",
+          "recipient": {
+            "playerId": "crystal_langhorne",
+            "playerName": "Crystal Langhorne",
+            "teamCode": "WAS_MYSTICS"
+          },
+          "notes": "",
+          "links": [],
+          "entryIds": []
+        },
+        "2009_peakperformerscoring": {
+          "awardId": "2009_peakperformerscoring",
+          "season": 2009,
+          "seasonId": "2009",
+          "awardKey": "peakperformerscoring",
+          "awardName": "TOP SCORER",
+          "recipient": {
+            "playerId": "diana_taurasi",
+            "playerName": "Diana Taurasi",
+            "teamCode": "PHX_MERCURY"
+          },
+          "notes": "",
+          "links": [],
+          "entryIds": []
+        },
+        "2009_peakperformerrebounding": {
+          "awardId": "2009_peakperformerrebounding",
+          "season": 2009,
+          "seasonId": "2009",
+          "awardKey": "peakperformerrebounding",
+          "awardName": "TOP REBOUNDER",
+          "recipient": {
+            "playerId": "candace_parker",
+            "playerName": "Candace Parker",
+            "teamCode": "LOS_SPARKS"
+          },
+          "notes": "",
+          "links": [],
+          "entryIds": []
+        },
+        "2009_peakperformerdishandassist": {
+          "awardId": "2009_peakperformerdishandassist",
+          "season": 2009,
+          "seasonId": "2009",
+          "awardKey": "peakperformerdishandassist",
+          "awardName": "TOP DISTRIBUTOR",
+          "recipient": {
+            "playerId": "sue_bird",
+            "playerName": "Sue Bird",
+            "teamCode": "SEA_STORM"
+          },
+          "notes": "",
+          "links": [],
+          "entryIds": []
+        },
+        "2009_sixth_player": {
+          "awardId": "2009_sixth_player",
+          "season": 2009,
+          "seasonId": "2009",
+          "awardKey": "sixth_player",
+          "awardName": "Sixth Player of the Year",
+          "recipient": {
+            "playerId": "dewanna_bonner",
+            "playerName": "DeWanna Bonner",
+            "teamCode": "PHX_MERCURY"
+          },
+          "notes": "",
+          "links": [],
+          "entryIds": []
+        },
+        "2009_roy": {
+          "awardId": "2009_roy",
+          "season": 2009,
+          "seasonId": "2009",
+          "awardKey": "roy",
+          "awardName": "Rookie of the Year",
+          "recipient": {
+            "playerId": "angel_mccoughtry",
+            "playerName": "Angel McCoughtry",
+            "teamCode": "ATL_DREAM"
+          },
+          "notes": "",
+          "links": [],
+          "entryIds": []
+        },
+        "2009_kim_perrot_sportsmanship": {
+          "awardId": "2009_kim_perrot_sportsmanship",
+          "season": 2009,
+          "seasonId": "2009",
+          "awardKey": "kim_perrot_sportsmanship",
+          "awardName": "Kim Perrot Sportsmanship Award",
+          "recipient": {
+            "playerId": "kara_lawson",
+            "playerName": "Kara Lawson",
+            "teamCode": "SAC_MONARCHS"
+          },
+          "notes": "",
+          "links": [],
+          "entryIds": []
+        },
+        "2009_dawnstaleycommunityleadershipaward": {
+          "awardId": "2009_dawnstaleycommunityleadershipaward",
+          "season": 2009,
+          "seasonId": "2009",
+          "awardKey": "dawnstaleycommunityleadershipaward",
+          "awardName": "Dawn Staley Community Leadership Award",
+          "recipient": {
+            "playerId": "tamika_raymond",
+            "playerName": "Tamika Raymond",
+            "teamCode": "CON_SUN"
+          },
+          "notes": "",
+          "links": [],
+          "entryIds": []
+        },
+        "2009_coach_of_the_year": {
+          "awardId": "2009_coach_of_the_year",
+          "season": 2009,
+          "seasonId": "2009",
+          "awardKey": "coach_of_the_year",
+          "awardName": "Coach of the Year",
+          "recipient": {
+            "playerId": "marynell_meadors",
+            "playerName": "Marynell Meadors",
+            "teamCode": "ATL_DREAM"
+          },
+          "notes": "",
+          "links": [],
+          "entryIds": []
+        }
+      }
+    },
+    "2010": {
+      "season": 2010,
+      "seasonId": "2010",
+      "awards": {
+        "2010_mvp": {
+          "awardId": "2010_mvp",
+          "season": 2010,
+          "seasonId": "2010",
+          "awardKey": "mvp",
+          "awardName": "Most Valuable Player",
+          "recipient": {
+            "playerId": "lauren_jackson",
+            "playerName": "Lauren Jackson",
+            "teamCode": "SEA_STORM"
+          },
+          "notes": "",
+          "links": [],
+          "entryIds": []
+        },
+        "2010_topscorer": {
+          "awardId": "2010_topscorer",
+          "season": 2010,
+          "seasonId": "2010",
+          "awardKey": "topscorer",
+          "awardName": "Top Scorer",
+          "recipient": {
+            "playerId": "diana_taurasi",
+            "playerName": "Diana Taurasi",
+            "teamCode": "PHX_MERCURY"
+          },
+          "notes": "",
+          "links": [],
+          "entryIds": []
+        },
+        "2010_topdraftpick": {
+          "awardId": "2010_topdraftpick",
+          "season": 2010,
+          "seasonId": "2010",
+          "awardKey": "topdraftpick",
+          "awardName": "Top draft pick",
+          "recipient": {
+            "playerId": "tina_charles",
+            "playerName": "Tina Charles",
+            "teamCode": "CON_SUN"
+          },
+          "notes": "",
+          "links": [],
+          "entryIds": []
+        },
+        "2010_dpoy": {
+          "awardId": "2010_dpoy",
+          "season": 2010,
+          "seasonId": "2010",
+          "awardKey": "dpoy",
+          "awardName": "Defensive Player of the Year",
+          "recipient": {
+            "playerId": "tamika_catchings",
+            "playerName": "Tamika Catchings",
+            "teamCode": "IND_FEVER"
+          },
+          "notes": "",
+          "links": [],
+          "entryIds": []
+        },
+        "2010_mip": {
+          "awardId": "2010_mip",
+          "season": 2010,
+          "seasonId": "2010",
+          "awardKey": "mip",
+          "awardName": "Most Improved Player",
+          "recipient": {
+            "playerId": "leilani_mitchell",
+            "playerName": "Leilani Mitchell",
+            "teamCode": "NYL_LIBERTY"
+          },
+          "notes": "",
+          "links": [],
+          "entryIds": []
+        },
+        "2010_peakperformerscoring": {
+          "awardId": "2010_peakperformerscoring",
+          "season": 2010,
+          "seasonId": "2010",
+          "awardKey": "peakperformerscoring",
+          "awardName": "TOP SCORER",
+          "recipient": {
+            "playerId": "diana_taurasi",
+            "playerName": "Diana Taurasi",
+            "teamCode": "PHX_MERCURY"
+          },
+          "notes": "",
+          "links": [],
+          "entryIds": []
+        },
+        "2010_peakperformerrebounding": {
+          "awardId": "2010_peakperformerrebounding",
+          "season": 2010,
+          "seasonId": "2010",
+          "awardKey": "peakperformerrebounding",
+          "awardName": "TOP REBOUNDER",
+          "recipient": {
+            "playerId": "tina_charles",
+            "playerName": "Tina Charles",
+            "teamCode": "CON_SUN"
+          },
+          "notes": "",
+          "links": [],
+          "entryIds": []
+        },
+        "2010_peakperformerdishandassist": {
+          "awardId": "2010_peakperformerdishandassist",
+          "season": 2010,
+          "seasonId": "2010",
+          "awardKey": "peakperformerdishandassist",
+          "awardName": "TOP DISTRIBUTOR",
+          "recipient": {
+            "playerId": "ticha_penicheiro",
+            "playerName": "Ticha Penicheiro",
+            "teamCode": "LOS_SPARKS"
+          },
+          "notes": "",
+          "links": [],
+          "entryIds": []
+        },
+        "2010_sixth_player": {
+          "awardId": "2010_sixth_player",
+          "season": 2010,
+          "seasonId": "2010",
+          "awardKey": "sixth_player",
+          "awardName": "Sixth Player of the Year",
+          "recipient": {
+            "playerId": "dewanna_bonner",
+            "playerName": "DeWanna Bonner",
+            "teamCode": "PHX_MERCURY"
+          },
+          "notes": "",
+          "links": [],
+          "entryIds": []
+        },
+        "2010_roy": {
+          "awardId": "2010_roy",
+          "season": 2010,
+          "seasonId": "2010",
+          "awardKey": "roy",
+          "awardName": "Rookie of the Year",
+          "recipient": {
+            "playerId": "tina_charles",
+            "playerName": "Tina Charles",
+            "teamCode": "CON_SUN"
+          },
+          "notes": "",
+          "links": [],
+          "entryIds": []
+        },
+        "2010_kim_perrot_sportsmanship": {
+          "awardId": "2010_kim_perrot_sportsmanship",
+          "season": 2010,
+          "seasonId": "2010",
+          "awardKey": "kim_perrot_sportsmanship",
+          "awardName": "Kim Perrot Sportsmanship Award",
+          "recipient": {
+            "playerId": "tamika_catchings",
+            "playerName": "Tamika Catchings",
+            "teamCode": "IND_FEVER"
+          },
+          "notes": "",
+          "links": [],
+          "entryIds": []
+        },
+        "2010_dawnstaleycommunityleadershipaward": {
+          "awardId": "2010_dawnstaleycommunityleadershipaward",
+          "season": 2010,
+          "seasonId": "2010",
+          "awardKey": "dawnstaleycommunityleadershipaward",
+          "awardName": "Dawn Staley Community Leadership Award",
+          "recipient": {
+            "playerId": "chamique_holdsclaw",
+            "playerName": "Chamique Holdsclaw",
+            "teamCode": "SA_SILVER_STARS"
+          },
+          "notes": "",
+          "links": [],
+          "entryIds": []
+        },
+        "2010_coach_of_the_year": {
+          "awardId": "2010_coach_of_the_year",
+          "season": 2010,
+          "seasonId": "2010",
+          "awardKey": "coach_of_the_year",
+          "awardName": "Coach of the Year",
+          "recipient": {
+            "playerId": "brian_agler",
+            "playerName": "Brian Agler",
+            "teamCode": "SEA_STORM"
+          },
+          "notes": "",
+          "links": [],
+          "entryIds": []
+        }
+      }
+    },
+    "2011": {
+      "season": 2011,
+      "seasonId": "2011",
+      "awards": {
+        "2011_mvp": {
+          "awardId": "2011_mvp",
+          "season": 2011,
+          "seasonId": "2011",
+          "awardKey": "mvp",
+          "awardName": "Most Valuable Player",
+          "recipient": {
+            "playerId": "tamika_catchings",
+            "playerName": "Tamika Catchings",
+            "teamCode": "IND_FEVER"
+          },
+          "notes": "",
+          "links": [],
+          "entryIds": []
+        },
+        "2011_topscorer": {
+          "awardId": "2011_topscorer",
+          "season": 2011,
+          "seasonId": "2011",
+          "awardKey": "topscorer",
+          "awardName": "Top Scorer",
+          "recipient": {
+            "playerId": "diana_taurasi",
+            "playerName": "Diana Taurasi",
+            "teamCode": "PHX_MERCURY"
+          },
+          "notes": "",
+          "links": [],
+          "entryIds": []
+        },
+        "2011_topdraftpick": {
+          "awardId": "2011_topdraftpick",
+          "season": 2011,
+          "seasonId": "2011",
+          "awardKey": "topdraftpick",
+          "awardName": "Top draft pick",
+          "recipient": {
+            "playerId": "maya_moore",
+            "playerName": "Maya Moore",
+            "teamCode": "MIN_LYNX"
+          },
+          "notes": "",
+          "links": [],
+          "entryIds": []
+        },
+        "2011_dpoy": {
+          "awardId": "2011_dpoy",
+          "season": 2011,
+          "seasonId": "2011",
+          "awardKey": "dpoy",
+          "awardName": "Defensive Player of the Year",
+          "recipient": {
+            "playerId": "sylvia_fowles",
+            "playerName": "Sylvia Fowles",
+            "teamCode": "CHI_SKY"
+          },
+          "notes": "",
+          "links": [],
+          "entryIds": []
+        },
+        "2011_mip": {
+          "awardId": "2011_mip",
+          "season": 2011,
+          "seasonId": "2011",
+          "awardKey": "mip",
+          "awardName": "Most Improved Player",
+          "recipient": {
+            "playerId": "kia_vaughn",
+            "playerName": "Kia Vaughn",
+            "teamCode": "NYL_LIBERTY"
+          },
+          "notes": "",
+          "links": [],
+          "entryIds": []
+        },
+        "2011_peakperformerscoring": {
+          "awardId": "2011_peakperformerscoring",
+          "season": 2011,
+          "seasonId": "2011",
+          "awardKey": "peakperformerscoring",
+          "awardName": "TOP SCORER",
+          "recipient": {
+            "playerId": "diana_taurasi",
+            "playerName": "Diana Taurasi",
+            "teamCode": "PHX_MERCURY"
+          },
+          "notes": "",
+          "links": [],
+          "entryIds": []
+        },
+        "2011_peakperformerrebounding": {
+          "awardId": "2011_peakperformerrebounding",
+          "season": 2011,
+          "seasonId": "2011",
+          "awardKey": "peakperformerrebounding",
+          "awardName": "TOP REBOUNDER",
+          "recipient": {
+            "playerId": "tina_charles",
+            "playerName": "Tina Charles",
+            "teamCode": "CON_SUN"
+          },
+          "notes": "",
+          "links": [],
+          "entryIds": []
+        },
+        "2011_peakperformerdishandassist": {
+          "awardId": "2011_peakperformerdishandassist",
+          "season": 2011,
+          "seasonId": "2011",
+          "awardKey": "peakperformerdishandassist",
+          "awardName": "TOP DISTRIBUTOR",
+          "recipient": {
+            "playerId": "lindsay_whalen",
+            "playerName": "Lindsay Whalen",
+            "teamCode": "MIN_LYNX"
+          },
+          "notes": "",
+          "links": [],
+          "entryIds": []
+        },
+        "2011_sixth_player": {
+          "awardId": "2011_sixth_player",
+          "season": 2011,
+          "seasonId": "2011",
+          "awardKey": "sixth_player",
+          "awardName": "Sixth Player of the Year",
+          "recipient": {
+            "playerId": "dewanna_bonner",
+            "playerName": "DeWanna Bonner",
+            "teamCode": "PHX_MERCURY"
+          },
+          "notes": "",
+          "links": [],
+          "entryIds": []
+        },
+        "2011_roy": {
+          "awardId": "2011_roy",
+          "season": 2011,
+          "seasonId": "2011",
+          "awardKey": "roy",
+          "awardName": "Rookie of the Year",
+          "recipient": {
+            "playerId": "maya_moore",
+            "playerName": "Maya Moore",
+            "teamCode": "MIN_LYNX"
+          },
+          "notes": "",
+          "links": [],
+          "entryIds": []
+        },
+        "2011_kim_perrot_sportsmanship": {
+          "awardId": "2011_kim_perrot_sportsmanship",
+          "season": 2011,
+          "seasonId": "2011",
+          "awardKey": "kim_perrot_sportsmanship",
+          "awardName": "Kim Perrot Sportsmanship Award",
+          "recipient": {
+            "playerId": "ruth_riley",
+            "playerName": "Ruth Riley",
+            "teamCode": "SA_SILVER_STARS"
+          },
+          "notes": "",
+          "links": [],
+          "entryIds": []
+        },
+        "2011_dawnstaleycommunityleadershipaward": {
+          "awardId": "2011_dawnstaleycommunityleadershipaward",
+          "season": 2011,
+          "seasonId": "2011",
+          "awardKey": "dawnstaleycommunityleadershipaward",
+          "awardName": "Dawn Staley Community Leadership Award",
+          "recipient": {
+            "playerId": "charde_houston",
+            "playerName": "Charde Houston",
+            "teamCode": "MIN_LYNX"
+          },
+          "notes": "",
+          "links": [],
+          "entryIds": []
+        },
+        "2011_coach_of_the_year": {
+          "awardId": "2011_coach_of_the_year",
+          "season": 2011,
+          "seasonId": "2011",
+          "awardKey": "coach_of_the_year",
+          "awardName": "Coach of the Year",
+          "recipient": {
+            "playerId": "cheryl_reeve",
+            "playerName": "Cheryl Reeve",
+            "teamCode": "MIN_LYNX"
+          },
+          "notes": "",
+          "links": [],
+          "entryIds": []
+        }
+      }
+    },
+    "2012": {
+      "season": 2012,
+      "seasonId": "2012",
+      "awards": {
+        "2012_mvp": {
+          "awardId": "2012_mvp",
+          "season": 2012,
+          "seasonId": "2012",
+          "awardKey": "mvp",
+          "awardName": "Most Valuable Player",
+          "recipient": {
+            "playerId": "tina_charles",
+            "playerName": "Tina Charles",
+            "teamCode": "CON_SUN"
+          },
+          "notes": "",
+          "links": [],
+          "entryIds": []
+        },
+        "2012_topscorer": {
+          "awardId": "2012_topscorer",
+          "season": 2012,
+          "seasonId": "2012",
+          "awardKey": "topscorer",
+          "awardName": "Top Scorer",
+          "recipient": {
+            "playerId": "angel_mccoughtry",
+            "playerName": "Angel McCoughtry",
+            "teamCode": "ATL_DREAM"
+          },
+          "notes": "",
+          "links": [],
+          "entryIds": []
+        },
+        "2012_topdraftpick": {
+          "awardId": "2012_topdraftpick",
+          "season": 2012,
+          "seasonId": "2012",
+          "awardKey": "topdraftpick",
+          "awardName": "Top draft pick",
+          "recipient": {
+            "playerId": "nneka_ogwumike",
+            "playerName": "Nneka Ogwumike",
+            "teamCode": "LOS_SPARKS"
+          },
+          "notes": "",
+          "links": [],
+          "entryIds": []
+        },
+        "2012_dpoy": {
+          "awardId": "2012_dpoy",
+          "season": 2012,
+          "seasonId": "2012",
+          "awardKey": "dpoy",
+          "awardName": "Defensive Player of the Year",
+          "recipient": {
+            "playerId": "tamika_catchings",
+            "playerName": "Tamika Catchings",
+            "teamCode": "IND_FEVER"
+          },
+          "notes": "",
+          "links": [],
+          "entryIds": []
+        },
+        "2012_mip": {
+          "awardId": "2012_mip",
+          "season": 2012,
+          "seasonId": "2012",
+          "awardKey": "mip",
+          "awardName": "Most Improved Player",
+          "recipient": {
+            "playerId": "kristi_toliver",
+            "playerName": "Kristi Toliver",
+            "teamCode": "LOS_SPARKS"
+          },
+          "notes": "",
+          "links": [],
+          "entryIds": []
+        },
+        "2012_peakperformerscoring": {
+          "awardId": "2012_peakperformerscoring",
+          "season": 2012,
+          "seasonId": "2012",
+          "awardKey": "peakperformerscoring",
+          "awardName": "TOP SCORER",
+          "recipient": {
+            "playerId": "angel_mccoughtry",
+            "playerName": "Angel McCoughtry",
+            "teamCode": "ATL_DREAM"
+          },
+          "notes": "",
+          "links": [],
+          "entryIds": []
+        },
+        "2012_peakperformerrebounding": {
+          "awardId": "2012_peakperformerrebounding",
+          "season": 2012,
+          "seasonId": "2012",
+          "awardKey": "peakperformerrebounding",
+          "awardName": "TOP REBOUNDER",
+          "recipient": {
+            "playerId": "tina_charles",
+            "playerName": "Tina Charles",
+            "teamCode": "CON_SUN"
+          },
+          "notes": "",
+          "links": [],
+          "entryIds": []
+        },
+        "2012_peakperformerdishandassist": {
+          "awardId": "2012_peakperformerdishandassist",
+          "season": 2012,
+          "seasonId": "2012",
+          "awardKey": "peakperformerdishandassist",
+          "awardName": "TOP DISTRIBUTOR",
+          "recipient": {
+            "playerId": "lindsay_whalen",
+            "playerName": "Lindsay Whalen",
+            "teamCode": "MIN_LYNX"
+          },
+          "notes": "",
+          "links": [],
+          "entryIds": []
+        },
+        "2012_sixth_player": {
+          "awardId": "2012_sixth_player",
+          "season": 2012,
+          "seasonId": "2012",
+          "awardKey": "sixth_player",
+          "awardName": "Sixth Player of the Year",
+          "recipient": {
+            "playerId": "renee_montgomery",
+            "playerName": "Renee Montgomery",
+            "teamCode": "CON_SUN"
+          },
+          "notes": "",
+          "links": [],
+          "entryIds": []
+        },
+        "2012_roy": {
+          "awardId": "2012_roy",
+          "season": 2012,
+          "seasonId": "2012",
+          "awardKey": "roy",
+          "awardName": "Rookie of the Year",
+          "recipient": {
+            "playerId": "nneka_ogwumike",
+            "playerName": "Nneka Ogwumike",
+            "teamCode": "LOS_SPARKS"
+          },
+          "notes": "",
+          "links": [],
+          "entryIds": []
+        },
+        "2012_kim_perrot_sportsmanship": {
+          "awardId": "2012_kim_perrot_sportsmanship",
+          "season": 2012,
+          "seasonId": "2012",
+          "awardKey": "kim_perrot_sportsmanship",
+          "awardName": "Kim Perrot Sportsmanship Award",
+          "recipient": {
+            "playerId": "kara_lawson",
+            "playerName": "Kara Lawson",
+            "teamCode": "CON_SUN"
+          },
+          "notes": "",
+          "links": [],
+          "entryIds": []
+        },
+        "2012_dawnstaleycommunityleadershipaward": {
+          "awardId": "2012_dawnstaleycommunityleadershipaward",
+          "season": 2012,
+          "seasonId": "2012",
+          "awardKey": "dawnstaleycommunityleadershipaward",
+          "awardName": "Dawn Staley Community Leadership Award",
+          "recipient": {
+            "playerId": "tina_charles",
+            "playerName": "Tina Charles",
+            "teamCode": "CON_SUN"
+          },
+          "notes": "",
+          "links": [],
+          "entryIds": []
+        },
+        "2012_coach_of_the_year": {
+          "awardId": "2012_coach_of_the_year",
+          "season": 2012,
+          "seasonId": "2012",
+          "awardKey": "coach_of_the_year",
+          "awardName": "Coach of the Year",
+          "recipient": {
+            "playerId": "carol_ross",
+            "playerName": "Carol Ross",
+            "teamCode": "LOS_SPARKS"
+          },
+          "notes": "",
+          "links": [],
+          "entryIds": []
+        }
+      }
+    },
+    "2013": {
+      "season": 2013,
+      "seasonId": "2013",
+      "awards": {
+        "2013_mvp": {
+          "awardId": "2013_mvp",
+          "season": 2013,
+          "seasonId": "2013",
+          "awardKey": "mvp",
+          "awardName": "Most Valuable Player",
+          "recipient": {
+            "playerId": "candace_parker",
+            "playerName": "Candace Parker",
+            "teamCode": "LOS_SPARKS"
+          },
+          "notes": "",
+          "links": [],
+          "entryIds": []
+        },
+        "2013_topscorer": {
+          "awardId": "2013_topscorer",
+          "season": 2013,
+          "seasonId": "2013",
+          "awardKey": "topscorer",
+          "awardName": "Top Scorer",
+          "recipient": {
+            "playerId": "angel_mccoughtry",
+            "playerName": "Angel McCoughtry",
+            "teamCode": "ATL_DREAM"
+          },
+          "notes": "",
+          "links": [],
+          "entryIds": []
+        },
+        "2013_topdraftpick": {
+          "awardId": "2013_topdraftpick",
+          "season": 2013,
+          "seasonId": "2013",
+          "awardKey": "topdraftpick",
+          "awardName": "Top draft pick",
+          "recipient": {
+            "playerId": "brittney_griner",
+            "playerName": "Brittney Griner",
+            "teamCode": "PHX_MERCURY"
+          },
+          "notes": "",
+          "links": [],
+          "entryIds": []
+        },
+        "2013_dpoy": {
+          "awardId": "2013_dpoy",
+          "season": 2013,
+          "seasonId": "2013",
+          "awardKey": "dpoy",
+          "awardName": "Defensive Player of the Year",
+          "recipient": {
+            "playerId": "sylvia_fowles",
+            "playerName": "Sylvia Fowles",
+            "teamCode": "CHI_SKY"
+          },
+          "notes": "",
+          "links": [],
+          "entryIds": []
+        },
+        "2013_mip": {
+          "awardId": "2013_mip",
+          "season": 2013,
+          "seasonId": "2013",
+          "awardKey": "mip",
+          "awardName": "Most Improved Player",
+          "recipient": {
+            "playerId": "shavonte_zellous",
+            "playerName": "Shavonte Zellous",
+            "teamCode": "IND_FEVER"
+          },
+          "notes": "",
+          "links": [],
+          "entryIds": []
+        },
+        "2013_peakperformerscoring": {
+          "awardId": "2013_peakperformerscoring",
+          "season": 2013,
+          "seasonId": "2013",
+          "awardKey": "peakperformerscoring",
+          "awardName": "TOP SCORER",
+          "recipient": {
+            "playerId": "angel_mccoughtry",
+            "playerName": "Angel McCoughtry",
+            "teamCode": "ATL_DREAM"
+          },
+          "notes": "",
+          "links": [],
+          "entryIds": []
+        },
+        "2013_peakperformerrebounding": {
+          "awardId": "2013_peakperformerrebounding",
+          "season": 2013,
+          "seasonId": "2013",
+          "awardKey": "peakperformerrebounding",
+          "awardName": "TOP REBOUNDER",
+          "recipient": {
+            "playerId": "sylvia_fowles",
+            "playerName": "Sylvia Fowles",
+            "teamCode": "CHI_SKY"
+          },
+          "notes": "",
+          "links": [],
+          "entryIds": []
+        },
+        "2013_peakperformerdishandassist": {
+          "awardId": "2013_peakperformerdishandassist",
+          "season": 2013,
+          "seasonId": "2013",
+          "awardKey": "peakperformerdishandassist",
+          "awardName": "TOP DISTRIBUTOR",
+          "recipient": {
+            "playerId": "danielle_robinson",
+            "playerName": "Danielle Robinson",
+            "teamCode": "SA_SILVER_STARS"
+          },
+          "notes": "",
+          "links": [],
+          "entryIds": []
+        },
+        "2013_sixth_player": {
+          "awardId": "2013_sixth_player",
+          "season": 2013,
+          "seasonId": "2013",
+          "awardKey": "sixth_player",
+          "awardName": "Sixth Player of the Year",
+          "recipient": {
+            "playerId": "riquna_williams",
+            "playerName": "Riquna Williams",
+            "teamCode": "TUL_SHOCK"
+          },
+          "notes": "",
+          "links": [],
+          "entryIds": []
+        },
+        "2013_roy": {
+          "awardId": "2013_roy",
+          "season": 2013,
+          "seasonId": "2013",
+          "awardKey": "roy",
+          "awardName": "Rookie of the Year",
+          "recipient": {
+            "playerId": "elena_delle_donne",
+            "playerName": "Elena Delle Donne",
+            "teamCode": "CHI_SKY"
+          },
+          "notes": "",
+          "links": [],
+          "entryIds": []
+        },
+        "2013_kim_perrot_sportsmanship": {
+          "awardId": "2013_kim_perrot_sportsmanship",
+          "season": 2013,
+          "seasonId": "2013",
+          "awardKey": "kim_perrot_sportsmanship",
+          "awardName": "Kim Perrot Sportsmanship Award",
+          "recipient": {
+            "playerId": "tamika_catchings",
+            "playerName": "Tamika Catchings",
+            "teamCode": "IND_FEVER"
+          },
+          "notes": "",
+          "links": [],
+          "entryIds": []
+        },
+        "2013_dawnstaleycommunityleadershipaward": {
+          "awardId": "2013_dawnstaleycommunityleadershipaward",
+          "season": 2013,
+          "seasonId": "2013",
+          "awardKey": "dawnstaleycommunityleadershipaward",
+          "awardName": "Dawn Staley Community Leadership Award",
+          "recipient": {
+            "playerId": "kara_lawson",
+            "playerName": "Kara Lawson",
+            "teamCode": "CON_SUN"
+          },
+          "notes": "",
+          "links": [],
+          "entryIds": []
+        },
+        "2013_coach_of_the_year": {
+          "awardId": "2013_coach_of_the_year",
+          "season": 2013,
+          "seasonId": "2013",
+          "awardKey": "coach_of_the_year",
+          "awardName": "Coach of the Year",
+          "recipient": {
+            "playerId": "mike_thibault",
+            "playerName": "Mike Thibault",
+            "teamCode": "WAS_MYSTICS"
+          },
+          "notes": "",
+          "links": [],
+          "entryIds": []
+        }
+      }
+    },
+    "2014": {
+      "season": 2014,
+      "seasonId": "2014",
+      "awards": {
+        "2014_mvp": {
+          "awardId": "2014_mvp",
+          "season": 2014,
+          "seasonId": "2014",
+          "awardKey": "mvp",
+          "awardName": "Most Valuable Player",
+          "recipient": {
+            "playerId": "maya_moore",
+            "playerName": "Maya Moore",
+            "teamCode": "MIN_LYNX"
+          },
+          "notes": "",
+          "links": [],
+          "entryIds": []
+        },
+        "2014_topscorer": {
+          "awardId": "2014_topscorer",
+          "season": 2014,
+          "seasonId": "2014",
+          "awardKey": "topscorer",
+          "awardName": "Top Scorer",
+          "recipient": {
+            "playerId": "maya_moore",
+            "playerName": "Maya Moore",
+            "teamCode": "MIN_LYNX"
+          },
+          "notes": "",
+          "links": [],
+          "entryIds": []
+        },
+        "2014_topdraftpick": {
+          "awardId": "2014_topdraftpick",
+          "season": 2014,
+          "seasonId": "2014",
+          "awardKey": "topdraftpick",
+          "awardName": "Top draft pick",
+          "recipient": {
+            "playerId": "chiney_ogwumike",
+            "playerName": "Chiney Ogwumike",
+            "teamCode": "CON_SUN"
+          },
+          "notes": "",
+          "links": [],
+          "entryIds": []
+        },
+        "2014_dpoy": {
+          "awardId": "2014_dpoy",
+          "season": 2014,
+          "seasonId": "2014",
+          "awardKey": "dpoy",
+          "awardName": "Defensive Player of the Year",
+          "recipient": {
+            "playerId": "brittney_griner",
+            "playerName": "Brittney Griner",
+            "teamCode": "PHX_MERCURY"
+          },
+          "notes": "",
+          "links": [],
+          "entryIds": []
+        },
+        "2014_mip": {
+          "awardId": "2014_mip",
+          "season": 2014,
+          "seasonId": "2014",
+          "awardKey": "mip",
+          "awardName": "Most Improved Player",
+          "recipient": {
+            "playerId": "skylar_diggins",
+            "playerName": "Skylar Diggins",
+            "teamCode": "TUL_SHOCK"
+          },
+          "notes": "",
+          "links": [],
+          "entryIds": []
+        },
+        "2014_peakperformerscoring": {
+          "awardId": "2014_peakperformerscoring",
+          "season": 2014,
+          "seasonId": "2014",
+          "awardKey": "peakperformerscoring",
+          "awardName": "TOP SCORER",
+          "recipient": {
+            "playerId": "maya_moore",
+            "playerName": "Maya Moore",
+            "teamCode": "MIN_LYNX"
+          },
+          "notes": "",
+          "links": [],
+          "entryIds": []
+        },
+        "2014_peakperformerrebounding": {
+          "awardId": "2014_peakperformerrebounding",
+          "season": 2014,
+          "seasonId": "2014",
+          "awardKey": "peakperformerrebounding",
+          "awardName": "TOP REBOUNDER",
+          "recipient": {
+            "playerId": "courtney_paris",
+            "playerName": "Courtney Paris",
+            "teamCode": "TUL_SHOCK"
+          },
+          "notes": "",
+          "links": [],
+          "entryIds": []
+        },
+        "2014_peakperformerdishandassist": {
+          "awardId": "2014_peakperformerdishandassist",
+          "season": 2014,
+          "seasonId": "2014",
+          "awardKey": "peakperformerdishandassist",
+          "awardName": "TOP DISTRIBUTOR",
+          "recipient": {
+            "playerId": "diana_taurasi",
+            "playerName": "Diana Taurasi",
+            "teamCode": "PHX_MERCURY"
+          },
+          "notes": "",
+          "links": [],
+          "entryIds": []
+        },
+        "2014_sixth_player": {
+          "awardId": "2014_sixth_player",
+          "season": 2014,
+          "seasonId": "2014",
+          "awardKey": "sixth_player",
+          "awardName": "Sixth Player of the Year",
+          "recipient": {
+            "playerId": "allie_quigley",
+            "playerName": "Allie Quigley",
+            "teamCode": "CHI_SKY"
+          },
+          "notes": "",
+          "links": [],
+          "entryIds": []
+        },
+        "2014_roy": {
+          "awardId": "2014_roy",
+          "season": 2014,
+          "seasonId": "2014",
+          "awardKey": "roy",
+          "awardName": "Rookie of the Year",
+          "recipient": {
+            "playerId": "chiney_ogwumike",
+            "playerName": "Chiney Ogwumike",
+            "teamCode": "CON_SUN"
+          },
+          "notes": "",
+          "links": [],
+          "entryIds": []
+        },
+        "2014_kim_perrot_sportsmanship": {
+          "awardId": "2014_kim_perrot_sportsmanship",
+          "season": 2014,
+          "seasonId": "2014",
+          "awardKey": "kim_perrot_sportsmanship",
+          "awardName": "Kim Perrot Sportsmanship Award",
+          "recipient": {
+            "playerId": "becky_hammon",
+            "playerName": "Becky Hammon",
+            "teamCode": "SA_STARS"
+          },
+          "notes": "",
+          "links": [],
+          "entryIds": []
+        },
+        "2014_dawnstaleycommunityleadershipaward": {
+          "awardId": "2014_dawnstaleycommunityleadershipaward",
+          "season": 2014,
+          "seasonId": "2014",
+          "awardKey": "dawnstaleycommunityleadershipaward",
+          "awardName": "Dawn Staley Community Leadership Award",
+          "recipient": {
+            "playerId": "elena_delle_donne",
+            "playerName": "Elena Delle Donne",
+            "teamCode": "CHI_SKY"
+          },
+          "notes": "",
+          "links": [],
+          "entryIds": []
+        },
+        "2014_coach_of_the_year": {
+          "awardId": "2014_coach_of_the_year",
+          "season": 2014,
+          "seasonId": "2014",
+          "awardKey": "coach_of_the_year",
+          "awardName": "Coach of the Year",
+          "recipient": {
+            "playerId": "sandy_brondello",
+            "playerName": "Sandy Brondello",
+            "teamCode": "PHX_MERCURY"
+          },
+          "notes": "",
+          "links": [],
+          "entryIds": []
+        }
+      }
+    },
+    "2015": {
+      "season": 2015,
+      "seasonId": "2015",
+      "awards": {
+        "2015_mvp": {
+          "awardId": "2015_mvp",
+          "season": 2015,
+          "seasonId": "2015",
+          "awardKey": "mvp",
+          "awardName": "Most Valuable Player",
+          "recipient": {
+            "playerId": "elena_delle_donne",
+            "playerName": "Elena Delle Donne",
+            "teamCode": "CHI_SKY"
+          },
+          "notes": "",
+          "links": [],
+          "entryIds": []
+        },
+        "2015_topscorer": {
+          "awardId": "2015_topscorer",
+          "season": 2015,
+          "seasonId": "2015",
+          "awardKey": "topscorer",
+          "awardName": "Top Scorer",
+          "recipient": {
+            "playerId": "elena_delle_donne",
+            "playerName": "Elena Delle Donne",
+            "teamCode": "CHI_SKY"
+          },
+          "notes": "",
+          "links": [],
+          "entryIds": []
+        },
+        "2015_topdraftpick": {
+          "awardId": "2015_topdraftpick",
+          "season": 2015,
+          "seasonId": "2015",
+          "awardKey": "topdraftpick",
+          "awardName": "Top draft pick",
+          "recipient": {
+            "playerId": "jewell_loyd",
+            "playerName": "Jewell Loyd",
+            "teamCode": "SEA_STORM"
+          },
+          "notes": "",
+          "links": [],
+          "entryIds": []
+        },
+        "2015_dpoy": {
+          "awardId": "2015_dpoy",
+          "season": 2015,
+          "seasonId": "2015",
+          "awardKey": "dpoy",
+          "awardName": "Defensive Player of the Year",
+          "recipient": {
+            "playerId": "brittney_griner",
+            "playerName": "Brittney Griner",
+            "teamCode": "PHX_MERCURY"
+          },
+          "notes": "",
+          "links": [],
+          "entryIds": []
+        },
+        "2015_mip": {
+          "awardId": "2015_mip",
+          "season": 2015,
+          "seasonId": "2015",
+          "awardKey": "mip",
+          "awardName": "Most Improved Player",
+          "recipient": {
+            "playerId": "kelsey_bone",
+            "playerName": "Kelsey Bone",
+            "teamCode": "CON_SUN"
+          },
+          "notes": "",
+          "links": [],
+          "entryIds": []
+        },
+        "2015_peakperformerscoring": {
+          "awardId": "2015_peakperformerscoring",
+          "season": 2015,
+          "seasonId": "2015",
+          "awardKey": "peakperformerscoring",
+          "awardName": "TOP SCORER",
+          "recipient": {
+            "playerId": "elena_delle_donne",
+            "playerName": "Elena Delle Donne",
+            "teamCode": "CHI_SKY"
+          },
+          "notes": "",
+          "links": [],
+          "entryIds": []
+        },
+        "2015_peakperformerrebounding": {
+          "awardId": "2015_peakperformerrebounding",
+          "season": 2015,
+          "seasonId": "2015",
+          "awardKey": "peakperformerrebounding",
+          "awardName": "TOP REBOUNDER",
+          "recipient": {
+            "playerId": "courtney_paris",
+            "playerName": "Courtney Paris",
+            "teamCode": "TUL_SHOCK"
+          },
+          "notes": "",
+          "links": [],
+          "entryIds": []
+        },
+        "2015_peakperformerdishandassist": {
+          "awardId": "2015_peakperformerdishandassist",
+          "season": 2015,
+          "seasonId": "2015",
+          "awardKey": "peakperformerdishandassist",
+          "awardName": "TOP DISTRIBUTOR",
+          "recipient": {
+            "playerId": "courtney_vandersloot",
+            "playerName": "Courtney Vandersloot",
+            "teamCode": "CHI_SKY"
+          },
+          "notes": "",
+          "links": [],
+          "entryIds": []
+        },
+        "2015_sixth_player": {
+          "awardId": "2015_sixth_player",
+          "season": 2015,
+          "seasonId": "2015",
+          "awardKey": "sixth_player",
+          "awardName": "Sixth Player of the Year",
+          "recipient": {
+            "playerId": "allie_quigley",
+            "playerName": "Allie Quigley",
+            "teamCode": "CHI_SKY"
+          },
+          "notes": "",
+          "links": [],
+          "entryIds": []
+        },
+        "2015_roy": {
+          "awardId": "2015_roy",
+          "season": 2015,
+          "seasonId": "2015",
+          "awardKey": "roy",
+          "awardName": "Rookie of the Year",
+          "recipient": {
+            "playerId": "jewell_loyd",
+            "playerName": "Jewell Loyd",
+            "teamCode": "SEA_STORM"
+          },
+          "notes": "",
+          "links": [],
+          "entryIds": []
+        },
+        "2015_kim_perrot_sportsmanship": {
+          "awardId": "2015_kim_perrot_sportsmanship",
+          "season": 2015,
+          "seasonId": "2015",
+          "awardKey": "kim_perrot_sportsmanship",
+          "awardName": "Kim Perrot Sportsmanship Award",
+          "recipient": {
+            "playerId": "delisha_milton_jones",
+            "playerName": "DeLisha Milton-Jones",
+            "teamCode": "ATL_DREAM"
+          },
+          "notes": "",
+          "links": [],
+          "entryIds": []
+        },
+        "2015_dawnstaleycommunityleadershipaward": {
+          "awardId": "2015_dawnstaleycommunityleadershipaward",
+          "season": 2015,
+          "seasonId": "2015",
+          "awardKey": "dawnstaleycommunityleadershipaward",
+          "awardName": "Dawn Staley Community Leadership Award",
+          "recipient": {
+            "playerId": "elena_delle_donne",
+            "playerName": "Elena Delle Donne",
+            "teamCode": "CHI_SKY"
+          },
+          "notes": "",
+          "links": [],
+          "entryIds": []
+        },
+        "2015_coach_of_the_year": {
+          "awardId": "2015_coach_of_the_year",
+          "season": 2015,
+          "seasonId": "2015",
+          "awardKey": "coach_of_the_year",
+          "awardName": "Coach of the Year",
+          "recipient": {
+            "playerId": "bill_laimbeer",
+            "playerName": "Bill Laimbeer",
+            "teamCode": "NYL_LIBERTY"
+          },
+          "notes": "",
+          "links": [],
+          "entryIds": []
+        }
+      }
+    },
+    "2016": {
+      "season": 2016,
+      "seasonId": "2016",
+      "awards": {
+        "2016_mvp": {
+          "awardId": "2016_mvp",
+          "season": 2016,
+          "seasonId": "2016",
+          "awardKey": "mvp",
+          "awardName": "Most Valuable Player",
+          "recipient": {
+            "playerId": "nneka_ogwumike",
+            "playerName": "Nneka Ogwumike",
+            "teamCode": "LOS_SPARKS"
+          },
+          "notes": "",
+          "links": [],
+          "entryIds": []
+        },
+        "2016_topscorer": {
+          "awardId": "2016_topscorer",
+          "season": 2016,
+          "seasonId": "2016",
+          "awardKey": "topscorer",
+          "awardName": "Top Scorer",
+          "recipient": {
+            "playerId": "tina_charles",
+            "playerName": "Tina Charles",
+            "teamCode": "NYL_LIBERTY"
+          },
+          "notes": "",
+          "links": [],
+          "entryIds": []
+        },
+        "2016_topdraftpick": {
+          "awardId": "2016_topdraftpick",
+          "season": 2016,
+          "seasonId": "2016",
+          "awardKey": "topdraftpick",
+          "awardName": "Top draft pick",
+          "recipient": {
+            "playerId": "breanna_stewart",
+            "playerName": "Breanna Stewart",
+            "teamCode": "SEA_STORM"
+          },
+          "notes": "",
+          "links": [],
+          "entryIds": []
+        },
+        "2016_dpoy": {
+          "awardId": "2016_dpoy",
+          "season": 2016,
+          "seasonId": "2016",
+          "awardKey": "dpoy",
+          "awardName": "Defensive Player of the Year",
+          "recipient": {
+            "playerId": "sylvia_fowles",
+            "playerName": "Sylvia Fowles",
+            "teamCode": "MIN_LYNX"
+          },
+          "notes": "",
+          "links": [],
+          "entryIds": []
+        },
+        "2016_mip": {
+          "awardId": "2016_mip",
+          "season": 2016,
+          "seasonId": "2016",
+          "awardKey": "mip",
+          "awardName": "Most Improved Player",
+          "recipient": {
+            "playerId": "elizabeth_williams",
+            "playerName": "Elizabeth Williams",
+            "teamCode": "ATL_DREAM"
+          },
+          "notes": "",
+          "links": [],
+          "entryIds": []
+        },
+        "2016_peakperformerscoring": {
+          "awardId": "2016_peakperformerscoring",
+          "season": 2016,
+          "seasonId": "2016",
+          "awardKey": "peakperformerscoring",
+          "awardName": "TOP SCORER",
+          "recipient": {
+            "playerId": "tina_charles",
+            "playerName": "Tina Charles",
+            "teamCode": "NYL_LIBERTY"
+          },
+          "notes": "",
+          "links": [],
+          "entryIds": []
+        },
+        "2016_peakperformerrebounding": {
+          "awardId": "2016_peakperformerrebounding",
+          "season": 2016,
+          "seasonId": "2016",
+          "awardKey": "peakperformerrebounding",
+          "awardName": "TOP REBOUNDER",
+          "recipient": {
+            "playerId": "tina_charles",
+            "playerName": "Tina Charles",
+            "teamCode": "NYL_LIBERTY"
+          },
+          "notes": "",
+          "links": [],
+          "entryIds": []
+        },
+        "2016_peakperformerdishandassist": {
+          "awardId": "2016_peakperformerdishandassist",
+          "season": 2016,
+          "seasonId": "2016",
+          "awardKey": "peakperformerdishandassist",
+          "awardName": "TOP DISTRIBUTOR",
+          "recipient": {
+            "playerId": "sue_bird",
+            "playerName": "Sue Bird",
+            "teamCode": "SEA_STORM"
+          },
+          "notes": "",
+          "links": [],
+          "entryIds": []
+        },
+        "2016_sixth_player": {
+          "awardId": "2016_sixth_player",
+          "season": 2016,
+          "seasonId": "2016",
+          "awardKey": "sixth_player",
+          "awardName": "Sixth Player of the Year",
+          "recipient": {
+            "playerId": "jantel_lavender",
+            "playerName": "Jantel Lavender",
+            "teamCode": "LOS_SPARKS"
+          },
+          "notes": "",
+          "links": [],
+          "entryIds": []
+        },
+        "2016_roy": {
+          "awardId": "2016_roy",
+          "season": 2016,
+          "seasonId": "2016",
+          "awardKey": "roy",
+          "awardName": "Rookie of the Year",
+          "recipient": {
+            "playerId": "breanna_stewart",
+            "playerName": "Breanna Stewart",
+            "teamCode": "SEA_STORM"
+          },
+          "notes": "",
+          "links": [],
+          "entryIds": []
+        },
+        "2016_kim_perrot_sportsmanship": {
+          "awardId": "2016_kim_perrot_sportsmanship",
+          "season": 2016,
+          "seasonId": "2016",
+          "awardKey": "kim_perrot_sportsmanship",
+          "awardName": "Kim Perrot Sportsmanship Award",
+          "recipient": {
+            "playerId": "tamika_catchings",
+            "playerName": "Tamika Catchings",
+            "teamCode": "IND_FEVER"
+          },
+          "notes": "",
+          "links": [],
+          "entryIds": []
+        },
+        "2016_dawnstaleycommunityleadershipaward": {
+          "awardId": "2016_dawnstaleycommunityleadershipaward",
+          "season": 2016,
+          "seasonId": "2016",
+          "awardKey": "dawnstaleycommunityleadershipaward",
+          "awardName": "Dawn Staley Community Leadership Award",
+          "recipient": {
+            "playerId": "tamika_catchings",
+            "playerName": "Tamika Catchings",
+            "teamCode": "IND_FEVER"
+          },
+          "notes": "",
+          "links": [],
+          "entryIds": []
+        },
+        "2016_coach_of_the_year": {
+          "awardId": "2016_coach_of_the_year",
+          "season": 2016,
+          "seasonId": "2016",
+          "awardKey": "coach_of_the_year",
+          "awardName": "Coach of the Year",
+          "recipient": {
+            "playerId": "cheryl_reeve",
+            "playerName": "Cheryl Reeve",
+            "teamCode": "MIN_LYNX"
+          },
+          "notes": "",
+          "links": [],
+          "entryIds": []
+        }
+      }
+    },
+    "2017": {
+      "season": 2017,
+      "seasonId": "2017",
+      "awards": {
+        "2017_mvp": {
+          "awardId": "2017_mvp",
+          "season": 2017,
+          "seasonId": "2017",
+          "awardKey": "mvp",
+          "awardName": "Most Valuable Player",
+          "recipient": {
+            "playerId": "sylvia_fowles",
+            "playerName": "Sylvia Fowles",
+            "teamCode": "MIN_LYNX"
+          },
+          "notes": "",
+          "links": [],
+          "entryIds": []
+        },
+        "2017_topscorer": {
+          "awardId": "2017_topscorer",
+          "season": 2017,
+          "seasonId": "2017",
+          "awardKey": "topscorer",
+          "awardName": "Top Scorer",
+          "recipient": {
+            "playerId": "brittney_griner",
+            "playerName": "Brittney Griner",
+            "teamCode": "PHX_MERCURY"
+          },
+          "notes": "",
+          "links": [],
+          "entryIds": []
+        },
+        "2017_topdraftpick": {
+          "awardId": "2017_topdraftpick",
+          "season": 2017,
+          "seasonId": "2017",
+          "awardKey": "topdraftpick",
+          "awardName": "Top draft pick",
+          "recipient": {
+            "playerId": "kelsey_plum",
+            "playerName": "Kelsey Plum",
+            "teamCode": "SA_STARS"
+          },
+          "notes": "",
+          "links": [],
+          "entryIds": []
+        },
+        "2017_dpoy": {
+          "awardId": "2017_dpoy",
+          "season": 2017,
+          "seasonId": "2017",
+          "awardKey": "dpoy",
+          "awardName": "Defensive Player of the Year",
+          "recipient": {
+            "playerId": "alana_beard",
+            "playerName": "Alana Beard",
+            "teamCode": "LOS_SPARKS"
+          },
+          "notes": "",
+          "links": [],
+          "entryIds": []
+        },
+        "2017_mip": {
+          "awardId": "2017_mip",
+          "season": 2017,
+          "seasonId": "2017",
+          "awardKey": "mip",
+          "awardName": "Most Improved Player",
+          "recipient": {
+            "playerId": "jonquel_jones",
+            "playerName": "Jonquel Jones",
+            "teamCode": "CON_SUN"
+          },
+          "notes": "",
+          "links": [],
+          "entryIds": []
+        },
+        "2017_peakperformerscoring": {
+          "awardId": "2017_peakperformerscoring",
+          "season": 2017,
+          "seasonId": "2017",
+          "awardKey": "peakperformerscoring",
+          "awardName": "TOP SCORER",
+          "recipient": {
+            "playerId": "brittney_griner",
+            "playerName": "Brittney Griner",
+            "teamCode": "PHX_MERCURY"
+          },
+          "notes": "",
+          "links": [],
+          "entryIds": []
+        },
+        "2017_peakperformerrebounding": {
+          "awardId": "2017_peakperformerrebounding",
+          "season": 2017,
+          "seasonId": "2017",
+          "awardKey": "peakperformerrebounding",
+          "awardName": "TOP REBOUNDER",
+          "recipient": {
+            "playerId": "jonquel_jones",
+            "playerName": "Jonquel Jones",
+            "teamCode": "CON_SUN"
+          },
+          "notes": "",
+          "links": [],
+          "entryIds": []
+        },
+        "2017_peakperformerdishandassist": {
+          "awardId": "2017_peakperformerdishandassist",
+          "season": 2017,
+          "seasonId": "2017",
+          "awardKey": "peakperformerdishandassist",
+          "awardName": "TOP DISTRIBUTOR",
+          "recipient": {
+            "playerId": "courtney_vandersloot",
+            "playerName": "Courtney Vandersloot",
+            "teamCode": "CHI_SKY"
+          },
+          "notes": "",
+          "links": [],
+          "entryIds": []
+        },
+        "2017_sixth_player": {
+          "awardId": "2017_sixth_player",
+          "season": 2017,
+          "seasonId": "2017",
+          "awardKey": "sixth_player",
+          "awardName": "Sixth Player of the Year",
+          "recipient": {
+            "playerId": "sugar_rodgers",
+            "playerName": "Sugar Rodgers",
+            "teamCode": "NYL_LIBERTY"
+          },
+          "notes": "",
+          "links": [],
+          "entryIds": []
+        },
+        "2017_roy": {
+          "awardId": "2017_roy",
+          "season": 2017,
+          "seasonId": "2017",
+          "awardKey": "roy",
+          "awardName": "Rookie of the Year",
+          "recipient": {
+            "playerId": "allisha_gray",
+            "playerName": "Allisha Gray",
+            "teamCode": "DAL_WINGS"
+          },
+          "notes": "",
+          "links": [],
+          "entryIds": []
+        },
+        "2017_kim_perrot_sportsmanship": {
+          "awardId": "2017_kim_perrot_sportsmanship",
+          "season": 2017,
+          "seasonId": "2017",
+          "awardKey": "kim_perrot_sportsmanship",
+          "awardName": "Kim Perrot Sportsmanship Award",
+          "recipient": {
+            "playerId": "sue_bird",
+            "playerName": "Sue Bird",
+            "teamCode": "SEA_STORM"
+          },
+          "notes": "",
+          "links": [],
+          "entryIds": []
+        },
+        "2017_dawnstaleycommunityleadershipaward": {
+          "awardId": "2017_dawnstaleycommunityleadershipaward",
+          "season": 2017,
+          "seasonId": "2017",
+          "awardKey": "dawnstaleycommunityleadershipaward",
+          "awardName": "Dawn Staley Community Leadership Award",
+          "recipient": {
+            "playerId": "ivory_latta",
+            "playerName": "Ivory Latta",
+            "teamCode": "WAS_MYSTICS"
+          },
+          "notes": "",
+          "links": [],
+          "entryIds": []
+        },
+        "2017_coach_of_the_year": {
+          "awardId": "2017_coach_of_the_year",
+          "season": 2017,
+          "seasonId": "2017",
+          "awardKey": "coach_of_the_year",
+          "awardName": "Coach of the Year",
+          "recipient": {
+            "playerId": "curt_miller",
+            "playerName": "Curt Miller",
+            "teamCode": "CON_SUN"
+          },
+          "notes": "",
+          "links": [],
+          "entryIds": []
+        },
+        "2017_basketballexecutiveoftheyear": {
+          "awardId": "2017_basketballexecutiveoftheyear",
+          "season": 2017,
+          "seasonId": "2017",
+          "awardKey": "basketballexecutiveoftheyear",
+          "awardName": "Basketball Executive of the Year",
+          "recipient": {
+            "playerId": "curt_miller",
+            "playerName": "Curt Miller",
+            "teamCode": "CON_SUN"
+          },
+          "notes": "",
+          "links": [],
+          "entryIds": []
+        }
+      }
+    },
+    "2018": {
+      "season": 2018,
+      "seasonId": "2018",
+      "awards": {
+        "2018_mvp": {
+          "awardId": "2018_mvp",
+          "season": 2018,
+          "seasonId": "2018",
+          "awardKey": "mvp",
+          "awardName": "Most Valuable Player",
+          "recipient": {
+            "playerId": "breanna_stewart",
+            "playerName": "Breanna Stewart",
+            "teamCode": "SEA_STORM"
+          },
+          "notes": "",
+          "links": [],
+          "entryIds": []
+        },
+        "2018_topscorer": {
+          "awardId": "2018_topscorer",
+          "season": 2018,
+          "seasonId": "2018",
+          "awardKey": "topscorer",
+          "awardName": "Top Scorer",
+          "recipient": {
+            "playerId": "liz_cambage",
+            "playerName": "Liz Cambage",
+            "teamCode": "DAL_WINGS"
+          },
+          "notes": "",
+          "links": [],
+          "entryIds": []
+        },
+        "2018_topdraftpick": {
+          "awardId": "2018_topdraftpick",
+          "season": 2018,
+          "seasonId": "2018",
+          "awardKey": "topdraftpick",
+          "awardName": "Top draft pick",
+          "recipient": {
+            "playerId": "aja_wilson",
+            "playerName": "A'ja Wilson",
+            "teamCode": "LVA_ACES"
+          },
+          "notes": "",
+          "links": [],
+          "entryIds": []
+        },
+        "2018_dpoy": {
+          "awardId": "2018_dpoy",
+          "season": 2018,
+          "seasonId": "2018",
+          "awardKey": "dpoy",
+          "awardName": "Defensive Player of the Year",
+          "recipient": {
+            "playerId": "alana_beard",
+            "playerName": "Alana Beard",
+            "teamCode": "LOS_SPARKS"
+          },
+          "notes": "",
+          "links": [],
+          "entryIds": []
+        },
+        "2018_mip": {
+          "awardId": "2018_mip",
+          "season": 2018,
+          "seasonId": "2018",
+          "awardKey": "mip",
+          "awardName": "Most Improved Player",
+          "recipient": {
+            "playerId": "natasha_howard",
+            "playerName": "Natasha Howard",
+            "teamCode": "SEA_STORM"
+          },
+          "notes": "",
+          "links": [],
+          "entryIds": []
+        },
+        "2018_peakperformerscoring": {
+          "awardId": "2018_peakperformerscoring",
+          "season": 2018,
+          "seasonId": "2018",
+          "awardKey": "peakperformerscoring",
+          "awardName": "TOP SCORER",
+          "recipient": {
+            "playerId": "liz_cambage",
+            "playerName": "Liz Cambage",
+            "teamCode": "DAL_WINGS"
+          },
+          "notes": "",
+          "links": [],
+          "entryIds": []
+        },
+        "2018_peakperformerrebounding": {
+          "awardId": "2018_peakperformerrebounding",
+          "season": 2018,
+          "seasonId": "2018",
+          "awardKey": "peakperformerrebounding",
+          "awardName": "TOP REBOUNDER",
+          "recipient": {
+            "playerId": "sylvia_fowles",
+            "playerName": "Sylvia Fowles",
+            "teamCode": "MIN_LYNX"
+          },
+          "notes": "",
+          "links": [],
+          "entryIds": []
+        },
+        "2018_peakperformerdishandassist": {
+          "awardId": "2018_peakperformerdishandassist",
+          "season": 2018,
+          "seasonId": "2018",
+          "awardKey": "peakperformerdishandassist",
+          "awardName": "TOP DISTRIBUTOR",
+          "recipient": {
+            "playerId": "courtney_vandersloot",
+            "playerName": "Courtney Vandersloot",
+            "teamCode": "CHI_SKY"
+          },
+          "notes": "",
+          "links": [],
+          "entryIds": []
+        },
+        "2018_sixth_player": {
+          "awardId": "2018_sixth_player",
+          "season": 2018,
+          "seasonId": "2018",
+          "awardKey": "sixth_player",
+          "awardName": "Sixth Player of the Year",
+          "recipient": {
+            "playerId": "jonquel_jones",
+            "playerName": "Jonquel Jones",
+            "teamCode": "CON_SUN"
+          },
+          "notes": "",
+          "links": [],
+          "entryIds": []
+        },
+        "2018_roy": {
+          "awardId": "2018_roy",
+          "season": 2018,
+          "seasonId": "2018",
+          "awardKey": "roy",
+          "awardName": "Rookie of the Year",
+          "recipient": {
+            "playerId": "aja_wilson",
+            "playerName": "A'ja Wilson",
+            "teamCode": "LVA_ACES"
+          },
+          "notes": "",
+          "links": [],
+          "entryIds": []
+        },
+        "2018_kim_perrot_sportsmanship": {
+          "awardId": "2018_kim_perrot_sportsmanship",
+          "season": 2018,
+          "seasonId": "2018",
+          "awardKey": "kim_perrot_sportsmanship",
+          "awardName": "Kim Perrot Sportsmanship Award",
+          "recipient": {
+            "playerId": "sue_bird",
+            "playerName": "Sue Bird",
+            "teamCode": "SEA_STORM"
+          },
+          "notes": "",
+          "links": [],
+          "entryIds": []
+        },
+        "2018_dawnstaleycommunityleadershipaward": {
+          "awardId": "2018_dawnstaleycommunityleadershipaward",
+          "season": 2018,
+          "seasonId": "2018",
+          "awardKey": "dawnstaleycommunityleadershipaward",
+          "awardName": "Dawn Staley Community Leadership Award",
+          "recipient": {
+            "playerId": "skylar_diggins",
+            "playerName": "Skylar Diggins",
+            "teamCode": "DAL_WINGS"
+          },
+          "notes": "",
+          "links": [],
+          "entryIds": []
+        },
+        "2018_coach_of_the_year": {
+          "awardId": "2018_coach_of_the_year",
+          "season": 2018,
+          "seasonId": "2018",
+          "awardKey": "coach_of_the_year",
+          "awardName": "Coach of the Year",
+          "recipient": {
+            "playerId": "nicki_collen",
+            "playerName": "Nicki Collen",
+            "teamCode": "ATL_DREAM"
+          },
+          "notes": "",
+          "links": [],
+          "entryIds": []
+        },
+        "2018_basketballexecutiveoftheyear": {
+          "awardId": "2018_basketballexecutiveoftheyear",
+          "season": 2018,
+          "seasonId": "2018",
+          "awardKey": "basketballexecutiveoftheyear",
+          "awardName": "Basketball Executive of the Year",
+          "recipient": {
+            "playerId": "chris_sienko",
+            "playerName": "Chris Sienko",
+            "teamCode": "ATL_DREAM"
+          },
+          "notes": "",
+          "links": [],
+          "entryIds": []
+        }
+      }
+    },
+    "2019": {
+      "season": 2019,
+      "seasonId": "2019",
+      "awards": {
+        "2019_mvp": {
+          "awardId": "2019_mvp",
+          "season": 2019,
+          "seasonId": "2019",
+          "awardKey": "mvp",
+          "awardName": "Most Valuable Player",
+          "recipient": {
+            "playerId": "elena_delle_donne",
+            "playerName": "Elena Delle Donne",
+            "teamCode": "WAS_MYSTICS"
+          },
+          "notes": "",
+          "links": [],
+          "entryIds": []
+        },
+        "2019_topscorer": {
+          "awardId": "2019_topscorer",
+          "season": 2019,
+          "seasonId": "2019",
+          "awardKey": "topscorer",
+          "awardName": "Top Scorer",
+          "recipient": {
+            "playerId": "brittney_griner",
+            "playerName": "Brittney Griner",
+            "teamCode": "PHX_MERCURY"
+          },
+          "notes": "",
+          "links": [],
+          "entryIds": []
+        },
+        "2019_topdraftpick": {
+          "awardId": "2019_topdraftpick",
+          "season": 2019,
+          "seasonId": "2019",
+          "awardKey": "topdraftpick",
+          "awardName": "Top draft pick",
+          "recipient": {
+            "playerId": "jackie_young",
+            "playerName": "Jackie Young",
+            "teamCode": "LVA_ACES"
+          },
+          "notes": "",
+          "links": [],
+          "entryIds": []
+        },
+        "2019_dpoy": {
+          "awardId": "2019_dpoy",
+          "season": 2019,
+          "seasonId": "2019",
+          "awardKey": "dpoy",
+          "awardName": "Defensive Player of the Year",
+          "recipient": {
+            "playerId": "natasha_howard",
+            "playerName": "Natasha Howard",
+            "teamCode": "SEA_STORM"
+          },
+          "notes": "",
+          "links": [],
+          "entryIds": []
+        },
+        "2019_mip": {
+          "awardId": "2019_mip",
+          "season": 2019,
+          "seasonId": "2019",
+          "awardKey": "mip",
+          "awardName": "Most Improved Player",
+          "recipient": {
+            "playerId": "emma_meesseman",
+            "playerName": "Emma Meesseman",
+            "teamCode": "WAS_MYSTICS"
+          },
+          "notes": "",
+          "links": [],
+          "entryIds": []
+        },
+        "2019_peakperformerscoring": {
+          "awardId": "2019_peakperformerscoring",
+          "season": 2019,
+          "seasonId": "2019",
+          "awardKey": "peakperformerscoring",
+          "awardName": "TOP SCORER",
+          "recipient": {
+            "playerId": "brittney_griner",
+            "playerName": "Brittney Griner",
+            "teamCode": "PHX_MERCURY"
+          },
+          "notes": "",
+          "links": [],
+          "entryIds": []
+        },
+        "2019_peakperformerrebounding": {
+          "awardId": "2019_peakperformerrebounding",
+          "season": 2019,
+          "seasonId": "2019",
+          "awardKey": "peakperformerrebounding",
+          "awardName": "TOP REBOUNDER",
+          "recipient": {
+            "playerId": "jonquel_jones",
+            "playerName": "Jonquel Jones",
+            "teamCode": "CON_SUN"
+          },
+          "notes": "",
+          "links": [],
+          "entryIds": []
+        },
+        "2019_peakperformerdishandassist": {
+          "awardId": "2019_peakperformerdishandassist",
+          "season": 2019,
+          "seasonId": "2019",
+          "awardKey": "peakperformerdishandassist",
+          "awardName": "TOP DISTRIBUTOR",
+          "recipient": {
+            "playerId": "courtney_vandersloot",
+            "playerName": "Courtney Vandersloot",
+            "teamCode": "CHI_SKY"
+          },
+          "notes": "",
+          "links": [],
+          "entryIds": []
+        },
+        "2019_sixth_player": {
+          "awardId": "2019_sixth_player",
+          "season": 2019,
+          "seasonId": "2019",
+          "awardKey": "sixth_player",
+          "awardName": "Sixth Player of the Year",
+          "recipient": {
+            "playerId": "dearica_hamby",
+            "playerName": "Dearica Hamby",
+            "teamCode": "LVA_ACES"
+          },
+          "notes": "",
+          "links": [],
+          "entryIds": []
+        },
+        "2019_roy": {
+          "awardId": "2019_roy",
+          "season": 2019,
+          "seasonId": "2019",
+          "awardKey": "roy",
+          "awardName": "Rookie of the Year",
+          "recipient": {
+            "playerId": "napheesa_collier",
+            "playerName": "Napheesa Collier",
+            "teamCode": "MIN_LYNX"
+          },
+          "notes": "",
+          "links": [],
+          "entryIds": []
+        },
+        "2019_kim_perrot_sportsmanship": {
+          "awardId": "2019_kim_perrot_sportsmanship",
+          "season": 2019,
+          "seasonId": "2019",
+          "awardKey": "kim_perrot_sportsmanship",
+          "awardName": "Kim Perrot Sportsmanship Award",
+          "recipient": {
+            "playerId": "nneka_ogwumike",
+            "playerName": "Nneka Ogwumike",
+            "teamCode": "LOS_SPARKS"
+          },
+          "notes": "",
+          "links": [],
+          "entryIds": []
+        },
+        "2019_dawnstaleycommunityleadershipaward": {
+          "awardId": "2019_dawnstaleycommunityleadershipaward",
+          "season": 2019,
+          "seasonId": "2019",
+          "awardKey": "dawnstaleycommunityleadershipaward",
+          "awardName": "Dawn Staley Community Leadership Award",
+          "recipient": {
+            "playerId": "natasha_cloud",
+            "playerName": "Natasha Cloud",
+            "teamCode": "WAS_MYSTICS"
+          },
+          "notes": "",
+          "links": [],
+          "entryIds": []
+        },
+        "2019_coach_of_the_year": {
+          "awardId": "2019_coach_of_the_year",
+          "season": 2019,
+          "seasonId": "2019",
+          "awardKey": "coach_of_the_year",
+          "awardName": "Coach of the Year",
+          "recipient": {
+            "playerId": "james_wade",
+            "playerName": "James Wade",
+            "teamCode": "CHI_SKY"
+          },
+          "notes": "",
+          "links": [],
+          "entryIds": []
+        },
+        "2019_basketballexecutiveoftheyear": {
+          "awardId": "2019_basketballexecutiveoftheyear",
+          "season": 2019,
+          "seasonId": "2019",
+          "awardKey": "basketballexecutiveoftheyear",
+          "awardName": "Basketball Executive of the Year",
+          "recipient": {
+            "playerId": "cheryl_reeve",
+            "playerName": "Cheryl Reeve",
+            "teamCode": "MIN_LYNX"
+          },
+          "notes": "",
+          "links": [],
+          "entryIds": []
+        }
+      }
+    },
+    "2020": {
+      "season": 2020,
+      "seasonId": "2020",
+      "awards": {
+        "2020_mvp": {
+          "awardId": "2020_mvp",
+          "season": 2020,
+          "seasonId": "2020",
+          "awardKey": "mvp",
+          "awardName": "Most Valuable Player",
+          "recipient": {
+            "playerId": "aja_wilson",
+            "playerName": "A'ja Wilson",
+            "teamCode": "LVA_ACES"
+          },
+          "notes": "",
+          "links": [],
+          "entryIds": []
+        },
+        "2020_topscorer": {
+          "awardId": "2020_topscorer",
+          "season": 2020,
+          "seasonId": "2020",
+          "awardKey": "topscorer",
+          "awardName": "Top Scorer",
+          "recipient": {
+            "playerId": "arike_ogunbowale",
+            "playerName": "Arike Ogunbowale",
+            "teamCode": "DAL_WINGS"
+          },
+          "notes": "",
+          "links": [],
+          "entryIds": []
+        },
+        "2020_topdraftpick": {
+          "awardId": "2020_topdraftpick",
+          "season": 2020,
+          "seasonId": "2020",
+          "awardKey": "topdraftpick",
+          "awardName": "Top draft pick",
+          "recipient": {
+            "playerId": "sabrina_ionescu",
+            "playerName": "Sabrina Ionescu",
+            "teamCode": "NYL_LIBERTY"
+          },
+          "notes": "",
+          "links": [],
+          "entryIds": []
+        },
+        "2020_dpoy": {
+          "awardId": "2020_dpoy",
+          "season": 2020,
+          "seasonId": "2020",
+          "awardKey": "dpoy",
+          "awardName": "Defensive Player of the Year",
+          "recipient": {
+            "playerId": "candace_parker",
+            "playerName": "Candace Parker",
+            "teamCode": "LOS_SPARKS"
+          },
+          "notes": "",
+          "links": [],
+          "entryIds": []
+        },
+        "2020_mip": {
+          "awardId": "2020_mip",
+          "season": 2020,
+          "seasonId": "2020",
+          "awardKey": "mip",
+          "awardName": "Most Improved Player",
+          "recipient": {
+            "playerId": "betnijah_laney",
+            "playerName": "Betnijah Laney",
+            "teamCode": "ATL_DREAM"
+          },
+          "notes": "",
+          "links": [],
+          "entryIds": []
+        },
+        "2020_peakperformerscoring": {
+          "awardId": "2020_peakperformerscoring",
+          "season": 2020,
+          "seasonId": "2020",
+          "awardKey": "peakperformerscoring",
+          "awardName": "TOP SCORER",
+          "recipient": {
+            "playerId": "arike_ogunbowale",
+            "playerName": "Arike Ogunbowale",
+            "teamCode": "DAL_WINGS"
+          },
+          "notes": "",
+          "links": [],
+          "entryIds": []
+        },
+        "2020_peakperformerrebounding": {
+          "awardId": "2020_peakperformerrebounding",
+          "season": 2020,
+          "seasonId": "2020",
+          "awardKey": "peakperformerrebounding",
+          "awardName": "TOP REBOUNDER",
+          "recipient": {
+            "playerId": "candace_parker",
+            "playerName": "Candace Parker",
+            "teamCode": "LOS_SPARKS"
+          },
+          "notes": "",
+          "links": [],
+          "entryIds": []
+        },
+        "2020_peakperformerdishandassist": {
+          "awardId": "2020_peakperformerdishandassist",
+          "season": 2020,
+          "seasonId": "2020",
+          "awardKey": "peakperformerdishandassist",
+          "awardName": "TOP DISTRIBUTOR",
+          "recipient": {
+            "playerId": "courtney_vandersloot",
+            "playerName": "Courtney Vandersloot",
+            "teamCode": "CHI_SKY"
+          },
+          "notes": "",
+          "links": [],
+          "entryIds": []
+        },
+        "2020_sixth_player": {
+          "awardId": "2020_sixth_player",
+          "season": 2020,
+          "seasonId": "2020",
+          "awardKey": "sixth_player",
+          "awardName": "Sixth Player of the Year",
+          "recipient": {
+            "playerId": "dearica_hamby",
+            "playerName": "Dearica Hamby",
+            "teamCode": "LVA_ACES"
+          },
+          "notes": "",
+          "links": [],
+          "entryIds": []
+        },
+        "2020_roy": {
+          "awardId": "2020_roy",
+          "season": 2020,
+          "seasonId": "2020",
+          "awardKey": "roy",
+          "awardName": "Rookie of the Year",
+          "recipient": {
+            "playerId": "crystal_dangerfield",
+            "playerName": "Crystal Dangerfield",
+            "teamCode": "MIN_LYNX"
+          },
+          "notes": "",
+          "links": [],
+          "entryIds": []
+        },
+        "2020_kim_perrot_sportsmanship": {
+          "awardId": "2020_kim_perrot_sportsmanship",
+          "season": 2020,
+          "seasonId": "2020",
+          "awardKey": "kim_perrot_sportsmanship",
+          "awardName": "Kim Perrot Sportsmanship Award",
+          "recipient": {
+            "playerId": "nneka_ogwumike",
+            "playerName": "Nneka Ogwumike",
+            "teamCode": "LOS_SPARKS"
+          },
+          "notes": "",
+          "links": [],
+          "entryIds": []
+        },
+        "2020_dawnstaleycommunityleadershipaward": {
+          "awardId": "2020_dawnstaleycommunityleadershipaward",
+          "season": 2020,
+          "seasonId": "2020",
+          "awardKey": "dawnstaleycommunityleadershipaward",
+          "awardName": "Dawn Staley Community Leadership Award",
+          "recipient": {
+            "playerId": "natalie_achonwa",
+            "playerName": "Natalie Achonwa",
+            "teamCode": "IND_FEVER"
+          },
+          "notes": "",
+          "links": [],
+          "entryIds": []
+        },
+        "2020_coach_of_the_year": {
+          "awardId": "2020_coach_of_the_year",
+          "season": 2020,
+          "seasonId": "2020",
+          "awardKey": "coach_of_the_year",
+          "awardName": "Coach of the Year",
+          "recipient": {
+            "playerId": "cheryl_reeve",
+            "playerName": "Cheryl Reeve",
+            "teamCode": "MIN_LYNX"
+          },
+          "notes": "",
+          "links": [],
+          "entryIds": []
+        },
+        "2020_basketballexecutiveoftheyear": {
+          "awardId": "2020_basketballexecutiveoftheyear",
+          "season": 2020,
+          "seasonId": "2020",
+          "awardKey": "basketballexecutiveoftheyear",
+          "awardName": "Basketball Executive of the Year",
+          "recipient": {
+            "playerId": "dan_padover",
+            "playerName": "Dan Padover",
+            "teamCode": "LVA_ACES"
+          },
+          "notes": "",
+          "links": [],
+          "entryIds": []
+        }
+      }
+    },
+    "2021": {
+      "season": 2021,
+      "seasonId": "2021",
+      "awards": {
+        "2021_mvp": {
+          "awardId": "2021_mvp",
+          "season": 2021,
+          "seasonId": "2021",
+          "awardKey": "mvp",
+          "awardName": "Most Valuable Player",
+          "recipient": {
+            "playerId": "jonquel_jones",
+            "playerName": "Jonquel Jones",
+            "teamCode": "CON_SUN"
+          },
+          "notes": "",
+          "links": [],
+          "entryIds": []
+        },
+        "2021_topscorer": {
+          "awardId": "2021_topscorer",
+          "season": 2021,
+          "seasonId": "2021",
+          "awardKey": "topscorer",
+          "awardName": "Top Scorer",
+          "recipient": {
+            "playerId": "tina_charles",
+            "playerName": "Tina Charles",
+            "teamCode": "WAS_MYSTICS"
+          },
+          "notes": "",
+          "links": [],
+          "entryIds": []
+        },
+        "2021_topdraftpick": {
+          "awardId": "2021_topdraftpick",
+          "season": 2021,
+          "seasonId": "2021",
+          "awardKey": "topdraftpick",
+          "awardName": "Top draft pick",
+          "recipient": {
+            "playerId": "charli_collier",
+            "playerName": "Charli Collier",
+            "teamCode": "DAL_WINGS"
+          },
+          "notes": "",
+          "links": [],
+          "entryIds": []
+        },
+        "2021_dpoy": {
+          "awardId": "2021_dpoy",
+          "season": 2021,
+          "seasonId": "2021",
+          "awardKey": "dpoy",
+          "awardName": "Defensive Player of the Year",
+          "recipient": {
+            "playerId": "sylvia_fowles",
+            "playerName": "Sylvia Fowles",
+            "teamCode": "MIN_LYNX"
+          },
+          "notes": "",
+          "links": [],
+          "entryIds": []
+        },
+        "2021_mip": {
+          "awardId": "2021_mip",
+          "season": 2021,
+          "seasonId": "2021",
+          "awardKey": "mip",
+          "awardName": "Most Improved Player",
+          "recipient": {
+            "playerId": "brionna_jones",
+            "playerName": "Brionna Jones",
+            "teamCode": "CON_SUN"
+          },
+          "notes": "",
+          "links": [],
+          "entryIds": []
+        },
+        "2021_peakperformerscoring": {
+          "awardId": "2021_peakperformerscoring",
+          "season": 2021,
+          "seasonId": "2021",
+          "awardKey": "peakperformerscoring",
+          "awardName": "TOP SCORER",
+          "recipient": {
+            "playerId": "tina_charles",
+            "playerName": "Tina Charles",
+            "teamCode": "WAS_MYSTICS"
+          },
+          "notes": "",
+          "links": [],
+          "entryIds": []
+        },
+        "2021_peakperformerrebounding": {
+          "awardId": "2021_peakperformerrebounding",
+          "season": 2021,
+          "seasonId": "2021",
+          "awardKey": "peakperformerrebounding",
+          "awardName": "TOP REBOUNDER",
+          "recipient": {
+            "playerId": "jonquel_jones",
+            "playerName": "Jonquel Jones",
+            "teamCode": "CON_SUN"
+          },
+          "notes": "",
+          "links": [],
+          "entryIds": []
+        },
+        "2021_peakperformerdishandassist": {
+          "awardId": "2021_peakperformerdishandassist",
+          "season": 2021,
+          "seasonId": "2021",
+          "awardKey": "peakperformerdishandassist",
+          "awardName": "TOP DISTRIBUTOR",
+          "recipient": {
+            "playerId": "courtney_vandersloot",
+            "playerName": "Courtney Vandersloot",
+            "teamCode": "CHI_SKY"
+          },
+          "notes": "",
+          "links": [],
+          "entryIds": []
+        },
+        "2021_sixth_player": {
+          "awardId": "2021_sixth_player",
+          "season": 2021,
+          "seasonId": "2021",
+          "awardKey": "sixth_player",
+          "awardName": "Sixth Player of the Year",
+          "recipient": {
+            "playerId": "kelsey_plum",
+            "playerName": "Kelsey Plum",
+            "teamCode": "LVA_ACES"
+          },
+          "notes": "",
+          "links": [],
+          "entryIds": []
+        },
+        "2021_roy": {
+          "awardId": "2021_roy",
+          "season": 2021,
+          "seasonId": "2021",
+          "awardKey": "roy",
+          "awardName": "Rookie of the Year",
+          "recipient": {
+            "playerId": "michaela_onyenwere",
+            "playerName": "Michaela Onyenwere",
+            "teamCode": "NYL_LIBERTY"
+          },
+          "notes": "",
+          "links": [],
+          "entryIds": []
+        },
+        "2021_kim_perrot_sportsmanship": {
+          "awardId": "2021_kim_perrot_sportsmanship",
+          "season": 2021,
+          "seasonId": "2021",
+          "awardKey": "kim_perrot_sportsmanship",
+          "awardName": "Kim Perrot Sportsmanship Award",
+          "recipient": {
+            "playerId": "nneka_ogwumike",
+            "playerName": "Nneka Ogwumike",
+            "teamCode": "LOS_SPARKS"
+          },
+          "notes": "",
+          "links": [],
+          "entryIds": []
+        },
+        "2021_coach_of_the_year": {
+          "awardId": "2021_coach_of_the_year",
+          "season": 2021,
+          "seasonId": "2021",
+          "awardKey": "coach_of_the_year",
+          "awardName": "Coach of the Year",
+          "recipient": {
+            "playerId": "curt_miller",
+            "playerName": "Curt Miller",
+            "teamCode": "CON_SUN"
+          },
+          "notes": "",
+          "links": [],
+          "entryIds": []
+        },
+        "2021_basketballexecutiveoftheyear": {
+          "awardId": "2021_basketballexecutiveoftheyear",
+          "season": 2021,
+          "seasonId": "2021",
+          "awardKey": "basketballexecutiveoftheyear",
+          "awardName": "Basketball Executive of the Year",
+          "recipient": {
+            "playerId": "dan_padover",
+            "playerName": "Dan Padover",
+            "teamCode": "LVA_ACES"
+          },
+          "notes": "",
+          "links": [],
+          "entryIds": []
+        }
+      }
+    },
+    "2022": {
+      "season": 2022,
+      "seasonId": "2022",
+      "awards": {
+        "2022_mvp": {
+          "awardId": "2022_mvp",
+          "season": 2022,
+          "seasonId": "2022",
+          "awardKey": "mvp",
+          "awardName": "Most Valuable Player",
+          "recipient": {
+            "playerId": "aja_wilson",
+            "playerName": "A'ja Wilson",
+            "teamCode": "LVA_ACES"
+          },
+          "notes": "",
+          "links": [],
+          "entryIds": []
+        },
+        "2022_topscorer": {
+          "awardId": "2022_topscorer",
+          "season": 2022,
+          "seasonId": "2022",
+          "awardKey": "topscorer",
+          "awardName": "Top Scorer",
+          "recipient": {
+            "playerId": "breanna_stewart",
+            "playerName": "Breanna Stewart",
+            "teamCode": "SEA_STORM"
+          },
+          "notes": "",
+          "links": [],
+          "entryIds": []
+        },
+        "2022_topdraftpick": {
+          "awardId": "2022_topdraftpick",
+          "season": 2022,
+          "seasonId": "2022",
+          "awardKey": "topdraftpick",
+          "awardName": "Top draft pick",
+          "recipient": {
+            "playerId": "rhyne_howard",
+            "playerName": "Rhyne Howard",
+            "teamCode": "ATL_DREAM"
+          },
+          "notes": "",
+          "links": [],
+          "entryIds": []
+        },
+        "2022_dpoy": {
+          "awardId": "2022_dpoy",
+          "season": 2022,
+          "seasonId": "2022",
+          "awardKey": "dpoy",
+          "awardName": "Defensive Player of the Year",
+          "recipient": {
+            "playerId": "aja_wilson",
+            "playerName": "A'ja Wilson",
+            "teamCode": "LVA_ACES"
+          },
+          "notes": "",
+          "links": [],
+          "entryIds": []
+        },
+        "2022_mip": {
+          "awardId": "2022_mip",
+          "season": 2022,
+          "seasonId": "2022",
+          "awardKey": "mip",
+          "awardName": "Most Improved Player",
+          "recipient": {
+            "playerId": "jackie_young",
+            "playerName": "Jackie Young",
+            "teamCode": "LVA_ACES"
+          },
+          "notes": "",
+          "links": [],
+          "entryIds": []
+        },
+        "2022_peakperformerscoring": {
+          "awardId": "2022_peakperformerscoring",
+          "season": 2022,
+          "seasonId": "2022",
+          "awardKey": "peakperformerscoring",
+          "awardName": "TOP SCORER",
+          "recipient": {
+            "playerId": "breanna_stewart",
+            "playerName": "Breanna Stewart",
+            "teamCode": "SEA_STORM"
+          },
+          "notes": "",
+          "links": [],
+          "entryIds": []
+        },
+        "2022_peakperformerrebounding": {
+          "awardId": "2022_peakperformerrebounding",
+          "season": 2022,
+          "seasonId": "2022",
+          "awardKey": "peakperformerrebounding",
+          "awardName": "TOP REBOUNDER",
+          "recipient": {
+            "playerId": "sylvia_fowles",
+            "playerName": "Sylvia Fowles",
+            "teamCode": "MIN_LYNX"
+          },
+          "notes": "",
+          "links": [],
+          "entryIds": []
+        },
+        "2022_peakperformerdishandassist": {
+          "awardId": "2022_peakperformerdishandassist",
+          "season": 2022,
+          "seasonId": "2022",
+          "awardKey": "peakperformerdishandassist",
+          "awardName": "TOP DISTRIBUTOR",
+          "recipient": {
+            "playerId": "natasha_cloud",
+            "playerName": "Natasha Cloud",
+            "teamCode": "WAS_MYSTICS"
+          },
+          "notes": "",
+          "links": [],
+          "entryIds": []
+        },
+        "2022_sixth_player": {
+          "awardId": "2022_sixth_player",
+          "season": 2022,
+          "seasonId": "2022",
+          "awardKey": "sixth_player",
+          "awardName": "Sixth Player of the Year",
+          "recipient": {
+            "playerId": "brionna_jones",
+            "playerName": "Brionna Jones",
+            "teamCode": "CON_SUN"
+          },
+          "notes": "",
+          "links": [],
+          "entryIds": []
+        },
+        "2022_roy": {
+          "awardId": "2022_roy",
+          "season": 2022,
+          "seasonId": "2022",
+          "awardKey": "roy",
+          "awardName": "Rookie of the Year",
+          "recipient": {
+            "playerId": "rhyne_howard",
+            "playerName": "Rhyne Howard",
+            "teamCode": "ATL_DREAM"
+          },
+          "notes": "",
+          "links": [],
+          "entryIds": []
+        },
+        "2022_kim_perrot_sportsmanship": {
+          "awardId": "2022_kim_perrot_sportsmanship",
+          "season": 2022,
+          "seasonId": "2022",
+          "awardKey": "kim_perrot_sportsmanship",
+          "awardName": "Kim Perrot Sportsmanship Award",
+          "recipient": {
+            "playerId": "sylvia_fowles",
+            "playerName": "Sylvia Fowles",
+            "teamCode": "MIN_LYNX"
+          },
+          "notes": "",
+          "links": [],
+          "entryIds": []
+        },
+        "2022_dawnstaleycommunityleadershipaward": {
+          "awardId": "2022_dawnstaleycommunityleadershipaward",
+          "season": 2022,
+          "seasonId": "2022",
+          "awardKey": "dawnstaleycommunityleadershipaward",
+          "awardName": "Dawn Staley Community Leadership Award",
+          "recipient": {
+            "playerId": "betnijah_laney",
+            "playerName": "Betnijah Laney",
+            "teamCode": "NYL_LIBERTY"
+          },
+          "notes": "",
+          "links": [],
+          "entryIds": []
+        },
+        "2022_coach_of_the_year": {
+          "awardId": "2022_coach_of_the_year",
+          "season": 2022,
+          "seasonId": "2022",
+          "awardKey": "coach_of_the_year",
+          "awardName": "Coach of the Year",
+          "recipient": {
+            "playerId": "becky_hammon",
+            "playerName": "Becky Hammon",
+            "teamCode": "LVA_ACES"
+          },
+          "notes": "",
+          "links": [],
+          "entryIds": []
+        },
+        "2022_basketballexecutiveoftheyear": {
+          "awardId": "2022_basketballexecutiveoftheyear",
+          "season": 2022,
+          "seasonId": "2022",
+          "awardKey": "basketballexecutiveoftheyear",
+          "awardName": "Basketball Executive of the Year",
+          "recipient": {
+            "playerId": "james_wade",
+            "playerName": "James Wade",
+            "teamCode": "CHI_SKY"
+          },
+          "notes": "",
+          "links": [],
+          "entryIds": []
+        }
+      }
+    },
     "2023": {
       "season": 2023,
       "seasonId": "2023",
