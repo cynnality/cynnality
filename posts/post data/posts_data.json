@@ -36,6 +36,61 @@
       "styleFile": "posts/post data/styles/basketball/explaining_01.css",
       "createdAt": "",
       "updatedAt": "2026-06-10T03:05:20.451Z"
+    },
+    "sub-saharan_africa": {
+      "postId": "sub-saharan_africa",
+      "title": "Sub-Saharan Africa",
+      "slug": "sub-saharan-africa",
+      "page": "worlds-and-regions",
+      "status": "draft",
+      "tags": [
+        "world",
+        "notes",
+        "acd"
+      ],
+      "contentType": "markdown-html",
+      "contentFile": "posts/post data/text/worlds-and-regions/sub-saharan_africa.md",
+      "styleFile": "posts/post data/styles/worlds-and-regions/sub-saharan_africa.css",
+      "createdAt": "",
+      "updatedAt": "2026-06-11T18:46:56.426Z"
+    },
+    "india_and_pakistan": {
+      "postId": "india_and_pakistan",
+      "title": "India and Pakistan",
+      "slug": "india-and-pakistan",
+      "page": "worlds-and-regions",
+      "status": "draft",
+      "tags": [
+        "world",
+        "notes",
+        "acd"
+      ],
+      "contentType": "markdown-html",
+      "contentFile": "posts/post data/text/worlds-and-regions/india_and_pakistan.md",
+      "styleFile": "posts/post data/styles/worlds-and-regions/india_and_pakistan.css",
+      "createdAt": "",
+      "updatedAt": "2026-06-11T19:01:35.272Z"
+    },
+    "hindu_nationalism_in_india": {
+      "postId": "hindu_nationalism_in_india",
+      "title": "Hindu Nationalism in India",
+      "slug": "hindu-nationalism-in-india",
+      "page": "worlds-and-regions",
+      "status": "draft",
+      "tags": [
+        "india",
+        "hindu",
+        "nationalism",
+        "history",
+        "religion",
+        "acd",
+        "notes"
+      ],
+      "contentType": "markdown-html",
+      "contentFile": "posts/post data/text/worlds-and-regions/hindu_nationalism_in_india.md",
+      "styleFile": "posts/post data/styles/worlds-and-regions/hindu_nationalism_in_india.css",
+      "createdAt": "",
+      "updatedAt": "2026-06-11T21:51:53.945Z"
     }
   }
 }

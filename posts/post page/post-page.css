@@ -18,8 +18,8 @@ body {
 .left-rail {
     display: flex;
     flex-direction: column;
-    width: 300px;
-    min-width: 300px;
+    width: 380px;
+    min-width: 400px;
 }
 
 .post-page-header,
@@ -42,6 +42,10 @@ h1,
 h2,
 p {
     margin: 0;
+}
+
+#pageTitle {
+    margin-top: 12px;
 }
 
 .page-posts-list {
@@ -116,8 +120,8 @@ p {
 
 .reader-content p {
     margin: 12px;
-    font-size: 16px;
-    line-height: 2;
+    /*! font-size: 16px; */
+    /*! line-height: 2; */
 }
 
 button,

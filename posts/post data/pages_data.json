@@ -13,6 +13,13 @@
       "slug": "general",
       "description": "misc. notes and posts",
       "styleFile": "posts/post data/page styles/general.css"
+    },
+    "worlds-and-regions": {
+      "pageId": "worlds-and-regions",
+      "title": "worlds and regions",
+      "slug": "worlds-and-regions",
+      "description": "notes on world history / geography? / etc.",
+      "styleFile": "posts/post data/page styles/worlds-and-regions.css"
     }
   }
 }

@@ -1,0 +1,51 @@
+	.intro {
+		font-family: "Chivo Mono", monospace;
+		font-size: 20px;
+		line-height: 30px;
+		font-weight: 300;
+	}
+	.history-sec {
+		margin-top: 20px;
+	}
+	.history-sec p {
+		width: 80%;
+	}
+	.bullet-list p {
+		padding: 0;
+		margin: 0;
+	}
+	.bullet-list {
+		display: flex;
+		flex-direction: column;
+		font-family: "Chivo Mono", monospace;
+		font-size: 16px;
+		font-weight: 300;
+	}
+	.bullet {
+		padding: 12px;
+		margin: 6px;
+		border: solid 1.5px #000000;
+		border-radius: 6px;
+		width: fit-content;
+
+		display: flex;
+		flex-direction: column;
+		gap: 12px
+	}
+	.bullet h3 {
+		padding: 0;
+		margin: 0;
+	}
+	.of-interest-note {
+		font-family: "Chivo Mono", monospace;
+		background: #648f0050;
+		padding: 8px;
+		border: solid 2px #000000;
+		border-radius: 4px;
+		margin-top: 8px;
+		font-size: 18px;
+		line-height: 32px;
+	}
+	.of-interest-note p {
+		padding: 12px;
+	}
