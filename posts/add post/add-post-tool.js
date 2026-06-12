@@ -38,6 +38,12 @@ const classBackgroundInput = document.getElementById("classBackgroundInput");
 const classColorInput = document.getElementById("classColorInput");
 const addClassStyleBtn = document.getElementById("addClassStyleBtn");
 
+const openMarkerPanelBtn = document.getElementById("openMarkerPanelBtn");
+const markerPanel = document.getElementById("markerPanel");
+const markerPills = document.getElementById("markerPills");
+
+let MARKERS = [];
+
 const backgroundOpacityBtn = document.getElementById("backgroundOpacityBtn");
 const backgroundOpacityPanel = document.getElementById("backgroundOpacityPanel");
 const backgroundOpacitySlider = document.getElementById("backgroundOpacitySlider");
@@ -257,6 +263,8 @@ async function loadPostForEditing(postId) {
     contentInput.value = await loadText(post.contentFile);
     styleInput.value = await loadText(post.styleFile);
 
+    loadMarkersFromCurrentCss();
+
     statusMessage.textContent = `Editing post: ${post.title}`;
     updatePreview();
 }
@@ -296,6 +304,7 @@ async function init() {
     PAGES_DATA = await loadJson(DATA_PATHS.pages, { pages: {} });
 
     populatePageSelect();
+    renderMarkerPills();
 
     const params = new URLSearchParams(window.location.search);
     const postId = params.get("postId");
@@ -446,6 +455,150 @@ function addClassStyleToCss() {
 }
 
 
+// ======================================================
+// MARKER MANAGEMENT
+// ======================================================
+function createMarkerObject() {
+    const className = cleanClassName(classNameInput.value);
+    const background = classBackgroundInput.value.trim();
+    const color = classColorInput.value.trim();
+
+    if (!className) {
+        statusMessage.textContent = "Enter a marker name first.";
+        return null;
+    }
+
+    return {
+        className,
+        background,
+        color
+    };
+}
+
+function buildMarkerStyleBlock(marker) {
+    const lines = [
+        `mark.${marker.className} {`
+    ];
+
+    if (marker.background) {
+        lines.push(`    background: ${marker.background};`);
+    }
+
+    if (marker.color) {
+        lines.push(`    color: ${marker.color};`);
+    }
+
+    lines.push(`}`);
+
+    return lines.join("\n");
+}
+
+function addMarkerStyleToCss(marker) {
+    const markerBlock = buildMarkerStyleBlock(marker);
+    const existingCss = styleInput.value.trim();
+
+    styleInput.value = existingCss
+        ? `${existingCss}\n\n${markerBlock}`
+        : markerBlock;
+}
+
+function renderMarkerPills() {
+    markerPills.innerHTML = "";
+
+    if (!MARKERS.length) {
+        markerPills.innerHTML = `<p class="helper-note">No markers yet.</p>`;
+        return;
+    }
+
+    MARKERS.forEach(marker => {
+        const button = document.createElement("button");
+        button.type = "button";
+        button.className = "marker-pill";
+        button.textContent = marker.className;
+
+        if (marker.background) {
+            button.style.background = marker.background;
+        }
+
+        if (marker.color) {
+            button.style.color = marker.color;
+        }
+
+        button.addEventListener("click", () => {
+            wrapSelectionWithMarker(marker.className);
+        });
+
+        markerPills.appendChild(button);
+    });
+}
+
+function wrapSelectionWithMarker(className) {
+    const { start, end, selectedText } = getSelectedContentText();
+
+    if (!selectedText) {
+        statusMessage.textContent = "Select text in the content editor first.";
+        return;
+    }
+
+    const wrappedText = `<mark class="${className}">${selectedText}</mark>`;
+
+    replaceSelectedContentText(wrappedText, start, end);
+    statusMessage.textContent = `Wrapped selection with marker: ${className}.`;
+}
+
+function addMarker() {
+    const marker = createMarkerObject();
+
+    if (!marker) return;
+
+    MARKERS.push(marker);
+    addMarkerStyleToCss(marker);
+    renderMarkerPills();
+
+    classNameInput.value = "";
+    classBackgroundInput.value = "";
+    classColorInput.value = "";
+    markerPanel.classList.add("hidden");
+
+    statusMessage.textContent = `Added marker: ${marker.className}.`;
+    updatePreview();
+}
+
+// ======================================================
+// loading existing markers when pulling up existing posts
+// ======================================================
+function extractCssValue(cssBlock, propertyName) {
+    const regex = new RegExp(`${propertyName}\\s*:\\s*([^;]+);`, "i");
+    const match = cssBlock.match(regex);
+
+    return match ? match[1].trim() : "";
+}
+
+function extractMarkersFromCss(cssText) {
+    const markers = [];
+    const markerRegex = /mark\.([a-zA-Z0-9_-]+)\s*\{([\s\S]*?)\}/g;
+
+    let match;
+
+    while ((match = markerRegex.exec(cssText)) !== null) {
+        const className = match[1];
+        const cssBlock = match[2];
+
+        markers.push({
+            className,
+            background: extractCssValue(cssBlock, "background"),
+            color: extractCssValue(cssBlock, "color")
+        });
+    }
+
+    return markers;
+}
+
+function loadMarkersFromCurrentCss() {
+    MARKERS = extractMarkersFromCss(styleInput.value);
+    renderMarkerPills();
+}
+
 
 // ======================================================
 // BACKGROUND OPACITY
@@ -531,7 +684,11 @@ document.querySelectorAll("[data-wrap-tag]").forEach(button => {
 
 wrapClassBtn.addEventListener("click", wrapSelectionWithClass);
 
-addClassStyleBtn.addEventListener("click", addClassStyleToCss);
+openMarkerPanelBtn.addEventListener("click", () => {
+    markerPanel.classList.toggle("hidden");
+});
+
+addClassStyleBtn.addEventListener("click", addMarker);
 
 classBackgroundInput.addEventListener("input", () => {
     updateBackgroundOpacityButton();
@@ -557,6 +714,10 @@ pageSelect.addEventListener("change", () => {
     }
 
     updatePreview();
+});
+
+styleInput.addEventListener("blur", () => {
+    loadMarkersFromCurrentCss();
 });
 
 document

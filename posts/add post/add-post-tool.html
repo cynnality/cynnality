@@ -126,28 +126,35 @@
                     </div>
                 </section>
 
-                <section class="mini-toolbar class-style-builder" id="classStyleBuilder">
-                    <p class="toolbar-label">Mark / highlight style builder</p>
+                <section class="mini-toolbar marker-builder" id="markerBuilder">
+                    <div class="marker-toolbar-header">
+                        <p class="toolbar-label">Markers</p>
+                        <button id="openMarkerPanelBtn" type="button">+ Add Marker</button>
+                    </div>
 
-                    <div class="class-style-grid">
-                        <input id="classNameInput" placeholder="mark class: hindu" />
+                    <div id="markerPills" class="marker-pills"></div>
 
-                        <div class="opacity-field">
-                            <input id="classBackgroundInput" placeholder="background: #7ea7ff" />
-                            <button id="backgroundOpacityBtn" type="button">Opacity</button>
+                    <div id="markerPanel" class="marker-panel hidden">
+                        <div class="class-style-grid">
+                            <input id="classNameInput" placeholder="marker name: hindu" />
 
-                            <div id="backgroundOpacityPanel" class="opacity-panel hidden">
-                                <label>
-                                    Background opacity
-                                    <input id="backgroundOpacitySlider" type="range" min="0" max="100" value="50" />
-                                </label>
-                                <p id="backgroundOpacityValue">50%</p>
+                            <div class="opacity-field">
+                                <input id="classBackgroundInput" placeholder="background: #7ea7ff" />
+                                <button id="backgroundOpacityBtn" type="button">Opacity</button>
+
+                                <div id="backgroundOpacityPanel" class="opacity-panel hidden">
+                                    <label>
+                                        Background opacity
+                                        <input id="backgroundOpacitySlider" type="range" min="0" max="100" value="50" />
+                                    </label>
+                                    <p id="backgroundOpacityValue">50%</p>
+                                </div>
                             </div>
+
+                            <input id="classColorInput" placeholder="text color: #111" />
+
+                            <button id="addClassStyleBtn" type="button">Add</button>
                         </div>
-
-                        <input id="classColorInput" placeholder="text color: #111" />
-
-                        <button id="addClassStyleBtn" type="button">Add Mark Style</button>
                     </div>
                 </section>
 

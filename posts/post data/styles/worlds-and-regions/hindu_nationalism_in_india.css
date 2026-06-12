@@ -1,4 +1,4 @@
-	.intro {
+.intro {
 		font-family: "Chivo Mono", monospace;
 		font-size: 20px;
 		line-height: 30px;
@@ -60,15 +60,23 @@ padding: 8px;
 border: solid 2px #000000;
 border-radius: 4px;
 }
-p.hindu {
-background: #7952FF60;
+
+mark.hindu {
+    background: #7952FF40;
+    color: #000000;
 }
-p.muslim {
-background: #F69E0050;
+
+mark.muslim {
+    background: #F69E0040;
+    color: #000000;
 }
-p.generalno {
-background: #4CE15150;
+
+mark.generalno {
+    background: #4CE15140;
+    color: #000000;
 }
-p.intrigue {
-background: #A42FC150;
+
+mark.intrigue {
+    background: #A42FC140;
+    color: #000000;
 }
