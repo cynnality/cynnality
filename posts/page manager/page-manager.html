@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>Page Manager</title>
+
+    <link rel="stylesheet" href="page-manager.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Chivo+Mono:ital,wght@0,100..900;1,100..900&family=DM+Mono:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <main class="page-manager-shell">
+        <header class="tool-header">
+            <a href="../posts index/posts-index.html">← Back to Posts Index</a>
+            <h1>Page Manager</h1>
+            <p>Create and edit post pages separately from individual posts.</p>
+        </header>
+
+        <div class="manager-layout">
+            <section class="panel pages-panel">
+                <div class="panel-header">
+                    <h2>Pages</h2>
+                    <button id="newPageBtn" type="button">New Page</button>
+                </div>
+
+                <div id="pagesList" class="pages-list"></div>
+            </section>
+
+            <section class="panel editor-panel">
+                <h2>Page Editor</h2>
+
+                <div class="form-grid">
+                    <label>
+                        Page Title
+                        <input id="pageTitleInput" placeholder="Worlds and Regions" />
+                    </label>
+
+                    <label>
+                        Page ID
+                        <input id="pageIdInput" placeholder="worlds-and-regions" />
+                    </label>
+
+                    <label>
+                        Slug
+                        <input id="pageSlugInput" placeholder="worlds-and-regions" />
+                    </label>
+
+                    <label>
+                        Style File Path
+                        <input id="pageStyleFileInput" placeholder="auto-generated" />
+                    </label>
+                </div>
+
+                <label>
+                    Page Description
+                    <textarea id="pageDescriptionInput" placeholder="What this page is for..."></textarea>
+                </label>
+
+                <label>
+                    Page CSS
+                    <textarea
+                        id="pageStyleInput"
+                        class="style-textarea"
+                        placeholder="body { background: #f5f1ea; }"></textarea>
+                </label>
+
+                <div class="actions-panel">
+                    <button id="savePageBtn" type="button">Save Page</button>
+                    <p id="statusMessage" class="status-message"></p>
+                </div>
+            </section>
+        </div>
+
+        <section class="panel preview-panel">
+            <h2>Page JSON Preview</h2>
+            <pre id="jsonPreview">{}</pre>
+        </section>
+    </main>
+
+    <script src="page-manager.js"></script>
+</body>
+</html>

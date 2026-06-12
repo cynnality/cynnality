@@ -1,11 +1,12 @@
 // ======================================================
 // ADD POST TOOL
-// Phase 1
+// Phase 1 V2
 //
-// - Generates post metadata
-// - Auto-builds content/style file paths
-// - Renders live markdown/html preview
-// - Injects custom CSS into preview 
+// - Saves post metadata
+// - Saves post markdown/html file
+// - Saves post-specific CSS file
+// - Loads existing pages from pages_data.json
+// - Does NOT save or edit page metadata/CSS
 // ======================================================
 
 
@@ -14,12 +15,6 @@
 // ======================================================
 
 const pageSelect = document.getElementById("pageSelect");
-const newPageInput = document.getElementById("newPageInput");
-
-const pageTitleInput = document.getElementById("pageTitleInput");
-const pageDescriptionInput = document.getElementById("pageDescriptionInput");
-const pageStyleFileInput = document.getElementById("pageStyleFileInput");
-const pageStyleInput = document.getElementById("pageStyleInput");
 
 const postTitleInput = document.getElementById("postTitleInput");
 const postIdInput = document.getElementById("postIdInput");
@@ -34,6 +29,19 @@ const styleFileInput = document.getElementById("styleFileInput");
 
 const contentInput = document.getElementById("contentInput");
 const styleInput = document.getElementById("styleInput");
+
+const wrapClassInput = document.getElementById("wrapClassInput");
+const wrapClassBtn = document.getElementById("wrapClassBtn");
+
+const classNameInput = document.getElementById("classNameInput");
+const classBackgroundInput = document.getElementById("classBackgroundInput");
+const classColorInput = document.getElementById("classColorInput");
+const addClassStyleBtn = document.getElementById("addClassStyleBtn");
+
+const backgroundOpacityBtn = document.getElementById("backgroundOpacityBtn");
+const backgroundOpacityPanel = document.getElementById("backgroundOpacityPanel");
+const backgroundOpacitySlider = document.getElementById("backgroundOpacitySlider");
+const backgroundOpacityValue = document.getElementById("backgroundOpacityValue");
 
 const previewStyle = document.getElementById("previewStyle");
 const postPreview = document.getElementById("postPreview");
@@ -82,12 +90,6 @@ function splitTags(value) {
 }
 
 function getSelectedPage() {
-    const newPage = newPageInput.value.trim();
-
-    if (newPage) {
-        return makeSlug(newPage);
-    }
-
     return pageSelect.value || "general";
 }
 
@@ -109,26 +111,6 @@ function buildStyleFilePath() {
     return `posts/post data/styles/${page}/${postId}.css`;
 }
 
-function buildPageStyleFilePath() {
-    const page = getSelectedPage();
-
-    if (!page) return "";
-
-    return `posts/post data/page styles/${page}.css`;
-}
-
-function buildPageObject() {
-    const pageId = getSelectedPage();
-
-    return {
-        pageId,
-        title: pageTitleInput.value.trim() || pageId,
-        slug: pageId,
-        description: pageDescriptionInput.value.trim(),
-        styleFile: pageStyleFileInput.value.trim() || buildPageStyleFilePath()
-    };
-}
-
 function populatePageSelect() {
     pageSelect.innerHTML = "";
 
@@ -141,29 +123,8 @@ function populatePageSelect() {
             pageSelect.appendChild(option);
         });
 
-    if (!pageSelect.value && PAGES_DATA.pages?.general) {
+    if (PAGES_DATA.pages?.general) {
         pageSelect.value = "general";
-    }
-}
-
-function fillPageFieldsFromSelectedPage() {
-    const pageId = pageSelect.value;
-    const page = PAGES_DATA.pages?.[pageId];
-
-    if (!page || newPageInput.value.trim()) return;
-
-    pageTitleInput.value = page.title || "";
-    pageDescriptionInput.value = page.description || "";
-    pageStyleFileInput.value = page.styleFile || buildPageStyleFilePath();
-}
-
-function updateGeneratedPageFields() {
-    if (newPageInput.value.trim()) {
-        pageTitleInput.value = newPageInput.value.trim();
-    }
-
-    if (!pageStyleFileInput.dataset.manual) {
-        pageStyleFileInput.value = buildPageStyleFilePath();
     }
 }
 
@@ -203,8 +164,6 @@ async function loadText(path) {
     }
 }
 
-// Simple markdown support for preview.
-// Real HTML typed into the content box will still render as HTML.
 function renderSimpleMarkdown(value) {
     return value
         .replace(/^### (.*$)/gim, "<h3>$1</h3>")
@@ -238,8 +197,6 @@ function updateGeneratedPostFields() {
     if (!styleFileInput.dataset.manual) {
         styleFileInput.value = buildStyleFilePath();
     }
-
-    updateGeneratedPageFields();
 }
 
 
@@ -249,6 +206,9 @@ function updateGeneratedPostFields() {
 
 function buildPostObject() {
     const now = new Date().toISOString();
+
+    const existingPost =
+        POSTS_DATA.posts?.[postIdInput.value.trim()];
 
     return {
         postId: postIdInput.value.trim(),
@@ -260,14 +220,16 @@ function buildPostObject() {
         contentType: contentTypeInput.value,
         contentFile: contentFileInput.value.trim(),
         styleFile: styleFileInput.value.trim(),
-        createdAt: "",
+        createdAt: existingPost?.createdAt || now,
         updatedAt: now
     };
 }
 
+
 // ======================================================
-// loaders
+// LOAD POST FOR EDITING
 // ======================================================
+
 async function loadPostForEditing(postId) {
     const post = POSTS_DATA.posts?.[postId];
 
@@ -286,21 +248,14 @@ async function loadPostForEditing(postId) {
     styleFileInput.value = post.styleFile || "";
 
     pageSelect.value = post.page || "general";
-    fillPageFieldsFromSelectedPage();
 
     postIdInput.dataset.manual = "true";
     slugInput.dataset.manual = "true";
     contentFileInput.dataset.manual = "true";
     styleFileInput.dataset.manual = "true";
 
-    console.log("Loading post content file:", post.contentFile);
-    console.log("Loading post style file:", post.styleFile);
-
     contentInput.value = await loadText(post.contentFile);
     styleInput.value = await loadText(post.styleFile);
-    pageStyleInput.value = await loadText(pageStyleFileInput.value);
-
-    console.log("Loaded CSS:", styleInput.value);
 
     statusMessage.textContent = `Editing post: ${post.title}`;
     updatePreview();
@@ -320,7 +275,7 @@ function updatePreview() {
         JSON.stringify(post, null, 4);
 
     previewStyle.textContent =
-        `${pageStyleInput.value}\n\n${styleInput.value}`;
+        styleInput.value;
 
     const renderedContent =
         renderSimpleMarkdown(contentInput.value);
@@ -331,12 +286,16 @@ function updatePreview() {
             : `<p>Post preview will appear here.</p>`;
 }
 
+
+// ======================================================
+// INIT
+// ======================================================
+
 async function init() {
     POSTS_DATA = await loadJson(DATA_PATHS.posts, { posts: {} });
     PAGES_DATA = await loadJson(DATA_PATHS.pages, { pages: {} });
 
     populatePageSelect();
-    fillPageFieldsFromSelectedPage();
 
     const params = new URLSearchParams(window.location.search);
     const postId = params.get("postId");
@@ -369,6 +328,172 @@ document.querySelectorAll(".panel-toggle").forEach(button => {
 
 
 // ======================================================
+// TEXT WRAPPING HELPERS
+// ======================================================
+
+function getSelectedContentText() {
+    const start = contentInput.selectionStart;
+    const end = contentInput.selectionEnd;
+
+    return {
+        start,
+        end,
+        selectedText: contentInput.value.slice(start, end)
+    };
+}
+
+function replaceSelectedContentText(newText, selectionStart, selectionEnd) {
+    const before = contentInput.value.slice(0, selectionStart);
+    const after = contentInput.value.slice(selectionEnd);
+
+    contentInput.value = `${before}${newText}${after}`;
+
+    const cursorPosition = selectionStart + newText.length;
+    contentInput.focus();
+    contentInput.setSelectionRange(cursorPosition, cursorPosition);
+
+    updatePreview();
+}
+
+function wrapSelectionWithTag(tagName) {
+    const { start, end, selectedText } = getSelectedContentText();
+
+    if (!selectedText) {
+        statusMessage.textContent = "Select text in the content editor first.";
+        return;
+    }
+
+    const wrappedText = `<${tagName}>${selectedText}</${tagName}>`;
+
+    replaceSelectedContentText(wrappedText, start, end);
+    statusMessage.textContent = `Wrapped selection with <${tagName}>.`;
+}
+
+function cleanClassName(value) {
+    return value
+        .trim()
+        .toLowerCase()
+        .replace(/[^a-z0-9\s_-]/g, "")
+        .replace(/\s+/g, "-")
+        .replace(/_+/g, "-");
+}
+
+function wrapSelectionWithClass() {
+    const className = cleanClassName(wrapClassInput.value);
+
+    if (!className) {
+        statusMessage.textContent = "Enter a mark class name first.";
+        return;
+    }
+
+    const { start, end, selectedText } = getSelectedContentText();
+
+    if (!selectedText) {
+        statusMessage.textContent = "Select text in the content editor first.";
+        return;
+    }
+
+    const wrappedText = `<mark class="${className}">${selectedText}</mark>`;
+
+    replaceSelectedContentText(wrappedText, start, end);
+    statusMessage.textContent = `Wrapped selection with mark.${className}.`;
+}
+
+
+// ======================================================
+// CLASS STYLE BUILDER
+// ======================================================
+function buildClassStyleBlock() {
+    const className = cleanClassName(classNameInput.value);
+    const background = classBackgroundInput.value.trim();
+    const color = classColorInput.value.trim();
+
+    if (!className) {
+        statusMessage.textContent = "Enter a mark class name first.";
+        return "";
+    }
+
+    const lines = [
+        `mark.${className} {`
+    ];
+
+    if (background) {
+        lines.push(`    background: ${background};`);
+    }
+
+    if (color) {
+        lines.push(`    color: ${color};`);
+    }
+
+    lines.push(`}`);
+
+    return lines.join("\n");
+}
+
+function addClassStyleToCss() {
+    const classBlock = buildClassStyleBlock();
+
+    if (!classBlock) return;
+
+    const existingCss = styleInput.value.trim();
+
+    styleInput.value = existingCss
+        ? `${existingCss}\n\n${classBlock}`
+        : classBlock;
+
+    statusMessage.textContent = "Mark style added to post CSS.";
+    updatePreview();
+}
+
+
+
+// ======================================================
+// BACKGROUND OPACITY
+// ======================================================
+function isSixDigitHex(value) {
+    return /^#[0-9a-fA-F]{6}$/.test(value.trim());
+}
+
+function applyHexOpacity(hex, opacityPercent) {
+    const cleanHex = hex.trim().replace("#", "").slice(0, 6);
+
+    if (cleanHex.length !== 6) return hex;
+
+    const opacity = Number(opacityPercent) / 100;
+
+    const alpha = Math.round(opacity * 255)
+        .toString(16)
+        .padStart(2, "0");
+
+    return `#${cleanHex}${alpha}`;
+}
+
+function updateBackgroundOpacityButton() {
+    const value = classBackgroundInput.value.trim();
+
+    backgroundOpacityBtn.disabled = !isSixDigitHex(value);
+}
+
+function applyBackgroundOpacity() {
+    const value = classBackgroundInput.value.trim();
+
+    if (!isSixDigitHex(value)) {
+        statusMessage.textContent = "Enter a 6-digit hex color first, like #7ea7ff.";
+        return;
+    }
+
+    const updatedColor = applyHexOpacity(value, backgroundOpacitySlider.value);
+
+    classBackgroundInput.value = updatedColor;
+    backgroundOpacityValue.textContent = `${backgroundOpacitySlider.value}%`;
+
+    updatePreview();
+}
+
+
+
+
+// ======================================================
 // EVENTS
 // ======================================================
 
@@ -398,18 +523,39 @@ styleFileInput.addEventListener("input", () => {
     updatePreview();
 });
 
+document.querySelectorAll("[data-wrap-tag]").forEach(button => {
+    button.addEventListener("click", () => {
+        wrapSelectionWithTag(button.dataset.wrapTag);
+    });
+});
+
+wrapClassBtn.addEventListener("click", wrapSelectionWithClass);
+
+addClassStyleBtn.addEventListener("click", addClassStyleToCss);
+
+classBackgroundInput.addEventListener("input", () => {
+    updateBackgroundOpacityButton();
+    updatePreview();
+});
+
+backgroundOpacityBtn.addEventListener("click", () => {
+    backgroundOpacityPanel.classList.toggle("hidden");
+});
+
+backgroundOpacitySlider.addEventListener("input", () => {
+    backgroundOpacityValue.textContent = `${backgroundOpacitySlider.value}%`;
+    applyBackgroundOpacity();
+});
+
 pageSelect.addEventListener("change", () => {
-    fillPageFieldsFromSelectedPage();
-    updatePreview();
-});
+    if (!contentFileInput.dataset.manual) {
+        contentFileInput.value = buildContentFilePath();
+    }
 
-newPageInput.addEventListener("input", () => {
-    updateGeneratedPageFields();
-    updatePreview();
-});
+    if (!styleFileInput.dataset.manual) {
+        styleFileInput.value = buildStyleFilePath();
+    }
 
-pageStyleFileInput.addEventListener("input", () => {
-    pageStyleFileInput.dataset.manual = "true";
     updatePreview();
 });
 
@@ -452,7 +598,7 @@ async function savePost() {
     try {
         statusMessage.textContent = "Saving post...";
 
-        await fetch("http://127.0.0.1:8787/save-post", {
+        const postResponse = await fetch("http://127.0.0.1:8787/save-post", {
             method: "POST",
             headers: {
                 "Content-Type": "application/json"
@@ -460,7 +606,11 @@ async function savePost() {
             body: JSON.stringify(post)
         });
 
-        await fetch("http://127.0.0.1:8787/save-post-content", {
+        if (!postResponse.ok) {
+            throw new Error("Post metadata save failed.");
+        }
+
+        const contentResponse = await fetch("http://127.0.0.1:8787/save-post-content", {
             method: "POST",
             headers: {
                 "Content-Type": "application/json"
@@ -470,6 +620,10 @@ async function savePost() {
                 content: contentInput.value
             })
         });
+
+        if (!contentResponse.ok) {
+            throw new Error("Post content save failed.");
+        }
 
         const styleResponse = await fetch("http://127.0.0.1:8787/save-post-style", {
             method: "POST",
@@ -482,30 +636,11 @@ async function savePost() {
             })
         });
 
-        const page = buildPageObject();
-
-        await fetch("http://127.0.0.1:8787/save-post-page", {
-            method: "POST",
-            headers: {
-                "Content-Type": "application/json"
-            },
-            body: JSON.stringify(page)
-        });
-
-        await fetch("http://127.0.0.1:8787/save-post-page-style", {
-            method: "POST",
-            headers: {
-                "Content-Type": "application/json"
-            },
-            body: JSON.stringify({
-                styleFile: page.styleFile,
-                css: pageStyleInput.value
-            })
-        });
-
         if (!styleResponse.ok) {
-            throw new Error("Style file save failed.");
+            throw new Error("Post style save failed.");
         }
+
+        POSTS_DATA.posts[post.postId] = post;
 
         statusMessage.textContent = "Post saved successfully.";
         updatePreview();

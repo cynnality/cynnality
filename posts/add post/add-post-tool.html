@@ -24,42 +24,16 @@
                 <section class="panel" id="postPagePanel">
                     <h2>add it to a page</h2>
 
-                    <div class="form-grid">
-                        <label>
-                            Existing Page
-                            <select id="pageSelect">
-                                <option value="general">General</option>
-                            </select>
-                        </label>
-
-                        <label>
-                            Or New Page Name
-                            <input id="newPageInput" placeholder="basketball" />
-                        </label>
-
-                        <label>
-                            Page Title
-                            <input id="pageTitleInput" placeholder="Basketball" />
-                        </label>
-
-                        <label>
-                            Page Description
-                            <input id="pageDescriptionInput" placeholder="Posts about basketball, WNBA, drafts, awards, etc." />
-                        </label>
-                    </div>
-
                     <label>
-                        Page Style File Path
-                        <input id="pageStyleFileInput" placeholder="auto-generated" />
+                        Existing Page
+                        <select id="pageSelect">
+                            <option value="general">General</option>
+                        </select>
                     </label>
 
-                    <label>
-                        Page CSS
-                        <textarea
-                            id="pageStyleInput"
-                            class="style-textarea"
-                            placeholder="body { background: #f5f1ea; }"></textarea>
-                    </label>
+                    <p class="helper-note">
+                        Page settings are managed separately. This tool only creates and edits posts.
+                    </p>
                 </section>
 
             </div>
@@ -71,16 +45,6 @@
                     <label>
                         Post Title
                         <input id="postTitleInput" placeholder="My First Post" />
-                    </label>
-
-                    <label>
-                        Post ID
-                        <input id="postIdInput" placeholder="my_first_post" />
-                    </label>
-
-                    <label>
-                        Slug
-                        <input id="slugInput" placeholder="my-first-post" />
                     </label>
 
                     <label>
@@ -102,16 +66,40 @@
                             <option value="markdown-html">Markdown + HTML</option>
                         </select>
                     </label>
+                </div>
+            </section>
 
-                <label>
-                    Content File Path
-                    <input id="contentFileInput" placeholder="auto-generated" />
-                </label>
+            <section class="panel collapsible-panel collapsed" id="advancedPostPanel">
+                <button
+                    class="panel-toggle"
+                    type="button"
+                    data-closed-label="View advanced post settings"
+                    data-open-label="Hide advanced post settings">
+                    View advanced post settings
+                </button>
 
-                <label>
-                    Style File Path
-                    <input id="styleFileInput" placeholder="auto-generated" />
-                </label>
+                <div class="panel-body">
+                    <div class="form-grid">
+                        <label>
+                            Post ID
+                            <input id="postIdInput" placeholder="my_first_post" />
+                        </label>
+
+                        <label>
+                            Slug
+                            <input id="slugInput" placeholder="my-first-post" />
+                        </label>
+
+                        <label>
+                            Content File Path
+                            <input id="contentFileInput" placeholder="auto-generated" />
+                        </label>
+
+                        <label>
+                            Style File Path
+                            <input id="styleFileInput" placeholder="auto-generated" />
+                        </label>
+                    </div>
                 </div>
             </section>
         </div>
@@ -121,6 +109,48 @@
 
             <div class="editor-layout">
                 <div class="editor-side">
+
+                <section class="mini-toolbar" id="textWrapToolbar">
+                    <p class="toolbar-label">Text tools</p>
+
+                    <div class="toolbar-buttons">
+                        <button type="button" data-wrap-tag="strong">Bold</button>
+                        <button type="button" data-wrap-tag="em">Italic</button>
+                        <button type="button" data-wrap-tag="u">Underline</button>
+                        <button type="button" data-wrap-tag="mark">Mark</button>
+                    </div>
+
+                    <div class="class-wrap-row">
+                        <input id="wrapClassInput" placeholder="class name: hindu, muslim, important" />
+                        <button id="wrapClassBtn" type="button">Wrap With Mark Class</button>
+                    </div>
+                </section>
+
+                <section class="mini-toolbar class-style-builder" id="classStyleBuilder">
+                    <p class="toolbar-label">Mark / highlight style builder</p>
+
+                    <div class="class-style-grid">
+                        <input id="classNameInput" placeholder="mark class: hindu" />
+
+                        <div class="opacity-field">
+                            <input id="classBackgroundInput" placeholder="background: #7ea7ff" />
+                            <button id="backgroundOpacityBtn" type="button">Opacity</button>
+
+                            <div id="backgroundOpacityPanel" class="opacity-panel hidden">
+                                <label>
+                                    Background opacity
+                                    <input id="backgroundOpacitySlider" type="range" min="0" max="100" value="50" />
+                                </label>
+                                <p id="backgroundOpacityValue">50%</p>
+                            </div>
+                        </div>
+
+                        <input id="classColorInput" placeholder="text color: #111" />
+
+                        <button id="addClassStyleBtn" type="button">Add Mark Style</button>
+                    </div>
+                </section>
+
                     <label>
                         Markdown / HTML Content
                         <textarea id="contentInput" class="large-textarea" placeholder="# My First Post&#10;&#10;<div class=&quot;callout&quot;>Styled content here.</div>"></textarea>

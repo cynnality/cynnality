@@ -181,6 +181,81 @@ button:active {
     box-shadow: none;
 }
 
+.mini-toolbar {
+    border: 2px solid #111;
+    padding: 10px;
+    margin-bottom: 14px;
+    background: #fafafa;
+}
+
+.toolbar-label {
+    margin: 0 0 8px;
+    font-size: 12px;
+    font-weight: 900;
+    text-transform: uppercase;
+}
+
+.toolbar-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-bottom: 10px;
+}
+
+.class-wrap-row {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) auto;
+    gap: 8px;
+}
+
+.class-wrap-row input {
+    margin: 0;
+}
+
+.class-style-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr)) auto;
+    gap: 8px;
+}
+
+@media (max-width: 900px) {
+    .class-style-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+.opacity-field {
+    position: relative;
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) auto;
+    gap: 6px;
+}
+
+.opacity-panel {
+    position: absolute;
+    top: 44px;
+    left: 0;
+    z-index: 5;
+    width: 240px;
+    border: 2px solid #111;
+    background: #fff;
+    padding: 10px;
+    box-shadow: 3px 3px 0 #111;
+}
+
+.opacity-panel.hidden {
+    display: none;
+}
+
+.opacity-panel label {
+    margin-bottom: 6px;
+}
+
+#backgroundOpacityValue {
+    margin: 0;
+    font-weight: 900;
+}
+
 .status-message {
     margin: 0;
     font-weight: 900;

@@ -1,0 +1,199 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 32px;
+    font-family: "Chivo Mono", monospace;
+    background: #ffffff;
+    color: #111;
+}
+
+.page-manager-shell {
+    margin: 0 auto;
+}
+
+.tool-header {
+    width: fit-content;
+    border: 3px solid #111;
+    padding: 14px;
+    margin-bottom: 24px;
+    box-shadow: 5px 5px 0 #111;
+}
+
+.tool-header a {
+    display: inline-block;
+    margin-bottom: 12px;
+    color: #111;
+    font-weight: 900;
+}
+
+.tool-header h1 {
+    margin: 0;
+    font-size: 38px;
+    text-transform: uppercase;
+}
+
+.tool-header p {
+    margin: 8px 0 0;
+}
+
+.manager-layout {
+    display: grid;
+    grid-template-columns: 320px minmax(0, 1fr);
+    gap: 20px;
+    align-items: start;
+}
+
+.panel {
+    background: #fff;
+    border: 3px solid #111;
+    padding: 16px;
+    margin-bottom: 22px;
+    box-shadow: 4px 4px 0 #111;
+}
+
+.panel h2 {
+    margin-top: 0;
+    margin-bottom: 16px;
+    padding-bottom: 8px;
+    border-bottom: 2px solid #111;
+    text-transform: uppercase;
+}
+
+.panel-header {
+    display: flex;
+    justify-content: space-between;
+    gap: 12px;
+    align-items: start;
+    border-bottom: 2px solid #111;
+    margin-bottom: 16px;
+}
+
+.panel-header h2 {
+    border-bottom: 0;
+    margin-bottom: 0;
+}
+
+.pages-list {
+    display: grid;
+    gap: 10px;
+}
+
+.page-card {
+    border: 2px solid #111;
+    padding: 12px;
+    background: #fafafa;
+    cursor: pointer;
+}
+
+.page-card:hover,
+.page-card.active {
+    background: #ffcd00;
+}
+
+.page-card-title {
+    font-weight: 900;
+    font-size: 16px;
+}
+
+.page-card-meta {
+    margin-top: 6px;
+    font-size: 12px;
+    color: #555;
+}
+
+.form-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 14px;
+}
+
+label {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    margin-bottom: 14px;
+    font-size: 13px;
+    font-weight: 900;
+    text-transform: uppercase;
+}
+
+input,
+textarea {
+    width: 100%;
+    padding: 10px 12px;
+    border: 2px solid #111;
+    background: #e2d6d6;
+    color: #111;
+    font: inherit;
+    text-transform: none;
+}
+
+textarea {
+    min-height: 100px;
+    resize: vertical;
+}
+
+.style-textarea {
+    min-height: 350px;
+    font-family: "DM Mono", monospace;
+    line-height: 1.5;
+}
+
+.actions-panel {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    flex-wrap: wrap;
+}
+
+button {
+    padding: 9px 14px;
+    border: 2px solid #111;
+    background: #4A6020;
+    color: #fff;
+    font: inherit;
+    font-weight: 900;
+    text-transform: uppercase;
+    cursor: pointer;
+    box-shadow: 3px 3px 0 #111;
+}
+
+button:hover {
+    transform: translate(1px, 1px);
+    box-shadow: 2px 2px 0 #111;
+}
+
+button:active {
+    transform: translate(3px, 3px);
+    box-shadow: none;
+}
+
+.status-message {
+    margin: 0;
+    font-weight: 900;
+}
+
+#jsonPreview {
+    margin: 0;
+    padding: 18px;
+    background: #111;
+    color: #f4f0e8;
+    overflow: auto;
+    max-height: 500px;
+    white-space: pre-wrap;
+    font-family: "DM Mono", monospace;
+    font-size: 13px;
+}
+
+@media (max-width: 900px) {
+    .manager-layout {
+        grid-template-columns: 1fr;
+    }
+
+    .form-grid {
+        grid-template-columns: 1fr;
+    }
+}
