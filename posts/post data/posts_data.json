@@ -91,6 +91,23 @@
       "styleFile": "posts/post data/styles/worlds-and-regions/hindu_nationalism_in_india.css",
       "createdAt": "2026-06-12T20:29:20.445Z",
       "updatedAt": "2026-06-12T20:45:20.649Z"
+    },
+    "yugoslavia": {
+      "postId": "yugoslavia",
+      "title": "Yugoslavia",
+      "slug": "yugoslavia",
+      "page": "general",
+      "status": "draft",
+      "tags": [
+        "Yugoslavia",
+        "history",
+        "acd"
+      ],
+      "contentType": "markdown-html",
+      "contentFile": "posts/post data/text/general/yugoslavia.md",
+      "styleFile": "posts/post data/styles/general/yugoslavia.css",
+      "createdAt": "2026-06-13T00:10:34.227Z",
+      "updatedAt": "2026-06-13T00:10:34.227Z"
     }
   }
 }

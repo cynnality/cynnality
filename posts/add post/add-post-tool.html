@@ -30,10 +30,6 @@
                             <option value="general">General</option>
                         </select>
                     </label>
-
-                    <p class="helper-note">
-                        Page settings are managed separately. This tool only creates and edits posts.
-                    </p>
                 </section>
 
             </div>
@@ -104,12 +100,6 @@
             </section>
         </div>
 
-        <section class="panel editor-panel">
-            <h2>Post Editor</h2>
-
-            <div class="editor-layout">
-                <div class="editor-side">
-
                 <section class="mini-toolbar" id="textWrapToolbar">
                     <p class="toolbar-label">Text tools</p>
 
@@ -122,7 +112,7 @@
 
                     <div class="class-wrap-row">
                         <input id="wrapClassInput" placeholder="class name: hindu, muslim, important" />
-                        <button id="wrapClassBtn" type="button">Wrap With Mark Class</button>
+                        <button id="wrapClassBtn" type="button">+ marker to text</button>
                     </div>
                 </section>
 
@@ -158,8 +148,15 @@
                     </div>
                 </section>
 
+        <section class="panel editor-panel">
+            <h2>Post Editor</h2>
+
+            <div class="editor-layout">
+                <div class="editor-side">
+
+
+
                     <label>
-                        Markdown / HTML Content
                         <textarea id="contentInput" class="large-textarea" placeholder="# My First Post&#10;&#10;<div class=&quot;callout&quot;>Styled content here.</div>"></textarea>
                     </label>
 
@@ -170,7 +167,6 @@
                 </div>
 
                 <section class="preview-side">
-                    <h3>Live Preview</h3>
                     <style id="previewStyle"></style>
                     <div id="postPreview" class="post-preview"></div>
                 </section>

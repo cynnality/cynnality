@@ -30,13 +30,12 @@ body {
     border: 3px solid #111;
     padding: 10px;
     margin-bottom: 24px;
-    box-shadow: 5px 5px 0 #111;
 }
 
 .eyebrow {
     margin: 0 0 8px;
     font-size: 12px;
-    font-weight: 900;
+    font-weight: 400;
     text-transform: uppercase;
     letter-spacing: 0.12em;
 }
@@ -52,7 +51,6 @@ h1 {
     border: 3px solid #111;
     padding: 16px;
     margin-bottom: 22px;
-    box-shadow: 4px 4px 0 #111;
 }
 
 .panel h2 {
@@ -93,7 +91,7 @@ label {
     gap: 6px;
     margin-bottom: 14px;
     font-size: 13px;
-    font-weight: 900;
+    font-weight: 600;
     text-transform: uppercase;
 }
 
@@ -127,7 +125,7 @@ textarea {
 
 .editor-layout {
     display: grid;
-    grid-template-columns: minmax(0, 1fr) minmax(450px, 1fr);
+    grid-template-columns: .75fr 1fr;
     gap: 18px;
     align-items: start;
 }
@@ -160,15 +158,15 @@ textarea {
 }
 
 button {
-    padding: 9px 14px;
+    padding: 6px 8px;
     border: 2px solid #111;
-    background: #4A6020;
-    color: #fff;
+    border-radius: 4px;
+    background: #f98aff81;
+    color: #000000;
     font: inherit;
-    font-weight: 900;
+    font-weight: 400;
     text-transform: uppercase;
     cursor: pointer;
-    box-shadow: 3px 3px 0 #111;
 }
 
 button:hover {
@@ -191,7 +189,7 @@ button:active {
 .toolbar-label {
     margin: 0 0 8px;
     font-size: 12px;
-    font-weight: 900;
+    font-weight: 600;
     text-transform: uppercase;
 }
 
@@ -240,7 +238,6 @@ button:active {
     border: 2px solid #111;
     background: #fff;
     padding: 10px;
-    box-shadow: 3px 3px 0 #111;
 }
 
 .opacity-panel.hidden {
@@ -253,12 +250,12 @@ button:active {
 
 #backgroundOpacityValue {
     margin: 0;
-    font-weight: 900;
+    font-weight: 600;
 }
 
 .status-message {
     margin: 0;
-    font-weight: 900;
+    font-weight: 600;
 }
 
 .collapsible-panel {
@@ -272,12 +269,12 @@ button:active {
 
 .panel-toggle {
     width: 100%;
-    padding: 14px 16px;
+    padding: 8px 10px;
     border: 0;
-    background: #111;
-    color: #fff;
+    background: #ffffff;
+    color: #ff0000;
     text-align: left;
-    box-shadow: none; 
+    font-weight: 400;
 }
 
 .panel-body {
@@ -315,9 +312,8 @@ button:active {
     padding: 6px 10px;
     background: #fff;
     color: #111;
-    font-weight: 900;
+    font-weight: 400;
     cursor: pointer;
-    box-shadow: 2px 2px 0 #111;
 }
 
 .marker-pill:hover {
