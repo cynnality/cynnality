@@ -148,8 +148,150 @@
                     </div>
                 </section>
 
+                <section class="panel" id="boxBuilderPanel">
+                    <h2>Box Builder</h2>
+
+                    <div class="form-grid">
+                        <label>
+                            Class Name
+                            <input id="boxClassInput" placeholder="conflict-card" />
+                        </label>
+
+                        <label>
+                            Tag
+                            <select id="boxTagInput">
+                                <option value="div">div</option>
+                                <option value="section">section</option>
+                                <option value="article">article</option>
+                                <option value="aside">aside</option>
+                            </select>
+                        </label>
+
+                        <label>
+                            Background
+                            <input id="boxBackgroundInput" placeholder="#f4ead2" />
+                        </label>
+
+                        <label>
+                            Text Color
+                            <input id="boxColorInput" placeholder="#111" />
+                        </label>
+
+                        <label>
+                            Border
+                            <input id="boxBorderInput" placeholder="2px solid #111" />
+                        </label>
+
+                        <label>
+                            Border Radius
+                            <input id="boxBorderRadiusInput" placeholder="8px" />
+                        </label>
+
+                        <label>
+                            Padding
+                            <input id="boxPaddingInput" placeholder="12px" />
+                        </label>
+
+                        <label>
+                            Margin
+                            <input id="boxMarginInput" placeholder="12px 0" />
+                        </label>
+
+                        <label>
+                            Width
+                            <input id="boxWidthInput" placeholder="auto" />
+                        </label>
+
+                        <label>
+                            Min Height
+                            <input id="boxMinHeightInput" placeholder="120px" />
+                        </label>
+
+                        <label>
+                            Display
+                            <input id="boxDisplayInput" placeholder="block" />
+                        </label>
+
+                        <label>
+                            Gap
+                            <input id="boxGapInput" placeholder="12px" />
+                        </label>
+                    </div>
+
+                    <button id="createBoxBtn" type="button">Create Box</button>
+                </section>
+
         <section class="panel editor-panel">
             <h2>Post Editor</h2>
+
+        <section class="panel" id="selectedElementPanel">
+            <h2>Selected Element</h2>
+
+            <div id="selectedElementInfo">
+
+                <p>
+                    <strong>Tag:</strong>
+                    <span id="selectedTag">-</span>
+                </p>
+
+                <p>
+                    <strong>Class:</strong>
+                    <span id="selectedClass">-</span>
+                </p>
+
+                <p>
+                    <strong>ID:</strong>
+                    <span id="selectedId">-</span>
+                </p>
+
+                <p>
+                    <strong>Text:</strong>
+                    <span id="selectedText">-</span>
+                </p>
+
+                <div class="selected-css-box">
+                    <h3>Matching CSS</h3>
+                    <pre id="selectedCssBlock">No CSS block found yet.</pre>
+                </div>
+
+                <div class="style-inspector-fields">
+                    <label>
+                        Background
+                        <input id="inspectBackgroundInput" />
+                    </label>
+
+                    <label>
+                        Color
+                        <input id="inspectColorInput" />
+                    </label>
+
+                    <label>
+                        Border
+                        <input id="inspectBorderInput" />
+                    </label>
+
+                    <label>
+                        Border Radius
+                        <input id="inspectBorderRadiusInput" />
+                    </label>
+
+                    <label>
+                        Padding
+                        <input id="inspectPaddingInput" />
+                    </label>
+
+                    <label>
+                        Margin
+                        <input id="inspectMarginInput" />
+                    </label>
+
+                    <button id="applyInspectorStylesBtn" type="button">
+                        Apply Style Changes
+                    </button>
+                </div>
+
+            </div>
+        </section>
 
             <div class="editor-layout">
                 <div class="editor-side">
@@ -165,6 +307,10 @@
                         <textarea id="styleInput" class="style-textarea" placeholder=".callout {&#10;    border: 2px solid #111;&#10;    padding: 12px;&#10;}"></textarea>
                     </label>
                 </div>
+
+                <button id="togglePreviewGridBtn" type="button">
+                    Toggle Grid
+                </button>
 
                 <section class="preview-side">
                     <style id="previewStyle"></style>
@@ -194,6 +340,7 @@
         </section>
     </main>
 
+    <script src="../shared/visual-builder-core.js"></script>
     <script src="add-post-tool.js"></script>
 </body>
 </html>

@@ -331,6 +331,29 @@ button:active {
     display: none;
 }
 
+/*
+====================
+post system UPGRADE
+====================
+*/
+.builder-selected-element {
+    outline: 3px solid #4A6020;
+    outline-offset: 3px;
+}
+
+#selectedElementText {
+    font-weight: 900;
+}
+
+.post-preview.show-builder-grid {
+    background-image:
+        linear-gradient(to right, rgba(0,0,0,.12) 1px, transparent 1px),
+        linear-gradient(to bottom, rgba(0,0,0,.12) 1px, transparent 1px);
+    background-size: 24px 24px;
+}
+
+
+
 @media (max-width: 1000px) {
     .editor-layout {
         grid-template-columns: 1fr;

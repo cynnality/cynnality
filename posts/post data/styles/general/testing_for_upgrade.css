@@ -1,0 +1,13 @@
+mark.with-butter {
+    background: #FFE499;
+    color: #000000;
+}
+
+.poptart {
+    background: #009DE0;
+    color: #000000;
+    border: 2px solid #000000;
+    border-radius: 6px;
+    padding: 12px;
+    margin: 12px;
+}

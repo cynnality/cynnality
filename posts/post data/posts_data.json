@@ -108,6 +108,24 @@
       "styleFile": "posts/post data/styles/general/yugoslavia.css",
       "createdAt": "2026-06-13T00:10:34.227Z",
       "updatedAt": "2026-06-13T00:10:34.227Z"
+    },
+    "testing_for_upgrade": {
+      "postId": "testing_for_upgrade",
+      "title": "testing for upGRAdE",
+      "slug": "testing-for-upgrade",
+      "page": "general",
+      "status": "draft",
+      "tags": [
+        "test",
+        "delete",
+        "remove",
+        "hell yea"
+      ],
+      "contentType": "markdown-html",
+      "contentFile": "posts/post data/text/general/testing_for_upgrade.md",
+      "styleFile": "posts/post data/styles/general/testing_for_upgrade.css",
+      "createdAt": "2026-06-14T02:34:11.531Z",
+      "updatedAt": "2026-06-14T02:39:59.660Z"
     }
   }
 }

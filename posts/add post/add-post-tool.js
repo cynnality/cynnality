@@ -58,6 +58,60 @@ const savePostBtn = document.getElementById("savePostBtn");
 const statusMessage = document.getElementById("statusMessage");
 const jsonPreview = document.getElementById("jsonPreview");
 
+
+// ======================================================
+// post system UPGRADE
+// box builder
+// =============
+// with visual-builder-core.js
+// ======================================================
+const boxClassInput = document.getElementById("boxClassInput");
+const boxTagInput = document.getElementById("boxTagInput");
+const boxBackgroundInput = document.getElementById("boxBackgroundInput");
+const boxColorInput = document.getElementById("boxColorInput");
+const boxBorderInput = document.getElementById("boxBorderInput");
+const boxBorderRadiusInput = document.getElementById("boxBorderRadiusInput");
+const boxPaddingInput = document.getElementById("boxPaddingInput");
+const boxMarginInput = document.getElementById("boxMarginInput");
+const boxWidthInput = document.getElementById("boxWidthInput");
+const boxMinHeightInput = document.getElementById("boxMinHeightInput");
+const boxDisplayInput = document.getElementById("boxDisplayInput");
+const boxGapInput = document.getElementById("boxGapInput");
+const createBoxBtn = document.getElementById("createBoxBtn");
+
+
+let selectedPreviewElement = null;
+
+const selectedTag =
+    document.getElementById("selectedTag");
+
+const selectedClass =
+    document.getElementById("selectedClass");
+
+const selectedId =
+    document.getElementById("selectedId");
+
+const selectedText =
+    document.getElementById("selectedText");
+
+const selectedCssBlock =
+    document.getElementById("selectedCssBlock");
+
+const inspectBackgroundInput = document.getElementById("inspectBackgroundInput");
+const inspectColorInput = document.getElementById("inspectColorInput");
+const inspectBorderInput = document.getElementById("inspectBorderInput");
+const inspectBorderRadiusInput = document.getElementById("inspectBorderRadiusInput");
+const inspectPaddingInput = document.getElementById("inspectPaddingInput");
+const inspectMarginInput = document.getElementById("inspectMarginInput");
+const applyInspectorStylesBtn = document.getElementById("applyInspectorStylesBtn");
+
+let selectedCssSelector = "";
+
+const togglePreviewGridBtn =
+    document.getElementById("togglePreviewGridBtn");
+
+// =updrage-indication-end=====================================================
+
 const DATA_PATHS = {
     posts: "../post data/posts_data.json",
     pages: "../post data/pages_data.json"
@@ -292,6 +346,8 @@ function updatePreview() {
         renderedContent
             ? `<div class="post-preview-content">${renderedContent}</div>`
             : `<p>Post preview will appear here.</p>`;
+
+    bindPreviewSelection();
 }
 
 
@@ -337,164 +393,66 @@ document.querySelectorAll(".panel-toggle").forEach(button => {
 
 
 // ======================================================
-// TEXT WRAPPING HELPERS
+// MARKER MANAGEMENT
 // ======================================================
 
-function getSelectedContentText() {
-    const start = contentInput.selectionStart;
-    const end = contentInput.selectionEnd;
-
-    return {
-        start,
-        end,
-        selectedText: contentInput.value.slice(start, end)
-    };
-}
-
-function replaceSelectedContentText(newText, selectionStart, selectionEnd) {
-    const before = contentInput.value.slice(0, selectionStart);
-    const after = contentInput.value.slice(selectionEnd);
-
-    contentInput.value = `${before}${newText}${after}`;
-
-    const cursorPosition = selectionStart + newText.length;
-    contentInput.focus();
-    contentInput.setSelectionRange(cursorPosition, cursorPosition);
-
-    updatePreview();
-}
-
 function wrapSelectionWithTag(tagName) {
-    const { start, end, selectedText } = getSelectedContentText();
+    const result = VisualBuilder.wrapSelectionWithTag(contentInput, tagName);
 
-    if (!selectedText) {
-        statusMessage.textContent = "Select text in the content editor first.";
-        return;
+    statusMessage.textContent = result.message;
+
+    if (result.ok) {
+        updatePreview();
     }
-
-    const wrappedText = `<${tagName}>${selectedText}</${tagName}>`;
-
-    replaceSelectedContentText(wrappedText, start, end);
-    statusMessage.textContent = `Wrapped selection with <${tagName}>.`;
-}
-
-function cleanClassName(value) {
-    return value
-        .trim()
-        .toLowerCase()
-        .replace(/[^a-z0-9\s_-]/g, "")
-        .replace(/\s+/g, "-")
-        .replace(/_+/g, "-");
 }
 
 function wrapSelectionWithClass() {
-    const className = cleanClassName(wrapClassInput.value);
+    const result = VisualBuilder.wrapSelectionWithClass(
+        contentInput,
+        wrapClassInput.value,
+        "mark"
+    );
 
-    if (!className) {
-        statusMessage.textContent = "Enter a mark class name first.";
-        return;
+    statusMessage.textContent = result.message;
+
+    if (result.ok) {
+        updatePreview();
     }
-
-    const { start, end, selectedText } = getSelectedContentText();
-
-    if (!selectedText) {
-        statusMessage.textContent = "Select text in the content editor first.";
-        return;
-    }
-
-    const wrappedText = `<mark class="${className}">${selectedText}</mark>`;
-
-    replaceSelectedContentText(wrappedText, start, end);
-    statusMessage.textContent = `Wrapped selection with mark.${className}.`;
 }
 
+function wrapSelectionWithMarker(className) {
+    const result = VisualBuilder.wrapSelectionWithClass(
+        contentInput,
+        className,
+        "mark"
+    );
 
-// ======================================================
-// CLASS STYLE BUILDER
-// ======================================================
-function buildClassStyleBlock() {
-    const className = cleanClassName(classNameInput.value);
-    const background = classBackgroundInput.value.trim();
-    const color = classColorInput.value.trim();
+    statusMessage.textContent = result.ok
+        ? `Wrapped selection with marker: ${className}.`
+        : result.message;
 
-    if (!className) {
-        statusMessage.textContent = "Enter a mark class name first.";
-        return "";
+    if (result.ok) {
+        updatePreview();
     }
-
-    const lines = [
-        `mark.${className} {`
-    ];
-
-    if (background) {
-        lines.push(`    background: ${background};`);
-    }
-
-    if (color) {
-        lines.push(`    color: ${color};`);
-    }
-
-    lines.push(`}`);
-
-    return lines.join("\n");
 }
 
-function addClassStyleToCss() {
-    const classBlock = buildClassStyleBlock();
-
-    if (!classBlock) return;
-
-    const existingCss = styleInput.value.trim();
-
-    styleInput.value = existingCss
-        ? `${existingCss}\n\n${classBlock}`
-        : classBlock;
-
-    statusMessage.textContent = "Mark style added to post CSS.";
-    updatePreview();
-}
-
-
-// ======================================================
-// MARKER MANAGEMENT
-// ======================================================
 function createMarkerObject() {
-    const className = cleanClassName(classNameInput.value);
-    const background = classBackgroundInput.value.trim();
-    const color = classColorInput.value.trim();
+    const marker = VisualBuilder.createMarkerObject({
+        className: classNameInput.value,
+        background: classBackgroundInput.value,
+        color: classColorInput.value
+    });
 
-    if (!className) {
+    if (!marker) {
         statusMessage.textContent = "Enter a marker name first.";
         return null;
     }
 
-    return {
-        className,
-        background,
-        color
-    };
-}
-
-function buildMarkerStyleBlock(marker) {
-    const lines = [
-        `mark.${marker.className} {`
-    ];
-
-    if (marker.background) {
-        lines.push(`    background: ${marker.background};`);
-    }
-
-    if (marker.color) {
-        lines.push(`    color: ${marker.color};`);
-    }
-
-    lines.push(`}`);
-
-    return lines.join("\n");
+    return marker;
 }
 
 function addMarkerStyleToCss(marker) {
-    const markerBlock = buildMarkerStyleBlock(marker);
+    const markerBlock = VisualBuilder.buildMarkerStyleBlock(marker);
     const existingCss = styleInput.value.trim();
 
     styleInput.value = existingCss
@@ -532,20 +490,6 @@ function renderMarkerPills() {
     });
 }
 
-function wrapSelectionWithMarker(className) {
-    const { start, end, selectedText } = getSelectedContentText();
-
-    if (!selectedText) {
-        statusMessage.textContent = "Select text in the content editor first.";
-        return;
-    }
-
-    const wrappedText = `<mark class="${className}">${selectedText}</mark>`;
-
-    replaceSelectedContentText(wrappedText, start, end);
-    statusMessage.textContent = `Wrapped selection with marker: ${className}.`;
-}
-
 function addMarker() {
     const marker = createMarkerObject();
 
@@ -567,75 +511,35 @@ function addMarker() {
 // ======================================================
 // loading existing markers when pulling up existing posts
 // ======================================================
-function extractCssValue(cssBlock, propertyName) {
-    const regex = new RegExp(`${propertyName}\\s*:\\s*([^;]+);`, "i");
-    const match = cssBlock.match(regex);
-
-    return match ? match[1].trim() : "";
-}
-
-function extractMarkersFromCss(cssText) {
-    const markers = [];
-    const markerRegex = /mark\.([a-zA-Z0-9_-]+)\s*\{([\s\S]*?)\}/g;
-
-    let match;
-
-    while ((match = markerRegex.exec(cssText)) !== null) {
-        const className = match[1];
-        const cssBlock = match[2];
-
-        markers.push({
-            className,
-            background: extractCssValue(cssBlock, "background"),
-            color: extractCssValue(cssBlock, "color")
-        });
-    }
-
-    return markers;
-}
 
 function loadMarkersFromCurrentCss() {
-    MARKERS = extractMarkersFromCss(styleInput.value);
+    MARKERS = VisualBuilder.extractMarkersFromCss(styleInput.value);
     renderMarkerPills();
 }
-
 
 // ======================================================
 // BACKGROUND OPACITY
 // ======================================================
-function isSixDigitHex(value) {
-    return /^#[0-9a-fA-F]{6}$/.test(value.trim());
-}
-
-function applyHexOpacity(hex, opacityPercent) {
-    const cleanHex = hex.trim().replace("#", "").slice(0, 6);
-
-    if (cleanHex.length !== 6) return hex;
-
-    const opacity = Number(opacityPercent) / 100;
-
-    const alpha = Math.round(opacity * 255)
-        .toString(16)
-        .padStart(2, "0");
-
-    return `#${cleanHex}${alpha}`;
-}
 
 function updateBackgroundOpacityButton() {
     const value = classBackgroundInput.value.trim();
 
-    backgroundOpacityBtn.disabled = !isSixDigitHex(value);
+    backgroundOpacityBtn.disabled =
+        !VisualBuilder.isSixDigitHex(value);
 }
 
 function applyBackgroundOpacity() {
     const value = classBackgroundInput.value.trim();
 
-    if (!isSixDigitHex(value)) {
+    if (!VisualBuilder.isSixDigitHex(value)) {
         statusMessage.textContent = "Enter a 6-digit hex color first, like #7ea7ff.";
         return;
     }
 
-    const updatedColor = applyHexOpacity(value, backgroundOpacitySlider.value);
+    const updatedColor = VisualBuilder.applyHexOpacity(
+        value,
+        backgroundOpacitySlider.value
+    );
 
     classBackgroundInput.value = updatedColor;
     backgroundOpacityValue.textContent = `${backgroundOpacitySlider.value}%`;
@@ -643,7 +547,240 @@ function applyBackgroundOpacity() {
     updatePreview();
 }
 
+// ======================================================
+// post system UPGRADE
+// ====================
+// box builder
+// ======================================================
+function appendGeneratedCode({ html, css }) {
+    const existingContent = contentInput.value.trim();
+    const existingCss = styleInput.value.trim();
 
+    contentInput.value = existingContent
+        ? `${existingContent}\n\n${html}`
+        : html;
+
+    styleInput.value = existingCss
+        ? `${existingCss}\n\n${css}`
+        : css;
+
+    updatePreview();
+}
+
+function createBoxFromInputs() {
+    const result = VisualBuilder.createBox({
+        tag: boxTagInput.value,
+        className: boxClassInput.value,
+        background: boxBackgroundInput.value.trim(),
+        color: boxColorInput.value.trim(),
+        border: boxBorderInput.value.trim(),
+        borderRadius: boxBorderRadiusInput.value.trim(),
+        padding: boxPaddingInput.value.trim(),
+        margin: boxMarginInput.value.trim(),
+        width: boxWidthInput.value.trim(),
+        minHeight: boxMinHeightInput.value.trim(),
+        display: boxDisplayInput.value.trim(),
+        gap: boxGapInput.value.trim()
+    });
+
+    statusMessage.textContent = result.message;
+
+    if (!result.ok) return;
+
+    appendGeneratedCode({
+        html: result.html,
+        css: result.css
+    });
+
+    boxClassInput.value = "";
+}
+
+// ======================================================
+// post system UPGRADE
+// ====================
+// SELECTED ELEMENT
+// ======================================================
+function getElementLabel(element) {
+    const tag = element.tagName.toLowerCase();
+    const classes = [...element.classList]
+        .filter(className => className !== "builder-selected-element")
+        .join(".");
+
+    return classes
+        ? `${tag}.${classes}`
+        : tag;
+}
+// SELECTION CLICK HANDLER
+function bindPreviewSelection() {
+    postPreview.querySelectorAll("*").forEach(element => {
+        element.addEventListener("click", event => {
+            event.stopPropagation();
+
+            if (selectedPreviewElement) {
+                selectedPreviewElement.classList.remove("builder-selected-element");
+            }
+
+            selectedPreviewElement = element;
+            selectedPreviewElement.classList.add("builder-selected-element");
+
+            selectedTag.textContent =
+                element.tagName.toLowerCase();
+
+            selectedClass.textContent =
+                [...element.classList]
+                    .filter(className => className !== "builder-selected-element")
+                    .join(" ") || "(none)";
+
+            selectedId.textContent =
+                element.id || "(none)";
+
+            selectedText.textContent =
+                element.textContent.trim().slice(0, 80) || "(empty)";
+
+            const primarySelector = getPrimaryClassSelector(element);
+            const cssBlock = findCssBlockForSelector(styleInput.value, primarySelector);
+
+            selectedCssBlock.textContent =
+                cssBlock || "No matching class CSS block found.";
+
+            selectedCssSelector = primarySelector;
+
+            if (cssBlock) {
+                populateStyleInspector(cssBlock);
+            } else {
+                clearStyleInspector();
+            }
+        });
+    });
+}
+
+// ======================================================
+// post system UPGRADE
+// ====================
+// CLASS STYLE BUILDER
+// ======================================================
+function findCssBlockForSelector(cssText, selector) {
+    if (!selector) return "";
+
+    const escapedSelector = selector.replace(".", "\\.");
+    const regex = new RegExp(`${escapedSelector}\\s*\\{([\\s\\S]*?)\\}`, "m");
+    const match = cssText.match(regex);
+
+    return match
+        ? `${selector} {${match[1]}}`
+        : "";
+}
+
+function getPrimaryClassSelector(element) {
+    const className = [...element.classList]
+        .find(className => className !== "builder-selected-element");
+
+    return className
+        ? `.${className}`
+        : "";
+}
+
+// ======================================================
+// post system UPGRADE
+// ====================
+// INSPECTOR
+// ======================================================
+function getCssPropertyValue(cssBlock, propertyName) {
+    const regex = new RegExp(`${propertyName}\\s*:\\s*([^;]+);`, "i");
+    const match = cssBlock.match(regex);
+
+    return match ? match[1].trim() : "";
+}
+
+function populateStyleInspector(cssBlock) {
+    inspectBackgroundInput.value =
+        getCssPropertyValue(cssBlock, "background");
+
+    inspectColorInput.value =
+        getCssPropertyValue(cssBlock, "color");
+
+    inspectBorderInput.value =
+        getCssPropertyValue(cssBlock, "border");
+
+    inspectBorderRadiusInput.value =
+        getCssPropertyValue(cssBlock, "border-radius");
+
+    inspectPaddingInput.value =
+        getCssPropertyValue(cssBlock, "padding");
+
+    inspectMarginInput.value =
+        getCssPropertyValue(cssBlock, "margin");
+}
+
+function clearStyleInspector() {
+    inspectBackgroundInput.value = "";
+    inspectColorInput.value = "";
+    inspectBorderInput.value = "";
+    inspectBorderRadiusInput.value = "";
+    inspectPaddingInput.value = "";
+    inspectMarginInput.value = "";
+}
+
+// ======================================================
+// post system UPGRADE
+// ====================
+// INSPECTOR STYLE APPLICATION
+// ======================================================
+function replaceCssBlock(cssText, selector, newBlock) {
+    if (!selector) return cssText;
+
+    const escapedSelector = selector.replace(".", "\\.");
+    const regex = new RegExp(`${escapedSelector}\\s*\\{[\\s\\S]*?\\}`, "m");
+
+    if (regex.test(cssText)) {
+        return cssText.replace(regex, newBlock);
+    }
+
+    return cssText.trim()
+        ? `${cssText.trim()}\n\n${newBlock}`
+        : newBlock;
+}
+
+function applyInspectorStyles() {
+    if (!selectedCssSelector) {
+        statusMessage.textContent = "Select an element first.";
+        return;
+    }
+
+    const newCssBlock = VisualBuilder.buildCssBlock({
+        selector: selectedCssSelector,
+        styles: {
+            background: inspectBackgroundInput.value.trim(),
+            color: inspectColorInput.value.trim(),
+            border: inspectBorderInput.value.trim(),
+            "border-radius": inspectBorderRadiusInput.value.trim(),
+            padding: inspectPaddingInput.value.trim(),
+            margin: inspectMarginInput.value.trim()
+        }
+    });
+
+    styleInput.value = replaceCssBlock(
+        styleInput.value,
+        selectedCssSelector,
+        newCssBlock
+    );
+
+    statusMessage.textContent =
+        `Updated styles for ${selectedCssSelector}.`;
+
+    updatePreview();
+}
+
+applyInspectorStylesBtn.addEventListener("click", applyInspectorStyles);
+
+// ======================================================
+// post system UPGRADE
+// ====================
+// grid
+// ======================================================
+togglePreviewGridBtn.addEventListener("click", () => {
+    postPreview.classList.toggle("show-builder-grid");
+});
 
 
 // ======================================================
@@ -719,6 +856,13 @@ pageSelect.addEventListener("change", () => {
 styleInput.addEventListener("blur", () => {
     loadMarkersFromCurrentCss();
 });
+
+// ======================================================
+// post system UPGRADE
+// ====================
+// box builder
+// ======================================================
+createBoxBtn.addEventListener("click", createBoxFromInputs);
 
 document
     .querySelectorAll("input, select, textarea")
