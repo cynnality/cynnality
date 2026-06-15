@@ -14,94 +14,60 @@
 </head>
 
 <body>
-    <main class="tool-shell">
-        <div class="helpers">
-            <div class="vert-bar">
-                <header class="tool-header">
-                    <h1>Add a Post</h1>
-                </header>
 
-                <section class="panel" id="postPagePanel">
-                    <h2>add it to a page</h2>
+    <main class="builder-shell">
 
-                    <label>
-                        Existing Page
-                        <select id="pageSelect">
-                            <option value="general">General</option>
-                        </select>
-                    </label>
-                </section>
+        <header class="builder-topbar">
+            <div class="brand-block">
+                <p class="eyebrow">Post System</p>
+                <h1>Visual Builder</h1>
+            </div>
+
+            <div class="topbar-fields">
+                <label>
+                    Page
+                    <select id="pageSelect">
+                        <option value="general">General</option>
+                    </select>
+                </label>
+
+                <label class="title-field">
+                    Post Title
+                    <input id="postTitleInput" placeholder="India and Pakistan" />
+                </label>
+
+                <label>
+                    Status
+                    <select id="statusInput">
+                        <option value="draft">Draft</option>
+                        <option value="published">Published</option>
+                    </select>
+                </label>
+
+                <button id="toggleWriteModeBtn" type="button">
+                    Write Mode
+                </button>
 
             </div>
 
-            <section class="panel" id="postSetupPanel">
-                <h2>Post Setup</h2>
+            <div class="topbar-actions">
+                <button id="generatePreviewBtn" type="button">Refresh</button>
+                <button id="savePostBtn" type="button">Save</button>
+            </div>
+        </header>
 
-                <div class="form-grid">
-                    <label>
-                        Post Title
-                        <input id="postTitleInput" placeholder="My First Post" />
-                    </label>
+        <p id="statusMessage" class="status-message"></p>
 
-                    <label>
-                        Status
-                        <select id="statusInput">
-                            <option value="draft">Draft</option>
-                            <option value="published">Published</option>
-                        </select>
-                    </label>
+        <section class="builder-workspace">
 
-                    <label>
-                        Tags
-                        <input id="tagsInput" placeholder="personal, blog, notes" />
-                    </label>
+            <!-- LEFT TOOLBOX -->
+            <aside class="builder-sidebar toolbox-panel">
+                <h2>Toolbox</h2>
 
-                    <label>
-                        Content Type
-                        <select id="contentTypeInput">
-                            <option value="markdown-html">Markdown + HTML</option>
-                        </select>
-                    </label>
-                </div>
-            </section>
+                <details open class="tool-section">
+                    <summary>Text Tools</summary>
 
-            <section class="panel collapsible-panel collapsed" id="advancedPostPanel">
-                <button
-                    class="panel-toggle"
-                    type="button"
-                    data-closed-label="View advanced post settings"
-                    data-open-label="Hide advanced post settings">
-                    View advanced post settings
-                </button>
-
-                <div class="panel-body">
-                    <div class="form-grid">
-                        <label>
-                            Post ID
-                            <input id="postIdInput" placeholder="my_first_post" />
-                        </label>
-
-                        <label>
-                            Slug
-                            <input id="slugInput" placeholder="my-first-post" />
-                        </label>
-
-                        <label>
-                            Content File Path
-                            <input id="contentFileInput" placeholder="auto-generated" />
-                        </label>
-
-                        <label>
-                            Style File Path
-                            <input id="styleFileInput" placeholder="auto-generated" />
-                        </label>
-                    </div>
-                </div>
-            </section>
-        </div>
-
-                <section class="mini-toolbar" id="textWrapToolbar">
-                    <p class="toolbar-label">Text tools</p>
+                    <div id="textStylePresetButtons" class="preset-buttons"></div>
 
                     <div class="toolbar-buttons">
                         <button type="button" data-wrap-tag="strong">Bold</button>
@@ -110,52 +76,52 @@
                         <button type="button" data-wrap-tag="mark">Mark</button>
                     </div>
 
-                    <div class="class-wrap-row">
-                        <input id="wrapClassInput" placeholder="class name: hindu, muslim, important" />
-                        <button id="wrapClassBtn" type="button">+ marker to text</button>
-                    </div>
-                </section>
+                </details>
 
-                <section class="mini-toolbar marker-builder" id="markerBuilder">
+                <details class="tool-section">
+                    <summary>Markers</summary>
+
                     <div class="marker-toolbar-header">
-                        <p class="toolbar-label">Markers</p>
                         <button id="openMarkerPanelBtn" type="button">+ Add Marker</button>
                     </div>
 
                     <div id="markerPills" class="marker-pills"></div>
 
                     <div id="markerPanel" class="marker-panel hidden">
-                        <div class="class-style-grid">
-                            <input id="classNameInput" placeholder="marker name: hindu" />
+                        <input id="classNameInput" placeholder="marker name" />
 
-                            <div class="opacity-field">
-                                <input id="classBackgroundInput" placeholder="background: #7ea7ff" />
-                                <button id="backgroundOpacityBtn" type="button">Opacity</button>
-
-                                <div id="backgroundOpacityPanel" class="opacity-panel hidden">
-                                    <label>
-                                        Background opacity
-                                        <input id="backgroundOpacitySlider" type="range" min="0" max="100" value="50" />
-                                    </label>
-                                    <p id="backgroundOpacityValue">50%</p>
-                                </div>
-                            </div>
-
-                            <input id="classColorInput" placeholder="text color: #111" />
-
-                            <button id="addClassStyleBtn" type="button">Add</button>
-                        </div>
-                    </div>
-                </section>
-
-                <section class="panel" id="boxBuilderPanel">
-                    <h2>Box Builder</h2>
-
-                    <div class="form-grid">
                         <label>
-                            Class Name
-                            <input id="boxClassInput" placeholder="conflict-card" />
+                            Marker Background
+                            <div class="color-control">
+                                <input id="classBackgroundInput" placeholder="#7ea7ff" />
+                                <input id="classBackgroundPicker" type="color" value="#7ea7ff" />
+                            </div>
                         </label>
+
+                        <label>
+                            Background Opacity
+                            <input id="classBackgroundOpacity" type="range" min="0" max="100" value="100" />
+                        </label>
+
+                        <label>
+                            Marker Text Color
+                            <div class="color-control">
+                                <input id="classColorInput" placeholder="#111111" />
+                                <input id="classColorPicker" type="color" value="#111111" />
+                            </div>
+                        </label>
+
+                        <button id="addClassStyleBtn" type="button">Add Marker</button>
+                    </div>
+                </details>
+
+                <details class="tool-section">
+                    <summary>Box Builder</summary>
+
+                    <div id="boxPresetButtons" class="preset-buttons"></div>
+
+                    <div class="compact-grid">
+                        <label>Class <input id="boxClassInput" placeholder="conflict-card" /></label>
 
                         <label>
                             Tag
@@ -169,178 +135,187 @@
 
                         <label>
                             Background
-                            <input id="boxBackgroundInput" placeholder="#f4ead2" />
+                            <div class="color-control">
+                                <input id="boxBackgroundInput" placeholder="#f4ead2" />
+                                <input id="boxBackgroundPicker" type="color" value="#f4ead2" />
+                            </div>
                         </label>
-
+                        <label>
+                            Background Opacity
+                            <input id="boxBackgroundOpacity" type="range" min="0" max="100" value="100" />
+                        </label>
                         <label>
                             Text Color
-                            <input id="boxColorInput" placeholder="#111" />
+                            <div class="color-control">
+                                <input id="boxColorInput" placeholder="#111111" />
+                                <input id="boxColorPicker" type="color" value="#111111" />
+                            </div>
                         </label>
-
-                        <label>
-                            Border
-                            <input id="boxBorderInput" placeholder="2px solid #111" />
-                        </label>
-
-                        <label>
-                            Border Radius
-                            <input id="boxBorderRadiusInput" placeholder="8px" />
-                        </label>
-
-                        <label>
-                            Padding
-                            <input id="boxPaddingInput" placeholder="12px" />
-                        </label>
-
-                        <label>
-                            Margin
-                            <input id="boxMarginInput" placeholder="12px 0" />
-                        </label>
-
-                        <label>
-                            Width
-                            <input id="boxWidthInput" placeholder="auto" />
-                        </label>
-
-                        <label>
-                            Min Height
-                            <input id="boxMinHeightInput" placeholder="120px" />
-                        </label>
-
-                        <label>
-                            Display
-                            <input id="boxDisplayInput" placeholder="block" />
-                        </label>
-
-                        <label>
-                            Gap
-                            <input id="boxGapInput" placeholder="12px" />
-                        </label>
+                        <label>Border <input id="boxBorderInput" placeholder="2px solid #111" /></label>
+                        <label>Radius <input id="boxBorderRadiusInput" placeholder="8px" /></label>
+                        <label>Padding <input id="boxPaddingInput" placeholder="12px" /></label>
+                        <label>Margin <input id="boxMarginInput" placeholder="12px 0" /></label>
+                        <label>Width <input id="boxWidthInput" placeholder="auto" /></label>
+                        <label>Min Height <input id="boxMinHeightInput" placeholder="120px" /></label>
+                        <label>Display <input id="boxDisplayInput" placeholder="block" /></label>
+                        <label>Gap <input id="boxGapInput" placeholder="12px" /></label>
                     </div>
 
                     <button id="createBoxBtn" type="button">Create Box</button>
+                </details>
+
+                <details class="tool-section">
+                    <summary>Insert Target</summary>
+
+                    <p id="insertTargetText">No selected target.</p>
+
+                    <label class="radio-row">
+                        <input type="radio" name="insertMode" value="append" checked />
+                        Append to end
+                    </label>
+
+                    <label class="radio-row">
+                        <input type="radio" name="insertMode" value="inside" />
+                        Insert into selected
+                    </label>
+                </details>
+            </aside>
+
+            <!-- CENTER CANVAS -->
+            <section class="canvas-panel">
+                <div class="canvas-header">
+                    <div>
+                        <p class="eyebrow">Workspace</p>
+                        <h2>Preview Canvas</h2>
+                    </div>
+
+                    <button id="togglePreviewGridBtn" type="button">Toggle Grid</button>
+                </div>
+
+                <style id="previewStyle"></style>
+                <div id="postPreview" class="post-preview"></div>
+            </section>
+
+            <!-- RIGHT INSPECTOR -->
+            <aside class="builder-sidebar inspector-panel">
+                <h2>Inspector</h2>
+
+                <section class="inspector-card">
+                    <h3>Selected Element</h3>
+
+                    <p id="selectedElementText">No element selected.</p>
+
+                    <p><strong>Tag:</strong> <span id="selectedTag">-</span></p>
+                    <p><strong>Class:</strong> <span id="selectedClass">-</span></p>
+                    <p><strong>ID:</strong> <span id="selectedId">-</span></p>
+                    <p><strong>Text:</strong> <span id="selectedText">-</span></p>
                 </section>
 
-        <section class="panel editor-panel">
-            <h2>Post Editor</h2>
-
-        <section class="panel" id="selectedElementPanel">
-            <h2>Selected Element</h2>
-
-            <div id="selectedElementInfo">
-
-                <p>
-                    <strong>Tag:</strong>
-                    <span id="selectedTag">-</span>
-                </p>
-
-                <p>
-                    <strong>Class:</strong>
-                    <span id="selectedClass">-</span>
-                </p>
-
-                <p>
-                    <strong>ID:</strong>
-                    <span id="selectedId">-</span>
-                </p>
-
-                <p>
-                    <strong>Text:</strong>
-                    <span id="selectedText">-</span>
-                </p>
-
-                <div class="selected-css-box">
-                    <h3>Matching CSS</h3>
+                <details open class="tool-section">
+                    <summary>Matching CSS</summary>
                     <pre id="selectedCssBlock">No CSS block found yet.</pre>
-                </div>
+                </details>
 
-                <div class="style-inspector-fields">
-                    <label>
-                        Background
-                        <input id="inspectBackgroundInput" />
-                    </label>
+                <details open class="tool-section">
+                    <summary>Flexible CSS Editor</summary>
 
-                    <label>
-                        Color
-                        <input id="inspectColorInput" />
-                    </label>
+                    <div id="cssPropertyRows" class="css-property-rows"></div>
 
-                    <label>
-                        Border
-                        <input id="inspectBorderInput" />
-                    </label>
+                    <button id="addCssPropertyBtn" type="button">Add Property</button>
+                    <button id="applyFlexibleCssBtn" type="button">Apply CSS</button>
+                </details>
 
-                    <label>
-                        Border Radius
-                        <input id="inspectBorderRadiusInput" />
-                    </label>
+                <details class="tool-section">
+                    <summary>Basic Style Inspector</summary>
 
-                    <label>
-                        Padding
-                        <input id="inspectPaddingInput" />
-                    </label>
+                    <div class="style-inspector-fields">
+                        <label>Background <input id="inspectBackgroundInput" /></label>
+                        <label>Color <input id="inspectColorInput" /></label>
+                        <label>Border <input id="inspectBorderInput" /></label>
+                        <label>Border Radius <input id="inspectBorderRadiusInput" /></label>
+                        <label>Padding <input id="inspectPaddingInput" /></label>
+                        <label>Margin <input id="inspectMarginInput" /></label>
 
-                    <label>
-                        Margin
-                        <input id="inspectMarginInput" />
-                    </label>
+                        <button id="applyInspectorStylesBtn" type="button">
+                            Apply Style Changes
+                        </button>
+                    </div>
+                </details>
 
-                    <button id="applyInspectorStylesBtn" type="button">
-                        Apply Style Changes
-                    </button>
-                </div>
+                <details class="tool-section">
+                    <summary>DOM Lineage</summary>
 
-            </div>
+                    <strong>Parent</strong>
+                    <div id="selectedParentInfo">-</div>
+
+                    <strong>Children</strong>
+                    <div id="selectedChildrenInfo">-</div>
+
+                    <strong>Siblings</strong>
+                    <div id="selectedSiblingsInfo">-</div>
+                </details>
+
+                <details class="tool-section">
+                    <summary>DOM Tree</summary>
+                    <div id="domTreeContainer" class="dom-tree-container">
+                        No DOM tree yet.
+                    </div>
+                </details>
+            </aside>
         </section>
 
-            <div class="editor-layout">
-                <div class="editor-side">
-
-
-
-                    <label>
-                        <textarea id="contentInput" class="large-textarea" placeholder="# My First Post&#10;&#10;<div class=&quot;callout&quot;>Styled content here.</div>"></textarea>
-                    </label>
-
-                    <label>
-                        Custom CSS
-                        <textarea id="styleInput" class="style-textarea" placeholder=".callout {&#10;    border: 2px solid #111;&#10;    padding: 12px;&#10;}"></textarea>
-                    </label>
-                </div>
-
-                <button id="togglePreviewGridBtn" type="button">
-                    Toggle Grid
-                </button>
-
-                <section class="preview-side">
-                    <style id="previewStyle"></style>
-                    <div id="postPreview" class="post-preview"></div>
-                </section>
-            </div>
-        </section>
-
-        <section class="panel actions-panel">
-            <button id="generatePreviewBtn" type="button">Generate Preview</button>
-            <button id="savePostBtn" type="button">Save Post</button>
-            <p id="statusMessage" class="status-message"></p>
-        </section>
-
-        <section class="panel collapsible-panel collapsed" id="jsonPreviewPanel">
+        <!-- ADVANCED DRAWER -->
+        <section class="advanced-drawer collapsible-panel collapsed">
             <button
                 class="panel-toggle"
                 type="button"
-                data-closed-label="View post JSON data"
-                data-open-label="Hide post JSON data"> 
-                View post JSON data
+                data-closed-label="Open Advanced Tools"
+                data-open-label="Close Advanced Tools">
+                Open Advanced Tools
             </button>
 
-            <div class="panel-body">
-                <pre id="jsonPreview">{}</pre>
+            <div class="panel-body advanced-grid">
+                <section>
+                    <h2>Raw Markdown / HTML</h2>
+                    <textarea id="contentInput" class="large-textarea"></textarea>
+                </section>
+
+                <section>
+                    <h2>Raw CSS</h2>
+                    <textarea id="styleInput" class="style-textarea"></textarea>
+                </section>
+
+                <section>
+                    <h2>Post Metadata</h2>
+
+                    <div class="compact-grid">
+                        <label>Post ID <input id="postIdInput" /></label>
+                        <label>Slug <input id="slugInput" /></label>
+                        <label>Tags <input id="tagsInput" /></label>
+
+                        <label>
+                            Content Type
+                            <select id="contentTypeInput">
+                                <option value="markdown-html">Markdown + HTML</option>
+                            </select>
+                        </label>
+
+                        <label>Content File <input id="contentFileInput" /></label>
+                        <label>Style File <input id="styleFileInput" /></label>
+                    </div>
+                </section>
+
+                <section>
+                    <h2>JSON Preview</h2>
+                    <pre id="jsonPreview">{}</pre>
+                </section>
             </div>
         </section>
     </main>
 
-    <script src="../shared/visual-builder-core.js"></script>
-    <script src="add-post-tool.js"></script>
+
+<script src="../shared/visual-builder-core.js"></script>
+<script src="add-post-tool.js"></script>
+
 </body>
 </html>

@@ -30,6 +30,16 @@ const styleFileInput = document.getElementById("styleFileInput");
 const contentInput = document.getElementById("contentInput");
 const styleInput = document.getElementById("styleInput");
 
+// ======================================================
+// post system UPGRADE
+// ====================
+// MODES for typing and tooling 
+const toggleWriteModeBtn =
+    document.getElementById("toggleWriteModeBtn");
+
+let BUILDER_MODE = "design";
+// ======================================================
+
 const wrapClassInput = document.getElementById("wrapClassInput");
 const wrapClassBtn = document.getElementById("wrapClassBtn");
 
@@ -105,6 +115,49 @@ const inspectPaddingInput = document.getElementById("inspectPaddingInput");
 const inspectMarginInput = document.getElementById("inspectMarginInput");
 const applyInspectorStylesBtn = document.getElementById("applyInspectorStylesBtn");
 
+const insertTargetText =
+    document.getElementById("insertTargetText");
+
+let selectedElementSelector = "";
+
+const selectedParentInfo =
+    document.getElementById("selectedParentInfo");
+
+const selectedChildrenInfo =
+    document.getElementById("selectedChildrenInfo");
+
+const selectedSiblingsInfo =
+    document.getElementById("selectedSiblingsInfo");
+
+const domTreeContainer = 
+    document.getElementById("domTreeContainer");
+
+const cssPropertyRows =
+    document.getElementById("cssPropertyRows");
+
+const addCssPropertyBtn =
+    document.getElementById("addCssPropertyBtn");
+
+const applyFlexibleCssBtn =
+    document.getElementById("applyFlexibleCssBtn");
+
+const textStylePresetButtons =
+    document.getElementById("textStylePresetButtons");
+
+// color picker / opacity panels
+const classColorPicker =
+    document.getElementById("classColorPicker");
+
+const boxBackgroundPicker =
+    document.getElementById("boxBackgroundPicker");
+
+const boxBackgroundOpacity =
+    document.getElementById("boxBackgroundOpacity");
+
+const boxColorPicker =
+    document.getElementById("boxColorPicker");
+
+    // selection refs
 let selectedCssSelector = "";
 
 const togglePreviewGridBtn =
@@ -119,6 +172,43 @@ const DATA_PATHS = {
 
 let POSTS_DATA = { posts: {} };
 let PAGES_DATA = { pages: {} };
+
+
+// ======================================================
+const COMMON_CSS_PROPERTIES = [
+    "background",
+    "background-color",
+    "color",
+    "font-size",
+    "font-weight",
+    "line-height",
+    "padding",
+    "margin",
+    "width",
+    "height",
+    "min-height",
+    "max-width",
+    "border",
+    "border-radius",
+    "display",
+    "gap",
+    "grid-template-columns",
+    "position",
+    "top",
+    "left",
+    "right",
+    "bottom",
+    "z-index",
+    "opacity",
+    "transform"
+];
+// ======================================================
+
+
+// boxes state:
+let BOX_PRESETS = [];
+// text styles state:
+let TEXT_STYLE_PRESETS = [];
 
 
 // ======================================================
@@ -187,6 +277,635 @@ function populatePageSelect() {
         pageSelect.value = "general";
     }
 }
+
+// ======================================================
+// post system UPGRADE
+// HELPERS
+// MODES for typing and tooling
+// ==============================
+function getPreviewContentElement() {
+    return postPreview.querySelector(".post-preview-content");
+}
+
+function syncPreviewToContentInput() {
+    const previewContent = getPreviewContentElement();
+
+    if (!previewContent) return;
+
+    contentInput.value = previewContent.innerHTML.trim();
+
+    jsonPreview.textContent =
+        JSON.stringify(buildPostObject(), null, 4);
+}
+
+function applyPreviewWriteState() {
+    const previewContent = getPreviewContentElement();
+
+    if (!previewContent) return;
+
+    const isWriteMode = BUILDER_MODE === "write";
+
+    previewContent.contentEditable = isWriteMode ? "true" : "false";
+    postPreview.classList.toggle("is-write-mode", isWriteMode);
+    postPreview.classList.toggle("is-design-mode", !isWriteMode);
+}
+
+function setBuilderMode(mode) {
+    BUILDER_MODE = mode;
+
+    if (toggleWriteModeBtn) {
+        toggleWriteModeBtn.textContent =
+            BUILDER_MODE === "write"
+                ? "Design Mode"
+                : "Write Mode";
+    }
+
+    statusMessage.textContent =
+        BUILDER_MODE === "write"
+            ? "Write mode: type directly in the preview."
+            : "Design mode: click elements to inspect and style them.";
+
+    applyPreviewWriteState();
+}
+// ================================================
+
+
+// ======================================================
+// post system UPGRADE
+// ====================
+// insert mode helper
+// ======================================================
+function getInsertMode() {
+    const selectedMode = document.querySelector(
+        "input[name='insertMode']:checked"
+    );
+
+    return selectedMode?.value || "append";
+}
+// ======================================================
+
+// ======================================================
+// post system UPGRADE 
+// ====================
+// dom lineage helper
+// ======================================================
+function isPreviewRootElement(element) {
+    return element === postPreview ||
+        element.classList?.contains("post-preview-content");
+}
+
+function getElementSummary(element) {
+    if (!element || isPreviewRootElement(element)) {
+        return null;
+    }
+
+    return {
+        label: getElementLabel(element),
+        text: element.textContent.trim().slice(0, 50),
+        element
+    };
+}
+
+function renderLineageItem(container, summary) {
+    if (!container) return;
+
+    if (!summary) {
+        container.textContent = "-";
+        return;
+    }
+
+    const button = document.createElement("button");
+    button.type = "button";
+    button.className = "lineage-item";
+    button.textContent = summary.text
+        ? `${summary.label} — ${summary.text}`
+        : summary.label;
+
+    button.addEventListener("click", () => {
+        selectPreviewElement(summary.element);
+    });
+
+    container.innerHTML = "";
+    container.appendChild(button);
+}
+
+function renderLineageList(container, summaries) {
+    if (!container) return;
+
+    container.innerHTML = "";
+
+    if (!summaries.length) {
+        container.textContent = "-";
+        return;
+    }
+
+    summaries.forEach(summary => {
+        const button = document.createElement("button");
+        button.type = "button";
+        button.className = "lineage-item";
+        button.textContent = summary.text
+            ? `${summary.label} — ${summary.text}`
+            : summary.label;
+
+        button.addEventListener("click", () => {
+            selectPreviewElement(summary.element);
+        });
+
+        container.appendChild(button);
+    });
+}
+
+function selectPreviewElement(element) {
+    if (!element || isPreviewRootElement(element)) return;
+
+    if (selectedPreviewElement) {
+        selectedPreviewElement.classList.remove("builder-selected-element");
+    }
+
+    selectedPreviewElement = element;
+    selectedPreviewElement.classList.add("builder-selected-element");
+
+    selectedElementSelector = getElementLabel(element);
+
+    insertTargetText.textContent =
+        `Target: ${selectedElementSelector}`;
+
+    selectedTag.textContent =
+        element.tagName.toLowerCase();
+
+    selectedClass.textContent =
+        [...element.classList]
+            .filter(className => className !== "builder-selected-element")
+            .join(" ") || "(none)";
+
+    selectedId.textContent =
+        element.id || "(none)";
+
+    selectedText.textContent =
+        element.textContent.trim().slice(0, 80) || "(empty)";
+
+    const primarySelector = getPrimaryClassSelector(element);
+    const cssBlock = findCssBlockForSelector(styleInput.value, primarySelector);
+
+    selectedCssSelector = primarySelector;
+
+    selectedCssBlock.textContent =
+        cssBlock || "No matching class CSS block found.";
+
+    if (cssBlock) {
+        populateStyleInspector(cssBlock);
+    } else {
+        clearStyleInspector();
+    }
+
+    populateFlexibleCssEditor(cssBlock || "");
+
+    renderDomLineage(element);
+}
+// ======================================================
+
+
+// ======================================================
+// post system UPGRADE
+// ====================
+// dom tree helpers 
+// (specifically kept separate from dom lineage to keep dom tree more comprehensive)
+// ======================================================
+function getDomTreeRoot() {
+    return postPreview.querySelector(".post-preview-content");
+}
+
+function buildDomTreeNode(element) {
+    const summary = getElementSummary(element);
+
+    if (!summary) return null;
+
+    const node = document.createElement("div");
+    node.className = "dom-tree-node";
+
+    const button = document.createElement("button");
+    button.type = "button";
+    button.className = "dom-tree-node-btn";
+    button.textContent = summary.text
+        ? `${summary.label} — ${summary.text}`
+        : summary.label;
+
+    if (element === selectedPreviewElement) {
+        button.classList.add("dom-tree-node-selected");
+    }
+
+    button.addEventListener("click", event => {
+        event.stopPropagation();
+        selectPreviewElement(element);
+    });
+
+    node.appendChild(button);
+
+    const children = [...element.children]
+        .map(child => buildDomTreeNode(child))
+        .filter(Boolean);
+
+    if (children.length) {
+        const childrenWrap = document.createElement("div");
+        childrenWrap.className = "dom-tree-children";
+
+        children.forEach(childNode => {
+            childrenWrap.appendChild(childNode);
+        });
+
+        node.appendChild(childrenWrap);
+    }
+
+    return node;
+}
+
+function renderDomTree() {
+    if (!domTreeContainer) return;
+
+    const root = getDomTreeRoot();
+
+    domTreeContainer.innerHTML = "";
+
+    if (!root) {
+        domTreeContainer.textContent = "No DOM tree yet.";
+        return;
+    }
+
+    const rootChildren = [...root.children]
+        .map(child => buildDomTreeNode(child))
+        .filter(Boolean);
+
+    if (!rootChildren.length) {
+        domTreeContainer.textContent = "No child elements found.";
+        return;
+    }
+
+    rootChildren.forEach(node => {
+        domTreeContainer.appendChild(node);
+    });
+}
+// ======================================================
+
+// ======================================================
+// post system UPGRADE
+// ====================
+// flexible css editor
+// ======================================================
+function parseCssBlockProperties(cssBlock) {
+    const properties = [];
+    const bodyMatch = cssBlock.match(/\{([\s\S]*?)\}/);
+
+    if (!bodyMatch) return properties;
+
+    bodyMatch[1].split(";").forEach(line => {
+        const trimmed = line.trim();
+        if (!trimmed || !trimmed.includes(":")) return;
+
+        const [property, ...valueParts] = trimmed.split(":");
+
+        properties.push({
+            property: property.trim(),
+            value: valueParts.join(":").trim()
+        });
+    });
+
+    return properties;
+}
+
+function isColorLikeValue(value = "") {
+    return /^#([0-9a-fA-F]{3,8})$/.test(value.trim()) ||
+        value.trim().startsWith("rgb") ||
+        value.trim().startsWith("hsl");
+}
+
+function createColorPreview(value) {
+    const preview = document.createElement("span");
+    preview.className = "css-color-preview";
+
+    if (isColorLikeValue(value)) {
+        preview.style.background = value;
+    }
+
+    return preview;
+}
+
+function createCssPropertyRow(property = "", value = "") {
+    const row = document.createElement("div");
+    row.className = "css-property-row";
+
+    row.innerHTML = `
+        <input class="css-property-name" list="cssPropertySuggestions" placeholder="property" value="${property}">
+        <input class="css-property-value" placeholder="value" value="${value}">
+        <span class="css-color-preview"></span>
+        <button type="button" class="remove-css-property-btn">Remove</button>
+    `;
+
+    const valueInput = row.querySelector(".css-property-value");
+    const preview = row.querySelector(".css-color-preview");
+    const removeBtn = row.querySelector(".remove-css-property-btn");
+
+    function updateColorPreview() {
+        preview.style.background = isColorLikeValue(valueInput.value)
+            ? valueInput.value
+            : "transparent";
+    }
+
+    valueInput.addEventListener("input", updateColorPreview);
+
+    removeBtn.addEventListener("click", () => {
+        row.remove();
+    });
+
+    updateColorPreview();
+    cssPropertyRows.appendChild(row);
+}
+
+function renderCssPropertySuggestions() {
+    if (document.getElementById("cssPropertySuggestions")) return;
+
+    const datalist = document.createElement("datalist");
+    datalist.id = "cssPropertySuggestions";
+
+    COMMON_CSS_PROPERTIES.forEach(property => {
+        const option = document.createElement("option");
+        option.value = property;
+        datalist.appendChild(option);
+    });
+
+    document.body.appendChild(datalist);
+}
+
+function populateFlexibleCssEditor(cssBlock) {
+    cssPropertyRows.innerHTML = "";
+
+    const properties = parseCssBlockProperties(cssBlock);
+
+    if (!properties.length) {
+        createCssPropertyRow();
+        return;
+    }
+
+    properties.forEach(item => {
+        createCssPropertyRow(item.property, item.value);
+    });
+}
+
+function getFlexibleCssStyles() {
+    const styles = {};
+
+    cssPropertyRows.querySelectorAll(".css-property-row").forEach(row => {
+        const property = row.querySelector(".css-property-name")?.value.trim();
+        const value = row.querySelector(".css-property-value")?.value.trim();
+
+        if (!property || !value) return;
+
+        styles[property] = value;
+    });
+
+    return styles;
+}
+
+function applyFlexibleCssStyles() {
+    if (!selectedCssSelector) {
+        statusMessage.textContent = "Select an element first.";
+        return;
+    }
+
+    const newCssBlock = VisualBuilder.buildCssBlock({
+        selector: selectedCssSelector,
+        styles: getFlexibleCssStyles()
+    });
+
+    styleInput.value = replaceCssBlock(
+        styleInput.value,
+        selectedCssSelector,
+        newCssBlock
+    );
+
+    statusMessage.textContent =
+        `Updated flexible styles for ${selectedCssSelector}.`;
+
+    updatePreview();
+}
+
+// ======================================================
+// post system UPGRADE
+// ====================
+// adjusting marker logic to support selected text within the preview area NOT the phased out textarea
+// ======================================================
+function getSelectedPreviewText() {
+    const selection = window.getSelection();
+
+    if (!selection || selection.rangeCount === 0) {
+        return "";
+    }
+
+    const selectedText = selection.toString().trim();
+    if (!selectedText) return "";
+
+    const range = selection.getRangeAt(0);
+    const container = range.commonAncestorContainer;
+
+    const element =
+        container.nodeType === Node.TEXT_NODE
+            ? container.parentElement
+            : container;
+
+    return postPreview.contains(element)
+        ? selectedText
+        : "";
+}
+// ======================================================
+
+// ======================================================
+// post system UPGRADE
+// ====================
+// color pickers / panels helpers
+// ======================================================
+const classBackgroundPicker =
+    document.getElementById("classBackgroundPicker");
+
+const classBackgroundOpacity =
+    document.getElementById("classBackgroundOpacity");
+
+function syncColorPickerToText(textInput, colorInput, opacityInput) {
+    const hex = colorInput.value;
+    const opacity = opacityInput.value;
+
+    textInput.value = VisualBuilder.applyHexOpacity(hex, opacity);
+    updatePreview();
+}
+
+function bindColorPickerSet({
+    textInput,
+    pickerInput,
+    opacityInput = null,
+    cssProperty = "background",
+    previewElement = null
+}) {
+    if (!textInput || !pickerInput) return;
+
+    function syncFromPicker() {
+        const opacity = opacityInput?.value || 100;
+
+        const value = opacityInput
+            ? VisualBuilder.applyHexOpacity(pickerInput.value, opacity)
+            : pickerInput.value;
+
+        textInput.value = value;
+
+        if (previewElement) {
+            previewElement.style[cssProperty] = value;
+        }
+
+        updatePreview();
+    }
+
+    function syncFromText() {
+        const value = textInput.value.trim();
+
+        if (/^#[0-9a-fA-F]{6}$/.test(value)) {
+            pickerInput.value = value;
+        }
+
+        if (previewElement && value) {
+            previewElement.style[cssProperty] = value;
+        }
+
+        updatePreview();
+    }
+
+    pickerInput.addEventListener("input", syncFromPicker);
+
+    if (opacityInput) {
+        opacityInput.addEventListener("input", syncFromPicker);
+    }
+
+    textInput.addEventListener("input", syncFromText);
+}
+
+//event listeners for class background color picker and opacity slider
+bindColorPickerSet({
+    textInput: classBackgroundInput,
+    pickerInput: classBackgroundPicker,
+    opacityInput: classBackgroundOpacity
+});
+
+bindColorPickerSet({
+    textInput: classColorInput,
+    pickerInput: classColorPicker,
+    cssProperty: "color"
+});
+// ======================================================
+
+// post system UPGRADE
+// ====================
+// text style presets
+// ======================================================
+function renderTextStylePresetButtons() {
+    if (!textStylePresetButtons) return;
+
+    textStylePresetButtons.innerHTML = "";
+
+    if (!TEXT_STYLE_PRESETS.length) {
+        textStylePresetButtons.innerHTML =
+            `<p class="helper-note">No text styles yet.</p>`;
+        return;
+    }
+
+    TEXT_STYLE_PRESETS.forEach(preset => {
+        const button = document.createElement("button");
+        button.type = "button";
+        button.className = "text-style-preset-btn";
+        button.textContent = preset.className;
+
+        button.addEventListener("click", () => {
+            applyTextStylePreset(preset);
+        });
+
+        textStylePresetButtons.appendChild(button);
+    });
+}
+
+function wrapPreviewSelectedTextWithTag(tagName) {
+    const selectedText = getSelectedPreviewText();
+
+    if (!selectedText) {
+        return VisualBuilder.wrapSelectionWithTag(
+            contentInput,
+            tagName
+        );
+    }
+
+    const sourceText = contentInput.value;
+    const index = sourceText.indexOf(selectedText);
+
+    if (index === -1) {
+        return {
+            ok: false,
+            message: "Selected preview text was not found exactly in the raw content."
+        };
+    }
+
+    const wrappedText =
+        `<${tagName}>${selectedText}</${tagName}>`;
+
+    contentInput.value =
+        sourceText.slice(0, index) +
+        wrappedText +
+        sourceText.slice(index + selectedText.length);
+
+    return {
+        ok: true,
+        message: `Wrapped preview selection with <${tagName}>.`
+    };
+}
+
+function addTextStylePreset({
+    className,
+    tag = "span",
+    styles = {}
+}) {
+    const cleanClass = VisualBuilder.cleanClassName(className);
+
+    if (!cleanClass) return;
+
+    TEXT_STYLE_PRESETS.push({
+        className: cleanClass,
+        tag,
+        styles
+    });
+
+    const css = VisualBuilder.buildCssBlock({
+        selector: `.${cleanClass}`,
+        styles
+    });
+
+    styleInput.value = styleInput.value.trim()
+        ? `${styleInput.value.trim()}\n\n${css}`
+        : css;
+
+    renderTextStylePresetButtons();
+    updatePreview();
+}
+
+function applyTextStylePreset(preset) {
+    const result = wrapPreviewSelectedTextWithClass(
+        preset.className,
+        preset.tag || "span"
+    );
+
+    statusMessage.textContent = result.message;
+
+    if (result.ok) {
+        updatePreview();
+    }
+}
+// ======================================================
+
+// ======================================================
+
+
 
 async function loadJson(path, fallback) {
     try {
@@ -348,6 +1067,8 @@ function updatePreview() {
             : `<p>Post preview will appear here.</p>`;
 
     bindPreviewSelection();
+    renderDomTree();
+    applyPreviewWriteState();
 }
 
 
@@ -361,6 +1082,8 @@ async function init() {
 
     populatePageSelect();
     renderMarkerPills();
+    renderTextStylePresetButtons();
+    renderBoxPresetButtons();
 
     const params = new URLSearchParams(window.location.search);
     const postId = params.get("postId");
@@ -370,6 +1093,8 @@ async function init() {
     } else {
         updatePreview();
     }
+
+    renderCssPropertySuggestions();
 }
 
 init();
@@ -396,8 +1121,9 @@ document.querySelectorAll(".panel-toggle").forEach(button => {
 // MARKER MANAGEMENT
 // ======================================================
 
+// wrapSelectionWithTag(tagName) HAS BEEN UPDATED FOR POST SYSTEM UPGRADE
 function wrapSelectionWithTag(tagName) {
-    const result = VisualBuilder.wrapSelectionWithTag(contentInput, tagName);
+    const result = wrapPreviewSelectedTextWithTag(tagName);
 
     statusMessage.textContent = result.message;
 
@@ -406,35 +1132,74 @@ function wrapSelectionWithTag(tagName) {
     }
 }
 
+// wrapSelectionWithClass() HAS BEEN UPDATED FOR POST SYSTEM UPGRADE
 function wrapSelectionWithClass() {
-    const result = VisualBuilder.wrapSelectionWithClass(
-        contentInput,
-        wrapClassInput.value,
-        "mark"
-    );
+    const className = wrapClassInput.value;
 
-    statusMessage.textContent = result.message;
-
-    if (result.ok) {
-        updatePreview();
-    }
-}
-
-function wrapSelectionWithMarker(className) {
-    const result = VisualBuilder.wrapSelectionWithClass(
-        contentInput,
+    const result = wrapPreviewSelectedTextWithClass(
         className,
         "mark"
     );
 
-    statusMessage.textContent = result.ok
-        ? `Wrapped selection with marker: ${className}.`
-        : result.message;
+    statusMessage.textContent = result.message;
 
     if (result.ok) {
         updatePreview();
     }
 }
+
+// wrapSelectionWithMarker(className) HAS BEEN UPDATED FOR POST SYSTEM UPGRADE
+function wrapSelectionWithMarker(className) {
+    const result = wrapPreviewSelectedTextWithClass(className, "mark");
+
+    statusMessage.textContent = result.message;
+
+    if (result.ok) {
+        updatePreview();
+    }
+}
+
+// ======================================================
+// post system UPGRADE
+// ====================
+// marker builder
+// to REPLACE old marker wrap functions
+// ======================================================
+function wrapPreviewSelectedTextWithClass(className, tagName = "mark") {
+    const selectedText = getSelectedPreviewText();
+
+    if (!selectedText) {
+        return VisualBuilder.wrapSelectionWithClass(
+            contentInput,
+            className,
+            tagName
+        );
+    }
+
+    const sourceText = contentInput.value;
+    const index = sourceText.indexOf(selectedText);
+
+    if (index === -1) {
+        return {
+            ok: false,
+            message: "Selected preview text was not found exactly in the raw content."
+        };
+    }
+
+    const wrappedText =
+        `<${tagName} class="${className}">${selectedText}</${tagName}>`;
+
+    contentInput.value =
+        sourceText.slice(0, index) +
+        wrappedText +
+        sourceText.slice(index + selectedText.length);
+
+    return {
+        ok: true,
+        message: `Wrapped preview selection with ${tagName}.${className}.`
+    };
+}
+// ======================================================
 
 function createMarkerObject() {
     const marker = VisualBuilder.createMarkerObject({
@@ -552,17 +1317,70 @@ function applyBackgroundOpacity() {
 // ====================
 // box builder
 // ======================================================
-function appendGeneratedCode({ html, css }) {
+function insertHtmlInsideSelectedElement({
+    content,
+    targetSelector,
+    htmlToInsert
+}) {
+    if (!content || !targetSelector || !htmlToInsert) {
+        return content;
+    }
+
+    const parts = targetSelector.split(".");
+    const tag = parts[0];
+    const className = parts[1];
+
+    if (!tag || !className) {
+        statusMessage.textContent =
+            "Insert inside currently only works for elements with one class.";
+        return content;
+    }
+
+    const openingTagRegex = new RegExp(
+        `<${tag}[^>]*class=["'][^"']*\\b${className}\\b[^"']*["'][^>]*>`,
+        "m"
+    );
+
+    const openingMatch = content.match(openingTagRegex);
+
+    if (!openingMatch || openingMatch.index === undefined) {
+        statusMessage.textContent =
+            `Could not find ${targetSelector} in content.`;
+        return content;
+    }
+
+    const insertPosition =
+        openingMatch.index + openingMatch[0].length;
+
+    return (
+        content.slice(0, insertPosition) +
+        `\n\n    ${htmlToInsert}\n` +
+        content.slice(insertPosition)
+    );
+}
+
+function insertGeneratedCode({ html, css = "" }) {
     const existingContent = contentInput.value.trim();
     const existingCss = styleInput.value.trim();
+    const insertMode = getInsertMode();
 
-    contentInput.value = existingContent
-        ? `${existingContent}\n\n${html}`
-        : html;
+    if (insertMode === "inside" && selectedElementSelector) {
+        contentInput.value = insertHtmlInsideSelectedElement({
+            content: contentInput.value,
+            targetSelector: selectedElementSelector,
+            htmlToInsert: html
+        });
+    } else {
+        contentInput.value = existingContent
+            ? `${existingContent}\n\n${html}`
+            : html;
+    }
 
-    styleInput.value = existingCss
-        ? `${existingCss}\n\n${css}`
-        : css;
+    if (css.trim()) {
+        styleInput.value = existingCss
+            ? `${existingCss}\n\n${css}`
+            : css;
+    }
 
     updatePreview();
 }
@@ -587,13 +1405,104 @@ function createBoxFromInputs() {
 
     if (!result.ok) return;
 
-    appendGeneratedCode({
+    insertGeneratedCode({
         html: result.html,
         css: result.css
     });
 
+    saveBoxPresetFromInputs();
+
     boxClassInput.value = "";
 }
+
+// saving box
+function saveBoxPresetFromInputs() {
+    const className = VisualBuilder.cleanClassName(boxClassInput.value);
+
+    if (!className) return;
+
+    const existing = BOX_PRESETS.find(preset =>
+        preset.className === className
+    );
+
+    const preset = {
+        className,
+        tag: boxTagInput.value,
+        background: boxBackgroundInput.value.trim(),
+        color: boxColorInput.value.trim(),
+        border: boxBorderInput.value.trim(),
+        borderRadius: boxBorderRadiusInput.value.trim(),
+        padding: boxPaddingInput.value.trim(),
+        margin: boxMarginInput.value.trim(),
+        width: boxWidthInput.value.trim(),
+        minHeight: boxMinHeightInput.value.trim(),
+        display: boxDisplayInput.value.trim(),
+        gap: boxGapInput.value.trim()
+    };
+
+    if (existing) {
+        Object.assign(existing, preset);
+    } else {
+        BOX_PRESETS.push(preset);
+    }
+
+    renderBoxPresetButtons();
+}
+
+// box preset buttons
+const boxPresetButtons =
+    document.getElementById("boxPresetButtons");
+
+function renderBoxPresetButtons() {
+    if (!boxPresetButtons) return;
+
+    boxPresetButtons.innerHTML = "";
+
+    if (!BOX_PRESETS.length) {
+        boxPresetButtons.innerHTML =
+            `<p class="helper-note">No box presets yet.</p>`;
+        return;
+    }
+
+    BOX_PRESETS.forEach(preset => {
+        const button = document.createElement("button");
+        button.type = "button";
+        button.className = "box-preset-btn";
+        button.textContent = preset.className;
+
+        button.addEventListener("click", () => {
+            const result = VisualBuilder.createBox(preset);
+
+            if (!result.ok) {
+                statusMessage.textContent = result.message;
+                return;
+            }
+
+            insertGeneratedCode({
+                html: result.html,
+                css: ""
+            });
+
+            statusMessage.textContent =
+                `Inserted box preset: ${preset.className}.`;
+        });
+
+        boxPresetButtons.appendChild(button);
+    });
+}
+
+// box builder listeners
+bindColorPickerSet({
+    textInput: boxBackgroundInput,
+    pickerInput: boxBackgroundPicker,
+    opacityInput: boxBackgroundOpacity
+});
+
+bindColorPickerSet({
+    textInput: boxColorInput,
+    pickerInput: boxColorPicker,
+    cssProperty: "color"
+});
 
 // ======================================================
 // post system UPGRADE
@@ -610,50 +1519,16 @@ function getElementLabel(element) {
         ? `${tag}.${classes}`
         : tag;
 }
-// SELECTION CLICK HANDLER
 function bindPreviewSelection() {
     postPreview.querySelectorAll("*").forEach(element => {
         element.addEventListener("click", event => {
+            if (BUILDER_MODE === "write") return;
+
             event.stopPropagation();
-
-            if (selectedPreviewElement) {
-                selectedPreviewElement.classList.remove("builder-selected-element");
-            }
-
-            selectedPreviewElement = element;
-            selectedPreviewElement.classList.add("builder-selected-element");
-
-            selectedTag.textContent =
-                element.tagName.toLowerCase();
-
-            selectedClass.textContent =
-                [...element.classList]
-                    .filter(className => className !== "builder-selected-element")
-                    .join(" ") || "(none)";
-
-            selectedId.textContent =
-                element.id || "(none)";
-
-            selectedText.textContent =
-                element.textContent.trim().slice(0, 80) || "(empty)";
-
-            const primarySelector = getPrimaryClassSelector(element);
-            const cssBlock = findCssBlockForSelector(styleInput.value, primarySelector);
-
-            selectedCssBlock.textContent =
-                cssBlock || "No matching class CSS block found.";
-
-            selectedCssSelector = primarySelector;
-
-            if (cssBlock) {
-                populateStyleInspector(cssBlock);
-            } else {
-                clearStyleInspector();
-            }
+            selectPreviewElement(element);
         });
     });
 }
-
 // ======================================================
 // post system UPGRADE
 // ====================
@@ -773,6 +1648,68 @@ function applyInspectorStyles() {
 
 applyInspectorStylesBtn.addEventListener("click", applyInspectorStyles);
 
+
+// ======================================================
+// post system UPGRADE
+// ====================
+// dom lineage renderer
+// ======================================================
+function renderDomLineage(element) {
+    const parentSummary =
+        getElementSummary(element.parentElement);
+
+    const childSummaries =
+        [...element.children]
+            .map(child => getElementSummary(child))
+            .filter(Boolean);
+
+    const siblingSummaries =
+        element.parentElement
+            ? [...element.parentElement.children]
+                .filter(sibling => sibling !== element)
+                .map(sibling => getElementSummary(sibling))
+                .filter(Boolean)
+            : [];
+
+    renderLineageItem(selectedParentInfo, parentSummary);
+    renderLineageList(selectedChildrenInfo, childSummaries);
+    renderLineageList(selectedSiblingsInfo, siblingSummaries);
+}
+
+// ======================================================
+// post system UPGRADE
+// MODES for typing and tooling
+// event listeners 
+// ================================= 
+if (postPreview) {
+    postPreview.addEventListener("input", () => {
+        if (BUILDER_MODE !== "write") return;
+        syncPreviewToContentInput();
+    });
+
+    postPreview.addEventListener("blur", () => {
+        if (BUILDER_MODE !== "write") return;
+        syncPreviewToContentInput();
+    }, true);
+}
+
+if (toggleWriteModeBtn) {
+    toggleWriteModeBtn.addEventListener("click", () => {
+        const nextMode =
+            BUILDER_MODE === "write"
+                ? "design"
+                : "write";
+
+        if (BUILDER_MODE === "write") {
+            syncPreviewToContentInput();
+            updatePreview();
+        }
+
+        setBuilderMode(nextMode);
+    });
+}
+// ======================================================
+
 // ======================================================
 // post system UPGRADE
 // ====================
@@ -782,6 +1719,14 @@ togglePreviewGridBtn.addEventListener("click", () => {
     postPreview.classList.toggle("show-builder-grid");
 });
 
+// ======================================================
+// flexible css editor
+// ======================================================
+addCssPropertyBtn.addEventListener("click", () => {
+    createCssPropertyRow();
+});
+
+applyFlexibleCssBtn.addEventListener("click", applyFlexibleCssStyles);
 
 // ======================================================
 // EVENTS
