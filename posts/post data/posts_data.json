@@ -126,6 +126,19 @@
       "styleFile": "posts/post data/styles/general/testing_for_upgrade.css",
       "createdAt": "2026-06-14T02:34:11.531Z",
       "updatedAt": "2026-06-14T02:39:59.660Z"
+    },
+    "erastime_periodsalliances": {
+      "postId": "erastime_periodsalliances",
+      "title": "eras/time periods/alliances",
+      "slug": "erastime-periodsalliances",
+      "page": "general",
+      "status": "draft",
+      "tags": [],
+      "contentType": "markdown-html",
+      "contentFile": "posts/post data/text/general/erastime_periodsalliances.md",
+      "styleFile": "posts/post data/styles/general/erastime_periodsalliances.css",
+      "createdAt": "2026-06-15T21:32:58.393Z",
+      "updatedAt": "2026-06-15T23:53:19.958Z"
     }
   }
 }

@@ -1,0 +1,40 @@
+.general {
+    background: #ffffffff;
+    color: #000000;
+    border: 2px solid #000000;
+    border-radius: 8px;
+    padding: 24px;
+    margin: 4px;
+    width: auto;
+    min-height: 80px;
+}
+
+.general-text {
+    color: #111111;
+    font-size: 24px;
+    line-height: 1.6;
+    margin: 0 0 12px;
+}
+
+.terms {
+    background: #c061cb73;
+    color: #000000;
+    border: 2px dotted #000000;
+    border-radius: 8px;
+    padding: 12px;
+    margin: 12px;
+    width: auto;
+    min-height: 120px;
+    display: block;
+    gap: 12px;
+}
+
+.terms-heading {
+    font-weight: 400;
+}
+
+.terms-list li {
+    font-size: 16px;
+    font-weight: 400;
+    font-style: italic;
+}

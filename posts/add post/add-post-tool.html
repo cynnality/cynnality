@@ -65,7 +65,9 @@
                 <h2>Toolbox</h2>
 
                 <details open class="tool-section">
-                    <summary>Text Tools</summary>
+                    <summary>Content Tools</summary>
+
+                    <p class="helper-note">Inline text</p>
 
                     <div id="textStylePresetButtons" class="preset-buttons"></div>
 
@@ -76,10 +78,9 @@
                         <button type="button" data-wrap-tag="mark">Mark</button>
                     </div>
 
-                </details>
+                    <hr />
 
-                <details class="tool-section">
-                    <summary>Markers</summary>
+                    <p class="helper-note">Markers</p>
 
                     <div class="marker-toolbar-header">
                         <button id="openMarkerPanelBtn" type="button">+ Add Marker</button>
@@ -113,6 +114,18 @@
 
                         <button id="addClassStyleBtn" type="button">Add Marker</button>
                     </div>
+
+                    <hr />
+
+                    <p class="helper-note">Insert blocks</p>
+
+                    <div class="toolbar-buttons">
+                        <button id="insertParagraphBtn" type="button">Paragraph</button>
+                        <button id="insertHeadingBtn" type="button">Heading</button>
+                        <button id="insertListBtn" type="button">List</button>
+                        <button id="insertQuoteBtn" type="button">Quote</button>
+                        <button id="insertDividerBtn" type="button">Divider</button>
+                    </div>
                 </details>
 
                 <details class="tool-section">
@@ -120,48 +133,91 @@
 
                     <div id="boxPresetButtons" class="preset-buttons"></div>
 
-                    <div class="compact-grid">
-                        <label>Class <input id="boxClassInput" placeholder="conflict-card" /></label>
+                    <div class="box-builder-grid">
 
-                        <label>
-                            Tag
-                            <select id="boxTagInput">
-                                <option value="div">div</option>
-                                <option value="section">section</option>
-                                <option value="article">article</option>
-                                <option value="aside">aside</option>
-                            </select>
-                        </label>
+                        <div class="field-group full">
+                            <p class="helper-note">Identity</p>
 
-                        <label>
-                            Background
-                            <div class="color-control">
-                                <input id="boxBackgroundInput" placeholder="#f4ead2" />
-                                <input id="boxBackgroundPicker" type="color" value="#f4ead2" />
+                            <div class="two-col">
+                                <label>Class <input id="boxClassInput" placeholder="general" /></label>
+
+                                <label>
+                                    Tag
+                                    <select id="boxTagInput">
+                                        <option value="div">div</option>
+                                        <option value="section">section</option>
+                                        <option value="article">article</option>
+                                        <option value="aside">aside</option>
+                                    </select>
+                                </label>
                             </div>
-                        </label>
-                        <label>
-                            Background Opacity
-                            <input id="boxBackgroundOpacity" type="range" min="0" max="100" value="100" />
-                        </label>
-                        <label>
-                            Text Color
-                            <div class="color-control">
-                                <input id="boxColorInput" placeholder="#111111" />
-                                <input id="boxColorPicker" type="color" value="#111111" />
+                        </div>
+
+                        <div class="field-group full">
+                            <p class="helper-note">Color</p>
+
+                            <label>
+                                Background
+                                <div class="color-control">
+                                    <input id="boxBackgroundInput" placeholder="#f4ead2" />
+                                    <input id="boxBackgroundPicker" type="color" value="#f4ead2" />
+                                </div>
+                            </label>
+
+                            <label>
+                                Background Opacity
+                                <input id="boxBackgroundOpacity" type="range" min="0" max="100" value="100" />
+                            </label>
+
+                            <label>
+                                Text Color
+                                <div class="color-control">
+                                    <input id="boxColorInput" placeholder="#111111" />
+                                    <input id="boxColorPicker" type="color" value="#111111" />
+                                </div>
+                            </label>
+                        </div>
+
+                        <div class="field-group full">
+                            <p class="helper-note">Spacing</p>
+
+                            <div class="two-col">
+                                <label>Padding <input id="boxPaddingInput" placeholder="12px" /></label>
+                                <label>Margin <input id="boxMarginInput" placeholder="12px 0" /></label>
                             </div>
-                        </label>
-                        <label>Border <input id="boxBorderInput" placeholder="2px solid #111" /></label>
-                        <label>Radius <input id="boxBorderRadiusInput" placeholder="8px" /></label>
-                        <label>Padding <input id="boxPaddingInput" placeholder="12px" /></label>
-                        <label>Margin <input id="boxMarginInput" placeholder="12px 0" /></label>
-                        <label>Width <input id="boxWidthInput" placeholder="auto" /></label>
-                        <label>Min Height <input id="boxMinHeightInput" placeholder="120px" /></label>
-                        <label>Display <input id="boxDisplayInput" placeholder="block" /></label>
-                        <label>Gap <input id="boxGapInput" placeholder="12px" /></label>
+                        </div>
+
+                        <div class="field-group full">
+                            <p class="helper-note">Size</p>
+
+                            <div class="two-col">
+                                <label>Width <input id="boxWidthInput" placeholder="auto" /></label>
+                                <label>Min Height <input id="boxMinHeightInput" placeholder="120px" /></label>
+                            </div>
+                        </div>
+
+                        <div class="field-group full">
+                            <p class="helper-note">Border</p>
+
+                            <div class="two-col">
+                                <label>Border <input id="boxBorderInput" placeholder="2px solid #111" /></label>
+                                <label>Radius <input id="boxBorderRadiusInput" placeholder="8px" /></label>
+                            </div>
+                        </div>
+
+                        <div class="field-group full">
+                            <p class="helper-note">Layout</p>
+
+                            <div class="two-col">
+                                <label>Display <input id="boxDisplayInput" placeholder="block" /></label>
+                                <label>Gap <input id="boxGapInput" placeholder="12px" /></label>
+                            </div>
+                        </div>
+
                     </div>
 
                     <button id="createBoxBtn" type="button">Create Box</button>
+
                 </details>
 
                 <details class="tool-section">
@@ -205,6 +261,10 @@
 
                     <p id="selectedElementText">No element selected.</p>
 
+                    <button id="deselectElementBtn" type="button">
+                        Deselect
+                    </button>
+
                     <p><strong>Tag:</strong> <span id="selectedTag">-</span></p>
                     <p><strong>Class:</strong> <span id="selectedClass">-</span></p>
                     <p><strong>ID:</strong> <span id="selectedId">-</span></p>
@@ -223,23 +283,6 @@
 
                     <button id="addCssPropertyBtn" type="button">Add Property</button>
                     <button id="applyFlexibleCssBtn" type="button">Apply CSS</button>
-                </details>
-
-                <details class="tool-section">
-                    <summary>Basic Style Inspector</summary>
-
-                    <div class="style-inspector-fields">
-                        <label>Background <input id="inspectBackgroundInput" /></label>
-                        <label>Color <input id="inspectColorInput" /></label>
-                        <label>Border <input id="inspectBorderInput" /></label>
-                        <label>Border Radius <input id="inspectBorderRadiusInput" /></label>
-                        <label>Padding <input id="inspectPaddingInput" /></label>
-                        <label>Margin <input id="inspectMarginInput" /></label>
-
-                        <button id="applyInspectorStylesBtn" type="button">
-                            Apply Style Changes
-                        </button>
-                    </div>
                 </details>
 
                 <details class="tool-section">

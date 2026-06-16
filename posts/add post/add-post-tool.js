@@ -54,11 +54,6 @@ const markerPills = document.getElementById("markerPills");
 
 let MARKERS = [];
 
-const backgroundOpacityBtn = document.getElementById("backgroundOpacityBtn");
-const backgroundOpacityPanel = document.getElementById("backgroundOpacityPanel");
-const backgroundOpacitySlider = document.getElementById("backgroundOpacitySlider");
-const backgroundOpacityValue = document.getElementById("backgroundOpacityValue");
-
 const previewStyle = document.getElementById("previewStyle");
 const postPreview = document.getElementById("postPreview");
 
@@ -107,18 +102,23 @@ const selectedText =
 const selectedCssBlock =
     document.getElementById("selectedCssBlock");
 
-const inspectBackgroundInput = document.getElementById("inspectBackgroundInput");
-const inspectColorInput = document.getElementById("inspectColorInput");
-const inspectBorderInput = document.getElementById("inspectBorderInput");
-const inspectBorderRadiusInput = document.getElementById("inspectBorderRadiusInput");
-const inspectPaddingInput = document.getElementById("inspectPaddingInput");
-const inspectMarginInput = document.getElementById("inspectMarginInput");
-const applyInspectorStylesBtn = document.getElementById("applyInspectorStylesBtn");
+const deselectElementBtn = document.getElementById("deselectElementBtn");
+
+const selectedElementText =
+    document.getElementById("selectedElementText");
 
 const insertTargetText =
     document.getElementById("insertTargetText");
 
 let selectedElementSelector = "";
+
+const insertParagraphBtn = document.getElementById("insertParagraphBtn");
+const insertHeadingBtn = document.getElementById("insertHeadingBtn");
+const insertListBtn = document.getElementById("insertListBtn");
+const insertQuoteBtn = document.getElementById("insertQuoteBtn");
+const insertDividerBtn = document.getElementById("insertDividerBtn");
+
+// ================================
 
 const selectedParentInfo =
     document.getElementById("selectedParentInfo");
@@ -425,10 +425,12 @@ function selectPreviewElement(element) {
     selectedPreviewElement = element;
     selectedPreviewElement.classList.add("builder-selected-element");
 
-    selectedElementSelector = getElementLabel(element);
+    selectedElementSelector = getInsertionSelectorForElement(element);
+
+    selectedElementText.textContent = getElementLabel(element);
 
     insertTargetText.textContent =
-        `Target: ${selectedElementSelector}`;
+        `Target: ${getElementLabel(element)}`;
 
     selectedTag.textContent =
         element.tagName.toLowerCase();
@@ -451,12 +453,6 @@ function selectPreviewElement(element) {
 
     selectedCssBlock.textContent =
         cssBlock || "No matching class CSS block found.";
-
-    if (cssBlock) {
-        populateStyleInspector(cssBlock);
-    } else {
-        clearStyleInspector();
-    }
 
     populateFlexibleCssEditor(cssBlock || "");
 
@@ -666,8 +662,14 @@ function getFlexibleCssStyles() {
 }
 
 function applyFlexibleCssStyles() {
-    if (!selectedCssSelector) {
+    if (!selectedPreviewElement) {
         statusMessage.textContent = "Select an element first.";
+        return;
+    }
+
+    if (!selectedCssSelector) {
+        statusMessage.textContent =
+            "Selected element has no class yet. Add a class before editing CSS.";
         return;
     }
 
@@ -686,6 +688,17 @@ function applyFlexibleCssStyles() {
         `Updated flexible styles for ${selectedCssSelector}.`;
 
     updatePreview();
+}
+
+function getSuggestedChildClass(suffix = "text") {
+    if (!selectedPreviewElement) return "";
+
+    const parentClass = [...selectedPreviewElement.classList]
+        .filter(className => className !== "builder-selected-element")[0];
+
+    return parentClass
+        ? `${parentClass}-${suffix}`
+        : "";
 }
 
 // ======================================================
@@ -944,15 +957,29 @@ async function loadText(path) {
 }
 
 function renderSimpleMarkdown(value) {
-    return value
+    let html = value
         .replace(/^### (.*$)/gim, "<h3>$1</h3>")
         .replace(/^## (.*$)/gim, "<h2>$1</h2>")
         .replace(/^# (.*$)/gim, "<h1>$1</h1>")
         .replace(/\*\*(.*?)\*\*/gim, "<strong>$1</strong>")
         .replace(/__(.*?)__/gim, "<strong>$1</strong>")
         .replace(/\*(.*?)\*/gim, "<em>$1</em>")
-        .replace(/_(.*?)_/gim, "<em>$1</em>")
-        .replace(/\n\n/gim, "</p><p>");
+        .replace(/_(.*?)_/gim, "<em>$1</em>");
+
+    html = html
+        .split(/\n{2,}/)
+        .map(block => block.trim())
+        .filter(Boolean)
+        .map(block => {
+            if (/^<[\s\S]*>$/.test(block)) {
+                return block;
+            }
+
+            return `<p>${block}</p>`;
+        })
+        .join("\n\n");
+
+    return html;
 }
 
 
@@ -1037,6 +1064,7 @@ async function loadPostForEditing(postId) {
     styleInput.value = await loadText(post.styleFile);
 
     loadMarkersFromCurrentCss();
+    loadBoxPresetsFromCurrentCss();
 
     statusMessage.textContent = `Editing post: ${post.title}`;
     updatePreview();
@@ -1134,6 +1162,12 @@ function wrapSelectionWithTag(tagName) {
 
 // wrapSelectionWithClass() HAS BEEN UPDATED FOR POST SYSTEM UPGRADE
 function wrapSelectionWithClass() {
+    if (!wrapClassInput) {
+        statusMessage.textContent =
+            "Class wrap input is not available in this layout.";
+        return;
+    }
+
     const className = wrapClassInput.value;
 
     const result = wrapPreviewSelectedTextWithClass(
@@ -1286,13 +1320,6 @@ function loadMarkersFromCurrentCss() {
 // BACKGROUND OPACITY
 // ======================================================
 
-function updateBackgroundOpacityButton() {
-    const value = classBackgroundInput.value.trim();
-
-    backgroundOpacityBtn.disabled =
-        !VisualBuilder.isSixDigitHex(value);
-}
-
 function applyBackgroundOpacity() {
     const value = classBackgroundInput.value.trim();
 
@@ -1326,26 +1353,40 @@ function insertHtmlInsideSelectedElement({
         return content;
     }
 
-    const parts = targetSelector.split(".");
-    const tag = parts[0];
-    const className = parts[1];
+    let openingTagRegex = null;
 
-    if (!tag || !className) {
-        statusMessage.textContent =
-            "Insert inside currently only works for elements with one class.";
-        return content;
+    if (targetSelector.startsWith("[data-builder-id=")) {
+        const idMatch = targetSelector.match(/data-builder-id="([^"]+)"/);
+        const builderId = idMatch?.[1];
+
+        if (!builderId) return content;
+
+        openingTagRegex = new RegExp(
+            `<([a-zA-Z0-9-]+)([^>]*)data-builder-id=["']${builderId}["']([^>]*)>`,
+            "m"
+        );
+    } else {
+        const parts = targetSelector.split(".");
+        const tag = parts[0];
+        const className = parts[1];
+
+        if (!tag || !className) {
+            statusMessage.textContent =
+                "Insert inside currently needs a selected element with a class or builder ID.";
+            return content;
+        }
+
+        openingTagRegex = new RegExp(
+            `<${tag}[^>]*class=["'][^"']*\\b${className}\\b[^"']*["'][^>]*>`,
+            "m"
+        );
     }
-
-    const openingTagRegex = new RegExp(
-        `<${tag}[^>]*class=["'][^"']*\\b${className}\\b[^"']*["'][^>]*>`,
-        "m"
-    );
 
     const openingMatch = content.match(openingTagRegex);
 
     if (!openingMatch || openingMatch.index === undefined) {
         statusMessage.textContent =
-            `Could not find ${targetSelector} in content.`;
+            `Could not find ${targetSelector} in raw content.`;
         return content;
     }
 
@@ -1354,17 +1395,22 @@ function insertHtmlInsideSelectedElement({
 
     return (
         content.slice(0, insertPosition) +
-        `\n\n    ${htmlToInsert}\n` +
+        `\n    ${htmlToInsert}\n` +
         content.slice(insertPosition)
     );
 }
 
 function insertGeneratedCode({ html, css = "" }) {
+    html = addBuilderIdToHtml(html, "box");
+    html = normalizeGeneratedHtml(html);
+
     const existingContent = contentInput.value.trim();
     const existingCss = styleInput.value.trim();
-    const insertMode = getInsertMode();
 
-    if (insertMode === "inside" && selectedElementSelector) {
+    const shouldInsertInside =
+        selectedPreviewElement && selectedElementSelector;
+
+    if (shouldInsertInside) {
         contentInput.value = insertHtmlInsideSelectedElement({
             content: contentInput.value,
             targetSelector: selectedElementSelector,
@@ -1383,6 +1429,48 @@ function insertGeneratedCode({ html, css = "" }) {
     }
 
     updatePreview();
+}
+
+function insertComponentIntoSelected(html) {
+    if (!html) return;
+
+    insertGeneratedCode({
+        html,
+        css: ""
+    });
+}
+
+function createBuilderInstanceId(prefix = "box") {
+    return `${prefix}-${Date.now()}-${Math.floor(Math.random() * 10000)}`;
+}
+
+function addBuilderIdToHtml(html, prefix = "box") {
+    if (!html || html.includes("data-builder-id=")) return html;
+
+    const id = createBuilderInstanceId(prefix);
+
+    return html.replace(
+        /^<([a-zA-Z0-9-]+)([^>]*)>/,
+        `<$1$2 data-builder-id="${id}">`
+    );
+}
+
+function normalizeGeneratedHtml(html = "") {
+    return html
+        .replace(/>\s+<\/div>/g, "></div>")
+        .replace(/>\s+<\/section>/g, "></section>")
+        .replace(/>\s+<\/article>/g, "></article>")
+        .replace(/>\s+<\/aside>/g, "></aside>");
+}
+
+function getInsertionSelectorForElement(element) {
+    const builderId = element?.dataset?.builderId;
+
+    if (builderId) {
+        return `[data-builder-id="${builderId}"]`;
+    }
+
+    return getElementLabel(element);
 }
 
 function createBoxFromInputs() {
@@ -1413,6 +1501,50 @@ function createBoxFromInputs() {
     saveBoxPresetFromInputs();
 
     boxClassInput.value = "";
+}
+
+// loading existing boxes when pulling up existing posts
+function extractBoxPresetsFromCss(cssText = "") {
+    const presets = [];
+    const blockRegex = /\.([a-zA-Z0-9_-]+)\s*\{([\s\S]*?)\}/g;
+
+    let match;
+
+    while ((match = blockRegex.exec(cssText)) !== null) {
+        const className = match[1];
+        const body = match[2];
+
+        if (!className || className.includes("-text")) continue;
+
+        const markerClassNames = MARKERS.map(marker => marker.className);
+
+        if (markerClassNames.includes(className)) continue;
+
+        const preset = {
+            className,
+            tag: "div",
+            background: getCssPropertyValue(`.${className} {${body}}`, "background"),
+            color: getCssPropertyValue(`.${className} {${body}}`, "color"),
+            border: getCssPropertyValue(`.${className} {${body}}`, "border"),
+            borderRadius: getCssPropertyValue(`.${className} {${body}}`, "border-radius"),
+            padding: getCssPropertyValue(`.${className} {${body}}`, "padding"),
+            margin: getCssPropertyValue(`.${className} {${body}}`, "margin"),
+            width: getCssPropertyValue(`.${className} {${body}}`, "width"),
+            minHeight: getCssPropertyValue(`.${className} {${body}}`, "min-height"),
+            display: getCssPropertyValue(`.${className} {${body}}`, "display"),
+            gap: getCssPropertyValue(`.${className} {${body}}`, "gap")
+        };
+
+        presets.push(preset);
+    }
+
+    return presets;
+}
+
+function loadBoxPresetsFromCurrentCss() {
+    BOX_PRESETS = extractBoxPresetsFromCss(styleInput.value);
+
+    renderBoxPresetButtons();
 }
 
 // saving box
@@ -1489,6 +1621,7 @@ function renderBoxPresetButtons() {
 
         boxPresetButtons.appendChild(button);
     });
+
 }
 
 // box builder listeners
@@ -1503,6 +1636,29 @@ bindColorPickerSet({
     pickerInput: boxColorPicker,
     cssProperty: "color"
 });
+
+// ======================================================
+// posts system UPGRADE
+// ====================
+// styling text helpers
+function escapeHtml(value = "") {
+    return value
+        .replaceAll("&", "&amp;")
+        .replaceAll("<", "&lt;")
+        .replaceAll(">", "&gt;");
+}
+
+function getPrimaryBoxClassFromElement(element) {
+    if (!element) return "";
+
+    return [...element.classList]
+        .filter(className =>
+            className !== "builder-selected-element" &&
+            !className.endsWith("-text")
+        )[0] || "";
+}
+
+// ======================================================
 
 // ======================================================
 // post system UPGRADE
@@ -1529,6 +1685,30 @@ function bindPreviewSelection() {
         });
     });
 }
+function deselectPreviewElement() {
+    if (selectedPreviewElement) {
+        selectedPreviewElement.classList.remove("builder-selected-element");
+    }
+
+    selectedPreviewElement = null;
+    selectedElementSelector = "";
+    selectedCssSelector = "";
+
+    selectedElementText.textContent = "No element selected.";
+    selectedTag.textContent = "-";
+    selectedClass.textContent = "-";
+    selectedId.textContent = "-";
+    selectedText.textContent = "-";
+    selectedCssBlock.textContent = "No CSS block found yet.";
+
+    if (insertTargetText) {
+        insertTargetText.textContent = "No selected target.";
+    }
+
+    populateFlexibleCssEditor("");
+    renderDomTree();
+}
+
 // ======================================================
 // post system UPGRADE
 // ====================
@@ -1567,35 +1747,6 @@ function getCssPropertyValue(cssBlock, propertyName) {
     return match ? match[1].trim() : "";
 }
 
-function populateStyleInspector(cssBlock) {
-    inspectBackgroundInput.value =
-        getCssPropertyValue(cssBlock, "background");
-
-    inspectColorInput.value =
-        getCssPropertyValue(cssBlock, "color");
-
-    inspectBorderInput.value =
-        getCssPropertyValue(cssBlock, "border");
-
-    inspectBorderRadiusInput.value =
-        getCssPropertyValue(cssBlock, "border-radius");
-
-    inspectPaddingInput.value =
-        getCssPropertyValue(cssBlock, "padding");
-
-    inspectMarginInput.value =
-        getCssPropertyValue(cssBlock, "margin");
-}
-
-function clearStyleInspector() {
-    inspectBackgroundInput.value = "";
-    inspectColorInput.value = "";
-    inspectBorderInput.value = "";
-    inspectBorderRadiusInput.value = "";
-    inspectPaddingInput.value = "";
-    inspectMarginInput.value = "";
-}
-
 // ======================================================
 // post system UPGRADE
 // ====================
@@ -1615,39 +1766,6 @@ function replaceCssBlock(cssText, selector, newBlock) {
         ? `${cssText.trim()}\n\n${newBlock}`
         : newBlock;
 }
-
-function applyInspectorStyles() {
-    if (!selectedCssSelector) {
-        statusMessage.textContent = "Select an element first.";
-        return;
-    }
-
-    const newCssBlock = VisualBuilder.buildCssBlock({
-        selector: selectedCssSelector,
-        styles: {
-            background: inspectBackgroundInput.value.trim(),
-            color: inspectColorInput.value.trim(),
-            border: inspectBorderInput.value.trim(),
-            "border-radius": inspectBorderRadiusInput.value.trim(),
-            padding: inspectPaddingInput.value.trim(),
-            margin: inspectMarginInput.value.trim()
-        }
-    });
-
-    styleInput.value = replaceCssBlock(
-        styleInput.value,
-        selectedCssSelector,
-        newCssBlock
-    );
-
-    statusMessage.textContent =
-        `Updated styles for ${selectedCssSelector}.`;
-
-    updatePreview();
-}
-
-applyInspectorStylesBtn.addEventListener("click", applyInspectorStyles);
-
 
 // ======================================================
 // post system UPGRADE
@@ -1732,6 +1850,80 @@ applyFlexibleCssBtn.addEventListener("click", applyFlexibleCssStyles);
 // EVENTS
 // ======================================================
 
+
+// =====================================================
+// post system UPGRADE
+// ====================
+// event listeners // text addition PATCH
+if (insertParagraphBtn) {
+    insertParagraphBtn.addEventListener("click", () => {
+        const suggestedClass = getSuggestedChildClass("text");
+
+        const html = suggestedClass
+            ? `<p class="${suggestedClass}">Type here...</p>`
+            : `<p>Type here...</p>`;
+
+        insertComponentIntoSelected(html);
+    });
+}
+
+if (insertHeadingBtn) {
+    insertHeadingBtn.addEventListener("click", () => {
+        const suggestedClass = getSuggestedChildClass("heading");
+
+        const html = suggestedClass
+            ? `<h2 class="${suggestedClass}">Heading</h2>`
+            : `<h2>Heading</h2>`;
+
+        insertComponentIntoSelected(html);
+    });
+}
+
+if (insertListBtn) {
+    insertListBtn.addEventListener("click", () => {
+        const suggestedClass = getSuggestedChildClass("list");
+
+        const html = suggestedClass
+            ? `<ul class="${suggestedClass}">
+    <li>List item</li>
+    <li>List item</li>
+</ul>`
+            : `<ul>
+    <li>List item</li>
+    <li>List item</li>
+</ul>`;
+
+        insertComponentIntoSelected(html);
+    });
+}
+
+if (insertQuoteBtn) {
+    insertQuoteBtn.addEventListener("click", () => {
+        insertComponentIntoSelected(
+`<blockquote>
+    Quote text...
+</blockquote>`
+        );
+    });
+}
+
+if (insertDividerBtn) {
+    insertDividerBtn.addEventListener("click", () => {
+        insertComponentIntoSelected(`<hr />`);
+    });
+}
+// =====================================================
+
+// ======================================================
+// post system UPGRADE / pivot patch
+// ====================
+// deselect listener
+if (deselectElementBtn) {
+    deselectElementBtn.addEventListener("click", deselectPreviewElement);
+}
+// ======================================================
+
+
 postTitleInput.addEventListener("input", () => {
     updateGeneratedPostFields();
     updatePreview();
@@ -1764,7 +1956,9 @@ document.querySelectorAll("[data-wrap-tag]").forEach(button => {
     });
 });
 
-wrapClassBtn.addEventListener("click", wrapSelectionWithClass);
+if (wrapClassBtn) {
+    wrapClassBtn.addEventListener("click", wrapSelectionWithClass);
+}
 
 openMarkerPanelBtn.addEventListener("click", () => {
     markerPanel.classList.toggle("hidden");
@@ -1775,15 +1969,6 @@ addClassStyleBtn.addEventListener("click", addMarker);
 classBackgroundInput.addEventListener("input", () => {
     updateBackgroundOpacityButton();
     updatePreview();
-});
-
-backgroundOpacityBtn.addEventListener("click", () => {
-    backgroundOpacityPanel.classList.toggle("hidden");
-});
-
-backgroundOpacitySlider.addEventListener("input", () => {
-    backgroundOpacityValue.textContent = `${backgroundOpacitySlider.value}%`;
-    applyBackgroundOpacity();
 });
 
 pageSelect.addEventListener("change", () => {
@@ -1800,12 +1985,13 @@ pageSelect.addEventListener("change", () => {
 
 styleInput.addEventListener("blur", () => {
     loadMarkersFromCurrentCss();
+    loadBoxPresetsFromCurrentCss();
 });
 
 // ======================================================
 // post system UPGRADE
 // ====================
-// box builder
+// box builder listeners
 // ======================================================
 createBoxBtn.addEventListener("click", createBoxFromInputs);
 
@@ -1823,6 +2009,8 @@ generatePreviewBtn.addEventListener("click", updatePreview);
 // ======================================================
 
 async function savePost() {
+    deselectPreviewElement();
+
     const post = buildPostObject();
 
     if (!post.postId) {

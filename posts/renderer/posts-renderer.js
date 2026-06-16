@@ -31,15 +31,29 @@ const PostsRenderer = (() => {
     }
 
     function renderSimpleMarkdown(value = "") {
-        return value
+        let html = value
             .replace(/^### (.*$)/gim, "<h3>$1</h3>")
             .replace(/^## (.*$)/gim, "<h2>$1</h2>")
             .replace(/^# (.*$)/gim, "<h1>$1</h1>")
             .replace(/\*\*(.*?)\*\*/gim, "<strong>$1</strong>")
             .replace(/__(.*?)__/gim, "<strong>$1</strong>")
             .replace(/\*(.*?)\*/gim, "<em>$1</em>")
-            .replace(/_(.*?)_/gim, "<em>$1</em>")
-            .replace(/\n\n/gim, "</p><p>");
+            .replace(/_(.*?)_/gim, "<em>$1</em>");
+
+        html = html
+            .split(/\n{2,}/)
+            .map(block => block.trim())
+            .filter(Boolean)
+            .map(block => {
+                if (/^<[\s\S]*>$/.test(block)) {
+                    return block;
+                }
+
+                return `<p>${block}</p>`;
+            })
+            .join("\n\n");
+
+        return html;
     }
 
     function renderPostContent(content) {
