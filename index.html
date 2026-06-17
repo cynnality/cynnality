@@ -1,270 +1,226 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <meta charset="utf-8" />
-  <title>cynnality</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cynnality</title>
 
-    <!-- ======================== MONO FONTS ========================
-         CHIVO MONO 
-         ---- (monospaced // kinda playful ? serif) 
-
-         DM MONO 
-         ---- (monospaced, serif, gives digital feel - could be good replacement for v323)
-
-         JET BRAINS MONO 
-         ---- (monospaced, generally sans-serif. 
-         ---- want to use for all caps / titles / such things big bold (and oblique) style header feel)
-         ============================================================-->
-
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Chivo+Mono:ital,wght@0,100..900;1,100..900&family=DM+Mono:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap" rel="stylesheet">
-<!--=====================================================================================-->
+    <link rel="stylesheet" href="index2.css" />
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
-
-<link rel="stylesheet" href="cynnality_card_styles.css" />
-
-<style>
-    .tooling {
-    display: flex;
-    flex-direction: column;
-    }
-    .visualizing-pages {
-    display: flex;
-    flex-direction: column;
-    }
-    .postSystem {
-        width: 350px;
-    }
-    .postSystem .check-question-mark {
-        width: 240px;
-    }
-    .nav-type-buttons.postSystem p {
-        margin: 12px;
-    }
-</style>
+    <link href="https://fonts.googleapis.com/css2?family=Chivo+Mono:ital,wght@0,100..900;1,100..900&family=DM+Mono:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap" rel="stylesheet">
 </head>
+
 <body>
-    <div class="full-page">
-        <div class="main-sec">
-            <div class="opening-theme">
-                <h2>CYNNALITY</h2>
-                <h4>collecting, making, and sharing things</h4>
+    <main class="home-board" id="homeBoard">
+
+        <header class="home-header">
+            <h1>cynnality</h1>
+            <p class="lede">
+                Welcome to my <em>digital garden</em>.<br>
+                You've found yourself here unattended.
+                <u>Please proceed with curiosity and explore.</u>
+                There are no prescribed paths!
+            </p>
+        </header>
+
+        <nav class="reopen-tray" id="reopenTray" aria-label="Closed panes"></nav>
+
+        <!-- old index link -->
+        <section
+            class="pane basic-pane"
+            data-pane-id="old-index-link"
+            data-pane-title="OLD INDEX LINK"
+            data-closable="true"
+            style="left: 36px; top: 230px; width: 420px; height: 130px;"
+        >
+            <div class="pane-topbar" data-drag-handle>
+                <h2>OLD INDEX LINK</h2>
+                <button class="pane-close" type="button" aria-label="Close pane">×</button>
             </div>
 
-            <div class="update-section">
-                <div class="contact">
-                    <a href="mailto:yesandcynn@gmail.com">yesandcynn@gmail.com</a>
-                </div>
-                <div class="contact">
-                    <a href="https://www.are.na/c-ynn/channels" target="_blank">my are.na page</a>
-                </div>
+            <div class="pane-content">
+                <a href="index2.html" target="_blank" rel="noopener noreferrer">
+                    LINK TO OLD HOMEPAGE !!! (future reference) (update is WIP)
+                </a>
+            </div>
+        </section>
 
-                <div class="last-updated">
-                    <div class="lu-descrip">
-                        <p>last update: saturday, 13 june 2026</p>
+        <!-- digital garden ? -->
+        <section
+            class="pane basic-pane"
+            data-pane-id="digital-garden"
+            data-pane-title="Digital Garden ?"
+            data-closable="true"
+            style="left: 36px; top: 380px; width: 460px; height: 560px;"
+        >
+            <div class="pane-topbar" data-drag-handle>
+                <h2>Digital Garden ?</h2>
+                <button class="pane-close" type="button" aria-label="Close pane">×</button>
+            </div>
+
+            <div class="pane-content">
+                <p>
+                    The term digital garden might sound a bit silly but it's actually very consicely defined.
+                    <a href="https://maggieappleton.com/garden-history" target="_blank" rel="noopener noreferrer">
+                        Maggie Appleton details the history of the term and what it represents in this article.</a>
+                     Some stand-out points from the article that are relevant to how I use the term in the context of this website:
+                    <ul>
+                        <li>
+                            It’s a different way of thinking about our online behaviour around 
+                            information - one that <strong>accumulates personal knowledge</strong> over time in 
+                            an <mark>explorable space</mark>.
+                        </li>
+                        <li>
+                            Digital gardening is part of the <mark>pushback against the limited range of 
+                            vanilla web formats and layouts</mark> we now take for granted.
+                        </li>
+                        <li>
+                            Gardens are <strong>never finished</strong>, they’re constantly growing, evolving, 
+                            and changing. Just like a real soil, carrot, and cabbage garden.
+                        </li>
+                        <li>
+                            ...<mark>editability is one of the main selling points of the web</mark>. Gardens lean into 
+                            this – <mark>there is no “final version”</mark> on a garden. What you publish is always open 
+                            to revision and expansion.
+                        </li>
+                        <li>
+                            In performance-blog-land you do that thinking and researching privately, then shove it out 
+                            at the final moment. <u>A grand flourish that hides the process</u>. In garden-land, that <mark>process 
+                            of researching and refining happens on the open internet</mark>. You post ideas while they’re 
+                            still “seedlings,” and tend them regularly until they’re fully grown, respectable opinions.
+                        </li>
+                        <li>
+                            Gardens involve experimenting with the native languages of the web – HTML, CSS, and JavaScript. 
+                            They’re the most flexible and robust tools we have for <u>building interconnected knowledge</u> online. 
+                            Gardens are a chance to <mark>question the established norms of a ‘personal website’,</mark> and make space 
+                            for <mark>weirder, wilder experiments</mark>.
+                        </li>
+                        <li>
+                            Gardens offer us the ability to present ourselves in forms that aren’t cookie cutter profiles. 
+                            They’re the higher-fidelity version, complete with quirks, contradictions, and complexity.
+                        </li>
+                        <li><mark>Low friction</mark> and <mark>deep contextualization</mark></li>
+                    </ul>
+                </p>
+            </div>
+        </section>
+
+        <!-- about this site -->
+        <section 
+            class="pane basic-pane" 
+            data-pane-id="about-site-general" 
+            data-pane-title="About this website" 
+            data-closable="true" 
+            style="left: 1000px; top: 75px; width: 480px; height: 253px;">
+            <div class="pane-topbar" data-drag-handle>
+                <h2>About (website)</h2>
+                <button class="pane-close" type="button" aria-label="Close pane">×</button>
+            </div>
+
+            <div class="pane-content">
+                <p>
+                    This website began as a way for me to learn HTML, CSS, and JavaScript through 
+                    building things that interested me. Over time its evolved into a personal archival 
+                    collection of writing, research, structured datasets, and custom-built tools 
+                    for collecting, organizing, and publishing information.
+                </p>
+            </div>
+        </section>
+
+        <!-- currently -->
+        <section
+            class="pane basic-pane"
+            data-pane-id="note"
+            data-pane-title="Currently"
+            data-closable="true"
+            style="left: 520px; top: 75px; width: 380px; height: 420px;"
+        >
+            <div class="pane-topbar" data-drag-handle>
+                <h2>Currently</h2>
+                <button class="pane-close" type="button" aria-label="Close pane">×</button>
+            </div>
+
+            <div class="pane-content">
+                <p>
+                    I'm currently working on a general update to the design and layout. Next I'll
+                    be fine-tuning the posts and entries systems I have going.
+                </p>
+                <p>
+                    Checking into the basketball pages sporadically to update here and there.
+                </p>
+                <p>
+                    Recently been researching the history of war and conflict globally and within specific regions. 
+                    <a href="https://www.are.na/c-ynn/worlds-regions" target="_blank" rel="noopener noreferrer">
+                        Collecting information, sources, and notes here
+                    </a>
+                </p>
+            </div>
+        </section>
+
+        <!-- basketball -->
+        <section 
+            class="pane feature-pane" 
+            data-pane-id="basketball" 
+            data-pane-title="Basketball" 
+            style="left: 920px; top: 500px; width: 560px; height: 300px;"
+            >
+            <div class="pane-topbar" data-drag-handle>
+                <h2>Basketball pages</h2>
+            </div>
+
+            <div class="pane-content feature-content">
+                <h3>Basketball!</h3>
+                <p>
+                    
+                </p>
+
+                <div class="link-grid">
+                    <a href="posts/post page/post-page.html?page=basketball">Basketball Page</a>
+                    <a href="wnba-season-viewer.html">WNBA Season Viewer</a>
+                    <a href="input utilities/command-center/command-center.html">Command Center</a>
+                    <a href="input viewer pages/player-viewer/player-viewer.html">Player Viewer</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- site map
+        <section
+            class="pane feature-pane wide-pane"
+            data-pane-id="site-map"
+            data-pane-title="Site Map"
+            style="left: 150px; top: 470px; width: 620px; height: 290px;"
+        >
+            <div class="pane-topbar" data-drag-handle>
+                <h2>Site map</h2>
+            </div>
+
+            <div class="pane-content">
+                <div class="mini-columns">
+                    <div>
+                        <p class="pane-kicker">Writing</p>
+                        <a href="posts/posts index/posts-index.html">Posts</a>
+                        <a href="entries/add entry/add-entry-tool.html">Entries</a>
+                    </div>
+
+                    <div>
+                        <p class="pane-kicker">Tools</p>
+                        <a href="posts/add post/add-post-tool.html">Add Post</a>
+                        <a href="input utilities/command-center/command-center.html">Data Command Center</a>
+                    </div>
+
+                    <div>
+                        <p class="pane-kicker">Basketball</p>
+                        <a href="input viewer pages/wnba-draft-viewer/wnba-draft-viewer.html">Draft Viewer</a>
+                        <a href="input viewer pages/regular-season-awards-viewer/regular-season-awards-viewer.html">Awards Viewer</a>
                     </div>
                 </div>
-                <div class="last-updated">
-                    <div class="lu-descrip">
-                        <p>also dyed my hair today ;)</p>
-                    </div>
-                </div>
             </div>
+        </section>
+-->
+    </main>
 
-            <!--<div class="nav-type-buttons">
-                <div class="check-question-mark nav-type-button">
-                    <a href = "w-listings.html" class="nav-type-link">
-                        <h2>sports related stuff</h2>
-                    </a>
-                </div>
-            </div> -->
-
-            <div class="tooling">
-            <div class="nav-type-buttons">
-                <div class="check-question-mark nav-type-button">
-                    <a href = "cynn-school.html" class="nav-type-link">
-                        <h2>ideas</h2>
-                    </a>
-                </div>
-            </div>
-            <div class="nav-type-buttons postSystem">
-                <div class="check-question-mark nav-type-button">
-                    <a href = "/posts/posts index/posts-index.html" class="nav-type-link">
-                        <h2>posts?</h2>
-                    </a>
-                </div>
-                    <p>
-                        currently working on this MASSIVELY!!
-                    </p>
-            </div>
-            <div class="nav-type-buttons">
-                <div class="check-question-mark nav-type-button">
-                    <a href = "/post-office/letter-submission/letter-submission.html" class="nav-type-link">
-                        <h2>send me a (digital) letter</h2>
-                    </a>
-                </div>
-            </div>
-            </div>
-
-        </div>
-
-            <div class="tooling">
-            <div class="nav-type-buttons">
-                <div class="check-question-mark nav-type-button">
-                    <a href = "/input tools/season-general-info-input-tools/season-general-info-input.html" class="nav-type-link">
-                        <h2>tool: <em>add</em> a wnba season</h2>
-                    </a>
-                </div>
-            </div>
-            <div class="nav-type-buttons">
-                <div class="check-question-mark nav-type-button">
-                    <a href = "/input tools/player-input-tools/player-input-tool.html" class="nav-type-link">
-                        <h2>tool: wnba players</h2>
-                    </a>
-                </div>
-            </div>
-            <div class="nav-type-buttons">
-                <div class="check-question-mark nav-type-button">
-                    <a href = "/input tools/college-input-tools/college-input.html" class="nav-type-link">
-                        <h2>tool: ncaa colleges</h2>
-                    </a>
-                </div>
-            </div>
-            <div class="nav-type-buttons">
-                <div class="check-question-mark nav-type-button">
-                    <a href = "/input tools/wnba-teams-input-tools/wnba-teams-input.html" class="nav-type-link">
-                        <h2>tool: wnba teams</h2>
-                    </a>
-                </div>
-            </div>
-            <div class="nav-type-buttons">
-                <div class="check-question-mark nav-type-button">
-                    <a href = "/input tools/season-calendar-input-tools/season-calendar-input.html" class="nav-type-link">
-                        <h2>tool: wnba season calendars</h2>
-                    </a>
-                </div>
-            </div>
-            <div class="nav-type-buttons">
-                <div class="check-question-mark nav-type-button">
-                    <a href = "/input tools/draft-input-tools/draft-input-tool.html" class="nav-type-link">
-                        <h2>tool: wnba drafts</h2>
-                    </a>
-                </div>
-            </div>
-            <div class="nav-type-buttons">
-                <div class="check-question-mark nav-type-button">
-                    <a href = "/input tools/regular-season-awards-input-tools/regular-season-awards-input-tool.html" class="nav-type-link">
-                        <h2>tool: wnba regular season awards</h2>
-                    </a>
-                </div>
-            </div>
-            <div class="nav-type-buttons">
-                <div class="check-question-mark nav-type-button">
-                    <a href = "/input tools/overseas-leagues-input-tools/overseas-league-input.html" class="nav-type-link">
-                        <h2>tool: overseas leagues</h2>
-                    </a>
-                </div>
-            </div>
-            <div class="nav-type-buttons">
-                <div class="check-question-mark nav-type-button">
-                    <a href = "/input tools/overseas-teams-input-tools/overseas-team-input.html" class="nav-type-link">
-                        <h2>tool: overseas teams</h2>
-                    </a>
-                </div>
-            </div>
-            <div class="nav-type-buttons">
-                <div class="check-question-mark nav-type-button">
-                    <a href = "/input utilities/command-center/command-center.html" class="nav-type-link">
-                        <h2>tool: data cross reference "checker"</h2>
-                    </a>
-                </div>
-            </div>
-
-            </div>
-            <div class="visualizing-pages">
-            <!-- <div class="nav-type-buttons">
-                <div class="check-question-mark nav-type-button">
-                    <a href = "overview-sampler.html" class="nav-type-link">
-                        <h2>experimenting with visualizing "overviews"</h2>
-                    </a>
-                    <p>visual timeline of sorts with smaller components</p>
-                </div>
-            </div> -->
-           <!-- <div class="nav-type-buttons">
-                <div class="check-question-mark nav-type-button">
-                    <a href = "hooper_cards.html" class="nav-type-link">
-                        <h2>the smaller components</h2>
-                    </a>
-                    <p>individual players</p>
-                </div>
-            </div> -->
-            <div class="nav-type-buttons">
-                <div class="check-question-mark nav-type-button">
-                    <a href = "wnba-season-viewer.html" class="nav-type-link">
-                        <h2>viewer: general wnba info page!</h2>
-                    </a>
-                </div>
-            </div>
-            <div class="nav-type-buttons">
-                <div class="check-question-mark nav-type-button">
-                    <a href = "/input viewer pages/player-viewer/player-viewer.html" class="nav-type-link">
-                        <h2>viewer: wnba players</h2>
-                    </a>
-                </div>
-            </div>
-            <div class="nav-type-buttons">
-                <div class="check-question-mark nav-type-button">
-                    <a href = "/input viewer pages/ncaa-championships-viewer/ncaa-championships-viewer.html" class="nav-type-link">
-                        <h2>viewer: ncaa championships</h2>
-                    </a>
-                </div>
-            </div>
-            <div class="nav-type-buttons">
-                <div class="check-question-mark nav-type-button">
-                    <a href = "/input viewer pages/wnba-championships-viewer/wnba-championships-viewer.html" class="nav-type-link">
-                        <h2>viewer: wnba championships</h2>
-                    </a>
-                </div>
-            </div>
-            <div class="nav-type-buttons">
-                <div class="check-question-mark nav-type-button">
-                    <a href = "season-calendar.html" class="nav-type-link">
-                        <h2>viewer: wnba schedules</h2>
-                    </a>
-                </div>
-            </div>
-            <div class="nav-type-buttons">
-                <div class="check-question-mark nav-type-button">
-                    <a href = "/input viewer pages/draft-viewer/draft-viewer.html" class="nav-type-link">
-                        <h2>viewer: wnba drafts</h2>
-                    </a>
-                </div>
-            </div>
-            <div class="nav-type-buttons">
-                <div class="check-question-mark nav-type-button">
-                    <a href = "/input viewer pages/regular-season-awards-viewer.html" class="nav-type-link">
-                        <h2>viewer: wnba regular season awards</h2>
-                    </a>
-                </div>
-            </div>
-            <div class="nav-type-buttons">
-                <div class="check-question-mark nav-type-button">
-                    <a href = "/input viewer pages/overseas-viewer/overseas-viewer.html" class="nav-type-link">
-                        <h2>viewer: overseas leagues and teams</h2>
-                    </a>
-                </div>
-            </div>
-
-        </div>
-    </div>
-
+    <script src="index2.js"></script>
 </body>
 </html>

@@ -80,7 +80,7 @@ Personal Digital Garden / Web-Based Knowledge System
 Independently built and maintained a local-first personal website using HTML, CSS, JavaScript, Markdown, JSON, SVG, and Node-based save workflows. Created custom tools for writing posts, editing structured datasets, rendering viewer pages, organizing WNBA history data, and experimenting with visual publishing interfaces. Development process includes self-directed learning, documentation, iterative testing, and AI-assisted implementation support.
 
 ## ABOUT THE SITE (general)
-This website began as a way for me to learn HTML, CSS, and JavaScript through building things that interested me. Over time it grew into a personal digital garden with writing, research, structured datasets, and custom-built tools for collecting, organizing, and publishing information.
+This website began as a way for me to learn HTML, CSS, and JavaScript through building things that interested me. Over time it grew into a personal archival collection of writing, research, structured datasets, and custom-built tools for collecting, organizing, and publishing information.
 
 Rather than using an existing content management system, I enjoy experimenting with my own tools and workflows. Many parts of the site—including editors, viewers, and data management tools—have been built specifically for this project through self-directed learning and iterative development.
 

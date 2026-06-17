@@ -1,0 +1,254 @@
+* {
+    box-sizing: border-box;
+}
+
+:root {
+    --page-bg: #f7f3ea;
+    --panel-bg: #fffef9;
+    --ink: #111;
+    --muted: #5f5a50;
+    --accent: #120a43;
+    --accent-soft: #d8d0ff;
+    --green: #0a432f;
+    --gold: #917e22;
+    --shadow: 4px 4px 0 rgba(17, 17, 17, 0.22);
+}
+
+body {
+    margin: 0;
+    min-height: 100vh;
+    font-family: "Chivo Mono", monospace;
+    background:
+        linear-gradient(rgba(18, 10, 67, 0.08) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(18, 10, 67, 0.08) 1px, transparent 1px),
+        var(--page-bg);
+    background-size: 28px 28px;
+    color: var(--ink);
+    overflow: hidden;
+}
+
+a {
+    color: inherit;
+}
+
+button,
+a {
+    font: inherit;
+}
+
+.home-board {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.home-header {
+    position: fixed;
+    z-index: 50;
+    top: 20px;
+    left: 24px;
+    width: 420px;
+    border: 2px solid var(--ink);
+    background: var(--panel-bg);
+    padding: 14px;
+    box-shadow: var(--shadow);
+}
+
+.eyebrow,
+.pane-kicker {
+    margin: 0 0 6px;
+    text-transform: uppercase;
+    letter-spacing: 0.13em;
+    font-size: 11px;
+    font-weight: 800;
+    color: var(--accent);
+}
+
+h1,
+h2,
+h3,
+p {
+    margin-top: 0;
+}
+
+h1 {
+    margin-bottom: 6px;
+    font-family: "JetBrains Mono", monospace;
+    text-transform: uppercase;
+    letter-spacing: -0.08em;
+    font-size: 42px;
+}
+
+.lede {
+    margin-bottom: 0;
+    color: var(--muted);
+    line-height: 1.45;
+}
+
+.reopen-tray {
+    position: fixed;
+    z-index: 60;
+    top: 20px;
+    right: 24px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    gap: 8px;
+    max-width: 420px;
+}
+
+.reopen-button {
+    border: 2px solid var(--ink);
+    background: var(--accent);
+    color: #fff;
+    padding: 8px 10px;
+    cursor: pointer;
+    box-shadow: 2px 2px 0 rgba(17, 17, 17, 0.22);
+}
+
+.pane {
+    position: absolute;
+    z-index: 1;
+    min-width: 180px;
+    min-height: 130px;
+    border: 2px solid var(--ink);
+    background: var(--panel-bg);
+    box-shadow: var(--shadow);
+    resize: both;
+    overflow: auto;
+}
+
+.pane.is-dragging {
+    opacity: 0.92;
+    cursor: grabbing;
+    user-select: none;
+}
+
+.pane-topbar {
+    position: sticky;
+    top: 0;
+    z-index: 2;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    min-height: 38px;
+    border-bottom: 2px solid var(--ink);
+    background: var(--accent-soft);
+    padding: 8px 10px;
+    cursor: grab;
+}
+
+[data-pane-id="old-index-link"] .pane-topbar {
+    background: #ec3232b9;
+}
+
+.feature-pane .pane-topbar {
+    background: #c8d7a7;
+}
+
+.pane-topbar h2 {
+    margin: 0;
+    font-size: 15px;
+    text-transform: uppercase;
+    letter-spacing: -0.03em;
+}
+
+.pane-close {
+    width: 28px;
+    height: 28px;
+    border: 2px solid var(--ink);
+    background: #fff;
+    color: var(--ink);
+    cursor: pointer;
+    font-size: 18px;
+    line-height: 1;
+}
+
+.pane-content {
+    padding: 14px;
+    line-height: 1.55;
+}
+
+.basic-pane .pane-content p {
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+.feature-content h3 {
+    margin-bottom: 8px;
+    font-size: 22px;
+    letter-spacing: -0.05em;
+}
+
+.link-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 8px;
+    margin-top: 14px;
+}
+
+.link-grid a,
+.mini-columns a {
+    display: block;
+    border: 2px solid var(--ink);
+    background: #fff;
+    padding: 8px;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.link-grid a:hover,
+.mini-columns a:hover,
+.reopen-button:hover,
+.pane-close:hover {
+    transform: translate(1px, 1px);
+    box-shadow: 2px 2px 0 rgba(17, 17, 17, 0.22);
+}
+
+.mini-columns {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 12px;
+}
+
+.mini-columns div {
+    border: 2px dashed var(--ink);
+    padding: 10px;
+    background: #fbf7ed;
+}
+
+.mini-columns a + a {
+    margin-top: 8px;
+}
+
+@media (max-width: 850px) {
+    body {
+        overflow: auto;
+    }
+
+    .home-board {
+        height: auto;
+        min-height: 100vh;
+        padding: 12px;
+    }
+
+    .home-header,
+    .reopen-tray,
+    .pane {
+        position: static;
+        width: auto !important;
+        height: auto !important;
+        margin-bottom: 14px;
+    }
+
+    .reopen-tray {
+        justify-content: flex-start;
+    }
+
+    .pane {
+        resize: vertical;
+    }
+}
