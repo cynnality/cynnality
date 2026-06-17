@@ -4,16 +4,16 @@ but primarily for starting to talk about this website in a serious, truthful, an
 ---
 "technical" names for things i've made on/for this website:
 custom JSON data structures
-custom input tools
-custom viewers
-custom rendering systems
 local save servers
 markdown rendering
-SVG-based editing ideas
 data generation utilities
 cross-referenced datasets
 timeline visualizations
 reusable UI systems
+
+custom input tools
+custom viewers
+custom rendering systems
 automatic viewer generation from data
 utility management systems
 custom content management tools
@@ -78,3 +78,57 @@ Created SVG_based visual timeslines, boards, and explanatory interface experieme
 
 Personal Digital Garden / Web-Based Knowledge System
 Independently built and maintained a local-first personal website using HTML, CSS, JavaScript, Markdown, JSON, SVG, and Node-based save workflows. Created custom tools for writing posts, editing structured datasets, rendering viewer pages, organizing WNBA history data, and experimenting with visual publishing interfaces. Development process includes self-directed learning, documentation, iterative testing, and AI-assisted implementation support.
+
+## ABOUT THE SITE (general)
+This website began as a way for me to learn HTML, CSS, and JavaScript through building things that interested me. Over time it grew into a personal digital garden with writing, research, structured datasets, and custom-built tools for collecting, organizing, and publishing information.
+
+Rather than using an existing content management system, I enjoy experimenting with my own tools and workflows. Many parts of the site—including editors, viewers, and data management tools—have been built specifically for this project through self-directed learning and iterative development.
+
+
+#### TO ADD 
+Started:
+2023
+
+Languages Used:
+HTML
+CSS
+JavaScript
+JSON
+Markdown
+SVG
+
+Custom Tools:
+20+
+
+Data Files:
+50+
+
+Viewer Pages:
+15+
+
+Input Tools:
+25+
+
+Ongoing personal project
+
+Current Focus
+
+• Personal digital garden
+• WNBA historical database
+• Custom publishing tools
+• Information organization
+• Browser-based editing systems
+
+--------
+About This Project
+How This Site Works
+Building This Site
+Project Notes
+Behind the Garden
+
+EXPLAIN:
+why you started it,
+what problems you're trying to solve,
+what you've learned,
+how you've organized it,
+and how you continue to develop it.

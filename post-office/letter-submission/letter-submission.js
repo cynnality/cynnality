@@ -8,6 +8,39 @@ const statusMessage = document.getElementById("statusMessage");
 
 sendLetterBtn.addEventListener("click", sendLetter);
 
+// =====================================================================
+// POPUP SYSTEM
+// =====================================================================
+
+function closeAllPopups() {
+    document.querySelectorAll(".tooltip-popup").forEach(popup => {
+        popup.classList.add("hidden");
+    });
+}
+
+document.querySelectorAll(".info-icon").forEach(button => {
+    button.addEventListener("click", () => {
+        const popupId = button.dataset.popup;
+        const popup = document.getElementById(popupId);
+
+        if (!popup) return;
+
+        // makes only 1 popup open at a time
+        closeAllPopups();
+        popup.classList.remove("hidden");
+    });
+});
+
+document.querySelectorAll(".close-pop").forEach(button => {
+    button.addEventListener("click", () => {
+        const popup = button.closest(".tooltip-popup");
+
+        if (!popup) return;
+
+        popup.classList.add("hidden");
+    });
+});
+
 async function sendLetter() {
     const title = titleInput.value.trim();
     const description = descriptionInput.value.trim();

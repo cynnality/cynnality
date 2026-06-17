@@ -28,9 +28,70 @@
     <main class="page-shell">
         <header class="page-header">
             <p class="eyebrow">welcome to the post office!</p>
-            <h1>write and send a letter</h1>
-            <p>Send a question, correction, request, note, anything!</p>
+            <h1>Send a letter</h1>
+            <p>a question, correction, request, note, anything!</p>
         </header>
+
+        <button class="info-icon" data-popup="letterHelpPopup" type="button">
+            what is this?
+        </button>
+
+        <div id="letterHelpPopup" class="tooltip-popup hidden">
+            <div class="navi-topper">
+                <button class="close-pop" type="button"><p>×</p></button>
+            </div>
+
+            <div class="popup-content">
+                <h2>What is this?</h2>
+                <p>This is a letter submission page! Write your letter in the text area box, add a title and a description if you want, and click send!</p>
+
+                <div class="breaker"></div>
+
+                <h2>Where does it go?</h2>
+                <p> 
+                    When you send a letter its <mark>delivered to an <u>online public</u> archive</mark> where it becomes part of an ongoing collection of correspondence. 
+                    Anyone who visits that archive may be able to read what you have written. So please <u>be careful including
+                    sensitive and/or personal information in your letters</u>.
+                    <br>
+                    <br>
+                    Instead of a <em>sealed letter</em> being sent to a single person, it'd be more accurate to think of it as pinning a letter to a community-center board.
+                </p>
+
+            </div>
+        </div>
+
+        <button class="info-icon" data-popup="letterContextPopup" type="button" aria-label="How was this made?">
+            how was this made?
+        </button>
+
+        <div id="letterContextPopup" class="tooltip-popup hidden">
+            <div class="navi-topper">
+                <button class="close-pop" type="button"><p>×</p></button>
+            </div>
+
+            <div class="popup-content">
+                <h2>How was this made?</h2>
+                The <em>post office</em> was built in connection to Are.na (an online social platform for collecting and organizing ideas) - so when you
+                submit a letter, instead of it being stored on this website, <u>its delivered and stored on my Are.na page</u>.
+                <br><br>
+                This connection from the <em>post office</em> to Are.na is <u>established through the use of Are.na's API!</u></p>
+
+                <div class="breaker"></div>
+
+                <h2>What is an API???</h2>
+                <p> 
+                    <u>If you're wondering what an API is, so am I</u>! Even though I've successfully built this page using an API, I'm still largely unsure
+                    of what an API actually is... The concept is still super vague to me but I'm going to do my best to define it within the 
+                    context of how it's being used here specifically. 
+                    <br>
+                    <br>
+                    <mark>API</mark> stands for <mark>Application Programming Interface</mark>. It's technically a "bridge", used by 2 different pieces of software
+                    to communicate with each other. If this website is a house and Are.na is another house - then Are.na has kindly provided a "bridge" (API)
+                    that allows information to be passed between our 2 homes! The API is the thing that establishes the connection between the 2 houses/softwares.
+                </p>
+
+            </div>
+        </div>
 
         <section class="panel">
             <label>

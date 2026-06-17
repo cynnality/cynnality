@@ -1,23 +1,5 @@
 {
   "posts": {
-    "explainingintentions": {
-      "postId": "explainingintentions",
-      "title": "explaining/intentions",
-      "slug": "explainingintentions",
-      "page": "basketball",
-      "status": "published",
-      "tags": [
-        "personal",
-        "blog",
-        "documenting",
-        "explaining"
-      ],
-      "contentType": "markdown-html",
-      "contentFile": "posts/post data/text/basketball/explainingintentions.md",
-      "styleFile": "posts/post data/styles/basketball/explainingintentions.css",
-      "createdAt": "",
-      "updatedAt": "2026-06-06T04:02:48.567Z"
-    },
     "explaining_01": {
       "postId": "explaining_01",
       "title": "explaining_01",
