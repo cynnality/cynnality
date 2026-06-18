@@ -1,0 +1,40 @@
+.page-popup {
+    position: fixed;
+    inset: 0;
+    z-index: 9999;
+    display: grid;
+    place-items: center;
+    background: rgba(0, 0, 0, 0.35);
+
+    font-family: "Chivo Mono", monospace;
+}
+
+.page-popup.hidden {
+    display: none;
+}
+
+.page-popup-card {
+    width: min(620px, calc(100vw - 32px));
+    max-height: calc(100vh - 32px);
+    overflow: auto;
+    border: 2px solid #111;
+    background: #fff;
+    padding: 16px;
+}
+
+.page-popup-topbar {
+    display: flex;
+    justify-content: space-between;
+    gap: 16px;
+    align-items: start;
+    border-bottom: 2px solid #111;
+    margin-bottom: 12px;
+    padding-bottom: 10px;
+}
+
+.page-popup-close {
+    border: 2px solid #111;
+    background: #f70808a2;
+    color: #fff;
+    cursor: pointer;
+}

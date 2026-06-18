@@ -38,11 +38,45 @@
             <!--=====================================================================================-->
 
     <link rel="stylesheet" href="command-center.css">
+    <link rel="stylesheet" href="../../general-elements/page-popup/page-popup.css">
 </head>
 
 <body>
 
 <main class="page-shell">
+
+
+<button data-popup-open="pageIntroPopup" type="button">
+    page context
+</button>
+
+<div id="pageIntroPopup" class="page-popup hidden" data-show-on-load="true">
+    <div class="page-popup-card">
+        <div class="page-popup-topbar">
+            <h2>Before you explore</h2>
+            <button class="page-popup-close" type="button">×</button>
+        </div>
+
+        <div class="page-popup-content">
+            <p>
+I use this page as a kind of <strong>data checker</strong> and <strong>dashboard</strong> 
+for my basketball database.
+It's one of the most useful tools I've built for this project so 
+far, and I plan on continuing to expand it over time.
+<br><br>
+This website runs locally on my laptop, where I use a custom local server 
+that lets me write directly to my data files. Because of that, unless you're 
+somehow using my laptop on my local network, you can't actually edit or 
+overwrite anything here.
+<br><br>
+So feel free to browse, click around, and explore! I keep this page online both 
+for my own convenience and for anyone who happens to come across it. For you 
+it might be a <em>behind-the-scenes</em> look at the kind of information I'm collecting, 
+and maybe you'll even learn something new about basketball.
+            </p>
+        </div>
+    </div>
+</div>
 
     <header class="page-header">
         <p class="eyebrow">WNBA Data Utilities</p>
@@ -170,6 +204,7 @@
 
 </main>
 
+<script src="../../general-elements/page-popup/page-popup.js"></script>
 <script src="command-center.js"></script>
 
 </body>

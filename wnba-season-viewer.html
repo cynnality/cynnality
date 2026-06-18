@@ -6,6 +6,7 @@
     <title>WNBA Season Viewer</title>
     <link rel="stylesheet" href="wnba-season-viewer.css" />
     <link rel="stylesheet" href="entries/renderer/entries-renderer.css" />
+    <link rel="stylesheet" href="/general-elements/page-popup/page-popup.css">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -24,6 +25,45 @@
                         <select id="seasonSelect" class="season-select-fallback" aria-label="Select season"></select>
                     </div>
                 </div>
+
+<button data-popup-open="pageIntroPopup" type="button">
+    page context
+</button>
+
+<div id="pageIntroPopup" class="page-popup hidden" data-show-on-load="true">
+    <div class="page-popup-card">
+        <div class="page-popup-topbar">
+            <h2>Before you explore</h2>
+            <button class="page-popup-close" type="button">×</button>
+        </div>
+        <div class="page-popup-content">
+            <p>
+This page is a major work in progress.
+<br><br>
+Working on this page requires the navigation of so many different challenges. Not only am I
+trying to visually display a BUNCH of data in a way that's easy to understand but I'm 
+also running into the unexpected issue of discerning what should and should not be 
+displayed and how to visually represent and organize it. 
+<br><br>
+What <em>should</em> go here and what <em>should</em> go on a dedicated page? 
+<br>
+What elements/details are useful to me but not necessarily contributing to the
+overall goal of this page? 
+            </p>
+<p>
+These are the types of challenges I LOVE working on. At the same time, this page 
+can periodically become a bit daunting. I'm taking a more delicate approach to this 
+page since it carries a bit more significance to me than the average page. 
+</p>
+<p>
+    For now - the dedicated viewer pages are probably a better place to 
+    actually read and take in the information on this page. But please 
+    don't let that detour you from looking around anyways!
+    
+</p>
+        </div>
+    </div>
+</div>
 
                 <div class="season-rail-legend">
                     <span><span class="legend-dot filled"></span> data exists</span>
@@ -59,6 +99,7 @@
         </div>
 
     </main>
+    <script src="/general-elements/page-popup/page-popup.js"></script>
     <script src="entries/renderer/entries-renderer.js"></script>
     <script src="wnba-season-viewer.js"></script>
 </body>

@@ -37,6 +37,16 @@ function closePane(pane) {
     createReopenButton(pane);
 }
 
+function minimizePane(pane, button) {
+    const isMinimized = pane.classList.toggle("is-minimized");
+
+    button.textContent = isMinimized ? "+" : "−";
+    button.setAttribute(
+        "aria-label",
+        isMinimized ? "Expand pane" : "Minimize pane"
+    );
+}
+
 function startDrag(event, pane) {
     if (event.button !== 0) return;
 
@@ -50,8 +60,8 @@ function startDrag(event, pane) {
 
     activeDrag = {
         pane,
-        offsetX: event.clientX - paneRect.left,
-        offsetY: event.clientY - paneRect.top
+        offsetX: event.pageX - (pane.offsetLeft || paneRect.left + window.scrollX),
+        offsetY: event.pageY - (pane.offsetTop || paneRect.top + window.scrollY)
     };
 
     pane.classList.add("is-dragging");
@@ -65,11 +75,8 @@ function moveActivePane(event) {
 
     const { pane, offsetX, offsetY } = activeDrag;
 
-    const maxLeft = window.innerWidth - 80;
-    const maxTop = window.innerHeight - 80;
-
-    const nextLeft = Math.max(0, Math.min(event.clientX - offsetX, maxLeft));
-    const nextTop = Math.max(0, Math.min(event.clientY - offsetY, maxTop));
+    const nextLeft = Math.max(0, event.pageX - offsetX);
+    const nextTop = Math.max(0, event.pageY - offsetY);
 
     pane.style.left = `${nextLeft}px`;
     pane.style.top = `${nextTop}px`;
@@ -87,6 +94,7 @@ function setupPane(pane) {
 
     const dragHandle = pane.querySelector("[data-drag-handle]");
     const closeButton = pane.querySelector(".pane-close");
+    const minimizeButton = pane.querySelector(".pane-minimize-btn");
 
     if (dragHandle) {
         dragHandle.addEventListener("mousedown", event => {
@@ -99,8 +107,16 @@ function setupPane(pane) {
     });
 
     if (closeButton && pane.dataset.closable === "true") {
-        closeButton.addEventListener("click", () => {
+        closeButton.addEventListener("click", event => {
+            event.stopPropagation();
             closePane(pane);
+        });
+    }
+
+    if (minimizeButton && pane.dataset.minimizable === "true") {
+        minimizeButton.addEventListener("click", event => {
+            event.stopPropagation();
+            minimizePane(pane, minimizeButton);
         });
     }
 }
