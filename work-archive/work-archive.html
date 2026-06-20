@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>Work Archive</title>
+    <link rel="stylesheet" href="work-archive.css" />
+</head>
+
+<body>
+    <main class="work-board" id="workBoard">
+
+        <header class="archive-header">
+            <p class="eyebrow">project journal / work archive</p>
+            <h1>hands & mind at work</h1>
+            <p>
+                A collection of things I've worked on. 
+            </p>
+        </header>
+
+        <nav class="archive-filters" id="archiveFilters">
+            <button type="button" data-filter="all">All</button>
+            <button type="button" data-filter="personal">Personal</button>
+            <button type="button" data-filter="print">Print</button>
+            <button type="button" data-filter="website">Website</button>
+        </nav>
+
+        <section class="folder-field" id="folderField" aria-label="Project folders"></section>
+
+        <section
+            class="project-window hidden"
+            id="projectWindow"
+            style="left: 520px; top: 140px;"
+        >
+            <section
+                class="pane project-pane"
+                id="projectPane"
+                data-pane-id="project-details"
+                data-pane-title="Project Details"
+            >
+                <div class="pane-topbar" data-drag-handle>
+                    <h2 id="projectPaneTitle">Project</h2>
+                    <button class="pane-close" id="closeProjectPaneBtn" type="button">×</button>
+                </div>
+
+                <div class="pane-content" id="projectPaneContent"></div>
+            </section>
+
+            <aside class="project-assets-dock" id="projectAssetsDock"></aside>
+
+            <aside class="project-side-display" id="projectSideDisplay"></aside>
+        </section>
+
+        <section class="asset-viewer hidden" id="assetViewer">
+            <div class="asset-viewer-card">
+                <button id="closeAssetViewerBtn" type="button">×</button>
+                <div id="assetViewerContent"></div>
+            </div>
+        </section>
+
+    </main>
+
+    <script src="work-archive.js"></script>
+</body>
+</html>

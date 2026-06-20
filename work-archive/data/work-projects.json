@@ -1,0 +1,87 @@
+{
+  "projects": {
+    "ice-cream-run-stickers": {
+      "projectId": "ice-cream-run-stickers",
+      "title": "Ice Cream Run Stickers",
+      "category": "print",
+      "projectTypes": [
+        "sticker",
+        "logo adjustment"
+      ],
+      "year": null,
+      "status": "complete",
+      "textFile": "text/ice-cream-run-stickers.md",
+      "assets": [
+        {
+          "assetId": "original-logo",
+          "assetType": "image",
+          "displayMode": "side",
+          "label": "Original Logo",
+          "src": "assets/ice-cream-run-stickers/benefiting_clarke_ice_cream_og_logo.png",
+          "stage": "customer artwork",
+          "caption": "Original customer-provided logo before adjustment."
+        },
+        {
+          "assetId": "fitted-logo",
+          "assetType": "image",
+          "displayMode": "side",
+          "label": "Fitted Logo",
+          "src": "assets/ice-cream-run-stickers/benefiting_clarke_ice_cream_og_logo_fitted.png",
+          "stage": "design adjustment",
+          "caption": "The original logo within the 3-inch circle."
+        },
+        {
+          "assetId": "reworked-logo",
+            "assetType": "image",
+            "displayMode": "side",
+            "label": "Reworked Logo",
+            "src": "assets/ice-cream-run-stickers/benefiting_clarke_ice_cream_og_logo_rework.png",
+            "stage": "final product",
+            "caption": "The adjusted logo within the 3-inch circle."
+        }
+      ]
+    },
+    "bk_grad_sign": {
+        "projectId": "bk_grad_sign",
+        "title": "Custom Graduation Sign",
+        "category": "print",
+        "projectTypes": [
+            "sign",
+            "custom design",
+            "full"
+        ],
+        "year": null,
+        "status": "complete",
+        "textFile": "text/bk_grad_sign.md",
+        "assets": [
+            {
+                "assetId": "deconstructed-design",
+                "assetType": "image",
+                "displayMode": "side",
+                "label": "Deconstructed draft",
+                "src": "assets/bk-grad-sign/bk_grad_sign_deconstructed.png",
+                "stage": "customer artwork",
+                "caption": "Deconstructed view of the design before proofing"
+            },
+            {
+                "assetId": "in-progress-sign",
+                "assetType": "image",
+                "displayMode": "side",
+                "label": "Printing in progress",
+                "src": "assets/bk-grad-sign/bk_grad_sign_in_progress.png",
+                "stage": "final product",
+                "caption": "A look at the design during the print process"
+            },
+            {
+                "assetId": "completed-sign",
+                "assetType": "image",
+                "displayMode": "side",
+                "label": "The final product",
+                "src": "assets/bk-grad-sign/bk_grad_sign_complete.png",
+                "stage": "final product",
+                "caption": "The final completed sign."
+            }
+        ]
+    }
+  }
+}
