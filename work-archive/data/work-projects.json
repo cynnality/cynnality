@@ -1,4 +1,22 @@
+
 {
+  "projectTypes": {
+    "print": {
+      "typeId": "print",
+      "title": "Print Work",
+      "textFile": "text/type-context/print.md"
+    },
+    "personal": {
+      "typeId": "personal",
+      "title": "Personal Projects",
+      "textFile": "text/type-context/personal.md"
+    },
+    "website": {
+      "typeId": "website",
+      "title": "Website Projects",
+      "textFile": "text/type-context/website.md"
+    }
+  },
   "projects": {
     "ice-cream-run-stickers": {
       "projectId": "ice-cream-run-stickers",

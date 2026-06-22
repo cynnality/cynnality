@@ -2,11 +2,39 @@
     box-sizing: border-box;
 }
 
+:root {
+    --Color1: #0A432F;
+    --Color2: #229149;
+    --Color3: #53C659;
+    --Color4: #B3D7A7;
+    --Color5: #120A43;
+    --Color6: #223391;
+    --Color7: #5387C6;
+    --Color8: #A7CBD7;
+    --Color9: #430A1E;
+    --Color10: #91226A;
+    --Color11: #C653C0;
+    --Color12: #CBA7D7;
+    --Color13: #3B430A;
+    --Color14: #917E22;
+    --Color15: #C69053;
+    --Color16: #D7B2A7;
+
+    --page-bg: #f7f5f0;
+    --ink: #111;
+    --panel-bg: #fff;
+    --border: #111;
+}
+
 body {
     margin: 0;
     font-family: monospace;
-    background: #f7f5f0;
-    color: #111;
+    background:
+        linear-gradient(90deg, rgba(167, 203, 215, 0.28) 1px, transparent 1px),
+        linear-gradient(rgba(167, 203, 215, 0.28) 1px, transparent 1px),
+        var(--page-bg);
+    background-size: 28px 28px;
+    color: var(--ink);
 }
 
 button {
@@ -21,11 +49,18 @@ button {
 }
 
 .archive-header {
-    max-width: 560px;
-    border: 2px solid #111;
-    background: #fff;
+    max-width: 620px;
+    border: 2px solid var(--border);
+    background: var(--panel-bg);
     padding: 18px;
     margin-bottom: 16px;
+}
+
+.archive-header h1 {
+    margin: 0 0 10px;
+    color: var(--Color5);
+    font-size: 34px;
+    line-height: 1;
 }
 
 .eyebrow {
@@ -33,10 +68,8 @@ button {
     text-transform: uppercase;
     font-size: 12px;
     letter-spacing: 0.12em;
-}
-
-.archive-header h1 {
-    margin: 0 0 10px;
+    font-weight: 600;
+    color: var(--Color6);
 }
 
 .archive-header p {
@@ -52,11 +85,20 @@ button {
 }
 
 .archive-filters button,
-.folder-button,
 .pane-close {
-    border: 2px solid #111;
+    border: 2px solid var(--border);
     background: #fff;
     padding: 8px 10px;
+    font-size: 13px;
+    font-weight: 600;
+}
+
+.archive-filters button:hover,
+.pane-close:hover,
+.asset-icon-btn:hover,
+.asset-ref-btn:hover {
+    background: var(--Color4);
+    transform: translate(1px, 1px);
 }
 
 .folder-field {
@@ -67,42 +109,50 @@ button {
 }
 
 .folder-button {
-    width: 150px;
-    min-height: 130px;
+    width: 145px;
+    min-height: 128px;
     display: grid;
     place-items: center;
     gap: 8px;
     text-align: center;
+    background: transparent;
+    border: none;
+    color: var(--Color5);
+}
+
+.folder-button:hover .folder-icon {
+    color: var(--Color10);
+    transform: rotate(-3deg) scale(1.05);
 }
 
 .folder-icon {
-    width: 72px;
-    height: 52px;
+    width: 76px;
+    height: auto;
+    color: var(--Color5);
+    transition: transform 0.15s ease;
 }
 
 .folder-label {
     font-size: 13px;
     line-height: 1.3;
+    font-weight: 600;
 }
 
 .folder-meta {
     font-size: 11px;
-    opacity: 0.7;
+    opacity: 0.75;
+    font-weight: 400;
 }
 
 /* pane system */
 
 .pane {
     position: absolute;
-    border: 2px solid #111;
-    background: #fff;
+    border: 2px solid var(--border);
+    background: var(--panel-bg);
     resize: both;
     overflow: auto;
     z-index: 10;
-}
-
-.hidden {
-    display: none;
 }
 
 .pane-topbar {
@@ -110,15 +160,20 @@ button {
     justify-content: space-between;
     align-items: center;
     gap: 12px;
-    border-bottom: 2px solid #111;
+    border-bottom: 2px solid var(--border);
     padding: 10px;
-    background: #eee;
+    background: var(--Color8);
     cursor: move;
 }
 
 .pane-topbar h2 {
     margin: 0;
     font-size: 16px;
+    font-weight: 700;
+}
+
+.hidden {
+    display: none;
 }
 
 .pane-content {
@@ -193,6 +248,37 @@ button {
     overflow: visible;
 }
 
+.project-tag {
+    border: 1px solid var(--border);
+    background: var(--Color12);
+    padding: 3px 7px;
+    font-size: 11px;
+    font-weight: 500;
+}
+
+.project-description {
+    line-height: 1.65;
+    font-size: 16px;
+}
+
+.project-description h1,
+.project-description h2,
+.project-description h3 {
+    color: var(--Color5);
+    line-height: 1.1;
+}
+
+.project-description mark {
+    background: var(--Color16);
+    padding: 0 3px;
+}
+
+.project-description hr {
+    border: 0;
+    border-top: 2px solid var(--border);
+    margin: 20px 0;
+}
+
 .project-pane .pane-content {
     height: auto;
     overflow: visible;
@@ -213,14 +299,25 @@ button {
 }
 
 .asset-icon-btn {
-    width: 72px;
-    min-height: 72px;
-    border: 2px solid #111;
+    width: 46px;
+    height: 46px;
+    min-height: 46px;
+    border: 2px solid var(--border);
     background: #fff;
     display: grid;
     place-items: center;
-    font-size: 11px;
+    font-size: 0;
     text-align: center;
+    padding: 0;
+}
+
+.asset-icon-btn span:first-child {
+    font-size: 20px;
+    line-height: 1;
+}
+
+.asset-icon-btn span:last-child {
+    display: none;
 }
 
 .asset-ref-btn {
@@ -311,6 +408,61 @@ button {
     margin: 18px 0;
 }
 /*=====================================*/
+
+.side-asset-media-btn {
+    border: 0;
+    background: transparent;
+    padding: 0;
+    display: block;
+    cursor: zoom-in;
+}
+
+.side-asset-media-btn img {
+    display: block;
+    max-width: 100%;
+    max-height: 420px;
+    object-fit: contain;
+}
+
+/* description of "types" of projects: print, personal, website */
+.project-pane {
+    width: 680px;
+    height: auto;
+    max-height: none;
+    resize: none;
+    overflow: visible;
+}
+
+.project-tag {
+    border: 1px solid var(--border);
+    background: var(--Color12);
+    padding: 3px 7px;
+    font-size: 11px;
+    font-weight: 500;
+}
+
+.project-description {
+    line-height: 1.65;
+    font-size: 16px;
+}
+
+.project-description h1,
+.project-description h2,
+.project-description h3 {
+    color: var(--Color5);
+    line-height: 1.1;
+}
+
+.project-description mark {
+    background: var(--Color16);
+    padding: 0 3px;
+}
+
+.project-description hr {
+    border: 0;
+    border-top: 2px solid var(--border);
+    margin: 20px 0;
+}
 
 @media (max-width: 850px) {
     .work-board {
