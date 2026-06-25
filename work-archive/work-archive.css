@@ -327,24 +327,6 @@ button {
     font: inherit;
 }
 
-.project-tags {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 6px;
-    margin-bottom: 14px;
-}
-
-.project-tag {
-    border: 1px solid #111;
-    padding: 3px 7px;
-    font-size: 11px;
-}
-
-.project-description {
-    line-height: 1.6;
-    font-size: 16px;
-}
-
 .asset-viewer {
     position: fixed;
     inset: 0;
@@ -394,18 +376,8 @@ button {
     padding: 10px;
 }
 
-.project-description mark {
-    background: #f7df86;
-}
-
 .project-description u {
     text-decoration-thickness: 2px;
-}
-
-.project-description hr {
-    border: 0;
-    border-top: 2px solid #111;
-    margin: 18px 0;
 }
 /*=====================================*/
 
@@ -425,43 +397,64 @@ button {
 }
 
 /* description of "types" of projects: print, personal, website */
-.project-pane {
-    width: 680px;
+.type-context-pane {
+    width: 720px;
+    max-width: 720px;
     height: auto;
-    max-height: none;
     resize: none;
     overflow: visible;
 }
 
-.project-tag {
-    border: 1px solid var(--border);
-    background: var(--Color12);
-    padding: 3px 7px;
-    font-size: 11px;
-    font-weight: 500;
-}
-
-.project-description {
-    line-height: 1.65;
-    font-size: 16px;
-}
-
-.project-description h1,
-.project-description h2,
-.project-description h3 {
-    color: var(--Color5);
-    line-height: 1.1;
-}
-
-.project-description mark {
+.type-context-pane .pane-topbar {
     background: var(--Color16);
-    padding: 0 3px;
 }
 
-.project-description hr {
-    border: 0;
-    border-top: 2px solid var(--border);
-    margin: 20px 0;
+.type-context-pane .pane-content {
+    line-height: 1.5;
+    padding: 18px;
+}
+
+.type-context-pane .project-description {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 14px;
+    font-size: 15px;
+}
+
+.type-context-pane .project-description h1 {
+    grid-column: 1 / -1;
+    margin: 0;
+    font-size: 26px;
+    color: var(--Color9);
+}
+
+.type-context-pane .project-description > p:first-of-type {
+    grid-column: 1 / -1;
+    border: 2px solid var(--border);
+    background: var(--Color4);
+    padding: 12px;
+}
+
+.type-context-pane .project-description h2 {
+    margin: 0;
+    border: 2px solid var(--border);
+    background: var(--Color8);
+    padding: 8px 10px;
+    font-size: 15px;
+    font-weight: 700;
+}
+
+.type-context-pane .project-description h2 + p {
+    margin: -14px 0 0;
+    border: 2px solid var(--border);
+    border-top: 0;
+    padding: 12px;
+    background: #fff;
+    min-height: 120px;
+}
+
+.type-context-pane .project-description hr {
+    grid-column: 1 / -1;
 }
 
 @media (max-width: 850px) {
