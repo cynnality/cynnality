@@ -30,6 +30,11 @@
             <p class="eyebrow">welcome to the post office!</p>
             <h1>Send a letter</h1>
             <p>a question, correction, request, note, anything!</p>
+            <p>i'm working on adding more "structure" or options for sending letters! 
+                For now, <mark class="letter-specs">leave any special requests for your letter in the description!!!</mark>
+                <br>
+
+            </p>
         </header>
 
         <button class="info-icon" data-popup="letterHelpPopup" type="button">
@@ -43,22 +48,33 @@
 
             <div class="popup-content">
                 <h2>What is this?</h2>
-                <p>This is a letter submission page! Write your letter in the text area box, add a title and a description if you want, and click send!</p>
+                <p>
+                    As an angsty teen in the early 2010s, I used Tumblr WAY too much(...if you don't know what that is... CONGRATULATIONS!).
+                    Tumblr let people send anonymous messages. And replies to messages could be sent privately or posted publicly. I loved this "system"!!! So this <em>post office</em>
+                    is my personal take on that sort of thing. 
+                </p>
+            </div>
+        </div>
 
-                <div class="breaker"></div>
 
-                <h2>Where does it go?</h2>
+        <button class="info-icon" data-popup="letterSentPopup" type="button">
+            I sent a letter.. where did it go?
+        </button>
+
+        <div id="letterSentPopup" class="tooltip-popup hidden">
+            <div class="navi-topper">
+                <button class="close-pop" type="button"><p>×</p></button>
+            </div>
+
+            <div class="popup-content">
+                <h2>Where did it go?</h2>
                 <p> 
-                    When you send a letter its <mark>delivered to an <u>online public</u> archive</mark> where it becomes part of an ongoing collection of correspondence. 
-                    Anyone who visits that archive may be able to read what you have written. So please <u>be careful including
-                    sensitive and/or personal information in your letters</u>.
-                    <br>
-                    <br>
-                    Instead of a <em>sealed letter</em> being sent to a single person, it'd be more accurate to think of it as pinning a letter to a community-center board.
+                    Letters are automatically posted <a href="https://www.are.na/c-ynn/post-office_submissions" target="_blank">here on my are.na page!</a>
                 </p>
 
             </div>
         </div>
+
 
         <button class="info-icon" data-popup="letterContextPopup" type="button" aria-label="How was this made?">
             how was this made?
@@ -71,23 +87,28 @@
 
             <div class="popup-content">
                 <h2>How was this made?</h2>
-                The <em>post office</em> was built in connection to Are.na (an online social platform for collecting and organizing ideas) - so when you
-                submit a letter, instead of it being stored on this website, <u>its delivered and stored on my Are.na page</u>.
+                This <em>post office</em> is connected to <mark>Are.na</mark> - which is basically a social media platform for adults that used Tumblr as teenagers 
+                <br>
+                When you submit a letter, <a href="https://www.are.na/c-ynn/post-office_submissions" target="_blank">its delivered and stored here, on are.na</a>.
                 <br><br>
-                This connection from the <em>post office</em> to Are.na is <u>established through the use of Are.na's API!</u></p>
+                Created using <mark>Are.na's <u>API</u></mark></p>
 
                 <div class="breaker"></div>
 
                 <h2>What is an API???</h2>
                 <p> 
-                    <u>If you're wondering what an API is, so am I</u>! Even though I've successfully built this page using an API, I'm still largely unsure
-                    of what an API actually is... The concept is still super vague to me but I'm going to do my best to define it within the 
-                    context of how it's being used here specifically. 
+                    <u>If you're wondering what an API is, so am I</u>! It's all still super vague to me
                     <br>
                     <br>
-                    <mark>API</mark> stands for <mark>Application Programming Interface</mark>. It's technically a "bridge", used by 2 different pieces of software
-                    to communicate with each other. If this website is a house and Are.na is another house - then Are.na has kindly provided a "bridge" (API)
-                    that allows information to be passed between our 2 homes! The API is the thing that establishes the connection between the 2 houses/softwares.
+                    I can't really explain what it is but I can explain what it allows me to do!
+                    <br>
+                    Without the API this page would <em>look</em> the same. You'd still be able to type a letter and click the "submit" button, but nothing would actually
+                    be submitted. Saving the contents of letters in this way essentially requires modifying this website's code. And browsers 
+                    (i.e., Chrome, Firefox, Safari, etc.) need <u>special permissions</u> to modify files/code on any website. 
+                    <br>
+                    So the API is basically a <em>contract</em> that tells the browser what it should and shouldn't do when you send a letter!
+                    
+                    
                 </p>
 
             </div>
