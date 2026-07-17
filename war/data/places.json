@@ -1,0 +1,93 @@
+{
+  "places": {
+    "india": {
+      "placeId": "india",
+      "name": "India",
+      "type": "country",
+      "svgId": "IN",
+      "parent": null,
+      "summary": "Republic of India",
+      "people": [
+        "Indian"
+      ],
+      "languages": [
+        "Hindi",
+        "English"
+      ],
+      "religions": [
+        "Hinduism",
+        "Islam",
+        "Christianity",
+        "Sikhism",
+        "Buddhism",
+        "Jainism"
+      ],
+      "currencies": [
+        "Indian rupee"
+      ],
+      "relatedPlaces": [],
+      "relatedTimePeriods": [],
+      "posts": [],
+      "notes": []
+    },
+    "pakistan": {
+      "placeId": "pakistan",
+      "name": "Pakistan",
+      "type": "country",
+      "svgId": "PK",
+      "parent": null,
+      "summary": "",
+      "largerRegion": "South Asia",
+      "people": [
+        "Pakistani"
+      ],
+      "languages": [
+        "English",
+        "Urdu",
+        "Punjabi",
+        "Sindhi",
+        "Pashto"
+      ],
+      "religions": [
+        "Sunni Muslim",
+        "Shiite Muslim"
+      ],
+      "currencies": [
+        "Rupee"
+      ],
+      "relatedPlaces": [],
+      "relatedTimePeriods": [],
+      "posts": [],
+      "notes": []
+    },
+    "malaysia": {
+      "placeId": "malaysia",
+      "name": "Malaysia",
+      "type": "country",
+      "svgId": "MY",
+      "parent": null,
+      "summary": "",
+      "largerRegion": "Southeastern Asia",
+      "people": [
+        "Malaysian"
+      ],
+      "languages": [
+        "Standard Malay",
+        "English"
+      ],
+      "religions": [
+        "Muslim",
+        "Buddhism",
+        "Christianity",
+        "Hinduism"
+      ],
+      "currencies": [
+        "Malaysian ringgit"
+      ],
+      "relatedPlaces": [],
+      "relatedTimePeriods": [],
+      "posts": [],
+      "notes": []
+    }
+  }
+}

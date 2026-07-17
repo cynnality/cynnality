@@ -1,0 +1,418 @@
+* {
+    box-sizing: border-box;
+}
+
+:root {
+    --page-bg: #f4f1e9;
+    --panel-bg: #fff;
+    --ink: #111;
+    --muted: #5d5a54;
+    --border: #111;
+    --accent: #274c3b;
+    --accent-soft: #dce9df;
+    --warn: #7a2d24;
+    --radius: 8px;
+}
+
+body {
+    margin: 0;
+    background: var(--page-bg);
+    color: var(--ink);
+    font-family: "Courier New", monospace;
+    font-size: 15px;
+}
+
+button,
+input,
+select,
+textarea {
+    font: inherit;
+}
+
+button {
+    border: 2px solid var(--border);
+    border-radius: 6px;
+    padding: 9px 12px;
+    background: #fff;
+    color: var(--ink);
+    cursor: pointer;
+}
+
+button:hover {
+    background: #efefef;
+}
+
+button.primary {
+    background: var(--accent);
+    color: #fff;
+}
+
+button.danger {
+    background: var(--warn);
+    color: #fff;
+}
+
+button.icon-button {
+    min-width: 38px;
+    font-size: 20px;
+    line-height: 1;
+}
+
+input,
+select,
+textarea {
+    width: 100%;
+    border: 2px solid var(--border);
+    border-radius: 6px;
+    padding: 10px;
+    background: #fff;
+    color: var(--ink);
+}
+
+textarea {
+    resize: vertical;
+    line-height: 1.45;
+}
+
+label {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    font-weight: 700;
+}
+
+h1,
+h2,
+p {
+    margin-top: 0;
+}
+
+h1,
+h2 {
+    margin-bottom: 8px;
+}
+
+.tool-shell {
+    padding: 18px;
+}
+
+.panel {
+    border: 2px solid var(--border);
+    border-radius: var(--radius);
+    background: var(--panel-bg);
+    padding: 16px;
+}
+
+.tool-header {
+    display: flex;
+    justify-content: space-between;
+    gap: 24px;
+    align-items: end;
+}
+
+.header-actions,
+.dialog-actions-right {
+    display: flex;
+    gap: 8px;
+    flex-wrap: wrap;
+}
+
+.eyebrow {
+    margin-bottom: 5px;
+    text-transform: uppercase;
+    letter-spacing: 0.12em;
+    font-size: 12px;
+    font-weight: 700;
+    color: var(--accent);
+}
+
+.intro,
+.helper-text {
+    color: var(--muted);
+}
+
+.status-message {
+    min-height: 24px;
+    margin: 10px 2px;
+    font-weight: 700;
+}
+
+.status-message.error {
+    color: var(--warn);
+}
+
+.status-message.success {
+    color: var(--accent);
+}
+
+.workspace {
+    display: grid;
+    grid-template-columns: minmax(250px, 330px) minmax(650px, 1fr);
+    gap: 14px;
+    align-items: start;
+}
+
+.records-panel {
+    position: sticky;
+    top: 14px;
+    max-height: calc(100vh - 28px);
+    overflow: auto;
+}
+
+.editor-column {
+    display: grid;
+    gap: 14px;
+}
+
+.panel-heading,
+.dialog-heading {
+    display: flex;
+    justify-content: space-between;
+    gap: 12px;
+    align-items: start;
+    margin-bottom: 14px;
+}
+
+.count-badge,
+.mode-badge {
+    border: 2px solid var(--border);
+    border-radius: 999px;
+    padding: 4px 9px;
+    background: var(--accent-soft);
+    font-weight: 700;
+}
+
+.records-list,
+.writing-list {
+    display: grid;
+    gap: 8px;
+    margin-top: 12px;
+}
+
+.record-button,
+.writing-card {
+    width: 100%;
+    border: 2px solid var(--border);
+    border-radius: 6px;
+    background: #fff;
+    padding: 11px;
+    text-align: left;
+}
+
+.record-button.is-active {
+    background: var(--accent-soft);
+}
+
+.record-title,
+.writing-title {
+    display: block;
+    font-weight: 700;
+}
+
+.record-meta,
+.writing-file {
+    display: block;
+    margin-top: 4px;
+    color: var(--muted);
+    font-size: 13px;
+    overflow-wrap: anywhere;
+}
+
+.form-grid {
+    display: grid;
+    gap: 12px;
+}
+
+.form-grid.two-column {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.full-width {
+    grid-column: 1 / -1;
+}
+
+.writing-card {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) auto;
+    gap: 12px;
+    align-items: center;
+}
+
+.writing-card-actions {
+    display: flex;
+    gap: 6px;
+}
+
+.empty-state {
+    border: 2px dashed var(--border);
+    padding: 18px;
+    color: var(--muted);
+    text-align: center;
+}
+
+.json-panel summary {
+    cursor: pointer;
+    font-weight: 700;
+}
+
+#jsonPreview {
+    overflow: auto;
+    padding: 12px;
+    background: #f5f5f5;
+    border: 1px solid #bbb;
+    white-space: pre-wrap;
+}
+
+dialog {
+    width: min(760px, calc(100vw - 30px));
+    max-height: calc(100vh - 30px);
+    border: 2px solid var(--border);
+    border-radius: var(--radius);
+    padding: 0;
+}
+
+dialog::backdrop {
+    background: rgba(0, 0, 0, 0.45);
+}
+
+.dialog-form {
+    display: grid;
+    gap: 12px;
+    padding: 18px;
+}
+
+.dialog-actions {
+    display: flex;
+    justify-content: space-between;
+    gap: 12px;
+}
+
+.hidden {
+    display: none !important;
+}
+
+@media (max-width: 950px) {
+    .workspace {
+        grid-template-columns: 1fr;
+    }
+
+    .records-panel {
+        position: static;
+        max-height: none;
+    }
+}
+
+@media (max-width: 650px) {
+    .tool-header,
+    .panel-heading,
+    .dialog-actions {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .form-grid.two-column {
+        grid-template-columns: 1fr;
+    }
+
+    .full-width {
+        grid-column: auto;
+    }
+}
+
+/* Compact front-facing entry areas */
+.quick-entry-panel {
+    padding: 14px 16px;
+}
+
+.compact-heading {
+    margin-bottom: 10px;
+    align-items: center;
+}
+
+.quick-entry-grid {
+    display: grid;
+    gap: 10px 12px;
+    align-items: end;
+}
+
+.general-grid {
+    grid-template-columns: minmax(240px, 1.6fr) minmax(150px, 0.7fr);
+}
+
+.general-grid .summary-field {
+    grid-column: 1 / -1;
+}
+
+.general-grid textarea {
+    min-height: 76px;
+    max-height: 150px;
+}
+
+.details-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.quick-entry-panel input,
+.quick-entry-panel select,
+.advanced-data-panel input {
+    min-height: 42px;
+}
+
+.compact-helper {
+    margin: -2px 0 10px;
+    font-size: 13px;
+}
+
+.advanced-data-panel {
+    padding: 0;
+}
+
+.advanced-data-panel > summary {
+    cursor: pointer;
+    display: flex;
+    padding: 14px 16px;
+    font-weight: 700;
+    list-style-position: inside;
+}
+
+.advanced-data-panel > summary .eyebrow {
+    display: block;
+    margin-bottom: 3px;
+}
+
+.advanced-data-panel[open] > summary {
+    border-bottom: 2px solid var(--border);
+}
+
+.advanced-data-panel > :not(summary) {
+    margin-left: 16px;
+    margin-right: 16px;
+}
+
+.advanced-data-panel > .helper-text {
+    margin-top: 14px;
+}
+
+.advanced-data-panel > .form-grid {
+    margin-bottom: 16px;
+}
+
+.writing-panel {
+    min-height: 360px;
+    padding: 20px;
+}
+
+.writing-panel .writing-list {
+    margin-top: 18px;
+}
+
+@media (max-width: 720px) {
+    .general-grid,
+    .details-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .general-grid .summary-field {
+        grid-column: auto;
+    }
+}

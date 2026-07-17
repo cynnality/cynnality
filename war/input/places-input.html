@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Worlds & Regions — Place Input Tool</title>
+    <link rel="stylesheet" href="places-input.css">
+</head>
+<body>
+    <main class="tool-shell">
+        <header class="tool-header panel">
+            <div>
+                <p class="eyebrow">Worlds & Regions</p>
+                <h1>Place Input Tool</h1>
+                <p class="intro">Create and edit places, relationships, and connected markdown pages.</p>
+            </div>
+
+            <div class="header-actions">
+                <button id="newPlaceBtn" type="button">New Place</button>
+                <button id="savePlaceBtn" type="button" class="primary">Save Place</button>
+            </div>
+        </header>
+
+        <p id="statusMessage" class="status-message" role="status"></p>
+
+        <section class="workspace">
+            <aside class="panel records-panel">
+                <div class="panel-heading">
+                    <div>
+                        <p class="eyebrow">Records</p>
+                        <h2>Existing Places</h2>
+                    </div>
+                    <span id="placeCount" class="count-badge">0</span>
+                </div>
+
+                <label>
+                    Search
+                    <input id="placeSearchInput" type="search" placeholder="Name, ID, type, or SVG ID">
+                </label>
+
+                <div id="placesList" class="records-list"></div>
+            </aside>
+
+            <section class="editor-column">
+                <section class="panel quick-entry-panel">
+                    <div class="panel-heading compact-heading">
+                        <div>
+                            <h2>General</h2>
+                        </div>
+                        <span id="editModeBadge" class="mode-badge">New</span>
+                    </div>
+
+                    <div class="quick-entry-grid general-grid">
+                        <label class="name-field">
+                            Name
+                            <input id="placeNameInput" autocomplete="off" placeholder="India">
+                        </label>
+
+                        <label>
+                            Type
+                            <select id="placeTypeInput">
+                                <option value="country">Country</option>
+                                <option value="region">Region</option>
+                                <option value="city">City</option>
+                                <option value="territory">Territory</option>
+                                <option value="empire">Empire</option>
+                                <option value="province">Province / State</option>
+                                <option value="island">Island</option>
+                                <option value="river">River</option>
+                                <option value="mountain">Mountain</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </label>
+
+                        <label class="summary-field">
+                            Summary
+                            <textarea id="summaryInput" rows="3" placeholder="A short overview of the place."></textarea>
+                        </label>
+
+                        <label>
+                            Larger Region
+                            <input id="largerRegionInput" autocomplete="off" placeholder="South Asia">
+                        </label>
+
+                        <label>
+                            People
+                            <input id="peopleInput" autocomplete="off" placeholder="French, Normans, Gauls">
+                        </label>
+
+                        <label>
+                            Languages
+                            <input id="languagesInput" autocomplete="off" placeholder="French, Occitan">
+                        </label>
+
+                        <label>
+                            Religions
+                            <input id="religionsInput" autocomplete="off" placeholder="Christianity, Islam">
+                        </label>
+
+                        <label>
+                            Currencies
+                            <input id="currenciesInput" autocomplete="off" placeholder="Euro">
+                        </label>
+                    </div>
+
+                </section>
+
+                <details class="panel advanced-data-panel">
+                    <summary>
+                        <span>
+                            <span class="eyebrow">Back-Facing Data</span>
+                            Data Connections &amp; Technical Details
+                        </span>
+                    </summary>
+
+                    <p class="helper-text">
+                        These fields support internal connections, map behavior, and future cross-referencing. They can be completed later.
+                    </p>
+
+                    <div class="form-grid two-column">
+                        <label>
+                            Place ID
+                            <input id="placeIdInput" autocomplete="off" placeholder="india">
+                        </label>
+
+                        <label>
+                            SVG ID
+                            <input id="svgIdInput" autocomplete="off" placeholder="IN">
+                        </label>
+
+                        <label class="full-width">
+                            Parent Place ID
+                            <input id="parentInput" list="placeIdOptions" autocomplete="off" placeholder="south-asia">
+                        </label>
+
+                        <label>
+                            Related Places
+                            <input id="relatedPlacesInput" autocomplete="off" placeholder="haiti, louisiana">
+                        </label>
+
+                        <label>
+                            Related Time Periods
+                            <input id="relatedTimePeriodsInput" autocomplete="off" placeholder="french-revolution, napoleonic-era">
+                        </label>
+
+                        <label class="full-width">
+                            Related Posts
+                            <input id="postsInput" autocomplete="off" placeholder="post-id-one, post-id-two">
+                        </label>
+                    </div>
+                </details>
+
+                <section class="panel writing-panel">
+                    <div class="panel-heading">
+                        <div>
+                            <p class="eyebrow">Narrative Content</p>
+                            <h2>Writing</h2>
+                        </div>
+                        <button id="addWritingBtn" type="button">+ Add Writing Section</button>
+                    </div>
+
+                    <p class="helper-text">Each section creates a markdown file and a small reference in <code>places.json</code>.</p>
+
+                    <div id="writingList" class="writing-list"></div>
+                </section>
+
+                <details class="panel json-panel">
+                    <summary>JSON Preview</summary>
+                    <pre id="jsonPreview">{}</pre>
+                </details>
+            </section>
+        </section>
+    </main>
+
+    <datalist id="placeIdOptions"></datalist>
+
+    <dialog id="writingDialog">
+        <form id="writingForm" method="dialog" class="dialog-form">
+            <div class="dialog-heading">
+                <div>
+                    <p class="eyebrow">Markdown</p>
+                    <h2 id="writingDialogTitle">Add Writing Section</h2>
+                </div>
+                <button id="closeWritingDialogBtn" type="button" class="icon-button" aria-label="Close">×</button>
+            </div>
+
+            <input id="writingIndexInput" type="hidden" value="-1">
+
+            <label>
+                Section Title
+                <input id="writingTitleInput" autocomplete="off" placeholder="History">
+            </label>
+
+            <label>
+                Markdown File
+                <input id="writingFileInput" autocomplete="off" placeholder="war/text/india/history.md">
+            </label>
+
+            <label>
+                Markdown Content
+                <textarea id="writingContentInput" rows="18" placeholder="# History"></textarea>
+            </label>
+
+            <div class="dialog-actions">
+                <button id="deleteWritingBtn" type="button" class="danger hidden">Delete Section</button>
+                <div class="dialog-actions-right">
+                    <button id="cancelWritingBtn" type="button">Cancel</button>
+                    <button id="saveWritingBtn" type="button" class="primary">Save Section</button>
+                </div>
+            </div>
+        </form>
+    </dialog>
+
+    <script src="places-input-data.js"></script>
+    <script src="places-input.js"></script>
+</body>
+</html>

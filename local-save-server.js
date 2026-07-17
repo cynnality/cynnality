@@ -93,7 +93,21 @@ const SAVE_TARGETS = {
         __dirname,
         "basketball_101_data_files",
         "utility_entries_data.json"
+    ),
+
+    warPlaces: path.join(
+        __dirname,
+        "war",
+        "data",
+        "places.json"
+    ),
+
+    warText: path.join(
+        __dirname,
+        "war",
+        "text"
     )
+
 };
 
 function getGamedayCalendarFilePath(seasonId) {
@@ -155,6 +169,36 @@ function saveByKey({ res, incomingData, filePath, topLevelKey, idField }) {
         ok: true,
         message: `Saved ${itemId}`,
         filePath
+    });
+}
+
+function saveTextFile({ res, relativePath, content }) {
+    if (!relativePath) {
+        sendJson(res, 400, {
+            ok: false,
+            error: "Missing relative file path"
+        });
+        return;
+    }
+
+    const normalizedPath = path.normalize(relativePath);
+    const projectRoot = path.resolve(__dirname);
+    const filePath = path.resolve(__dirname, normalizedPath);
+
+    if (!filePath.startsWith(projectRoot + path.sep)) {
+        sendJson(res, 400, {
+            ok: false,
+            error: "File path must stay inside the project folder"
+        });
+        return;
+    }
+
+    fs.mkdirSync(path.dirname(filePath), { recursive: true });
+    fs.writeFileSync(filePath, content || "", "utf8");
+
+    sendJson(res, 200, {
+        ok: true,
+        savedTo: filePath
     });
 }
 
@@ -582,6 +626,36 @@ const server = http.createServer((req, res) => {
                     saved: incomingData.entryId
                 });
 
+                return;
+            }
+
+            if (req.url === "/save-war-place") {
+                saveByKey({
+                    res,
+                    incomingData,
+                    filePath: SAVE_TARGETS.warPlaces,
+                    topLevelKey: "places",
+                    idField: "placeId"
+                });
+                return;
+            }
+
+            if (req.url === "/save-war-markdown") {
+                const markdownFile = incomingData.markdownFile;
+
+                if (!markdownFile || !markdownFile.startsWith("war/text/")) {
+                    sendJson(res, 400, {
+                        ok: false,
+                        error: "Markdown files must be saved inside war/text/"
+                    });
+                    return;
+                }
+
+                saveTextFile({
+                    res,
+                    relativePath: markdownFile,
+                    content: incomingData.content || ""
+                });
                 return;
             }
 

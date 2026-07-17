@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Worlds & Regions</title>
+
+    <link rel="stylesheet" href="viewer.css" />
+</head>
+
+<body>
+    <main class="world-viewer">
+
+        <header class="page-header">
+            <div>
+                <h1>Worlds &amp; Regions</h1>
+                <p class="page-intro">
+                    click around
+                </p>
+            </div>
+
+            <div class="header-actions">
+                <label class="search-field">
+                    <span>search</span>
+                    <input
+                        id="placeSearchInput"
+                        type="search"
+                        placeholder="France, Haiti, India..."
+                        autocomplete="off"
+                    />
+                </label>
+
+                <button id="resetMapBtn" type="button">
+                    Reset map
+                </button>
+            </div>
+        </header>
+
+        <p id="viewerStatus" class="viewer-status" aria-live="polite">
+            Loading map and place data...
+        </p>
+
+        <section class="viewer-layout">
+
+            <section class="map-panel" aria-labelledby="mapHeading">
+                <div class="panel-heading">
+                    <div>
+                        <p class="eyebrow">Map</p>
+                    </div>
+
+                    <p class="map-help">
+                        Click a place. Scroll to zoom. Drag to move.
+                    </p>
+                </div>
+
+                <div
+                    id="mapViewport"
+                    class="map-viewport"
+                    tabindex="0"
+                    aria-label="Interactive world map"
+                >
+                    <div id="svgMount" class="svg-mount"></div>
+
+                    <div id="mapTooltip" class="map-tooltip" hidden></div>
+                </div>
+            </section>
+
+            <aside class="place-panel" aria-labelledby="placeName">
+                <div id="emptyPlaceState" class="empty-place-state">
+                    <p class="eyebrow">Selected place</p>
+                    <p>
+                        Click on a place
+                    </p>
+                </div>
+
+                <article id="placeDetails" class="place-details" hidden>
+                    <header class="place-header">
+                        <div>
+                            <p id="placeType" class="place-type"></p>
+                            <h2 id="selectedPlaceName"></h2>
+                        </div>
+
+                        <span id="selectedPlaceCode" class="place-code"></span>
+                    </header>
+
+                    <p id="placeSummary" class="place-summary"></p>
+
+                    <section class="detail-section" data-section="largerRegion">
+                        <h3>Larger Region</h3>
+                        <div id="placeLargerRegion" class="chip-list"></div>
+                    </section>
+
+                    <section class="detail-section" data-section="people">
+                        <h3>People</h3>
+                        <div id="placePeople" class="chip-list"></div>
+                    </section>
+
+                    <section class="detail-section" data-section="religions">
+                        <h3>Religions</h3>
+                        <div id="placeReligions" class="chip-list"></div>
+                    </section>
+
+                    <section class="detail-section" data-section="languages">
+                        <h3>Languages</h3>
+                        <div id="placeLanguages" class="chip-list"></div>
+                    </section>
+
+                    <section class="detail-section" data-section="currencies">
+                        <h3>Currencies</h3>
+                        <div id="placeCurrencies" class="chip-list"></div>
+                    </section>
+
+                    <section class="detail-section" data-section="timePeriods">
+                        <h3>Time periods</h3>
+                        <div id="placeTimePeriods" class="chip-list"></div>
+                    </section>
+
+                    <section class="detail-section" data-section="posts">
+                        <h3>Related posts</h3>
+                        <div id="placePosts" class="related-list"></div>
+                    </section>
+
+                    <section class="detail-section" data-section="notes">
+                        <h3>Notes</h3>
+                        <div id="placeNotes" class="place-notes"></div>
+                    </section>
+                </article>
+            </aside>
+
+        </section>
+    </main>
+
+    <script src="viewer.js"></script>
+</body>
+</html>
