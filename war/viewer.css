@@ -94,7 +94,7 @@ p {
 
 .page-header h1 {
     margin-bottom: 8px;
-    font-size: 32px;
+    font-size: clamp(28px, 4vw, 52px);
     line-height: 1;
 }
 
@@ -413,5 +413,104 @@ The country IDs are mostly ISO-style uppercase region codes.
 
     .map-viewport {
         min-height: 390px;
+    }
+}
+
+.notes-panel {
+    margin-top: 12px;
+    border: 2px solid var(--border);
+    border-radius: var(--radius);
+    background: var(--panel-bg);
+    padding: 18px;
+}
+
+.notes-panel-heading {
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+    gap: 18px;
+    border-bottom: 2px solid var(--border);
+    padding-bottom: 12px;
+}
+
+.notes-panel-heading h2 {
+    margin-bottom: 0;
+}
+
+.notes-status {
+    margin-bottom: 0;
+    color: var(--muted);
+    font-size: 12px;
+}
+
+.place-notes {
+    display: grid;
+    gap: 14px;
+    padding-top: 14px;
+    white-space: normal;
+}
+
+.note-card {
+    border: 1px solid var(--border);
+    border-radius: 6px;
+    background: #ffffff;
+    padding: clamp(14px, 2vw, 24px);
+}
+
+.note-card-title {
+    margin-bottom: 14px;
+    padding-bottom: 9px;
+    border-bottom: 1px solid var(--border);
+    font-size: 18px;
+}
+
+.markdown-content {
+    max-width: 900px;
+    line-height: 1.7;
+}
+
+.markdown-content > :last-child {
+    margin-bottom: 0;
+}
+
+.markdown-content h2,
+.markdown-content h3,
+.markdown-content h4,
+.markdown-content h5,
+.markdown-content h6 {
+    margin-top: 1.5em;
+    margin-bottom: 0.55em;
+}
+
+.markdown-content ul {
+    padding-left: 1.5rem;
+}
+
+.markdown-content code {
+    border: 1px solid var(--border);
+    border-radius: 4px;
+    background: var(--panel-soft);
+    padding: 1px 4px;
+}
+
+.markdown-content a {
+    color: var(--accent);
+}
+
+.markdown-content hr {
+    border: 0;
+    border-top: 1px solid var(--border);
+    margin: 22px 0;
+}
+
+.note-load-error {
+    margin-bottom: 0;
+    color: #8a1515;
+}
+
+@media (max-width: 620px) {
+    .notes-panel-heading {
+        align-items: start;
+        flex-direction: column;
     }
 }

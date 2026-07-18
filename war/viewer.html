@@ -14,15 +14,17 @@
 
         <header class="page-header">
             <div>
+                <p class="eyebrow">World Knowledge Explorer</p>
                 <h1>Worlds &amp; Regions</h1>
                 <p class="page-intro">
-                    click around
+                    Select a place on the map to view the information currently
+                    connected to it.
                 </p>
             </div>
 
             <div class="header-actions">
                 <label class="search-field">
-                    <span>search</span>
+                    <span>Find a place</span>
                     <input
                         id="placeSearchInput"
                         type="search"
@@ -47,6 +49,7 @@
                 <div class="panel-heading">
                     <div>
                         <p class="eyebrow">Map</p>
+                        <h2 id="mapHeading">World map</h2>
                     </div>
 
                     <p class="map-help">
@@ -69,8 +72,10 @@
             <aside class="place-panel" aria-labelledby="placeName">
                 <div id="emptyPlaceState" class="empty-place-state">
                     <p class="eyebrow">Selected place</p>
+                    <h2 id="placeName">Nothing selected</h2>
                     <p>
-                        Click on a place
+                        Choose a country or territory on the map. Places without
+                        a JSON record can still be identified by their map code.
                     </p>
                 </div>
 
@@ -121,13 +126,21 @@
                         <div id="placePosts" class="related-list"></div>
                     </section>
 
-                    <section class="detail-section" data-section="notes">
-                        <h3>Notes</h3>
-                        <div id="placeNotes" class="place-notes"></div>
-                    </section>
                 </article>
             </aside>
 
+        </section>
+
+        <section id="placeNotesSection" class="notes-panel" hidden aria-labelledby="placeNotesHeading">
+            <header class="notes-panel-heading">
+                <div>
+                    <p class="eyebrow">Writing</p>
+                    <h2 id="placeNotesHeading">Notes</h2>
+                </div>
+                <p id="placeNotesStatus" class="notes-status" aria-live="polite"></p>
+            </header>
+
+            <div id="placeNotes" class="place-notes"></div>
         </section>
     </main>
 

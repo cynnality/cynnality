@@ -7,6 +7,7 @@
       "svgId": "IN",
       "parent": null,
       "summary": "Republic of India",
+      "largerRegion": "",
       "people": [
         "Indian"
       ],
@@ -28,7 +29,12 @@
       "relatedPlaces": [],
       "relatedTimePeriods": [],
       "posts": [],
-      "notes": []
+      "notes": [
+        {
+          "title": "Demonyms for India (Bharat)",
+          "markdownFile": "war/text/india/demonyms-for-india-bharat.md"
+        }
+      ]
     },
     "pakistan": {
       "placeId": "pakistan",
@@ -84,6 +90,31 @@
       "currencies": [
         "Malaysian ringgit"
       ],
+      "relatedPlaces": [],
+      "relatedTimePeriods": [],
+      "posts": [],
+      "notes": []
+    },
+    "bangladesh": {
+      "placeId": "bangladesh",
+      "name": "Bangladesh",
+      "type": "country",
+      "svgId": "BD",
+      "parent": null,
+      "summary": "",
+      "largerRegion": "South Asia",
+      "people": [
+        "Bangladeshi"
+      ],
+      "languages": [
+        "Bangla",
+        "English"
+      ],
+      "religions": [
+        "Muslim",
+        "Hindu"
+      ],
+      "currencies": [],
       "relatedPlaces": [],
       "relatedTimePeriods": [],
       "posts": [],

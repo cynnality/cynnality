@@ -12,7 +12,8 @@ const state = {
     svg: null,
     originalViewBox: null,
     viewBox: null,
-    drag: null
+    drag: null,
+    noteRenderToken: 0
 };
 
 const svgMount = document.getElementById("svgMount");
@@ -36,6 +37,9 @@ const placeLanguages = document.getElementById("placeLanguages");
 const placeCurrencies = document.getElementById("placeCurrencies");
 const placeTimePeriods = document.getElementById("placeTimePeriods");
 const placePosts = document.getElementById("placePosts");
+const placeNotesSection = document.getElementById("placeNotesSection");
+const placeNotesHeading = document.getElementById("placeNotesHeading");
+const placeNotesStatus = document.getElementById("placeNotesStatus");
 const placeNotes = document.getElementById("placeNotes");
 
 const regionDisplayNames =
@@ -356,22 +360,189 @@ function renderPlace(place, mapCode) {
 
     renderPosts(placePosts, place?.posts);
 
-    const notesValue =
-        place?.notes ||
-        place?.description ||
-        "";
-
-    placeNotes.textContent = notesValue;
-    toggleDetailSection(
-        placeNotes,
-        Boolean(notesValue)
-    );
+    renderPlaceNotes(place);
 
     const recordMessage = place
         ? `Selected ${place.name}.`
         : `Selected ${fallbackName}. No place record exists yet.`;
 
     setStatus(recordMessage);
+}
+
+async function renderPlaceNotes(place) {
+    const renderToken = ++state.noteRenderToken;
+    const notes = normalizeNoteReferences(place?.notes || place?.writing);
+
+    placeNotes.replaceChildren();
+    placeNotesStatus.textContent = "";
+
+    if (!place || notes.length === 0) {
+        placeNotesSection.hidden = true;
+        return;
+    }
+
+    placeNotesSection.hidden = false;
+    placeNotesHeading.textContent = `${place.name} Notes`;
+    placeNotesStatus.textContent =
+        `Loading ${notes.length} note${notes.length === 1 ? "" : "s"}...`;
+
+    const results = await Promise.all(
+        notes.map(async note => {
+            try {
+            const path = resolveMarkdownPath(note.markdownFile);
+
+            console.log("Loading markdown:", path);
+
+            const markdown = await loadText(path);
+                return { ...note, markdown, error: null };
+            } catch (error) {
+                return { ...note, markdown: "", error };
+            }
+        })
+    );
+
+    if (renderToken !== state.noteRenderToken) return;
+
+    results.forEach(result => {
+        const article = document.createElement("article");
+        article.className = "note-card";
+
+        const heading = document.createElement("h3");
+        heading.className = "note-card-title";
+        heading.textContent = result.title;
+        article.appendChild(heading);
+
+        if (result.error) {
+            const errorMessage = document.createElement("p");
+            errorMessage.className = "note-load-error";
+            errorMessage.textContent =
+                `Could not load ${result.markdownFile}.`;
+            article.appendChild(errorMessage);
+        } else {
+            const content = document.createElement("div");
+            content.className = "markdown-content";
+            content.appendChild(renderMarkdown(result.markdown));
+            article.appendChild(content);
+        }
+
+        placeNotes.appendChild(article);
+    });
+
+    const failureCount = results.filter(result => result.error).length;
+    placeNotesStatus.textContent = failureCount
+        ? `${failureCount} note${failureCount === 1 ? "" : "s"} could not be loaded.`
+        : `${results.length} note${results.length === 1 ? "" : "s"}.`;
+}
+
+function normalizeNoteReferences(value) {
+    if (!Array.isArray(value)) return [];
+
+    return value
+        .filter(note => note && typeof note === "object")
+        .map(note => ({
+            title: String(note.title || "Untitled note").trim(),
+            markdownFile: String(
+                note.markdownFile || note.contentFile || ""
+            ).trim()
+        }))
+        .filter(note => note.markdownFile);
+}
+
+function resolveMarkdownPath(markdownFile) {
+    const normalized = String(markdownFile || "")
+        .replace(/\\/g, "/")
+        .replace(/^\.\//, "");
+
+    if (normalized.startsWith("war/")) {
+        return normalized.slice(4);
+    }
+
+    return normalized;
+}
+
+function renderMarkdown(markdown) {
+    const fragment = document.createDocumentFragment();
+    const lines = String(markdown || "").replace(/\r\n?/g, "\n").split("\n");
+    let paragraphLines = [];
+    let list = null;
+
+    function flushParagraph() {
+        if (paragraphLines.length === 0) return;
+        const paragraph = document.createElement("p");
+        paragraph.innerHTML = renderInlineMarkdown(paragraphLines.join(" "));
+        fragment.appendChild(paragraph);
+        paragraphLines = [];
+    }
+
+    function flushList() {
+        if (!list) return;
+        fragment.appendChild(list);
+        list = null;
+    }
+
+    lines.forEach(line => {
+        const trimmed = line.trim();
+
+        if (!trimmed) {
+            flushParagraph();
+            flushList();
+            return;
+        }
+
+        const headingMatch = trimmed.match(/^(#{1,6})\s+(.+)$/);
+        if (headingMatch) {
+            flushParagraph();
+            flushList();
+            const level = Math.min(6, headingMatch[1].length + 1);
+            const heading = document.createElement(`h${level}`);
+            heading.innerHTML = renderInlineMarkdown(headingMatch[2]);
+            fragment.appendChild(heading);
+            return;
+        }
+
+        if (/^---+$/.test(trimmed)) {
+            flushParagraph();
+            flushList();
+            fragment.appendChild(document.createElement("hr"));
+            return;
+        }
+
+        const listMatch = trimmed.match(/^[-*+]\s+(.+)$/);
+        if (listMatch) {
+            flushParagraph();
+            if (!list) list = document.createElement("ul");
+            const item = document.createElement("li");
+            item.innerHTML = renderInlineMarkdown(listMatch[1]);
+            list.appendChild(item);
+            return;
+        }
+
+        flushList();
+        paragraphLines.push(trimmed);
+    });
+
+    flushParagraph();
+    flushList();
+
+    return fragment;
+}
+
+function renderInlineMarkdown(text) {
+    return escapeHtml(String(text || ""))
+        .replace(/\*\*(.+?)\*\*/g, "<strong>$1</strong>")
+        .replace(/_(.+?)_/g, "<em>$1</em>")
+        .replace(/`(.+?)`/g, "<code>$1</code>")
+        .replace(/\[([^\]]+)\]\((https?:\/\/[^\s)]+)\)/g,
+            '<a href="$2" target="_blank" rel="noopener noreferrer">$1</a>');
+}
+
+function escapeHtml(value) {
+    return String(value)
+        .replace(/&/g, "&amp;")
+        .replace(/</g, "&lt;")
+        .replace(/>/g, "&gt;")
+        .replace(/"/g, "&quot;")
+        .replace(/'/g, "&#039;");
 }
 
 function renderChipSection(container, values) {
