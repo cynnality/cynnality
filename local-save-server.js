@@ -106,7 +106,20 @@ const SAVE_TARGETS = {
         __dirname,
         "war",
         "text"
-    )
+    ),
+    warLanguages: path.join(
+        __dirname,
+        "war",
+        "data",
+        "languages.json"
+    ),
+
+    warLanguageFamilies: path.join(
+        __dirname,
+        "war",
+        "data",
+        "language-families.json"
+    ),
 
 };
 
@@ -636,6 +649,28 @@ const server = http.createServer((req, res) => {
                     filePath: SAVE_TARGETS.warPlaces,
                     topLevelKey: "places",
                     idField: "placeId"
+                });
+                return;
+            }
+
+            if (req.url === "/save-war-language") {
+                saveByKey({
+                    res,
+                    incomingData,
+                    filePath: SAVE_TARGETS.warLanguages,
+                    topLevelKey: "languages",
+                    idField: "languageId"
+                });
+                return;
+            }
+
+            if (req.url === "/save-war-language-family") {
+                saveByKey({
+                    res,
+                    incomingData,
+                    filePath: SAVE_TARGETS.warLanguageFamilies,
+                    topLevelKey: "languageFamilies",
+                    idField: "familyId"
                 });
                 return;
             }

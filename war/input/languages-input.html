@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>WAR Language & Language Family Tool</title>
+
+    <link rel="stylesheet" href="languages-input.css">
+</head>
+
+<body>
+
+<header>
+    <h1>Language &amp; Language Family Tool</h1>
+</header>
+
+<main>
+
+    <section class="panel">
+        <h2>Languages</h2>
+
+        <label>
+            Search
+            <input
+                id="languageSearchInput"
+                type="search"
+                placeholder="Search discovered languages"
+            >
+        </label>
+
+        <label>
+            Existing Languages
+            <select id="languagesList" size="16"></select>
+        </label>
+    </section>
+
+
+    <section class="panel">
+        <h2>Selected Language</h2>
+
+        <p class="help-text">
+            Languages are discovered from <code>places.json</code>.
+            This section only saves language metadata.
+        </p>
+
+        <label>
+            Language Name
+            <input id="languageNameInput" type="text" readonly>
+        </label>
+
+        <label>
+            Language ID
+            <input id="languageIdInput" type="text" readonly>
+        </label>
+
+        <label>
+            Used In
+            <textarea id="languageUsedInInput" rows="8" readonly></textarea>
+        </label>
+
+        <label>
+            Language Family
+            <select id="languageFamilySelect">
+                <option value="">Unassigned</option>
+            </select>
+        </label>
+
+        <button id="saveLanguageBtn" type="button">
+            Save Language Assignment
+        </button>
+
+        <p id="languageStatus" class="status" aria-live="polite"></p>
+    </section>
+
+
+    <section class="panel">
+        <div class="section-heading">
+            <h2>Language Families</h2>
+
+            <button id="newFamilyBtn" type="button">
+                New Family
+            </button>
+        </div>
+
+        <label>
+            Existing Families
+            <select id="languageFamilyList" size="10"></select>
+        </label>
+
+        <hr>
+
+        <h2>Selected Family</h2>
+
+        <label>
+            Family Name
+            <input id="familyNameInput" type="text">
+        </label>
+
+        <label>
+            Family ID
+            <input id="familyIdInput" type="text">
+        </label>
+
+        <label>
+            Summary
+            <textarea id="familySummaryInput" rows="5"></textarea>
+        </label>
+
+        <label>
+            Markdown File
+            <input
+                id="familyMarkdownInput"
+                type="text"
+                placeholder="war/text/language-families/family-id.md"
+            >
+        </label>
+
+        <label>
+            Markdown Notes
+            <textarea id="familyMarkdownContentInput" rows="14"></textarea>
+        </label>
+
+        <button id="saveFamilyBtn" type="button">
+            Save Language Family
+        </button>
+
+        <p id="familyStatus" class="status" aria-live="polite"></p>
+    </section>
+
+</main>
+
+<script src="languages-input.js"></script>
+
+</body>
+</html>

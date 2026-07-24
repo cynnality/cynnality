@@ -1,0 +1,10 @@
+{
+  "languageFamilies": {
+    "indo-aryan": {
+      "familyId": "indo-aryan",
+      "name": "Indo-Aryan",
+      "summary": "",
+      "markdownFile": "war/text/language-families/indo-aryan.md"
+    }
+  }
+}

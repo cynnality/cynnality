@@ -2,12 +2,18 @@
 
 const PATHS = {
     svg: "./svgs/worldLow.svg",
-    places: "./data/places.json"
+    places: "./data/places.json",
+    languages: "./data/languages.json",
+    languageFamilies: "./data/language-families.json"
 };
 
 const state = {
     places: [],
+    languages: [],
+    languageFamilies: [],
+
     placeBySvgId: new Map(),
+
     selectedPath: null,
     svg: null,
     originalViewBox: null,
@@ -51,13 +57,27 @@ document.addEventListener("DOMContentLoaded", initializeViewer);
 
 async function initializeViewer() {
     try {
-        const [svgText, placesData] = await Promise.all([
+        const [
+            svgText,
+            placesData,
+            languagesData,
+            languageFamiliesData
+        ] = await Promise.all([
             loadText(PATHS.svg),
-            loadOptionalJson(PATHS.places)
+            loadOptionalJson(PATHS.places),
+            loadOptionalJson(PATHS.languages),
+            loadOptionalJson(PATHS.languageFamilies)
         ]);
 
         mountSvg(svgText);
         normalizePlaces(placesData);
+        normalizeLanguages(languagesData);
+        normalizeLanguageFamilies(languageFamiliesData);
+
+        const discoveredLanguages = getDiscoveredLanguages();
+
+        console.log(discoveredLanguages);
+
         connectPlaceDataToMap();
         bindViewerEvents();
 
@@ -210,6 +230,90 @@ function normalizePlaces(data) {
             .filter(place => place.svgId)
             .map(place => [place.svgId, place])
     );
+}
+
+function normalizeLanguages(data) {
+    if (
+        data?.languages &&
+        typeof data.languages === "object"
+    ) {
+        state.languages = Object.values(data.languages);
+    } else {
+        state.languages = [];
+    }
+}
+
+function normalizeLanguageFamilies(data) {
+    if (
+        data?.languageFamilies &&
+        typeof data.languageFamilies === "object"
+    ) {
+        state.languageFamilies = Object.values(
+            data.languageFamilies
+        );
+    } else {
+        state.languageFamilies = [];
+    }
+}
+
+function getDiscoveredLanguages() {
+    const discovered = new Map();
+
+    state.places.forEach(place => {
+        const languages = normalizeSimpleList(place.languages);
+
+        languages.forEach(languageName => {
+            const normalizedName = String(languageName).trim();
+
+            if (!normalizedName) return;
+
+            const languageId = slugify(normalizedName);
+
+            if (!discovered.has(languageId)) {
+                discovered.set(languageId, {
+                    languageId,
+                    name: normalizedName,
+                    places: []
+                });
+            }
+
+            discovered.get(languageId).places.push({
+                placeId: place.placeId,
+                name: place.name
+            });
+        });
+    });
+
+    return Array.from(discovered.values()).sort((a, b) =>
+        a.name.localeCompare(b.name)
+    );
+}
+
+function buildLanguageRegistry() {
+    const discoveredLanguages = getDiscoveredLanguages();
+
+    const savedLanguages = new Map(
+        state.languages.map(language => [
+            language.languageId,
+            language
+        ])
+    );
+
+    return discoveredLanguages.map(discovered => {
+        const saved =
+            savedLanguages.get(discovered.languageId);
+
+        return {
+            languageId: discovered.languageId,
+            name: discovered.name,
+
+            familyId:
+                saved?.familyId || "",
+
+            places:
+                discovered.places
+        };
+    });
 }
 
 function prepareMapPaths() {
