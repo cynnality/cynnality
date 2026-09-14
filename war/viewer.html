@@ -4,17 +4,17 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <title>Worlds & Regions</title>
+    <title>Worlds &amp; Regions</title>
 
     <!-- ======================== MONO FONTS ========================
-         CHIVO MONO 
-         ---- (monospaced // kinda playful ? serif) 
+         CHIVO MONO
+         ---- (monospaced // kinda playful ? serif)
 
-         DM MONO 
+         DM MONO
          ---- (monospaced, serif, gives digital feel - could be good replacement for v323)
 
-         JET BRAINS MONO 
-         ---- (monospaced, generally sans-serif. 
+         JET BRAINS MONO
+         ---- (monospaced, generally sans-serif.
          ---- want to use for all caps / titles / such things big bold (and oblique) style header feel)
          ============================================================-->
 
@@ -23,7 +23,7 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Chivo+Mono:ital,wght@0,100..900;1,100..900&family=DM+Mono:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap"
         rel="stylesheet">
-    <!--=====================================================================================-->    
+    <!--=====================================================================================-->
 
     <link rel="stylesheet" href="viewer.css" />
 </head>
@@ -144,13 +144,81 @@
                         <h3>Related posts</h3>
                         <div id="placePosts" class="related-list"></div>
                     </section>
-
                 </article>
             </aside>
 
         </section>
 
-        <section id="placeNotesSection" class="notes-panel" hidden aria-labelledby="placeNotesHeading">
+        <section
+            id="languageInfoSection"
+            class="language-panel"
+            aria-labelledby="languageInfoHeading"
+        >
+            <header class="language-panel-heading">
+                <div>
+                    <p class="eyebrow">Language reference</p>
+                    <h2 id="languageInfoHeading">Language Information</h2>
+                </div>
+
+                <p
+                    id="languageInfoStatus"
+                    class="language-status"
+                    aria-live="polite"
+                ></p>
+            </header>
+
+            <div id="emptyLanguageState" class="empty-language-state">
+                <p>
+                    Click a language in the selected-place panel to view more
+                    information.
+                </p>
+            </div>
+
+            <article id="languageDetails" class="language-details" hidden>
+                <section class="language-field">
+                    <p class="language-field-label">Language</p>
+                    <h3 id="selectedLanguageName"></h3>
+                </section>
+
+                <section class="language-field">
+                    <p class="language-field-label">Family</p>
+                    <p id="selectedLanguageFamily"></p>
+                </section>
+
+                <section
+                    id="languageFamilySummarySection"
+                    class="language-field"
+                    hidden
+                >
+                    <p class="language-field-label">Summary</p>
+                    <p id="languageFamilySummary" class="language-family-summary"></p>
+                </section>
+
+                <section
+                    id="languageFamilyNotesSection"
+                    class="language-field"
+                    hidden
+                >
+                    <p class="language-field-label">Notes</p>
+                    <div
+                        id="languageFamilyNotes"
+                        class="markdown-content language-family-notes"
+                    ></div>
+                </section>
+
+                <section class="language-field">
+                    <p class="language-field-label">Used In</p>
+                    <div id="languageUsedIn" class="chip-list"></div>
+                </section>
+            </article>
+        </section>
+
+        <section
+            id="placeNotesSection"
+            class="notes-panel"
+            hidden
+            aria-labelledby="placeNotesHeading"
+        >
             <header class="notes-panel-heading">
                 <div>
                     <p class="eyebrow">Writing</p>

@@ -204,13 +204,6 @@ p {
     user-select: none;
 }
 
-/*
-The uploaded SVG uses:
-    <path id="US" class="land">
-    <path id="FR" class="land">
-
-The country IDs are mostly ISO-style uppercase region codes.
-*/
 .svg-mount svg .land {
     fill: #ffffff;
     stroke: #111111;
@@ -349,6 +342,20 @@ The country IDs are mostly ISO-style uppercase region codes.
     font-size: 12px;
 }
 
+.language-chip {
+    min-width: 0;
+    border-width: 1px;
+    border-radius: 999px;
+    background: var(--panel-soft);
+    padding: 5px 8px;
+    line-height: 1.2;
+}
+
+.language-chip:hover,
+.language-chip:focus-visible {
+    background: var(--accent-soft);
+}
+
 .related-list {
     display: grid;
     gap: 7px;
@@ -366,56 +373,7 @@ The country IDs are mostly ISO-style uppercase region codes.
     background: var(--accent-soft);
 }
 
-.place-notes {
-    line-height: 1.6;
-    white-space: pre-wrap;
-}
-
-@media (max-width: 980px) {
-    .page-header {
-        align-items: stretch;
-        flex-direction: column;
-    }
-
-    .header-actions {
-        width: 100%;
-        min-width: 0;
-    }
-
-    .viewer-layout {
-        grid-template-columns: 1fr;
-    }
-
-    .place-panel {
-        position: static;
-        max-height: none;
-    }
-
-    .map-viewport {
-        height: 62vh;
-    }
-}
-
-@media (max-width: 620px) {
-    .world-viewer {
-        padding: 8px;
-    }
-
-    .header-actions,
-    .panel-heading {
-        align-items: stretch;
-        flex-direction: column;
-    }
-
-    .map-help {
-        text-align: left;
-    }
-
-    .map-viewport {
-        min-height: 390px;
-    }
-}
-
+.language-panel,
 .notes-panel {
     margin-top: 12px;
     border: 2px solid var(--border);
@@ -424,6 +382,7 @@ The country IDs are mostly ISO-style uppercase region codes.
     padding: 18px;
 }
 
+.language-panel-heading,
 .notes-panel-heading {
     display: flex;
     justify-content: space-between;
@@ -433,20 +392,76 @@ The country IDs are mostly ISO-style uppercase region codes.
     padding-bottom: 12px;
 }
 
+.language-panel-heading h2,
 .notes-panel-heading h2 {
     margin-bottom: 0;
 }
 
+.language-status,
 .notes-status {
     margin-bottom: 0;
     color: var(--muted);
     font-size: 12px;
 }
 
+.empty-language-state {
+    padding-top: 16px;
+}
+
+.empty-language-state p {
+    margin-bottom: 0;
+    color: var(--muted);
+    line-height: 1.6;
+}
+
+.language-details {
+    display: grid;
+    gap: 0;
+    max-width: 1000px;
+    padding-top: 4px;
+}
+
+.language-field {
+    border-top: 1px solid var(--border);
+    padding: 14px 0;
+}
+
+.language-field:first-child {
+    border-top: 0;
+}
+
+.language-field > :last-child {
+    margin-bottom: 0;
+}
+
+.language-field-label {
+    margin-bottom: 7px;
+    color: var(--accent);
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+}
+
+.language-field h3 {
+    margin-bottom: 0;
+    font-size: clamp(22px, 3vw, 34px);
+}
+
+.language-family-summary {
+    max-width: 900px;
+    line-height: 1.7;
+}
+
+.language-family-notes {
+    padding-top: 0;
+}
+
 .place-notes {
     display: grid;
     gap: 14px;
     padding-top: 14px;
+    line-height: 1.6;
     white-space: normal;
 }
 
@@ -508,9 +523,49 @@ The country IDs are mostly ISO-style uppercase region codes.
     color: #8a1515;
 }
 
-@media (max-width: 620px) {
-    .notes-panel-heading {
-        align-items: start;
+@media (max-width: 980px) {
+    .page-header {
+        align-items: stretch;
         flex-direction: column;
+    }
+
+    .header-actions {
+        width: 100%;
+        min-width: 0;
+    }
+
+    .viewer-layout {
+        grid-template-columns: 1fr;
+    }
+
+    .place-panel {
+        position: static;
+        max-height: none;
+    }
+
+    .map-viewport {
+        height: 62vh;
+    }
+}
+
+@media (max-width: 620px) {
+    .world-viewer {
+        padding: 8px;
+    }
+
+    .header-actions,
+    .panel-heading,
+    .language-panel-heading,
+    .notes-panel-heading {
+        align-items: stretch;
+        flex-direction: column;
+    }
+
+    .map-help {
+        text-align: left;
+    }
+
+    .map-viewport {
+        min-height: 390px;
     }
 }

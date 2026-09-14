@@ -21,7 +21,7 @@ p {
 
 main {
     display: grid;
-    grid-template-columns: minmax(240px, 320px) minmax(320px, 420px) minmax(360px, 520px);
+    grid-template-columns: minmax(240px, 320px) minmax(320px, 420px) minmax(800px, 520px);
     gap: 20px;
     align-items: start;
 }
@@ -60,7 +60,6 @@ button {
 input,
 select,
 textarea {
-    width: 100%;
     padding: 8px;
     border: 2px solid #111;
     background: #fff;
